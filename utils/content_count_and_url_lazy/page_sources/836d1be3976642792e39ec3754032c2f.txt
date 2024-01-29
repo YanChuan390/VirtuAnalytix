@@ -1,0 +1,204 @@
+<html lang="en"><head>
+
+    <style>
+        body {
+            opacity: 0;
+        }
+    </style>
+
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TRNG6R"></script><script type="text/javascript" class="optanon-category-C0003">
+        var _elqQ = _elqQ || [];
+        _elqQ.push(['elqSetSiteId', '2826']);
+        _elqQ.push(['elqUseFirstPartyCookie', 'tracking.ptc.com']);
+        _elqQ.push(['elqTrackPageView', window.location.href]);
+
+        (function () {
+            function async_load() {
+                var s = document.createElement('script'); s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//img.en25.com/i/elqCfg.min.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+            else if (window.attachEvent) window.attachEvent('onload', async_load);
+        })();
+    </script>
+    <script type="text/javascript">
+        function elqGetCookie(name) {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var position = cookies[i].indexOf('=');
+                if (position > 0 && position < cookies[i].length - 1) {
+                    var x = cookies[i].substr(0, position);
+                    var y = cookies[i].substr(position + 1);
+                    x = x.replace(/^\s+|\s+$/g, '');
+                    if (x == name) {
+                        return unescape(y);
+                    }
+                }
+            }
+            return '';
+        }
+        function elqGetCookieSubValue(name, subKey) {
+            var cookieValue = elqGetCookie(name);
+            if (cookieValue == null || cookieValue == '')
+                return '';
+            var cookieSubValue = cookieValue.split('&');
+            for (var i = 0; i < cookieSubValue.length; i++) {
+                var pair = cookieSubValue[i].split('=');
+                if (pair.length > 1) {
+                    if (pair[0] == subKey) {
+                        return pair[1];
+                    }
+                }
+            }
+            return '';
+        }
+        function elqSetCustomerGUID() {
+            var elqCustomerGuid = elqGetCookieSubValue('ELOQUA', 'GUID');
+            if (elqCustomerGuid) {
+                if (elqCustomerGuid != null && elqCustomerGuid != '') {
+                    if (document.forms['CBGeneralContactMeForm']) {
+                        if (document.forms['CBGeneralContactMeForm'].elements['elqCustomerGUID']) {
+                            if (document.forms['CBGeneralContactMeForm'].elements['elqCustomerGUID'].value) {
+                                document.forms['CBGeneralContactMeForm'].elements['elqCustomerGUID'].value = elqCustomerGuid;
+                            }
+                        }
+                    }
+                }
+            }
+            return;
+        }
+        window.onload = elqSetCustomerGUID;
+    </script>
+    
+                <!-- OneTrust Cookies Consent Notice start -->
+                <script defer="" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="105e2316-5700-475a-9ff3-10df8781487c"></script>
+                <script defer="" type="text/javascript">
+                    function OptanonWrapper() { window.dataLayer.push({ event: 'OneTrustGroupsUpdated' }) }
+                </script>
+                <!-- OneTrust Cookies Consent Notice end -->
+            <style>
+                #ot-desc-id-C0001 .group-toggle .toggle-group .toggle.ot-hide-tgl {
+                    display: none;
+                }
+            </style>
+        <!-- Google Tag Managers Ptc -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start':
+                        new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-TRNG6R');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <script async="" src="https://www.influ2.com/tracker?clid=2a78a9d6-680e-4f64-af46-481540f937eb"></script>
+        <script async="" src="https://www.influ2.com/tracker?clid=bcd41801-a6bf-4e0b-b745-791ce3ab1f39"></script>
+
+    
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="alternate" href="https://www.ptc.com/en/documents/policies/privacy" hreflang="x-default">
+                                        <link rel="alternate" href="https://www.ptc.com/en/documents/policies/privacy" hreflang="en">
+                                        <link rel="alternate" href="https://www.ptc.com/ja/documents/policies/privacy" hreflang="ja">
+                                        <link rel="alternate" href="https://www.ptc.com/ko/documents/policies/privacy" hreflang="ko">
+        <title>Privacy Policy | PTC</title>
+        <meta name="description" content="This Privacy Policy (&quot;Policy&quot;) sets out the basis on which we process any personal data we collect from or about you, or that you or any third party provide to us.">
+        <meta property="og:title" content="Privacy Policy | PTC">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://www.ptc.com/en/documents/policies/privacy">
+        <meta property="og:image" content="https://www.ptc.com/-/media/Images/old-image-folders/Headers/Legal/Mobile/Headers-Legal-MOBILE03.jpg">
+        <meta property="og:image:width" content="600">
+        <meta property="og:image:height" content="280">
+        <meta property="og:description" content="This Privacy Policy (&quot;Policy&quot;) sets out the basis on which we process any personal data we collect from or about you, or that you or any third party provide to us.">
+        <meta name="twitter:account_id" content="651463036197318658">
+        <meta name="twitter:title" content="Privacy Policy | PTC">
+        <meta name="twitter:description" content="This Privacy Policy (&quot;Policy&quot;) sets out the basis on which we process any personal data we collect from or about you, or that you or any third party provide to us.">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://www.ptc.com/-/media/Images/old-image-folders/Headers/Legal/Mobile/Headers-Legal-MOBILE03.jpg">
+        <meta name="msvalidate.01" content="EE7773A5C3B62EBF0F9DF3A7B8A09C02">
+        <meta name="yandex-verification" content="1cda349c9e599b83">
+        <meta name="naver-site-verification" content="8be6f433b443545932821058952916d3c066a8e0">
+        <meta name="baidu-site-verification" content="BM79UhzsSC">
+        <meta name="SecondaryShareImage" content="">
+        <meta name="google-site-verification" content="yPAx4bpJd7uQpDVibLPcLdL34mTw7K7wbPQIboIpbYo">
+            <link rel="canonical" href="https://www.ptc.com/en/documents/policies/privacy">
+        <!-- For Chrome for Android: -->
+        <link rel="icon" href="/dist/ptc/images/ptc-favicon-144x144-gray.png" id="light-scheme-icon">
+        <!-- For iPhone 6 Plus with 3× display: -->
+        <link rel="apple-touch-icon-precomposed icon-512" sizes="512x512" href="/dist/ptc/images/ptc-favicon-512x512-gray.png">
+        <!-- For iPad with 2× display running iOS ≥ 7: -->
+        <!-- For iPad with 2× display running iOS ≤ 6: -->
+        <link rel="apple-touch-icon-precomposed icon-144" sizes="144x144" href="/dist/ptc/images/ptc-favicon-144x144-gray.png">
+        <!-- For iPhone with 2× display running iOS ≥ 7: -->
+        <!-- For iPhone with 2× display running iOS ≤ 6: -->
+        <!-- For the iPad mini and the first- and second-generation iPad (1× display) on iOS ≥ 7: -->
+        <!-- For the iPad mini and the first- and second-generation iPad (1× display) on iOS ≤ 6: -->
+        <link rel="apple-touch-icon-precomposed icon-72" sizes="72x72" href="/dist/ptc/images/ptc-favicon-72x72-gray.png">
+        <link rel="apple-touch-icon-precomposed icon-32" sizes="32x32" href="/dist/ptc/images/ptc-favicon-32x32-gray.png">
+        <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+        <link rel="apple-touch-icon-precomposed icon-16" sizes="16x16" href="/dist/ptc/images/ptc-favicon-16x16-gray.png">
+        <!-- For iPhone 6 Plus with 3× display: -->
+        <!-- For iPad with 2× display running iOS ≥ 7: -->
+        <!-- For iPad with 2× display running iOS ≤ 6: -->
+        <!-- For iPhone with 2× display running iOS ≥ 7: -->
+        <!-- For iPhone with 2× display running iOS ≤ 6: -->
+        <!-- For the iPad mini and the first- and second-generation iPad (1× display) on iOS ≥ 7: -->
+        <!-- For the iPad mini and the first- and second-generation iPad (1× display) on iOS ≤ 6: -->
+        <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+
+            <script type="application/ld+json">
+            {
+            "@context": "https://schema.org" ,
+            "@type":"WebPage",
+            "url":"https://www.ptc.com/en/documents/policies/privacy",
+            "name":  "Privacy Policy",
+            "dateModified":"2023-04-21"
+            }
+        </script>
+
+
+        <!-- Start VWO Async SmartCode -->
+        <script type="text/javascript">
+            window._vwo_code = window._vwo_code || (function () {
+                var account_id = 539049,
+                    settings_tolerance = 2000,
+                    library_tolerance = 2500,
+                    use_existing_jquery = false,
+                    is_spa = 1,
+                    hide_element = 'body',
+
+                    /* DO NOT EDIT BELOW THIS LINE */
+                    f = false, d = document, code = {
+                        use_existing_jquery: function () { return use_existing_jquery; }, library_tolerance: function () { return library_tolerance; }, finish: function () { if (!f) { f = true; var a = d.getElementById('_vis_opt_path_hides'); if (a) a.parentNode.removeChild(a); } }, finished: function () { return f; }, load: function (a) { var b = d.createElement('script'); b.src = a; b.type = 'text/javascript'; b.innerText; b.onerror = function () { _vwo_code.finish(); }; d.getElementsByTagName('head')[0].appendChild(b); }, init: function () {
+                            window.settings_timer = setTimeout(function () { _vwo_code.finish() }, settings_tolerance); var a = d.createElement('style'), b = hide_element ? hide_element + '{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}' : '', h = d.getElementsByTagName('head')[0]; a.setAttribute('id', '_vis_opt_path_hides'); a.setAttribute('type', 'text/css'); if (a.styleSheet) a.styleSheet.cssText = b; else a.appendChild(d.createTextNode(b)); h.appendChild(a); this.load('https://dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&f=' + (+is_spa) + '&r=' + Math.random()); return settings_timer;
+                        }
+                    }; window._vwo_settings_timer = code.init(); return code;
+            }());
+        </script><script src="https://dev.visualwebsiteoptimizer.com/j.php?a=539049&amp;u=https%3A%2F%2Fwww.ptc.com%2Fen%2Fdocuments%2Fpolicies%2Fprivacy&amp;f=1&amp;r=0.09897951274517292" type="text/javascript"></script>
+        <!-- End VWO Async SmartCode -->
+
+    <link rel="stylesheet" href="/css/ptc/Raleway-IE.css">
+    <link rel="stylesheet" href="/css/ptc/Rajdhani-IE.css">
+    <link rel="stylesheet" href="/css/ptc/Raleway.css">
+    <link rel="stylesheet" href="/css/ptc/Rajdhani.css">
+    <link rel="preload" href="/dist/ptc/fonts/icomoon/icomoon.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/dist/ptc/fonts/Bender/39AEB3_1_0.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/ptc/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mobile-select@1.3.3/dist/style/mobile-select.min.css">
+    
+    <script src="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.min.js"></script></head></html>

@@ -1,0 +1,538 @@
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-0EH7HWQZEK&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=orbusvr.com&amp;callback=_gfp_s_&amp;client=ca-pub-8160063321500114"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202308310101/show_ads_impl_fy2021.js" id="google_shimpl"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e10f6a430e","applicationID":"33909038","transactionName":"cFkPR0YLVF5cFxxnCF1XFUFVS3dAWxBAGyZ2YkFSVwdXR1cRHEAEQVsS","queueTime":0,"applicationTime":5,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"e10f6a430e",applicationID:"33909038"};;/*! For license information please see nr-loader-rum-1.238.0.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={763:(e,t,n)=>{n.d(t,{P_:()=>f,Mt:()=>p,C5:()=>s,DL:()=>m,OP:()=>j,lF:()=>T,Yu:()=>y,Dg:()=>g,CX:()=>c,GE:()=>b,sU:()=>E});var r=n(632),i=n(567);const o={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,r.Qy)(e,a[e],"info")}var d=n(56);const u=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},harvest:{tooManyRequestsDelay:60},session_replay:{enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10}}},l={};function f(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=(0,i.D)(t,u()),(0,r.Qy)(e,l[e],"config")}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var n=f(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const h={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function m(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!v[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return v[e]}function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=(0,i.D)(t,h),(0,r.Qy)(e,v[e],"loader_config")}const y=(0,r.mF)().o;var w=n(385),A=n(818);const x={buildEnv:A.Re,bytesSent:{},queryBytesSent:{},customTransaction:void 0,disabled:!1,distMethod:A.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(w._A?.performance?.timeOrigin||w._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+w._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof w._A.XMLHttpRequest?.prototype?.addEventListener,version:A.q4,denyList:void 0},D={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function E(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,x),(0,r.Qy)(e,D[e],"runtime")}function T(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(n).length?e:n;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?n[a]=i(e[a],t[a]):n[a]=e[a]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>o,q4:()=>r});const r="1.238.0",i="PROD",o="CDN"},385:(e,t,n)=>{n.d(t,{IF:()=>c,Nk:()=>u,Tt:()=>a,_A:()=>o,il:()=>r,pL:()=>s,v6:()=>i,w1:()=>d});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=(o?.location,/iPad|iPhone|iPod/.test(navigator.userAgent)),s=a&&"undefined"==typeof SharedWorker,c=(()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),d=Boolean(r&&window.document.documentMode),u=!!navigator.sendBeacon},711:(e,t,n)=>{n.d(t,{w:()=>o});var r=n(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},0:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(148),i=n(284),o=n(322),a=n(325);const s={};function c(e,t){const n={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const n=[...s[e]];function a(t){const n=e?r.ee.get(e):r.ee,a=o.X.handlers;if(n.backlog&&a){var s=n.backlog[t],c=a[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete a[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((e=>{let[t]=e;a(t)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],o=e[3],a=e[2];i.apply(o,a)}}))}},148:(e,t,n)=>{n.d(t,{A:()=>c,ee:()=>d});var r=n(632),i=n(210),o=n(763);class a{constructor(e){this.contextId=e}}var s=n(117);const c="nr@context:".concat(s.a),d=function e(t,n){var r={},s={},u={},f=!1;try{f=16===n.length&&(0,o.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,o){!1!==o&&(o=!0);if(d.aborted&&!i)return;t&&o&&t.emit(e,n,r);for(var a=p(r),c=v(e),u=c.length,l=0;l<u;l++)c[l].apply(a,n);var f=b()[s[e]];f&&f.push([g,e,n,a]);return a},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return u[t]=u[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),u=(0,r.fP)();function l(){d.aborted=!0,d.backlog={}}u.ee||(u.ee=d)},546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(148).ee.get("handle");function i(e,t,n,i,o){o?(o.buffer([e],i),o.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},322:(e,t,n)=>{n.d(t,{X:()=>o});var r=n(546);o.on=a;var i=o.handlers={};function o(e,t,n,o){a(o||r.E,i,e,t,n)}function a(e,t,n,i,o){o||(o="feature"),e||(e=r.E);var a=t[o]=t[o]||{};(a[n]=a[n]||[]).push([e,i])}},239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var r=n(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(n,r))}},117:(e,t,n)=>{n.d(t,{a:()=>r});const r=(0,n(402).Rl)()},402:(e,t,n)=>{n.d(t,{Rl:()=>a,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++n).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(n,++i).toString(16));return a.join("")}},56:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>o,oD:()=>i});const r="NRBA",i=144e5,o=18e5},894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(148),i=n(546),o=n(0),a=n(325);const s={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]};function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(Object.entries(e).forEach((e=>{let[t,r]=e;void 0===d[t]&&(s[t]?s[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r))})),Object.keys(s).forEach((e=>{void 0===d[e]&&(s[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),(0,o.L)(t,a.D.pageViewEvent))}const d={}},210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},351:(e,t,n)=>{n.d(t,{P:()=>o});var r=n(148);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},960:(e,t,n)=>{n.d(t,{K:()=>a,b:()=>o});var r=n(239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,r.bP)("load",e,t)}function a(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>u,mF:()=>s});var r=n(894),i=n(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[n]:t}},i}function d(e,t){a()[e]=t}function u(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;return void(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"==document.visibilityState&&e());e(document.visibilityState)}),n,i)}},81:(e,t,n)=>{n.d(t,{gF:()=>o,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>a});const r=n(325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},633:(e,t,n)=>{n.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>r});const r=n(325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(325).D.pageViewTiming},938:(e,t,n)=>{n.d(t,{W:()=>o});var r=n(763),i=n(148);class o{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},144:(e,t,n)=>{n.d(t,{j:()=>v});var r=n(325),i=n(763),o=n(546),a=n(148),s=n(894),c=n(0),d=n(960),u=n(385),l=n(50),f=n(81),g=n(632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...r))})),o.length>1?o:o[0]}(t,...r)}}))}var h=n(587);function v(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},v=arguments.length>2?arguments[2]:void 0,m=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:A={loaderType:v},exposed:x=!0}=t;const D=(0,g.gG)();y||(b=D.init,y=D.info,w=D.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),y.jsAttributes??={},u.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y);const j=(0,i.P_)(e);A.denyList=[...j.ajax?.deny_list||[],...j.ajax?.block_internal?[y.beacon,y.errorBeacon]:[]],(0,i.sU)(e,A),p();const E=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,o){const a=(0,i.C5)(e);return null===n?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:n}}),A(v,r,!0,o||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>g[e]=A(v,e,!0,"api"))),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,a="function"==typeof t;return(0,o.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],n),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function x(){n.e(75).then(n.bind(n,438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>x()),!0):x(),g}(e,m);return(0,g.Qy)(e,E,"api"),(0,g.Qy)(e,x,"exposed"),(0,g.EZ)("activatedFeatures",h.T),E}},325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var o=r[e]={exports:{}};return n[e](o,o.exports,i),o.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum.3709cb75-1.238.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.238.0.PROD:",i.l=(n,r,o,a)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var o=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var o=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,o,[a,s,c]=n,d=0;if(a.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},n=self["webpackChunk:NRBA-1.238.0.PROD"]=self["webpackChunk:NRBA-1.238.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var n=i(325),r=i(763);const o=Object.values(n.D);function a(e){const t={};return o.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(144);var c=i(546),d=i(385),u=i(0),l=i(938),f=i(960);class g extends l.W{constructor(e,t,n){let r=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=r,this.abortHandler,this.featAggregate,this.onAggregateImported,r&&(0,u.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;const n=d.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,u.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),o(!1)}};d.il?(0,f.b)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var p=i(633),h=i(894);class v extends g{static featureName=p.t9;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||d.Tt)&&"undefined"!=typeof PerformanceTiming){const t=(0,r.OP)(e);t[p.Dz]=Math.max(Date.now()-t.offset,0),(0,f.K)((()=>t[p.qw]=Math.max((0,h.z)()-t[p.Dz],0))),(0,f.b)((()=>{const e=(0,h.z)();t[p.OJ]=Math.max(e-t[p.Dz],0),(0,c.p)("timing",["load",e],void 0,n.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var m=i(711),b=i(284);class y extends m.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var o=this.getBucket(e,t,n,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,b.D)(e,(function(e,n){t[e]=w(n,t[e])})),t}(r,o.metrics),o}merge(e,t,n,r,i){var o=this.getBucket(e,t,r,i);if(o.metrics){var a=o.metrics;a.count+=n.count,(0,b.D)(n,(function(e,t){if("count"!==e){var r=a[e],i=n[e];i&&!i.c?a[e]=w(i.t,r):a[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=w(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=x(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function x(e){return"object"!=typeof e?[]:(0,b.D)(e,D)}function D(e,t){return t}var j=i(632),E=i(402),T=i(351);var _=i(956),k=i(239),P=i(251);class C extends g{static featureName=P.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,n),d.il&&((0,r.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,_.N)((()=>(0,c.p)("docHidden",[(0,h.z)()],void 0,P.t,this.ee)),!0),(0,k.bP)("pagehide",(()=>(0,c.p)("winPagehide",[(0,h.z)()],void 0,P.t,this.ee))),this.importAggregator())}}var I=i(81);class N extends g{static featureName=I.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),d._A?(this.agentIdentifier=n,this.sharedAggregator=new y({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(v),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.start()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}start(){const t="features";try{const r=a(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>r[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,T.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,j.Qy)(this.agentIdentifier,this.features,t)}catch(n){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",n);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,j.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[v,C,N],loaderType:"lite"})})()})();</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="OrbusVR is the world's first VRMMORPG designed from the ground up for room-scale virtual reality on HTC Vive and Oculus Rift + Touch.">
+        <meta name="keywords" content="vrmmo,vrmmorpg,virtual reality,fantasy,virtual reality mmo">
+        <title>OrbusVR: Reborn :: Fantasy virtual reality MMO for HTC Vive and Oculus Rift + Touch</title>
+        <!-- Bootstrap -->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative" rel="stylesheet">
+        <link href="fonts/ionicons/2.0.1/css/ionicons.min.css" type="text/css" media="screen" rel="stylesheet">
+        <link href="/v2/css/styles.css?v=2" rel="stylesheet">
+        <link href="/v2/css/reborn.css" rel="stylesheet">
+        <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <![endif]-->
+        <script src="/v2/js/jquery-1.12.4.min.js"></script>
+        <meta name="theme-color" content="#181818">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Facebook Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1176316912545484');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1176316912545484&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Facebook Pixel Code -->
+        <script data-ad-client="ca-pub-8160063321500114" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-checked-head="true"></script>
+    <meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><style type="text/css">#mc_embed_signup input.mce_inline_error { border-color:#6B0505; } #mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }</style><script charset="utf-8" data-webpack="NRBA-1.238.0.PROD:chunk-75" src="https://js-agent.newrelic.com/nr-rum.3709cb75-1.238.0.min.js"></script></head>
+    <body data-spy="scroll" data-target=".navbar-custom" style="zoom: 1;">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- ============== HEADER =============== -->
+                
+                <!-- Main nav -->
+                <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar navbar-header">
+                            <a class="navbar-brand navbar-logo" href="/"></a>
+                            <button type="button" class="navbar-toggle custom-toggle-btn" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                            <span class="sr-only">
+                            Toggle navigation
+                            </span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="main-nav">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li class="plain-link"><a href="/#top">Game</a></li>
+                                <li class="plain-link"><a href="https://blog.orbusvr.com" target="_blank">News</a></li>
+                                <li class="plain-link"><a href="https://community.orbusvr.com" target="_blank">Community</a></li>
+                                <li class="plain-link"><a href="/leaderboards">Leaderboards</a></li>
+                                <li class="plain-link"><a href="/#gallery">Media</a></li>
+                                <li class="plain-link" id="server_status" style="opacity: 1;"><a href="#" style="position: relative;"><div id="live_header">In-Game Status</div><span id="time_icon"><i id="time_icon_class" class="wi wi-day-sunny"></i></span><span id="current_time">15:35</span><span id="online_icon"><i class="wi wi-earthquake"></i></span><span id="players_online">29</span></a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right" id="accountmenu">
+                                
+                                <li class="plain-link">
+                                    <a class="textlink" href="/sessions/new">Login or Create Account</a>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="row regularpage"><div class="col-lg-12">
+
+<h2 id="introduction">Introduction</h2>
+
+<h3 id="english-not-legalese">English, Not Legalese</h3>
+
+<p>Most Terms of Service and Privacy Policy documents are unreadable. They are written by lawyers and for lawyers, and in our opinion are not very effective.</p>
+
+<p>Because <strong>we believe in establishing long-term relationships with our customers</strong>, we decided to use plain English instead, to make our terms as clear as possible.</p>
+
+<p>When you read <em>OrbusVR</em> or <em>we</em> below, it refers to Orbus Online, LLC, its affiliates and agents.</p>
+
+<h3 id="using-OrbusVR-means-accepting-these-terms">Using OrbusVR Means Accepting These Terms</h3>
+
+<p>By accessing or using OrbusVR in any way, you agree to and are bound by the terms and conditions written in this document. You also agree to follow the rules in our <a href="https://wiki.orbusvr.com/Code_of_Conduct">Code of Conduct</a>, which govern player behaviour inside of the game world itself. A violation of the Code of Conduct may result in the termination of your account under these Terms.</p>
+
+<p>If you do not agree to all of the terms and conditions contained in this document, do not access OrbusVR. In addition, keep in mind that if you access the service by purchasing the game through a 3rd-party seller, such as Steam or Oculus, that seller may have its own Terms and Conditions in addition to our own. You should read their Terms and understand them since violating them can result in loss of access to the game through that seller.</p>
+
+<h3 id="this-is-a-living-document">This Is a Living Document</h3>
+
+<p>This is a living document. With your help, we want to make it the best in the industry.</p>
+
+<p>We will likely improve this document over time. By continuing to use the site, you will implicitly accept the changes we make.</p>
+
+<p>Your access and use of OrbusVR is always subject to the most current version of this document.</p>
+
+<h3 id="breach-of-terms">Breach of Terms</h3>
+
+<p>If you breach any of the terms and conditions in this document, your authorization to access or use OrbusVR automatically terminates. Any materials downloaded from OrbusVR in violation of the Terms of Use must be immediately destroyed.</p>
+
+<p>We may block, restrict, disable, suspend or terminate your access to all or part of OrbusVR at any time in our sole discretion, without prior notice or liability to you.</p>
+
+<p>If you think we removed your access by mistake, get in touch and we’ll give you our reasoning. We also have a quick way to restore access without losing any of your data.</p>
+
+<hr>
+
+<h2 id="support">Support</h2>
+
+<p>Support for OrbusVR is provided via our Community Forums.</p>
+
+<p>We also continuously update the OrbusVR Documentation so that users can help themselves.</p>
+
+<p>We take pride in providing excellent customer support, but we are also a small team and value our work/life balance. This means that although we’ll try our best, <strong>we do not guarantee 24 / 7 support</strong>.</p>
+
+<hr>
+
+<a name="privacypolicy"></a>
+
+<h2 id="access-to-your-data">Privacy Policy</h2>
+
+<h5 id="what-personal-data-do-you-collect-and-why">What Personal Data Do You Collect and Why?</h5>
+
+<p>We collect the following personal data:</p>
+
+<p>Name<br>
+ E-mail address<br>
+ IP Address<br>
+ Password<br>
+ From Oculus or Steam: Your Account ID and Username</p>
+
+ <p>We collect this data in order to operate our service and provide access to that service to you.</p>
+
+<p>We do not collect credit card information directly. See <a href="#who-can-see-my-credit-card-number">Who can see my credit card number?</a> below.</p>
+
+<p>We use return e-mail addresses to answer the e-mail we receive. Such addresses are not used for any other purpose and are not shared with outside parties.</p>
+
+<p>Please be aware that your browser must be enabled to accept cookies from OrbusVR.com in order for you to use OrbusVR.</p>
+
+<p>Finally, we never use or share the personally identifiable information provided to us online in ways unrelated to the ones described above.</p>
+
+<h3 id="who-can-see-my-password">Who Can See My Password?</h3>
+
+<p>No-one. We store your password encrypted so no-one can read it. For encrypting the passwords, we use BCrypt hashing.</p>
+
+<p>It is your sole responsibility to keep your user name, password and other sensitive information confidential. If you become aware of any unauthorized use of your account or any other breach of security, you shall notify OrbusVR immediately.</p>
+
+<p>If you forget your password, we send you a secure link via email that lets you reset it.</p>
+
+<h3 id="who-can-see-my-credit-card-number">Who Can See My Credit Card Number?</h3>
+
+<p>No-one at OrbusVR. All transactions, including In App Purchases, are completed via the Steam Store or Oculus Store, and we do not receive or process any payment information directly. Please see their Terms of Service for details on how your personal information is handled by each store.</p>
+
+<h3 id="our-commitment-to-children-s-privacy">Our Commitment to Children’s Privacy</h3>
+
+<p>Protecting the privacy of the very young is especially important. For that reason, we never collect or maintain information at our website from those we actually know are under 13, and no part of our website is structured to attract anyone under 13.</p>
+
+<h3 id="how-can-i-access-or-correct-my-information">How Can I Access or Correct My Information?</h3>
+
+<p>You can access all your personally identifiable information that we collect online and maintain by logging in to the OrbusVR site visiting the My Account page.</p>
+
+<p>You can delete your user account at any time. However, if you do so we may still store information (such as chat logs, character infrormation, or access logs) about your account to allow us to continue providing the service to other users. If you wish for us to delete all of your data permanently, please contact us via email at <a href="mailto:gamemaster@orbusvr.com">gamemaster@orbusvr.com</a>.</p>
+
+<h3 id="who-can-see-my-wireframes">Who Can See My Profile?</h3>
+
+<p>The public portions of your profile are visible to anyone visiting the website. The private portions (including the My Account page) are visible only to you. The public content only includes things that are done in the game, and never includes your personally-identifiable information (such as your real name or email address).</p>
+
+<p>We use HTTPS and SSL (256-encryption) to transfer all data.</p>
+
+<h3 id="what-are-the-guidelines-Orbus-follows-when-accessing-my-data">What Are the Guidelines Orbus Follows When Accessing My Data?</h3>
+
+<ul>
+<li>We restrict who at Orbus can access customer data to only senior members of the team, and never to outside parties.</li>
+<li>We only do it in response to a customer support question.</li>
+<li>We only do it in order to debug and fix the issue.</li>
+<li>If we receive an abuse report regarding your account, we will access your data to determine the validity of the complaint.</li>
+<li>We never ever ever share what we see with other customers or the general public.</li>
+<li>We might give access to US authorities if requested in writing. We’ll try not to, but we don’t have the resources to fight the government. We’ll also keep your site owner informed as much as we can if this happens.</li>
+</ul>
+
+<h3 id="how-is-my-data-protected-from-another-customer-s-data">How Is My Data Protected from Another Customer’s Data?</h3>
+
+<p>All of our customers’ data resides in the same database. We use software best practices to guarantee that only those who should have access to it can see it. In other words, we segment our customer data via software. We do our best and are very confident we’re doing a good job at it, but, like every other software that hosts their customers data on the same database, cannot guarantee that a sophisticated hacker cannot access other people’s data.</p>
+
+<h3 id="what-should-i-do-if-i-find-a-security-vulnerability-in-OrbusVR">What Should I Do If I Find a Security Vulnerability in OrbusVR?</h3>
+
+<p>If you have discovered a security concern, please email us at <a href="mailto:riley@orbusvr.com">riley@orbusvr.com</a>. We’ll work with you to make sure that we understand the scope of the issue, and that we fully address your concern.
+
+</p><p>Please act in good faith towards our users’ privacy and data during your disclosure. We won’t take legal action against you or administrative action against your account if you act accordingly: White hat researchers are always appreciated. We don't currently offer monetary rewards for bug reports ("bug bounties.")</p>
+
+<hr>
+
+<h2 id="intellectual-property-rights">Intellectual Property Rights</h2>
+
+<h3 id="who-owns-Orbus-materials">Who Owns Orbus Materials?</h3>
+
+<p>Orbus Materials are all the information, data, documents (e.g. white papers, press releases, datasheets, FAQs, etc.), communications, downloads, files, text, images, photographs, graphics, videos, webcasts, publications, content, tools, resources, software, code, programs and products on OrbusVR produced by Orbus Online, LLC.</p>
+
+<p>Orbus Materials are protected by copyrights, trademarks, patents, trade secrets and all other intellectual property and proprietary rights, and any unauthorized use of the Orbus Materials may violate such laws and the Terms of Use.</p>
+
+<p>You agree not to copy, republish, frame, download, transmit, modify, adapt, create derivative works based on, rent, lease, loan, sell, assign, distribute, display, perform, license, sublicense or reverse engineer the OrbusVR service or Orbus Materials or any portions of them. That means, for example, that you will not attempt to create an external program that causes the OrbusVR client to perform differently than intended (such as a hack, exploit, or other tool designed to circumvent the game's rules to create an unfair advantage).</p>
+
+<p>You agree that you will not decompile, reverse engineer, or otherwise attempt to discover the source code of the software. Any copying or redistribution of the software is prohibited, including any copying or reproduction of the software to any other server or location for further reproduction, redistribution or use on a service bureau basis. Any unauthorized use, copying or distribution of the software is expressly prohibited by law, and may result in severe civil and criminal penalties. Violators will be prosecuted to the maximum extent possible.</p>
+
+<p>The trademarks, logos and service marks displayed on this Site are the property of Orbus Online, LLC or other third parties. You are not permitted to use them without the prior written consent of Orbus Online, LLC or such third party that may own the Marks. OrbusVR and the OrbusVR logo are trademarks of Orbus Online, LLC.</p>
+
+<ul>
+<li>Orbus Materials may not be modified or altered in any way.</li>
+<li>Orbus Materials on OrbusVR may not be distributed or sold, rented, leased, licensed or otherwise made available to others.</li>
+<li>You may not remove any copyright or other proprietary notices contained in the Orbus Materials.</li>
+<li>You may not copy or distribute any graphics in the Orbus Materials apart from their accompanying text.</li>
+<li>You will not quote or display Orbus Materials, or any portions thereof, out of context.</li>
+<li>Orbus reserves the right to revoke the authorization to view, download and print the Orbus Materials available via OrbusVR at any time, and any such use shall be discontinued immediately upon notice from Orbus.</li>
+<li>The rights granted to you constitute a license and not a transfer of title.</li>
+<li>Any Orbus Materials made available only upon payment of a fee may only be viewed, downloaded and printed subject to your payment of such fee.</li>
+</ul>
+
+<p>As a part of using the OrbusVR service, you may create content, including (but not limited to) chat messages, forum posts, and voice messages. This is user generated material.</p>
+
+<p>By submitting user-generated content, you grant Orbus a worldwide, non-exclusive, irrevocable license to transmit, perform, display, and sublicense that material.</p>
+
+<p>You acknowledge and agree that Orbus has no liability of any kind should anyone you granted access to your content modify, destroy, corrupt, copy or distribute it, or violate the terms of use or other limitations that you may impose on the use of your shared content.</p>
+
+<p>Orbus does not pre-screen user generated materials that users provide or otherwise submit via OrbusVR; however, Orbus may remove any posted or submitted user materials from OrbusVR for any reason without notice in its sole discretion. By posting or submitting your user materials, you represent and warrant that you own or otherwise control all of the intellectual property rights and other rights to your user materials as described in these Terms of Use, including all the rights necessary for you to post or submit your user materials.</p>
+
+<p>In addition, by posting or otherwise submitting your user materials that contain images, photographs, pictures, videos, webcasts or that are otherwise graphical in whole or in part (“Images”), you represent and warrant that: (a) you own the copyright in such Images, or that you have obtained all necessary license(s) from the copyright owner(s) of such Images to use such Images, or portions thereof, in keeping with your use in connection with OrbusVR and as otherwise permitted by these Terms of Use; (b) in the event you choose to grant licenses and sublicenses to such Images, you have the rights necessary to grant the licenses and sublicenses described in these Terms of Use; and © you have received consent from any and all persons depicted in such Images to use the Images as set forth in these Terms of Use, including the distribution, public display, public performance and reproduction of such Images.</p>
+
+<p>You are solely and entirely responsible for all of your user materials that you post or otherwise submit via OrbusVR. You shall assume all risks associated with the use of your user materials including any reliance on the accuracy, completeness or usefulness of your user materials. Orbus does not guarantee the accuracy, integrity or quality of your user materials. You acknowledge and agree that by accessing or using OrbusVR, you may be exposed to user materials from others that are offensive, indecent or otherwise objectionable.</p>
+
+<hr>
+
+<h2 id="reliability">Reliability</h2>
+
+<h3 id="do-you-guarantee-that-OrbusVR-will-be-accessible-at-all-times">Do You Guarantee That OrbusVR Will Be Accessible at All Times?</h3>
+
+<p>In short, we do not. Like all other cloud-based applications, we are vulnerable to the inherent unreliability of the Internet. We do not offer contracted SLA for availability to OrbusVR and your data.</p>
+
+<p>That said, high reliability is something we are proud of and something we deliberately chose to compete on. We have developers, system administrators and support staff on call, 24 / 7.</p>
+
+<p>We monitor OrbusVR closely and have set up automated alarms to be notified (via email and SMS) when the OrbusVR service is under stress, so that we can deal with the issue before it becomes a problem that might impact customer access.</p>
+
+<p>You acknowledge and agree that we shall not be liable for any failure to store your materials on, or provide access to, OrbusVR at any time.</p>
+
+<hr>
+
+<h2 id="play-nice-clauses">Play Nice Clauses</h2>
+
+<h3 id="use-of-OrbusVR">Use of OrbusVR</h3>
+
+<p>You agree that you shall not:</p>
+
+<ul>
+<li>Collect, harvest, mine or engage in any other activity to obtain e-mail addresses, phone numbers, personal information or any other information about others.</li>
+<li>Use or attempt to gain access to or use another’s user account, password, data, or computer systems or networks connected to any OrbusVR server, whether through hacking, password mining or any other means.</li>
+<li>Access or attempt to access any material that you are not authorized to access.</li>
+<li>Make available any files containing materials where you do not own or control, or have not received the necessary licenses to, all intellectual property rights, rights of privacy and publicity and all other rights in and to such materials.</li>
+<li>Use any materials in any manner that infringes any intellectual property rights or other rights of any party.</li>
+<li>Disrupt or interfere with the security of, or otherwise cause harm to, the OrbusVR service, Orbus Materials, systems resources, accounts, passwords, servers or networks connected to or accessible through OrbusVR or any affiliated or linked sites.</li>
+<li>Transmit unsolicited or bulk communications to any OrbusVR account holder or to any OrbusVR.com or affiliated e-mail address.</li>
+<li>Post or otherwise submit any software, programs or files that are harmful or disruptive of another’s equipment, software or other property, including any corrupted files, time bombs, Trojan horses, viruses and worms.</li>
+<li>Create a false identity for the purpose of misleading others.</li>
+<li>Download any materials posted by another that you know, or reasonably should know, cannot be legally reproduced, distributed, performed or displayed in such manner.</li>
+<li>Disrupt, interfere or inhibit any other user from using and enjoying the OrbusVR service or other affiliated or linked sites, materials or services.</li>
+<li>Access or use OrbusVR in any manner that could damage, disable, overburden or impair any OrbusVR server or the network(s) connected to any OrbusVR server.</li>
+<li>Violate any applicable laws or regulations related to the access to or use of OrbusVR, or engage in any activity prohibited by the Terms of Use.</li>
+<li>Post or otherwise submit any topic, name, material or information that is child pornography, defamatory, excessively violent, harassing, inappropriate, indecent, lascivious, lewd, obscene, profane, racist, unlawful, or otherwise objectionable.</li>
+<li>Prepare, compile, use, download or otherwise copy any OrbusVR user directory or other user or usage information or any portion thereof, or transmit, provide or otherwise distribute (whether or not for a fee) such directory or information to any third party.</li>
+<li>Engage in any chain letters, contests, junk e-mail, pyramid schemes, spamming, surveys or any other duplicative or unsolicited messages (commercial or otherwise).</li>
+<li>Violate the rights of Orbus or any third party (including rights of privacy and publicity) or abuse, defame, harass, stalk or threaten another.</li>
+<li>Use any Orbus or OrbusVR domain name as a pseudonymous return e-mail address.</li>
+<li>Market any goods or services for any business purpose (including advertising and making offers to buy or sell goods or services), unless specifically allowed to do so by Orbus.</li>
+</ul>
+
+<p>Materials and Services provided by third parties are governed by separate agreements accompanying such materials and services. Orbus offers no guarantees and assumes no responsibility or liability of any type with respect to the third-party services, including any liability resulting from incompatibility between a third-party service, Orbus Materials, the OrbusVR service or another third-party service. You agree that you will not hold Orbus responsible or liable with respect to the third-party services.</p>
+
+<h3 id="special-treatment-for-spammers">Special Treatment for Spammers</h3>
+
+<p>In the event of your or others’ access to or use of the OrbusVR service in connection with the transmission of spam unsolicited e-mail or postings in violation of these Terms of Use, you acknowledge and agree that Orbus would be irreparably harmed thereunder and that monetary damages would be an insufficient and ineffective remedy; therefore you agree that Orbus is entitled to obtain immediate injunctive relief against any such transmission (in addition to all other remedies available at law or in equity). Orbus may without restriction block, filter or delete unsolicited e-mail.</p>
+
+<h3 id="restriction-and-termination-of-use">Restriction and Termination of Use</h3>
+
+<p>Orbus may block, restrict, disable, suspend or terminate your access to all or part of OrbusVR at any time in Orbus’s sole discretion, without prior notice or liability to you.</p>
+
+<h3 id="notification-of-copyright-infringement">Notification of Copyright Infringement</h3>
+
+<p>Orbus will, in appropriate circumstances, terminate the accounts of users who infringe the intellectual property rights of others. Orbus will investigate notices of copyright infringement and take appropriate actions under the Digital Millennium Copyright Act, Title 17, United States Code, Section 512©(2) (“DMCA”).</p>
+
+<p>If you believe that your work has been used or copied in a way that constitutes copyright infringement and such infringement is occurring on OrbusVR or on sites linked to from OrbusVR, please provide written notification of claimed copyright infringement to the designated agent for OrbusVR (identified below), which must contain the following elements:</p>
+
+<ul>
+<li>A physical or electronic signature of the person authorized to act on behalf of the owner of the copyright interest that is alleged to have been infringed;</li>
+<li>A description of the copyrighted work or works that you claim have been infringed and identification of what content in such work(s) is claimed to be infringing and which you request to be removed or access to which is to be disabled;</li>
+<li>A description of where the content that you claim is infringing is located on OrbusVR;</li>
+<li>Information sufficient to permit Orbus to contact you, such as your physical address, telephone number, and e-mail address;</li>
+<li>A statement by you that you have a good faith belief that the use of the content identified in your Notice in the manner complained of is not authorized by the copyright owner, its agent, or the law;</li>
+<li>A statement by you that the information in your notice is accurate and, under penalty of perjury, that you are the copyright owner or authorized to act on the copyright owner’s behalf.</li>
+</ul>
+
+<p>Orbus’s designated agent for notice of claims of copyright infringement can be reached as follows:</p>
+
+<p>By e-mail: <a href="mailto:riley@orbusvr.com">riley@orbusvr.com</a></p>
+
+<h3 id="links-to-third-party-sites">Links to Third Party Sites</h3>
+
+<p>OrbusVR may include links that will take you to other sites outside of the OrbusVR service. The linked sites are provided by Orbus to you as a convenience and the inclusion of the links do not imply any endorsement by Orbus of any linked site. Orbus has no control of the linked sites and you therefore acknowledge and agree that Orbus is not responsible for the contents of any linked site, any link contained in a linked site or any changes or updates to a linked site. You further acknowledge and agree that Orbus is not responsible for any form of transmission (e.g. webcasting) received from any linked site.</p>
+
+<h3 id="advertisements-and-promotions">Advertisements and Promotions</h3>
+
+<p>Orbus may run advertisements and promotions from third parties via OrbusVR in any manner or mode and to any extent. Your communications, activities, relationships and business dealings with any third parties advertising or promoting via OrbusVR, including payment and delivery of related goods or services, and any other terms, conditions, warranties or representations associated with such dealings, shall be solely matters between you and such third parties. You acknowledge and agree that Orbus is not responsible or liable for any loss or damage of any kind incurred as the result of any such dealings or as the result of the presence of such non-Orbus advertisers on OrbusVR.</p>
+
+<h3 id="warranties-and-disclaimers">Warranties and Disclaimers</h3>
+
+<p>The OrbusVR service and Orbus Materials are provided by Orbus under these terms of use “as is” without warranty of any kind, either express, implied, statutory or otherwise, including, but not limited to, the implied warranties of title, non-infringement, merchantability or fitness for a particular purpose. Without limiting the foregoing, Orbus makes no warranty that:</p>
+
+<ol>
+<li>the OrbusVR service and Orbus Materials will meet your requirements;</li>
+<li>the OrbusVR service and Orbus Materials will be uninterrupted, timely, secure, or error-free;</li>
+<li>the results that may be obtained from the use of OrbusVR service and Orbus Materials will be effective, accurate, or reliable;</li>
+<li>the quality of the site or any services or materials purchased or accessible by you will meet your expectations; and</li>
+<li>any errors or defects in OrbusVR service and Orbus Materials will be corrected.</li>
+</ol>
+
+<p>The OrbusVR service and Orbus Materials may include technical or other mistakes, inaccuracies, or typographical errors. Orbus may make changes to the site, materials and services, including the prices and descriptions of any software or products listed, at any time in its sole discretion and without notice. The OrbusVR service and Orbus Materials may be out of date, and Orbus makes no commitment to update the site, materials and services.</p>
+
+<p>You acknowledge and agree that:</p>
+
+<ol>
+<li>Orbus does not control, endorse, or accept responsibility for any materials or services offered by third parties, including third-party vendors and third parties accessible through linked sites;</li>
+<li>Orbus makes no representations or warranties whatsoever about any such third parties, their materials or services;</li>
+<li>any dealings you may have with such third parties are at your own risk; and</li>
+<li>Orbus shall not be liable or responsible for any materials or services offered by third parties.</li>
+</ol>
+
+<p>Orbus does not control or endorse the materials found in any services and specifically disclaims any liability with regard to the site, services and any actions resulting from your use of the OrbusVR service and Orbus Materials and participation in any services. To the maximum extent permitted by law, Orbus will have no liability related to user materials arising under intellectual property rights, libel, privacy, publicity, obscenity or other laws. Orbus also disclaims all liability with respect to the misuse, loss, modification or unavailability of any user materials.</p>
+
+<p>The use of OrbusVR service, Orbus Materials or the downloading or other use of any materials is done at your own discretion and risk and with your agreement that you will be solely responsible for any damage to your computer system, loss of data or other harm that results from such activities. Orbus assumes no liability for any computer virus or other similar software code that is downloaded to your computer from the site or in connection with any services or materials. No advice or information, whether oral or written, obtained by you from Orbus or via the site, services or materials shall create any warranty not expressly stated in the terms of use. Orbus will not be liable for any loss that you may incur as a result of someone else using your password or account with respect to the site or any services or materials, either with or without your knowledge.</p>
+
+<p>Some states or jurisdictions do not allow the exclusion of implied warranties or limitations on how long an implied warranty may last, so the above limitations may not apply to you. To the extent permissible, any implied warranties are limited to ninety (90) days.</p>
+
+<h3 id="indemnity-and-liability">Indemnity and Liability</h3>
+
+<p>You agree to indemnify and hold Orbus and its officers, co-branders, other partners and employees harmless from any claim or demand, including reasonable attorneys’ fees, made by any third party due to or arising out of:</p>
+
+<ol>
+<li>your user materials and any other content (e.g. computer viruses) that you may submit, post to or transmit through OrbusVR, including a third party’s use of such user materials or content (e.g. reliance on the accuracy, completeness or usefulness of your user materials);</li>
+<li>your access to or use of OrbusVR (including any use by your employees, contractors or agents and all uses of your account numbers, user names and passwords, whether or not actually or expressly authorized by you, in connection with OrbusVR);</li>
+<li>your connection to OrbusVR;</li>
+<li>your violation of the Terms of Use;</li>
+<li>your infringement of any third party’s intellectual property rights when using any of the software made available on OrbusVR;</li>
+<li>your violation of any rights of any third party;</li>
+<li>your access to or use of linked sites and your connections thereto; or</li>
+<li>any dealings between you and any third parties advertising or promoting via OrbusVR.</li>
+</ol>
+
+<h3 id="international-users">International Users</h3>
+
+<p>The OrbusVR service can be accessed from countries around the world and may contain references to Orbus products, services and programs that are not available in your country. These references do not imply that Orbus intends to announce such products, services or programs in your country. The Site is controlled, operated and administered by Orbus Online, LLC and its affiliates from their offices within the United States of America. Orbus makes no representation that the OrbusVR service and Orbus Materials are appropriate or available for use at other locations outside the United States, and access to the Site from territories where the Site, the Services or Materials are illegal is prohibited. If you access the Site from a location outside the United States, you are responsible for compliance with all local laws.</p>
+
+<p>The export and re-export of Orbus Software are controlled by the United States Export Administration Regulations, and such Software may not be exported or re-exported to Cuba, Iran, Libya, North Korea, Sudan, Syria, or any country to which the United States embargoes goods. In addition, the Software may not be distributed to persons on the Table of Denial Orders, the Entity List, or the List of Specially Designated Nationals.</p>
+
+<p>By downloading Software, you are certifying that you are not a national of Cuba, Iran, Libya, North Korea, Sudan, Syria or any country to which the United States embargoes goods, and that you are not a person on the Table of Denial Orders, the Entity List, or the List of Specially Designated Nationals.</p>
+
+<p>All Orbus Software, products and publications are commercial in nature. The Software and documentation available on this Site are “Commercial Items,” as that term is defined at 48 C.F.R. §2.101, consisting of “Commercial Computer Software” and “Commercial Computer Software Documentation,” as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as applicable. Consistent with 48 C.F.R. §12.212 or 48 C.F.R. §§227.7202-1 through 227.7202-4, as applicable, the Commercial Computer Software and Commercial Computer Software Documentation are licensed to U.S. Government end users (A) only as Commercial Items and (B) with only those rights as are granted to all other users pursuant to the Terms of Use and the applicable license agreement.</p>
+
+<h3 id="limitation-of-liability">Limitation of Liability</h3>
+
+<p>In no event shall Orbus, its officers, directors, employees, partners or suppliers be liable to you or any third party for any special, punitive, incidental, indirect or consequential damages or losses of any kind, or any damages or losses whatsoever, including those resulting from loss of use, data or profits, whether or not foreseeable or if Orbus has been advised of the possibility of such damages or losses, and on any theory of liability, including breach of contract or warranty, negligence or other tortious action, or any other claim arising out of or in connection with:</p>
+
+<ol>
+<li>the access or use of or the inability to access or use the OrbusVR service or Orbus Materials;</li>
+<li>the statements or actions of any third party on or via the site, services or materials;</li>
+<li>any dealings with vendors or other third parties;</li>
+<li>any unauthorized access to or alteration of your transmissions, user materials or other data;</li>
+<li>any information that is sent or received or not sent or received;</li>
+<li>any failure to store or loss of data, files, materials or other content;</li>
+<li>any services available that are delayed or interrupted;</li>
+<li>any web site referenced or linked to from this site; or</li>
+<li>your access to or use of or inability to access or use any linked site.</li>
+</ol>
+
+<p>Some jurisdictions prohibit the exclusion or limitation of liability for consequential or incidental damages. Accordingly, the limitations and exclusions set forth above may not apply to you.</p>
+
+<hr>
+
+<h2 id="governing-law-and-jurisdiction">Governing Law and Jurisdiction</h2>
+
+<p>The OrbusVR service (excluding linked sites) is controlled by Orbus Online, LLC from its offices within the state of Kansas, United States of America. By accessing OrbusVR, you agree that all matters relating to your access to, or use of, OrbusVR shall be governed by the statutes and laws of the State of Kansas, without regard to the conflicts of laws principles thereof. The parties specifically disclaim the U.N. Convention on Contracts for the International Sale of Goods. You also agree and hereby submit to the exclusive personal jurisdiction and venue of the Superior Court of Johnson County and the United States District Court for the District of Kansas with respect to such matters.</p>
+
+<hr>
+
+<h2 id="general">General</h2>
+
+<p>The Terms of Use and other rules, guidelines, licenses and disclaimers posted via OrbusVR or in connection with the Materials and Services constitute the entire agreement between Orbus and you with respect to your access to or use of the OrbusVR service and materials superseding any prior agreements between you and Orbus on such subject matter (including any prior versions of the Terms of Use). Notwithstanding the foregoing, to the extent that any terms set forth in the Terms of Use expressly contradict any terms of a written agreement between you and Orbus regarding the use of specific Services or Materials (including Service-specific terms of use and Software-specific licenses) (“Executed Agreement”), such contradictory terms set forth in the Executed Agreement shall govern. You may also be subject to additional terms and conditions that may apply when you use other Orbus services, third party content or third party software. If for any reason a court of competent jurisdiction finds any provision of the Terms of Use, or portion thereof, to be unenforceable, that provision shall be enforced to the maximum extent permissible so as to effect the intent of the parties as reflected by that provision, and the remainder of the Terms of Use shall continue in full force and effect. Any failure by Orbus to enforce or exercise any provision of the Terms of Use or related right shall not constitute a waiver of that right or provision. The section titles used in the Terms of Use are purely for convenience and carry with them no legal or contractual effect.</p>
+
+<h2>Cookies and Pixels</h2>
+
+<p>A "cookie" is a small data file stored by your web browser on your device. It allows the site to recognize your device upon entering the site. We use cookies to analyze traffic to our website and other media. By using our website you consent to the storing and accessing of cookies on your device in accordance with the terms of this policy.</p>
+
+<p>We also use tracking pixels, which allow us or our advertising partners to advertise more efficiently and effectively, including:</p>
+
+<p>Facebook Pixel: This enables us to measure, optimize and build audiences for advertising campaigns served on Facebook. This tool allows us to understand and deliver ads and make them more relevant to you. The collected data remains anonymous and we cannot see the personal data of any individual user. However, the collected data is saved and processed by Facebook. Facebook may be able to connect the data with your Facebook account and use the data for their own advertising purposes (in accordance with Facebook’s Data Use Policy found under: https://www.facebook.com/about/privacy/). You can opt-out of Facebook’s use of cookies and Facebook Pixel Re-Marketing through settings on your Facebook Account. To opt-out please see https://www.facebook.com/ads/preferences</p>
+
+<hr>
+
+<h2 id="document-history">Document History</h2>
+
+<p>Initial version posted: July 21, 2016.</p>
+<p>Added information on Cookies and Pixels: May 22, 2019.</p>
+
+</div></div>
+            <!-- ============== FOOTER =============== -->
+            <div class="row pattern-dark">
+                <footer class="container footer">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <nav class="footer-nav">
+                                <h3 style="margin-top: 0px;">Join the Newsletter</h3>
+                
+                                <!-- Begin MailChimp Signup Form -->
+                                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                                <style type="text/css">
+                                    #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+                                    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                                </style>
+                                <div id="mc_embed_signup">
+                                <form action="//orbusvr.us13.list-manage.com/subscribe/post?u=b88222c6221c0400b95736b80&amp;id=f59338cf6a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+                                    <div id="mc_embed_signup_scroll">
+                                    
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">Email Address </label>
+                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="color: black;" aria-required="true">
+                                </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b88222c6221c0400b95736b80_f59338cf6a" tabindex="-1" value=""></div>
+                                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary" style="background-color: #ea9248; color: white;"></div>
+                                    </div>
+                                </form>
+                                </div>
+                                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                                <!--End mc_embed_signup-->
+                            </nav>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <nav class="social-nav">
+                                <a href="https://www.facebook.com/orbusvr/" target="_blank"><span class="ion-social-facebook"></span></a>
+                                <a href="https://twitter.com/OrbusVR" target="_blank"><span class="ion-social-twitter"></span></a>
+                                <a href="https://www.youtube.com/channel/UCdcpVZwlU_Fo_b7NNSz2PGA" target="_blank"><span class="ion-social-youtube"></span></a>
+                                <a href="https://www.instagram.com/orbusvr" target="_blank"><span class="ion-social-instagram"></span></a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="copyright" style="font-size: 0.65em;">Copyright (C) 2023 Orbus Online LLC</p>
+                    </div>
+                </footer>
+            </div>
+        </div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-8160063321500114&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1694045671&amp;plat=2%3A16777216%2C3%3A65536%2C4%3A65536%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Forbusvr.com%2Faccount%2Fterms&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;asrtr=1&amp;asiscm=1&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1&amp;asladp=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTE2LjAuNTg0NS4xNDIiLFtdLDAsbnVsbCwiNjQiLFtbIkNocm9taXVtIiwiMTE2LjAuNTg0NS4xNDIiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXSxbIkdvb2dsZSBDaHJvbWUiLCIxMTYuMC41ODQ1LjE0MiJdXSwwXQ..&amp;dt=1694045671307&amp;bpp=4&amp;bdt=2213&amp;idt=214&amp;shv=r20230831&amp;mjsv=m202308310101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=7892199530056&amp;frm=20&amp;pv=2&amp;ga_vid=1973170029.1694045672&amp;ga_sid=1694045672&amp;ga_hid=617374802&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1019&amp;bih=668&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759842%2C42531706%2C44795922%2C31076996&amp;oid=2&amp;pvsid=1351092426771272&amp;tmod=220694594&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C668&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=232" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins>
+        <!-- ============== SCRIPTS =============== -->
+        <script src="/v2/js/bootstrap/bootstrap.min.js"></script>
+        <script src="/v2/js/waypoints/jquery.waypoints.min.js"></script>
+        <script src="/v2/js/app.js?v=5"></script>
+        <script src="/v2/js/jquery-mobile-custom/jquery.mobile.custom.min.js"></script>
+
+        <script type="text/javascript">
+
+        var updateTimeFromServer = function() {
+            $.get("https://api-reborn.orbusvr.com/servertime", function(data) {
+                var jsondata = JSON.parse(data);
+                if(jsondata.playersOnline < 1) {
+                    $("#server_status")[0].style.opacity = 0;
+                }
+                else {
+                    $("#server_status")[0].style.opacity = 1;
+                    $("#current_time").text(jsondata.time);
+                    var timeclass = "wi-day-sunny";
+                    if(jsondata.hour < 6 || jsondata.hour > 20) {
+                        timeclass = "wi-night-clear";
+                    }
+                    $("#time_icon_class").removeClass("wi-day-sunny").removeClass("wi-night-clear").addClass(timeclass);
+                    $("#players_online").text(jsondata.playersOnline);
+                }
+                setTimeout(function() {
+                    updateTimeFromServer();
+                }, 30000);
+            });
+        };
+
+        updateTimeFromServer();
+
+        $(".extlink").on('click', function() {
+            fbq('track', 'ViewContent');
+        });
+
+        </script>
+
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-78652220-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+    
+
+</body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230831/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>

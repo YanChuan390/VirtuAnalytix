@@ -1,0 +1,499 @@
+<html><head>
+        <title id="headtitle">Agent Emerson - Official Site - Action VR Film</title>
+		<meta name="description" content="An immersive 3D 360° first-person POV action-packed VR film starring Lyndsy Fonseca, Tony Denison and YOU as Agent Emerson">
+		<meta name="keywords" content="VR, Film, Lyndsy Fonseca, Tony Denison, Movie, Action, Cinema, Virtual Reality, Oculus, HTC Vive, PSVR, Adventure, Trailer, Movie Trailer, Oculus Quest, Oculus Go, HTC Cosmos, POV, Oculus Rift S, VR Trailer, VR Film, 3D 360 First Person POV, 3D VR Film, Major Crimes, Nikita, Kick-ass Franchise, Kick-ass, Kick-ass 2, The closer, Ilya Rozhkov, Rogue Initiative, Sergey Selyanov, CTB Film Company, Sony Playstation, VR Headset, HMD, IC-cam, VR innovation, Breakthrough technology, Modern Cinema">
+        <link rel="stylesheet" type="text/css" href="css/style3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"></script>
+	<script>
+        heavyImage = new Image();
+        heavyImage.src = "openpageimg/agentemerson.png";
+	</script>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <link href="dist/lity.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <script src="dist/lity.js"></script>
+        <script type="text/javascript" src="ipasset/jquery.ipanorama.min.js"></script>
+        <script type="text/javascript" src="ipasset/three.min.js"></script>
+        <link rel="stylesheet" href="ipasset/effect.css">
+        <link rel="stylesheet" href="ipasset/ipanorama.css">
+        <link rel="stylesheet" href="ipasset/ipanorama.theme.default.css">
+        <link rel="stylesheet" href="ipasset/ipanorama.theme.modern.css">
+        <link rel="stylesheet" href="ipasset/ipanorama.theme.dark.css">
+		<script>history.replaceState({'id':'index'},'','index.html');</script>
+<style id="stylehere">
+</style>
+    </head>
+    <body>
+		<div class="menuButton" id="menuButton" onclick="openMenu()"><img class="hamburger" src="openpageimg/hamburger.png"></div>
+		<div class="backgroundFull">
+			<div class="blackBG"></div>
+			<div class="fullscreen-bg" id="bg-video">
+		<video autoplay="" muted="" loop="" playsinline="" class="openPageVideo" id="videoloading">
+		<source id="videoPoster" src="movies/background7.mp4" type="video/mp4">
+				</video></div>
+			<img src="openpageimg/vignette.png" class="vignetteAE">
+			<img src="openpageimg/underlay.png" class="underlay" onclick="closeWindow(1)">
+			<div class="popupcon">
+				<div class="boopSpace"></div>
+				<div class="windowSpace">
+					<div class="starBox" id="stars"><div class="starName lyndsy" id="starLyndsy">Lyndsy Fonseca</div><div class="starName tony" id="starTony">Tony Denison</div></div>
+					<div class="absoultevniz"><img src="openpageimg/agentemerson.png" id="aeimgtest" class="aeimgtest">
+					<br>
+						<a class="pageOpenButtonsExtra" href="//https://youtu.be/R-8UgVje_lI" data-lity="" id="extra1">trailer</a><a class="pageOpenButtonsExtra" href="https://soundtracks.lnk.to/AgentEmerson" target="_blank" id="extra2">soundtrack</a>
+						<a class="pageOpenButtonSpecialSpecial" style="display: none;" id="watchTrailerSpecial" onclick="openBuyNow()"><nobr>Experience now</nobr></a>
+					<!--	<div class="pageOpenDescTextDiv pageOpenDescTextDivUP">11.22.19</div>
+						<div class="pageOpenDescTextDiv pageOpenDescTextDivDOWN">on all major VR platforms</div> -->
+					</div>
+					<div class="backgroundWindow" id="backgroundWindow"></div>
+							<div class="blackWindow" id="blackWindow"></div>
+							<div class="vignetteWindow" id="vignetteWindow"></div>
+					<!-- STORY PAGE -->
+						<div class="storyWindow pageOpenWindows pageOpenWindowsTouchStart" id="StoryWindow">
+							<img src="openpageimg/evillogo.png" class="evillogo evillogoL">
+							<img src="openpageimg/evillogo.png" class="evillogo evillogoR">
+							<p class="pageOpenCloseWindow" onclick="closeWindow(1)">×</p>
+							<div class="scrollDiv" id="scrollTop1">
+							<div class="pageMainTagline" id="pageMainTagLine">THE MOST DANGEROUS WEAPON IS YOU</div>
+							<img src="openpageimg/agentemerson.png" class="aeimgstory">
+							<p class="windowStoryFilm">A VR film directed by Ilya Rozhkov</p>
+							<div class="pageMainDescription" id="pageMainDescription">
+								<p class="DescriptionText">
+									In this immersive 360 degree first-person POV VR film, you the viewer are dropped into a visceral, action-packed 3D cinematic experience we are used to seeing in movie theaters, only this time YOU are the action hero.</p>
+								<p class="DescriptionText">CIA Operative David Emerson awakens to find himself a subject of an experimental program with his body under complete remote control of the imperious General (Tony Denison). With the aid of a rogue operative Alexandra (Lyndsy Fonseca), David has to retake charge of own actions and fight his way through the top security facility inside the most complex live-action VR film ever made.
+								</p></div>
+							<a class="worldExplore" href="world.html">EXPLORE THE WORLD OF AGENT EMERSON</a>
+							<a class="worldExploreiPad" href="worldmobile.html">EXPLORE THE WORLD OF AGENT EMERSON</a>
+							</div></div>
+					<!-- MAKING OF PAGE -->
+						<div class="makingOfWindow pageOpenWindows" id="Making-ofWindow">
+							<p class="pageOpenCloseWindow" onclick="closeWindow(1)">×</p>
+							<div class="pageMakingOfTabButtonsPortrait" id="pageMakingOfTabButtonsPortrait" style="display: none;">
+							<a class="pageMakingOfTabButtonPortraitMain" onclick="dropDownTabMenuPortrait()"><p class="pageMakingOfTabButtonPortraitMainText" id="portraitMainButton">Camera</p><p class="triangle" id="triangle"></p></a>
+								<a class="pageMakingOfTabButtonPortrait" onclick="openTab('Camera', 0)" style="display: none;" id="dropDownCamera">Camera</a>
+								<a class="pageMakingOfTabButtonPortrait" onclick="openTab('Sound', 0)" id="dropDownSound">Sound</a>
+								<a class="pageMakingOfTabButtonPortrait" onclick="openTab('Color', 0)" id="dropDownColor">Color</a>
+								<a class="pageMakingOfTabButtonPortrait" onclick="openTab('Music', 0)" id="dropDownMusic">Music</a>
+							</div>
+							<div class="pageMakingOfTabButtons">
+								<a class="pageMakingOfTabButton buttonTabPressed" onclick="openTab('Camera', 0)" id="tabCameraButton">Camera</a>
+								<a class="pageMakingOfTabButton" onclick="openTab('Sound', 0)" id="tabSoundButton">Sound</a>
+								<a class="pageMakingOfTabButton" onclick="openTab('Color', 0)" id="tabColorButton">Color</a>
+								<a class="pageMakingOfTabButton" onclick="openTab('Music', 0)" id="tabMusicButton">Music</a>
+							</div>
+							<div class="pageMakingOfTabs pageOpenWindowsTouchStart">
+								<div class="pageMakingOfTab" id="tabCamera"><div class="mainPagePopupText">
+									<div class="tabCameraC"><p class="techPopupText1">Identity Capture Camera</p><p class="techPopupText2">enables the technology behind Agent Emerson</p>
+									<p class="techPopupText3">The making of the VR Film Agent Emerson demanded innovation as it was very challenging and complex on every level of the technical process. To capture our first person POV film appearing seamlessly as one continuous shot in high quality 360 VR 3D filled with action, AND without disturbing motion to the viewer as 'Agent Emerson,' our team designed and developed a unique camera to capture the immersive intensity.</p>
+									<p class="techPopupText3">The most complex shot was the long continuous fight scene where 'Alexandra' (Lyndsy Fonseca), 'The General' (Tony Denison) and the guards walk from one camera into another and get up-close to the cameras. For the viewer to feel fully immersed into the action of the katana battle - as they are 'Agent Emerson', we were able to achieve the direct physical interaction with 'Emerson' in movement, creating one of the most complicated sequences ever filmed in VR 360 3D.</p>
+									<p class="techPopupText3">Our proprietary IC-Cam (Identity Capture Camera) is a head-mounted camera rig system capable of shooting 360 degrees stereoscopic (3D) video with the body in the field of view and no blind spots. The 21-camera, 3-axis stabilization system compensates for all the movements of the operator, resulting in a smooth camera movement, without uncomfortable motion for the audience watching the filmed footage in a VR headset.</p>
+									<div class="tabCameraC centerDiv"><img src="mainpageimg/techpic2.png" class="techPopupImg" onclick="zoomIn(this)"><img src="mainpageimg/techpic3.jpeg" class="techPopupImg" onclick="zoomIn(this)"></div>
+									<p class="techPopupText3">As available standard stitching techniques were inadequate for the amount of action, our engineers utilized a hybrid of existing software and created new algorithms, developing a new dynamic stitching system which also solved 3D complications on the sphere poles.</p></div>
+									<div class="tabCameraC">
+									<p class="techPopupText3">When it came to the arduous task of the CGI, the scope of Agent Emerson and the very nature of filming in VR needed a new and state-of-the-art way of problem-solving for creating the high-level VFX seen on-screen. A good example is a scene where the viewer as 'Agent Emerson' is falling from the sky, which not only required modeling of 40,000 miles of visible photorealistic environment in every direction, but also creating an adaptive 3D algorithm to achieve high fidelity 3D as far as horizon, for every little detail to convey the dimension of the sky you're falling from. Moreover, the film involves a custom spherical rotation algorithm (based on a complex mathematical model) which adjusts the 3D for the direction of viewer's eyesight, so the 3D stays crisp and comfortable and never is a subject of ghosting, no matter how close the object is or even if it's on the poles.</p>
+									</div>
+									<div class="extraboop"></div>
+									</div>
+								</div>
+								<div class="pageMakingOfTab" style="display: none;" id="tabMusic">
+									<div class="mainPagePopupText">
+									<div class="tabCameraC">
+										<p class="techPopupText2 techPopupTextBoop">THE CONSTANT TENSION OF SOUND EVOLVING, <br class="notOnPort">DECONSTRUCTING, THEN REFORMING AGAIN TELLS THE STORY</p>
+										<p class="techPopupText3">At the heart of Agent Emerson soundtrack are innovative techniques used to seamlessly blend the acoustic and analog electronic musical elements into each other, making them one new sound being both at the same time, thus creating the signature musical style of the film. Our score becomes a fluid, morphing spectrum that is continually evolving with the drama.</p>
+										<p class="techPopupText3">Using the cello to represent our main character, we recorded world-class cellist <a href="https://tinaguo.com/" target="_blank" class="techPopupTextLink">Tina Guo</a> (Wonder Woman, Dunkirk) on both acoustic and electric cello. We recorded Tina with five different microphones (instead of the usual 1 or 2), each with a unique character and color, and then processed the audio through analog distortion, filters, guitar pedals, different types of delays, physical spring reverb and more to create these new sounds and shapes with her cello and our orchestra, solo violin, percussion and electronics.</p>
+										<p class="techPopupText3">For example, in one particular dramatic moment in the film,  the viewer will experience a music transition from acoustic to electronic, created with 50 separate pieces of audio including acoustic cello, sound effects of a motorcycle doppler effect as well as pure electricity bringing (all in a few seconds of music) the unique musical and dramatic feeling.</p>
+									</div>
+									<div class="tabCameraC centerDiv"><img src="mainpageimg/notes.png" class="techPopupImg" onclick="zoomIn(this)"><img src="mainpageimg/tina.jpg" class="techPopupImg" onclick="zoomIn(this)"></div>
+									<div class="extraboop"></div>
+									</div>
+								</div>
+								<div class="pageMakingOfTab" style="display: none;" id="tabColor">
+									<div class="mainPagePopupText">
+									<div class="tabCameraC">
+										<p class="techPopupText2 techPopupTextBoop">Color grading Agent Emerson required <br class="notOnPort"> a design of an entirely new workflow</p>
+										<p class="techPopupText3">Appearing as one continuous shot, Agent Emerson demanded to create a new innovative way to transition color between each scene seamlessly. The cinematic experience was captured in 3D, which means color needed to be matched for each eye perfectly to preserve the immersion and achieve the highest level of comfort for the viewer.</p>
+										<p class="techPopupText3">Working with color in VR is very different from the process we used in traditional film: when you're coloring a VR film, you are still working with a flat rectangular picture, but have to consider every subtle impact made on the color of a whole new virtual world.</p>
+									</div>
+									<div class="tabCameraC centerDiv"><img src="mainpageimg/colornodes.png" class="techPopupImg" onclick="zoomIn(this)"><img src="mainpageimg/colorstation.png" class="techPopupImg" onclick="zoomIn(this)"></div>
+									<div class="extraboop"></div>
+									</div>							
+								</div>
+								<div class="pageMakingOfTab" style="display: none;" id="tabSound">
+									<div class="mainPagePopupText">
+									<div class="tabCameraC">
+										<p class="techPopupText2 techPopupTextBoop">From an audio standpoint, VR is very different than <br class="notOnPort">the current standardization of Surround mixing</p>
+										<p class="techPopupText3">Things have to be considered not only by left, right, front and back, but additionally height and depth are included in the mixing field. This creates a feeling of true immersion, as now we are able to follow an object within a 360 degree sound field.</p>
+										<p class="techPopupText3">Thinking in a way that will not only trigger the viewer to look in a certain direction, but also keeping it interesting and believable are now the new challenges, which can either make, or break a story.</p>
+									</div>
+									<div class="tabCameraC centerDiv"><img src="mainpageimg/soundconsole.png" class="techPopupImg" onclick="zoomIn(this)"><img src="mainpageimg/soundplayback.png" class="techPopupImg" onclick="zoomIn(this)"></div>
+										<div class="extraboop"></div>
+									</div>								
+								</div>
+							</div>
+						</div>
+					<!-- CAST AND Cast-and-crew PAGE -->
+						<div class="pageOpenWindows creatorsWindow pageOpenWindowsTouchStart" id="Cast-and-crewWindow">
+						<p class="pageOpenCloseWindow" onclick="closeWindow(1)">×</p>
+				<div class="mainPagePopupTextCreators">
+					<img src="creatorsimg/poster.jpg" class="creatorsImgImg">
+				<div class="creatorsDiv" id="creatorsDiv">
+					<!-- <div class="upButton" style="opacity: 0;" id="upButtonCreators"><center><img class="scrollArrowUp" src="openpageimg/button_switchtomain.png" id="upButtonCreatorsArrow"></center></div> -->
+					<div class="creatorsBoop">&nbsp;</div>
+					<div class="creatorsCenter"><p class="creatorsTextTitleLine">Directed by</p>
+					<p class="creatorsIlyaRozhkov">Ilya Rozhkov</p>
+					</div>
+					<div class="creatorsLine"><p class="creatorsTextTitleLine">Produced by:</p>
+					<p class="creatorsTextNameLine">Pete Blumel,</p>
+					<p class="creatorsTextNameLine">Cathy Twigg,</p>
+					<p class="creatorsTextNameLine">Sergey Selyanov,</p>
+					<p class="creatorsTextNameLine">Ilya Rozhkov</p>
+					</div>
+					<div class="creatorsLine"><p class="creatorsTextTitleLine">Written by:</p>
+					<p class="creatorsTextNameLine">Ilya Rozhkov,</p>
+					<p class="creatorsTextNameLine">Joshua King</p>
+					</div>
+					<div class="creatorsLine"><p class="creatorsTextTitleLine">Starring:</p>
+					<p class="creatorsTextNameLine">Lyndsy Fonseca,</p>
+					<p class="creatorsTextNameLine">Tony Denison,</p>
+					<p class="creatorsTextNameLine">Andrew Bowen,</p>
+					<p class="creatorsTextNameline">Ben Aycrigg</p>
+					</div>
+					<div class="creatorsCollumn creatorsCollumnLeft">
+						<p class="creatorsTextTitle">Cinematography by</p>
+						<p class="creatorsTextName">Alvaro M. Blanco</p>
+						<p class="creatorsTextBreak"><br></p>
+						
+						<p class="creatorsTextTitle PortraitOnly">VFX and Camera Design by</p>
+						<p class="creatorsTextName PortraitOnly">Galaxy Vision</p>
+						<p class="creatorsTextBreak PortraitOnly"><br></p>	
+						
+						<p class="creatorsTextTitle">VR Producer</p>
+						<p class="creatorsTextName">Anatoliy Sverchkov</p>
+						<p class="creatorsTextName displaynone">&nbsp;</p>
+						<p class="creatorsTextName displaynone">&nbsp;</p>
+						<p class="creatorsTextBreak"><br></p>
+						
+						<p class="creatorsTextTitle PortraitOnly">Associate Producers</p>
+						<p class="creatorsTextName PortraitOnly">Brad Etheridge</p>
+						<p class="creatorsTextName PortraitOnly">Hrish Lotlikar</p>
+						<p class="creatorsTextName PortraitOnly">Nadine Jolson</p>
+						<p class="creatorsTextBreak PortraitOnly"><br></p>
+						
+						<p class="creatorsTextTitle">Co-Producer</p>
+						<p class="creatorsTextName">Vasily Grigoriev</p>
+						<p class="creatorsTextBreak"><br></p>
+						
+						<p class="creatorsTextTitle PortraitOnly">Line Producer</p>
+						<p class="creatorsTextName PortraitOnly">Radhika Womack</p>
+						<p class="creatorsTextBreak PortraitOnly"><br></p>	
+						
+						<p class="creatorsTexttitle">VFX Supervisor</p>
+						<p class="creatorsTextName">Sergey Avdeev</p>
+						<p class="creatorsTextBreak"><br></p>
+						
+						<p class="creatorsTextTitle PortraitOnly">Music by</p>
+						<p class="creatorsTextName PortraitOnly">Corey Wallace</p>
+						<p class="creatorsTextBreak PortraitOnly"><br></p>	
+						
+						<p class="creatorsTextTitle">Production Design by</p>
+						<p class="creatorsTextName">Nate Jones</p>
+						<p class="creatorsTextBreak"><br></p>
+						
+						<p class="creatorsTextTitle PortraitOnly">Costume Design by</p>
+						<p class="creatorsTextName PortraitOnly">Edith Raya</p>
+						<p class="creatorsTextBreak PortraitOnly"><br></p>	
+					</div>
+					<div class="creatorsCollumn creatorsCollumnRight displaynone">
+						<p class="creatorsTextTitle">VFX and Camera Design by</p>
+						<p class="creatorsTextName">Galaxy Vision</p>
+						<p class="creatorsTextBreak"><br></p>	
+						
+						<p class="creatorsTextTitle">Associate Producers</p>
+						<p class="creatorsTextName">Brad Etheridge</p>
+						<p class="creatorsTextName">Hrish Lotlikar</p>
+						<p class="creatorsTextName">Nadine Jolson</p>
+						<p class="creatorsTextBreak"><br></p>
+						
+						<p class="creatorsTextTitle">Line Producer</p>
+						<p class="creatorsTextName">Radhika Womack</p>
+						<p class="creatorsTextBreak"><br></p>						
+						
+						<p class="creatorsTextTitle">Music by</p>
+						<p class="creatorsTextName">Corey Wallace</p>
+						<p class="creatorsTextBreak"><br></p>	
+						
+						<p class="creatorsTextTitle">Costume Design by</p>
+						<p class="creatorsTextName">Edith Raya</p>
+						<p class="creatorsTextBreak"><br></p>	
+					</div>
+					<div class="creatorsImages">
+					<img src="creatorsimg/ROGUE_logo.png" class="creatorsLogo">
+					<img src="creatorsimg/CTB_logo.png" class="creatorsLogo">
+					<img src="creatorsimg/SEREIN_logo.png" class="creatorsLogo">
+					</div>
+					<!-- <div class="downButton" id="downButtonCreators"><center><img class="scrollArrowDown" src="openpageimg/button_switchtomain.png" id="downButtonCreatorsArrow"></center></div> -->
+				</div>
+			</div>
+					</div>
+					<!-- PRESS PAGE -->
+						<div class="pressWindow pageOpenWindows pageOpenWindowsTouchStart" id="PressWindow">
+						<p class="pageOpenCloseWindow" onclick="closeWindow(1)">×</p>
+							<div class="scrollDiv" id="scrollTop3">
+						<div class="pressContact"><div class="pressWindowContact"><p class="pressWindowContactP fontweight600">PR / Media Contact:&nbsp;</p><p class="pressWindowContactP">Nadine Jolson&nbsp;</p><p class="pressWindowContactP">&nbsp;/&nbsp;</p>
+							<a href="tel:3106143214" class="pressWindowContactA">310 - 614 - 3214&nbsp;</a><p class="pressWindowContactP">&nbsp;/&nbsp;</p><a class="pressWindowContactA" href="mailto:jolsoncreativePR@mac.com">jolsoncreativePR@mac.com</a><p class="pressWindowContactP">&nbsp;&nbsp;|&nbsp;&nbsp;</p><a class="pressWindowContactA underlined" href="presskit/AgentEmerson_PressKit.pdf" target="_blank">Download Press Kit</a>
+								</div></div>
+							<div class="mainPagePopupText pressPortrait"><a href="https://wirela.com/post/189153375521/vr-pick-agent-emerson-a-gamechanger" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">'Agent Emerson' - A Gamechanger Pushing the Envelope in VR Moviemaking </p><hr class="pressPopupHr"><p class="pressPopupPN">WIRE LA</p><p class="pressPopupPP">|</p><p class="pressPopupPD">11/2019</p></a><a href="https://www.roadtovr.com/live-action-immersive-thriller-agent-emerson-launches-in-november-trailer-here/" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">360° Live-action Thriller 'Agent Emerson' Launches in November, Trailer Here</p><hr class="pressPopupHr"><p class="pressPopupPN">Road To VR</p><p class="pressPopupPP">|</p><p class="pressPopupPD">10/2019</p></a><a href="https://variety.com/2019/digital/news/watch-the-trailer-for-agent-emerson-vr-film-available-on-headsets-11-22-exclusive-1203347000/" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">Watch the Trailer for ‘Agent Emerson’ VR Film, Available on Headsets Nov. 22</p><hr class="pressPopupHr"><p class="pressPopupPN">Variety</p><p class="pressPopupPP">|</p><p class="pressPopupPD">09/2019</p></a><a href="https://cgsociety.org/news/article/4662/bts-agent-emerson-vr-film" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">BTS: 'Agent Emerson'<br>VR Film</p><hr class="pressPopupHr"><p class="pressPopupPN">CG Society</p><p class="pressPopupPP">|</p><p class="pressPopupPD">09/2019</p></a><a href="http://gametyrant.com/news/upcoming-vr-action-movie-agent-emerson-puts-you-in-the-seat-of-the-main-character" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">Upcoming VR Action Movie 'Agent Emerson' Puts You In The Seat Of The Main Character</p><hr class="pressPopupHr"><p class="pressPopupPN">Game Tyrant</p><p class="pressPopupPP">|</p><p class="pressPopupPD">10/2019</p></a><a href="https://vrroom.buzz/vr-news/tech/how-cam-made-agent-emerson-reality" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">How This Cam Made<br>'Agent Emerson' A Reality</p><hr class="pressPopupHr"><p class="pressPopupPN">VR Room</p><p class="pressPopupPP">|</p><p class="pressPopupPD">09/2019</p></a><a href="https://splashmags.com/index.php/2019/10/12/in-conversation-with-ilya-rozhkov-here-comes-agent-emerson-a-vr-film/#gsc.tab=0" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">In Conversation with Ilya Rozhkov - Here Comes 'Agent Emerson', a VR Film</p><hr class="pressPopupHr"><p class="pressPopupPN">Splash Magazines</p><p class="pressPopupPP">|</p><p class="pressPopupPD">10/2019</p></a><a href="http://shuzix.com/16980.html" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">The Unique Film 'Agent Emerson' is the complete protagonist persective</p><hr class="pressPopupHr"><p class="pressPopupPN">Shuzix</p><p class="pressPopupPP">|</p><p class="pressPopupPD">10/2019</p></a><a href="https://www.abc-7.com/story/41102640/hollywood-action-cinema-is-coming-to-vr-agent-emerson-hits-oculus-htc-and-playstation-stores-nov-22nd" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">Hollywood Action Cinema<br>is Coming to VR</p><hr class="pressPopupHr"><p class="pressPopupPN">ABC 7</p><p class="pressPopupPP">|</p><p class="pressPopupPD">09/2019</p></a><a href="https://www.vrplayer.fr/psvr-agent-emerson-film-vr/" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">PlayStation VR: 'Agent Emerson', a VR movie as if you were there!</p><hr class="pressPopupHr"><p class="pressPopupPN">VRPlayer</p><p class="pressPopupPP">|</p><p class="pressPopupPD">10/2019</p></a><a href="https://www.realite-virtuelle.com/agent-emerson-thriller-vr/" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">'Agent Emerson' VR thriller to be launched in November</p><hr class="pressPopupHr"><p class="pressPopupPN">Realite Virtuelle</p><p class="pressPopupPP">|</p><p class="pressPopupPD">10/2019</p></a><a href="https://mixed.de/vr-film-agent-emerson-gefangen-im-koerper-eines-superagenten/" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">VR movie 'Agent Emerson': Caught in the body of a super agent</p><hr class="pressPopupHr"><p class="pressPopupPN">Mixed</p><p class="pressPopupPP">|</p><p class="pressPopupPD">10/2019</p></a><a href="http://www.7tin.cn/news/135042.html" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">First Person POV VR Movie<br>'Agent Emerson'</p><hr class="pressPopupHr"><p class="pressPopupPN">7 Tin</p><p class="pressPopupPP">|</p><p class="pressPopupPD">10/2019</p></a><a href="https://www.nbc-2.com/story/41102640/hollywood-action-cinema-is-coming-to-vr-agent-emerson-hits-oculus-htc-and-playstation-stores-nov-22nd" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">Hollywood action in VR is coming to Oculus and HTC November 22nd, PSVR soon to follow</p><hr class="pressPopupHr"><p class="pressPopupPN">NBC 2</p><p class="pressPopupPP">|</p><p class="pressPopupPD">09/2019</p></a><a href="https://www.nyfa.edu/student-resources/qa-ilya-rozhkov-agent-emerson/" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">Q&amp;A with NYFA Filmmaking Alum Ilya Rozhkov, Director of the Groundbreaking VR Film 'Agent Emerson'</p><hr class="pressPopupHr"><p class="pressPopupPN">NYFA Blog</p><p class="pressPopupPP">|</p><p class="pressPopupPD">10/2019</p></a><a href="https://finance.yahoo.com/news/watch-trailer-agent-emerson-vr-170033330.html" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">Watch the Trailer<br>for 'Agent Emerson' VR Film</p><hr class="pressPopupHr"><p class="pressPopupPN">Yahoo</p><p class="pressPopupPP">|</p><p class="pressPopupPD">09/2019</p></a><a href="https://frikigamers.com/2019/09/trailer-de-la-pelicula-agent-emerson-vr-disponible-el-22-de-noviembre/" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">Trailer of the Movie<br>'Agent Emerson' VR</p><hr class="pressPopupHr"><p class="pressPopupPN">Friki Gamers</p><p class="pressPopupPP">|</p><p class="pressPopupPD">09/2019</p></a><a href="https://www.nasdaq.com/articles/watch-the-trailer-for-agent-emerson-vr-film-available-on-headsets-nov.-22-exclusive-2019" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">Watch the Trailer for ‘Agent Emerson’ VR Film, Available on Headsets Nov. 22</p><hr class="pressPopupHr"><p class="pressPopupPN">Nasdaq</p><p class="pressPopupPP">|</p><p class="pressPopupPD">09/2019</p></a><a href="https://innotechtoday.com/agent-emerson/?cn=bWVudGlvbg==" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">Lyndsy Fonseca pulls a 360 in VR Film 'Agent Emerson'</p><hr class="pressPopupHr"><p class="pressPopupPN">Innovation&amp;Tech Today</p><p class="pressPopupPP">|</p><p class="pressPopupPD">06/2017</p></a><a href="https://www.avinteractive.com/news/inventive-engineers-take-on-vr-motion-sickness-challenge-19-05-2017/" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">Inventive engineers take on VR motion sickness challenge</p><hr class="pressPopupHr"><p class="pressPopupPN">AV Magazine</p><p class="pressPopupPP">|</p><p class="pressPopupPD">05/2017</p></a><a href="https://haptic.al/interview-movie-director-ilya-rozhkov-76fe6659a731" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">Shooting a virtual reality movie requires a different mindset and skill</p><hr class="pressPopupHr"><p class="pressPopupPN">Haptical</p><p class="pressPopupPP">|</p><p class="pressPopupPD">05/2017</p></a><a href="https://www.alistdaily.com/media/rogue-initiative-using-vr-launch-larger-entertainment-properties/" target="_blank" class="pressPopupA pressPopupAR"><p class="pressPopupP">The Rogue Initiative is using VR to launch larger entertainment properties</p><hr class="pressPopupHr"><p class="pressPopupPN">A-List Daily</p><p class="pressPopupPP">|</p><p class="pressPopupPD">03/2017</p></a><a href="https://variety.com/2017/digital/news/lyndsy-fonseca-tony-denison-vr-movie-agent-emerson-1202001326/" target="_blank" class="pressPopupA pressPopupAL"><p class="pressPopupP">Lyndsy Fonseca, Tony Denison star in VR Movie Agent Emerson</p><hr class="pressPopupHr"><p class="pressPopupPN">Variety</p><p class="pressPopupPP">|</p><p class="pressPopupPD">03/2017</p></a>				<div class="pressBoop"></div>
+				</div>
+							</div></div>
+				</div>
+				<div class="menuBottom" id="menuBottom"><div class="pageOpenButtons">
+			<a class="pageOpenButton" onclick="openWindow('Story', 0, 1)" id="StoryButton">Story</a>
+			<a class="pageOpenButton" onclick="openWindow('Making-of', 0, 1)" id="Making-ofButton">Making Of</a>
+           <a class="pageOpenButtonSpecial" onclick="openBuyNow()"><nobr>Experience now</nobr></a>
+			<a class="pageOpenButton" onclick="openWindow('Cast-and-crew', 0, 1)" id="Cast-and-crewButton"><nobr>Cast &amp; Crew</nobr></a>
+			<a class="pageOpenButton" onclick="openWindow('Press', 0, 1)" id="PressButton">Press</a>
+			</div></div>
+				
+				
+			<div class="footer" id="footer" style="display: flex;">			
+			<div class="Logos LogosLeft">
+				<nobr><a href="https://therogueinitiative.com/" target="_blank"><img class="footerImg" src="footerimg/logo_rogue.png"></a>
+				<a href="http://ctb.ru/en" target="_blank"><img class="footerImg" src="footerimg/logo_ctb.png"></a>
+				<a href="https://sereinentertainment.com/" target="_blank"><img class="footerImg" src="footerimg/logo_serein.png"></a></nobr>
+			</div>
+			<div class="footerCenterDiv"><div class="footerLinksP textalignright">
+				<a class="footerLink" onclick="openContact()">CONTACT</a> | <a class="footerLink" href="presskit/AgentEmerson_PressKit.pdf" target="_blank">PRESS KIT</a>
+			</div>
+				<div class="AllrightsReserved"><a class="footerLink2" onclick="openPrivacyPolicy()">PRIVACY POLICY</a> | <a class="footerLink2" onclick="openTermsOfUse()">TERMS OF USE</a>&nbsp;© 2019 Agent Emerson LLC. All rights reserved.</div></div>
+	
+			<div class="Logos LogosRight">
+				<a href="https://www.instagram.com/agentemerson_vr/" target="_blank"><img class="footerSvg" src="footerimg/logo_instagram.svg"></a>
+				<a href="https://twitter.com/AgentEmerson_VR" target="_blank"><img class="footerSvg" src="footerimg/logo_twitter.svg"></a>
+				<a href="https://www.facebook.com/AgentEmersonVRFilm/" target="_blank"><img class="footerSvg" src="footerimg/logo_facebook.svg"></a>
+			</div>
+		</div>
+			</div>
+		</div>
+			
+<!-- MENU HERE --->
+			<div class="menuDiv" id="menuDiv" style="left: -31vw;">
+			<p class="closeMenu" onclick="closeMenu()">×</p><img src="openpageimg/agentemerson.png" class="menuAEIMG" onclick="closeMenu()">
+				<hr class="hrMenu">
+				<a class="menuItem" onclick="openWindow('Story', 1, 1)">Story</a>
+					<hr class="hrMenu">
+				<!--	<a class="menuSubItem" onclick="openWindow('Story', 1, 1)">Synopsis</a><hr class="hrMenu">
+					<a class="menuSubItem" href="world.html">World</a><hr class="hrMenu"> -->
+				<a class="menuItem" onclick="openWindow('Making-of', 1, 1)">Making Of</a><hr class="hrMenu">
+				<!--	<a class="menuSubItem" onclick="openTab('Camera', 1, 1)">Camera</a><hr class="hrMenu">
+					<a class="menuSubItem" onclick="openTab('Music', 1, 1)">Music</a><hr class="hrMenu">
+					<a class="menuSubItem" onclick="openTab('Color', 1, 1)">Color</a><hr class="hrMenu">
+					<a class="menuSubItem" onclick="openTab('Sound', 1, 1)">Sound</a><hr class="hrMenu"> -->
+				<a class="menuItem" href="//https://youtu.be/R-8UgVje_lI" onclick="closeMenu()" data-lity="">Watch Trailer</a><hr class="hrMenu">
+				<a class="menuItem" onclick="openWindow('Cast-and-crew', 1, 1)">Cast &amp; Crew</a><hr class="hrMenu">
+				<a class="menuItem" onclick="openWindow('Press', 1, 1)">Press</a><hr class="hrMenu">
+				<div class="footerMenu" id="footerMenu" style="display: none;">			
+			<div class="footerMenuLinks">
+				<a class="footerMenuLink" onclick="openContact()">CONTACT</a> | <a class="footerMenuLink" href="presskit/AgentEmerson_PressKit.pdf" target="_blank">PRESS KIT</a>
+			</div>
+								<div class="footerMenuLogosSocial">
+				<a href="https://www.instagram.com/agentemerson_vr/" target="_blank"><img class="footerMenuSvg" src="footerimg/logo_instagram.svg"></a>
+				<a href="https://twitter.com/AgentEmerson_VR" target="_blank"><img class="footerMenuSvg" src="footerimg/logo_twitter.svg"></a>
+				<a href="https://www.facebook.com/AgentEmersonVRFilm/" target="_blank"><img class="footerMenuSvg" src="footerimg/logo_facebook.svg"></a>
+			</div>	
+					<div class="footerMenuLinks2"><a class="footerMenuLink2" onclick="openPrivacyPolicy()">PRIVACY POLICY</a> | <a class="footerMenuLink2" onclick="openTermsOfUse()">TERMS OF USE</a></div>
+				<div class="AllrightsReservedMenu">© 2019 Agent Emerson LLC. All rights reserved.</div>
+<div class="footerMenuLogosStudio">
+				<nobr><a href="https://therogueinitiative.com/" target="_blank"><img class="footerMenuImg" src="footerimg/logo_rogue.png"></a>
+				<a href="http://ctb.ru/en" target="_blank"><img class="footerMenuImg" src="footerimg/logo_ctb.png"></a>
+				<a href="https://sereinentertainment.com/" target="_blank"><img class="footerMenuImg" src="footerimg/logo_serein.png"></a></nobr>
+			</div>				
+		</div>
+			</div>
+		<div class="menuBlackScreen" onclick="closeMenu()" id="menuBlackScreen"></div>	
+	<div class="pageBuyNow" id="buyNow">
+		<p class="pageOpenCloseWindow" onclick="closeBuyNow()">×</p>
+		<a class="buyButton" href="https://www.viveport.com/apps/1ece1d6d-04ff-450b-9893-54924004b6e7/Agent_Emerson/" target="_blank" id="buy1">
+				<img src="openpageimg/viveport_logo.png" class="buyButtonPic">
+		</a><br class="hideOnPC" id="br1">
+		<a class="buyButton" href="https://store.steampowered.com/app/1207030/Agent_Emerson/" target="_blank" id="buy2">
+				<img src="openpageimg/steam.png" class="buyButtonPic">
+		</a><br class="hideOnPC" id="br2">
+		<a class="buyButton" onclick="oculusDropDown()" id="buy3">
+				<img src="openpageimg/oculus_logo.png" class="buyButtonPic">
+		</a><br class="hideOnPC">
+		<p class="soonButton" onmouseover="coomingSoon(3)" onmouseout="coomingSoonOut(3)" id="buy4">
+			<img class="soonImg" src="openpageimg/playstationvr_logo.png" id="soonb3">
+				<img class="soonImg" src="openpageimg/comingsoon.png" id="soont3" style="display: none;">
+		</p><br class="hideOnPC">
+			<a class="buyButton" href="https://www.oculus.com/experiences/rift/3202265829848790" target="_blank" style="display: none;" id="buyo1">
+				<img src="openpageimg/rift_s.png" class="buyButtonPic">
+		</a><br class="hideOnPC">
+			<p class="buyos" id="buyos1" style="display: none;">
+				<img src="openpageimg/slash.png" class="buyosImg">
+		</p>
+			<a class="buyButton" href="https://www.oculus.com/experiences/go/2800193046668553/" target="_blank" style="display: none;" id="buyo2">
+				<img src="openpageimg/go.png" class="buyButtonPic">
+		</a><br class="hideOnPC">
+			<p class="buyos" id="buyos2" style="display: none;">
+				<img src="openpageimg/slash.png" class="buyosImg">
+		</p>
+		<a class="buyButton" href="https://www.oculus.com/blog/play-rift-content-on-quest-with-oculus-link-available-now-in-beta/" target="_blank" style="display: none;" id="buyo3">
+				<img src="openpageimg/quest.png" class="buyButtonPic">
+		</a><br class="hideOnPC">
+</div>
+		<div class="footerPopup" id="PrivacyPolicy"><div class="footerPopupText" id="PrivacyPolictyText">
+<div class="WordSection1">
+
+<p class="Body" align="center" style="text-align:center"><b><span class="Glava">Privacy Policy</span></b><span class="MsoNormal"> </span></p>
+
+<p class="Body"><span class="MsoNormal">At Agent Emerson, we collect and manage user data according to the following Privacy Policy.</span></p>
+
+<p class="Body"><b><span class="MsoNormal">Data Collected</span></b><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,serif"> </span></p>
+
+<p class="Body"><span class="MsoNormal">We collect anonymous data from every visitor of the Website to monitor traffic and fix bugs. For example, we collect information like web requests, the data sent in response to such requests, the Internet Protocol address, the browser type, the browser language, and a timestamp for the request.</span></p>
+
+<p class="Body"><span class="MsoNormal">We also use various technologies to collect information, and this may include sending cookies to your computer. Cookies are small data files stored on your hard drive or in your device memory that helps us to improve our services and your experience, see which areas and features of our services are popular and count visits. We may also collect information using web beacons (also known as "tracking pixels"). Web beacons are electronic images that may be used in our services or emails and to track count visits or understand usage and campaign effectiveness.</span></p>
+
+<p class="Body"><b><span class="MsoNormal">Use of the Data</span></b><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,serif"> </span></p>
+
+<p class="Body"><span class="MsoNormal">We only use your personal information to provide you the Agent Emerson services or to communicate with you about the Website or the services.</span></p>
+
+<p class="Body"><span class="MsoNormal">We employ industry standard techniques to protect against unauthorized access of data about you that we store, including personal information.</span></p>
+
+<p class="Body"><span class="MsoNormal">We do not share personal information you have provided to us without your consent, unless:</span></p><ul>
+<li>Doing so is appropriate to carry out your own request</li>
+<li>We believe it's needed to enforce our legal agreements or that is legally required</li>
+<li>We believe it's needed to detect, prevent or address fraud, security or technical issues</li>
+otherwise protect our property, legal rights, or that of others
+</ul>
+<p></p>
+
+<p class="Body"><b><span class="MsoNormal">Sharing of Data</span></b><span class="MsoNormal">
+</span></p>
+
+<p class="Body"><span class="MsoNormal">We don't share your personal information with third parties. Aggregated, anonymized data is periodically transmitted to external services to help us improve the Website and service.</span></p>
+
+<p class="Body"><span class="MsoNormal">We may allow third parties to provide analytics services. These third parties may use cookies, web beacons and other technologies to collect information about your use of the services and other websites, including your IP address, web browser, pages viewed, time spent on pages, links clicked and conversion information.</span></p>
+			
+<p class="Body"><span class="MsoNormal">We also use social buttons provided by services like Twitter, Instagram and Facebook. Your use of these third party services is entirely optional. We are not responsible for the privacy policies and/or practices of these third party services, and you are responsible for reading and understanding those third party services' privacy policies.</span></p>
+
+<p class="Body"><b><span class="MsoNormal">Security</span></b><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,serif"> </span></p>
+
+<p class="Body"><span class="MsoNormal">We take reasonable steps to protect personally identifiable information from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. But, you should keep in mind that no Internet transmission is ever completely secure or error-free.</span></p>
+
+<p class="Body"><b><span class="MsoNormal">About Children</span></b><span class="MsoNormal">
+</span></p>
+
+<p class="Body"><span class="MsoNormal">The Website is not intended for children under the age of 13. We do not knowingly collect personally identifiable information via the Website from visitors in this age group.</span></p>
+
+<p class="Body"><b><span class="MsoNormal">Changes to the Privacy Policy</span></b><span class="MsoNormal">
+</span></p>
+
+<p class="Body"><span class="MsoNormal">We may amend this Privacy Policy from time to time. Use of information we collect now is subject to the Privacy Policy in effect at the time such information is used.</span></p>
+			
+<p class="Body"><span class="MsoNormal">If we make major changes in the way we collect or use information, we will notify you by posting an announcement on the Website.</span></p>
+
+</div>		
+		</div>
+		<p class="pageOpenCloseWindow contactXMobile" onclick="closeFooterPopup()">×</p>			
+</div>
+		<div class="footerPopup" id="TermsOfUse"><div class="footerPopupText" id="TermsOfUseText">
+<div class="WordSection1">
+
+<p class="Body" align="center" style="text-align:center"><b><span class="Glava">Terms of Use</span></b><span class="MsoNormal"> </span></p>
+
+<p class="Body"><span class="MsoNormal">Welcome to the Agent Emerson, LLC website (the "Website").</span></p>
+	
+<p class="Body"><span class="MsoNormal">Agent Emerson, LLC provides this Website and Services (located at AgentEmerson.com) to you subject to the notices, terms, and conditions set forth in these terms (the "Terms of Use"). In addition, when you use any of our Services, you will be subject to the rules, guidelines, policies, terms, and conditions applicable to such service, and they are incorporated into this Terms of Use by this reference.</span></p>
+	
+<p class="Body"><span class="MsoNormal">These Terms of Use are effective as of October 05, 2018.</span></p>
+	
+<p class="Body"><span class="MsoNormal">Your eligibility for use of the Website is contingent upon meeting the following conditions:</span></p><ul>
+<li>You are at least 13 years of age</li>
+<li>You use the Website and Services according to these Terms of Use and all applicable laws and regulations determined by the state and country of residence</li>
+<li>You provide complete and accurate registration information and maintain accurate registration information on the Webite</li>
+<li>You agree and understand that <span class="website_name">Agent Emerson, LLC</span> may, at any time, and without prior notice, revoke and/or cancel your access if you fail to meet these criteria or violate any portion of these Terms of Use</li>
+</ul>
+<p></p>
+
+<p class="Body"><b><span class="MsoNormal">Use of this Website</span></b><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,serif"> </span></p>
+
+<p class="Body"><span class="MsoNormal">In connection with your use of our Website, you must act responsibly and exercise good judgment. Without limiting the foregoing, you will not:</span></p><ul>
+<li>Violate any local, state, provincial, national, or other law or regulation, or any order of a court</li>
+<li>Infringe the rights of any person or entity, including without limitation, their intellectual property, privacy, publicity or contractual rights</li>
+<li>Interfere with or damage our Services, including, without limitation, through the use of viruses, cancel bots, Trojan horses, harmful code, flood pings, denial-of-service attacks, packet or IP spoofing, forged routing or electronic mail address information or similar methods or technology</li>
+<li>Use automated scripts to collect information or otherwise interact with the Services or the Website</li>
+<li>Enter into this agreement on behalf of another person or entity without consent or the legal capacity to make such agreements as a representative of an organization or entity</li>
+</ul>
+<p></p>
+
+<p class="Body"><b><span class="MsoNormal">Intellectual Property</span></b><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,serif"> </span></p>
+
+<p class="Body"><span class="MsoNormal">All code, text, software, scripts, graphics, files, photos, images, logos, and materials contained on this Website, or within the Services, are the sole property of Agent Emerson, LLC.</span></p>
+
+<p class="Body"><span class="MsoNormal">Unauthorized use of any materials contained on this Website or within the Service may violate copyright laws, trademark laws, the laws of privacy and publicity, and/or other regulations and statutes. If you believe that any of the materials infringe on any third party's rights, please contact Agent Emerson, LLC immediately at the email address provided on this Website.</span></p>
+
+<p class="Body"><b><span class="MsoNormal">Third Party Websites</span></b><span class="MsoNormal">
+</span></p>
+
+<p class="Body"><span class="MsoNormal">Our Website may link you to other sites on the Internet or otherwise include references to information, documents, software, materials and/or services provided by other parties. These websites may contain information or material that some people may find inappropriate or offensive.</span></p>
+
+<p class="Body"><span class="MsoNormal">These other websites and parties are not under our control, and you acknowledge that we are not responsible for the accuracy, copyright compliance, legality, decency, or any other aspect of the content of such sites, nor are we responsible for errors or omissions in any references to other parties or their products and services. The inclusion of such a link or reference is provided merely as a convenience and does not imply endorsement of, or association with, the Website or party by us, or any warranty of any kind, either express or implied.</span></p>
+
+<p class="Body"><b><span class="MsoNormal">Disclaimer of Warranty and Limitation of Liability</span></b><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,serif"> </span></p>
+
+<p class="Body"><span class="MsoNormal">The Website is provided "AS IS." appfigures, its suppliers, officers, directors, employees, and agents exclude and disclaim all representations and warranties, express or implied, related to this Website or in connection with the Services. You exclude Agent Emerson, LLC from all liability for damages related to or arising out of the use of this Website.</span></p>
+
+<p class="Body"><b><span class="MsoNormal">Changes to these Terms of Use</span></b><span class="MsoNormal">
+</span></p>
+
+<p class="Body"><span class="MsoNormal">Agent Emerson, LLC retains the right to, at any time, modify or discontinue, any or all parts of the Website without notice.</span></p>
+
+<p class="Body"><span class="MsoNormal">Additionally, Agent Emerson, LLC reserves the right, in its sole discretion, to modify these Terms of Use at any time, effective by posting new terms on the Website with the date of modification. You are responsible for reading and understanding the terms of this agreement prior to registering with, or using the Service. Your use of the Website and/or Services after any such modification has been published constitutes your acceptance of the new terms as modified in these Terms of Use.</span></p>
+
+<p class="Body"><b><span class="MsoNormal">Governing Law</span></b><span class="MsoNormal">
+</span></p>
+
+<p class="Body"><span class="MsoNormal">These Terms of Use and any dispute or claim arising out of, or related to them, shall be governed by and construed in accordance with the internal laws of the United States without giving effect to any choice or conflict of law provision or rule.</span></p>
+			
+<p class="Body"><span class="MsoNormal">Any legal suit, action or proceeding arising out of, or related to, these Terms of Use or the Website shall be instituted exclusively in the federal courts of United States.</span></p>
+
+</div>
+		</div>
+		<p class="pageOpenCloseWindow contactXMobile" onclick="closeFooterPopup()">×</p>			
+</div>
+		<div class="footerPopupContact" id="Contact"><div class="footerPopupText" id="ContactText">
+			<p class="footerPopupContactBreak1"><br></p>
+			<p class="footerPopupContactName">PR / Media Contact</p>
+			<p class="footerPopupContactText">Nadine Jolson</p>
+			<p class="footerPopupContactText"><a href="tel:3106143214" class="footerPopupContactEmail">310 - 614 - 3214</a></p>
+			<p class="footerPopupContactText"><a class="footerPopupContactEmail" href="mailto:jolsoncreativePR@mac.com">jolsoncreativePR@mac.com</a></p>
+			<p class="footerPopupContactBreak2"><br></p>
+			<p class="footerPopupContactName">Other inquiries</p>
+			<p class="footerPopupContactText"><a class="footerPopupContactEmail" href="mailto:info@therogueinitiative.com">info@therogueinitiative.com</a></p>
+		</div>
+		<p class="pageOpenCloseWindow contactXMobile" onclick="closeFooterPopup()">×</p>			
+</div>
+		<div class="footerBlackCurtain" id="footerBlackCurtain" onclick="closeFooterPopup()"></div>
+		<div class="footerBlackCurtain" id="footerBlackCurtain2" onclick="closeBuyNow()"></div>
+		<div class="zoomedPic" onclick="zoomOut()" id="zoomedPic"><img class="zoomedPicImg" src="mainpageimg/soundconsole.png" id="zoomedPicImg"></div>
+		<div class="mainPagePopUpBlackCurtain" id="mainPagePopupBlackCurtain"></div>
+		<img src="mainpageimg/glare.png" class="mainPageGlare" id="mainPageGlare" onclick="closeMainPagePopup()">
+    <script type="text/javascript" src="dist/script.js"></script>
+<script src="dist/marzipano.js"></script>
+<script src="dist/DeviceOrientationControlMethod.js"></script>
+<script src="dist/marzipanoindex4.js"></script>
+<script></script>
+    
+</body></html>

@@ -1,0 +1,489 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+<!-- 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png"> -->
+	<link rel="manifest" href="img/favicons/manifest.json">
+	<meta name="theme-color" content="#ffffff">
+
+    <title>SQUISHIES™ by Brainseed Factory</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-37Q43GTQDD&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+	<!-- google analytics -->
+	<script>!function(a,b,c,d,e,f,g){a.GoogleAnalyticsObject=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=1*new Date,f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-43758766-7","auto"),ga("send","pageview");</script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    
+    <!-- Open Graph data -->
+	<meta property="og:title" content="Say Hello to Squishies™!">
+	<meta property="og:site_name" content="Squishies™">
+	<meta property="og:url" content="http://www.squishies-game.com">
+	<meta property="og:description" content="Help stranded Squishies find their way back home in a fantastic miniature 3D universe.">
+	<meta property="og:type" content="product">
+	<meta property="og:image" content="http://squishies-game.com/img/og_image.jpg">
+	<meta property="fb:page_id" content="1435125576539519">
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <style>
+    
+    /* Outer */
+		.popup {
+		    width:100%;
+		    height:100%;
+		    display:none;
+		    position:fixed;
+		    top:0px;
+		    left:0px;
+		    background:rgba(0,0,0,0.75);
+		}
+		 
+		/* Inner */
+		.popup-inner {
+			overflow: scroll; overflow-x:hidden;
+		    height:580px;
+		    max-width:900px;
+		    
+		    width:90%;
+		    padding:40px;
+		    position:absolute;
+		    top:50%;
+		    left:50%;
+		    -webkit-transform:translate(-50%, -50%);
+		    transform:translate(-50%, -50%);
+		/*
+		    box-shadow:0px 2px 6px rgba(0,0,0,1);
+		    border-radius:3px;
+		*/
+		    background:#fff;
+		}
+		 
+		/* Close Button */
+		.popup-close {
+		    width:30px;
+		    height:30px;
+		/*     padding-top:4px; */
+		    display:inline-block;
+		    position:absolute;
+		    top:20px;
+		    right:15px;
+		    transition:ease 0.25s all;
+		/*
+		    -webkit-transform:translate(50%, -50%);
+		    transform:translate(50%, -50%);
+		*/
+		    border-radius:1000px;
+		    background:rgba(0,0,0,0.8);
+		    font-family:Arial, Sans-Serif;
+		/*     font-size:20px; */
+		    text-align:center;
+		    line-height:120%;
+		    color:#fff;
+		}
+		
+		.popup-close:hover {
+		/*
+		    -webkit-transform:translate(50%, -50%) rotate(180deg);
+		    transform:translate(50%, -50%) rotate(180deg);
+		*/
+		    background:rgba(0,0,0,1);
+		    text-decoration:none !important;
+		}
+		
+		    
+    </style>
+
+    <script>
+	  function play() {
+	       var audio = document.getElementById("audio");
+	       
+	       if (!audio.paused) {
+				//audio.pause();
+				
+				audio.src = null;
+				audio.removeAttribute('src');
+				audio.load();
+				document.getElementById("volumebtn").style.backgroundImage = "url('img/Icon_Music_Off.png')";
+
+	       } else {
+				audio.src = "music_main_squishies_theme.mp3";
+				document.getElementById("volumebtn").style.backgroundImage = "url('img/Icon_Music_On.png')";
+				audio.play();
+	       }
+	  }
+   </script>
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+	<div class="sitewrapper nopadding">
+		    
+	    <div class="carousel nopadding"><!-- has background cover -->
+		    <div class="row nopadding">
+	
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="left">
+			    	<div class="volumebuttons" style="margin-left: 40px;">
+				    	<a href="javascript:play();" class="btn btn-responsive grow img-responsive" id="volumebtn"></a><br>
+						<audio id="audio" src="music_main_squishies_theme.mp3"></audio>
+					</div>
+				</div>
+				
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+					<div class="logo">
+				    	<img src="img/Logo_Squishies.png" width="612" height="222" alt="Squishies Logo"> 
+			    	</div>
+				</div>
+				
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="right">
+			    	<div class="sociallinks" style="margin-right: 40px;">
+			    		<a href="http://facebook.com/squishies.game" class="btn btn-responsive facebookbtn grow img-responsive"></a><br>
+			    		<a href="http://twitter.com/brainseed_fcty" class="btn btn-responsive twitterbtn grow img-responsive"></a><br>
+			    		<a href="https://youtube.com/user/brainseedfactory" class="btn btn-responsive youtubebtn grow img-responsive"></a><br>
+			    		<a href="https://www.instagram.com/squishies_game" class="btn btn-responsive instagrambtn grow img-responsive"></a><br>
+			    		<a href="https://store.playstation.com/en-us/product/UP3103-CUSA14149_00-SQUISHIES0000000/" class="btn btn-responsive psstorebtn grow img-responsive"></a><br>
+			    		<!-- a href="https://store.steampowered.com/app/593060/Squishies/" class="btn btn-responsive steamstorebtn grow img-responsive"></a><br / -->
+					</div>
+				</div>
+					
+				
+			</div>
+			
+		    <div class="row">
+   				<div class="col-md-12 col-xs-12 subcaption">
+   					<img src="img/quotes.png" width="1000" height="146" alt="">
+   				</div>
+		    </div>
+			
+	    </div>
+	    
+	    
+	    <div class="container-fluid maincontent">
+
+		    <div class="row">
+				<div class="col-12" align="center" style="margin-left:0; margin-right:0; margin-top:30px">
+				
+			    	<!-- <img class="img-responsive center-block" src="img/Stage_Image_974x418.jpg" width="1100" height="472" alt="Squishies VR" /> -->
+			    		<iframe width="936" height="527" src="https://www.youtube.com/embed/YT38MpwImxw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+					</div>
+			    	
+				</div>
+			</div>
+
+		    <div class="row">
+			    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 col-xs-offset-1 col-xs-offset-1">
+				    <div class="about">
+       					<img src="img/RollThemHome.png" width="613" height="94" alt="Roll Them Home!">
+						<div class="abouttext" style="margin-top:30px">
+							Dive into a cheerful world full of adventures! Squishies™ is a single player, puzzle platform experience, built for Virtual Reality! Solve puzzles and save Squishies, or be creative and build your own levels - then share them with the community!
+						</div>
+				    </div>
+   			    </div>
+			</div>
+
+		</div>
+
+
+
+	    <!-- Page Content -->
+	    <div class="container-fluid mediacontent">
+	
+			<div class="row mediaimgbox">
+			
+				<div class="mediatitle">Media</div>
+				
+			</div>
+			
+		    <div class="row" style="margin-bottom: 50px">
+		    
+		    	<div class="col-lg-3 col-md-2 hidden-xs hidden-sm">
+		    		<!-- left column -->
+			    	<img class="img-fluid img-responsive" src="img/Deco_Booster.jpg" width="360" height="240" alt="" style="margin-top:100px">
+		    	</div>
+		
+				<div class="col-lg-6 col-md-8">
+					<!-- mid column for gallery -->
+					
+				    <div class="row">
+				    
+						<!-- left image -->
+				    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right-lg text-right-md text-center-sm text-center-xs">
+				        	
+				        	<a href="img/screenshot_01.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="squishies-gallery">
+								<img class="screenshot-thumb img-fluid img-thumbnail" src="img/screenshot_01_thumb.jpg" alt="">					
+							</a>
+			
+						</div>
+			
+						<!-- right image -->
+				    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left-lg text-left-md text-center-sm text-center-xs">
+				    	
+				        	<a href="img/screenshot_02.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="squishies-gallery">
+								<img class="screenshot-thumb img-fluid img-thumbnail" src="img/screenshot_02_thumb.jpg" alt="">					
+							</a>
+							
+						</div>
+						
+					    <div class="clearfix"></div>
+					    
+						<!-- left image -->
+				    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right-lg text-right-md text-center-sm text-center-xs">
+				        	
+				        	<a href="img/screenshot_03.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="squishies-gallery">
+								<img class="screenshot-thumb img-fluid img-thumbnail" src="img/screenshot_03_thumb.jpg" alt="">					
+							</a>
+							
+						</div>
+			
+						<!-- right image -->
+				    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left-lg text-left-md text-center-sm text-center-xs">
+				    	
+				        	<a href="img/screenshot_04.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="squishies-gallery">
+								<img class="screenshot-thumb img-fluid img-thumbnail" src="img/screenshot_04_thumb.jpg" alt="">
+							</a>
+							
+						</div>
+			
+					    <div class="clearfix"></div>
+					    
+						<!-- left image -->
+				    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right-lg text-right-md text-center-sm text-center-xs">
+				        	
+				        	<a href="img/screenshot_05.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="squishies-gallery">
+								<img class="screenshot-thumb img-fluid img-thumbnail" src="img/screenshot_05_thumb.jpg" alt="">					
+							</a>
+							
+						</div>
+			
+						<!-- right image -->
+				    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left-lg text-left-md text-center-sm text-center-xs">
+				    	
+				        	<a href="img/screenshot_06.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="squishies-gallery">
+								<img class="screenshot-thumb img-fluid img-thumbnail" src="img/screenshot_06_thumb.jpg" alt="">
+							</a>
+							
+						</div>
+						
+					    <div class="clearfix"></div>
+					    
+						<!-- left image -->
+				    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-right-lg text-right-md text-center-sm text-center-xs">
+				        	
+				        	<a href="img/screenshot_07.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="squishies-gallery">
+								<img class="screenshot-thumb img-fluid img-thumbnail" src="img/screenshot_07_thumb.jpg" alt="">					
+							</a>
+							
+						</div>
+			
+						<!-- right image -->
+				    	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left-lg text-left-md text-center-sm text-center-xs">
+				    	
+				        	<a href="img/screenshot_08.jpg" class="d-block mb-4 h-100" data-toggle="lightbox" data-gallery="squishies-gallery">
+								<img class="screenshot-thumb img-fluid img-thumbnail" src="img/screenshot_08_thumb.jpg" alt="">
+							</a>
+							
+						</div>
+	
+					</div>
+					
+				</div>
+		
+		    	<div class="col-lg-3 col-md-2 hidden-xs hidden-sm">
+		    		<!-- left column -->
+			    	<img class="img-fluid img-responsive" src="img/VR_Squishy.jpg" width="200" height="307" alt="" style="margin-top:300px">
+		    	</div>
+	
+				
+			</div>
+	
+	    </div>
+	    <!-- /.container -->
+	
+	    <div class="container-fluid">
+		    <div class="row sitefooter footercontent">
+		    	    	
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 contentfooter">
+					
+					<span class="footertext center-block text-nowrap">
+					
+						<br>
+						<a href="https://store.playstation.com/en-us/product/UP3103-CUSA14149_00-SQUISHIES0000000/"><img src="img/PS_Store_Badge_Bottom.png" width="100" height="100" alt="Buy on the PlayStation® Store"></a>
+						
+						<!-- a href="https://store.steampowered.com/app/593060/Squishies/"><img src="img/Steam_Store_Badge_Bottom.png" width="120" height="120" alt="Buy on the Steam Store" /></a><br/ -->
+
+						<div class="sociallinks">
+
+				    		<a href="http://facebook.com/squishies.game" class="btn btn-responsive facebookbtn grow img-responsive"></a>
+							<a href="http://twitter.com/brainseed_fcty" class="btn btn-responsive twitterbtn grow img-responsive"></a>
+				    		<a href="https://youtube.com/user/brainseedfactory" class="btn btn-responsive youtubebtn grow img-responsive"></a>
+				    		<a href="https://www.instagram.com/squishies_game" class="btn btn-responsive instagrambtn grow img-responsive"></a>
+				    		<br>
+							<a href="http://brainseed-factory.com/presskit/sheet.php?p=squishies" style="color: #333; font-size:28px; font-family: Helvetica Neue; Arial; sans-serif;">presskit()</a>
+						</div>
+					
+						<a href="http://www.brainseed-factory.com"><img src="img/Logo_Brainseed_Factory.png" width="138" height="110" style="margin-right:50px;" alt=""></a>
+						<img src="img/Logo_Medien.png" width="138" height="110" style="margin-right:50px;" alt="">
+						<a href="http://massiveminiteam.com/"><img src="img/Logo_Massive_Miniteam.png" width="198" height="110" alt=""></a>
+						
+<br><br>
+	
+						© 2013 - 2020 Brainseed Factory · All Rights Reserved.<br>
+						Squishies is a registered trademark of Brainseed Factory. PlayStation®VR is a registered trademark of Sony Computer Entertainment Inc.<br>
+						 <a data-popup-open="popup-1">Imprint &amp; Privacy Policy</a></span></div>
+					 
+		
+		    </div>
+	    </div>
+		    
+	
+	
+  	<div class="popup" data-popup="popup-1">
+	    <div class="popup-inner">
+	        <h2>Imprint &amp; Privacy Policy</h2>
+	        <span align="left" style="display: inline-block;">
+	        	Brainseed Factory<br>
+				Bilal Chbib (Founder &amp; CEO)<br>
+				Theaterstr. 22<br>
+				53111 Bonn (Germany)<br>
+				Mail: studio [replace with at] brainseed-factory [replace with dot] com<br><br>
+				<u>Privacy Policy</u><br><br>
+
+	<p>This Privacy Policy describes how your personal information is collected, used, and shared when you visit http://www.squishies-game.com (the "Site").</p>
+	<p><strong>PERSONAL INFORMATION WE COLLECT</strong></p>
+	<p>When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products that you view, what websites or search terms referred you to the Site, and information about how you interact with the Site. We refer to this automatically-collected information as "Device Information."</p>
+	<p>We collect Device Information using the following technologies:</p>
+	<p>- "Cookies" are data files that are placed on your device or computer and often include an anonymous unique identifier. For more information about cookies, and how to disable cookies please check the documentation for your web browser.</p>
+	<p>- "Log files" track actions occurring on the Site, and collect data including your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps.</p>
+	<p>- "Web beacons," "tags," and "pixels" are electronic files used to record information about how you browse the Site.</p>
+	<p>When we talk about "Personal Information" in this Privacy Policy, we are talking about all personal data that is collected during your stay on the Site including the Device Information.</p>
+	<p><strong>DO WE USE YOUR PERSONAL INFORMATION?</strong></p>
+	<p>We use the Device Information to improve and optimize our Site (for example, by generating analytics about how our customers browse and interact with the Site, and to assess the success of our marketing and advertising campaigns).</p>
+	<p>We use Google Analytics to help us understand how our customers use the Site - you can read more about how Google uses your Personal Information here: <a href="https://www.google.com/intl/en/policies/privacy/">https://www.google.com/intl/en/policies/privacy/</a>. You can also opt-out of Google Analytics here: https://tools.google.com/dlpage/gaoptout.</p>
+	<p>We may have to share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.</p>
+	<p>If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below.</p>
+	<p><strong>CHANGES</strong></p>
+	<p>We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons.</p>
+	<p><strong>CONTACT US</strong></p>
+	<p>For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at studio [ at ] brainseed-factory [ dot ] com or by mail using the details provided below:</p>
+	<p>Brainseed Factory <br>Theaterstr. 22<br>53111 Bonn, Germany</p>
+
+
+	        </span><br><br>
+	        <!-- <p><a data-popup-close="popup-1" href="#">Close</a></p> -->
+	        <a class="popup-close" data-popup-close="popup-1" href="#"><img src="img/Button_Close.jpg" style="height: 40px; width: 40px"></a>
+	    </div>
+	</div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    
+    
+    <script type="text/javascript">
+		
+		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		    event.preventDefault();
+		    $(this).ekkoLightbox();
+		});
+		
+		$(document).ready(function() {
+			var viewportWidth = $(window).width();
+			
+		    if (viewportWidth < 1024) {
+		        $('.infotext').html('Dive into a fantastic miniature cosmos<br /> and guide these cute little creatures</br > on their hazardous adventure!<br /><br />Coming soon to your VR world!');
+		        
+		    } else {
+			    $('.infotext').html('Dive into a fantastic miniature cosmos and guide<br /> these cute little creatures on their hazardous adventure!<br /><br />Coming soon to your VR world!');
+		    }  
+			
+		});
+		
+		$(window).resize(function () {
+		    var viewportWidth = $(window).width();
+		    
+		    if (viewportWidth < 1024) {
+		        $('.infotext').html('Dive into a fantastic miniature cosmos<br /> and guide these cute little creatures</br > on their hazardous adventure!<br /><br />Coming soon to your VR world!');
+		    } else {
+			    $('.infotext').html('Dive into a fantastic miniature cosmos and guide<br /> these cute little creatures on their hazardous adventure!<br /><br />Coming soon to your VR world!');
+		    }   
+		});
+		
+		//----- OPEN
+	    $('[data-popup-open]').on('click', function(e)  {
+	        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+	        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+	        e.preventDefault();
+	        $('body').bind('touchmove', function(e) {
+	            e.preventDefault()
+	        });
+	    });
+	 
+	    //----- CLOSE
+	    $('[data-popup-close]').on('click', function(e)  {
+	        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+	        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+	        e.preventDefault();
+	        $('body').unbind('touchmove');
+	    });
+
+
+		function preload(arrayOfImages) {
+		    $(arrayOfImages).each(function(){
+		        $('<img/>')[0].src = this;
+		    });
+		}
+		
+		// Usage:
+		preload([
+		    'img/screenshot_01.jpg',
+		    'img/screenshot_02.jpg',
+		    'img/screenshot_03.jpg',
+		    'img/screenshot_04.jpg',
+		    'img/screenshot_05.jpg',
+		    'img/screenshot_06.jpg'
+		]);
+	    		
+	</script>
+	
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  
+
+	</body></html>

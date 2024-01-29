@@ -1,0 +1,561 @@
+<html lang="en-US"><head>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EPMSD7F6LT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EPMSD7F6LT');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pangea VR</title>
+
+    <link rel="stylesheet" href="css/animations.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/frontend-legacy.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/frontend.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/post-945.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen,print">
+    <link rel="stylesheet" href="css/forms.min.css" type="text/css" media="screen,print">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.30/dist/sweetalert2.min.css" type="text/css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style id="activity-customizer-css">
+        .site-main, .main {
+            padding-top: 75px;
+        }
+
+        a {
+            color: #A1B28B;
+        }
+
+        a:hover, a:active, a:focus, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus, h6 a:focus {
+            color: #e91e63;
+        }
+
+        body .widget .social .social-icon {
+            background-color: #A1B28B;
+        }
+
+        body .widget .social .social-icon:hover, body .widget .social .social-icon:focus {
+            background-color: #98b27b;
+        }
+
+        .post-thumbnail img, .entry-content img, .content .posts-wrap .con, .sidebar-left .widget, .sidebar-right .widget {
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+        }
+
+        input[type="search"], input[type="email"], input[type="text"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="date"], select, .select2-container .select2-selection--single, .select2-container--default .select2-selection--single .select2-selection__arrow, .select2-container--default .select2-selection--single .select2-selection__rendered, input[type="range"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, .woocommerce-form-coupon .button, .woocommerce-cart-form .button {
+            height: 44px !important;
+        }
+
+        .button, button, input[type="button"], input[type="reset"], input[type="submit"], div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .comment-reply-link, .wp-block-button__link, .wp-block-file .wp-block-file__button {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .button, button, input[type="button"], input[type="reset"], input[type="submit"], div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .comment-reply-link, .wp-block-button__link, .wp-block-file .wp-block-file__button {
+            font-size: 14px;
+        }
+
+        .button, button, input[type="button"], input[type="reset"], input[type="submit"], div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .comment-reply-link, .wp-block-button__link, .wp-block-file .wp-block-file__button {
+            line-height: 1;
+        }
+
+        .button, button, input[type="button"], input[type="reset"], input[type="submit"], div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .comment-reply-link, .wp-block-button:not(.is-style-outline), .wp-block-file .wp-block-file__button {
+            background-color: #A1B28B;
+        }
+
+        .button:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:focus, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, div.wpforms-container-full .wpforms-form input[type=submit]:hover, div.wpforms-container-full .wpforms-form button[type=submit]:hover, div.wpforms-container-full .wpforms-form .wpforms-page-button:hover, div.wpforms-container-full .wpforms-form input[type=submit]:focus, div.wpforms-container-full .wpforms-form button[type=submit]:focus, div.wpforms-container-full .wpforms-form .wpforms-page-button:focus, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit:focus, .woocommerce a.button:focus, .woocommerce button.button:focus, .woocommerce input.button:focus.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit.alt:focus, .woocommerce a.button.alt:focus, .woocommerce button.button.alt:focus, .woocommerce input.button.alt:focus, .comment-reply-link:hover, .comment-reply-link:focus, .wp-block-button__link:focus, .wp-block-button__link:hover, .wp-block-file .wp-block-file__button:hover, .wp-block-file .wp-block-file__button:focus {
+            background-color: #98b27b;
+        }
+
+        .button, button, input[type="button"], input[type="reset"], input[type="submit"], div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .comment-reply-link {
+            border-radius: 50px;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+        }
+
+        .button, button, input[type="button"], input[type="reset"], input[type="submit"], div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .comment-reply-link, .wp-block-button__link, .wp-block-file .wp-block-file__button {
+            padding-left: 20px;
+        }
+
+        .button, button, input[type="button"], input[type="reset"], input[type="submit"], div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .comment-reply-link, .wp-block-button__link, .wp-block-file .wp-block-file__button {
+            padding-right: 20px;
+        }
+
+        .button, button, input[type="button"], input[type="reset"], input[type="submit"], div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .comment-reply-link, .wp-block-button__link, .wp-block-file .wp-block-file__button {
+            padding-top: 15px;
+        }
+
+        .button, button, input[type="button"], input[type="reset"], input[type="submit"], div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .comment-reply-link, .wp-block-button__link, .wp-block-file .wp-block-file__button {
+            padding-bottom: 15px;
+        }
+
+        body {
+            font-family: 'Muli', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            color: #54595f;
+        }
+
+        h1, h2, h3, h4, h5, h6, .price em {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            font-size: 42px;
+        }
+
+        h2 {
+            font-size: 42px;
+        }
+
+        h3 {
+            font-size: 36px;
+        }
+
+        h4 {
+            font-size: 28px;
+        }
+
+        h5 {
+            font-size: 24px;
+        }
+
+        h6 {
+            font-size: 20px;
+        }
+
+        .logo img {
+            height: 41px !important;
+        }
+
+        .header {
+            background-color: #A1B28B;
+        }
+
+        .main-menu, .header2 .header-nav, .header3 .header-nav, .main-menu.open {
+            background-color: #250c6c;
+        }
+
+        .main-menu, .header2 .header-nav, .header3 .header-nav {
+            height: 40px;
+        }
+
+        .main-menu, .header2 .header-nav, .header3 .header-nav {
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+        }
+
+        .main-menu a, .main-menu .sub-menu > li > a {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .main-menu a, .main-menu .sub-menu > li > a {
+            font-weight: 600;
+        }
+
+        .main-menu a {
+            padding-left: 15px;
+        }
+
+        .main-menu a {
+            padding-right: 15px;
+        }
+
+        .main-menu > ul > li > a {
+            background-color: rgba(7, 0, 18, 0);
+        }
+
+        .main-menu a, .show-menu-btn, .hide-menu-btn, .show-menu-btn:hover, .hide-menu-btn:hover, .show-menu-btn:focus, .hide-menu-btn:focus {
+            color: #ffffff;
+        }
+
+        .main-menu > ul > li > a, .main-menu .sub-menu li:first-of-type > a, .main-menu .sub-menu li:last-of-type > a {
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+        }
+
+        .main-menu > ul > li.current-menu-item > a, .main-menu > ul > li:hover > a, .main-menu > ul > li:focus > a, .main-menu > ul .menu-item-expanded > a {
+            background-color: #A1B28B;
+        }
+
+        .main-menu > ul > li.current-menu-item > a, .main-menu > ul > li:hover > a, .main-menu > ul > li:focus > a, .menu-item-expanded > a {
+            color: #ffffff;
+        }
+
+        .main-menu > ul > li.current-menu-item > a, .main-menu > ul > li:hover > a, .main-menu > ul > li:focus > a {
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+        }
+
+        .main-menu .sub-menu li a {
+            background-color: #A1B28B;
+        }
+
+        .main-menu .sub-menu > li > a {
+            color: #ffffff;
+        }
+
+        .main-menu .sub-menu > li > a:hover, .main-menu .sub-menu > li > a:focus {
+            background-color: #ffffff;
+        }
+
+        .main-menu .sub-menu > li > a:hover, .main-menu .sub-menu > li > a:focus {
+            color: #A1B28B;
+        }
+
+        .sidebar-left .widget {
+            color: #54595f !important;
+        }
+
+        .sidebar-left .widget a:not(.button):not(.social-icon) {
+            color: #54595f !important;
+        }
+
+        .sidebar-right .widget {
+            background-color: #ffffff;
+        }
+
+        .sidebar-right .widget {
+            color: #54595f !important;
+        }
+
+        .sidebar-right .widget a:not(.button):not(.social-icon) {
+            color: #54595f !important;
+        }
+
+        .footer {
+            background-color: #A1B28B;
+        }
+
+        .footer .widget h6, .footer .widget h5, .footer .widget h4, .footer .widget h3 {
+            color: #ffffff;
+        }
+
+        .footer .widget div, .footer .widget p {
+            color: #ffffff;
+        }
+
+        .footer .widget a:not(.button):not(.social-icon) {
+            color: #ffffff !important;
+        }
+
+        .footer .widget a:not(.button):not(.social-icon):hover, .footer .widget a:not(.button):not(.social-icon):focus {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        .footer-copy-area {
+            background-color: #A1B28B;
+        }
+
+        .footer .copy {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .footer-menu a, .footer-menu > ul > li {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .footer-menu .current-menu-item > a, .footer-menu a:hover, .footer-menu a:focus {
+            color: #ffffff;
+        }
+
+        .slider-content {
+            display: flex;
+        }
+
+        input.slider-content-input {
+            width: 50%;
+            margin-right: 13px;
+            border-radius: 30px 30px 30px 30px;
+            box-shadow: 0px 16px 50px 0px rgb(0 0 0 / 15%);
+            padding: 27px 14px;
+            color: rgba(161, 178, 139, 0.95);
+            font-family: "Montserrat", Sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        input.slider-content-input::placeholder {
+            color: rgba(161, 178, 139, 0.95);
+            font-family: "Montserrat", Sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .with-vr-icon {
+            display: flex !important;
+            line-height: 2 !important;
+        }
+
+        img.vr-button-icon {
+            width: 28px;
+            margin-right: 10px;
+        }
+
+        .with-vr-icon-special-padding {
+            padding: 13px !important;
+        }
+
+        .with-contact-us-icon {
+            display: flex !important;
+            line-height: 1.8 !important;
+        }
+
+        img.contact-us-button-icon {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px;
+        }
+
+        .with-contact-us-icon-special-padding {
+            padding: 13px !important;
+        }
+
+        .privacy-policy {
+            text-align: justify;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body class="home page-template page-template-elementor_header_footer page page-id-945 custom-background wp-custom-logo overlay-header theme-activity woocommerce-no-js elementor-default elementor-template-full-width elementor-kit-1478 elementor-page elementor-page-945">
+<div class="page-wrap">
+    <header class="header header1">
+        <div class="wrap">
+            <div class="logo">
+                <a href="index.html"><img src="img/activity-booking-wordpress-theme-virtual-reality.png"></a>
+            </div>
+            <div class="header-nav">
+                <a class="show-menu-btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+                <nav id="nav" class="main-menu">
+                    <ul id="menu-primary-menu" class="primary-menu">
+                        <!--<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-704"><a href="">Experiences</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1698"><a
+                                href="">Gift cards</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="">Faq</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238"><a href="">About</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292"><a href="">Franchise</a>
+                        </li>
+                        -->
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1246"><a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-242">
+                            <a href="" aria-current="page">Subscribe</a></li>
+                    </ul>
+                </nav>
+                <a class="hide-menu-btn" href="javascript:void(0);"><i class="fa fa-times"></i></a>
+            </div>
+        </div>
+    </header>
+    <div data-elementor-type="wp-page" data-elementor-id="945" class="elementor elementor-945">
+        <div class="elementor-inner">
+            <div class="elementor-section-wrap">
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-993be07 elementor-section-stretched elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section">
+                </section>
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-2deab86 elementor-section-boxed elementor-section-height-default elementor-section-height-default animated fadeIn" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+                    <div class="elementor-container elementor-column-gap-wide">
+                        <div class="elementor-row">
+                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bb70f4f animated fadeIn" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+                                <div class="elementor-column-wrap elementor-element-populated">
+                                    <div class="elementor-widget-wrap">
+                                        <div class="elementor-element elementor-element-4f7961b elementor-widget elementor-widget-heading" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <h1 class="elementor-heading-title elementor-size-default" style="font-size: 20px;">Privacy
+                                                    Policy</h1></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-1ae0e77 elementor-section-boxed elementor-section-height-default elementor-section-height-default animated fadeIn" id="privacy-policy-link" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-row">
+                            <div class="elementor-col-100" data-element_type="column">
+                                <div class="privacy-policy">
+                                    <b>Overview</b><br>
+                                    <br>
+                                    This Privacy Policy describes the information collected by ESB Oyun
+                                    Hizmetleri A.Ş. (“pangeavr”, “we,” “us” or “our”) through our vr games
+                                    and website and how we use that information.
+                                    <br>
+                                    <br><b>We Collect Limited Information with VR Games</b><br>
+                                    <br>
+                                    When you download and use our vr games, we don’t require you to provide
+                                    any information and we don’t collect any information about you or your
+                                    device, except we collect:
+                                    <br>
+                                    (i) non-personal information about the duration the mobile application
+                                    is used and how it is used, such as the screens viewed and actions taken
+                                    within the vr games, which is used solely to enhance and improve VR
+                                    Games
+                                    <br>
+                                    (ii) crash reports - debug information that will help us identify and
+                                    resolve root cause of any crashes that make it to a public build.
+                                    <br>
+                                    (iv) feedback - we allow users to provide feedback. If the user doesn’t
+                                    pass the age gate, then we continue allowing access to the rest of the
+                                    content, but without prompts for feedback. While providing feedback, you
+                                    can optionally add your email id so that we can get back to you about
+                                    your feedback and support you. We use this email id and other Support
+                                    Information only for the support for the internal operations of our
+                                    website and Apps as provided under Section 312.2 of the COPPA rules
+                                    effective July 1, 2013.
+                                    (v) pangeavr may also use third parties from time to time to deliver a
+                                    service to parents only, such as payment processing, sending emails,
+                                    infrastructure and IT services, or helping with customer or technical
+                                    support. We only work with companies that follow this privacy policy and
+                                    agree not to use your information for any other purposes. If you’d like
+                                    more information on this, please contact us at support@pangeavr.com.
+                                    (vi) By accepting these conditions, the User consents to their
+                                    volunteered information being used by pangeavr for marketing purposes.
+                                    pangeavr may use their personal information to send the User newsletters
+                                    or offers related to their products and services via e-mail, SMS, apps
+                                    or social media. If the User no longer wishes to receive advertisements,
+                                    newsletters or offers they can always, free of charge, contact
+                                    pangeavr’s customer service department to opt out, or opt out through
+                                    the marketing messages received from pangeavr.
+                                    <br>
+                                    <br><b>We Comply with GDPR</b><br><br>
+                                    We collect minimal personally identifiable information from parents on
+                                    our website or our apps, only if they volunteer. We do not show
+                                    third-party advertisements.
+                                    The User has the right to demand access to their own data, rectification
+                                    of deficient personal data and deletion of unnecessary personal data by
+                                    writing to us at support@pangeavr.com.
+                                    The controller of data registered is Pangea VR ESB Oyun Hizmetleri
+                                    A.Ş.Beşiktaş, Istanbul.
+                                    For a GDPR compliant version of the apps, please ensure you download or
+                                    update to the most current version of our apps.
+                                    <br>
+                                    <br><b>Third Party Advertisements</b><br><br>
+                                    We do not show any third party advertisements, contextual or otherwise.
+                                    <br>
+                                    <br><b>When You Request Support, You May Send Us Email</b><br>
+                                    <br>
+                                    We allow users to contact us if they have support questions about use of
+                                    our vr games. If you submit a support request, we may receive your email
+                                    address and other information you provide related to your support
+                                    request (“Support Information”). We use Support Information only for the
+                                    support for the internal operations of our website and Apps as provided
+                                    under Section 312.2 of the COPPA rules effective July 1, 2013.
+                                    <br>
+                                    <br><b>Cookies</b><br>
+                                    <br>
+                                    When you visit our website, we may send cookies to your device that
+                                    uniquely identify your browser. We use cookies to improve the quality of
+                                    our service by storing user preferences and tracking usage information.
+                                    Most browsers allow you to disable cookies or set your browser to alert
+                                    you when cookies are being sent to your computer.
+                                    <br>
+                                    <br><b>Links to Third Party Sites</b><br>
+                                    <br>
+                                    We may provide links and/or connections to third-party web sites or
+                                    services from our website (we don’t allow third-party links within our
+                                    vr games). We are not responsible for the privacy practices or content
+                                    of these third-party sites.
+                                    <br>
+                                    We do provide a rate-us link within the app, but only for users passing
+                                    an age-gate. Clicking this links to the app store, but no third-party
+                                    website.
+                                    <br>
+                                    We may provide links and/or connections to third-party partner apps -
+                                    but only for users passing an age-gate, only kid-friendly apps, and they
+                                    will be clearly marked as an ad.
+                                    <br>
+                                    <br><b>Changes to this Privacy Policy</b><br>
+                                    <br>
+                                    We may amend this Privacy Policy from time to time. Use of information
+                                    we collect is subject to the Privacy Policy in effect at the time such
+                                    information is collected. If we make changes in the way we use your
+                                    email address, we will notify you in advance of posting by email. Such
+                                    modifications will become effective on the date set forth in the email.
+                                    <br>
+                                    <br><b>Contact Us</b><br>
+                                    <br>
+                                    If you have any questions or concerns regarding this Privacy Policy or
+                                    about how your data is handled, please send us an email at
+                                    support@pangeavr.com.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrap">
+            <aside class="sidebar-footer widget-area full-width">
+                <ul>
+                    <li class="widget widget-sidebar full-width">
+                        <a href="index.html">
+                            <img width="125" src="img/virtual-reality-ico-footer.png" class="image wp-image-1382 aligncenter attachment-full size-full" loading="lazy" style="max-width: 100%; height: auto;">
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <div class="footer-copy-area">
+            <div class="wrap">
+                <div class="copy">
+                    © 2020 - 2022 Pangea VR. All rights reserved.
+                </div>
+                <nav class="footer-menu">
+                    <ul id="menu-footer-menu" class="menu">
+                        <li id="menu-item-313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-313"><a href="">Faq</a></li>
+                        <li id="menu-item-314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-314"><a href="privacy-policy.html">Privacy</a>
+                        </li>
+                        <li id="menu-item-315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a href="#">Terms
+                            &amp; conditions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/webpack.runtime.min.js"></script>
+<script type="text/javascript" src="js/frontend-modules.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript">
+    let elementorFrontendConfig = {
+        "environmentMode": {},
+        "urls": {"assets": "/"},
+        "kit": {}
+    };
+</script>
+<script type="text/javascript" src="js/frontend.min.js"></script>
+
+
+</body></html>

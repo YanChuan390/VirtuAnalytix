@@ -1,0 +1,344 @@
+<html><head>
+	<title>Devious Technologies : Marble Land VR</title>
+	<!--for-mobile-apps-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="Devious Technologies Marble Land VR Game">
+		<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-T6QZN14QS6&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--//for-mobile-apps-->
+	
+	<!-- Custom-Theme-Files -->
+    <!-- Bootstrap-CSS --> 			<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- JQuery --> 				<script src="js/jquery.min.js">			</script>
+    <!-- Bootstrap-Main --> 		<script src="js/bootstrap.min.js">		</script>
+    <!-- Index-Page-Styling --> 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/iefix.css" />
+	<![endif]-->
+	
+	
+<!-- Start-Smooth-Scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){     
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},500);
+		});
+	});
+</script>
+<!-- //End-Smooth-Scrolling -->
+
+<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css ">
+<script src="js/easyResponsiveTabs.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78793418-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+<div class="header">
+		<div class="nav">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						   <a class="navbar-brand scroll" href="#home"><img src="./images/logo2.png" alt="Devious Technologies"></a>
+						</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home" class="active scroll">Home</a></li>
+							<li><a href="#about" class="scroll">About</a></li>
+							<li><a href="#features" class="scroll">Features</a></li>
+							<li><a href="#studio" class="scroll">Studio</a></li>
+							<li><a href="#contact" class="scroll">Contact</a></li>
+							<li><a href="presskit" style="color:#ff3a6f;">Presskit</a></li>
+						</ul>
+						
+					</div><!-- navbar-collapse -->
+				</div><!-- container -->
+			</nav>
+		</div> <!-- Nav Ends -->
+				
+		<div class="banner" id="home">			
+			<div class="container">
+				<div class="banner-content">
+					<!-- <h1>Marble Land</h1> <img src="./images/MarbleLandLogo.png" alt="Devious Technologies">-->
+					<div class="banner-content-title">
+						<h1>Marble Land</h1>
+						<h2>Virtual Reality Puzzle Game</h2>
+					</div>
+				</div>
+			</div>
+		</div> <!-- Banner Ends Here -->
+</div> <!-- Header Ends -->
+
+
+<div class="about" id="about">
+	<div class="container">
+		<h3>What is it ?</h3>
+		<h4>Marble Land is a physics-based puzzle game that was designed primarily for Virtual Reality.<br> The objective
+		is to guide the blue marble into the green target area by using various contraptions scattered
+		across the level.</h4>
+	</div>
+	
+	<div class="container">
+		<div class="about-padding">
+			<div class="vidcontainer">
+				<iframe src="https://www.youtube.com/embed/h0Y6fYdDu2I" frameborder="0" allowfullscreen="" class="video"></iframe>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="col-md-4 about-social-icons">
+		  <h3>Follow Us</h3>
+			<ul class="social about-social">
+				<li><a href="https://www.facebook.com/Marble-Land-1325907714089346" class="facebook" title="Go to Our Facebook Page"></a></li>
+				<li><a href="https://twitter.com/MarbleLandVR" class="twitter" title="Go to Our Twitter Account"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC7s7dEsYOfNCOaoiuswM_AQ" class="youtube" title="Go to Our Youtube Channel"></a></li>
+			</ul>
+		</div>
+				
+		<div class="col-md-4 newsletter about-newsletter">
+		  <h3>Newsletter</h3>
+			<form id="about-newsletter" action="//devioustech.us13.list-manage.com/subscribe/post-json?u=82ee81cc873a2312bf1d6cc7b&amp;id=3966588742&amp;c=?" method="GET">
+				
+				<input type="text" name="MERGE0" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your email';}">
+				<input type="submit" value="Subscribe">
+			</form>
+			<h3 id="about-newsletter-feedback"></h3>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	
+</div>
+
+<div class="about features" id="features">	
+	<div class="container">
+	  
+		<h3> Features </h3>
+		
+		<div class="about-image">
+			
+			<div class="col-md-4 about-size">
+				<div class="team-img">
+					<img src="./images/ai1.jpg" alt="image">
+				</div>
+				<h5>Hardware</h5>
+				<p>Compatible with Oculus Rift, HTC Vive and Samsung Gear VR.<br>
+				Controllers are supported, but not required.</p>
+			
+			</div>
+			
+			<div class="col-md-4 about-size">
+				<div class="team-img">
+					<img src="./images/ai2.jpg" alt="image">
+				</div>
+				<h5>VR Experience</h5>
+				<p>Comfortable VR gameplay that doesn't induce any motion sickness.</p>
+			
+			</div>
+			
+			<div class="col-md-4 about-size">
+				<div class="team-img">
+					<img src="./images/ai3.jpg" alt="image">
+				</div>
+				<h5>Puzzles</h5>
+				<p>Each level has its own unique layout and presents a new challenge.<br>
+				The difficulty increases gradually.</p>
+			
+			</div>
+		  <div class="clearfix"> </div>
+		</div>  <!-- About-image Ends  -->
+		
+	</div> <!-- Container ends -->	
+</div> <!-- About Ends -->
+
+
+<!--Plug-in Initialisation-->
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        //Vertical Tab
+        $('#parentVerticalTab').easyResponsiveTabs({
+            type: 'vertical', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true, // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+            tabidentify: 'hor_1', // The tab groups identifier
+            activate: function(event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#nested-tabInfo2');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+        });
+		
+		$('#about-newsletter > input[type="submit"]').bind('click', function ( event ) {
+			if ( event ) event.preventDefault();
+			register($('#about-newsletter'), $('#about-newsletter-feedback'));
+		});
+		$('#contact-newsletter > input[type="submit"]').bind('click', function ( event ) {
+			if ( event ) event.preventDefault();
+			register($('#contact-newsletter'), $('#contact-newsletter-feedback'));
+		});
+    });
+	
+	function register($form, $feedback) {
+		var $email = $form.find('input[type=text]')[0];
+		var $button = $form.find('input[type=submit]')[0];
+		var $formType = $form.attr('method');
+		var $formURL = $form.attr('action');
+		var $formData = $form.serialize();
+		
+		toggleForm($form, $email, $button);
+		$feedback.html("");
+		$feedback.attr("class", "");
+		$.ajax({
+			type: $formType,
+			url: $formURL,
+			data: $formData,
+			cache       : false,
+			dataType    : 'json',
+			contentType: "application/json; charset=utf-8",
+			error       : function(err) { 
+				toggleForm($form, $email, $button);
+				$feedback.html("There was an issue submitting your email :(<br> If the problem persists, please contact us at contact@devioustech.com");
+				$feedback.addClass('feedback-error');
+			},
+			success     : function(data) {
+				
+				if (data.result != "success") {
+					toggleForm($form, $email, $button);
+					
+					if(data.msg.indexOf("already subscribed") > -1) {
+						$feedback.html("The entered email is already subscribed to our newsletter.<br> If you think this might be a technical issue, please contact us at contact@devioustech.com");
+					}
+					else {
+						$feedback.html("The entered email doesn't appear to be valid :(<br> If you think this might be a technical issue, please contact us at contact@devioustech.com");
+					}
+					
+					$feedback.addClass('feedback-error');
+				} else {
+					$feedback.html("Thank you for subscribing :)<br> Please check your inbox for a confirmation email.");
+					$feedback.addClass('feedback-success');
+				}
+			}
+		});
+	}
+	
+	function toggleForm($form, $email, $button) 
+	{
+		if($email.disabled == false)
+		{
+			$form.addClass('form-inactive');
+			$email.disabled = true;
+			$button.disabled = true;
+		}
+		else
+		{
+			$form.removeClass('form-inactive');
+			$email.disabled = false;
+			$button.disabled = false;
+		}
+	}
+	
+</script>
+<!-- Up Coming Games Ends Here -->
+
+ 
+<div class="our-team" id="studio">
+	<div class="container">
+		<div class="team">
+		  <h3>Studio</h3>
+			
+			<div class="team-padding-container row">
+				<div class="col-md-4">
+					<img src="./images/logobig.png" alt="image">
+				</div>
+				<div class="col-md-8">
+					<h4>
+					<span>Devious Technologies</span> is an independent game development studio based in Bucharest, Romania. It was founded in 2016 by 
+					<a href="https://ro.linkedin.com/in/GeorgeCristianTudor">George Cristian Tudor</a>.<br><br>
+					Its main focus is on the development of virtual reality games and applications, in collaboration with other local 
+					and international indie developers. <br><br>
+					The studios first game is <span>Marble Land</span>, currently under development.
+					</h4>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+		
+		  <div class="clearfix"></div>
+		</div> <!-- Team Ends -->
+
+    </div>
+</div> <!-- Our-team Ends -->
+	
+	
+<div class="contact" id="contact">
+  <div class="container">
+	<div class="padding-contact">
+			
+		<div class="col-md-4 address">
+		  <h3>Contact</h3>
+			<address>
+				Email: contact@devioustech.com<br>
+				Phone: +40 740 185 774
+			</address>
+		</div>
+			
+		<div class="col-md-4 social-icons">
+		  <h3>Follow Us</h3>
+			<ul class="social">
+				<li><a href="https://www.facebook.com/Marble-Land-1325907714089346" class="facebook" title="Go to Our Facebook Page"></a></li>
+				<li><a href="https://twitter.com/MarbleLandVR" class="twitter" title="Go to Our Twitter Account"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC7s7dEsYOfNCOaoiuswM_AQ" class="youtube" title="Go to Our Youtube Channel"></a></li>
+			</ul>
+		</div>
+			
+		<div class="col-md-4 newsletter">
+		  <h3>Newsletter</h3>
+			<form id="contact-newsletter" action="//devioustech.us13.list-manage.com/subscribe/post-json?u=82ee81cc873a2312bf1d6cc7b&amp;id=3966588742&amp;c=?" method="GET">
+				
+				<input type="text" name="MERGE0" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your email';}">
+				<input type="submit" value="Subscribe">
+			</form>
+			<h3 id="contact-newsletter-feedback"></h3>
+		</div>
+	  <div class="clearfix"></div>
+	</div>
+			
+		<div class="footer">
+			<p>© 2016 Devious Technologies. All Rights Reserved | Design by  <a href="https://w3layouts.com/" target="_blank"> w3layouts </a></p>
+		</div>
+  </div>
+</div>
+	
+
+
+</body></html>

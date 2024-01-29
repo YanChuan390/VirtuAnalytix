@@ -1,0 +1,396 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><head><meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><style>
+.page-area {
+    background: url(/content/ab1.png) !important;
+}
+.minHeightSq{
+	min-height: 250px !important;
+}
+</style>
+
+
+	
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>GameWork Studios</title>
+  <meta name="description" content="Gamework; develops mobile and desktop games; is a digital game studio with its staff specialized in gamification, design, music and screenplay.">
+  <meta name="keywords" content="game, digital game, mobile game, computer games,&nbsp;multiplex, virtual reality, augmented reality">
+  <meta name="author" content="Emre Erol, emreerol@gameworkstudios.com ">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/content/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/content/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/content/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/content/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/content/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/content/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/content/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/content/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/content/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/content/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/content/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/content/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/content/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/content/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/content/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/owl.carousel.css">
+  <link rel="stylesheet" href="/css/owl.transitions.css">
+  <link rel="stylesheet" href="/css/meanmenu.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/icon.css">
+  <link rel="stylesheet" href="/css/flaticon.css">
+  <link rel="stylesheet" href="/css/magnific.min.css">
+  <link rel="stylesheet" href="/css/venobox.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-DE9Q7HV1CB&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/0hCdE87LyjzAkFO5Ff-v7Hj1/recaptcha__zh_cn.js" crossorigin="anonymous" integrity="sha384-nvvERczED3KjSxZfEFFVT2H6DgamVMjw61V5MHFkDryTDTBoWFoG/24MiImPw34y"></script><script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+    <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+<header class="header-one">
+    <div id="sticker" class="header-area hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+    <div class="logo">
+        <a class="navbar-brand page-scroll sticky-logo" href="/">
+            <img src="/content/logo.png" alt="GameWork Studios Logos">
+        </a>
+    </div>
+</div>
+                <div class="col-md-9 col-sm-9">
+                    <div class="header-right-link">
+                        <!-- search option start
+                        <form action="#">
+                            <div class="search-option">
+                                <input type="text" placeholder="Search...">
+                                <button class="button" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                            <a class="main-search" href="#"><i class="fa fa-search"></i></a>
+                        </form>
+                         search option end -->
+                    </div>
+                    <nav class="navbar navbar-default">
+    <div class="collapse navbar-collapse" id="navbar-example">
+        <div class="main-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a class="pagess" href="#">Who Are We?</a>
+                  <ul class="sub-menu">
+                    <li><a href="/About">About Us</a></li>
+                    <li><a href="/Team">Team</a></li>
+                    <li><a href="/Privacy-Policy">Privacy Policy</a></li>
+                  </ul>
+                </li>                
+                <li><a class="pagess" href="/Games">Games</a></li>
+                <li><a class="pagess" style="color:#EC9123 !important;" href="/Be-A-Game-Tester/Begin">Be A Game Tester</a></li>
+                <li><a class="pagess" href="/Devlog">Dev Log</a></li>
+                <li><a href="/Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mobile-menu">
+                    <div class="logo">
+                        <a href="/"><img src="/content/logo.png" alt="GameWork Studios Logo"></a>
+                    </div>
+                    <nav id="dropdown" style="display: block;">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a class="pagess" href="#">Who We Are?</a>
+                              <ul class="sub-menu">
+                                <li><a href="/About">About Us</a></li>
+                                <li><a href="/Team">Team</a></li>
+                                <li><a href="/Privacy-Policy">Privacy Policy</a></li>
+                              </ul>
+                            </li>
+                            <li><a class="pagess" href="/Games">Games</a></li>
+                            <li><a class="pagess" style="color:#EC9123 !important;" href="/Be-A-Game-Tester/Begin">Be A Game Tester</a></li>
+                            <li><a class="pagess" href="/Devlog">Devlog</a></li>
+                            <li><a href="/Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<div class="page-area">
+    <div class="breadcumb-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="breadcrumb text-center">
+                    <div class="section-headline white-headline">
+                        <h3>Privacy Policy</h3>
+                    </div>
+                    <ul class="breadcrumb-bg">
+                        <li class="home-bread">Home</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="about-area bg-color-2 area-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="about-content">
+                    <h4>Privacy</h4>
+                    <p></p><h3>PRIVACY POLICY</h3>
+
+<p>Last update: December 16, 2019</p>
+
+<p>This Privacy Policy explains, how we collect and process your personal data, when you use the our builded software program (“the Game”) that is licensed to you by Codework Bilişim San. Tic. Ltd. Şti.(“the Licensor”).</p>
+
+<p><strong>1. For what purposes do we process your personal data?</strong><br>
+We process your personal data in order to provide you with our services connected to the Game, as well as to contact you if we need to. We also process your personal data to collect Game analytics. For more information, please, check “Analytics” section. In addition to that we process your personal data to provide you with advertisements, which have been tailored to meet your interests with the help of our partners. For more information, please, check “Advertising” section. In any cases we may process your personal data, if we are obliged to do so by applicable laws.We may also process your personal data, in case we are entitled to do so by the applicable data protection laws without obtaining your consent.</p>
+
+<p>2. On what legal basis do we process your personal data?<br>
+We process your personal data on the basis of your consent to such processing.</p>
+
+<p><strong>3. What data do we process?</strong><br>
+We process the following data:</p>
+
+<ul>
+	<li>− your Game ID (identification number). A Game ID is used to keep your data separate from data of any other user. Our system provides you with a Game ID automatically when you install the Game on your device. The Game ID is a randomly assigned set of symbols, which does not contain any data that may identify you. Each time you delete the Game and re-install it, you are assigned a new Game ID.</li>
+	<li>− your platform ID (identification number), such as Game Center ID (for devices running iOSoperation system) or Google Play Services ID (for devices running Android operation system). We use these data for synchronization (if you play the Game on different devices) and data recovery.</li>
+	<li>− your location data. These data include information about your IP address, state and city of your location. We process these data in order to adjust Game language and currency settings for you. Such data may also be used for advertising and analytics (for more information, please, check “Advertising” and “Analytics” sections).</li>
+	<li>− your device information. These data include the operation system of your device and the version of the Game you use, your device ID (identification number), brand and model of your device. We need these data to provide you with the Game updates. Such data may also be used for advertising and analytics (for more information, please, check “Advertising” and “Analytics” sections).</li>
+	<li>− your Game information. These data include information about your Game achievements, completed Game levels and actions taken within the Game, as well as in-game purchases, such as a payment identification number, the type and amount of a product, its price in your local currency.</li>
+	<li>− information you provide to us when addressing our help&amp;support team or communicate with us through our official communities in social networks.</li>
+	<li>− advertising data, such as your mobile advertising identifiers (Apple IDFA or Google Advertising ID), network carrier and your advertising tracking settings. Such data are used for advertising and analytics (for more information, please, check “Advertising” and “Analytics” sections).</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>4. Do we process you payment information?</strong><br>
+We do not collect or process any information related to your payment instrument, such as bank card number, its validity term or your name as written on it.</p>
+
+<p><strong>5. Do we provide third parties with your personal data?</strong><br>
+Yes. For the purposes of analytics and advertising, we use services and solutions provided by third parties. Such parties process these data on our behalf and the respective technical solutions represent a part of the Game. Any transfer of your personal data to any of our partners is based on awritten agreement, and we make sure such a third party complies with the applicable data protection regulations. In certain cases we may transfer information about you to other third parties (for example, independent personal data controllers), if we are obliged or allowed to do so by applicable laws. If it is the case, we transfer such information while adhering to applicable personal data protection laws, including, but not limited to, General Data Protection Regulation 2016/679.</p>
+
+<p><strong>6. How long do we process your personal data?</strong><br>
+We process all the data we collect for as long as you use the Game and 30 months after you stop using the Game. If you do not use the Game for 30 continuous months, we erase your personal data from our data base, as well as request the same erasure from any third parties, whom your data may have been transferred to. We may erase your personal data earlier if we do not need to process such data anymore.</p>
+
+<p><strong>7. Do we process any personal data of children?</strong><br>
+We do not use the Game to knowingly solicit data from or market to children under the age of 13. If you believe that we process personal data of a child below 13 years old, please, contact us and we will make all reasonable efforts to stop processing such data and erase it as soon as possible.</p>
+
+<p><strong>8. What rights do you have with regard to your personal data?</strong><br>
+Under the applicable data protection regulation, if you are a citizen of the EU and fall within the scope of a data subject, you are entitled to the following rights: right of access, right to rectification(correction), right to erasure (deletion), right to data portability, right to object, right to restriction of processing, right to withdraw consent.</p>
+
+<ul>
+	<li>− right of access. You have the right to access your personal data, which we process. In order to access your personal data, please, send us a message describing your request through our help&amp;support service within the Game.</li>
+	<li>− right of rectification (correction). You have the right to ask us to replace any inaccurate data about you with accurate data. If you think that the data we process are incomplete for the purpose of processing as stated in this Privacy Policy, you may ask us to complete your personal data accordingly. In order to have your personal data rectified, please, send us a message describing your request through our help&amp;support service within the Game.</li>
+	<li>− right to erasure (deletion). You have the right to ask us to completely delete your personal data. In order to have your personal data erased (deleted), please, send us a message describing your request through our help&amp;support service within the Game. Please, be informed that we will not erase your Game ID, as we need to keep it for our internal records. However, we will erase all data that may help us identify you; therefore, your Game ID will not be considered personal data anymore.</li>
+	<li>− right to object. You have the right to object to processing of your personal data for the purpose of direct marketing. In order to do so, please, adjust your privacy settings in the settings menu of the Game.</li>
+	<li>− right to withdraw consent. You have the right to withdraw your consent for personal data processing. Any withdrawal of consent does not affect the lawfulness of processing based on consent before its withdrawal. In order to withdraw your consent, please, send us a message describing your request through our help&amp;support service within the Game.</li>
+	<li>− right to restriction of processing. Please, be informed that this right may be exercised only in a situation set forth in Article 18 of General Data Protection Regulation 2016/679. In order to restrict processing of your personal data, please, send us a message describing your request and stating the basis of restriction through our help&amp;support service within the Game.</li>
+	<li>− right to data portability. You have the right to ask us to receive the personal data concerning you, which you have provided to us, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller. In order to have your personal data transferred to you, please, send us a message describing your request to our contact e-mail or through our help&amp;support service within the Game.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>ATTENTION</p>
+
+<p>Please, consider that deletion of your personal data means that all your in-game achievements (including in-game goods) may be unavailable to you anymore. Deletion of personal data is irreversible. You will not have a chance of restoring your personal data. We also draw your attention to the fact that processing your personal data (except for data that we use together with our partners to serve advertisements to you) is necessary to provide you with the Game and services that are connected to the Game. If you choose to withdraw your consent, you may have to stop using the Game.</p>
+
+<p><strong>9. How can you send us a message through our help&amp;support service within the Game?</strong><br>
+In case you want to submit a request and exercise any of your rights stated above, please, follow these instructions:</p>
+
+<ul>
+	<li>− go to in-game Settings menu and tap Help and Support;</li>
+	<li>− tap Contact Us button (a texting cloud) in the upper right corner;</li>
+	<li>− write your request and submit it.</li>
+</ul>
+
+<p><br>
+It is important that you submit your requests using our help&amp;support service within the Game. Obtaining a request sent directly from within the Game makes us sure that such a request comes from the user.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>10. Advertising</strong><br>
+We show advertisements in our Game with the help of third-party advertising partners. We integrate their technologies into our Game, which are then used by our partners to select the advertisements that meet your interests in the best way. If you do not want to receive targeted advertisements, please, adjust settings of your device as instructed below.</p>
+
+<p><strong>11. How can you adjust privacy settings of your device?</strong><br>
+If you want to exercise your right to object to processing of your personal data for the purpose of direct marketing, please, adjust the privacy settings of your device:</p>
+
+<ul>
+	<li>− iOS operation system: enable Limit Ad Tracking on iOS by opening “Settings,” then tapping on “Privacy,” then “Advertising”, and sliding the Limit Ad Tracking switch to “On”.</li>
+	<li>− Android operation system: opt out of Ads Personalization on Android by opening “Settings”, then tapping “Google”, then “Ads”, then enable the switch next to “Opt out of Ads Personalization”.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>12. Analytics</strong><br>
+In order to analyze various aspects of Game functioning, we need to collect and process certain information with regard to your interaction with the Game. Such information includes your location data, information about your device and advertising data. It may also comprise information about errors of the Game functioning. For this purpose we use technologies and solutions provided by third parties – our analytical partners. We integrate such technologies into the Game and our partners process the data on our behalf to provide us with analytics. Processing data for analytical purposes is based on a legitimate interest of the Licensor – analyzing data about the Game for commercial purposes. Analytics helps us to provide better services to users, update and develop our Game. For example, we may use such information in order to fix Game errors, evaluate demographic composition of our users, determine what features to add to the Game or whether we need to translate the Game into another language.</p>
+
+<p><strong>Contact Us</strong><br>
+In case you have any questions with regard to this Privacy Policy, please, contact us via email at info@gameworkstudios.com or via regular post at the address stated below, and we willget back to you as soon as practically possible. Should you send us a request with regard to exercising any of your rights stated in unit 8 of this Privacy Policy (“What rights do you have with regard to your personal data?”), we will ask you to re-send the request using our help&amp;supportservice within the Game. The controller of your personal data is Codework Bilişim San. Tic. Ltd. Şti., located at Dumlupınar Mh. Yumurtacı Abdibey Cd., Kadıköy, İstanbul, Türkiye.</p>
+<p></p>                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div><footer>
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-content">
+                       <div class="footer-head">
+                            <h4>Information</h4>
+                            <p>
+                                Are you looking for professional games services for your new games.
+                            </p>
+                            <div class="footer-contacts">
+                                <p><span>Tel :</span> +90 216 9999 648</p>
+                                <p><span>Email :</span> info@codeworkagency.com</p>
+                                <p><span>Location :</span> 19 Mayıs Mahallesi, Sümer Sokak, Sümko Sitesi, M7-B Kat:10 Daire 43 Kadıköy <span>İstanbul - Türkiye</span></p>
+                            </div>
+                            <div class="footer-icons">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/GameWork-Studios-111112143718816/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/StudiosGamework">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UCMXQLajiMfnhxblJ86OhnEQ">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://tr.pinterest.com/gameworkstudios/">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/gameworkstudiosint">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-content">
+                        <div class="footer-head">
+                            <h4>Links</h4>
+                            <div class="footer-services-link">
+                                <ul class="footer-list">
+                                  <li><a href="/About">About Us</a></li>
+                                  <li><a href="/Team">Team</a></li>
+                                  <li><a href="/Privacy-Policy">Privacy Policy</a></li>
+                                  <li><a href="/Games">Games</a></li>
+                                  <li><a href="/Contact">Contact</a></li>
+                                </ul>
+                                <ul class="footer-list">
+                                  <li><a href="/Games/7/pio">PIO</a></li>
+                                  <li><a href="/Games/6/multiplex">Multiplex</a></li>
+                                  <li><a href="/Games/4/degeneration">Degeneration</a></li>
+                                  <li><a href="/Games/8/ela's-happiness-of-life">Ela's Happiness Of Life</a></li>                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-content last-item">
+                        <div class="footer-head">
+                            <h4>Subscribe</h4>
+                            <p>
+                                Are you looking for professional games services for your new games. Are you looking for professional developer for your new games.
+                            </p>
+                            <div class="subs-feilds">
+                                <div class="suscribe-input">
+                                    <input type="email" class="email form-control width-80" id="sus_email" placeholder="Type Email">
+                                    <button type="button" id="sus_submit" class="add-btn">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+            </div>
+        </div>
+    </div>
+    <!-- End footer area -->
+    <div class="footer-area-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="copyright">
+                        <p>
+                            Copyright © 2020
+                            <a href="https://www.codeworkagency.com/">Codework Digital Agency</a> All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><input type="hidden" id="recaptchaAlan" value="03AFcWeA7BrTScfTBJF6RE6NkFtAEMbsyzGp00q6zpuw2qTdg_kJ8Wyh8DaZ0cexB1I7RireXI07nzoOaWk4LS2Gej3-534XZW5HdcRBwRqrX0ePkHK66nDpPfbSY1D_zD67ArCnAnw_3s1aCUCzFKCn6ctPDKgVzEN2J66EJVAu9Oyu4-jEGXXvD4ZitPHXb240wXWGzm5s_3TVZS8dVNGhdJlp4jzOTUXzsszNa9e1_xTAqHOPI_i9E1HM2qFjKiOKJs57uhDk2iu9Qsd4fMFDspvXTDbyQEeVQmj9m3V6M_cIMYxHZD1ck_hj1du3VDvSuZb8NgQg5jFBDe9zmyWwY_6-MN_u5cFTt6wg8cen-_EGThMorUj8mDOAlxnessn56pcT4neNJVznfvrd7ejzEt2w-lEzQNDoSlBpoEqaGlZ26pAfmDItja7TLIZI2mYByAukgn2ppKgl-_i9JDMOKVB3asM6mLvh9w4I-EAMvboP4k2ZSOKhC5Mhsz2DICh-eAs180rfxO0EnrgbQ8ACIxPRvDlYeIUscr4vTl39Mi4v-5OgRfPR3KxkrVQRhQJNVIBSXD6q0RxEupuNcHxA9IJwmPc0RhXH9XoTvbv5VTielawKkGQbE">
+<script src="https://www.google.com/recaptcha/api.js?render=6LdZI9oUAAAAADekdtosbTU5bsx7ua1zIN34jxND"></script>
+<script src="/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="/js/magnific.min.js"></script>
+<script src="/js/venobox.min.js"></script>
+<script src="/js/jquery.meanmenu.js"></script>
+<script src="/js/form-validator.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script><a id="scrollUp" href="#top" style="display: none; position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+<script src="/js/ajax.js"></script>
+<script>
+$(document).ready(function(){
+    $("#search").on("click",function(){
+        var s_word = $("#searchField").val();
+        if (s_word.trim()){
+            window.location.href="/Devlog/Search/"+encodeURIComponent(s_word);
+        }
+    });
+});
+</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-159996719-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159996719-1');
+</script>
+	
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdZI9oUAAAAADekdtosbTU5bsx7ua1zIN34jxND&amp;co=aHR0cHM6Ly9nYW1ld29ya3N0dWRpb3MuY29tOjQ0Mw..&amp;hl=zh-CN&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;size=invisible&amp;cb=ftw7wt9voxz0" width="256" height="60" role="presentation" name="a-4aux3tlyx5i3" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></body></html>

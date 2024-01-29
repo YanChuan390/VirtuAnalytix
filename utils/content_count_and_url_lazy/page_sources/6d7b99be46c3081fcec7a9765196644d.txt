@@ -1,0 +1,287 @@
+<html lang="en"><head>
+        <meta charset="UTF-8">
+        <title>b</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="u&amp;i's website showcases u&amp;i's experiences, games and YouTube videos">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest?1827585113">
+        <style>
+            @font-face {
+				font-family: 'Reenie Beanie';
+				font-style: normal;
+				font-weight: 400;
+				src: url(/ReenieBeanie-Regular.ttf);
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+
+            html {
+                height: 100%;
+            }
+            body {
+                margin: 0;
+                height: 100%;
+                overflow: hidden;
+                background: #2e4;
+                font-family: 'Reenie Beanie', cursive;
+            }
+            #menubar {
+                box-sizing: border-box;
+                height: 80px;
+            }
+            #site {
+                margin: 5px 0;
+                text-align: center;
+                font-size: 25px;
+            }
+            #menu {
+                margin: 5px 0;
+                text-align: center;
+                font-size: 20px;
+            }
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: #e12000;
+                padding: 0 5px;
+                margin: 0 5px;
+                transform-origin: 50% 100%;
+                transition: transform .5s, background .5s;
+                background: #2e4;
+                font-size: 24px;
+                position: relative;
+                z-index: 2;
+            }
+            h1 {
+                margin: 0;
+                font-size: inherit;
+            }
+            .keeper {
+                padding: 5px 10px;
+                background: #e12000 !important;
+                color: #0f2;
+                transform-origin: 50% 0;
+                font-size: 28px;
+                z-index: 3;
+            }
+            .hidden {
+                position: absolute;
+                color: #2e4;
+                z-index: 1;
+            }
+            a:hover {
+                background: #0c2;
+                transform: scale(1.77);
+                z-index: 4;
+            }
+            #iframe-stage {
+                height: calc(100% - 85px);
+                position: relative;
+                overflow: hidden;
+            }
+            .content {
+                top: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: left;
+            }
+            @supports (-webkit-overflow-scrolling: touch) {
+                .content {
+                    overflow: scroll;
+                    -webkit-overflow-scrolling: touch;
+                }
+            }
+            .content[currentcontent] {
+                transition-duration: 1.5s;
+                left: 0;
+            }
+            #iframe-stage[advance="true"] .content:not([currentcontent]) {
+                transition-duration: 0s;
+                left: 100%;
+            }
+            #iframe-stage[transitioning][advance="true"] .content:not([currentcontent]) {
+                transition-duration: 1.5s;
+                left: -100%;
+            }
+            #iframe-stage[advance="false"] .content:not([currentcontent]) {
+                transition-duration: 0s;
+                left: -100%;
+            }
+            #iframe-stage[transitioning][advance="false"] .content:not([currentcontent]) {
+                transition-duration: 1.5s;
+                left: 100%;
+            }
+            iframe {
+                border: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <base href="/">
+    </head>
+    <body>
+        <div id="menubar">
+            <div id="site">
+                <h1><a href="index.html" class="keeper">u&amp;i</a></h1>
+            </div>
+            <div id="menu">
+                <a href="b/index.html">b</a>
+                <a href="b_2/index.html">b 2</a>
+                <a href="u_evade/index.html">u evade</a>
+                <a href="i/index.html" style="left:0;transform-origin:0 100%" class="hidden">i</a>
+                <a href="videos/index.html">videos</a>
+                <a href="https://uanisNAS.myqnapcloud.com:8087/index.php" style="right:0;transform-origin:100% 100%" class="hidden">cinema</a>
+            </div>
+        </div>
+        <div id="iframe-stage" advance="true">
+            <div class="content" currentcontent=""><iframe allowtransparency="true" allowfullscreen="true" title="stage 1" src="b/index.html"></iframe></div>
+            <div class="content"><iframe allowtransparency="true" allowfullscreen="true" title="stage 2"></iframe></div>
+        </div>
+        <script>
+            var pages = new function() {
+                var urlhistory = [];
+                var currenturlindex = -1;
+                var currentcontent = document.querySelector(".content[currentcontent]");
+                var othercontent = document.querySelector(".content:not([currentcontent])");
+                var iframestage = document.querySelector("#iframe-stage");
+
+                currentcontent.addEventListener("transitionend", function() {
+                    iframestage.removeAttribute("transitioning");
+                });
+
+                function show(advance) {
+                    var url = urlhistory[currenturlindex];
+                    var menuentry = document.querySelector('#menubar a[href="' + url + '"]');
+                    history.pushState({url: url}, "", url.indexOf("http") < 0 ? url.replace(/\/?index\.(html|php)$/, "") : menuentry ? menuentry.innerText : "external");
+                    try {
+                        othercontent.firstChild.src = url;
+                        var currentIDoc = currentcontent.querySelector("iframe").contentWindow.document;
+                        Array.prototype.forEach.call(currentIDoc.querySelectorAll("video, audio"), function(element) {
+                            element.pause();
+                        });
+                        var pC = currentIDoc.querySelector("#playerContainer");
+                        pC !== null ? pC.click() : 0;
+                    } catch(e) {
+                        
+                    }
+                    iframestage.setAttribute("advance", "" + advance);
+                    var refresh = othercontent.offsetHeight;
+                    setTimeout(function() {
+                        refresh = othercontent.offsetHeight;
+                        othercontent.setAttribute("currentcontent", "");
+                        currentcontent.removeAttribute("currentcontent");
+                        var switchcontent = othercontent;
+                        othercontent = currentcontent;
+                        currentcontent = switchcontent;
+                        iframestage.setAttribute("transitioning", "");
+                    }, 0);
+                }
+
+                function showprevious() {
+                    currenturlindex--;
+                    show(false);
+                }
+
+                function shownext() {
+                    currenturlindex++;
+                    show(true);
+                }
+
+                function shownew(url) {
+                    currenturlindex++;
+                    urlhistory = urlhistory.slice(0, currenturlindex);
+                    urlhistory.push(url);
+                    show(true);
+                }
+
+                this.init = function(startpage) {
+                    startpage = startpage.substr(1);
+                    if(document.querySelector('#menubar a[href="' + startpage + '"]') === null) {
+                        startpage = startpage.replace(/\/?index.html/, "");
+                        Array.prototype.forEach.call(document.querySelectorAll("#menubar a[href]"), function(element) {
+                            if(element.innerText === startpage) {
+                                startpage = element.getAttribute("href");
+                            }
+                        });
+                    }
+                    currentcontent.firstChild.src = startpage;
+                    urlhistory.push(startpage);
+                    currenturlindex = 0;
+                    
+                    history.replaceState({url: startpage}, document.title, location.href);
+                    iframestage.setAttribute("advance", "true");
+
+                    this.load = function(url) {
+                        if(url === urlhistory[currenturlindex]) {
+                            return;
+                        }
+                        if(currenturlindex > 0 && url === urlhistory[currenturlindex - 1]) {
+                            showprevious();
+                        } else if(currenturlindex < urlhistory.length - 1 && url === urlhistory[currenturlindex + 1]) {
+                            shownext();
+                        } else {
+                            shownew(url);
+                        }
+                    };
+
+                    this.back = function() {
+                        showprevious();
+                    };
+                    
+                    delete this.init;
+                };
+            };
+            function letLoad(event) {
+                var content = this;
+                setTimeout(function() {
+                    // create hash to detect back navigation within iframe src
+                    // use timeout after load for (better) application of hash value(, in particular on back navigation)
+                    try {
+                        content.contentWindow.location.hash = location.hash.substring(1).length ? location.hash.substring(1) : "!";
+                        content.contentWindow.onhashchange = function(event) {
+                            if(this.location.hash.length < 2) {
+                                pages.back();
+                            }
+                        };
+                    } catch(e) {
+                        
+                    }
+                }, 0);
+                
+                try {
+                    document.title = this.contentWindow.document.title;
+    
+                    function load(event) {
+                        parent.pages.load(this.getAttribute("href"));
+                        event.preventDefault();
+                    }
+                    Array.prototype.forEach.call(this.contentWindow.document.querySelectorAll('a[href]'), function(element) {
+                        if((element.href.indexOf("//") === 0 || element.href.indexOf("://") > -1) && element.href.match(/(^\/\/|\:\/\/)uani\.de(\/|$)/) === null) {
+                            element.title = "external link";
+                        } else {
+                            if(element.target !== "_blank") {
+                                element.addEventListener("click", load);
+                            }
+                        }
+                    });
+                } catch(e) {
+                    
+                }
+            }
+            Array.prototype.forEach.call(document.querySelectorAll(".content iframe"), function(element) {
+                element.addEventListener("load", letLoad);
+            });
+            Array.prototype.forEach.call(document.querySelectorAll("#menubar a"), function(element) {
+                function load(event) {
+                    pages.load(this.getAttribute("href"));
+                    event.preventDefault();
+                }
+                element.addEventListener("click", load);
+            });
+            pages.init("/b/index.html");
+        </script>
+    
+</body></html>

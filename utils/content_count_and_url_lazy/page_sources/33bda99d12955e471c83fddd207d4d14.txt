@@ -1,0 +1,132 @@
+<html><head><link href="https://fonts.googleapis.com/css?family=Lora:700|Slabo+27px|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&amp;display=swap" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<link href="nav.css" rel="stylesheet">
+<link href="slider.css" rel="stylesheet">
+<link href="titleAndOverlay.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="javascripts/parallax.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        //.parallax(xPosition, speedFactor, outerHeight) options:
+        //xPosition - Horizontal position of the element
+        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+      
+        $('#third').parallax("50%", 0.6, true, 500, 1250);
+       // $('.scrollPic').parallax("50%", 1.5);
+       /// $('.groupPic').parallax("50%", 1.2);
+       // $('.groupPic2').parallax("50%", .5);
+       // $('.gunnvrpic').parallax("50%", .4);
+        //$('.amplifyLogo').parallax("50%", .2);
+       // $('.meAndBro').parallax("50%", .3);  
+        // all elements with class "show-on-scroll" as array
+
+
+});
+</script>
+
+<!-- Needed to support multiple window widths -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<!-- Top navigation. Styling found in nav.css -->
+</head><body><div class="topnav">
+   <a class="logo" href="index.html"></a>
+   <div class="navDiv">
+      <span id="emailText">jkobechang@gmail.com </span></div>
+   <div class="navDiv" id="aboutmeBox">
+      <a id="aboutmeText" href="#third">About me</a></div>
+   <div class="navDiv" id="projectsBox">
+         <a id="projectsText" href="index.html#selectedprojects">Projects</a></div>
+   <a class="resume" href="Jehan_Chang_Resume.pdf">Resume</a>
+   <a class="gitLink" href="https://github.com/Kokobe"></a>
+   <a class="linkedInLink" href="https://www.linkedin.com/in/jehan-chang-657896156"></a>
+</div>
+
+
+<!-- To create an overlay over the sliding pictures.
+Styling + Animation found in titleAndOverlay.css -->
+<div class="overlay" id="firstScreenOverlay">
+   <div class="title">
+         Jehan Kobe Chang 
+         <div class="variableWord">
+            <span>Developer</span>
+            <span>Virtual Reality</span>
+            <span>Machine Learning</span>
+            <span>UCI Honors Student</span>
+            <span>Android Developer</span>
+            <span>Game Designer</span>
+            <span>Front-end/Back-end Engineer</span>
+         </div>
+   </div>        
+</div>
+
+<!-- Each span in this section is a slider picture with its own animation.
+They are differentiated in index.css by child index! -->
+<div id="slider-section">
+   <div class="slider" "="">
+      <span></span>
+      <span></span>  
+      <span></span>  
+      <span></span>  
+      <span></span>  
+   </div>
+</div>
+
+<!-- Everything in the "third" section are styled in index.css -->
+<div id="third" style="background-position: 50% 414px;">
+   <div id="profile_pic"> </div>
+   <div id="about_me_textbox"> 
+      <div id="about_me_name">Jehan Kobe Chang</div>
+      <div class="about_me_text">I am a student at the University of California, Irvine, majoring in Computer Science. 
+         I am also in the <a class="clickableText" href="http://honors.uci.edu/">Campuswide Honors Collegium</a>, 
+         which complements my STEM-focused studies with a rigorous liberal arts curriculum. 
+         Tackling projects with imaginative and fresh ideas is a passion of mine, as I have created cross-platform virtual reality experiences 
+         in high school and college, worked on AI-driven Facebook Chatbots at 
+         <a class="clickableText" href="http://amplify.ai/#welcome">Amplify.ai</a>, 
+         and developed three applications for 
+         <a class="clickableText" href="https://www.essential.com/blog/essential-update">Essential's new mobile device</a>. 
+         Currently, I work for 
+         <a class="clickableText" href="https://www.neon.life">STAR Labs (Samsung)</a>
+         as a SWE Intern. You can read more about my experience in my  <a class="clickableText" href="Jehan_Chang_Resume.pdf"> resume</a>.
+         <br> <br>
+         I'm a proficient full-stack developer passionate about all aspects of programming. My technical background ranges from machine learning 
+         to Android development to virtual reality experiences, and I'm able to apply my diverse skill-set to various challenging projects. 
+         I have worked as a solo programmer, project-lead, and a team member, all of which are roles that I function effectively in.</div>
+   </div>
+</div>
+
+<div id="selectedprojects">
+   <div class="selectedprojects_titletext show-on-scroll">Selected Projects </div>
+   <a href="guitar.html"> <div class="project_pic" id="project7"> </div> </a>
+   <a href="GN.html"> <div class="project_pic" id="project6"> </div> </a>
+   <a href="project5.html"> <div class="project_pic" id="project5"> </div> </a>
+   <a href="essential.html"> <div class="project_pic" id="project4"> </div> </a>
+   <a href="asymVR.html"> <div class="project_pic" id="project2"> </div> </a>
+   <a href="https://store.steampowered.com/app/724870/Glorious_Noon/?beta=0"> <div class="project_pic" id="project1"> </div> </a>
+
+</div>
+
+<!-- For now I am copying and pasting the top nav to the bottom. 
+Will replace this with a different useful bar in the future. -->
+<div class="topnav">
+   <a class="logo" href="index.html"></a>
+   <div class="navDiv">
+      <span id="emailText">jkobechang@gmail.com </span></div>
+   <div class="navDiv" id="aboutmeBox">
+      <a id="aboutmeText" href="#third">About me</a></div>
+   <div class="navDiv" id="projectsBox">
+         <a id="projectsText" href="index.html#selectedprojects">Projects</a></div>
+   <a class="resume" href="Jehan_Chang_Resume.pdf">Resume</a>
+   <a class="gitLink" href="https://github.com/Kokobe"></a>
+   <a class="linkedInLink" href="https://www.linkedin.com/in/jehan-chang-657896156"></a>
+</div>
+
+
+
+<!-- moved here so that document loads before scanning for "show-on-scroll" class-->
+<script src="javascripts/show-on-scroll.js"></script></body></html>

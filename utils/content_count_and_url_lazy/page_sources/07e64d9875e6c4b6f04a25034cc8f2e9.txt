@@ -1,0 +1,1111 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="pointer skrollr skrollr-desktop"><head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id="customRules"></style><script async="" src="//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js"></script><script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        AjaxContainer: 'div.dmBody',
+        WrappingContainer: 'div.dmOuter',
+        HomeUrl: 'https://www.ciaovr.it/',
+        AccountUUID: 'c54fdd8d12594f1da818ac25cdad8f37',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '391e5d14',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Thu Apr 21 14:08:27 UTC 2022',
+        ExternalUid: '22616580',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'home',
+        InitialPageUuid: '25f466a9c8084aea962b725d7d5a7dbc',
+        InitialPageId: '1029047522',
+        InitialEncodedPageAlias: 'aG9tZQ==',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: true,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '5665',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'ciaovr',
+        HasCustomDomain: true,
+        showCookieNotification: true,
+        cookiesNotificationMarkup: ' <div>We use cookies to ensure that we give you the best experience on our website. To learn more, go to the Privacy Page.<\/div> \n',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'https://www.ciaovr.it/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '1220',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 9;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<script>
+    try {
+    if (
+        navigator.serviceWorker &&
+        navigator.serviceWorker.getRegistrations &&
+        location.protocol === 'https:'
+    ) {
+        // remove all service workers
+        navigator.serviceWorker
+            .getRegistrations()
+            .then(function (registrations) {
+                if (registrations && registrations.length) {
+                    console.log('unregistering service workers');
+                    registrations.forEach(function (registration) {
+                        registration.unregister();
+                    });
+                }
+            });
+        // clear caches
+        if (caches) {
+            caches.keys().then(function (keyList) {
+                if (keyList && keyList.length) {
+                    console.log('deleting caches');
+                    keyList.forEach(function (key) {
+                        if (key && key.indexOf('druntime') === 0) {
+                            caches.delete(key);
+                        }
+                    });
+                }
+            });
+        }
+    }
+} catch (err) {
+    // not a secured location
+}
+</script>
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="https://www.ciaovr.it/">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Home
+</title>
+
+<!--Add favorites icons-->
+
+<link rel="icon" type="image/x-icon" href="https://static.cdn-website.com/runtime/favicon_d1_res.ico">
+
+<!-- End favorite icons -->
+
+<link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin="">
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if(!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function() {
+            },
+            getCurrentDeviceType: function() {
+                return window._currentDevice;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+<!-- loadCSS function -->
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    cssLinks = null;
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if(link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      }  
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+    const defs={};
+    window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+    window.waitForDeferred = function (b, a, c) {
+      let d = window?.getDeferred?.(b);
+      d
+        ? d.promise.then(a)
+        : c && ["complete", "interactive"].includes(document.readyState)
+        ? setTimeout(a, 1)
+        : c
+        ? document.addEventListener("DOMContentLoaded", a)
+        : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+</style>
+
+
+
+<style id="criticalCss">
+    @charset "UTF-8";@font-face{font-family:'Dancing Script';font-style:normal;font-weight:400;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/dancingscript/v22/If2RXTr6YS-zF4S-kcSWSVi_szLgiuE.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:'Maven Pro';font-style:normal;font-weight:400;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/mavenpro/v28/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:'Dancing Script';font-style:normal;font-weight:500;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/dancingscript/v22/If2RXTr6YS-zF4S-kcSWSVi_szLgiuE.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:'Maven Pro';font-style:normal;font-weight:500;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/mavenpro/v28/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:'Dancing Script';font-style:normal;font-weight:600;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/dancingscript/v22/If2RXTr6YS-zF4S-kcSWSVi_szLgiuE.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:'Maven Pro';font-style:normal;font-weight:600;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/mavenpro/v28/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:'Dancing Script';font-style:normal;font-weight:700;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/dancingscript/v22/If2RXTr6YS-zF4S-kcSWSVi_szLgiuE.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:'Maven Pro';font-style:normal;font-weight:700;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/mavenpro/v28/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:'Maven Pro';font-style:normal;font-weight:800;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/mavenpro/v28/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:'Maven Pro';font-style:normal;font-weight:900;font-display:swap;src:url(https://irp.cdn-website.com/fonts/s/mavenpro/v28/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}.dmInner{min-height:100vh!important;position:relative}.dmPopup,.dmPopupMask{position:fixed;left:0}@media (hover:none) and (pointer:coarse){#dmRoot #dm .dmOuter :not(.dmInner){background-attachment:scroll!important}}.display_None{display:none}.dmDisplay_None{display:none!important}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix:after,.clearfix:before{content:' ';display:table}.clearfix{display:inline-block}.dmPopupMask{margin:0;display:none;width:10px;z-index:1000000999;top:0}#dmRoot .dmPopup{display:block}.dmPopup{padding:10px;text-align:left;margin:0 10px;top:10px;width:93%;z-index:1000009999!important;box-sizing:border-box;background:#f5f5f5;overflow-y:auto;height:100%;display:block}.dmPopup .dmPopupTitle{text-align:left;font:700 19px Helvetica,Arial;margin:20px 20px 35px;color:#999}#dmPopup{opacity:0}.dmPopupClose,.dmPopupClose:before{position:absolute;visibility:visible}.dmPopupClose{border-radius:25px;width:27px;height:27px;z-index:1;background-color:rgba(255,255,255,.4);top:12px;right:12px}.dmPopupClose:before{display:block;font-size:20px;color:#000;top:3px;right:3px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar{width:5px;height:5px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-track{background:rgba(0,0,0,.1)}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-thumb{background:#c8c8c8;box-shadow:inset 0 1px 2px #454545;border-radius:45px}.dmRespRow.fullBleedMode>.dmRespColsWrapper{width:100%!important;max-width:100%!important}.dmRespRow.fullBleedMode{padding-left:0!important;padding-right:0!important}#dm .dmRespRow .dmRespColsWrapper{display:flex}.pswp{display:none;z-index:9999999999!important}.align-center{margin-left:auto;margin-right:auto}.text-align-center{text-align:center}body.fix-mobile-scrolling{overflow:initial}p.rteBlock{margin:0}#dmRoot{text-decoration-skip-ink:none}nav,section{display:block}html{font-family:Source Sans Pro;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}h1{margin:.67em 0}hr{box-sizing:content-box;height:0}img{border:0;max-width:100%;-ms-interpolation-mode:bicubic;display:inline-block}button,input{font-family:inherit;font-size:100%;margin:0;line-height:normal}button{text-transform:none;-webkit-appearance:button}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}.dmRespRow.dmRespRowNoPadding{padding:0}.dmRespRow{padding-top:15px;padding-bottom:15px}.dmRespRow:after,.dmRespRow:before{content:' ';display:table}.dmRespRow:after{clear:both}.dmRespRow,.dmRespRow .dmRespColsWrapper{max-width:960px;position:relative;margin:0 auto;width:100%}.dmHeader,.dmRespRow .dmRespCol>*{max-width:100%}.dmRespRow .dmRespCol{position:relative;width:100%;display:inline-block;vertical-align:top;float:left}.dmDesktopBody .dmRespRow .large-3{position:relative;width:25%}.dmDesktopBody .dmRespRow .large-4{position:relative;width:33.33333%}.dmDesktopBody .dmRespRow .large-9{position:relative;width:75%}.dmDesktopBody .dmRespRow .large-12{position:relative;width:100%}[class*=' icon-']{font-family:FontAwesome!important;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}[class*=' icon-']:before{text-decoration:none;display:inline-block;speak:none}a [class*=' icon-']{display:inline}.icon-angle-down:before{content:'\f107'}[class*=' dm-common-icons-']{speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:dm-common-icons!important}.dm-common-icons-close:before{content:'\e901'}.dmInner{min-width:768px!important;font-size:16px;background:#fff;color:#1a1a1a}html:not(.ios-preview) #dm .hasStickyHeader .dmInner div.dmHeaderContainer{position:fixed!important;z-index:101;width:100%;min-width:768px}.imageWidget a{font-style:italic;text-align:center}.dmNewParagraph[data-version]{line-height:initial}.dmNewParagraph[data-version] .text-align-left{text-align:left!important}.dmNewParagraph[data-version] .text-align-center{text-align:center!important}.dmNewParagraph[data-version] h1,.dmNewParagraph[data-version] h3,.dmNewParagraph[data-version] h4,.dmNewParagraph[data-version] p,.dmNewParagraph[data-version] ul{margin-top:0;margin-bottom:0}.dmNewParagraph[data-version] ul{padding:0;counter-reset:list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9}.dmNewParagraph[data-version] ul>li{list-style-type:none;text-indent:-1.5em;margin:0 1em;margin-inline-end:0;margin-inline-start:2em}.dmNewParagraph[data-version] ul>li:before{min-width:1em;display:inline-block;margin-right:.5em;margin-inline-start:0;margin-inline-end:.5em;text-align:right;text-align:end;font-weight:700;content:'\2022';font-family:Arial}#dm div.dmInner .dmform[data-layout=layout-2] .dmforminput>input{width:calc(100% - 80px)}*{border:0 solid #c32b2b;scrollbar-arrow-color:#fff;scrollbar-track-color:#F2F2F2;scrollbar-face-color:silver;scrollbar-highlight-color:silver;scrollbar-3dlight-color:silver;scrollbar-shadow-color:silver;scrollbar-darkshadow-color:silver;scrollbar-width:12px}body{-webkit-overflow-scrolling:touch;width:100%;overflow:hidden;-webkit-text-size-adjust:100%!important;-ms-text-size-adjust:100%!important}A IMG{border:none}h1,h3,h4,ul{margin-left:0;margin-right:0}.dmInner *{-webkit-font-smoothing:antialiased}.clearfix,a,img,li,ul{vertical-align:top}#iscrollBody,#site_content{position:relative}.dmOuter{word-wrap:break-word}.dmDesktopBody .dmInner{min-width:960px}.dmInner a{color:#fff}.dmInner ul:not(.defaultList){padding:0}.dmHeader{background:#fff;color:#1a1a1a;text-align:center;position:relative;width:100%}DIV.dmBody{padding:0;clear:both}.dmContent{margin:0;padding:0}#innerBar{position:relative;height:36px;width:100%;font-size:20px;margin:0;z-index:80}#dm .dmRespRow.dmRespRowNoPadding{padding:0}.dmLargeBody .dmBody .dmRespRowsWrapper,.dmRespRow.dmInnerBarRow{background-color:#fff}.dmRespRowsWrapper{max-width:960px;margin:0 auto}.dmLargeBody .imageWidget:not(.displayNone){display:inline-block;max-width:100%}.imageWidget:not(.displayNone) img{width:100%}.dmDivider.defaultDivider{min-height:1px;background-color:rgba(26,26,26,.2);margin:0}#dm .dmRespColsWrapper{display:block}.dmNewParagraph{text-align:left;margin:8px 0;padding:2px 0}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol,.dmLargeBody .fHeader .dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:first-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:last-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}#innerBar.lineInnerBar{display:table;width:100%;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;font-size:20px;margin-top:30px;margin-bottom:30px;background-color:transparent;color:#1a1a1a}#innerBar .titleLine{display:table-cell;vertical-align:middle;width:50%}.dmPageTitleRow:not(#innerBar){display:none}.titleLine hr{min-height:1px;background-color:rgba(26,26,26,.2)}.dmLargeBody .dmFooterResp>.dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmFooterResp>.dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmFooterResp>.dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmFooterResp>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}.dmStandardDesktop{display:block}.skinnyHeaderLayout .dmHeader .dmRespCol{display:table;float:none;height:50px}.skinnyHeaderLayout .fHeader .dmHeader .dmRespCol{float:left;display:block;height:auto}.dmInner a{outline:0;vertical-align:inherit}.dmLinksMenu>ul{display:block;margin:0;font-size:inherit}.dmStandardDesktop{margin:0 auto}#dm .dmDivider{display:block;margin:10px 0}body{background-color:#eee}.dmDivider{min-height:2px;border:currentColor;color:grey;background:0 0}#dm .dmDividerWrapper{display:block}.main-navigation.unifiednav{-js-display:flex;display:flex;justify-content:flex-start;align-items:stretch;overflow:visible}.main-navigation.unifiednav ul{list-style:none;padding:0;margin:0;font-size:1rem}.main-navigation.unifiednav .unifiednav__container{-js-display:flex;display:flex;justify-content:flex-start;list-style:none}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap{-js-display:flex;display:flex;justify-content:flex-start;position:relative;font-weight:400}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::before{content:'';align-self:center;font-weight:700}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{-js-display:flex;display:flex;justify-content:flex-start;align-items:center;flex-direction:row;color:inherit;text-decoration:none;position:relative;padding:12px 15px;margin:0;font-weight:inherit;letter-spacing:.03em}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:0 15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:nowrap}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{content:'';width:100%;height:0;border:0 solid transparent;border-top-color:currentColor;display:block;opacity:0}.dmFooterContainer .dmRespRow.dmDividerRow,.dmLargeBody #innerBar.lineInnerBar,.main-navigation.unifiednav .unifiednav__container .unifiednav__item:not(.unifiednav__item_has-sub-nav) .icon{display:none}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::before{opacity:1}.main-navigation.unifiednav.effect-background{padding:0}.main-navigation.unifiednav.effect-background .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:12px 15px;margin:0 15px 0 0}.main-navigation.unifiednav.effect-background .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected{background-color:#333;color:#fafafa}.main-navigation.unifiednav[layout-main=horizontal_nav_layout_8] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{border-radius:30px;padding:12px 30px;margin:0 15px 0 0}.main-navigation.unifiednav:not(.unifiednav_vertical)>.unifiednav__container{justify-content:inherit}#dm .p_hfcontainer nav.main-navigation.unifiednav{min-width:9em!important;text-align:initial!important}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container{flex-wrap:wrap;justify-content:inherit}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container .nav-item-text::before{text-align:left}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{content:''}#dm .dmBody .dmRespRowsWrapper{max-width:none;background-color:transparent}div.dmInner{font-weight:300;font-family:Roboto}h1,h3{font-family:Oswald;font-weight:400}.dmLargeBody .dmRespRow{width:100%;max-width:none;margin-left:0;margin-right:0;padding-left:40px;padding-right:40px}.dmRespRow:not(.desktopHeaderBox) .dmRespColsWrapper{max-width:960px}.dmInner .dmHomeSection3{margin-top:0;background-color:#1a1a1a;color:#fff}section.dmRespRow{padding-top:0;padding-bottom:0}h1{font-size:56px}h3{font-size:30px}.dmLargeBody .dmInner .dmHomeSection3{padding:80px 40px}.dmFullRowRespTmpl section{padding:50px 40px}#dm DIV.dmInner{background-repeat:no-repeat;background-image:url(https://irt-cdn.multiscreensite.com/ce1f372c/dms3rep/multi/photo-1439396087961-98bc12c21176-2200x914-2200x914.jpg);background-size:cover;background-position:50% 0;background-attachment:fixed}#dm div.dmOuter div.dmInner{background-repeat:no-repeat;background-size:auto;background-position:top center;background-attachment:scroll;position:relative}#dm div.dmInner,#dm div.dmInner h1,#dm div.dmInner h3{font-family:'Maven Pro'}#dm .dmRespCol div.dmNewParagraph,#dm div.dmInner,#dm div.dmInner .dmRespCol{font-family:Arial}#dm #dm-outer-wrapper .imageWidget img{border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}#dm div.dmInner{background-attachment:initial}.imageWidget:not(.displayNone) img{border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}#dm div.dmContent h1,#dm div.dmContent h1 *{font-size:48px}#dm div.dmContent h3,#dm div.dmContent h3 *{font-size:46px}#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before,#dm .p_hfcontainer nav.u_1983434687.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{font-size:12px!important}#dm DIV.dmOuter DIV.dmInner{background-color:rgba(26,26,26,1);background-image:url(https://lirp.cdn-website.com/391e5d14/dms3rep/multi/opt/location-piazza-navona-rome-5248dfb1-7c829c83-1920w.jpeg);background-position:50% 0;background-attachment:fixed;background-size:cover;background-repeat:no-repeat}#dm .dmInner div.fHeader .u_hcontainer.dmHeader[freeheader=true]{padding-top:initial!important;padding-bottom:initial!important}#dm .p_hfcontainer .u_1983434687.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding-right:30px!important;padding-left:30px!important}#dm .dmInner div.dmHeader,#dm .dmInner div.dmHeader.u_hcontainer,#dm .dmInner div.u_hcontainer{background-color:rgba(255,255,255,.58)!important}#dm .dmInner div.u_hcontainer{float:none!important;top:auto!important;max-width:100%!important;left:0!important;width:100%!important;position:relative!important;min-width:0!important;text-align:center!important;height:auto!important;padding:21.5px 0 20.5px!important;margin:0 auto!important}#dm .p_hfcontainer div.u_1382871007,#dm .p_hfcontainer nav.u_1983434687{float:none!important;top:0!important;left:0!important;width:calc(100% - 0px)!important;position:relative!important;height:auto!important;min-width:25px!important}#dm .p_hfcontainer div.u_1542077368{padding-left:10px!important}#dm .p_hfcontainer nav.u_1983434687.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer nav.u_1983434687.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{padding-top:0!important;padding-bottom:0!important;margin-top:0!important;margin-bottom:0!important}#dm .p_hfcontainer div.u_1382871007{max-width:201px!important;text-align:center!important;padding:0!important;margin:0 auto!important}#dm .p_hfcontainer nav.u_1983434687{color:#fff!important;max-width:855px!important;justify-content:flex-end!important;align-items:stretch!important;text-align:start!important;padding:6.8px 15px!important;margin:0 -.75px 0 .75px!important}#dm .p_hfcontainer div.u_1559581736{border-style:solid!important;border-width:0!important;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important;padding:0!important;margin:0!important}#dm .p_hfcontainer div.u_1346382071{background-image:initial!important;background-color:rgba(34,34,34,.47)!important;width:auto!important;padding:8px 30px 12px!important;margin:0!important}.stickyHeaderSpacer{height:77.05px!important}#dm .dmBody div.u_1015555769,#dm .dmBody div.u_TOP{float:none!important;top:0!important;left:0!important;position:relative!important;min-width:25px!important;height:auto!important;display:block!important;padding:2px 0!important}#dm .dmBody section.u_1723692489{background-color:rgba(0,0,0,0)!important;background-image:none!important}#dm .dmBody div.u_1643858298 input:not([type=submit]){background-color:#dadada!important}#dm .dmBody div.u_1542484921{background-color:rgba(26,26,26,1)!important}#dm .dmBody div.u_1050473929,#dm .dmBody div.u_FEATURES{background-color:rgba(0,0,0,0)!important}#dm .dmBody div.u_1643858298 input:not([type=submit]){background-color:rgba(224,224,224,1)!important}#dm .dmBody div.u_1015555769{max-width:calc(100% - 0px)!important;width:880.99px!important;margin:18px 0 8px!important}#dm .dmBody div.u_TOP{letter-spacing:16px!important;max-width:100%!important;width:calc(100% - 55px)!important;margin:-28px auto 8px!important}#dm .dmBody div.u_1886786108{padding-left:15px!important;padding-right:15px!important}#dm .dmBody div.u_1218386588{padding-right:14px!important;padding-left:15px!important}#dm .dmBody div.u_1972869774{padding-right:15px!important;padding-left:15px!important}#dm .dmBody div.u_1068371317,#dm .dmBody div.u_1653368693,#dm .dmBody div.u_1720413243{width:100%!important;max-width:calc(100% - 0px)!important;min-width:25px!important;padding:2px 0!important;float:none!important;top:0!important;left:0!important;position:relative!important;height:auto!important}#dm .dmBody div.u_1068371317,#dm .dmBody div.u_1720413243{margin:20px auto 8px!important}#dm .dmBody div.u_1653368693{margin:20px 0 8px!important}#dm .dmBody div.u_1542484921{float:none!important;top:0!important;left:0!important;width:auto!important;position:relative!important;height:auto!important;max-width:none!important;min-width:0!important;text-align:center!important;padding:40px 20px!important;margin:0!important}#dm .dmBody div.u_FEATURES,#dm .dmBody section.u_1723692489{float:none!important;top:0!important;max-width:100%!important;left:0!important;width:auto!important;position:relative!important;min-width:0!important;height:auto!important;margin:0!important}#dm .dmBody div.u_1050473929{margin:0!important;padding:0!important}#dm .d-page-1704096028 DIV.dmInner{background-image:url(https://lirp.cdn-website.com/391e5d14/dms3rep/multi/opt/location-piazza-navona-rome-1920w.jpeg),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TpUUqHSwo4pChOlkQFemoVShChVArtOpgcukXNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APEzc1J0UVK/F9aaBHjwXE/3t173L0DhEaFaVbPBKDptplOJsRsblUMvEJAGEEMIi4zy5iTpBQ8x9c9fHy9i/Es73N/jn41bzHAJxLPMsO0iTeIZzZtg/M+cYSVZJX4nHjcpAsSP3JdafEb56LLAs+MmJn0PHGEWCx2sdLFrGRqxNPEUVXTKV/ItljlvMVZq9RY+578haG8vrLMdZojSGIRS5AgQkENZVRgI0arToqFNO0nPPzDrl8il0KuMhg5FlCFBtn1g//B726twtRkKymUAHpfHOdjFAjsAs2643wfO07zBPA/A1d6x19tAPFP0usdLXoEhLeBi+uOpuwBlzvA0JMhm7Ir+WkKhQLwfkbflAMGboG+tVZv7X2cPgAZ6ip1AxwcAmNFyl73eHewu7d/z7T7+wFwJnKmZ9+MiwAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UCDwksLkLIPkkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5CYII=)!important}#dm .dmBody section.u_1723692489{text-align:start!important;padding:183.5px 40px!important}#dm .dmBody div.u_FEATURES{text-align:center!important;padding:0 40px 12px!important}.font-size-60,.size-60{font-size:60px!important}.font-size-48,.size-48{font-size:48px!important}
+    .dmDesktopBody [data-anim-desktop]:not([data-anim-desktop='none']) {
+      visibility: hidden;
+    }
+    
+</style>
+
+
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+<script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3721/editor/apps/modules/runtime/18.8d9b98557bf3839e9c87.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3721/editor/apps/modules/runtime/23.fe66fc7c29b5e63049b3.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3721/editor/apps/modules/runtime/1.38a874f31d2d8986b8b0.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3721/editor/apps/modules/runtime/7.9a94a74e30026a70bc4d.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3721/editor/apps/modules/runtime/runtime-module-anchors.8069350c1321599c430f.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3721/editor/apps/modules/runtime/3.837e97ee3698267e2a54.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3721/editor/apps/modules/runtime/5.a5af5a3b04156da9e174.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3721/editor/apps/modules/runtime/8.20c25f8b84fd357fa245.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3721/editor/apps/modules/runtime/22.3e5fa6c0d3f101e13242.js"></script></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="home" class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody pcCustomScrollbar d1SiteBody dmBodyNoIscroll fullyLoaded" style="padding:0;margin:0;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class="dmwr">
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1730699159" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="skinnyHeaderLayout" class="skinnyHeaderLayout dm-bfs dm-layout-home hasAnimations hasStickyHeader dmPageBody dmFreeHeader d-page-1704096028 showing-message runtime-module-container showing-message--bottom showing-message--shown" id="dm-outer-wrapper" data-page-class="1704096028" data-buttonstyle="BORDER_SHORT" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="718"> <div dm:templateorder="76" class="dmHeaderResp noSwitch" id="1627005021"> <div class="dmRespRow dmDefaultListContentRow u_1346382071 fullBleedChanged fullBleedMode" style="text-align:center" id="1346382071"> <div class="dmRespColsWrapper" id="1235357645"> <div class="u_1559581736 small-12 dmRespCol large-3 medium-3" id="1559581736"> <div class="u_1382871007 imageWidget align-center" data-widget-type="image" id="1382871007" data-element-type="image" editablewidget="true"> <a href="/" id="1538630633"><img src="https://lirp.cdn-website.com/391e5d14/dms3rep/multi/opt/ciao_bianco-241w.png" id="1649782631" class="" data-dm-image-path="https://irp.cdn-website.com/391e5d14/dms3rep/multi/ciao_bianco.png" onerror="handleImageLoadError(this)" height="57.046875" width="201.0"></a> 
+</div> 
+</div> 
+ <div class="u_1542077368 dmRespCol small-12 large-9 medium-9" id="1542077368"> <nav class="u_1983434687 effect-background main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_8" layout-sub="submenu_horizontal_2" data-show-vertical-sub-items="HOVER" id="1983434687" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item dmUDNavigationItem_00" target="" data-target-page-alias="" data-auto="selected-page" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap dmCoreImg" data-auto="more-pages" data-depth="0"> <a href="/#FEATURES" class="unifiednav__item dmUDNavigationItem_010101845556" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         About
+        " data-auto="page-text-style">About<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap dmCoreImg" data-auto="more-pages" data-depth="0"> <a href="/#CONTACT" class="unifiednav__item dmUDNavigationItem_010101494056" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         Contact Us
+        " data-auto="page-text-style">Contact Us<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap dmCoreImg" data-auto="more-pages" data-depth="0"> <a href="/#IOT" class="unifiednav__item dmUDNavigationItem_010101145020 currentPage" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         Privacy and Terms of Use
+        " data-auto="page-text-style">Privacy and Terms of Use<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+ <div id="desktopBodyBox"> <div id="iscrollBody"> <div id="site_content"> <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow dmInnerBarRow"> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"></div> 
+ <div class="titleLine display_None"><hr></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_home dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="117" class="dmFullRowRespTmpl mainBorder dmRespRowsWrapper dmRespRowsWrapperSize1" id="1704096028"> <section class="u_1723692489 dmRespRow dmHomeSection3" id="1723692489"> <div class="dmRespColsWrapper" id="1916649053"> <div class="dmRespCol small-12 medium-12 large-12" id="1423349797"> <div class="u_TOP dmNewParagraph" id="TOP" style="line-height:initial;" data-anchor="TOP" data-element-type="paragraph" data-version="5"> <h1 class="text-align-center size-48 m-size-38"><span class="font-size-48 m-font-size-38" style="font-family: Arial; background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); font-weight: 900; text-shadow: rgb(0, 0, 0) 0px 0px 15.8px;">PIAZZA NAVONA EXPERIENCE</span></h1> 
+</div></div> 
+</div> 
+</section> 
+ <div class="u_FEATURES dmRespRow" style="text-align: center;" id="FEATURES" data-anchor="FEATURES"> <div class="dmRespColsWrapper" id="1705680102"> <div class="dmRespCol small-12 medium-12 large-12 u_1050473929" id="1050473929"> <div class="u_1015555769 dmNewParagraph" id="1015555769" data-element-type="paragraph" data-version="5" data-styletopreserve="{" background-image":""}"=""> <h3 class="text-align-center size-60 m-size-48"><span style="font-style: italic; font-weight: bold; color: rgb(255, 255, 255); font-family: 'Dancing Script';" class="font-size-60 m-font-size-48">It's like being there</span></h3> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1542484921 dmRespRow" style="text-align: center;" id="1542484921"> <div class="dmRespColsWrapper" id="1100032896"> <div class="dmRespCol small-12 medium-4 large-4 u_1886786108" id="1886786108"> <span id="1569676315"></span> 
+ <div class="dmNewParagraph" id="1748640291" style="transition: opacity 1s ease-in-out;" data-element-type="paragraph" data-version="5"> <h4><span style="color: rgb(255, 255, 255);">Travel Entertainment</span></h4> 
+</div> <div class="u_1720413243 dmNewParagraph" id="1720413243" style="transition: opacity 1s ease-in-out;" data-version="5"><p class="text-align-left"><span class="" style="color: rgb(224, 224, 224);"><span style="color: rgb(224, 224, 224);">First chapter of our travel entertainment app, C!AO - Piazza Navona Experience&nbsp; gives you the chance to explore this immortal square in Rome, far and wide!</span> 
+</span><span style=""><br></span></p></div></div> 
+ <div class="dmRespCol small-12 medium-4 large-4 u_1972869774" id="1972869774"> <div class="dmNewParagraph" id="1369255423" style="transition: opacity 1s ease-in-out;" data-element-type="paragraph" data-version="5"> <h4><span style="color: rgb(255, 255, 255);">From your couch to Rome<span class="ql-cursor">﻿</span></span></h4> 
+</div> <div class="u_1068371317 dmNewParagraph" id="1068371317" style="transition: opacity 1s ease-in-out;" data-version="5"><p class="text-align-left"><span style="color: rgb(224, 224, 224); display: initial;">Discover its stories and hear about Popes and martyrs, artists and characters who made Piazza Navona one of the most famous city squares in the world. Experience the flood of the square, seek for the legendary hand of Costanza De Cupis and find out about the rivalry between Bernini and Borromini.</span></p></div></div> 
+ <div class="dmRespCol small-12 medium-4 large-4 u_1218386588" id="1218386588"> <div class="dmNewParagraph" id="1013264571" style="transition: opacity 1s ease-in-out;" data-element-type="paragraph" data-version="5"> <h4><span style="color: rgb(255, 255, 255);">Main features</span></h4> 
+</div> <div class="u_1653368693 dmNewParagraph" id="1653368693" style="transition: opacity 1s ease-in-out;" data-version="5"> <ul class="defaultList"><li class="text-align-left" style="color: rgb(224, 224, 224);"><span style="color: rgb(224, 224, 224);">Guided and free tour<br></span></li><li class="text-align-left" style="color: rgb(224, 224, 224);"><span style="color: rgb(224, 224, 224);">Day and night mode</span></li><li class="text-align-left" style="color: rgb(224, 224, 224);"><span style="color: rgb(224, 224, 224);">Completely rebuilt in CGI</span></li><li class="text-align-left" style="color: rgb(224, 224, 224);"><span style="color: rgb(224, 224, 224);">Relive myths and legends of the square</span></li><li class="text-align-left" style="color: rgb(224, 224, 224);"><span style="color: rgb(224, 224, 224);">English audio and subtitles</span></li></ul> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1658106148 dmRespRow" style="text-align: center;" id="1658106148"> <div class="dmRespColsWrapper" id="1295100138"> <div class="dmRespCol small-12 medium-12 large-12" id="1830542975"> <span id="1969115581"></span> 
+ <div class="dmNewParagraph u_1149129545" id="1149129545" style="transition: opacity 1s ease-in-out 0s; line-height: initial; text-align: center;" data-element-type="paragraph" data-version="5"> <h2 class="text-align-center"><span style="color: rgb(56, 56, 56); font-weight: bold;">A small start-up, a big project</span></h2> 
+</div> <div class="u_1119934204 dmDividerWrapper clearfix" id="1119934204" layout="divider-style-1" data-element-type="dDividerId"><hr class="dmDivider" style="min-height: 2px; border:none; background:grey" id="1129611322"></div> 
+ <div class="u_1526202893 dmNewParagraph" id="1526202893" style="transition: opacity 1s ease-in-out; display: block;" data-version="5"><p class="text-align-center"><span class="" style="font-weight: 300; color: rgb(56, 56, 56);"><span style="font-weight: 300; color: rgb(56, 56, 56);">We are a</span> 
+</span><span style="font-weight: bold; color: rgb(56, 56, 56);">self-funded italian start-up</span><span class="" style="font-weight: 300; color: rgb(56, 56, 56);"> <span style="font-weight: 300; color: rgb(56, 56, 56);">who believes in the</span> 
+</span><span class="" style="font-weight: bold; color: rgb(56, 56, 56);"><span style="font-weight: bold; color: rgb(56, 56, 56);">magic and potential of travel entertainment</span> 
+</span><span style="font-weight: 300; color: rgb(56, 56, 56);">in VR. <br>Piazza Navona Experience is just the first chapter and more will come with additional features and interactivity. <br>Stay tuned!</span></p></div></div> 
+</div> 
+</div> 
+ <div class="u_IOT dmRespRow" style="text-align: center;" id="IOT" data-anchor="IOT"> <div class="dmRespColsWrapper" id="1392272144"> <div class="dmRespCol small-12 medium-12 large-12" id="1189830616"> <div class="dmNewParagraph u_1556455829" id="1556455829" data-element-type="paragraph" data-version="5" data-styletopreserve="{" background-image":""}"=""><p class="m-size-14 size-18 text-align-left"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-10 font-size-12" style="color: rgb(255, 255, 255); font-weight: bold;"><br></a><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="font-size-18 m-font-size-14" style="color: rgb(255, 255, 255); font-weight: bold;">P</a><span class="m-font-size-14 font-size-18" style="color: rgb(255, 255, 255); font-weight: bold;">RIVACY POLICY</span></p><p class="text-align-center"><br></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">The purpose of this document is to inform the natural person (hereinafter “Data Subject”) about the processing of his/her personal data</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">(hereinafter “Personal Data”) collected by the data controller, Aita Pea Pea S.R.L., with registered o􀀣ce in Via Giuseppe Sacconi 4/b, Tax</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Code/VAT No. 16146721002, Aita Pea Pea SRL, e-mail address info@ciaovr.it, (hereinafter “Data Controller”), via and C!ao - Piazza Navona</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">experience (hereinafter “Application”).</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Changes and updates will be e􀀴ective as soon as they are published on the Application. In case of non-acceptance of the changes made</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">to the Privacy Policy, the Data Subject shall stop using this Application and may ask the Data Controller to delete his/her Personal Data.</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">1. Categories of Personal Data processed</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">The Data Controller processes the following types of Personal Data voluntarily provided by the Data Subject:</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">The Data Controller processes the following types of Personal Data collected automatically:</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Usage Data: such as, for example, pages visited, number of clicks, actions taken, duration of sessions, etc.</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">If the Data Subject decides not to provide Personal Data for which there is a legal or contractual obligation, or if such data is a</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">necessary requirement for the conclusion of the contract with the Data Controller, it will be impossible for the Data Controller to</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">establish or continue any relationship with the Data Subject.</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">The Data Subject who communicates Personal Data of third parties to the Data Controller is directly and exclusively liable for their</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">origin, collection, processing, communication or divulgation.</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">2. Cookies and similar technologies</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">The Application uses cookies, web beacons, univocal identifiers and other similar technologies to collect the Data Subject's</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Personal Data on visited pages and links and other actions performed during the use of the Application. This data is stored and</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">then used the next time the interested party browses the Application. The full Cookie Policy can be viewed at the following</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">address: http://www.ciaovr.it/cookie-policy</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">3. Legal basis and purpose of data processing</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">The processing of Personal Data is necessary:</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">a. for the performance of the contract with the Data Subject and especially:</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">1. fulfillment of any obligation arising from the pre-contractual or contractual relationship with the Data Subject</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">2. registration and authentication of the Data Subject: to allow the Data Subject to register in the Application, to access it</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">and to be identified in it, also via external platforms</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">3. support and contact with the Data Subject: to answer the Data Subject's requests</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">b. for legal obligations and especially:</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">1. the fulfilment of any obligation provided for by the applicable norms, laws and regulations, in particular, on tax and</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">fiscal matters</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">The Data Subject's Personal Data may also be used by the Data Controller to protect itself in judicial proceedings before the</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">competent courts.</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">4. Data processing methods and receivers of Personal Data</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">The processing of Personal Data is performed via paper-based and computer tools with methods of organization and logics strictly</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">related to the specified purposes and through the adoption of appropriate security measures.</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Personal Data are processed exclusively by:</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">persons authorized by the Data Controller to process Personal Data who have committed themselves to confidentiality or have</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">an appropriate legal obligation of confidentiality;</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">subjects that operate independently as separate data controllers or by subjects designated as data processors by the Data</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Controller in order to carry out all the processing activities necessary to pursue the purposes set out in this policy (for example,</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">business partners, consultants, IT companies, service providers, hosting providers);</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">subjects or bodies to whom it is mandatory to communicate Personal Data by law or by order of the authorities.</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">The subjects listed above are required to use appropriate measures and guarantees to protect Personal Data and may only access</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">data necessary to perform their duties.</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Personal Data will not be indiscriminately shared in any way.</a></p><p class="m-size-11 text-align-left size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">5. Place</a></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Personal Data will not be transferred outside the territory of the European Economic Area (EEA).</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">6. Fully automated decision-making processes</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">The Data Controller uses fully automated decision-making processes that may produce legal e􀀴ects or have a signi􀀻cant impact</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">on the Data Subject and that operate according to these criteria: Privacy .</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">7. Personal Data storage period</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Personal Data will be stored for the period of time that is required to fulfill the purposes for which it was collected. In particular:</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">for purposes related to the execution of the contract between the Data Controller and the Data Subject, will be stored for the</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">entire duration of the contractual relationship and, after termination, for the ordinary prescription period of 10 years. In the</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">event of legal disputes, for the entire duration of such disputes, until the time limit for appeals has expired</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">for purposes related to legitimate interests of the Data Controller, they will be stored until the fulfilment of such interest</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">in compliance with legal obligations, by order of an authority and for legal protection, they shall be stored according to the</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">relevant timeframes provided for by such obligations, regulations and, in any case, until the expiry of the prescriptive term</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">provided for by the rules in force</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">for purposes based on the consent of the Data Subject, they will be stored until the consent is revoked</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">At the end of the conservation period, all Personal Data will be deleted or stored in a form that does not allow the identification of</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">the Data Subject.</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">8. Rights of the Data Subject</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Data Subjects may exercise specific rights regarding the Personal Data processed by the Data Controller. In particular, the Data</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Subject has the right to:</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">be informed about the processing of their Personal Data withdraw consent at any time restrict the processing of his or her Personal Data</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">object to the processing of their Personal Data access their Personal Data verify and request the rectification of their Personal Data</span> 
+</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">restrict the processing of their Personal Data obtain the erasure of their Personal Data</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">transfer their Personal Data to another data controller</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">file a complaint with the Personal Data protection supervisory authority and/or take legal action.</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">In order to use their rights, Data Subjects may send a request to the following e-mail address info@ciaovr.it. Requests will be</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">immediately treated by the Data Controller and processed as soon as possible, in any case within 30 days.</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Last update: 18/01/2022.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style=""><br></span></p><p class="m-size-14 size-18 text-align-left"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="font-size-18 m-font-size-14" style="color: rgb(255, 255, 255); font-weight: bold;">COOKIE POLICY</a></p><p class="text-align-center"><br></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Our Cookie Policy is intended to describe the types of cookies used by our application http://www.ciaovr.it (hereinafter the</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">“Application”), the purposes, duration and methods in which the User can manage such cookies.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">The data controller is AITA PEA PEA SRL Via Giuseppe Sacconi 4/b, 00196 ROMA info@ciaovr.it (hereinafter the “Owner”).</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">1. WHAT ARE COOKIES</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Cookies are small text strings that are stored on the User's device when browsing the internet. Cookies are intended to collect and</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">store User’s information in order to make the Application more simple, faster and more responsive to his requests.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">The word Cookie indicates both to cookies as well as to all similar technologies.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">The User can block, delete or disable cookies in the device or browser settings as indicated below in the paragraph referred to</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">"Cookie management”.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">2. TYPES OF COOKIES USED BY THIS APPLICATION</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">This Application uses the following cookies:</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">First-party technical cookies: these cookies belong to the Application’s Owner and collect User data accessible only to the</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Owner. The Application uses these cookies to perform activities that are strictly necessary for the functioning of the Application</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">the provision of the service or to collect information, in aggregate and anonymous form, for statistical purposes. These cookies</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">do not profile the User. User's consent is not required for the use of these cookies.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">No third party cookies are used.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">3. COOKIES DURATION</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Cookies have a duration determined by the expiration date or a speci􀀼c action such as closing the browser set up at the time of</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">installation. Cookies may be:</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Temporary or session: used to store temporary information, allowing the User to link actions that are executed during a</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">specific session, and are removed from the User's device when the browser is turned off;</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Persistent cookies: used to store information, such as the login name and password of the User, in order to prevent the same</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">User from typing them again each time he visits a speci􀀼c website. These remain stored on the User's device even once the</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">browser is closed.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">4. COOKIE MANAGEMENT</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">The User can manage preferences relating to cookies directly in his browser and prevent third parties from installing cookies.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Further, it is also possible to delete cookies that have been installed in the past, including the cookie in which the expression of</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">consent to the installation of cookies has been saved by this Application. By disabling all cookies, the operation of this Application</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">may be compromised.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">The User can delete all cookies on his device by simply selecting, on his browser, the settings that allow you to refuse them. Each</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">browser has specific configuration instructions which can be found on the browser provider's website at the following links:</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Apple Safari: https://support.apple.com/it-it/guide/safari/manage-cookies-and-website-data-sfri11471/</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Google Chrome: https://support.google.com/chrome/answer/95647</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Mozilla Firefox: https://support.mozilla.org/kb/enable-and-disable-cookies-website-preferences</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Internet Explorer: http://windows.microsoft.com/internet-explorer/delete-manage-cookies</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Microsoft Edge https://support.microsoft.com/it-it/help/4027947/microsoft-edge-delete-cookies</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Opera: https://www.opera.com/help/tutorials/security/privacy/</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">Furthermore, third-party cookies may be deleted by requesting the opt-outs directly from third parties or via the website</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">http://www.youronlinechoices.com, where the User can manage the tracking preferences of most of the advertising tools.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">In order to modify the settings related to Flash cookies, it is possible to click on the following link:</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">https://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html.</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">5. Rights of the User</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">The Users may exercise specific rights with respect to personal data processed by the Owner. In particular, the User has the right</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">to:</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">withdraw its consent at any time;</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">object the Processing of its personal data;</a></p><p class="text-align-left m-size-11 size-14"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" class="m-font-size-11 font-size-14" style="color: rgb(255, 255, 255); font-weight: normal;">access its personal data;</a></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">monitor and request the rectification of personal data;</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">obtain a restriction of Processing;</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">obtain the erasure or remotion of its personal data;</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">receive its personal data or obtain the transfer to a different data controller;</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">lodge a complaint before the supervisory authority for the protection of personal data or start legal proceedings.</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">In order to exercise these rights, write to the Owner: info@ciaovr.it</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Requests are made free of charge and processed by the Owner as soon as possible, in any case within 30 days.</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Further information regarding the processing of personal data can be found in the privacy policy at the following link http://www.ciaovr.it.</span></p><p class="m-size-11 text-align-left size-14"><span class="m-font-size-11 font-size-14" style="font-weight: normal; color: rgb(255, 255, 255);">Latest update: 18/01/2022</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style=""><br></span></p><p class="text-align-left m-size-13 size-16"><span class="font-size-16 m-font-size-13" style="color: rgb(255, 255, 255); font-weight: bold;">TERMS AND CONDITIONS</span></p><p class="text-align-left"><span class="font-size-16 m-font-size-13" style="color: rgb(255, 255, 255); font-weight: bold;"><span class="ql-cursor">﻿</span></span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">This document contains the general terms and conditions on the basis of which the use of the web site and of the application C!ao -</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Piazza Navona Experience that provides Guided and free tour - Day and night mode - Completely rebuilt in CGI - Relive myths and</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">legends of the square - English audio and subtitles is offered to the users.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">1. Definitions</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">To allow a complete understanding and acceptance of these terms and conditions, the following terms, in the singular and in the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">plural, shall have the meaning indicated below:</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Owner: Aita Pea Pea S.R.L, with registered address in Via Giuseppe Sacconi 4/b, VAT number/Tax code 16146721002, REA: RM</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">- 1637805, fully paid-up share capital of 50.000,00 €, , certified e-mail address (PEC) aitapeapea@pec-legal.it</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Application: the web site and the application C!ao - Piazza Navona Experience</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">User: any person who accesses and uses the Application</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Conditions: this contract which governs the relationship between the Owner and the Users.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">2. Scope of the Conditions</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The use of the Application implies full acceptance of the Conditions by the User. Should the User not accept the Conditions and /</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">or any other note, legal notice, information published or referred to therein, the User shall not use the Application or the services</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">related.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Owner may amend the Conditions at any time. The changes shall be e􀁀ective from the time they are published in the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Application.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Before using the Application, the User is required to read the Conditions carefully save or print them for future reference.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Owner reserves the right to change, at his own discretion and at any time, the graphic interface of the Application, the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Contents and their organisation, as well as any other feature that characterises the functionality and management of the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Application, communicating to the User the relative instructions, when necessary.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">3. Content sent by the Users</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The User can upload Content on the Application, provided that it is not illegal (e.g. obscene, intimidating, defamatory,</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">pornographic, abusive or for any reason illegal or in violation of privacy, the intellectual and / or industrial property rights of the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Owner and / or third parties), misleading, or is not otherwise harmful to the Owner and / or third parties or contains viruses,</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">political propaganda, commercial solicitation, mass e-mail or any other form of spamming. In the event of a dispute by a third</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">party regarding any announcement or conduct related to it, the User assumes full liability and undertakes to hold the Holder</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">harmless from any damage, loss or expense.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The User guarantees that the Contents are sent to the Application through his account from a natural person of legal age. For</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">natural persons under legal age, the sending of Contents must be examined and authorised by the parents or by those exercising</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">parental authority.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The User is the sole and exclusive responsible for the use of the Application with regard to the publication, consultation,</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">management of the Content and contact between Users and is therefore the sole guarantor and responsible for the correctness,</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">completeness and lawfulness of the Contents and its own behaviour.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">It is forbidden to use an e-mail address that is not owned by the User, to use the personal data and credentials of another User in</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">order to use his identity, or in any other way to declare false information about the origin of the Contents.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Owner is unable to ensure timely control over the Content received and reserves the right at any time to cancel, move or</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">modify the Content, which, at its discretion, appears to be illegal, abusive, defamatory, obscene or prejudicial to the right to author</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">and trademarks or in any case unacceptable.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Users grant the Owner a non-exclusive right of use on the Content sent, without limitations of geographical areas. The Owner may</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">therefore, directly or through trusted third ies, use, modify, copy, transmit, extract, publish, distribute, publicly perform,</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">disseminate, create derivative works, host, index, store, note, encode, modify and adapt (including without limitation the right to</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">adapt for transmission in any form of communication) in any form, any Content (including images, messages, including audio and</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">video) that should be sent by the User, including through third parties.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Content sent will not be returned and the Owner will not be liable towards Users for the loss, modi􀀼cation or destruction of</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">the transmitted Content.It is expressly forbidden, unless explicitly authorised by the Owner: i) the use of automatic announcement</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">uploading systems, except those expressly authorised, ii) serial publication and / or management of advertisements for third</span> 
+</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">parties by any means ormethod, iii) resell the Owner's services to third parties.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">4. Industrial and intellectual property rights</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Owner declares to be the owner and / or licensee of all intellectual property rights relating to and / or relating to the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Application and / or the Content available on the Application. Therefore, all the trademarks, 􀀼gurative or word and all other signs,</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">commercial names, service marks, word marks, commercial names, illustrations, images, logos, contents relating to the Application</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">are and remain the property of the Owner or its licensees and are protected by the laws in force on the trademarks and by the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">relative international treaties.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Conditions do not grant the User any license for use relating to individual contents and / or materials available therein, unless</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">otherwise regulated.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Any reproductions in any form of the explanatory texts and the Contents of the Application, if not authorised, will be considered</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">violations of the intellectual and industrial property right of the Owner.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">5. Exclusion of warranty</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Application is provided "as is" and "as available" and the Owner does not provide any explicit or implicit guarantee in relation</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">to the Application, nor does it provide any guarantee that the Application will satisfy the needs of the Users or that it will not have</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">never interrupt or be error-free or free of viruses or bugs.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Owner will endeavour to ensure that the Application is available continuously 24 hours a day, but cannot in any way be held</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">responsible if, for any reason, the Application is not accessible and / or operational at any time or for any period . Access to the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Application may be suspended temporarily and without notice in the event of system failure, maintenance, repairs or for reasons</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">wholly unrelated to the owner's will or due to force majeure events.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">6. Limitation of liability</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Owner shall not be held liable towards the User, except in the case of wilful misconduct or gross negligence, for disservices or</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">malfunctions connected to the use of the internet outside of its own control or that of its suppliers.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Furthermore, the Owner will not be liable for damages, losses and costs incurred by the User as a result of failure to execute the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">contract for reasons not attributable to him.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Owner assumes no responsibility for any fraudulent or illegal use that may be made by third parties of credit cards and other</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">means of payment,</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Owner shall not be held liable for:</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">any loss of business opportunities and any other loss, even indirect, possibly su􀁀ered by the User that is not a direct result of</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">the breach of contract by the Owner</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">incorrect or unsuitable use of the Application by Users or third parties</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">In no case the Owner shall be held liable for a sum greater than twice the cost paid by the User.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">7. Force majeure</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Owner shall not be held responsible for the failure or late ful􀀼lment of its obligations, due to circumstances beyond its</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">reasonable control due to events of force majeure or, in any case, to unforeseen and unforeseeable events and, in any case,</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">independent of its will.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The ful􀀼lment of the obligations by the Owner shall be considered suspended for the period in which events of force majeure</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">occur.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Owner will perform any act in his power in order to identify solutions that allow the correct ful􀀼lment of his obligations</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">despite the persistence of events due to force majeure.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">8. Links to third-party web sites</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Application may contain links to third-party web sites / applications. The Owner has no control over them and, therefore, is in</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">no way responsible for the contents of these sites / applications.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Some of these links may link to third-party sites / applications that provide services through the Application. In these cases, the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">general conditions for the use of the site / application and for the use of the service prepared by the third parties will be applied to</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">the individual services, with respect to which the Owner assumes no responsibility.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">9. Privacy</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The protection and processing of personal data will be in accordance with the Privacy Policy which can be consulted on the page http://www.ciaovr.it/privacy</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">10. Applicable law and jurisdiction</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The Conditions are subject to Italian law.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">For Consumer Users, any dispute concerning the application, execution and interpretation of these Conditions shall be referred to</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">courts where the Consumer User resides or has elected domicile, if located in the territory of the Italian Republic, without</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">prejudice to the right of the User Consumer of going to court other than the "consumer court" pursuant to Section 66 bis of the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Italian Consumer Code, competent for the territory according to one of the criteria of the Sections 18, 19 and 20 of the civil</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">procedural code.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The application to Consumer Users who do not have their residence or domicile in Italy of any more favourable and mandatory</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">provisions established by the law of the country in which they have their residence or domicile is reserved, in particular in relation</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">to the term for the exercise of the right of withdrawal, after the return of the Products, in case of exercise of this right, the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">formalities of the communication and the legal guarantee of conformity.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">For Users who are not Consumers, any dispute concerning the application, execution and interpretation of these Conditions will</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">be referred to the forum of the place where the Owner is based.</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">11. Online dispute resolution for Consumer Users</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">The consumer user residing in Europe shall be aware of the fact that the European Commission has established an online</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">platform that provides an alternative dispute resolution tool. This tool can be used by the Consumer User to resolve any dispute</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">relating to and / or deriving from contracts for the sale of goods and the provision of services concluded online. Consequently, the</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Consumer User can use this platform for the resolution of any dispute arising from the contract entered into online. The platform</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">is available at the following address: ec.europa.eu/consumers/odr/</span></p><p class="m-size-11 text-align-left size-14"><span class="font-size-14 m-font-size-11" style="color: rgb(255, 255, 255);">Date 21/01/2022</span></p><p class="text-align-left"><span style=""><br></span></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p class="text-align-left"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" style="color: rgb(255, 255, 255);">&nbsp; &nbsp;</a></p><p class="text-align-left"><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" style="color: rgb(0, 0, 0);"><br></a><a href="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" target="_blank" runtime_url="https://irp.cdn-website.com/391e5d14/files/uploaded/Privacy-Policy-sul-Trattamento-dei-Dati%201.1.pdf" file="true" type="file" style=""><br></a></p></div></div> 
+</div> 
+</div> 
+ <div class="u_CONTACT dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="CONTACT" data-anchor="CONTACT"> <div class="dmRespColsWrapper" id="1760682109"> <div class="u_1707383699 dmRespCol small-12 medium-12 large-12" id="1707383699"> <div class="u_1643858298 dmform default native-inputs" id="1643858298" data-element-type="dContactUsRespId" data-layout="layout-2"> <h3 class="dmform-title dmwidget-title" id="1549503354">Contact Us</h3> 
+ <div class="dmform-wrapper" id="1444650141" captcha-lang="en"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1840259384"> <div class="dmforminput required small-12 dmRespDesignCol medium-12 large-12" id="1395974545"> <label for="1575990261" id="1055517993" data-dm-for="dmform-0">Name</label> 
+<input type="text" name="dmform-0" id="1575990261"><input type="hidden" name="label-dmform-0" value="Name" id="1156390492" class=""></div> 
+ <div class="dmforminput required small-12 dmRespDesignCol medium-12 large-12" id="1431631708"> <label for="1299576215" id="1395306995" data-dm-for="dmform-1">E-mail</label> 
+<input type="email" name="dmform-1" id="1299576215"><input type="hidden" name="label-dmform-1" value="E-mail" id="1540681119"></div> 
+ <div class="dmforminput small-12 dmRespDesignCol medium-12 large-12" id="1093128376"> <label for="1013233604" id="1280903550" data-dm-for="dmform-2">your message</label> 
+ <textarea name="dmform-2" id="1013233604"></textarea> 
+<input type="hidden" name="label-dmform-2" value="your message" id="1411197019" class=""></div> 
+ <div class="dmformsubmit dmWidget R" id="1082450404"><input class="" name="submit" type="submit" value="send message" id="1662944840"></div> 
+<input name="dmformsendto" type="hidden" value="O0wrseIfFLsSlLR4GAldF/Z5QKGpQN7WuI8kFfpgi2xgboGsVM1zAm+yMwFnyh1B" id="1740183005" data-success-page="" class="" data-dec="true"><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1255857395"><input name="dmformsubject" type="hidden" value="Messaggio dal sito" id="1390745537" data-success-page="" class=""><input name="dmformsubmitparams" type="hidden" value="8mpKnCSiNQXK/d9M7IDrSzRkXjNcoSR4CsAbBd+NlMTlVYaut3YMIh1LxBjO54z+hLVE68JGXTpUfsDKoEdLasb194GIiDIsT6oUY0DhCrT9qzMEcmcbJAlXo8IvNGxqPjEt2GCsH/7DZ+VxQZmWsjwU1aID/Hu6J4HTiWgRrKgJ6ClM/Udlj1tAgH0vgv3Vw6rKmDj8HwFC1LBykYyjlQ==" data-dec="true"></form> 
+</div> 
+ <div class="dmform-success" style="display:none" id="1051080288" data-success-page=""><p class="rteBlock">Thank you for your message. We will reply as soon as possible!</p></div> 
+ <div class="dmform-error" style="display:none" id="1282170992"><p class="rteBlock">Sorry, something went wrong, please try again</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="14" class="dmFooterResp dmFullFooterResp" id="1947662191"> <div class="dmRespRow dmDividerRow" id="1498547270"> <div class="dmRespColsWrapper" id="1285411343"> <div class="large-12 medium-12 small-12 dmRespCol" id="1948672220"> <div class="dmDividerWrapper clearfix" id="1905889181" data-element-type="dDividerId"><hr class="dmDivider defaultDivider" id="1617507295"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow dmFooterContent u_1580437937" id="1580437937"> <div class="dmRespColsWrapper" id="1577110889"> <div class="dmRespCol large-12 medium-12 small-12 dmFooterCol" id="1970930090"> <div class="dmFooterDefaultH3 dmNewParagraph" id="1351906017" data-version="5"> <h3 class="text-align-center"><span style="">Follow us</span></h3> 
+</div> 
+ <div class="u_1289223440 dmSocialHome dmSocialHub" id="1289223440" dmle_extension="social_hub" data-element-type="social_hub" wr="false" icon="true" surround="false"> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://www.youtube.com/channel/UCuzu45I9lGsGAa97_ETU4dQ" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event('socialLink', 'click', 'Youtube')"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style3" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1345961108 dmNewParagraph" id="1345961108" data-version="5" data-styletopreserve="{" background-image":""}"=""><p class="text-align-center" style="line-height: 1.5;"><span class="" style="display: initial;"><span style="display: initial;"><br>Aita Pea Pea S.R.L.</span> 
+</span></p><p class="text-align-center" style="line-height: 1.5;"><span style="display: initial;">P.iva 16146721002</span></p><p class="text-align-center" style="line-height: 1.5;"><span style="display: initial;">&nbsp;4/B Giuseppe Sacconi street, Roma, Italia</span></p></div></div> 
+</div> 
+</div> 
+ <div id="1695926850" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<div id="d-notification-bar" data-rule-type="notification" data-visible="true"> <div>We use cookies to ensure that we give you the best experience on our website. To learn more, go to the Privacy Page.</div> 
+<div class="notification-dismiss" aria-label="Dismiss notification">×</div></div></div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function -->
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    cssLinks = null;
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if(link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      }  
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<link rel="stylesheet" href="https://irp.cdn-website.com/fonts/css?family=Roboto:100,200,300,400,500,600,700,800,900|Maven+Pro:100,200,300,400,500,600,700,800,900|Dancing+Script:100,200,300,400,500,600,700,800,900|Oswald:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext&amp;display=swap" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-new-->
+<link rel="preload" as="style" fetchpriority="low" onload="loadCSS(this)" href="https://static.cdn-website.com/mnlt/production/3721/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-new.min.css">
+
+<!-- End of RT CSS Include -->
+
+
+<link rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/production_3721/42035e6e3f0f35d2f82168f618a743dd.css" id="widgetCSS" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="home"] #dm [data-show-on-page-only="home"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link rel="preload" href="https://irp.cdn-website.com/391e5d14/files/391e5d14_1.min.css?v=17" id="siteGlobalCss" as="style" fetchpriority="low" onload="loadCSS(this)">
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style id="additionalGlobalCss" type="text/css">
+</style>
+
+<!-- Page CSS -->
+<link rel="preload" href="https://irp.cdn-website.com/391e5d14/files/391e5d14_home_1.min.css?v=17" id="homeCssLink" as="style" fetchpriority="low" onload="loadCSS(this)">
+
+<style id="pagestyle" type="text/css">
+    
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-12, .size-12, .size-12 > font { font-size: 12px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+<!-- ========= JS Section ========= -->
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "24..43";
+    var build = "2023-08-31T10_49_14";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2023-08-31T10_49_14";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+    <script type="text/javascript" id="d-js-jquery" src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+    <!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = ' <div>We use cookies to ensure that we give you the best experience on our website. To learn more, go to the Privacy Page.<\/div> \n';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id="d-js-params">
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/3721';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/3721';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.photoswipe.fix"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["feature.flag.addTargetBlankToExternalLinks"] =true;
+    rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtCommonProps["keyboard.navigation.enabled"] =true;
+    rtCommonProps["scripts.widgetCount.enabled"] =true;
+    rtCommonProps["maps.cookiebot.enabled"] =true;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'here';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtCommonProps["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["runtime.save.restore.function.bind"] =true;
+    rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+    rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+    rtCommonProps["new.store.accountPage.ecwid.resetPassword.fix"] =true;
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+    rtCommonProps["geocode.search.localize"] =false;
+    rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.contact.form.fix.for.attribute"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["contact.form.date.format.enabled"] = true;
+    rtCommonProps["filestack.uploadToTempBucket.enabled"] = true;
+    rtCommonProps["platform.monolith.loginBar.getUserLoggedIn.enabled"] = true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/3721/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js" id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/3721/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js"></script>
+<script>jQuery.DM.updateWidthAndHeight();
+$(window).resize(function () {
+    
+});
+$(window).bind("orientationchange", function (e) {
+    $.layoutManager.initLayout();
+    
+});
+$(document).resize(function () {
+    
+});
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript">
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+  
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '391e5d14'
+});
+
+dmsnowplow('trackPageView')
+$.each(_dm_insite, function(idx, rule) {
+	//('trackStructEvent', 'category','action','label','property','value');
+			// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+	        // the tracking is in popup.js
+			if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+ 			$(document).ready(function(){
+ 				$.DM.events.trigger('event-ruleTriggered', {value: rule})}
+ 			);
+ 		});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root" data-locale="en"></div>
+<!-- Alias: 391e5d14 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+// Collects client data and updates cookies used by smart sites
+var expireDays = 365,visitLength = 30 * 60000;
+$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+function setSmartSiteCookies() {
+	setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+}
+$.DM.events.on("afterAjax", setSmartSiteCookies);
+setSmartSiteCookies();
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<script>
+    jQuery(window).on('load', function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+    });
+</script>
+<script>
+    dmAPI.loadScript(
+        window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+        function () {
+            dmAPI.runOnReady('lozadInit', function () {
+                window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                    img.addEventListener('load', function (event) {
+                        var img = event.target;
+                        img.style.filter = 'blur(0)';
+                        setTimeout(function () {
+                            $(img).closest('.imageWidget').addClass('lazyLoaded');
+                        }, 250)
+                    });
+                });
+                lozad('.lazy', {
+                    threshold: 0.1,
+                    loaded: function (element) {
+                        if (element.getAttribute('data-background-image')) {
+                            element.style.setProperty(
+                                'background-image',
+                                "url('" + element.getAttribute('data-background-image') + "')",
+                                "important"
+                            );
+                        }
+                    }
+                }).observe();
+            });
+        }
+    );
+</script>
+<!--  End Script tags -->
+
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+
+
+</body></html>

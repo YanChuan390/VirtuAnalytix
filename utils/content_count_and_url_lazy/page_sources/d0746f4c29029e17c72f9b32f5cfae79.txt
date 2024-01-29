@@ -1,0 +1,104 @@
+<html lang="en"><head>        
+        <title>THS - VR First person vehicular shooter | Privacy Policy         
+        </title>        
+        <meta charset="utf-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <!-- <meta property="fb:app_id" content="????"> -->        
+        <meta charset="utf-8">        
+        <meta name="mobile-web-app-capable" content="yes">        
+        <meta name="author" content="Tetrox LTD">        
+        <meta name="theme-color" content="#232323">        
+        <meta name="og:type" property="og:type" content="website">               
+        <meta property="og:url" content="https://ths-vr.net/">        
+        <meta name="description" content="Time Has Stopped: A single-player VR vehicular shooter with time dilation mechanics. Deflect shells, aim carefully, and discover hidden secrets in 3 biomes and 15 levels. More biomes and levels being added soon!">        
+        <meta name="og:title" property="og:title" content="THS - VR First person vehicular shooter">        
+        <meta property="og:description" name="og:description" content="Time Has Stopped: A single-player VR vehicular shooter with time dilation mechanics. Deflect shells, aim carefully, and discover hidden secrets in 3 biomes and 15 levels. More biomes and levels being added soon!">        
+        <meta property="og:image" content="https://ths-vr.net/icons/index.png">        
+        <meta name="og:site_name" property="og:site_name" content="THS - VR First person vehicular shooter">        
+        <meta name="apple-mobile-web-app-title" content="THS - VR First person vehicular shooter">        
+        <meta property="og:image:secure_url" content="https://ths-vr.net/icons/index.png">        
+        <meta name="twitter:description" content="Time Has Stopped: A single-player VR vehicular shooter with time dilation mechanics. Deflect shells, aim carefully, and discover hidden secrets in 3 biomes and 15 levels. More biomes and levels being added soon!">        
+        <meta name="twitter:title" content="THS - VR First person vehicular shooter">        
+        <meta name="twitter:image" content="https://ths-vr.net/icons/index.png">        
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">        
+        <link rel="shortcut icon" href="./icons/icon_64x64.png">        
+        <link rel="apple-touch-icon" href="./icons/icon_512x512.png" sizes="512x512">        
+        <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">        
+        <link rel="stylesheet" href="./style.css">        
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>    
+    </head>          
+    <body>
+        <div class="header">
+            <div class="inner">
+                <div class="flex-menu">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./images/logo.svg" class="logoimg" alt="Time Has Sotopped"></a>
+                        <img src="./images/logoaddon.svg" class="logoaddonimg" alt="Time Has Sotopped">
+                    </div>
+                    <div class="mainmenu">
+                        <a href="./index.html#game">the game</a>
+                        <a href="./index.html#updates">updates</a>
+                        <a href="./index.html#community">community</a>
+                        <!-- <a href="#" class="applab-button">buy on applab</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="textcontent">
+        <div class="inner" id="here">                                                                    
+       
+        </div>
+        </div>
+        <div class="footer">
+            <div class="inner">
+                <div class="flex-menu">
+                    <div class="footlogo">
+                        <img src="./images/logo.svg" class="logoimg" alt="Time Has Sotopped">
+                        <div class="copyrights">© 2015–2023 TETROX LTD All rights reserved.
+                        </div>
+                    </div>                    
+                    <div class="foot-menu">
+                        <ul>
+                            <li><a href="./privacy.html">privacy policy</a>
+                            </li>
+                            <li><a href="./discord.html" target="_blank">discord</a>
+                            </li>
+                            <li><a href="https://www.youtube.com/channel/UCX-gBYR4agOLA7qR6eG7trg" rel="notarget" target="_blank">youtube</a>
+                            </li>
+                            <li><a href="https://www.instagram.com/thsvrgame/" rel="notarget" target="_blank">instagram</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topbutton">
+            <a href="#">up</a>
+        </div>
+        <script>
+                $(document).scroll(function () {
+                        var y = $(this).scrollTop();
+                        if (y > 10) {
+                                $('.header').addClass("smallheader");
+                                $('.topbutton').addClass("show");
+                        } else {
+                                $('.header').removeClass("smallheader");
+                                $('.topbutton').removeClass("show");
+                        }
+                });
+                
+                $.ajax({
+                   url: '/noseo/tetrox_privacy.html',
+                   type: 'GET',
+                   success: function(res) {
+                      var data = $.parseHTML(res);  //<----try with $.parseHTML().
+                      $(data).find('div.mYVXT').each(function(){
+                          $('#here').append($(this).html());
+                     });
+
+                   }
+                 });                
+        </script>        
+    
+                                                                                                                             </body></html>

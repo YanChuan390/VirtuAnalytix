@@ -1,0 +1,695 @@
+<html lang="en"><!--<![endif]--><head><meta content="text/html;charset=utf-8" http-equiv="Content-Type"><meta content="IE=edge" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="" name="description"><meta content="" name="author"><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"><link href="/site.webmanifest" rel="manifest"><link color="#2c70b8" href="/safari-pinned-tab.svg" rel="mask-icon"><meta content="#ffffff" name="msapplication-TileColor"><meta content="#ffffff" name="theme-color"><title>Global Privacy Policy |  Oxford Medical Simulation - VR training for optimal patient care</title><meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="4__bMI3EidWQ6MNxgP8fOFs4D-CebrMQ8CHWq6pnHcIwLi9Wem0EeFW-nmNJxlibpLnx8thbOZHzrtMRDF0zig"><link rel="stylesheet" media="all" href="https://www1.oms-app.com/assets/application-4095df0de39d53d98599b07f2ef17753b1d0a334849cdfda6638f5f7a63306e1.css"><script type="text/javascript" async="" src="https://widget.intercom.io/widget/l77pdl0w"></script><script crossorigin="anonymous" src="https://kit.fontawesome.com/39455bcd4b.js"></script><script async="" src="//rum-static.pingdom.net/pa-5fd0d6d9567ef900130000c6.js"></script><style type="text/css">.apexcharts-canvas {
+  position: relative;
+  user-select: none;
+  /* cannot give overflow: hidden as it will crop tooltips which overflow outside chart area */
+}
+
+
+/* scrollbar is not visible by default for legend, hence forcing the visibility */
+.apexcharts-canvas ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+}
+
+.apexcharts-canvas ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+
+.apexcharts-inner {
+  position: relative;
+}
+
+.apexcharts-text tspan {
+  font-family: inherit;
+}
+
+.legend-mouseover-inactive {
+  transition: 0.15s ease all;
+  opacity: 0.20;
+}
+
+.apexcharts-series-collapsed {
+  opacity: 0;
+}
+
+.apexcharts-tooltip {
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px -4px #999;
+  cursor: default;
+  font-size: 14px;
+  left: 62px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 12;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light {
+  border: 1px solid #e3e3e3;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark {
+  color: #fff;
+  background: rgba(30, 30, 30, 0.8);
+}
+
+.apexcharts-tooltip * {
+  font-family: inherit;
+}
+
+
+.apexcharts-tooltip-title {
+  padding: 6px;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+  background: #ECEFF1;
+  border-bottom: 1px solid #ddd;
+}
+
+.apexcharts-tooltip.apexcharts-theme-dark .apexcharts-tooltip-title {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #333;
+}
+
+.apexcharts-tooltip-text-y-value,
+.apexcharts-tooltip-text-goals-value,
+.apexcharts-tooltip-text-z-value {
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.apexcharts-tooltip-text-y-label:empty,
+.apexcharts-tooltip-text-y-value:empty,
+.apexcharts-tooltip-text-goals-label:empty,
+.apexcharts-tooltip-text-goals-value:empty,
+.apexcharts-tooltip-text-z-value:empty {
+  display: none;
+}
+
+.apexcharts-tooltip-text-y-value,
+.apexcharts-tooltip-text-goals-value,
+.apexcharts-tooltip-text-z-value {
+  font-weight: 600;
+}
+
+.apexcharts-tooltip-text-goals-label, 
+.apexcharts-tooltip-text-goals-value {
+  padding: 6px 0 5px;
+}
+
+.apexcharts-tooltip-goals-group, 
+.apexcharts-tooltip-text-goals-label, 
+.apexcharts-tooltip-text-goals-value {
+  display: flex;
+}
+.apexcharts-tooltip-text-goals-label:not(:empty),
+.apexcharts-tooltip-text-goals-value:not(:empty) {
+  margin-top: -6px;
+}
+
+.apexcharts-tooltip-marker {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.apexcharts-tooltip-series-group {
+  padding: 0 10px;
+  display: none;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active .apexcharts-tooltip-marker {
+  opacity: 1;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active,
+.apexcharts-tooltip-series-group:last-child {
+  padding-bottom: 4px;
+}
+
+.apexcharts-tooltip-series-group-hidden {
+  opacity: 0;
+  height: 0;
+  line-height: 0;
+  padding: 0 !important;
+}
+
+.apexcharts-tooltip-y-group {
+  padding: 6px 0 5px;
+}
+
+.apexcharts-tooltip-box, .apexcharts-custom-tooltip {
+  padding: 4px 8px;
+}
+
+.apexcharts-tooltip-boxPlot {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.apexcharts-tooltip-box>div {
+  margin: 4px 0;
+}
+
+.apexcharts-tooltip-box span.value {
+  font-weight: bold;
+}
+
+.apexcharts-tooltip-rangebar {
+  padding: 5px 8px;
+}
+
+.apexcharts-tooltip-rangebar .category {
+  font-weight: 600;
+  color: #777;
+}
+
+.apexcharts-tooltip-rangebar .series-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.apexcharts-xaxistooltip {
+  opacity: 0;
+  padding: 9px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xaxistooltip.apexcharts-theme-dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-xaxistooltip:after,
+.apexcharts-xaxistooltip:before {
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-xaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.apexcharts-xaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+.apexcharts-xaxistooltip-bottom:after,
+.apexcharts-xaxistooltip-bottom:before {
+  bottom: 100%;
+}
+
+.apexcharts-xaxistooltip-top:after,
+.apexcharts-xaxistooltip-top:before {
+  top: 100%;
+}
+
+.apexcharts-xaxistooltip-bottom:after {
+  border-bottom-color: #ECEFF1;
+}
+
+.apexcharts-xaxistooltip-bottom:before {
+  border-bottom-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:after {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-bottom.apexcharts-theme-dark:before {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top:after {
+  border-top-color: #ECEFF1
+}
+
+.apexcharts-xaxistooltip-top:before {
+  border-top-color: #90A4AE;
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:after {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip-top.apexcharts-theme-dark:before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-xaxistooltip.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-yaxistooltip {
+  opacity: 0;
+  padding: 4px 10px;
+  pointer-events: none;
+  color: #373d3f;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  background: #ECEFF1;
+  border: 1px solid #90A4AE;
+}
+
+.apexcharts-yaxistooltip.apexcharts-theme-dark {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.apexcharts-yaxistooltip:after,
+.apexcharts-yaxistooltip:before {
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.apexcharts-yaxistooltip:after {
+  border-color: rgba(236, 239, 241, 0);
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.apexcharts-yaxistooltip:before {
+  border-color: rgba(144, 164, 174, 0);
+  border-width: 7px;
+  margin-top: -7px;
+}
+
+.apexcharts-yaxistooltip-left:after,
+.apexcharts-yaxistooltip-left:before {
+  left: 100%;
+}
+
+.apexcharts-yaxistooltip-right:after,
+.apexcharts-yaxistooltip-right:before {
+  right: 100%;
+}
+
+.apexcharts-yaxistooltip-left:after {
+  border-left-color: #ECEFF1;
+}
+
+.apexcharts-yaxistooltip-left:before {
+  border-left-color: #90A4AE;
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:after {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-left.apexcharts-theme-dark:before {
+  border-left-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right:after {
+  border-right-color: #ECEFF1;
+}
+
+.apexcharts-yaxistooltip-right:before {
+  border-right-color: #90A4AE;
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:after {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip-right.apexcharts-theme-dark:before {
+  border-right-color: rgba(0, 0, 0, 0.5);
+}
+
+.apexcharts-yaxistooltip.apexcharts-active {
+  opacity: 1;
+}
+
+.apexcharts-yaxistooltip-hidden {
+  display: none;
+}
+
+.apexcharts-xcrosshairs,
+.apexcharts-ycrosshairs {
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-xcrosshairs.apexcharts-active,
+.apexcharts-ycrosshairs.apexcharts-active {
+  opacity: 1;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-ycrosshairs-hidden {
+  opacity: 0;
+}
+
+.apexcharts-selection-rect {
+  cursor: move;
+}
+
+.svg_select_boundingRect, .svg_select_points_rot {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.apexcharts-selection-rect + g .svg_select_boundingRect,
+.apexcharts-selection-rect + g .svg_select_points_rot {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.apexcharts-selection-rect + g .svg_select_points_l,
+.apexcharts-selection-rect + g .svg_select_points_r {
+  cursor: ew-resize;
+  opacity: 1;
+  visibility: visible;
+}
+
+.svg_select_points {
+  fill: #efefef;
+  stroke: #333;
+  rx: 2;
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-zoom {
+  cursor: crosshair
+}
+
+.apexcharts-svg.apexcharts-zoomable.hovering-pan {
+  cursor: move
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon,
+.apexcharts-reset-icon,
+.apexcharts-pan-icon,
+.apexcharts-selection-icon,
+.apexcharts-menu-icon,
+.apexcharts-toolbar-custom-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  color: #6E8192;
+  text-align: center;
+}
+
+.apexcharts-zoom-icon svg,
+.apexcharts-zoomin-icon svg,
+.apexcharts-zoomout-icon svg,
+.apexcharts-reset-icon svg,
+.apexcharts-menu-icon svg {
+  fill: #6E8192;
+}
+
+.apexcharts-selection-icon svg {
+  fill: #444;
+  transform: scale(0.76)
+}
+
+.apexcharts-theme-dark .apexcharts-zoom-icon svg,
+.apexcharts-theme-dark .apexcharts-zoomin-icon svg,
+.apexcharts-theme-dark .apexcharts-zoomout-icon svg,
+.apexcharts-theme-dark .apexcharts-reset-icon svg,
+.apexcharts-theme-dark .apexcharts-pan-icon svg,
+.apexcharts-theme-dark .apexcharts-selection-icon svg,
+.apexcharts-theme-dark .apexcharts-menu-icon svg,
+.apexcharts-theme-dark .apexcharts-toolbar-custom-icon svg {
+  fill: #f3f4f5;
+}
+
+.apexcharts-canvas .apexcharts-zoom-icon.apexcharts-selected svg,
+.apexcharts-canvas .apexcharts-selection-icon.apexcharts-selected svg,
+.apexcharts-canvas .apexcharts-reset-zoom-icon.apexcharts-selected svg {
+  fill: #008FFB;
+}
+
+.apexcharts-theme-light .apexcharts-selection-icon:not(.apexcharts-selected):hover svg,
+.apexcharts-theme-light .apexcharts-zoom-icon:not(.apexcharts-selected):hover svg,
+.apexcharts-theme-light .apexcharts-zoomin-icon:hover svg,
+.apexcharts-theme-light .apexcharts-zoomout-icon:hover svg,
+.apexcharts-theme-light .apexcharts-reset-icon:hover svg,
+.apexcharts-theme-light .apexcharts-menu-icon:hover svg {
+  fill: #333;
+}
+
+.apexcharts-selection-icon,
+.apexcharts-menu-icon {
+  position: relative;
+}
+
+.apexcharts-reset-icon {
+  margin-left: 5px;
+}
+
+.apexcharts-zoom-icon,
+.apexcharts-reset-icon,
+.apexcharts-menu-icon {
+  transform: scale(0.85);
+}
+
+.apexcharts-zoomin-icon,
+.apexcharts-zoomout-icon {
+  transform: scale(0.7)
+}
+
+.apexcharts-zoomout-icon {
+  margin-right: 3px;
+}
+
+.apexcharts-pan-icon {
+  transform: scale(0.62);
+  position: relative;
+  left: 1px;
+  top: 0px;
+}
+
+.apexcharts-pan-icon svg {
+  fill: #fff;
+  stroke: #6E8192;
+  stroke-width: 2;
+}
+
+.apexcharts-pan-icon.apexcharts-selected svg {
+  stroke: #008FFB;
+}
+
+.apexcharts-pan-icon:not(.apexcharts-selected):hover svg {
+  stroke: #333;
+}
+
+.apexcharts-toolbar {
+  position: absolute;
+  z-index: 11;
+  max-width: 176px;
+  text-align: right;
+  border-radius: 3px;
+  padding: 0px 6px 2px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apexcharts-menu {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px;
+  right: 10px;
+  opacity: 0;
+  min-width: 110px;
+  transition: 0.15s ease all;
+  pointer-events: none;
+}
+
+.apexcharts-menu.apexcharts-menu-open {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.15s ease all;
+}
+
+.apexcharts-menu-item {
+  padding: 6px 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.apexcharts-theme-light .apexcharts-menu-item:hover {
+  background: #eee;
+}
+
+.apexcharts-theme-dark .apexcharts-menu {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .apexcharts-canvas:hover .apexcharts-toolbar {
+    opacity: 1;
+  }
+}
+
+.apexcharts-datalabel.apexcharts-element-hidden {
+  opacity: 0;
+}
+
+.apexcharts-pie-label,
+.apexcharts-datalabels,
+.apexcharts-datalabel,
+.apexcharts-datalabel-label,
+.apexcharts-datalabel-value {
+  cursor: default;
+  pointer-events: none;
+}
+
+.apexcharts-pie-label-delay {
+  opacity: 0;
+  animation-name: opaque;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.apexcharts-canvas .apexcharts-element-hidden {
+  opacity: 0;
+}
+
+.apexcharts-hide .apexcharts-series-points {
+  opacity: 0;
+}
+
+.apexcharts-gridline,
+.apexcharts-annotation-rect,
+.apexcharts-tooltip .apexcharts-marker,
+.apexcharts-area-series .apexcharts-area,
+.apexcharts-line,
+.apexcharts-zoom-rect,
+.apexcharts-toolbar svg,
+.apexcharts-area-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-line-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
+.apexcharts-radar-series path,
+.apexcharts-radar-series polygon {
+  pointer-events: none;
+}
+
+
+/* markers */
+
+.apexcharts-marker {
+  transition: 0.15s ease all;
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Resize generated styles */
+
+@keyframes resizeanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.resize-triggers {
+  animation: 1ms resizeanim;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.resize-triggers,
+.resize-triggers>div,
+.contract-trigger:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.resize-triggers>div {
+  background: #eee;
+  overflow: auto;
+}
+
+.contract-trigger:before {
+  width: 200%;
+  height: 200%;
+}</style></head><!--HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries--><!--[if lt IE 9]
+  | <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script
+  | <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script--><body><a class="btn btn-lg skip-main-content" href="#oms-main" onclick="document.getElementById('oms-main').focus()" role="button">Skip to main content</a><div class="outer-wrapper"><!--Static navbar--><nav class="navbar navbar-default"><div class="container-oms"><div class="navbar-header"><span class="navbar-brand">"Oxford Medical Simulation"</span></div><div class="navbar-collapse collapse" id="navbar"><ul class="nav navbar-nav navbar-right main-navbar"></ul></div></div></nav><main class="container-oms" id="oms-main" tabindex="-1"><div aria-live="polite" class="flash-messages"></div><br><br><h2 class="text-center normal-page-title">OXFORD MEDICAL SIMULATION</h2><h1 class="text-center normal-page-title">Global Privacy Policy</h1><h3 class="text-center">Published June 9 2020</h3><br><br><p>We hope that you enjoy using our services, safe in the knowledge that we are committed to protecting your privacy and security online.</p><br><h3>Introduction</h3><br><p>Oxford Medical Simulation through Oxford Medical Simulation Inc and Oxford Medical Simulation Limited and other affiliates and authorized resellers delivers virtual reality and computer based training to healthcare professionals worldwide.</p><br><p>Please take the time to read this Privacy Policy as it is important for you to understand how we collect and use your data when you use any of the Oxford Medical Simulation services. This policy explains how we collect, use and store the personal information you provide to us. ‘Personal information’ is data that relates to you and that identifies or can be used to identify you – this might be your name, email address, or other digital identifiers relating to you, such as cookies, IP addresses or logs.</p><br><p>This policy may change from time to time and, if it does, the up-to-date version will always be available on the Oxford Medical Simulation website.</p><br><p>We will only use personal information for our purposes in a manner permitted by data protection legislation and to support the services we are providing.</p><br><p>Before you use our services you should read these terms.</p><br><h4>1.0  General</h4><br><p>1.1  These terms apply to all users of OMS services.</p><br><h4>2.0  Definitions</h4><br><p>2.1  By “terms” we mean this Privacy Policy.</p><br><p>2.2  By “country of data origin” we mean the country from which you provided your information.</p><br><p>2.3  By “data controller” we mean a person or entity who determines the purposes for which and the manner in which any personal data are, or are to be, used.</p><br><p>2.4  By “European Economic Area (EEA)” we mean the 27 EU member states, Iceland, Liechtenstein and Norway.</p><br><p>2.5  By “OMS” we mean Oxford Medical Simulation Inc, a company registered in Delaware, Oxford Medical Simulation Limited a company registered in England and any other affiliates of same which may from time to time exist.</p><br><p>2.6  By “services” we mean the computer and VR based software programs, the simulation platform, the websites, mobile applications (apps) s and other electronic sources each as provided and/or operated by OMS.</p><br><h4>3.0  Our Information</h4><br><p>3.1  OMS is the data controller in respect of your information shared with us.</p><br><p>3.2  We may hold your information electronically or in paper form in accordance with the Data Protection Legislation 2018.</p><br><h4>4.0  Your Information</h4><br><p>4.1  Your information includes any information which we hold now, or at any time in the future and which comes from or relates to your use of the website and our services.</p><br><p>4.2  Personal information you provide us,</p><p>This may include: (i) contact information, such as your name, company name, job title, address, e-mail address, and phone number; (ii) additional information about you to help us get to know you better, such as your gender, age, date of birth, nationality, professional associations and registration numbers, information about how you use our products, and demographic information; (iii) comments, questions, requests and orders you may make; (iv) financial information needed to process payments if you make purchases, such as credit card or account information or tax identification number; (v) log-in information, including, if applicable, social media account information for login purposes; and (vi) information about your preferences, such as your preferred methods of communication and product types in which you are interested.</p><br><p>4.3  Information we gather automatically</p><br><p>Device and browser information - We may collect technical information about your device, such as device type, browser type, IP address, operating system, and device identifier. OMS collect this information automatically from your device and web browser through cookies and similar technologies.</p><br><p>Information about how you interact with us.- We may collect technical data about your usage of our Internet Sites and Apps and how you interact with our digital advertisements and promotions, such as content viewed or downloaded, features used, links clicked, promotional emails opened, and dates and times of interactions. OMS collects this information using cookies and similar technologies.</p><br><p>Location information. We may collect location information, including precise real-time location information from your device and imprecise location information derived from, for example, your IP address or postal code. OMS Apps will NOT access precise-real time location information from your device unless you grant permission to do so.</p><br><p>4.4  Information from our partners and other third parties</p><br><p>We collect personal information through our partners and other third parties which may include contact information, such as name, company name, job title, address, e-mail address, and phone number.</p><br><p>You may choose not to provide information that we request, but if you do so, we may not be able to provide some or all of our services.</p><br><h4>5.0  How We Use Your Information</h4><br><p>5.1  We may use your information in order to:</p><br><p>5.1.1  Provide our services to you either directly or on behalf of our partners;</p><br><p>5.1.2  create anonymized and aggregated statistics of your use of our services including, without limitation, your responses to advertising campaigns;</p><br><p>5.1.3  modify or improve our services;</p><br><p>5.1.4  communicate with you  e.g. in connection with your customer experience for perhaps to gauge your level of satisfaction with our services or contact you in connection with any issues or faults;</p><br><p>5.1.5  inform you about products or services as set out in the Marketing section below.</p><br><p>5.1.6  meeting our legal obligations such as (i) complying with our obligations to retain certain business records for minimum retention periods; (ii) establishing, exercising, or defending legal claims; (iii) complying with laws, regulations, court orders, or other legal process; (iv) detecting, preventing, and responding to fraud, intellectual property infringement, violation of our contracts or agreements, violations of law, or other misuse of our services, (v) protecting ours rights or property, or yours or others’ health, safety, welfare, rights, or property.</p><br><p> We may also use your personal information for other uses consistent with the context in which the information was collected or with your consent.</p><br><h4>6.0  Who We Share Your Information With</h4><br><p>6.1  We will not share your information outside of our data processor, except:</p><br><p>6.1.1  your identity and contact details to any third party who is claiming that any material posted or uploaded by you to our website constitutes a violation of their intellectual property rights or of their right to privacy;</p><br><p>6.1.2  with enforcement agencies (including without limitation the Police) for the purposes of the prevention or detection of crime;</p><br><p>6.1.3  to third parties not listed above where you have given your explicit consent for us to do so, for example where you have opted in;</p><br><p>6.1.4  in circumstances where we are required or permitted to do so by law.</p><br><p>6.1.5  with other members of the OMS group, including those in different countries. When we do so we will use your information in a manner consistent with this Policy.</p><br><p>6.1.6  with third parties we hire to perform support services for us. These third parties are required to use the personal information we share with them only to perform services on our behalf and to treat your personal information in compliance with all applicable privacy and data protection laws.</p><br><p>6.1.7  with third parties who partner with us to provide products and services to our customers such as distributors. If so, we will require our partners to use that information in a manner consistent with this Policy and all applicable privacy and data protection laws.</p><br><h4>7.0  Who We Transfer Your Information To</h4><br><p>7.1  We will not transfer your information to any new data controller except:</p><br><p>7.1.1  where we wish to sell, transfer or otherwise assign the whole or any part of our business;</p><br><p>7.1.2  where we wish to subcontract, sell or transfer our service provision to a third party;</p><br><p>7.1.3  where as part of your registration process you have indicated that we may do so for marketing purposes and you have not withdrawn that consent;</p><br><p>7.1.4  in circumstances where we are required or permitted to do so by law.</p><br><h4>8.0  Where We May Share Your Information</h4><br><p>8.1  OMS is registered in the United Kingdom and the United States and we will use your information within the United Kingdom and/or the United States even if that is not the country of data origin in respect of your information.</p><br><p>8.2  We share your information with others in accordance with clauses 6.1.1. to 6.1.7. (inclusive). The data controllers listed in clauses 6.1.1 to 6.1.7. (inclusive) may not be based in, or using your information from within, the:</p><ol><li>United States</li><li>United Kingdom;</li><li>European Economic Area (EEA);</li><li>Country of data origin.</li></ol><p></p><br><h4>9.0  Marketing</h4><br><p>9.1  You have the right to stop us from using your information for marketing purposes. If you want us to stop using your information for those purposes please contact us at unsubscribe@oxfordmedicalsimulation.com</p><br><p>9.2  If you have opted in, we may use your information to keep you informed of our products, services, promotions and events. We may contact you by email to do this. If you want us to stop using your information for this purpose please contact us at infosec@oxfordmedicalsimulation.com</p><br><p>9.3  If you have opted in, we may use your information to inform you of third party products, services, promotions and events which may be of interest to you. For a list of third parties with whom we operate or if you want us to stop using your information for this purpose please contact us at unsubscribe@oxfordmedicalsimulation.com</p><br><p>9.4  We may keep anonymised and aggregated statistics of your response to any advertising provided to you – such as your clicking on a particular advertisement and related to your use of our services. We may share that information with third parties or transfer it to third parties.</p><br><h4>10.0  Use of Cookies</h4><br><p>10.1  Cookies are small text files that are placed on your computer’s hard drive by your web browser when you visit any website. They allow information gathered on one web page to be stored until it is needed for use on another, allowing a website to provide you with a personalised experience and the website owner with statistics about how you use the website so that it can be improved.</p><br><p>10.2  Some cookies may last for a defined period of time, such as one day or until you close your browser. Others last indefinitely.</p><br><p>10.3  Your web browser should allow you to delete any you choose. It also should allow you to prevent or limit their use.</p><br><p>10.4  Our website uses cookies. They are placed by software that operates on our servers, and by software operated by third parties whose services we use.</p><br><p>10.5  We use cookies in the following ways:</p><ul><li>to track how you use our website</li><li>to record whether you have seen specific messages we display on our website</li><li>to keep you signed in our site</li><li>to record your answers to surveys and questionnaires on our site while you complete them</li><li>to record the conversation thread during a live chat with our support team</li></ul><p></p><br><h4>11.0  What information do we collect if you sign up for our newsletter?</h4><br><p>11.1  If you want to sign up to receive our newsletter we will collect personal information from you as is necessary for the newsletter service, namely your email address, name and what you are interested in hearing more about.</p><br><h4>12.0  How Else Will We Use Your Information?</h4><br><p>12.1  We may also use your information for the following purposes:</p><ul><li>To help us make the website and other related content available to you (please see the “Where We May Share Your Information” section below for more information)</li><li>To make the website more relevant for you and our other visitors. This includes sometimes requesting personal information from you to help us run and develop our website and associated functions</li><li>To send you our newsletter if you have signed up to receive it</li><li>To carry out occasional surveys to analyze our user base — ultimately we want to ensure that OMS provides everything that you — our audience — is looking for</li><li>To check whether you are eligible for a competition and to contact you if you win</li><li>To comply with the law</li><li>As we feel is necessary to prevent illegal activity or to protect our interests</li></ul><p></p><br><h4>13.0  How long do we keep hold of the information?</h4><br><p>13.1  How long we keep your personal information will vary and will depend on the purpose and use of information collected. There are legal requirements that we keep some types of data for specific periods. Otherwise, we will retain it for no longer than is necessary for the purposes for which the data was collected.</p><br><p>13.2  You can request that we delete your personal information at any time.</p><br><p>13.3  We will never sell our user’s details to any other organization or individual.</p><br><h4>14.0   What If You Post Information On Our Site?</h4><br><p>14.1  This site may contain an opportunity for users to comment (“User Content”) on content displayed on the site. This information is in the public domain, so it may be accessed by any person using the web in any part of the world and can be found using independent search engines. If you choose to post information to the interactive parts of our site you do so at your own risk.</p><br><h4>15.0 How Will We Make Sure Our Site Is Secure?</h4><br><p>15.1  We follow strict security procedures to manage how your personal information is stored, used, who sees it and to help stop any unauthorized person getting hold of it. We take security extremely seriously but as no system is 100% secure, we can’t completely guarantee the protection of your personal information, any more than any other organization can. So, we can’t accept any liability for the loss, theft or misuse of the personal information which you’ve registered on our website if there is a security breach.</p><br><p>15.2  Your personal information will generally be stored in databases maintained by our service providers. Many of these databases are stored on servers located in the United States or the United Kingdom. Our service providers are selected on the basis they offer very high standards of service including the security protocols they comply with.</p><br><h4>16.0  Additional Information for EU Residents</h4><br><p>Data controller and contact information</p><br><p>16.1  The controller for personal data collected under this Privacy Policy is the relevant OMS entity in your country, and, as applicable, Oxford Medical Simulation Limited 201 Borough High Street, Borough High Street, London SE1 1JA United Kingdom. The contact is infosec@oxfordmedicalsimulation.com</p><br><p>16.2  Your individual rights</p><br><p>In accordance with the applicable laws in the European Union, you have the following rights with respect to your personal data, which apply differently in different circumstances: right of access, right to rectification, right to erasure, right to restriction of processing, right to data portability and right to object to processing. Most of these rights are not absolute. Below we describe these rights in more detail and provide information on how you can exercise them. If you make a request to exercise your rights, we will respond within one month, but have the right to extend this period by two additional months, where necessary. If we extend the response period, we will let you know within one month from your request. You can exercise your rights by contacting  the Data controller at infosec@oxfordmedicalsimulation.com</p><br><p>16.3  More Information</p><br><p>Right of Access. You have the right to ask us to confirm whether we process your personal data. If we do, you have the right to request access to your personal data that we process and the following information:  the purposes of the processing; (ii) the categories of personal data we process; (iii) the recipients or categories of recipients of your personal data; (iv) the envisaged retention period of the data where possible, or the criteria we use to determine the retention period; (v) your right to request rectification or erasure of your personal data, or restriction of the processing of such data; (vi) your right to file a complaint with a supervisory authority; (vii) if we have not collected the data from you, any information we have available about the source of the data; and (viii) whether we use your personal data to make any automated decisions that have legal or other similar significant effects on you.</p><br><p>Right to rectification. You have the right to require us to correct your personal data if it is inaccurate. Taking into account the purposes of the processing, you may also have the right to have incomplete personal data about you completed, including by providing a supplementary statement to us.</p><br><p>Right to object to processing for our legitimate business interests. You have the right to object to our processing your personal data when that data is processed on the basis of our legitimate business interests. We will stop processing the relevant personal data where we receive such an objection  unless:  we have compelling legitimate grounds for the processing that override your interests, rights, and freedoms; or (ii) we need to continue processing your personal data to establish, exercise, or defend a legal claim.</p><br><p>Right to object to processing for direct marketing. If we process your personal data for direct marketing purposes, you have the right to object. If you exercise this right, we will stop processing your personal data for direct marketing purposes.</p><br><p>Right to restrict processing. You have the right to request that we restrict the processing of your personal data in the following circumstances:  (i) for the period of time we need to verify the accuracy of your personal data when you contest its accuracy; (ii) when the processing of your personal data is unlawful and you oppose the erasure of the data, and instead request that we restrict the use of the data; (iii) when we no longer need your personal data for the purposes of processing, but you need the data to establish, exercise, or defend a legal claim; or (iv) for the period of time we need to verify if we have compelling legitimate grounds for processing that override your interests, rights, and freedoms when you object to the processing of your personal data for our legitimate business interests.</p><br><p>If following your request we restrict the processing of your personal data, we will store your data, and otherwise process it only with:  your consent; (i) to establish, exercise, or defend a legal claim; (ii) to protect the rights of another natural or legal person; or (iii) for reasons of important public interest of the European Union or a Member State. We will also inform you before lifting the restriction of processing.</p><br><p>Right to erasure. The right to erasure is also called the “right to be forgotten.” You may ask us to delete your personal data. This right is not absolute. We are required to delete your personal data upon your request only in the following circumstances:  (i) your personal data is no longer necessary for the purposes for which we collected or processed it; (ii) if we process your personal data on the basis of consent, you withdraw your consent, and no other legal ground exists for us to continue processing your personal data; (iii) if we process your personal data for our legitimate business interests, you object to the processing, and there are no overriding legitimate grounds for us to continue processing your personal data; (iv) if we have processed your personal data unlawfully; or (v) the personal data must be erased to comply with a legal obligation under European Union or Member State law to which we are subject.</p><br><p>We are not required to erase your personal data to the extent that we need to process it to:  exercise our right of freedom of expression and information; (ii) comply with a legal obligation under European Union or Member State law to which we are subject; or (iii) to establish, exercise, or defend a legal claim.</p><br><p>Right to data portability: You have the right to receive personal data you provided to us when:  (i) the processing of the data is based on your consent or is necessary for the performance of a contract between you and us; (ii) Our processing of your personal data is carried out by automated means; and (iii) complying with your request will not adversely affect the rights and freedoms of others.</p><br><p>If you have the right to receive such personal data and request that we provide it, we will provide it to you in a structured, commonly used, and machine-readable format.</p><br><p>Right to lodge a complaint with a supervisory authority. You have the right to approach the competent data protection authority with requests or complaints. This can be the supervisory authority in the country or federal state where you live. The overall competent supervisory authority for us in Europe is:</p><p>Commission for the Protection of Privacy<br>Rue de la Presse 35, 1000 Brussels<br>Telephone: +32 (0)2 274 4800<br>E-mail: commission@privacycommission.be<br>Website:  www.privacycommission.be</p><br><p>16.4  Countries outside the European Union may have a lower standard of protection for personal information than that required by EU data protection laws.</p><br><p>16.5  The information we collect from you may be transferred to, and stored, outside the EU (including for example in the United States) and may also be processed by people operating outside the EU who work for us or one of our suppliers.</p><br><p>16.6  If we need to transfer your data to a company based outside the EU (e.g. if our hosting company is based in the US), we’ll take steps to make sure your personal data is handled in line with EU law. If you would like any more details on this please get in contact with us.</p><br><h4>17.0 Are You Protected By This Policy Outside The Oxford Medical Simulation Website?</h4><br><p>17.1  www.oxfordmedicalsimulation.com contains links to other websites. Obviously, we don’t have any control over those websites and we cannot take any responsibility for any information you give them. Other sites have different privacy and security policies and terms and conditions, so we advise you to read these before using them.</p><br><h4>18.0  General</h4><br><p>18.1  You may access your information (in return for a small fee) and request details of the entities with whom we have shared your information by contacting us at infosec@oxfordmedicalsimulation.com. In most cases we will comply promptly with your request and let you know when we have done so. However, sometimes you will not be entitled to access your information. For example, where the public interest or your own interests override your rights under the Data Protection Legislation 2018. We may withhold information where we are legally allowed to do so.</p><br><p>18.2  You may correct factual errors in your information or request that we remove information about you from our records by sending us a request detailing the error or your instructions to infosec@oxfordmedicalsimulation.com</p><br><p>18.3  To protect your privacy and the security of your information, we may take reasonable steps to verify your identity before we act on any request which you may make in respect of your information.</p><br><br><h2 class="text-center">Cookie Policy</h2><br><p>This Notice explains what cookies we use and why we use them. We recommend you read the Notice fully. For more details about your personal data please refer to our privacy policy.</p><br><p><strong>What Are Cookies?</strong></p><br><p>A cookie is a text file containing small amounts of information which is downloaded to your computer, tablet or mobile phone when you access our website. The text file is then sent back to our server each time your browser requests a page from the server. Cookies are not harmful to your devices (like a virus or malicious code) and allow you to use many of the useful features of our website (like remembering your favourites). Cookies can also allow us to do various other things, as explained below.</p><br><p><strong>How Do We Use Cookies?</strong></p><br><p>In the table below we set out what cookies we use on our website and how they are used. To read the table it is useful to know the following:</p><ol><li>Cookies have a lifetime. Some only last until you close your browser or a short time. These are called <strong>‘session cookies’</strong>. Some last longer though, for example, to enable a website to recognise you when you return to them. These are called <strong>‘persistent cookies’</strong>.</li><li>Cookies placed directly by a website owner (like us) are known as <strong>‘first party cookies’</strong> and most modern websites also use technology provided by other people/businesses, for example to provide online advertising. Cookies placed by other parties are known as <strong>‘third party cookies’</strong>.</li></ol><p></p><br><p><strong>Third Party Cookies</strong></p><br><p>We include content from other websites and give you the option to share on social media, such as Twitter. When you share information from our website please be aware that additional cookies and similar technologies may be placed on your computer, mobile phone or tablet device from these other websites. We’re not responsible for these so please check the privacy and cookie policies of the social media networks you use for full details of what they do. Where we put videos on our website, we use cookies to capture and analyse visitor information such as number of views and shares.</p><br><p><strong>How Can You Manage Cookies?</strong></p><br><p>By continuing to use our website you are agreeing to our use of cookies. To manage all cookies placed on your computer, mobile phone or tablet device through your web browser settings, please consult your browser’s guide or visit www.allaboutcookies.org or www.aboutcookies.org for more information. Some browsers are more sophisticated than others in managing these technologies, so if you want greater controls, it would be worth comparing a few of them. To manage cookies on your mobile phone please refer to your user manual.</p><br><p>If you are particularly concerned about third party cookies, you can often opt-out directly (such as Google Analytics, please visit https://tools.google.com/dlpage/gaoptout). Note, these providers may use cookies to power their opt-out service, so if you change your browser settings to block all cookies, their opt-out service may cease to work.</p><br><p>Our website is designed to use cookies, so if you choose not to allow cookies you may not be able to access all the features we provide and your experience on our site will be limited.</p><br><p><strong>Updates to This Cookie Policy</strong></p><br><p>We regularly review the cookies we use to continually improve our services to you. Thus, we will need to change this policy from time to time to keep it accurate and up to date. If we change this policy, we will tell you. That way you can check to see if you are happy with our new policy and adjust your browser settings if you want to before proceeding any further. Please look out for these notices in future when you are using our website.</p><br><p><strong>Contact Us</strong></p><br><p>If you want any further information about our approach to cookies and similar technologies, our website in general or have any other privacy questions relating to us, we’d be happy to help you.  You can drop us a line via <a href="http://oxfordmedicalsimulation.com/contact/">http://oxfordmedicalsimulation.com/contact/</a> or write to us at:</p><p>Oxford Medical Simulation Ltd<br>201 Borough High Street<br>London, UK<br>SE1 1JA</p><br><p>Thank you for visiting our website and reading about how we use cookies.</p><br><br><br><br></main></div><footer class="footer"><div class="container-oms"><ul class="footer__menu"><li><a href="https://www1.oms-app.com/pages/terms_and_conditions">Terms of Use</a></li><li><a href="https://www1.oms-app.com/pages/privacy_cookies">Privacy &amp; Cookies</a></li><li><a href="https://www1.oms-app.com/pages/health_and_safety">Health &amp; Safety</a></li><li><a target="_blank" href="https://intercom.help/oxford-medical-simulation/en">Help</a></li><li><a target="_blank" href="http://oxfordmedicalsimulation.com/about/">About</a></li></ul><ul class="footer__social"><li><a aria-label="Visit our Facebook profile" href="https://www.facebook.com/oxfordmedicalsimulation/"><span class="icon icon--facebook"></span></a></li><li><a aria-label="Visit our Twitter profile" href="https://twitter.com/vrmedicalsim"><span class="icon icon--twitter"></span></a></li><li><a aria-label="Visit our LinkedIn profile" href="https://www.linkedin.com/company/oxfordmedicalsimulation/"><span class="icon icon--linkedin"></span></a></li><li><a aria-label="Visit our Instagram profile" href="https://www.instagram.com/oxfordmedicalsimulation/"><span class="icon icon--instagram"></span></a></li></ul><p class="footer__copyright">Copyright 2023 © Oxford Medical Simulation Ltd.</p></div></footer><script>window.__avatars = [{"path":"/images/user_avatars/avatar_1.png","filename":"avatar_1.png","id":1,"value":"1"},{"path":"/images/user_avatars/avatar_2.png","filename":"avatar_2.png","id":2,"value":"2"},{"path":"/images/user_avatars/avatar_3.png","filename":"avatar_3.png","id":3,"value":"3"},{"path":"/images/user_avatars/avatar_4.png","filename":"avatar_4.png","id":4,"value":"4"},{"path":"/images/user_avatars/avatar_5.png","filename":"avatar_5.png","id":5,"value":"5"},{"path":"/images/user_avatars/avatar_6.png","filename":"avatar_6.png","id":6,"value":"6"},{"path":"/images/user_avatars/avatar_0.png","filename":"avatar_0.png","id":0,"value":"0"}]</script><script src="https://www1.oms-app.com/assets/application-56e5bbd36b1493fa6875d635c580f1f418c7207587555d9ddd0ade564d6faeab.js"></script><script src="https://www1.oms-app.com/assets/charts-e502b7f92da382e834623c89c783f05877b7d6cdbc9e090a50470d5f395f3836.js"></script><script id="IntercomSettingsScriptTag">
+//<![CDATA[
+window.intercomSettings = {"app_id":"l77pdl0w"};(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/l77pdl0w';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()
+//]]>
+</script>
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body></html>

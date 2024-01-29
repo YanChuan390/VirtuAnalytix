@@ -1,0 +1,456 @@
+<html lang="en-GB" class="right-click-block-disabled no-scroll-animation-effects js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths wf-montserrat-n1-active wf-montserrat-n2-active wf-montserrat-n3-active wf-montserrat-n4-active wf-montserrat-n5-active wf-montserrat-n6-active wf-montserrat-n7-active wf-montserrat-n8-active wf-montserrat-n9-active wf-crimsontext-n4-active wf-crimsontext-i4-active wf-montserrat-i4-active wf-montserrat-i5-active wf-montserrat-i6-active wf-montserrat-i7-active wf-montserrat-i8-active wf-montserrat-i9-active wf-meerainimai-n4-active wf-montserrat-i1-active wf-montserrat-i2-active wf-montserrat-i3-active wf-crimsontext-n6-active wf-crimsontext-n7-active wf-crimsontext-i6-active wf-active"><head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on"><![endif]-->
+
+<!-- RSS - Pingbacks - Favicon -->
+<link rel="alternate" type="application/rss+xml" title="Neon RSS Feed" href="http://neonvideogame.com/feed/">
+<link rel="pingback" href="http://neonvideogame.com/xmlrpc.php">
+
+
+
+<title>Neon – VR videogame</title>
+                        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js" type="text/javascript" async=""></script><script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic', 'Meera+Inimai:400', 'Crimson+Text:400,600,700,400italic,600italic,700italic&subset=latin']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Neon » Feed" href="http://neonvideogame.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Neon » Comments Feed" href="http://neonvideogame.com/comments/feed/">
+<link rel="stylesheet" id="contact-form-7-css" href="http://neonvideogame.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.8.1" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="http://neonvideogame.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.3.1" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="az-google-font-css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700italic%2C700%7CMontserrat%3A400%2C700%7CCrimson+Text%3A400%2C400italic&amp;ver=4.8.22" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="http://neonvideogame.com/wp-content/themes/az_alice/_include/css/bootstrap.min.css?ver=4.8.22" type="text/css" media="all">
+<link rel="stylesheet" id="main-fonts-css" href="http://neonvideogame.com/wp-content/themes/az_alice/_include/css/fonts.css?ver=4.8.22" type="text/css" media="all">
+<link rel="stylesheet" id="main-styles-css" href="http://neonvideogame.com/wp-content/themes/neon/style.css?ver=4.8.22" type="text/css" media="all">
+<script type="text/javascript" src="http://neonvideogame.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://neonvideogame.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript" src="http://neonvideogame.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.3.1"></script>
+<script type="text/javascript" src="http://neonvideogame.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.3.1"></script>
+<link rel="https://api.w.org/" href="http://neonvideogame.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://neonvideogame.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://neonvideogame.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.8.22">
+<link rel="canonical" href="http://neonvideogame.com/">
+<link rel="shortlink" href="http://neonvideogame.com/">
+<link rel="alternate" type="application/json+oembed" href="http://neonvideogame.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fneonvideogame.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://neonvideogame.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fneonvideogame.com%2F&amp;format=xml">
+
+            <style type="text/css">
+                
+
+                /* CUSTOM FONTS */
+
+                .logo-setup.logo-text { font-family: Montserrat, "HelveticaNeue", helvetica, arial, sans-serif; }
+
+                body, input, button, select, textarea, .comment-author .comment-title { font-family: Meera Inimai, "HelveticaNeue", helvetica, arial, sans-serif; }
+
+                #blog .post-creative .post-link .post-naming .post-date,#blog .post-creative .post-link .post-naming .post-title,#error-page .box-content-titles .error-subheading,#error-page .box-content-titles .error-title,#title-header-flexslider.flexslider .slider-content .slide-subtitle,#title-header-flexslider.flexslider .slider-content.big-format-heading .slide-title,.az-button,.az-divider,.big-format-heading .box-content-titles .subheading,.big-format-heading .box-content-titles .title,.box-content-titles .subheading,.entry-meta-area,.footer .credits,.footer .share-footer,.form-submit #submit,.infinite-scroll p,.menu-search,.menu-share,.mm-panel .sub-menu li a,.mm-panel ul li a,.mm-classic-panel ul li a,.mm-classic-panel .sub-menu li a,.modal-search .search-subtitle,.modal-search form#searchform input[type=text],.normal-pagination .next-post a .pagination-inner,.normal-pagination .prev-post a .pagination-inner,.portfolio-navi-popup .counter-portfolio,.share-btn-footer>span,.team-navi-popup .counter-team,.dots-menu-navigation .dots-menu-label,#az_header_language_list .lang,h1,h2,h3,h4,h5,h6 { font-family: Montserrat, "HelveticaNeue", helvetica, arial, sans-serif; } 
+            
+                #blog.grid .count-number-post,#title-header-flexslider.flexslider .slider-content .slide-title,.bg-slogan-content .slogan-text,.box-content-titles .title,.wp-caption,blockquote { font-family: Crimson Text, Georgia, "Times New Roman", Times, serif; }
+                
+                /* END CUSTOM FONTS */
+
+            
+            </style>
+<meta name="generator" content="Powered by Slider Revolution 5.4.3.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+
+		<style type="text/css">
+			html, * html body { margin-top: 0 !important; }
+		</style><script type="text/javascript">function setREVStartSize(e){
+				try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;					
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};</script>
+<style type="text/css" data-type="vc_custom-css">.buy h2 a{color:#22c7fc;}
+.buy h1 {color:#de1f80;}
+.buyButton {font-size:2em !important;}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1501247628325{background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}</style><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7CMeera+Inimai:400%7CCrimson+Text:400,600,700,400italic,600italic,700italic&amp;subset=latin">
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<!-- Body -->
+
+<body class="home page-template-default page page-id-14 desktop-version creative-header wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
+
+
+
+<div id="my-menu" class="slogan-enabled menu-not-visible">
+        <!-- Start Slogan Panel -->
+    <div class="bg-slogan-menu bg-image-slogan" style="background-image: url(http://neonvideogame.com/wp-content/uploads/2017/07/neon-web-bg2.jpg); background-position:center top; background-repeat: no-repeat; background-size: cover;">
+        <span class="bg-image-slogan-mask" style="background-color: rgba(0,0,0,0);"></span>        <div class="bg-slogan-content">
+                        <a class="slogan-logo" href="http://neonvideogame.com" title="Neon">
+                <img class="standard" src="http://neonvideogame.com/wp-content/uploads/2017/07/neon-logo.png" width="887" height="273" alt="Neon">
+            </a>   
+                                    <h3 class="slogan-text">MORE COLOR. MORE SOUND.<br>
+NEON WILL POKE YOUR EYES OUT.</h3>
+                    </div>
+    </div>
+    <!-- End Slogan Panel -->
+    
+    <!-- Start Menu Panel -->
+    <nav class="mm-panel">
+        <ul id="menu-menu-1" class="sf-menu"><li id="menu-item-151" class="menu-item trigger-close"><a href="#subscribe">Subscribe for updates</a></li>
+<li id="menu-item-150" class="menu-item trigger-close"><a href="#teaser">Watch the teaser</a></li>
+<li id="menu-item-147" class="menu-item"><a href="http://galactig.com">Find out about Galactig</a></li>
+</ul>
+    </nav>
+    <!-- End Menu Panel -->
+
+    <!-- Start Close Menu -->
+    <a class="menu-trigger-close">
+        <div class="bars">
+            <i class="bar top"></i>
+            <i class="bar bottom"></i>
+        </div>
+    </a>
+    <!-- End Close Menu -->
+
+    
+
+    
+</div>
+
+
+<div class="wrap_all light-type">
+
+
+<header id="header" class="is-container headroom above-offset">
+    
+<!-- HEADER CREATIVE -->
+<div id="nav-wrapper">
+
+    <div class="wrap-position">
+    	        <a class="logo-setup logo-img" href="http://neonvideogame.com" title="Neon">
+            <img class="standard" src="http://neonvideogame.com/wp-content/uploads/2017/07/neon-logo.png" alt="Neon" width="887" height="273" style="height:273px; max-height:40px;">
+            <img class="retina" src="http://neonvideogame.com/wp-content/uploads/2017/07/neon-logo.png" alt="Neon" width="887" height="273" style="max-height:40px;">
+                    </a>    
+                <a class="menu-nav menu-trigger">
+        	<div class="bars">
+        		<i class="bar top"></i>
+        		<i class="bar middle"></i>
+        		<i class="bar bottom"></i>
+        	</div>
+        </a>
+
+                    
+            </div>
+
+</div>
+<!-- END HEADER CREATIVE -->
+</header>
+
+
+
+
+<div id="main" class="">
+<div id="content">
+	
+<div class="wrap-title-header desktop-version">
+    
+    <div class="fake-layer-spacer full-height" style="height: 668px;"></div>
+
+    
+    <div id="video-header" class="vimeo_embed_code title-header-spacer">          
+        <div class="title-header-container full-height full-container" style="height: 668px;">
+                        
+                
+                    <div class="video-header-status-vimeo play" data-videovimeocheck="player_64fe3d4de4417">
+                        <a href="#" class="vimeo_player_button hided" data-videoid="player_64fe3d4de4417" style="visibility:hidden;"><i class="font-icon-play"></i></a>
+                    </div>
+                <div class="video-section-container vimeo-video">
+                    <div class="video-embed-wrap" style="width: 1019px; height: 668px;">
+                        <iframe class="vimeo video-header" data-volume="0" data-autoplay="true" data-loop="1" id="player_64fe3d4de4417" src="http://player.vimeo.com/video/227094439?api=1&amp;player_id=player_64fe3d4de4417" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="width: 1287px; height: 928.32px; margin-top: -130.16px; margin-left: -134px; opacity: 1; visibility: visible;"></iframe>
+                    </div>
+                </div>                    </div>
+        <a class="scroll-btn-full-area-title-header"><i class="font-icon-arrow-down-simple-thin-round animated-opacity"></i></a>    </div>
+
+    
+
+</div>
+	<section class="wrap_content">
+						
+<div class="main-content master-section-content image-parallax-cont no-detect custom-padding" style="padding-top: 100px; padding-bottom: 0px;"><div class="img-parallax-layer parallax-start" style="background-image: url(&quot;http://neonvideogame.com/wp-content/uploads/2017/07/neon-web-bg2.jpg&quot;); min-height: 2993px; transform: translateY(-81.7959px);"></div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 normal-column">
+	<div class="az-special-heading custom-special-heading-color start-animated-content az-fade-in" data-delay="300">
+		<h2 class="az-special-heading-title custom-responsive-typo" style="color: rgb(234, 234, 234); font-size: 6rem;" data-df="10" data-md="6" data-sml="4" data-vsml="3" data-usml="2">MORE COLOR. MORE SOUND.</h2>
+		
+	</div>
+	<div class="az-special-heading custom-special-heading-color start-animated-content az-fade-in" data-delay="500">
+		<h2 class="az-special-heading-title custom-responsive-typo" style="color: rgb(234, 234, 234); font-size: 6rem;" data-df="10" data-md="6" data-sml="4" data-vsml="3" data-usml="2">NEON WILL POKE YOUR EYES OUT.</h2>
+		
+	</div>
+	<div class="blank-divider" style="height: 100px;"></div>
+
+<div class="az-single-image neon start-animated-content az-scale-up" data-delay="200">
+	<img class="normal-image aligncenter" src="http://neonvideogame.com/wp-content/uploads/2017/07/neon-logo.png" width="887" height="273" alt="00">
+</div>
+	<div class="blank-divider" style="height: 60px;"></div>
+
+<div class="az-single-image ready start-animated-content az-little-bounce" data-delay="400">
+	<img class="normal-image aligncenter" src="http://neonvideogame.com/wp-content/uploads/2017/07/ready.png" width="501" height="99" alt="00">
+</div>
+	<div class="blank-divider" style="height: 200px;"></div>
+
+<div class="az-single-image headset start-animated-content az-move-up" data-delay="100">
+	<img class="normal-image aligncenter" src="http://neonvideogame.com/wp-content/uploads/2017/07/vr-headset2.png" width="735" height="679" alt="00">
+</div>
+	<div class="blank-divider" style="height: 200px;"></div>
+
+<div class="text-block quote buy">
+<h1 style="text-align: center;">available for oculus rift</h1>
+
+</div> 
+
+	<div class="position-btn textaligncenter">
+		<a class="az-button buyButton custom-btn-color" style="background: #23c8fc; color: #2d203f;" data-bg-btn="#23c8fc" data-tx-btn="#2d203f" data-hv-btn="#dd1f80" data-hv-tx-btn="#ffffff" href="https://www.oculus.com/experiences/rift/1171450826315858/" target="_blank"><span>BUY NOW</span></a>
+	</div>
+	<div class="blank-divider" style="height: 100px;"></div>
+<div class="row info"><div class="col-md-4">
+<div class="text-block">
+<p>A nostalgia-fuelled first person shoot ’em up inspired by classic arcade games.</p>
+<p>Save the Earth, burn the Sun.</p>
+<p>To pay off your life debts you’ve been uploaded to one of millions of nano-workbots in the Sun’s core to prevent solar flares by breaking down neon isotopes.</p>
+<p>You control an ion cannon in a 360º gravitationally affected environment, firing positive and negative ions using left &amp; right triggers at incoming neon isotopes of varying ‘charge’ to eliminate them.</p>
+
+</div> 
+</div><div class="col-md-4">
+<div class="text-block">
+<p>Neon&nbsp;uses a modern day reboot of the classic retro arcade style. Featuring vector polygonal lines and surfaces illuminated by pulsating neon lighting with immersive 360º action.</p>
+<p>Each of the 42 levels of the game have been carefully crafted with each formation requiring a different stategy to achieve best times. There’s a solid sense of progression and a steady ramping up of difficulty – ideal for introducing non-gamers to VR but challenging enough for more experienced players.</p>
+<p>Levels develop to include stronger gravitational forces, more isotopes, and new kinds of jeopardy. Boss levels with super-structures need new strategies, with a selection of power-ups such as slo-mo, shockwave and solar blossom mode adding to the fun. Your sassy AI sidekick Seren has always got something to say – but is mostly just sarcastic.</p>
+
+</div> 
+</div><div class="col-md-4">
+<div class="text-block">
+<p>Utilising the talents of three music producers (Forward Memory, Dynamix, and I Am Galactic), Neon features an original soundtrack of ambient electronica, synthwave and electro which complements the modern-retro styling of the game.</p>
+
+</div> 
+
+	<div class="blank-divider" style="height: 40px;"></div>
+
+	<div class="position-btn textalignright">
+		<a class="az-button custom-btn-color" style="background: #de1f80; color: #ffffff;" data-bg-btn="#de1f80" data-tx-btn="#ffffff" data-hv-btn="#23c8fc" data-hv-tx-btn="#2e2040" href="https://soundcloud.com/iamgalactic/sets/neon-soundtrack" target="_blank"><span>SOUNDTRACK ON SOUNDCLOUD</span></a>
+	</div></div></div>
+	<div class="blank-divider" style="height: 100px;"></div>
+
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<a name="subscribe"></a>
+		</div>
+	</div>
+
+<div class="text-block signup">
+<script type="text/javascript">(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><!-- MailChimp for WordPress v4.1.6 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-152" method="post" data-id="152" data-name="Neon"><div class="mc4wp-form-fields"><div id="mc_embed_signup_scroll">
+  <div id="mc_embed_signup">
+<p>
+  <label>sign up for stuff... </label><br>
+	<input type="email" name="EMAIL" id="mce-EMAIL" placeholder="Your email address" required="">
+</p>
+
+<p>
+	<input type="submit" id="mc-embedded-subscribe" value="Sign up">
+</p>
+
+</div></div><div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></div><input type="hidden" name="_mc4wp_timestamp" value="1694383437"><input type="hidden" name="_mc4wp_form_id" value="152"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin -->
+
+</div> 
+
+	<div class="blank-divider" style="height: 100px;"></div>
+
+<div class="text-block quote">
+<h2 style="text-align: right;">“it’s like Tron had sex with an atom”</h2>
+<p style="text-align: right;">some guy on reddit</p>
+
+</div> 
+
+	<div class="blank-divider" style="height: 50px;"></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="main-content master-section-content no-detect default-padding" style="background-color: #0a0a0a;">
+<div class="container">
+<div class="row">
+<div class="col-md-12 normal-column">
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<a name="teaser"></a>
+		</div>
+	</div>
+
+	<div class="blank-divider" style="height: 40px;"></div>
+
+<div class="video-player-builder teaser">
+	<div class="videoWrapper"><div class="fluid-width-video-wrapper" style="padding-top: 56.2393%;"><iframe src="https://player.vimeo.com/video/251629992" frameborder="0" title="Neon" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid647043" style="opacity: 1; visibility: visible;"></iframe></div></div>
+	
+</div>
+</div>
+</div>
+</div>
+</div><section data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="7" data-vc-parallax-o-fade="on" class="vc_section galactig vc_custom_1501247628325 vc_section-has-fill vc_section-o-content-middle vc_section-flex vc_general vc_parallax vc_parallax-content-moving-fade js-vc_parallax-o-fade">
+<div class="main-content master-section-content image-parallax-cont no-detect custom-padding" style="padding-top: 100px; padding-bottom: 100px;"><div class="img-parallax-layer parallax-stop" style="background-image: url(&quot;http://neonvideogame.com/wp-content/uploads/2017/07/neon_galactig_bg.jpg&quot;); min-height: 1046px; transform: translateY(-800.18px);"></div>
+<div class="container">
+<div class="row">
+<div class="col-md-12 normal-column">
+	<div class="az-special-heading default-special-heading-color">
+		<h2 class="az-special-heading-title ">we are the game makers</h2>
+		<h3 class="az-special-heading-subtitle">and we are the dreamers of dreams</h3>
+	</div>
+	<div class="blank-divider" style="height: 50px;"></div>
+<div class="row"><div class="col-md-4"></div><div class="col-md-4">
+<div class="az-single-image">
+	<img class="normal-image aligncenter" src="http://neonvideogame.com/wp-content/uploads/2017/07/neon_galactig_logo.png" width="1000" height="349" alt="00">
+</div>
+	<div class="blank-divider" style="height: 70px;"></div>
+
+	<div class="position-btn textaligncenter">
+		<a class="az-button default-btn-color" href="" target="_blank"><i class="fa-rocket"></i><span>visit galactig</span></a>
+	</div></div><div class="col-md-4"></div></div>
+</div>
+</div>
+</div>
+</div></section><div class="vc_row-full-width vc_clearfix"></div>
+	</section>
+
+				
+		
+		
+</div>
+
+</div>
+<!-- End Main -->
+
+
+<!-- Back To Top -->
+<a class="back-to-top"><i class="font-icon-arrow-up-simple-round"></i></a>
+<!-- End Back to Top -->
+
+<footer class="footer">
+	
+	
+        <div class="footer-widget-area dark-type" data-cols="3">
+        <div class="item-footer-widget-area"><div id="text-8" class="widget widget_text">			<div class="textwidget"><p><img src="http://neonvideogame.com/wp-content/uploads/2017/07/neon-logo.png"></p>
+<p>The company accepts no responsibility for personality uploads.The company exists only to protect it’s assets.Workers waive all corporeal rights.<br>
+©Galactig 2018 all rights reserved</p>
+</div>
+		</div></div>
+        <div class="item-footer-widget-area"><div id="text-7" class="widget widget_text">			<div class="textwidget"><p><img class="badges" src="http://neonvideogame.com/wp-content/uploads/2017/08/badge_save.png"></p>
+</div>
+		</div></div>
+            <div class="item-footer-widget-area footer3"><div id="text-6" class="widget widget_text">			<div class="textwidget"><p><img src="http://neonvideogame.com/wp-content/uploads/2017/07/super-lumi.png"></p>
+</div>
+		</div></div>
+        </div>
+	
+</footer>
+
+<div id="blocker"></div></div>
+<!-- End Wrap -->
+
+ 
+
+<script type="text/javascript">(function() {function addEventListener(element,event,handler) {
+	if(element.addEventListener) {
+		element.addEventListener(event,handler, false);
+	} else if(element.attachEvent){
+		element.attachEvent('on'+event,handler);
+	}
+}function maybePrefixUrlField() {
+	if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if( urlFields && urlFields.length > 0 ) {
+	for( var j=0; j < urlFields.length; j++ ) {
+		addEventListener(urlFields[j],'blur',maybePrefixUrlField);
+	}
+}/* test if browser supports date fields */
+var testInput = document.createElement('input');
+testInput.setAttribute('type', 'date');
+if( testInput.type !== 'date') {
+
+	/* add placeholder & pattern to all date fields */
+	var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+	for(var i=0; i<dateFields.length; i++) {
+		if(!dateFields[i].placeholder) {
+			dateFields[i].placeholder = 'YYYY-MM-DD';
+		}
+		if(!dateFields[i].pattern) {
+			dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+		}
+	}
+}
+
+})();</script><script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/neonvideogame.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://neonvideogame.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.8.1"></script>
+<script type="text/javascript" src="http://neonvideogame.com/wp-content/themes/az_alice/_include/js/plugins.js?ver=1.0.0"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var theme_objects = {"base":"http:\/\/neonvideogame.com\/wp-content\/themes\/az_alice"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://neonvideogame.com/wp-content/themes/az_alice/_include/js/main.js?ver=1.0.0"></script>
+<script type="text/javascript" src="http://neonvideogame.com/wp-includes/js/wp-embed.min.js?ver=4.8.22"></script>
+<script type="text/javascript" src="http://neonvideogame.com/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=5.1.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var mc4wp_forms_config = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://neonvideogame.com/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js?ver=4.1.6"></script>
+<!--[if lte IE 9]>
+<script type='text/javascript' src='http://neonvideogame.com/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.1.6'></script>
+<![endif]-->
+	
+
+
+
+</body></html>

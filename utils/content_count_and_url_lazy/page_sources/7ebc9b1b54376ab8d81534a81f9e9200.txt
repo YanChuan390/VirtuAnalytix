@@ -1,0 +1,1233 @@
+<html lang="en" class="h-full"><head><meta http-equiv="origin-trial" content="A89JPrWYXvEpNQ/xE+PjjlGJiBu/L2GfQcplC/QkDJOS1fBoX5Q4/HLfT1dXpD1td7C2peXE3bSCJiYdwoFcNgQAAACSeyJvcmlnaW4iOiJodHRwczovL3JlY2FwdGNoYS5uZXQ6NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta charset="utf-8"><meta name="viewport" content="width=device-width,minimum-scale=1"><link rel="icon" href="/favicon.ico" type="image/icon type"><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/0hCdE87LyjzAkFO5Ff-v7Hj1/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-ToIRK/fCxk6HZidjy8su24Pn+8FsKiX4QnuO0AfQZBcsd0m8DMaqafsc91h4byqU"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-4PY9G8KF93&amp;l=dataLayer&amp;cx=c"></script><script src="https://connect.facebook.net/signals/config/132966616162238?v=2.9.125&amp;r=stable&amp;domain=www.paintingvr.xyz" async=""></script><script async="true" type="text/javascript" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-N7R4RP8"></script><script src="https://www.paintingvr.xyz/resources/main.360f13ccc5f98fa2c1c4.js"></script><style type="text/css">/*
+! tailwindcss v3.0.18 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: currentColor; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+Ensure the default browser behavior of the `hidden` attribute.
+*/
+
+[hidden] {
+  display: none;
+}h1{font-size:4.5rem;line-height:1;font-family:"piepie"}h2{font-size:4.18rem;line-height:1;font-family:"piepie"}h3 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;font-family:"piepie";
+}
+
+*, ::before, ::after {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}@font-face{font-family:"piepie";src:url(/resources/fonts/dharma-type_piepie.otf) format("opentype")}.font-poppins{letter-spacing:2px;line-height:21px;font-weight:700}.font-source-sans-pro{font-weight:400;font-size:20px;line-height:32px}.text-larger{font-size:24px}html{font-smooth:always;box-sizing:border-box;image-rendering:-webkit-optimize-contrast;image-rendering:auto;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility;-webkit-appearance:none;-moz-appearance:none;appearance:none}.credits-footer{background-color:#23342f;z-index:1;line-height:1;display:block;padding:.5rem 0;text-align:center;text-decoration:none;color:#5a6f65;background-color:transparent}.credits-footer .credits-footer-heart{position:relative;display:inline-block;width:14px;height:12px;margin-right:2px;margin-left:3px}.credits-footer .credits-footer-heart>div{position:absolute;bottom:0;width:1px;margin-right:1px;transition-timing-function:"ease-out";transition-duration:.3s;transition-property:height,bottom;background-color:#fed766}.credits-footer .credits-footer-heart>div.bar1{height:3px}.credits-footer .credits-footer-heart>div.bar2{left:2px;height:8px}.credits-footer .credits-footer-heart>div.bar3{left:4px;height:9px}.credits-footer .credits-footer-heart>div.bar4{left:6px;height:5px}.credits-footer .credits-footer-heart>div.bar5{left:8px;height:6px}.credits-footer .credits-footer-heart>div.bar6{left:10px;height:10px}.credits-footer .credits-footer-heart>div.bar7{left:12px;height:3px}.credits-footer:hover .credits-footer-heart>div.bar1{bottom:6px;height:3px}.credits-footer:hover .credits-footer-heart>div.bar2{bottom:4px;height:7px}.credits-footer:hover .credits-footer-heart>div.bar3{bottom:2px;height:8px}.credits-footer:hover .credits-footer-heart>div.bar4{bottom:0;height:8px}.credits-footer:hover .credits-footer-heart>div.bar5{bottom:2px;height:8px}.credits-footer:hover .credits-footer-heart>div.bar6{bottom:4px;height:7px}.credits-footer:hover .credits-footer-heart>div.bar7{bottom:6px;height:3px}.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}.pointer-events-none {
+  pointer-events: none;
+}.pointer-events-auto {
+  pointer-events: auto;
+}.fixed {
+  position: fixed;
+}.absolute {
+  position: absolute;
+}.relative {
+  position: relative;
+}.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}.bottom-0 {
+  bottom: 0px;
+}.right-0 {
+  right: 0px;
+}.left-0 {
+  left: 0px;
+}.right-\[3\.25rem\] {
+  right: 3.25rem;
+}.bottom-\[3\.25rem\] {
+  bottom: 3.25rem;
+}.top-0 {
+  top: 0px;
+}.right-\[2px\] {
+  right: 2px;
+}.bottom-\[2px\] {
+  bottom: 2px;
+}.bottom-\[90px\] {
+  bottom: 90px;
+}.z-\[1\] {
+  z-index: 1;
+}.z-\[2\] {
+  z-index: 2;
+}.z-\[5\] {
+  z-index: 5;
+}.z-10 {
+  z-index: 10;
+}.z-50 {
+  z-index: 50;
+}.col-span-3 {
+  grid-column: span 3 / span 3;
+}.col-span-5 {
+  grid-column: span 5 / span 5;
+}.m-auto {
+  margin: auto;
+}.m-4 {
+  margin: 1rem;
+}.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}.-mt-14 {
+  margin-top: -3.5rem;
+}.mb-4 {
+  margin-bottom: 1rem;
+}.mr-2 {
+  margin-right: 0.5rem;
+}.mt-\[182px\] {
+  margin-top: 182px;
+}.mb-56 {
+  margin-bottom: 56px;
+}.mt-4 {
+  margin-top: 1rem;
+}.mt-6 {
+  margin-top: 1.5rem;
+}.mb-5 {
+  margin-bottom: 1.25rem;
+}.mt-56 {
+  margin-top: 56px;
+}.mt-3 {
+  margin-top: 0.75rem;
+}.mt-2 {
+  margin-top: 0.5rem;
+}.mb-2 {
+  margin-bottom: 0.5rem;
+}.mb-\[100px\] {
+  margin-bottom: 100px;
+}.mr-3 {
+  margin-right: 0.75rem;
+}.block {
+  display: block;
+}.inline-block {
+  display: inline-block;
+}.inline {
+  display: inline;
+}.flex {
+  display: flex;
+}.grid {
+  display: grid;
+}.contents {
+  display: contents;
+}.hidden {
+  display: none;
+}.h-footer {
+  height: 78px;
+}.h-full {
+  height: 100%;
+}.h-\[100\%\] {
+  height: 100%;
+}.h-\[30px\] {
+  height: 30px;
+}.h-\[45vh\] {
+  height: 45vh;
+}.h-screen {
+  height: 100vh;
+}.h-7 {
+  height: 1.75rem;
+}.h-6 {
+  height: 1.5rem;
+}.h-\[24px\] {
+  height: 24px;
+}.h-art {
+  height: 400px;
+}.h-\[285px\] {
+  height: 285px;
+}.h-auto {
+  height: auto;
+}.h-\[256px\] {
+  height: 256px;
+}.max-h-\[50vh\] {
+  max-height: 50vh;
+}.max-h-\[45vh\] {
+  max-height: 45vh;
+}.max-h-\[610px\] {
+  max-height: 610px;
+}.max-h-\[200px\] {
+  max-height: 200px;
+}.min-h-screen {
+  min-height: 100vh;
+}.min-h-\[45px\] {
+  min-height: 45px;
+}.min-h-\[46px\] {
+  min-height: 46px;
+}.w-full {
+  width: 100%;
+}.w-\[135px\] {
+  width: 135px;
+}.w-screen {
+  width: 100vw;
+}.w-\[100\%\] {
+  width: 100%;
+}.w-4\/5 {
+  width: 80%;
+}.w-\[30px\] {
+  width: 30px;
+}.w-0 {
+  width: 0px;
+}.w-6 {
+  width: 1.5rem;
+}.w-\[355px\] {
+  width: 355px;
+}.min-w-\[145px\] {
+  min-width: 145px;
+}.max-w-\[700px\] {
+  max-width: 700px;
+}.max-w-\[90vw\] {
+  max-width: 90vw;
+}.max-w-5xl {
+  max-width: 64rem;
+}.max-w-\[12\.5vw\] {
+  max-width: 12.5vw;
+}.max-w-full {
+  max-width: 100%;
+}.flex-auto {
+  flex: 1 1 auto;
+}.flex-1 {
+  flex: 1 1 0%;
+}.grow-0 {
+  flex-grow: 0;
+}.grow {
+  flex-grow: 1;
+}.basis-1\/3 {
+  flex-basis: 33.333333%;
+}.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}.grid-cols-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}.grid-cols-none {
+  grid-template-columns: none;
+}.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}.flex-row {
+  flex-direction: row;
+}.flex-col {
+  flex-direction: column;
+}.flex-wrap {
+  flex-wrap: wrap;
+}.flex-nowrap {
+  flex-wrap: nowrap;
+}.place-items-center {
+  place-items: center;
+}.items-start {
+  align-items: flex-start;
+}.items-center {
+  align-items: center;
+}.justify-end {
+  justify-content: flex-end;
+}.justify-center {
+  justify-content: center;
+}.justify-between {
+  justify-content: space-between;
+}.gap-4 {
+  gap: 1rem;
+}.gap-10 {
+  gap: 2.5rem;
+}.gap-3 {
+  gap: 0.75rem;
+}.gap-\[20px\] {
+  gap: 20px;
+}.gap-0 {
+  gap: 0px;
+}.gap-1 {
+  gap: 0.25rem;
+}.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}.justify-self-start {
+  justify-self: start;
+}.justify-self-end {
+  justify-self: end;
+}.justify-self-center {
+  justify-self: center;
+}.overflow-hidden {
+  overflow: hidden;
+}.overflow-y-auto {
+  overflow-y: auto;
+}.overflow-y-scroll {
+  overflow-y: scroll;
+}.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}.whitespace-nowrap {
+  white-space: nowrap;
+}.break-words {
+  overflow-wrap: break-word;
+}.rounded-xl {
+  border-radius: 0.75rem;
+}.rounded-lg {
+  border-radius: 0.5rem;
+}.rounded-md {
+  border-radius: 0.375rem;
+}.rounded-3xl {
+  border-radius: 1.5rem;
+}.rounded-t-xl {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}.rounded-b-none {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}.rounded-br-3xl {
+  border-bottom-right-radius: 1.5rem;
+}.border-2 {
+  border-width: 2px;
+}.border-b-2 {
+  border-bottom-width: 2px;
+}.border-b-0 {
+  border-bottom-width: 0px;
+}.border-t-0 {
+  border-top-width: 0px;
+}.border-yellow {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 215 102 / var(--tw-border-opacity));
+}.border-almost-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 26 30 / var(--tw-border-opacity));
+}.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}.bg-darkest-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 52 47 / var(--tw-bg-opacity));
+}.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 215 102 / var(--tw-bg-opacity));
+}.bg-dark-blue-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 26 30 / var(--tw-bg-opacity));
+}.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}.bg-darker-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 53 47 / var(--tw-bg-opacity));
+}.bg-transparent {
+  background-color: transparent;
+}.bg-dark-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 81 69 / var(--tw-bg-opacity));
+}.bg-pink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 128 183 / var(--tw-bg-opacity));
+}.bg-almost-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 26 30 / var(--tw-bg-opacity));
+}.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
+}.fill-almost-black {
+  fill: #0f1a1e;
+}.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}.p-4 {
+  padding: 1rem;
+}.p-\[2px\] {
+  padding: 2px;
+}.p-3 {
+  padding: 0.75rem;
+}.p-0 {
+  padding: 0px;
+}.py-\[85px\] {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}.pb-10 {
+  padding-bottom: 2.5rem;
+}.pt-5 {
+  padding-top: 1.25rem;
+}.pb-5 {
+  padding-bottom: 1.25rem;
+}.pt-10 {
+  padding-top: 2.5rem;
+}.pb-8 {
+  padding-bottom: 2rem;
+}.pt-2 {
+  padding-top: 0.5rem;
+}.pt-4 {
+  padding-top: 1rem;
+}.pt-6 {
+  padding-top: 1.5rem;
+}.pl-5 {
+  padding-left: 1.25rem;
+}.pb-4 {
+  padding-bottom: 1rem;
+}.pr-4 {
+  padding-right: 1rem;
+}.pr-2 {
+  padding-right: 0.5rem;
+}.pt-24 {
+  padding-top: 24px;
+}.pb-32 {
+  padding-bottom: 32px;
+}.text-left {
+  text-align: left;
+}.text-center {
+  text-align: center;
+}.text-right {
+  text-align: right;
+}.align-middle {
+  vertical-align: middle;
+}.font-poppins {
+  font-family: Poppins;
+}.font-source-sans-pro {
+  font-family: Source Sans Pro;
+}.font-piepie {
+  font-family: piepie;
+}.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}.text-56 {
+  font-size: 56px;
+}.text-\[0\.6rem\] {
+  font-size: 0.6rem;
+}.text-\[14px\] {
+  font-size: 14px;
+}.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}.font-bold {
+  font-weight: 700;
+}.uppercase {
+  text-transform: uppercase;
+}.leading-none {
+  line-height: 1;
+}.tracking-normal {
+  letter-spacing: 0em;
+}.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}.text-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(254 215 102 / var(--tw-text-opacity));
+}.text-almost-black {
+  --tw-text-opacity: 1;
+  color: rgb(15 26 30 / var(--tw-text-opacity));
+}.text-pink {
+  --tw-text-opacity: 1;
+  color: rgb(249 128 183 / var(--tw-text-opacity));
+}.text-footer {
+  --tw-text-opacity: 1;
+  color: rgb(90 111 101 / var(--tw-text-opacity));
+}.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}.decoration-1 {
+  text-decoration-thickness: 1px;
+}.underline-offset-2 {
+  text-underline-offset: 2px;
+}.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}.transition-width {
+  transition-property: width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}.duration-500 {
+  transition-duration: 500ms;
+}.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}.glide{position:relative;width:100%;box-sizing:border-box}.glide *{box-sizing:inherit}.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;margin:0;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}.glide__slides--dragging{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{-webkit-user-select:none;user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.glide__bullets{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.glide--rtl{direction:rtl}.glide__arrow{position:absolute;display:block;top:50%;z-index:2;color:#fff;text-transform:uppercase;padding:9px 12px;background-color:transparent;border:2px solid rgba(255,255,255,.5);border-radius:4px;box-shadow:0 .25em .5em 0 rgba(0,0,0,.1);text-shadow:0 .25em .5em rgba(0,0,0,.1);opacity:1;cursor:pointer;transition:opacity 150ms ease,border 300ms ease-in-out;transform:translateY(-50%);line-height:1}.glide__arrow:focus{outline:none}.glide__arrow:hover{border-color:#fff}.glide__arrow--left{left:2em}.glide__arrow--right{right:2em}.glide__arrow--disabled{opacity:.33}.glide__bullets{position:absolute;z-index:2;bottom:2em;left:50%;display:inline-flex;list-style:none;transform:translateX(-50%)}.glide__bullet{background-color:rgba(255,255,255,.5);width:9px;height:9px;padding:0;border-radius:50%;border:2px solid transparent;transition:all 300ms ease-in-out;cursor:pointer;line-height:0;box-shadow:0 .25em .5em 0 rgba(0,0,0,.1);margin:0 .25em}.glide__bullet:focus{outline:none}.glide__bullet:hover,.glide__bullet:focus{border:2px solid #fff;background-color:rgba(255,255,255,.5)}.glide__bullet--active{background-color:#fff}.glide--swipeable{cursor:grab;cursor:-webkit-grab}.glide--dragging{cursor:grabbing;cursor:-webkit-grabbing}.glightbox-container{width:100%;height:100%;position:fixed;top:0;left:0;z-index:999999 !important;touch-action:none;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;outline:none;overflow:hidden}.glightbox-container.inactive{display:none}.glightbox-container .gcontainer{position:relative;width:100%;height:100%;z-index:9999;overflow:hidden}.glightbox-container .gslider{transition:transform .4s ease;height:100%;left:0;top:0;width:100%;position:relative;overflow:hidden;display:flex !important;justify-content:center;align-items:center;transform:translate3d(0, 0, 0)}.glightbox-container .gslide{width:100%;position:absolute;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:flex;align-items:center;justify-content:center;opacity:0}.glightbox-container .gslide.current{opacity:1;z-index:99999;position:relative}.glightbox-container .gslide.prev{opacity:1;z-index:9999}.glightbox-container .gslide-inner-content{width:100%}.glightbox-container .ginner-container{position:relative;width:100%;display:flex;justify-content:center;flex-direction:column;max-width:100%;margin:auto;height:100vh}.glightbox-container .ginner-container.gvideo-container{width:100%}.glightbox-container .ginner-container.desc-bottom,.glightbox-container .ginner-container.desc-top{flex-direction:column}.glightbox-container .ginner-container.desc-left,.glightbox-container .ginner-container.desc-right{max-width:100% !important}.gslide iframe,.gslide video{outline:none !important;border:none;min-height:165px;-webkit-overflow-scrolling:touch;touch-action:auto}.gslide:not(.current){pointer-events:none}.gslide-image{align-items:center}.gslide-image img{max-height:100vh;display:block;padding:0;float:none;outline:none;border:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;max-width:100vw;width:auto;height:auto;-o-object-fit:cover;object-fit:cover;touch-action:none;margin:auto;min-width:200px}.desc-top .gslide-image img,.desc-bottom .gslide-image img{width:auto}.desc-left .gslide-image img,.desc-right .gslide-image img{width:auto;max-width:100%}.gslide-image img.zoomable{position:relative}.gslide-image img.dragging{cursor:-webkit-grabbing !important;cursor:grabbing !important;transition:none}.gslide-video{position:relative;max-width:100vh;width:100% !important}.gslide-video .gvideo-wrapper{width:100%;margin:auto}.gslide-video::before{content:"";display:block;position:absolute;width:100%;height:100%;background:rgba(255, 0, 0, 0.34);display:none}.gslide-video.playing::before{display:none}.gslide-video.fullscreen{max-width:100% !important;min-width:100%;height:75vh}.gslide-video.fullscreen video{max-width:100% !important;width:100% !important}.gslide-inline{background:#fff;text-align:left;max-height:calc(100vh - 40px);overflow:auto;max-width:100%}.gslide-inline .ginlined-content{padding:20px;width:100%}.gslide-inline .dragging{cursor:-webkit-grabbing !important;cursor:grabbing !important;transition:none}.ginlined-content{overflow:auto;display:block !important;opacity:1}.gslide-external{display:flex;width:100%;min-width:100%;background:#fff;padding:0;overflow:auto;max-height:75vh;height:100%}.gslide-media{display:flex;width:auto}.zoomed .gslide-media{box-shadow:none !important}.desc-top .gslide-media,.desc-bottom .gslide-media{margin:0 auto;flex-direction:column}.gslide-description{position:relative;flex:1 0 100%}.gslide-description.description-left,.gslide-description.description-right{max-width:100%}.gslide-description.description-bottom,.gslide-description.description-top{margin:0 auto;width:100%}.gslide-description p{margin-bottom:12px}.gslide-description p:last-child{margin-bottom:0}.zoomed .gslide-description{display:none}.glightbox-button-hidden{display:none}.glightbox-mobile .glightbox-container .gslide-description{height:auto !important;width:100%;background:transparent;position:absolute;bottom:0;padding:19px 11px;max-width:100vw !important;order:2 !important;max-height:78vh;overflow:auto !important;background:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);transition:opacity .3s linear;padding-bottom:50px}.glightbox-mobile .glightbox-container .gslide-title{color:#fff;font-size:1em}.glightbox-mobile .glightbox-container .gslide-desc{color:#a1a1a1}.glightbox-mobile .glightbox-container .gslide-desc a{color:#fff;font-weight:bold}.glightbox-mobile .glightbox-container .gslide-desc *{color:inherit}.glightbox-mobile .glightbox-container .gslide-desc string{color:#fff}.glightbox-mobile .glightbox-container .gslide-desc .desc-more{color:#fff;opacity:.4}.gdesc-open .gslide-media{transition:opacity .5s ease;opacity:.4}.gdesc-open .gdesc-inner{padding-bottom:30px}.gdesc-closed .gslide-media{transition:opacity .5s ease;opacity:1}.greset{transition:all .3s ease}.gabsolute{position:absolute}.grelative{position:relative}.glightbox-desc{display:none !important}.glightbox-open{overflow:hidden}.gloader{height:25px;width:25px;-webkit-animation:lightboxLoader .8s infinite linear;animation:lightboxLoader .8s infinite linear;border:2px solid #fff;border-right-color:transparent;border-radius:50%;position:absolute;display:block;z-index:9999;left:0;right:0;margin:0 auto;top:47%}.goverlay{width:100%;height:calc(100vh + 1px);position:fixed;top:-1px;left:0;background:#000;will-change:opacity}.glightbox-mobile .goverlay{background:#000}.gprev,.gnext,.gclose{z-index:99999;cursor:pointer;width:26px;height:44px;border:none;display:flex;justify-content:center;align-items:center;flex-direction:column}.gprev svg,.gnext svg,.gclose svg{display:block;width:25px;height:auto;margin:0;padding:0}.gprev.disabled,.gnext.disabled,.gclose.disabled{opacity:.1}.gprev .garrow,.gnext .garrow,.gclose .garrow{stroke:#fff}.gbtn.focused{outline:2px solid #0f3d81}iframe.wait-autoplay{opacity:0}.glightbox-closing .gnext,.glightbox-closing .gprev,.glightbox-closing .gclose{opacity:0 !important}.glightbox-clean .gslide-description{background:#fff}.glightbox-clean .gdesc-inner{padding:22px 20px}.glightbox-clean .gslide-title{font-size:1em;font-weight:normal;font-family:arial;color:#000;margin-bottom:19px;line-height:1.4em}.glightbox-clean .gslide-desc{font-size:.86em;margin-bottom:0;font-family:arial;line-height:1.4em}.glightbox-clean .gslide-video{background:#000}.glightbox-clean .gprev,.glightbox-clean .gnext,.glightbox-clean .gclose{background-color:rgba(0, 0, 0, 0.75);border-radius:4px}.glightbox-clean .gprev path,.glightbox-clean .gnext path,.glightbox-clean .gclose path{fill:#fff}.glightbox-clean .gprev{position:absolute;top:-100%;left:30px;width:40px;height:50px}.glightbox-clean .gnext{position:absolute;top:-100%;right:30px;width:40px;height:50px}.glightbox-clean .gclose{width:35px;height:35px;top:15px;right:10px;position:absolute}.glightbox-clean .gclose svg{width:18px;height:auto}.glightbox-clean .gclose:hover{opacity:1}.gfadeIn{-webkit-animation:gfadeIn .5s ease;animation:gfadeIn .5s ease}.gfadeOut{-webkit-animation:gfadeOut .5s ease;animation:gfadeOut .5s ease}.gslideOutLeft{-webkit-animation:gslideOutLeft .3s ease;animation:gslideOutLeft .3s ease}.gslideInLeft{-webkit-animation:gslideInLeft .3s ease;animation:gslideInLeft .3s ease}.gslideOutRight{-webkit-animation:gslideOutRight .3s ease;animation:gslideOutRight .3s ease}.gslideInRight{-webkit-animation:gslideInRight .3s ease;animation:gslideInRight .3s ease}.gzoomIn{-webkit-animation:gzoomIn .5s ease;animation:gzoomIn .5s ease}.gzoomOut{-webkit-animation:gzoomOut .5s ease;animation:gzoomOut .5s ease}@-webkit-keyframes lightboxLoader{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes lightboxLoader{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@-webkit-keyframes gfadeIn{from{opacity:0}to{opacity:1}}@keyframes gfadeIn{from{opacity:0}to{opacity:1}}@-webkit-keyframes gfadeOut{from{opacity:1}to{opacity:0}}@keyframes gfadeOut{from{opacity:1}to{opacity:0}}@-webkit-keyframes gslideInLeft{from{opacity:0;transform:translate3d(-60%, 0, 0)}to{visibility:visible;transform:translate3d(0, 0, 0);opacity:1}}@keyframes gslideInLeft{from{opacity:0;transform:translate3d(-60%, 0, 0)}to{visibility:visible;transform:translate3d(0, 0, 0);opacity:1}}@-webkit-keyframes gslideOutLeft{from{opacity:1;visibility:visible;transform:translate3d(0, 0, 0)}to{transform:translate3d(-60%, 0, 0);opacity:0;visibility:hidden}}@keyframes gslideOutLeft{from{opacity:1;visibility:visible;transform:translate3d(0, 0, 0)}to{transform:translate3d(-60%, 0, 0);opacity:0;visibility:hidden}}@-webkit-keyframes gslideInRight{from{opacity:0;visibility:visible;transform:translate3d(60%, 0, 0)}to{transform:translate3d(0, 0, 0);opacity:1}}@keyframes gslideInRight{from{opacity:0;visibility:visible;transform:translate3d(60%, 0, 0)}to{transform:translate3d(0, 0, 0);opacity:1}}@-webkit-keyframes gslideOutRight{from{opacity:1;visibility:visible;transform:translate3d(0, 0, 0)}to{transform:translate3d(60%, 0, 0);opacity:0}}@keyframes gslideOutRight{from{opacity:1;visibility:visible;transform:translate3d(0, 0, 0)}to{transform:translate3d(60%, 0, 0);opacity:0}}@-webkit-keyframes gzoomIn{from{opacity:0;transform:scale3d(0.3, 0.3, 0.3)}to{opacity:1}}@keyframes gzoomIn{from{opacity:0;transform:scale3d(0.3, 0.3, 0.3)}to{opacity:1}}@-webkit-keyframes gzoomOut{from{opacity:1}50%{opacity:0;transform:scale3d(0.3, 0.3, 0.3)}to{opacity:0}}@keyframes gzoomOut{from{opacity:1}50%{opacity:0;transform:scale3d(0.3, 0.3, 0.3)}to{opacity:0}}@media(min-width: 769px){.glightbox-container .ginner-container{width:auto;height:auto;flex-direction:row}.glightbox-container .ginner-container.desc-top .gslide-description{order:0}.glightbox-container .ginner-container.desc-top .gslide-image,.glightbox-container .ginner-container.desc-top .gslide-image img{order:1}.glightbox-container .ginner-container.desc-left .gslide-description{order:0}.glightbox-container .ginner-container.desc-left .gslide-image{order:1}.gslide-image img{max-height:97vh;max-width:100%}.gslide-image img.zoomable{cursor:zoom-in}.zoomed .gslide-image img.zoomable{cursor:-webkit-grab;cursor:grab}.gslide-inline{max-height:95vh}.gslide-external{max-height:100vh}.gslide-description.description-left,.gslide-description.description-right{max-width:275px}.glightbox-open{height:auto}.goverlay{background:rgba(0, 0, 0, 0.92)}.glightbox-clean .gslide-media{box-shadow:1px 2px 9px 0px rgba(0, 0, 0, 0.65)}.glightbox-clean .description-left .gdesc-inner,.glightbox-clean .description-right .gdesc-inner{position:absolute;height:100%;overflow-y:auto}.glightbox-clean .gprev,.glightbox-clean .gnext,.glightbox-clean .gclose{background-color:rgba(0, 0, 0, 0.32)}.glightbox-clean .gprev:hover,.glightbox-clean .gnext:hover,.glightbox-clean .gclose:hover{background-color:rgba(0, 0, 0, 0.7)}.glightbox-clean .gprev{top:45%}.glightbox-clean .gnext{top:45%}}@media(min-width: 992px){.glightbox-clean .gclose{opacity:.7;right:20px}}@media screen and (max-height: 420px){.goverlay{background:#000}}.animate-text{position:relative}.animate-text span.duplicate{display:none}.animate-text:hover{overflow:hidden;overflow:clip}.animate-text:hover span.content,.animate-text:hover span.duplicate{display:inline-block;width:100%;-webkit-animation:move 2s linear infinite;animation:move 2s linear infinite;-webkit-animation-play-state:running;animation-play-state:running}.animate-text:hover span.duplicate{position:absolute;transform:translateX(120%)}@-webkit-keyframes move{0%{transform:translateX(0)}to{transform:translateX(-100%)}}@keyframes move{0%{transform:translateX(0)}to{transform:translateX(-100%)}}.border-top-wave-trans-green{background:url("/assets/images/border/wave-trans-green@2x.png");height:48px}.border-top-wave-green-yellow{background:url("/assets/images/border/wave-green-yellow@2x.jpg");height:48px}.border-top-wave-yellow-green{background:url("/assets/images/border/wave-yellow-green@2x.jpg");height:48px}.border-left-wave-green-white{background:url("/assets/images/border/wave-green-white@2x.jpg");width:48px;min-width:48px}#btn-open-menu:hover svg#menu-brush-icon .yellow{fill:#fed766;-webkit-animation:opacity 1s linear alternate;animation:opacity 1s linear alternate}#btn-open-menu:hover svg#menu-brush-icon .pink{fill:#f980b7;-webkit-animation:opacity 1s linear alternate;animation:opacity 1s linear alternate}@-webkit-keyframes opacity{0%{opacity:0}20%{opacity:.2}40%{opacity:.4}60%{opacity:.6}80%{opacity:.8}100%{opacity:1}}@keyframes opacity{0%{opacity:0}20%{opacity:.2}40%{opacity:.4}60%{opacity:.6}80%{opacity:.8}100%{opacity:1}}.hover-toggle .default{display:initial}.hover-toggle .on-hover{display:none}.hover-toggle:hover .default{display:none}.hover-toggle:hover .on-hover{display:initial}:root{--fui-font: "Source Sans Pro"}.demoRequestForm .fui-page-container *,.contactRequestForm .fui-page-container *{font-family:"Source Sans Pro" !important;font-weight:normal;font-size:20px}.demoRequestForm .fui-page-container *.fui-label,.contactRequestForm .fui-page-container *.fui-label{font-weight:bold;display:none}.demoRequestForm a,.contactRequestForm a{text-decoration:underline}.demoRequestForm input,.contactRequestForm input{border-radius:.75rem}.fui-error .fui-label,.fui-error .fui-legend{color:#f980b7 !important;border-color:#f980b7 !important}.fui-error-message{color:#f980b7 !important}.fui-alert-error{background-color:#f980b7 !important;color:#fff !important}.fui-input.fui-error:focus{border-left-color:#f980b7 !important;border-right-color:#f980b7 !important;border-top-color:#f980b7 !important;border-bottom-color:#f980b7 !important}.fui-alert-success{background-color:#1f352f !important;color:#fff !important}.teaser{position:relative;overflow:hidden}.teasing{max-height:700px}.teasing::after{content:"";background:linear-gradient(rgba(255, 255, 255, 0), #fed766);height:200px;position:absolute;left:0;right:0;bottom:0}body,body *{cursor:url("/assets/images/cursor/brush-48.svg"),auto}#footer a{cursor:pointer}#footer *{cursor:initial}#ccc{display:none}.custom-cookie-consent{bottom:0;left:0;max-width:540px;z-index:10}@media(min-width: 1024px){.lg\:w-\[640px\]{width:640px}}@media only screen and (max-width: 600px){h2{font-size:3rem}}html{scroll-behavior:smooth}body{background-color:#fed766}body.stop-scrolling{height:100%;overflow:hidden}.content-page.container h2,.content-page.container h3{margin-top:30px;margin-bottom:15px}.h1-text{fill:#0f1a1e}.second-page,.third-page{min-height:500px}.fill-almost-black svg path{fill:#0f1a1e}#trailer-click-outside{background-color:rgba(15,26,30,.75)}.blog-entry p{margin-bottom:1.25rem}@font-face{font-family:"symbols_paintingvr";src:url(/resources/fonts/symbols_paintingvr.eot);src:url(/resources/fonts/symbols_paintingvr.eot#iefix) format("embedded-opentype"),url(/resources/fonts/symbols_paintingvr.ttf) format("truetype"),url(/resources/fonts/symbols_paintingvr.woff) format("woff"),url(/resources/images/symbols_paintingvr.[fullhash].svg#symbols_paintingvr) format("svg");font-weight:normal;font-style:normal;font-display:block}[class^=icon-],[class*=" icon-"]{font-family:"symbols_paintingvr" !important;speak:never;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-meta:before{content:""}.icon-steam:before{content:""}.icon-arrow-left:before{content:""}.icon-arrow-right:before{content:""}.icon-brush:before{content:""}.icon-close:before{content:""}.icon-discord:before{content:""}.icon-oculus:before{content:""}.hover\:border-4:hover {
+  border-width: 4px;
+}.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}.hover\:bg-almost-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 26 30 / var(--tw-bg-opacity));
+}.hover\:p-\[0px\]:hover {
+  padding: 0px;
+}.hover\:text-almost-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(15 26 30 / var(--tw-text-opacity));
+}.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}.hover\:text-dark-green:hover {
+  --tw-text-opacity: 1;
+  color: rgb(51 81 69 / var(--tw-text-opacity));
+}.hover\:text-yellow:hover {
+  --tw-text-opacity: 1;
+  color: rgb(254 215 102 / var(--tw-text-opacity));
+}.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}@media (min-width: 640px) {
+
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .sm\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:inline-block {
+    display: inline-block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:h-screen {
+    height: 100vh;
+  }
+
+  .sm\:w-\[initial\] {
+    width: initial;
+  }
+
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
+  .sm\:text-left {
+    text-align: left;
+  }
+
+  .sm\:align-middle {
+    vertical-align: middle;
+  }
+
+  .sm\:text-\[32px\] {
+    font-size: 32px;
+  }
+}@media (min-width: 768px) {
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .md\:flex-shrink-0 {
+    flex-shrink: 0;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:text-\[48px\] {
+    font-size: 48px;
+  }
+}@media (min-width: 1024px) {
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:w-\[640px\] {
+    width: 640px;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-\[1rem\] {
+    font-size: 1rem;
+  }
+}@media (min-width: 1280px) {
+
+  .xl\:inline {
+    display: inline;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:w-\[496px\] {
+    width: 496px;
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:text-72 {
+    font-size: 72px;
+  }
+}</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;family=Source+Sans+Pro:wght@400&amp;display=swap" rel="stylesheet"><title>PaintingVR | Learn to paint in virtual reality</title>
+<script>
+</script>
+<script>dataLayer = [];
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7R4RP8');
+</script><meta name="generator" content="SEOmatic">
+<meta name="keywords" content="painting,virtual reality,vr,artist,painting vr,vr gaming,vr games,virtual painting,tilt brush">
+<meta name="description" content="Painting VR is a virtual studio with inspiring tools, an unlimited supply of paint, and more. Choose your colors, dip your brush, and start creating!">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="robots" content="all">
+<meta content="en_EN" property="og:locale">
+<meta content="PaintingVR" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="https://www.paintingvr.xyz/" property="og:url">
+<meta content="Learn to paint in virtual reality" property="og:title">
+<meta content="Painting VR is a virtual studio with inspiring tools, an unlimited supply of paint, and more. Choose your colors, dip your brush, and start creating!" property="og:description">
+<meta content="https://www.paintingvr.xyz/assets/images/social/fb-img.png" property="og:image">
+<meta content="Painting VR is a virtual studio with inspiring tools, an unlimited supply of paint, and more. Choose your colors, dip your brush, and start creating!" property="og:image:alt">
+<meta content="https://www.tiktok.com/@paintingvr" property="og:see_also">
+<meta content="https://www.youtube.com/c/PaintingVR" property="og:see_also">
+<meta content="https://www.instagram.com/itspaintingvr/" property="og:see_also">
+<meta content="https://www.facebook.com/ItsPaintingVR/" property="og:see_also">
+<meta content="https://twitter.com/PaintingVr" property="og:see_also">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@paintingvr">
+<meta name="twitter:creator" content="@paintingvr">
+<meta name="twitter:title" content="Learn to paint in virtual reality">
+<meta name="twitter:description" content="Painting VR is a virtual studio with inspiring tools, an unlimited supply of paint, and more. Choose your colors, dip your brush, and start creating!">
+<meta name="twitter:image" content="https://www.paintingvr.xyz/assets/images/social/fb-img.png">
+<meta name="twitter:image:alt" content="Painting VR is a virtual studio with inspiring tools, an unlimited supply of paint, and more. Choose your colors, dip your brush, and start creating!">
+<link href="https://www.paintingvr.xyz" rel="canonical">
+<link href="https://www.paintingvr.xyz" rel="home">
+<link type="text/plain" href="https://www.paintingvr.xyz/humans.txt" rel="author">
+<link href="https://www.paintingvr.xyz/cpresources/13effd3e/formie-theme.css?v=1657545604" rel="stylesheet">
+<link href="https://www.paintingvr.xyz/cpresources/dec57fd6/ccc.css?v=1657545604" rel="stylesheet">
+<script>var cccSiteUrl = "https://www.paintingvr.xyz/";</script></head><body class="flex flex-col flex-auto h-full text-almost-black font-source-sans-pro"><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XVRCLQL0RT"></script><noscript><iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-N7R4RP8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><main class="flex-auto"><div id="header" class="fixed w-screen pt-5 px-4 lg:px-10 pb-5 z-[5] bg-yellow"><div class="grid grid-cols-3 gap-4 h-menu"><div class="flex items-center text-2xl justify-self-start"><button id="btn-open-menu" class="whitespace-nowrap min-w-[145px] min-h-[45px] px-4 py-1 font-poppins uppercase transition duration-500 ease-in-out border-2 border-almost-black rounded-xl flex items-center bg-yellow hover:bg-white hover:text-almost-black opens-navigation"><svg id="menu-brush-icon" class="inline-block" width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" width="15" height="11" fill="none" class="pink"></rect><path d="M1 11H16V13.5L11 15.5V23H6V15.5L1 14.5V11Z" fill="none" class="yellow"></path><path d="M0.944444 0C0.693962 0 0.453739 0.0903252 0.276622 0.251105C0.0995039 0.411885 0 0.629949 0 0.857327L0 12.8565C0 13.766 0.398015 14.6382 1.10649 15.2814C1.81496 15.9245 2.77585 16.2858 3.77778 16.2858H4.72222V20.5724C4.72222 21.0225 4.81989 21.4682 5.00964 21.8841C5.1994 22.2999 5.47753 22.6778 5.82815 22.9961C6.17878 23.3144 6.59503 23.5668 7.05314 23.7391C7.51125 23.9113 8.00225 24 8.49811 24C8.99397 24 9.48497 23.9113 9.94308 23.7391C10.4012 23.5668 10.8174 23.3144 11.1681 22.9961C11.5187 22.6778 11.7968 22.2999 11.9866 21.8841C12.1763 21.4682 12.274 21.0225 12.274 20.5724V16.2858H13.2222C14.2242 16.2858 15.185 15.9245 15.8935 15.2814C16.602 14.6382 17 13.766 17 12.8565V0.857327C17 0.629949 16.9005 0.411885 16.7234 0.251105C16.5463 0.0903252 16.306 0 16.0556 0L0.944444 0ZM15.1111 10.2845H1.88889V1.71465H7.55556V4.29006C7.55556 4.51744 7.65506 4.7355 7.83218 4.89628C8.00929 5.05706 8.24952 5.14739 8.5 5.14739C8.75048 5.14739 8.99071 5.05706 9.16782 4.89628C9.34494 4.7355 9.44444 4.51744 9.44444 4.29006V1.71465H11.3333V5.99443C11.3333 6.22181 11.4328 6.43987 11.61 6.60065C11.7871 6.76143 12.0273 6.85175 12.2778 6.85175C12.5283 6.85175 12.7685 6.76143 12.9456 6.60065C13.1227 6.43987 13.2222 6.22181 13.2222 5.99443V1.71465H15.1111V10.2845ZM1.88889 12.8565V11.9991H15.1111V12.8565C15.1111 13.3112 14.9121 13.7474 14.5579 14.0689C14.2036 14.3905 13.7232 14.5711 13.2222 14.5711H11.3296C11.0791 14.5711 10.8388 14.6614 10.6617 14.8222C10.4846 14.983 10.3851 15.2011 10.3851 15.4284V20.5724C10.3851 21.0267 10.1863 21.4624 9.83242 21.7836C9.47854 22.1049 8.99857 22.2853 8.49811 22.2853C7.99765 22.2853 7.51768 22.1049 7.1638 21.7836C6.80992 21.4624 6.61111 21.0267 6.61111 20.5724V15.4284C6.61111 15.2011 6.51161 14.983 6.33449 14.8222C6.15737 14.6614 5.91715 14.5711 5.66667 14.5711H3.77778C3.27681 14.5711 2.79637 14.3905 2.44213 14.0689C2.0879 13.7474 1.88889 13.3112 1.88889 12.8565Z" fill="#0F1A1E"></path></svg><span>&nbsp;Menu</span></button></div><div class="justify-self-center"><a href="/" class="hidden sm:block"><img alt="logo" class="h-full align-middle" src="/assets/images/logo/logo-black-yellow.svg"></a></div><div class="flex items-center text-2xl justify-self-end"><div class="hidden lg:block"><span class="opens-contact-form"><button class="animate-text py-1 leading-none uppercase transition duration-500 ease-in-out border-2 border-almost-black font-poppins rounded-xl bg-pink hover:bg-almost-black hover:text-yellow min-h-[45px]"><span class="px-4 content">Contact</span><span class="px-4 duplicate">Contact</span></button></span></div><div class="lg:hidden"><span class="opens-contact-form"><button class="animate-text py-1 leading-none uppercase transition duration-500 ease-in-out border-2 border-almost-black font-poppins rounded-xl bg-pink hover:bg-almost-black hover:text-yellow min-h-[45px]"><span class="px-4 content">Contact</span><span class="px-4 duplicate">Contact</span></button></span></div></div></div></div><div id="page-container"><div class="fixed inset-0 z-10 overflow-y-auto max-w-100" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="trailer-container" style="display: none"><div class="flex items-center justify-center h-screen"><div id="trailer-click-outside" class="fixed inset-0 transition-opacity bg-opacity-75" aria-hidden="true"></div><div class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-middle transition-all transform rounded-lg shadow-xl bg-almost-black"><div class="absolute top-0 right-0 hidden pt-4 pr-4 sm:block"><button type="button" class="bg-white rounded-md closes-trailer"><span class="sr-only">Close</span><svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div><div class="sm:flex sm:items-start"><div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left"><div class="mt-2"><iframe style="max-width:90vw;max-height:90vh;" id="youtube-video" width="1024" height="768" data-src="https://www.youtube.com/embed/nwrSeqMO42I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div></div></div></div></div></div><div id="menu" class="hidden" data-type="menu"><div class="relative"><div class="fixed inset-0 z-10 overflow-hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true"><div class="absolute inset-0 overflow-hidden"><div class="absolute inset-0" aria-hidden="true"></div><div class="fixed inset-y-0 left-0 flex max-w-full pointer-events-none"><div id="menu-inner" data-type="menu-inner" class="w-0 w-screen duration-500 ease-in-out transform pointer-events-auto transition-width"><div class="flex flex-col h-full overflow-y-scroll bg-white shadow-xl"><div class="relative flex-1"><div class="absolute inset-0"><div class="grid grid-cols-8 gap-0"><div class="flex flex-col h-screen col-span-3 px-10 pt-5 bg-darker-green"><div class="grow-0 min-h-[45px]"><div class="flex items-start justify-between"><div class="flex items-center pt-5 h-7"><button id="btn-close-menu" type="button" class="px-4 py-1 text-2xl font-poppins uppercase border-2 border-white bg-dark-green rounded-xl bg-transparent hover:bg-white text-white hover:text-dark-green min-w-[145px] hover-toggle closes-menu"><span class="flex items-center w-full h-full"><img alt="close" class="inline-block h-full align-middle on-hover" src="/assets/icons/close.svg"><img alt="close" class="inline-block h-full align-middle default" src="/assets/icons/close-white.svg"><strong class="h-full uppercase align-middle">&nbsp;Close</strong></span></button></div></div></div><div class="flex px-4 py-4 grow"><div class="m-auto"><ul class="text-5xl lg:text-8xl font-piepie grid grid-rows-4 grid-cols-none h-full max-h-[610px] m-auto text-white"><li class="py-5"><a class="sm:text-[32px] md:text-[48px] xl:text-72 menu-link hover:underline" href="https://www.paintingvr.xyz#product">Product</a></li><li class="py-5"><a class="sm:text-[32px] md:text-[48px] xl:text-72 menu-link hover:underline" href="https://www.paintingvr.xyz#features">Features</a></li><li class="py-5"><a class="sm:text-[32px] md:text-[48px] xl:text-72 menu-link hover:underline" href="https://www.paintingvr.xyz#showcase">Showcase</a></li><li class="py-5"><a class="sm:text-[32px] md:text-[48px] xl:text-72 menu-link hover:underline" href="https://www.paintingvr.xyz#blog">Blog</a></li></ul></div></div></div><div class="flex h-screen col-span-5 bg-white"><div class="border-left-wave-green-white"></div><div class="px-4 py-4 m-auto"><div class=""><div class="relative flex mb-56"><img alt="mascotte standing on box" class="hidden lg:block" src="/assets/images/illustrations/buckety-box.svg"><div class="hidden"><div class="relative flex flex-col justify-end pl-5"><div><h2 class="block text-56 font-piepie">Request a free demo</h2><p class="pb-5">Fill out the form with your name &amp; e-mail address to receive a free demo of <strong>Painting
+VR</strong></p><div class="demoRequestForm"><div class="fui-i"><form id="formie-form-564fe295157ff0" class="fui-form fui-labels-above-input  " method="post" enctype="multipart/form-data" accept-charset="utf-8" data-submit-method="ajax" data-submit-action="message" data-config="{&quot;formHashId&quot;:&quot;formie-form-564fe295157ff0&quot;,&quot;formId&quot;:5,&quot;formHandle&quot;:&quot;demoRequest&quot;,&quot;registeredJs&quot;:[{&quot;src&quot;:&quot;https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604&quot;,&quot;module&quot;:&quot;FormieRecaptchaV3&quot;,&quot;settings&quot;:{&quot;siteKey&quot;:&quot;6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&quot;,&quot;formId&quot;:&quot;formie-form-564fe295157ff0&quot;,&quot;theme&quot;:&quot;light&quot;,&quot;size&quot;:&quot;normal&quot;,&quot;badge&quot;:&quot;bottomright&quot;,&quot;language&quot;:&quot;en&quot;,&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;hasMultiplePages&quot;:false}}],&quot;settings&quot;:{&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;submitActionMessage&quot;:&quot;Thank you, we'll be in touch shortly.&quot;,&quot;submitActionMessageTimeout&quot;:&quot;&quot;,&quot;submitActionMessagePosition&quot;:&quot;top-form&quot;,&quot;submitActionFormHide&quot;:&quot;&quot;,&quot;submitAction&quot;:&quot;message&quot;,&quot;submitActionTab&quot;:null,&quot;errorMessage&quot;:&quot;Couldn’t save submission due to errors.&quot;,&quot;errorMessagePosition&quot;:&quot;top-form&quot;,&quot;loadingIndicator&quot;:&quot;&quot;,&quot;loadingIndicatorText&quot;:&quot;&quot;,&quot;validationOnSubmit&quot;:&quot;1&quot;,&quot;validationOnFocus&quot;:&quot;&quot;,&quot;scrollToTop&quot;:&quot;1&quot;,&quot;hasMultiplePages&quot;:false,&quot;pages&quot;:[{&quot;settings&quot;:{&quot;submitButtonLabel&quot;:&quot;Request Free Demo&quot;,&quot;backButtonLabel&quot;:&quot;Back&quot;,&quot;showBackButton&quot;:false,&quot;buttonsPosition&quot;:&quot;left&quot;,&quot;cssClasses&quot;:&quot;w-full&quot;,&quot;containerAttributes&quot;:[],&quot;inputAttributes&quot;:[],&quot;enableNextButtonConditions&quot;:false,&quot;nextButtonConditions&quot;:&quot;{\&quot;showRule\&quot;:\&quot;show\&quot;,\&quot;conditionRule\&quot;:\&quot;all\&quot;,\&quot;conditions\&quot;:[]}&quot;,&quot;enablePageConditions&quot;:false,&quot;pageConditions&quot;:[],&quot;enableJsEvents&quot;:false,&quot;jsGtmEventOptions&quot;:[{&quot;label&quot;:&quot;event&quot;,&quot;value&quot;:&quot;formPageSubmission&quot;},{&quot;label&quot;:&quot;formId&quot;,&quot;value&quot;:&quot;demoRequest&quot;},{&quot;label&quot;:&quot;pageId&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;label&quot;:&quot;pageIndex&quot;,&quot;value&quot;:0}]},&quot;id&quot;:&quot;3&quot;,&quot;layoutId&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Page 1&quot;,&quot;elements&quot;:[{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;095f33df-30d8-4d84-bf85-b584003177fc&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;0b0e407f-1822-4b98-8b9c-4d9bb6c53703&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;e38f9121-118a-4b93-ba6e-b72f2a5d601b&quot;}],&quot;sortOrder&quot;:&quot;0&quot;,&quot;uid&quot;:&quot;a59c1413-a0ef-4eff-9bbd-5810f52cceb5&quot;}],&quot;redirectUrl&quot;:&quot;&quot;,&quot;currentPageId&quot;:&quot;3&quot;,&quot;outputJsTheme&quot;:true,&quot;enableUnloadWarning&quot;:true,&quot;ajaxTimeout&quot;:10}}" novalidate="true"><input type="hidden" name="CRAFT_CSRF_TOKEN" value="g8ifgYybyjWTxvd9rJqPU58cTMlTawlXwu2Z61CVgOmQxVhE8jP0wdym6tPGto9so6CQC-_WzTbmdCb4PCxhG6i7yodpzdaBpYQLPLtKrrE=" autocomplete="off"><input type="hidden" name="action" value="formie/submissions/submit"><input type="hidden" name="handle" value="demoRequest"><input type="hidden" name="siteId" value="1"><div class="fui-form-container"><div id="formie-form-564fe295157ff0-p-3" class="fui-page" data-index="0" data-id="3"><div class="fui-page-container"><div class="fui-row fui-page-row"><div id="fields-formie-form-564fe295157ff0-name1-wrap" class="fui-field fui-page-field fui-type-name fui-label-above-input fui-subfield-label-above-input fui-instructions-fieldset-start fui-field-required fui-text-input-field" data-field-handle="name1" data-field-type="name"><div class="fui-field-container"><label id="fields-formie-form-564fe295157ff0-name1-label" class="fui-label" for="fields-formie-form-564fe295157ff0-name1">Name&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="text" id="fields-formie-form-564fe295157ff0-name1" class="fui-input" name="fields[name1]" value="" placeholder="Name" required="" data-fui-id="demo-request-name1" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-564fe295157ff0-email-wrap" class="fui-field fui-page-field fui-type-email-address fui-label-above-input fui-subfield-label-above-input fui-instructions-above-input fui-field-required fui-text-input-field" data-field-handle="email" data-field-type="email-address"><div class="fui-field-container"><label id="fields-formie-form-564fe295157ff0-email-label" class="fui-label" for="fields-formie-form-564fe295157ff0-email">E-mail address&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="email" id="fields-formie-form-564fe295157ff0-email" class="fui-input" name="fields[email]" value="" placeholder="E-mail address" autocomplete="email" required="" data-fui-id="demo-request-email" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-564fe295157ff0-privacy-policy-wrap" class="fui-field fui-page-field fui-type-agree fui-label-hidden fui-subfield-label-hidden fui-instructions-above-input fui-field-required" data-field-handle="privacyPolicy" data-field-type="agree"><div class="fui-field-container"><div class="fui-input-container"><input type="hidden" name="fields[privacyPolicy]" value="" data-fui-input-type="agree"><div class="fui-checkbox"><input type="checkbox" id="fields-formie-form-564fe295157ff0-privacy-policy" class="fui-input fui-checkbox-input" name="fields[privacyPolicy]" value="1" required="" data-fui-id="demo-request-privacy-policy" data-fui-input-type="agree" data-fui-message="" aria-required="true"><label for="fields-formie-form-564fe295157ff0-privacy-policy" class="fui-checkbox-label">I agree with the <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.paintingvr.xyz/pages/privacy-policy">privacy policy</a>.</label></div></div></div></div></div></div><div class="formie-recaptcha-placeholder" data-recaptcha-id="3"><div class="grecaptcha-badge" data-style="none" style="width: 256px; height: 60px; position: fixed; visibility: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.recaptcha.net/recaptcha/api2/anchor?ar=1&amp;k=6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&amp;co=aHR0cHM6Ly93d3cucGFpbnRpbmd2ci54eXo6NDQz&amp;hl=en&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;size=invisible&amp;badge=bottomright&amp;cb=8k65i4h2e9l5" width="256" height="60" role="presentation" name="a-7ucha2n6ljxa" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" tabindex="-1"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-3" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div><div class="fui-btn-container fui-btn-left w-full"><button type="submit" class="px-4 py-3 leading-none uppercase transition duration-500 ease-in-out border-2 border-almost-black font-poppins rounded-xl bg-pink hover:bg-almost-black hover:text-yellow" style="border-width: 2px;border-color:#0f1a1e">Request Free Demo</button></div></div></div></form></div></div></div></div></div><div class="not-hidden"><div class="relative flex flex-col justify-end pl-5"><div><h2 class="block text-56 font-piepie">Contact us!</h2><p class="pb-5">Want to get in touch ? Fill out the form with your name &amp; e-mail address.</p><div class="contactRequestForm"><div class="fui-i"><form id="formie-form-77664fe29515aef3" class="fui-form fui-labels-above-input  " method="post" enctype="multipart/form-data" accept-charset="utf-8" data-submit-method="ajax" data-submit-action="message" data-config="{&quot;formHashId&quot;:&quot;formie-form-77664fe29515aef3&quot;,&quot;formId&quot;:776,&quot;formHandle&quot;:&quot;contact&quot;,&quot;registeredJs&quot;:[{&quot;src&quot;:&quot;https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604&quot;,&quot;module&quot;:&quot;FormieRecaptchaV3&quot;,&quot;settings&quot;:{&quot;siteKey&quot;:&quot;6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&quot;,&quot;formId&quot;:&quot;formie-form-77664fe29515aef3&quot;,&quot;theme&quot;:&quot;light&quot;,&quot;size&quot;:&quot;normal&quot;,&quot;badge&quot;:&quot;bottomright&quot;,&quot;language&quot;:&quot;en&quot;,&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;hasMultiplePages&quot;:false}}],&quot;settings&quot;:{&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;submitActionMessage&quot;:&quot;Thank you, we'll be in touch shortly.&quot;,&quot;submitActionMessageTimeout&quot;:&quot;&quot;,&quot;submitActionMessagePosition&quot;:&quot;top-form&quot;,&quot;submitActionFormHide&quot;:&quot;&quot;,&quot;submitAction&quot;:&quot;message&quot;,&quot;submitActionTab&quot;:null,&quot;errorMessage&quot;:&quot;Couldn’t save submission due to errors.&quot;,&quot;errorMessagePosition&quot;:&quot;top-form&quot;,&quot;loadingIndicator&quot;:&quot;&quot;,&quot;loadingIndicatorText&quot;:&quot;&quot;,&quot;validationOnSubmit&quot;:&quot;1&quot;,&quot;validationOnFocus&quot;:&quot;&quot;,&quot;scrollToTop&quot;:&quot;1&quot;,&quot;hasMultiplePages&quot;:false,&quot;pages&quot;:[{&quot;settings&quot;:{&quot;submitButtonLabel&quot;:&quot;Submit&quot;,&quot;backButtonLabel&quot;:&quot;Back&quot;,&quot;showBackButton&quot;:false,&quot;buttonsPosition&quot;:&quot;left&quot;,&quot;cssClasses&quot;:null,&quot;containerAttributes&quot;:null,&quot;inputAttributes&quot;:null,&quot;enableNextButtonConditions&quot;:false,&quot;nextButtonConditions&quot;:[],&quot;enablePageConditions&quot;:false,&quot;pageConditions&quot;:[],&quot;enableJsEvents&quot;:false,&quot;jsGtmEventOptions&quot;:[]},&quot;id&quot;:&quot;33&quot;,&quot;layoutId&quot;:&quot;14&quot;,&quot;name&quot;:&quot;Page 1&quot;,&quot;elements&quot;:[{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;ce9cd456-96bf-4613-9899-d3a004e2dc35&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;6c1e9b03-e523-4fec-b575-d24f8ffe07e7&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;9552fe71-a941-4fba-8ade-b279d4305e4d&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;62b6044f-c81e-4c08-8f14-a0e3be855d80&quot;}],&quot;sortOrder&quot;:&quot;0&quot;,&quot;uid&quot;:&quot;4f8167e4-5b38-4921-8ee3-0a3010c0b580&quot;}],&quot;redirectUrl&quot;:&quot;&quot;,&quot;currentPageId&quot;:&quot;33&quot;,&quot;outputJsTheme&quot;:true,&quot;enableUnloadWarning&quot;:true,&quot;ajaxTimeout&quot;:10}}" novalidate="true"><input type="hidden" name="CRAFT_CSRF_TOKEN" value="g8ifgYybyjWTxvd9rJqPU58cTMlTawlXwu2Z61CVgOmQxVhE8jP0wdym6tPGto9so6CQC-_WzTbmdCb4PCxhG6i7yodpzdaBpYQLPLtKrrE=" autocomplete="off"><input type="hidden" name="action" value="formie/submissions/submit"><input type="hidden" name="handle" value="contact"><input type="hidden" name="siteId" value="1"><div class="fui-form-container"><div id="formie-form-77664fe29515aef3-p-33" class="fui-page" data-index="0" data-id="33"><div class="fui-page-container"><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515aef3-name1-wrap" class="fui-field fui-page-field fui-type-name fui-label-above-input fui-subfield-label-above-input fui-instructions-fieldset-start fui-field-required fui-text-input-field" data-field-handle="name1" data-field-type="name"><div class="fui-field-container"><label id="fields-formie-form-77664fe29515aef3-name1-label" class="fui-label" for="fields-formie-form-77664fe29515aef3-name1">Name&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="text" id="fields-formie-form-77664fe29515aef3-name1" class="fui-input" name="fields[name1]" value="" placeholder="Name" required="" data-fui-id="contact-name1" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515aef3-email-wrap" class="fui-field fui-page-field fui-type-email-address fui-label-above-input fui-subfield-label-above-input fui-instructions-above-input fui-field-required fui-text-input-field" data-field-handle="email" data-field-type="email-address"><div class="fui-field-container"><label id="fields-formie-form-77664fe29515aef3-email-label" class="fui-label" for="fields-formie-form-77664fe29515aef3-email">E-mail address&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="email" id="fields-formie-form-77664fe29515aef3-email" class="fui-input" name="fields[email]" value="" placeholder="E-mail address" autocomplete="email" required="" data-fui-id="contact-email" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515aef3-message-wrap" class="fui-field fui-page-field fui-type-multi-line-text fui-label-above-input fui-subfield-label-above-input fui-instructions-above-input fui-field-required" data-field-handle="message" data-field-type="multi-line-text"><div class="fui-field-container"><label id="fields-formie-form-77664fe29515aef3-message-label" class="fui-label" for="fields-formie-form-77664fe29515aef3-message">Message&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><textarea id="fields-formie-form-77664fe29515aef3-message" class="fui-input" name="fields[message]" placeholder="Message" required="" data-fui-id="contact-message" data-fui-message="" aria-required="true"></textarea></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515aef3-privacy-policy-wrap" class="fui-field fui-page-field fui-type-agree fui-label-hidden fui-subfield-label-hidden fui-instructions-above-input fui-field-required" data-field-handle="privacyPolicy" data-field-type="agree"><div class="fui-field-container"><div class="fui-input-container"><input type="hidden" name="fields[privacyPolicy]" value="" data-fui-input-type="agree"><div class="fui-checkbox"><input type="checkbox" id="fields-formie-form-77664fe29515aef3-privacy-policy" class="fui-input fui-checkbox-input" name="fields[privacyPolicy]" value="1" required="" data-fui-id="contact-privacy-policy" data-fui-input-type="agree" data-fui-message="" aria-required="true"><label for="fields-formie-form-77664fe29515aef3-privacy-policy" class="fui-checkbox-label">I agree with the <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.paintingvr.xyz/pages/privacy-policy">privacy policy</a>.</label></div></div></div></div></div></div><div class="formie-recaptcha-placeholder" data-recaptcha-id="1"><div class="grecaptcha-badge" data-style="none" style="width: 256px; height: 60px; position: fixed; visibility: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.recaptcha.net/recaptcha/api2/anchor?ar=1&amp;k=6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&amp;co=aHR0cHM6Ly93d3cucGFpbnRpbmd2ci54eXo6NDQz&amp;hl=en&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;size=invisible&amp;badge=bottomright&amp;cb=3jb7l7ttutuq" width="256" height="60" role="presentation" name="a-com0icl2uobh" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" tabindex="-1"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div><div class="fui-btn-container fui-btn-left"><button type="submit" class="px-4 py-3 leading-none uppercase transition duration-500 ease-in-out border-2 border-almost-black font-poppins rounded-xl bg-pink hover:bg-almost-black hover:text-yellow" style="border-width: 2px;border-color:#0f1a1e">Submit</button></div></div></div></form></div></div></div></div></div></div><hr class="mt-56 mb-56"><div><ul class="flex flex-col uppercase lg:flex-row"><li class="flex items-center justify-center flex-nowrap basis-1/3"><a target="_blank" href="https://www.oculus.com/experiences/quest/3106117596158066"><img alt="point-right" class="inline-block h-full align-middle" src="/assets/icons/arrow-right.svg">&nbsp;
+<span class="hover:underline">Meta&nbsp;Quest&nbsp;store</span></a></li><li class="flex items-center justify-center flex-nowrap basis-1/3"><a target="_blank" href="https://store.steampowered.com/app/1905940/Painting_VR/"><img alt="point-right" class="inline-block h-full align-middle" src="/assets/icons/arrow-right.svg">&nbsp;
+<span class="hover:underline">Steam</span></a></li><li class="flex items-center justify-center flex-nowrap basis-1/3"><a target="_blank" href="https://discord.com/invite/2xTshCTAMM"><img alt="point-right" class="inline-block h-full align-middle" src="/assets/icons/arrow-right.svg">&nbsp;
+<span class="hover:underline">Discord</span></a></li></ul></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div id="navigation-mobile" class="hidden" data-type="menu"><div class="relative"><div class="fixed inset-0 z-10 overflow-hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true"><div class="absolute inset-0 overflow-hidden"><div class="absolute inset-0" aria-hidden="true"></div><div class="fixed inset-y-0 left-0 flex max-w-full pointer-events-none"><div id="navigation-mobile-inner" data-type="menu-inner" class="w-0 w-screen duration-500 ease-in-out transform pointer-events-auto transition-width"><div class="flex flex-col h-full overflow-y-scroll bg-white shadow-xl"><div class="relative flex-1"><div class="absolute inset-0"><div class="grid gap-0"><div class="flex flex-col h-screen col-span-3 px-4 pt-5 bg-darker-green"><div class="grow-0 min-h-[45px]"><div class="flex items-start justify-between"><div class="flex items-center pt-5 h-7"><button id="btn-close-menu" type="button" class="px-4 py-1 text-2xl font-poppins uppercase border-2 border-white bg-dark-green rounded-xl bg-transparent hover:bg-white text-white hover:text-dark-green min-w-[145px] hover-toggle closes-menu"><span class="flex items-center w-full h-full"><img alt="close" class="inline-block h-full align-middle on-hover" src="/assets/icons/close.svg"><img alt="close" class="inline-block h-full align-middle default" src="/assets/icons/close-white.svg"><strong class="h-full uppercase align-middle">&nbsp;Close</strong></span></button></div></div></div><div class="flex px-4 py-4 grow"><div class="m-auto"><ul class="text-5xl lg:text-8xl font-piepie grid grid-rows-4 grid-cols-none h-full max-h-[610px] m-auto text-white"><li class="py-5"><a class="sm:text-[32px] md:text-[48px] xl:text-72 menu-link hover:underline" href="https://www.paintingvr.xyz#product">Product</a></li><li class="py-5"><a class="sm:text-[32px] md:text-[48px] xl:text-72 menu-link hover:underline" href="https://www.paintingvr.xyz#features">Features</a></li><li class="py-5"><a class="sm:text-[32px] md:text-[48px] xl:text-72 menu-link hover:underline" href="https://www.paintingvr.xyz#showcase">Showcase</a></li><li class="py-5"><a class="sm:text-[32px] md:text-[48px] xl:text-72 menu-link hover:underline" href="https://www.paintingvr.xyz#blog">Blog</a></li></ul></div></div></div></div></div></div></div></div></div></div></div></div></div><div id="demo-form-mobile" class="hidden" data-type="menu"><div class="relative"><div class="fixed inset-0 z-10 overflow-hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true"><div class="absolute inset-0 overflow-hidden"><div class="absolute inset-0" aria-hidden="true"></div><div class="fixed inset-y-0 left-0 flex max-w-full pointer-events-none"><div id="demo-form-mobile-inner" data-type="menu-inner" class="w-0 w-screen duration-500 ease-in-out transform pointer-events-auto transition-width"><div class="flex flex-col h-full overflow-y-scroll bg-white shadow-xl"><div class="relative flex-1"><div class="absolute inset-0"><div class="grid gap-0"><div class="flex flex-col h-screen col-span-3 px-4 pt-5 max-w-screen"><div class="grow-0 min-h-[46px]"><div class="flex items-start justify-between"><div class="flex items-center pt-5 h-7"><button id="btn-close-menu" type="button" class="px-4 py-1 text-2xl font-poppins uppercase border-2 border-black rounded-xl bg-transparent hover:bg-almost-black text-almost-black hover:black min-w-[145px] hover-toggle closes-menu"><span class="flex items-center w-full h-full"><img alt="close" class="inline-block h-full align-middle on-hover" src="/assets/icons/close-white.svg"><img alt="close" class="inline-block h-full align-middle default" src="/assets/icons/close-black.svg"><strong class="h-full uppercase align-middle text-almost-black hover:text-white">&nbsp;Close</strong></span></button></div></div></div><div class="flex h-screen col-span-5 bg-white"><div class="px-4 py-4 m-auto"><div class="relative flex mb-56"><img alt="mascotte standing on box" class="hidden lg:block" src="/assets/images/illustrations/buckety-box.svg"><div class="hidden"><div class="relative flex flex-col justify-end pl-5"><div><h2 class="block text-56 font-piepie">Request a free demo</h2><p class="pb-5">Fill out the form with your name &amp; e-mail address to receive a free demo of <strong>Painting
+VR</strong></p><div class="demoRequestForm"><div class="fui-i"><form id="formie-form-564fe29515c460" class="fui-form fui-labels-above-input  " method="post" enctype="multipart/form-data" accept-charset="utf-8" data-submit-method="ajax" data-submit-action="message" data-config="{&quot;formHashId&quot;:&quot;formie-form-564fe29515c460&quot;,&quot;formId&quot;:5,&quot;formHandle&quot;:&quot;demoRequest&quot;,&quot;registeredJs&quot;:[{&quot;src&quot;:&quot;https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604&quot;,&quot;module&quot;:&quot;FormieRecaptchaV3&quot;,&quot;settings&quot;:{&quot;siteKey&quot;:&quot;6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&quot;,&quot;formId&quot;:&quot;formie-form-564fe29515c460&quot;,&quot;theme&quot;:&quot;light&quot;,&quot;size&quot;:&quot;normal&quot;,&quot;badge&quot;:&quot;bottomright&quot;,&quot;language&quot;:&quot;en&quot;,&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;hasMultiplePages&quot;:false}}],&quot;settings&quot;:{&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;submitActionMessage&quot;:&quot;Thank you, we'll be in touch shortly.&quot;,&quot;submitActionMessageTimeout&quot;:&quot;&quot;,&quot;submitActionMessagePosition&quot;:&quot;top-form&quot;,&quot;submitActionFormHide&quot;:&quot;&quot;,&quot;submitAction&quot;:&quot;message&quot;,&quot;submitActionTab&quot;:null,&quot;errorMessage&quot;:&quot;Couldn’t save submission due to errors.&quot;,&quot;errorMessagePosition&quot;:&quot;top-form&quot;,&quot;loadingIndicator&quot;:&quot;&quot;,&quot;loadingIndicatorText&quot;:&quot;&quot;,&quot;validationOnSubmit&quot;:&quot;1&quot;,&quot;validationOnFocus&quot;:&quot;&quot;,&quot;scrollToTop&quot;:&quot;1&quot;,&quot;hasMultiplePages&quot;:false,&quot;pages&quot;:[{&quot;settings&quot;:{&quot;submitButtonLabel&quot;:&quot;Request Free Demo&quot;,&quot;backButtonLabel&quot;:&quot;Back&quot;,&quot;showBackButton&quot;:false,&quot;buttonsPosition&quot;:&quot;left&quot;,&quot;cssClasses&quot;:&quot;w-full&quot;,&quot;containerAttributes&quot;:[],&quot;inputAttributes&quot;:[],&quot;enableNextButtonConditions&quot;:false,&quot;nextButtonConditions&quot;:&quot;{\&quot;showRule\&quot;:\&quot;show\&quot;,\&quot;conditionRule\&quot;:\&quot;all\&quot;,\&quot;conditions\&quot;:[]}&quot;,&quot;enablePageConditions&quot;:false,&quot;pageConditions&quot;:[],&quot;enableJsEvents&quot;:false,&quot;jsGtmEventOptions&quot;:[{&quot;label&quot;:&quot;event&quot;,&quot;value&quot;:&quot;formPageSubmission&quot;},{&quot;label&quot;:&quot;formId&quot;,&quot;value&quot;:&quot;demoRequest&quot;},{&quot;label&quot;:&quot;pageId&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;label&quot;:&quot;pageIndex&quot;,&quot;value&quot;:0}]},&quot;id&quot;:&quot;3&quot;,&quot;layoutId&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Page 1&quot;,&quot;elements&quot;:[{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;095f33df-30d8-4d84-bf85-b584003177fc&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;0b0e407f-1822-4b98-8b9c-4d9bb6c53703&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;e38f9121-118a-4b93-ba6e-b72f2a5d601b&quot;}],&quot;sortOrder&quot;:&quot;0&quot;,&quot;uid&quot;:&quot;a59c1413-a0ef-4eff-9bbd-5810f52cceb5&quot;}],&quot;redirectUrl&quot;:&quot;&quot;,&quot;currentPageId&quot;:&quot;3&quot;,&quot;outputJsTheme&quot;:true,&quot;enableUnloadWarning&quot;:true,&quot;ajaxTimeout&quot;:10}}" novalidate="true"><input type="hidden" name="CRAFT_CSRF_TOKEN" value="g8ifgYybyjWTxvd9rJqPU58cTMlTawlXwu2Z61CVgOmQxVhE8jP0wdym6tPGto9so6CQC-_WzTbmdCb4PCxhG6i7yodpzdaBpYQLPLtKrrE=" autocomplete="off"><input type="hidden" name="action" value="formie/submissions/submit"><input type="hidden" name="handle" value="demoRequest"><input type="hidden" name="siteId" value="1"><div class="fui-form-container"><div id="formie-form-564fe29515c460-p-3" class="fui-page" data-index="0" data-id="3"><div class="fui-page-container"><div class="fui-row fui-page-row"><div id="fields-formie-form-564fe29515c460-name1-wrap" class="fui-field fui-page-field fui-type-name fui-label-above-input fui-subfield-label-above-input fui-instructions-fieldset-start fui-field-required fui-text-input-field" data-field-handle="name1" data-field-type="name"><div class="fui-field-container"><label id="fields-formie-form-564fe29515c460-name1-label" class="fui-label" for="fields-formie-form-564fe29515c460-name1">Name&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="text" id="fields-formie-form-564fe29515c460-name1" class="fui-input" name="fields[name1]" value="" placeholder="Name" required="" data-fui-id="demo-request-name1" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-564fe29515c460-email-wrap" class="fui-field fui-page-field fui-type-email-address fui-label-above-input fui-subfield-label-above-input fui-instructions-above-input fui-field-required fui-text-input-field" data-field-handle="email" data-field-type="email-address"><div class="fui-field-container"><label id="fields-formie-form-564fe29515c460-email-label" class="fui-label" for="fields-formie-form-564fe29515c460-email">E-mail address&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="email" id="fields-formie-form-564fe29515c460-email" class="fui-input" name="fields[email]" value="" placeholder="E-mail address" autocomplete="email" required="" data-fui-id="demo-request-email" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-564fe29515c460-privacy-policy-wrap" class="fui-field fui-page-field fui-type-agree fui-label-hidden fui-subfield-label-hidden fui-instructions-above-input fui-field-required" data-field-handle="privacyPolicy" data-field-type="agree"><div class="fui-field-container"><div class="fui-input-container"><input type="hidden" name="fields[privacyPolicy]" value="" data-fui-input-type="agree"><div class="fui-checkbox"><input type="checkbox" id="fields-formie-form-564fe29515c460-privacy-policy" class="fui-input fui-checkbox-input" name="fields[privacyPolicy]" value="1" required="" data-fui-id="demo-request-privacy-policy" data-fui-input-type="agree" data-fui-message="" aria-required="true"><label for="fields-formie-form-564fe29515c460-privacy-policy" class="fui-checkbox-label">I agree with the <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.paintingvr.xyz/pages/privacy-policy">privacy policy</a>.</label></div></div></div></div></div></div><div class="formie-recaptcha-placeholder" data-recaptcha-id="4"><div class="grecaptcha-badge" data-style="none" style="width: 256px; height: 60px; position: fixed; visibility: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.recaptcha.net/recaptcha/api2/anchor?ar=1&amp;k=6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&amp;co=aHR0cHM6Ly93d3cucGFpbnRpbmd2ci54eXo6NDQz&amp;hl=en&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;size=invisible&amp;badge=bottomright&amp;cb=8h971bcx7hxi" width="256" height="60" role="presentation" name="a-51hmkn7vbdo1" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" tabindex="-1"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-4" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div><div class="fui-btn-container fui-btn-left w-full"><button type="submit" class="px-4 py-3 leading-none uppercase transition duration-500 ease-in-out border-2 border-almost-black font-poppins rounded-xl bg-pink hover:bg-almost-black hover:text-yellow" style="border-width: 2px;border-color:#0f1a1e">Request Free Demo</button></div></div></div></form></div></div></div></div></div><div class="not-hidden"><div class="relative flex flex-col justify-end pl-5"><div><h2 class="block text-56 font-piepie">Contact us!</h2><p class="pb-5">Want to get in touch ? Fill out the form with your name &amp; e-mail address.</p><div class="contactRequestForm"><div class="fui-i"><form id="formie-form-77664fe29515d4e6" class="fui-form fui-labels-above-input  " method="post" enctype="multipart/form-data" accept-charset="utf-8" data-submit-method="ajax" data-submit-action="message" data-config="{&quot;formHashId&quot;:&quot;formie-form-77664fe29515d4e6&quot;,&quot;formId&quot;:776,&quot;formHandle&quot;:&quot;contact&quot;,&quot;registeredJs&quot;:[{&quot;src&quot;:&quot;https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604&quot;,&quot;module&quot;:&quot;FormieRecaptchaV3&quot;,&quot;settings&quot;:{&quot;siteKey&quot;:&quot;6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&quot;,&quot;formId&quot;:&quot;formie-form-77664fe29515d4e6&quot;,&quot;theme&quot;:&quot;light&quot;,&quot;size&quot;:&quot;normal&quot;,&quot;badge&quot;:&quot;bottomright&quot;,&quot;language&quot;:&quot;en&quot;,&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;hasMultiplePages&quot;:false}}],&quot;settings&quot;:{&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;submitActionMessage&quot;:&quot;Thank you, we'll be in touch shortly.&quot;,&quot;submitActionMessageTimeout&quot;:&quot;&quot;,&quot;submitActionMessagePosition&quot;:&quot;top-form&quot;,&quot;submitActionFormHide&quot;:&quot;&quot;,&quot;submitAction&quot;:&quot;message&quot;,&quot;submitActionTab&quot;:null,&quot;errorMessage&quot;:&quot;Couldn’t save submission due to errors.&quot;,&quot;errorMessagePosition&quot;:&quot;top-form&quot;,&quot;loadingIndicator&quot;:&quot;&quot;,&quot;loadingIndicatorText&quot;:&quot;&quot;,&quot;validationOnSubmit&quot;:&quot;1&quot;,&quot;validationOnFocus&quot;:&quot;&quot;,&quot;scrollToTop&quot;:&quot;1&quot;,&quot;hasMultiplePages&quot;:false,&quot;pages&quot;:[{&quot;settings&quot;:{&quot;submitButtonLabel&quot;:&quot;Submit&quot;,&quot;backButtonLabel&quot;:&quot;Back&quot;,&quot;showBackButton&quot;:false,&quot;buttonsPosition&quot;:&quot;left&quot;,&quot;cssClasses&quot;:null,&quot;containerAttributes&quot;:null,&quot;inputAttributes&quot;:null,&quot;enableNextButtonConditions&quot;:false,&quot;nextButtonConditions&quot;:[],&quot;enablePageConditions&quot;:false,&quot;pageConditions&quot;:[],&quot;enableJsEvents&quot;:false,&quot;jsGtmEventOptions&quot;:[]},&quot;id&quot;:&quot;33&quot;,&quot;layoutId&quot;:&quot;14&quot;,&quot;name&quot;:&quot;Page 1&quot;,&quot;elements&quot;:[{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;ce9cd456-96bf-4613-9899-d3a004e2dc35&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;6c1e9b03-e523-4fec-b575-d24f8ffe07e7&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;9552fe71-a941-4fba-8ade-b279d4305e4d&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;62b6044f-c81e-4c08-8f14-a0e3be855d80&quot;}],&quot;sortOrder&quot;:&quot;0&quot;,&quot;uid&quot;:&quot;4f8167e4-5b38-4921-8ee3-0a3010c0b580&quot;}],&quot;redirectUrl&quot;:&quot;&quot;,&quot;currentPageId&quot;:&quot;33&quot;,&quot;outputJsTheme&quot;:true,&quot;enableUnloadWarning&quot;:true,&quot;ajaxTimeout&quot;:10}}" novalidate="true"><input type="hidden" name="CRAFT_CSRF_TOKEN" value="g8ifgYybyjWTxvd9rJqPU58cTMlTawlXwu2Z61CVgOmQxVhE8jP0wdym6tPGto9so6CQC-_WzTbmdCb4PCxhG6i7yodpzdaBpYQLPLtKrrE=" autocomplete="off"><input type="hidden" name="action" value="formie/submissions/submit"><input type="hidden" name="handle" value="contact"><input type="hidden" name="siteId" value="1"><div class="fui-form-container"><div id="formie-form-77664fe29515d4e6-p-33" class="fui-page" data-index="0" data-id="33"><div class="fui-page-container"><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515d4e6-name1-wrap" class="fui-field fui-page-field fui-type-name fui-label-above-input fui-subfield-label-above-input fui-instructions-fieldset-start fui-field-required fui-text-input-field" data-field-handle="name1" data-field-type="name"><div class="fui-field-container"><label id="fields-formie-form-77664fe29515d4e6-name1-label" class="fui-label" for="fields-formie-form-77664fe29515d4e6-name1">Name&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="text" id="fields-formie-form-77664fe29515d4e6-name1" class="fui-input" name="fields[name1]" value="" placeholder="Name" required="" data-fui-id="contact-name1" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515d4e6-email-wrap" class="fui-field fui-page-field fui-type-email-address fui-label-above-input fui-subfield-label-above-input fui-instructions-above-input fui-field-required fui-text-input-field" data-field-handle="email" data-field-type="email-address"><div class="fui-field-container"><label id="fields-formie-form-77664fe29515d4e6-email-label" class="fui-label" for="fields-formie-form-77664fe29515d4e6-email">E-mail address&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="email" id="fields-formie-form-77664fe29515d4e6-email" class="fui-input" name="fields[email]" value="" placeholder="E-mail address" autocomplete="email" required="" data-fui-id="contact-email" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515d4e6-message-wrap" class="fui-field fui-page-field fui-type-multi-line-text fui-label-above-input fui-subfield-label-above-input fui-instructions-above-input fui-field-required" data-field-handle="message" data-field-type="multi-line-text"><div class="fui-field-container"><label id="fields-formie-form-77664fe29515d4e6-message-label" class="fui-label" for="fields-formie-form-77664fe29515d4e6-message">Message&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><textarea id="fields-formie-form-77664fe29515d4e6-message" class="fui-input" name="fields[message]" placeholder="Message" required="" data-fui-id="contact-message" data-fui-message="" aria-required="true"></textarea></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515d4e6-privacy-policy-wrap" class="fui-field fui-page-field fui-type-agree fui-label-hidden fui-subfield-label-hidden fui-instructions-above-input fui-field-required" data-field-handle="privacyPolicy" data-field-type="agree"><div class="fui-field-container"><div class="fui-input-container"><input type="hidden" name="fields[privacyPolicy]" value="" data-fui-input-type="agree"><div class="fui-checkbox"><input type="checkbox" id="fields-formie-form-77664fe29515d4e6-privacy-policy" class="fui-input fui-checkbox-input" name="fields[privacyPolicy]" value="1" required="" data-fui-id="contact-privacy-policy" data-fui-input-type="agree" data-fui-message="" aria-required="true"><label for="fields-formie-form-77664fe29515d4e6-privacy-policy" class="fui-checkbox-label">I agree with the <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.paintingvr.xyz/pages/privacy-policy">privacy policy</a>.</label></div></div></div></div></div></div><div class="formie-recaptcha-placeholder" data-recaptcha-id="5"><div class="grecaptcha-badge" data-style="none" style="width: 256px; height: 60px; position: fixed; visibility: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.recaptcha.net/recaptcha/api2/anchor?ar=1&amp;k=6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&amp;co=aHR0cHM6Ly93d3cucGFpbnRpbmd2ci54eXo6NDQz&amp;hl=en&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;size=invisible&amp;badge=bottomright&amp;cb=ue5d0kvm72f5" width="256" height="60" role="presentation" name="a-vcfo3dv7e57i" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" tabindex="-1"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-5" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><div class="fui-btn-container fui-btn-left"><button type="submit" class="px-4 py-3 leading-none uppercase transition duration-500 ease-in-out border-2 border-almost-black font-poppins rounded-xl bg-pink hover:bg-almost-black hover:text-yellow" style="border-width: 2px;border-color:#0f1a1e">Submit</button></div></div></div></form></div></div></div></div></div></div><hr class="mt-56 mb-56"><div><ul class="flex flex-col uppercase lg:flex-row"><li class="flex items-center justify-center flex-nowrap basis-1/3"><a target="_blank" href="https://www.oculus.com/experiences/quest/3106117596158066"><img alt="point-right" class="inline-block h-full align-middle" src="/assets/icons/arrow-right.svg">&nbsp;
+<span class="hover:underline">Meta&nbsp;Quest&nbsp;store</span></a></li><li class="flex items-center justify-center flex-nowrap basis-1/3"><a target="_blank" href="https://store.steampowered.com/app/1905940/Painting_VR/"><img alt="point-right" class="inline-block h-full align-middle" src="/assets/icons/arrow-right.svg">&nbsp;
+<span class="hover:underline">Steam</span></a></li><li class="flex items-center justify-center flex-nowrap basis-1/3"><a target="_blank" href="https://discord.com/invite/2xTshCTAMM"><img alt="point-right" class="inline-block h-full align-middle" src="/assets/icons/arrow-right.svg">&nbsp;
+<span class="hover:underline">Discord</span></a></li></ul></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div id="contact-form-mobile" class="hidden" data-type="menu"><div class="relative"><div class="fixed inset-0 z-10 overflow-hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true"><div class="absolute inset-0 overflow-hidden"><div class="absolute inset-0" aria-hidden="true"></div><div class="fixed inset-y-0 left-0 flex max-w-full pointer-events-none"><div id="contact-form-mobile-inner" data-type="menu-inner" class="w-0 w-screen duration-500 ease-in-out transform pointer-events-auto transition-width"><div class="flex flex-col h-full overflow-y-scroll bg-white shadow-xl"><div class="relative flex-1"><div class="absolute inset-0"><div class="grid gap-0"><div class="flex flex-col h-screen col-span-3 px-4 pt-5 max-w-screen"><div class="grow-0 min-h-[46px]"><div class="flex items-start justify-between"><div class="flex items-center pt-5 h-7"><button id="btn-close-menu" type="button" class="px-4 py-1 text-2xl font-poppins uppercase border-2 border-black rounded-xl bg-transparent hover:bg-almost-black text-almost-black hover:black min-w-[145px] hover-toggle closes-menu"><span class="flex items-center w-full h-full"><img alt="close" class="inline-block h-full align-middle on-hover" src="/assets/icons/close-white.svg"><img alt="close" class="inline-block h-full align-middle default" src="/assets/icons/close-black.svg"><strong class="h-full uppercase align-middle text-almost-black hover:text-white">&nbsp;Close</strong></span></button></div></div></div><div class="flex h-screen col-span-5 bg-white"><div class="px-4 py-4 m-auto"><div class="relative flex mb-56"><img alt="mascotte standing on box" class="hidden lg:block" src="/assets/images/illustrations/buckety-box.svg"><div class="hidden"><div class="relative flex flex-col justify-end pl-5"><div><h2 class="block text-56 font-piepie">Request a free demo</h2><p class="pb-5">Fill out the form with your name &amp; e-mail address to receive a free demo of <strong>Painting
+VR</strong></p><div class="demoRequestForm"><div class="fui-i"><form id="formie-form-564fe29515e794" class="fui-form fui-labels-above-input  " method="post" enctype="multipart/form-data" accept-charset="utf-8" data-submit-method="ajax" data-submit-action="message" data-config="{&quot;formHashId&quot;:&quot;formie-form-564fe29515e794&quot;,&quot;formId&quot;:5,&quot;formHandle&quot;:&quot;demoRequest&quot;,&quot;registeredJs&quot;:[{&quot;src&quot;:&quot;https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604&quot;,&quot;module&quot;:&quot;FormieRecaptchaV3&quot;,&quot;settings&quot;:{&quot;siteKey&quot;:&quot;6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&quot;,&quot;formId&quot;:&quot;formie-form-564fe29515e794&quot;,&quot;theme&quot;:&quot;light&quot;,&quot;size&quot;:&quot;normal&quot;,&quot;badge&quot;:&quot;bottomright&quot;,&quot;language&quot;:&quot;en&quot;,&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;hasMultiplePages&quot;:false}}],&quot;settings&quot;:{&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;submitActionMessage&quot;:&quot;Thank you, we'll be in touch shortly.&quot;,&quot;submitActionMessageTimeout&quot;:&quot;&quot;,&quot;submitActionMessagePosition&quot;:&quot;top-form&quot;,&quot;submitActionFormHide&quot;:&quot;&quot;,&quot;submitAction&quot;:&quot;message&quot;,&quot;submitActionTab&quot;:null,&quot;errorMessage&quot;:&quot;Couldn’t save submission due to errors.&quot;,&quot;errorMessagePosition&quot;:&quot;top-form&quot;,&quot;loadingIndicator&quot;:&quot;&quot;,&quot;loadingIndicatorText&quot;:&quot;&quot;,&quot;validationOnSubmit&quot;:&quot;1&quot;,&quot;validationOnFocus&quot;:&quot;&quot;,&quot;scrollToTop&quot;:&quot;1&quot;,&quot;hasMultiplePages&quot;:false,&quot;pages&quot;:[{&quot;settings&quot;:{&quot;submitButtonLabel&quot;:&quot;Request Free Demo&quot;,&quot;backButtonLabel&quot;:&quot;Back&quot;,&quot;showBackButton&quot;:false,&quot;buttonsPosition&quot;:&quot;left&quot;,&quot;cssClasses&quot;:&quot;w-full&quot;,&quot;containerAttributes&quot;:[],&quot;inputAttributes&quot;:[],&quot;enableNextButtonConditions&quot;:false,&quot;nextButtonConditions&quot;:&quot;{\&quot;showRule\&quot;:\&quot;show\&quot;,\&quot;conditionRule\&quot;:\&quot;all\&quot;,\&quot;conditions\&quot;:[]}&quot;,&quot;enablePageConditions&quot;:false,&quot;pageConditions&quot;:[],&quot;enableJsEvents&quot;:false,&quot;jsGtmEventOptions&quot;:[{&quot;label&quot;:&quot;event&quot;,&quot;value&quot;:&quot;formPageSubmission&quot;},{&quot;label&quot;:&quot;formId&quot;,&quot;value&quot;:&quot;demoRequest&quot;},{&quot;label&quot;:&quot;pageId&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;label&quot;:&quot;pageIndex&quot;,&quot;value&quot;:0}]},&quot;id&quot;:&quot;3&quot;,&quot;layoutId&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Page 1&quot;,&quot;elements&quot;:[{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;095f33df-30d8-4d84-bf85-b584003177fc&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;0b0e407f-1822-4b98-8b9c-4d9bb6c53703&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;e38f9121-118a-4b93-ba6e-b72f2a5d601b&quot;}],&quot;sortOrder&quot;:&quot;0&quot;,&quot;uid&quot;:&quot;a59c1413-a0ef-4eff-9bbd-5810f52cceb5&quot;}],&quot;redirectUrl&quot;:&quot;&quot;,&quot;currentPageId&quot;:&quot;3&quot;,&quot;outputJsTheme&quot;:true,&quot;enableUnloadWarning&quot;:true,&quot;ajaxTimeout&quot;:10}}" novalidate="true"><input type="hidden" name="CRAFT_CSRF_TOKEN" value="g8ifgYybyjWTxvd9rJqPU58cTMlTawlXwu2Z61CVgOmQxVhE8jP0wdym6tPGto9so6CQC-_WzTbmdCb4PCxhG6i7yodpzdaBpYQLPLtKrrE=" autocomplete="off"><input type="hidden" name="action" value="formie/submissions/submit"><input type="hidden" name="handle" value="demoRequest"><input type="hidden" name="siteId" value="1"><div class="fui-form-container"><div id="formie-form-564fe29515e794-p-3" class="fui-page" data-index="0" data-id="3"><div class="fui-page-container"><div class="fui-row fui-page-row"><div id="fields-formie-form-564fe29515e794-name1-wrap" class="fui-field fui-page-field fui-type-name fui-label-above-input fui-subfield-label-above-input fui-instructions-fieldset-start fui-field-required fui-text-input-field" data-field-handle="name1" data-field-type="name"><div class="fui-field-container"><label id="fields-formie-form-564fe29515e794-name1-label" class="fui-label" for="fields-formie-form-564fe29515e794-name1">Name&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="text" id="fields-formie-form-564fe29515e794-name1" class="fui-input" name="fields[name1]" value="" placeholder="Name" required="" data-fui-id="demo-request-name1" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-564fe29515e794-email-wrap" class="fui-field fui-page-field fui-type-email-address fui-label-above-input fui-subfield-label-above-input fui-instructions-above-input fui-field-required fui-text-input-field" data-field-handle="email" data-field-type="email-address"><div class="fui-field-container"><label id="fields-formie-form-564fe29515e794-email-label" class="fui-label" for="fields-formie-form-564fe29515e794-email">E-mail address&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="email" id="fields-formie-form-564fe29515e794-email" class="fui-input" name="fields[email]" value="" placeholder="E-mail address" autocomplete="email" required="" data-fui-id="demo-request-email" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-564fe29515e794-privacy-policy-wrap" class="fui-field fui-page-field fui-type-agree fui-label-hidden fui-subfield-label-hidden fui-instructions-above-input fui-field-required" data-field-handle="privacyPolicy" data-field-type="agree"><div class="fui-field-container"><div class="fui-input-container"><input type="hidden" name="fields[privacyPolicy]" value="" data-fui-input-type="agree"><div class="fui-checkbox"><input type="checkbox" id="fields-formie-form-564fe29515e794-privacy-policy" class="fui-input fui-checkbox-input" name="fields[privacyPolicy]" value="1" required="" data-fui-id="demo-request-privacy-policy" data-fui-input-type="agree" data-fui-message="" aria-required="true"><label for="fields-formie-form-564fe29515e794-privacy-policy" class="fui-checkbox-label">I agree with the <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.paintingvr.xyz/pages/privacy-policy">privacy policy</a>.</label></div></div></div></div></div></div><div class="formie-recaptcha-placeholder" data-recaptcha-id="2"><div class="grecaptcha-badge" data-style="none" style="width: 256px; height: 60px; position: fixed; visibility: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.recaptcha.net/recaptcha/api2/anchor?ar=1&amp;k=6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&amp;co=aHR0cHM6Ly93d3cucGFpbnRpbmd2ci54eXo6NDQz&amp;hl=en&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;size=invisible&amp;badge=bottomright&amp;cb=9kcqjwtji9ck" width="256" height="60" role="presentation" name="a-dzm9n8orv211" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" tabindex="-1"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div><div class="fui-btn-container fui-btn-left w-full"><button type="submit" class="px-4 py-3 leading-none uppercase transition duration-500 ease-in-out border-2 border-almost-black font-poppins rounded-xl bg-pink hover:bg-almost-black hover:text-yellow" style="border-width: 2px;border-color:#0f1a1e">Request Free Demo</button></div></div></div></form></div></div></div></div></div><div class="not-hidden"><div class="relative flex flex-col justify-end pl-5"><div><h2 class="block text-56 font-piepie">Contact us!</h2><p class="pb-5">Want to get in touch ? Fill out the form with your name &amp; e-mail address.</p><div class="contactRequestForm"><div class="fui-i"><form id="formie-form-77664fe29515f7be" class="fui-form fui-labels-above-input  " method="post" enctype="multipart/form-data" accept-charset="utf-8" data-submit-method="ajax" data-submit-action="message" data-config="{&quot;formHashId&quot;:&quot;formie-form-77664fe29515f7be&quot;,&quot;formId&quot;:776,&quot;formHandle&quot;:&quot;contact&quot;,&quot;registeredJs&quot;:[{&quot;src&quot;:&quot;https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604&quot;,&quot;module&quot;:&quot;FormieRecaptchaV3&quot;,&quot;settings&quot;:{&quot;siteKey&quot;:&quot;6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&quot;,&quot;formId&quot;:&quot;formie-form-77664fe29515f7be&quot;,&quot;theme&quot;:&quot;light&quot;,&quot;size&quot;:&quot;normal&quot;,&quot;badge&quot;:&quot;bottomright&quot;,&quot;language&quot;:&quot;en&quot;,&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;hasMultiplePages&quot;:false}}],&quot;settings&quot;:{&quot;submitMethod&quot;:&quot;ajax&quot;,&quot;submitActionMessage&quot;:&quot;Thank you, we'll be in touch shortly.&quot;,&quot;submitActionMessageTimeout&quot;:&quot;&quot;,&quot;submitActionMessagePosition&quot;:&quot;top-form&quot;,&quot;submitActionFormHide&quot;:&quot;&quot;,&quot;submitAction&quot;:&quot;message&quot;,&quot;submitActionTab&quot;:null,&quot;errorMessage&quot;:&quot;Couldn’t save submission due to errors.&quot;,&quot;errorMessagePosition&quot;:&quot;top-form&quot;,&quot;loadingIndicator&quot;:&quot;&quot;,&quot;loadingIndicatorText&quot;:&quot;&quot;,&quot;validationOnSubmit&quot;:&quot;1&quot;,&quot;validationOnFocus&quot;:&quot;&quot;,&quot;scrollToTop&quot;:&quot;1&quot;,&quot;hasMultiplePages&quot;:false,&quot;pages&quot;:[{&quot;settings&quot;:{&quot;submitButtonLabel&quot;:&quot;Submit&quot;,&quot;backButtonLabel&quot;:&quot;Back&quot;,&quot;showBackButton&quot;:false,&quot;buttonsPosition&quot;:&quot;left&quot;,&quot;cssClasses&quot;:null,&quot;containerAttributes&quot;:null,&quot;inputAttributes&quot;:null,&quot;enableNextButtonConditions&quot;:false,&quot;nextButtonConditions&quot;:[],&quot;enablePageConditions&quot;:false,&quot;pageConditions&quot;:[],&quot;enableJsEvents&quot;:false,&quot;jsGtmEventOptions&quot;:[]},&quot;id&quot;:&quot;33&quot;,&quot;layoutId&quot;:&quot;14&quot;,&quot;name&quot;:&quot;Page 1&quot;,&quot;elements&quot;:[{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;ce9cd456-96bf-4613-9899-d3a004e2dc35&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;6c1e9b03-e523-4fec-b575-d24f8ffe07e7&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;9552fe71-a941-4fba-8ade-b279d4305e4d&quot;},{&quot;label&quot;:null,&quot;instructions&quot;:null,&quot;tip&quot;:null,&quot;warning&quot;:null,&quot;required&quot;:&quot;1&quot;,&quot;width&quot;:100,&quot;fieldUid&quot;:&quot;62b6044f-c81e-4c08-8f14-a0e3be855d80&quot;}],&quot;sortOrder&quot;:&quot;0&quot;,&quot;uid&quot;:&quot;4f8167e4-5b38-4921-8ee3-0a3010c0b580&quot;}],&quot;redirectUrl&quot;:&quot;&quot;,&quot;currentPageId&quot;:&quot;33&quot;,&quot;outputJsTheme&quot;:true,&quot;enableUnloadWarning&quot;:true,&quot;ajaxTimeout&quot;:10}}" novalidate="true"><input type="hidden" name="CRAFT_CSRF_TOKEN" value="g8ifgYybyjWTxvd9rJqPU58cTMlTawlXwu2Z61CVgOmQxVhE8jP0wdym6tPGto9so6CQC-_WzTbmdCb4PCxhG6i7yodpzdaBpYQLPLtKrrE=" autocomplete="off"><input type="hidden" name="action" value="formie/submissions/submit"><input type="hidden" name="handle" value="contact"><input type="hidden" name="siteId" value="1"><div class="fui-form-container"><div id="formie-form-77664fe29515f7be-p-33" class="fui-page" data-index="0" data-id="33"><div class="fui-page-container"><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515f7be-name1-wrap" class="fui-field fui-page-field fui-type-name fui-label-above-input fui-subfield-label-above-input fui-instructions-fieldset-start fui-field-required fui-text-input-field" data-field-handle="name1" data-field-type="name"><div class="fui-field-container"><label id="fields-formie-form-77664fe29515f7be-name1-label" class="fui-label" for="fields-formie-form-77664fe29515f7be-name1">Name&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="text" id="fields-formie-form-77664fe29515f7be-name1" class="fui-input" name="fields[name1]" value="" placeholder="Name" required="" data-fui-id="contact-name1" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515f7be-email-wrap" class="fui-field fui-page-field fui-type-email-address fui-label-above-input fui-subfield-label-above-input fui-instructions-above-input fui-field-required fui-text-input-field" data-field-handle="email" data-field-type="email-address"><div class="fui-field-container"><label id="fields-formie-form-77664fe29515f7be-email-label" class="fui-label" for="fields-formie-form-77664fe29515f7be-email">E-mail address&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><input type="email" id="fields-formie-form-77664fe29515f7be-email" class="fui-input" name="fields[email]" value="" placeholder="E-mail address" autocomplete="email" required="" data-fui-id="contact-email" data-fui-message="" aria-required="true"></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515f7be-message-wrap" class="fui-field fui-page-field fui-type-multi-line-text fui-label-above-input fui-subfield-label-above-input fui-instructions-above-input fui-field-required" data-field-handle="message" data-field-type="multi-line-text"><div class="fui-field-container"><label id="fields-formie-form-77664fe29515f7be-message-label" class="fui-label" for="fields-formie-form-77664fe29515f7be-message">Message&nbsp;<span class="fui-required">*</span></label><div class="fui-input-container"><textarea id="fields-formie-form-77664fe29515f7be-message" class="fui-input" name="fields[message]" placeholder="Message" required="" data-fui-id="contact-message" data-fui-message="" aria-required="true"></textarea></div></div></div></div><div class="fui-row fui-page-row"><div id="fields-formie-form-77664fe29515f7be-privacy-policy-wrap" class="fui-field fui-page-field fui-type-agree fui-label-hidden fui-subfield-label-hidden fui-instructions-above-input fui-field-required" data-field-handle="privacyPolicy" data-field-type="agree"><div class="fui-field-container"><div class="fui-input-container"><input type="hidden" name="fields[privacyPolicy]" value="" data-fui-input-type="agree"><div class="fui-checkbox"><input type="checkbox" id="fields-formie-form-77664fe29515f7be-privacy-policy" class="fui-input fui-checkbox-input" name="fields[privacyPolicy]" value="1" required="" data-fui-id="contact-privacy-policy" data-fui-input-type="agree" data-fui-message="" aria-required="true"><label for="fields-formie-form-77664fe29515f7be-privacy-policy" class="fui-checkbox-label">I agree with the <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.paintingvr.xyz/pages/privacy-policy">privacy policy</a>.</label></div></div></div></div></div></div><div class="formie-recaptcha-placeholder" data-recaptcha-id="0"><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.recaptcha.net/recaptcha/api2/anchor?ar=1&amp;k=6Lcn7DIfAAAAAOUd4shtQY4PyfWHcca9iAerJfiK&amp;co=aHR0cHM6Ly93d3cucGFpbnRpbmd2ci54eXo6NDQz&amp;hl=en&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;size=invisible&amp;badge=bottomright&amp;cb=uh1jujc4uf2e" width="256" height="60" role="presentation" name="a-u8gm5z9w1qqg" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" tabindex="-1"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div><div class="fui-btn-container fui-btn-left"><button type="submit" class="px-4 py-3 leading-none uppercase transition duration-500 ease-in-out border-2 border-almost-black font-poppins rounded-xl bg-pink hover:bg-almost-black hover:text-yellow" style="border-width: 2px;border-color:#0f1a1e">Submit</button></div></div></div></form></div></div></div></div></div></div><hr class="mt-56 mb-56"><div><ul class="flex flex-col uppercase lg:flex-row"><li class="flex items-center justify-center flex-nowrap basis-1/3"><a target="_blank" href="https://www.oculus.com/experiences/quest/3106117596158066"><img alt="point-right" class="inline-block h-full align-middle" src="/assets/icons/arrow-right.svg">&nbsp;
+<span class="hover:underline">Meta&nbsp;Quest&nbsp;store</span></a></li><li class="flex items-center justify-center flex-nowrap basis-1/3"><a target="_blank" href="https://store.steampowered.com/app/1905940/Painting_VR/"><img alt="point-right" class="inline-block h-full align-middle" src="/assets/icons/arrow-right.svg">&nbsp;
+<span class="hover:underline">Steam</span></a></li><li class="flex items-center justify-center flex-nowrap basis-1/3"><a target="_blank" href="https://discord.com/invite/2xTshCTAMM"><img alt="point-right" class="inline-block h-full align-middle" src="/assets/icons/arrow-right.svg">&nbsp;
+<span class="hover:underline">Discord</span></a></li></ul></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div id="content" class=""><div class="min-h-screen z-[1] bottom-0 right-0 left-0 py-[85px] flex items-center justify-stretch"><div id="product" class="w-full"><div class="align-middle"><div class="mt-6"><div class="lg:hidden"><div class="text-center"><span class="font-piepie text-8xl text-almost-black">Play &amp; create</span></div><div class="text-center"><span class="text-6xl font-piepie text-almost-black">in virtual reality</span></div></div><div class="hidden lg:block"><div class="px-10"><svg viewBox="0 0 180 20"><text class="h1-text" font-family="piepie" x="10" y="15">Play &amp; create</text></svg></div><div class=""><div class="w-4/5 px-10 m-auto"><svg viewBox="0 0 220 20"><text class="h1-text" font-family="piepie" x="10" y="15">in virtual reality</text></svg></div></div></div></div><div class="max-w-5xl px-5 pt-2 m-auto text-center text-larger"><span>Painting VR is a 10.000+ square feet virtual painter's studio with inspiring tools, an unlimited supply of paint, and canvases of all sizes. So choose your colors, dip your brush, and start creating.</span></div><div class="pt-10 text-center"><div class="flex flex-wrap items-center justify-center gap-3 whitespace-nowrap"><a href="https://www.oculus.com/experiences/quest/3106117596158066" target="_blank" class="animate-text inline-block py-4 uppercase transition duration-500 ease-in-out bg-white border-2 border-almost-black font-poppins rounded-xl hover:bg-almost-black hover:text-yellow "><span class="px-6 content"><i class="pr-2 text-2xl icon-meta"></i><strong class="leading-none">Meta quest Store</strong></span><span class="px-6 duplicate"><i class="pr-2 text-2xl icon-meta"></i><strong class="leading-none">Meta quest Store</strong></span></a><a href="https://store.steampowered.com/app/1905940/Painting_VR/" target="_blank" class="animate-text inline-block py-4 uppercase transition duration-500 ease-in-out bg-white border-2 border-almost-black font-poppins rounded-xl hover:bg-almost-black hover:text-yellow "><span class="px-6 content"><i class="pr-2 text-2xl icon-steam"></i><strong class="leading-none">Steam</strong></span><span class="px-6 duplicate"><i class="pr-2 text-2xl icon-steam"></i><strong class="leading-none">Steam</strong></span></a><a href="https://discord.com/invite/2xTshCTAMM" target="_blank" class="animate-text inline-block py-4 uppercase transition duration-500 ease-in-out bg-white border-2 border-almost-black font-poppins rounded-xl hover:bg-almost-black hover:text-yellow "><span class="px-6 content"><i class="pr-2 text-2xl icon-discord"></i><strong class="leading-none">Join on Discord</strong></span><span class="px-6 duplicate"><i class="pr-2 text-2xl icon-discord"></i><strong class="leading-none">Join on Discord</strong></span></a></div></div><div class="max-w-5xl px-5 pt-10 pb-10 m-auto text-2xl text-center"><a href="#" class="opens-trailer"><span class="inline-block align-middle h-[30px] w-[30px] fill-almost-black" id="lottie-spinner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000" width="2000" height="2000" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_2"><rect width="2000" height="2000" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_2)"><g transform="matrix(0.20987579226493835,-1.980058193206787,1.980058193206787,0.20987579226493835,129.881103515625,1696.107177734375)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,395.25,395.25)"><path fill="rgb(249,128,183)" fill-opacity="1" d=" M0,-395 C-218.1529998779297,-395 -395,-218.1529998779297 -395,0 C-395,218.15199279785156 -218.1529998779297,395 0,395 C218.15199279785156,395 395,218.15199279785156 395,0 C395,-218.1529998779297 218.15199279785156,-395 0,-395z M-67.87999725341797,-294.7799987792969 C-26.517000198364258,-332.4200134277344 37.52899932861328,-329.40301513671875 75.16999816894531,-288.03900146484375 C112.81099700927734,-246.67599487304688 109.79399871826172,-182.63099670410156 68.43099975585938,-144.99000549316406 C27.06599998474121,-107.3489990234375 -36.979000091552734,-110.36699676513672 -74.61900329589844,-151.72999572753906 C-112.26100158691406,-193.09300231933594 -109.24299621582031,-257.1390075683594 -67.87999725341797,-294.7799987792969z M-301.3280029296875,-26.53499984741211 C-324.343994140625,-77.50499725341797 -301.6839904785156,-137.48399353027344 -250.71299743652344,-160.50100708007812 C-199.74200439453125,-183.51699829101562 -139.76400756835938,-160.8560028076172 -116.74700164794922,-109.88600158691406 C-93.73100280761719,-58.915000915527344 -116.39199829101562,1.062999963760376 -167.36199951171875,24.079999923706055 C-218.33299255371094,47.09600067138672 -278.3110046386719,24.434999465942383 -301.3280029296875,-26.53499984741211z M-118.35199737548828,278.3800048828125 C-173.94000244140625,284.5190124511719 -223.97999572753906,244.4320068359375 -230.1199951171875,188.843994140625 C-236.25900268554688,133.25599670410156 -196.17300415039062,83.21499633789062 -140.58399963378906,77.07599639892578 C-84.99600219726562,70.93699645996094 -34.95500183105469,111.02300262451172 -28.81599998474121,166.61099243164062 C-22.677000045776367,222.1999969482422 -62.76300048828125,272.239990234375 -118.35199737548828,278.3800048828125z M-45.5,0 C-45.5,-25.128999710083008 -25.128999710083008,-45.5 0,-45.5 C25.128999710083008,-45.5 45.5,-25.128999710083008 45.5,0 C45.5,25.128999710083008 25.128999710083008,45.5 0,45.5 C-25.128999710083008,45.5 -45.5,25.128999710083008 -45.5,0z M228.18299865722656,198.58299255371094 C216.843994140625,253.3470001220703 163.25599670410156,288.5509948730469 108.49099731445312,277.2130126953125 C53.72600173950195,265.8739929199219 18.52199935913086,212.28599548339844 29.861000061035156,157.52099609375 C41.20000076293945,102.75599670410156 94.78700256347656,67.552001953125 149.55299377441406,78.89099884033203 C204.31700134277344,90.2300033569336 239.52099609375,143.8179931640625 228.18299865722656,198.58299255371094z M159.03900146484375,20.277000427246094 C110.45899963378906,-7.429999828338623 93.53700256347656,-69.27400207519531 121.24400329589844,-117.8550033569336 C148.9510040283203,-166.43499755859375 210.7949981689453,-183.3560028076172 259.3760070800781,-155.6490020751953 C307.95599365234375,-127.94200134277344 324.87701416015625,-66.0989990234375 297.1700134277344,-17.51799964904785 C269.4630126953125,31.062000274658203 207.6199951171875,47.98400115966797 159.03900146484375,20.277000427246094z"></path></g></g><g transform="matrix(1.483549952507019,0,0,1.483549952507019,1107.87548828125,1645.108642578125)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,211.25,36.75)"><path fill="rgb(249,128,183)" fill-opacity="1" d=" M211,36.5 C211,36.5 -211,36.5 -211,36.5 C-211,36.5 -211,-36.5 -211,-36.5 C-211,-36.5 211,-36.5 211,-36.5 C211,-36.5 211,36.5 211,36.5z"></path></g></g></g></svg></span><span class="inline-block underline align-middle">
+&nbsp;View launch trailer
+</span></a></div><img alt="mascotte running" class="absolute right-[3.25rem] bottom-[3.25rem] h-[45vh] max-h-[45vh] max-w-[12.5vw] hidden lg:block" src="/assets/images/illustrations/buckety-running.svg"></div></div></div><div id="features" class="relative z-[2] second-page -mt-14"><div class="border-top-wave-trans-green">&nbsp;</div><div class="flex justify-center bg-darkest-green"><div class="container"><div class="my-10"><h2 class="block text-white">
+Discover all of our <span class="text-yellow">amazing</span> features!</h2><div class="grid grid-cols-1 gap-10 pt-10 place-items-center cards md:grid-cols-2 max-w-[90vw] m-auto"><div class="bg-white rounded-lg"><div class="md:flex-shrink-0"><img src="https://d116ycnycbla4r.cloudfront.net/feature/PVR_TwoTools_2022-04-06-213419_rgqp.gif" alt="A new way of creating" class="object-fill w-full lg:w-[640px] h-auto rounded-lg rounded-b-none"></div><div class="p-4 h-[256px]"><h2 class="mb-2 text-2xl tracking-normal text-center uppercase md:mt-2 font-poppins">A new way of creating</h2><p class="p-4 text-sm text-center text-gray-700 break-words"></p><p>We bring you a truly new way of creating, using a blend of age-old techniques and the possibilities of cutting-edge technology.</p><p></p></div></div><div class="bg-white rounded-lg"><div class="md:flex-shrink-0"><img src="https://d116ycnycbla4r.cloudfront.net/feature/PVR_Tools_RoundBrush_2022-04-06-212042_bnyw.gif" alt="Relax! It's just art.." class="object-fill w-full lg:w-[640px] h-auto rounded-lg rounded-b-none"></div><div class="p-4 h-[256px]"><h2 class="mb-2 text-2xl tracking-normal text-center uppercase md:mt-2 font-poppins">Relax! It's just art..</h2><p class="p-4 text-sm text-center text-gray-700 break-words"></p><p>Painting VR uses a combination of visuals, audio, and haptics to immerse you in a relaxing and satisfying creative experience.</p><p></p></div></div><div class="bg-white rounded-lg"><div class="md:flex-shrink-0"><img src="https://d116ycnycbla4r.cloudfront.net/feature/PVR_BrushSettings.gif" alt="A wide selection of brushes &amp; tools" class="object-fill w-full lg:w-[640px] h-auto rounded-lg rounded-b-none"></div><div class="p-4 h-[256px]"><h2 class="mb-2 text-2xl tracking-normal text-center uppercase md:mt-2 font-poppins">A wide selection of brushes &amp; tools</h2><p class="p-4 text-sm text-center text-gray-700 break-words"></p><p>A spray can, brushes, paint rollers, markers, a customised drill fit with a brush magnet? We have it all!</p><p></p></div></div><div class="bg-white rounded-lg"><div class="md:flex-shrink-0"><img src="https://d116ycnycbla4r.cloudfront.net/feature/PVR_ColourpickingFromCanvas.gif" alt="Easy color picking" class="object-fill w-full lg:w-[640px] h-auto rounded-lg rounded-b-none"></div><div class="p-4 h-[256px]"><h2 class="mb-2 text-2xl tracking-normal text-center uppercase md:mt-2 font-poppins">Easy color picking</h2><p class="p-4 text-sm text-center text-gray-700 break-words"></p><p>Use the color picking function to select colors from your canvas, mixing palette or reference images.</p><p></p></div></div><div class="bg-white rounded-lg"><div class="md:flex-shrink-0"><img src="https://d116ycnycbla4r.cloudfront.net/feature/PVR_Features_InGameBrowser.gif" alt="In-game web browser" class="object-fill w-full lg:w-[640px] h-auto rounded-lg rounded-b-none"></div><div class="p-4 h-[256px]"><h2 class="mb-2 text-2xl tracking-normal text-center uppercase md:mt-2 font-poppins">In-game web browser</h2><p class="p-4 text-sm text-center text-gray-700 break-words"></p><p>Listen to your favorite studio tunes, watch a tutorial, or get inspired by randomly entering a word in the image search engine.</p><p></p></div></div><div class="bg-white rounded-lg"><div class="md:flex-shrink-0"><img src="https://d116ycnycbla4r.cloudfront.net/feature/PersonalizeStudio.gif" alt="Customize &amp; save your studio" class="object-fill w-full lg:w-[640px] h-auto rounded-lg rounded-b-none"></div><div class="p-4 h-[256px]"><h2 class="mb-2 text-2xl tracking-normal text-center uppercase md:mt-2 font-poppins">Customize &amp; save your studio</h2><p class="p-4 text-sm text-center text-gray-700 break-words"></p><p>Set up anywhere you want. Once you've found the perfect spot, save it. That way you're sure you'll find your stuff where you left it.</p><p></p></div></div></div><div class="py-10 my-10 text-center"><h2 class="block pb-5 text-white">
+Watch the <span class="text-pink">trailer</span><br>
+&amp;&nbsp;let us know what you think!</h2><div class="mt-4"><span class="inline-block px-2 pt-2 opens-trailer"><button class="animate-text py-3 leading-none text-white uppercase transition duration-500 ease-in-out border-2 border-white font-poppins hover:text-almost-black rounded-xl bg-darker-green hover:bg-white "><span class="px-4 content">Watch launch trailer</span><span class="px-4 duplicate">Watch launch trailer</span></button></span><span class="inline-block px-2 pt-2 opens-contact-form"><button class="animate-text py-3 leading-none uppercase transition duration-500 ease-in-out border-2 border-almost-black font-poppins rounded-xl bg-pink hover:bg-white hover:text-almost-black "><span class="px-4 content">Contact us</span><span class="px-4 duplicate">Contact us</span></button></span></div></div></div></div></div></div><div id="showcase" class="relative z-[2]  third-page bg-yellow"><div class="border-top-wave-green-yellow">&nbsp;</div><div class=""><div class="container"><div class="flex flex-row px-5 mb-4"><img alt="mascotte looking" src="/assets/images/illustrations/buckety-looking.svg" class="hidden xl:inline xl:w-[496px]"><div class="px-2 pt-10 mb-5 text-right lg:px-4"><h2>Check out some <span class="text-white">artwork</span> &amp;&nbsp;join the community</h2><span class="inline-block pt-4"><a href="https://discord.com/invite/2xTshCTAMM" target="_blank" class="animate-text inline-block py-4 uppercase transition duration-500 ease-in-out bg-white border-2 border-almost-black font-poppins rounded-xl hover:bg-almost-black hover:text-yellow "><span class="px-6 content"><i class="pr-2 text-2xl icon-discord"></i><strong class="leading-none">Join on Discord</strong></span><span class="px-6 duplicate"><i class="pr-2 text-2xl icon-discord"></i><strong class="leading-none">Join on Discord</strong></span></a></span></div></div><div class="px-5"><div id="artgallery-teaser" class="teasing teaser"><div class="grid gap-[20px] cards grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3" id="artgallery"><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Untitled " data-description="by Soy Luiisz" href="https://d116ycnycbla4r.cloudfront.net/art/YEHA_bigger.jpeg"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><source srcset="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/218/YEHA_bigger.jpg.webp 420w, https://d116ycnycbla4r.cloudfront.net/art/_840x840_crop_center-center_45_line/218/YEHA_bigger.jpg.webp 840w" sizes="100%" type="image/webp"><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/218/YEHA_bigger.jpg" alt="Untitled" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Soy Luiisz</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Homer " data-description="by Ese Wey" href="https://d116ycnycbla4r.cloudfront.net/art/Homer-1.jpeg"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><source srcset="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/217/Homer-1.jpg.webp 420w, https://d116ycnycbla4r.cloudfront.net/art/_840x840_crop_center-center_45_line/217/Homer-1.jpg.webp 840w" sizes="100%" type="image/webp"><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/217/Homer-1.jpg" alt="Homer" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Ese Wey</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Dragon " data-description="-" href="https://d116ycnycbla4r.cloudfront.net/art/dragon.jpeg"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><source srcset="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/216/dragon.jpg.webp 420w, https://d116ycnycbla4r.cloudfront.net/art/_840x840_crop_center-center_45_line/216/dragon.jpg.webp 840w" sizes="100%" type="image/webp"><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/216/dragon.jpg" alt="Dragon" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Anonymous</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Untitled " data-description="by Clown Baby" href="https://d116ycnycbla4r.cloudfront.net/art/Clown-Baby_Untitled.png"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/Clown-Baby_Untitled.png" alt="Untitled" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Clown Baby</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Homage to Vermeer " data-description="by Jason Foster" href="https://d116ycnycbla4r.cloudfront.net/art/Hommage-to-Vermeer-Jason-Foster.png"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/Hommage-to-Vermeer-Jason-Foster.png" alt="Homage to Vermeer" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Jason Foster</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Untitled " data-description="by Joren Vandenbroucke" href="https://d116ycnycbla4r.cloudfront.net/art/Joren_Unlit_Screenshot_2021-02-10_00-08-16.png"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><source srcset="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/219/Joren_Unlit_Screenshot_2021-02-10_00-08-16.jpg.webp 420w, https://d116ycnycbla4r.cloudfront.net/art/_840x840_crop_center-center_45_line/219/Joren_Unlit_Screenshot_2021-02-10_00-08-16.jpg.webp 840w" sizes="100%" type="image/webp"><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/219/Joren_Unlit_Screenshot_2021-02-10_00-08-16.jpg" alt="Untitled" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Joren Vandenbroucke</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Illustrations " data-description="by Jeff Dehut" href="https://d116ycnycbla4r.cloudfront.net/art/Jeff-Dehut_2.jpeg"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/Jeff-Dehut_2.jpeg" alt="Illustrations" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Jeff Dehut</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="G &quot;Duck&quot; C (detail) " data-description="by Xander Clerckx" href="https://d116ycnycbla4r.cloudfront.net/art/Duckie-CU.png"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/Duckie-CU.png" alt="G &quot;Duck&quot; C (detail)" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Xander Clerckx</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Eyes " data-description="by Bojana Jokic" href="https://d116ycnycbla4r.cloudfront.net/art/Eyes-Bojana-Jokic.png"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/Eyes-Bojana-Jokic.png" alt="Eyes" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Bojana Jokic</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Derek never could get the hang of ‘bring your child to work’ Fridays " data-description="Collab by Eric Olive &amp; Stu The Painter" href="https://d116ycnycbla4r.cloudfront.net/art/StuxEric.jpeg"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/StuxEric.jpeg" alt="Derek never could get the hang of ‘bring your child to work’ Fridays" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Eric Olive &amp; Stu The Painter</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="The Unknown " data-description="by Eric Olive - https://www.artstation.com/ericolive" href="https://d116ycnycbla4r.cloudfront.net/art/The-Unknown-final.png"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/The-Unknown-final.png" alt="The Unknown" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Eric Olive</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Untitled " data-description="by Jeff Dehut" href="https://d116ycnycbla4r.cloudfront.net/art/Jeff-Dehut.jpeg"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/Jeff-Dehut.jpeg" alt="Untitled" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Jeff Dehut</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Pool Room " data-description="by Clown Baby" href="https://d116ycnycbla4r.cloudfront.net/art/Pool_Room.png"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><source srcset="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/208/Pool_Room.jpg.webp 420w, https://d116ycnycbla4r.cloudfront.net/art/_840x840_crop_center-center_45_line/208/Pool_Room.jpg.webp 840w" sizes="100%" type="image/webp"><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/208/Pool_Room.jpg" alt="Pool Room" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Clown Baby</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Listen to me " data-description="by Robert Svebeck" href="https://d116ycnycbla4r.cloudfront.net/art/Robert-Svebeck_III.jpeg"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/Robert-Svebeck_III.jpeg" alt="Listen to me" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Robert Svebeck</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Hairy Guy " data-description="by Brandon Wisecarver" href="https://d116ycnycbla4r.cloudfront.net/art/Brandon_Wisecarver_Hairy_Guy_No_Stone.png"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><source srcset="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/214/Brandon_Wisecarver_Hairy_Guy_No_Stone.jpg.webp 420w, https://d116ycnycbla4r.cloudfront.net/art/_840x840_crop_center-center_45_line/214/Brandon_Wisecarver_Hairy_Guy_No_Stone.jpg.webp 840w" sizes="100%" type="image/webp"><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/214/Brandon_Wisecarver_Hairy_Guy_No_Stone.jpg" alt="Hairy Guy" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Brandon Wisecarver</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Eye " data-description="by Thrashy Goblin" href="https://d116ycnycbla4r.cloudfront.net/art/Thrashy-Goblin_Eye.jpeg"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/Thrashy-Goblin_Eye.jpeg" alt="Eye" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Thrashy Goblin</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Untitled " data-description="by Qorko" href="https://d116ycnycbla4r.cloudfront.net/art/Mou_II-Qorko.jpeg"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/Mou_II-Qorko.jpeg" alt="Untitled" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Qorko</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Mister Roger's Spirit Mask " data-description="by Clown Baby" href="https://d116ycnycbla4r.cloudfront.net/art/clownbabyII.png"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><source srcset="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/194/clownbabyII.jpg.webp 420w, https://d116ycnycbla4r.cloudfront.net/art/_840x840_crop_center-center_45_line/194/clownbabyII.jpg.webp 840w" sizes="100%" type="image/webp"><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/194/clownbabyII.jpg" alt="Mister Roger's Spirit Mask" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Clown Baby</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Jellyfish " data-description="by Ilja Sarro" href="https://d116ycnycbla4r.cloudfront.net/art/VR_Jelly_Fish_Export_9_Final_LG.jpeg"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/VR_Jelly_Fish_Export_9_Final_LG.jpeg" alt="Jellyfish" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Ilja Sarro</span></span></div></a><a class="text-white hover:text-yellow art-item" data-gallery="gallery-art" data-title="Marble Afterlife " data-description="by Clown Baby" href="https://d116ycnycbla4r.cloudfront.net/art/SkullProjector.png"><div class="relative"><div class="p-[2px] hover:p-[0px]"><div class="md:flex-shrink-0"><picture class=" "><source srcset="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/191/SkullProjector.jpg.webp 420w, https://d116ycnycbla4r.cloudfront.net/art/_840x840_crop_center-center_45_line/191/SkullProjector.jpg.webp 840w" sizes="100%" type="image/webp"><img class=" object-cover w-full h-art border-2 rounded-3xl border-almost-black hover:border-4" src="https://d116ycnycbla4r.cloudfront.net/art/_420x420_crop_center-center_60_line/191/SkullProjector.jpg" alt="Marble Afterlife" sizes="100%"></picture></div></div><span class="absolute inline-block right-[2px] bottom-[2px]  bg-almost-black rounded-md rounded-br-3xl"><span class="p-3">@Clown Baby</span></span></div></a></div></div><div class="absolute left-0 right-0 w-full text-center"><button style="top:-70px" id="btn-show-more-art" class="animate-text inline-block px-4 py-4 uppercase transition duration-500 ease-in-out bg-white border-2 border-almost-black font-poppins rounded-xl hover:bg-almost-black hover:text-yellow ">
+Show more!
+</button></div><div class="w-full text-center "><button style="display:none" id="btn-show-less-art" class="my-5 animate-text inline-block px-4 py-4 uppercase transition duration-500 ease-in-out bg-white border-2 border-almost-black font-poppins rounded-xl hover:bg-almost-black hover:text-yellow ">
+Show less!
+</button></div></div></div></div></div><div id="blog" class="relative z-[2] third-page bg-darkest-green pb-10"><div class="border-top-wave-yellow-green">&nbsp;</div><div class="container"><div class="flex items-center justify-center mx-10"><h2 class="block py-10 text-left text-white">Discover <span class="text-yellow">what we're up to</span> behind the scenes</h2><img alt="mascotte pointing to text" src="assets/images/illustrations/hand-point.svg" class="w-[135px] sm:w-[initial] hidden lg:block"></div><div><div class="glide glide--ltr glide--carousel glide--swipeable" id="blog-thumbs"><div class="glide__track" data-glide-el="track"><ul class="glide__slides" style="transition: transform 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s; width: 6174px; transform: translate3d(-1543.5px, 0px, 0px);"><li class="glide__slide glide__slide--clone" style="width: 504.5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/why-i-started-using-painting-vr-as-a-professional-artist"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/why-i-started-using-painting-vr-as-a-professional-artist"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/The-Unknown.png" alt="Why I Started Using Painting VR as a Professional Artist" sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">07 Apr 2022</p><h4 class="my-4 text-lg font-bold tracking-normal">Why I Started Using Painting VR as a Professional Artist</h4></div></a><a href="/blog/why-i-started-using-painting-vr-as-a-professional-artist" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide glide__slide--clone" style="width: 504.5px; margin-left: 5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/what-our-users-say"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/what-our-users-say"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/QPP_paintingvr_keyart_2560x1440.png" alt="What our early access users said" sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">07 Apr 2022</p><h4 class="my-4 text-lg font-bold tracking-normal">What our early access users said</h4></div></a><a href="/blog/what-our-users-say" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide glide__slide--clone" style="width: 504.5px; margin-left: 5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/eleven-things-i-learned-from-giving-a-thousand-vr-demos"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/eleven-things-i-learned-from-giving-a-thousand-vr-demos"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/Rrrright.png" alt="Eleven things we've learned from giving a thousand VR demos" sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">04 Mar 2022</p><h4 class="my-4 text-lg font-bold tracking-normal">Eleven things we've learned from giving a thousand VR demos</h4></div></a><a href="/blog/eleven-things-i-learned-from-giving-a-thousand-vr-demos" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide glide__slide--active" style="width: 504.5px; margin-left: 5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/your-paintbrush-awaits"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/your-paintbrush-awaits"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/Warehouse_Art_1080p_17.01.2022_15-46-04.jpg" alt="Your Paintbrush Awaits: Starting with Painting VR in 3 easy steps." sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">27 May 2023</p><h4 class="my-4 text-lg font-bold tracking-normal">Your Paintbrush Awaits: Starting with Painting VR in 3 easy steps.</h4></div></a><a href="/blog/your-paintbrush-awaits" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide" style="width: 504.5px; margin-left: 5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/painting-vr-the-environmentally-and-health-friendly-way-to-learn-how-to-paint"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/painting-vr-the-environmentally-and-health-friendly-way-to-learn-how-to-paint"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/Stills_May23_HappyHues.png" alt="Painting VR: The Environmentally and Health-Friendly Way to Learn How to Paint" sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">12 May 2023</p><h4 class="my-4 text-lg font-bold tracking-normal">Painting VR: The Environmentally and Health-Friendly Way to Learn How to Paint</h4></div></a><a href="/blog/painting-vr-the-environmentally-and-health-friendly-way-to-learn-how-to-paint" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide" style="width: 504.5px; margin-left: 5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/10-quick-ways-to-come-up-with-new-ideas-for-your-painting"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/10-quick-ways-to-come-up-with-new-ideas-for-your-painting"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/Screenshot-2021-12-16-at-10.07.13.png" alt="10 Quick Ways to Come Up with New Ideas for Your Painting" sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">24 Jul 2022</p><h4 class="my-4 text-lg font-bold tracking-normal">10 Quick Ways to Come Up with New Ideas for Your Painting</h4></div></a><a href="/blog/10-quick-ways-to-come-up-with-new-ideas-for-your-painting" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide" style="width: 504.5px; margin-left: 5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/why-i-started-using-painting-vr-as-a-professional-artist"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/why-i-started-using-painting-vr-as-a-professional-artist"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/The-Unknown.png" alt="Why I Started Using Painting VR as a Professional Artist" sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">07 Apr 2022</p><h4 class="my-4 text-lg font-bold tracking-normal">Why I Started Using Painting VR as a Professional Artist</h4></div></a><a href="/blog/why-i-started-using-painting-vr-as-a-professional-artist" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide" style="width: 504.5px; margin-left: 5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/what-our-users-say"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/what-our-users-say"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/QPP_paintingvr_keyart_2560x1440.png" alt="What our early access users said" sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">07 Apr 2022</p><h4 class="my-4 text-lg font-bold tracking-normal">What our early access users said</h4></div></a><a href="/blog/what-our-users-say" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide" style="width: 504.5px; margin-left: 5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/eleven-things-i-learned-from-giving-a-thousand-vr-demos"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/eleven-things-i-learned-from-giving-a-thousand-vr-demos"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/Rrrright.png" alt="Eleven things we've learned from giving a thousand VR demos" sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">04 Mar 2022</p><h4 class="my-4 text-lg font-bold tracking-normal">Eleven things we've learned from giving a thousand VR demos</h4></div></a><a href="/blog/eleven-things-i-learned-from-giving-a-thousand-vr-demos" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide glide__slide--clone" style="width: 504.5px; margin-left: 5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/your-paintbrush-awaits"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/your-paintbrush-awaits"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/Warehouse_Art_1080p_17.01.2022_15-46-04.jpg" alt="Your Paintbrush Awaits: Starting with Painting VR in 3 easy steps." sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">27 May 2023</p><h4 class="my-4 text-lg font-bold tracking-normal">Your Paintbrush Awaits: Starting with Painting VR in 3 easy steps.</h4></div></a><a href="/blog/your-paintbrush-awaits" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide glide__slide--clone" style="width: 504.5px; margin-left: 5px; margin-right: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/painting-vr-the-environmentally-and-health-friendly-way-to-learn-how-to-paint"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/painting-vr-the-environmentally-and-health-friendly-way-to-learn-how-to-paint"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/Stills_May23_HappyHues.png" alt="Painting VR: The Environmentally and Health-Friendly Way to Learn How to Paint" sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">12 May 2023</p><h4 class="my-4 text-lg font-bold tracking-normal">Painting VR: The Environmentally and Health-Friendly Way to Learn How to Paint</h4></div></a><a href="/blog/painting-vr-the-environmentally-and-health-friendly-way-to-learn-how-to-paint" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li><li class="glide__slide glide__slide--clone" style="width: 504.5px; margin-left: 5px;"><div class="w-[355px] my-auto mx-auto relative"><a href="/blog/10-quick-ways-to-come-up-with-new-ideas-for-your-painting"></a><div class="flex flex-col pb-4 mb-2"><a href="/blog/10-quick-ways-to-come-up-with-new-ideas-for-your-painting"><div class=""><picture class="max-h-[200px] w-[100%] "><img class="max-h-[200px] w-[100%] rounded-t-xl bg-white border-2 border-b-0" src="https://d116ycnycbla4r.cloudfront.net/blog/Screenshot-2021-12-16-at-10.07.13.png" alt="10 Quick Ways to Come Up with New Ideas for Your Painting" sizes="100%"></picture></div><div class="px-2 pt-24 pb-32 text-center bg-white border-2 border-t-0 rounded-b-xl h-[285px]"><p class="tracking-normal truncate font-source-sans-pro text-[14px] uppercase">24 Jul 2022</p><h4 class="my-4 text-lg font-bold tracking-normal">10 Quick Ways to Come Up with New Ideas for Your Painting</h4></div></a><a href="/blog/10-quick-ways-to-come-up-with-new-ideas-for-your-painting" class="animate-text py-3 leading-none text-almost-black uppercase transition duration-500 ease- -out border-2 border-almost-black font-poppins hover:text-yellow rounded-xl bg-yellow hover:bg-almost-black block flex-end mx-auto bottom-[90px]"><span class="px-4 content">Learn more</span><span class="px-4 duplicate">Learn more</span></a></div></div></li></ul></div><div class="glide"><div class="flex items-center justify-center glide__arrows" data-glide-el="controls"><button class="px-2 glide__arrow--prev" data-glide-dir="<"><img alt="previous" src="/assets/icons/arrow-left-yellow.svg"></button><button class="px-2 glide__arrow--next" data-glide-dir=">"><img alt="next" src="/assets/icons/arrow-right-yellow.svg"></button></div></div></div></div></div></div></div><div id="footer" class="flex items-center w-full border-b-2 bg-dark-blue-green border-yellow h-footer"><div class="grid items-center w-full grid-cols-3 gap-1 text-footer text-[0.6rem] lg:text-[1rem]"><div class="px-5 justify-self-start"><a class="hover:underline decoration-1 underline-offset-2" href="/pages/privacy-policy">Privacy Policy</a></div><div class="justify-self-center"><a href="#"><img alt="logo" class="h-[24px]" src="/assets/images/logo/logo-darkgreen.svg"></a></div><div class="px-5 justify-self-end"><span class="flex credits-footer"><a class="hover:underline decoration-1 underline-offset-2" href="https://bitsoflove.be" target="_blank"><span>Made by</span><br class="lg:hidden"><div class="credits-footer-heart"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div><div class="bar4"></div><div class="bar5"></div><div class="bar6"></div><div class="bar7"></div></div><span>Bits of Love</span></a></span></div></div></div></div></main><!----><script type="application/ld+json">{"@context":"http://schema.org","@graph":[{"@type":"WebSite","author":{"@id":"https://www.paintingvr.xyz#identity"},"copyrightHolder":{"@id":"https://www.paintingvr.xyz#identity"},"copyrightYear":"2022","creator":{"@id":"https://www.paintingvr.xyz#creator"},"dateModified":"2022-11-14T10:55:24+01:00","datePublished":"2022-02-21T14:11:00+01:00","description":"Painting VR is a virtual studio with inspiring tools, an unlimited supply of paint, and more. Choose your colors, dip your brush, and start creating!","headline":"Learn to paint in virtual reality","image":{"@type":"ImageObject","url":"https://www.paintingvr.xyz/assets/images/social/fb-img.png"},"inLanguage":"en","mainEntityOfPage":"https://www.paintingvr.xyz/","name":"Learn to paint in virtual reality","publisher":{"@id":"https://www.paintingvr.xyz#creator"},"url":"https://www.paintingvr.xyz"},{"@id":"https://www.paintingvr.xyz#identity","@type":"Product","description":"Painting VR is a 10.000+ square feet virtual painter's studio with inspiring tools, an unlimited supply of paint, and canvases of all sizes. So choose your colors, dip in your brush, and start creating.","image":{"@type":"ImageObject","height":"1804","width":"8918"},"logo":{"@type":"ImageObject","height":"60","url":"https://www.paintingvr.xyz/actions/assets/generate-transform?transformId=1","width":"297"},"name":"Oisoi Studio","sameAs":["https://twitter.com/PaintingVr","https://www.facebook.com/ItsPaintingVR/","https://www.instagram.com/itspaintingvr/","https://www.youtube.com/c/PaintingVR","https://www.tiktok.com/@paintingvr"],"url":"https://www.paintingvr.xyz"},{"@id":"https://www.bitsoflove.be/#creator","@type":"Organization","address":{"@type":"PostalAddress","addressCountry":"BE","addressLocality":"Bruges","addressRegion":"West Flanders","postalCode":"8200","streetAddress":"Koning Albert I laan 96A/001"},"alternateName":"Bits of Love","description":"Bits of Love is a high-end digital product studio based in Bruges.","email":"hello@bitsoflove.be","image":{"@type":"ImageObject","height":"1297","width":"1297"},"logo":{"@type":"ImageObject","height":"60","url":"https://www.paintingvr.xyz/actions/assets/generate-transform?transformId=2","width":"60"},"name":"Bits of Love BV","telephone":"+32 50 32 01 80","url":"https://www.bitsoflove.be"},{"@type":"BreadcrumbList","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","item":"https://www.paintingvr.xyz","name":"Home","position":1}],"name":"Breadcrumbs"}]}</script><script src="https://www.paintingvr.xyz/cpresources/5257f647/formie.js?v=1657545604" defer=""></script>
+<script src="https://www.paintingvr.xyz/cpresources/dec57fd6/ccc.js?v=1657545604"></script>
+<script>window.FormieTranslations={"File {filename} must be smaller than {filesize} MB.":"File {filename} must be smaller than {filesize} MB.","File must be smaller than {filesize} MB.":"File must be smaller than {filesize} MB.","File must be larger than {filesize} MB.":"File must be larger than {filesize} MB.","Choose up to {files} files.":"Choose up to {files} files.","{num} characters left":"{num} characters left","{num} words left":"{num} words left","This field is required.":"This field is required.","Please select a value.":"Please select a value.","Please select at least one value.":"Please select at least one value.","Please fill out this field.":"Please fill out this field.","Please enter a valid email address.":"Please enter a valid email address.","Please enter a URL.":"Please enter a URL.","Please enter a number":"Please enter a number","Please match the following format: #rrggbb":"Please match the following format: #rrggbb","Please use the YYYY-MM-DD format":"Please use the YYYY-MM-DD format","Please use the 24-hour time format. Ex. 23:00":"Please use the 24-hour time format. Ex. 23:00","Please use the YYYY-MM format":"Please use the YYYY-MM format","Please match the requested format.":"Please match the requested format.","Please select a value that is no more than {max}.":"Please select a value that is no more than {max}.","Please select a value that is no less than {min}.":"Please select a value that is no less than {min}.","Please shorten this text to no more than {maxLength} characters. You are currently using {length} characters.":"Please shorten this text to no more than {maxLength} characters. You are currently using {length} characters.","Please lengthen this text to {minLength} characters or more. You are currently using {length} characters.":"Please lengthen this text to {minLength} characters or more. You are currently using {length} characters.","There was an error with this field.":"There was an error with this field.","Unable to parse response `{e}`.":"Unable to parse response `{e}`.","Are you sure you want to leave?":"Are you sure you want to leave?","The request timed out.":"The request timed out.","The request encountered a network error. Please try again.":"The request encountered a network error. Please try again.","Invalid number":"Invalid number","Invalid country code":"Invalid country code","Too short":"Too short","Too long":"Too long"};
+(window.renderQueue = window.renderQueue || []).push(function (React, ReactDOM, components) {
+  var Component = components['CookieConsent'];
+  var container = document.getElementById('custom-cookie-consent-283479184');
+  var props = {"cccSiteUrl":"https:\/\/www.paintingvr.xyz\/","translations":{"acceptAllCookies":"Accept all cookies","showPreferences":"Cookie settings","preferencesTitle":"Cookie settings","preferencesText":"Check the cookies you want to allow"}};
+  if (Component && container) {
+    ReactDOM.render(
+      React.createElement(
+        Component,
+        props
+      ),
+      container
+    );
+  }
+});</script><script src="https://www.paintingvr.xyz/resources/index.360f13ccc5f98fa2c1c4.js" defer=""></script><div class="hidden" data-scroll-appear=""><form method="POST" class="p-4 shadow bg-light text-dark"><h3 class="text-dark">
+Cookie settings</h3><input type="hidden" name="action" value="complete-cookie-consent/consent/submit"><input type="hidden" name="CRAFT_CSRF_TOKEN" value="g8ifgYybyjWTxvd9rJqPU58cTMlTawlXwu2Z61CVgOmQxVhE8jP0wdym6tPGto9so6CQC-_WzTbmdCb4PCxhG6i7yodpzdaBpYQLPLtKrrE="><div class="mb-4 row"><label class="text-sm custom-checkbox d-flex align-items-center col-6 col-md-3" htmlfor="{`cookieType-${type.handle}`}"><input type="checkbox" name="cookieTypes[]" value="necessary" class="mr-2" checked="" disabled=""><span class="custom-checkbox-label">Necessary</span></label><label class="text-sm custom-checkbox d-flex align-items-center col-6 col-md-3" htmlfor="{`cookieType-${type.handle}`}"><input type="checkbox" name="cookieTypes[]" value="preferences" class="mr-2" checked=""><span class="custom-checkbox-label">Preferences</span></label><label class="text-sm custom-checkbox d-flex align-items-center col-6 col-md-3" htmlfor="{`cookieType-${type.handle}`}"><input type="checkbox" name="cookieTypes[]" value="statistics" class="mr-2"><span class="custom-checkbox-label">Statistics</span></label><label class="text-sm custom-checkbox d-flex align-items-center col-6 col-md-3" htmlfor="{`cookieType-${type.handle}`}"><input type="checkbox" name="cookieTypes[]" value="marketing" class="mr-2"><span class="custom-checkbox-label">Marketing</span></label></div><button type="submit" class="btn btn-primary">
+Save settings
+</button></form></div><div id="custom-cookie-consent-283479184"><div class="fixed z-50 p-4 m-4 mb-[100px] overflow-hidden border-2 shadow custom-cookie-consent position-fixed bg-yellow text-almost-black border-almost-black rounded-xl"><h3 class="text-dark">Hey! This banner needs your attention.</h3><p class="mb-4">European cookie laws require us to show you, the visitor, this message and give you a choice as to what cookies will be set.</p><form method="POST"><input type="hidden" name="CRAFT_CSRF_TOKEN" value="SbMNkuyO-gxyM4OxrbANNZaf44RPvhJxXoG76Pmisyw5aU1PLfc0ahbdeMCmo79VQlXkx-78T1Dv94m1IPl6PTTX6ITA-uVEDCgeN2SObho="><input type="hidden" name="action" value="complete-cookie-consent/consent/submit"><input type="hidden" name="cookieTypes[]" value="necessary"><input type="hidden" name="cookieTypes[]" value="preferences"><input type="hidden" name="cookieTypes[]" value="statistics"><input type="hidden" name="cookieTypes[]" value="marketing"><div class="flex items-center mt-4 space-x-4"><button type="submit" class="animate-text py-1 leading-none uppercase transition duration-500 ease-in-out border-2 border-almost-black font-poppins rounded-xl bg-pink hover:bg-almost-black hover:text-yellow {{ class|default('') }}"><span class="px-4 content">Accept all cookies</span><span class="px-4 duplicate">Accept all cookies</span></button><button type="button" class="underline btn">Cookie settings</button></div></form></div></div><script type="text/javascript">
+/*<![CDATA[*/
+(function(){
+    var XMLHttpFactories = [
+        function () {return new XMLHttpRequest()},
+        function () {return new ActiveXObject("Msxml2.XMLHTTP")},
+        function () {return new ActiveXObject("Msxml3.XMLHTTP")},
+        function () {return new ActiveXObject("Microsoft.XMLHTTP")}
+    ];
+    var req = false;
+    for (var i = 0; i < XMLHttpFactories.length; i++) {
+        try {
+            req = XMLHttpFactories[i]();
+        }
+        catch (e) {
+            continue;
+        }
+        break;
+    }
+    if (!req) return;
+    req.open('GET', "https://www.paintingvr.xyz/actions/queue/run", true);
+    if (req.readyState == 4) return;
+    req.send();
+})();
+/*]]>*/
+</script><div data-fui-scripts="5"><script src="https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604" defer=""></script></div><div data-fui-scripts="776"><script src="https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604" defer=""></script></div><div data-fui-scripts="5"><script src="https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604" defer=""></script></div><div data-fui-scripts="776"><script src="https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604" defer=""></script></div><div data-fui-scripts="5"><script src="https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604" defer=""></script></div><div data-fui-scripts="776"><script src="https://www.paintingvr.xyz/cpresources/506b2a01/recaptcha-v3.js?v=1657545604" defer=""></script></div><script type="text/javascript" id="gtm-jq-ajax-listen">(function(){function h(b){"undefined"!==typeof jQuery?(k=jQuery,n()):20>b&&setTimeout(h,500)}function n(){k(document).bind("ajaxComplete",function(b,a,f){var c=document.createElement("a");c.href=f.url;var g="/"===c.pathname[0]?c.pathname:"/"+c.pathname,d="?"===c.search[0]?c.search.slice(1):c.search;d=l(d,"\x26","\x3d",!0);var e=l(a.getAllResponseHeaders(),"\n",":");dataLayer.push({event:"ajaxComplete",attributes:{type:f.type||"",url:c.href||"",queryParameters:d,pathname:g||"",hostname:c.hostname||
+"",protocol:c.protocol||"",fragment:c.hash||"",statusCode:a.status||"",statusText:a.statusText||"",headers:e,timestamp:b.timeStamp||"",contentType:f.contentType||"",response:a.responseJSON||a.responseXML||a.responseText||""}})})}function l(b,a,f,c){var g={};if(!b||!a||!f)return{};if(b=b.split(a))for(a=0;a<b.length;a++){var d=c?decodeURIComponent(b[a]):b[a],e=d.split(f);d=m(e[0]);e=m(e[1]);d&&e&&(g[d]=e)}return g}function m(b){if(b)return b.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,"")}var k;h()})();</script><script id="FORMIE_RECAPTCHA_SCRIPT" src="https://www.recaptcha.net/recaptcha/api.js?onload=formieRecaptchaOnLoadCallback&amp;render=explicit&amp;hl=en" async="" defer=""></script></body></html>

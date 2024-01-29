@@ -1,0 +1,377 @@
+<html lang="en" style="--vh: 6.68px;"><head><meta charset="utf-8"><title>EPAM SolutionsHub | Software Solutions for Digital Business</title><link rel="shortcut icon" href="/src/v2_common/images/favicon.ico"><link rel="preconnect" href="https://www.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><meta name="google-site-verification" content="CWaIvh3WwxpG-M9GfKnyaJ68lo_Y1FEWs7VVJERvTZo"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:description" content="SolutionsHub is a one-stop repository for software solutions created to solve business challenges that our clients struggle with."><meta name="twitter:title" content="EpamSolutionsHub"><meta name="twitter:site" content="@EPAMSYSTEMS"><meta name="twitter:image" content="https://solutionshub.epam.com/src/common/images/Twitter_Banner.jpg"><style>body,div,html,iframe{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}@font-face{font-family:"Source Sans Pro Regular";src:local("Source Sans Pro Regular"),url(/src/v2_common/fonts/sourcesanspro-regular.woff2) format("woff2"),url(/src/v2_common/fonts/sourcesanspro-regular.ttf) format("truetype");font-weight:400;font-style:normal;font-display:swap}body,div,html,iframe{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}html{font-size:62.5%;overflow:initial;-webkit-box-sizing:border-box;box-sizing:border-box;height:100%}body,html{min-width:320px}body{-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:#202025;font-family:"Source Sans Pro Regular",arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;min-height:100%}#root{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-height:inherit;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.ThematicContent-module__thematicContentPostsItem__uBfSU:first-child{grid-area:1/1/2/2;-webkit-box-sizing:border-box;box-sizing:border-box;height:100%}.ThematicContent-module__thematicContentPostsItem__uBfSU:nth-child(2){grid-area:2/1/3/2}.ThematicContent-module__thematicContentPostsItem__uBfSU:nth-child(3){grid-area:3/1/4/2}.ThematicContent-module__thematicContentPostsItem__uBfSU:nth-child(4){grid-area:4/1/5/2}.ThematicContent-module__thematicContentPostsItem__uBfSU:first-child{grid-area:1/1/2/2;-webkit-box-sizing:border-box;box-sizing:border-box;height:100%}.ThematicContent-module__thematicContentPostsItem__uBfSU:nth-child(2){grid-area:2/1/3/2}.ThematicContent-module__thematicContentPostsItem__uBfSU:nth-child(3){grid-area:3/1/4/2}.ThematicContent-module__thematicContentPostsItem__uBfSU:nth-child(4){grid-area:4/1/5/2}</style><script defer="defer" src="/bundle-b6c1ffb935a683f20a6e.js"></script><script defer="defer" src="/bundle-5a8a6acd400788384fce.js"></script><link href="/main.9bbe622913b6354409ce.1378ade9.css" rel="stylesheet" media="all" onload="this.media='all'"><style>/* Generated with http://k88hudson.github.io/syntax-highlighting-theme-generator/www */
+/* http://k88hudson.github.io/react-markdocs */
+/**
+ * @author k88hudson
+ *
+ * Based on prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+/*********************************************************
+* General
+*/
+pre[class*="language-"],
+code[class*="language-"] {
+  color: #424242;
+  font-size: 14px;
+  text-shadow: none;
+  font-family: 'Source Code Pro Regular', monospace, sans-serif;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 16px;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection,
+pre[class*="language-"]::mozselection,
+code[class*="language-"]::mozselection {
+  text-shadow: none;
+  background: #e1e6ff;
+}
+@media print {
+  pre[class*="language-"],
+  code[class*="language-"] {
+    text-shadow: none;
+  }
+}
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  background: #f5f7fa;
+}
+:not(pre) > code[class*="language-"] {
+  padding: .1em .3em;
+  border-radius: .3em;
+  color: #313b71;
+  background: #e1e6ff;
+}
+/*********************************************************
+* Tokens
+*/
+.namespace {
+  opacity: .7;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #b1b1b1;
+}
+.token.punctuation {
+  color: #9a9a9d;
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #217260;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #8ec622;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #333333;
+  background: #ffffff;
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #1f49fc;
+}
+.token.function {
+  color: #ec563d;
+}
+.token.regex,
+.token.important,
+.token.variable {
+  color: #f18e3b;
+}
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
+}
+/*********************************************************
+* Line highlighting
+*/
+pre[data-line] {
+  position: relative;
+}
+pre[class*="language-"] > code[class*="language-"] {
+  position: relative;
+  z-index: 1;
+}
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: #e1e6ff;
+  box-shadow: inset 5px 0 0 #313b71;
+  z-index: 0;
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+</style><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style><link rel="stylesheet" type="text/css" href="/8604.9bbe622913b6354409ce.css"><script charset="UTF-8" data-domain-script="6f356320-5183-4daf-94bc-c6c376af42be" async="" src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js" type="text/javascript"></script><link rel="canonical" href="https://solutionshub.epam.com/privacy-policy" data-rh="true"><meta name="description" content="SolutionsHub is a one-stop repository for EPAM's software solutions, which range from accelerators and enterprise products to open source solutions." data-rh="true"><meta name="keywords" content="" data-rh="true"><meta property="og:title" content="EPAM SolutionsHub" data-rh="true"><meta property="og:description" content="SolutionsHub is a one-stop repository for software solutions created to solve business challenges that our clients struggle with." data-rh="true"><meta property="og:image" content="https://solutionshub.epam.com/src/v2_common/images/og-default-image5562044b07afd4543560.jpg" data-rh="true"><meta property="og:url" content="https://solutionshub.epam.com/privacy-policy" data-rh="true"><meta property="og:type" content="website" data-rh="true"></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV6Z3PK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="GA_Update_Title" role="button"></div><div class="ScrollButton-module__scrollButton__cGA6f"><span style="display: none;"></span></div><div><section class="styles-module__componentContainer__Ib9MT styles-module__close__VESRX" data-testid="section"><div class="styles-module__slider__nLfec"></div></section></div><main class="styles-module__componentContainer__BarvV"><header class="styles-module__header__K2NG3" itemscope="" itemtype="https://schema.org/WPHeader"><div class="styles-module__mainContainer__Fq4Qo styles-module__headerContainer__QFC2u"><div class="styles-module__row__WvXqd"><div class="styles-module__logo__UkAzm"><a class="mainLogo" itemprop="image" href="/"><img src="/src/v2_common/images/Logo-SolutionsHub.svg?version=1693299021783" alt="Logo SolutionsHub" width="172" height="20"></a></div><nav class="HeaderNavigation-module__mainMenu__HODl5" tabindex="0" itemscope="" itemtype="https://schema.org/SiteNavigationElement"><input class="HeaderNavigation-module__subMenuBtn__bpagU" type="checkbox" id="subMenuBtn"><label class="HeaderNavigation-module__subMenuIcon__jJbg2" for="subMenuBtn" data-testid="mobileMenuBtn"><span class="HeaderNavigation-module__navicon__P7rPT"></span></label><div class="HeaderNavigation-module__mainSubMenu__Etgms" data-testid="mobileMenu"><div class="HeaderNavigation-module__mainSubMenulist__KdNFt HeaderNavigation-module__mainWithSubMenulist__x32uc HeaderNavigation-module__assetDropDown__DxKXS HeaderNavigation-module__solutionDropDown__cKuMC headerMenuSolution" tabindex="0" data-testid="navigationDropdown"><button type="button" class="HeaderNavigation-module__mainSubMenuItemName__tGAOq HeaderNavigation-module__solutionDropDown__cKuMC headerMenuDropDownSolution" data-testid="navigationDropdownToggle"><span class="HeaderNavigation-module__menuArrow__eg5E1 headerMenuDropDownSolution">Solutions</span></button><div class="HeaderNavigation-module__internalDropDownSolutionWrapper__VUDFS HeaderNavigation-module__dropDownMenu__jxnw3" data-testid="collapsableDropdownPart"><div class="HeaderNavigation-module__internalDropDown__mfC7Q"><div class="HeaderNavigation-module__dropDownMenu__jxnw3 HeaderNavigation-module__active__UkYEi HeaderNavigation-module__dropDownCollapse__SrtCz HeaderNavigation-module__dropActiveMd__gkYbv"><div class="HeaderNavigation-module__dropDownWithOpenSource__BAqWU"><div class="HeaderNavigation-module__dropDownMenuItems__Bg4L5" data-testid="dropdownMenuItems"><p class="HeaderNavigation-module__dropDownMenuGroupTitle__IEpEB"><span class="HeaderNavigation-module__menuArrow__eg5E1"></span></p><ul></ul></div><div class="HeaderNavigation-module__dropDownMenuItems__Bg4L5" data-testid="dropdownMenuItems"><p class="HeaderNavigation-module__dropDownMenuGroupTitle__IEpEB"><span class="HeaderNavigation-module__menuArrow__eg5E1"></span></p><ul></ul></div></div><div class="HeaderNavigation-module__viewAll__FVVjG"><a class="viewAllSolutionsDropDownLink" itemprop="url" href="/search?sort=most-popular">View All Solutions</a></div></div></div><span class="HeaderNavigation-module__internalDropDownClose__P1j_b" data-testid="dropdownCloseBtn"></span></div></div><div class="HeaderNavigation-module__mainSubMenulist__KdNFt blogMenuItem"><a itemprop="url" class="HeaderNavigation-module__mainSubMenuItemName__tGAOq blogMenuLink" href="/blog">Blog</a></div><div class="HeaderNavigation-module__mainSubMenulist__KdNFt faqMenuItem"><a itemprop="url" data-testid="faqLink" class="HeaderNavigation-module__mainSubMenuItemName__tGAOq faqMenuLink" href="/faq">FAQ</a></div><div class="HeaderNavigation-module__mainSubMenulist__KdNFt aboutUsMenuItem"><a itemprop="url" data-testid="aboutUsLink" class="HeaderNavigation-module__mainSubMenuItemName__tGAOq aboutUsMenuLink" href="/about">About Us</a></div></div></nav><div class="styles-module__mainSearch__RzR9U" tabindex="0"><div class="styles-module__desktopContainer__LTipn"><div class="styles-module__row__sjBTF" role="button" tabindex="0"><div class="styles-module__contentCenter__YJtBf styles-module__contentCenterActive__yxOQL"><div class="styles-module__inputContainer__nzVeb" data-testid="focus-container"><section class="styles-module__iconContainer__T9DyJ styles-module__desktopStatic__R2QoH"><svg viewBox="0 0 24 24" class="styles-module__searchIcon__vioPo styles-module__searchIconInner__kU24B"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M10.793 3.85a5.943 5.943 0 015.943 5.943c0 1.472-.54 2.825-1.427 3.867l.247.247h.723l4.571 4.572-1.371 1.371-4.572-4.571v-.723l-.247-.247a5.957 5.957 0 01-3.867 1.427 5.943 5.943 0 010-11.886zm0 1.829a4.097 4.097 0 00-4.114 4.114 4.097 4.097 0 004.114 4.114 4.097 4.097 0 004.114-4.114 4.097 4.097 0 00-4.114-4.114z" data-fill="true" fill-rule="nonzero"></path></g></svg></section><input type="text" placeholder="Search SolutionsHub" name="search" class="styles-module__input__wNGPh styles-module__desktopInput__dKOPf" autocomplete="off" data-testid="search-input" value=""><button type="button" class="styles-module__circleCloseIcon__xB82I styles-module__closeBtn__PIEAR" data-testid="close-button"></button></div><a class="styles-module__searchButton__hCG96 styles-module__hidden__wwU6O styles-module__active__FMdEP" data-testid="search-button"><svg viewBox="0 0 24 24" class="styles-module__arrowRightIcon__FtUrH" style="transform: rotate(0deg);"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path data-fill="true" fill-rule="nonzero" d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></g></svg></a></div></div><button type="button" class="styles-module__btnOpen__M2Fgp searchBtn styles-module__btnOpenInventory__Xu_uL openSearchField"><svg viewBox="0 0 24 24" class="styles-module__searchIcon__vioPo"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M10.793 3.85a5.943 5.943 0 015.943 5.943c0 1.472-.54 2.825-1.427 3.867l.247.247h.723l4.571 4.572-1.371 1.371-4.572-4.571v-.723l-.247-.247a5.957 5.957 0 01-3.867 1.427 5.943 5.943 0 010-11.886zm0 1.829a4.097 4.097 0 00-4.114 4.114 4.097 4.097 0 004.114 4.114 4.097 4.097 0 004.114-4.114 4.097 4.097 0 00-4.114-4.114z" data-fill="true" fill-rule="nonzero"></path></g></svg></button></div><div class="styles-module__mobileContainer___4_X4 false"><div class="styles-module__row__sjBTF" role="button" tabindex="0"><div class="styles-module__contentCenter__YJtBf"><div class="styles-module__inputContainer__nzVeb" data-testid="focus-container"><section class="styles-module__iconContainer__T9DyJ"><svg viewBox="0 0 24 24" class="styles-module__searchIcon__vioPo styles-module__searchIconInner__kU24B"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M10.793 3.85a5.943 5.943 0 015.943 5.943c0 1.472-.54 2.825-1.427 3.867l.247.247h.723l4.571 4.572-1.371 1.371-4.572-4.571v-.723l-.247-.247a5.957 5.957 0 01-3.867 1.427 5.943 5.943 0 010-11.886zm0 1.829a4.097 4.097 0 00-4.114 4.114 4.097 4.097 0 004.114 4.114 4.097 4.097 0 004.114-4.114 4.097 4.097 0 00-4.114-4.114z" data-fill="true" fill-rule="nonzero"></path></g></svg></section><input type="text" placeholder="Financial Services, Life Sciences, Testing, etc..." name="search" class="styles-module__input__wNGPh" autocomplete="off" data-testid="search-input" value=""><button type="button" class="styles-module__circleCloseIcon__xB82I styles-module__closeBtn__PIEAR" data-testid="close-button"></button></div><a class="styles-module__searchButton__hCG96" data-testid="search-button"><svg viewBox="0 0 24 24" class="styles-module__arrowRightIcon__FtUrH" style="transform: rotate(0deg);"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path data-fill="true" fill-rule="nonzero" d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></g></svg></a></div></div></div></div><section class="style-module__btnMobile__I4cIl" tabindex="0"><div><button type="button" class="style-module__btnIcon__p6xMw"><img src="/src/v2_common/images/loginHeaderIcon8222212f861c4aef5a50.svg" alt="login-header-icon" class="style-module__loginHeaderIcon__k4Vir"></button></div></section><button class="styles-module__button__zo74Y styles-module__outline__e3jl3 styles-module__medium__XwQl_ style-module__btn__ttLhD style-module__loginEpamBtn___dc5t epamLoginBtn" type="submit" draggable="false">Epam login</button></div></div></header><div class="Preloader-module__general__rofk6 Preloader-module__fit__wQZ2V"><div class="Preloader-module__container__U9DIc Preloader-module__large__cTKWf"><div class="Preloader-module__circle__TTaZe Preloader-module__green__nnke2"></div><div class="Preloader-module__circle__TTaZe Preloader-module__green__nnke2"></div><div class="Preloader-module__circle__TTaZe Preloader-module__green__nnke2"></div></div></div><footer class="styles-module__footer__AC6bO" itemscope="" itemtype="https://schema.org/WPFooter"><div class="styles-module__newHubContainer___paun styles-module__footerContainer__LO7Es"><div class="styles-module__footerContent__nSjTp"><div class="styles-module__logo__qYX9e"><svg viewBox="0 0 281 31" color="white"><defs><path id="logo_a" d="M.587.595h22.789V28.94H.587z"></path></defs><g fill="none" fill-rule="evenodd"><path fill="none" d="M0 0h281v31H0z"></path><g transform="translate(11 2)"><mask id="logo_a" fill="none"><use xlink:href="#logo_a"></use></mask><path d="M3.601 13.276l.014 5.203c0 1.323.64 1.976 1.905 1.976h.554c1.266 0 1.905-.653 1.905-1.976V15.92h2.915v2.431c0 3.341-1.621 5.047-4.834 5.047h-.64c-3.213 0-4.833-1.691-4.833-4.649V6.026C.587 2.287 2.207.595 5.42.595h.64c3.213 0 4.834 1.692 4.834 5.032l-.014 7.635H3.601v.014zm0-3.028H7.88V5.514c0-1.322-.626-1.991-1.905-1.991h-.484c-1.265 0-1.905.669-1.905 1.991v4.734h.015zM12.841.851h3.014v1.45c.711-.782 1.934-1.692 3.682-1.692 2.574 0 3.839 1.777 3.839 4.422v13.96c0 2.645-1.265 4.422-3.839 4.422-1.748 0-2.971-.868-3.682-1.607V29h-3.014V.851zm3.014 18.411c.825.739 1.777 1.151 2.773 1.151 1.109 0 1.748-.54 1.748-1.82V5.372c0-1.28-.639-1.82-1.748-1.82-.996 0-1.948.412-2.773 1.152v14.558z" fill="#fff" mask="url(#logo_b)"></path></g><path d="M36.196 17.38c0-2.772.867-3.881 3.17-4.705l4.037-1.45V7.514c0-1.322-.639-2.019-1.904-2.019h-.484c-1.265 0-1.905.697-1.905 2.019v3.156h-2.929V7.642c0-3.341 1.622-5.033 4.834-5.033h.569c3.213 0 4.834 1.692 4.834 5.033v17.515h-3.015v-1.408c-.824.825-1.947 1.649-3.682 1.649-2.416 0-3.525-1.449-3.525-3.923V17.38zm7.207 4.01v-7.351l-2.729 1.081c-1.109.455-1.464 1.038-1.464 2.317v3.384c0 1.08.511 1.606 1.464 1.606.91 0 1.749-.327 2.729-1.037zM58.587 25.157h-3.013V7.187c0-1.109-.513-1.606-1.422-1.606-.825 0-1.707.326-2.773 1.108v18.468h-3.013V2.851h3.013v1.45c.882-.867 2.019-1.706 3.682-1.706 1.55 0 2.573.668 3.128 1.82 1.081-.953 2.346-1.82 4.08-1.82 2.332 0 3.526 1.493 3.526 3.924v18.624h-3.014V7.187c0-1.109-.512-1.606-1.421-1.606-.825 0-1.707.326-2.773 1.108v18.468" fill="#fff"></path><path fill="#23A2BC" d="M0 12.575v3.014l7.734 7.578v-4.194l-5.061-4.934 5.061-5.032V4.898L0 12.575M69.619 9.007l5.061 5.032-5.061 4.948v4.18l7.734-7.578v-3.014l-7.734-7.677v4.109"></path><path d="M98.651 25.637c-1.611 0-3.106-.304-4.483-.911a11.035 11.035 0 01-3.573-2.487l1.752-2.032a9.567 9.567 0 002.89 2.085 7.967 7.967 0 003.449.788c1.518 0 2.697-.345 3.538-1.033.84-.689 1.261-1.594 1.261-2.715 0-.584-.1-1.08-.298-1.488a3.256 3.256 0 00-.806-1.051 5.864 5.864 0 00-1.208-.788c-.468-.233-.969-.478-1.506-.736l-3.293-1.436a15.635 15.635 0 01-1.646-.84 6.795 6.795 0 01-1.506-1.191 5.717 5.717 0 01-1.086-1.664c-.279-.641-.42-1.383-.42-2.223 0-.864.181-1.67.543-2.417a5.937 5.937 0 011.506-1.944 6.995 6.995 0 012.277-1.279c.875-.303 1.839-.455 2.889-.455 1.378 0 2.65.263 3.818.788 1.167.525 2.159 1.208 2.977 2.049l-1.576 1.891a8.215 8.215 0 00-2.329-1.593c-.853-.386-1.816-.578-2.89-.578-1.284 0-2.317.297-3.099.893-.783.595-1.174 1.418-1.174 2.469 0 .561.111 1.033.333 1.419.222.385.519.724.893 1.015.374.293.782.549 1.226.771.443.222.898.426 1.366.613l3.257 1.4a14.03 14.03 0 011.857.964 6.672 6.672 0 011.505 1.261c.421.479.753 1.039.999 1.681.245.642.368 1.384.368 2.224 0 .91-.181 1.763-.543 2.556a6.151 6.151 0 01-1.559 2.084c-.677.596-1.495 1.063-2.452 1.401-.957.339-2.043.509-3.257.509" fill="#fff"></path><g fill="#fff"><path d="M116.549 23.255c.723 0 1.388-.158 1.996-.473a4.586 4.586 0 001.558-1.331c.432-.572.765-1.255.999-2.049.233-.793.35-1.681.35-2.662 0-.98-.117-1.873-.35-2.679-.234-.806-.567-1.5-.999-2.084a4.509 4.509 0 00-1.558-1.348 4.261 4.261 0 00-1.996-.473c-.725 0-1.39.157-1.997.473a4.512 4.512 0 00-1.559 1.348c-.432.584-.765 1.278-.998 2.084-.234.806-.35 1.699-.35 2.679 0 .981.116 1.869.35 2.662.233.794.566 1.477.998 2.049a4.589 4.589 0 001.559 1.331 4.269 4.269 0 001.997.473zm0 2.382a7.653 7.653 0 01-2.995-.596 7.374 7.374 0 01-2.504-1.733c-.725-.759-1.303-1.693-1.734-2.802-.432-1.11-.648-2.365-.648-3.766 0-1.424.216-2.69.648-3.8.431-1.109 1.009-2.049 1.734-2.819a7.247 7.247 0 012.504-1.751 7.653 7.653 0 012.995-.596 7.66 7.66 0 012.994.596c.946.397 1.78.98 2.504 1.751.724.77 1.301 1.71 1.734 2.819.432 1.11.647 2.376.647 3.8 0 1.401-.215 2.656-.647 3.766-.433 1.109-1.01 2.043-1.734 2.802a7.384 7.384 0 01-2.504 1.733 7.66 7.66 0 01-2.994.596zM131.188 25.637c-1.098 0-1.88-.328-2.346-.981-.468-.654-.701-1.611-.701-2.872V.279h2.872v21.715c0 .467.081.794.245.981.163.187.351.28.561.28h.262c.082 0 .204-.023.368-.071l.385 2.172a2.5 2.5 0 01-.665.21 5.609 5.609 0 01-.981.071"></path></g><path d="M141.275 25.637c-1.821 0-3.147-.561-3.975-1.682-.83-1.121-1.244-2.778-1.244-4.973V8.194h2.907v10.403c0 1.61.251 2.773.754 3.484.501.713 1.313 1.069 2.434 1.069.887 0 1.669-.228 2.346-.683.677-.455 1.424-1.185 2.242-2.189V8.194h2.872v17.022h-2.382l-.245-2.661h-.105c-.794.934-1.629 1.681-2.504 2.241-.876.56-1.909.841-3.1.841M159.943 25.637c-.911 0-1.676-.14-2.294-.421a3.945 3.945 0 01-1.507-1.156c-.385-.49-.659-1.085-.822-1.786-.164-.7-.246-1.471-.246-2.311v-9.422h-2.522V8.37l2.663-.176.35-4.763h2.416v4.763h4.588v2.347h-4.588v9.456c0 1.051.193 1.863.578 2.435.386.572 1.068.858 2.049.858.303 0 .631-.047.981-.14.35-.093.665-.198.945-.316l.561 2.172c-.468.164-.976.309-1.524.438a7.15 7.15 0 01-1.628.193M165.652 25.216h2.872V8.194h-2.872v17.022zm1.471-20.524c-.561 0-1.033-.175-1.419-.525a1.723 1.723 0 01-.578-1.331c0-.561.193-1.01.578-1.349.386-.338.858-.508 1.419-.508.56 0 1.033.17 1.418.508.385.339.578.788.578 1.349 0 .537-.193.98-.578 1.331-.385.35-.858.525-1.418.525zM180.116 23.255c.724 0 1.389-.158 1.997-.473a4.595 4.595 0 001.558-1.331c.432-.572.764-1.255.998-2.049.233-.793.35-1.681.35-2.662 0-.98-.117-1.873-.35-2.679-.234-.806-.566-1.5-.998-2.084a4.518 4.518 0 00-1.558-1.348 4.262 4.262 0 00-1.997-.473 4.26 4.26 0 00-1.997.473 4.509 4.509 0 00-1.558 1.348c-.432.584-.765 1.278-.998 2.084-.234.806-.35 1.699-.35 2.679 0 .981.116 1.869.35 2.662.233.794.566 1.477.998 2.049a4.586 4.586 0 001.558 1.331 4.271 4.271 0 001.997.473zm0 2.382a7.66 7.66 0 01-2.995-.596 7.393 7.393 0 01-2.504-1.733c-.724-.759-1.302-1.693-1.733-2.802-.433-1.11-.648-2.365-.648-3.766 0-1.424.215-2.69.648-3.8.431-1.109 1.009-2.049 1.733-2.819a7.265 7.265 0 012.504-1.751 7.66 7.66 0 012.995-.596 7.66 7.66 0 012.995.596c.945.397 1.78.98 2.504 1.751.723.77 1.301 1.71 1.733 2.819.433 1.11.648 2.376.648 3.8 0 1.401-.215 2.656-.648 3.766-.432 1.109-1.01 2.043-1.733 2.802a7.393 7.393 0 01-2.504 1.733 7.66 7.66 0 01-2.995.596zM191.709 25.216V8.194h2.382l.245 2.452h.105c.817-.817 1.675-1.5 2.574-2.049.898-.548 1.944-.823 3.135-.823 1.797 0 3.11.56 3.94 1.682.828 1.12 1.243 2.778 1.243 4.973v10.787h-2.872V14.814c0-1.611-.257-2.773-.77-3.485-.515-.712-1.331-1.068-2.452-1.068-.888 0-1.67.222-2.347.665-.677.444-1.448 1.098-2.311 1.962v12.328h-2.872M214.545 25.637a9.179 9.179 0 01-3.468-.666c-1.098-.443-2.055-1.004-2.872-1.681l1.436-1.926a11.493 11.493 0 002.294 1.47c.782.374 1.687.561 2.715.561 1.12 0 1.961-.257 2.522-.771.56-.513.84-1.144.84-1.891 0-.443-.117-.828-.35-1.156a3.5 3.5 0 00-.893-.858 6.662 6.662 0 00-1.244-.648l-1.401-.56c-.607-.21-1.214-.45-1.821-.718a7.249 7.249 0 01-1.628-.981 4.954 4.954 0 01-1.174-1.348c-.304-.513-.455-1.133-.455-1.857 0-.676.134-1.313.402-1.908a4.397 4.397 0 011.156-1.541c.502-.432 1.115-.771 1.839-1.016.723-.245 1.541-.368 2.452-.368 1.073 0 2.06.187 2.959.56.899.374 1.676.83 2.329 1.367l-1.365 1.821a9.169 9.169 0 00-1.822-1.086 5.034 5.034 0 00-2.066-.42c-1.074 0-1.862.245-2.364.735-.503.491-.753 1.063-.753 1.716 0 .398.105.742.315 1.033.21.293.49.55.84.771.351.222.753.42 1.208.596l1.419.543c.607.233 1.22.478 1.839.735a7.048 7.048 0 011.663.963c.491.385.894.858 1.209 1.419.315.56.473 1.238.473 2.031 0 .701-.135 1.355-.403 1.961a4.65 4.65 0 01-1.191 1.611c-.525.468-1.179.835-1.961 1.104-.783.268-1.676.403-2.679.403M225.577 25.216V2.24h2.907v9.632h10.682V2.24h2.942v22.976h-2.942V14.394h-10.682v10.822h-2.907" fill="#fff"></path><g fill="#fff"><path d="M252.335 25.637c-1.821 0-3.147-.561-3.975-1.682-.829-1.121-1.244-2.778-1.244-4.973V8.194h2.908v10.403c0 1.61.25 2.773.753 3.484.502.713 1.313 1.069 2.434 1.069.887 0 1.669-.228 2.346-.683.677-.455 1.425-1.185 2.242-2.189V8.194h2.872v17.022h-2.382l-.245-2.661h-.105c-.794.934-1.629 1.681-2.504 2.241-.876.56-1.909.841-3.1.841M272.684 23.22c.7 0 1.348-.158 1.944-.473a4.635 4.635 0 001.541-1.331c.432-.572.771-1.278 1.016-2.119.245-.841.367-1.786.367-2.837 0-.933-.082-1.786-.245-2.557-.163-.77-.426-1.429-.788-1.979a3.785 3.785 0 00-1.401-1.278c-.572-.303-1.255-.455-2.048-.455-1.379 0-2.896.77-4.554 2.311v8.932c.747.654 1.489 1.115 2.224 1.383.736.269 1.384.403 1.944.403zm.491 2.417c-.794 0-1.618-.193-2.47-.578a9.23 9.23 0 01-2.399-1.594h-.105l-.245 1.751h-2.312V.279h2.872v6.795l-.07 3.082a11.855 11.855 0 012.521-1.699c.912-.455 1.845-.683 2.803-.683 1.097 0 2.066.205 2.907.613.84.409 1.546.993 2.119 1.751.571.759 1.004 1.67 1.296 2.732.292 1.063.438 2.248.438 3.555 0 1.448-.199 2.744-.596 3.888-.397 1.144-.934 2.113-1.611 2.907-.678.794-1.46 1.395-2.347 1.803a6.613 6.613 0 01-2.801.614z"></path></g></g></svg></div><ul class="styles-module__categoriesList__AJSoj" itemscope="" itemtype="https://schema.org/SiteNavigationElement"><li class="styles-module__categoriesListItem__W9E5z styles-module__typeBlock__ibUd1"><input type="checkbox" class="styles-module__checkbox___w6T_" id="type"><label class="styles-module__categoriesListLabel__JiQs2" for="type"><span class="styles-module__categoriesListTitle__c6zE4"></span><svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" class="styles-module__iconBtn__tCpy7"><g id="Final-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="-2.0.1-Category-Page---Card-Hover" transform="translate(-172.000000, -451.000000)"><g id="Badges-/-Trial-Copy" transform="translate(41.000000, 437.000000)"><g id="Tags-/-Badge"><g id="Icons-/-Actions-/-Chevron-Down" transform="translate(125.000000, 6.000000)"><rect id="bounds" x="0" y="0" width="24" height="24"></rect><polygon id="Path" fill-opacity="0.45" fill="#FFFFFF" fill-rule="nonzero" points="7.41 8.858 12 13.448 16.59 8.858 18 10.278 12 16.278 6 10.278"></polygon></g></g></g></g></g></svg></label><div class="styles-module__tagsList__bFxhP"></div><div class="styles-module__typeBlock__ibUd1 styles-module__licenceTypes___fKk9 styles-module__desktop__poAZC styles-module__categoriesListItem__W9E5z"><input type="checkbox" class="styles-module__checkbox___w6T_" id="license-type-desktop"><label class="styles-module__categoriesListLabel__JiQs2" for="license-type-desktop"><span class="styles-module__categoriesListTitle__c6zE4"></span><svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" class="styles-module__iconBtn__tCpy7"><g id="Final-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="-2.0.1-Category-Page---Card-Hover" transform="translate(-172.000000, -451.000000)"><g id="Badges-/-Trial-Copy" transform="translate(41.000000, 437.000000)"><g id="Tags-/-Badge"><g id="Icons-/-Actions-/-Chevron-Down" transform="translate(125.000000, 6.000000)"><rect id="bounds" x="0" y="0" width="24" height="24"></rect><polygon id="Path" fill-opacity="0.45" fill="#FFFFFF" fill-rule="nonzero" points="7.41 8.858 12 13.448 16.59 8.858 18 10.278 12 16.278 6 10.278"></polygon></g></g></g></g></g></svg></label><div class="styles-module__tagsList__bFxhP"></div></div></li><li class="styles-module__categoriesListItem__W9E5z styles-module__typeBlock__ibUd1 styles-module__mobile__D8qQM"><input type="checkbox" class="styles-module__checkbox___w6T_" id="license-type-mobile"><label class="styles-module__categoriesListLabel__JiQs2" for="license-type-mobile"><span class="styles-module__categoriesListTitle__c6zE4"></span><svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" class="styles-module__iconBtn__tCpy7"><g id="Final-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="-2.0.1-Category-Page---Card-Hover" transform="translate(-172.000000, -451.000000)"><g id="Badges-/-Trial-Copy" transform="translate(41.000000, 437.000000)"><g id="Tags-/-Badge"><g id="Icons-/-Actions-/-Chevron-Down" transform="translate(125.000000, 6.000000)"><rect id="bounds" x="0" y="0" width="24" height="24"></rect><polygon id="Path" fill-opacity="0.45" fill="#FFFFFF" fill-rule="nonzero" points="7.41 8.858 12 13.448 16.59 8.858 18 10.278 12 16.278 6 10.278"></polygon></g></g></g></g></g></svg></label><div class="styles-module__tagsList__bFxhP"></div></li><li class="styles-module__categoriesListItem__W9E5z styles-module__categoriesListItemAbout__zYqiS"><p class="styles-module__categoriesListTitle__c6zE4 styles-module__categoriesListLabel__JiQs2 styles-module__categoriesListLabelAbout__Shj02">About</p><ul class="styles-module__tagsList__bFxhP"><a class="styles-module__tagsListItem__J9Qgx" itemprop="url" href="/faq">FAQ</a><a class="styles-module__tagsListItem__J9Qgx" itemprop="url" href="/about">About Us</a><a class="styles-module__tagsListItem__J9Qgx" itemprop="url" href="/privacy-policy">Privacy Policy</a><a class="styles-module__tagsListItem__J9Qgx" itemprop="url" href="/terms">Terms of Use</a><a class="styles-module__tagsListItem__J9Qgx" itemprop="url" href="/cookie-policy">Cookie Policy</a><button type="button" class="styles-module__tagsListItem__J9Qgx styles-module__tagsListButton__OGTTd btnContactUsAboutUs">Contact Us</button><a class="styles-module__tagsListItem__J9Qgx" itemprop="url" href="/blog">Blog</a></ul></li></ul></div></div><div class="styles-module__copyrightContainer__ioNZC"><div class="styles-module__newHubContainer___paun styles-module__copyrightBlock__ItPee"><p class="internalStyle-module__small_secondary__GS1sa styles-module__copyright__iOoHs" other=""><span>© <span itemprop="copyrightYear">2019 - 2023</span> <span itemprop="copyrightHolder">EPAM Systems, Inc. </span></span><span itemprop="copyrightNotice" class="styles-module__copyrightNotice__UZZvz">All Rights Reserved.</span></p><div itemscope="" itemtype="https://schema.org/Organization"><a href="https://www.linkedin.com/showcase/epam-solutionshub" rel="noopener noreferrer" target="_blank" class="styles-module__link__w_sD9" itemprop="sameAs"><img src="/src/v2_common/images/linkedin_light9be0e6cc7d70bc00ac3f.svg" alt="linkedin" class="styles-module__icon__cf9A8"></a></div></div></div></footer></main><div class="styles-module__wrapper__QICW4" style=""><iframe title="checklogin"></iframe></div></div><div id="modal" type="external"><div><div class="styles-module__snackbar__lBdOf styles-module__hidden__Gpp2t" style=""><div class="styles-module__infoTextBlock__v_Ntm"><img class="styles-module__infoIcon__c0_ak" src="/src/v2_common/images/info286e031b520530e35b4f.svg" alt="icon"><p class="internalStyle-module__p_body__OfFwk styles-module__errorMessage__njlWL" other="">Something went wrong. Please try again</p></div><button type="button" class="styles-module__closeBtn__JHn_D"><i class="styles-module__closeIcon__Eh3ae"></i></button></div></div></div></body></html>

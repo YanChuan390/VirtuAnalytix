@@ -1,0 +1,109 @@
+<html><head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/css/albery.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Mada:400,700" rel="stylesheet">
+		<style>
+		html {
+			background: #282222;
+			font-family: 'Mada', sans-serif;
+			padding-bottom: 100px;
+		}
+		#logo {
+			display: block;
+			width: 600px;
+			margin: 70px auto;
+		}
+		.container { 
+			margin: 20px auto;
+			max-width: 1000px;
+		}
+		h2 {
+			color: #eba;
+			text-transform: uppercase;
+			font-size: 32px;
+			text-shadow: 2px 2px 2px #000;
+			text-align: center;
+		}
+		.albery-item {
+			border: 1px solid #100;
+			box-sizing: border-box;
+		}
+		p, li {
+			color: #a19999;
+			font-size: 20px;
+		}
+		.title {
+			color: #ccc;
+		}
+		video {
+			border: 1px solid #100;
+			width: 1000px;
+			height: 563px;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<img id="logo" src="/img/sheaf/together-ep-logo-2021.png" width="600">
+			<p>Enter virtual reality to listen to the debut EP “Together” of synthwave producer Sheaf. No gameplay involved -- just sit back, relax, and enjoy the music while you drive through a retro low poly world.</p>
+			<p>The EP features 3 tracks, and each track comes with its own scenery, tailor made to fit its mood. You can start each track separately from the main menu.</p>
+			<br>			
+			<p class="title">1. “Together” (duration 3m20)</p>
+			<p>The first track takes you on a morning drive from a forest through the desert, a city, and finally the sun soaked coastline.</p>
+			<br>
+			<p class="title">2. “Innervisions” (duration 3m00)</p>
+			<p>The second track takes you on a drive through the city on a rainy night.</p>
+			<br>
+			<p class="title">3. “Point Break” (duration 2m00)</p>
+			<p>The final track takes you on a sunset basked coastal drive.</p>
+			<h2>Trailer</h2>
+			<iframe width="1000" height="563" src="https://www.youtube-nocookie.com/embed/nM3BNUoF-4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>			
+			<br><br><br>
+			<h2>Screenshots</h2>
+			<div class="albery-container" style="width: 1000px;">
+				<div class="albery-wrapper" style="width: 8000px;">
+					<div class="albery-item" style="width: 1000px;"><img src="/img/sheaf/screenshot1.jpg" alt=""></div>
+					<div class="albery-item" style="width: 1000px;"><img src="/img/sheaf/screenshot2.jpg" alt=""></div>
+					<div class="albery-item" style="width: 1000px;"><img src="/img/sheaf/screenshot3.jpg" alt=""></div>
+					<div class="albery-item" style="width: 1000px;"><img src="/img/sheaf/screenshot4.jpg" alt=""></div>
+					<div class="albery-item" style="width: 1000px;"><img src="/img/sheaf/screenshot5.jpg" alt=""></div>
+					<div class="albery-item" style="width: 1000px;"><img src="/img/sheaf/screenshot6.jpg" alt=""></div>
+					<div class="albery-item" style="width: 1000px;"><img src="/img/sheaf/screenshot7.jpg" alt=""></div>
+					<div class="albery-item" style="width: 1000px;"><img src="/img/sheaf/screenshot8.jpg" alt=""></div>
+				</div>
+
+				<div class="move-right">
+					<a href="#" id="rightArrow"></a>
+				</div>
+				<div class="move-left">
+					<a href="#" id="leftArrow"></a>
+				</div>
+			</div>
+
+			<div class="pagination-container" style="width: 1000px;">
+				<div class="pagination-wrapper" style="width: 968px;">
+					<div class="pagination-item" data-item="1" style="width: 116px; margin-right: 5px;"><img src="/img/sheaf/screenshot1t.jpg" alt=""></div>
+					<div class="pagination-item" data-item="2" style="width: 116px; margin-right: 5px;"><img src="/img/sheaf/screenshot2t.jpg" alt=""></div>
+					<div class="pagination-item" data-item="3" style="width: 116px; margin-right: 5px;"><img src="/img/sheaf/screenshot3t.jpg" alt=""></div>
+					<div class="pagination-item" data-item="4" style="width: 116px; margin-right: 5px;"><img src="/img/sheaf/screenshot4t.jpg" alt=""></div>
+					<div class="pagination-item" data-item="5" style="width: 116px; margin-right: 5px;"><img src="/img/sheaf/screenshot5t.jpg" alt=""></div>
+					<div class="pagination-item" data-item="6" style="width: 116px; margin-right: 5px;"><img src="/img/sheaf/screenshot6t.jpg" alt=""></div>
+					<div class="pagination-item" data-item="7" style="width: 116px; margin-right: 5px;"><img src="/img/sheaf/screenshot7t.jpg" alt=""></div>
+					<div class="pagination-item" data-item="8" style="width: 116px; margin-right: 5px;"><img src="/img/sheaf/screenshot8t.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<script src="/js/albery.js"></script>
+		<script>
+			$(".albery-container").albery({
+				speed: 500,
+				imgWidth: 1000,
+			});
+		</script>
+	
+
+</body></html>

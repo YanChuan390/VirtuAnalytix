@@ -1,0 +1,109 @@
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Muikkumedia Oy">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+alert("Teksti kopiouitu leikepöydälle");
+
+}
+
+</script><style>
+
+html { 
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    section {
+	font-family:'Roboto';
+        background: #f5345740;
+        color: white;
+        border-radius: 13em;
+        padding: 3em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+         table, th, td{
+color:white;
+padding:5px 40px 5px 40px;
+	font-size:20px;
+}
+button
+{
+  font-size:20px;
+  font-family: 'Roboto';
+color:white;
+  cursor:pointer;
+padding:0px;
+margin:0px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+}
+p{
+padding:0px;
+margin:0px;
+ text-decoration: underline;
+}
+ 
+  </style></head>
+
+
+
+  
+  <body><section>
+<table width="550">
+<tbody><tr>
+<td colspan="2">
+<center>
+<img src="muikku-icon-white.png">
+<br><br>
+</center>
+</td>
+</tr>
+  <tr>
+  <td><b>Videokuvaukset</b></td>
+<td><b>VFX &amp; Game Dev</b></td>
+  </tr>
+  <tr>
+    <td>Hannu Karppinen</td>
+    <td>Hannu Hoffrén
+  </td></tr>
+  <tr>  
+    <td><button onclick="copyToClipboard('#p1')"><p id="p1">hannu.karppinen@muikkumedia.fi</p></button></td>
+    <td><button onclick="copyToClipboard('#p2')"><p id="p2">hannu.hoffren@muikkumedia.fi</p></button></td>
+  </tr>
+<tr>
+    <td><button onclick="copyToClipboard('#p3')"><p id="p3">+358 50 514 2566</p></button></td>
+    <td><button onclick="copyToClipboard('#p4')"><p id="p4">+385 40 769 3606</p></button></td>
+
+</tr>
+
+<tr>
+<td colspan="2"><center>
+<br><br>
+Vuorikatu 15, (Kiltatalo)<br>
+70100 Kuopio<br>
+<button onclick="copyToClipboard('#p5')"><p id="p5">yhteys@muikkumedia.fi</p></button>
+</center>
+</td>
+</tr>
+
+</tbody></table>
+  </section>
+
+</body></html>

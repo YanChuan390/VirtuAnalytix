@@ -1,0 +1,148 @@
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <title>EJR Games</title>
+        <link href="img/logo/logo_icon.png" rel="icon">
+        <link href="img/logo/logo_icon.png" rel="apple-touch-icon">
+        <link href="dep/swiper/swiper.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="fonts/fontawesome-free-5.15.3-web/css/all.min.css" rel="stylesheet">
+        <meta name="description" content="We are an indie game developer creating games with passion and love.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#000000">
+    </head>
+      
+    <body>
+        <header>
+            <a href="#fluffy-bastards" aria-label="Navigate to Fluffy Bastards section." rel="noopener">
+                <img class="lazily-loaded loaded" src="img/logo/logo_transparent.webp" alt="Transparent EJR Games logo." data-ll-status="loaded">
+            </a>
+            <div id="hamburger-button" onclick="toggleAside()"></div>
+
+            <nav>
+                <a href="#fluffy-bastards" aria-label="Navigate to Fluffy Bastards section." rel="noopener">Fluffy Bastards</a>
+                <a href="#gulag" aria-label="Navigate to Gulag section." rel="noopener">Gulag</a>
+                <a href="#about-us" aria-label="Navigate to About Us section." rel="noopener">About Us</a>
+                <a href="#contact" aria-label="Navigate to Contact section." rel="noopener">Contact</a>
+            </nav>
+        </header>
+        
+        <aside>
+            <nav>
+                <a href="#fluffy-bastards" aria-label="Navigate to Fluffy Bastards section." rel="noopener" onclick="toggleAside();">Fluffy Bastards</a>
+                <a href="#gulag" aria-label="Navigate to Gulag section." rel="noopener" onclick="toggleAside();">Gulag</a>
+                <a href="#about-us" aria-label="Navigate to About Us section." rel="noopener" onclick="toggleAside();">About Us</a>
+                <a href="#contact" aria-label="Navigate to Contact section." rel="noopener" onclick="toggleAside();">Contact</a>
+            </nav>
+        </aside>
+        
+        <main>
+            <section class="swiper-container swiper-container-flip swiper-container-3d swiper-container-initialized swiper-container-horizontal" aria-hidden="true" style="cursor: grab;">
+                <div class="proper-anchor" aria-hidden="true" id="fluffy-bastards"></div>
+                <div class="swiper-wrapper" aria-hidden="true">
+                    <div class="swiper-slide swiper-slide-active" style="width: 829px; z-index: 2; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                        <img class="lazily-loaded loaded" src="img/promo/fluffy_bastards_promo.webp" alt="Fluffy Bastards promo art." data-ll-status="loaded">                    
+                    <div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+                    <div class="swiper-slide swiper-slide-next" style="width: 829px; z-index: 1; transform: translate3d(-829px, 0px, 0px) rotateX(0deg) rotateY(180deg);">
+                        <img class="lazily-loaded loaded" src="img/promo/fluffy_2.webp" alt="Fluffy Bastards promo art." data-ll-status="loaded">                    
+                    <div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
+<!--                <a href='#' aria-label='Buy "Fluffy Bastards" on Steam.' rel='noopener' target='_blank'>Buy Now!</a> -->
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></section>
+
+            <section id="fluffy-bastards-description">
+                <article>
+                    <h2>Fluffy Bastards</h2>
+                    <p>
+                        Fluffy Bastards is a first-person shooter in a grotesque fantasy world where you play as Theodore, a humble gamekeeper. The main goal of the game is simple - destroy all rabbits that stand in your way and save the world. Do quests, get the best weapons, and find out how to stop the invasion of bloodthirsty rabbits!
+                        <span class="bold">Damn you!</span>
+                    </p>
+                </article>
+            </section>
+
+            <section class="swiper-container swiper-container-flip swiper-container-3d swiper-container-initialized swiper-container-horizontal" aria-hidden="true" style="cursor: grab;">
+                <div class="proper-anchor" aria-hidden="true" id="gulag"></div>
+                <div class="swiper-wrapper" aria-hidden="true">
+                    <div class="swiper-slide swiper-slide-active" style="width: 829px; z-index: 4; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);">
+                        <img class="lazily-loaded" data-src="img/promo/gulag/gulag_promo.webp" src="img/promo/min/gulag_promo_min.webp" alt="Gulag promo art.">
+                    <div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+                    <div class="swiper-slide swiper-slide-next" style="width: 829px; z-index: 3; transform: translate3d(-829px, 0px, 0px) rotateX(0deg) rotateY(180deg);">
+                        <img class="lazily-loaded" data-src="img/promo/gulag/gulag_scena_1_01.webp" src="img/promo/min/gulag_promo_min.webp" alt="Gulag promo art.">
+                    <div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+                    <div class="swiper-slide" style="width: 829px; z-index: 3; transform: translate3d(-1658px, 0px, 0px) rotateX(0deg) rotateY(180deg);">
+                        <img class="lazily-loaded" data-src="img/promo/gulag/gulag_scena_3b_1.webp" src="img/promo/min/gulag_promo_min.webp" alt="Gulag promo art.">
+                    <div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+                    <div class="swiper-slide" style="width: 829px; z-index: 3; transform: translate3d(-2487px, 0px, 0px) rotateX(0deg) rotateY(180deg);">
+                        <img class="lazily-loaded" data-src="img/promo/gulag/gulag_scena_5_04.webp" src="img/promo/min/gulag_promo_min.webp" alt="Gulag promo art.">
+                    <div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+
+
+                </div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
+<!--                <a href='https://store.steampowered.com/app/947230/Gulag/' aria-label='Buy "Gulag" on Steam.' rel='noopener' target='_blank'>Buy Now!</a> -->
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></section>
+
+            <section id="gulag-description">
+                <article>
+                    <h2>Gulag</h2>
+                    <p>
+                        Gulag is a first-person survival game in which you try to escape from death camp in Soviet Russia and survive in the wilderness of Siberia. Do all it takes to survive. Fight your way to freedom and a better life.
+                        <span class="bold">Find resources, craft needed tools, and experience various scenarios the game has to offer!</span>
+                    </p>
+                </article>
+            </section>
+
+            <section>
+                <div class="proper-anchor" aria-hidden="true" id="about-us"></div>
+                <img class="lazily-loaded" data-src="img/logo/logo_transparent.webp" src="img/logo/min/logo_transparent_min.webp" id="about-us-img" alt="Transparent EJR Games logo.">
+            </section>
+
+            <section id="about-us-description">
+                <article>
+                    <p>
+                        We're an indie game developer creating games with passion and love. We pay extra attention to engaging gameplay and extraordinary graphics. In our studio, we put our distinctive style first and each game has its own! We have heads full of ideas and a few projects we're currently working on.
+                        <span class="bold">Stay tuned for more info!</span>                 
+                    </p>
+                </article>
+            </section>
+
+        </main>
+        <footer>
+            <div class="proper-anchor" aria-hidden="true" id="contact"></div>
+            <p>You'll find all our games here!</p>
+            <nav>
+                <a href="https://store.steampowered.com/search/?developer=EJRGames" aria-label="Open the EJR Games Steam page." rel="noopener" target="_blank">
+                    <i class="fab fa-steam-square"></i>
+                </a>
+            </nav>
+
+            <p>Do you have any questions? Contact us.</p>
+            <nav>
+                <a href="https://www.facebook.com/EJRGames/" aria-label="Open the EJR Games Facebook page." rel="noopener" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/ejrgames/" aria-label="Open the EJR Games Instagram page." rel="noopener" target="_blank">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+                <a href="https://twitter.com/ejrgames" aria-label="Open the EJR Games Twitter page." rel="noopener" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://www.reddit.com/user/EJRGames/" aria-label="Open the EJR Games Reddit profile." rel="noopener" target="_blank">
+                    <i class="fab fa-reddit-square"></i>
+                </a>
+            </nav>
+            <p><a href="#" onclick="javascript:window.open('mail.php', '_blank');">games[-at-]ejr.com.pl</a></p>
+		<p>© 2016-2021 EJR Sp. z o.o.</p>
+            <nav>
+                <a href="#fluffy-bastards" aria-label="Scroll to the top." rel="noopener">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </a>
+            </nav>
+        </footer>
+
+        <script src="dep/lazyload/lazyload.min.js"></script>
+        <script src="dep/swiper/swiper.min.js"></script>
+        <script src="script.js"></script>
+    
+
+</body></html>

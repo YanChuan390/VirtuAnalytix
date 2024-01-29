@@ -1,0 +1,52 @@
+<html lang="jp"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>CUSTOM ORDER MAID 3D2 It's a Night Magic</title>
+<meta name="description" content="S-court『カスタムオーダーメイド3D2 It's a Night Magic』オフィシャルホームページ">
+<meta name="keywords" content="カスタムオーダーメイド3D2 It's a Night Magic,CUSTOM ORDER MAID 3D2 It's a Night Magic,COM3D2INM,com3d2inm">
+
+<!--Twitterカード設定ここから-->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://com3d2.s-court.me/">
+<meta property="og:title" content="カスタムオーダーメイド3D2 It's a Night Magic">
+<meta property="og:description" content="S-court『カスタムオーダーメイド3D2 It's a Night Magic』オフィシャルホームページ">
+<meta property="og:image" content="https://com3d2.s-court.me/img/tw_card.png">
+<!--Twitterカード設定ここまで-->
+
+<link rel="stylesheet" href="css/index.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="256x256" href="/apple-touch-icon.png">
+
+<script type="text/javascript" src="sys/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	$("a").click(function(){
+		var url = $(this).attr("href");
+		$("body").animate({"opacity":0},500,function(){
+			location.href = url;
+		});
+		return false;
+	});
+	setTimeout(function(){$("a").click();},3000);
+});
+
+</script>
+
+
+</head>
+
+<body>
+
+<a href="main.html">
+	<table class="title">
+		<tbody><tr><td><div class="title"><font color="#a39869">CUSTOM ORDER MAID 3D2 It's a Night Magic</font><br><br>
+			Produced by<br><img src="img/kiss_logo_w.png" width="130"><img src="img/scourt_logo_l.png" width="150"></div></td></tr>
+	</tbody></table>
+</a>
+
+
+
+
+</body></html>

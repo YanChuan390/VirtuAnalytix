@@ -1,0 +1,151 @@
+<html><head>
+<meta charset="UTF-8">
+<title>Virtual Idea Area</title>
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<link href="rss" rel="alternate" type="application/rss+xml" title="Virtual Idea Area RSS 2.0">
+<link href="https://fonts.googleapis.com/css?family=Lato|Crimson+Text:400,400i,700" rel="stylesheet"> 
+	<style>
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0 | 20110126
+		   License: none (public domain)
+		   Edited
+		*/
+		html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, code, em, img, ins, tt, dl, dt, dd, ol, ul, li, form, label,
+		legend, table, caption, tbody, tfoot, thead, tr, th, td,
+		canvas  {
+			margin:0; padding:0; border:0;
+			font-size: 14pt; font: inherit;
+			vertical-align: baseline;
+			font-family: inherit;
+		}
+		body { line-height: 1.3; }
+		ol, ul { list-style: none; }
+		blockquote, q { quotes: none; }
+		blockquote:before, blockquote:after,
+		q:before, q:after { content: ''; content: none;}
+		table { border-collapse: collapse; border-spacing: 0;}
+		
+		/*VIA Style*/
+		h1,h2,h3,h5 {font-family: 'Lato', sans-serif;}
+		div.headerboard {
+			max-width:60rem; width:40%;
+		}
+		div.headerboard > img {
+			max-width:100%;
+		}
+		section {padding:1rem 0rem; background-color:#FFFFFF; padding:2rem;}
+		html {padding:0em; background-color:#000000; color:#FFFFFFFF}
+		body,header,main,footer { padding:0em; width:100%; }
+		header,footer {background-color:rgba(0,0,0,0.8);}
+		body {}
+		#backgroundimage {background-color:#222; width:100vw;height:100vh; background-image:url('blurbg.jpg'); background-size:cover; position:fixed; top:0; left:0;z-index:-14}
+		header > *,main > *,footer > * { text-align:center; max-width:60rem; width:80%; margin:0em auto; box-sizing:border-box;}
+		h1 { font-size:500%; font-weight:bold; margin:1rem; color:#000}
+		@media (max-width:650px) { h1 { font-size:200%; text-decoration:underline;} }
+		h2 { font-size:140%; font-weight:bold; margin:1rem auto; color:#FFFFFF }
+		h3 { font-size:140%; font-style:italic; margin:1rem; }
+		h4 { font-size:120%; font-weight:bold; margin:1rem; }
+		#imgwip {color:#808080; font-style:italic;margin:0rem;font-size:1rem;font-family: 'Lato', sans-serif;}
+		main {color:#333}
+		main p, main div#featurelist {text-align:left; margin: 1rem 0rem 0rem; font-size:1.5rem;font-family: 'Crimson Text', serif;}
+		main div#featurelist, main div#imagescont {margin:1rem 0em 1rem;}
+		main p > span {font-weight:bold;color:#000}
+		main p > em {font-style:italic;color:#000}
+		#featurelist > p {margin:0em;font-weight:bold}
+		#featurelist > ul {list-style-type:square;margin-left:3em;}
+		a {color:#FF8020}
+		a:hover {color:#FFC020}
+		a#RSSlink {background-color:#FF8020;color:#000000;font-weight:bold;display:inline-block;padding:0.3em;border-radius:0.3em;margin-top:0.3em;vertical-align:center;}
+		a#RSSlink:hover {background-color:#FFC020}
+		img#RSSimg {width:1em;height:1em;}
+		form#mailform > div {background-color:#808080;border-radius:0.5em;display:inline-block;padding:0.3em;margin-bottom:0.3em}
+		footer > div {padding:0.5em;color:#FFF}
+		img.wide {width:100%;}
+		img.half {width:49%;}
+		a.subhead {margin-left:-2rem;padding-left:2rem;background-color:#FF8020;color:#000;width:100%;font-size:2rem;text-align:left;display:block;box-sizing:content-box}
+		a.subhead h5 {background-color:#FFFFFF;padding-left:1rem;border-bottom:0.1em solid #FF8020}
+	</style>
+	<script type="text/javascript">
+	function regmail()
+	{
+		var inp = document.getElementById("mailinput");
+		var XHR = new XMLHttpRequest();
+		XHR.open("POST", "mailreg.php", true);
+		XHR.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		XHR.send("mail=" + encodeURIComponent(inp.value));
+		alert("You have been subscribed to the Virtual Idea Area mailing list. Thank you for your interest.");
+		inp.value="";
+		return false;
+	}
+	</script>
+<script charset="utf-8" src="https://platform.twitter.com/js/button.e7f9415a2e000feaab02c86dd5802747.js"></script></head>
+
+<body>
+	<div id="backgroundimage"><!--Thanks IE11--></div>
+	<header>
+		<div class="headerboard">
+			<img src="capsule_main.jpg" title="VIA - Virtual Idea Area" alt="VIA - Virtual Idea Area - whiteboards in virtual reality">
+		</div>
+		<h2>Virtual reality whiteboard software for <a href="https://www.vive.com" title="HTC Vive">HTC Vive</a>.</h2>
+		<div>
+			<iframe src="http://store.steampowered.com/widget/582220/" frameborder="0" width="646" height="190"></iframe>
+		</div>
+	</header>
+	<main>
+		<section>
+			<a class="subhead" id="desc" title="Express Your Ideas Without Limitation"><h5>Express Your Ideas Without Limitation</h5></a>
+			<p>Ever ran out of space while writing on a whiteboard? Or wanted to un-erase those notes from earlier? Or maybe felt like you could use some more boards in different colors to keep things organized?</p>
+			<p>All of this and more can be solved by using <em>virtual whiteboards</em>, and that is is exactly what <span>Virtual Idea Area</span> provides! <span>VIA</span> lets you create a <em>practically infinite amount</em> of virtual whiteboards, for which you can freely choose the <em>size, color and position</em>. It even lets you have <em>patterned whiteboards</em>. The markers don't smell, never run out, and they as well are available in any color you want.</p>
+			<p>With <span>Virtual Idea Area</span> you can express your ideas without limitation.</p>
+			<div style="margin:1em 0em">
+				<iframe width="640" height="360" style="max-width:100%" src="https://www.youtube.com/embed/L1YPeEs0Zi8?ecver=1" frameborder="0" allowfullscreen=""></iframe>
+			</div>
+			<a class="subhead" id="features" title="Features"><h5>Features</h5></a>
+			<div id="featurelist">
+				<ul>
+					<li>Use any color pen on any color whiteboard</li>
+					<li>Undo history going back over 250 steps</li>
+					<li>Accurate eraser: use the whole block or just a corner of it</li>
+					<li>Can handle thousands of whiteboards in a single scene</li>
+					<li>Use any image as whiteboard background</li>
+					<li>Import any image as whiteboard content</li>
+					<li>Export whiteboards as PNG images, with or without background</li>
+					<li>Clone existing whiteboards</li>
+					<li>All functionality is accessible with just a single motion controller</li>
+					<li>Over 250 000 km² (over 100 000 sq mi) of empty space to fill with ideas</li>
+					<li>Includes a command line import tool for scripted whiteboard imports</li>
+				</ul>
+			</div>
+			<a class="subhead" id="images" title="Images"><h5>Images</h5></a>
+			<div id="imagescont">
+				<a href="screens/write.jpg" title="Write"><img class="half" src="screens/write.thumb.jpg" alt="Write" title="Write"></a>
+				<a href="screens/calendar.jpg" title="Calendar"><img class="half" src="screens/calendar.thumb.jpg" alt="Calendar" title="Calendar"></a>
+				<a href="screens/todo.jpg" title="ToDo List"><img class="half" src="screens/todo.thumb.jpg" alt="ToDo List" title="ToDo List"></a>
+				<a href="screens/colors.jpg" title="Colors"><img class="half" src="screens/colors.thumb.jpg" alt="Colors" title="Colors"></a>
+				<a href="screens/tools.jpg" title="Tools"><img class="half" src="screens/tools.thumb.jpg" alt="Tools" title="Tools"></a>
+				<a href="screens/resize.jpg" title="Resize"><img class="half" src="screens/resize.thumb.jpg" alt="Resize" title="Resize"></a>			
+				<a href="screens/jump.jpg" title="Jump"><img class="half" src="screens/jump.thumb.jpg" alt="Jump" title="Jump"></a>			
+				<a href="screens/game.jpg" title="Game Design"><img class="half" src="screens/game.thumb.jpg" alt="Game Design" title="Game Design"></a>			
+			</div>
+		</section>
+		<section>
+			<h3>Interested? Be notified when this page updates:</h3>
+			<form id="mailform" onsubmit="return regmail()">
+				<div>
+					<input id="mailinput" type="email" value="By e-mail">
+					<input type="submit" value="Subscribe">
+				</div>
+				<script type="text/javascript">document.getElementById("mailinput").onfocus = function() {this.value=""; this.onfocus = null;};</script>
+			</form>
+			<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: absolute; visibility: hidden; width: 0px; height: 0px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.2b2d73daf636805223fb11d48f3e94f7.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=Racaedym&amp;show_count=false&amp;show_screen_name=true&amp;size=l&amp;time=1694375406537"></iframe><a href="https://twitter.com/Racaedym" class="twitter-follow-button" data-show-count="false" data-size="large" data-twitter-extracted-i1694375401501535612="true">Follow @Racaedym</a><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+			<a id="RSSlink" href="rss" title="Virtual Idea Area RSS 2.0"><img id="RSSimg" src="rss.png" title="RSS" alt="[RSS Icon]"> RSS Feed</a>
+		</section>
+	</main>
+	<footer>
+		<div>
+			© 2017 <a href="https://racaedym.com" title="Racaedym Software">Racaedym Software</a>
+		</div>
+	</footer>
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html?origin=http%3A%2F%2Fvirtualideaarea.com" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

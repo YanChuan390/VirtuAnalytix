@@ -1,0 +1,351 @@
+<html lang="en" class="csstransforms csstransforms3d csstransitions"><head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/touchTouch.css">
+    <link rel="stylesheet" href="/css/animation.css">
+
+    
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script src="/js/jquery.js"></script>
+    <script src="/js/touchTouch.jquery.js"></script>
+    <script src="/js/jquery-migrate-1.1.1.js"></script>
+    <script src="/js/superfish.js"></script>
+    <script src="/js/jquery.mobilemenu.js"></script>
+    <script src="/js/jquery.easing.1.3.js"></script>
+    <script src="/js/jquery.ui.totop.js"></script>
+    <script src="/js/jquery.equalheights.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>	
+    
+ 
+     <script>
+        $(window).load(function() {  
+            // Initialize the gallery
+            $('.thumb').touchTouch();
+        });
+      </script>      
+<script>
+    
+    $(window).load(function() {  
+    var $container = $('#container');
+    //Run to initialise column sizes
+    updateSize();
+
+    //Load masonry when images all loaded
+    $container.imagesLoaded( function(){
+
+        $container.isotope({
+            // options
+            itemSelector : '.element',	
+            layoutMode : 'masonry',
+            transformsEnabled: false,
+            columnWidth: function( containerWidth ) {
+                containerWidth = $browserWidth;
+                return Math.floor(containerWidth / $cols);
+              }
+        });
+    });
+    
+    	// update columnWidth on window resize
+    $(window).smartresize(function(){  
+        updateSize();
+        $container.isotope( 'reLayout' );
+    });
+	
+    //Set item size
+    function updateSize() {
+        $browserWidth = $container.width();
+        $cols = 3;
+
+        if ($browserWidth >= 1200) {
+            $cols = 3;
+        }
+        else if ($browserWidth >= 800 && $browserWidth < 1200) {
+            $cols = 3;
+        }
+        else if ($browserWidth >= 540 && $browserWidth < 800) {
+            $cols = 2;
+        }
+        else if ($browserWidth >= 320 && $browserWidth < 540) {
+            $cols = 1;
+        }
+        else if ($browserWidth < 540) {
+            $cols = 1;
+        }
+        //console.log("Browser width is:" + $browserWidth);
+        //console.log("Cols is:" + $cols);
+
+        // $gutterTotal = $cols * 20;
+		$browserWidth = $browserWidth; // - $gutterTotal;
+        $itemWidth = $browserWidth / $cols;
+        $itemWidth = Math.floor($itemWidth);
+
+        $(".element").each(function(index){
+            $(this).css({"width":$itemWidth+"px"});             
+        });
+			
+
+    
+	  var $optionSets = $('#options .option-set'),
+	      $optionLinks = $optionSets.find('a');
+
+	  $optionLinks.click(function(){
+	    var $this = $(this);
+	    // don't proceed if already selected
+	    if ( $this.hasClass('selected') ) {
+	      return false;
+	    }
+	    var $optionSet = $this.parents('.option-set');
+	    $optionSet.find('.selected').removeClass('selected');
+	    $this.addClass('selected');
+
+	    // make option object dynamically, i.e. { filter: '.my-filter-class' }
+	    var options = {},
+	        key = $optionSet.attr('data-option-key'),
+	        value = $this.attr('data-option-value');
+	    // parse 'false' as false boolean
+	    value = value === 'false' ? false : value;
+	    options[ key ] = value;
+	    if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+	      // changes in layout modes need extra logic
+	      changeLayoutMode( $this, options )
+	    } else {
+	      // otherwise, apply new options
+	      $container.isotope( options );
+	    }
+	    
+	    return false;
+	  });		
+
+    };
+    
+    });
+	
+	function setContent(pageId)
+	{
+	$('header').addClass('pages');
+	$('#pageIndex').removeClass('active');
+	$('#' + pageId).addClass('active');
+	
+	$('#brandTag').removeClass('brand_');
+	$('#brandTag').addClass('brand_2');
+	
+	}
+    
+  </script>
+	<!--[if lt IE 8]>
+  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+ 	<![endif]-->
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <script src="assets/js/html5shiv.js"></script>
+  <![endif]-->
+  
+  
+<!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12547157-1', 'auto');
+  ga('send', 'pageview');
+
+</script>-->
+</head>
+
+<body>
+<!--==============================header=================================-->
+<header class="pages">
+    <div class="container">
+        <h1 id="brandTag" class="brand_2"><a href="/"><img alt="Delivery Services" src="/img/logo.png"></a></h1>
+        <div class="navbar navbar_ clearfix extra">
+          <div class="nav-collapse nav-collapse_  collapse">
+            <ul class="nav sf-menu sf-js-enabled">
+              <li id="pageIndex" class=""><a href="/">About us</a><img class="arrow1" src="/img/arrow1.png" alt=""></li>
+              <li id="pageProjects" class="active"><a href="/Pages/projects.php">Projects</a><img class="arrow1" src="/img/arrow1.png" alt=""></li>
+              <li id="pageLinks"><a href="/Pages/links.php">Links</a><img class="arrow1" src="/img/arrow1.png" alt=""></li>
+              <li><a href="http://blog.suchworks.com">Blog</a><img class="arrow1" src="/img/arrow1.png" alt=""></li>
+              <li id="pageContact" class="last"><a href="/Pages/contact.php">Contact</a><img class="arrow1" src="/img/arrow1.png" alt=""></li>
+            </ul>
+          </div><select class="select-menu" style="display: none;"><option value="#">Navigate to...</option><option value="http://www.suchworks.com/">About us</option><option value="http://www.suchworks.com/Pages/projects.php">Projects</option><option value="http://www.suchworks.com/Pages/links.php">Links</option><option value="http://blog.suchworks.com/">Blog</option><option value="http://www.suchworks.com/Pages/contact.php">Contact</option></select>
+        </div>   
+    </div>
+</header> 
+<script>
+setContent('pageProjects');
+</script>
+<style>
+p{margin-top:27px;}
+
+.supportedCard
+{
+float:left;
+margin-left:20px;	
+}
+
+.supported img
+{
+	width:256px;	
+}
+
+.supported h3
+{
+margin-top:20px;	
+}
+
+.introText
+{    
+    top: 0px;position:absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    color:#555;"
+}
+
+.dynamicSection
+{
+    position:relative;
+    margin-top:20px;
+}
+
+.dynamicSection img
+{
+    width:60%;
+    float:left;
+}
+
+.dynamicSection h2
+{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.dynamicSection p
+{
+font-size:18px;
+margin-top:12px;
+margin-bottom:0px;
+}
+
+.dynamicSection .dynamicText
+{
+margin-left:10px;
+width:30%;
+min-width:300px;
+float:left;
+}
+
+.dynamicSectionLeft img
+{
+float:right;
+}
+
+.dynamicSectionLeft .dynamicText
+{
+float:right;
+}
+</style>
+<!--==============================content=================================-->
+
+<div id="content">
+    <div class="gradient1">
+        <!--==============================row9=================================-->
+        <div class="row_9">
+            <div class="shadow1"></div>
+            <div style="position:relative;">
+                <img style="" src="/assets/games/SkiVR/media/SkiVR_background.jpg">
+                <img style="position:absolute;overflow:hidden;margin:auto;top:0px;right:0px;bottom:0px;left:0px;width:500px;" src="/assets/games/SkiVR/media/logo.png">
+            
+                <ul class="productNav" style="position:absolute;bottom:0px;right:30px;">
+                    <li><a href="SkiVRManual.php" target="_blank">Manual</a></li>
+                    <li><a href="http://store.steampowered.com/app/553110" target="_blank">Steam</a></li>
+                </ul>
+            </div>
+            <div style="position:relative;margin-top:20px;">
+                <img style="width:100%;" src="/assets/games/SkiVR/media/mix1.jpg">
+                <div class="introText">
+                        <p>Sitting on the side of a helicopter, looking through the clouds at the mountain below, skis strapped to your feet. The drop point is coming up, your route down already picked. 
+                    </p>
+                    <p>Stood at the start gate of a slalom run, the crowd going wild as the countdown to the race begins!</p>
+                    <p>
+                    At the top of the big air. The run up is so steep and the jump so far away. But you can see the crowd and resort way below, cheering you on. You feel butterflies in your stomach as you release and start your descent.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="dynamicSection">
+                <img src="/assets/games/SkiVR/media/slalom.jpg">
+                <div class="dynamicText">
+                    <h2>SLALOM</h2>
+                    <p>Race against yourself or friends to beat the split times!</p>
+                    <p>Choose the best line or your turns will slow you down!</p>
+                    <p>Avoid the obstacles and enjoy the views</p>
+                </div>            
+            </div>
+            
+            <div style="clear:both"></div>
+            <div class="dynamicSection dynamicSectionLeft">
+                <img src="/assets/games/SkiVR/media/freestyle.jpg">
+                <div class="dynamicText">
+                    <h2>FREESTYLE</h2>
+                    <p>Snowparks, extreme cliffs and big airs!</p>
+                    <p>The bigger the trick, the higher the score multiplier!</p>
+                    <p>Land a trick dead on to get a perfect landing!</p>
+                </div>            
+            </div>
+
+             <div style="clear:both"></div>
+           <div class="dynamicSection">
+                <img src="/assets/games/SkiVR/media/heli.jpg">
+                <div class="dynamicText">
+                    <h2>HELISKI</h2>
+                    <p>100km2 of offpiste to ski!</p>
+                    <p>Sit on the heli and enjoy the view</p>
+                    <p>Fly and land the heli whereever you like</p>
+                </div>            
+            </div>
+            
+                <div style="clear:both;"></div>
+           <div class="dynamicSection">
+
+
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/mTJBFU5uYkk" frameborder="0" allowfullscreen=""></iframe>
+            </div> 
+
+        </div>
+    </div>
+</div>
+<!--==============================footer=================================-->
+<footer>
+    <div class="container clearfix">
+        <div class="row">
+            <div class="span12">
+                <div class="privacy">Suchworks © 2016 <img src="/img/line1.jpg" alt=""><a class="txt-1" href="/pages/privacy.php"> Privacy policy</a>&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/bootstrap.js"></script><meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12547157-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body></html>

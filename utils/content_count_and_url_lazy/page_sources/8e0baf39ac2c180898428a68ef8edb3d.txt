@@ -1,0 +1,943 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:fb="http://ogp.me/ns/fb#"><head>
+		<meta name="description" content="Rento is online multiplayer family dice board game similar to monopoly game. Trade lands, build houses, roll the dice, spin the wheel and have fun">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">		
+					<link rel="canonical" href="https://rento.com">
+				
+		<link rel="preload" as="image" href="/assets/images/backgrounds/bg-body.webp">
+		<link rel="preload" as="image" href="/assets/images/backgrounds/bg-body-top.webp">
+		<link rel="preload" as="image" href="/assets/images/backgrounds/bg-menu.webp">
+		<link rel="preload" as="image" href="/assets/images/icons/burger.svg">
+		<link rel="preload" as="image" href="/favicon.ico">
+		
+				
+		<!-- Google tag (gtag.js) 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21542136-8"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-21542136-8');
+        </script>-->
+        <!-- Google tag (gtag.js) -->
+        <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202309060101/reactive_library_fy2021.js"></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=rento.com&amp;callback=_gfp_s_&amp;client=ca-pub-8878894326127079"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202309060101/show_ads_impl_fy2021.js" id="google_shimpl"></script><script async="" src="/assets/js/ga-lite.min.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YBLGTXSTER"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-YBLGTXSTER');
+        </script>
+        		
+		
+		<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link async rel="stylesheet" href="/assets/stylesheets/google-min.css"> -->
+        <link rel="stylesheet" href="/assets/stylesheets/style-min.css">
+        <link rel="stylesheet" media="screen and (min-width: 40em)" href="/assets/stylesheets/styles-media-screen40-min.css">
+        <link rel="stylesheet" media="screen and (min-width: 64em)" href="/assets/stylesheets/styles-media-screen64-min.css">
+
+		<script src="/assets/js/app-min.js"></script>
+		<!-- <script defer src="/assets/js/jquery-3.6.1.min.js"></script> -->
+		
+		
+		
+		<script>
+		    var backTo = "";
+		    		  //Load Google Fonts
+          /*WebFont.load({
+        	  custom: {
+        	      families: ['Bitter', 'Luckiest Guy', 'Open Sans']
+        	    }
+          });*/
+          //Load jQuery
+          jQl.loadjQ('/assets/js/jquery-3.6.1.min.js');
+        </script>
+        
+       
+		<!-- FB img TODO: SET -->
+		<meta property="og:description" content="Rento Fortune is online multiplayer dice board game similar to monopoly game. Trade lands, build houses, have fun">
+    	<meta property="og:image" content="https://rento.com/assets/images/fb.jpg">
+    	<meta property="og:title" content="Rento Fortune | Online monopoly board game in multiplayer">
+    	<meta property="og:type" content="game">
+    	<meta property="og:url" content="https://Rento.com/">
+    	<link rel="image_src" href="https://rento.com/assets/images/fb.jpg">
+
+		
+	    <meta name="distribution" content="global">
+	    <meta name="rating" content="general"> 
+	    <meta name="googlebot" content="all">
+	    <meta name="robots" content="all">
+	    <meta name="revisit-after" content="2 days">
+	    <meta http-equiv="content-language" content="en">
+	    
+		<title>Rento Fortune | Online monopoly board game in multiplayer</title>		
+				
+		<!-- AUTO ADS -->
+		<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8878894326127079" crossorigin="anonymous" data-checked-head="true"></script>
+        
+	<script src="/assets/js/jquery-3.6.1.min.js"></script><meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="></head>
+	
+	<body aria-hidden="false" style="padding: 0px 0px 154px;">
+	
+	
+    	<header id="main-header">
+          <div class="row">
+            <div class="logoholder"><a href="/"><img src="/assets/images/logo.png" alt="Rento Monopoly Logo" class="logo"></a></div>
+            <nav id="main-nav" class="small-16 large-10 columns">
+              <ul class="main-menu">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/Gallery">Gallery</a></li>
+                <li><a href="/Rules"> Rules</a></li>
+                <li><a href="/News">News</a></li>
+                <li><a href="/Store">Store</a></li>
+                <li><a href="/Leaderboard">Leaderboard</a></li>
+                <li><a href="/Contact">Contact</a></li>
+              </ul>
+              <ul class="mobile-menu"><div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"><img alt="mobile icon" src="/assets/images/icons/burger.svg"></span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;"><div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"><img alt="mobile icon" src="/assets/images/icons/burger.svg"></span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                <li><a href="/" class="active" role="menuitem" tabindex="-1">Home</a></li>
+                <li><a href="/Gallery" role="menuitem" tabindex="-1">Gallery</a></li>
+                <li><a href="/Rules" role="menuitem" tabindex="-1"> Rules</a></li>
+                <li><a href="/News" role="menuitem" tabindex="-1">News</a></li>
+                <li><a href="/Store" role="menuitem" tabindex="-1">Store</a></li>
+                <li><a href="/Leaderboard" role="menuitem" tabindex="-1">Leaderboard</a></li>
+                <li><a href="/Contact" role="menuitem" tabindex="-1">Contact</a></li>
+              </ul></div></ul></div><div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"><img alt="mobile icon" src="/assets/images/icons/burger.svg"></span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                <li><a href="/" class="active" role="menuitem" tabindex="-1">Home</a></li>
+                <li><a href="/Gallery" role="menuitem" tabindex="-1">Gallery</a></li>
+                <li><a href="/Rules" role="menuitem" tabindex="-1"> Rules</a></li>
+                <li><a href="/News" role="menuitem" tabindex="-1">News</a></li>
+                <li><a href="/Store" role="menuitem" tabindex="-1">Store</a></li>
+                <li><a href="/Leaderboard" role="menuitem" tabindex="-1">Leaderboard</a></li>
+                <li><a href="/Contact" role="menuitem" tabindex="-1">Contact</a></li>
+              </ul></div></ul>
+            </nav>
+          </div>
+        </header>
+        
+        
+        <section id="home-slider" style="height:745px !important;" class="slick-initialized slick-slider">
+          <!--slide 1-->
+          <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 1020px;"><div class="header-main-gal slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00" style="width: 1020px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+            <div class="row">
+            
+              <select name="lang" id="languages" class="langmenu" tabindex="0">
+                  <option value="bg">Bulgarian</option>
+                  <option value="zh">Chinese</option>
+                  <option value="en" selected="">English</option>
+                  <option value="de">German</option>
+                  <option value="hi">Hindi</option>
+                  <option value="it">Italian</option>
+                  <option value="id">Indonesian</option>
+                  <option value="ru">Russian</option>
+                  <option value="es">Spanish</option>
+                </select>
+                
+              <div class="small-16 columns">
+                <div class="cta-text">
+                   
+                  <p> <span>WELCOME TO RENTO <br> The best monopoly board game</span></p>
+                 
+                  <a href="#" onclick="$(&quot;html, body&quot;).animate({ scrollTop: $(&quot;#download&quot;).offset().top }, 1000); return false;" class="button cta-button" tabindex="0">DOWNLOAD NOW</a><br>
+                  
+                                      <a href="#" onclick="$(&quot;html, body&quot;).animate({ scrollTop: $(&quot;#playweb&quot;).offset().top }, 1000); return false;" class="button cta-button mt0" tabindex="0">PLAY WEB VERSION</a>
+                                    
+                </div>
+              </div>
+            </div>
+          </div></div></div>
+          
+          <!--//slide 1-->
+          <!--slide-2
+          <div style="background: url('/assets/images/header/slider_2.jpg')">
+            <div class="row">
+              <div class="small-16 columns">
+                <div class="cta-text">
+                  <p> <span>X Game Update!</span></p>
+                  <p> <span>Lorem Ipsum is simply</span></p>
+                  <p> <span>dummy text!</span></p><a href="#" class="button cta-button">Try the Demo! <span>for Windows</span></a>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <!--//slide-2-->
+          <!--slide 3
+          <div style="background: url('/assets/images/header/slider_3.jpg')">
+            <div class="row">
+              <div class="small-16 columns">
+                <div class="cta-text">
+                  <p> <span>New Game on The Way!</span></p>
+                  <p> <span>Lorem Ipsum is simply</span></p>
+                  <p> <span>dummy text!</span></p>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          <!--//slide-3-->
+        </section>
+
+        
+        <div class="content-top"></div>
+        
+       
+	
+    	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    	-   content-main
+    	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+				
+	   
+<section id="main-content">
+  <div class="row">
+    <div class="small-16 columns">
+      <article class="about-us-summary">
+        <h1>ABOUT RENTO MONOPOLY GAME</h1>
+        <p>
+          Rento is online multiplayer monopoly board game.<br>
+          The game is for 2 to 8 players and you can play it online versus friends, offline versus robots, on same phone with friends or on WiFi.<br>
+          You can also invite your facebook friends to play.<br><br>
+          In this family board game you trade lands, build houses, win auctions, go and most importantly - have fun. Your goal is to acquire monopoly in the game and to bankrupt the other players by upgrading your lands and getting high rentals.
+          The game has lots of <a class="ul" href="#" onclick="$(&quot;html, body&quot;).animate({ scrollTop: $(&quot;#extras&quot;).offset().top }, 1000); return false;">different boards</a> on which you play, <a class="ul" href="#" onclick="$(&quot;html, body&quot;).animate({ scrollTop: $(&quot;#extras&quot;).offset().top }, 1000); return false;">custom pawns</a>, <a class="ul" href="#" onclick="$(&quot;html, body&quot;).animate({ scrollTop: $(&quot;#extras&quot;).offset().top }, 1000); return false;">custom dice</a>, other settings for different house rules and much more.
+          <a href="/Rules" class="read-more ul">Read the game rules here</a>
+        </p>
+      </article>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-16 columns">
+      <div class="big-sep"></div>
+    </div>
+  </div>
+  <div class="row">
+
+    <div id="featured-games" class="small-16 large-9 columns">
+      <h2 class="title">Rento Gameplay</h2>
+      <article>
+        <div class="image-container">
+          <div> <!-- 634x329 -->
+            <!-- <iframe class="thumbnail" height="350" loading="lazy" src="" data-src="https://www.youtube.com/embed/_BLK8l-OtlM" frameborder="0" allowfullscreen></iframe> -->
+            <iframe class="thumbnail" srcdoc="
+        		<style> body, .full { width: 100%; height: 100%; margin: 0; position: absolute; display: flex; justify-content: center; object-fit: cover; }</style>
+                    <a href='https://www.youtube.com/embed/_BLK8l-OtlM?autoplay=1' class='full'>
+                        <img src='https://vumbnail.com/_BLK8l-OtlM.jpg' class='full' />
+                        <svg version='1.1' viewBox='0 0 68 48' width='68px' style='position: relative;'>
+                            <path d='M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z' fill='#f00'></path>
+                            <path d='M 45,24 27,14 27,34' fill='#fff'></path>
+                        </svg>
+                    </a>
+    " style="max-width: 640px; width: 100%; aspect-ratio: 16/9;" frameborder="0"></iframe>
+
+          </div>
+<!--           <a href="#" class="arrow-link"><img src="/assets/images/backgrounds/mosaic-bg.png" alt="" /></a> -->
+        </div>
+        <p>Play the video to see the basics of the Rento gameplay. This is example board game against 2 robots</p>
+      </article>
+      
+      <h2 id="download" class="title">DOWNLOAD RENTO</h2>
+      <article>
+        <p>Get Rento board game for your mobile phone or tablet by clicking on one of the buttons below:</p>
+        
+        <div class="details-link download-btn">
+            <img class="download-btn-icon" src="/assets/images/icons/icon-gplay.png" alt="google play">
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=air.bg.lan.Monopoli" class="download-btn-a"><span>Download for Android from:</span>Google Play</a> 
+        </div>
+        
+         <div class="details-link download-btn">
+            <img class="download-btn-icon" src="/assets/images/icons/icon-apple.png" alt="apple">
+            <a target="_blank" href="https://itunes.apple.com/us/app/rento-fortune-dice-board-game/id1231737310?ls=1&amp;mt=8" class="download-btn-a"><span>Download for iOS from:</span>Apple Store</a> 
+        </div>
+        
+        
+        <div class="details-link download-btn">
+            <img class="download-btn-icon" src="/assets/images/icons/icon-steam.png" alt="steam">
+            <a target="_blank" href="http://store.steampowered.com/app/663390/Rento_Fortune__Multiplayer_Board_Game/" class="download-btn-a"><span>Play Rento in:</span>Steam</a> 
+        </div>
+        
+        <div class="details-link download-btn">
+            <img class="download-btn-icon" src="/assets/images/icons/icon-ps4.png" alt="PlayStation 4">
+            <a target="_blank" href="https://www.playstation.com/en-us/games/rento-fortune-ps4/" class="download-btn-a"><span>Play Rento in:</span>PlayStation 4</a> 
+        </div>
+        
+        <div class="details-link download-btn">
+            <img class="download-btn-icon" src="/assets/images/icons/icon-xbox.png" alt="XBox One">
+            <a target="_blank" href="https://www.microsoft.com/en-us/p/rento-fortune-monolit-tycoon/bq19273kdvtk" class="download-btn-a"><span>Play Rento in:</span>Xbox One</a> 
+        </div>
+        
+        <div class="details-link download-btn">
+            <img class="download-btn-icon" src="/assets/images/icons/icon-switch.png" alt="Nintendo Switch">
+            <a target="_blank" href="https://www.nintendo.com/games/detail/rento-fortune-monolit-switch" class="download-btn-a"><span>Play Rento in:</span>Nintendo Switch</a> 
+        </div> 
+        
+         <div class="details-link download-btn">
+            <img class="download-btn-icon" src="/assets/images/icons/icon-windows.png" alt="windows">
+            <a target="_blank" href="https://www.microsoft.com/en-us/store/games/rento-monopoly-game-online/9nblggh4x4gn" class="download-btn-a"><span>Download from:</span>Win 10 Store</a> 
+        </div>
+                
+        <!-- <div class="details-link download-btn">
+            <img class="download-btn-icon" src="/assets/images/icons/icon-apple.png" alt="mac">
+            <a target="_blank" href="https://itunes.apple.com/us/app/rento-dice-board-game/id1132217230?ls=1&mt=12" class="download-btn-a"><span>Download from:</span>Mac App Store</a> 
+        </div> -->
+        
+       
+        <div class="details-link download-btn">
+            <img class="download-btn-icon" src="/assets/images/icons/icon-amazon.png" alt="amazon">
+            <a target="_blank" href="https://www.amazon.com/LAN-GAMES-Rento-Monopoly-game/dp/B00QQMHAP4/" class="download-btn-a"><span>Download from:</span>Amazon Store</a> 
+        </div>
+        
+       <!-- <div class="details-link download-btn">
+            <img class="download-btn-icon" src="/assets/images/icons/icon-360cn.png" alt="google play">
+            <a target="_blank" href="http://zhushou.360.cn/detail/index/soft_id/3071387?recrefer=SE_D_Rento" class="download-btn-a"><span>Download from:</span>360 CN</a> 
+        </div> --> 
+
+        <div class="clear"></div>
+        
+        <br>
+        <h5>Rento Google Play Store Archives download</h5>
+        <p>If you have a problem with current version of Rento for Android - please try downloading an older version from <a class="lime" href="/Archives">RENTO OLD ARCHIVES</a> page</p>
+       
+        
+        <br>
+        <h5>Check out what others think about our game</h5>
+        <p>Rento board game has been downloaded more than 10 million times on Google Play and has rating over 4.3</p>
+        
+        <div>
+            <img src="/assets/images/ratings.webp" loading="lazy" alt="rento google play ratings" class="rules-img float-left">
+            <img src="/assets/images/reviews.webp" loading="lazy" alt="rento google play reviews" class="rules-img float-left">
+        </div>
+        
+        <div class="clear"></div>
+      </article>
+        
+        
+    <br><br>
+    <h2 id="playweb" class="title">PLAY RENTO ONLINE IN BROWSER</h2>
+    <article>
+    
+        <p> You can play the game in our <a class="ul" target="_blank" href="https://boardgamesonline.net">Board Games Online</a> website.<br>
+        There we have many other family board games, such as: Happy Words (similar to Scrabble) Backgammon, Chess, Farm Builder (similar to Carcassonne), Draw It and many other.<br>
+        There you will play the WEB version of the board game, which you can run from your browser on desktop. <br>
+        For mobile play - download the app from one of the stores above.
+        </p>
+        <a href="https://boardgamesonline.net/Online/monopoli" class="expanded lime-button" tabindex="0">PLAY RENTO MONOPOLY GAME</a>
+        
+        <div class="clear"></div>
+        
+        <br>
+        
+    </article>
+    
+    <h2 id="getprintedversion" class="title">BUY THE PRINTED VERSION</h2>
+    <article>
+    
+        <p> Checkout our high quality physical printed version of Rento monopoly game. It is available for purchase in our <a class="ul" target="_blank" href="/Store">Rento Store</a> page.<br>
+        Play it with your family and friends at home or order it as gift for your special persons.<br>
+        Checkout the <a href="https://www.youtube.com/watch?v=REFUmth7SV0" target="_blank" class="lime" tabindex="0">Rento unboxing video</a>
+        </p>
+        <a href="/Store"><img src="/assets/images/printed-monopoly.webp" loading="lazy" alt="Rento Monopoly game printed version"></a>
+        
+        <div class="clear"></div>
+        
+        <br>
+        
+    </article>
+    
+    
+    <h3 id="extras" class="title">Extras &amp; Coins</h3>
+    <div class="note">In Rento you have extras, which are: different boards, different dice and different pawns. You also have and joke sounds in the game (when you want to laugh on somebody..or cry..) 
+    <a href="/Gallery" class="read-more-inline">See them in gallery</a><br>
+    These items you purchase with <span class="bld">coins</span><br>    
+    You can earn coins by 2 main ways:<br>
+    1) By completing <span class="bld">achievements.</span><br>
+    2) By purchasing them with money as In-App Purchase<br>
+    </div>
+    <br>
+    <h3 class="title">Achievements</h3>
+    Rento has 32 achievements.<br>
+    When completed - achievements give you experience (XP). <br>
+    The more XP you have - the more coins you will get.<br>
+    Some achievements are hard to accomplish..but they give you a lot of XP.<br>
+    Some are very easy to accomplish..but they will give you less XP.<br>
+    
+    For example: "Win in online game" is easy achievement and it will give you only 100XP, while "Win 10 games in a row" is hard one, but it will give you 3500 XP.<br>
+    Other achievements are moderate to unlock: "Achieved monopoly game on 3 color groups" achievement will be unlocked when you have 3 complete sets of same colored lands. This achievement will give you 300 XP. <br>
+    Here is the table that shows how many XP you need to earn X coins:<br>
+    <div class="xp-table">
+        <p class="lime bld"> 1000XP =   +5 Coins</p>
+        <p class="lime bld"> 5000XP =  +20 Coins</p>
+        <p class="lime bld">10000XP =  +50 Coins</p>
+        <p class="lime bld">20000XP = +100 Coins</p>
+        <p class="lime bld">30000XP = +200 Coins</p>
+    </div>
+    <br>
+    <p>This is the list of achievements in the game:</p>
+    <img src="/assets/images/gallery/achievements.webp" loading="lazy" alt="achievements" class="thumbnail bigimg">
+    
+    
+    <br>
+    <h3 class="title">Multi Language Support</h3>
+    Rento currently has 18 languages you can choose from.<br>
+    This includes: <span class="help-text">English, Russian, German, French, Arabic, Bulgarian, Czech, Spanish, Greek, Indonesian, Italian, Japanese, Polish, Portugal, Turkish, Chinese, Hindi and Farsi</span><br>
+    If you find problems in some of them - do not hesitate to <a href="/Contact" class="lime ul bld">contact us</a><br>
+    
+    <img src="/assets/images/gallery/multi-language.webp" loading="lazy" alt="multi language monopoly" class="thumbnail bigimg">
+    
+    <br>
+    <h3 class="title">LEADERBOARD</h3>
+    If you go to <a class="lime" href="/Leaderboard">Leaderboard stats page</a> you can find all of Rento top players, ranked in 4 categories: Top 20 ever, Top Today, Top Weekly and Top Monthly.<br>
+    These stats are updated every couple of hours (especially the daily rankings). <br>
+    The daily, weekly and monthly top charts are calculated by the number of wins that each player has managed to score. <br>
+    The "TOP 20 EVER" ranking is calculated with the use of the <a rel="nofollow" href="https://en.wikipedia.org/wiki/Elo_rating_system">ELO rating system</a>. 
+    Each new player starts with 1000 ELO points. <br>The idea is that if you win against higher ranking player than you, you will get more of his ELO points, than what he will get from you if he beats you. Read more in Wikipedia to learn how your score is calculated.<br>
+    
+    <img src="/assets/images/gallery/leaderboard.webp" loading="lazy" alt="leaderboard stats" class="thumbnail bigimg">
+    
+    <br><br>
+    <h3 class="title">GAME MODES</h3>
+    The game allows you to play in 4 different game modes.
+    <ul>
+    	<li><span class="listitm ul">Online</span> - In multiplayer versus players all around the globe or with your friends and family.</li>
+    	<li><span class="listitm ul">Solo</span> - With AI robots which play as good as human player. You can adjust their difficulty level with easy, medium or hard setting.</li>
+    	<li><span class="listitm ul">Pass 'N Play</span> - Play the board game with your family on the same device. After you make your turn, just pass the device to the next person and so on</li>
+    	<li><span class="listitm ul">WiFi mode</span> - This mode allow you to play offline on different devices, which are connected to your home router (same WiFi Network). It is ideal if your internet connection is weak, but you have WiFi in your home and want to play undisturbed.</li>
+    </ul>
+    <br>
+    Note*: Solo, Pass And Play and WiFi games can be saved and restored at later time<br>
+    <img src="/assets/images/gallery/gamemodes.webp" loading="lazy" alt="game modes" class="thumbnail bigimg">
+    
+    <h3 id="tournamentsRegister" class="title">MONOPOLY TOURNAMENTS</h3>
+    Every Sunday we are scheduling global Rento monopoly tournament in which thousands of players can register.<br>
+    Tournaments are starting <p class="lime ul">EACH SUNDAY 1 PM NEW YORK TIME (UTC -05)</p><br>
+    In the beginning of the tournament each player is joined to 4 players room in which the winner plays with 3 of the winners of the other rooms.<br>
+    Each time you win in room, you play on the next level with other winners and this pyramid goes until only one winner remains<br>
+    This means that to win in tournament you have to play between 3 and 7 games one after another<br>
+    Each game is limited to 45 or 50 minutes in play to avoid prolonged games. In this case the winner is the player with most assets (capital money + property land cost)<br>
+    You can register for the tournaments from the game itself or from our WEB portal <a class="lime ul" href="https://BoardGamesOnline.Net/Tournaments">Board Games Online - Tournaments</a><br>
+    The top 20 tournament finishers are always winning something (Credits, Coins and VIP status for our WEB portal BoardGamesOnline.Net)<br>
+    During the tournament anybody can watch the games that are played in the moment, even if you are not participating in the tournaments<br>
+    Read more about tournaments in the <a class="ul" href="/News/index/#articleID-31">news section</a><br>
+    <a href="/News/index/#articleID-31"><img src="/assets/images/gallery/tournaments.webp" loading="lazy" alt="monopoly tournament" class="thumbnail bigimg"></a>
+    
+
+</div>
+
+    <aside class="small-16 large-6 columns">
+      <!--notebook-->
+      <div class="notebook">
+
+        <header><h2 class="title">Recent News</h2></header>
+        
+        <div class="blog-entries notebook-pattern">
+        
+         <!-- AD LOCATION HERE -->
+        
+                
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jan</p><span>12</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-280">Rento on Mac App Store</a></h6>
+              <p>Good news for the Mac OS Apple users<br>
+Rento has been released on Mac App Store for free!<br>
+              </p><a href="/News/index/#articleID-280" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Oct</p><span>04</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-32">Local WiFi / LAN multiplayer added</a></h6>
+              <p>Huge news folks,<br>
+We just added local WIFI / LAN multiplayer mode to the game.<br>
+              </p><a href="/News/index/#articleID-32" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Sep</p><span>03</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-31">Tournaments Upgraded</a></h6>
+              <p>Goood morning folks!<br>
+We have another special update for your - upgraded Tournaments<br>
+              </p><a href="/News/index/#articleID-31" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jul</p><span>31</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-30">Rento approved for Steam Deck</a></h6>
+              <p>Another cool update for Steam<br>
+Rento has been approved for Steam Deck<br>
+              </p><a href="/News/index/#articleID-30" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jun</p><span>09</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-29">Friends list added</a></h6>
+              <p>Great news for friends and family gamers<br>
+Friends lists have been added. You can now add friends, watch their games and play with them again<br>
+              </p><a href="/News/index/#articleID-29" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Aug</p><span>27</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-28">Rento TEAMS released</a></h6>
+              <p>We are very happy to present you Rento TEAMS DLC<br>
+TEAMS is Rento cooperation game mode offered as DLC extension for Steam (or coin purchase in Android/iOS), in which you play in teams with your friends<br>
+              </p><a href="/News/index/#articleID-28" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jul</p><span>14</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-27">Android version upgraded to Rento 3D version 6</a></h6>
+              <p>The wait is finally over for Android users, as we just released the 3D version of Rento for Android! <br>
+              </p><a href="/News/index/#articleID-27" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Feb</p><span>06</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-26">Rento Deep Board released on Steam</a></h6>
+              <p>Long wait is over!!! Rento Deep board is finally released for Steam<br>
+Deep Board is a special map DLC extension, in which you play on two levels (inner and outer level)<br>
+              </p><a href="/News/index/#articleID-26" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Mar</p><span>24</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-25">Tournaments added</a></h6>
+              <p>We have heard your wishes and we finally added Weekly Tournaments to Rento monopoly<br>
+              </p><a href="/News/index/#articleID-25" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Nov</p><span>24</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-24">3D Animated pawns added</a></h6>
+              <p>We have been busy in the latest months with a surprise.<br>
+And here is it. Now you can enjoy all 13 fully animated 3D pawns being happy, sad, exploding, bending, stretching and much more<br>
+              </p><a href="/News/index/#articleID-24" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Nov</p><span>23</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-23">Rento Released in China android stores</a></h6>
+              <p>Hey there!<br>
+Another great news came for our Chinese friends. Rento is now released in couple of android mobile stores<br>
+              </p><a href="/News/index/#articleID-23" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jul</p><span>04</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-21">8 Player support &amp; BIG board added </a></h6>
+              <p>We are happy to announce that we made one of our most requested features - 8 players support and a bigger map!<br>
+              </p><a href="/News/index/#articleID-21" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>May</p><span>07</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-20">Map Editor added to Steam Rento</a></h6>
+              <p>We are extremely happy to announce that we released <a href="https://store.steampowered.com/app/1074660/Rento_Fortune__Map_Editor/" target="_blank"><span class="lime">"Map Editor"</span></a> DLC to the Steam version of Rento<br>
+              </p><a href="/News/index/#articleID-20" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Dec</p><span>19</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-19">Voice chat added in Steam Rento</a></h6>
+              <p>Finally the <span class="lime">"Voice Chat"</span> feature that has been long requested have come to the Steam version of Rento<br>
+              </p><a href="/News/index/#articleID-19" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Dec</p><span>11</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-18">Strategy cards and new options added</a></h6>
+              <p>We are extremely happy to announce that we just added 4 new game modes to the game: Strategy cards, auction mode and rental win and capital win modes.<br><br>
+              </p><a href="/News/index/#articleID-18" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Nov</p><span>20</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-17">3 New luck cards added</a></h6>
+              <p>LOL, this is so cool.<br>
+We just added Lightning, Trap and Bed luck cards!<br>
+              </p><a href="/News/index/#articleID-17" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Nov</p><span>16</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-16">Rento VR released</a></h6>
+              <p>We are glad to announce that the Virtual Reality version of Rento monopoly game was released.<br>
+If you have HTC Vive or Oculus Rift, download the game from Steam!<br>
+              </p><a href="/News/index/#articleID-16" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Sep</p><span>08</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-15">Rento is on Japanese eShop for Switch</a></h6>
+              <p>Hey folks, another great news. Rento was now released on Switch for Japan.<br>
+The game is called レントフォーチュン and has a full Japanese support<br>
+              </p><a href="/News/index/#articleID-15" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jul</p><span>09</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-14">Rento is on Switch now</a></h6>
+              <p>We are glad to announce that Rento now has conquered Nintendo Switch.<br>
+If you happen to have Switch console, just open the eShop and search for "Rento"<br>
+              </p><a href="/News/index/#articleID-14" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jun</p><span>02</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-13">Rento available on Xbox One</a></h6>
+              <p>We are glad to announce that Rento conquered one more platform - Xbox One.<br>
+So if you own Xbox console, go jump to the Store and search for "Rento"<br>
+              </p><a href="/News/index/#articleID-13" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Apr</p><span>20</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-12">Rento released in Japanese PS4 store</a></h6>
+              <p>Good news for all Japanese PS4 players. We just released Rento on Japanese Playstation 4 store.<br>
+            This is the link, from where you can download the Japanese version: <a class="lime" href="https://store.playstation.com/ja-jp/product/EP4633-CUSA10904_00-JPPS400000000001">https://store.playstation.com/ja-jp/product/EP4633-CUSA10904_00-JPPS400000000001</a><br>
+              </p><a href="/News/index/#articleID-12" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jan</p><span>25</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-11">PlayStation 4 version released</a></h6>
+              <p>We are glad to announce that we ported Rento Fortune on PS4 with its brand new 3D graphics and 4 camera modes.<br>
+            You can download the game for your PS4 console from Europe (SIEE), USA (SIEA) and Japan regions.<br>
+              </p><a href="/News/index/#articleID-11" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Oct</p><span>27</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-10">New 3D graphics</a></h6>
+              <p>Finally you can see what we have been working on the last few months. We completely redesigned the 3D board.<br>
+            Enjoy completely new Full HD 3D graphics that will make your gameplay even better.<br>
+              </p><a href="/News/index/#articleID-10" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Sep</p><span>19</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-9">Rento Printed version</a></h6>
+              <p>The long wait is over!<br>
+            Rento is produced as a phisical product for your home and family.<br>
+            We made limited quantity of this printed version and it is made with premium quality.<br>
+              </p><a href="/News/index/#articleID-9" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Sep</p><span>18</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-8">Introducing "Immunity", "Olympics" and "Tornado" luck cards</a></h6>
+              <p>We are proud to show you our latest Rento improvements.<br>
+            We added three strategy LUCK cards.<br>
+              </p><a href="/News/index/#articleID-8" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jun</p><span>27</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-7">Introducing "TRAVEL"</a></h6>
+              <p>You can now travel across your stations.<br>
+            In order to travel you must own at least 2 stations.<br>
+              </p><a href="/News/index/#articleID-7" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jun</p><span>07</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-6">Introducing special property "VATICAN"</a></h6>
+              <p>Starting from version 4.2.4 you will find a new single property land called "VATICAN".<br>
+            It's color is grey and it is the only grey land.<br>
+            What is different in Vatican is that it allows you to start building houses/hotel the very moment you buy it.<br>
+              </p><a href="/News/index/#articleID-6" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Apr</p><span>30</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-5">Wheel Of Fortune and Russian Roulette</a></h6>
+              <p>Rento presents two new features that will make the game even more interesting<br>
+            "Wheel Of Fortune" is placed on two cells on the game board.<br>
+              </p><a href="/News/index/#articleID-5" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Feb</p><span>08</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-4">Up to 6 Players</a></h6>
+              <p>We upgraded the total number of players that can play in a game. Rento now supports not 4, but 6 player games<br>
+              </p><a href="/News/index/#articleID-4" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	        
+        <div class="entry row large-collapse">
+            <div class="date small-3 large-2 columns">
+              <p>Jan</p><span>27</span>
+            </div>
+            <div class="article-preview small-13 large-14 columns">
+              <h6><a href="/News/index/#articleID-3">Special die</a></h6>
+              <p>Rento now supports additional game mode - "SPECIAL DIE".<br>
+            This is additional red die that is used to make the game different and even speed it up<br>
+              </p><a href="/News/index/#articleID-3" class="link">Read More ›</a>
+            </div>
+          </div><!--//entry-->
+          
+    	         
+
+        </div>
+      </div>
+      <!--//notebook-->
+
+      <!--twitter-feed--
+      <div class="twitter-feed">
+        <div class="icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 56.693 56.693"><path d="M54.082 15.55c-1.812.804-3.76 1.347-5.805 1.59 2.087-1.25 3.69-3.23 4.444-5.59-1.952 1.158-4.114 2-6.417 2.453-1.843-1.965-4.47-3.192-7.377-3.192-5.58 0-10.107 4.526-10.107 10.108 0 .792.09 1.563.26 2.302-8.4-.42-15.847-4.444-20.83-10.56-.87 1.493-1.37 3.23-1.37 5.082 0 3.506 1.785 6.6 4.497 8.412-1.657-.053-3.216-.507-4.578-1.264-.002.042-.002.084-.002.128 0 4.896 3.484 8.98 8.108 9.91-.848.23-1.74.354-2.663.354-.652 0-1.285-.063-1.902-.18 1.288 4.014 5.02 6.936 9.442 7.018-3.46 2.71-7.817 4.326-12.552 4.326-.816 0-1.62-.048-2.41-.14 4.473 2.867 9.785 4.54 15.492 4.54 18.59 0 28.756-15.4 28.756-28.757 0-.438-.01-.875-.028-1.308 1.974-1.425 3.688-3.205 5.042-5.232z"/></svg>
+        </div>
+        <div class="triangle-container">
+          <div class="triangle"></div>
+        </div>
+        <div class="iframe-container">
+          <a class="twitter-timeline"
+            data-widget-id="348068464663080960"
+            href="https://twitter.com/jalberto13"
+            width="300"
+            height="300"
+            data-tweet-limit="1"
+            data-aria-polite="assertive"
+            data-chrome="noheader nofooter noborders transparent noscrollbar">
+          </a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <!--//iframe-continer-->
+      </aside></div>
+      <!--//twitter-feed-->
+
+    
+
+  
+</section>
+
+<script>
+//load YouTube video Async
+function init() {
+	var vidDefer = document.getElementsByTagName('iframe');
+	for (var i=0; i<vidDefer.length; i++) {
+    	if(vidDefer[i].getAttribute('data-src')) {
+    		vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+    	}
+    } 
+}
+window.onload = init;
+</script>
+
+
+					
+		
+
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		-   Footer
+		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<footer class="main-footer">
+          <div class="row">
+              <div class="footer-links">
+                  
+                  <a class="lime ul" href="/">English</a> |
+                  <a class="lime ul" href="/zh">中国人</a> |
+                  <a class="lime ul" href="/bg">Български</a> |
+                  <a class="lime ul" href="/de">Deutsch</a> |
+                  <a class="lime ul" href="/hi">हिंदी</a> |
+                  <a class="lime ul" href="/it">Italiano</a> |
+                  <a class="lime ul" href="/id">Indonesian</a> |
+                  <a class="lime ul" href="/ru">Русский</a> |
+                  <a class="lime ul" href="/es">Español</a>
+              </div>
+            <!--social-icons-->
+            <div class="small-16 medium-6 columns">
+              <ul class="inline-list social-icons">
+                <!--<li>
+                  <a target="_blank" href="https://twitter.com/boardgamesonlin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 56.693 56.693"><path d="M28.348 5.157c-13.6 0-24.625 11.027-24.625 24.625 0 13.6 11.025 24.623 24.625 24.623S52.97 43.382 52.97 29.782c0-13.598-11.023-24.625-24.622-24.625zm12.404 19.66c.013.266.018.533.018.803 0 8.2-6.242 17.656-17.656 17.656-3.504 0-6.767-1.027-9.513-2.787.487.056.98.085 1.48.085 2.91 0 5.585-.992 7.708-2.656-2.715-.052-5.006-1.847-5.796-4.312.378.074.767.11 1.167.11.565 0 1.113-.073 1.634-.216-2.84-.57-4.98-3.08-4.98-6.084 0-.027 0-.053.002-.08.836.465 1.793.744 2.81.777-1.665-1.115-2.76-3.012-2.76-5.166 0-1.138.306-2.205.84-3.12 3.06 3.753 7.634 6.224 12.792 6.482-.106-.453-.16-.928-.16-1.414 0-3.426 2.777-6.205 6.205-6.205 1.785 0 3.397.754 4.53 1.96 1.413-.278 2.74-.796 3.94-1.507-.465 1.45-1.448 2.666-2.73 3.433 1.257-.15 2.453-.485 3.565-.978-.83 1.247-1.883 2.34-3.096 3.215z"/></svg>
+                  </a>
+                </li>-->
+                <li>
+                  <a target="_blank" href="https://www.facebook.com/rento.monopoly">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 56.693 56.693"><path d="M28.347 5.157c-13.6 0-24.625 11.027-24.625 24.625 0 13.6 11.025 24.623 24.625 24.623s24.625-11.023 24.625-24.623c0-13.598-11.026-24.625-24.625-24.625zm6.517 24.522H30.6v15.206h-6.32V29.68h-3.006v-5.37h3.006v-3.48c0-2.49 1.182-6.376 6.38-6.376l4.68.018v5.215h-3.4c-.554 0-1.34.277-1.34 1.46v3.164h4.82l-.556 5.37z"></path></svg>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.instagram.com/rento.monopoly/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 56.693 56.693"><path d="M38.512 24.392v-4.537l-.59.002-3.947.014.015 4.537M28.225 34.868c2.598 0 4.713-2.113 4.713-4.71 0-1.026-.334-1.976-.893-2.75-.855-1.185-2.248-1.964-3.82-1.964s-2.963.78-3.82 1.965c-.56.772-.89 1.722-.89 2.747 0 2.598 2.112 4.71 4.71 4.71z"></path><path d="M28.348 5.158c-13.6 0-24.625 11.023-24.625 24.623 0 13.6 11.025 24.626 24.625 24.626 13.598 0 24.623-11.025 24.623-24.625S41.946 5.16 28.35 5.16zm13.263 22.25V38.37c0 2.852-2.32 5.172-5.173 5.172H20.012c-2.853 0-5.173-2.32-5.173-5.172V21.945c0-2.853 2.32-5.173 5.172-5.173h16.425c2.852 0 5.174 2.32 5.174 5.173v5.464z"></path><path d="M35.545 30.157c0 4.035-3.283 7.32-7.32 7.32s-7.318-3.285-7.318-7.32c0-.973.193-1.898.537-2.748h-3.996v10.96c0 1.414 1.15 2.564 2.564 2.564h16.425c1.414 0 2.564-1.15 2.564-2.564V27.41h-3.997c.347.85.542 1.775.542 2.747z"></path></svg>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://www.youtube.com/c/BoardgamesonlineNet1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 56.693 56.693"><path d="M17.833 31.853h1.783v8.857h1.723v-8.857h1.78v-1.508h-5.287M28.413 24.493c.234 0 .42-.062.557-.19.137-.13.207-.308.207-.532v-4.59c0-.183-.07-.333-.21-.444-.142-.115-.325-.172-.554-.172-.21 0-.38.057-.512.172-.13.11-.194.262-.194.445v4.59c0 .23.06.41.184.534.12.127.297.19.523.19zM32.212 32.97c-.238 0-.473.06-.705.182-.23.12-.45.3-.654.533v-3.34h-1.545V40.71h1.545v-.586c.2.236.418.408.652.52.232.11.5.166.8.166.452 0 .802-.143 1.038-.432.24-.29.36-.705.36-1.246v-4.244c0-.627-.126-1.104-.384-1.428-.255-.326-.624-.49-1.108-.49zm-.084 5.95c0 .247-.045.42-.133.528-.088.11-.225.162-.412.162-.13 0-.25-.03-.37-.082-.116-.053-.24-.146-.36-.27v-4.764c.104-.107.21-.186.314-.234.105-.053.215-.076.324-.076.206 0 .366.066.478.197.107.136.16.33.16.59v3.95zM26.628 38.874c-.143.164-.3.3-.473.408-.172.107-.316.16-.426.16-.146 0-.25-.04-.315-.12-.062-.08-.096-.212-.096-.392v-5.867H23.79v6.395c0 .457.09.793.268 1.025.182.227.445.34.8.34.286 0 .583-.078.888-.242.305-.165.598-.4.88-.708v.838h1.53v-7.646h-1.53v5.81z"></path><path d="M28.347 5.155c-13.6 0-24.625 11.025-24.625 24.625 0 13.602 11.025 24.625 24.625 24.625S52.972 43.382 52.972 29.78c0-13.6-11.026-24.625-24.625-24.625zm3.978 12.162h1.72v6.46c0 .2.038.343.11.43.07.09.188.138.35.138.125 0 .285-.06.48-.178.19-.12.37-.27.53-.457v-6.393h1.722v8.424h-1.723v-.93c-.314.343-.645.606-.99.784-.342.178-.674.27-.998.27-.398 0-.697-.127-.9-.38-.2-.247-.3-.622-.3-1.128v-7.04zm-6.39 1.926c0-.65.23-1.17.693-1.56.465-.384 1.088-.58 1.87-.58.712 0 1.294.206 1.75.612.454.406.68.934.68 1.578v4.35c0 .723-.222 1.287-.665 1.695-.45.408-1.062.613-1.844.613-.753 0-1.356-.21-1.808-.63-.45-.426-.678-.996-.678-1.71v-4.367zm-4.688-4.92l1.258 4.562h.123l1.197-4.562h1.97l-2.255 6.682v4.737h-1.938v-4.526l-2.307-6.893h1.952zm22.54 24.033c0 3.047-2.472 5.52-5.52 5.52H19.093c-3.05 0-5.52-2.473-5.52-5.52v-4.438c0-3.05 2.47-5.52 5.52-5.52h19.176c3.047 0 5.518 2.47 5.518 5.52v4.438z"></path><path d="M36.827 32.874c-.686 0-1.24.207-1.674.627-.432.417-.65.96-.65 1.618v3.438c0 .738.2 1.316.592 1.734.393.42.932.63 1.617.63.762 0 1.334-.196 1.715-.59.387-.4.576-.99.576-1.774v-.393H37.43v.348c0 .452-.052.743-.15.874s-.278.197-.532.197c-.244 0-.416-.075-.518-.23-.1-.157-.148-.435-.148-.84v-1.438h2.922V35.12c0-.724-.186-1.278-.562-1.667-.377-.386-.916-.58-1.615-.58zm.604 3.008h-1.35v-.773c0-.32.05-.554.157-.687.107-.143.28-.21.525-.21.23 0 .404.067.508.21.105.133.16.365.16.686v.772z"></path></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--//social-icons-->
+            
+            <!--//logo-->
+            <!--copyright-->
+            <div class="medium-8 columns">
+              <p class="copyright">
+                <a target="_blank" href="/Help/terms">Terms and conditions</a> | <a target="_blank" href="/Help/privacypolicy">Privacy Policy</a> | Copyright © LAN GAMES EOOD <span class="date">2023</span>. All Rights Reserved
+              </p>
+            </div>
+            <!--//copyright-->
+          </div>
+        </footer>
+		
+		<!-- GOOGLE ANALYTICS -->
+
+		<script>
+            (function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
+            ;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
+            ;c.parentNode.insertBefore(a,c)
+            })(window,document,"galite","script","/assets/js/ga-lite.min.js");
+            
+            galite('create', 'UA-21542136-8', 'auto');
+            galite('send', 'pageview');
+        </script>
+		
+		
+        <script defer="" src="/assets/js/functions.js"></script>
+        
+
+		
+	
+		<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-8878894326127079&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1694373313&amp;plat=3%3A65536%2C4%3A65536%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Frento.com%2F&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=1&amp;asro=0&amp;asrtr=1&amp;asiscm=1&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1&amp;asladp=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTE2LjAuNTg0NS4xODAiLFtdLDAsbnVsbCwiNjQiLFtbIkNocm9taXVtIiwiMTE2LjAuNTg0NS4xODAiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXSxbIkdvb2dsZSBDaHJvbWUiLCIxMTYuMC41ODQ1LjE4MCJdXSwwXQ..&amp;dt=1694373312252&amp;bpp=18&amp;bdt=1145&amp;idt=1078&amp;shv=r20230906&amp;mjsv=m202309060101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=7956157663820&amp;frm=20&amp;pv=2&amp;ga_vid=1584668375.1694373312&amp;ga_sid=1694373313&amp;ga_hid=1115924242&amp;ga_fc=1&amp;u_tz=480&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1019&amp;bih=668&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C31076994%2C44801759%2C31077744%2C44798323&amp;oid=2&amp;pvsid=1351304469321587&amp;tmod=2027588100&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C668&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=1123" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" data-anchor-status="displayed" data-ad-status="filled" data-anchor-shown="true" style="display: block; width: 100% !important; height: 129px !important; bottom: 0px; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647; background: rgb(250, 250, 250) !important;"><div class="grippy-host"></div><div id="aswift_2_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_2" name="aswift_2" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20230906/r20110914/zrt_lookup.html?fsb=1#RS-1-&amp;adk=1812271801&amp;client=ca-pub-8878894326127079&amp;fa=1&amp;ifi=3&amp;uci=a!3&amp;btvi=1&amp;xpc=Ul2fJU1ySK&amp;p=https%3A//rento.com" data-google-container-id="a!3" data-google-query-id="CN_95rvgoIEDFQLNvQodXkoLmg" data-load-complete="true"></iframe></div></ins><iframe src="https://tpc.googlesyndication.com/sodar/sodar2/225/runner.html" width="0" height="0" style="display: none;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230906/r20190131/zrt_lookup.html" style="display: none;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: transparent !important;" aria-hidden="true" data-ad-status="filled" data-vignette-loaded="true"><div id="aswift_1_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_1" name="aswift_1" style="width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20230906/r20110914/zrt_lookup.html?fsb=1#RS-0-&amp;adk=1812271808&amp;client=ca-pub-8878894326127079&amp;fa=8&amp;ifi=2&amp;uci=a!2&amp;xpc=jdT516HbwA&amp;p=https%3A//rento.com" data-google-container-id="a!2" data-google-query-id="CN795rvgoIEDFQLNvQodXkoLmg" data-load-complete="true"></iframe></div></ins></html>

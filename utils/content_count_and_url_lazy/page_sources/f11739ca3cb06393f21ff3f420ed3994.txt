@@ -1,0 +1,416 @@
+<html lang="ko"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240, user-scalable=no">
+	<meta name="keyword" content="포커스온유, 스마일게이트, 스마일게이트엔터테인먼트, VR, 한유아 ">
+	<meta name="description" content="학창 시절 첫사랑의 감성을 그대로 느껴보세요">
+	<!-- og tag 정책 (facebook, kakaotalk) -->
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="FOCUS on YOU, 사랑이 현실이 된다">
+	<meta property="og:description" content="학창 시절 첫사랑의 감성을 그대로 느껴보세요">
+	<meta property="og:image" content="../images/img_share_630.png"><!-- 2019-05-08 수정 -->
+	<!--// og tag 정책 (facebook, kakaotalk) -->
+	<!-- twitter tag 정책 -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="FOCUS on YOU">
+	<meta name="twitter:description" content="학창 시절 첫사랑의 감성을 그대로 느껴보세요">
+	<meta name="twitter:image" content="../images/img_share_1024.png"><!-- 2019-05-08 수정 -->
+	<!--// twitter tag 정책 -->
+    <title>FOCUS on YOU, 사랑이 현실이 된다</title>
+	<!-- 2019-05-08 추가 -->
+	<link rel="apple-touch-icon" href="../images/icon.png">
+    <link rel="shortcut icon" href="../images/icon_72.png">
+	<!--// 2019-05-08 추가 -->
+
+	<link rel="stylesheet" href="../css/common.css">
+	<!-- font cdn KR-->
+	<link rel="stylesheet" href="http://sandbox-static-focusonyou.smilegateentertainment.com/assets/font/NotoSansKR/NotoSansKR.css">
+	<link rel="stylesheet" href="http://sandbox-static-focusonyou.smilegateentertainment.com/assets/font/NotoSerifKR/NotoSerifKR.css">
+	<!--// font cdn KR -->
+    <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/7ee36b0e/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="https://www.youtube.com/iframe_api"></script><script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/fullpage.min.js"></script>
+    <script src="../js/ui.js"></script>
+
+</head>
+<body>
+<div class="mobile-msg">
+	<p>FOCUS on YOU 페이지는 <br>PC환경에 최적화되어 있습니다.</p>
+	<button type="button" class="btn-close">Close</button>
+</div>
+
+<!-- intro -->
+<div class="intro-wrap">
+	<div class="inner">
+		<span class="logo">FOCUS on YOU</span>
+		<div class="box">
+			<p class="slogan">사랑이 현실이 된다</p>
+
+			<div class="input-name">
+				<label for="yourName">선배, 이름을 알려주세요!</label>
+				<input type="text" id="yourName" onkeypress="pressEnter()" maxlength="6"><!-- 2019-05-10 수정 -->
+				<!-- [D] input check 팝업 호출  : popup('.popup',msg[0]) -->
+			</div>
+
+			<button type="button" onclick="nameInput()"><em>지금 만나러 가기</em></button>
+		</div>
+	</div>
+
+	<div class="video-cover">
+		<video id="mainVideo" data-speed="0.005" autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+			<source src="../images/main_movie.mp4" type="video/mp4">
+			<source src="../images/main_movie.webm" type="video/webm">
+		</video>
+	</div>
+
+</div>
+<!--// intro -->
+
+<!-- 2019-05-20 추가 -->
+<button type="button" class="btn-sound" data-sound="false"><em>BGM</em></button>
+<!-- main sound -->
+<audio autoplay="" loop="" id="mainAudio" data-sound="true">
+	<source src="../images/EP03_MY_ROOM_L2.mp3" type="audio/mpeg">
+	<source src="../images/EP03_MY_ROOM_L2.ogg" type="audio/ogg">
+	Your browser does not support the audio element.
+</audio>
+<!--// main sound -->
+<!--// 2019-05-20 추가 -->
+
+<!-- 2019-05-10 위치 변경 -->
+<div class="secect-lang">
+	<button type="button">한국어</button>
+	<div class="lang-list">
+		<ul id="select-lang-list">
+			<li class="selected"><a href="#ko">한국어</a></li>
+			<li><a href="#en">ENGLISH</a></li>
+			<li><a href="#jp">日本語</a></li>
+			<li><a href="#zh">中文 (简体)</a></li>
+			<li><a href="#tw">中文 (繁體)</a></li>
+		</ul>
+	</div>
+</div>
+<!--// 2019-05-10 위치 변경 -->
+
+<div id="wrapper">
+
+	<div class="section-nav">
+		<span class="first-msg">“제가 궁금하면 아래로 내려주세요!”</span>
+		<ul>
+			<li><button type="button" class="btn-up" style="display:none;"><em>Up</em></button></li>
+			<li><button type="button" class="btn-down"><em>Down</em></button></li>
+		</ul>
+
+	</div>
+	<div id="container">
+		<!-- [D]
+			Pre-Order - type3 클래스 추가, 공식 서비스 오픈 시 - type4 클래스 추가
+			ui.js 13라인 삭제 후 클래스 추가
+		-->
+		<!-- 2019-06-20 section01에 type3 클래스 추가 -->
+		<section class="section section01 type4" id="section01">
+			<span class="bg"></span>
+			<header id="header">
+				<div class="inner">
+					<span class="logo"><a href="#">FOCUS on YOU</a></span>
+				</div>
+			</header>
+
+			<div class="inner">
+				<span class="img-ch"></span>
+				<div class="txt-box">
+					<span class="nickname"><em>%일이삼사오육%</em>선배!</span>
+					<!-- <span class="msg type1">우리 <strong>사진</strong> 찍으러 가요!</span>
+					<span class="msg type2">우리 <strong>해변</strong>으로 가요!</span> -->
+					<span class="msg type3">우리 <strong>꼭</strong> 만나기로 약속해요!</span>
+					 <span class="msg type4"><strong>지금</strong> 시간 돼요?</span>
+				</div>
+
+				<!-- 2019-06-20 수정 -->
+				<div class="btn-area">
+					<ul>
+						<li class="game-info"><a href="https://page.onstove.com/stovevr/kr/view/6132988" target="_blank">게임정보 더보기</a></li>
+						<li class="service-store"><a href="https://page.onstove.com/stovevr/kr/list/location?listType=8&amp;direction=latest&amp;page=1" target="_blank">서비스 매장 바로가기</a></li>
+						<li class="oculus-store"><a href="https://www.oculus.com/experiences/rift/1707073412706480/" target="_blank">Oculus Store</a></li>
+						<li class="playstation-store"><a href="https://store.playstation.com/ko-kr/product/HP3451-CUSA14457_00-ASIAFULLGAME0000" data-ja="https://store.playstation.com/ko-kr/product/HP3451-CUSA14457_00-ASIAFULLGAME0000" target="_blank">PlayStation Store</a></li>
+						<li class="steam-store"><a href="https://store.steampowered.com/app/1032670/FOCUS_on_YOU/" target="_blank">STEAM VR</a></li>
+						<li class="vive-store"><a href="https://www.viveport.com/apps/1ecff3e4-e50b-4d5d-9c0a-d3b6ac57494d" target="_blank">VIVEPORT</a></li><!-- 2019-07-05 수정 -->
+					</ul>
+				</div>
+				<!--// 2019-06-20 수정 -->
+			</div>
+
+		</section>
+
+		<section class="section section02" id="section02">
+			<span class="bg"></span>
+			<div class="inner">
+				<div class="letter">
+					어느 무더운 여름날, 출사를 위해 나온 공원.<br>
+					평소와 다를 바 없을 것 같은 하루였는데…<br><br>
+
+					하지만 그곳에서 당신이 마주친 건<br>
+					동화 속에서 막 나온 것 같은<br>
+					귀여운 여학생이었다.<br><br>
+
+					그녀는 흔쾌히 사진 모델이 되어주지만, 부끄러운 듯 곧 사라져 버리는데…
+				</div>
+
+				<span class="img-photos">
+					<span class="photo01"></span>
+					<span class="photo02"></span>
+					<span class="photo03"></span>
+
+					<!-- photos sound -->
+					<audio id="shutterSound">
+						<source src="../images/shutter.mp3" type="audio/mpeg">
+						<source src="../images/shutter.ogg" type="audio/ogg">
+						Your browser does not support the audio element.
+					</audio>
+					<!--// photos sound -->
+				</span>
+			</div>
+			<span class="flash"></span>
+		</section>
+
+		<section class="section section03" id="section03">
+			<div class="slide active" id="section03Slide1">
+				<iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="두근두근한 감성 커뮤니케이션, 포커스 온 유" width="100%" height="100%" src="https://www.youtube.com/embed/RLStGM0tf_E?autoplay=0&amp;controls=0&amp;rel=0&amp;showinfo=0&amp;autohide=1&amp;enablejsapi=1&amp;origin=http%3A%2F%2Ffocusonyou.smilegateentertainment.com&amp;widgetid=1"></iframe>
+				<div class="cover" data-youtube="1">
+					<span class="bg"></span>
+					<button type="button" class="btn-play" onclick="player.playVideo();"><em>Play</em></button>
+				</div>
+
+			</div>
+			<div class="slide" id="section03Slide2">
+				<iframe id="player2" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="FOCUS on YOU _ Official Trailer" width="100%" height="100%" src="https://www.youtube.com/embed/rN5csLTIy-Q?autoplay=0&amp;controls=0&amp;rel=0&amp;showinfo=0&amp;autohide=1&amp;enablejsapi=1&amp;origin=http%3A%2F%2Ffocusonyou.smilegateentertainment.com&amp;widgetid=2"></iframe>
+				<div class="cover" data-youtube="2">
+					<span class="bg"></span>
+					<button type="button" class="btn-play" onclick="player2.playVideo();"><em>Play</em></button>
+				</div>
+				<!-- <div class="cover-pause" data-youtube="2"><button type="button" class="btn-pause"><em>Stop</em></button></div> -->
+			</div>
+		</section>
+
+		<section class="section section04" id="section04">
+			<span class="bg"></span>
+			<div class="inner">
+				<span class="img-ch"></span>
+
+				<div class="profile-wrap">
+					<div class="tab-menu">
+						<ul>
+							<li class="active"><button type="button"><em>기본 질문</em></button></li>
+							<li><button type="button"><em>신체 질문</em></button></li>
+							<li><button type="button"><em>가족 질문</em></button></li>
+						</ul>
+					</div>
+					<div class="tab-box active">
+						<ul>
+							<li>
+								<input type="radio" id="q-standard01" name="q-standard">
+								<label for="q-standard01"><em>이름이 뭐였지?</em></label>
+								<span class="answer"><em>선배~ 제 이름 잊은거에요?<br><strong>저 유아에요~ 한 유아!!</strong></em></span>
+							</li>
+							<li>
+								<input type="radio" id="q-standard02" name="q-standard">
+								<label for="q-standard02"><em>몇 학년이야?</em></label>
+								<span class="answer"><em>고등학교 2학년, 18살!</em></span>
+							</li>
+							<li>
+								<input type="radio" id="q-standard03" name="q-standard">
+								<label for="q-standard03"><em>생일은 언제야?</em></label>
+								<span class="answer"><em>생일 선물 주려구요~?<br>4월 4일 양자리에요~</em></span>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-box">
+						<ul>
+							<li>
+								<input type="radio" id="q-physical01" name="q-physical">
+								<label for="q-physical01"><em>키가  커 보이네?<br>키 몇이야?</em></label>
+								<span class="answer"><em>진짜요? 저 165cm 인데~<br>그렇게 크지도 작지도 않아요~</em></span></li>
+							<li>
+								<input type="radio" id="q-physical02" name="q-physical">
+								<label for="q-physical02"><em>좀 그렇긴 한데…<br>몸무게도 궁금해. 알려줄 수 있어?</em></label>
+								<span class="answer"><em>아.. 비밀인데… <br>그래도 선배가 물어보니까 알려줄게요!<br>45kg!! 아무한테도 말하지 마세요!</em></span>
+							</li>
+							<li>
+								<input type="radio" id="q-physical03" name="q-physical">
+								<label for="q-physical03"><em>혈액형을 알면 성격을 알 수 있다던데…<br>혹시 성격 좋은 O형?</em></label>
+								<span class="answer"><em>아니에요! AB형인데..<br>근데~ AB형은 천재 아니면 바보라고 하더라구요!</em></span>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-box">
+						<ul>
+							<li>
+								<input type="radio" id="q-family01" name="q-family">
+								<label for="q-family01"><em>부모님은 무슨 일 하셔?</em></label>
+								<span class="answer"><em>엄마는 의상 디자이너고,<br>아빠는 제과제빵사 일을 해요~</em></span>
+							</li>
+							<li>
+								<input type="radio" id="q-family02" name="q-family">
+								<label for="q-family02"><em>애완동물 키워?<br>나는 고양이 좋아해</em></label>
+								<span class="answer"><em>네!  강아지를 엄~청 좋아해서<br>웰시코기 두 마리 키우고 있어요!</em></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section05" id="section05">
+			<div class="slide active">
+				<span class="gallery01"><strong>마이룸</strong></span>
+			</div>
+			<div class="slide">
+				<span class="gallery02"><strong>마이룸</strong></span>
+			</div>
+			<div class="slide">
+				<span class="gallery03"><strong>카페</strong></span>
+			</div>
+			<div class="slide">
+				<span class="gallery04"><strong>카페</strong></span>
+			</div>
+			<div class="slide">
+				<span class="gallery05"><strong>교실</strong></span>
+			</div>
+			<div class="slide">
+				<span class="gallery06"><strong>교실</strong></span>
+			</div>
+		</section>
+
+		<section class="section section06" id="section06">
+			<span class="bg"></span>
+			<div class="inner">
+				<span class="img-ch"></span>
+				<div class="txt-box">
+					<span class="nickname"><em>%일이삼사오육%</em>선배!</span>
+					<span class="msg">저한테 궁금한 점이 있으면 아래 메일로 남겨주세요! </span>
+					<strong>foy_HANYUA@smilegate.com</strong>
+				</div>
+
+				<footer id="footer">
+					<span class="logo-area">
+						<span class="logo SGE">Smilegate Entertainment</span>
+						<span class="logo">FOCUS on YOU</span>
+					</span>
+					<address class="copyrights">© 2018. Smilegate Entertainment, Inc. All Rights Reserved.</address>
+				</footer>
+			</div>
+		</section>
+
+	</div>
+
+
+
+</div>
+
+<!-- popup -->
+<script>
+
+</script>
+
+<div class="popup">
+    <div class="popup-inner">
+		<div class="box">
+			<p></p>
+			<button type="button" class="btn-confirm" onclick="popupClose(this);">확인</button>
+        </div>
+    </div>
+</div>
+<!--// popup -->
+
+
+<script>
+	//popup message
+	var msg = [
+		"선배의 <br>이름을 알려주세요!",
+		"VIVEPORT에서는 나중에 만날 수 있으니<br>조금만 기다려주세요!"
+	];
+
+	//Youtube IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	// 3. This function creates an <iframe> (and YouTube player)
+	//    after the API code downloads.
+	var player, player2;
+	var lang = $("html").attr("lang");
+	function onYouTubeIframeAPIReady() {
+		switch(lang){
+			case "ko" : //국문
+			YTid = 'RLStGM0tf_E';
+			YTid2 = 'rN5csLTIy-Q'; //2019-06-11 수정
+			break;
+
+			case "en" : //영문
+			YTid = '_a-XJKGAfXA';
+			YTid2 = '77OcFSVG2wA'; //2019-06-11 수정
+			break;
+
+			case "zh-CN" : //간체
+			YTid = '_a-XJKGAfXA';
+			YTid2 = 'ZngUZMN7YTY'; //2019-06-11 수정
+			break;
+
+			case "zh-TW" : //번체
+			YTid = 'wJFwJOu-MhM';
+			YTid2 = 'oIXKoIrw3yk'; //2019-06-11 수정
+			break;
+
+			default : //일어
+			YTid = '_a-XJKGAfXA';
+			YTid2 = 'Qv-ipY_uCsU'; //2019-06-11 수정
+		}
+
+		player = new YT.Player('player', {
+			height: '100%',width: '100%',playerVars: {'autoplay': 0,'controls': 0,'rel': 0,'showinfo': 0,'autohide': 1},
+			videoId: YTid,
+            events: {
+                'onStateChange': onPlayerStateChange
+            }
+		});
+
+		player2 = new YT.Player('player2', {
+			height: '100%',width: '100%',playerVars: {'autoplay': 0,'controls': 0,'rel': 0,'showinfo': 0,'autohide': 1},
+			videoId: YTid2,
+            events: {
+                'onStateChange': onPlayerStateChange2
+            }
+		});
+	}
+
+    // 4. The API will call this function when the video player is ready.
+	function onPlayerReady(event) {
+	//event.target.playVideo();
+	}
+	function onPlayerStateChange(event) {
+        switch(event.data) {
+            case 0:
+                player.stopVideo();
+                $("#section03Slide1 .cover").show();
+                $("#section03Slide1 .cover-pause").hide();
+                break;
+        }
+    }
+
+	function onPlayerStateChange2(event) {
+        switch(event.data) {
+            case 0:
+                player2.stopVideo();
+                $("#section03Slide2 .cover").show();
+                $("#section03Slide2 .cover-pause").hide();
+                break;
+        }
+    }
+</script>
+
+
+
+
+</body></html>

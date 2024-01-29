@@ -1,0 +1,196 @@
+<html class=""><!--<![endif]--><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iron Stomach</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="b99.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #3cbb60;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+a:link {
+	color: #edc2ff;
+}
+h1 {
+	color: #3cbb60;
+}
+h3 {
+	color: #3cbb60;
+}
+h2 {
+	color: #CCC;
+}
+h5 {
+	color: #CCC;
+}
+a:visited {
+	color: #f174b6;
+}
+a:hover {
+	color: #3cbb60;
+}
+</style>
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_effectGrowShrink(targetElement, duration, from, to, toggle, referHeight, growFromCenter)
+{
+	Spry.Effect.DoGrow(targetElement, {duration: duration, from: from, to: to, toggle: toggle, referHeight: referHeight, growCenter: growFromCenter});
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onload="MM_preloadImages('B99_ScreenShot_1.png','B99_ScreenShot_2.png','B99_ScreenShot_5.png')">
+<div class="gridContainer clearfix">
+  <div id="header">
+    <div id="LayoutDiv2"><h2><a href="index.html"><img src="IS_logo.png"></a> </h2></div>
+    <div id="LayoutDiv4"><a href="index.html"><img src="logo_hq.jpg" alt="" width="119" height="119" align="right"></a></div>
+  
+    <div id="LayoutDiv5" align="center"><div id="LayoutDiv3" align="center">
+      <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li> 
+          <div align="center"><a class="MenuBarItemSubmenu" href="#"><img src="games.png" height="75"></a>
+            <ul>
+              <li><a href="b99.html"><img src="b99.png" height="34"></a></li>
+              <li></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div align="center"><a href="about.html"><img src="about.png" height="70"></a></div>
+        </li>
+        <li>
+          <div align="center"><a href="contact.html"><img src="contact.png" height="75"></a></div>
+        </li>
+      </ul>
+    </div></div>
+    <div align="center"></div>
+  </div>
+  
+<div id="LayoutDiv1" align="center"><h1><em>FPS Roguelike set in a vision of cyberspace pulled from the 1980s.</em></h1>
+  <div id="LayoutDiv6"><br>
+      <img src="Website.png" name="main" id="main"><table width="100%" border="1">
+		  <tbody><tr></tr>
+          <tr>
+  		<td><img src="Screen 1.png" name="s1" id="s1" onclick="MM_swapImage('main','','Screen 1.png',1)" ondblclick="MM_swapImgRestore()"></td>
+    		<td><img src="Screen 2.png" name="s2" id="s2" onclick="MM_swapImage('main','','Screen 2.png',1)" ondblclick="MM_swapImgRestore()"></td>
+    		<td><img src="Screen 3.png" name="s3" id="s3" onclick="MM_swapImage('main','','Screen 3.png',1)" ondblclick="MM_swapImgRestore()"></td>
+    		<td><img src="Screen 4.png" name="s4" id="s4" onclick="MM_swapImage('main','','Screen 4.png',1)" ondblclick="MM_swapImgRestore()"></td>
+    		<td><img src="Screen 5.png" name="s5" id="s5" onclick="MM_swapImage('main','','Screen 5.png',1)" ondblclick="MM_swapImgRestore()"></td>
+  		  </tr>
+	  </tbody></table><br>	
+     <div id="LayoutDiv7">
+     <p>A Fast Paced Shooter set in a Roguelike Metaverse crafted by the B99 AI itself.  The remnants of humanity are forced to challenge a Labyrinth created by an AI trained on Classic Digital Games.  For the B99 it is only a Game and you only the Player.  For humanity it is survival. Upgrades and Weapons abound to help you overcome Enemies, Bosses, and Traps looking to end your Run.</p>
+<br><iframe width="720" height="405" frameborder="0" src="https://www.youtube.com/embed/svJ3flea8B0" title="B99 PS VR2 Trailer 2023" allowfullscreen=""></iframe>
+	 </div>
+     <div id="LayoutDiv8">
+	<h3>Media Links:</h3>
+	<a href="https://www.vrfocus.com/2020/06/review-b99/">VRFocus</a><br>
+	<a href="https://www.indiegamewebsite.com/2020/06/01/b99-puts-you-in-a-retro-cyberspace-in-vr/">Indiegamewebsite</a><br>
+	<a href="https://uploadvr.com/10-best-vr-roguelikes/">UploadVR</a><br>
+
+	<br><p>Like any game in the rougelike genre, B99 gets better with more ingredients.  Each month there will be a content update and the info below will reflect the current count of ingredients</p>
+     <table width="auto" border="0" align="center">
+  		<tbody><tr align="center">
+    		<td>&nbsp;</td>
+            <td><br><strong>Current Count</strong></td>
+    		<td><strong></strong></td>
+  		</tr>
+  		<tr>
+    		<td><strong>Enemies</strong><br><br></td>
+            <td align="center">26</td>
+    		<td align="center"></td>
+  		</tr>
+  		<tr><td><strong>Mini Bosses</strong><br><br></td>
+            <td align="center">9</td>
+    		<td align="center"></td>
+  		</tr>
+  		<tr><td><strong>Bosses</strong><br><br></td>
+            <td align="center">8</td>
+    		<td align="center"></td>
+  		</tr>
+  		<tr><td><strong>Weapons</strong><br><br></td>
+            <td align="center">20</td>
+    		<td align="center"></td>
+  		</tr>
+  		<tr>
+    		<td><strong>Items</strong><br><br></td>
+            <td align="center">20</td>
+    		<td align="center"></td>
+  		</tr>
+  		<tr>
+           <td><strong>Rooms</strong><br><br></td>
+           <td align="center">314</td>
+           <td align="center"></td>
+  		</tr>
+  		<tr>
+    		<td><strong>Traps</strong><br><br></td>
+            <td align="center">16</td>
+    		<td align="center"></td>
+  		</tr>
+		<tr><td><strong>Music Tracks</strong><br><br></td>
+            <td align="center">30</td>
+    		<td align="center"></td>
+  		</tr>
+  		<tr><td><strong>Levels</strong><br><br></td>
+            <td align="center">18</td>
+    		<td align="center"></td>
+  		</tr>
+  		<tr><td colspan="3" align="center"><strong><br>More features coming as well over time.</strong></td></tr>
+	  </tbody></table>
+     </div>
+    </div>
+</div>
+  <div id="footer"><br><br><h5><hr>Copyright 2020 © Iron Stomach LLC | Buy us a cup of coffee if you like our efforts<br>
+    BTC: 1KDGSgisNg4N8Hg2NRNhMqXaUwzAafgrqv &nbsp;&nbsp;
+  </h5></div>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+
+
+</body></html>

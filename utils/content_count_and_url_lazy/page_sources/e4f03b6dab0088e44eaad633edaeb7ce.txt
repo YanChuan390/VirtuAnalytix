@@ -1,0 +1,2648 @@
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="./favicon.ico">
+<title>Dash Dash World, The Ultimate VR Battle Kart</title>
+
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-MZW1VZXPWY&amp;l=dataLayer&amp;cx=c"></script><script src="https://connect.facebook.net/signals/config/757877111350242?v=2.9.125&amp;r=stable&amp;domain=dashdashracing.com" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/jquery.lazy.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/slick.css">
+<link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+<link href="./css/animate.css" rel="stylesheet">
+<link href="./css/styles.css?v=1694379759" rel="stylesheet">
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-146760165-1"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146760165-1');
+  </script>
+
+<script>
+        !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '757877111350242');
+    fbq('track', 'PageView');
+    $.fn.isInViewport = function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+  </script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=757877111350242&ev=PageView&noscript=1" /></noscript>
+
+</head>
+<body>
+
+<main role="main">
+<div class="youtube-overlay" onclick="close_embed()">
+<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+<div class="topnav faster">
+<h1>&nbsp;</h1>
+<a class="close-nav" href="javascript:;"><img src="./image/icon/new_arrow_sign_cancel_70x70.png"></a>
+<div class="nav-platform">
+<a href="https://store.steampowered.com/app/1159860/Dash_Dash_World" target="_blank"><img src="./image/option/platform_steam_vr2.jpg"></a>
+<a href="https://www.oculus.com/experiences/rift/2046553198725213" target="_blank"><img src="./image/option/platform_oculus_rift_s.jpg"></a>
+<a href="https://www.oculus.com/experiences/quest/2159739540797724" target="_blank"><img src="./image/option/platform_oculus_quest.jpg"></a>
+<a href="javascript:;" style="pointer-events: none;"><img src="./image/option/playstationvr_icon.jpg"></a>
+</div>
+<div class="menu">
+<a href="/faq.php">FAQ</a>
+<a href="/learn.php">Learning Center</a>
+<a href="/presskit">Press Kit</a>
+<a href="/contactus.php">Contact Us</a>
+</div>
+<div class="social-color">
+<a class="footer-button" href="https://discord.gg/mHSgbsA" target="_blank">
+<img src="./image/icon/discord_button.png" alt="Join our Discord Community">
+</a>
+<a class="footer-button" href="https://www.facebook.com/groups/DashDashRacing" target="_blank">
+<img src="./image/icon/fb_groups_button.png" alt="Join our Facebook Group">
+</a>
+
+</div>
+<div class="social-white">
+<a class="footer-group" href="https://www.reddit.com/r/DashDashRacing" target="_blank">
+<img src="./image/icon/icon_reddit.png" alt="Join r/DashDashRacing">
+</a>
+<a class="footer-group" href="https://www.twitter.com/DashDashRacing" target="_blank">
+<img src="./image/icon/icon_twitter.png" alt="Follow our latest news on Twit">
+</a>
+<a class="footer-group" href="https://www.facebook.com/DashDashRacing" target="_blank">
+<img src="./image/icon/icon_facebook.png" alt="Follow our latest news on Facebook">
+</a>
+<a class="footer-group" href="https://www.instagram.com/DashDashRacing" target="_blank">
+<img src="./image/icon/icon_instagram.png" alt="Follow our Instagram">
+</a>
+<a class="footer-group" href="https://www.youtube.com/DashDashRacing" target="_blank">
+<img src="./image/icon/icon_youtube.png" alt="Subscribe our Youtube channel">
+</a>
+</div>
+<div class="register">
+<input class="mail-register" type="text" name="email" placeholder="New Update &amp; Freebies">
+
+<a href="" class="submit"><button>Sign up</button></a>
+</div>
+</div>
+<div class="container-fluid sections section-1">
+<div class="row no-gutters justify-content-between">
+<div class="logo-container col-5 col-md-4">
+<img src="./image/logo_white.png" class="animated bounceIn delay-0.5s">
+</div>
+<div class="col-6 col-md-6 option">
+<a href="javascript:;" class="menu"><img src="./image/option70x70.png" class=""></a>
+<a href="#multiplayer" class="buy-button">BUY NOW</a>
+</div>
+</div>
+
+</div>
+<div class="container-fluid sections section-2">
+<a href="javascript:show_embed('YRO13O-8w7g')" class="yt-button"><img src="./image/trailer_button.png"></a>
+
+
+<div class="row no-gutters justify-content-center vid-holder">
+<div class="col-lg-12">
+<h1>NEXT LEVEL OF VR RACING</h1>
+<p class="f-sm-3 color-blue">Drive, Shoot &amp; Drift like never before. That opportunity is now yours</p>
+</div>
+<div class="col-lg-6">
+<video class="sec2-vid" autoplay="" muted="" loop="" poster="./image/short_fallback.jpg" controls="">
+<source src="./image/short_1.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+
+
+
+</div>
+<div class="row no-gutters justify-content-center race-holder">
+<div class="race-item">
+<img src="./image/intro/cover_drifting.jpg">
+<div class="description">
+<h2>Drifting</h2>
+<p>Master the twisting &amp; turning tracks by Drifting through tight corners and boost from the Energy Recovery System when you are needed.</p>
+
+</div>
+</div>
+<div class="race-item">
+<img src="./image/intro/cover_boost.jpg">
+<div class="description">
+<h2>Boosting</h2>
+<p>Reach maximum speed from start grid with Start Boost and continue your lead with Super boost, Power-ups, Nitro Chain and more.</p>
+
+</div>
+</div>
+<div class="race-item">
+<img src="./image/intro/cover_drafting.jpg">
+<div class="description">
+<h2>Drafting</h2>
+<p>Sneakily gain the speed over your opponents by using their slipstream to create drafting effect and Slingshot through them!</p>
+</div>
+</div>
+<div class="race-item">
+<img src="./image/intro/cover_gliding.jpg">
+<div class="description">
+<h2>Gliding</h2>
+<p>Jump over the ramp and use immersive hand to steer your car through the track with the invincible glider.</p>
+</div>
+</div>
+
+<div class="race-item">
+<img src="./image/intro/cover_immersive.jpg">
+<div class="description">
+<h2>Immersive Driving</h2>
+<p>Immerse yourself by physically cornering, smashing boost lever, aiming, and shooting your opponents with one or both hands!</p>
+</div>
+</div>
+<div class="race-item">
+<img src="./image/intro/cover_spark.jpg">
+<div class="description">
+<h2>Steering Wheel</h2>
+<p>Feel and experience the realistic driving sensation with true force feedback support. Now support Logitech, Thrustmaster &amp; Fanatec wheels</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid sections section-3">
+<div class="di-top-bg"></div>
+<img src="./image/carbo_umbarrier.png" class="char-1">
+</div>
+<div class="container-fluid sections section-4">
+<h1 class="color-blue">UNIQUE RACE TRACKS</h1>
+<p class="f-sm-3 text-center">Easy to drive hard to master Hairpins, Esses, Obstacles and more!<br><br></p>
+<div class="in-section">
+<section class="slick slider track-head active slick-initialized slick-slider slick-dotted hide show" id="id-1"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 3060px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide20" style="width: 1020px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control20"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-1/track_1_small/map1_01_small.jpg 600w,./image/track/track-1/map1_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-1-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-1-1" class="headline">
+<h2>MONTE ALPACA</h2>
+<p>One of the first earth animals the Carbos saw was an Alpaca. They went to Machu Picchu and built a sanctuary for the alpacas to live peacefully. Little did they know about the hair-raising terror of the Cave Alpacas.</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide21" style="width: 1020px; position: relative; left: -1020px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control21" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-1/track_1_small/map1_02_small.jpg 600w,./image/track/track-1/map1_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-1-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-1-2" class="headline">
+<h2>MONTE ALPACA</h2>
+<p>One of the first earth animals the Carbos saw was an Alpaca. They went to Machu Picchu and built a sanctuary for the alpacas to live peacefully. Little did they know about the hair-raising terror of the Cave Alpacas.</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide22" style="width: 1020px; position: relative; left: -2040px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control22"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-1/track_1_small/map1_03_small.jpg 600w,./image/track/track-1/map1_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-1-4" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-1-3" class="headline">
+<h2>MONTE ALPACA</h2>
+<p>One of the first earth animals the Carbos saw was an Alpaca. They went to Machu Picchu and built a sanctuary for the alpacas to live peacefully. Little did they know about the hair-raising terror of the Cave Alpacas.</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control20" aria-controls="slick-slide20" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control21" aria-controls="slick-slide21" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control22" aria-controls="slick-slide22" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-2" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide30" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control30"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-2/track_2_small/map2_01_small.jpg 600w,./image/track/track-2/map2_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-2-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-2-1" class="headline">
+<h2>LIBERTY CIRCUIT</h2>
+<p>The City That Never Sleep has turned into The City of Havoc as the furious Miss Liberty brings her wrath of fire onto the flying Carborazzis. Better watch out when you race on this explosive night track!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide31" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control31" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-2/track_2_small/map2_02_small.jpg 600w,./image/track/track-2/map2_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-2-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-2-2" class="headline">
+<h2>LIBERTY CIRCUIT</h2>
+<p>The City That Never Sleep has turned into The City of Havoc as the furious Miss Liberty brings her wrath of fire onto the flying Carborazzis. Better watch out when you race on this explosive night track!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide32" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control32"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-2/track_2_small/map2_03_small.jpg 600w,./image/track/track-2/map2_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-2-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-2-3" class="headline">
+<h2>LIBERTY CIRCUIT</h2>
+<p>The City That Never Sleep has turned into The City of Havoc as the furious Miss Liberty brings her wrath of fire onto the flying Carborazzis. Better watch out when you race on this explosive night track!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control30" aria-controls="slick-slide30" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control31" aria-controls="slick-slide31" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control32" aria-controls="slick-slide32" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-3" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide40" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control40"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-3/track_3_small/map3_01_small.jpg 600w,./image/track/track-3/map3_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-3-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-3-1" class="headline">
+<h2>KABO DOJO</h2>
+<p>The sneaky ninja clan has attacked the samurai castle with their Fruit Cannon. But the samurais have a HUGE surprise of their own. Race in the midst of a war between ninjas and samurais at Kabo Dojo!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide41" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control41" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-3/track_3_small/map3_02_small.jpg 600w,./image/track/track-3/map3_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-3-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-3-2" class="headline">
+<h2>KABO DOJO</h2>
+<p>The sneaky ninja clan has attacked the samurai castle with their Fruit Cannon. But the samurais have a HUGE surprise of their own. Race in the midst of a war between ninjas and samurais at Kabo Dojo!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide42" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control42"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-3/track_3_small/map3_03_small.jpg 600w,./image/track/track-3/map3_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-3-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-3-3" class="headline">
+<h2>KABO DOJO</h2>
+<p>The sneaky ninja clan has attacked the samurai castle with their Fruit Cannon. But the samurais have a HUGE surprise of their own. Race in the midst of a war between ninjas and samurais at Kabo Dojo!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control40" aria-controls="slick-slide40" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control41" aria-controls="slick-slide41" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control42" aria-controls="slick-slide42" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-4" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide50" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control50"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-4/track_4_small/map4_01_small.jpg 600w,./image/track/track-4/map4_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-4-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-4-1" class="headline">
+<h2>IDEON GROTTO</h2>
+<p>In this Carbo version of the Greek Mythology, the deities are gathering for a cave party hosted by none other than Medusa a/k/a DJ Meddy!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide51" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control51" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-4/track_4_small/map4_02_small.jpg 600w,./image/track/track-4/map4_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-4-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-4-2" class="headline">
+<h2>IDEON GROTTO</h2>
+<p>In this Carbo version of the Greek Mythology, the deities are gathering for a cave party hosted by none other than Medusa a/k/a DJ Meddy!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide52" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control52"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-4/track_4_small/map4_03_small.jpg 600w,./image/track/track-4/map4_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-4-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-4-3" class="headline">
+<h2>IDEON GROTTO</h2>
+<p>In this Carbo version of the Greek Mythology, the deities are gathering for a cave party hosted by none other than Medusa a/k/a DJ Meddy!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control50" aria-controls="slick-slide50" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control51" aria-controls="slick-slide51" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control52" aria-controls="slick-slide52" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-5" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide60" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control60"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-5/track_5_small/map5_01_small.jpg 600w,./image/track/track-5/map5_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-5-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-5-1" class="headline">
+<h2>VOLCANIC JUNGLE (Extreme Map)</h2>
+<p>The Carbos have built a dinosaur park in Hawaii based on a small movie they saw. Little did they know, the volcano is about to erupt for real! Race your way through the park in this volcanic hotspot while avoiding the fleeing Carbos!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide61" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control61" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-5/track_5_small/map5_02_small.jpg 600w,./image/track/track-5/map5_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-5-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-5-2" class="headline">
+<h2>VOLCANIC JUNGLE (Extreme Map)</h2>
+<p>The Carbos have built a dinosaur park in Hawaii based on a small movie they saw. Little did they know, the volcano is about to erupt for real! Race your way through the park in this volcanic hotspot while avoiding the fleeing Carbos!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide62" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control62"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-5/track_5_small/map5_03_small.jpg 600w,./image/track/track-5/map5_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-5-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-5-3" class="headline">
+<h2>VOLCANIC JUNGLE (Extreme Map)</h2>
+<p>The Carbos have built a dinosaur park in Hawaii based on a small movie they saw. Little did they know, the volcano is about to erupt for real! Race your way through the park in this volcanic hotspot while avoiding the fleeing Carbos!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control60" aria-controls="slick-slide60" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control61" aria-controls="slick-slide61" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control62" aria-controls="slick-slide62" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-6" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide70" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control70"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-6/track_6_small/map6_01_small.jpg 600w,./image/track/track-6/map6_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-6-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-6-1" class="headline">
+<h2>SLUSHY SLOPE (Extreme Map)</h2>
+<p>Carbo found out about the Santa folklore and headed to the North Pole to meet the man himself! Whether they did meet Santa or not is a mystery but people who have been to Slushy Slope said they saw multiple Santas there. See for yourself!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide71" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control71" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-6/track_6_small/map6_02_small.jpg 600w,./image/track/track-6/map6_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-6-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-6-2" class="headline">
+<h2>SLUSHY SLOPE (Extreme Map)</h2>
+<p>Carbo found out about the Santa folklore and headed to the North Pole to meet the man himself! Whether they did meet Santa or not is a mystery but people who have been to Slushy Slope said they saw multiple Santas there. See for yourself!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide72" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control72"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img srcset="./image/track/track-6/track_6_small/map6_03_small.jpg 600w,./image/track/track-6/map6_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-6-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-6-3" class="headline">
+<h2>SLUSHY SLOPE (Extreme Map)</h2>
+<p>Carbo found out about the Santa folklore and headed to the North Pole to meet the man himself! Whether they did meet Santa or not is a mystery but people who have been to Slushy Slope said they saw multiple Santas there. See for yourself!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control70" aria-controls="slick-slide70" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control71" aria-controls="slick-slide71" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control72" aria-controls="slick-slide72" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-7" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide80" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control80"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-7/track_7_small/map7_01_small.jpg 600w,./image/track/track-7/map7_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-7-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-7-1" class="headline">
+<h2>DRAGON REALM (Extreme Map)</h2>
+<p>The track built above sea clouds is filled with decorative Chinese-themed architecture and obstacles. Test your luck with the fortune cookies, avoid the obstructing firecrackers and kites and race through the twists and turns of the dragon-like track!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide81" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control81" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-7/track_7_small/map7_02_small.jpg 600w,./image/track/track-7/map7_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-7-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-7-2" class="headline">
+<h2>DRAGON REALM (Extreme Map)</h2>
+<p>The track built above sea clouds is filled with decorative Chinese-themed architecture and obstacles. Test your luck with the fortune cookies, avoid the obstructing firecrackers and kites and race through the twists and turns of the dragon-like track!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide82" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control82"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-7/track_7_small/map7_03_small.jpg 600w,./image/track/track-7/map7_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-7-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-7-3" class="headline">
+<h2>DRAGON REALM (Extreme Map)</h2>
+<p>The track built above sea clouds is filled with decorative Chinese-themed architecture and obstacles. Test your luck with the fortune cookies, avoid the obstructing firecrackers and kites and race through the twists and turns of the dragon-like track!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control80" aria-controls="slick-slide80" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control81" aria-controls="slick-slide81" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control82" aria-controls="slick-slide82" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-8" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide90" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control90"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-8/track_8_small/map8_01_small.jpg 600w,./image/track/track-8/map8_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-8-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-8-1" class="headline">
+<h2>Los Muertos</h2>
+<p>The City of the Dead has prepared a warm and deadly welcome for you in the form of an eye-popping Colossal Mariachi band and the high flying Lucha Libre style of El Kaboom. Can you spot all the Lucha hall of famers while avoiding Kaboom’s explosive leap of death?</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide91" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control91" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-8/track_8_small/map8_02_small.jpg 600w,./image/track/track-8/map8_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-8-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-8-2" class="headline">
+<h2>Los Muertos</h2>
+<p>The City of the Dead has prepared a warm and deadly welcome for you in the form of an eye-popping Colossal Mariachi band and the high flying Lucha Libre style of El Kaboom. Can you spot all the Lucha hall of famers while avoiding Kaboom’s explosive leap of death?</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide92" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control92"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-8/track_8_small/map8_03_small.jpg 600w,./image/track/track-8/map8_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-8-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-8-3" class="headline">
+<h2>Los Muertos</h2>
+<p>The City of the Dead has prepared a warm and deadly welcome for you in the form of an eye-popping Colossal Mariachi band and the high flying Lucha Libre style of El Kaboom. Can you spot all the Lucha hall of famers while avoiding Kaboom’s explosive leap of death?</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control90" aria-controls="slick-slide90" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control91" aria-controls="slick-slide91" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control92" aria-controls="slick-slide92" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-10" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide100" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control100"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-10/track_10_small/map10_01_small.jpg 600w,./image/track/track-10/map10_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-10-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-10-1" class="headline">
+<h2>Evopolis</h2>
+<p>Speed into this arcadey track, collect power-ups, survive a bombastic pack of invasive big bosses and reach the finish line through the two decades of gaming evolution for the glorious victory!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide101" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control101" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-10/track_10_small/map10_02_small.jpg 600w,./image/track/track-10/map10_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-10-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-10-2" class="headline">
+<h2>Evopolis</h2>
+<p>Speed into this arcadey track, collect power-ups, survive a bombastic pack of invasive big bosses and reach the finish line through the two decades of gaming evolution for the glorious victory!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide102" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control102"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-10/track_10_small/map10_03_small.jpg 600w,./image/track/track-10/map10_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-10-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-10-3" class="headline">
+<h2>Evopolis</h2>
+<p>Speed into this arcadey track, collect power-ups, survive a bombastic pack of invasive big bosses and reach the finish line through the two decades of gaming evolution for the glorious victory!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control100" aria-controls="slick-slide100" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control101" aria-controls="slick-slide101" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control102" aria-controls="slick-slide102" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-9" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide110" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control110"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-9/track_9_small/Track09_02_rt600x253.jpg 600w,./image/track/track-9/Track09_02_rt.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-10-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-10-2" class="headline">
+<h2>Z Enterprise</h2>
+<p>Zeitaku's parents collaborated with the Carbos to build a race track on their property for their boy-wonder to practice. To ensure the property and their own safety, a few self defense mechanisms had been built-in. Some families just want to watch their money burn!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide111" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control111" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-9/track_9_small/Track09_01_2_rt600x253.jpg 600w,./image/track/track-9/Track09_01_2_rt.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-10-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-10-1" class="headline">
+<h2>Z Enterprise</h2>
+<p>Zeitaku's parents collaborated with the Carbos to build a race track on their property for their boy-wonder to practice. To ensure the property and their own safety, a few self defense mechanisms had been built-in. Some families just want to watch their money burn!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide112" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control112"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-9/track_9_small/Track09_06_rt600x253.jpg 600w,./image/track/track-9/Track09_06_rt.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-10-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-10-3" class="headline">
+<h2>Z Enterprise</h2>
+<p>Zeitaku's parents collaborated with the Carbos to build a race track on their property for their boy-wonder to practice. To ensure the property and their own safety, a few self defense mechanisms had been built-in. Some families just want to watch their money burn!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control110" aria-controls="slick-slide110" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control111" aria-controls="slick-slide111" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control112" aria-controls="slick-slide112" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-11" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide120" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control120"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-11/track_11_small/Track11_04_rt%20600x253.jpg 600w,./image/track/track-11/Track11_04_rt.JPG 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-10-3" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-10-3" class="headline">
+<h2>War of Fame</h2>
+<p>Race in the midst of a battlefield in this big budget Carbowood production! Experience a war first-hand as you maneuver through the ongoing battle between the Blue and the Red- both on ground and mid air. Can you survive all the laser blasts and explosions in one piece, or will you end up the casualties of war?</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide121" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control121" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-11/track_11_small/Track11_01%20600x253.jpg 600w,./image/track/track-11/Track11_01.JPG 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-10-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-10-1" class="headline">
+<h2>War of Fame</h2>
+<p>Race in the midst of a battlefield in this big budget Carbowood production! Experience a war first-hand as you maneuver through the ongoing battle between the Blue and the Red- both on ground and mid air. Can you survive all the laser blasts and explosions in one piece, or will you end up the casualties of war?</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide122" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control122"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-11/track_11_small/Track11_02%20600x253.jpg 600w,./image/track/track-11/Track11_02.JPG 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-10-2" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-10-2" class="headline">
+<h2>War of Fame</h2>
+<p>Race in the midst of a battlefield in this big budget Carbowood production! Experience a war first-hand as you maneuver through the ongoing battle between the Blue and the Red- both on ground and mid air. Can you survive all the laser blasts and explosions in one piece, or will you end up the casualties of war?</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control120" aria-controls="slick-slide120" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control121" aria-controls="slick-slide121" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control122" aria-controls="slick-slide122" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-alt3" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide130" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control130"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-alt3/track_alt3_small/mapalt3_01_small.jpg 600w,./image/track/track-alt3/mapalt3_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-alt3-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-alt3-1" class="headline">
+<h2>Onsen-shima</h2>
+<p>Hot spring season is here! Race through scenic night villages and mountain views in this festive track. Glide through fireflies alongside a waterfall where the Shinobos are training! Check out the fireworks but watch out for cannonballs!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide131" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control131" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-alt3/track_alt3_small/mapalt3_02_small.jpg 600w,./image/track/track-alt3/mapalt3_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-alt3-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-alt3-2" class="headline">
+<h2>Onsen-shima</h2>
+<p>Hot spring season is here! Race through scenic night villages and mountain views in this festive track. Glide through fireflies alongside a waterfall where the Shinobos are training! Check out the fireworks but watch out for cannonballs!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide132" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control132"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-alt3/track_alt3_small/mapalt3_03_small.jpg 600w,./image/track/track-alt3/mapalt3_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-alt3-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-alt3-3" class="headline">
+<h2>Onsen-shima</h2>
+<p>Hot spring season is here! Race through scenic night villages and mountain views in this festive track. Glide through fireflies alongside a waterfall where the Shinobos are training! Check out the fireworks but watch out for cannonballs!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control130" aria-controls="slick-slide130" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control131" aria-controls="slick-slide131" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control132" aria-controls="slick-slide132" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-alt6" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide140" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control140"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-alt6/track_alt6_small/mapalt6_01_small.jpg 600w,./image/track/track-alt6/mapalt6_01.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-alt6-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-alt6-1" class="headline">
+<h2>Factory 51</h2>
+<p>You think you've seen it all but you ain't seen nothing yet until you take a tour in Carbo's Factory 51! Check out some unseen race items from the vault - some more dangerous than others. The factory has you race on its conveyor belt track that twists and turns across the icy glacier it's built on. By the time you finish the race, you won't remember any Carbo trade secrets inside!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide141" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control141" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-alt6/track_alt6_small/mapalt6_02_small.jpg 600w,./image/track/track-alt6/mapalt6_02.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-alt6-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-alt6-2" class="headline">
+<h2>Factory 51</h2>
+<p>You think you've seen it all but you ain't seen nothing yet until you take a tour in Carbo's Factory 51! Check out some unseen race items from the vault - some more dangerous than others. The factory has you race on its conveyor belt track that twists and turns across the icy glacier it's built on. By the time you finish the race, you won't remember any Carbo trade secrets inside!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide142" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control142"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-alt6/track_alt6_small/mapalt6_03_small.jpg 600w,./image/track/track-alt6/mapalt6_03.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-alt6-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-alt6-3" class="headline">
+<h2>Factory 51</h2>
+<p>You think you've seen it all but you ain't seen nothing yet until you take a tour in Carbo's Factory 51! Check out some unseen race items from the vault - some more dangerous than others. The factory has you race on its conveyor belt track that twists and turns across the icy glacier it's built on. By the time you finish the race, you won't remember any Carbo trade secrets inside!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control140" aria-controls="slick-slide140" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control141" aria-controls="slick-slide141" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control142" aria-controls="slick-slide142" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+<section class="slick slider track-head slick-initialized slick-slider slick-dotted hide show" id="id-20" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide150" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1" aria-describedby="slick-slide-control150"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-20/map20_01_rt.jpg 600w,./image/track/track-20/map20_01_rt.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-20-1" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-20-1" class="headline">
+<h2>Space</h2>
+<p>Carbo wants to expand its broadcast of Dash Dash racing to other galaxies. We need the Dash Dash community to help build a space station. The problem is, the meteors always get in the way and construction can't be completed. We are calling on all Dash Dash racers to help Carbo protect the space station so that construction can be completed before the broadcast, otherwise, Carbo will face a cosmic level of humiliation!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" role="tabpanel" id="slick-slide151" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" aria-describedby="slick-slide-control151" tabindex="-1"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-20/map20_02_rt.jpg 600w,./image/track/track-20/map20_02_rt.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-20-2" tabindex="-1"><img src="./image/icon/icon_information.png"></a>
+<div id="track-20-2" class="headline">
+<h2>Space</h2>
+<p>Carbo wants to expand its broadcast of Dash Dash racing to other galaxies. We need the Dash Dash community to help build a space station. The problem is, the meteors always get in the way and construction can't be completed. We are calling on all Dash Dash racers to help Carbo protect the space station so that construction can be completed before the broadcast, otherwise, Carbo will face a cosmic level of humiliation!</p>
+</div>
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide152" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-describedby="slick-slide-control152"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/track-20/map20_03_rt.jpg 600w,./image/track/track-20/map20_03_rt.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-20-3" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-20-3" class="headline">
+<h2>Space</h2>
+<p>Carbo wants to expand its broadcast of Dash Dash racing to other galaxies. We need the Dash Dash community to help build a space station. The problem is, the meteors always get in the way and construction can't be completed. We are calling on all Dash Dash racers to help Carbo protect the space station so that construction can be completed before the broadcast, otherwise, Carbo will face a cosmic level of humiliation!</p>
+</div>
+</div>
+</div></div></div></div></div><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control150" aria-controls="slick-slide150" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control151" aria-controls="slick-slide151" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control152" aria-controls="slick-slide152" aria-label="3 of 3" tabindex="0" aria-selected="true">3</button></li></ul></section>
+
+
+
+<section class="slick slider track-head slick-initialized slick-slider hide show" id="id-coming-soon" style=""><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px;"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 0px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="black-mask"></div>
+<img src="" srcset="./image/track/coming-soon/more_tracks_coming_soon.jpg 600w,./image/track/coming-soon/more_tracks_coming_soon.jpg 1920w" sizes="(max-width: 600px) 600px,1920px">
+<a class="track-info" href="javascript:;" attr-id="track-10-1" tabindex="0"><img src="./image/icon/icon_information.png"></a>
+<div id="track-coming-soon-1" class="headline">
+<h2>Coming Soon</h2>
+<p>Coming Soon</p>
+</div>
+</div>
+</div></div></div></div></div></section>
+
+</div>
+
+<section class="alb-nav">
+<div class="slider-nav slider track-nav slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button><div class="slick-list draggable" style="padding: 0px 50px;"><div class="slick-track" style="opacity: 1; width: 3914px; transform: translate3d(-515px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-8" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-8">
+<img src="./image/track/select-map/map-8-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-7" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-10">
+<img src="./image/track/select-map/map-10-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-6" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-alt3">
+<img src="./image/track/select-map/map-alt3-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-alt6">
+<img src="./image/track/select-map/map-alt6-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-9">
+<img src="./image/track/track-9/Thumbnail_Track092%20210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned slick-active" data-slick-index="-3" aria-hidden="false" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-11">
+<img src="./image/track/track-11/Thumbnail_Track1%20210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned slick-active" data-slick-index="-2" aria-hidden="false" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-20">
+<img src="./image/track/track-20/Thumbnail_Track20_210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned slick-active" data-slick-index="-1" aria-hidden="false" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-coming-soon">
+<img src="./image/track/coming-soon/map-11-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-1">
+<img src="./image/track/select-map/map-1-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-2">
+<img src="./image/track/select-map/map-2-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-3">
+<img src="./image/track/select-map/map-3-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-4">
+<img src="./image/track/select-map/map-4-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-5">
+<img src="./image/track/select-map/map-5-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-6">
+<img src="./image/track/select-map/map-6-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-7">
+<img src="./image/track/select-map/map-7-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-8">
+<img src="./image/track/select-map/map-8-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-10">
+<img src="./image/track/select-map/map-10-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-alt3">
+<img src="./image/track/select-map/map-alt3-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="10" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-alt6">
+<img src="./image/track/select-map/map-alt6-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-9">
+<img src="./image/track/track-9/Thumbnail_Track092%20210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="12" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-11">
+<img src="./image/track/track-11/Thumbnail_Track1%20210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="13" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-20">
+<img src="./image/track/track-20/Thumbnail_Track20_210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="14" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-coming-soon">
+<img src="./image/track/coming-soon/map-11-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-1">
+<img src="./image/track/select-map/map-1-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-2">
+<img src="./image/track/select-map/map-2-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-3">
+<img src="./image/track/select-map/map-3-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="18" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-4">
+<img src="./image/track/select-map/map-4-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="19" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-5">
+<img src="./image/track/select-map/map-5-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="20" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-6">
+<img src="./image/track/select-map/map-6-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="21" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-7">
+<img src="./image/track/select-map/map-7-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned slick-center" data-slick-index="22" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-8">
+<img src="./image/track/select-map/map-8-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="23" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-10">
+<img src="./image/track/select-map/map-10-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="24" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-alt3">
+<img src="./image/track/select-map/map-alt3-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="25" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-alt6">
+<img src="./image/track/select-map/map-alt6-210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="26" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-9">
+<img src="./image/track/track-9/Thumbnail_Track092%20210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="27" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-11">
+<img src="./image/track/track-11/Thumbnail_Track1%20210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="28" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-20">
+<img src="./image/track/track-20/Thumbnail_Track20_210x210.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="29" aria-hidden="true" tabindex="-1" style="width: 103px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group" slide-id-head="id-coming-soon">
+<img src="./image/track/coming-soon/map-11-210x210.jpg">
+</div>
+</div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button></div>
+</section>
+
+</div>
+<div class="container-fluid sections section-5">
+<div class="di-bot-bg"></div>
+<img src="./image/carbox.png" class="char-2">
+</div>
+<div class="power-ups-overlay">
+<div class="container-fluid sections power-ups-close" style="width: 100%;height: 100%;position: absolute;">
+</div>
+<div class="container-fluid sections">
+<section class="slider power-ups-slide slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 11400px;"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 600px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_AngryBird_150x150.png">
+</div>
+<h2>Angry Bow</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="0">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="0">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/angryLauncher.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Angry Bow is a homing rocket launcher that launches a flying bird-like bomb to track and destroy your opponents’ engine for a short duration. When you face it yourself, you can shoot it down while it circles above your head.</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" autoplay="" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/angryLauncher.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Angry Bow is a homing rocket launcher that launches a flying bird-like bomb to track and destroy your opponents’ engine for a short duration. When you face it yourself, you can shoot it down while it circles above your head.</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -600px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_Beenade_150x150.png">
+</div>
+<h2>Bomber Bee</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/bomberBee.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Bomber Bee is a grenade full of sticky honey that creates a trap which is a pool of sticky honey that will slow down any karts that drive through it.
+You can freeze and drive through it like a pro.
+Throw Bomber Bee at the orange speed pad is a great camouflage technique.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/bomberBee.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Bomber Bee is a grenade full of sticky honey that creates a trap which is a pool of sticky honey that will slow down any karts that drive through it.
+You can freeze and drive through it like a pro.
+Throw Bomber Bee at the orange speed pad is a great camouflage technique.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -1200px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_LandShark_150x150.png">
+</div>
+<h2>Crashcodile</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/crashcodile.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Crashcodile is a throwable mechanical ball that transforms into a large path destroyer. It crawls along the road in a selected lane and explodes upon contact. Keep your eyes on Crashcodile icon on the minimap and be in the right lane before it gets you.</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/crashcodile.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Crashcodile is a throwable mechanical ball that transforms into a large path destroyer. It crawls along the road in a selected lane and explodes upon contact. Keep your eyes on Crashcodile icon on the minimap and be in the right lane before it gets you.</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -1800px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_EggShooter_150x150.png">
+</div>
+<h2>Face Blaster</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/faceBlaster.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Face Blaster aka Egg shooter is a powerful iconic shooting weapon that shoots multiple eggs to block opponents’ vision for a short duration.
+Wipe your face to rub the egg off your face or swing the PUBP back for a great revenge and chuckle.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/faceBlaster.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Face Blaster aka Egg shooter is a powerful iconic shooting weapon that shoots multiple eggs to block opponents’ vision for a short duration.
+Wipe your face to rub the egg off your face or swing the PUBP back for a great revenge and chuckle.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -2400px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_Tomb_150x150.png">
+</div>
+<h2>The One</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/theOne_wide.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>The One is a powerful catch-up weapon that likes to hack the car of the top racer and stop them for a short duration. The process is long so time your Umbarrier well to stop this process.</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/theOne_wide.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>The One is a powerful catch-up weapon that likes to hack the car of the top racer and stop them for a short duration. The process is long so time your Umbarrier well to stop this process.</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -3000px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_MachineGun_150x150.png">
+</div>
+<h2>Terminator</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/terminator.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Terminator aka Machine Gun is a powerful shooting weapon that will damage your opponents and stop them for a duration.
+Focus on the bullet line to destroy your opponent until they explode, one at a time.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/terminator.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Terminator aka Machine Gun is a powerful shooting weapon that will damage your opponents and stop them for a duration.
+Focus on the bullet line to destroy your opponent until they explode, one at a time.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -3600px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_Pan_150x150.png">
+</div>
+<h2>PUBP</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/pubp.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>PUBP stands for PlayerUltimateBattlePan which is a melee weapon with a short range that can stop an opponent for a duration if it hits.
+PUBP are able to break through the Umbarrier and also block some long range bullets!
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/pubp.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>PUBP stands for PlayerUltimateBattlePan which is a melee weapon with a short range that can stop an opponent for a duration if it hits.
+PUBP are able to break through the Umbarrier and also block some long range bullets!
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -4200px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_Plasma_150x150.png">
+</div>
+<h2>Gauntlet</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/gauntlet.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Gauntlet is an electrified glove that blasts energy bombs and slows down your opponents for a duration.
+You can time it and fire your shot just when it disappears to maximize the damage.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/gauntlet.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Gauntlet is an electrified glove that blasts energy bombs and slows down your opponents for a duration.
+You can time it and fire your shot just when it disappears to maximize the damage.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -4800px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_Police_150x150.png">
+</div>
+<h2>3-3-1-0</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/3-3-1-0_wide.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>3-3-1-0 is a phone with a direct line to Copbo that comes with a privilege of unrestricted speed and also fine and jail anyone who comes in close proximity to you.
+Once you get hit by 3-3-1-0, the Copbo will issue you a fine that stops your kart for a duration. So avoid them at all cost.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/3-3-1-0_wide.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>3-3-1-0 is a phone with a direct line to Copbo that comes with a privilege of unrestricted speed and also fine and jail anyone who comes in close proximity to you.
+Once you get hit by 3-3-1-0, the Copbo will issue you a fine that stops your kart for a duration. So avoid them at all cost.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -5400px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_RedBull_150x150.png">
+</div>
+<h2>Dash Bull</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/dashBull.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Dash Bull is an energy drink that increases the speed of your kart up for a short duration.
+Like all Dash Nutrition Brand™, it briefly blocks all incoming bullets.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/dashBull.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Dash Bull is an energy drink that increases the speed of your kart up for a short duration.
+Like all Dash Nutrition Brand™, it briefly blocks all incoming bullets.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="10" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -6000px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_Freezing_150x150.png">
+</div>
+<h2>Blizzard</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/blizzard.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Blizzard is a magical glove that releases an icy vortex that can freeze multiple targets at once to slow them down for a short duration.
+The mist lasts for 1 second but you can stack up the frozen effect by aiming at the same person before you breeze past them.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/blizzard.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Blizzard is a magical glove that releases an icy vortex that can freeze multiple targets at once to slow them down for a short duration.
+The mist lasts for 1 second but you can stack up the frozen effect by aiming at the same person before you breeze past them.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -6600px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_Thunder_150x150.png">
+</div>
+<h2>Tesla Coil</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/tesla_wide.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Tesla Coil is a powerful catch-up weapon that generates thunderstorm clouds at the front of the pack and short circuits them with lightning for a duration.
+The lightning will strike through the conductive Umbarrier or PUBP.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/tesla_wide.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Tesla Coil is a powerful catch-up weapon that generates thunderstorm clouds at the front of the pack and short circuits them with lightning for a duration.
+The lightning will strike through the conductive Umbarrier or PUBP.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="12" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -7200px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/WW_Umbrella_150x150.png">
+</div>
+<h2>Umbarrier</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/umbarrier.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Umbarrier is a defensive barrier that protects you from incoming attacks for a limited time.
+The shields are unable to block physical melee attacks and the lightning strike due to its metal property.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/umbarrier.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Umbarrier is a defensive barrier that protects you from incoming attacks for a limited time.
+The shields are unable to block physical melee attacks and the lightning strike due to its metal property.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="13" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -7800px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/dashbar_150x150.png">
+</div>
+<h2>Dash Bar</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/dashBar.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Dash Bar is a crunchy energy snack that will briefly increase your max speed with just one bite.</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/dashBar.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Dash Bar is a crunchy energy snack that will briefly increase your max speed with just one bite.</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="14" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -8400px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/dashmax_150x150.png">
+</div>
+<h2>Dash Max</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/weapon/dashmax_150x150.png">
+<source src="./video/weapon/dashMax.mp4" type="video/mp4">
+<img src="./image/weapon/dashmax_150x150.png" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Dash Max is the most powerful energizing protein that will strengthen your kart speed for a long duration.</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/weapon/dashmax_150x150.png">
+<source src="./video/weapon/dashMax.mp4" type="video/mp4">
+<img src="./image/weapon/dashmax_150x150.png" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Dash Max is the most powerful energizing protein that will strengthen your kart speed for a long duration.</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -9000px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/GuleBomb_150x150.png">
+</div>
+<h2>Sticky Bomb</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/weapon/GuleBomb_150x150.png">
+<source src="./video/weapon/stickyBomb.mp4" type="video/mp4">
+<img src="./image/weapon/GuleBomb_150x150.png" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Sticky bomb is a full gallon of sticky glue with a little digital timer that detonates and will slow down any karts that drive through it.
+Throw the Sticky Bomb at Slushy Slope area to camouflage your opponents and trap them with powerful glue.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/weapon/GuleBomb_150x150.png">
+<source src="./video/weapon/stickyBomb.mp4" type="video/mp4">
+<img src="./image/weapon/GuleBomb_150x150.png" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Sticky bomb is a full gallon of sticky glue with a little digital timer that detonates and will slow down any karts that drive through it.
+Throw the Sticky Bomb at Slushy Slope area to camouflage your opponents and trap them with powerful glue.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -9600px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/uzi_150x150.png">
+</div>
+<h2>Terminator Junior</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/terminatorJr.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Terminator Jr. is a junior version of the Terminator that instantly damages your opponents and slows them down the more you hit them.
+The Junior has less rounds compared to its big brother.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/terminatorJr.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Terminator Jr. is a junior version of the Terminator that instantly damages your opponents and slows them down the more you hit them.
+The Junior has less rounds compared to its big brother.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -10200px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/falseteeth_150x150.png">
+</div>
+<h2>Denturous</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/denterous.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Denturous is a dangerous denture that flies along the road and sneakily bite any racers in its way and transforms into a bomb.
+When you get bitten from Denturous, shake it off right away to avoid explosion.
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/denterous.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Denturous is a dangerous denture that flies along the road and sneakily bite any racers in its way and transforms into a bomb.
+When you get bitten from Denturous, shake it off right away to avoid explosion.
+</p>
+</div>
+</div>
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="18" aria-hidden="true" tabindex="-1" style="width: 600px; position: relative; left: -10800px; top: 0px; z-index: 998; opacity: 0;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<div class="item-img">
+<img src="./image/weapon/icon%20money%20gun%20360x360%20.png">
+</div>
+<h2>RICH MAN’S TOY</h2>
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link active" data-toggle="pill" href="#pills-wep1-basic" role="tab" aria-controls="pills-home" aria-selected="true" tabindex="-1">Basic</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link" data-toggle="pill" href="#pills-wep1-expert" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Expert</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="pills-wep1-basic" role="tabpanel" aria-labelledby="pills-home-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/Moneygun.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Burn through your savings with the Money Gun! It shoots vision-blocking banknotes at your opponents. The more you’re hit,
+the more notes piling up in your face. Not only that, the unhit money forms a deceptive money trap that blocks the path as well!
+Talk about money well-spent!
+</p>
+</div>
+<div class="tab-pane fade" id="pills-wep1-expert" role="tabpanel" aria-labelledby="pills-contact-tab">
+<div class="item-img-ex">
+<video class="sec2-vid" muted="" loop="" poster="./image/short_fallback.jpg">
+<source src="./video/weapon/Moneygun.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+<p>Burn through your savings with the Money Gun! It shoots vision-blocking banknotes at your opponents. The more you’re hit,
+the more notes piling up in your face. Not only that, the unhit money forms a deceptive money trap that blocks the path as well!
+Talk about money well-spent!
+</p>
+</div>
+</div>
+</div>
+</div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button></section>
+<button class="dismiss" onclick="close_embed()"><img src="./image/icon/new_arrow_sign_cancel_70x70.png"></button>
+</div>
+</div>
+<div class="loading-overlay" onclick="close_embed()">
+</div>
+<div class="container-fluid sections section-6">
+<div class="row no-gutters justify-content-center">
+<div class="col-lg-8 class header">
+<h1>IMMERSIVE POWER-UPS</h1>
+<p class="f-sm-3">Shooting, Throwing &amp; Trapping and overtake your friends in unimaginable ways</p>
+</div>
+</div>
+<div class="row no-gutters justify-content-center hypercar">
+</div>
+<div class="row no-gutters justify-content-center">
+<div class="col-lg-11 col-md-11 class power-ups">
+<div class="power-item" position="0">
+<img src="./image/weapon/WW_AngryBird_150x150.png">
+</div>
+<div class="power-item" position="1">
+<img src="./image/weapon/WW_Beenade_150x150.png">
+</div>
+<div class="power-item" position="2">
+<img src="./image/weapon/WW_LandShark_150x150.png">
+</div>
+<div class="power-item" position="3">
+<img src="./image/weapon/WW_EggShooter_150x150.png">
+</div>
+<div class="power-item" position="4">
+<img src="./image/weapon/WW_Tomb_150x150.png">
+</div>
+<div class="power-item" position="5">
+<img src="./image/weapon/WW_MachineGun_150x150.png">
+</div>
+<div class="power-item" position="6">
+<img src="./image/weapon/WW_Pan_150x150.png">
+</div>
+<div class="power-item" position="7">
+<img src="./image/weapon/WW_Plasma_150x150.png">
+</div>
+<div class="power-item" position="8">
+<img src="./image/weapon/WW_Police_150x150.png">
+</div>
+<div class="power-item" position="9">
+<img src="./image/weapon/WW_RedBull_150x150.png">
+</div>
+<div class="power-item" position="10">
+<img src="./image/weapon/WW_Freezing_150x150.png">
+</div>
+<div class="power-item" position="11">
+<img src="./image/weapon/WW_Thunder_150x150.png">
+</div>
+<div class="power-item" position="12">
+<img src="./image/weapon/WW_Umbrella_150x150.png">
+</div>
+<div class="power-item" position="13">
+<img src="./image/weapon/dashbar_150x150.png">
+</div>
+<div class="power-item" position="14">
+<img src="./image/weapon/dashmax_150x150.png">
+</div>
+
+<div class="power-item" position="15">
+<img src="./image/weapon/GuleBomb_150x150.png">
+</div>
+<div class="power-item" position="16">
+<img src="./image/weapon/uzi_150x150.png">
+</div>
+<div class="power-item" position="17">
+<img src="./image/weapon/falseteeth_150x150.png">
+</div>
+<div class="power-item" position="18">
+<img src="./image/weapon/icon%20money%20gun%20360x360%20.png">
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid sections section-7">
+<div class="di-top-bg"></div>
+<img src="./image/carbo_and_sofia.png" class="char-1">
+</div>
+<div class="container-fluid sections section-15">
+<div class="row no-gutters justify-content-center">
+<div class="col-lg-10 col-md-10 header">
+<h1 class="color-blue">
+ STORY MODE</h1>
+<p class="f-sm-3 text-center">Build up your career with over 100 objectives and achievements</p>
+<p class="f-sm-3-grey text-center">*Will be regularly updated throughout 2021.</p>
+</div>
+</div>
+<div class="row no-gutters justify-content-center career-mode">
+</div>
+</div>
+<div class="container-fluid sections section-8">
+<div class="row no-gutters justify-content-center">
+<div class="col-lg-12 col-md-12 class customization">
+<h1 class="color-blue">PERSONALIZE YOURSELF</h1>
+<p class="f-sm-3 text-center">Show off your style at the podium with souped up car, booster, wheel &amp; more</p>
+<section class="customization-slide slider slick-initialized slick-slider"><div class="slick-list draggable" style="padding: 0px 50px;"><div class="slick-track" style="opacity: 1; width: 5520px; transform: translate3d(-2024px, 0px, 0px); transition: transform 500ms ease 0s;"><div class="slick-slide slick-cloned" data-slick-index="-6" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_08.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_09.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_10.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_12.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_13.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_14.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_01.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_02.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_03.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_04.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_05.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="5" aria-hidden="false" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_06.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="6" aria-hidden="false" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_08.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="7" aria-hidden="false" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_09.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="8" aria-hidden="false" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_10.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="9" aria-hidden="false" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_12.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="10" aria-hidden="true" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_13.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_14.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_01.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_02.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_03.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_04.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_05.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_06.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="18" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_08.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="19" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_09.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="20" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_10.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="21" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_12.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="22" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_13.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="23" aria-hidden="true" tabindex="-1" style="width: 184px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_kart/kart_14.jpg">
+</div>
+</div></div></div></div></div></section>
+</div>
+</div>
+</div>
+<div class="container-fluid sections section-8">
+<div class="row no-gutters justify-content-center">
+<div class="col-lg-12 col-md-12">
+<h1 class="color-blue mt-80">EXPRESS YOURSELF</h1>
+<p class="f-sm-3 text-center">Over <span class="count">999999999999</span>+ of customization combinations</p>
+<section class="customization-slide2 slider slick-initialized slick-slider"><div class="slick-list draggable" style="padding: 0px 50px;"><div class="slick-track" style="opacity: 1; width: 4945px; transform: translate3d(-1380px, 0px, 0px); transition: transform 500ms ease 0s;"><div class="slick-slide slick-cloned" data-slick-index="-9" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man9.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-8" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man10.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-7" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man11.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-6" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man12.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man13.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man14.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man15.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man16.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man17.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man1.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man2.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man3.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man4.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man5.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="5" aria-hidden="false" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man6.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="6" aria-hidden="false" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man7.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="7" aria-hidden="false" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man8.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="8" aria-hidden="false" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man9.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="9" aria-hidden="false" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man10.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="10" aria-hidden="false" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man11.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-active" data-slick-index="11" aria-hidden="false" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man12.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="12" aria-hidden="true" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man13.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="13" aria-hidden="true" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man14.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="14" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man15.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man16.jpg">
+</div>
+</div></div></div><div class="slick-slide" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man17.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man1.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="18" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man2.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="19" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man3.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="20" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man4.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="21" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man5.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="22" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man6.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="23" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man7.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="24" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man8.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="25" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man9.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="26" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man10.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="27" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man11.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="28" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man12.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="29" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man13.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="30" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man14.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="31" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man15.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="32" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man16.jpg">
+</div>
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="33" aria-hidden="true" tabindex="-1" style="width: 115px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<div class="inner-group">
+<img src="./image/customization_character/man17.jpg">
+</div>
+</div></div></div></div></div></section>
+</div>
+</div>
+</div>
+<div class="container-fluid sections section-9">
+<div class="di-bot-bg"></div>
+<div class="row no-gutters justify-content-center">
+<div class="col-12">
+<h1 class="color-blue mt-80">MEMIFY YOUR RACE</h1>
+<p class="f-sm-3 text-center">More fun when you can honk, chat &amp; meme your friends mid race</p>
+</div>
+<div class="col-lg-6">
+<video class="sec9-vid" muted="" loop="" poster="./image/short_fallback.jpg" controls="">
+<source src="./image/short_2.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+</div>
+</div>
+<div class="container-fluid sections section-10">
+<div class="row no-gutters justify-content-center comfort-holder">
+<div class="col-lg-4 col-md-12 comfort-item">
+<img src="./image/icon/social_carhorn.png">
+<div class="description">
+<h2>Voice Chat &amp; Horn</h2>
+<p>Taunt and honk your opponents with customized Car Horn and push to talk voice chat.</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 comfort-item">
+<img src="./image/icon/social_emote.png">
+<div class="description">
+<h2>Emote</h2>
+<p>Spice up the race by sending personalized animated and voiced Emotes and Memes.</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 comfort-item">
+<img src="./image/icon/social_social_room.png">
+<div class="description">
+<h2>Social Room</h2>
+<p>Socialize and interact with your friends with up to 8 people. Unleash your expression through Memes and Animation Poses.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid sections section-17">
+<div class="row no-gutters justify-content-center event">
+<div class="col-lg-10 col-md-10 header">
+<h1 class="">EVENT &amp; TOURNAMENT</h1>
+<p class="description f-sm-3 color-blue">Regular tournaments &amp; events for both casual and hardcore racers</p>
+</div>
+<div class="col-lg-12 col-md-12 game-boy-holder">
+<section class="game-boy slider slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4995px; transform: translate3d(-2220px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 555px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<img class="item" src="./image/dashboy/0Website_Seasonal2Cover_430x430.jpg">
+</div></div></div><div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" style="width: 555px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<img class="item" src="./image/dashboy/Immersive40_Website_430x430.jpg">
+</div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 555px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<img class="item" src="./image/dashboy/out_soon_V2_dashboy_in_web.jpg">
+</div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 555px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<img class="item" src="./image/dashboy/banner_quest2_dashboy_in_web.jpg">
+</div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="3" aria-hidden="false" style="width: 555px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<img class="item" src="./image/dashboy/0Website_Seasonal2Cover_430x430.jpg">
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 555px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<img class="item" src="./image/dashboy/Immersive40_Website_430x430.jpg">
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 555px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<img class="item" src="./image/dashboy/out_soon_V2_dashboy_in_web.jpg">
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 555px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<img class="item" src="./image/dashboy/banner_quest2_dashboy_in_web.jpg">
+</div></div></div><div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 555px;"><div><div class="item" style="width: 100%; display: inline-block;">
+<img class="item" src="./image/dashboy/0Website_Seasonal2Cover_430x430.jpg">
+</div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button></section>
+<img class="img-cover" src="./image/dashboy/dashboy_530X670.png">
+</div>
+</div>
+</div>
+
+<div class="container-fluid sections section-13">
+<div class="row no-gutters justify-content-center competitive">
+<div class="col-lg-10 col-md-10 header">
+<h1 class="">HIGH REPLAYABILITY</h1>
+<p class="description f-sm-3 color-blue">Multiple singleplayer modes, online ranking &amp; events</p>
+</div>
+<div class="row no-gutters justify-content-center competitive-item-holder">
+<div class="col-lg-4 competitive-item">
+<img src="./image/competitive_pro_racing.jpg">
+<div class="description">
+<h2>Pro Racing</h2>
+<p class="color-white">This mode has all new car responses aimed for serious racers. It focuses more on speed and tight corners yet requires you to master all of the weapon skills to shave off every seconds that count.</p>
+</div>
+</div>
+<div class="col-lg-4 competitive-item">
+<img src="./image/competitive_online_leaderboard.jpg">
+<div class="description">
+<h2>Online Leaderboard</h2>
+<p class="color-white">Perfect your turn Monthly and All time record. Make the world record to show that you are the best racer in the game. It's time to shine on the Online Leaderboard.</p>
+</div>
+</div>
+<div class="col-lg-4 competitive-item">
+<img src="./image/competitive_challenge_race.jpg">
+<div class="description">
+<h2>Regular Events </h2>
+<p class="color-white">Practice and prepare for any unique online events we are throwing at you. They will be fun, challenging and full of new rewards and surprises each time.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="container-fluid sections section-11 mt-big">
+<div class="row no-gutters justify-content-center">
+<div class="di-top-bg"></div>
+<div class="col-lg-12">
+<h1>NO VR EXPERIENCE ? NO WORRIES</h1>
+<p class="description f-sm-3 color-blue">Grow VR leg at your own pace with flexible acclimatization process</p>
+</div>
+<div class="col-lg-6">
+<video class="sec-vid" autoplay="" muted="" loop="" poster="./image/short_fallback.jpg" controls="">
+<source src="./image/short_3.mp4" type="video/mp4">
+<img src="./image/short_fallback.jpg" title="Your browser does not support the <video> tag">
+</video>
+</div>
+</div>
+</div>
+<div class="container-fluid sections section-12">
+<div class="row no-gutters justify-content-center competitive maxw-90">
+<div class="row no-gutters justify-content-center competitive-item-holder">
+<div class="col-lg-4 competitive-item">
+<img src="./image/icon/vr_exp_comfort_mode.jpg">
+<div class="description">
+<h2 class="color-darkblue">Comfort Mode</h2>
+<p>6 options of Comfort Mode, tailor-made for VR, will help you adjust and combat the potential motion sickness while allowing high intensity gameplay.</p>
+</div>
+</div>
+<div class="col-lg-4 competitive-item">
+<img src="./image/icon/vr_exp_dynamic_race_map.jpg">
+<div class="description">
+<h2 class="color-darkblue">Dynamic Minimap</h2>
+<p>Keep the immersive gameplay while staying safe and free from motion sickness by using the Dynamic Minimap that lets you zoom in to see all actions surrounding you without having to turn your head.</p>
+</div>
+</div>
+<div class="col-lg-4 competitive-item">
+<img src="./image/icon/vr_exp_orientation_class.jpg">
+<div class="description">
+<h2 class="color-darkblue">Orientation Class</h2>
+<p>Tutorial and Academy mode will help you get on board and adjust to the game with no gaming or VR experience needed. This mode will subconsciously help you acclimatize and grow your “VR legs” in no time.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="container-fluid sections section-15">
+<div class="row no-gutters justify-content-center">
+<div class="col-lg-12 col-md-12 endless-gameplay-header">
+<h1 class="color-blue mt-80">ENDLESS GAMEPLAY</h1>
+<p class="f-sm-3">Over 100 hours of gameplay content &amp; over 200+ unique achievements</p>
+<p class="f-sm-3-grey text-center">*More achivement will be update throughout 2021.</p>
+</div>
+</div>
+<div class="row no-gutters justify-content-center endless-gameplay">
+</div>
+</div>
+<div class="container-fluid sections section-16">
+<div class="di-bot-bg"></div>
+<img src="./image/carbo_face_blaster.png" class="char-2">
+</div>
+
+<div class="row no-gutters justify-content-center multiplayer" id="multiplayer">
+<div class="col-lg-10 col-md-10 header">
+<h1 class="">JOIN THE RACE</h1>
+<p class="description f-sm-3 color-blue">Buy now to race up to 8 players cross-platform &amp; across the globe</p>
+</div>
+<div class="col-lg-8 col-md-10">
+<img src="./image/multiplayer_8_player.png">
+</div>
+</div>
+<div class="platform">
+<div class="platform-holder">
+<div class="platform-header">
+<hr class="left-line">
+<h2>BUY NOW</h2>
+<hr class="right-line">
+</div>
+<div class="items">
+<a href="https://store.steampowered.com/app/1159860/Dash_Dash_World" target="_blank"><img src="./image/platform_button_steamX.png"></a>
+<a href="https://www.oculus.com/experiences/rift/2046553198725213" target="_blank"><img src="./image/platform_button_rift.png"></a>
+<a href="https://www.oculus.com/experiences/quest/2159739540797724" target="_blank"><img src="./image/platform_button_quest.png"></a>
+<a href="" style="pointer-events: none;"><img src="./image/platform_button_playstation.png"></a>
+</div>
+</div>
+</div>
+<div class="container-fluid sections section-18">
+<hr class="bottom-line">
+<a href="#top"><img class="to-top-img" src="./image/icon/new_arrow_sign_up_70x70.png"></a>
+</div>
+<div class="container-fluid sections footer">
+<div class="row no-gutters justify-content-center">
+<div class="col-lg-8 col-md-10">
+
+<a class="footer-group" href="https://discord.gg/mHSgbsA" target="_blank">
+<img class="button" src="./image/icon/discord_button.png" alt="Join our Discord Community">
+</a>
+<a class="footer-group" href="https://www.facebook.com/groups/DashDashRacing" target="_blank">
+<img class="button" src="./image/icon/fb_groups_button.png" alt="Join our Facebook Group">
+</a>
+<hr class="devide">
+<a class="footer-group" href="https://www.reddit.com/r/DashDashRacing" target="_blank">
+<img src="./image/icon/icon_reddit.png" alt="Join r/DashDashRacing">
+</a>
+<a class="footer-group" href="https://www.twitter.com/DashDashRacing" target="_blank">
+<img src="./image/icon/icon_twitter.png" alt="Follow our latest news on Twit">
+</a>
+<a class="footer-group" href="https://www.facebook.com/DashDashRacing" target="_blank">
+<img src="./image/icon/icon_facebook.png" alt="Follow our latest news on Facebook">
+</a>
+<a class="footer-group" href="https://www.instagram.com/DashDashRacing" target="_blank">
+<img src="./image/icon/icon_instagram.png" alt="Follow our Instagram">
+</a>
+<a class="footer-group" href="https://www.youtube.com/DashDashRacing" target="_blank">
+<img src="./image/icon/icon_youtube.png" alt="Subscribe our Youtube channel">
+</a>
+</div>
+<div class="col-lg-8 col-md-10">
+<a class="footer-group2 color-white" href="./faq.php">FAQ</a>
+<a class="footer-group2 color-white" href="./learn.php">Learning Center</a>
+<a class="footer-group2 color-white last" href="./presskit">Press Kit</a>
+</div>
+<div class="col-lg-8 col-md-10">
+<a class="footer-group3 color-white" href="./contactus.php">Contact Us</a>
+
+<a class="footer-group3 color-white" href="/privacy.pdf" target="_blank">Privacy Policy</a>
+<a class="footer-group3 color-white last" href="/terms.pdf" target="_blank">Term of use</a>
+</div>
+</div>
+</div> <script type="text/javascript">
+        </script>
+</main>
+<script>
+    $(window).on('load', function() {
+        $('#loading').addClass("hide");
+    });
+    </script>
+<script type="text/javascript">
+    $("a[href='#top']").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+        return false;
+    });
+    $("a[href='#multiplayer']").click(function() {
+        var p = $(".multiplayer").last();
+        var offset = p.offset();
+        $("html, body").animate({ scrollTop: offset.top }, 1000);
+        return false;
+    });
+    /*$(".slider-nav").on("init", function (){
+      $(".alb-nav .slick-list").append('<img class="fade-left" src="./image/Gradients_black_Track.png"><img class="fade-right" src="./image/Gradients_black_Track.png">');
+      $(".alb-nav .fade-left,.alb-nav .fade-right").height($(".section-4 .track-nav .item img").height());
+    });
+    $(".slider-nav").on("reInit", function (){
+      $(".alb-nav .slick-list").append('<img class="fade-left" src="./image/Gradients_black_Track.png"><img class="fade-right" src="./image/Gradients_black_Track.png">');
+      $(".alb-nav .fade-left,.alb-nav .fade-right").height($(".section-4 .track-nav .item img").height());
+    });*/
+    $('.game-boy').slick({
+        slidesToShow: 1,
+        infinite: true,
+        arrows: true,
+        autoplay: true,
+    });
+    $('.marquee').slick({
+        slidesToShow: 12,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 500,
+        responsive: [{
+                breakpoint: 1441,
+                settings: {
+                    dots: false,
+                    centerMode: false,
+                    slidesToShow: 9
+                }
+            },
+            {
+                breakpoint: 1021,
+                settings: {
+                    dots: false,
+                    centerMode: false,
+                    slidesToShow: 8
+                }
+            },
+            {
+                breakpoint: 920,
+                settings: {
+                    dots: false,
+                    centerMode: false,
+                    slidesToShow: 6
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    dots: false,
+                    centerMode: false,
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
+
+    $('.power-ups-slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        centerMode: true,
+        fade: true,
+        autoplay: false,
+    });
+    $('.slick').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        arrows: false,
+        fade: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 10000,
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [{
+                breakpoint: 1025,
+                settings: {
+                    dots: false,
+                    centerMode: true,
+                    slidesToShow: 6
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: false,
+                    centerMode: true,
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    dots: false,
+                    centerMode: true,
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
+
+    $('.customization-slide').slick({
+        slidesToShow: 5,
+        arrows: false,
+        centerMode: true,
+        autoplay: true,
+        swipeToSlide: true,
+        responsive: [{
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1.5
+                }
+            }
+        ]
+    });
+    $('.customization-slide2').slick({
+        slidesToShow: 9,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        autoplay: true,
+        swipeToSlide: true,
+        responsive: [{
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 8
+                }
+            },
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 2.5
+                }
+            }
+        ]
+    });
+    $('.event-banner-slider').slick({
+        slidesToShow: 1,
+        infinite: true,
+        arrows: true,
+        autoplay: true,
+        dots: true
+    });
+
+    function addCommas(nStr) {
+        nStr += '';
+        x = nStr.split('.');
+        x1 = x[0];
+        x2 = x.length > 1 ? '.' + x[1] : '';
+        var rgx = /(\d+)(\d{3})/;
+        while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+        }
+        return x1 + x2;
+    }
+    $.fn.isOnScreen = function() {
+
+        var win = $(window);
+
+        var viewport = {
+            top: win.scrollTop(),
+            left: win.scrollLeft()
+        };
+        viewport.right = viewport.left + win.width();
+        viewport.bottom = viewport.top + win.height();
+
+        var bounds = this.offset();
+        bounds.right = bounds.left + this.outerWidth();
+        bounds.bottom = bounds.top + this.outerHeight();
+
+        return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+    };
+    var c_animate = true;
+    $(function() {
+        $(".track-head").addClass("hide");
+        $(".track-head").addClass("show");
+        $('.lazy').Lazy({
+            // your configuration goes here
+            scrollDirection: 'vertical',
+            effect: 'fadeIn',
+            visibleOnly: true,
+            onError: function(element) {
+                console.log('error loading ' + element.data('src'));
+            }
+        });
+        $(window).scroll(function() {
+            if ($('.count').isOnScreen() && c_animate) {
+                c_animate = false;
+                $('.count').each(function() {
+                    $(this).prop('Counter', 100000000000).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function(now) {
+                            $(this).text(addCommas(Math.ceil(now)));
+                        }
+                    });
+                });
+            } else {
+                // The element is NOT visible, do something else
+            }
+        });
+        all_vid = $('.power-ups-slide .item .inner-group video');
+        num_vid = all_vid.length;
+
+        for (var i = num_vid - 1; i >= 0; i--) {
+            //all_vid.eq(i).get(0).play();
+            all_vid.eq(i).get(0).pause();
+        }
+    });
+    // $(window).resize(function() {
+
+    // });
+    var is_vid_play=false;
+    var is_vid_play2=false;
+    var is_vid_play3=false;
+    $(window).on('resize scroll', function() {
+        if ($('.in-section').isInViewport()) {
+            $(".in-section").height("auto");
+            //   var height_b=$(".in-section").height();
+            // $(".in-section").height(height_b);
+            $(".alb-nav .fade-left,.alb-nav .fade-right").height($(".section-4 .track-nav .item img").height());
+        } else {
+
+        }
+        if ($('.sec9-vid').isInViewport()&&!is_vid_play) {
+            $('.sec9-vid').get(0).play();
+            is_vid_play=true;
+        }else if(!$('.sec9-vid').isInViewport()&&is_vid_play) {
+            $('.sec9-vid').get(0).pause();
+            is_vid_play=false;
+        }
+        if ($('.sec2-vid').isInViewport()&&!is_vid_play2) {
+            $('.sec2-vid').get(0).play();
+            is_vid_play2=true;
+        }else if(!$('.sec2-vid').isInViewport()&&is_vid_play2) {
+            $('.sec2-vid').get(0).pause();
+            is_vid_play2=false;
+        }
+        if ($('.sec-vid').isInViewport()&&!is_vid_play3) {
+            $('.sec-vid').get(0).play();
+            is_vid_play3=true;
+        }else if(!$('.sec-vid').isInViewport()&&is_vid_play3) {
+            $('.sec-vid').get(0).pause();
+            is_vid_play3=false;
+        }
+
+    });
+
+    function show_embed(yt_link) {
+        $(".youtube-overlay").addClass("active");
+        $(".youtube-overlay iframe").attr("src", "https://www.youtube.com/embed/" + yt_link);
+    }
+
+    function close_embed() {
+        $(".youtube-overlay").addClass("hide");
+        $(".youtube-overlay").removeClass("active");
+        $(".youtube-overlay iframe").attr("src", "https://www.youtube.com/embed/");
+        setTimeout(function() { $(".youtube-overlay").removeClass("hide"); }, 600);
+
+
+        $(".loading-overlay").removeClass("active");
+        $(".power-ups-overlay").addClass("hide");
+        $(".power-ups-overlay").removeClass("active");
+        setTimeout(function() { $(".power-ups-overlay").removeClass("hide"); }, 600);
+
+    }
+    $(document).on("click", ".power-item", function() {
+        $(".power-ups-overlay").removeClass("hide");
+        $(".power-ups-overlay").addClass("active");
+        $('.power-ups-slide').slick('slickGoTo', $(this).attr("position"));
+        vid = $('.power-ups-overlay.active .power-ups-slide .slick-active .item .inner-group video');
+        vid.get(0).play();
+    });
+    $(document).on("click", ".power-ups-close", function() {
+        $(".power-ups-overlay").addClass("hide");
+        $(".power-ups-overlay").removeClass("active");
+        setTimeout(function() { $(".power-ups-overlay").removeClass("hide"); }, 600);
+        all_vid = $('.power-ups-slide .item .inner-group video');
+        num_vid = all_vid.length;
+
+        for (var i = num_vid - 1; i >= 0; i--) {
+            all_vid.eq(i).get(0).pause();
+        }
+    });
+    $(document).on("click", ".track-info", function() {
+        var cur = $(this);
+        /*$(".section-4 .track-head .item .inner-group .black-mask").removeClass("show");
+        $(".section-4 .track-head .headline").removeClass("active");
+        if (cur.hasClass("active")) {
+          cur.removeClass("active");
+          $("#"+cur.attr("attr-id")).removeClass("active");
+          cur.parent().find(".black-mask").removeClass("show");
+        }else{
+          cur.addClass("active");
+          $("#"+cur.attr("attr-id")).addClass("active");
+          cur.parent().find(".black-mask").addClass("show");
+        }*/
+
+        if ($(".section-4 .track-head .item .inner-group .black-mask").hasClass("show")) {
+            $(".section-4 .track-head .headline").removeClass("active");
+            $(".section-4 .track-head .item .inner-group .black-mask").removeClass("show");
+        } else {
+            $(".section-4 .track-head .headline").addClass("active");
+            $(".section-4 .track-head .item .inner-group .black-mask").addClass("show");
+        }
+
+
+
+    });
+    $(".power-ups-slide").on("afterChange", function() {
+        all_vid = $('.power-ups-slide .item .inner-group video');
+        num_vid = all_vid.length;
+
+        for (var i = num_vid - 1; i >= 0; i--) {
+            all_vid.eq(i).get(0).pause();
+        }
+        vid = $('.power-ups-overlay.active .power-ups-slide .slick-active .item .inner-group video');
+        vid.get(0).play();
+    });
+    $(".slider-nav").on("afterChange", function() {
+        var height_b = $(".in-section").height();
+        $(".in-section").height(height_b);
+        var txt = $(".slider-nav .slick-center .inner-group").attr("slide-id-head");
+        $('.slick').slick('unslick');
+
+        $(".track-head").addClass("hide");
+        $("#" + txt).removeClass("hide");
+        $(".track-head").removeClass("active");
+        $(".track-head").removeClass("show");
+        $("#" + txt).addClass("active");
+        $("#" + txt).on('reInit', function(event, slick, direction) {
+            $(".in-section").height("auto");
+        });
+        $("#" + txt).on('init', function(event, slick, direction) {
+            $(".in-section").height("auto");
+        });
+        $(".slick").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            fade: true,
+            dots: true,
+        });
+        $("#" + txt).addClass("show");
+
+
+        //$( ".track-head" ).fadeOut( 1, complete1 );
+        //$("#"+txt ).fadeIn( 1,complete2(txt) );
+        // function complete1() {
+        //   $(".track-head").addClass("hide");
+        // }
+        // function complete2(txt) {
+
+        //   $("#"+txt ).removeClass("hide");
+        //   $(".track-head").removeClass("active");
+        //   $("#"+txt).addClass("active");
+        //   $("#"+txt).on('reInit', function(event, slick, direction){
+        //     $(".in-section").height("auto");
+        //   });
+        //   $("#"+txt).on('init', function(event, slick, direction){
+        //     $(".in-section").height("auto");
+        //   });
+        //   $(".slick").slick({
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     arrows: false,
+        //     fade: true,
+        //     dots: true,
+        //   });
+
+        //   //setTimeout(function(){ $(".in-section").height("auto"); }, 3000);
+        //   //$("#"+txt).addClass("active");
+        //   //$(".in-section").height("auto");
+
+        // }
+    })
+    $(document).on("click", ".close-nav", function() {
+        $(".topnav").removeClass("fadeInDown");
+        $(".topnav").removeClass("animated");
+        $(".topnav").addClass("fadeOutUp");
+        $(".topnav").addClass("animated");
+    });
+    $(document).on("click", ".option a.menu", function() {
+        $(".topnav").removeClass("fadeOutUp");
+        $(".topnav").removeClass("animated");
+        $(".topnav").addClass("fadeInDown");
+        $(".topnav").addClass("animated");
+        $(".topnav").css("display", "block");
+    });
+    </script>
+
+
+</body></html>

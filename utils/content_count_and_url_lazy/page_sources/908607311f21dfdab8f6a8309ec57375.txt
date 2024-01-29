@@ -1,0 +1,690 @@
+<html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Schleife Group – Department of Materials Science and Engineering, University of Illinois at Urbana-Champaign</title><meta name="robots" content="max-image-preview:large"><script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-YW2SBNNXMP&amp;l=dataLayer&amp;cx=c"></script><script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'],['\\(','\\)']], 
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+
+</script><link rel="dns-prefetch" href="//cdn.jsdelivr.net"><link rel="dns-prefetch" href="//use.fontawesome.com"><link rel="stylesheet" id="jquery.prettyphoto-css" href="http://schleife.matse.illinois.edu/wp-content/plugins/wp-video-lightbox/css/prettyPhoto.css" type="text/css" media="all"><link rel="stylesheet" id="video-lightbox-css" href="http://schleife.matse.illinois.edu/wp-content/plugins/wp-video-lightbox/wp-video-lightbox.css" type="text/css" media="all"><link rel="stylesheet" id="donovan-theme-fonts-css" href="http://schleife.matse.illinois.edu/wp-content/fonts/bfc981725ddf0dcbf0af5c565767364f.css" type="text/css" media="all"><link rel="stylesheet" id="wp-block-library-css" href="http://schleife.matse.illinois.edu/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="classic-theme-styles-css" href="http://schleife.matse.illinois.edu/wp-includes/css/classic-themes.min.css" type="text/css" media="all"><style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #ee1133;--wp--preset--color--secondary: #d5001a;--wp--preset--color--tertiary: #bb0000;--wp--preset--color--accent: #1153ee;--wp--preset--color--highlight: #eedc11;--wp--preset--color--light-gray: #f2f2f2;--wp--preset--color--gray: #666666;--wp--preset--color--dark-gray: #202020;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style><link rel="stylesheet" id="donovan-stylesheet-css" href="http://schleife.matse.illinois.edu/wp-content/themes/donovan/style.css" type="text/css" media="all"><style id="donovan-stylesheet-inline-css" type="text/css">
+.site-title, .site-description, .single-post .site-main .post-navigation { position: absolute; clip: rect(1px, 1px, 1px, 1px); width: 1px; height: 1px; overflow: hidden; }
+.site-branding .custom-logo { width: 321px; }
+</style><link rel="stylesheet" id="font-awesome-official-css" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" type="text/css" media="all" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"><link rel="stylesheet" id="font-awesome-official-v4shim-css" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css" type="text/css" media="all" integrity="sha384-Vq76wejb3QJM4nDatBa5rUOve+9gkegsjCebvV/9fvXlGWo4HCMR4cJZjjcF6Viv" crossorigin="anonymous"><style id="font-awesome-official-v4shim-inline-css" type="text/css">
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+</style><script type="text/javascript" src="http://schleife.matse.illinois.edu/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script><script type="text/javascript" src="http://schleife.matse.illinois.edu/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script><script type="text/javascript" src="http://schleife.matse.illinois.edu/wp-content/plugins/wp-video-lightbox/js/jquery.prettyPhoto.js" id="jquery.prettyphoto-js"></script><script type="text/javascript" id="video-lightbox-js-extra">
+/* <![CDATA[ */
+var vlpp_vars = {"prettyPhoto_rel":"wp-video-lightbox","animation_speed":"fast","slideshow":"5000","autoplay_slideshow":"false","opacity":"0.80","show_title":"true","allow_resize":"true","allow_expand":"true","default_width":"640","default_height":"480","counter_separator_label":"\/","theme":"pp_default","horizontal_padding":"20","hideflash":"false","wmode":"opaque","autoplay":"false","modal":"false","deeplinking":"false","overlay_gallery":"true","overlay_gallery_max":"30","keyboard_shortcuts":"true","ie6_fallback":"true"};
+/* ]]> */
+</script><script type="text/javascript" src="http://schleife.matse.illinois.edu/wp-content/plugins/wp-video-lightbox/js/video-lightbox.js" id="video-lightbox-js"></script><script type="text/javascript" src="http://schleife.matse.illinois.edu/wp-content/themes/donovan/assets/js/svgxuse.min.js" id="svgxuse-js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-42091510-1"></script><script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-42091510-1');
+		</script><script type="text/javascript" src="http://schleife.matse.illinois.edu/wp-content/plugins/teachpress/js/frontend.js"></script><link type="text/css" href="http://schleife.matse.illinois.edu/wp-content/plugins/teachpress/styles/teachpress_front.css" rel="stylesheet"><script>
+            WP_VIDEO_LIGHTBOX_VERSION="1.9.10";
+            WP_VID_LIGHTBOX_URL="http://schleife.matse.illinois.edu/wp-content/plugins/wp-video-lightbox";
+                        function wpvl_paramReplace(name, string, value) {
+                // Find the param with regex
+                // Grab the first character in the returned string (should be ? or &)
+                // Replace our href string with our new value, passing on the name and delimeter
+
+                var re = new RegExp("[\?&]" + name + "=([^&#]*)");
+                var matches = re.exec(string);
+                var newString;
+
+                if (matches === null) {
+                    // if there are no params, append the parameter
+                    newString = string + '?' + name + '=' + value;
+                } else {
+                    var delimeter = matches[0].charAt(0);
+                    newString = string.replace(re, delimeter + name + "=" + value);
+                }
+                return newString;
+            }
+            </script><link rel="icon" href="http://schleife.matse.illinois.edu/wp-content/uploads/2020/12/square-logo-150x150.png" sizes="32x32"><link rel="icon" href="http://schleife.matse.illinois.edu/wp-content/uploads/2020/12/square-logo-300x300.png" sizes="192x192"><link rel="apple-touch-icon" href="http://schleife.matse.illinois.edu/wp-content/uploads/2020/12/square-logo-300x300.png"><meta name="msapplication-TileImage" content="http://schleife.matse.illinois.edu/wp-content/uploads/2020/12/square-logo-300x300.png"><style type="text/css" id="wp-custom-css">
+			.home .entry-title {
+	display:none;
+}
+.header-image{
+	display:none;
+}
+.home .header-image{
+	display:block;
+}
+.is-style-circle-mask{
+	padding:2px
+}
+.no-sidebar .site-content .content-area .post-content{max-width:920px}
+
+ol.footnotes li{color:grey}
+
+.header-main {
+	padding-bottom: .1em;
+}
+@media only screen and (min-width: 90em) {
+	.entry-content {
+		font-size: 18px;
+		font-size: 1rem;
+	}
+}
+:root {
+	--link-color: #1e3877;
+	--navi-color: #13294B;
+	--navi-font: Quicksand, Arial, Tahoma;
+	--submenu-color: #FF552E;
+	--submenu-color: #dd3403;
+	--button-color: #13294B;
+	--button-hover-color: #FF552E;
+	--text-font: Arial;
+}
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+}
+.main-navigation ul li.current-menu-item > a {
+	text-decoration: none;
+	background-color: #ff552e
+}
+.is-style-circle-mask img {
+border-radius:100%;
+}
+.credit-link {
+	display:none;
+}		</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Quicksand&amp;display=swap" rel="stylesheet"><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("http://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style></head><body class="home page-template-default page page-id-279 wp-custom-logo wp-embed-responsive no-sidebar blog-grid-layout author-hidden">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		
+		
+		<header id="masthead" class="site-header clearfix" role="banner"><div class="header-main container clearfix">
+
+				<div id="logo" class="site-branding clearfix">
+
+					<a href="http://schleife.matse.illinois.edu/" class="custom-logo-link" rel="home" aria-current="page"><img width="642" height="311" src="http://schleife.matse.illinois.edu/wp-content/uploads/2020/11/image9.png" class="custom-logo" alt="Schleife Group" decoding="async" srcset="http://schleife.matse.illinois.edu/wp-content/uploads/2020/11/image9.png 642w,http://schleife.matse.illinois.edu/wp-content/uploads/2020/11/image9-300x145.png 300w" sizes="(max-width: 642px) 100vw, 642px"></a>					
+			<p class="site-title"><a href="http://schleife.matse.illinois.edu/" rel="home">Schleife Group</a></p>
+
+							
+			<p class="site-description">Department of Materials Science and Engineering, University of Illinois at Urbana-Champaign</p>
+
+			
+				</div>
+
+				
+			</div>
+
+			
+
+	<div id="main-navigation-wrap" class="primary-navigation-wrap">
+
+		<div id="main-navigation-container" class="primary-navigation-container container">
+
+			
+			<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<svg class="icon icon-menu" aria-hidden="true" role="img"><use xlink:href="http://schleife.matse.illinois.edu/wp-content/themes/donovan/assets/icons/genericons-neue.svg#menu"></use></svg><svg class="icon icon-close" aria-hidden="true" role="img"><use xlink:href="http://schleife.matse.illinois.edu/wp-content/themes/donovan/assets/icons/genericons-neue.svg#close"></use></svg><span class="menu-toggle-text">Menu</span>
+			</button>
+
+			<div class="primary-navigation">
+
+				<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu"><ul id="primary-menu" class="menu"><li id="menu-item-1074" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-279 current_page_item menu-item-1074"><a href="http://schleife.matse.illinois.edu/" aria-current="page">Home</a></li>
+<li id="menu-item-675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-675"><a href="http://schleife.matse.illinois.edu/the-group/">People<svg class="icon icon-expand" aria-hidden="true" role="img"><use xlink:href="http://schleife.matse.illinois.edu/wp-content/themes/donovan/assets/icons/genericons-neue.svg#expand"></use></svg></a><button class="dropdown-toggle" aria-expanded="false"><svg class="icon icon-expand" aria-hidden="true" role="img"> <use xlink:href="http://schleife.matse.illinois.edu/wp-content/themes/donovan/assets/icons/genericons-neue.svg#expand"></use> </svg><span class="screen-reader-text">Expand child menu</span></button>
+<ul class="sub-menu"><li id="menu-item-968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-968"><a href="http://schleife.matse.illinois.edu/the-group/">Current Members</a></li>
+	<li id="menu-item-967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-967"><a href="http://schleife.matse.illinois.edu/the-group/alumni/">Alumni</a></li>
+</ul></li>
+<li id="menu-item-794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-794"><a href="http://schleife.matse.illinois.edu/research/">Research</a></li>
+<li id="menu-item-1342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1342"><a href="http://schleife.matse.illinois.edu/publications/">Publications</a></li>
+<li id="menu-item-674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674"><a href="http://schleife.matse.illinois.edu/teaching/">Teaching</a></li>
+<li id="menu-item-678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-678"><a href="http://schleife.matse.illinois.edu/news/">News</a></li>
+</ul></nav></div>
+
+		</div>
+
+	</div>
+
+
+
+			
+			
+		</header><div id="content" class="site-content container">
+
+			
+	<div id="primary" class="content-single content-area">
+		<main id="main" class="site-main" role="main"><article id="post-279" class="post-279 page type-page status-publish hentry comments-off"><div class="post-content">
+
+		<header class="entry-header"><h1 class="entry-title page-title">Home</h1>
+		</header><div class="entry-content clearfix">
+
+			
+<div class="alignnormal"><div id="metaslider-id-1011" style="width: 100%; margin: 0 auto;" class="ml-slider-3-37-0 metaslider metaslider-flex metaslider-1011 ml-slider ms-theme-default" role="region" aria-roledescription="Slideshow" aria-label="New Slideshow">
+    <div id="metaslider_container_1011">
+        <div id="metaslider_1011" class="flexslider">
+            <ul aria-live="polite" class="slides"><li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;" class="slide-1012 ms-image" aria-roledescription="slide" aria-label="slide-1012" data-thumb-alt="" aria-hidden="true"><a href="http://schleife.matse.illinois.edu/research/" target="_self"><img src="http://schleife.matse.illinois.edu/wp-content/uploads/2020/08/slide-image-2-930x290.jpg" height="400" width="1280" alt="" class="slider-1011 slide-1012" title="slide-image-2" draggable="false"></a><div class="caption-wrap"><div class="caption">Ultrafast electron dynamics</div></div></li>
+                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; z-index: 2;" class="slide-1015 ms-image flex-active-slide" aria-roledescription="slide" aria-label="slide-1015" data-thumb-alt=""><a href="http://schleife.matse.illinois.edu/research/" target="_self"><img src="http://schleife.matse.illinois.edu/wp-content/uploads/2020/11/Al-H-Alina-1280x400.png" height="400" width="1280" alt="" class="slider-1011 slide-1015" title="Al-H-Alina" draggable="false"></a><div class="caption-wrap"><div class="caption">Proton irradiation of 2D materials</div></div></li>
+                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;" class="slide-1016 ms-image" aria-roledescription="slide" aria-label="slide-1016" aria-hidden="true" data-thumb-alt=""><a href="http://schleife.matse.illinois.edu/research/" target="_self"><img src="http://schleife.matse.illinois.edu/wp-content/uploads/2020/11/QuantumDot-1280x400.png" height="400" width="1280" alt="" class="slider-1011 slide-1016" title="QuantumDot" draggable="false"></a><div class="caption-wrap"><div class="caption">Nanocrystal optical properties</div></div></li>
+                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;" class="slide-1017 ms-image" aria-roledescription="slide" aria-label="slide-1017" aria-hidden="true" data-thumb-alt=""><a href="http://schleife.matse.illinois.edu/research/" target="_self"><img src="http://schleife.matse.illinois.edu/wp-content/uploads/2020/11/POSCAR_KBiS2-6-4k-Sobel-Junehu-1280x400.png" height="400" width="1280" alt="" class="slider-1011 slide-1017" title="POSCAR_KBiS2 6 4k Sobel-Junehu" draggable="false"></a><div class="caption-wrap"><div class="caption">Electrical and optical materials simulations</div></div></li>
+                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;" class="slide-1019 ms-image" aria-roledescription="slide" aria-label="slide-1019" aria-hidden="true" data-thumb-alt=""><a href="http://schleife.matse.illinois.edu/research/" target="_self"><img src="http://schleife.matse.illinois.edu/wp-content/uploads/2020/11/CubicFeRh-mix-glossy-transparent-03-Kisung-1280x400.png" height="400" width="1280" alt="" class="slider-1011 slide-1019" title="CubicFeRh mix glossy transparent 03-Kisung" draggable="false"></a><div class="caption-wrap"><div class="caption">Magnetic materials simulations</div></div></li>
+                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;" class="slide-1020 ms-image" aria-roledescription="slide" aria-label="slide-1020" aria-hidden="true" data-thumb-alt=""><a href="http://schleife.matse.illinois.edu/research/" target="_self"><img src="http://schleife.matse.illinois.edu/wp-content/uploads/2020/11/4VO-area-lighting-3-8k-Cartoon-Effect-MgO-Yifan-1280x400.png" height="400" width="1280" alt="" class="slider-1011 slide-1020" title="4VO area lighting 3 8k Cartoon Effect-MgO-Yifan" draggable="false"></a><div class="caption-wrap"><div class="caption">Time-dependent DFT simulations</div></div></li>
+                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;" class="slide-1018 ms-image" aria-roledescription="slide" aria-label="slide-1018" aria-hidden="true" data-thumb-alt=""><a href="http://schleife.matse.illinois.edu/research/" target="_self"><img src="http://schleife.matse.illinois.edu/wp-content/uploads/2020/11/mgo_fig-1200x375.png" height="400" width="1280" alt="" class="slider-1011 slide-1018" title="mgo_fig" draggable="false"></a><div class="caption-wrap"><div class="caption">Non-adiabatic electron-ion dynamics</div></div></li>
+                <li style="display: block; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; z-index: 1;" class="slide-1252 ms-image" aria-roledescription="slide" aria-label="slide-1252" aria-hidden="true" data-thumb-alt=""><img src="http://schleife.matse.illinois.edu/wp-content/uploads/2021/12/Antiferro-lantern_auto_x2-scaled-1280x400.jpg" height="400" width="1280" alt="" class="slider-1011 slide-1252" draggable="false"><div class="caption-wrap"><div class="caption">Anti-ferromagentic lantern</div></div></li>
+            </ul><ol class="flex-control-nav flex-control-paging" aria-label="Slide controls"><li aria-label="Show slide 1 of 8"><a href="#" class="">1</a></li><li aria-label="Show slide 2 of 8"><a href="#" class="flex-active">2</a></li><li aria-label="Show slide 3 of 8"><a href="#">3</a></li><li aria-label="Show slide 4 of 8"><a href="#">4</a></li><li aria-label="Show slide 5 of 8"><a href="#">5</a></li><li aria-label="Show slide 6 of 8"><a href="#">6</a></li><li aria-label="Show slide 7 of 8"><a href="#">7</a></li><li aria-label="Show slide 8 of 8"><a href="#">8</a></li></ol><ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a></li><li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li></ul></div>
+        
+    </div>
+</div></div>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-4">
+<div class="wp-block-column is-layout-flow">
+<p><strong>Announcements</strong></p>
+
+
+
+<div class="wp-block-group is-layout-flow"><div class="wp-block-group__inner-container">
+<ul><li>Ethan successfully defended his thesis! Congrats Dr. Shapera!</li><li>Kisung successfully defended his thesis! Congrats Dr. Kang!</li><li>The Schleife Group welcomes 2 new post-docs: <a href="http://schleife.matse.illinois.edu/the-group/zhihao-jiang/" data-type="page" data-id="1266">Zhihao</a> and <a href="http://schleife.matse.illinois.edu/the-group/vijaya-begum-hudde/" data-type="page" data-id="1444">Vijaya</a> to the group!</li><li>The Schleife Group welcomes 1 new PhD student: <a href="http://schleife.matse.illinois.edu/the-group/yi-ting-lee/" data-type="page" data-id="1194">Yi-Ting</a> to the group!</li><li>The Schleife Group welcomes 1 new PhD student: <a href="http://schleife.matse.illinois.edu/the-group/fatemeh-amerikheirabadi/" data-type="page" data-id="1196">Fatemeh</a> to the group!</li><li>New website design is rolled out</li><li>André was promoted to<a rel="noreferrer noopener" href="https://matse.illinois.edu/news/faculty-promotions-gabrielson-schleife-shoemaker" data-type="URL" data-id="https://matse.illinois.edu/news/faculty-promotions-gabrielson-schleife-shoemaker" target="_blank"> Associate Professor</a>. </li><li>The Schleife Group welcomes 3 new PhD students: <a href="http://schleife.matse.illinois.edu/the-group/junehu-park/" data-type="page" data-id="447">Junehu</a>, <a href="http://schleife.matse.illinois.edu/the-group/gillian-nolan/" data-type="page" data-id="445">Gillian</a>, and <a href="http://schleife.matse.illinois.edu/the-group/cindy-wong/" data-type="page" data-id="453">Cindy </a>to the group!</li><li>Alina successfully defended her thesis in the Physics department. Congratulations Dr. Alina!</li><li>The APS March Meeting was cancelled.</li></ul></div></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow">
+<p><strong>Recent Posts</strong></p>
+
+
+<ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="http://schleife.matse.illinois.edu/2022/11/21/erick-to-attend-gyss-conference/">Erick to attend GYSS conference</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="http://schleife.matse.illinois.edu/2022/10/20/erick-attends-miccom-workshop/">Erick attends MICCoM Workshop</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="http://schleife.matse.illinois.edu/2022/08/29/interactive-holographic-display-system-ihds/">Interactive Holographic Display System (IHDS)</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="http://schleife.matse.illinois.edu/2022/05/10/erick-receives-mavis-future-faculty-fellowship/">Erick receives Mavis Future Faculty Fellowship</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="http://schleife.matse.illinois.edu/2022/03/12/erick-receives-ovshinsky-travel-award/">Erick receives Ovshinsky Travel Award</a></li>
+</ul></div>
+</div>
+
+
+
+<div class="wp-block-group is-layout-flow"><div class="wp-block-group__inner-container">
+<p>Follow us on Twitter: <a href="https://twitter.com/aschleife">https://twitter.com/aschleife</a></p>
+</div></div>
+
+			
+		</div>
+
+	</div>
+
+</article></main></div>
+
+
+	</div>
+
+	
+	<div id="footer" class="footer-wrap">
+
+		<footer id="colophon" class="site-footer container clearfix" role="contentinfo"><div id="footer-line" class="site-info">
+								
+		<span class="credit-link">
+			WordPress Theme: Donovan by <a href="https://themezee.com/" target="_blank" rel="nofollow">ThemeZee</a>.		</span>
+
+					</div>
+
+		</footer></div>
+
+</div>
+
+<link rel="stylesheet" id="academicons-css" href="http://schleife.matse.illinois.edu/wp-content/plugins/teachpress/includes/academicons/css/academicons.min.css" type="text/css" media="all"><link rel="stylesheet" id="font-awesome-css" href="http://schleife.matse.illinois.edu/wp-content/plugins/teachpress/includes/fontawesome/css/all.min.css" type="text/css" media="all"><link rel="stylesheet" id="metaslider-flex-slider-css" href="http://schleife.matse.illinois.edu/wp-content/plugins/ml-slider/assets/sliders/flexslider/flexslider.css" type="text/css" media="all" property="stylesheet"><link rel="stylesheet" id="metaslider-public-css" href="http://schleife.matse.illinois.edu/wp-content/plugins/ml-slider/assets/metaslider/public.css" type="text/css" media="all" property="stylesheet"><style id="core-block-supports-inline-css" type="text/css">
+.wp-container-4.wp-container-4{flex-wrap:nowrap;}
+</style><script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=6.2.2" id="mathjax-js"></script><script type="text/javascript" id="donovan-navigation-js-extra">
+/* <![CDATA[ */
+var donovanScreenReaderText = {"expand":"Expand child menu","collapse":"Collapse child menu","icon":"<svg class=\"icon icon-expand\" aria-hidden=\"true\" role=\"img\"> <use xlink:href=\"http:\/\/schleife.matse.illinois.edu\/wp-content\/themes\/donovan\/assets\/icons\/genericons-neue.svg#expand\"><\/use> <\/svg>"};
+/* ]]> */
+</script><script type="text/javascript" src="http://schleife.matse.illinois.edu/wp-content/themes/donovan/assets/js/navigation.min.js" id="donovan-navigation-js"></script><script type="text/javascript" src="http://schleife.matse.illinois.edu/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider.min.js" id="metaslider-flex-slider-js"></script><script type="text/javascript" id="metaslider-flex-slider-js-after">
+var metaslider_1011 = function($) {$('#metaslider_1011').addClass('flexslider');
+            $('#metaslider_1011').flexslider({ 
+                slideshowSpeed:3000,
+                animation:"fade",
+                controlNav:true,
+                directionNav:true,
+                pauseOnHover:true,
+                direction:"horizontal",
+                reverse:false,
+                keyboard:false,
+                animationSpeed:600,
+                prevText:"Previous",
+                nextText:"Next",
+                smoothHeight:false,
+                fadeFirstSlide:false,
+                slideshow:true
+            });
+            $(document).trigger('metaslider/initialized', '#metaslider_1011');
+        };
+        var timer_metaslider_1011 = function() {
+            var slider = !window.jQuery ? window.setTimeout(timer_metaslider_1011, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_1011, 1) : metaslider_1011(window.jQuery);
+        };
+        timer_metaslider_1011();
+</script>
+</body></html>

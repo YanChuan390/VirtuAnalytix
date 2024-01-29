@@ -1,0 +1,217 @@
+<html lang="en"><!-- begin::Head --><head><meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+    <base href="../../../">
+    <meta charset="utf-8">
+    <title>Authorization | AlphaLink</title>
+    <meta name="description" content="Authenticate to AlphaLink">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/0hCdE87LyjzAkFO5Ff-v7Hj1/recaptcha__zh_cn.js" crossorigin="anonymous" integrity="sha384-nvvERczED3KjSxZfEFFVT2H6DgamVMjw61V5MHFkDryTDTBoWFoG/24MiImPw34y"></script><script src="/cdn-cgi/apps/head/2-uxd2sIUMJ9rmZ-oBfTLre8VcE.js"></script><link rel="stylesheet" href="data:text/css;charset=utf-8;base64,LyogVGhpcyBpcyBhIGNvbXBpbGVkIGZpbGUsIHlvdSBzaG91bGQgYmUgZWRpdGluZyB0aGUgZmlsZSBpbiB0aGUgdGVtcGxhdGVzIGRpcmVjdG9yeSAqLwoucGFjZSB7CiAgLXdlYmtpdC1wb2ludGVyLWV2ZW50czogbm9uZTsKICBwb2ludGVyLWV2ZW50czogbm9uZTsKICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOwogIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7CiAgdXNlci1zZWxlY3Q6IG5vbmU7Cn0KCi5wYWNlLWluYWN0aXZlIHsKICBkaXNwbGF5OiBub25lOwp9CgoucGFjZSAucGFjZS1wcm9ncmVzcyB7CiAgYmFja2dyb3VuZDogI2VlMzE0ODsKICBwb3NpdGlvbjogZml4ZWQ7CiAgei1pbmRleDogMjAwMDsKICB0b3A6IDA7CiAgbGVmdDogMDsKICBoZWlnaHQ6IDJweDsKfQoKLnBhY2UgLnBhY2UtcHJvZ3Jlc3MtaW5uZXIgewogIGRpc3BsYXk6IGJsb2NrOwogIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICByaWdodDogMHB4OwogIHdpZHRoOiAxMDBweDsKICBoZWlnaHQ6IDEwMCU7CiAgYm94LXNoYWRvdzogMCAwIDEwcHggI2VlMzE0OCwgMCAwIDVweCAjZWUzMTQ4OwogIG9wYWNpdHk6IDEuMDsKICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDNkZWcpIHRyYW5zbGF0ZSgwcHgsIC00cHgpOwogIC1tb3otdHJhbnNmb3JtOiByb3RhdGUoM2RlZykgdHJhbnNsYXRlKDBweCwgLTRweCk7CiAgLW1zLXRyYW5zZm9ybTogcm90YXRlKDNkZWcpIHRyYW5zbGF0ZSgwcHgsIC00cHgpOwogIC1vLXRyYW5zZm9ybTogcm90YXRlKDNkZWcpIHRyYW5zbGF0ZSgwcHgsIC00cHgpOwogIHRyYW5zZm9ybTogcm90YXRlKDNkZWcpIHRyYW5zbGF0ZSgwcHgsIC00cHgpOwp9CgoucGFjZSAucGFjZS1hY3Rpdml0eSB7CiAgZGlzcGxheTogYmxvY2s7CiAgcG9zaXRpb246IGZpeGVkOwogIHotaW5kZXg6IDIwMDA7CiAgdG9wOiAxNXB4OwogIHJpZ2h0OiAxNXB4OwogIHdpZHRoOiAxNHB4OwogIGhlaWdodDogMTRweDsKICBib3JkZXI6IHNvbGlkIDJweCB0cmFuc3BhcmVudDsKICBib3JkZXItdG9wLWNvbG9yOiAjZWUzMTQ4OwogIGJvcmRlci1sZWZ0LWNvbG9yOiAjZWUzMTQ4OwogIGJvcmRlci1yYWRpdXM6IDEwcHg7CiAgLXdlYmtpdC1hbmltYXRpb246IHBhY2Utc3Bpbm5lciA0MDBtcyBsaW5lYXIgaW5maW5pdGU7CiAgLW1vei1hbmltYXRpb246IHBhY2Utc3Bpbm5lciA0MDBtcyBsaW5lYXIgaW5maW5pdGU7CiAgLW1zLWFuaW1hdGlvbjogcGFjZS1zcGlubmVyIDQwMG1zIGxpbmVhciBpbmZpbml0ZTsKICAtby1hbmltYXRpb246IHBhY2Utc3Bpbm5lciA0MDBtcyBsaW5lYXIgaW5maW5pdGU7CiAgYW5pbWF0aW9uOiBwYWNlLXNwaW5uZXIgNDAwbXMgbGluZWFyIGluZmluaXRlOwp9CgpALXdlYmtpdC1rZXlmcmFtZXMgcGFjZS1zcGlubmVyIHsKICAwJSB7IC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7IHRyYW5zZm9ybTogcm90YXRlKDBkZWcpOyB9CiAgMTAwJSB7IC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTsgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTsgfQp9CkAtbW96LWtleWZyYW1lcyBwYWNlLXNwaW5uZXIgewogIDAlIHsgLW1vei10cmFuc2Zvcm06IHJvdGF0ZSgwZGVnKTsgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7IH0KICAxMDAlIHsgLW1vei10cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpOyB0cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpOyB9Cn0KQC1vLWtleWZyYW1lcyBwYWNlLXNwaW5uZXIgewogIDAlIHsgLW8tdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7IHRyYW5zZm9ybTogcm90YXRlKDBkZWcpOyB9CiAgMTAwJSB7IC1vLXRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7IHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7IH0KfQpALW1zLWtleWZyYW1lcyBwYWNlLXNwaW5uZXIgewogIDAlIHsgLW1zLXRyYW5zZm9ybTogcm90YXRlKDBkZWcpOyB0cmFuc2Zvcm06IHJvdGF0ZSgwZGVnKTsgfQogIDEwMCUgeyAtbXMtdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTsgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTsgfQp9CkBrZXlmcmFtZXMgcGFjZS1zcGlubmVyIHsKICAwJSB7IHRyYW5zZm9ybTogcm90YXRlKDBkZWcpOyB0cmFuc2Zvcm06IHJvdGF0ZSgwZGVnKTsgfQogIDEwMCUgeyB0cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpOyB0cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpOyB9Cn0K"><script src="/cdn-cgi/apps/body/OB8fBbw8Pp8Zj6fAKpHWA3VFmWw.js"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+    <link href="https://files.abidata.io/static_web/Assets/css/pages/login/login-6.css" rel="stylesheet" type="text/css">
+
+    <link href="https://files.abidata.io/static_web/Assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="https://files.abidata.io/static_web/Assets/css/style.bundle.css" rel="stylesheet" type="text/css">
+
+    <link rel="shortcut icon" href="https://files.abidata.io/static_web/Assets/favicon.ico">
+
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            grecaptcha.render('captcha-box', {
+                'sitekey' : '6LepbPgUAAAAAFTjyZR6qab2Y2pjDmWZrafgkEmJ',
+                'callback' : getResponse
+            });
+        };
+        var getResponse = function($response) {
+            document.getElementById("g-captcha-response").value = $response;
+        };
+    </script>
+
+
+<link rel="stylesheet" href="data:text/css;charset=utf-8;base64,Y2xvdWRmbGFyZS1hcHBbYXBwPSJiYWNrLXRvLXRvcC1idXR0b24iXSB7CiAgYmFja2dyb3VuZDogI2NjYzsKICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIC4xKTsKICBjdXJzb3I6IHBvaW50ZXI7CiAgZGlzcGxheTogYmxvY2s7CiAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7CiAgZm9udC1zaXplOiA0MHB4OwogIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7CiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50YWxpYXNlZDsKICBmb250LXN0eWxlOiBub3JtYWw7CiAgZm9udC13ZWlnaHQ6IG5vcm1hbDsKICBoZWlnaHQ6IDc1cHg7CiAgbGV0dGVyLXNwYWNpbmc6IDA7CiAgbGluZS1oZWlnaHQ6IDc1cHg7CiAgb3BhY2l0eTogMDsKICBwb2ludGVyLWV2ZW50czogbm9uZTsKICBwb3NpdGlvbjogZml4ZWQ7CiAgdGFwLWhpZ2hsaWdodC1jb2xvcjogdHJhbnNwYXJlbnQ7CiAgdGV4dC1hbGlnbjogY2VudGVyOwogIHRleHQtcmVuZGVyaW5nOiBvcHRpbWl6ZUxlZ2liaWxpdHk7CiAgdHJhbnNpdGlvbjogb3BhY2l0eSAuM3MgZWFzZS1pbi1vdXQ7CiAgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTsKICAgICAtbW96LXVzZXItc2VsZWN0OiBub25lOwogICAgICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgICAgICB1c2VyLXNlbGVjdDogbm9uZTsKICB3aWR0aDogNzVweDsKICB6LWluZGV4OiA3MDAwOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW2RhdGEtcG9zaXRpb25ePSJ0b3AiXSB7CiAgdG9wOiAyNXB4Owp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW2RhdGEtcG9zaXRpb25ePSJib3R0b20iXSB7CiAgYm90dG9tOiAyNXB4Owp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW2RhdGEtcG9zaXRpb24kPSJsZWZ0Il0gewogIGxlZnQ6IDI1cHg7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0iYmFjay10by10b3AtYnV0dG9uIl1bZGF0YS1wb3NpdGlvbiQ9InJpZ2h0Il0gewogIHJpZ2h0OiAyNXB4Owp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdOmhvdmVyIHsKICAtd2Via2l0LWZpbHRlcjogYnJpZ2h0bmVzcygxMDglKTsKICAgICAgICAgIGZpbHRlcjogYnJpZ2h0bmVzcygxMDglKTsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJiYWNrLXRvLXRvcC1idXR0b24iXTphY3RpdmUgewogIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAxcHgsIDApOwogICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAxcHgsIDApOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW3Zpc2liaWxpdHk9InZpc2libGUiXSB7CiAgcG9pbnRlci1ldmVudHM6IGFsbDsKICBvcGFjaXR5OiAxOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW3NoYXBlPSJyb3VuZGVkIl0gewogIGJvcmRlci1yYWRpdXM6IDVweDsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJiYWNrLXRvLXRvcC1idXR0b24iXVtzaGFwZT0iY2lyY2xlIl0gewogIGJvcmRlci1yYWRpdXM6IDUwJTsKfQoKQG1lZGlhIChtYXgtd2lkdGg6IDc4NnB4KSB7CiAgY2xvdWRmbGFyZS1hcHBbYXBwPSJiYWNrLXRvLXRvcC1idXR0b24iXSB7CiAgICBoZWlnaHQ6IDUwcHg7CiAgICB3aWR0aDogNTBweDsKICAgIGZvbnQtc2l6ZTogMjVweDsKICAgIGxpbmUtaGVpZ2h0OiA1MHB4OwogICAgcmlnaHQ6IDEwcHg7CiAgICBib3R0b206IDEwcHg7CiAgfQoKICBjbG91ZGZsYXJlLWFwcFthcHA9ImJhY2stdG8tdG9wLWJ1dHRvbiJdW3NoYXBlPSJyb3VuZGVkIl0gewogICAgYm9yZGVyLXJhZGl1czogM3B4OwogIH0KCn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0iYmFjay10by10b3AtYnV0dG9uIl0gLmNsb3VkZmxhcmUtaWNvbiB7CiAgYm90dG9tOiAwOwogIGRpc3BsYXk6IGJsb2NrOwogIGZpbGw6ICM2NjY2NjY7CiAgZmlsbDogcmdiYSgwLCAwLCAwLCAuNCk7CiAgaGVpZ2h0OiAxMDAlOwogIGxlZnQ6IDA7CiAgcG9pbnRlci1ldmVudHM6IG5vbmU7CiAgcG9zaXRpb246IGFic29sdXRlOwogIHJpZ2h0OiAwOwogIHRvcDogMDsKICB3aWR0aDogMTAwJTsKfQo="></head>
+
+<body class="abi-page--loading-enabled abi-quick-panel--right abi-demo-panel--right abi-offcanvas-panel--right abi-header--fixed abi-header--minimize-menu abi-header-mobile--fixed abi-subheader--enabled abi-subheader--transparent abi-aside--enabled abi-aside--left abi-aside--fixed  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div><div style="position: fixed; z-index:-10; width: 100%; height: 100%; filter: blur(5px);
+                        -webkit-filter: blur(5px);
+                        -moz-filter: blur(5px);
+                        -o-filter: blur(5px);
+                        -ms-filter: blur(5px);
+                        transform: scale(1.1);
+                        background-size: cover;
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                        overflow: hidden;">
+    <iframe frameborder="0" height="100%" width="100%" src="https://youtube.com/embed/SyuS2STz3WI?playlist=SyuS2STz3WI&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;mute=1&amp;loop=1&amp;start=4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    </iframe>
+</div>
+
+
+
+<div class="abi-grid abi-grid--ver abi-grid--root abi-page">
+    <div class="abi-grid abi-grid--hor abi-grid--root  abi-login abi-login--v6 abi-login--signin" style="background:none;" id="abi_login">
+        <div class="abi-grid__item abi-grid__item--fluid abi-grid abi-grid--desabiop abi-grid--ver-desabiop abi-grid--hor-tablet-and-mobile">
+            <div class="abi-grid__item  abi-grid__item--order-tablet-and-mobile-2  abi-grid abi-grid--hor abi-login__aside">
+                <div class="abi-login__wrapper">
+                    <div class="abi-login__container">
+                        <div class="abi-login__body">
+                            <div class="abi-login__logo">
+                                <img style="width: 25rem; height: auto;" src="https://abiaccelerate.s3-accelerate.amazonaws.com/Logos/abi-big-black.png">
+                            </div>
+                            <div class="abi-login__signin">
+                                <div class="abi-login__head">
+                                    <h3 class="abi-login__title">Sign in to Community Hub</h3>
+                                </div>
+                                
+
+                                <div class="abi-login__form">
+                                    <form class="abi-form" action="https://hub.abinteractive.net/ProcessLogin" method="post" name="loginForm">
+                                        <input type="hidden" name="9884f4d4bc" value="7d0ca0ee2a8e68779ac9e6ebfaa084c8dc16768f7c6792d35752b56d3f8d9a0b">
+                                        <div class="form-group">
+                                            <input name="7a68b10e7d" class="form-control" type="email" placeholder="Email" autocomplete="off">
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="a6992b34e8" class="form-control form-control-last" type="password" placeholder="Password">
+                                        </div>
+                                        <input type="hidden" name="redirect_target" value="/">
+                                        <div class="abi-login__extra">
+                                            <a href="javascript:;" id="abi_login_forgot">Reset your password</a>
+                                        </div>
+                                        <div class="abi-login__actions">
+                                            <button type="submit" class="btn btn-brand btn-pill btn-elevate">Sign in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="abi-login__signup">
+                                <div class="abi-login__head">
+                                    <h3 class="abi-login__title">Create an account</h3>
+                                    <div class="abi-login__desc">Enter your details to create an account</div>
+                                </div>
+                                <div class="abi-login__form">
+                                    <form class="abi-form" action="https://hub.abinteractive.net/ProcessRegister" method="post">
+                                        <div class="form-group">
+                                            <input type="hidden" name="MTAzLjQ3LjEwMC4yMTY=" value="RGA-30WSE-64CI3-DQK7Q-QTZWF-B1IEZ">
+                                            <input class="form-control" type="text" placeholder="Username" name="reg_name">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" placeholder="Email" name="reg_email" autocomplete="off">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="password" placeholder="Password" name="reg_password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="password" placeholder="Confirm Password" name="reg_password_confirm">
+                                        </div>
+                                        <div class="signup-field">
+                                            <center><div class="captcha-box" id="captcha-box"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LepbPgUAAAAAFTjyZR6qab2Y2pjDmWZrafgkEmJ&amp;co=aHR0cHM6Ly9odWIuYWJpbnRlcmFjdGl2ZS5uZXQ6NDQz&amp;hl=zh-CN&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;size=normal&amp;cb=m3y6918tgcv4" width="304" height="78" role="presentation" name="a-20dcg8abdkit" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></center>
+                                            <input name="g-captcha-response" id="g-captcha-response" type="hidden" value="">
+                                        </div>
+                                        <div class="abi-login__extra">
+                                            <label class="abi-checkbox">
+                                                <input type="checkbox" name="reg_terms_agree"> I agree to the <a target="_blank" href="https://documentation.abinteractive.net/official/legal/tos/">Terms &amp; Guidelines</a>
+                                                <span></span>
+                                            </label>
+                                            <label class="abi-checkbox">
+                                                <input type="checkbox" name="reg_privacy_agree"> I agree to the <a target="_blank" href="https://documentation.abinteractive.net/official/legal/privacy-policy/">Privacy Policy</a>
+                                                <span></span>
+                                            </label>
+                                        </div>
+
+                                        <div class="abi-login__actions">
+                                            <button type="submit" class="btn btn-brand btn-pill btn-elevate">Sign up</button>
+                                            <button id="abi_login_signup_cancel" class="btn btn-outline-brand btn-pill">Back to login</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="abi-login__forgot">
+                                <div class="abi-login__head">
+                                    <h3 class="abi-login__title">Reset your password</h3>
+                                    <div class="abi-login__desc">Enter your email to reset your password</div>
+                                </div>
+                                <div class="abi-login__form">
+                                    <form class="abi-form" action="https://hub.abinteractive.net/VerificationProcess" method="post">
+                                        <div class="form-group">
+                                            <input class="form-control" type="hidden" name="action" id="action" value="pwreset">
+                                            <input class="form-control" type="text" placeholder="Email" name="email" id="email" autocomplete="off">
+                                        </div>
+                                        <div class="abi-login__actions">
+                                            <button type="submit" class="btn btn-brand btn-pill btn-elevate">Request reset</button>
+                                            <button id="abi_login_forgot_cancel" class="btn btn-outline-brand btn-pill">Back to login</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="abi-login__account">
+								<span class="abi-login__account-msg">
+									Not a member of ABI yet?								</span>&nbsp;&nbsp;
+                        <a href="javascript:;" id="abi_login_signup" class="abi-login__account-link">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var abiAppOptions = {
+        "colors": {
+            "state": {
+                "brand": "#e43600",
+                "light": "#ffffff",
+                "dark": "#282a3c",
+                "primary": "#5867dd",
+                "success": "#34bfa3",
+                "info": "#36a3f7",
+                "warning": "#ffb822",
+                "danger": "#fd3995"
+            },
+            "base": {
+                "label": ["#c5cbe3", "#a1a8c3", "#3d4465", "#3e4466"],
+                "shape": ["#f0f3ff", "#d9dffa", "#afb4d4", "#646c9a"]
+            }
+        }
+    };
+
+    function resendConfirmMail(_uuid){
+        jQuery.ajax({
+            url: "https://hub.abinteractive.net/resend-mail",
+            data: {
+                uuid: _uuid
+            },
+            dataType: "json",
+            method : "POST",
+            error: function (_res){
+                swal.fire("Error","Failed to complete request.","error");
+            },
+            success: function(_res){
+                if(_res.success){
+                    swal.fire("Request processed",_res.responseMessage,"success").then(function(){
+                        if(_res.goToUrl){
+                            window.location = _res.goToUrl;
+                        }
+                    });
+                }else{
+                    swal.fire("Error",_res.responseMessage,"error");
+                }
+            }
+        });
+    }
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer="">
+</script>
+
+
+<script src="https://files.abidata.io/static_web/Assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
+<script src="https://files.abidata.io/static_web/Assets/js/scripts.bundle.js" type="text/javascript"></script>
+
+<script src="https://files.abidata.io/static_web/Assets/js/pages/custom/login/login-general.js" type="text/javascript"></script>
+
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="reCAPTCHA 验证将于 2 分钟后过期" src="https://www.google.com/recaptcha/api2/bframe?hl=zh-CN&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;k=6LepbPgUAAAAAFTjyZR6qab2Y2pjDmWZrafgkEmJ" name="c-20dcg8abdkit" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>

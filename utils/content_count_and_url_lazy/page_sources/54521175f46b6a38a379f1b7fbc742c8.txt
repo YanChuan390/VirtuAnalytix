@@ -1,0 +1,1971 @@
+<html class=" responsive" lang="zh-cn"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#171a21">
+		<title>Steam 上的 Abelana's Atom Maker</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	
+	
+	<link href="https://store.akamai.steamstatic.com/public/shared/css/motiva_sans.css?v=Rc2hpzg2Ex3T&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/shared/css/shared_global.css?v=8WZz2XZSyQam&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/shared/css/buttons.css?v=6PFqex5UPprb&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/css/v6/store.css?v=SKTxcj16eYn6&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/shared/css/user_reviews.css?v=bytTZBM7bzWv&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/shared/css/store_game_shared.css?v=3762vFgJovj_&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/css/v6/game.css?v=_AFxtRnyAp4_&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/css/v6/recommended.css?v=urEm6TCtV1GU&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/css/v6/user_reviews_rewards.css?v=5-HJZa1v4wFP&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/shared/css/apphub.css?v=50EOEVc1LdIK&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/shared/css/ui-lightness/jquery-ui-1.7.2.custom.css?v=.23LkAmA0IgZV" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/css/v6/game_mob.css?v=Ay6xQlwsrr-t&amp;l=schinese" rel="stylesheet" type="text/css">
+<link href="https://store.akamai.steamstatic.com/public/shared/css/shared_responsive.css?v=cuGNP1dzetug&amp;l=schinese" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=.TZ2NKhB-nliU&amp;_co_domain=1"></script>
+<script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript">VALVE_PUBLIC_PATH = "https:\/\/store.akamai.steamstatic.com\/public\/";</script><script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/tooltip.js?v=.zYHOpI1L3Rt0&amp;_co_domain=1"></script>
+
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/shared_global.js?v=cCJHdcQPbOIy&amp;l=schinese&amp;_co_domain=1"></script>
+
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/javascript/main.js?v=ccSfkbB7zcXz&amp;l=schinese&amp;_co_domain=1"></script>
+
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/javascript/dynamicstore.js?v=W0b-l_P70yM0&amp;l=schinese&amp;_co_domain=1"></script>
+
+<script type="text/javascript">Object.seal && [ Object, Array, String, Number ].map( function( builtin ) { Object.seal( builtin.prototype ); } );</script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function(event) {
+				$J.data( document, 'x_readytime', new Date().getTime() );
+				$J.data( document, 'x_oldref', GetNavCookie() );
+				SetupTooltips( { tooltipCSSClass: 'store_tooltip'} );
+		});
+		</script><script type="text/javascript" src="https://store.akamai.steamstatic.com/public/javascript/gamehighlightplayer.js?v=65UOKdqd6W2o&amp;l=schinese&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/user_reviews.js?v=fV5O_jJHd9Et&amp;l=schinese&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/dselect.js?v=sjouo3-33Gox&amp;l=schinese&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/javascript/app_tagging.js?v=jVOPNeCmu2-E&amp;l=schinese&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/javascript/game.js?v=C5yzEMj_b-GL&amp;l=schinese&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.min.js?v=.-m414tR-pxn_&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.resize.min.js?v=.4PeWDSmdkiqV&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.time.min.js?v=.tcjKevZLo5Un&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.selection.min.js?v=._7pxnS3SCqO7&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/jquery-ui-1.9.2.js?v=.4YjdpcHj68MM&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=TNYlyRmh1mUl&amp;l=schinese&amp;_co_domain=1"></script>
+
+						<meta name="twitter:card" content="summary_large_image">
+					<meta name="Description" content="Visualize atomic orbitals, navigate across energy levels, gain an intuitive understanding of the composition of atoms and their electron configurations by assembling all elements of the periodic table. An educational VR experience designed for use by enthusiasts and academics alike.">
+			
+	<meta name="twitter:site" content="@steam">
+
+						<meta property="og:title" content="Steam 上的 Abelana's Atom Maker">
+					<meta property="twitter:title" content="Steam 上的 Abelana's Atom Maker">
+					<meta property="og:type" content="website">
+					<meta property="fb:app_id" content="105386699540688">
+					<meta property="og:site" content="Steam">
+					<meta property="og:url" content="https://store.steampowered.com/app/1180560/Abelanas_Atom_Maker/">
+					<meta property="og:description" content="Visualize atomic orbitals, navigate across energy levels, gain an intuitive understanding of the composition of atoms and their electron configurations by assembling all elements of the periodic table. An educational VR experience designed for use by enthusiasts and academics alike.">
+					<meta property="twitter:description" content="Visualize atomic orbitals, navigate across energy levels, gain an intuitive understanding of the composition of atoms and their electron configurations by assembling all elements of the periodic table. An educational VR experience designed for use by enthusiasts and academics alike.">
+			
+			<link rel="canonical" href="https://store.steampowered.com/app/1180560/Abelanas_Atom_Maker/">
+	
+			<link rel="image_src" href="https://cdn.akamai.steamstatic.com/steam/apps/1180560/capsule_616x353.jpg?t=1581428419">
+		<meta property="og:image" content="https://cdn.akamai.steamstatic.com/steam/apps/1180560/capsule_616x353.jpg?t=1581428419">
+		<meta name="twitter:image" content="https://cdn.akamai.steamstatic.com/steam/apps/1180560/capsule_616x353.jpg?t=1581428419">
+				
+	
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="https://store.akamai.steamstatic.com/public/css/applications/store/chunk~9229560c0.css?contenthash=e544311e04b182a5f6c4"><link rel="stylesheet" type="text/css" href="https://store.akamai.steamstatic.com/public/css/applications/store/chunk~3a905bba5.css?contenthash=f9386f2494e4cf8cfc32"><link rel="stylesheet" type="text/css" href="https://store.akamai.steamstatic.com/public/css/applications/store/chunk~c17eb4054.css?contenthash=762350afc6e92417c83a"><link rel="stylesheet" type="text/css" href="https://store.akamai.steamstatic.com/public/css/applications/store/chunk~f7d855ec1.css?contenthash=a8af364667ff114bb725"><link rel="stylesheet" type="text/css" href="https://store.akamai.steamstatic.com/public/css/applications/store/chunk~e78445ea0.css?contenthash=9a83943d21bf8034e744"><link rel="stylesheet" type="text/css" href="https://store.akamai.steamstatic.com/public/css/applications/store/chunk~832d422c6.css?contenthash=6fa8e1f40ad117c204f6"><link rel="stylesheet" type="text/css" href="https://store.akamai.steamstatic.com/public/css/applications/store/chunk~618b6ee4b.css?contenthash=0d9ebcd2d802ce6cba06"><link rel="stylesheet" type="text/css" href="https://store.akamai.steamstatic.com/public/css/applications/store/events.css?contenthash=552a8b4064e9cd6c9fd6"></head>
+<body class="v6 app game_bg application responsive_page ">
+
+
+<div class="responsive_page_frame with_header">
+						<div class="responsive_page_menu_ctn mainmenu">
+				<div class="responsive_page_menu" id="responsive_page_menu">
+										<div class="mainmenu_contents">
+						<div class="mainmenu_contents_items">
+															<a class="menuitem" href="https://store.steampowered.com/login/?redir=app%2F1180560%2FAbelanas_Atom_Maker%3Fsnr%3D1_1453_4__salebrowseall&amp;redir_ssl=1&amp;snr=1_5_9__global-header">
+									登录								</a>
+								<a class="menuitem supernav supernav_active" href="https://store.steampowered.com/?snr=1_5_9__global-responsive-menu" data-tooltip-type="selector" data-tooltip-content=".submenu_store">
+		商店	</a>
+	<div class="submenu_store" style="display: none;" data-submenuid="store">
+		<a class="submenuitem" href="https://store.steampowered.com/?snr=1_5_9__global-responsive-menu">主页</a>
+					<a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_5_9__global-responsive-menu">探索队列</a>
+				<a class="submenuitem" href="https://steamcommunity.com/my/wishlist/">愿望单</a>
+		<a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_5_9__global-responsive-menu">点数商店</a>	
+       	<a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_5_9__global-responsive-menu">新闻</a>
+					<a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_5_9__global-responsive-menu">统计数据</a>
+					</div>
+
+
+			<a class="menuitem supernav " style="display: block" href="https://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community">
+			社区		</a>
+		<div class="submenu_community" style="display: none;" data-submenuid="community">
+			<a class="submenuitem" href="https://steamcommunity.com/">主页</a>
+			<a class="submenuitem" href="https://steamcommunity.com/discussions/">讨论</a>
+			<a class="submenuitem" href="https://steamcommunity.com/workshop/">创意工坊</a>
+			<a class="submenuitem" href="https://steamcommunity.com/market/">市场</a>
+			<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">实况直播</a>
+											</div>
+		
+
+	
+	
+	<a class="menuitem " href="https://help.steampowered.com/zh-cn/">
+		客服	</a>
+
+							<div class="minor_menu_items">
+																								<div class="menuitem change_language_action">
+									更改语言								</div>
+																																	<div class="menuitem" onclick="Responsive_RequestDesktopView();">
+										查看桌面版网站									</div>
+															</div>
+						</div>
+						<div class="mainmenu_footer_spacer  "></div>
+						<div class="mainmenu_footer">
+															<div class="mainmenu_footer_logo"><img src="https://store.akamai.steamstatic.com/public/shared/images/responsive/logo_valve_footer.png"></div>
+								© Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。								<span class="mainmenu_valve_links">
+									<a href="https://store.steampowered.com/privacy_agreement/?snr=1_5_9__global-responsive-menu" target="_blank">隐私政策</a>
+									&nbsp;| &nbsp;<a href="http://www.valvesoftware.com/legal.htm" target="_blank">法律信息</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/subscriber_agreement/?snr=1_5_9__global-responsive-menu" target="_blank">Steam 订户协议</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/steam_refunds/?snr=1_5_9__global-responsive-menu" target="_blank">退款</a>
+								</span>
+													</div>
+					</div>
+									</div>
+			</div>
+		
+		<div class="responsive_local_menu_tab"></div>
+
+		<div class="responsive_page_menu_ctn localmenu">
+			<div class="responsive_page_menu" id="responsive_page_local_menu" data-panel="{&quot;onOptionsActionDescription&quot;:&quot;\u7b5b\u9009\u6761\u4ef6&quot;,&quot;onOptionsButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;,&quot;onCancelButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;}">
+				<div class="localmenu_content" data-panel="{&quot;maintainY&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+				</div>
+			</div>
+		</div>
+
+
+
+					<div class="responsive_header">
+				<div class="responsive_header_content">
+					<div id="responsive_menu_logo">
+						<img src="https://store.akamai.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" height="100%">
+											</div>
+					<div class="responsive_header_logo">
+						<a href="https://store.steampowered.com/?snr=1_5_9__global-responsive-menu">
+															<img src="https://store.akamai.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM">
+													</a>
+					</div>
+				</div>
+			</div>
+		
+		<div class="responsive_page_content_overlay">
+
+		</div>
+
+		<div class="responsive_fixonscroll_ctn nonresponsive_hidden ">
+		</div>
+	
+	<div class="responsive_page_content">
+
+		<div id="global_header" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+	<div class="content">
+		<div class="logo">
+			<span id="logo_holder">
+									<a href="https://store.steampowered.com/?snr=1_5_9__global-header">
+						<img src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176" height="44">
+					</a>
+							</span>
+		</div>
+
+			<div class="supernav_container">
+	<a class="menuitem supernav supernav_active" href="https://store.steampowered.com/?snr=1_5_9__global-header" data-tooltip-type="selector" data-tooltip-content=".submenu_store">
+		商店	</a>
+	<div class="submenu_store" style="display: none;" data-submenuid="store">
+		<a class="submenuitem" href="https://store.steampowered.com/?snr=1_5_9__global-header">主页</a>
+					<a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_5_9__global-header">探索队列</a>
+				<a class="submenuitem" href="https://steamcommunity.com/my/wishlist/">愿望单</a>
+		<a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_5_9__global-header">点数商店</a>	
+       	<a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_5_9__global-header">新闻</a>
+					<a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_5_9__global-header">统计数据</a>
+					</div>
+
+
+			<a class="menuitem supernav " style="display: block" href="https://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_community">
+			社区		</a>
+		<div class="submenu_community" style="display: none;" data-submenuid="community">
+			<a class="submenuitem" href="https://steamcommunity.com/">主页</a>
+			<a class="submenuitem" href="https://steamcommunity.com/discussions/">讨论</a>
+			<a class="submenuitem" href="https://steamcommunity.com/workshop/">创意工坊</a>
+			<a class="submenuitem" href="https://steamcommunity.com/market/">市场</a>
+			<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">实况直播</a>
+											</div>
+		
+
+	
+						<a class="menuitem " href="https://store.steampowered.com/about/?snr=1_5_9__global-header">
+				关于			</a>
+			
+	<a class="menuitem " href="https://help.steampowered.com/zh-cn/">
+		客服	</a>
+	</div>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'destroyWhenDone': false, 'tooltipClass': 'supernav_content', 'offsetY':-6, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	</script>
+
+		<div id="global_actions">
+			<div id="global_action_menu">
+									<a class="header_installsteam_btn header_installsteam_btn_green" href="https://store.steampowered.com/about/?snr=1_5_9__global-header">
+						<div class="header_installsteam_btn_content">
+							安装 Steam						</div>
+					</a>
+				
+				
+														<a class="global_action_link" href="https://store.steampowered.com/login/?redir=app%2F1180560%2FAbelanas_Atom_Maker%3Fsnr%3D1_1453_4__salebrowseall&amp;redir_ssl=1&amp;snr=1_5_9__global-header">登录</a>
+											&nbsp;|&nbsp;
+						<span class="pulldown global_action_link" id="language_pulldown" onclick="ShowMenu( this, 'language_dropdown', 'right' );">语言</span>
+						<div class="popup_block_new" id="language_dropdown" style="display: none;">
+							<div class="popup_body popup_menu">
+																																															<a class="popup_menu_item tight" href="?l=tchinese&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'tchinese' ); return false;">繁體中文（繁体中文）</a>
+																													<a class="popup_menu_item tight" href="?l=japanese&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'japanese' ); return false;">日本語（日语）</a>
+																													<a class="popup_menu_item tight" href="?l=koreana&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'koreana' ); return false;">한국어（韩语）</a>
+																													<a class="popup_menu_item tight" href="?l=thai&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'thai' ); return false;">ไทย（泰语）</a>
+																													<a class="popup_menu_item tight" href="?l=bulgarian&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'bulgarian' ); return false;">български（保加利亚语）</a>
+																													<a class="popup_menu_item tight" href="?l=czech&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'czech' ); return false;">Čeština（捷克语）</a>
+																													<a class="popup_menu_item tight" href="?l=danish&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'danish' ); return false;">Dansk（丹麦语）</a>
+																													<a class="popup_menu_item tight" href="?l=german&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'german' ); return false;">Deutsch（德语）</a>
+																													<a class="popup_menu_item tight" href="?l=english&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'english' ); return false;">English（英语）</a>
+																													<a class="popup_menu_item tight" href="?l=spanish&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'spanish' ); return false;">Español-España（西班牙语 - 西班牙）</a>
+																													<a class="popup_menu_item tight" href="?l=latam&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'latam' ); return false;">Español - Latinoamérica（西班牙语 - 拉丁美洲）</a>
+																													<a class="popup_menu_item tight" href="?l=greek&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'greek' ); return false;">Ελληνικά（希腊语）</a>
+																													<a class="popup_menu_item tight" href="?l=french&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'french' ); return false;">Français（法语）</a>
+																													<a class="popup_menu_item tight" href="?l=italian&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'italian' ); return false;">Italiano（意大利语）</a>
+																													<a class="popup_menu_item tight" href="?l=indonesian&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'indonesian' ); return false;">Bahasa Indonesia（印度尼西亚语）</a>
+																													<a class="popup_menu_item tight" href="?l=hungarian&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'hungarian' ); return false;">Magyar（匈牙利语）</a>
+																													<a class="popup_menu_item tight" href="?l=dutch&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'dutch' ); return false;">Nederlands（荷兰语）</a>
+																													<a class="popup_menu_item tight" href="?l=norwegian&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'norwegian' ); return false;">Norsk（挪威语）</a>
+																													<a class="popup_menu_item tight" href="?l=polish&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'polish' ); return false;">Polski（波兰语）</a>
+																													<a class="popup_menu_item tight" href="?l=portuguese&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'portuguese' ); return false;">Português（葡萄牙语 - 葡萄牙）</a>
+																													<a class="popup_menu_item tight" href="?l=brazilian&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'brazilian' ); return false;">Português-Brasil（葡萄牙语 - 巴西）</a>
+																													<a class="popup_menu_item tight" href="?l=romanian&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'romanian' ); return false;">Română（罗马尼亚语）</a>
+																													<a class="popup_menu_item tight" href="?l=russian&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'russian' ); return false;">Русский（俄语）</a>
+																													<a class="popup_menu_item tight" href="?l=finnish&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'finnish' ); return false;">Suomi（芬兰语）</a>
+																													<a class="popup_menu_item tight" href="?l=swedish&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'swedish' ); return false;">Svenska（瑞典语）</a>
+																													<a class="popup_menu_item tight" href="?l=turkish&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'turkish' ); return false;">Türkçe（土耳其语）</a>
+																													<a class="popup_menu_item tight" href="?l=vietnamese&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'vietnamese' ); return false;">Tiếng Việt（越南语）</a>
+																													<a class="popup_menu_item tight" href="?l=ukrainian&amp;snr=1_1453_4__salebrowseall" onclick="ChangeLanguage( 'ukrainian' ); return false;">Українська（乌克兰语）</a>
+																									<a class="popup_menu_item tight" href="https://www.valvesoftware.com/en/contact?contact-person=Translation%20Team%20Feedback" target="_blank">报告翻译问题</a>
+							</div>
+						</div>
+												</div>
+					</div>
+			</div>
+</div>
+<div id="responsive_store_nav_ctn"></div><div id="responsive_store_nav_overlay" style="display:none"><div id="responsive_store_nav_overlay_ctn"></div><div id="responsive_store_nav_overlay_bottom"></div></div><div id="responsive_store_search_overlay" style="display:none"></div><div data-cart-banner-spot="1"></div>
+		<div class="responsive_page_template_content" id="responsive_page_template_content" data-panel="{&quot;autoFocus&quot;:true}">
+
+			<div id="application_config" style="display: none;" data-config="{&quot;EUNIVERSE&quot;:1,&quot;WEB_UNIVERSE&quot;:&quot;public&quot;,&quot;LANGUAGE&quot;:&quot;schinese&quot;,&quot;COUNTRY&quot;:&quot;SG&quot;,&quot;MEDIA_CDN_COMMUNITY_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/&quot;,&quot;MEDIA_CDN_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_URL&quot;:&quot;https:\/\/community.akamai.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_ASSET_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/assets\/&quot;,&quot;STORE_CDN_URL&quot;:&quot;https:\/\/store.akamai.steamstatic.com\/&quot;,&quot;PUBLIC_SHARED_URL&quot;:&quot;https:\/\/store.akamai.steamstatic.com\/public\/shared\/&quot;,&quot;COMMUNITY_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;CHAT_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;STORE_BASE_URL&quot;:&quot;https:\/\/store.steampowered.com\/&quot;,&quot;STORE_CHECKOUT_BASE_URL&quot;:&quot;https:\/\/checkout.steampowered.com\/&quot;,&quot;IMG_URL&quot;:&quot;https:\/\/store.akamai.steamstatic.com\/public\/images\/&quot;,&quot;STEAMTV_BASE_URL&quot;:&quot;https:\/\/steam.tv\/&quot;,&quot;HELP_BASE_URL&quot;:&quot;https:\/\/help.steampowered.com\/&quot;,&quot;PARTNER_BASE_URL&quot;:&quot;https:\/\/partner.steamgames.com\/&quot;,&quot;STATS_BASE_URL&quot;:&quot;https:\/\/partner.steampowered.com\/&quot;,&quot;INTERNAL_STATS_BASE_URL&quot;:&quot;https:\/\/steamstats.valve.org\/&quot;,&quot;IN_CLIENT&quot;:false,&quot;USE_POPUPS&quot;:false,&quot;STORE_ICON_BASE_URL&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/&quot;,&quot;WEBAPI_BASE_URL&quot;:&quot;https:\/\/api.steampowered.com\/&quot;,&quot;TOKEN_URL&quot;:&quot;https:\/\/store.steampowered.com\/\/chat\/clientjstoken&quot;,&quot;BUILD_TIMESTAMP&quot;:1694188391,&quot;PAGE_TIMESTAMP&quot;:1694379168,&quot;IN_TENFOOT&quot;:false,&quot;IN_GAMEPADUI&quot;:false,&quot;IN_CHROMEOS&quot;:false,&quot;IN_MOBILE_WEBVIEW&quot;:false,&quot;PLATFORM&quot;:&quot;windows&quot;,&quot;BASE_URL_STORE_CDN_ASSETS&quot;:&quot;https:\/\/cdn.akamai.steamstatic.com\/store\/&quot;,&quot;EREALM&quot;:1,&quot;LOGIN_BASE_URL&quot;:&quot;https:\/\/login.steampowered.com\/&quot;,&quot;AVATAR_BASE_URL&quot;:&quot;https:\/\/avatars.akamai.steamstatic.com\/&quot;,&quot;FROM_WEB&quot;:true,&quot;WEBSITE_ID&quot;:&quot;Store&quot;,&quot;BASE_URL_SHARED_CDN&quot;:&quot;https:\/\/shared.akamai.steamstatic.com\/&quot;,&quot;CLAN_CDN_ASSET_URL&quot;:&quot;https:\/\/clan.akamai.steamstatic.com\/&quot;,&quot;SNR&quot;:&quot;1_5_9_&quot;}" data-userinfo="{&quot;logged_in&quot;:false,&quot;country_code&quot;:&quot;SG&quot;}" data-broadcastuser="{&quot;success&quot;:1,&quot;bHideStoreBroadcast&quot;:false}" data-store_user_config="{&quot;webapi_token&quot;:&quot;&quot;,&quot;shoppingcart&quot;:null}"></div><div id="application_root"><div class="app_App_2uHYt"></div></div><link href="https://store.akamai.steamstatic.com/public/css/applications/store/main.css?v=sfR2AwEkFRwn&amp;l=schinese" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/javascript/applications/store/manifest.js?v=L7dnmqhokv_v&amp;l=schinese&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/javascript/applications/store/libraries~b28b7af69.js?v=hayyhth-WdFl&amp;l=schinese&amp;_co_domain=1"></script>
+<script type="text/javascript" src="https://store.akamai.steamstatic.com/public/javascript/applications/store/main.js?v=ezwzv3Ap--np&amp;l=schinese&amp;_co_domain=1"></script>
+
+<script type="text/javascript">
+
+	var g_eDiscoveryQueueType = 0;
+
+	GStoreItemData.AddStoreItemDataSet(
+		{"rgApps":{"1096900":{"name":"RPG Maker MZ","url_name":"RPG_Maker_MZ","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"6900\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$69.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1096900\/capsule_184x69.jpg?t=1692842139","os_windows":true,"os_macos":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"363890":{"name":"RPG Maker MV","url_name":"RPG_Maker_MV","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"7500\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$75.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/363890\/capsule_184x69_schinese.jpg?t=1692842451","os_windows":true,"os_macos":true,"os_linux":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"362870":{"name":"RPG Maker 2003","url_name":"RPG_Maker_2003","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"2000\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$20.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/362870\/capsule_184x69.jpg?t=1675842779","os_windows":true,"software":true,"has_live_broadcast":false,"localized_english":true},"1364390":{"name":"Animaze by FaceRig","url_name":"Animaze_by_FaceRig","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"0\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">\u514d\u8d39\u5f00\u73a9<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1364390\/capsule_184x69.jpg?t=1693380615","os_windows":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"220700":{"name":"RPG Maker VX Ace","url_name":"RPG_Maker_VX_Ace","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"6500\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$65.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/220700\/capsule_184x69.jpg?t=1675842497","os_windows":true,"software":true,"has_live_broadcast":false,"localized_english":true,"status_string":"New DLC Available Now!"},"1173510":{"name":"XSOverlay","url_name":"XSOverlay","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1000\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$10.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1173510\/capsule_184x69.jpg?t=1638418853","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"early_access":true,"software":true,"virtual_reality":true,"has_live_broadcast":false,"localized_english":true},"2234500":{"name":"MangaKa","url_name":"MangaKa","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1300\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$13.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/2234500\/capsule_184x69.jpg?t=1693409374","os_windows":true,"os_macos":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"1982310":{"name":"\u9713\u7434 - NeoPiano","url_name":"__NeoPiano","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1000\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$10.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1982310\/capsule_184x69_schinese.jpg?t=1683676543","os_windows":true,"os_macos":true,"early_access":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"2242470":{"name":"DrivingSchool-\u9a7e\u9a76\u5b66\u6821","url_name":"DrivingSchool","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"543\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$5.43<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/2242470\/capsule_184x69.jpg?t=1687328876","os_windows":true,"software":true,"has_live_broadcast":false,"localized":true},"1046910":{"name":"Dissection Simulator: Frog Edition","url_name":"Dissection_Simulator_Frog_Edition","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1200\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$12.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1046910\/capsule_184x69.jpg?t=1576010437","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"software":true,"virtual_reality":true,"has_live_broadcast":false,"localized_english":true},"415000":{"name":"Gamer To Game Developer Series 3: Make A Game","url_name":"Gamer_To_Game_Developer_Series_3_Make_A_Game","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"4200\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$42.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/415000\/capsule_184x69.jpg?t=1686184771","os_windows":true,"software":true,"has_live_broadcast":false,"localized_english":true},"327140":{"name":"Tilt Brush","url_name":"Tilt_Brush","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"2000\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$20.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/327140\/capsule_184x69.jpg?t=1560985959","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"software":true,"virtual_reality":true,"has_live_broadcast":false,"localized_english":true},"798810":{"name":"Natural Locomotion","url_name":"Natural_Locomotion","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1000\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$10.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/798810\/capsule_184x69.jpg?t=1664605878","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"software":true,"virtual_reality":true,"has_live_broadcast":false,"localized_english":true},"479010":{"name":"Kodon","url_name":"Kodon","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"4900\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$49.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/479010\/capsule_184x69.jpg?t=1688293249","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"early_access":true,"software":true,"has_live_broadcast":false,"localized_english":true},"705160":{"name":"Moon VR Video Player","url_name":"Moon_VR_Video_Player","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1000\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$10.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/705160\/capsule_184x69.jpg?t=1681376691","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"software":true,"virtual_reality":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"1953110":{"name":"Programming Without Coding Technology 2.0","url_name":"Programming_Without_Coding_Technology_20","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1450\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$14.50<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1953110\/capsule_184x69.jpg?t=1691202712","os_windows":true,"software":true,"has_live_broadcast":false,"localized_english":true},"754010":{"name":"MEDICALHOLODECK: Revolutionizing Anatomy, Surgery &amp; Medicine Through Virtual and Augmented Reality","url_name":"MEDICALHOLODECK_Revolutionizing_Anatomy_Surgery__Medicine_Through_Virtual_and_Augmented_Reality","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"0\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">\u514d\u8d39<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/754010\/capsule_184x69.jpg?t=1693485920","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"software":true,"virtual_reality":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"1170750":{"name":"MOR...E TRAINER (Learning Morse Code)","url_name":"MORE_TRAINER_Learning_Morse_Code","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1000\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$10.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1170750\/capsule_184x69.jpg?t=1661770770","os_windows":true,"os_linux":true,"software":true,"has_live_broadcast":false,"localized_english":true},"325180":{"name":"AppGameKit Classic: Easy Game Development","url_name":"AppGameKit_Classic_Easy_Game_Development","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"4200\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$42.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/325180\/capsule_184x69.jpg?t=1668455182","os_windows":true,"os_macos":true,"os_linux":true,"software":true,"has_live_broadcast":false,"localized_english":true},"857320":{"name":"SRPG Studio","url_name":"SRPG_Studio","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"4900\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$49.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/857320\/capsule_184x69.jpg?t=1693532150","os_windows":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"2343860":{"name":"\u5bb6\u5c45\u8bbe\u8ba1 | \u5e03\u5c40","url_name":"_","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1450\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$14.50<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/2343860\/capsule_184x69.jpg?t=1679564854","os_windows":true,"os_macos":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"266310":{"name":"GameGuru Classic","url_name":"GameGuru_Classic","discount_block":"<div class=\"discount_block \" data-price-final=\"1360\" data-bundlediscount=\"0\" data-discount=\"60\"><div class=\"discount_pct\">-60%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">S$34.00<\/div><div class=\"discount_final_price\">S$13.60<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/266310\/capsule_184x69.jpg?t=1692285526","os_windows":true,"software":true,"has_live_broadcast":false,"discount":true,"localized_english":true},"1260310":{"name":"ASTRA-256 Assembler","url_name":"ASTRA256_Assembler","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1200\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$12.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1260310\/capsule_184x69.jpg?t=1661771735","os_windows":true,"os_linux":true,"early_access":true,"software":true,"has_live_broadcast":false,"localized_english":true},"642770":{"name":"Vinyl Reality - DJ in VR","url_name":"Vinyl_Reality__DJ_in_VR","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1850\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$18.50<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/642770\/capsule_184x69.jpg?t=1687883901","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"software":true,"virtual_reality":true,"has_live_broadcast":false,"localized_english":true},"1337060":{"name":"LabTrainingVR: Biosafety Cabinet Edition","url_name":"LabTrainingVR_Biosafety_Cabinet_Edition","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"0\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">\u514d\u8d39<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1337060\/capsule_184x69.jpg?t=1612793432","os_windows":true,"vr_htcvive":true,"software":true,"virtual_reality":true,"has_live_broadcast":false,"localized_english":true},"774231":{"name":"The Kremer Collection VR Museum","url_name":"The_Kremer_Collection_VR_Museum","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1000\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$10.00<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/774231\/capsule_184x69.jpg?t=1560242731","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"software":true,"virtual_reality":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"1081730":{"name":"3D Organon VR Anatomy","url_name":"3D_Organon_VR_Anatomy","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"0\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">\u514d\u8d39\u5f00\u73a9<\/div><\/div><\/div>","descids":[5],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1081730\/capsule_184x69.jpg?t=1647290412","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"1099550":{"name":"3D Organon Anatomy","url_name":"3D_Organon_Anatomy","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"0\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">\u514d\u8d39\u5f00\u73a9<\/div><\/div><\/div>","descids":[5],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1099550\/capsule_184x69.jpg?t=1639576580","os_windows":true,"os_macos":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"449130":{"name":"ENGAGE","url_name":"ENGAGE","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"0\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">\u514d\u8d39\u5f00\u73a9<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/449130\/capsule_184x69.jpg?t=1669985103","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"2171290":{"name":"Movavi Video Suite 2023 Steam Edition - An all-in-one video maker: an editor, converter, screen recorder, and more!","url_name":"Movavi_Video_Suite_2023_Steam_Edition__An_allinone_video_maker_an_editor_converter_screen_recorder_and_more","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"9490\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">S$94.90<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/2171290\/capsule_184x69.jpg?t=1687781072","os_windows":true,"software":true,"has_live_broadcast":false,"localized":true,"localized_english":true}},"rgPackages":[],"rgBundles":[]}	);
+	GStoreItemData.AddNavParams( {
+		recommended: "1_5_9__300",
+		recommend_franchise: "1_5_9__316",
+		more_from_franchise: "1_5_9__317",
+		bundle_component_preview: "1_5_9__412",
+		recommended_ranked_played: "1_5_9__862",
+	} );
+
+	
+	$J( function() {
+		var $Expander = $J('#devnotes_expander');
+		if( $Expander.length && $Expander.height() < parseInt( $Expander.css('max-height') ) ) {
+			$J('#devnotes_more').hide();
+		}
+
+		CollapseLongStrings( '.dev_row .summary.column' );
+
+				InitAutocollapse();
+		InitHorizontalAutoSliders();
+
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_right', $J('#responsive_apppage_details_right_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_left', $J('#responsive_apppage_details_left_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_reviewblock', $J('#responsive_apppage_reviewblock_ctn') );
+
+		//hack to workaround chrome bug
+		$J('#responsive_apppage_reviewblock_ctn' ).css('width', '100%' );
+		window.setTimeout( function() { $J('#responsive_apppage_reviewblock_ctn').css('width', '' ); }, 1 );
+
+		
+				var watcher = new CScrollOffsetWatcher( $J('#app_reviews_hash'), OnLoadReviews );
+		watcher.SetBufferHeight( 0 );
+
+				InitPlaytimeFilterSlider();
+		
+		// on Tablet wait to do this when the window is fully loaded - see OnPageLoaded()
+				ReparentAppLandingPageForSmallScreens();
+		
+        
+				AddRightNavStickyPaddingOnTablet();
+		
+			var usability = InitUsabilityTracker( "https:\/\/store.steampowered.com\/app\/usabilitytracking\/1180560" );
+		usability.ScheduleUpload();
+	
+	} );
+	GDynamicStore.OnReady( function() {
+		RenderMoreLikeThisBlock( ["1096900","363890","362870","1364390","220700","1173510","2234500","1982310","2242470","1046910","415000","327140","798810","479010","705160","1953110","754010","1170750","325180","857320","2343860","266310","1260310","642770","1337060","774231","1081730","1099550","449130","2171290"], !!true );
+		RenderFranchiseAppBlock( [1842590] );
+		RenderMoreDLCFromBaseGameBlock( [] );
+
+	});
+
+	
+	function OpenTagModal()
+	{
+		ShowAppTagModal( 1180560 );
+	}
+
+</script>
+
+<div class="game_page_background game" style="background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/1180560/page_bg_generated_v6b.jpg?t=1581428419');" data-miniprofile-appid="1180560">
+
+		
+	
+    	    <div class="responsive_store_nav_ctn_spacer"><div id="store_header" class="">
+		<div class="content">
+			<div id="store_controls">
+				<div id="cart_status_data">
+																					<div class="store_header_btn_green store_header_btn" id="store_header_cart_btn" style="display: none;">
+							<div class="store_header_btn_caps store_header_btn_leftcap"></div>
+							<div class="store_header_btn_caps store_header_btn_rightcap"></div>
+							<a id="cart_link" class="store_header_btn_content" href="https://store.steampowered.com/cart/?snr=1_5_9__12">
+								购物车								(<span id="cart_item_count_value">0</span>)
+							</a>
+						</div>
+									</div>
+			</div>
+			
+												<div id="store_nav_area">
+					<div class="store_nav_leftcap"></div>
+					<div class="store_nav_bg">
+						<div class="store_nav" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+
+						
+							<div class="tab  flyout_tab " id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel="{&quot;focusable&quot;:true}">
+								<span class="pulldown">
+									<a class="pulldown_desktop" href="https://store.steampowered.com/?snr=1_5_9__12">您的商店</a>
+									<a class="pulldown_mobile" href="#">您的商店</a>
+									<span></span>
+								</span>
+							</div>
+							<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style="display: none;">
+								<div class="popup_body popup_menu popup_menu_browse">
+									<a class="popup_menu_item" href="https://store.steampowered.com/?snr=1_5_9__12">
+										主页									</a>
+                                                                            <a class="popup_menu_item" href="https://store.steampowered.com/communityrecommendations/?snr=1_5_9__12">
+                                            社区推荐                                        </a>
+                                    									<a class="popup_menu_item" href="https://store.steampowered.com/recommended/?snr=1_5_9__12">
+										最近查看过									</a>
+                                                                            <a class="popup_menu_item" href="https://store.steampowered.com/curators/?snr=1_5_9__12">
+                                            Steam 鉴赏家                                        </a>
+                                    								</div>
+							</div>
+						
+														<div class="store_labs_new"></div>
+                            <div class="tab  flyout_tab " id="noteworthy_tab" data-flyout="noteworthy_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel="{&quot;focusable&quot;:true}">
+								<span class="pulldown">
+									<a href="javascript:void(0);" class="pulldown_desktop">新鲜推荐</a>
+									<a href="javascript:void(0);" class="pulldown_mobile">新鲜推荐</a>
+									<span></span>
+								</span>
+                            </div>
+                            <div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="noteworthy_flyout" style="display: none;">
+                                <div class="popup_body popup_menu popup_menu_browse">
+									<a class="popup_menu_item" href="https://store.steampowered.com/replay?src=7&amp;snr=1_5_9__12">
+										2022 年 Steam 回顾									</a>
+																			<a class="popup_menu_item" href="https://store.steampowered.com/charts/topselling/?snr=1_5_9__12">
+											热销商品										</a>
+										<a class="popup_menu_item" href="https://store.steampowered.com/charts/mostplayed/?snr=1_5_9__12">
+											最常玩的游戏										</a>
+									                                    <a class="popup_menu_item" href="https://store.steampowered.com/explore/new/?snr=1_5_9__12">
+										新品与热门商品                                    </a>
+                                    <a class="popup_menu_item" href="https://store.steampowered.com/specials/?snr=1_5_9__12">
+										特别优惠									</a>
+									<a class="popup_menu_item" href="https://store.steampowered.com/newshub/?snr=1_5_9__12">
+                                        最近更新                                    </a>
+                                    <a class="popup_menu_item" href="https://store.steampowered.com/explore/upcoming/?snr=1_5_9__12">
+                                        热门即将推出                                    </a>
+
+									<!--
+                                    <div class="popup_menu_subheader">特卖活动
+									</div>
+
+                                    <a class="popup_menu_item" href="https://store.steampowered.com/search/?specials=1&snr=1_5_9__12">
+                                        Weekly Specials
+                                    </a>
+                                    <a class="popup_menu_item" href="https://store.steampowered.com/sale/vr_specials/?snr=1_5_9__12">
+                                        Weekly VR Specials
+                                    </a>
+                                    -->
+                                </div>
+                            </div>
+
+															<div class="tab  flyout_tab " id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-align-to-element="foryou_tab" data-flyout-delay="300" data-panel="{&quot;focusable&quot;:true}">
+									<span class="pulldown">
+										<a class="pulldown_desktop" href="javascript:void(0);">类别</a>
+										<a class="pulldown_mobile" href="javascript:void(0);">类别</a>
+										<span></span>
+									</span>
+								</div>
+								<div class="popup_block_new flyout_tab_flyout responsive_slidedown" id="genre_flyout" style="display: none;">
+									<div class="popup_body popup_menu_twocol_new">
+										<div class="popup_menu popup_menu_browse" data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+
+										<div class="popup_menu_subheader responsive_hidden">特别栏目</div>
+																																																																							<a class="popup_menu_item" href="https://store.steampowered.com/genre/Free%20to%20Play/?snr=1_5_9__12">
+														免费开玩													</a>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						<a class="popup_menu_item" href="https://store.steampowered.com/demos/?snr=1_5_9__12">
+														<span>试玩</span>
+													</a>
+																										<a class="popup_menu_item" href="https://store.steampowered.com/genre/Early%20Access/?snr=1_5_9__12">
+														抢先体验													</a>
+																																																																																																																																																																																																																																																																																																												<div class="category_hr responsive_hidden"></div>
+
+																							<a class="popup_menu_item" href="https://store.steampowered.com/steamdeck/?snr=1_5_9__category-menu">
+													<span>Steam Deck</span>
+												</a>
+
+												<a class="popup_menu_item" href="https://store.steampowered.com/greatondeck/?snr=1_5_9__category-menu">
+													<span>非常适合 Deck</span>
+												</a>
+
+												<div class="category_hr responsive_hidden"></div>
+
+												<a class="popup_menu_item" href="https://store.steampowered.com/controller/?snr=1_5_9__12">
+													<span>支持控制器</span>
+												</a>
+
+												<a class="popup_menu_item" href="https://store.steampowered.com/remoteplay_hub/?snr=1_5_9__12">
+													<span>远程畅玩</span>
+												</a>
+
+												<div class="category_hr responsive_hidden"></div>
+
+												<a class="popup_menu_item" href="https://store.steampowered.com/vr/?snr=1_5_9__12">
+													<span>VR 作品</span>
+												</a>
+
+												<a class="popup_menu_item" href="https://store.steampowered.com/vrhardware/?snr=1_5_9__12">
+													<span>VR 硬件</span>
+												</a>
+
+												<div class="category_hr responsive_hidden"></div>
+											
+
+
+                                            <a class="popup_menu_item" href="https://store.steampowered.com/software/?snr=1_5_9__12">
+                                                软件											</a>
+
+											<a class="popup_menu_item" href="https://store.steampowered.com/soundtracks?snr=1_5_9__12">
+												原声音轨											</a>
+
+											<div class="category_hr responsive_hidden"></div>
+
+																							<a class="popup_menu_item" href="https://store.steampowered.com/macos?snr=1_5_9__12">
+													macOS												</a>
+												<a class="popup_menu_item" href="https://store.steampowered.com/linux?snr=1_5_9__12">
+													SteamOS + Linux												</a>
+
+												<a class="popup_menu_item" href="https://store.steampowered.com/pccafe/?snr=1_5_9__12">
+													<span>网吧游戏</span>
+												</a>
+
+																					</div>
+																					<div class="popup_menu popup_menu_browse leftborder" data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+																								<div class="popup_menu_subheader reduced_vspace">
+													类型
+												</div>
+																																				<div class="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="action">
+														动作													</div>
+																									<div class="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="action">
+														<a class="popup_menu_item" href="https://store.steampowered.com/category/action/?snr=1_5_9__12">
+															动作														</a>
+													</div>
+																								<div class="popup_genre_expand_content responsive_hidden" data-genre-group="action">
+																											<a class="popup_menu_item" href="https://store.steampowered.com/category/action_run_jump/?snr=1_5_9__12">平台及奔跑</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/fighting_martial_arts/?snr=1_5_9__12">格斗及武术</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/shmup/?snr=1_5_9__12">清版射击</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/hack_and_slash/?snr=1_5_9__12">砍杀</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/action_fps/?snr=1_5_9__12">第一人称射击</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/action_tps/?snr=1_5_9__12">第三人称射击</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/arcade_rhythm/?snr=1_5_9__12">街机及节奏</a>
+																										</div>
+																									<div class="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="adventure">
+														冒险													</div>
+																									<div class="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="adventure">
+														<a class="popup_menu_item" href="https://store.steampowered.com/category/adventure/?snr=1_5_9__12">
+															冒险														</a>
+													</div>
+																								<div class="popup_genre_expand_content responsive_hidden" data-genre-group="adventure">
+																											<a class="popup_menu_item" href="https://store.steampowered.com/category/casual/?snr=1_5_9__12">休闲</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/adventure_rpg/?snr=1_5_9__12">冒险角色扮演</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/story_rich/?snr=1_5_9__12">剧情丰富</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/metroidvania/?snr=1_5_9__12">类银河战士恶魔城</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/visual_novel/?snr=1_5_9__12">视觉小说</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/puzzle_matching/?snr=1_5_9__12">解谜</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/hidden_object/?snr=1_5_9__12">隐藏物体</a>
+																										</div>
+												</div>											<div class="popup_menu popup_menu_browse " data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+																								<div class="popup_menu_subheader reduced_vspace responsive_hidden">
+													<br>
+												</div>
+																																				<div class="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="rpg">
+														角色扮演													</div>
+																									<div class="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="rpg">
+														<a class="popup_menu_item" href="https://store.steampowered.com/category/rpg/?snr=1_5_9__12">
+															角色扮演														</a>
+													</div>
+																								<div class="popup_genre_expand_content responsive_hidden" data-genre-group="rpg">
+																											<a class="popup_menu_item" href="https://store.steampowered.com/category/adventure_rpg/?snr=1_5_9__12">冒险角色扮演</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/rpg_action/?snr=1_5_9__12">动作角色扮演</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/rpg_turn_based/?snr=1_5_9__12">回合制</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/rpg_party_based/?snr=1_5_9__12">团队制</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/rpg_jrpg/?snr=1_5_9__12">日系角色扮演</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/rpg_strategy_tactics/?snr=1_5_9__12">策略角色扮演</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/rogue_like_rogue_lite/?snr=1_5_9__12">类 Rogue</a>
+																										</div>
+																									<div class="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="simulation">
+														模拟													</div>
+																									<div class="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="simulation">
+														<a class="popup_menu_item" href="https://store.steampowered.com/category/simulation/?snr=1_5_9__12">
+															模拟														</a>
+													</div>
+																								<div class="popup_genre_expand_content responsive_hidden" data-genre-group="simulation">
+																											<a class="popup_menu_item" href="https://store.steampowered.com/category/sim_farming_crafting/?snr=1_5_9__12">农场及制作</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/sim_space_flight/?snr=1_5_9__12">太空及飞行</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/sim_building_automation/?snr=1_5_9__12">建造及自动化</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/sim_dating/?snr=1_5_9__12">恋爱</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/sim_physics_sandbox/?snr=1_5_9__12">沙盒及物理</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/sim_hobby_sim/?snr=1_5_9__12">爱好与工作</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/sim_life/?snr=1_5_9__12">生活及沉浸式</a>
+																										</div>
+												</div>											<div class="popup_menu popup_menu_browse " data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+																								<div class="popup_menu_subheader reduced_vspace responsive_hidden">
+													<br>
+												</div>
+																																				<div class="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="strategy">
+														策略													</div>
+																									<div class="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="strategy">
+														<a class="popup_menu_item" href="https://store.steampowered.com/category/strategy/?snr=1_5_9__12">
+															策略														</a>
+													</div>
+																								<div class="popup_genre_expand_content responsive_hidden" data-genre-group="strategy">
+																											<a class="popup_menu_item" href="https://store.steampowered.com/category/strategy_military/?snr=1_5_9__12">军事</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/strategy_card_board/?snr=1_5_9__12">卡牌及桌游</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/strategy_real_time/?snr=1_5_9__12">即时战略</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/strategy_turn_based/?snr=1_5_9__12">回合制策略</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/strategy_cities_settlements/?snr=1_5_9__12">城市及定居点</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/tower_defense/?snr=1_5_9__12">塔防</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/strategy_grand_4x/?snr=1_5_9__12">大战略及 4X</a>
+																										</div>
+																									<div class="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="sports_and_racing">
+														体育及竞速													</div>
+																									<div class="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="sports_and_racing">
+														<a class="popup_menu_item" href="https://store.steampowered.com/category/sports_and_racing/?snr=1_5_9__12">
+															体育及竞速														</a>
+													</div>
+																								<div class="popup_genre_expand_content responsive_hidden" data-genre-group="sports_and_racing">
+																											<a class="popup_menu_item" href="https://store.steampowered.com/category/sports_sim/?snr=1_5_9__12">体育模拟</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/sports_individual/?snr=1_5_9__12">单人运动</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/sports_team/?snr=1_5_9__12">团队体育</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/sports/?snr=1_5_9__12">所有运动</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/racing/?snr=1_5_9__12">竞速</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/racing_sim/?snr=1_5_9__12">竞速模拟</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/sports_fishing_hunting/?snr=1_5_9__12">钓鱼及狩猎</a>
+																										</div>
+												</div>											<div class="popup_menu popup_menu_browse leftborder" data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+																																				<div class="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="themes">
+														主题													</div>
+																									<div class="popup_menu_subheader players popup_genre_expand_header responsive_hidden">
+														主题													</div>
+																								<div class="popup_genre_expand_content responsive_hidden" data-genre-group="themes">
+																											<a class="popup_menu_item" href="https://store.steampowered.com/category/anime/?snr=1_5_9__12">动漫</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/space/?snr=1_5_9__12">太空</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/exploration_open_world/?snr=1_5_9__12">开放世界</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/horror/?snr=1_5_9__12">恐怖</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/mystery_detective/?snr=1_5_9__12">悬疑及推理</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/survival/?snr=1_5_9__12">生存</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/science_fiction/?snr=1_5_9__12">科幻及赛博朋克</a>
+														 <div class="spacer responsive_hidden"></div> 												</div>
+																									<div class="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="social_and_players">
+														玩家支持													</div>
+																									<div class="popup_menu_subheader players popup_genre_expand_header responsive_hidden">
+														玩家支持													</div>
+																								<div class="popup_genre_expand_content responsive_hidden" data-genre-group="social_and_players">
+																											<a class="popup_menu_item" href="https://store.steampowered.com/category/singleplayer/?snr=1_5_9__12">单人</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/multiplayer_coop/?snr=1_5_9__12">合作</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/multiplayer_online_competitive/?snr=1_5_9__12">在线竞技</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/multiplayer/?snr=1_5_9__12">多人</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/multiplayer_mmo/?snr=1_5_9__12">大型多人在线</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/multiplayer_lan/?snr=1_5_9__12">局域网</a>
+																												<a class="popup_menu_item" href="https://store.steampowered.com/category/multiplayer_local_party/?snr=1_5_9__12">本地及派对</a>
+																										</div>
+												</div>									</div>
+								</div>
+							
+							                                                                <a class="tab  " href="https://store.steampowered.com/points/?snr=1_5_9__12">
+                                    <span>点数商店</span>
+                                </a>
+                            
+                                                        <a class="tab  " href="https://store.steampowered.com/news/?snr=1_5_9__12">
+								<span>新闻</span>
+							</a>
+
+                                                                                            <a class="tab  " href="https://store.steampowered.com/labs/?snr=1_5_9__12">
+                                    <span>实验室</span>
+                                </a>
+                            
+															<div class="search_flex_spacer"></div>
+								<div class="search_area">
+									<div id="store_search">
+										<form id="searchform" name="searchform" method="get" action="https://store.steampowered.com/search/" onsubmit="return SearchSuggestCheckTerm(this);">
+											<input type="hidden" name="snr" value="1_5_9__12">
+											<div class="searchbox">
+												<input id="store_nav_search_term" name="term" type="text" class="default" placeholder="搜索" size="22" autocomplete="off" maxlength="64">
+												<a href="#" id="store_search_link" onclick="var $Form = $J(this).parents('form'); $Form.submit(); return false;"><img src="https://store.akamai.steamstatic.com/public/images/blank.gif"></a>
+											</div>
+										</form>
+									</div>
+									<div id="searchterm_options" class="search_suggest popup_block_new" style="display: none;">
+										<div class="popup_body search_v2" style="border-top: none;">
+											<div id="search_suggestion_contents">
+											</div>
+										</div>
+									</div>
+								</div>
+							
+						</div>
+					</div>
+					<div class="store_nav_rightcap"></div>
+				</div>
+							</div>
+	</div></div>
+    
+				<script type="text/javascript">
+			$J( function() {
+				BindAutoFlyoutEvents();
+
+				var $Window = $J(window);
+				var $Header = $J('#store_header');
+				var $ResponsiveNavWindowShadeCtn = $J('#responsive_store_nav_ctn');
+				var $ResponsiveNavOverlay = $J('#responsive_store_nav_overlay');
+				var $ResponsiveNavOverlayCtn = $J('#responsive_store_nav_overlay_ctn');
+				var $ResponsiveNavOverlayBottom = $J('#responsive_store_nav_overlay_bottom');
+				var $HeaderWrapper;
+				$Window.on('Responsive_SmallScreenModeToggled.StoreMenu', function() {
+					var bUseSmallScreenMode = window.UseSmallScreenMode && window.UseSmallScreenMode();
+
+											if ( !$HeaderWrapper )
+							$HeaderWrapper = $Header.wrap( $J('<div/>', {'class': 'responsive_store_nav_ctn_spacer'} ) ).parent();
+
+						if ( bUseSmallScreenMode )
+							$ResponsiveNavWindowShadeCtn.append( $Header );
+						else
+							$HeaderWrapper.append( $Header );
+
+
+						if ( bUseSmallScreenMode )
+						{
+							$Header.css( 'visibility', 'hidden' );
+							$Header.show();
+
+							var nStartingScrollPosition = $J('#store_header').height();
+							if ( $Window.scrollTop() < nStartingScrollPosition )
+								$Window.scrollTop( nStartingScrollPosition );
+
+							$Header.css('visibility', 'visible');
+						}
+									} );
+				
+				window.setTimeout( function() { $J(window).trigger('Responsive_SmallScreenModeToggled.StoreMenu'); }, 0 );
+
+										var g_rgUserPreferences = {
+							excluded_tags : [],
+							excluded_content_descriptors : [3,4]						};
+						
+													g_rgUserPreferences['use_store_query'] = 1;
+						
+						g_rgUserPreferences['use_search_spellcheck'] = 1;
+						g_rgUserPreferences['search_creators_and_tags'] = 1;
+
+						if( $J('#searchform').length > 0 )
+						{
+							// default search support where the web page includes the search edit control
+							EnableSearchSuggestions( $J('#searchform')[0].elements['term'], '1_5_9_', 'SG', 1, 'schinese', g_rgUserPreferences, '20235900' );
+						}
+						else 
+						{
+							// search support for the mobile client.  the mobile client has a native search edit control but relies on the web content to perform the query and show results
+													}
+				
+				// make genre categories expand/collapse on mobile
+				$J(document).on( 'click', '.popup_genre_expand_header', function ( event ) {
+					if ( !UseSmallScreenMode() )
+						return;
+
+					event.preventDefault();
+					var $Element = $J(this);
+					var $Target = $J('.popup_genre_expand_content[data-genre-group=' + $Element.data('genre-group') + ']' );
+					if ( $Element.data('group-expanded') )
+					{
+						$Target.slideUp();
+						$Element.data( 'group-expanded', false );
+					}
+					else
+					{
+						$Target.slideDown();
+						$Element.data( 'group-expanded', true );
+					}
+				});
+			} );
+		</script>
+	<script type="text/javascript">
+	var g_AccountID = 0;
+	var g_sessionID = "6bb866355f508ba469d60b19";
+	var g_ServerTime = 1694379168;
+
+	$J( InitMiniprofileHovers( 'https%3A%2F%2Fstore.steampowered.com%2F' ) );
+
+	
+			GStoreItemData.AddNavParams({
+			__page_default: "1_5_9_",
+			storemenu_recommendedtags: "1_5_9__17"		});
+		GDynamicStore.Init( 0, false, "", {"primary_language":null,"secondary_languages":null,"platform_windows":null,"platform_mac":null,"platform_linux":null,"timestamp_updated":null,"hide_store_broadcast":null,"review_score_preference":null,"timestamp_content_descriptor_preferences_updated":null,"provide_deck_feedback":null,"additional_languages":null}, 'SG',
+			{"bNoDefaultDescriptors":false} );
+		GStoreItemData.SetCurrencyFormatter( function( nValueInCents, bWholeUnitsOnly ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {	var format = v_numberformat( nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, ".", ","); return format; };var strNegativeSymbol = '';	if ( nValueInCents < 0 ) { strNegativeSymbol = '-'; nValueInCents = -nValueInCents; }return strNegativeSymbol + "S$" + fmt( nValueInCents, bWholeUnitsOnly );} );
+		GStoreItemData.SetCurrencyMinPriceIncrement( 1 );
+	</script>
+
+	<!-- create two column layout for Deck, Tablet sized screens -->
+	<div id="tabletGrid" class="tablet_grid">
+
+	<div class="page_content_ctn" itemscope="" itemtype="http://schema.org/Product">
+		
+		<meta itemprop="image" content="https://cdn.akamai.steamstatic.com/steam/apps/1180560/capsule_231x87.jpg?t=1581428419">
+					<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" style="display: none;">
+				<meta itemprop="priceCurrency" content="SGD">
+				<meta itemprop="price" content="10.00">
+							</div>
+		
+		<div class="page_title_area game_title_area page_content" data-gpnav="columns">
+			<div class="breadcrumbs" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+								<div class="blockbg">
+											<a href="https://store.steampowered.com/search/?category1=994&amp;snr=1_5_9__205">所有软件</a>
+																					&gt; <a href="https://store.steampowered.com/genre/Education/?snr=1_5_9__205">教育</a>
+																&gt; <a href="https://store.steampowered.com/curator/36583281?snr=1_5_9__205">Abelana's Skydeck 系列</a>
+															&gt; <a href="https://store.steampowered.com/app/1180560/?snr=1_5_9__205"><span itemprop="name">Abelana's Atom Maker</span></a>
+
+				</div>
+				<div style="clear: left;"></div>
+							</div>
+			
+
+<div class="apphub_HomeHeaderContent">
+
+	<div class="apphub_HeaderStandardTop">
+		                      <div class="apphub_OtherSiteInfo">
+
+                    
+                <a class="btnv6_blue_hoverfade btn_medium" href="https://steamcommunity.com/app/1180560">
+                    <span>社区中心</span>
+                </a>
+            </div>
+         		<div class="apphub_AppIcon"><img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1180560/6129a7dde4f258b4f53238cf804d7362dcdc7a48.jpg"><div class="overlay"></div></div>
+		<div id="appHubAppName" class="apphub_AppName">Abelana's Atom Maker</div>
+		<div style="clear: both"></div>
+
+	</div>
+
+</div>
+
+											</div>
+		<div style="clear: left;"></div>
+
+
+		<div class="block game_media_and_summary_ctn">
+						<script type="text/javascript">
+				var strRequiredVersion = "9";
+				if ( typeof( g_bIsOnMac ) != 'undefined' && g_bIsOnMac )
+					strRequiredVersion = "10.1.0";
+
+			</script>
+
+			
+			<div class="game_background_glow">
+                                
+				
+								<div data-panel="{&quot;autoFocus&quot;:true,&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="responsive_page_header_img" style="display: none;">
+					<img style="width:100%;" src="https://cdn.akamai.steamstatic.com/steam/apps/1180560/header.jpg?t=1581428419">
+				</div>
+				
+
+
+				<div class="block_content page_content" id="game_highlights" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}">
+				
+				<div class="rightcol" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}">
+					<div class="glance_ctn">
+						<div id="gameHeaderImageCtn" class="game_header_image_ctn">
+							<img class="game_header_image_full" src="https://cdn.akamai.steamstatic.com/steam/apps/1180560/header.jpg?t=1581428419">
+
+																						<div id="appHubAppName_responsive" style="display: none;" class="apphub_AppName">Abelana's Atom Maker</div>
+								<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" id="appHeaderGridContainer" class="app_header_grid_container" style="display:none">
+
+																			<div class="grid_label">开发商</div>
+										<div class="grid_content">
+											<a href="https://store.steampowered.com/developer/abelanavr?snr=1_5_9__400">Abelana VR</a>										</div>
+																																							<div class="grid_label">发行商</div>
+											<div class="grid_content">
+												<a href="https://store.steampowered.com/publisher/abelanavr?snr=1_5_9__400">Abelana VR</a>											</div>
+																			
+																			<div class="grid_label grid_date">发行日期</div>
+										<div class="grid_content grid_date">
+											2020 年 2 月 11 日										</div>
+																	</div>
+							
+
+						</div>
+													<div class="game_description_snippet">
+								Visualize atomic orbitals, navigate across energy levels, gain an intuitive understanding of the composition of atoms and their electron configurations by assembling all elements of the periodic table. An educational VR experience designed for use by enthusiasts and academics alike.							</div>
+						
+						<div class="glance_ctn_responsive_left">
+															<div id="userReviews" class="user_reviews">
+
+									
+																		<div class="user_reviews_summary_row" onclick="window.location='#app_reviews_hash'" style="cursor: pointer;" data-tooltip-html="需要更多用户评测来生成整体评价" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+										<div class="subtitle column all">全部评测:</div>
+										<div class="summary column">
+																					<span class="game_review_summary not_enough_reviews" itemprop="description">3 篇用户评测</span>
+																																	<span class="nonresponsive_hidden responsive_reviewdesc">
+												- 需要更多用户评测来生成整体评价											</span>
+
+											<!-- microdata -->
+											<meta itemprop="reviewCount" content="3">
+											<meta itemprop="ratingValue" content="0">
+											<meta itemprop="bestRating" content="10">
+											<meta itemprop="worstRating" content="1">
+																				</div>
+									</div>
+								</div>
+							
+															<div class="release_date">
+									<div class="subtitle column">发行日期:</div>
+									<div class="date">2020 年 2 月 11 日</div>
+								</div>
+							
+																						<div class="dev_row">
+									<div class="subtitle column">开发商:</div>
+									<div class="summary column" id="developers_list">
+										<a href="https://store.steampowered.com/developer/abelanavr?snr=1_5_9__2000">Abelana VR</a>									</div>
+								</div>
+							
+																								<div class="dev_row">
+										<div class="subtitle column">发行商:</div>
+										<div class="summary column">
+										<a href="https://store.steampowered.com/publisher/abelanavr?snr=1_5_9__2000">Abelana VR</a>										</div>
+									</div>
+															
+													</div>
+
+						<div id="glanceCtnResponsiveRight" class="glance_ctn_responsive_right" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}">
+																								<!-- when the javascript runs, it will set these visible or not depending on what fits in the area -->
+																		<div class="responsive_block_header">标签</div>
+									<div class="glance_tags_ctn popular_tags_ctn" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+										<div class="glance_tags_label">该产品的热门用户自定义标签：</div>
+										<div data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" class="glance_tags popular_tags" data-appid="1180560">
+											<a href="https://store.steampowered.com/tags/zh-cn/%E6%95%99%E8%82%B2/?snr=1_5_9__409" class="app_tag" style="">
+												教育												</a><a href="https://store.steampowered.com/tags/zh-cn/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E/?snr=1_5_9__409" class="app_tag" style="">
+												虚拟现实												</a><a href="https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/?snr=1_5_9__409" class="app_tag" style="">
+												模拟												</a><a href="https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/?snr=1_5_9__409" class="app_tag" style="">
+												单人												</a><a href="https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%AD%A6/?snr=1_5_9__409" class="app_tag" style="">
+												科学												</a><div class="app_tag add_button" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" onclick="ShowAppTagModal( 1180560 )">+</div>
+										</div>
+									</div>
+															
+																						<div id="reviewsHeader_responsive" style="display: none;" class="responsive_block_header">评测</div>
+																	<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" id="userReviews_responsive" style="display: none;" class="user_reviews" onclick="window.location='#app_reviews_hash'">
+
+																				<div id="appReviewsAll_responsive" class="user_reviews_summary_row" onclick="window.location='#app_reviews_hash'" style="cursor: pointer;">
+											<div class="subtitle column all">全部评测:</div>
+											<div class="summary column">
+																							<span class="game_review_summary not_enough_reviews">3 篇用户评测</span>
+																								<span class="responsive_reviewdesc_short">
+													()&nbsp;<span class="desc_short">发布至今</span>
+												</span>
+																						</div>
+										</div>
+
+																			</div>
+																					</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+
+				<div data-panel="{&quot;maintainX&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}" class="leftcol">
+					<div class="highlight_ctn">
+
+                                                    <div class="highlight_overflow">
+                                <div id="highlight_player_area">
+                                    <div class="highlight_player_area_spacer">
+                                        <img src="https://store.akamai.steamstatic.com/public/images/game/game_highlight_image_spacer.gif">
+                                    </div>
+                                                                                                                                                            <div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_player_item highlight_movie" id="highlight_movie_256772245" style="opacity: 1;" data-video-title="" data-video-category="" data-webm-source="https://cdn.akamai.steamstatic.com/steam/apps/256772245/movie480.webm?t=1580183184" data-webm-hd-source="https://cdn.akamai.steamstatic.com/steam/apps/256772245/movie_max.webm?t=1580183184" data-mp4-source="https://cdn.akamai.steamstatic.com/steam/apps/256772245/movie480.mp4?t=1580183184" data-mp4-hd-source="https://cdn.akamai.steamstatic.com/steam/apps/256772245/movie_max.mp4?t=1580183184" data-poster="https://cdn.akamai.steamstatic.com/steam/apps/256772245/movie.293x165.jpg?t=1580183184">
+                                            <video id="movie_256772245" playsinline="true" class="highlight_player_item highlight_movie" poster="https://cdn.akamai.steamstatic.com/steam/apps/256772245/movie.293x165.jpg?t=1580183184" preload="none" src="https://cdn.akamai.steamstatic.com/steam/apps/256772245/movie480.webm?t=1580183184" data-hd-src="https://cdn.akamai.steamstatic.com/steam/apps/256772245/movie_max.webm?t=1580183184"></video><div class="html5_video_overlay" style="bottom: -35px;"><div class="play_button pause"></div><div class="control_container"><div class="fullscreen_button"></div><div class="time">0:04 / 1:55</div><div class="volume_icon muted"></div><div class="volume_slider"><div class="volume_handle" style="left: 0px;"></div></div><div class="autoplay_checkbox checked"></div><div class="autoplay_label">自动播放视频</div></div><div class="progress_bar_wrapper"><div class="progress_bar_container"><div class="progress_bar_background" style="width: 76.9371px; overflow: hidden;"></div><div class="progress_bar" style="width: 20.4942px; overflow: hidden;"></div></div></div></div></div>
+                                                                                                                                                                <div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_player_item highlight_movie" id="highlight_movie_256772257" style="display: none;" data-video-title="" data-video-category="" data-webm-source="https://cdn.akamai.steamstatic.com/steam/apps/256772257/movie480.webm?t=1580183192" data-webm-hd-source="https://cdn.akamai.steamstatic.com/steam/apps/256772257/movie_max.webm?t=1580183192" data-mp4-source="https://cdn.akamai.steamstatic.com/steam/apps/256772257/movie480.mp4?t=1580183192" data-mp4-hd-source="https://cdn.akamai.steamstatic.com/steam/apps/256772257/movie_max.mp4?t=1580183192" data-poster="https://cdn.akamai.steamstatic.com/steam/apps/256772257/movie.293x165.jpg?t=1580183192">
+                                            </div>
+                                                                            
+                                                                                                                <div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_4df8fb2b2cc756d8468edcdb3a2132f5981c9d0a.jpg" style="display: none;">
+                                            <div class="screenshot_holder">
+                                                <a class="highlight_screenshot_link" data-screenshotid="ss_4df8fb2b2cc756d8468edcdb3a2132f5981c9d0a.jpg" href="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_4df8fb2b2cc756d8468edcdb3a2132f5981c9d0a.1920x1080.jpg?t=1581428419" target="_blank" rel="">
+                                                    <img src="https://store.akamai.steamstatic.com/public/images/blank.gif">
+                                                </a>
+                                            </div>
+                                        </div>
+                                                                            <div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_53609d9756b9674c98713306f59e81b18eab9d66.jpg" style="display: none;">
+                                            <div class="screenshot_holder">
+                                                <a class="highlight_screenshot_link" data-screenshotid="ss_53609d9756b9674c98713306f59e81b18eab9d66.jpg" href="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_53609d9756b9674c98713306f59e81b18eab9d66.1920x1080.jpg?t=1581428419" target="_blank" rel="">
+                                                    <img src="https://store.akamai.steamstatic.com/public/images/blank.gif">
+                                                </a>
+                                            </div>
+                                        </div>
+                                                                            <div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_c0534b1bf99d9848a1aa50bcb0b66168da510c61.jpg" style="display: none;">
+                                            <div class="screenshot_holder">
+                                                <a class="highlight_screenshot_link" data-screenshotid="ss_c0534b1bf99d9848a1aa50bcb0b66168da510c61.jpg" href="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_c0534b1bf99d9848a1aa50bcb0b66168da510c61.1920x1080.jpg?t=1581428419" target="_blank" rel="">
+                                                    <img src="https://store.akamai.steamstatic.com/public/images/blank.gif">
+                                                </a>
+                                            </div>
+                                        </div>
+                                                                            <div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_e475a7a434659e4ad0d4e960237ca5a46a5a9503.jpg" style="display: none;">
+                                            <div class="screenshot_holder">
+                                                <a class="highlight_screenshot_link" data-screenshotid="ss_e475a7a434659e4ad0d4e960237ca5a46a5a9503.jpg" href="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_e475a7a434659e4ad0d4e960237ca5a46a5a9503.1920x1080.jpg?t=1581428419" target="_blank" rel="">
+                                                    <img src="https://store.akamai.steamstatic.com/public/images/blank.gif">
+                                                </a>
+                                            </div>
+                                        </div>
+                                                                            <div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_92496d869fe947939cc13a246bf421e85ec5c8f8.jpg" style="display: none;">
+                                            <div class="screenshot_holder">
+                                                <a class="highlight_screenshot_link" data-screenshotid="ss_92496d869fe947939cc13a246bf421e85ec5c8f8.jpg" href="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_92496d869fe947939cc13a246bf421e85ec5c8f8.1920x1080.jpg?t=1581428419" target="_blank" rel="">
+                                                    <img src="https://store.akamai.steamstatic.com/public/images/blank.gif">
+                                                </a>
+                                            </div>
+                                        </div>
+                                                                            <div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_e090f529b44fdfeda87b8ddff3ca67e4da0cc9f6.jpg" style="display: none;">
+                                            <div class="screenshot_holder">
+                                                <a class="highlight_screenshot_link" data-screenshotid="ss_e090f529b44fdfeda87b8ddff3ca67e4da0cc9f6.jpg" href="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_e090f529b44fdfeda87b8ddff3ca67e4da0cc9f6.1920x1080.jpg?t=1581428419" target="_blank" rel="">
+                                                    <img src="https://store.akamai.steamstatic.com/public/images/blank.gif">
+                                                </a>
+                                            </div>
+                                        </div>
+                                                                            <div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_0033d7ddeda35c4f62bacb08adcdffcc03169bbd.jpg" style="display: none;">
+                                            <div class="screenshot_holder">
+                                                <a class="highlight_screenshot_link" data-screenshotid="ss_0033d7ddeda35c4f62bacb08adcdffcc03169bbd.jpg" href="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_0033d7ddeda35c4f62bacb08adcdffcc03169bbd.1920x1080.jpg?t=1581428419" target="_blank" rel="">
+                                                    <img src="https://store.akamai.steamstatic.com/public/images/blank.gif">
+                                                </a>
+                                            </div>
+                                        </div>
+                                                                            <div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_player_item highlight_screenshot" id="highlight_screenshot_ss_2974090c88b67701a4eedd3eb2d1a71343c69b56.jpg" style="display: none;">
+                                            <div class="screenshot_holder">
+                                                <a class="highlight_screenshot_link" data-screenshotid="ss_2974090c88b67701a4eedd3eb2d1a71343c69b56.jpg" href="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_2974090c88b67701a4eedd3eb2d1a71343c69b56.1920x1080.jpg?t=1581428419" target="_blank" rel="">
+                                                    <img src="https://store.akamai.steamstatic.com/public/images/blank.gif">
+                                                </a>
+                                            </div>
+                                        </div>
+                                                                        <script type="text/javascript">
+                                                                                var rgScreenshotURLs = {"ss_4df8fb2b2cc756d8468edcdb3a2132f5981c9d0a.jpg":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1180560\/ss_4df8fb2b2cc756d8468edcdb3a2132f5981c9d0a_SIZE_.jpg?t=1581428419","ss_53609d9756b9674c98713306f59e81b18eab9d66.jpg":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1180560\/ss_53609d9756b9674c98713306f59e81b18eab9d66_SIZE_.jpg?t=1581428419","ss_c0534b1bf99d9848a1aa50bcb0b66168da510c61.jpg":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1180560\/ss_c0534b1bf99d9848a1aa50bcb0b66168da510c61_SIZE_.jpg?t=1581428419","ss_e475a7a434659e4ad0d4e960237ca5a46a5a9503.jpg":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1180560\/ss_e475a7a434659e4ad0d4e960237ca5a46a5a9503_SIZE_.jpg?t=1581428419","ss_92496d869fe947939cc13a246bf421e85ec5c8f8.jpg":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1180560\/ss_92496d869fe947939cc13a246bf421e85ec5c8f8_SIZE_.jpg?t=1581428419","ss_e090f529b44fdfeda87b8ddff3ca67e4da0cc9f6.jpg":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1180560\/ss_e090f529b44fdfeda87b8ddff3ca67e4da0cc9f6_SIZE_.jpg?t=1581428419","ss_0033d7ddeda35c4f62bacb08adcdffcc03169bbd.jpg":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1180560\/ss_0033d7ddeda35c4f62bacb08adcdffcc03169bbd_SIZE_.jpg?t=1581428419","ss_2974090c88b67701a4eedd3eb2d1a71343c69b56.jpg":"https:\/\/cdn.akamai.steamstatic.com\/steam\/apps\/1180560\/ss_2974090c88b67701a4eedd3eb2d1a71343c69b56_SIZE_.jpg?t=1581428419"};
+                                    </script>
+                                </div>
+                                                                <div id="highlight_strip">
+                                    <div data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" id="highlight_strip_scroll" style="width: 1202px;">
+                                        <div class="highlight_selector" style="left: 0px;"></div>
+
+                                        											<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_strip_item highlight_strip_movie ttip focus" data-tooltip-text="" id="thumb_movie_256772245">
+												<img class="movie_thumb" src="https://cdn.akamai.steamstatic.com/steam/apps/256772245/movie.184x123.jpg?t=1580183184">
+												<div class="highlight_movie_marker"></div>
+											</div>
+																						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_strip_item highlight_strip_movie ttip" data-tooltip-text="" id="thumb_movie_256772257">
+												<img class="movie_thumb" src="https://cdn.akamai.steamstatic.com/steam/apps/256772257/movie.184x123.jpg?t=1580183192">
+												<div class="highlight_movie_marker"></div>
+											</div>
+											
+																					<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_4df8fb2b2cc756d8468edcdb3a2132f5981c9d0a.jpg">
+												<img src="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_4df8fb2b2cc756d8468edcdb3a2132f5981c9d0a.116x65.jpg?t=1581428419">
+											</div>
+																					<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_53609d9756b9674c98713306f59e81b18eab9d66.jpg">
+												<img src="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_53609d9756b9674c98713306f59e81b18eab9d66.116x65.jpg?t=1581428419">
+											</div>
+																					<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_c0534b1bf99d9848a1aa50bcb0b66168da510c61.jpg">
+												<img src="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_c0534b1bf99d9848a1aa50bcb0b66168da510c61.116x65.jpg?t=1581428419">
+											</div>
+																					<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_e475a7a434659e4ad0d4e960237ca5a46a5a9503.jpg">
+												<img src="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_e475a7a434659e4ad0d4e960237ca5a46a5a9503.116x65.jpg?t=1581428419">
+											</div>
+																					<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_92496d869fe947939cc13a246bf421e85ec5c8f8.jpg">
+												<img src="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_92496d869fe947939cc13a246bf421e85ec5c8f8.116x65.jpg?t=1581428419">
+											</div>
+																					<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_e090f529b44fdfeda87b8ddff3ca67e4da0cc9f6.jpg">
+												<img src="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_e090f529b44fdfeda87b8ddff3ca67e4da0cc9f6.116x65.jpg?t=1581428419">
+											</div>
+																					<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_0033d7ddeda35c4f62bacb08adcdffcc03169bbd.jpg">
+												<img src="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_0033d7ddeda35c4f62bacb08adcdffcc03169bbd.116x65.jpg?t=1581428419">
+											</div>
+																					<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="highlight_strip_item highlight_strip_screenshot" id="thumb_screenshot_ss_2974090c88b67701a4eedd3eb2d1a71343c69b56.jpg">
+												<img src="https://cdn.akamai.steamstatic.com/steam/apps/1180560/ss_2974090c88b67701a4eedd3eb2d1a71343c69b56.116x65.jpg?t=1581428419">
+											</div>
+										
+                                                                            </div>
+                                </div>
+                                                                    <div class="slider_ctn">
+                                        <div id="highlight_slider_left" class="slider_left"><span></span></div>
+                                        <div class="slider" id="highlight_slider">
+                                            <div class="slider_bg">
+                                            </div>
+                                            <div class="handle" style="position: absolute; left: 0px;">
+                                            </div>
+                                        </div>
+                                        <div id="highlight_slider_right" class="slider_right"><span></span></div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        $J( function() {
+                                            var player = new HighlightPlayer( {
+                                                elemPlayerArea: 'highlight_player_area',
+                                                elemStrip: 'highlight_strip',
+                                                elemStripScroll: 'highlight_strip_scroll',
+                                                elemSlider: 'highlight_slider',
+                                                rgScreenshotURLs: rgScreenshotURLs
+                                            } );
+
+                                            $J('#highlight_slider_right').click( function() {
+                                                player.Transition( true );
+                                            });
+                                            $J('#highlight_slider_left').click( function() {
+                                                player.TransitionBack( true );
+                                            });
+
+                                            
+                                                // swipe gesture handling for the media carousel
+
+                                                // TODO: We may want to move all of this to the player class so it has built in touch gesture support.
+                                                // First testing here as part of new mobile ux.
+
+                                                var k_nElementWidth = 120;
+                                                var k_playerItemClassName = '.highlight_player_item';
+                                                var g_nStripWidth = 1200;
+                                                var g_nMediaItems = player.m_elemPlayerArea.find( '.highlight_player_item' ).length;
+                                                var g_TouchEventStart = null;
+
+                                                // Handle left/right swipe on the media playback by moving forward or backward when the swipe completes
+                                                $J('#highlight_player_area').on("touchstart", function (event) {
+                                                    g_TouchEventStart = event;
+                                                });
+                                                $J('#highlight_player_area').on("touchmove", function (event) {
+
+                                                    if ( typeof g_TouchEventStart == undefined )
+                                                        return;
+
+                                                    var xdiff = Math.abs( g_TouchEventStart.originalEvent.changedTouches[0].screenX - event.originalEvent.changedTouches[0].screenX );
+                                                    var ydiff = Math.abs( g_TouchEventStart.originalEvent.changedTouches[0].screenY - event.originalEvent.changedTouches[0].screenY );
+
+                                                    // To reduce unintended page scroll during a horizontal swipe block the default handler when it looks like the user
+                                                    // is in the process of performaing a horizontal scroll
+                                                    if ( xdiff > ydiff && ( typeof event.cancelable !== 'boolean' || event.cancelable ) )
+                                                        event.preventDefault();
+
+                                                });
+                                                $J('#highlight_player_area').on("touchend", function (eventEnd) {
+
+                                                    if ( typeof g_TouchEventStart.originalEvent.changedTouches[0] == undefined ||
+                                                        typeof eventEnd.originalEvent.changedTouches[0] == undefined )
+                                                        return;
+
+                                                    var xdiff = g_TouchEventStart.originalEvent.changedTouches[0].screenX - eventEnd.originalEvent.changedTouches[0].screenX;
+                                                    var ydiff = g_TouchEventStart.originalEvent.changedTouches[0].screenY - eventEnd.originalEvent.changedTouches[0].screenY;
+
+                                                    // clear out the touch start event
+                                                    g_TouchEventStart = null;
+
+                                                    // ignore the swipe if it was short and could've been intended as a tap, or the
+                                                    // direction was more vertical than horizontal
+                                                    if ( Math.abs( xdiff ) < 20 || Math.abs( ydiff ) > Math.abs( xdiff ) )
+                                                        return;
+
+                                                    // we're handling this event
+                                                    if ( typeof event.cancelable !== 'boolean' || event.cancelable )
+                                                        event.preventDefault();
+
+                                                    // move forward or backward but don't wrap as that would be a jarring user experience
+                                                    if ( xdiff > 0 )
+                                                    {
+                                                        var $NextItem = player.m_activeItem.next( k_playerItemClassName );
+                                                        if ( $NextItem.length )
+                                                            player.Transition( true );
+                                                    }
+                                                    else
+                                                    {
+                                                        var $NextItem = player.m_activeItem.prev( k_playerItemClassName );
+                                                        if ( $NextItem.length )
+                                                            player.TransitionBack( true );
+                                                    }
+                                                });
+
+                                                // when the thumbnail strip is swiped move the strip at a granular level
+                                                // so it feels active.  The active image does not update because when testing the code to
+                                                // make it change the active element it seemed annoying
+                                                var g_nSwipeStartingPosition = 0;
+                                                var g_nMaxScroll = g_nMediaItems > 3 ? ( ( g_nMediaItems - 3 ) * k_nElementWidth ) : 0;
+
+                                                $J('#highlight_strip_scroll').on("touchstart", function (event) {
+                                                    g_TouchEventStart = event;
+                                                    g_nSwipeStartingPosition = parseInt( player.m_elemStripScroll.css( 'left' ) );
+
+                                                    player.StopCycle();
+                                                });
+                                                $J('#highlight_strip_scroll').on("touchmove", function (event) {
+
+                                                    if ( typeof g_TouchEventStart == undefined )
+                                                        return;
+
+                                                    // To reduce unintended page scroll during a horizontal swipe block the default handler when it looks like the user
+                                                    // is in the process of performaing a horizontal scroll
+                                                    var xdiff = parseInt( event.originalEvent.changedTouches[0].screenX - g_TouchEventStart.originalEvent.changedTouches[0].screenX );
+                                                    var ydiff = parseInt( event.originalEvent.changedTouches[0].screenY - g_TouchEventStart.originalEvent.changedTouches[0].screenY );
+                                                    if ( Math.abs(ydiff) > Math.abs(xdiff) )
+                                                        return;
+
+                                                    // move the scroll strip without changing the selected item
+                                                    var nNewScrollPosition = parseInt( g_nSwipeStartingPosition + xdiff );
+
+                                                    // check that we don't scroll past the ends
+                                                    if ( nNewScrollPosition > 0 )
+                                                        nNewScrollPosition = 0;
+                                                    else if ( nNewScrollPosition < (-1 * g_nMaxScroll) )
+                                                        nNewScrollPosition = (-1 * g_nMaxScroll);
+
+                                                    // set the new scroll position
+                                                    player.m_elemStripScroll.css( 'left', nNewScrollPosition + 'px' );
+
+                                                    // we're handling this event
+                                                    if ( typeof event.cancelable !== 'boolean' || event.cancelable )
+                                                        event.preventDefault();
+                                                });
+                                                $J('#highlight_strip_scroll').on("touchend", function (eventEnd) {
+                                                    g_TouchEventStart = null;
+                                                    g_nSwipeStartingPosition = 0;
+                                                });
+
+										
+                                            if( window.location.hash )
+                                            {
+                                                var ssid = window.location.hash.substr(1);
+                                                player.HighlightScreenshot(ssid);
+                                            }
+                                        } );
+                                    </script>
+                                                            </div>
+                        					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			</div>
+
+
+			
+			
+
+			
+			<div class="queue_overflow_ctn">
+									<div class="queue_ctn">
+											<div id="queueActionsCtn" class="queue_actions_ctn">
+							<p>想要将此项目添加至您的愿望单、关注它或标记为已忽略，请先<a href="https://store.steampowered.com/login/?redir=app%2F1180560&amp;snr=1_5_9_">登录</a></p>
+						</div>
+					</div>
+				
+				<!-- button area with share, follow, etc. for responsive ux -->
+				<div id="rowBtnActions" data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" style="display: none;"></div>
+
+			</div>
+
+			
+																					
+			
+							<div id="purchaseOptionsContent" class="purchase_options_content" style="display: none;">
+					<!-- game_area_purchase goes here -->
+				</div>
+			
+		</div>
+
+		
+
+				
+
+		<div class="page_content" data-panel="[]">
+
+				<!-- Right Column -->
+				<div class="rightcol game_meta_data" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}">
+					<div id="responsive_apppage_details_left_ctn"></div>
+
+											<div id="appLinksAndInfoCtn" style="display:none;">
+							<div class="responsive_block_header">链接与信息</div>
+							<div class="game_page_autocollapse_ctn"><div id="appLinksAndInfo" class="game_page_autocollapse" style="max-height: none;"></div><div class="game_page_autocollapse_fade"><div class="game_page_autocollapse_readmore">展开阅读</div></div></div>
+
+														
+						</div>
+					
+					<div id="responsive_apppage_details_right_ctn"></div>
+					<div style="clear: both;"></div>
+					
+													<div class="block responsive_apppage_details_right heading responsive_hidden">您对这款软件感兴趣吗？</div>
+							<div class="block responsive_apppage_details_right recommendation_noinfo responsive_hidden">
+								<p>
+									基于您的游戏、好友以及您关注的鉴赏家，登录以查看您是否有可能喜欢这个内容的原因。
+								</p>
+								<br>
+
+																	<a class="btnv6_blue_hoverfade btn_medium" href="https://store.steampowered.com/login/?redir=app/1180560"><span>登录</span></a>
+
+																			或										<a class="btnv6_blue_hoverfade btn_medium" href="steam://store/1180560"><span>在 Steam 中打开</span></a>
+																								</div>
+													
+					
+
+
+
+
+
+					
+					
+					
+
+											<div class="responsive_block_header responsive_apppage_details_left">功能</div>
+						<div class="block responsive_apppage_details_left" id="category_block">
+							<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="game_area_features_list_ctn">
+								<a class="game_area_details_specs_ctn" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" href="https://store.steampowered.com/search/?category2=2&amp;snr=1_5_9__423"><div class="icon"><img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_singlePlayer.png"></div><div class="label">单人</div></a><a class="game_area_details_specs_ctn" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" href="https://store.steampowered.com/search/?category2=52&amp;snr=1_5_9__423"><div class="icon"><img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_vr_input_motion.png"></div><div class="label">定位控制器支持</div></a><a class="game_area_details_specs_ctn" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" href="https://store.steampowered.com/search/?vrsupport=401&amp;snr=1_5_9__423"><div class="icon"><img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_vr_support.png"></div><div class="label">VR 独占</div></a>									<div class="game_area_details_specs_ctn learning_about">
+										<div class="icon"><img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_info.png"></div>
+										<div class="label">个人资料功能受限&nbsp;
+										<span class="tooltip" data-tooltip-html="此产品当前无资格在您 Steam 个人资料的某些展柜中展示，且不计入全球成就或游戏收藏家总数。">
+											<img src="https://store.akamai.steamstatic.com/public/shared/images/ico/icon_questionmark.png">
+										</span></div>
+
+									</div>
+																</div>
+
+							
+							
+							
+							
+													</div>
+																<div class="block responsive_apppage_details_right">
+							<div class="block_title" id="LanguagesHeader">
+								语言<span class="responsive_hidden">:</span>
+							</div>
+
+							
+<div id="bannerLanguages" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="responsive_banner_link" style="display: none" onclick="ToggleBannerContentVisibility('#languageTable', '#expandLanguageBtn')">
+	<div class="responsive_banner_link_title">
+		1 种已支持语言	</div>
+	<div id="expandLanguageBtn" class="expand_section"></div>
+</div>
+<div id="languageTable" style="display: block;">
+
+<table class="game_language_options" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<th style="width: 94px;"></th>
+				<th class="checkcol">界面</th>
+		<th class="checkcol">完全音频</th>
+		<th class="checkcol">字幕</th>
+	</tr>
+
+			<tr style="" class="unsupported">
+			<td style="width: 94px; text-align: left" class="ellipsis">
+				简体中文			</td>
+							<td colspan="3">
+					不支持				</td>
+					</tr>
+			<tr style="" class="">
+			<td style="width: 94px; text-align: left" class="ellipsis">
+				英语			</td>
+							<td class="checkcol">
+					 <span>✔</span> 				</td>
+				<td class="checkcol">
+									</td>
+				<td class="checkcol">
+									</td>
+					</tr>
+	</tbody></table>
+
+
+</div>
+
+						</div>
+										
+					
+					
+					
+					<div id="appDetailsUnderlinedLinks" class="block responsive_apppage_details_left game_details underlined_links">
+						<div class="block_content">
+							<div class="block_content_inner">
+								<div id="genresAndManufacturer" class="details_block">
+
+			<b>名称:</b> Abelana's Atom Maker<br>
+	
+				<b>类型:</b> <span data-panel="{&quot;flow-children&quot;:&quot;row&quot;}"><a href="https://store.steampowered.com/genre/Education/?snr=1_5_9__408">教育</a></span><br>
+			
+			<div class="dev_row">
+			<b>开发商:</b>
+
+				<a href="https://store.steampowered.com/developer/abelanavr?snr=1_5_9__408">Abelana VR</a>
+		</div>
+	
+			<div class="dev_row">
+			<b>发行商:</b>
+
+				<a href="https://store.steampowered.com/publisher/abelanavr?snr=1_5_9__408">Abelana VR</a>
+		</div>
+	
+			<div class="dev_row">
+			<b>系列:</b>
+
+			<a href="https://store.steampowered.com/curator/36583281?snr=1_5_9__408">Abelana's Skydeck</a>
+		</div>
+		
+	            <b>发行日期:</b> 2020 年 2 月 11 日<br>
+        
+            	</div>
+
+
+<div class="details_block" style="padding-top: 14px;">
+
+				<a class="linkbar" href="https://steamcommunity.com/linkfilter/?url=https://abelanavr.com/" target="_blank" rel="noreferrer  noopener">
+			访问网站 <img src="https://store.akamai.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom">
+		</a>
+	
+										<a class="linkbar" href="https://twitter.com/AbelanaVR" target="_blank" rel="" data-tooltip-text="https://twitter.com/AbelanaVR">
+				<img src="https://store.akamai.steamstatic.com/public/images//v6/social/twitter_32_white.png">
+				<span class="social_account">AbelanaVR Twitter</span>
+				<img src="https://store.akamai.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom">
+			</a>
+							<a class="linkbar" href="https://www.youtube.com/channel/UC947NvsJ5zqQmfhMSAkU-CA/" target="_blank" rel="" data-tooltip-text="https://www.youtube.com/channel/UC947NvsJ5zqQmfhMSAkU-CA/">
+				<img src="https://store.akamai.steamstatic.com/public/images//v6/social/youtube_32_white.png">
+				<span class="social_account">AbelanaVR Productions YouTube</span>
+				<img src="https://store.akamai.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom">
+			</a>
+		
+	
+	
+	
+	
+	
+	
+	
+			<a class="linkbar responsive_chevron_right" href="https://store.steampowered.com/newshub/?appids=1180560&amp;snr=1_5_9__408" target="_blank" rel="noreferrer">
+			查看更新记录		</a>
+		<a class="linkbar responsive_chevron_right" href="https://store.steampowered.com/newshub/app/1180560?snr=1_5_9__408" target="_blank" rel="noreferrer">
+			阅读相关新闻		</a>
+	
+			<a class="linkbar responsive_chevron_right" href="https://steamcommunity.com/app/1180560/discussions/" target="_blank" rel="noreferrer">
+			查看讨论		</a>
+	
+    
+	        <a class="linkbar responsive_chevron_right" href="https://steamcommunity.com/actions/Search?T=ClanAccount&amp;K=Abelana%27s%20Atom%20Maker">
+            查找社区组        </a>
+    </div>
+							</div>
+						</div>
+											</div>
+
+											<div id="shareEmbedRow" class="block responsive_apppage_details_left" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+							<a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowShareDialog(); return false;"><span>分享</span></a>
+							<a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowEmbedWidget(1180560); return false;"><span>嵌入</span></a>
+							<a id="ReportAppBtn" class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(1180560)"><span data-tooltip-text="举报该产品"><i class="ico16 reportv6"></i>&nbsp;</span></a>
+						</div>
+
+													<div id="shareBtn" style="display: none; flex-grow: 0;"><a class="btnv6_blue_hoverfade btn_medium" onclick="ShowShareDialog(); return false;"><span><img id="shareImg" src="https://store.akamai.steamstatic.com/public/shared/images/icon_share_android.svg"></span></a></div>
+							<div id="reportBtn" style="display: none; flex-grow: 0;"><a class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(1180560)"><span><img src="https://store.akamai.steamstatic.com/public/shared/images/icon_report.svg"></span></a></div>
+											
+					
+					
+					
+				</div>
+				<!-- End Right Column -->
+
+
+				<div class="leftcol game_description_column" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}">
+
+					
+					
+					
+					
+											<a class="franchise_notice" href="https://store.steampowered.com/curator/36583281?snr=1_5_9__2001">
+							<div class="background_image" style="background-image: url('https://clan.akamai.steamstatic.com/images/36583281/3bb28e92d3abdfb138fddc4dfd332724afb47cc1.png');"></div>
+							<div class="franchise_name">在 Steam 上查看 “Abelana's Skydeck” 全系列作品</div>
+							<div class="franchise_highlight"></div>
+						</a>
+
+					
+					
+					<div id="game_area_purchase" class="game_area_purchase">
+
+																					<div id="purchase_note">
+									<div class="notice_box_top"></div>
+									<div class="notice_box_content">
+										<b>不支持简体中文</b><br>
+										<p>本产品尚未对您目前所在的地区语言提供支持。在购买请先行确认目前所支持的语言。</p>
+																			</div>
+									<div class="notice_box_bottom"></div>
+								</div>
+													
+
+						
+																			<div id="purchase_note">
+								<div class="notice_box_top"></div>
+																											<div class="notice_box_content">
+																							<b>注意:</b>
+																						需要有虚拟现实头戴式显示器。请参阅系统要求以获得更多信息。										</div>
+																									<div class="notice_box_bottom"></div>
+							</div>
+						
+
+																			<!--[if lte IE 7]>
+<style type="text/css">
+.game_area_purchase_game_dropdown_right_panel .btn_addtocart { float: none; }
+</style>
+<![endif]-->
+
+
+
+<div class="game_area_purchase_game_wrapper">
+		<div class="game_area_purchase_game" id="game_area_purchase_section_add_to_cart_405677">
+		<form name="add_to_cart_405677" action="https://store.steampowered.com/cart/" method="POST">
+			<input type="hidden" name="snr" value="1_5_9__403">
+			<input type="hidden" name="originating_snr" value="1_1453_4__salebrowseall">
+			<input type="hidden" name="action" value="add_to_cart">
+			<input type="hidden" name="sessionid" value="6bb866355f508ba469d60b19">
+			<input type="hidden" name="subid" value="405677">
+		</form>
+		<div class="game_area_purchase_platform"><span class="platform_img win"></span><span class="vr_required">VR 独占</span></div>
+		<h1>购买 Abelana's Atom Maker</h1>
+				
+										
+		<div class="game_purchase_action">
+																<div class="game_purchase_action_bg">
+															<div class="game_purchase_price price" data-price-final="1000">
+							S$10.00						</div>
+													<div class="btn_addtocart">
+																																<a data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="btn_green_steamui btn_medium" href="javascript:addToCart(405677);" id="btn_add_to_cart_405677">
+								<span>添加至购物车</span>
+							</a>
+																		
+				</div>
+							</div>
+		</div>
+	</div>
+			</div>
+
+					</div>
+					<!-- game_area_purchase -->
+
+					
+											<div id="bannerCommunity" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="responsive_banner_link" style="display: none" onclick="window.location='https://steamcommunity.com/app/1180560'">
+							<div class="responsive_banner_link_title responsive_chevron_right">浏览社区中心</div>
+						</div>
+					
+					<div class="purchase_area_spacer">&nbsp;</div>
+
+					
+				
+								
+
+				<div data-featuretarget="events-row"><div class="early_access_announcements Focusable" tabindex="0"></div></div>
+
+								
+				
+				
+
+
+									<div id="contentForThisGame_ctn">
+					</div>
+									<div class="game_page_autocollapse_ctn collapsed"><div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" id="aboutThisGame" class="game_page_autocollapse" style="max-height: 850px;">
+						<div id="game_area_description" class="game_area_description">
+							<h2>关于这款软件</h2>
+							Abelana’s Atom Maker is a single-player version of the acclaimed atom building classroom experience already enjoyed by schools and location-based VR venues. It has been enhanced by a self-paced step-by-step guide designed to explain the process of atom creation.<h2 class="bb_tag">Content:</h2><ul class="bb_ul"><li>Gain intuitive understanding of the composition of atoms by assembling them in a three-dimensional virtual reality setting<br></li><li>Visualize all kinds of atomic orbitals - s, p, d, and f - across various energy levels. Understand their shapes, positions, and patterns<br></li><li>Understand the behavior of particles within atoms<br></li><li>Assemble any element from the periodic table<br></li><li>Discover exceptions and special cases among the elements of the periodic table<br></li><li>Learn about the order of filling of orbitals <br></li><li>Learn about the order of filling of electrons across orbitals<br></li><li>Learn to read electron configurations using standard notations<br></li><li>Learn about the composition of an atom from an enhanced version of the Bohr diagram<br></li><li>Discover different ways to group elements within the periodic table<br></li><li>Learn which countries discovered various elements within the periodic table <br></li><li>Understand composition of shells (i.e. energy levels) within an element</li></ul> <br>Academically, the experience is designed for grades 7-12, but can have a broader use including by enthusiasts, science clubs, and college level students.<br><br>Younger students will enjoy intuitive visualization of orbitals and the navigation across atomic structures, while more experienced users can dig deeper into specific elements and try to discover how they fit the bigger picture of the Mendeleev’s vision of the periodic table.<h2 class="bb_tag">What teachers are saying:</h2>“The visualization of orbitals in three dimensions is something that really-really hard for students to get a hold of - especially for the grade 12 level where that’s expected - and for them to be able to see those different shapes in three dimensions, it’s really going to help them”<br>-- Jonathan Ohrling, Chemistry Teacher, Waterloo Region District School Board, Canada <br><br>“The virtual reality experience was literally out of this world! My students were wowed as they explored subatomic concepts coming to life right in front of their very eyes!”<br>-- Leah Goldstein, Chemistry Teacher, Nearpod Certified Educator, New York, USA<h2 class="bb_tag">Location-based use:</h2>For a multiplayer version of the software designed for classroom and instructor-led use at schools and VR acrades please contact Abelana VR directly.						</div>
+					</div><div class="game_page_autocollapse_fade"><div class="game_page_autocollapse_readmore">展开阅读</div></div></div>
+				
+				
+				
+					<div class="game_page_autocollapse_ctn"><div class="game_page_autocollapse sys_req" style="max-height: none;">
+		<h2>系统需求</h2>
+				<div class="sysreq_contents">
+							<div class="game_area_sys_req sysreq_content active" data-os="win">
+											<div class="game_area_sys_req_full">
+							<ul>
+								<strong>最低配置:</strong><br><ul class="bb_ul"><li><strong>操作系统:</strong> Windows® 7 SP1 or newer<br></li><li><strong>处理器:</strong> Intel Core i5-4590 or AMD FX 8350, equivalent or better<br></li><li><strong>内存:</strong> 4 GB RAM<br></li><li><strong>显卡:</strong> NVIDIA GeForce GTX 1060 or AMD Radeon RX 480, equivalent or better<br></li><li><strong>DirectX 版本:</strong> 11<br></li><li><strong>存储空间:</strong> 需要 1200 MB 可用空间<br></li><li><strong>支持 VR:</strong> SteamVR</li></ul>							</ul>
+						</div>
+															<div style="clear: both;"></div>
+				</div>
+					</div>
+	</div><div class="game_page_autocollapse_fade"><div class="game_page_autocollapse_readmore">展开阅读</div></div></div>
+	<script type="text/javascript">
+		$J( function() {
+			var $Tabs = $J('.sysreq_tab');
+			var $Content = $J('.sysreq_content');
+
+			$Tabs.click( function() {
+				var $Tab = $J(this);
+				$Tabs.removeClass('active');
+				$Tab.addClass('active');
+
+				$Content.removeClass('active');
+				$Content.filter('[data-os=' + $Tab.data('os') + ']').addClass('active');
+
+				$Content.trigger('gamepage_autocollapse_expand');
+			});
+		} );
+	</script>
+
+				
+				
+				
+									<div class="block" id="franchise_block" style="display: none;">
+						<div class="block_header">
+							<div class="right">
+								<a href="https://store.steampowered.com/curator/36583281?snr=1_5_9__317" class="deck_view_all_action_link">查看全部</a>
+							</div>
+							<h2>更多来自 Abelana's Skydeck 的相关产品</h2>
+						</div>
+						<div class="store_horizontal_autoslider_ctn" style="height: 0px;"><div class="block_responsive_horizontal_scroll store_horizontal_autoslider block_content nopad" id="franchise_app_block_content" data-panel="{&quot;maintainX&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" style="overflow-x: scroll;">
+						</div></div><div class="slider_ctn store_autoslider" style="display: none;"><div class="slider_left"><span></span></div><div class="slider_right"><span></span></div><div class="slider_bg"></div><div class="slider"><div class="handle" style="position: absolute; left: 0px;"></div></div></div>
+					</div>
+									
+														<div class="block" id="recommended_block">
+						<div class="block_header">
+							<div class="right">
+								<a href="https://store.steampowered.com/recommended/morelike/app/1180560/?snr=1_5_9__300" class="deck_view_all_action_link">查看全部</a>
+							</div>
+							<h2>更多类似产品</h2>
+						</div>
+						<div class="store_horizontal_autoslider_ctn" style="height: 132px;"><div class="block_responsive_horizontal_scroll store_horizontal_autoslider block_content nopad" id="recommended_block_content" data-usability="1000" data-panel="{&quot;maintainX&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" style="overflow-x: scroll;">
+						<a class="small_cap" data-ds-appid="1096900" href="https://store.steampowered.com/app/1096900/RPG_Maker_MZ/?snr=1_5_9__300_1"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1096900/capsule_184x69.jpg?t=1692842139" class="small_cap_img"><h4>RPG Maker MZ</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="6900" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">S$69.00</div></div></div></a><a class="small_cap" data-ds-appid="362870" href="https://store.steampowered.com/app/362870/RPG_Maker_2003/?snr=1_5_9__300_2"><img src="https://cdn.akamai.steamstatic.com/steam/apps/362870/capsule_184x69.jpg?t=1675842779" class="small_cap_img"><h4>RPG Maker 2003</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="2000" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">S$20.00</div></div></div></a><a class="small_cap" data-ds-appid="1364390" href="https://store.steampowered.com/app/1364390/Animaze_by_FaceRig/?snr=1_5_9__300_3"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1364390/capsule_184x69.jpg?t=1693380615" class="small_cap_img"><h4>Animaze by FaceRig</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="0" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">免费开玩</div></div></div></a><a class="small_cap" data-ds-appid="2234500" href="https://store.steampowered.com/app/2234500/MangaKa/?snr=1_5_9__300_4"><img src="https://cdn.akamai.steamstatic.com/steam/apps/2234500/capsule_184x69.jpg?t=1693409374" class="small_cap_img"><h4>MangaKa</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="1300" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">S$13.00</div></div></div></a><a class="small_cap" data-ds-appid="1046910" href="https://store.steampowered.com/app/1046910/Dissection_Simulator_Frog_Edition/?snr=1_5_9__300_5"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1046910/capsule_184x69.jpg?t=1576010437" class="small_cap_img"><h4>Dissection Simulator: Frog Edition</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="1200" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">S$12.00</div></div></div></a><a class="small_cap" data-ds-appid="363890" href="https://store.steampowered.com/app/363890/RPG_Maker_MV/?snr=1_5_9__300_6"><img src="https://cdn.akamai.steamstatic.com/steam/apps/363890/capsule_184x69_schinese.jpg?t=1692842451" class="small_cap_img"><h4>RPG Maker MV</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="7500" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">S$75.00</div></div></div></a><a class="small_cap" data-ds-appid="798810" href="https://store.steampowered.com/app/798810/Natural_Locomotion/?snr=1_5_9__300_7"><img src="https://cdn.akamai.steamstatic.com/steam/apps/798810/capsule_184x69.jpg?t=1664605878" class="small_cap_img"><h4>Natural Locomotion</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="1000" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">S$10.00</div></div></div></a><a class="small_cap" data-ds-appid="479010" href="https://store.steampowered.com/app/479010/Kodon/?snr=1_5_9__300_8"><img src="https://cdn.akamai.steamstatic.com/steam/apps/479010/capsule_184x69.jpg?t=1688293249" class="small_cap_img"><h4>Kodon</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="4900" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">S$49.00</div></div></div></a><a class="small_cap" data-ds-appid="1170750" href="https://store.steampowered.com/app/1170750/MORE_TRAINER_Learning_Morse_Code/?snr=1_5_9__300_9"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1170750/capsule_184x69.jpg?t=1661770770" class="small_cap_img"><h4>MOR...E TRAINER (Learning Morse Code)</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="1000" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">S$10.00</div></div></div></a><a class="small_cap" data-ds-appid="327140" href="https://store.steampowered.com/app/327140/Tilt_Brush/?snr=1_5_9__300_10"><img src="https://cdn.akamai.steamstatic.com/steam/apps/327140/capsule_184x69.jpg?t=1560985959" class="small_cap_img"><h4>Tilt Brush</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="2000" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">S$20.00</div></div></div></a><a class="small_cap" data-ds-appid="754010" href="https://store.steampowered.com/app/754010/MEDICALHOLODECK_Revolutionizing_Anatomy_Surgery__Medicine_Through_Virtual_and_Augmented_Reality/?snr=1_5_9__300_11"><img src="https://cdn.akamai.steamstatic.com/steam/apps/754010/capsule_184x69.jpg?t=1693485920" class="small_cap_img"><h4>MEDICALHOLODECK: Revolutionizing Anatomy, Surgery &amp; Medicine Through Virtual and Augmented Reality</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="0" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">免费</div></div></div></a><a class="small_cap" data-ds-appid="220700" href="https://store.steampowered.com/app/220700/RPG_Maker_VX_Ace/?snr=1_5_9__300_12"><img src="https://cdn.akamai.steamstatic.com/steam/apps/220700/capsule_184x69.jpg?t=1675842497" class="small_cap_img"><h4>RPG Maker VX Ace</h4><div class="discount_block  no_discount discount_block_inline" data-price-final="6500" data-bundlediscount="0" data-discount="0"><div class="discount_prices"><div class="discount_final_price">S$65.00</div></div></div></a><div style="clear: left;"></div></div></div><div class="slider_ctn store_autoslider" data-usability="1000" style="display: block;"><div class="slider_left"><span></span></div><div class="slider_right"><span></span></div><div class="slider_bg"></div><div class="slider"><div class="handle" style="position: absolute; left: 0px;"></div></div></div>
+					</div>
+									
+				<div id="responsive_apppage_reviewblock_ctn" class="rightcol game_meta_data" style=""></div>
+
+				
+		
+		<div class="steam_curators_block block responsive_apppage_reviewblock">
+			<div class="block_header">
+				<div class="right"><a href="https://store.steampowered.com/curators/curatorsreviewing/?appid=1180560&amp;snr=1_5_9__top-curators">查看全部</a></div>
+				<h2>鉴赏家点评</h2>
+				<div class="no_curators_followed">
+					2 名鉴赏家评测了这款产品。点击<a href="https://store.steampowered.com/curators/curatorsreviewing/?appid=1180560&amp;snr=1_5_9__top-curators">这里</a>阅读。				</div>
+			</div>
+		</div>
+		
+
+
+			</div>
+
+			<div style="clear: both;"></div>
+			</div>
+
+
+		<div class="review_ctn">
+			<div class="page_content">
+
+				<div id="app_reviews_hash" class="app_reviews_area">
+							<h2 class="user_reviews_header no_bottom_margin">消费者评测</h2>
+
+		<input type="hidden" id="review_appid" value="1180560">
+		<input type="hidden" id="review_default_day_range" value="30">
+		<input type="hidden" id="review_start_date" value="-1">
+		<input type="hidden" id="review_end_date" value="-1">
+		<input type="hidden" id="review_summary_num_positive_reviews" value="3">
+		<input type="hidden" id="review_summary_num_reviews" value="3">
+
+		<div id="review_recent_events_container" class="review_recent_events  ">
+					</div>
+		<div id="review_histograms_container" class="collapsed">
+			<canvas id="review_graph_canvas"></canvas>
+			<div id="review_histogram_rollup_section" class="review_histogram_section">
+				<div class="user_reviews_summary_bar">
+										<div class="summary_section">
+						<div class="title">总体评测：</div>
+						<span class="game_review_summary not_enough_reviews" data-tooltip-html="需要更多用户评测来生成整体评价">3 篇用户评测</span>
+													<span>(3 篇评测)</span>
+												<a class="tooltip" data-tooltip-text="此概要只使用从 Steam 直接购买游戏的消费者评测。"><img src="https://store.akamai.steamstatic.com/public/shared/images/ico/icon_questionmark.png"></a>
+					</div>
+				</div>
+				<div id="review_histogram_rollup_container" class="review_histogram">
+					<div id="review_histogram_rollup"></div>
+				</div>
+			</div><!--
+			--><div id="review_histogram_recent_section" class="review_histogram_section recent">
+				<div class="user_reviews_summary_bar">
+									<div class="summary_section">
+						<div class="title">最近评测：</div>
+						<div class="summary_section">&nbsp;</div>
+					</div>
+								</div>
+				<div class="review_histogram">
+					<div id="review_histogram_recent"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="reviews_filter_options" class="user_reviews_filter_options flyout graph_collapsed">
+			<div class="user_reviews_filter_menu">
+				<div class="title">评测结果</div>
+				<div class="user_reviews_filter_menu_flyout">
+					<div class="user_reviews_filter_menu_flyout_content">
+						<input type="radio" name="review_type" value="all" id="review_type_all" checked="" onchange="ShowFilteredReviews()">
+						<label for="review_type_all">全部&nbsp;<span class="user_reviews_count">(3)</span></label><br>
+						<input type="radio" name="review_type" value="positive" id="review_type_positive" onchange="ShowFilteredReviews()">
+						<label for="review_type_positive">好评&nbsp;<span class="user_reviews_count">(3)</span></label><br>
+						<input type="radio" name="review_type" value="negative" id="review_type_negative" onchange="ShowFilteredReviews()">
+						<label for="review_type_negative">差评&nbsp;<span class="user_reviews_count">(0)</span></label>
+					</div>
+				</div>
+			</div>
+			<div class="user_reviews_filter_menu">
+				<div class="title">购得方式</div>
+				<div class="user_reviews_filter_menu_flyout">
+					<div class="user_reviews_filter_menu_flyout_content">
+						<input type="radio" name="purchase_type" value="all" id="purchase_type_all" checked="" onchange="ChangeReviewPurchaseTypeFilter()">
+						<label for="purchase_type_all">全部&nbsp;<span class="user_reviews_count">(3)</span></label><br>
+						<input type="radio" name="purchase_type" value="steam" id="purchase_type_steam" onchange="ChangeReviewPurchaseTypeFilter()">
+						<label for="purchase_type_steam">Steam 购买&nbsp;<span class="user_reviews_count">(3)</span> <a class="tooltip" data-tooltip-text="这些评测是由直接在 Steam 商店购买的用户所写。"><img src="https://store.akamai.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png"></a></label><br>
+						<input type="radio" name="purchase_type" value="non_steam_purchase" id="purchase_type_non_steam" onchange="ChangeReviewPurchaseTypeFilter()">
+						<label for="purchase_type_non_steam">其他&nbsp;<span class="user_reviews_count">(0)</span> <a class="tooltip" data-tooltip-text="这些是由未在 Steam 上购买游戏的用户所撰写的评测。（这可能包括如其他数字商店、零售商店、测试用途或媒体评测用途等合法来源。或者，也可能包括如交换好评获得的副本等不当来源。）"><img src="https://store.akamai.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png"></a></label>
+					</div>
+				</div>
+			</div>
+						<div class="user_reviews_filter_menu">
+				<div class="title">语言</div>
+				<div class="user_reviews_filter_menu_flyout">
+					<div class="user_reviews_filter_menu_flyout_content">
+						<input type="radio" name="review_language" id="review_language_all" value="all" onchange="ShowFilteredReviews()">
+						<label for="review_language_all">全部语言&nbsp;<span class="user_reviews_count">(3)</span></label><br>
+						<input type="radio" name="review_language" id="review_language_mine" value="schinese" checked="" onchange="ShowFilteredReviews()">
+						<label for="review_language_mine">您的语言&nbsp;<span class="user_reviews_count">(0)</span> <a class="tooltip" data-tooltip-html="您的偏好当前设为显示用以下语言撰写的内容：简体中文。<br><br>单击下方的“自定义”来修改您的偏好。"><img src="https://store.akamai.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png"></a></label><br>
+						<div class="user_reviews_customize_language"><a href="https://store.steampowered.com//account/languagepreferences">自定义</a></div>
+					</div>
+				</div>
+			</div>
+						<div class="user_reviews_filter_menu" id="reviews_date_range_menu">
+				<div class="title">日期范围</div>
+				<div class="user_reviews_filter_menu_flyout">
+					<div class="user_reviews_filter_menu_flyout_content">
+						<div class="user_reviews_date_range_explanation">
+							要查看某个日期范围内的评测，请在上方图表中点击并拖动选定的范围或是点击某特定时间柱。							<br><br>
+							<span class="btn_darkblue_white_innerfade btn_small_thin" onclick="SetReviewsGraphVisibility( true ); "><span>显示图表</span></span>
+						</div>
+						<input type="radio" name="review_date_range" id="review_date_range_all" value="all" checked="" onchange="ClearReviewDateFilter()">
+						<label for="review_date_range_all">总计</label><br>
+						<input type="radio" name="review_date_range" id="review_date_range_histogram" value="include" disabled="" onchange="ShowFilteredReviews()">
+						<label for="review_date_range_histogram">仅限特定范围（在上述图表中选择）&nbsp;</label><br>
+						<input type="radio" name="review_date_range" id="review_date_range_exclude_histogram" value="exclude" disabled="" onchange="ShowFilteredReviews()">
+						<label for="review_date_range_exclude_histogram">排除特定范围（在上述图表中选择）&nbsp;</label><br>
+					</div>
+				</div>
+			</div>
+						<div class="user_reviews_filter_menu">
+				<div class="title">游戏时间</div>
+				<div class="user_reviews_filter_menu_flyout">
+					<div class="user_reviews_filter_menu_flyout_content">
+
+												<div class="user_reviews_steam_labs_desc">
+							<a href="https://store.steampowered.com//communityrecommendations/"><img src="https://cdn.akamai.steamstatic.com/store/labs/main/images/steam_labs_logo.svg"><span>Steam 实验室为您奉上</span></a>
+						</div>
+						
+						<div class="user_reviews_playtime_filter_explanation">
+							按用户的游戏时间筛选此评测撰写时的评测：						</div>
+
+													<input type="radio" name="review_playtime_preset" id="review_playtime_preset_0" value="0" onchange="SelectPlaytimeFilterPreset( 0 )" checked="">
+							<label for="review_playtime_preset_0">无最低限制</label><br>
+														<input type="radio" name="review_playtime_preset" id="review_playtime_preset_1" value="1" onchange="SelectPlaytimeFilterPreset( 1 )">
+							<label for="review_playtime_preset_1">超过 1 小时</label><br>
+							
+						<div id="app_reviews_playtime_range_text">
+							<span id="app_reviews_playtime_range_text_min">无最低限制</span> 至 <span id="app_reviews_playtime_range_text_max">无最高限制</span>
+						</div>
+						<input type="hidden" id="app_reviews_playtime_range_min" value="0">
+						<input type="hidden" id="app_reviews_playtime_range_max" value="0">
+						<div id="app_reviews_playtime_slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header" style="left: 0%; width: 100%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%;"></a></div>
+					</div>
+				</div>
+			</div>
+						<div class="user_reviews_filter_display_as">
+				<span class="title">显示：</span>
+				<select id="review_context" onchange="ShowFilteredReviews()">
+					<option value="summary">概要</option>
+					<option value="all">最有价值的</option>
+					<option value="recent">最新</option>
+					<option value="funny">欢乐</option>
+				</select>
+			</div>
+
+			<div id="user_reviews_offtopic_activity_menu" class="user_reviews_filter_menu" style="display: none" ;="">
+				<div class="title">跑题评测活动</div>
+				<div class="user_reviews_filter_menu_flyout">
+					<div class="user_reviews_filter_menu_flyout_content">
+						<div class="user_reviews_offtopic_activity_explanation">
+							启用时，将过滤掉跑题评测活动。此项默认为您的评测分数设置。阅读<a href="https://steamcommunity.com/games/593110/announcements/detail/1808664240333155775?snr=1_5_9_">博客文章</a>，了解更多详情。						</div>
+						<input type="checkbox" id="reviews_offtopic_activity_checkbox" onchange="ChangedOfftopicReviewActivityFilter()" checked=""><label for="reviews_offtopic_activity_checkbox">已启用</label>
+					</div>
+				</div>
+			</div>
+
+			<div style="float: right">
+				<span id="review_show_graph_button" class="btnv6_blue_hoverfade btn_small_thin review_graph_toggle" onclick="SetReviewsGraphVisibility( true ); "><span>显示图表</span> <div class="graph_toggle_icon down">&nbsp;</div></span>
+				<span id="review_hide_graph_button" class="btnv6_blue_hoverfade btn_small_thin review_graph_toggle" onclick="SetReviewsGraphVisibility( false ); "><span>隐藏图表</span> <div class="graph_toggle_icon up">&nbsp;</div></span>
+			</div>
+
+			<div style="clear: both"></div>
+		</div>
+
+		<div class="reviews_info_ctn">
+			<div id="reviews_active_filters" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" class="user_reviews_active_filters" onclick="ShowReviewSettingsModal();">
+				<div id="reviews_filter_title" class="title">筛选条件</div>
+
+								<div id="reviews_filter_title_responsive" style="display:none" class="title">
+					<img src="https://store.akamai.steamstatic.com/public/images/bigpicture/icon_settings.png">筛选条件				</div>
+								<div id="reviews_filter_type" class="active_filter" onclick="ClearReviewTypeFilter()"></div>
+				<div id="reviews_filter_purchase_type" class="active_filter" onclick="ClearReviewPurchaseTypeFilter()"></div>
+				<div id="reviews_filter_language" class="active_filter " onclick="ClearReviewLanguageFilter()"></div>
+				<div id="reviews_filter_graph" class="active_filter" onclick="ClearReviewDateRangeFilter()"><span id="review_selected_histogram_date_range_prefix"></span><span id="review_selected_histogram_date_range_text"></span></div>
+				<div id="reviews_filter_offtopic_activity" class="active_filter" onclick="ClearOfftopicReviewActivityFilter()">排除跑题评测活动</div>
+				<div id="reviews_filter_playtime" class="active_filter" onclick="ClearReviewPlaytimeFilter()">游戏时间：<span id="review_playtime_preset_text"></span></div>
+			</div>
+
+			<div class="user_reviews_filter_score visible" id="user_reviews_filter_score"></div>
+		
+		<div id="appReviewsAll_Detail" class="user_reviews_summary_row" onclick="window.location='#app_reviews_hash'" style="cursor: pointer; display: none;">
+											<div class="subtitle column all">全部评测:</div>
+											<div class="summary column">
+																							<span class="game_review_summary not_enough_reviews">3 篇用户评测</span>
+																								<span class="responsive_reviewdesc_short">
+													()&nbsp;<span class="desc_short">发布至今</span>
+												</span>
+																						</div>
+										</div></div>
+
+		<div id="review_selected_filters"></div>
+
+		<div id="LoadingMoreReviewsall" style="display: none" class="loading_more_reviews">
+			<img src="https://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+			加载评测中…		</div>
+		<div id="LoadingMoreReviewsrecent" style="display: none" class="loading_more_reviews">
+			<img src="https://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+			加载评测中…		</div>
+		<div id="LoadingMoreReviewspositive" style="display: none" class="loading_more_reviews">
+			<img src="https://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+			加载评测中…		</div>
+		<div id="LoadingMoreReviewsnegative" style="display: none" class="loading_more_reviews">
+			<img src="https://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+			加载评测中…		</div>
+		<div id="LoadingMoreReviewsfunny" style="display: none" class="loading_more_reviews">
+			<img src="https://store.akamai.steamstatic.com/public/shared/images/throbber.gif" class="loading_more_reviews_throbber">
+			加载评测中…		</div>
+
+
+		<div id="Reviews_positive" style="display: none" class="user_reviews_container leftcol"></div>
+		<div id="Reviews_negative" style="display: none" class="user_reviews_container leftcol"></div>
+		<div id="Reviews_recent" style="display: none" class="user_reviews_container leftcol"></div>
+		<div id="Reviews_funny" style="display: none" class="user_reviews_container leftcol"></div>
+		<div id="Reviews_all" style="display: none" class="user_reviews_container leftcol"></div>
+		<div id="Reviews_summary" class="user_reviews_container">
+			<div>
+
+		<div class="leftcol">
+					</div>
+		<div class="rightcol recent_reviews">
+					</div>
+		<div style="clear:left;"></div>
+
+					<div id="ViewAllReviewssummary" class="view_all_reviews_btn leftcol">
+									<div class="review_box">
+						<div class="noReviewsYetTitle">无其他评测符合上述筛选条件</div>
+						<div class="noReviewsYetSub">调整上方筛选条件以查看其它评测</div>
+						<div style="clear: left; height: 40px;"></div>
+					</div>
+							</div>
+		
+		<div style="clear: both"></div>
+		</div>
+		</div>
+		<div id="Reviews_loading" class="user_reviews_container">
+					<div class="LoadingWrapper">
+			<div class="LoadingThrobber">
+				<div class="Bar Bar1"></div>
+				<div class="Bar Bar2"></div>
+				<div class="Bar Bar3"></div>
+			</div>
+							<div class="LoadingText">加载评测中…</div>
+					</div>
+				</div>
+		<div style="clear: left"></div>
+
+						</div>
+			</div>
+		</div>
+
+						<div id="reviewSettingsPopupCtn" style="display: none;">
+					<div id="reviewSettingsPopupContent" class="review_settings_popup_content">
+						<div class="review_settings_popup_header">
+							<div>评测筛选条件</div>
+							<div onclick="CloseReviewSettingsModal();"><img src="https://store.akamai.steamstatic.com/public/images/v6/close_btn.png"></div>
+						</div>
+					</div>
+				</div>
+		
+
+			</div>
+
+	<div data-panel="{&quot;maintainY&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;onMoveDown&quot;:&quot;BlockMovement&quot;,&quot;onMoveUp&quot;:&quot;BlockMovement&quot;,&quot;flow-children&quot;:&quot;column&quot;}" id="purchaseOptionsContentTablet" class="purchase_options_content_tablet" style="display: none;">
+		
+		<!-- game_area_purchase goes here -->
+	</div>
+	</div>
+
+</div>
+
+		<div class="hover game_hover" id="global_hover" style="display: none; left: 0; top: 0;">
+			<div class="game_hover_box hover_box">
+				<div class="content" id="global_hover_content">
+				</div>
+			</div>
+			<div class="hover_arrow_left"></div>
+			<div class="hover_arrow_right"></div>
+		</div>
+<div id="EmbedModal" style="display: none">
+	<div id="widget_create">
+		<p>您可以使用此 Widget 生成器来生成一段 HTML 代码嵌入您的网站，使得客户能够轻松地在 Steam 上购买此游戏。</p>
+
+				<p class="small">还可输入 375 个字符来为您的 Widget 添加描述：</p>
+		<div class="app_embed_dialog_description">
+			<textarea name="w_text" placeholder="Visualize atomic orbitals, navigate across energy levels, gain an intuitive understanding of the composition of atoms and their electron configurations by assembling all elements of the periodic table. An educational VR experience designed for use by enthusiasts and academics alike." maxlength="375"></textarea>
+		</div>
+
+		<div class="buttoncontainer">
+			<a class="btnv6_blue_hoverfade btn_medium " href="#" onclick="CreateWidget(1180560); return false;"><span>创建 Widget</span></a>
+		</div>
+	</div>
+	<div id="widget_finished" style="display: none;">
+		<div id="widget_container"></div>
+
+		<p class="small">将下方的 HTML 代码复制并粘贴到您的网站来展示上述 Widget</p>
+		<textarea id="widget_code" style=""></textarea>
+	</div>
+
+</div>
+
+<div id="ShareModal" style="display: none">
+	<div class="share share_dialog"><a href="https://store.steampowered.com/share/facebook/app/1180560" target="_blank" rel="" title="在 Facebook 上分享"><img src="https://store.akamai.steamstatic.com/public/images/social/facebook_large.png"></a><a href="https://store.steampowered.com/share/twitter/app/1180560" target="_blank" rel="" title="在 Twitter 上分享"><img src="https://store.akamai.steamstatic.com/public/images/social/twitter_large.png"></a><a href="https://store.steampowered.com/share/reddit/app/1180560" target="_blank" rel="" title="在 Reddit 上分享"><img src="https://store.akamai.steamstatic.com/public/images/social/reddit_large.png"></a><div class="share_dialog_content"><label for="linkShareValue" hidden="">游戏商店页面链接</label><textarea id="shareDialogLinkStoreLink" class="share_dialog_value" onclick="ShareDialogCopyToClipboard();" readonly="">https://store.steampowered.com/app/1180560/Abelanas_Atom_Maker/</textarea></div><div id="shareDialogResult" class="share_dialog_result"></div></div></div>
+
+	<div id="app_tagging_modal" class="app_tag_modal nologin" style="display: none;">
+		<div class="app_tag_modal_content">
+			<div class="app_tag_modal_seperator"></div>
+			<div class="app_tag_modal_left">
+				<h2>该产品的热门用户自定义标签：<span class="app_tag_modal_tooltip" data-tooltip-text="这些是由大多数用户应用在产品上的标签。点击一个标签，您可以查找到应用该标签的其他产品。您也可以在任意已经存在的标签上点击加号，以此来提升该标签在这项产品上的热门度。">(?)</span></h2>
+				<div class="app_tags popular_tags">
+				</div>
+			</div>
+			<div class="app_tag_modal_right">
+									<h2>登录</h2>
+					<p>在为该产品添加属于您自己的标签前，请先登录。</p>
+					<p>
+						<a class="btnv6_blue_hoverfade btn_medium" href="https://store.steampowered.com/login/?redir=app/1180560">
+							<span>登录</span>
+						</a>
+					</p>
+							</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+		<script type="text/javascript">
+		$J( function() {
+			InitAppTagModal( 1180560,
+				[{"tagid":1036,"name":"\u6559\u80b2","count":32,"browseable":true},{"tagid":21978,"name":"\u865a\u62df\u73b0\u5b9e","count":13,"browseable":true},{"tagid":599,"name":"\u6a21\u62df","count":11,"browseable":true},{"tagid":4182,"name":"\u5355\u4eba","count":11,"browseable":true},{"tagid":5794,"name":"\u79d1\u5b66","count":11,"browseable":true}],
+				[],
+				"1_5_9__410",
+				"1_5_9__411",
+				null,
+				false			);
+
+						if ( typeof GDynamicStore != 'undefined' )
+				GDynamicStore.FixupNamePortion();
+			
+					});
+	</script>
+
+		</div>	<!-- responsive_page_legacy_content -->
+
+		<div id="footer_spacer" style="" class=""></div>
+<div id="footer" class="">
+<div class="footer_content">
+
+    <div class="rule"></div>
+				<div id="footer_logo_steam"><img src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png" alt="Valve Software" border="0"></div>
+	
+    <div id="footer_logo"><a href="http://www.valvesoftware.com" target="_blank" rel=""><img src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png" alt="Valve Software" border="0"></a></div>
+    <div id="footer_text" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+        <div>©2023 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。</div>
+        <div>所有的价格均已包含增值税（如适用）。&nbsp;&nbsp;
+
+            <a href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" target="_blank" rel="">隐私政策</a>
+            &nbsp; | &nbsp;
+            <a href="https://store.steampowered.com/legal/?snr=1_44_44_" target="_blank" rel="">法律信息</a>
+            &nbsp; | &nbsp;
+            <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" target="_blank" rel="">Steam 订户协议</a>
+            &nbsp; | &nbsp;
+            <a href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" target="_blank" rel="">退款</a>
+            &nbsp; | &nbsp;
+            <a href="https://store.steampowered.com/account/cookiepreferences/?snr=1_44_44_" target="_blank" rel="">Cookie</a>
+
+        </div>
+					<div class="responsive_optin_link">
+				<div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+					<span>查看移动版网站</span>
+				</div>
+			</div>
+		
+    </div>
+
+
+
+    <div style="clear: left;"></div>
+	<br>
+
+    <div class="rule"></div>
+
+    <div class="valve_links" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+        <a href="http://www.valvesoftware.com/about" target="_blank" rel="">关于 Valve</a>
+        &nbsp; | &nbsp;<a href="http://www.valvesoftware.com" target="_blank" rel="">工作机会</a>
+        &nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/" target="_blank" rel="">Steamworks</a>
+        &nbsp; | &nbsp;<a href="https://partner.steamgames.com/steamdirect" target="_blank" rel="">Steam 分销</a>
+        &nbsp; | &nbsp;<a href="https://help.steampowered.com/zh-cn/?snr=1_44_44_">客服</a>
+                        		&nbsp; | &nbsp;<a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" target="_blank" rel="">礼物卡</a>
+		&nbsp; | &nbsp;<a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" target="_blank" rel=" noopener"><img src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+		&nbsp; | &nbsp;<a href="http://twitter.com/steam" target="_blank" rel=""><img src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam</a>
+            </div>
+
+</div>
+</div>
+	</div>	<!-- responsive_page_content -->
+
+</div><div class="miniprofile_hover" style="display: none;"><div class="shadow_ul"></div><div class="shadow_top"></div><div class="shadow_ur"></div><div class="shadow_left"></div><div class="shadow_right"></div><div class="shadow_bl"></div><div class="shadow_bottom"></div><div class="shadow_br"></div><div class="miniprofile_hover_inner shadow_content"></div></div>	<!-- responsive_page_frame -->
+
+<div class="FullModalOverlay" style="display: none;"><div class="ModalOverlayContent ModalOverlayBackground"></div></div></body></html>

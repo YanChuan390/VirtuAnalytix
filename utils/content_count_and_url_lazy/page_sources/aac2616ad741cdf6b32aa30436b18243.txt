@@ -1,0 +1,1401 @@
+<html lang="en"><head>
+    <title>Yolopia - Slava Magia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Inspiration was drawn from an old slavic story I made up on my own">
+    <meta property="og:url" content="https://www.yolopia.com">
+    <meta property="og:title" content="Yolopia - Slava Magia">
+    <meta property="og:description" content="Inspiration was drawn from an old slavic story I made up on my own">
+    <meta property="og:image" content="https://www.yolopia.com/promo.jpg">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="Yolopia">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+    <link href="/fonts.css" rel="stylesheet">
+    <link href="/tooltip.css" rel="stylesheet">
+    <link rel="preload" href="/fonts.css" as="style">
+    <link rel="preload" href="/tooltip.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;family=Righteous&amp;display=swap" rel="preload" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;family=Righteous&amp;display=swap" rel="stylesheet">
+    <style>
+      body .BasicModalsButtonOk:hover {
+        background: #aaaaaa !important;
+      }
+
+      body .BasicModalsButtonNo {
+        background: #111;
+      }
+
+      body .BasicModalsButtonNo img {
+        height: 2.6vh;
+        vertical-align: -0.6vh;
+      }
+
+      body .BasicModalsButtonNo:hover {
+        background: #333;
+      }
+
+      body .BasicModalsContent {
+        color: #666;
+        font-weight: 500;
+        /* font-family: "Suez One"; */
+        font-size: 2.5vh;
+      }
+
+      body .BasicModalsInput {
+        border: 1px solid #666;
+      }
+
+      body .BasicModalsBox {
+        padding: 3.3vh;
+        border-radius: 0;
+        box-shadow: 1vh 1vh 2vh #33333366;
+      }
+
+      body .BasicModalsButtonOk,
+      .BasicModalsButtonNo {
+        background: #cccccc;
+        border: 0;
+        border-radius: 0;
+        padding: 1.8vh 2.4vh;
+        color: #111;
+      }
+
+      body .BasicModalsButtonCancel {
+        background: #666;
+        border: 0;
+        border-radius: 0;
+        padding: 1.8vh 2.4vh;
+      }
+
+      a {
+        text-decoration: none;
+        color: #aaa;
+        text-shadow: 0.1vh 0.1vh 0.5vh #333;
+      }
+
+      a:hover {
+        text-shadow: 0.1vh 0.1vh 0.5vh #111;
+        color: #bbb;
+      }
+
+      .credit a {
+        color: #333;
+        text-shadow: 0.1vh 0.1vh 0.1vh #888;
+      }
+
+      body {
+        overflow: hidden;
+        background-color: #111111;
+        color: #000;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", "Noto Sans Symbols 2", sans-serif;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: none;
+      }
+
+      #beat {
+        position: absolute;
+        background-color: #966;
+      }
+
+      #beat.alt {
+        background-color: #669;
+      }
+
+      audio {
+        vertical-align: top;
+        width: 66vw;
+        height: 3vh;
+      }
+
+      body.loading #setup {
+        display: none !important;
+      }
+
+      div.top {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      body.spectator div.top {
+        display:none !important;
+      }
+
+      body.spectator #track-title {
+        display:none !important;
+      }
+
+      #setup {
+        background-color: #999999cc;
+        backdrop-filter: blur(0.2vh);
+      }
+
+      #about {
+        background-color: #888888ee;
+        backdrop-filter: blur(0.3vh);
+      }
+
+      #setup > div,
+      #about > div {
+        position: absolute;
+      }
+
+      #tracks .list,
+      #reveries .list {
+        background-color: #eeeeee;
+        border: 0.33vh solid #666;
+        width: 98%;
+        height: 82%;
+        /* left: 1vw; */
+        position: absolute;
+        overflow-y: auto;
+      }
+
+      #reveries .list {
+        overflow: hidden;
+      }
+
+      #reveries .list .row {
+        font-size: calc(2.2vh + 1.8vw);
+        color: #66666644;
+        font-weight: 900 !important;
+        text-align: center;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        padding: 3vh 2vh;
+        height: 6.45vh;
+        line-height: calc(3.2vh + 1.6vw);
+      }
+
+      #reveries .list .row div {
+        pointer-events: none;
+      }
+
+      #reveries .list .row .row-description {
+        font-size: calc(1vh + 1vw);
+        font-weight: 700 !important;
+        text-align: center;
+        display: none;
+        line-height: calc(2.4vh + 1.2vw) !important;
+        margin-top: 1vh;
+      }
+
+      #reveries .list .row:hover {
+        line-height: calc(1.2vh + 1vw);
+      }
+
+      #reveries .list .row:hover .row-description {
+        color: #66666666;
+        display: inline-block;
+      }
+
+      #reveries .list .row.active .row-description {
+        color: #111111 !important;
+      }
+
+      #reveries .list .row.active {
+        color: #111111 !important;
+        cursor: default;
+      }
+
+      .header {
+        height: 8vh;
+      }
+
+      #options .header {
+        text-align: center;
+      }
+
+      #tracks {
+        width: 49vw;
+        height: 92vh;
+        top: 8vh;
+        left: 1vw;
+      }
+
+      #timeline {
+        position: absolute;
+        background-color: #111;
+        border: 0.2vh solid #eeeeee;
+        width: 98vw;
+        height: 5vh;
+        top: 93.4vh;
+        left: 1vw;
+      }
+
+      #timeline .play {
+        width: 2.8vh;
+        height: 3.4vh;
+        background-color: #eeeeee;
+        line-height: 3.4vh;
+        position: absolute;
+        left: -0.1vh;
+        top: -0.1vh;
+        color: black;
+        font-size: 3vh;
+        padding-left: 0.6vh;
+      }
+
+      #options {
+        width: 22vw;
+        height: 70vh;
+        top: 8vh;
+        left: 50vw;
+      }
+
+      #reveries {
+        width: 27vw;
+        height: 92vh;
+        top: 8vh;
+        left: 72.3vw;
+      }
+
+      [type="file"] {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute !important;
+        white-space: nowrap;
+        width: 1px;
+      }
+
+      a,
+      div,
+      label {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      label {
+        background-color: #111111;
+        height: 2vh;
+        border-radius: 1.2vh;
+        color: #9f9f9f;
+        border: 1vh solid #111111;
+        padding: 1.2vh 1vh 1.2vh 1vh;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 2.7vh;
+        margin: 1vh 0vh 1vh 0vh;
+        vertical-align: middle;
+        cursor: pointer;
+        line-height: 2vh;
+        box-shadow: 0.1vh 0.1vh 1vh #666;
+      }
+
+      div,
+      label {
+        user-select: none;
+      }
+
+      label:hover {
+        color: #eeeeee;
+      }
+
+      label:active {
+        transform: scale(0.85);
+        box-shadow: 0.1vh 0.1vh 0.5vh #666;
+      }
+
+      [type="search"] {
+        background-color: #eeeeee66;
+        height: 6.4vh;
+        width: calc(48vw - 48vh);
+        border-radius: 1.2vh;
+        color: black;
+        border: 0.33vh solid #666;
+        padding: 1.2vh 1vh 1.2vh 1vh;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 2vh;
+        margin: 1vh 0vh 1vh 0vh;
+        vertical-align: middle;
+        text-shadow: 0 0 0.1vh grey;
+        -webkit-appearance: none;
+        -webkit-user-modify: read-write !important;
+      }
+
+      input[type="search"]::-webkit-search-cancel-button {
+        height: 3vh;
+        width: 3vh;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+        color: #111;
+        -webkit-appearance: none;
+        -webkit-user-modify: read-write !important;
+      }
+
+      #search-back {
+        display: none;
+        width: calc(48vw - 51vh);
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      body.related #search-back {
+        display: inline-block;
+      }
+
+      body.related #search {
+        display: none;
+      }
+
+      #add {
+        font-weight: 800;
+        /* line-height: 2vh; */
+        font-size: 4.8vh;
+        width: 4.8vh;
+        text-align: center;
+      }
+
+      .progress {
+        position: absolute;
+        left: 0;
+        background-color: #111111;
+        width: 100%;
+        height: 5vh;
+      }
+
+      #markers {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      #indicator,
+      .marker {
+        position: absolute;
+        color: #eeeeee;
+        font-size: 4vh;
+        line-height: 3vh;
+        font-weight: 100;
+        pointer-events: none;
+      }
+
+      #indicator {
+        opacity: 0.66;
+        height: 5vh;
+        width: 0.2vh;
+        background-color: #e66;
+      }
+
+      .marker {
+        font-weight: 400;
+      }
+
+      .marker {
+        opacity: 0.66;
+        background-color: #eee;
+        /* border-radius: 0.33vh; */
+        height: 1vh;
+        width: 0.32vh;
+      }
+
+      .marker.active {
+        opacity: 0.9 !important;
+        background-color: #ff0000;
+      }
+      #markers.sc0 .marker,
+      #markers.sc1 .marker,
+      #markers.sc2 .marker,
+      #markers.sc3 .marker,
+      #markers.sc4 .marker,
+      #markers.sc5 .marker {
+        opacity: 0.1;
+      }
+
+      #markers.sc0 .marker.sc0,
+      #markers.sc1 .marker.sc1,
+      #markers.sc2 .marker.sc2,
+      #markers.sc3 .marker.sc3,
+      #markers.sc4 .marker.sc4,
+      #markers.sc5 .marker.sc5 {
+        opacity: 0.66;
+      }
+      @keyframes marker-pulse {
+        0% {
+          opacity: 0.8;
+        }
+
+        50% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0.8;
+        }
+      }
+
+      .option-row {
+        width: 100%;
+        height: 7.5vh;
+        padding-top: 0vh;
+      }
+
+      .option-row.actions {
+        height: 9vh;
+      }
+
+      .option-adjust {
+        height: 4.3vh;
+        width: 4.3vh;
+        /* border-radius: 6vh; */
+        color: #9f9f9f;
+        border: 0;
+        padding: 0.8vh;
+        display: inline-block;
+        font-weight: 900;
+        font-size: 4.5vh;
+        margin: 0.2vh 0vh 1vh 0vh;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+        line-height: 4.5vh;
+        padding: 1vh;
+        background-size: contain !important;
+        opacity: 0.9;
+      }
+
+      .option-adjust:hover {
+        opacity: 1;
+      }
+
+      .option-adjust.inc {
+        background: transparent url(/assets/svg/plus-off.svg) center center
+          no-repeat;
+      }
+
+      .option-adjust.inc:hover {
+        background: transparent url(/assets/svg/plus-on.svg) center center
+          no-repeat;
+      }
+
+      .option-adjust.dec {
+        background: transparent url(/assets/svg/minus-off.svg) center center
+          no-repeat;
+      }
+
+      .option-adjust.dec:hover {
+        background: transparent url(/assets/svg/minus-on.svg) center center
+          no-repeat;
+      }
+
+      .option-wrap {
+        background-color: #111111;
+        height: 2vh;
+        width: calc(6vh + 6vw);
+        border-radius: 3vh;
+        color: #9f9f9f;
+        border: 1vh solid #111;
+        padding: 1.2vh 1vh 1.2vh 1vh;
+        display: inline-block;
+        font-weight: 800;
+        font-size: 2.5vh;
+        margin: 0.2vh 0vh 1vh 0vh;
+        vertical-align: middle;
+        cursor: pointer;
+        line-height: 2.2vh;
+        text-align: center;
+      }
+
+      .option-label {
+        color: #666;
+        display: inline-block;
+        width: calc(3vh + 3vw);
+        text-align: left;
+        font-family: "Righteous", sans-serif;
+        letter-spacing: 0.1vh;
+        font-weight: 900;
+        font-size: 3.2vh;
+      }
+
+      .option-row.transport label {
+        width: calc(4.5vh + 2.2vw);
+        font-size: 4.5vh;
+        font-weight: 900;
+        /* background-color: transparent; */
+        /* border-radius: 3.3vh; */
+        /* color: #666; */
+        /* border-color: transparent; */
+        /* margin-left: 1.1vh; */
+        line-height: 4.5vh;
+        height: 4.5vh;
+        border-width: 0vh;
+        /* margin: 1vh 0.5vh; */
+      }
+
+      .option-row.transport label:hover {
+        color: #eee;
+      }
+
+      .option-value {
+        color: #eeeeee;
+        display: inline-block;
+        width: 6vh;
+        text-align: right;
+        font-size: 3vh;
+      }
+
+      .option-list {
+        text-align: center;
+        margin-top: -0.5vh;
+      }
+
+      .option-list label {
+        width: calc(18vh + 6vw);
+        padding: 0.66vh 1vh;
+        height: 3vh;
+        line-height: 3vh;
+      }
+
+      .option-list .option-row.actions label {
+        width: calc(7vh + 3vw);
+        margin-top: 2vh;
+      }
+
+      .disable-animations {
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5vh;
+        color: rgb(204 204 204 / 90%) !important;
+        border: 0;
+        border-radius: 0;
+        height: 100%;
+        box-shadow: none;
+        transform: none;
+      }
+
+      #options .header .option-row {
+        padding-top: 1vh;
+      }
+
+      #beat-wrap {
+        display: inline-block;
+        width: 24vh;
+        width: calc(20vh + 5vw);
+        text-align: center;
+        position: relative;
+        bottom: 0.25vh;
+      }
+
+      #beat {
+        height: 1vh;
+        border-radius: 1vh;
+        background-color: #111111;
+        min-width: 1vh;
+        /* display: none; */
+        margin: auto;
+        position: relative;
+      }
+
+      .back {
+        width: 98vw;
+        height: 6vh;
+        left: 1vw;
+      }
+
+      .back img {
+        width: 6.66vh;
+        height: 6.66vh;
+        margin-top: 1vh;
+        margin-left: 1vh;
+        float: left;
+      }
+
+      .back div {
+        width: 3vh;
+        height: 3vh;
+        margin-top: 1vh;
+        margin-right: 1vh;
+        border-radius: 4vh;
+        background-color: #eee;
+        float: right;
+        display: inline;
+        line-height: 3.3vh;
+        font-size: 4vh;
+        text-align: center;
+        cursor: pointer;
+        z-index: 1000;
+        border: 0.66vh solid #666;
+        color: #666;
+        padding: 1vh;
+        background: transparent url(/assets/svg/close-off.svg) center center
+          no-repeat;
+        background-size: contain !important;
+      }
+
+      .back div:hover {
+        background: transparent url(/assets/svg/close-on.svg) center center
+          no-repeat;
+      }
+
+      #sounds,
+      #haptics {
+        width: calc(13.2vw - 2.5vh);
+        padding: 1vh 0.25vh 1vh 0.25vh;
+        position: relative;
+        transform: scale(1) !important;
+        box-shadow: none;
+        z-index: 1000;
+        height: 2.4vh;
+      }
+
+      #sounds div,
+      #haptics div {
+        background-color: #eee;
+        height: 4.4vh;
+        width: 94%;
+        margin-top: -1vh;
+        /* margin-left: -1vh; */
+        /* left: 0; */
+        border-radius: 0.5vh 0 0 0.5vh;
+      }
+
+      #sounds span,
+      #haptics span {
+        position: absolute;
+        top: 1.25vh;
+        left: 0.75vh;
+        z-index: 10;
+        font-size: 3.3vh;
+        mix-blend-mode: difference;
+        color: white;
+        opacity: 0.8;
+        display: block;
+        user-select: none;
+      }
+
+      #time {
+        font-size: 3vh;
+        font-weight: 600;
+        color: #666;
+        height: 5vh;
+        overflow: hidden;
+      }
+
+      #time span {
+        display: inline-block;
+        width: calc(2vw + 5.5vh);
+        /* background-color: #eeeeee; */
+        border-radius: 0.5vh;
+        /* margin-left: 1vh; */
+        font-weight: 500;
+        font-size: 4.5vh;
+        color: #333;
+        /* margin-right: 0.5vh; */
+        /* margin-left: 0.5vh; */
+        /* border: 0.2vh solid #666; */
+        padding: 0.5vh;
+        vertical-align: sub;
+        text-shadow: 0.1vh 0.1vh 0.2vh #666;
+      }
+
+      .row {
+        padding: 3vh;
+        color: #999;
+        border-bottom: 0.2vh solid rgb(204 204 204 / 90%);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 3vh;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .row.isDefault {
+        color: #666699 !important;
+      }
+
+      .row.needsUpdate {
+        color: #993333 !important;
+      }
+      .row:hover {
+        color: #333333;
+      }
+
+      .row.active {
+        color: #333333;
+        background-color: rgb(204 204 204 / 90%);
+      }
+
+      #track-title {
+        position: fixed;
+        z-index: 100000;
+        color: #eeeeee;
+        left: 8vw;
+        top: 2vh;
+        width: 85vw;
+        text-align: center;
+        font-size: 4vh;
+        line-height: 4vh;
+        pointer-events: none;
+        font-weight: 700;
+        text-shadow: 0.2vh 0.4vh 0.3vh #000;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        height: 6vh;
+        opacity: 0.9;
+      }
+
+      #track-title b {
+        font-weight: 500;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      div::-webkit-scrollbar {
+        width: 2vh;
+        /* width of the entire scrollbar */
+      }
+
+      div::-webkit-scrollbar-track {
+        background: #666;
+        /* color of the tracking area */
+      }
+
+      div::-webkit-scrollbar-thumb {
+        background-color: #111;
+        /* color of the scroll thumb */
+        border-left: 0.33vh solid #666;
+      }
+
+      #main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #main #logo {
+        background-color: transparent;
+        height: 45vh;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        margin-top: 1 vh;
+        cursor: default;
+        margin-bottom: 0;
+        transform: scale(1);
+        opacity: 0.9;
+        box-shadow: none;
+        mix-blend-mode: difference;
+        text-align: center;
+        background: url(yolopia.png) center center no-repeat;
+        background-size: contain;
+      }
+
+      #main #logo img {
+        height: 100%;
+        opacity: 0.9;
+      }
+
+      #main .control {
+        padding: 3vh;
+        font-size: 6vh;
+        opacity: 0.98;
+        position: absolute;
+        top: 32%;
+        border-radius: 6vh;
+        display: none;
+      }
+
+      #main #logo:hover .control {
+        display: inline-block;
+      }
+
+      body.loading #main div {
+        opacity: 0;
+      }
+
+      #main div.button {
+        opacity: 1;
+        transition: opacity 1s;
+        background-color: #eeeeeeee;
+        width: 38vh;
+        height: 6vh;
+        font-weight: 900;
+        text-align: left;
+        font-size: 8vh;
+        border-radius: 2vh;
+        padding: 3.3vh 3.3vh;
+        line-height: 6vh;
+        /* margin-bottom: 2vh; */
+        margin-left: 1vh;
+        margin-right: 1vh;
+        color: #666;
+        cursor: pointer;
+        transform: scale(0.9);
+        box-shadow: 0.33vh 0.33vh 1vh #666666;
+        font-family: "Righteous", sans-serif;
+        letter-spacing: 0.2vh;
+        display: inline-block;
+      }
+
+      #buttons {
+        text-align: center;
+        padding-top: 11vh;
+        padding-bottom: 8vh;
+        margin-top: 16vh;
+      }
+
+      #main div b {
+        font-weight: 700;
+      }
+
+      #main div.button:hover {
+        background-color: #eeeeeeff;
+        color: #111;
+        transform: scale(1);
+      }
+
+      .button.icon {
+        width: 8vh !important;
+        visibility: hidden;
+        /* margin-top: 1vh; */
+        padding: 3vh 2vh !important;
+      }
+
+      #buttons:hover .button.icon {
+        visibility: visible;
+      }
+
+      #copyright {
+        display: block;
+        position: absolute;
+        bottom: 2vh;
+        left: 0;
+        width: 100vw;
+        /* mix-blend-mode: difference; */
+        color: #fff;
+        font-size: 2vh;
+        text-align: center;
+        opacity: 0.12;
+        transition: opacity 0.1s;
+        cursor: pointer;
+      }
+
+      #copyright:hover {
+        opacity: 0.66;
+      }
+
+      #copyright img {
+        height: 8vh;
+        float: right;
+        margin-right: 2vh;
+      }
+
+      #main #lang {
+        height: 4vh;
+        padding: 0vh 0vh;
+        margin-top: -3vh;
+        background-color: #eee;
+        width: 30vh;
+        margin-bottom: 6vh;
+        box-shadow: none;
+        border: 0.33vh solid #666;
+        display: none;
+      }
+
+      #main #lang {
+        transform: scale(1);
+      }
+
+      #lang select {
+        width: 96%;
+        height: 4vh;
+        font-size: 2vh;
+        line-height: -10vh;
+        border: none;
+        background-color: transparent;
+        font-weight: 500;
+        text-align: center;
+        color: #666;
+
+        vertical-align: top;
+        margin-left: 2%;
+        user-select: none;
+        border: 0;
+        outline: none;
+      }
+
+      #main #lang:hover select {
+        color: #111;
+      }
+
+      .disable-squats.nosquat span.option-label {
+        text-decoration: line-through 0.5vh;
+        color: #844;
+      }
+
+      .disable-squats.nosquat span.option-value {
+        opacity: 0 !important;
+      }
+
+      .disable-squats.nosquat ~ span.option-adjust {
+        opacity: 0 !important;
+        pointer-events: none;
+      }
+
+      .scene-header {
+        width: 100%;
+        background-color: #111;
+        height: 5.2vh;
+        border-bottom: 0.5vh solid #666;
+        overflow: hidden;
+      }
+
+      #credits-about {
+        width: 69vw;
+        height: 90vh;
+        top: 10vh;
+        padding: 1vh;
+        font-size: calc(0.2vh + 1.68vw);
+        text-shadow: 0.1vh 0.1vh 0.5vh #aaa;
+        font-weight: 700;
+        color: #111;
+        text-align: justify;
+        line-height: 4.4vh;
+      }
+
+      #credits-about p {
+        padding: 4vh 2vh;
+      }
+
+      #credits-memoria {
+        width: 96vw;
+        height: 2vh;
+        bottom: 1vh;
+        left: 1vw;
+        padding: 1vw;
+        text-align: justify;
+        font-size: 0.8vw;
+        background-color: #111;
+        color: #111;
+        opacity: 0;
+      }
+
+      #credits-memoria:hover {
+        color: #aaa;
+      }
+
+      #credits-music {
+        width: 28vw;
+        height: 80vh;
+        top: 13vh;
+        right: 1vw;
+        padding: 0vw;
+        border: 0.2vh solid #777;
+      }
+
+      #credits-music .credit {
+        font-size: 2.3vh;
+        text-align: center;
+        font-weight: 600;
+        height: 8.3vh;
+        padding: 2vh 2vh 2vh 2vh;
+        border-bottom: 0.1vh solid #666;
+        background-color: #ccc;
+        line-height: 3vh;
+        display: flex;
+        justify-content: center;
+        /* align-content: center; */
+        flex-direction: column;
+      }
+
+      body.waiting .top {
+        filter: brightness(66%);
+        pointer-events: none;
+        cursor: wait;
+      }
+
+      body.loading #logo,
+      body.loading #copyright,
+      body.loading #track-title {
+        display: none;
+      }
+
+      #revert {
+        display: none;
+        color: #993333;
+      }
+
+      #cred {
+        display: none;
+        color: #666699;
+      }
+
+      body.default #revert {
+        display: inline-block;
+      }
+
+      body.isDefault #cred {
+        display: inline-block;
+      }
+
+      body.default #cred {
+        display: none;
+      }
+
+      body.default #delete, body.isDefault #delete {
+        display: none;
+      }
+
+      #shade {
+        position: absolute;
+        width: 100vw;
+        height: 25vh;
+        background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0) 0,
+          rgba(0, 0, 0, 0.25) 25vh
+        );
+      }
+    </style>
+
+    <!--script
+      async
+      data-adbreak-test="on"
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3931152406822418"
+      crossorigin="anonymous"
+    ></script>
+
+    <script style="display: block">
+      window.adsbygoogle = window.adsbygoogle || [];
+      const adBreak = (adConfig = function (o) {
+        adsbygoogle.push(o);
+      });
+    </script-->
+  <style>
+.BasicModalsVeil, .BasicModalsVeilAlert, .BasicModalsVeilConfirm, .BasicModalsVeilPrompt {
+   background:rgba(0, 0, 0, 0.5);
+   position:fixed;
+   top:0;
+   bottom:0;
+   right:0;
+   left:0;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   opacity:0;
+   transition:opacity 0.3s;
+}
+
+.BasicModalsVeilText {
+   font-size:40px;
+   font-family:sans-serif;
+   color:white;
+   font-weight:bold;
+   -webkit-text-stroke-width:2px;
+   -webkit-text-stroke-color:#565656;
+}
+
+.BasicModalsBox {
+   padding:10px;
+   border-radius:5px;
+   box-shadow:5px 5px 5px #555;
+   background:white;
+   font-family:sans-serif;
+   width:50%;
+   display:flex;
+   flex-direction:column;
+   max-width:400px;
+}
+
+.BasicModalsTitle {
+   font-size:20px;
+   color:#8a8a8a;
+   border-bottom:1px solid #c5c5c5;
+   padding:10px 0 15px;
+   margin-bottom:10px;
+}
+
+.BasicModalsTitle:empty {
+   display:none;
+}
+
+.BasicModalsContent {
+   text-align:center;
+   margin:10px 0 20px 0;
+   color:#777;
+}
+
+.BasicModalsInput {
+   display:block;
+   margin-bottom:15px;
+   border-radius:2px;
+   border:1px solid #90d0f6;
+   color:#333;
+   padding:5px 8px;
+   outline:0;
+}
+
+.BasicModalsLineAlert {
+   display:flex;
+   justify-content:center;
+}
+
+.BasicModalsLineConfirm {
+   display:flex;
+   justify-content:space-around;
+   flex-direction:row-reverse;
+}
+
+.BasicModalsLinePrompt {
+   display:flex;
+   flex-direction:row-reverse;
+}
+
+.BasicModalsLinePrompt > * {
+   margin-left:10px;
+}
+
+.BasicModalsButtonOk, .BasicModalsButtonNo {
+   background:#90d0f6;
+   border:0;
+   border-radius:4px;
+   padding:10px 15px;
+   color:#fff;
+   outline:0;
+   cursor:pointer;
+   transition:background 0.2s;
+}
+
+.BasicModalsButtonOk:not([disabled]):hover, .BasicModalsButtonNo:hover {
+   background:#54b8f3;
+}
+
+.BasicModalsButtonOk[disabled] {
+   opacity:0.5;
+   cursor:default;
+}
+
+.BasicModalsButtonCancel {
+   background:#aaa;
+   border:0;
+   border-radius:4px;
+   padding:10px 15px;
+   color:#fff;
+   outline:0;
+   cursor:pointer;
+   transition:background 0.2s;
+}
+
+.BasicModalsButtonCancel:hover {
+   background:#777;
+}
+
+.BasicModalsErrorMessage {
+   display:flex;
+   align-items:center;
+   color:darkcyan;
+}
+</style></head>
+
+  <body class="loading isDefault">
+    <div class="top" id="main" style="display: block;">
+      <div id="shade"></div>
+      <div id="logo">
+        <label class="control" id="previous-track" style="left: 12vw">⏮</label>
+        <label class="control" id="next-track" style="right: 12vw">⏭</label>
+      </div>
+
+      <div id="lang"></div>
+      <div id="buttons">
+        <div id="setup-open" class="button icon"><b>🛠</b></div>
+        <div id="start" class="button"><b>⏻</b> START</div>
+        <div id="about-open" class="button icon"><b>🛈</b></div>
+      </div>
+      <span data-tooltip="Ιωάννης Λύτης Γράβεζας" id="copyright">2020-2023 © Wizgrav of Oz</span>
+    </div>
+    <div id="track-title"><b>🎝</b>&nbsp;&nbsp;&nbsp;Besomorph &amp; Arcando &amp; Neoni - Army&nbsp;&nbsp;&nbsp;<b>🎜</b></div>
+    <div class="top" id="setup" style="display: none;">
+      <div class="back">
+        <img src="favicon.png">
+        <div></div>
+      </div>
+      <div id="tracks">
+        <div class="header">
+          <!-- input type="file" id="add-file" accept="audio/*" /><label id="add" for="add-file"
+          data-tooltip="Load an audio file to begin editing" class="tooltip-bottom-left">⏏</label-->
+          <input type="file" id="import" accept="audio/*,.json,application/json"><label id="import-label" for="import" data-tooltip="Import raw audio(mp3) or a json file with audio and keyframe data. Right/Long click for URL import." class="tooltip-bottom-left">🞧 Import</label>
+
+          <label data-tooltip="Export the selected track as a json file with audio and keyframe data. Right/Long click for URL encoding." id="export" class="tooltip-bottom-left">🖫 Export</label>
+          <input type="search" id="search" results="5" placeholder="Search" class="tooltip-bottom-left">
+          <label id="search-back">Show all tracks</label>
+
+          <label data-tooltip="Enter VR at the current playback position. Right/Long click to enable spectator view on desktop" id="start-small" for="edit-mode" class="tooltip-bottom-left">⏻ Start</label>
+        </div>
+        <div class="list"><div class="row isDefault active" data-id="6" data-file="" data-url="/assets/tracks/army.mp3" data-search="besomorph arcando neoni army">Besomorph &amp; Arcando &amp; Neoni - Army</div><div class="row isDefault" data-id="5" data-file="" data-url="/assets/tracks/heroes.mp3" data-search="janji heroes tonight feat johnning ">Janji - Heroes Tonight (feat. Johnning)</div><div class="row isDefault" data-id="4" data-file="" data-url="/assets/tracks/symbolism.mp3" data-search="electro light symbolism">Electro-Light - Symbolism</div><div class="row isDefault" data-id="3" data-file="" data-url="/assets/tracks/careless.mp3" data-search="neffex careless">NEFFEX - Careless</div><div class="row isDefault" data-id="2" data-file="" data-url="/assets/tracks/horovel.mp3" data-search="dj grig horovel">Dj Grig - Horovel</div><div class="row isDefault" data-id="1" data-file="" data-url="/assets/tracks/monster.mp3" data-search="ace ventura quantize monster">Ace Ventura &amp; Quantize - Monster</div></div>
+      </div>
+      <div id="options">
+        <div class="header">
+          <div class="option-row">
+            <div class="option-adjust dec tooltip-bottom disabled" data-min="1" data-option="speed" data-adj="-1"></div>
+            <div data-tooltip="Game speed (Global setting)" class="option-wrap tooltip-bottom">
+              <span class="option-label">SPEED</span>
+              <span class="option-value" data-option="speed" style="opacity: 0.75;">5</span>
+            </div>
+            <div class="option-adjust inc tooltip-bottom" data-option="speed" data-max="10" data-adj="1"></div>
+          </div>
+        </div>
+        <div class="option-list">
+          <div class="option-row actions" style="height: 7vh">
+            <label data-tooltip="Rename the selected track" id="rename">Rename</label>
+            <label data-tooltip="Delete the selected track" id="delete">Delete</label>
+            <label data-tooltip="Revert to the default timeline" id="revert">Update</label>
+            <label data-tooltip="Check the credits for this default track" id="cred">Credits</label>
+          </div>
+          <div class="option-row actions">
+            <label data-tooltip="Clone the selected track" id="clone">Clone</label>
+            <label data-tooltip="Find all tracks referring to the same audio" id="clones">Related</label>
+          </div>
+          <div class="option-row" id="beat-wrap" style="height: 2.6vh">
+            <div data-tooltip="The dot expands on detected beats. When its red it indicates a squat action" class="tooltip-bottom" id="beat" style="width: 0%;"></div>
+          </div>
+          <div class="option-row bpm">
+            <div class="option-adjust dec disabled" data-index="1" data-adj="-5" data-min="1"></div>
+            <div data-tooltip="Max BPM allowed through. Right/Long click the dial for fine tuning" class="option-wrap">
+              <span class="option-label">BPM</span>
+              <span class="option-value" style="opacity: 0.501953;">1</span>
+            </div>
+            <div class="option-adjust inc" data-index="1" data-adj="5" data-max="199"></div>
+          </div>
+          <div class="option-row sens">
+            <div class="option-adjust dec" data-index="2" data-adj="-1" data-min="1"></div>
+            <div data-tooltip="Higher allows weaker beats to pass through" class="option-wrap">
+              <span class="option-label">TUNE</span>
+              <span class="option-value" style="opacity: 0.85;">7</span>
+            </div>
+            <div class="option-adjust inc" data-index="2" data-adj="1" data-max="9"></div>
+          </div>
+          <div class="option-row squat">
+            <div class="option-adjust dec" data-index="3" data-adj="-1" data-min="0"></div>
+            <div data-tooltip="Higher makes harder. Right/Long click to toggle squats globally" class="option-wrap disable-squats">
+              <span class="option-label">SQUAT</span>
+              <span class="option-value" data-option="squat" style="opacity: 0.65;">3</span>
+            </div>
+            <div class="option-adjust inc" data-index="3" data-adj="1" data-max="9"></div>
+          </div>
+          <div class="option-row blend">
+            <div class="option-adjust dec" data-index="5" data-adj="1" data-min="-9" data-max="0"></div>
+            <div data-tooltip="Speed of the onset of the contrast effect. Higher makes it more strobbing" class="option-wrap">
+              <span class="option-label">FLASH</span>
+              <span class="option-value" style="opacity: 0.5;">-</span>
+            </div>
+            <div class="option-adjust inc" data-index="5" data-adj="-1" data-min="-9" data-max="0"></div>
+          </div>
+
+          <div class="option-row">
+            <label id="insert-key" data-tooltip="Insert a new keyframe at the current playback position">Insert keyframe</label>
+          </div>
+          <div class="option-row">
+            <label id="delete-key" data-tooltip="Delete the currently active keyframe(red). Right/Long click to delete all keyframes">Delete keyframe</label>
+          </div>
+          <div class="option-row" style="display: none">
+            <label id="clean-keys" data-tooltip="Clean all the keyframes in the timeline except the first one">Clean keyframes</label>
+          </div>
+          <div id="time" class="option-row">
+            <span style="font-weight: 300">00</span>:<span style="font-weight: 400">00</span>:<span>00</span>
+          </div>
+          <div class="option-row transport">
+            <label data-tooltip="Start music playback without immersing in VR" id="play">⯈</label>
+            <label data-tooltip="Go to the currently active keyframe(red)" id="seek-active">⏴</label>
+            <label data-tooltip="Go back 2 keyframes in the timeline. Right/long click to zero time" id="seek-first">⏮</label>
+          </div>
+        </div>
+      </div>
+      <div id="reveries">
+        <div class="header">
+          <label id="sounds" data-tooltip="Sound effect volume" class="tooltip-bottom-right">
+            <div style="width: 50%;"></div>
+            <span>◢</span>
+          </label>
+          <label id="haptics" data-tooltip="Haptic feedback intensity" class="tooltip-bottom-right">
+            <div style="width: 50%;"></div>
+            <span>🞼</span>
+          </label>
+        </div>
+        <div class="list">
+          <div id="scenes"><div class="row active" data-id="0"><div class="row-title">Livyatanim</div><div class="row-description">Catch &amp; Stretch</div></div><div class="row" data-id="1"><div class="row-title">Volshebnik</div><div class="row-description">Catch &amp; Strike</div></div><div class="row" data-id="2"><div class="row-title">Po Ju Jitsu</div><div class="row-description">Pose matching</div></div><div class="row" data-id="3"><div class="row-title">Boom Dojo</div><div class="row-description">Punch &amp; Squat</div></div><div class="row" data-id="4"><div class="row-title">Bela Magia</div><div class="row-description">Catch &amp; Squat</div></div><div class="row" data-id="5"><div class="row-title">Snow Jitsu</div><div class="row-description">Catch &amp; Pose</div></div></div>
+        </div>
+      </div>
+      <div id="timeline">
+        <div id="progress" class="progress">
+          <div id="indicator" style="left: 0%;"></div>
+          <div id="markers"><div class="marker sc0 active" style="left: 0%; top: 3.3vh; display: none;"></div><div class="marker sc2" style="left: 4.62406%; top: 1.8625vh;"></div><div class="marker sc5" style="left: 7.65733%; top: 2.15vh;"></div><div class="marker sc4" style="left: 9.24519%; top: 2.00625vh;"></div><div class="marker sc1" style="left: 10.7546%; top: 2.15vh;"></div><div class="marker sc5" style="left: 12.3504%; top: 2.15vh;"></div><div class="marker sc1" style="left: 14.0283%; top: 2.15vh;"></div><div class="marker sc5" style="left: 16.2282%; top: 2.00625vh;"></div><div class="marker sc5" style="left: 18.2235%; top: 2.00625vh;"></div><div class="marker sc3" style="left: 20.502%; top: 2.15vh;"></div><div class="marker sc4" style="left: 22.5362%; top: 2.15vh;"></div><div class="marker sc3" style="left: 25.5015%; top: 1.8625vh;"></div><div class="marker sc1" style="left: 27.3533%; top: 1.8625vh;"></div><div class="marker sc5" style="left: 29.7253%; top: 1.71875vh;"></div><div class="marker sc4" style="left: 30.9551%; top: 1.43125vh;"></div><div class="marker sc5" style="left: 32.377%; top: 1.71875vh;"></div><div class="marker sc5" style="left: 33.2147%; top: 1.71875vh;"></div><div class="marker sc2" style="left: 34.6982%; top: 1.71875vh;"></div><div class="marker sc5" style="left: 36.3068%; top: 1.71875vh;"></div><div class="marker sc3" style="left: 37.8319%; top: 1.71875vh;"></div><div class="marker sc4" style="left: 39.3806%; top: 1.71875vh;"></div><div class="marker sc1" style="left: 40.8933%; top: 1.71875vh;"></div><div class="marker sc1" style="left: 42.5262%; top: 1.71875vh;"></div><div class="marker sc3" style="left: 44.1831%; top: 1.71875vh;"></div><div class="marker sc2" style="left: 45.8144%; top: 3.15625vh;"></div><div class="marker sc0" style="left: 47.4541%; top: 3.3vh;"></div><div class="marker sc0" style="left: 52.0413%; top: 1.71875vh;"></div><div class="marker sc0" style="left: 54.0373%; top: 1.79062vh;"></div><div class="marker sc5" style="left: 56.4232%; top: 2.00625vh;"></div><div class="marker sc5" style="left: 58.3356%; top: 2.00625vh;"></div><div class="marker sc1" style="left: 59.7393%; top: 2.15vh;"></div><div class="marker sc2" style="left: 61.3962%; top: 1.64687vh;"></div><div class="marker sc2" style="left: 62.9738%; top: 1.71875vh;"></div><div class="marker sc2" style="left: 64.6307%; top: 1.71875vh;"></div><div class="marker sc3" style="left: 66.1456%; top: 1.575vh;"></div><div class="marker sc4" style="left: 67.723%; top: 1.71875vh;"></div><div class="marker sc1" style="left: 69.2076%; top: 1vh;"></div><div class="marker sc5" style="left: 70.6099%; top: 1.43125vh;"></div><div class="marker sc5" style="left: 71.4868%; top: 1.2875vh;"></div><div class="marker sc2" style="left: 72.2514%; top: 1.71875vh;"></div><div class="marker sc2" style="left: 73.1191%; top: 1.71875vh;"></div><div class="marker sc3" style="left: 73.9621%; top: 1.71875vh;"></div><div class="marker sc2" style="left: 75.4964%; top: 1.71875vh;"></div><div class="marker sc3" style="left: 76.981%; top: 1.575vh;"></div><div class="marker sc5" style="left: 78.6522%; top: 1.575vh;"></div><div class="marker sc4" style="left: 80.1123%; top: 1.575vh;"></div><div class="marker sc1" style="left: 81.7248%; top: 1.575vh;"></div><div class="marker sc3" style="left: 83.2191%; top: 1.575vh;"></div><div class="marker sc2" style="left: 84.8079%; top: 1.575vh;"></div><div class="marker sc5" style="left: 86.4441%; top: 1.575vh;"></div><div class="marker sc4" style="left: 88.0267%; top: 1.575vh;"></div><div class="marker sc4" style="left: 89.5715%; top: 1.575vh;"></div><div class="marker sc0" style="left: 91.1593%; top: 1.575vh;"></div><div class="marker sc1" style="left: 92.7472%; top: 1.71875vh;"></div><div class="marker sc1" style="left: 94.2998%; top: 1.575vh;"></div><div class="marker sc1" style="left: 96.2703%; top: 3.3vh;"></div><div class="marker sc1" style="left: 98.078%; top: 1.575vh;"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="top" id="about" style="display: none;">
+      <div class="back">
+        <img src="favicon.png">
+        <div></div>
+      </div>
+
+      <div id="credits-about">
+        <p>
+          Yolopia is a VR workout game which combines automatic beat detection
+          with an editor for setting keyframes along a track to control the beat
+          map generation, tweak the visuals, adjust the physicality level and
+          even seamlessly transition between excercises.
+        </p>
+        <p>
+          Audio files and their keyframes are stored locally inside the browser
+          which means that you'll have different song lists per device. You can
+          use the export/import functionality to tranfer tracks along with their
+          keyframes as .json files. Please only use music you legitimately own.
+        </p>
+        <p>
+          The game runs on WebXR so you can play directly from this webpage. It
+          also contains animal models derived from the classic web artworks
+          <a href="http://www.ro.me/">Rome “Three Dreams of Black”</a> and
+          <a href="https://film.livyatanim.com/">Livyatanim Myth</a>
+        </p>
+        <p>
+          Inspiration was drawn from an old slavic story I made up on my own.
+        </p>
+      </div>
+      <div id="credits-music">
+        <div class="scene-header">
+          <label class="disable-squats disable-animations">Music Credits</label>
+        </div>
+      <div class="credit"><a href="https://www.youtube.com/watch?v=9tZLZCkXkMI">Ace Ventura &amp; Quantize - Monster</a></div><div class="credit"><a href="https://www.youtube.com/watch?v=q3Dcsi88uRo">Dj Grig - Horovel</a></div><div class="credit"><a href="https://www.youtube.com/watch?v=Z6L4u2i97Rw">NEFFEX - Careless</a></div><div class="credit"><a href="https://www.youtube.com/watch?v=__CRWE-L45k">Electro-Light - Symbolism</a></div><div class="credit"><a href="https://www.youtube.com/watch?v=3nQNiWdeH2Q">Janji - Heroes Tonight (feat. Johnning)</a></div><div class="credit"><a href="https://www.youtube.com/watch?v=4EDOIftYA4A">Besomorph &amp; Arcando &amp; Neoni - Army</a></div></div>
+      <div id="credits-memoria">
+        <b>⚘</b> &nbsp; Για τη Μαρίνα, τον Χρήστο, τον Τίτο, την Κάλι, τον
+        Kωστάκη και την Κατερίνα που φύγανε νωρίς, τον Σπύρο, τη Λευτερίτσα κ τη
+        Μαργαρώ. Σας ευχαριστώ για την αγάπη και τα μαθήματα που μου δώσατε,
+        ξέρατε καλά πως να δίνετε χαρά, μου λείπετε &nbsp;<b>⚘</b>
+      </div>
+    </div>
+
+    <script src="main.js"></script><canvas data-engine="three.js r139dev" width="1295" height="835" tabindex="0" style="display: block; width: 1036px; height: 668px;"></canvas>
+  <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon="{&quot;rayId&quot;:&quot;8044414ecd361fa3&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;68d858ec9de04fc685d6174612ee647b&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+</body></html>

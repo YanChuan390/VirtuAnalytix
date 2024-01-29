@@ -1,0 +1,29 @@
+# 主要针对viveport中含有年龄check的url
+# 执行完普通的get_and_save后，检查每个page_source中是否含有关键词
+# 如果含有则删掉，然后不并行
+def get_and_save_page_source_for_vive18(url, directory=dps):
+    with open("./jin_zhan.txt", "a") as f:
+        f.write("here\n")
+    
+    origin_page_source = get_page_source_from_file(url)
+    if "请选择您的出生日期" in origin_page_source:
+        with open("./jin_zhan2.txt", "a") as f:
+            f.write(f"here {url}\n")
+    else:
+        return
+    return
+    delete_local_file_of_url(url)
+
+    chrome_options = Options()
+    chrome_options.add_argument("user-data-dir=C:/Users/Administrator/AppData/Local/Google/Chrome/User Data")
+    driver = webdriver.Chrome(options=chrome_options)
+    driver.set_page_load_timeout(60)
+    try:
+        driver.get(url)
+    except:
+        pass
+
+    time.sleep(2)
+    page_source = driver.page_source
+    save_page_source(url, page_source, directory)
+    return page_source

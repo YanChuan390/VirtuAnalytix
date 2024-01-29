@@ -1,0 +1,111 @@
+<html xmlns="http://www.w3.org/1999/xhtml" class="ui-mobile"><head><base href="http://www.codingcaveman.com/magicians_gambit/">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Magician's Gambit</title>
+    <meta name="description" content="Magician's Gambit - Chess, magic, VR!">
+	<meta name="Keywords" content="Magician's Gambit, chess, magic, vr, unreal engine">
+    
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="./index.css" media="all">
+    
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-a"><div data-role="page" data-url="/magicians_gambit/" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="min-height: 668px;">
+<div id="main"> <img src="../images/cave_top.gif" id="cave_top" alt=""> <!--<br class="clearfloat" />-->
+  <img src="../images/cave_left.gif" id="cave_left" alt=""><img src="../images/cave_right.gif" id="cave_right" alt=""> 
+  
+  <div id="container">
+    <div id="mainContent">
+      
+    <br>
+      <div align="center">
+        <p><img src="images/CoverArt%201.1.jpg" alt="Magician's Gambit" width="550"></p>
+        <br>
+      </div>
+            
+      <div> <br>
+        <h2>Chess! Magic! VR!</h2>
+        <p>Play this age-old Game of Kings against the best strategic mind in the Kingdom - a master tactician and chess paragon unlike any other. Word is he has never been defeated...    Will you rise to the challenge?</p>
+        <br>
+
+        <div align="center">
+            <p><img src="images/PDP.jpg" alt="Magician's Gambit" width="768" style="margin-top: 10; margin-left: -10px"></p>
+        </div>
+
+        <br>
+        <br>
+
+          <p>Magician's Gambit is a virtual reality makeover of Chess, a game that has captivated players for centuries.  Experience one of the world's favorite games of strategy in a beautifully rendered fantasy world where magic is the norm, wielded with just a flick of the wrist.</p>
+
+          <p>You won't find any stylised icon interfaces here - this is the way chess against an artificial intelligence is meant to be played. Even though it is still only available in Early Access, this is an exquisitely polished single player game.  A full release is planned for the inclusion of multi-player gaming.</p>
+
+          <p>Featuring numerous levels of difficulty, this game will pose a challenge for players of all abilities, from beginners to grandmasters.  With graphics rendered in Unreal Engine 4 and AI powered by the Stockfish Chess Engine, Magician's Gambit provides plenty of eye candy for casual gamers whilst still providing a real challenge for serious chess players.</p>
+
+  
+        <iframe width="768" height="432" src="https://www.youtube.com/embed/rynB6XMVF0o" frameborder="0" allowfullscreen=""></iframe>
+          
+        <h2>Features</h2>
+        <ul>
+            <li>This is a game best enjoyed in VR and was built from the ground up targeted at virtual reality gaming.  You've not experienced immersive chess before until you've played it in VR, away from worldly distractions, completely immersed in the challenge...<br><br></li>
+            <li>Built for Oculus Rift and the HTC Vive, Magicians Gambit makes full use of Oculus Touch and SteamVR motion controllers.  Your hand movements are tracked in VR with realistic physics simulation for the chess pieces.  Gaze tracking for gamepads, and Mouse/Keyboard is also supported<br><br></li>
+            <li>Powered by Unreal Engine 4, this is the prettyest chess game you'll see. Graphics settings can be adjusted to take full advantage of high end PCs, while still providing a solid 90 FPS on lower end VR systems.<br><br></li>
+            <li>AI is powered by the renowned <a href="https://stockfishchess.org/" style="color:#FFDD7A" class="ui-link">Stockfish</a> Engine. This is one of the worlds strongest chess engines, even stronger than the best human grandmasters. But fear not, Magician's Gambit features 20 levels of difficulty so that even novice players can beat the AI.  Set difficulty levels to your own ability. <br><br></li>
+        </ul>
+
+        <h2>Coming soon!</h2>
+        <p>Magician's Gambit will be available from Oculus Home and Steam.</p>
+          
+        <br>
+                
+        <!--Display popup screenshot images, equidistant-->
+        <div id="screenshots">
+
+            <div id="screenshot">
+                <a href="#myPopup1" data-rel="popup" data-position-to="window" aria-haspopup="true" aria-owns="myPopup1" aria-expanded="false" class="ui-link">
+                    <img src="images/ssMove.jpg" width="240" alt="Motion Controler Move"></a></div>
+            <div id="image-row">
+                <div><a href="#myPopup2" data-rel="popup" data-position-to="window" aria-haspopup="true" aria-owns="myPopup2" aria-expanded="false" class="ui-link">
+                        <img src="images/ssCheck.jpg" width="240" alt="Check"></a></div>
+                <div><a href="#myPopup3" data-rel="popup" data-position-to="window" aria-haspopup="true" aria-owns="myPopup3" aria-expanded="false" class="ui-link">
+                        <img src="images/ssCheckMate.jpg" width="240" alt="Checkmate"></a></div>
+            </div>
+
+            <div style="display: none;" id="myPopup1-placeholder"><!-- placeholder for myPopup1 --></div>
+            
+            <div style="display: none;" id="myPopup2-placeholder"><!-- placeholder for myPopup2 --></div>
+
+            <div style="display: none;" id="myPopup3-placeholder"><!-- placeholder for myPopup3 --></div>
+
+        </div>
+      
+      </div>
+      
+      <div style="margin-top:140px">
+          <br>
+          <a href="privacy_tos.htm" style="color:#FFDD7A" class="ui-link">Privacy Policy and Terms Of Service</a> 
+          <br>
+          <br>
+          <br>
+      </div>
+        
+    </div>
+    <!-- end #mainContent -->
+  </div>
+  <!-- end #container -->
+  
+</div>
+  
+
+
+
+<div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="myPopup1-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="myPopup1-popup"><div data-role="popup" id="myPopup1" class="ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+              <a href="#screenshots" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+              <a href="#screenshots" data-rel="back" class="ui-link"><img src="images/ssMove.jpg" style="width:1024px;" alt="Motion Controller Move"></a>
+            </div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="myPopup2-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="myPopup2-popup"><div data-role="popup" id="myPopup2" class="ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+              <a href="#screenshots" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+              <a href="#screenshots" data-rel="back" class="ui-link"><img src="images/ssCheck.jpg" style="width:1024px;" alt="Check"></a>
+            </div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="myPopup3-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="myPopup3-popup"><div data-role="popup" id="myPopup3" class="ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+              <a href="#screenshots" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+              <a href="#screenshots" data-rel="back" class="ui-link"><img src="images/ssCheckMate.jpg" style="width:1024px;" alt="Checkmate"></a>
+            </div></div></div><div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div></body></html>

@@ -1,0 +1,97 @@
+<html lang="en"><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>thingamajig</title>
+    <meta charset="utf-8">
+    <style>
+    body {
+      margin: 0px;
+      font-family: Arial,Helvetica,sans-serif;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      background-color: #000;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+	#bg {
+	    position: fixed;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+	}
+
+	.content {
+		position: fixed;
+		bottom: 0;
+		height: 60px;
+		background: rgba(0, 0, 0, 0);
+		color: #f1f1f1;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	.social {
+		margin: 1em;
+	}
+
+	#submit {
+		width: 200px;
+		font-size: 18px;
+		padding: 10px;
+		border: none;
+		background: #080;
+		color: #ffff;
+		cursor: pointer;
+	}
+
+	#email {
+		width: 20em;
+		font-size: 18px;
+		padding: 10px;
+		border: none;
+		background: #fff;
+		color: #000;
+		cursor: pointer;
+	}
+
+	#submit:hover {
+		background: #ddd;
+		color: black;
+	}
+
+	.title {
+		font-size: 4em;
+		color: #eee;
+	}
+	.subtitle {
+		font-size: 1em;
+		color: #ccc;
+		padding: 1em;
+	}
+
+    </style>
+<script charset="utf-8" src="https://platform.twitter.com/js/button.e7f9415a2e000feaab02c86dd5802747.js"></script></head>
+<body>
+
+  <video id="bg" width="100%" autoplay="" muted="" loop="">
+    <source src="https://thingamajigs.nyc3.digitaloceanspaces.com/landing-page.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+<div class="content">
+
+  <div class="social">
+  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 178px; height: 28px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.2b2d73daf636805223fb11d48f3e94f7.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=thingamajigvr&amp;show_count=false&amp;show_screen_name=true&amp;size=l&amp;time=1694369595212" data-screen-name="thingamajigvr"></iframe>
+
+  </div>
+</div>
+
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html?origin=https%3A%2F%2Fthingamajigvr.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>

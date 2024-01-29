@@ -1,0 +1,230 @@
+<html lang="ko"><head>
+        <title>컴투스로카 | COM2US ROCA</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="format-detection" content="telephone=no">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="COM2US ROCA - 컴투스 로카">
+        <meta property="og:description" content="컴투스 로카(COM2US ROCA), VR 게임 전문 개발사">
+        <meta property="og:url" content="https://com2usroca.com">
+        <meta property="og:image" content="/static/favicon-32x32.png">
+        <meta property="og:site_name" content="컴투스 로카(COM2US ROCA)">
+        <meta name="title" content="컴투스 로카(COM2US ROCA)">
+        <meta name="description" content="컴투스 로카(COM2US ROCA), VR 게임 전문 개발사">
+        <meta name="keywords" content="컴투스로카, 컴투스 로카, 게임, VR, COM2US ROCA, COM2USROCA, COM2US, ROCA, 컴투스, 로카">
+
+        <link rel="shortcut icon" href="/static/favicon.ico">
+        <link rel="icon" href="/static/favicon.ico">
+        <link rel="icon" sizes="32x32" href="/static/favicon-32x32.png">
+        <link rel="icon" sizes="16x16" href="/static/favicon-16x16.png">
+        <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+        <link href="/static/portal/css/import.css" rel="stylesheet" type="text/css">
+
+        <script src="/static/portal/js/jquery-1.12.4.min.js"></script>
+        <script src="/static/portal/js/slick.min.js"></script>
+        <script src="/static/portal/js/jquery.rolling.js"></script>
+        <script src="/static/portal/js/common.js"></script>
+        <script src="/static/portal/js/jquery.cookie.min.js"></script>
+    </head>
+
+    <body id="main" class="sub">
+        <div id="skipNavi">
+            <ul>
+                <li>
+                    <a href="#container">Go Content</a>
+                    <a href="#gnb">Go Main Menu</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="wrap">
+            <header id="header">
+                <div class="inner">
+                    <div class="logo"><a href="/">컴투스 로카(COM2US ROCA)</a></div>
+                    <button id="btn_show_l" type="button" class="btn-nav">View All Menu</button>
+                    <div class="menu_box">
+                        <a href="mailto:contact@com2usroca.com" class="btn-contact">Contact us</a>
+                        <ul class="lang">
+                            <li><a class="ko-KR" onclick="fnSetLanguage('ko-KR')">KOR</a></li>
+                            <li><a class="en-US" onclick="fnSetLanguage('en-US')">ENG</a></li>
+                            <li><a class="zh-CN on" onclick="fnSetLanguage('zh-CN')">中文</a></li>
+                        </ul>
+                        <ul class="dep1_wrap" id="main_menu">
+    <li class="dep1" data-url="/company/">
+        
+            <a onclick="fnRedirectMainMenu('/company/', $(this));">ABOUT US</a>
+        
+    </li>
+
+    <script>
+        $(document).ready(function () {
+            let urlPath = '/' + String(window.location.pathname).split('/')[1] + '/';
+
+            $('ul#main_menu').find('li[data-url="' + urlPath + '"]').addClass('on');
+        });
+    </script>
+
+    <li class="dep1" data-url="/news/">
+        
+            <a onclick="fnRedirectMainMenu('/news/', $(this));">PRESS RELEASE</a>
+        
+    </li>
+
+    <script>
+        $(document).ready(function () {
+            let urlPath = '/' + String(window.location.pathname).split('/')[1] + '/';
+
+            $('ul#main_menu').find('li[data-url="' + urlPath + '"]').addClass('on');
+        });
+    </script>
+</ul>
+                    </div>
+                </div>
+            </header><!-- //header -->
+
+            <div id="content-area">
+                
+    
+        <div id="container" class="policy_container">
+            <div class="category_area">
+                
+                    <div class="category active" onclick="fnPolicyInfo($(this), 'privacy-policy');">
+                        隐私政策
+                    </div>
+                
+                    <div class="category " onclick="fnPolicyInfo($(this), 'user-license');">
+                        用户许可证
+                    </div>
+                
+            </div>
+            <div id="policy_contents" class="policy_contents">
+                <p>简介</p>
+
+<p>在隐私和个人信息方面，Com2uS ROCA公司和/或其附属公司（“Com2uS ROCA”、“我们”或“我司”）尊重您的权利和我们的义务。我们提供本隐私政策是为了帮助您了解我们如何收集、使用、共享、存储和披露我们在您使用Com2uS ROCA在线游戏（“Com2uS ROCA游戏”）和相关服务时所获得的关于您的信息，包括但不限于使用Com2uS ROCA游戏，参与Com2uS ROCA游戏在线社区，或访问Com2uS ROCA品牌网站所提供的社交网络服务（合称“Com2uS ROCA服务”）。<br>
+这是您与Com2us ROCA之间具有法律约束力的协议，下载和/或安装Com2us ROCA游戏、访问和/或使用Com2us ROCA服务和/或创建HIVE账户，即视为您接受并同意受本隐私政策的约束。<br>
+本隐私政策适用于使用Com2uS ROCA服务的任何个人或实体，但大韩民国的居民除外。<br>
+Com2uS ROCA可随时酌情修改本隐私政策的任何内容，并在Com2uS ROCA游戏内和/或Com2uS ROCA游戏上或Com2uS ROCA品牌网站上发布或显示修订后的隐私政策。如果继续使用Com2uS ROCA服务，则视为您已接受该等修订。<br>
+除非另有说明，任何此类修订将在最初发布后自动生效。</p>
+
+<p><br>
+1.我们可能收集的信息</p>
+
+<p>1.1.通过您的平台帐户接收的信息。</p>
+
+<p>当您使用或访问Com2uS ROCA服务时，您即允许我们根据平台条款和您的平台隐私设置从您的平台帐户访问和/或收集某些信息。<br>
+您允许我们访问的信息因您使用的Com2uS ROCA服务、平台条款以及您的平台隐私设置而异。<br>
+例如，当您通过平台帐户使用或连接到Com2uS ROCA服务时，Com2uS ROCA可能会从您的平台帐户访问和/或收集以下部分或全部信息：<br>
+• 您的姓名<br>
+• 您的用户名，用户ID或平台用户ID<br>
+• 最近登录时间<br>
+• IP地址<br>
+• 您注册时提供给平台的电子邮件地址<br>
+• 设备信息，如CPU、GPU、RAM、OS、语言、VR设备<br>
+通过您的平台账户使用Com2uS ROCA服务，即授权Com2uS ROCA根据本隐私政策、平台条款以及您的平台隐私设置收集、存储和使用您的账户信息。</p>
+
+<p>1.2. 您直接提供给我们的信息。</p>
+
+<p>当您使用任何Com2uS ROCA服务时（包括通过平台），我们可能会收集您直接提供给我们的以下信息：<br>
+• 您的游戏内进程数据<br>
+• 您的游戏内好友和关系<br>
+客户支持通信：当您向我们的客户支持团队寻求帮助时，在提供客户支持的合理必要范围内，我们可能会收集并存储您的联系信息以及您购买Com2uS ROCA游戏数字产品时的付款信息。<br>
+促销活动：我们可能会通过Com2uS ROCA游戏、Com2uS ROCA品牌网站或第三方网站或平台为您提供Com2uS ROCA游戏相关促销活动的参与机会。<br>
+如果您选择参加此类促销活动，我们可能会收集并储存您提供的与参加活动有关的信息，例如您的电子邮件地址或电话号码，除非另有说明，否则我们将根据本隐私政策使用和/或披露该等信息。我们可能会使用您提供的信息与您联系，以便通知获奖信息、确认奖品交付或实现其他相关目的。<br>
+参加促销活动也可能导致您被列入我们以及与该活动相关的促销合作伙伴的邮件列表。<br>
+接受奖品可能需要您允许我们在Com2uS ROCA品牌网站内或网站上公布您的一些信息。<br>
+方式：当您访问和/或使用Com2uS ROCA服务时，我们可能会收集<br>
+(a) 有关您设备的某些技术信息，包括MAC地址、IP地址和设备ID；以及<br>
+(b) 有关您与Com2uS ROCA服务互动的使用统计数据。<br>
+这些信息和使用数据是通过使用服务器日志文件和/或跟踪技术收集的。我们可能会在我们的某些服务、游戏、广告和网页上使用“cookies”和其他技术，如像素标签、网络信标、清晰GIF，以分析您对我们的服务、游戏、广告和网页的使用情况，进而定制和改进我们的服务、游戏、广告和网页，衡量促销效果，促进信任和安全。我们向您发送的电子邮件和其他电子通信可能包含代码，使我们能够跟踪您对此类通信的使用情况，包括通信是否被打开和/或哪些链接被访问（如果有的话）。如果您的浏览器和设备允许，您可以随时拒绝我们的cookies，尽管这样做可能会干扰您对我们某些服务、游戏、广告和网页的使用。请注意，、拒绝cookies之后，我们的某些服务、游戏、广告和网页功能将无法使用。</p>
+
+<p>2.我们如何使用我们收集的信息</p>
+
+<p>对于我们所收集的您使用Com2uS ROCA服务的信息，Com2uS ROCA可将其用于改善游戏服务，提供有关Com2uS ROCA游戏的促销信息。<br>
+例如，我们可能以下列任何一种方式使用我们所收集的信息：<br>
+- 创建您的游戏账户，管理账户信息；<br>
+- 告知您（a）有关Com2uS ROCA服务的产品、新产品、服务、功能、促销活动、改进和更新；（b）Com2uS ROCA的政策更新；<br>
+- 鼓励和促进您对Com2uS ROCA服务的使用，包括定向广告和联盟营销。<br>
+- 向您推销Com2uS ROCA游戏，包括向您发送优惠、促销信息、新闻简报、本地或推送通知、电子邮件活动，以及有关新的、改进的或现有的Com2uS ROCA游戏的通信；<br>
+- 提供客户支持，答复用户询问；<br>
+- 完成您对Com2uS ROCA游戏的请求和/或订单，履行我们在Com2uS ROCA政策下的义务；<br>
+- 实现用户与用户之间的交流和互动；<br>
+- 征求您的意见和反馈以改善用户体验；<br>
+- 监测Com2uS ROCA服务的技术功能；<br>
+- 开发新的和/或改进的游戏、产品、服务或产品组合；<br>
+- 分析市场趋势和用户流量；<br>
+- 解决Com2uS ROCA服务中的错误或问题；以及<br>
+- 遵守适用的法律、法规或行政命令。<br>
+此外，Com2uS ROCA可能会汇总您的信息，以便为您提供更好的用户体验，提高Com2uS ROCA服务的质量和价值，分析Com2uS ROCA服务的使用情况。</p>
+
+<p><br>
+3.共享您的信息</p>
+
+<p>在以下情况下，我们可能会与某些第三方共享您的信息：<br>
+第三方服务提供商：我们可能会向代表我们提供服务的第三方公司提供您的信息，这些服务包括但不限于数据分析、营销服务、促销活动、电子邮件活动、托管服务以及客户服务或支持。此类第三方公司可以访问您的个人信息，但仅限于根据我们的指示将此类信息用于执行所要求的服务。<br>
+如果您不再希望业务合作伙伴将您的个人信息用于其营销目的，您可以通过contact@com2usroca.com与我们联系，我们将协助您向业务合作伙伴提出要求。<br>
+联盟营销：我们可能会与第三方公司共享您的信息，用于与Com2uS ROCA游戏推广相关的联盟营销，如果此类披露对于开展、管理或完成此类营销活动是合理且必要的。我们将采取商业上合理的措施，以确保此类第三方公司按照所有适用的法律或法规使用我们所分享的关于您的信息，且仅将其用于上述目的。如果您不再希望第三方公司将您的个人信息用于其营销目的，您可以通过contact@com2usroca.com联系我们，我们将协助您向业务合作伙伴提出此类要求。<br>
+安全、保障和遵守法律：我们可能会向某些第三方披露您的信息，如果我们有理由相信：<br>
+(a) 我们被要求披露信息以响应法律程序（例如，法院命令、搜查令或传票）；<br>
+(b) 我们被要求遵守任何适用的法律、法规或行政命令;<br>
+(c) 发生对您、他人或公众的安全状况构成威胁的紧急情况；且<br>
+(d) 该等披露对于保护Com2uS ROCA的权利或财产是合理且必要的。<br>
+出售或合并：如果Com2uS ROCA发生业务转型，如合并、被另一家公司收购、或出售其全部或部分资产，我们可能会将您所提供的所有信息（包括个人信息）转移给此类转型中的继任组织，前提是此类转型经所有适用法律允许，且按照所有适用法律进行。<br>
+如果Com2uS ROCA的隐私做法因业务转型而发生重大变化，我们将在转移您的个人信息之前向您告知此类业务转型。</p>
+
+<p>4. 更改/删除您的信息<br>
+为了管理Com2uS ROCA从平台上收到的关于您的信息，您应根据其任何适用政策更改您在该平台上的隐私设置。<br>
+此外，在不再需要向用户提供应用体验或服务的情况下（如果该信息被认为对于功能的实现是非必要的），且应同步账户提供者的要求以及法律或法规的规定对同步平台账户进行删除的，相应的信息将被立即删除。</p>
+
+<p>5. 链接<br>
+Com2uS ROCA服务可能包含其他网站的链接。Com2uS ROCA服务含有其他网站的链接或呈现横幅广告或其他类型的广告并不意味着Com2uS ROCA认可或授权给此类第三方，也不代表我们与此类第三方存在从属关系。对于您选择通过Com2uS ROCA服务访问的其他网站的隐私政策，Com2uS ROCA概不负责。在退出Com2uS ROCA服务时，您有责任阅读此类其他网站的隐私政策。</p>
+
+<p>6. 您的信息安全<br>
+对于由您分享且由我们收集和存储的敏感数据，Com2uS ROCA采取了商业上合理的安全措施，以防止未经授权的访问，或未经授权的更改、披露或破坏。<br>
+尽管我们努力提高Com2uS ROCA服务的安全级别，但我们不能保证可以百分百避免未经授权的访问、黑客攻击、数据丢失或其他违规行为。<br>
+我们强烈建议您不要因任何理由与任何第三方分享您的账户密码。另外请注意，电子邮件和消息系统并不安全，因此我们不鼓励您通过这些媒介向我们发送个人信息。如果您对Com2uS ROCA服务的安全措施有疑问，请通过contact@com2usroca.com联系我们。</p>
+
+<p>7. 我们关于儿童的政策<br>
+我们不会故意收集13岁以下儿童的任何个人信息。13岁以下儿童在任何时候都不应使用Com2uS ROCA服务。如果我们得知我们无意中收集了此类儿童的个人信息，我们将采取合理措施及时从我们的记录中删除此类信息。<br>
+&nbsp;<br>
+8.疑问</p>
+
+<p>如果您对我们的隐私政策和/或做法有任何疑问，请随时发送电子邮件至contact@com2usroca.com与我们联系。</p>
+
+            </div>
+        </div><!-- //container -->
+        <script>
+            
+        </script>
+    
+
+            </div>
+
+            <footer id="footer">
+                <div class="inner">
+                    <p class="logo">컴투스 로카(COM2US ROCA)</p>
+                    <ul class="info">
+                        <li>COM2US ROCA</li>
+                        <li>President : Hyun-seung Shin</li>
+                        <li>Address : B-701, Daewangpangyo-ro 670, Bundang-gu, Seongnam-si, Gyeonggi-do COM2US ROCA</li>
+                        <li>TEL : +82 31-625-0923</li>
+                    </ul>
+                    <p class="policy"><a target="_self" href="/policy/privacy-policy">Privacy Policy</a> | <a target="_self" href="/policy/user-license">User License</a></p>
+                    <p class="copy">Copyright © Com2usroca Corporation. <span class="m-block">All rights reserved.</span></p>
+                    <ul class="sns-link">
+                        <li class="facebook"><a onclick="alert('Coming Soon.');return false;" title="Facebook">facebook</a></li>
+                        <li class="youtube"><a onclick="alert('Coming Soon.');return false;" title="Youtube">youtube</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div><!-- //wrap -->
+	
+    <script>
+        $(document).ready(function (){
+           initMainMenu();
+        });
+    </script>
+</body></html>

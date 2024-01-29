@@ -1,0 +1,152 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head profile="http://gmpg.org/xfn/11">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-75KQVVZ8LV&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-119014614-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-119014614-2');
+	  
+		var trackOutboundLink = function(url) {
+			
+			if ('ga' in window)
+			{
+			  gtag('event', 'click', {
+			    'event_category': 'outbound',
+			    'event_label': url,
+			    'transport_type': 'beacon',
+			    'event_callback': function(){document.location = url;}
+			  });
+		  	}
+		  	
+		  	else
+		  	{
+			  	 document.location = url;
+		  	}
+		}
+
+	</script>
+	
+
+    <title>HOST VR</title>
+    <meta name="description" content="A virtual reality game created by Garrett Fuselier for the VALVE Index, Oculus and HTC Vive. When your spacecraft crashes on an unknown planet, you navigate your way through its dark and puzzling corridors. Using only your hands and your wits, will you be able to solve its rooms and explore what's beyond?">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="keywords" content="VR, Virtual Reality, Game, Alien, VIVE, VALVE, Oculus, Steam, Garrett Fuselier, Play, PC">
+
+     
+	
+	
+	<meta name="og:site_name" content="HOST VR">
+	<meta property="og:url" content="https://host-vr.com">
+	<meta property="og:title" content="HOST VR">
+	<meta property="og:description" content="A virtual reality game experience into the unknown. Created by Garrett Fuselier.">
+	<meta property="og:type" content="website">
+
+	
+	<meta property="og:image" content="https://host-vr.com/host-trailer-poster.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="720">
+	<meta property="og:video" content="https://d3ha2ra2lsrjy0.cloudfront.net/host-trailer-web.mp4">
+	<meta property="og:video:type" content="video/mp4">
+	<meta property="og:video:width" content="1920">
+	<meta property="og:video:height" content="1080">
+	
+	<meta name="twitter:site" content="@garrett3d">
+	<meta name="twitter:title" content="HOST VR">
+	<meta name="twitter:creator" content="@garrett3d">
+	<meta name="twitter:domain" content="host-vr.com">
+
+	<meta name="twitter:image" content="https://host-vr.com/host-trailer-poster.jpg">
+	
+	
+	<meta name="google-site-verification" content="GmdyAyN7hzyk92CB2D2_pZc34VO0nhDjihxBCaD8sq4">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+ </head>
+	<body>
+		<main>
+			<div class="cover-container">
+				<div class="bg-video">
+					<video playsinline="" autoplay="" muted="" loop="" id="video-player">
+						<source src="https://d3ha2ra2lsrjy0.cloudfront.net/host-web-background.mp4" type="video/mp4" poster="host-trailer-poster.jpg">
+					</video>
+				</div>
+					<div class="content">
+					<img src="images/host-logo.png" alt="HOST" id="host-logo" draggable="false">
+					<h2 class="glow">Phases One &amp; Two Out Now</h2>
+					<div id="cover-buttons">
+						<ul>
+							<li><a class="cover-button" id="watch-trailer-button" href="https://www.youtube.com/watch?v=v1X4xwVZKAQ" onclick="trackOutboundLink('https://www.youtube.com/watch?v=v1X4xwVZKAQ'); return false;">Watch Trailer</a></li>
+							<li><a class="cover-button" href="/presskit">Press Kit</a></li>
+
+							<li><a class="cover-button" id="experience-it-button">Experience It</a>
+								<ul>
+									<li><a class="cover-button" href="https://store.steampowered.com/app/828240/HOST/" onclick="trackOutboundLink('https://store.steampowered.com/app/828240/HOST/'); return false;">Steam VR</a></li>
+									<li><a class="cover-button" href="https://www.oculus.com/experiences/app/1904256272986594/" onclick="trackOutboundLink('https://www.oculus.com/experiences/app/1904256272986594/'); return false;">Oculus Store</a></li>
+									<li><a class="cover-button" href="https://www.viveport.com/apps/af111e95-e408-4bd6-a299-cee8bba00298" onclick="trackOutboundLink('https://www.viveport.com/apps/af111e95-e408-4bd6-a299-cee8bba00298'); return false;">VIVEPORT</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div id="footer">
+				<div id="footer-content">
+					<div id="left-column">
+						<p>When your spacecraft crashes on an unknown planet, you navigate your way through its dark and puzzling corridors. Using only your hands and your wits, will you discover your parasitic power before it's too late?</p>
+						<p><i>HOST</i> is a VR, sci-fi, linear, puzzle-adventure created by Garrett Fuselier.</p>
+						<p>Phases One &amp; Two now available in Early Access for VALVE Index, HTC VIVE, and Meta Quest Link</p> 
+					</div>
+
+					<div id="right-column">
+						<div id="email-signup">
+							<h3 class="glow">Sign up for updates</h3>
+							<!-- Begin MailChimp Signup Form -->
+							<div id="mail-subscribe-wrapper">
+								<div id="mc_embed_signup">
+									<form action="https://hostvrgame.us18.list-manage.com/subscribe/post?u=21974668c5512069ea9a6ede0&amp;id=a021ca69f2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate="">
+										<div id="mc_embed_signup_scroll">
+										
+											<div id="email-wrapper" class="mc-field-group subscribe-element">
+												<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address">
+											</div>
+										
+											<div id="mce-responses" class="clear">
+												<div class="response" id="mce-error-response" style="display:none"></div>
+												<div class="response" id="mce-success-response" style="display:none"></div>
+											</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+										
+											<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_21974668c5512069ea9a6ede0_a021ca69f2" tabindex="-1" value=""></div>
+											<div id="subscribe-wrapper" class="clear subscribe-element"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!--End mc_embed_signup--> 
+						</div>
+						<div id="contact">
+							<div id="links">
+								<a href="https://twitter.com/garrett3d" onclick="trackOutboundLink('https://twitter.com/garrett3d'); return false;">Twitter</a>
+								<a href="/privacy-policy">Privacy Policy</a>
+								<a href="/presskit">Press Kit</a>
+					
+								<a href="mailto:contact@host-vr.com">Contact</a>
+							</div>
+						</div>
+
+					</div>
+					<span id="copyright">© 2018 Garrett LLC</span>
+
+				</div>
+			</div>
+		</main>	
+    
+</body></html>

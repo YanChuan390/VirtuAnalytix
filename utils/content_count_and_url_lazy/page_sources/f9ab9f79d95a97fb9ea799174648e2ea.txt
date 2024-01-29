@@ -1,0 +1,1114 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="pointer skrollr skrollr-desktop"><head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id="customRules"></style><script async="" src="//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js"></script><script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        AjaxContainer: 'div.dmBody',
+        WrappingContainer: 'div.dmOuter',
+        HomeUrl: 'https://www.alzanstudios.com/',
+        AccountUUID: 'c2b607456110420fb9f88adfb1ffcab1',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '2dbac777',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Mon Sep 19 01:58:27 UTC 2022',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'privacy-policy',
+        InitialPageUuid: '410f2427711d4504b49efbe965f1701d',
+        InitialPageId: '1080410360',
+        InitialEncodedPageAlias: 'cHJpdmFjeS1wb2xpY3k=',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '6125',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'alzanstudios',
+        HasCustomDomain: true,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: 'W3sidGl0bGUiOiJIT01FIiwiYWxpYXMiOiJob21lIiwicGF0aCI6Ii8iLCJpbk5hdmlnYXRpb24iOnRydWUsInN1Yk5hdiI6W119LHsidGl0bGUiOiJBQk9VVCBVUyIsImFsaWFzIjoiYWJvdXQiLCJwYXRoIjoiL2Fib3V0IiwiaW5OYXZpZ2F0aW9uIjp0cnVlLCJzdWJOYXYiOltdfSx7InRpdGxlIjoiQ09OVEFDVCIsImFsaWFzIjoiY29udGFjdCIsInBhdGgiOiIvY29udGFjdCIsImluTmF2aWdhdGlvbiI6dHJ1ZSwic3ViTmF2IjpbXX0seyJ0aXRsZSI6IlBSRVNTIiwiYWxpYXMiOiJnYWxsZXJ5IiwicGF0aCI6Ii9nYWxsZXJ5IiwiaW5OYXZpZ2F0aW9uIjp0cnVlLCJzdWJOYXYiOltdfSx7InRpdGxlIjoiUHJpdmFjeSBQb2xpY3kiLCJhbGlhcyI6InByaXZhY3ktcG9saWN5IiwicGF0aCI6Ii9wcml2YWN5LXBvbGljeSIsImluTmF2aWdhdGlvbiI6ZmFsc2UsInN1Yk5hdiI6W119XQ==',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'https://www.alzanstudios.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '802',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 9;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="https://www.alzanstudios.com/privacy-policy">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Privacy Policy
+</title>
+
+<!--Add favorites icons-->
+
+<link rel="icon" type="image/x-icon" href="https://static.cdn-website.com/runtime/favicon_d1_res.ico">
+
+<!-- End favorite icons -->
+
+<link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin="">
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if(!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function() {
+            },
+            getCurrentDeviceType: function() {
+                return window._currentDevice;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+<!-- loadCSS function -->
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    cssLinks = null;
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if(link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      }  
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+    const defs={};
+    window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+    window.waitForDeferred = function (b, a, c) {
+      let d = window?.getDeferred?.(b);
+      d
+        ? d.promise.then(a)
+        : c && ["complete", "interactive"].includes(document.readyState)
+        ? setTimeout(a, 1)
+        : c
+        ? document.addEventListener("DOMContentLoaded", a)
+        : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function -->
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    cssLinks = null;
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if(link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      }  
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/fonts/css?family=Roboto:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Libre+Baskerville:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Josefin+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|ABeeZee:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Oswald:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&amp;subset=latin-ext&amp;display=swap">
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-new-->
+<link rel="stylesheet" type="text/css" href="https://static.cdn-website.com/mnlt/production/3716/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-new.min.css">
+
+<!-- End of RT CSS Include -->
+
+
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/WIDGET_CSS/production_3716/dcbfadb05f746384c25196efc224f6f6.css" id="widgetCSS">
+
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="privacy-policy"] #dm [data-show-on-page-only="privacy-policy"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/2dbac777/files/2dbac777_1.min.css?v=21" id="siteGlobalCss">
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style id="additionalGlobalCss" type="text/css">
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody nav.u_1049841281{
+color:black !important}
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-32, .size-32, .size-32 > font { font-size: 32px !important; }.font-size-32, .size-32, .size-32 > font { font-size: 32px !important; }.font-size-14, .size-14, .size-14 > font { font-size: 14px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+</style>
+
+
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+
+  <meta name="facebook-domain-verification" content="1ngtgbte2qqtda29cgkve4bmldcepe">
+
+  <meta name="twitter:card" content="summary">
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+<script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3716/editor/apps/modules/runtime/18.8d9b98557bf3839e9c87.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3716/editor/apps/modules/runtime/23.fe66fc7c29b5e63049b3.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3716/editor/apps/modules/runtime/1.38a874f31d2d8986b8b0.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3716/editor/apps/modules/runtime/7.9a94a74e30026a70bc4d.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3716/editor/apps/modules/runtime/runtime-module-anchors.8069350c1321599c430f.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3716/editor/apps/modules/runtime/3.837e97ee3698267e2a54.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3716/editor/apps/modules/runtime/5.a5af5a3b04156da9e174.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3716/editor/apps/modules/runtime/8.20c25f8b84fd357fa245.js"></script><script charset="utf-8" src="https://static.cdn-website.com/mnlt/production/3716/editor/apps/modules/runtime/22.3e5fa6c0d3f101e13242.js"></script></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="privacy-policy" class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody pcCustomScrollbar d1SiteBody dmBodyNoIscroll fullyLoaded" style="padding:0;margin:0;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class="dmwr">
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1553896148"> <div dmtemplateid="skinnyHeaderLayout" class="skinnyHeaderLayout dm-bfs dm-layout-sec rows-1200 dmPageBody dmFreeHeader d-page-1998958983 runtime-module-container" id="dm-outer-wrapper" data-page-class="1998958983" data-buttonstyle="ROUND_SIDES" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="722"> <div dm:templateorder="76" class="dmHeaderResp noSwitch" id="1261229135"> <div class="u_1484107106 dmRespRow dmDefaultListContentRow fullBleedChanged fullBleedMode" style="text-align:center" id="1484107106"> <div class="dmRespColsWrapper" id="1386077198"> <div class="u_1119639808 dmRespCol small-12 medium-12 large-12" id="1119639808"> <nav class="u_1049841281 effect-text-fill main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_7" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1049841281" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="https://irp-cdn.multiscreensite.com/2dbac777/dms3rep/multi/Logo_Cut_10x+Padded.png" data-nav-structure="SPLIT" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container left_nav " data-auto="navigation-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item dmUDNavigationItem_00" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         HOME
+        " data-auto="page-text-style">HOME<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/about" class="unifiednav__item dmUDNavigationItem_02" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         ABOUT US
+        " data-auto="page-text-style">ABOUT US<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+ <a class="middleLogoLink" href="/home"><img class="navLogo" id="navLogo" src="https://lirp.cdn-website.com/2dbac777/dms3rep/multi/opt/Logo_Cut_10x+Padded-1920w.png" alt="" onerror="handleImageLoadError(this)"></a> 
+ <ul role="menubar" class="unifiednav__container right_nav "> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/contact" class="unifiednav__item dmUDNavigationItem_03" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         CONTACT
+        " data-auto="page-text-style">CONTACT<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/gallery" class="unifiednav__item dmUDNavigationItem_01" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         PRESS
+        " data-auto="page-text-style">PRESS<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="desktopBodyBox"> <div id="iscrollBody"> <div id="site_content"> <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow dmInnerBarRow"> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar"> <div class="titleLine display_None"><hr></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"> <div class="innerPageTitle">Privacy Policy</div> 
+</div> 
+ <div class="titleLine display_None"><hr></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_privacy-policy"> <div id="allWrapper" class="allWrapper"> <div id="dm_content" class="dmContent"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1998958983"> <div class="innerPageTmplBox dmDefaultPage dmRespRowsWrapper dmRespRowsWrapperSize1" id="1386019082"> <div class="dmRespRow dmDefaultListContentRow" style="text-align:center" id="1171597044"> <div class="dmRespColsWrapper" id="1425637040"> <div class="large-12 medium-12 small-12 dmRespCol" id="1352849844"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1775100659" style="transition: opacity 1s ease-in-out 0s;"><p class="m-size-22 text-align-center size-32"><span class="m-font-size-22 font-size-32" style="display: initial; color: rgb(255, 255, 255);">Privacy Policy</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1623071084" style="transition: opacity 1s ease-in-out 0s;"><p class="text-align-left"><span style="display: initial;">PRIVACY POLICY</span></p><p class="text-align-left"><span style="display: initial;"><span class="ql-cursor">﻿</span></span></p><p class="text-align-left"><span style="display: initial;">Alzan Studios, Inc., for itself and on behalf of all current and future affiliates, subsidiaries, and partners (“Alzan Studios”) has established this privacy policy (the “Privacy Policy”) to describe how we collect, use, disclose and transfer the information you provide by accessing or using an Alzan Studio game or other application, the Alzan Studios website, Alzan Studios mobile applications or other Alzan Studios services on any virtual reality (“VR”) device, computer, mobile phone, tablet, console or other device (each a "Service" or the “Services”). While this Privacy Policy is intended to generally describe our privacy practices, more detailed or more specific information may be provided in conjunction with a particular Service that supplements the information available here.&nbsp; &nbsp;</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Unless otherwise stated, this Privacy Policy does not apply to information we obtain from third parties. By accessing or using a Service, you are indicating your acknowledgment of and acceptance of this Privacy Policy, which may be modified from time to time without notice to you. Please read it carefully, and do not use any of our Services if you do not agree to the terms of this Privacy Policy.&nbsp;</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">PERSONAL AND NON-PERSONAL INFORMATION</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">We may collect personal and non-personal information from you in the course of your use the Services. “Personal Information” is information you provide to us which personally identifies you, such as your name, physical address, email address, phone number, credit card number and type (but only where we are processing payments at your request), gameplay statistics and other gameplay information, password, age/birthday, parent status, phone number, social media identifiers, and email or other contact addresses.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Aggregated Non-Personal Information is different from Personal information. “Aggregated Non-Personal Information” is information about our users, their computers or devices and/or use of a Service that are collected into groups so that it no longer reflects or references an individually identifiable user. This information may include, without limitation, information about use of a Service, Web pages viewed or used, Service content accessed or used, IP addresses and device identifiers, information about hardware or software used to access a Service, user location information, page views, app usage, customization settings relating to a Service, and other types of information we collect that cannot reasonably be used to identify you personally. &nbsp;Alzan Studios may collect and use Aggregated Non-Personal Information to improve a Service or for any other reason, at its sole discretion.&nbsp;</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">For certain Services, you may be able to opt out of collection of Personal Information via customization options provided through the Service. Please review the documentation for the Service at issue to determine whether an opt out is possible and, where opt out is an option, to locate instructions for doing so.&nbsp; &nbsp; &nbsp; &nbsp;</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;"></span><span class="" style="display: initial;"><span style="display: initial;"><br> </span> 
+</span></p><p class="text-align-left"><span style="display: initial;">HOW WE COLLECT INFORMATION</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">Alzan Studios receives, stores, and processes information that you provide. Examples include when you: (i) purchase a game or register for a Service, (ii) fill in any form on one of our websites, apps or devices, (iii) purchase goods through a Service, (iv) sign up for email or text alerts, (v) link your account to a third party website (e.g. Facebook, Instagram, Amazon), (vi) post or share information on a Service, or (vii) contact us.</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Alzan Studios may automatically collect information from your use of a Service. For example, Alzan Studios may automatically collect your gaming device model and hardware data, browser type, operating system, CPU speed, referring or exit pages, click patterns, and computer’s IP address. Alzan Studios may also automatically collect general information about use of a Service, such as the pages or other content viewed, the order of pages or other content viewed, the frequency of access, the time spent on a Service or portions thereof, and other similar user statistics. Alzan Studios may also use cookies or pixel tags/web beacons or other information tracking technologies (collectively “Collection Tools”) to enable users to specify unique preferences and to track user trends and patterns. Users may have the option of disabling Collection Tools via their browser preferences or other customization options. If you disable Collection Tools, please note that some parts of a Service may not function or may be considerably slower. As an automatic process, Alzan Studios may record IP address information, but does not ordinarily link IP addresses to users’ Personal Information, other than for statistical analysis as needed. However, Alzan Studios can and will use IP addresses or other information to identify a user when we, in our sole discretion, determine that it is necessary to enforce compliance with the Alzan Studios’ policies or to protect a Service, customers or others.&nbsp;</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Alzan Studios may obtain information about you from third parties. For example, when you interact with us through a social media function such as a plug-in (e.g., a Facebook “like” button) then you may be permitting us to have on-going access to some information from your social network profile (such as your name, email address, your friend list, photo, age, gender, location, birthday, social networking ID, current city, the people/sites you follow, and so forth), to the extent allowed by your settings with the third party platform or site. We may also obtain information about you from a third-party data aggregator, cookie technology operator, advertising network, or another type of data company.</span></p><p class="text-align-left"><span style="display: initial; text-transform: uppercase; text-decoration: none;">&nbsp;</span></p><p class="text-align-left"><span style="display: initial;">TYPES OF INFORMATION WE MAY COLLECT</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Alzan Studios processes your personal information to meet our legal, statutory and contractual obligations and to provide you with our Services. We will never collect any unnecessary personal data from you and do not process your information in any way, other than as specified in this Privacy Policy.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">The personal data that we may collect includes:</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Name;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Address;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Email;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Telephone number;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IP address;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Financial data for product or service purchases;</span></p><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; browser type and version;</span> 
+</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; time zone setting and location;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; browser plug-in types and versions; and</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; operating system and platform.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">HOW COOKIES WORK</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">We may use cookies to track certain information and to improve your experience with the Services. A 'cookie' is a small piece of data sent from a website and stored on the user's computer by the user's web browser while the user is browsing. When you visit a site that uses cookies for the first time, a cookie is downloaded onto your computer/mobile device so that the next time you visit that site, your device will remember useful information such as items added in the shopping cart, visited pages or logging in options.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Cookies are widely used in order to make websites work, or to work more efficiently, and our site relies on cookies to optimize user experience and for features and services to function properly.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Most web browsers allow some control to restrict or block cookies through the browser settings. However, if you disable cookies you may find this affects your ability to use certain parts of our website or Services. For more information about cookies visit https://www.aboutcookies.org.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">HOW WE USE PERSONALLY IDENTIFYING INFORMATION ABOUT YOU</span></p><p class="text-align-left"><span style="display: initial; text-decoration: none;">&nbsp;</span></p><p class="text-align-left"><span style="display: initial;">Alzan Studios may use the information we collect about you for a variety of business purposes such as billing, identification, authentication, communication, and general research. For example, we may use that information to:</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; Provide a Service you have requested:</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; Create an account on a Service if you have requested one;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; Personalize a Service we offer and the advertising displayed through a Service;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; Respond to your inquiries, requests, and comments;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; Allow you to participate in the interactive features of a Service;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; Provide technical support for a Service;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; Understand how a Service is used so that we can improve a Service provided to users;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; Send you Service-related communications, including announcements and administrative messages;</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; Send you information about products, services and promotions relating to us or other companies or organizations that we work with; or</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; Combine the information we collect or receive about you for any of the foregoing purposes.</span></p><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">&nbsp;</span> 
+</span></p><p class="text-align-left"><span style="display: initial; text-transform: uppercase;">HOW LONG DO WE KEEP YOUR DATA?</span></p><p class="text-align-left"><span style="display: initial; text-transform: uppercase;">&nbsp;</span></p><p class="text-align-left"><span style="display: initial;">Alzan Studios only retains personal information for as long as is necessary. We keep personal information for as long as is required by applicable law. We keep your account information, like your name, email address, and password, for as long as your account is in existence because we need it to operate your account. Once you have canceled your account with us, any personally identifying information that you have disclosed through our Service will be retained for a period of 3 years after which it will be deleted. We also keep information about you and your use of the Services for as long as necessary for our legitimate business interests, for legal reasons, and to prevent harm. Alzan Studios may also de-identify data such that it is no longer associated with you and Alzan Studios may keep this anonymized data for as long as it chooses, in its sole discretion.&nbsp;</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial; text-transform: uppercase;">How You Can Protect Your Personal Information</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Certain Services provided by Alzan Studios may require password protection. Whether you are using a password to access our Services directly or through third-party platforms, your password is the key to your account. Use unique numbers, letters and special characters, and do not disclose your password to anyone. Alzan Studios will not contact you via email to ask for your username or password. If you do share your username and password or your Personal Information with others, remember that you are responsible for all actions taken in the name of your account. If your password has been compromised for any reason, you should immediately notify the entity you registered with to change your password. Please do not save your password on any public computers and remember to log out of your account on any shared devices to ensure another user does not provide, or obtain access to, your Personal Information.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Information that you share in forums, message boards, reviews, and suggestions or on any portion of a Service designed to allow you to communicate with other users, may be publicly accessible. Accordingly, the information you share may be read, collected or used by others, including Alzan Studios, for any purpose. Alzan Studios is not responsible for any information you share through publicly accessible portions of a Service or for the use of such information.</span></p><p class="text-align-left"><span style="display: initial;">&nbsp;</span></p><p class="text-align-left"><span style="display: initial;">FRAUD PREVENTION AND ANTI-CHEATING PROCEDURES</span></p><p class="text-align-left"><span style="display: initial;">Depending on the game or other Service you are using, Alzan Studios may utilize anti-cheating measures to ensure a fair gaming experience. Where these measures are in place, Alzan Studios strictly enforces prohibitions against cheating, hacking, account stealing, and any other unauthorized or fraudulent activity in connection with the Services. If you create an account with Alzan Studios, buy Alzan Studios products or services, play Alzan Studios’ games, or otherwise interact with the Alzan Studios on or through the Alzan Studios services, we may use a variety of anti-cheat and fraud prevention technologies to help us identify and prevent malicious activity. These services may collect and analyze data about the game or your computer or other device to detect cheating and may be provided by Alzan Studios or by third parties.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial; text-transform: uppercase;">YOUR RIGHTS WITH RESPECT TO INFORMATION</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">If your jurisdiction provides you with the right to do so, and if you believe that we hold any incomplete or inaccurate data about you, you have the right to ask us to correct and/or complete the information and we will strive to do so as quickly as reasonably possible, unless there is a valid reason for not doing so, at which point you will be notified.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">If you reside in a jurisdiction that allows you to request erasure of your personal data, to restrict processing, or to object to any direct marketing from us, we will do so at your request for any information we are not legally required to keep. Where applicable, you may also have the right to data portability of your information and the right to be informed about any automated decision-making we may use.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">If we receive a request from you to exercise any of the above rights, we may ask you to verify your identity before acting on the request; this is to ensure that your data is protected and kept secure. Please direct all requests relating to obtaining copies of and/or deleting your personal data to ACMaier@AlzanStudios.com.&nbsp;</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial; text-transform: uppercase;">E-mail Requests for Information</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">We may use links on a Service to provide you with the opportunity to contact us via e-mail or through other means to ask questions, request information, register or provide comments and suggestions. We may send you an email or text message as part of the registration verification process or to assist you in recovering a password at your request. &nbsp;However, we will never contact you via email to ask you for credit card information, bank account numbers or other sensitive financial information.&nbsp;</span></p><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;"><br> MAKING A COMPLAINT</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">Alzan Studios only processes your personal information in compliance with this Privacy Policy and in accordance with the relevant data protection laws. If, however, you wish to raise a complaint regarding the processing of your personal data or are unsatisfied with how we have handled your information, please contact us using the information provided in the “Contacting Us” section of this Privacy Policy.</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span class="" style="display: initial; text-transform: uppercase;"><span style="display: initial; text-transform: uppercase;">Links to Other Sites</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">Alzan Studios is not responsible for the privacy practices or the content of any other web sites to which a Service links or which link to a Service. By clicking on a link, logo, advertisement or other item, please note that you may no longer be on a Service controlled by Alzan Studios. If the Service is being delivered through a browser, you can check what Internet site you are on by viewing the URL at the top and/or bottom of your browser. We encourage you to read the posted privacy statement of each new site or other service you are using at that time, as this Privacy Policy may not apply to such services.</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">YOUR RIGHTS WITH RESPECT TO PERSONAL INFORMATION</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Certain jurisdictions such as the European Union and the State of California provide you with additional rights relating to your personal data. If your jurisdiction provides you with the right to do so, you may ask Alzan Studios to provide you with access to the personal information that Alzan Studios processes about you and to request information about:</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; What personal data we hold about you</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The purposes of the processing</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The categories of personal data concerned</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The recipients to whom the personal data has/will be disclosed</span></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; How long we intend to store your personal data for</span></p><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; If we did not collect the data directly from you, information about the source of data we receive</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">WHO DO WE SHARE YOUR PERSONAL INFORMATION WITH?&nbsp;</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">We do not share or disclose any of your personal information without your consent, other than for the purposes specified in this Privacy Policy or where there is a legal requirement. In order to complete your order we may need to share some of your personal information with some fulfilment partners and couriers. Any processors acting on our behalf only process your data in accordance with instructions from us and comply fully with this Privacy Policy, applicable data protection laws and any other appropriate confidentiality and security measures. Examples of how your information may be shared are:</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Corporate affiliates and change of control: We may share your personal information with our corporate affiliates and if Alzan Studios itself (or part of its business) is sold or otherwise changes control, owners would have access to your personal information for the uses set out herein.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Service providers: We may share your personal information with suppliers who perform services on our behalf and have agreed in writing to protect and not further disclose your information.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Payment service providers and vendors: If you order through our website, we may share your personal information with the payment service providers such as PayPal that you have ordered through. These third parties will process your personal information as data controllers in accordance with their own privacy policies. If you contact our consumer support, they may need to share information about your request with the relevant travel vendor in order to assist you.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Business partners: We may share your personal information with various business partners with whom we may jointly offer products or services, or whose products or services may be offered on our website. Some of these business providers may include, Amazon, Inc., Facebook, Inc., Mailchimp, and their subsidiaries and affiliates. These business partners may use your personal information for online behavioral advertising purposes, or to offer you services or products that we believe you may be interested in. We may also share your information as otherwise described to you at the time of collection. For example, if you provide information to enter a sweepstakes, we may share your information with the promotional partners. We may also share anonymous aggregated usage information with partners.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Information shared in public: If you provide us a review of our products or services, you authorize us to publish it on all our web sites under the screen name you provided. You also authorize us to aggregate it with other reviews.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">•&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Authorities: We may disclose personal information if required by law, for example to law enforcement or other authorities. This includes court orders, subpoenas and orders arising from legal processes, and administrative or criminal investigations. We may also disclose your personal information if the disclosure is necessary for the prevention, detection or prosecution of criminal acts or to prevent other damage, or in response to a legal action or to enforce our rights and claims.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span class="" style="display: initial; text-transform: uppercase;"><span style="display: initial; text-transform: uppercase;">Security</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">We treat data as an asset that must be protected and use tools (secure socket layer (SSL) encryption, passwords, physical security, etc.) to protect your Personal Information against unauthorized access and disclosure. However, as you probably know, third parties may unlawfully intercept or access transmissions or private communications, and other users may abuse or misuse your Personal Information that they collect from a Service. We will use all commercially reasonable methods to keep Personal Information securely in our files and systems. Please note that with current technology, we cannot guarantee the security of your data from all possible attacks or intrusions on our servers or guarantee the security of your data as it travels over the Internet. Thus, you hereby release Alzan Studios from liability for any such possible attacks or intrusions that might compromise the security of your data.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial; text-transform: uppercase;">Children</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">We do not use our Services to intentionally collect personal information from children without seeking any required parental approval in accordance with applicable legal and regulatory obligations, such as the U.S. Children’s Online Privacy Protection Act (“COPPA”). If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us at ACMaier@AlzanStudios.com. After notification, we will delete such information from our files within a reasonable time.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial; text-transform: uppercase;">Governing Law and International Users</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Unless otherwise stated in the Service, each Service is controlled, operated and administered by Alzan Studios from its offices within the United States of America and this Privacy Policy is provided in accordance with and subject to applicable U.S. law. If you are based outside the United States and decide to access a Service from your location outside of the United States, you hereby agree to be subject to this Notice and waive all privacy-related rights in other jurisdictions that conflict with U.S. law or this Privacy Policy.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">The terms of this Privacy Policy are governed by and in accordance with the laws of the State of Florida in the United States of America. You should not provide us with any Personal Information unless you consent to the application of United States law and, where applicable, Florida law, and to the use and disclosure of your information in accordance with the terms of this Privacy Policy.</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span class="" style="display: initial; text-transform: uppercase;"><span style="display: initial; text-transform: uppercase;">Contacting Us</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Please contact us if you have any questions about this Privacy Policy or if you believe Alzan Studios has not complied with this Privacy Policy with respect to your information by email at: ACMaier@AlzanStudios.com</span><span class="" style="display: initial;"><span style="display: initial;"><br> </span> 
+</span><span class="" style="display: initial;"><span style="display: initial;"><br> </span> 
+</span></p><p class="text-align-left"><span style="display: initial;">CHANGES TO THIS PRIVACY POLICY</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span class="" style="display: initial;"><span style="display: initial;">Please note that this policy may be amended from time to time without notice to you. You should check back for the most current version before relying on any of the provisions in this Privacy Policy as each update or amendment applies to your continued use of any Service we provide.</span> 
+</span></p><p class="text-align-left"><br></p><p class="text-align-left"><span style="display: initial;">Last Updated: September 4, 2020</span></p><p><br></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="14" class="dmFooterResp dmFullFooterResp" id="1602863267"> <div class="dmRespRow dmDividerRow" id="1314492676"> <div class="dmRespColsWrapper" id="1735367830"> <div class="large-12 medium-12 small-12 dmRespCol" id="1209666878"> <div class="dmDividerWrapper clearfix" id="1776315408" data-element-type="dDividerId"><hr class="dmDivider defaultDivider" id="1180913438"></div> 
+</div> 
+</div> 
+</div> 
+ <section class="u_1012004961 dmRespRow dmHomeSection3" id="1012004961"> <div class="dmRespColsWrapper" id="1173737147"> <div class="dmRespCol small-12 medium-12 large-12" id="1621753569"> <div class="u_1199030155 default dmSocialHub" id="1199030155" dmle_extension="social_hub" data-element-type="social_hub" wr="false" networks="" icon="false" surround="false"> <div class="socialHubWrapper"> <div class="socialHubInnerDiv vertical"> <a href="https://twitter.com/Alzan_Studios" target="_blank" dm_dont_rewrite_url="true" aria-label="twitter" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event('socialLink', 'click', 'Twitter')"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="mailto:Info@AlzanStudios.com" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event('socialLink', 'click', 'Email')" target="_blank"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+ <a href="https://www.youtube.com/channel/UCYm45qLolz1zlcZQOdIOVMg" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event('socialLink', 'click', 'Youtube')"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect="zoomout"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+ <div class="dmRespRow dmFooterContent" id="1287975267"> <div class="dmRespColsWrapper" id="1562264047"> <div class="dmRespCol large-12 medium-12 small-12 dmFooterCol" id="1207772639"> <h3 class="dmFooterDefaultH3" id="1021107606">Follow Us</h3> 
+ <div class="dmNewParagraph" id="1766957055"><div style="text-align: center;"><span style="font-weight: 400; font-family: 'Libre Baskerville';" class="size-14 lh-1"><i>Copyright © 2020 Alzan Studios, LLC. All Rights Reserved</i></span></div></div></div> 
+</div> 
+</div> 
+ <div id="1482260810" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "24..38";
+    var build = "2023-08-30T06_49_40";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2023-08-30T06_49_40";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+    <script type="text/javascript" id="d-js-jquery" src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+    <!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id="d-js-params">
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/3716';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/3716';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.photoswipe.fix"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["feature.flag.addTargetBlankToExternalLinks"] =true;
+    rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtCommonProps["keyboard.navigation.enabled"] =true;
+    rtCommonProps["scripts.widgetCount.enabled"] =true;
+    rtCommonProps["maps.cookiebot.enabled"] =true;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'here';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtCommonProps["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtCommonProps["ecom.ecwid.fixFacebookLink"] = true;
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["runtime.save.restore.function.bind"] =true;
+    rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+    rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+    rtCommonProps["new.store.accountPage.ecwid.resetPassword.fix"] =true;
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+    rtCommonProps["geocode.search.localize"] =false;
+    rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.contact.form.fix.for.attribute"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["contact.form.date.format.enabled"] = true;
+    rtCommonProps["filestack.uploadToTempBucket.enabled"] = true;
+    rtCommonProps["platform.monolith.loginBar.getUserLoggedIn.enabled"] = true;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/3716/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js" id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/3716/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js"></script>
+<script>jQuery.DM.updateWidthAndHeight();
+$(window).resize(function () {
+    
+});
+$(window).bind("orientationchange", function (e) {
+    $.layoutManager.initLayout();
+    
+});
+$(document).resize(function () {
+    
+});
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript">
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+  
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '2dbac777'
+});
+
+dmsnowplow('trackPageView')
+$.each(_dm_insite, function(idx, rule) {
+	//('trackStructEvent', 'category','action','label','property','value');
+			// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+	        // the tracking is in popup.js
+			if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+ 			$(document).ready(function(){
+ 				$.DM.events.trigger('event-ruleTriggered', {value: rule})}
+ 			);
+ 		});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root" data-locale="en"></div>
+<!-- Alias: 2dbac777 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+// Collects client data and updates cookies used by smart sites
+var expireDays = 365,visitLength = 30 * 60000;
+$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+function setSmartSiteCookies() {
+	setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+}
+$.DM.events.on("afterAjax", setSmartSiteCookies);
+setSmartSiteCookies();
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<script>
+    jQuery(window).on('load', function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+    });
+</script>
+<script>
+    dmAPI.loadScript(
+        window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+        function () {
+            dmAPI.runOnReady('lozadInit', function () {
+                window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                    img.addEventListener('load', function (event) {
+                        var img = event.target;
+                        img.style.filter = 'blur(0)';
+                        setTimeout(function () {
+                            $(img).closest('.imageWidget').addClass('lazyLoaded');
+                        }, 250)
+                    });
+                });
+                lozad('.lazy', {
+                    threshold: 0.1,
+                    loaded: function (element) {
+                        if (element.getAttribute('data-background-image')) {
+                            element.style.setProperty(
+                                'background-image',
+                                "url('" + element.getAttribute('data-background-image') + "')",
+                                "important"
+                            );
+                        }
+                    }
+                }).observe();
+            });
+        }
+    );
+</script>
+<!--  End Script tags -->
+
+<!--  Begin Body End Markup -->
+<meta name="facebook-domain-verification" content="1ngtgbte2qqtda29cgkve4bmldcepe"><!--  End Body End Markup -->
+
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+
+
+</body></html>

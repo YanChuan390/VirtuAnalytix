@@ -1,0 +1,839 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en" style=""><head><meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>GameWork Studios</title>
+  <meta name="description" content="Gamework; develops mobile and desktop games; is a digital game studio with its staff specialized in gamification, design, music and screenplay.">
+  <meta name="keywords" content="game, digital game, mobile game, computer games,&nbsp;multiplex, virtual reality, augmented reality">
+  <meta name="author" content="Emre Erol, emreerol@gameworkstudios.com ">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/content/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/content/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/content/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/content/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/content/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/content/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/content/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/content/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/content/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/content/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/content/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/content/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/content/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/content/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/content/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/owl.carousel.css">
+  <link rel="stylesheet" href="/css/owl.transitions.css">
+  <link rel="stylesheet" href="/css/meanmenu.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/icon.css">
+  <link rel="stylesheet" href="/css/flaticon.css">
+  <link rel="stylesheet" href="/css/magnific.min.css">
+  <link rel="stylesheet" href="/css/venobox.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-DE9Q7HV1CB&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/0hCdE87LyjzAkFO5Ff-v7Hj1/recaptcha__zh_cn.js" crossorigin="anonymous" integrity="sha384-nvvERczED3KjSxZfEFFVT2H6DgamVMjw61V5MHFkDryTDTBoWFoG/24MiImPw34y"></script><script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+	<body>
+		<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		
+<header class="header-one">
+    <div id="sticker" class="header-area hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+    <div class="logo">
+        <a class="navbar-brand page-scroll sticky-logo" href="/">
+            <img src="/content/logo.png" alt="GameWork Studios Logos">
+        </a>
+    </div>
+</div>
+                <div class="col-md-9 col-sm-9">
+                    <div class="header-right-link">
+                        <!-- search option start
+                        <form action="#">
+                            <div class="search-option">
+                                <input type="text" placeholder="Search...">
+                                <button class="button" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                            <a class="main-search" href="#"><i class="fa fa-search"></i></a>
+                        </form>
+                         search option end -->
+                    </div>
+                    <nav class="navbar navbar-default">
+    <div class="collapse navbar-collapse" id="navbar-example">
+        <div class="main-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a class="pagess" href="#">Who Are We?</a>
+                  <ul class="sub-menu">
+                    <li><a href="/About">About Us</a></li>
+                    <li><a href="/Team">Team</a></li>
+                    <li><a href="/Privacy-Policy">Privacy Policy</a></li>
+                  </ul>
+                </li>                
+                <li><a class="pagess" href="/Games">Games</a></li>
+                <li><a class="pagess" style="color:#EC9123 !important;" href="/Be-A-Game-Tester/Begin">Be A Game Tester</a></li>
+                <li><a class="pagess" href="/Devlog">Dev Log</a></li>
+                <li><a href="/Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mobile-menu">
+                    <div class="logo">
+                        <a href="/"><img src="/content/logo.png" alt="GameWork Studios Logo"></a>
+                    </div>
+                    <nav id="dropdown" style="display: block;">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a class="pagess" href="#">Who We Are?</a>
+                              <ul class="sub-menu">
+                                <li><a href="/About">About Us</a></li>
+                                <li><a href="/Team">Team</a></li>
+                                <li><a href="/Privacy-Policy">Privacy Policy</a></li>
+                              </ul>
+                            </li>
+                            <li><a class="pagess" href="/Games">Games</a></li>
+                            <li><a class="pagess" style="color:#EC9123 !important;" href="/Be-A-Game-Tester/Begin">Be A Game Tester</a></li>
+                            <li><a class="pagess" href="/Devlog">Devlog</a></li>
+                            <li><a href="/Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+  <div class="intro-area">
+      <div class="intro-carousel owl-carousel owl-theme owl-loaded">
+                  
+                    
+                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-4076px, 0px, 0px); transition: all 0.25s ease 0s; width: 6114px;"><div class="owl-item cloned" style="width: 1019px; margin-right: 0px;"><div class="intro-content">
+              <div class="slider-images">
+                <img src="content/slider/sl2.png" alt="All Games Are Funny">
+              </div>
+              <div class="slider-content">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 text-center">
+                              <!-- layer 1 -->
+                              <div class="layer-1-2">
+                                  <h1 class="title2">All Games Are Funny</h1>
+                              </div>
+                              <div class="layer-1-1 hidden-xs">
+                                  <p>We're doing the best we can, because we are love our job!</p>
+                              </div>
+                              <!-- layer 3 -->
+                              <div class="layer-1-3">
+                                  <a href="https://gameworkstudios.com/Games" class="ready-btn">Know more</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div></div><div class="owl-item cloned" style="width: 1019px; margin-right: 0px;"><div class="intro-content">
+              <div class="slider-images">
+                <img src="content/slider/sl1.png" alt="GameWork Studios">
+              </div>
+              <div class="slider-content">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 text-center">
+                              <!-- layer 1 -->
+                              <div class="layer-1-2">
+                                  <h1 class="title2">GameWork Studios</h1>
+                              </div>
+                              <div class="layer-1-1 hidden-xs">
+                                  <p>We are preparing funny games.</p>
+                              </div>
+                              <!-- layer 3 -->
+                              <div class="layer-1-3">
+                                  <a href="https://gameworkstudios.com/About" class="ready-btn">Know more</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div></div><div class="owl-item" style="width: 1019px; margin-right: 0px;"><div class="intro-content">
+              <div class="slider-images">
+                <img src="content/slider/sl2.png" alt="All Games Are Funny">
+              </div>
+              <div class="slider-content">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 text-center">
+                              <!-- layer 1 -->
+                              <div class="layer-1-2">
+                                  <h1 class="title2">All Games Are Funny</h1>
+                              </div>
+                              <div class="layer-1-1 hidden-xs">
+                                  <p>We're doing the best we can, because we are love our job!</p>
+                              </div>
+                              <!-- layer 3 -->
+                              <div class="layer-1-3">
+                                  <a href="https://gameworkstudios.com/Games" class="ready-btn">Know more</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div></div><div class="owl-item" style="width: 1019px; margin-right: 0px;"><div class="intro-content">
+              <div class="slider-images">
+                <img src="content/slider/sl1.png" alt="GameWork Studios">
+              </div>
+              <div class="slider-content">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 text-center">
+                              <!-- layer 1 -->
+                              <div class="layer-1-2">
+                                  <h1 class="title2">GameWork Studios</h1>
+                              </div>
+                              <div class="layer-1-1 hidden-xs">
+                                  <p>We are preparing funny games.</p>
+                              </div>
+                              <!-- layer 3 -->
+                              <div class="layer-1-3">
+                                  <a href="https://gameworkstudios.com/About" class="ready-btn">Know more</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div></div><div class="owl-item cloned active" style="width: 1019px; margin-right: 0px;"><div class="intro-content">
+              <div class="slider-images">
+                <img src="content/slider/sl2.png" alt="All Games Are Funny">
+              </div>
+              <div class="slider-content">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 text-center">
+                              <!-- layer 1 -->
+                              <div class="layer-1-2">
+                                  <h1 class="title2">All Games Are Funny</h1>
+                              </div>
+                              <div class="layer-1-1 hidden-xs">
+                                  <p>We're doing the best we can, because we are love our job!</p>
+                              </div>
+                              <!-- layer 3 -->
+                              <div class="layer-1-3">
+                                  <a href="https://gameworkstudios.com/Games" class="ready-btn">Know more</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div></div><div class="owl-item cloned" style="width: 1019px; margin-right: 0px;"><div class="intro-content">
+              <div class="slider-images">
+                <img src="content/slider/sl1.png" alt="GameWork Studios">
+              </div>
+              <div class="slider-content">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12 text-center">
+                              <!-- layer 1 -->
+                              <div class="layer-1-2">
+                                  <h1 class="title2">GameWork Studios</h1>
+                              </div>
+                              <div class="layer-1-1 hidden-xs">
+                                  <p>We are preparing funny games.</p>
+                              </div>
+                              <!-- layer 3 -->
+                              <div class="layer-1-3">
+                                  <a href="https://gameworkstudios.com/About" class="ready-btn">Know more</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="icon icon-chevron-left"></i></div><div class="owl-next" style=""><i class="icon icon-chevron-right"></i></div></div><div class="owl-dots" style="display: none;"></div></div></div>
+  </div>
+  <div class="product-area bg-color-1 area-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline white-headline text-center">
+                    <h3>Our Games</h3>
+                    <p>Our last released funny games.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="best-product">
+  
+    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="single-product">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="product">
+                                <div class="product-img">
+                                    <span class="category">
+                                      Windows&nbsp;                                    </span>
+                                    <img class="first-img" src="content/gameImages/8740b9dd2e1c65b8fbde452f26b2fa122020091319_19_54.png" alt="Hurry Up!">
+                                                                          <a href="https://www.youtube.com/watch?v=IAdCOvkhhK8" class="video-play vid-zone">
+                                        <i class="fa fa-play"></i>
+                                      </a>
+                                                                      </div>
+                            </div>
+                        </div>
+                        <!-- Start product content -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="product-content text-center">
+                                <h4 class="product-name">
+                                  <a href="/Games/11/hurry-up!">Hurry Up!</a>
+                                </h4>
+                                <div class="launch-date">
+                                    <span>Launch: 2020/09/13</span>
+                                </div>
+                                    <!--
+                                <div class="pro-rating no-rating">
+                                    <span class="rating-rate"> Rating: 4.5</span>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                </div>
+                                -->
+                                <div class="download-btn">
+                                  <a href="https://store.steampowered.com/app/1323200/Hurry_Up/" target="_blank" class="play-btn left-btn"><img src="img/icon/windows.png" alt=""></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End product content -->
+                    </div>
+                </div>
+
+    
+    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="single-product">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="product">
+                                <div class="product-img">
+                                    <span class="category">
+                                      Android&nbsp;iOS&nbsp;                                    </span>
+                                    <img class="first-img" src="content/gameImages/c906b37899d3fea73f8bc3b6c389d93e2020020817_18_44.png" alt="Multiplex">
+                                                                          <a href="https://www.youtube.com/watch?v=P1bi_9y1dRU" class="video-play vid-zone">
+                                        <i class="fa fa-play"></i>
+                                      </a>
+                                                                      </div>
+                            </div>
+                        </div>
+                        <!-- Start product content -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="product-content text-center">
+                                <h4 class="product-name">
+                                  <a href="/Games/6/multiplex">Multiplex</a>
+                                </h4>
+                                <div class="launch-date">
+                                    <span>Launch: 2020/02/13</span>
+                                </div>
+                                    <!--
+                                <div class="pro-rating no-rating">
+                                    <span class="rating-rate"> Rating: 4.5</span>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                </div>
+                                -->
+                                <div class="download-btn">
+                                  <a href="https://play.google.com/store/apps/details?id=com.Gameworks.Multiplex" target="_blank" class="play-btn left-btn"><img src="img/icon/android.png" alt=""></a><a href="https://play.google.com/store/apps/details?id=com.Gameworks.Multiplex" target="_blank" class="play-btn left-btn"><img src="img/icon/ios.png" alt=""></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End product content -->
+                    </div>
+                </div>
+
+    
+    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="single-product">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="product">
+                                <div class="product-img">
+                                    <span class="category">
+                                      Android&nbsp;iOS&nbsp;                                    </span>
+                                    <img class="first-img" src="content/gameImages/368946c29736dffa98458b39cd2acf9c2020020817_42_52.png" alt="PIO">
+                                                                          <a href="https://www.youtube.com/watch?v=LIdCRCQa3jM" class="video-play vid-zone">
+                                        <i class="fa fa-play"></i>
+                                      </a>
+                                                                      </div>
+                            </div>
+                        </div>
+                        <!-- Start product content -->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="product-content text-center">
+                                <h4 class="product-name">
+                                  <a href="/Games/7/pio">PIO</a>
+                                </h4>
+                                <div class="launch-date">
+                                    <span>Launch: 2020/02/13</span>
+                                </div>
+                                    <!--
+                                <div class="pro-rating no-rating">
+                                    <span class="rating-rate"> Rating: 4.5</span>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                </div>
+                                -->
+                                <div class="download-btn">
+                                  <a href="https://play.google.com/store/apps/details?id=com.GameWork.Jump&amp;showAllReviews=true" target="_blank" class="play-btn left-btn"><img src="img/icon/android.png" alt=""></a><a href="https://play.google.com/store/apps/details?id=com.GameWork.Jump&amp;showAllReviews=true" target="_blank" class="play-btn left-btn"><img src="img/icon/ios.png" alt=""></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End product content -->
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </div>
+</div>
+  <div class="blog-area bg-color-1 area-padding-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="section-headline white-headline text-center">
+                    <h3>Games News &amp; Blog Articles</h3>
+                    <p>Last five published blog articles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="blog-grid">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="blog-right-column">
+                                                    <div class="single-blog">
+                                <div class="blog-image">
+                                    <a class="image-scale" href="/Devlog/Article/22/hurry-up!">
+                                        <img src="/content/blogImages/thumbMid_9389193377198d16ccb950acc0ab45f32020091319_51_41.png" alt="Hurry Up!">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="date-type">
+                                          13 Sep, 2020                  											</span>
+                                    </div>
+                                    <a href="/Devlog/Article/22/hurry-up!">
+                                        <h4>Hurry Up!</h4>
+                                    </a>
+                                    <p> Hurry Up! is a basic funny game for spent enjoyable times with your friends. We hope you will find the...</p>
+                                </div>
+                            </div>
+                                                      <div class="single-blog">
+                                <div class="blog-image">
+                                    <a class="image-scale" href="/Devlog/Article/21/new-game">
+                                        <img src="/content/blogImages/thumbMid_ae5814f7cdda5806f7832932d6f63a732020021613_37_51.png" alt="New Game">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="date-type">
+                                          16 Feb, 2020                  											</span>
+                                    </div>
+                                    <a href="/Devlog/Article/21/new-game">
+                                        <h4>New Game</h4>
+                                    </a>
+                                    <p> We have a surprise for you! GameWork working on a new game for you. We do not know what will...</p>
+                                </div>
+                            </div>
+                                                      <div class="single-blog">
+                                <div class="blog-image">
+                                    <a class="image-scale" href="/Devlog/Article/20/bug-fix-for-pio">
+                                        <img src="/content/blogImages/thumbMid_1387ce0e563653020ec3170f3527144a2020021613_17_57.png" alt="Bug Fix For PIO">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="date-type">
+                                          04 Feb, 2020                  											</span>
+                                    </div>
+                                    <a href="/Devlog/Article/20/bug-fix-for-pio">
+                                        <h4>Bug Fix For PIO</h4>
+                                    </a>
+                                    <p> Our research and off course with your feedbacks, we are detecting troubles. After working on this topic, we decided that...</p>
+                                </div>
+                            </div>
+                                              </div>
+                </div>
+                <!-- End single blog -->
+                <!-- Start single blog -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                                      <div class="single-blog">
+                        <div class="blog-image">
+                            <a class="image-scale" href="#">
+                                <img src="/content/blogImages/thumbMid_b86ffa59c9d8db7c016e06da418c93ad2020021415_53_01.png" alt="PIO Released!">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="date-type">
+                                  04 Feb, 2020            										</span>
+                            </div>
+                            <a href="#">
+                                <h4>PIO Released!</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End single blog -->
+                <!-- Start single blog -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                                      <div class="single-blog">
+                        <div class="blog-image">
+                            <a class="image-scale" href="#">
+                                <img src="/content/blogImages/thumbMid_c740ab1c411c8eb8879a190d87d3dc0a2020021613_02_16.png" alt="New Levels For Multiplex">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="date-type">
+                                  04 Feb, 2020            										</span>
+                            </div>
+                            <a href="#">
+                                <h4>New Levels For Multiplex</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End single blog -->
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-content">
+                       <div class="footer-head">
+                            <h4>Information</h4>
+                            <p>
+                                Are you looking for professional games services for your new games.
+                            </p>
+                            <div class="footer-contacts">
+                                <p><span>Tel :</span> +90 216 9999 648</p>
+                                <p><span>Email :</span> info@codeworkagency.com</p>
+                                <p><span>Location :</span> 19 Mayıs Mahallesi, Sümer Sokak, Sümko Sitesi, M7-B Kat:10 Daire 43 Kadıköy <span>İstanbul - Türkiye</span></p>
+                            </div>
+                            <div class="footer-icons">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/GameWork-Studios-111112143718816/">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/StudiosGamework">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UCMXQLajiMfnhxblJ86OhnEQ">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://tr.pinterest.com/gameworkstudios/">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/gameworkstudiosint">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-content">
+                        <div class="footer-head">
+                            <h4>Links</h4>
+                            <div class="footer-services-link">
+                                <ul class="footer-list">
+                                  <li><a href="/About">About Us</a></li>
+                                  <li><a href="/Team">Team</a></li>
+                                  <li><a href="/Privacy-Policy">Privacy Policy</a></li>
+                                  <li><a href="/Games">Games</a></li>
+                                  <li><a href="/Contact">Contact</a></li>
+                                </ul>
+                                <ul class="footer-list">
+                                  <li><a href="/Games/7/pio">PIO</a></li>
+                                  <li><a href="/Games/6/multiplex">Multiplex</a></li>
+                                  <li><a href="/Games/4/degeneration">Degeneration</a></li>
+                                  <li><a href="/Games/8/ela's-happiness-of-life">Ela's Happiness Of Life</a></li>                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-content last-item">
+                        <div class="footer-head">
+                            <h4>Subscribe</h4>
+                            <p>
+                                Are you looking for professional games services for your new games. Are you looking for professional developer for your new games.
+                            </p>
+                            <div class="subs-feilds">
+                                <div class="suscribe-input">
+                                    <input type="email" class="email form-control width-80" id="sus_email" placeholder="Type Email">
+                                    <button type="button" id="sus_submit" class="add-btn">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+            </div>
+        </div>
+    </div>
+    <!-- End footer area -->
+    <div class="footer-area-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="copyright">
+                        <p>
+                            Copyright © 2020
+                            <a href="https://www.codeworkagency.com/">Codework Digital Agency</a> All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><input type="hidden" id="recaptchaAlan" value="03AFcWeA4q3g0FejDqn3HRyyHp4W5wF6QYrwvPaNt4FPLG4SKzITC2lGK2a1h7xsx8X6WJ-zvC562_5iZsHt7WHDhwa8WvBHNJanmKXt8omLoQfRURafljFHAciwI2AJV4PwW8OUff5mkPZLPrs-8XtEXWQXtFVaKz3RFHXCoYIaMX1jsAKqnggeT1XtfEEqXTyNaLzsVe6xoVPvuQm-twOY-dsO4Ww0nSle3ariOJs-p4LCNKQqYE2-z7_q_hP7f-6F_PGkoCp_7hWTgX_pf9Ci8wH2j80rv77rUzogC2FwhhbublXrNIzQNozuB3NRq5amUldUG3Kjb_Bu7Vl0eoNGJ7NLKsGR0hK7wqozGAjBBWvq8YHfEx_J1Lo3XnLl4r_R-3ThXezYh36XHu1qRVDynWDADtlnw9CvwrKYMX7A-ItuIB7Mv2MKC_m6UKGm2fpnKjaCtYIAvjOsCk4tznZnqB7Ck9Magutcl7QvuZnXvRvHBnq6DuVwsanv-vNMl86gO1oBA6UZ2dpPMi4FEnsXwlg9xwYyjHPQiGjuCoKwvIlbWucIHmK-8Xza5FSaWXw1H7SNGK_D4U88SaoFn4jANkcLBNGwm3MniFNfrcJQ-vFv13UzpFZmQB2OxXF23sf-8DNrKl1tg0">
+<script src="https://www.google.com/recaptcha/api.js?render=6LdZI9oUAAAAADekdtosbTU5bsx7ua1zIN34jxND"></script>
+<script src="/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+<script src="/js/magnific.min.js"></script>
+<script src="/js/venobox.min.js"></script>
+<script src="/js/jquery.meanmenu.js"></script>
+<script src="/js/form-validator.min.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script><a id="scrollUp" href="#top" style="display: none; position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+<script src="/js/ajax.js"></script>
+<script>
+$(document).ready(function(){
+    $("#search").on("click",function(){
+        var s_word = $("#searchField").val();
+        if (s_word.trim()){
+            window.location.href="/Devlog/Search/"+encodeURIComponent(s_word);
+        }
+    });
+});
+</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-159996719-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159996719-1');
+</script>
+			<!--
+			<div class="modal" tabindex="-1" role="dialog" id="hiringModal">
+				<div class="modal-dialog modal-dialog-centered" style="margin-top:120px !important" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">HIRING !</h5>
+	
+					</div>
+					<div class="modal-body">
+						<p>We are looking for new team members!</p>
+						<p><b>Senior Unity Developers</b>, <b>3D Artists</b> and <b>Game Designers</b> plase contact us!</p>
+						<br>
+						<p><a href="mailto:hiring@gameworkstudios.com">hiring@gameworkstudios.com</a></p>
+						<br>
+						<p>Work Location: Istanbul / Turkey</p>
+					</div>
+					<div class="modal-footer">
+						<a href="mailto:hiring@gameworkstudios.com" class="ready-btn">Apply Now!</a>
+					</div>
+					</div>
+				</div>
+			</div>
+
+			<style>
+
+					.modal-header {
+						background: black;
+						border: 1px solid #e5e5e5;						
+					}
+
+					.modal-header h5 {
+						color:white !important;
+					}
+
+					.modal-body p{
+						color:#EC9123 !important;
+					}
+
+
+			</style>-->
+
+			<script>
+
+				$(document).ready(function(){
+					//$("#hiringModal").modal('toggle');
+				});
+				/*
+                var canvas = document.querySelector('.snow'),
+                    ctx = canvas.getContext('2d'),
+                    windowW = window.innerWidth,
+                    windowH = window.innerHeight,
+                    numFlakes = 200,
+                    flakes = [];
+                
+                function Flake(x, y) {
+                  var maxWeight = 5,
+                      maxSpeed = 3;
+                  
+                  this.x = x;
+                  this.y = y;
+                  this.r = randomBetween(0, 1);
+                  this.a = randomBetween(0, Math.PI);
+                  this.aStep = 0.01;
+                
+                  
+                  this.weight = randomBetween(2, maxWeight);
+                  this.alpha = (this.weight / maxWeight);
+                  this.speed = (this.weight / maxWeight) * maxSpeed;
+                  
+                  this.update = function() {
+                    this.x += Math.cos(this.a) * this.r;
+                    this.a += this.aStep;
+                    
+                    this.y += this.speed;
+                  }
+                  
+                }
+                
+                function init() {
+                  var i = numFlakes,
+                      flake,
+                      x,
+                      y;
+                  
+                  while (i--) {
+                    x = randomBetween(0, windowW, true);
+                    y = randomBetween(0, windowH, true);
+                    
+                    
+                    flake = new Flake(x, y);
+                    flakes.push(flake);
+                  }
+                  
+                  scaleCanvas();
+                  loop();  
+                }
+                
+                function scaleCanvas() {
+                  canvas.width = windowW;
+                  canvas.height = windowH;
+                }
+                
+                function loop() {
+                  var i = flakes.length,
+                      z,
+                      dist,
+                      flakeA,
+                      flakeB;
+                  
+                  // clear canvas
+                  ctx.save();
+                  ctx.setTransform(1, 0, 0, 1, 0, 0);
+                  ctx.clearRect(0, 0, windowW, windowH);
+                  ctx.restore();
+                  
+                  // loop of hell
+                  while (i--) {
+                    
+                    flakeA = flakes[i];
+                    flakeA.update();
+                    
+                
+                    /*for (z = 0; z < flakes.length; z++) {
+                      flakeB = flakes[z];
+                      if (flakeA !== flakeB && distanceBetween(flakeA, flakeB) < 150) {          
+                        ctx.beginPath();
+                        ctx.moveTo(flakeA.x, flakeA.y);
+                        ctx.lineTo(flakeB.x, flakeB.y);
+                        ctx.strokeStyle = '#444444';
+                        ctx.stroke();
+                        ctx.closePath();
+                      }
+                    }
+                
+                    
+                    ctx.beginPath();
+                    ctx.arc(flakeA.x, flakeA.y, flakeA.weight, 0, 2 * Math.PI, false);
+                    ctx.fillStyle = 'rgba(255, 255, 255, ' + flakeA.alpha + ')';
+                    ctx.fill();
+                    
+                    if (flakeA.y >= windowH) {
+                      flakeA.y = -flakeA.weight;
+                    }  
+                  }
+                  
+                  requestAnimationFrame(loop);
+                }
+                
+                function randomBetween(min, max, round) {
+                  var num = Math.random() * (max - min + 1) + min;
+                
+                  if (round) {
+                    return Math.floor(num);
+                  } else {
+                    return num;
+                  }
+                }
+                
+                function distanceBetween(vector1, vector2) {
+                  var dx = vector2.x - vector1.x,
+                      dy = vector2.y - vector1.y;
+                
+                  return Math.sqrt(dx*dx + dy*dy);
+                }
+                
+                init();
+*/
+			</script>
+
+	
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdZI9oUAAAAADekdtosbTU5bsx7ua1zIN34jxND&amp;co=aHR0cHM6Ly9nYW1ld29ya3N0dWRpb3MuY29tOjQ0Mw..&amp;hl=zh-CN&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;size=invisible&amp;cb=71f9s7smkawf" width="256" height="60" role="presentation" name="a-lw7k2gk8j3bf" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></body></html>

@@ -1,0 +1,420 @@
+<html><head>
+<title>4D Toys. An interactive toy for 4D children.</title>
+<style type="text/css">		
+    @font-face {
+	    font-family: GeosansLight;
+	    src: url('GeosansLight.otf');
+    }
+    /*
+    A Magical Toy Chest filled with Toys from the fourth dimension.
+        Fine wooden toys made from the finest imported spherinder trees.
+    */
+	body
+	{ 
+        background-color: #e5e5e5; 
+
+        /*background: -webkit-linear-gradient(#e5e5e5 0px, #c4c4c4 150px, #e5e5e5 400px); 
+        background: -o-linear-gradient(#e5e5e5 0px, #c4c4c4 150px, #e5e5e5 400px); 
+        background: -moz-linear-gradient(#e5e5e5 0px, #c4c4c4 150px, #e5e5e5 400px); 
+        background: linear-gradient(#e5e5e5 0px, #c4c4c4 150px, #e5e5e5 400px);*/ 
+
+
+        color: black; 
+        font-size: 15pt; 
+        font-family: GeosansLight, Helvetica, Arial; 
+        margin: 0px;
+        padding: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+	}
+	#main 
+	{ 
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0px;
+        width: 850px;
+        position: relative;
+    }
+    h1
+    {
+    	font-family: Times New Roman;
+    	font-size: 130px;
+        width: 470px;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 190px;
+        margin-right: 190px;
+    }
+    #tm { font-size: 10px; }
+    .subtitle
+    {
+        width: 850px;
+        font-size: 15.5pt; 
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .subtitle2
+    {
+        width: 800px;
+        font-size: 15.5pt; 
+        text-align: justify;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    a,.likelink { text-decoration: none; font-weight: bold; color: black; }
+    a:hover { text-decoration: underline; }
+
+    .trailer
+    {
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 0px;
+        background-color: #e5e5e5; 
+        
+        border-bottom: solid black 4px;
+        margin-top: 50px;
+    }
+	.smtrailer
+	{
+        width: 500px;
+        border-bottom: 0px;
+	}
+    h2
+    {
+    	font-size: 17pt;
+    }
+    .suggestions
+    {
+        width: 550px;
+        text-align: justify;
+        display: inline-block;
+        margin: 10px;
+    }
+    #download 
+    {
+    	margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 380px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        /*display: none;*/
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+	    overflow: hidden;
+	    position: relative;
+        /*background-color: #999999;*/
+    }
+    #downloadios
+    {
+    	margin: 0;
+        display: block;
+        width: 380px;
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #downloadsteam
+    {
+    	margin: 0;
+        display: block;
+        width: 380px;
+        height: 190px;
+    }
+    #child
+    {
+    	margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        display: block;
+    	margin-bottom: 20px;
+    }
+    li
+    {
+    	margin-bottom: 15px;
+    }
+    #tooltip li
+    {
+        font-size: 13pt;
+    }
+
+    #quote 
+    {
+        margin: 45px auto;
+        width: 700px;
+        display: block;
+
+        font-size: 18pt;
+    }
+    #quotein {
+        font-style: italic;
+    }
+    .quotesm {
+        width: 520px !important;
+        font-size: 13pt !important;
+        color: gray;
+    }
+
+    /* images/gfy stuff */
+
+    .imgSideAll
+    {
+        width: 264px;
+        margin: 0;
+        padding: 0;	
+        float: right;
+        margin-top: 190px;
+    }
+
+    .img1gfy
+    {
+        margin: 0;
+        padding: 0;	
+        margin-left: 7px;
+        margin-right: 7px;
+        background-color: #e5e5e5;
+        display: inline-block;
+		overflow: hidden;
+    }
+    .img1Wide { width: 264px; height: 147px; }
+	
+    .img1Thick { width: 259px; height: 194px; }
+    .img1Wide2 { width: 341px; height: 192px; }
+	
+    .img1Side { margin-bottom: 40px; }
+    
+    .img1Center
+    {
+        margin: 0 auto;
+        padding: 0;	
+        display: block;
+    }
+
+</style>
+<meta name="apple-itunes-app" content="app-id=1143791442" affiliate-data="n5yJat7s"> 
+<link rel="icon" type="image/png" href="favicon.png">
+
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-8QG4GNNCKK&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+
+    function CheckVisible(elm) {
+        var rect = elm.getBoundingClientRect();
+        var viewHeight = window.innerHeight;
+
+        return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+    
+    function PauseIfHidden()
+    {
+        var videos = document.getElementsByTagName("video");
+        for ( var i = 0; i < videos.length; i++ )
+        {
+            if ( !CheckVisible(videos[i]) )
+                videos[i].pause();
+            else
+                videos[i].play();
+        }
+
+        setTimeout(PauseIfHidden, 1000);
+    }
+
+    function StartUp()
+    {
+        PauseIfHidden();
+    }
+
+    if (window.addEventListener) {
+        window.addEventListener('load', StartUp)
+    } else {
+        window.attachEvent('onload', StartUp)
+    }
+
+    function SwapVis(el)
+    {
+        if (document.getElementById(el).style.display != 'none')
+            document.getElementById(el).style.display = 'none';
+        else
+            document.getElementById(el).style.display = 'inline';
+    }
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19253442-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div id="main">
+   <!-- <h1>4D Toys<span id="tm">&#8482;</span></h1> -->
+
+    <!-- img src="page.png" width="850" --> 
+    <iframe width="850" height="478" class="trailer" src="https://www.youtube.com/embed/0t4aKJuKP0Q?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+
+    <div class="subtitle">What if you received a box filled with mysterious toys from a fourth spatial dimension?</div>
+
+	<div class="img1gfy img1Wide"><video src="media/videos/FiveTesseractsWideScreen.mp4" class="img1Wide" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+	<div class="img1gfy img1Wide"><video src="media/videos/120Cell.mp4" class="img1Wide" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+	<div class="img1gfy img1Wide"><video src="media/videos/SpheresAndCubes.mp4" class="img1Wide" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+
+    <div class="subtitle">Playfully explore and marvel at beautiful shapes powered by a groundbreaking 4D+time physics system.</div>
+
+	<div class="img1gfy img1Wide"><video src="media/videos/KleinBottle.mp4" class="img1Wide" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+	<div class="img1gfy img1Wide"><video src="media/videos/MarblePath.mp4" class="img1Wide" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+	<div class="img1gfy img1Wide"><video src="media/videos/Star.mp4" class="img1Wide" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+
+    <div class="subtitle">Poke, throw, roll and watch as they disappear into a dimension you can't see.</div>
+
+    <div class="subtitle">Get an intuitive feel for how four-dimensional objects behave: <!--Get an intuitive feel for the fourth dimension, even if you don't quite understand it:--></div>
+
+    <div class="subtitle">Become a child of the fourth dimension.</div>
+
+    <div class="subtitle2">
+        In this case the 4th dimension is not time but a 4th dimension of space that works just like the first three dimensions we are familiar with. If you count time these toys are 5D.
+    </div>
+    <div class="subtitle2">
+        It turns out that the rules of how objects bounce, slide and roll around can be generalized to any number of dimensions, and this toy lets you experience what that would look like.
+    </div>
+
+    <div id="download">
+        <a href="https://itunes.apple.com/app/id1143791442?mt=8&amp;uo=4&amp;at=n5yJat7s"><img src="app_store.svg" id="downloadios"></a>
+
+        <!-- <iframe src="https://store.steampowered.com/widget/619210/" frameborder="0" id="downloadsteam"></iframe> -->
+		
+        <a href="https://store.steampowered.com/app/619210/4D_Toys/"><img src="steam.svg" id="downloadsteam"></a>
+    </div>
+
+    <div id="quote"><span id="quotein">"Our inability to see all the dimensions of a 4-D world doesn't mean that we can't navigate it, that we can't reach out and feel it with our digital fingertips."</span><br>&nbsp;&nbsp;&nbsp;—Chris Suellentrop, <a href="https://www.wired.com/2014/11/4d-game/">Wired magazine</a></div>
+
+    <div id="quote"><span id="quotein">"I'm hesitant to describe a virtual reality experience as a "killer app" ever again, but I'm oh-so-tempted once more [...] I am not sure that I've ever seen a more compelling "show-don't-tell" educational tool than 4D Toys. "</span><br>&nbsp;&nbsp;&nbsp;—Sam Machkovech, <a href="https://arstechnica.com/gaming/2017/06/learn-the-ways-of-the-fourth-dimension-with-a-bonkers-vr-playset/">Ars Technica</a></div>
+	
+
+    <h2>Features:</h2>
+    <ul>
+        <li>Over <b>100 beautiful interactive scenes</b> to play with, with more to be added in updates.</li>
+        <li><b>Groundbreaking 4D+Time Physics Engine</b> that uses new <a href="https://marctenbosch.com/ndphysics/">published research</a> created for this project.</li>
+        <li><b>Virtual Reality</b> or Mouse &amp; Keyboard (PC) or <b>Multi-touch &amp; Accelerometer</b> (iOS) support for rich interactivity.</li>
+        <li>Bonus: 2D/3D "Flatland" Interactive Explanation teaches by analogy about a fourth spatial dimension:</li>
+    </ul>
+    <div class="img1Center" style="width:620px; height:200px; background: none">
+	
+		<div class="img1gfy img1Thick" style="margin:0; margin-right: 10px; border-right: 1px solid gray"><video src="media/videos/Tutorial1.mp4" class="img1Thick" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+		
+		<div class="img1gfy img1Wide2" style="margin:0; border-left: 1px solid gray"><video src="media/videos/Tutorial2.mp4" class="img1Wide2" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+		
+    </div>
+
+    <div class="suggestions">
+    <h2>Some things to do:</h2>
+    <ul>
+    <li>Manage to fit the hypercube into the hyperhole!</li>
+    <li>Use the 4D shapes as fancy, <strong>perfectly symmetric, fair dice</strong> that have 5, 8, 16, 24, or even 120 and 600 sides!
+        <div id="tooltip"><ul id="tooltip1"><li>When a die is fair the probability that it lands on a particular face is the same for every face. This is done by making all the faces the same shape.
+       
+        However in 3D only a certain number of shapes have this property, such as:<!-- such as the common dice with 6 faces, and others with 4,8,12,and 20 faces.  (D10s can be made from the less symmetric 'Pentagonal trapezohedron' shape)--><br><img src="dice.png" width="150"> 
+        <br>
+        In 4D we have additional possible shapes for dice!</li></ul></div>
+    </li>
+    <li>Make a stack of 4D hypercubes and smash it!</li> <!--For example the 3D cube has 6 squares as faces, and the 4D hypercube has 8 cubes as faces.-->
+    <li>Set up an interesting path for a few 4D dominoes!</li>
+    <li>Unbind Rings using the fourth dimension!</li>
+    <li>Make levers that throw hypercubes into the fourth dimension!</li>
+    <li>Use multitouch to "squeeze" out objects into the fourth dimension!</li>
+    <li>Play in a 4D ball pit!</li>
+    <li>See Tesseracts (i.e. 4D hypercubes) slide down slopes!</li>
+    <li>Play with a non-intersecting 4D Klein Bottle!</li>
+    <li>etc...!</li>
+    </ul>
+    </div>
+    <div class="imgSideAll">
+		<div class="img1gfy img1Thick img1Side"><video src="media/videos/CubeInHole.mp4" class="img1Thick" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+		<div class="img1gfy img1Thick img1Side"><video src="media/videos/Rings.mp4" class="img1Thick" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+	</div>
+
+    <br clear="all">
+
+	<div class="img1gfy img1Thick"><video src="media/videos/Tiger.mp4" class="img1Thick" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+	<div class="img1gfy img1Thick"><video src="media/videos/Abacus.mp4" class="img1Thick" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+	<div class="img1gfy img1Thick"><video src="media/videos/FiveTesseracts.mp4" class="img1Thick" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+
+    <br clear="all">
+
+	<div class="img1gfy img1Wide"><video src="media/videos/Dominoes.mp4" class="img1Wide" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+	<div class="img1gfy img1Wide"><video src="media/videos/SpherePile.mp4" class="img1Wide" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+	<div class="img1gfy img1Wide"><video src="media/videos/600Cell.mp4" class="img1Wide" autoplay="" loop="" muted="" playsinline="" type="video/mp4"></video></div>
+
+    <br><br>
+	
+    <iframe width="500" height="281" class="trailer smtrailer" src="https://www.youtube.com/embed/U9TK65sVI_4" frameborder="0" allowfullscreen=""></iframe>
+
+    <br><br>
+
+    <br><br>
+
+    <h2><a href="media/index.html">&gt;&gt; Media / Screenshots / Downloads</a></h2>
+
+    <h2><a href="#" onclick="SwapVis('mathdetails'); return false;">&gt;&gt; More details for those curious about the mathematics</a></h2>
+    <div id="mathdetails" style="display:none">
+    We can describe our universe using three spatial dimensions (x,y,z) and time. These toys exist in a universe that has four spatial dimensions (x,y,z,w) and time. 
+    Suprisingly it is possible to generalize physical laws that descibe our universe, such as Newton's Laws of Motion, to any number of dimensions. To do this we had to come up with <a href="https://marctenbosch.com/ndphysics/">new mathematics</a>. So for example, forces are four-dimensional vectors, objects rotate around planes instead of axes, etc...
+    <br>
+    While the computer does not care how many dimensions there are (it is still just working with numbers), because our universe has only three dimensions of space, we chose to represent these objects by taking a "three-dimensional" slice of them. This means that while the objects are fully 4D, only three dimensions are shown at any moment. A slider lets you move along the fourth dimension. 
+    </div>
+
+    <h2><a href="#" onclick="SwapVis('bacgroundinfo'); return false;">&gt;&gt; Background</a></h2>
+    <div id="bacgroundinfo" style="display:none">
+        Near the beginning of <a href="https://miegakure.com">Miegakure</a>'s development, someone joked I should make a 4D physics engine. Then a few years ago I had gathered enough knowledge that it was a possibility. So I made one for fun, and kept working on it on the side. I had a ton of fun inventing the math for it.
+        <br>
+        I was only planning to use 4D physics a little bit for Miegakure as a purely aesthetic component, but I started thinking about making a stand-alone toy to play with 4D objects, to take full advantage of the physics. At first it was going to a simple dice simulation but I kept adding new shapes... and it got out of hand.
+    </div>
+
+    <h2><a href="#" onclick="SwapVis('undirectedplay'); return false;">&gt;&gt; Undirected 4D play</a></h2>
+    <div id="undirectedplay" style="display:none">
+        4D Toys  doesn't take you through carefully-constructed successively harder challenges the way a "puzzle-platformer" might. It's just 4D shapes, as if you were a very young kid again and given a box of wooden toys. Play is undirected... we don't expect a child to come up with verbal realizations of what they are doing. They can learn about making stacks, and gravity, and fitting shapes into holes, and that can form the foundation for future learning. Alternatively, one can just look at how pretty it is, like the waves rolling down the ocean or the intricate swirling patterns in a fire.
+        <br>
+        Most representations of a fourth dimension are so abstract (a spinning bundle of lines) and my work has been to get away from that. It's the first time anyone has seen these objects as physical objects that bounce and roll and can be grabbed!
+    </div>
+
+
+    <br>
+    <br>
+
+    <div style="text-align: center">
+        By <a href="https://marctenbosch.com">Marc ten Bosch</a>, who is also currently working on the 4D game <a href="https://miegakure.com">Miegakure (Hide &amp; Reveal)</a>.
+  
+    <br>
+
+        Follow 4D toys on: <a href="https://marctenbosch.com/news">Marc ten Bosch's Blog</a>, <a href="https://www.youtube.com/c/mtbdesignworks">Youtube,</a> <a href="https://marctenbosch.com/news/mailing-list/">Mailing list</a>, <a href="https://twitter.com/mtbdesignworks">Twitter</a>.
+    </div>
+
+
+    <br><br>
+
+        <img src="child.png" id="child">
+
+
+   <div id="quote" class="quotesm"><div id="quotein">"Meanwhile, in the adjoining room, Emma was sliding the beads to and fro in the abacus. The motions didn't seem so strange now. Even when the beads vanished. She could almost follow that new direction—almost—"</div> —Lewis Padgett, Mimsy Were the Borogoves</div>
+
+    <br><br>
+
+    <br><br>
+
+    </div>
+
+
+
+</body></html>

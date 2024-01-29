@@ -1,0 +1,1444 @@
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><head>
+
+<!-- Google Tag Manager -->
+<script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-KRVJ7WCJD3&amp;l=dataLayer&amp;cx=c"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-82476192-31&amp;l=dataLayer&amp;cx=c"></script><script src="https://connect.facebook.net/signals/config/2043997302333704?v=2.9.125&amp;r=stable&amp;domain=www.sharknadovr.ca" async=""></script><script src="https://connect.facebook.net/signals/config/360959617771190?v=2.9.125&amp;r=stable&amp;domain=www.sharknadovr.ca" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TGZ7CJH"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TGZ7CJH');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/public/themes/sharknado/">
+    <link rel="apple-touch-icon" sizes="180x180" href="website-files/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="website-files/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="website-files/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="website-files/images/favicons/manifest.json">
+    <link rel="mask-icon" href="website-files/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="website-files/images/favicons/favicon.ico">
+    <meta name="msapplication-config" content="website-files/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ekko-lightbox.min.css">
+    <link rel="stylesheet" href="css/sly.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="parallax-hero-image/css/style.css">
+    <script src="js/modernizr.js"></script>
+
+       <title>Sharknado VR - Virtual Reality Game for Oculus, Vive, iOS, Android and Gear VR</title>        
+        <meta name="robots" content="index, follow">
+        <meta name="revisit-after" content="7 days">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta name="city" content="Regina">
+        <meta name="country" content="Canada">
+        <meta name="subject" content="virtual reality game">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+                <meta name="viewport" content="width=device-width">
+  <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="true" type="text/javascript" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/780230295/?random=1694383247802&amp;cv=11&amp;fst=1694383247802&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He3960&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fwww.sharknadovr.ca%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Sharknado%20VR%20-%20Virtual%20Reality%20Game%20for%20Oculus%2C%20Vive%2C%20iOS%2C%20Android%20and%20Gear%20VR&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B116.0.5845.180%7CNot)A%253BBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B116.0.5845.180&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"></script></head>
+  <body id="home" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGZ7CJH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="pos-f-t">
+    <div class="collapse hidden-lg-up" id="navbarToggleExternalContent">
+      <div id="mobile-menu" class="bg-dark p-4">
+        <ul id="header-menu-2" class="list-inline no-margin padding-md">
+          <li class="list-inline-item padding-top-5"><a id="home-link" class="page-scroll" href="/#home">Home</a></li>
+          <li class="list-inline-item padding-top-5"><a id="about-link" class="page-scroll" href="/#about">About</a></li>
+          <li class="list-inline-item padding-top-5"><a id="gallery-link" class="page-scroll" href="/#gallery">Gallery</a></li>
+          <li class="list-inline-item padding-top-5"><a id="news-link" class="page-scroll" href="/#news">News &amp; Media</a></li>
+          <li class="list-inline-item padding-top-5"><a id="trailer-link" class="page-scroll" href="/#trailer">Trailer</a></li>
+          <li class="list-inline-item padding-top-5"><a id="contact-link" class="page-scroll" href="/#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </div>
+
+
+
+  <div class="wrapper">
+
+    <div class="hidden-md-down header">
+      <a href="/#home" id="logo-href" class="pull-left padding-sm">
+        <img id="logo-src" src="website-files/images/sharknado-logo-lg.png" alt="Sharknado">
+      </a>
+
+      <ul id="header-menu" class="list-inline pull-right no-margin padding-md">
+        <li class="list-inline-item padding-top-5"><a id="home-link" class="page-scroll" href="/#home">Home</a></li>
+        <li class="list-inline-item padding-top-5"><a id="about-link" class="page-scroll" href="/#about">About</a></li>
+        <li class="list-inline-item padding-top-5"><a id="gallery-link" class="page-scroll" href="/#gallery">Gallery</a></li>
+        <li class="list-inline-item padding-top-5"><a id="news-link" class="page-scroll" href="/#news">News &amp; Media</a></li>
+        <li class="list-inline-item padding-top-5"><a id="trailer-link" class="page-scroll" href="/#trailer">Trailer</a></li>
+        <li class="list-inline-item padding-top-5"><a id="contact-link" class="page-scroll" href="/#contact">Contact</a></li>
+      </ul>
+      <br style="clear:both">
+    </div>
+
+    <!--<div id="oculus-vive-cont"><img id="oculus-logo" src="website-files/images/logos/oculus-logo.png" alt="Oculus"><img id="vive-logo" src="website-files/images/logos/vive-logo.png" alt="Vive"></div>-->
+
+    <div class="cd-background-wrapper" id="banner-wrapper">
+      <a href="/#home" id="logo-href" class="pull-left padding-sm hidden-lg-up">
+        <img id="logo-src" src="website-files/images/sharknado-logo-lg.png" alt="Sharknado">
+      </a>
+
+
+      <video poster="website-files/video/sharknado-video-background.jpg" id="bgvid" playsinline="" autoplay="" muted="" loop="">
+      <source src="website-files/video/Sharknado_VR_teaser_feather_20second_version_WEB.webm" type="video/webm">
+      <source src="website-files/video/Sharknado_VR_teaser_feather_20second_version_WEB.mp4" type="video/mp4">
+      </video>
+
+
+
+      <div id="pos-bottom-grad" class="position-bottom" style="padding-top:50px;">
+
+<div style="max-width:1100px;margin:0 auto;padding-bottom:30px;">
+
+<div class="row">
+<div class="col-lg-12 text-center">
+<h1 class="headings-lines">GET THE GAME</h1>
+<a href="https://store.steampowered.com/app/925090/Sharknado_VR_Eye_of_the_Storm/" id="steam-logo-header" target="_blank">
+    <img src="website-files/images/logos/steam-logo-lg.png" class="header-logos" style="margin-top:-7px;width:100%;max-width:200px;">
+</a>
+<a href="https://www.oculus.com/experiences/rift/2065958466801059/" target="_blank">
+    <img src="website-files/images/logos/oculus-logo-lg.png" class="header-logos" style="margin-top:-7px;width:100%;max-width:200px;">
+</a>
+<a href="https://store.playstation.com/en-us/product/UP5253-CUSA14037_00-001SVREOTSREL001" target="_blank">
+    <img src="/public/CKeditorUpload/playstation-vr-logo-lg-1.png" class="header-logos" style="margin-top:-7px;width:100%;max-width:170px;">
+</a>
+<!-- <img src="website-files/images/logos/playstation-vr-logo-lg.png" class="header-logos" style="margin-top:-7px;width:100%;max-width:170px;"> -->
+</div>
+
+<!--
+<div class="col-lg-5 text-center">
+<h1 class="headings-lines">PLAY THE GAME</h1>
+<a href="https://www.vrxnetworks.com/locations/" target="_blank"><img src="website-files/images/logos/vrx-networks-logo-lg.png" class="header-logos" style="margin-top:-7px;width:100%;max-width:200px;"></a>
+</div>
+-->
+</div>
+
+</div>
+
+<div style="border-top:1px solid rgba(256,256,256,0.5);padding-top:50px;padding-bottom:50px;">
+
+<div style="max-width:1100px;margin:0 auto;">
+
+<div class="row">
+<div class="col-md-4 col-sm-6 text-center quotes pl-5">
+Sharknado VR is the Best Thing You'll See All Day
+<p class="signature"><img src="website-files/images/logos/playstation-lifestyle-logo.png" style="margin-top:-2px;width:100%;max-width:50px;"> - Aidan Simods</p>
+</div>
+<div class="col-md-4 col-sm-6 text-center quotes">
+...Why The Hell Not
+<p class="signature"><img src="website-files/images/logos/bloody-disgusting-logo.jpg" style="margin-top:-2px;width:100%;max-width:110px;"> - John Squires</p>
+</div>
+<div class="col-md-4 col-sm-12 text-center quotes">
+...You Can Bet There's Plenty of Dumb Fun to be Had...
+<p class="signature"><img src="website-files/images/logos/us-gamer-logo.png" style="margin-top:-2px;width:100%;max-width:90px;"> - Jake Green</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!--<div class="text-center"><h1>Available Now on <a href="https://store.steampowered.com/app/925090/Sharknado_VR_Eye_of_the_Storm/" target="_blank"><img src="website-files/images/logos/steam-logo-lg.png" style="margin-top:-7px;width:100%;max-width:200px;" /></a> | <a href="https://www.oculus.com/experiences/rift/2065958466801059/" target="_blank"><img src="website-files/images/logos/oculus-logo-lg.png" style="margin-top:-7px;width:100%;max-width:200px;" /></a></h1><h4>BRING EXTRA SHORTS</h4></div>
+<div class="row">
+
+<div class="col header-left-area text-center">
+<h2 id="arcade-edition">ARCADE EDITION</h2>
+<p>Available at <b>Select VRX Locations</b></p>
+-->
+<!--
+<div class="row download-buttons-row">
+
+<div class="col-md col-sm-12">
+<p class="download-buttons"><img class="steam-logo" src="website-files/images/logos/steam-logo.png" alt="Steam Logo"> <img class="download-icons" src="website-files/images/download-icon.png" alt="Download Icon"></p>
+</div>
+<div class="col-md col-sm-12">
+<p class="download-buttons"><img class="ios-logo" src="website-files/images/logos/apple-ios-logo.png" alt="Apple iOS Logo"> <img class="download-icons" src="website-files/images/download-icon.png" alt="Download Icon"></p>
+</div>
+
+</div>--><!-- row -->
+
+<div class="row download-buttons-row d-none">
+<!--<div class="col-md col-sm-12">
+<p class="download-buttons"><img class="google-play-logo" src="website-files/images/logos/google-play-logo.png" alt="Google Play Logo"> <img class="download-icons" src="website-files/images/download-icon.png" alt="Download Icon"></p>
+</div>-->
+<div class="col-12">
+<p class="download-buttons"><a href="https://www.vrxnetworks.com/locations/" target="_blank" style="padding:5px 40px;"><img class="vrx-logo" src="website-files/images/logos/vrx-networks-logo.png" alt="VRX Networks Logo"></a></p>
+</div>
+
+</div><!-- row -->
+
+
+</div>
+
+<div class="col header-right-area text-center d-none">
+<h2 id="full-version">FULL VERSION</h2>
+<!--<p>Available <b>November 5</b></p>-->
+<p style="margin-bottom:0;height:16px;">&nbsp;</p>
+
+<div class="row download-buttons-row">
+
+<div class="col-md col-sm-12" id="steam-button">
+<p class="download-buttons"><a href="https://store.steampowered.com/app/925090/Sharknado_VR_Eye_of_the_Storm/" target="_blank"><img class="steam-logo" src="website-files/images/logos/steam-logo.png" alt="Steam Logo"> <img class="download-icons" src="website-files/images/download-icon.png" alt="Download Icon"></a></p>
+</div>
+<div class="col-md col-sm-12" id="oculus-button">
+<p class="download-buttons"><a href="https://www.oculus.com/experiences/rift/2065958466801059/" target="_blank"><img class="ios-logo" src="website-files/images/logos/oculus-logo.png" alt="Oculus Logo"> <img class="download-icons" src="website-files/images/download-icon.png" alt="Download Icon"></a></p>
+</div>
+<div class="col-md col-sm-12" id="playstation-button">
+<p class="download-buttons"><img class="playstation-vr-logo" src="website-files/images/logos/playstation-vr-logo.png" alt="Playstation VR Logo"> <img class="download-icons" src="website-files/images/download-icon.png" alt="Download Icon"></p>
+</div>
+</div><!-- row -->
+
+<div class="row download-buttons-row">
+
+<!--<div class="col-md col-sm-12">
+<p class="download-buttons"><img class="google-play-logo" src="website-files/images/logos/google-play-logo.png" alt="Google Play Logo"> <img class="download-icons" src="website-files/images/download-icon.png" alt="Download Icon"></p>
+</div>-->
+
+</div><!-- row -->
+
+</div>
+
+</div>
+
+
+
+      </div>
+    
+
+<style>
+.font-bold { font-weight: bold !important;}
+</style>
+
+    <section id="about" class="about parallax section">
+      <div class="text-center">
+        <div class="padding-md">
+          <h2 class="text-roboto text-uppercase font-bold no-margin">About The Game</h2>
+          <br>
+          <div class="spacer center"></div>
+          <br>
+          <div class="row">
+            <div class="offset-md-3 col-md-6">
+              <p>You are stranded in the eye of a tornado...wait, is that a shark?  A SHARKNADO!  Sharknado: Eye of the Storm is a glorious 360 VR multi level bone shaker.  Using weapons ranging from a chainsaw to shotgun to a machine gun and everything in between, you must try and survive the onslaught of sharks.  Oh, and you have to save as many people as you can all while dodging Barracudas, Octopuses and poisonous Jellyfish  too.  You better cancel your plans for the afternoon.  The world needs you!</p>
+            </div>
+          </div>
+        </div>
+<style>
+.margin-top-30 {
+  margin-top:30px !important;
+}
+</style>
+        <div class="position-bottom-wide padding-sm" style="background-color:#000; background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.5); border-top:solid 1px #393935; border-bottom:solid 1px #393935">
+          <h4 class="text-roboto text-uppercase no-margin font-bold margin-top-30">Game Features</h4>
+          <br><br>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="website-files/images/icon-platform.png">
+              <br><br>
+              <h5 class="text-roboto">Platform</h5>
+              <p>Immerse yourself in 360-degrees of up close and personal gruesome fun!</p>
+            </div>
+            <div class="col-sm-3">
+              <img src="website-files/images/icon-weapons.png">
+              <br><br>
+              <h5 class="text-roboto">Weapons</h5>
+              <p>Use your AK47 to penetrate shark flesh or dismember the vicious flying beasts with the teeth of your chainsaw before they sink their teeth into you!</p>
+            </div>
+            <div class="col-sm-3">
+              <img src="website-files/images/icon-environment.png">
+              <br><br>
+              <h5 class="text-roboto">Environment</h5>
+              <p>Fight to stay alive as the world collapses around in you in the literal middle of a tornado.</p>
+            </div>
+            <div class="col-sm-3">
+              <img src="website-files/images/icon-visual.png">
+              <br><br>
+              <h5 class="text-roboto">Content</h5>
+              <p>Action-packed with mature-rated material; blood, gore and more! You’ll have a whirlwind of fun.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="gallery" class="gallery section parallax">
+      <div class="text-center align-middle">
+        <h2 class="text-roboto text-uppercase no-margin font-bold">Gallery</h2>
+        <br>
+        <div class="spacer center"></div>
+        <div class="row padding-top-30">
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/gallery-new-1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/gallery-new-1.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/gallery-new-2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/gallery-new-2.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/gallery-new-3.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/gallery-new-3.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/1.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/gallery-new-7.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/gallery-new-7.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/3.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/3.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/4.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/4.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/gallery-new-4.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/gallery-new-4.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/6.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/6.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/7.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/7.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/gallery-new-5.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/gallery-new-5.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/9.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/9.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/10.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/10.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/gallery-new-6.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/gallery-new-6.jpg">
+            </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-15">
+            <a class="gallery-image" href="/public/images/12.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img class="img-fluid" src="/public/images/12.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="news" class="media section parallax">
+      <div class="text-center align-middle">
+        <h2 class="text-roboto text-uppercase no-margin font-bold">News &amp; Media</h2>
+        <br>
+        <div class="spacer center"></div>
+        <br>
+        <div class="container no-padding no-margin">
+          <div class="wrap">
+            <!-- <div class="scrollbar">
+              <div class="handle">
+                <div class="mousearea"></div>
+              </div>
+              </div> -->
+
+<style>
+.media-col {
+  margin:10px !important;
+  border:solid 4px #fff;
+}
+.frame ul li {
+  height: 97% !important;
+}
+</style>
+
+
+            <div class="frame" id="forcecentered" style="overflow: hidden;">
+              <ul class="clearfix" style="transform: translateZ(0px) translateX(495px); width: 4600px;">
+                <li data-id="35" data-toggle="modal" data-target="#modalPost" class="media-col post active" style="background-size: cover; background:url(/public/CKeditorUpload/cbc-sharknado-img.jpg">
+                  <div class="position-bottom text-right">
+                    <a class="btn btn-sm btn-primary">Apr 28, 2021</a>
+                    <p class="media-text"><b>Sharknado VR is 50% Off</b><br>Sharknado VR is - 50% off for PSVR! April 28 – May 12. Go pick i...</p>
+                  </div>
+                </li>
+                <li data-id="34" data-toggle="modal" data-target="#modalPost" class="media-col post" style="background-size: cover; background:url(/public/CKeditorUpload/Banner1080.jpg">
+                  <div class="position-bottom text-right">
+                    <a class="btn btn-sm btn-primary">Jan 04, 2021</a>
+                    <p class="media-text"><b>Sharknado VR is 50% Off</b><br>Sharknado VR is - 50% off for the start of the new year! Go pick i...</p>
+                  </div>
+                </li>
+                <li data-id="33" data-toggle="modal" data-target="#modalPost" class="media-col post" style="background-size: cover; background:url(/public/CKeditorUpload/Sharknado_PS4_SC.jpg">
+                  <div class="position-bottom text-right">
+                    <a class="btn btn-sm btn-primary">Apr 08, 2020</a>
+                    <p class="media-text"><b>PlayStation VR Released</b><br>Sharknado VR is now approved and available on #PSVR.  Sharknado VR...</p>
+                  </div>
+                </li>
+                <li data-id="32" data-toggle="modal" data-target="#modalPost" class="media-col post" style="background-size: cover; background:url(/public/CKeditorUpload/NewYorkStreetEast-news.jpg">
+                  <div class="position-bottom text-right">
+                    <a class="btn btn-sm btn-primary">Mar 19, 2019</a>
+                    <p class="media-text"><b>Sharknado Playstation VR</b><br>#SharknadoVR has now gone into review for the #PSVR version, we ar...</p>
+                  </div>
+                </li>
+                <li data-id="31" data-toggle="modal" data-target="#modalPost" class="media-col post" style="background-size: cover; background:url(/public/CKeditorUpload/sharknado-news-live.jpg">
+                  <div class="position-bottom text-right">
+                    <a class="btn btn-sm btn-primary">Feb 13, 2019</a>
+                    <p class="media-text"><b>PlayStation VR Release</b><br>We are still working away on the #PSVR version of #SharknadoVR but...</p>
+                  </div>
+                </li>
+                <li data-id="30" data-toggle="modal" data-target="#modalPost" class="media-col post" style="background-size: cover; background:url(/public/CKeditorUpload/Banner1080.jpg">
+                  <div class="position-bottom text-right">
+                    <a class="btn btn-sm btn-primary">Jan 04, 2019</a>
+                    <p class="media-text"><b>Sharknado VR Featured by Justin and Greg</b><br>Sharks in Saskatchewan: An Investigative Story.
+
+We heard ...</p>
+                  </div>
+                </li>
+                <li data-id="29" data-toggle="modal" data-target="#modalPost" class="media-col post" style="background-size: cover; background:url(/public/CKeditorUpload/sharknado-social-sale.jpg">
+                  <div class="position-bottom text-right">
+                    <a class="btn btn-sm btn-primary">Dec 24, 2018</a>
+                    <p class="media-text"><b>Holiday Steam Sale</b><br>Sharknado VR is now 30% Off for the Holiday Steam sale!  Now until...</p>
+                  </div>
+                </li>
+                <li data-id="28" data-toggle="modal" data-target="#modalPost" class="media-col post" style="background-size: cover; background:url(/public/CKeditorUpload/cbc-sharknado-img.jpg">
+                  <div class="position-bottom text-right">
+                    <a class="btn btn-sm btn-primary">Dec 14, 2018</a>
+                    <p class="media-text"><b>Sharknado VR offering created and developed by Sask. team of professionals</b><br>&nbsp;
+
+When Regina's Dave Hansen needed inspiration for a virtu...</p>
+                  </div>
+                </li>
+                <li data-id="27" data-toggle="modal" data-target="#modalPost" class="media-col post" style="background-size: cover; background:url(/public/CKeditorUpload/SharknadoSPost1080x566.jpg">
+                  <div class="position-bottom text-right">
+                    <a class="btn btn-sm btn-primary">Nov 07, 2018</a>
+                    <p class="media-text"><b>'Sharknado' Dives Into VR for the First Time in Franchise History With VR Game</b><br>&nbsp;
+
+"Sharknado VR: Eye of the Storm," the world's first virt...</p>
+                  </div>
+                </li>
+                <li data-id="26" data-toggle="modal" data-target="#modalPost" class="media-col post" style="background-size: cover; background:url(/public/CKeditorUpload/sharknado-news-live.jpg">
+                  <div class="position-bottom text-right">
+                    <a class="btn btn-sm btn-primary">Nov 02, 2018</a>
+                    <p class="media-text"><b>Sharknado Dives into VR for the First Time in Franchise History</b><br>Sharknado Dives into VR for the First Time in Franchise History ...</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <br>
+
+
+<style>
+.round-button-circle:hover {
+  background-color: #fff;
+  color:#333;
+}
+</style>
+
+            <div class="controls center">
+              <div class="round-button mr-4">
+                <div class="round-button-circle"><a class="prev button-pager disabled"><i class="fa fa-angle-left"></i></a></div>
+              </div>
+              <div class="round-button">
+                <div class="round-button-circle"><a class="next button-pager"><i class="fa fa-angle-right"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="trailer" class="trailer section parallax">
+      <div class="text-center align-middle" style="width:80%;margin:0 auto;">
+        <h2 class="text-roboto text-uppercase no-margin">Watch Trailer</h2>
+        <br>
+<!--
+        <div class="spacer center"></div>
+        <div class="trailer-wrapper">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5JzMAhD9wdg?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+-->
+        <!--  <button onclick="playPause()">Play/Pause</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button> -->
+<!--
+          </div>
+    </div>
+      </div>
+-->
+
+
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active videoCarouselThumb"><img class="d-block w-100" src="/public/images/sharknado-trailer-1.jpg"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="videoCarouselThumb"><img class="d-block w-100" src="/public/images/sharknado-trailer-2.jpg"></li>
+  </ol>
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="youtube-iframe embed-responsive-item" src="https://www.youtube.com/embed/5JzMAhD9wdg?rel=0&amp;showinfo=0" allowfullscreen="" allowscriptaccess=""></iframe>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="youtube-iframe embed-responsive-item" src="https://www.youtube.com/embed/VuYS3FcmQOc" allowfullscreen="" allowscriptaccess=""></iframe>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+
+
+    </div></section>
+
+
+
+    <section id="contact" class="contact section parallax">
+      <div class="text-center align-middle">
+        <form id="contactForm" method="post">
+        <input type="hidden" value="contact" name="action">
+        <h2 class="text-roboto text-uppercase no-margin">Contact Us</h2>
+        <br>
+        <div class="spacer center"></div>
+        <br>
+        <p>Email us directly at <a class="text-orange" href="mailto:support@sharknadovr.ca">support@sharknadovr.ca</a> or use the form.<br>You can also call us at (888) 589-6217</p>
+        <div class="messageHolder"></div>
+        <div class="row text-left no-margin no-padding-bottom formHolder">
+          <div class="offset-md-2 col-md-4 offset-lg-3 col-lg-3 padding-md">
+            Name<br>
+            <input class="form-control" name="name"><br>
+            Email Address<br>
+            <input class="form-control" name="email">
+          </div>
+          <div class="col-md-4 col-lg-3 padding-md">
+            Message<br>
+            <textarea rows="5" class="form-control" name="message"></textarea>
+          </div>
+        </div>
+        <div class="row no-margin formHolder">
+          <div class="offset-md-2 col-md-8 offset-lg-3 col-lg-6 padding-md no-padding-top">
+            <a class="btn btn-secondary btn-block formSubmit">SEND</a>
+          </div>
+        </div>
+        </form>
+      </div>
+
+
+
+      <div class="text-center align-middle">
+        <form id="subscribeForm" method="post">
+        <input type="hidden" value="subscribe" name="action">
+        <h2 class="text-roboto text-uppercase no-margin">Subscribe</h2>
+        <br>
+        <div class="spacer center"></div>
+        <br>
+
+            <p>Stay updated with the latest news and information on Sharknado VR.</p>
+
+        <div class="row text-left no-margin no-padding-bottom">
+          <div class="offset-md-2 col-md-4 offset-lg-3 col-lg-6 padding-md">
+ <p>By submitting this form, you are confirming you are an adult 18 years or older and you agree to Sharknado VR contacting you with marketing-related emails, and indicate you have agreed to the Sharknado VR Terms of Use and Privacy Notice. You may unsubscribe from receiving such communications at any time.</p>
+
+          </div>
+        </div>
+
+
+        <div class="messageHolder"></div>
+        <div class="row text-left no-margin no-padding-bottom formHolder">
+          <div class="offset-md-2 col-md-4 offset-lg-3 col-lg-1 padding-xs text-center"><br>
+             <label><input class="form-control text-center" type="checkbox" name="agree" value="Yes"> I agree</label>
+          </div>
+          <div class="col-md-4 col-lg-2 padding-xs">
+            Email Address<br>
+            <input class="form-control" name="email"><br>
+          </div>
+          <div class="col-md-4 col-lg-3 padding-xs"><br>
+            <a class="btn btn-secondary btn-block formSubmit">SUBSCRIBE</a>
+          </div>
+        </div>
+        </form>
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+<style>
+.footer { border-top:solid #393935 1px;}
+.footer {background-color: #000; opacity:0.6; min-height:121px; padding: 15px 0;}
+
+</style>
+
+        <section class="footer parallax">
+      <div>
+        <div class="row no-margin">
+          <ul class="social"><li class="tw"><a href="https://twitter.com/sharknado_vr" target="_blank"></a></li><li class="fb"><a href="https://www.facebook.com/Sharknado-VR-2079686045623137/" target="_blank"></a></li><li class="in"><a href="https://www.instagram.com/sharknado_vr/?hl=en" target="_blank"></a></li><li class="yt"><a href="https://www.youtube.com/channel/UCWMHmlzBSUyGklhCIIUT9Cw/" target="_blank"></a></li></ul>
+          <ul class="footer_menu"><!--<li><a href="#" data-toggle="modal" data-target="#press-release">Press Package</a></li>--><!--<li><a href="/press-package" target="_blank">Press Package</a></li>--><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="#" data-toggle="modal" data-target="#support">Support</a></li><li><a href="#" data-toggle="modal" data-target="#eula">EULA</a></li></ul>
+
+          <p>© 2023 Eye of the Storm Productions Inc. All Rights Reserved.</p>
+          <p>“PlayStation” and the “PS” Family logo are registered trademarks of Sony Interactive Entertainment Inc.</p>
+        </div>
+        <div class="row no-margin">
+          <ul class="footer_icons mt-5"><!--<li><img src="/public/themes/sharknado/img/footer_01.png" /></li>--><li><a href="http://autumnvr.com/" target="_blank"><img src="/public/themes/sharknado/img/footer_02.png"></a></li><li><a href="http://www.syfy.com/" target="_blank"><img src="/public/themes/sharknado/img/footer_03.png"></a></li><li><a href="http://www.theasylum.cc/" target="_blank"><img src="/public/themes/sharknado/img/footer_04.png"></a></li><li><a href="https://www.creativesask.ca/" target="_blank"><img src="/public/themes/sharknado/img/footer_05.png"></a></li><li><a href="https://www.vrxnetworks.com/" target="_blank"><img src="/public/themes/sharknado/img/footer_06.png"></a></li><li><img src="/public/themes/sharknado/img/footer_07.png"></li><li><img src="/public/themes/sharknado/img/footer_08.png"></li><li><img src="/public/themes/sharknado/img/footer_09.png"></li><li><img src="/public/themes/sharknado/img/footer_10.png"></li><li><img src="/public/themes/sharknado/img/ESRB-rating-with-descriptor.jpg"></li><li><span id="siteseal"><script async="" type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=RpsseVYtYKMgWWcFqVZvBxuXUl0wnX9IuuIKhrfqxYI1eIy1TdzGzqdsxpnQ"></script><img style="cursor:pointer;cursor:hand" src="https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_d_m.gif" onclick="verifySeal();" alt="SSL site seal - click to verify"></span></li></ul>
+        </div>
+      </div>
+    </section>
+    <!--<section class="footer parallax">
+      <div>
+        <div class="row no-margin">
+          <div class="col-sm-4 text-left padding-left-20">
+            <div>Proud partners</div>
+            <a href="http://www.nbcuniversal.com/" target="_blank"><img class="margin-top-10" style="width:75px;" src="/public/images/universal.png"></a>
+            <a href="http://autumnvr.com/" target="_blank"><img class="margin-top-10" src="website-files/images/autumn.png"></a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <img style="width:100px" class="margin-bottom-10 margin-top-10" src="website-files/images/sharnado-logoWhite.png" alt="Sharknado"><br>
+            <small class="text-muted">Copyright 2017. <a href="#" class="text-muted" data-toggle="modal" data-target="#privacy-policy">Privacy Policy</a>. <a href="#" class="text-muted" data-toggle="modal" data-target="#terms-conditions">Terms &amp; Conditions</a>. All rights reserved.</small>
+          </div>
+          <div class="col-sm-4 text-right padding-right-20">
+            <div class="pull-right text-left">
+              Follow us on<br>
+              <a href="https://www.facebook.com/Sharknado-VR-2079686045623137/" target="_blank" class="btn btn-default btn-circle btn-lg"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/sharknadovr?lang=en" target="_blank" class="btn btn-default btn-circle btn-lg"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UCWMHmlzBSUyGklhCIIUT9Cw/" target="_blank" class="btn btn-default btn-circle btn-lg"><i class="fa fa-youtube"></i></a>
+              <a href="https://www.instagram.com/Sharknado_vr/" target="_blank" class="btn btn-default btn-circle btn-lg"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    
+
+
+
+
+
+
+
+
+
+<style>
+/*
+#modalPost { height: 100%;}
+#modalPost .modal-dialog { max-width:100% !important; margin: 0px; height: 100%; }
+*/
+.modal-content { background-color: #e7e7e7; border-radius: 0; border:solid 15px #fff; }
+</style>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalPost" tabindex="-1" role="dialog" aria-labelledby="modalPostTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+            <h5 class="modal-title" id="modalPostTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> -->
+          <div class="modal-body padding-md text-left text-dark" style="padding:40px;">
+            <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="content-area newsContentArea">
+            <br style="clear:both">
+            <a class="btn btn-sm btn-primary text-white">Jul 2nd, 2017</a>
+            <br><br>
+            <h3 class="font-bold">Blog Post Title</h3>
+            By someone
+            <div class="spacer dark"></div><br>
+
+            <!--<img style="border:solid 4px #fff" class="img-fluid" src="http://placehold.it/900x300" alt="">-->
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="privacy-policy" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body padding-md text-left text-dark" style="padding:40px;">
+            <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="content-area">
+            <br style="clear:both">
+            <h3 class="font-bold">Sharknado VR Privacy Policy</h3>
+            <div class="spacer dark"></div><br>
+            <ol>
+	<li><strong>About Us</strong>&nbsp;
+	<ol>
+		<li>We are Melcher Media &amp; Design Inc., located in Canada at delivery address #202 - 815 7th Avenue, Regina SK S4N 6M7. We are entered in Canada's Business Registry under business number (BN) 843496407.</li>
+		<li>If you have any questions or concerns with this document, feel free to contact us at <a href="mailto:info@melcher.ca">info@melcher.ca</a>.</li>
+	</ol>
+	</li>
+	<li><strong>Who and what does this policy apply to?</strong>&nbsp;
+	<ol>
+		<li>This policy applies to those who purchase, download, or use any Melcher Studios games or services. This includes "Sharknado VR", our websites, and any other related services.</li>
+		<li>In this policy, "Melcher Studios", "we," "us," and "our" means Melcher Media &amp; Design Inc..</li>
+		<li>You must be 16 years of age or older to accept this agreement. If you are under 16, you must review this policy with a parent or guardian and have them accept on your behalf, and your parent or guardian will be responsible for all your activities when you use our games or services.</li>
+	</ol>
+	</li>
+	<li><strong>When do we collect your data?</strong>&nbsp;
+	<ol>
+		<li>When you purchase or play a Melcher Studios game.</li>
+		<li>When you access one of our websites.</li>
+	</ol>
+	</li>
+	<li><strong>What data do we collect?</strong>&nbsp;
+	<ol>
+		<li>When accessing any of our websites we will use Google Analytics to collect visitor information.</li>
+		<li>When playing a Melcher Studios game, we will collect your gamer ID for the platform on which you play, your scores and other gameplay stats. We may also collect information about the hardware and operating system the game is run on, the user experience (performance and errors), and your activities within the game.</li>
+		<li>Apart from us, your personal data will also be processed by the platforms through which you have purchased our game:&nbsp;
+		<ol>
+			<li>Oculus</li>
+			<li>Steam</li>
+			<li>PlayStation</li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+	<li><strong>How do we collect your data?</strong>&nbsp;
+	<ol>
+		<li>We use Google Analytics (<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>) to collect website visitor information.</li>
+		<li>When playing a Melcher Studios game, some information may be collected, stored, or managed by the distribution platform where you purchased the game, in which case that platform's policies will apply with respect to your data. We may also use Unity Analytics (<a href="https://unity3d.com/legal/privacy-policy">https://unity3d.com/legal/privacy-policy</a>) or GameAnalytics (<a href="https://gameanalytics.com/privacy">https://gameanalytics.com/privacy</a>) to collect additional information about your gameplay activities.</li>
+	</ol>
+	</li>
+	<li><strong>How will we use your data?</strong>&nbsp;
+	<ol>
+		<li>The data collected when playing a Melcher Studios game will be used as an integral part of the gameplay experience, enabling features such as leaderboards, achievements, and gameplay statistics. We will use any errors, bugs, or performance data collected to identify and fix issues with the games, and to improve the overall gameplay experience for all users. We will also use information on gameplay activities to identify popular and unpopular aspects of our games to improve their overall quality. The information collected may be used for marketing and analytics purposes.</li>
+	</ol>
+	</li>
+	<li><strong>How do we store your data?</strong>&nbsp;
+	<ol>
+		<li>Your gameplay data such as scores and stats will be stored on the distribution platform where you play the game, if applicable, and is subject to the storage policies of those platforms. Analytics data collected through third-party services will be stored with those services, and for a period determined by those services' policies.</li>
+		<li>Information collected elsewhere, or directly provided by you, may be stored in email or data storage services provided by Google, Dropbox, Clubhouse, or GitHub.</li>
+	</ol>
+	</li>
+	<li><strong>Who has access to your data?</strong>&nbsp;
+	<ol>
+		<li>Melcher Studios does not sell or disclose your personal data to any third parties without your consent, or unless necessary for the provision of our services or compliance with applicable laws.</li>
+		<li>Your personal data are also processed by Unity, which ensures the creation and management of statistics concerning our game as mentioned above. (Privacy policy available at: <a href="https://unity3d.com/legal/privacy-policy">https://unity3d.com/legal/privacy-policy</a>)</li>
+	</ol>
+	</li>
+	<li><strong>What are your data protection rights?</strong>&nbsp;
+	<ol>
+		<li>Every user is entitled to the following:&nbsp;
+		<ol>
+			<li>The right to access – You have the right to request from Melcher Studios copies of your personal data.</li>
+			<li>The right to rectification – You have the right to request that Melcher Studios correct any information you believe is inaccurate. You also have the right to request Melcher Studios to complete the information you believe is incomplete.</li>
+			<li>The right to erasure – You have the right to request that Melcher Studios delete your personal data.</li>
+			<li>The right to restrict processing – You have the right to request that Melcher Studios restrict the processing of your personal data, under certain conditions.</li>
+			<li>The right to object to processing – You have the right to object to Melcher Studios's processing of your personal data, under certain conditions.</li>
+			<li>The right to data portability – You have the right to request that Melcher Studios transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+		</ol>
+		</li>
+		<li>If you would like to exercise any of these rights, please contact us at <a href="mailto:info@melcher.ca">info@melcher.ca</a> and we will answer any questions or meet any requests you may have. Please note our ability to respond to your requests is limited to that of the data that we store and control directly, and that any requests related to data collected by a third-party service or platform outside of our control will need to be handled by that third-party, and subject to that party's privacy policy.</li>
+	</ol>
+	</li>
+</ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="coming-soon" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body padding-md text-left text-dark" style="padding:40px;">
+            <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="content-area">
+            <br style="clear:both">
+            <h3 class="font-bold">Coming Soon</h3>
+            <div class="spacer dark"></div><br>
+            Coming Soon !!!            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="eula" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body padding-md text-left text-dark" style="padding:40px;">
+            <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="content-area">
+            <br style="clear:both">
+            <h3 class="font-bold">EULA</h3>
+            <div class="spacer dark"></div><br>
+            <p><strong>LICENSE AGREEMENT</strong></p>
+
+<p>YOUR USE OF THE SERVICES IS SUBJECT TO THIS LICENSE AGREEMENT (THE “<strong>AGREEMENT</strong>”) AND THE TERMS SET FORTH BELOW. BY USING THE SERVICES, YOU HEREBY ACCEPT THE TERMS OF THIS AGREEMENT WITH [9383000 CANADA INC., DOING BUSINESS AS AUTUMN VR INC.] (“Licensor”, “we”, “us” or “our”). IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT DO NOT LAUNCH OR USE THE SERVICE.</p>
+
+<p>YOU CERTIFY THAT YOU ARE OF THE LEGAL AGE OF MAJORITY IN THE JURISDICTION IN WHICH YOU RESIDE OR, IF YOU ARE BETWEEN THE AGES OF 13 AND THE LEGAL AGE OF MAJORITY, THAT YOU ARE USING THE SERVCIES WITH THE SUPERVISION OF YOUR PARENT OR LEGAL GUARDIAN WHO AGREES TO BE BOUND BY THIS AGREEMENT. MAKE SURE TO REVIEW THIS AGREEMENT WITH YOUR PARENT OR GUARDIAN SO THAT YOU BOTH UNDERSTAND ALL OF YOUR RIGHTS AND OBLIGATIONS.</p>
+
+<p>If you are using the Services on behalf of any entity, you represent and warrant that you are authorized to accept this Agreement on such entity’s behalf and that such entity agrees to be responsible to us if you or that entity violate this Agreement.</p>
+
+<p>WE RESERVE THE RIGHT TO CHANGE OR MODIFY THIS AGREEMENT ON A GOING FORWARD BASIS AT ANY TIME AND IN OUR SOLE DISCRETION. If we make changes to this Agreement, we will provide notice of such changes as appropriate, such as providing notice through the Services and/or updating the “Last Updated” date at the top of this Agreement. Your continued use of the Services will confirm your acceptance of the revised Agreement. If you do not agree to the revised Agreement, you must stop using the Services. We encourage you to review the Agreement from time to time to ensure you understand the terms and conditions that apply to your access to, and use of, the Services.</p>
+
+<ol>
+	<li><a name="_Ref522115105"> Eligibility</a></li>
+</ol>
+
+<p>You must be at least 13 years of age to access and use the Services. There is no exception to this requirement. We do not knowingly collect any personal information from children under the age of 13. By your use of the Services, you agree that you are either 18 years of age or older, or an emancipated minor, or possess legal parental or guardian consent, and that you are fully able and competent to understand and accept this Agreement as a binding contract and to abide by all terms and conditions contained herein.</p>
+
+<ol start="2">
+	<li>Services Description</li>
+</ol>
+
+<p>(a) <u>Description:</u>&nbsp; The “Services” consists of the software, website, applications, content, including video and other graphics and other materials and documentation.&nbsp; To use the Services you must download and install on your device a portion of the software.&nbsp; Using the Services will require access to our website and the content contained therein, which will be streamed to your device.</p>
+
+<p>(b) <u>Third Party Software:</u>&nbsp; Certain third party software may be required to access and use the Services.&nbsp; If your device does not have such third party software you must obtain such third party software from the appropriate vendor and agree to the terms of such vendor agreement.&nbsp; This Agreement does not cover the use of such third party software and we do not take any, and disclaim all, responsibility and liability regarding such third party software.</p>
+
+<p>(c) <u>Updates:</u>&nbsp; We may need to automatically update some of the software you obtain through the Services or provide you with new software to keep the Services functioning properly, which could include bug fixes, patches, enhanced features, missing plug-ins and new versions. By using the Services, you agree to such automatic updating.</p>
+
+<p>(d) <u>Modifications to the Services:</u>&nbsp; We reserve the right to change, modify, add, enhance, remove or discontinue access to the Services or particular portions thereof, at any time and without notice. In no event will we be liable for the removal of or disabling of access to any portion or feature of the Services.</p>
+
+<p>&nbsp;</p>
+
+<ol start="3">
+	<li>Your Use of Services</li>
+</ol>
+
+<p>(a) <u>Content and Software License:</u> &nbsp;Subject to the terms and conditions of this Agreement commencing as of the date that is the earlier of: (i) the date you downloaded the software; (ii) the date of first use of&nbsp; the Services; or (iii) the date you clicked “I agree” to this Agreement; and for the duration of the Term (as defined below), we hereby grant to you a non-exclusive, non-transferable, revocable right, for your personal non-commercial use, to access and use the Services and each component thereof.</p>
+
+<p>(b) <u>Restrictions on Use:</u>&nbsp; Any rights not granted herein are strictly reserved by us.&nbsp; You shall not (i) permit any third person to use the Service; (ii) re-license, sublicense, lease, loan or otherwise provide the Services to any third person; or (iii) publicly display, publicly perform, transmit, stream, broadcast or otherwise exploit the Services.&nbsp; You shall not, and shall not permit others to, decrypt, adapt, modify, reverse engineer, decompile, disassemble or translate any software used by us to deliver the Services, or otherwise attempt to view, display or print such software, including its source code. &nbsp;Any unauthorized use of the Services is strictly prohibited and will terminate the license granted in this Agreement.</p>
+
+<p>(c) <u>Availability</u>: &nbsp;The Services may not be available in all territories and jurisdictions, and we may restrict or prohibit use of all or a portion of the Services in certain territories and jurisdictions.</p>
+
+<p>(d) <u>Network Costs:</u> You may be charged by your network provider for data services or any other third party charges as may arise while using the Services and you accept responsibility for such charges. If you are not the bill payer, we will assume that you have received permission from the bill payer.</p>
+
+<p><a name="_Ref522105147">(e) <u>Prohibited Activities:</u></a>&nbsp; You shall not:</p>
+
+<p>(i) use the Services for improper or unlawful purposes;</p>
+
+<p>(ii) include, or knowingly allow others to include, any Objectionable Content or introduce Viruses to the Service;</p>
+
+<p>(iii) intercept or attempt to intercept any messages transmitted to and from the Service that are not intended for you;</p>
+
+<p>(iv) take any action that imposes an unreasonable or disproportionately large load on the Service;</p>
+
+<p>(v) use the Services to develop any derivative works or any functionally compatible or competitive software; or</p>
+
+<p>(vi) remove any copyright or other proprietary rights notice on the Software or the User Documentation or any copies thereof.</p>
+
+<p>For the purposes of the preceding: “<strong>Objectionable Content</strong>” means content that infringes any applicable laws, regulations or third party rights, including intellectual property rights; and content which is obscene, indecent, pornographic, seditious, offensive, defamatory, threatening, liable to incite racial hatred, menacing, blasphemous, misleading or deceptive; and “<strong>Virus</strong>” means a piece of code usually (but not necessarily) disguised as something else that causes some unexpected and, for the victim, usually undesirable, event and which is designed so that it may automatically spread to other computer users; the term ‘Virus’ will also be deemed to include worms, cancelbots, trojan horses, harmful contaminants (whether self-replicating or not) and nuisance causing or otherwise harmful applets.</p>
+
+<p>(f) <u>Suspension:</u>&nbsp; We reserve the right, in our sole and absolute discretion, to disable your access to or ability to use the Services if we reasonably determine that you are using the Services: for an improper or unlawful purpose; otherwise in contravention of Section 3(e); or that you may have uploaded any Objectionable Content or Virus.&nbsp; We may also suspend your access to or ability to use the Service if we deem necessary to protect the integrity and operation of the Services.&nbsp; We will not incur any liability or responsibility if we choose to remove, disable, or delete such access or ability to use any or all portion(s) of the Services.</p>
+
+<ol start="4">
+	<li>Purchases</li>
+</ol>
+
+<p>(a) <u>Account:</u> You may be required to be a registered user in order to purchase some Services. You are responsible for all charges incurred in connection with your account. We may attempt to collect unpaid charges, including by attempting additional charges to your payment instrument, use of collections agencies and any other legal means. If you decide to cancel your account, we reserve the right, subject to any limitations under applicable laws, to collect fees, surcharges, or costs incurred before cancellation. Any delinquent or unpaid accounts must be settled before we will allow you to register again.</p>
+
+<p>(b) <u>Virtual Items:</u> Your purchase of a virtual item or in-game currency within the Services is a payment for a limited, non-assignable license to access and use such content or functionality in the Services. Virtual items (including characters and character names) or in-game currency purchased or available to you in the Services can only be used in connection with the Services where you obtained them or where they were developed by you as a result of game play. These items are not redeemable or subject to refund and cannot be traded outside of the Services for money or other items for value. We may modify or discontinue virtual items or in-game currency at any time.</p>
+
+<p>(c) <u>Pricing and Payment:</u> We may accept various forms of payment, including credit and debit cards, and additional terms with your payment provider may apply. Prices are subject to change without notice. We reserve the right to refuse or cancel orders at any time and in our sole discretion.</p>
+
+<p>(d) <u>Taxes:</u> If your purchase or use of the Services is subject to any type of use or sales tax, duty or other governmental tax or fee (“Taxes”), then we may charge you for those Taxes. Applicable Taxes may be presented at checkout. You are responsible for any Taxes due with respect to your use of the Services.</p>
+
+<p>(e) <u>Content Cancellations; Returns:</u> &nbsp;All purchases of digital content are final except as required by law. &nbsp;Once you purchase Content, we encourage you to download, install and/or access it promptly. If you are located in the EU, you consent that the supply of the digital content may begin immediately following the completion of your purchase and you acknowledge that you therefore will lose any statutory rights you may have to withdraw and receive a refund. If you are unable to download, install or access purchased content, please contact us at support@vertigo-games.com.</p>
+
+<ol start="5">
+	<li>
+	<p>Code of Conduct</p>
+	</li>
+</ol>
+
+<p><a name="_Ref522106256">(a) <u>Compliance:</u></a>&nbsp; You agree to abide by our code of conduct, as we may amend from time to time during multiplayer or co-op gameplay sessions.&nbsp; In addition, you agree to:</p>
+
+<p>(i) not use derogatory, demeaning, malicious, defamatory, abusive, offensive, hateful or discriminatory language.</p>
+
+<p>(ii) not harass, bully, threaten, harm or cause discomfort for other users. For example:</p>
+
+<ul>
+	<li style="list-style-type:none">
+	<ul>
+		<li style="list-style-type:none">
+		<ul>
+			<li style="list-style-type:none">
+			<ul style="list-style-type:disc">
+				<li>
+				<p>use of hate speech or racial, ethnic, sexist, homophobic or religious slurs;</p>
+				</li>
+				<li>
+				<p>harassment of a specific person (repeated flaming or personal attacks); or</p>
+				</li>
+				<li>
+				<p>disclosing any personal or private information of another person, or any confidential information pertaining to a business, without consent.</p>
+				</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<p>(iii) not promote, plan, glorify or engage in any illegal activity or otherwise make available content that would encourage or provide instructions for an illegal activity. These topics include but are not limited to crimes relating to drugs, drug paraphernalia, rape, solicitation of a minor, computer hacking, counterfeiting and fraud.</p>
+
+<p>(iv) not impersonate other persons, including fellow users or we staff or attempt to obtain sensitive information from other users. For example:</p>
+
+<ul>
+	<li style="list-style-type:none">
+	<ul>
+		<li style="list-style-type:none">
+		<ul>
+			<li style="list-style-type:none">
+			<ul style="list-style-type:disc">
+				<li>
+				<p>falsely claiming an official title or to hold position relating to we;</p>
+				</li>
+				<li>
+				<p>falsely claiming the representation of another business or websites;</p>
+				</li>
+				<li>
+				<p>falsely claiming to be a law enforcement officer; or</p>
+				</li>
+				<li>
+				<p>soliciting passwords or personal information from other users.</p>
+				</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<p>(v) not engage another user under false pretenses or otherwise defraud another user.</p>
+
+<p>(b) <u>Remedy:</u>&nbsp; We, at our sole discretion, may issue a warning or expel you from accessing or using the Services for violations of the Code of Conduct or Section 5(a).</p>
+
+<ol start="6">
+	<li>
+	<p>User Content</p>
+	</li>
+</ol>
+
+<p>(a) <u>User Content and Communication by You:</u>&nbsp; Our Services may include interactive features and areas where you may interact with other users of the Services and by so interacting may submit, post, upload, publish, send or otherwise transmit content to such other users (collectively, “User Content”). &nbsp;You acknowledge that we do not store, intercept, keep collect, use or distribute any User Content, but are merely facilitating the communication by you with other users for the purposes of using the Services.&nbsp; We do not claim any ownership rights in or to your User Content.</p>
+
+<p>(b) <u>Responsibility:</u>&nbsp; You are solely responsible for the User Content you make available through the Services and you represent and warrant that: (i) you either are the sole and exclusive rights owner of all User Content that you provide, or you have obtained all rights, licenses, permissions, consents and releases that are necessary to submit the User Content to other users of the Services; (ii) the provision of your User Content, and the communication of same to other users of the&nbsp; Service, will not infringe, misappropriate or violate any third party’s patent, copyright, trademark, trade secret, moral rights or other proprietary or intellectual property rights, or rights of publicity or privacy, or result in the violation of any applicable laws or regulations; and (iii) your User Content does not violate our community standards.&nbsp; WE STRONGLY ADVISE THAT YOU DO NOT TRANSMIT, SUBMIT OR OTHERWISE PROVIDE THROUGH THE USE OF OUR SERVICES TO OTHER USERS ANY PERSONAL INFORMATION, WHETHER YOUR PERSONAL INFORMATION OR THAT OF OTHER INDIVIDUALS.</p>
+
+<p>(c) <u>Disclaimer:</u>&nbsp; We do not endorse or guarantee the opinions, views, advice, or recommendations posted or sent by users. We have no responsibility or liability for User Content made available through the Services, and we have no obligation to screen, edit or monitor such content.</p>
+
+<ol start="7">
+	<li>
+	<p>Ownership and Confidentiality</p>
+	</li>
+</ol>
+
+<p>(a) <u>Ownership:</u>&nbsp; You acknowledge that we and our licensors retain all right, title and interest, including all intellectual property rights, in and to the Services, each component of the Services, including without limitation, the software, website, applications, content, including video and other graphics and other materials and documentation and the Services’ design and any modification, update, upgrade or enhancement made thereto by us.&nbsp; The Services are the property of us or our licensors and are protected by copyright, trademark and other applicable laws.&nbsp; You do not acquire any rights, title or ownership interests of any kind whatsoever, express or implied, in any of the foregoing other than the license granted herein.</p>
+
+<p>(b) <u>Confidentiality:</u>&nbsp; You acknowledge that the software used by us in connection with the Services, including its source code, is our confidential information.&nbsp; You will hold our confidential information in confidence, and shall use the same degree of care by instruction, agreement or otherwise, to maintain the confidentiality of our confidential information that you use to maintain the confidentiality of your own confidential information, but with at least a reasonable degree of care commensurate with the nature and importance of such confidential information.&nbsp; You agree not to make use of our confidential information other than for the exercise of rights or the performance of obligations under this Agreement, and not to release, disclose, communicate it or make it available to any third person.</p>
+
+<ol start="8">
+	<li>
+	<p>Disclaimer of Warranty</p>
+	</li>
+</ol>
+
+<p>YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOUR ACCESS TO AND USE OF THE SERVICES IS AT YOUR SOLE RISK. AS BETWEEN YOU AND US, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS AND WE EXPRESSLY DISCLAIMS ALL REPRESENTATIONS, WARRANTIES AND CONDITIONS (EXPRESS OR IMPLIED, ORAL OR WRITTEN), INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN ADDITION, WE DO NOT REPRESENT OR WARRANT THAT (A) THE FUNCTIONS CONTAINED IN THE SERVICES WILL BE ACCURATE OR MEET YOUR REQUIREMENTS; (B) THE OPERATION OF THE SERVICES WILL BE SECURE, UNINTERRUPTED, ERROR-FREE OR VIRUS-FREE, (C) ANY DEFECTS IN THE SERVICES WILL BE CORRECTED; OR (D) THAT THE SERVICES WILL BE AVAILABLE AT ALL TIMES. NO ORAL OR WRITTEN INFORMATION, GUIDELINES OR ADVICE GIVEN BY US WILL CREATE A WARRANTY.</p>
+
+<p>YOU FURTHER ACKNOWLEDGE AND AGREE THAT WE ARE NOT RESPONSIBLE FOR THE CONDUCT, WHETHER ONLINE OR OFFLINE, OF ANY USER OF THE SERVICES. UNDER NO CIRCUMSTANCES WILL WE BE RESPONSIBLE FOR ANY LOSS OR DAMAGE, INCLUDING PERSONAL INJURY OR DEATH, RESULTING FROM YOUR USE OF THE SERVICES, ANY USER-GENERATED CONTENT IN THE SERVICES OR TRANSMITTED TO ANOTHER USER, OR ANY TRANSACTIONS BETWEEN OR AMONG YOU AND OTHER USERS, WHETHER ONLINE OR OFFLINE.</p>
+
+<p>THE FOREGOING DISCLAIMER OF WARRANTIES WILL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW. THE LAWS OF SOME STATES OR JURISDICTIONS DO NOT ALLOW THE DISCLAIMER OF IMPLIED WARRANTIES, SO SOME OR ALL OF THE DISCLAIMERS IN THIS SECTION MAY NOT APPLY TO YOU.</p>
+
+<ol start="9">
+	<li>
+	<p>Indemnification</p>
+	</li>
+</ol>
+
+<p>You agree to defend, indemnify and hold harmless us and our affiliates, independent contractors and service providers, and each of our respective directors, officers, employees and agents (collectively, “<strong>Our Parties</strong>”) from and against all third-party claims, damages, costs, liabilities and expenses (including, but not limited to, reasonable attorneys’ fees) caused by, arising out of or related to (a) your purchase or use of, or inability to use, the Services; (b) your violation of this Agreement or any other applicable terms, policies, warnings or instructions provided by us or a third party in relation to the Services, (c) your violation of any applicable law or any rights of any third party; or (d) any User Content or feedback you provide.</p>
+
+<ol start="10">
+	<li>
+	<p>Limitation of Liability</p>
+	</li>
+</ol>
+
+<p>OUR PARTIES SHALL HAVE NO LIABILITY FOR ANY LOST PROFITS, LOST DATA OR FOR ANY CONSEQUENTIAL, SPECIAL, PUNITIVE, INDIRECT, OR INCIDENTAL DAMAGES, ARISING FROM OR RELATED TO YOUR USE OR INABILITY TO USE THE SERVICES, EVEN IF OUR PARTIES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL THE AGGREGATE LIABILITY OF OUR PARTIES ARISING OUT OF OR RELATING TO THE USE OF OR INABILITY TO USE THE SERVICES EXCEED THE GREATER OF ONE HUNDRED CANADIAN DOLLARS (CDN$100) OR THE AMOUNT YOU PAID US TO USE OUR SERVICES. THE FOREGOING DISCLAIMER OF CERTAIN DAMAGES AND LIMITATION OF LIABILITY WILL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW. THE LAWS OF SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES, SO SOME OR ALL OF THE EXCLUSIONS AND LIMITATIONS SET FORTH ABOVE MAY NOT APPLY TO YOU.</p>
+
+<ol start="11">
+	<li>
+	<p>Privacy</p>
+	</li>
+</ol>
+
+<p>You accept and agree to our Privacy Policy as found at [insert link].</p>
+
+<ol start="12">
+	<li>
+	<p>No Assignments</p>
+	</li>
+</ol>
+
+<p>You may not assign or otherwise transfer any rights or obligations under this Agreement.</p>
+
+<ol start="13">
+	<li>
+	<p>Severability</p>
+	</li>
+</ol>
+
+<p>In the event that any provision (or any portion of a provision) of this Agreement shall for any reason be held by a court of competent jurisdiction to be invalid, illegal, or unenforceable for any reason, such invalidity, illegality or unenforceability shall not affect any other provision hereof and this Agreement shall be construed as if such invalid, illegal or unenforceable provision (or portion of a provision) had never been contained herein in regards to that particular jurisdiction.</p>
+
+<ol start="14">
+	<li>
+	<p>Non-waiver</p>
+	</li>
+</ol>
+
+<p>The failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights.</p>
+
+<ol start="15">
+	<li>
+	<p>Governing Law</p>
+	</li>
+</ol>
+
+<p>This Agreement shall be governed by, and construed and enforced in accordance with, the laws in force in the Province of Ontario (excluding any conflict of laws rule or principle which might refer such construction to the laws of another jurisdiction).&nbsp; The Parties hereto agree to submit to the exclusive jurisdiction of the courts of the Province of Ontario and waive any objection relating to improper venue or <em>forum non conveniens</em> to the conduct of any proceeding in any such court.</p>
+
+<ol start="16">
+	<li>
+	<p>Term and Termination</p>
+	</li>
+</ol>
+
+<p>In addition to our other rights of termination or suspension contained in this Agreement, we reserve the right to terminate this Agreement and your rights hereunder, including access and use of the Services if you violate or breach any provision of this Agreement or any other terms or policies referenced herein, including our code of conduct.</p>            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="terms-conditions" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body padding-md text-left text-dark" style="padding:40px;">
+            <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="content-area">
+            <br style="clear:both">
+            <h3 class="font-bold">Terms &amp; Conditions</h3>
+            <div class="spacer dark"></div><br>
+            <p>THIS PRODUCT IS COPYRIGHTED BY AUTUMN VR INC. (AVI).</p>
+
+<p>THIS DEMONSTRATION PROGRAM (DEMO) IS FOR PRIVATE PERSONAL USE ONLY AND MAY NOT BE REPRODUCED, MODIFIED, OR REDISTRIBUTED IN ANY WAY. NOR MAY THE DEMO BE UTILIZED AS REFERENCE IN ANY COMMERCIAL RECREATIONS, MUSEUMS, ATTRACTIONS, OR EXHIBITS WITHOUT THE PRIOR KNOWLEDGE OF AND WRITTEN AGREEMENT WITH AVI.</p>
+
+<p>YOU AGREE TO DEFEND, INDEMNIFY AND HOLD AVI HARMLESS FROM AND AGAINST ANY AND ALL CLAIMS, DAMAGES, COSTS AND EXPENSES, INCLUDING ATTORNEYS' FEES, ARISING FROM OR RELATED TO YOUR USE OF THIS DEMO. YOU AGREE THAT THE LAWS OF CANADA WILL GOVERN THIS AGREEMENT AND YOUR USE OF THIS DEMO. YOU MAY ALSO BE SUBJECT TO OTHER LOCAL, PROVINCIAL, NATIONAL, AND INTERNATIONAL LAWS. YOU MAY SUBMIT IDEAS AND FEEDBACK TO US, BUT YOU ACKNOWLEDGE THAT BY SO YOU GIVE US FULL PERMISSION TO USE THE IDEAS WITHOUT ANY COMPENSATION OR CREDIT TO YOU WHATSOEVER. WE RESERVE THE RIGHT TO CHANGE THESE TERMS OF USE WITHOUT NOTICE.</p>
+
+<p>By downloading, installing, and using this demo, you are agreeing to the terms of use above.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body padding-md text-left text-dark" style="padding:40px;">
+            <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="content-area">
+            <br style="clear:both">
+            <h3 class="font-bold">Support</h3>
+            <div class="spacer dark"></div><br>
+            <h4>Troubleshooting Connection and Latency Issues</h4>
+<p>If you are the host of a session in Sharknado VR, other players will have to be able to connect to you. If they can’t, try the steps in the Firewall and Forwarding sections.</p>
+
+<h4>OPTIMIZE INTERNET CONNECTION</h4>
+<p>If you are experiencing connectivity issues, jittery gameplay in multiplayer, or disconnects while in a session. Try the following steps to optimize your internet connection:</p>
+<ul>
+<li>If you’re using a wireless connection, connect directly to your router or modem</li>
+<li>Shut down other programs that access the internet, such as other games or download programs</li>
+<li>Don’t use satellite and cellular phone internet connections. This are not stable connections and will cause connection issues</li>
+<li>Do not use proxies or VPN connections</li>
+</ul>
+<p><b>Close applications</b></p>
+<p>Background applications can interfere a lot with your network. Streaming data is a common issue for slow connections, make sure that background applications are closed.</p>
+<p>Here is a list of examples of common applications that can cause latency issues due to the increase of the networking load:</p>
+<ul>
+<li>Skype</li>
+<li>Teamspeak/Ventrilo/Discord/Mumble</li>
+<li>Spotify</li>
+<li>Web browsers (especially when streaming content such as Youtube, Twitch)</li>
+<li>Torrent download programs (i.e. μTorrent)</li>
+</ul>
+<p>Additionally, there can be background applications running that you are unaware of. Follow the following steps to disable those applications:</p>
+<p><b>Windows 8/10</b></p>
+<ul>
+<li>While on the desktop, press Windows Key + R</li>
+<li>Type msconfig and press Enter</li>
+<li>Select Selective startup and uncheck Load startup items</li>
+<li>Then, select the Services tab</li>
+<li>Check Hide all Microsoft services</li>
+<li>Select Disable all</li>
+<li>Select Apply</li>
+<li>Restart your computer</li>
+</ul>
+<p>If the above as solved your issue, there is a problematic service.</p>
+<h4>Update Windows &amp; Hardware Drivers</h4>
+<p>Out of date drivers and operating systems can cause a variety of issues. It is common knowledge that GPU drivers should be up to date for games, but also other hardware such as Network cards will require and update once in a while. Even new computers can have outdated drivers!</p>
+<p>Some games and programs can and will work fine with older drivers and version, but specific games and programs can still have technical issues.</p>
+<p><b>Update your windows</b></p>
+<p>Quite often you will have an update ready for Windows that is not installed automatically. These can be related to networking.</p>
+<p><b>Windows 8/10</b></p>
+<ul>
+<li>While on the desktop, press the&nbsp;<b>Windows Key</b></li>
+<li>Type&nbsp;<b>Update and Security&nbsp;</b>and press&nbsp;<b>Enter</b></li>
+<li>Select&nbsp;<b>Check for Updates</b></li>
+<li>Updates will be downloaded and installed if there are any</li>
+<li>Restart your computer</li>
+</ul>
+<p><b>Update your hardware drivers</b></p>
+<p>There are many different types of hardware manufacturers which makes it impossible to write a guide for them all. Below you can find the common method to look for updates, if that doesn’t help you will have to contact the manufacturer of your specific hardware device.</p>
+<p><b>Windows 8/10</b></p>
+<ul>
+<li>While on the desktop, press the&nbsp;<b>Windows Key</b></li>
+<li>Type&nbsp;<b>Device Manager</b>&nbsp;and press&nbsp;<b>Enter</b></li>
+<li>Browse to&nbsp;<b>Network Adapters</b>&nbsp;and right-click on your used Network adapter</li>
+<li>Select&nbsp;<b>Update Driver Software</b></li>
+<li>Select&nbsp;<b>Search automatically for updated driver software</b></li>
+<li>Restart your computer</li>
+</ul>
+<p><b>Update your modem and router firmware</b></p>
+<p>Modem and routers also run their own software called&nbsp;<b>firmware</b>. Often these are not updated automatically and will require a manual update. Even new hardware can still have old firmware on it! Since there are many types of modem and routers we can’t write a definitive guide here. But most of the times firmware and update guides can be found on the manufacturer’s website of your router and/or modem.</p>
+<h4>Steam First Checks</h4>
+<p>If you are playing our games through Steam, please try the following steps before continuing:<b><br>
+Restart your PC &amp; Steam<br>
+</b>Simply restarting steam and your computer can fix many common errors, it is recommended to do this before proceeding.</p>
+<p><b>Verify Integrity of Game Files</b><br>
+It can happen that your game files are incorrectly installed or have become corrupt. Run the steps in the following URL to check the integrity of your game files:&nbsp;<a href="https://support.steampowered.com/kb_article.php?ref=2037-QEUH-3335" target="_blank" rel="noopener">Steam – check file integrity</a></p>
+<p><b>Check if the steam server is down</b><br>
+This will happen very rarely, but if it is down playing the game in multiplayer will not be possible.<br>
+You can check the status of the steam server on the following url:&nbsp;<a href="https://steamstat.us/" target="_blank" rel="noopener">https://steamstat.us/</a>.</p>
+<h4>Firewall</h4>
+<p>There are many types of firewalls which have different guidelines. You may need to contact your manufacturer of your firewall in order to properly configure exceptions.</p>
+<p><b>Add firewall exceptions</b></p>
+<p>Create a firewall exception for port 48170 for both TCP and UDP.</p>
+<p>Windows 8/10</p>
+<ul>
+<li>While on the desktop, press&nbsp;<b>Window Key</b></li>
+<li>Type&nbsp;<b>Firewall&nbsp;</b>and press&nbsp;<b>Enter</b></li>
+<li>Select&nbsp;<b>Advanced Settings</b></li>
+<li>On the left side select&nbsp;<b>Inbound Rules</b></li>
+<li>On the right side select&nbsp;<b>New Rule…</b></li>
+<li>Select&nbsp;<b>Port&nbsp;</b>and select&nbsp;<b>Next</b></li>
+<li>Select&nbsp;<b>UDP&nbsp;</b>(we will add one for&nbsp;<b>TCP</b>&nbsp;later)</li>
+<li>In the&nbsp;<b>Specific local ports&nbsp;</b>field enter: 48170 and select&nbsp;<b>Next</b></li>
+<li>Select&nbsp;<b>Allow the connection</b>. Select&nbsp;<b>Next</b></li>
+<li>Select&nbsp;<b>Domain, Private and Public</b>&nbsp;if they aren’t. Select&nbsp;<b>Next</b></li>
+<li>Enter a name (i.e. Sharknado) and select&nbsp;<b>Finish</b></li>
+<li>Now also add a&nbsp;<b>New Rule</b>&nbsp;for&nbsp;<b>TCP</b></li>
+</ul>
+<p><b>Disable firewall ( not recommended )</b></p>
+<p>A quick check if your firewall is causing issues, is to disable it completely. This is not recommended for a permanent solution, but will let you learn whether the firewall is the issue.</p>
+<p><b>Disable / Uninstall third party firewalls</b></p>
+<p>Third party firewall programs can cause a plethora of issues. We suggest disabling or uninstalling these firewalls completely.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="press-release" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body padding-md text-left text-dark" style="padding:40px;">
+            <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="content-area">
+            <br style="clear:both">
+            <h3 class="font-bold">Press Package</h3>
+            <div class="spacer dark"></div><br>
+            <div id="press-package-cont">
+
+<p>You are stranded in the eye of a tornado...wait, is that a shark? A SHARKNADO! Sharknado: Eye of the Storm is a glorious 360 VR multi level bone shaker. Using weapons ranging from a chainsaw to shotgun to a machine gun and everything in between, you must try and survive the onslaught of sharks. Oh, and you have to save as many people as you can all while dodging Barracudas, Octopuses and poisonous Jellyfish too. You better cancel your plans for the afternoon. The world needs you!</p>
+
+<h5>Press Release</h5>
+
+<div>
+<p><a href="/public/CKeditorUpload/Sharknado_Press_Release_11_07_18.pdf" target="_blank">Download</a></p>
+</div>
+
+<h5>Trailers</h5>
+
+<div>
+<a href="press-package/videos/Sharknado-VR_teaser_Coming2018_10sec-INSTAGRAM.mp4" target="_blank"><span class="caption_wrap"><img src="press-package/videos/Sharknado-VR_teaser_FULL_Au2018-30-sec(1)sm.jpg"><span class="caption_txt">10 Sec Teaser</span></span>download</a>
+<a href="press-package/videos/Sharknado-VR_teaser_Coming2018_30sec_1a.mp4" target="_blank"><span class="caption_wrap"><img src="press-package/videos/Sharknado-VR_teaser_FULL_Au2018-30-sec(1)sm.jpg"><span class="caption_txt">30 Sec Teaser</span></span>download</a>
+</div>
+
+<h5>B-Roll</h5>
+
+<div>
+<a href="press-package/videos/Sharknado-VR_Gameplay-01-Sept-clean.mp4" target="_blank"><span class="caption_wrap"><img src="press-package/videos/Sharknado-VR_teaser_FULL_Au2018-30-sec(1)sm.jpg"><span class="caption_txt">Game Footage</span></span>download</a>
+</div>
+
+<h5>Screen Shots</h5>
+
+<div>
+<a href="/public/themes/sharknado/press-package/images/screenshot-press-1.jpg" target="_blank"><span class="caption_wrap"><img src="/public/themes/sharknado/press-package/images/screenshot-press-sm-1.jpg"><span class="caption_txt">Download</span></span>download</a>
+<a href="/public/themes/sharknado/press-package/images/screenshot-press-2.jpg" target="_blank"><span class="caption_wrap"><img src="/public/themes/sharknado/press-package/images/screenshot-press-sm-2.jpg"><span class="caption_txt">Download</span></span>download</a>
+<a href="/public/themes/sharknado/press-package/images/screenshot-press-3.jpg" target="_blank"><span class="caption_wrap"><img src="/public/themes/sharknado/press-package/images/screenshot-press-sm-3.jpg"><span class="caption_txt">Download</span></span>download</a>
+<a href="/public/themes/sharknado/press-package/images/screenshot-press-4.jpg" target="_blank"><span class="caption_wrap"><img src="/public/themes/sharknado/press-package/images/screenshot-press-sm-4.jpg"><span class="caption_txt">Download</span></span>download</a>
+<a href="/public/themes/sharknado/press-package/images/screenshot-press-5.jpg" target="_blank"><span class="caption_wrap"><img src="/public/themes/sharknado/press-package/images/screenshot-press-sm-5.jpg"><span class="caption_txt">Download</span></span>download</a>
+</div>
+
+<h5>Logos</h5>
+
+<div>
+<a href="press-package/logos/Sharknado-VR-Logo-Final.eps" target="_blank"><span class="caption_wrap"><img src="press-package/logos/Sharknado-VR-Logo-Finalsm.jpg"><span class="caption_txt">Download</span></span>download EPS</a>
+<a href="press-package/logos/Sharknado-VR-Logo-Final.jpg" target="_blank"><span class="caption_wrap"><img src="press-package/logos/Sharknado-VR-Logo-Finalsm.jpg"><span class="caption_txt">Download</span></span>download JPG</a>
+<a href="press-package/logos/Sharknado-VR-Logo-Final.pdf" target="_blank"><span class="caption_wrap"><img src="press-package/logos/Sharknado-VR-Logo-Finalsm.jpg"><span class="caption_txt">Download</span></span>download PDF</a>
+</div>
+
+<h5>Posters</h5>
+
+<div>
+<a href="press-package/posters/SharknadoMainPoster.jpg" target="_blank"><span class="caption_wrap"><img src="press-package/posters/SharknadoMainPoster.jpg" style="width:160px"><span class="caption_txt">LA Poster</span></span>download</a>
+<a href="press-package/posters/SharknadoKansasPoster.jpg" target="_blank"><span class="caption_wrap"><img src="press-package/posters/SharknadoKansasPoster.jpg" style="width:160px"><span class="caption_txt">Kansas Poster</span></span>download</a>
+</div>
+
+<!--<h5>Ads</h5>
+
+<div>
+<a href="press-package/ads/SharknadoOutNow1024x512.png" target="_blank"><span class="caption_wrap"><img src="press-package/ads/SharknadoOutNow1024x512sm.jpg" style="width:160px" /><span class="caption_txt">1024x512</span></span>download</a>
+<a href="press-package/ads/SharknadoOutNow1080x1080.png" target="_blank"><span class="caption_wrap"><img src="press-package/ads/SharknadoOutNow1080x1080sm.jpg" style="width:160px" /><span class="caption_txt">1080x1080</span></span>download</a>
+<a href="press-package/ads/Banner3840x2160.jpg" target="_blank"><span class="caption_wrap"><img src="press-package/ads/Banner3840x2160-160x107.jpg" style="width:160px" /><span class="caption_txt">3840x2160</span></span>download</a>
+<a href="press-package/ads/BannerMain3840x2160.jpg" target="_blank"><span class="caption_wrap"><img src="press-package/ads/BannerMain3840x2160-160x107.jpg" style="width:160px" /><span class="caption_txt">3840x2160</span></span>download</a>
+</div>-->
+
+</div>            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/jquery-2.1.1.js"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","360959617771190");fbq("set","agent","tmgoogletagmanager","360959617771190");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=360959617771190&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2043997302333704");fbq("set","agent","tmgoogletagmanager","2043997302333704");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2043997302333704&amp;ev=PageView&amp;noscript=1"></noscript>
+
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/sly.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ekko-lightbox.min.js"></script>
+    <script src="parallax-hero-image/js/main.js"></script>
+    <script src="js/script.js?v=1.001"></script>
+    <script src="js/carouselVideos.js"></script>
+    <script>
+
+    //automated shark animation
+
+
+    //header menu
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 355) {
+        $('.header').addClass('on-scroll').fadeIn();
+        $('#logo-src').attr('src', 'website-files/images/sharnado-logoWhite.png').fadeIn();
+      } else {
+        $('.header').removeClass('on-scroll').fadeIn();
+        $('#logo-src').attr('src', 'website-files/images/sharnado-logo.png').fadeIn();
+
+      }
+
+    });
+
+      //video
+      var myVideo = document.getElementById("video");
+      function playPause()
+      {
+      if (myVideo.paused)
+        myVideo.play();
+      else
+        myVideo.pause();
+      }
+
+      // function makeBig()
+      // {
+      // myVideo.width=560;
+      // }
+      //
+      // function makeSmall()
+      // {
+      // myVideo.width=320;
+      // }
+      //
+      // function makeNormal()
+      // {
+      // myVideo.width=420;
+      // }
+
+        //news ticker
+          //$('.container').css('width', $(document).width());
+          (function () {
+            var $frame = $('#forcecentered');
+            var $wrap  = $frame.parent();
+
+            // Call Sly on frame
+            $frame.sly({
+              horizontal: 1,
+              itemNav: 'forceCentered',
+              smart: 1,
+              activateMiddle: 1,
+              activateOn: 'click',
+              mouseDragging: 1,
+              touchDragging: 1,
+              releaseSwing: 1,
+              startAt: 0,
+              scrollBar: $wrap.find('.scrollbar'),
+              scrollBy: 1,
+              speed: 300,
+              elasticBounds: 1,
+              easing: 'easeOutExpo',
+              dragHandle: 1,
+              dynamicHandle: 1,
+              clickBar: 1,
+
+              // Buttons
+              prev: $wrap.find('.prev'),
+              next: $wrap.find('.next')
+            });
+
+                        $(window).on('resize', function(e) {
+                            $frame.sly('reload'); 
+                        });
+          }());
+        //lightbox
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+        });
+        //navigation
+        function toggle(element) {
+
+          // $('#home-link').removeClass('text-orange').addClass('text-white');
+          // $('#about-link').removeClass('text-orange').addClass('text-white');
+          // $('#gallery-link').removeClass('text-orange').addClass('text-white');
+          // $('#news-link').removeClass('text-orange').addClass('text-white');
+          // $('#trailer-link').removeClass('text-orange').addClass('text-white');
+          // $('#contact-link').removeClass('text-orange').addClass('text-white');
+          // $('#'+element+'-link').removeClass('text-white').addClass('text-orange');
+        }
+        $(window).scroll(function() {
+          var scroll = $(this).scrollTop();
+          if(scroll > 0) {
+            toggle('home');
+          }
+          if(scroll > 800) {
+            toggle('about');
+          }
+          if(scroll > 1800) {
+            toggle('gallery');
+          }
+          if(scroll > 2800) {
+            toggle('news');
+          }
+          if(scroll > 3800) {
+            toggle('trailer');
+          }
+          if(scroll > 4600) {
+            toggle('contact');
+          }
+        });
+    </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-82476192-31"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82476192-31');
+</script>
+  
+
+</body></html>

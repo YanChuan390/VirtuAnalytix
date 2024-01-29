@@ -1,0 +1,685 @@
+<html class="js sizes customelements history pointerevents postmessage postmessage-structuredclones webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang="en" xmlns="http://www.w3.org/1999/html"><head>
+  <meta charset="utf-8">
+  <title>Virtual Medicine</title>
+  <meta name="description" content="Innovating the Education of Healthcare Professionals and Students">
+  <meta name="twitter:description" content="Innovating the Education of Healthcare Professionals and Students">
+  <meta name="keywords" content="VR, Virtual Reality, Human Anatomy, DICOM, CT, MRI">
+  <meta name="author" content="Design: Michal Tkáč, Development: Ondrej Malota">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Virtual Medicine">
+  <meta property="og:description" content="Innovating the Education of Healthcare Professionals and Students">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://medicinevirtual.com">
+  <meta property="og:image" content="https://medicinevirtual.com/img/cover_img.png">
+
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#FFFFFF">
+</head>
+
+<body style="padding-top: 0;">
+
+  <div class="bg_blur">
+  </div>
+
+  <header>
+    <div class="burger_menu_bg">
+      <div class="multilanguage-burger" style="opacity: 1;">
+        <img src="img/svk-flag.png" onclick="location.href='sk/index.html';">
+        <img src="img/uk-flag.png" style="opacity: 1; cursor: default">
+      </div>
+      <ul style="opacity: 1;">
+        <li class=""><a href="student.html"><img src="img/burger_menu_icon_student.svg" style="width: 35px;">Student</a></li>
+        <li class=""><a href="professional.html"><img src="img/burger_menu_icon_professional.svg" style="width: 35px;">Professional</a></li>
+        <li class=""><a href="institution.html"><img src="img/burger_menu_icon_institution.svg">Institution</a></li>
+        <li class=""><a href="contact.html"><img src="img/burger_menu_icon_aboutus.svg" style="width: 35px;">About Us</a></li>
+        <li class=""><a href="https://portal.medicinevirtual.com/store"><img src="img/burger_menu_icon_store.svg" style="width: 35px;">Store</a></li>
+      </ul>
+      <button class="try" onclick="location.href='contact-form.php';" style="border-radius: 20px; opacity: 1;">CONTACT US</button>
+      <div class="burger_social_bar" style="opacity: 1;">
+        <img src="img/social-facebook.svg" alt="FACEBOOK" class="social_ico" onclick="window.open('https://www.facebook.com/VRMedicine/')">
+        <img src="img/social-instagram.svg" alt="INSTAGRAM" class="social_ico" onclick="window.open('https://www.instagram.com/virtual_medicine/?hl=en')">
+        <img src="img/social-linkedin.svg" alt="LINKEDIN" class="social_ico" onclick="window.open('https://www.linkedin.com/company/virtual-medicine-vr-ar')">
+        <img src="img/social-youtube.svg" alt="YOUTUBE" class="social_ico" onclick="window.open('https://www.youtube.com/channel/UChvqcOhNLxxWBc0FACQeXHg')">
+      </div>
+    </div>
+    <div class="nav_container nav_burger_container">
+      <nav>
+        <span class="nav_logo" onclick="location.href='index.html';">
+        <img src="img/nav-logo.png" alt="VIRTUAL MEDICINE" style="padding-left: 10px;">
+        </span>
+  <!-- burger navbar -->
+          <div class="burger_navbar_container">
+            <div class="burger_navbar_item"></div>
+          </div>
+
+  <!-- burger navbar end -->
+        <ul>
+          <li class="nav_item_bg" style="opacity: 0; left: 0px;"></li>
+          <li class="nav_item"><a href="student.html">Student</a></li>
+          <li class="nav_item"><a href="professional.html">Professional</a></li>
+          <li class="nav_item"><a href="institution.html">Institution</a></li>
+          <li class="nav_item"><a href="contact.html">About Us</a></li>
+          <li class="nav_item" onclick="window.open('http://portal.medicinevirtual.com/store', '_blank')">Store</li>
+        </ul>
+        <button class="try" onclick="location.href='contact-form.php';">CONTACT US</button>
+        <div class="multilanguage responsive_hidden">
+          <img src="img/svk-flag.png" onclick="location.href='sk/index.html';">
+          <img src="img/uk-flag.png" style="opacity: 1; cursor: default">
+        </div>
+      </nav>
+    </div>
+      <h1 class="title_display" style="padding-top: 120px;">The most advanced VR Anatomy platform</h1>
+      <p class="title_display" style="padding: 20px 0;">Discover a 3D VR/AR anatomical atlas with<br>a 3D DICOM module to view CT/MRI files.</p>
+    <div class="title_banner">
+      <video id="video" class="widescreen_video" src="img/vm-dicom-movie.mp4" type="video/mp4" playsinline="" autoplay="" loop="" muted="">
+        Your browser does not support the video tag.
+      </video>
+      <video id="video_square" src="img/vm-dicom-movie-squre.mp4" type="video/mp4" playsinline="" autoplay="" loop="" muted="">
+        Your browser does not support the video tag.
+      </video>
+      <div class="title_banner_content title_banner_content_hide">
+        <h1>The most advanced VR Anatomy platform</h1>
+        <h6>Discover a 3D VR/AR anatomical atlas with a 3D DICOM module to view CT/MRI files.</h6>
+        <div style="display: flex;">
+          <button class="try big" onclick="window.open('https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicinevirtual.com', '_blank')">
+            <span>TRY IT FOR FREE</span>
+            <br>
+            <span style="font-size: 10px;">Personal</span>
+          </button>
+          <button class="buy big" onclick="window.open('http://portal.medicinevirtual.com/store', '_blank')">
+            <span>TRY IT FOR FREE</span>
+            <br>
+            <span style="font-size: 10px;">Institutions</span>
+          </button>
+        </div>
+        <p style="margin: 10px 0 60px 10px; font-size: 12px; font-weight: regular;">Try out our 7-day risk-free trial, no payment details required.</p>
+      </div>
+
+      <div class="eu_fond">
+        <div onclick="window.open('doc/eu_fonds.pdf');">
+          <img src="img/logo_eu_white.png">
+          <img src="img/logo_irop.png">
+        </div>
+        <p onclick="window.open('https://www.youtube.com/watch?v=FVDst8D_BLw');" style="cursor:pointer;">This project has received funding from the European Union’s Horizon 2020 research and innovation programme through the XR4ALL project with grant agreement No 825545.</p>
+      </div>
+    </div>
+    
+    <div class="arrow_down" onclick="$('html, body').animate({scrollTop : $('#down').offset().top - 10}, 1000);">
+      <img src="img/arrow_down.svg">
+    </div>
+
+    <div class="social_bar" id="down">
+      <img src="img/social-facebook.svg" alt="FACEBOOK" class="social_ico" onclick="window.open('https://www.facebook.com/VRMedicine/', '_blank')">
+      <img src="img/social-instagram.svg" alt="INSTAGRAM" class="social_ico" onclick="window.open('https://www.instagram.com/virtual_medicine/?hl=en', '_blank')">
+      <img src="img/social-linkedin.svg" alt="LINKEDIN" class="social_ico" onclick="window.open('https://www.linkedin.com/company/virtual-medicine-vr-ar', '_blank')">
+      <img src="img/social-youtube.svg" alt="YOUTUBE" class="social_ico" onclick="window.open('https://www.youtube.com/channel/UChvqcOhNLxxWBc0FACQeXHg', '_blank')">
+      <img src="img/social-web.svg" alt="WEB" class="social_ico" onclick="window.open('https://www.medicinevirtual.com', '_blank')">
+    </div>
+  </header>
+
+  <section class="watch_video" style="margin: 120px 0 0 0;">
+    <h2>The most intuitive VR Anatomy experience on the market</h2>
+    <p>The Human Anatomy VR is easy to use and does not need previous experience with the virtual reality.</p>
+    <button class="try" id="watch_video_button" style="width:170px; display: flex; justify-content: center; align-items: center; gap:15px;">
+			<img src="img/play-icon.svg" style=" vertical-align: middle;height:25px;filter: drop-shadow(0px 0px 3px rgba(0,0,0, 0.4));">
+			WATCH VIDEO
+	</button>
+    <div class="watch_video_bg"></div>
+    <div class="watch_video_container">
+      <video id="watch_video_file" src="img/DICOM.mp4" type="video/mp4" width="100%" height="100%" controls="" playsinline="">
+        Your browser does not support the video tag.
+      </video>
+      <img src="img/watch_video_close_icon.svg" class="watch_video_close">
+    </div>
+  </section>
+  
+  <section class="sell_map">
+    <h2>The platform is already used in over 180 countries</h2>
+    <img src="img/sell-map.svg" class="sell_map_img">
+  </section>
+
+<h2 class="small h2_mobile">All platforms supported</h2>
+  <section class="platform">
+    <h2 class="responsive_hidden">All platforms supported</h2>
+    <div class="platform_item_group">
+      <img src="img/platform-oculus.svg" alt="OCULUS" class="platform_item" onclick="window.open('./Hyperlinks/HumanAnatomyOculusRedirect.html', '_blank')">
+      <img src="img/platform-win.svg" alt="WINDOWS &amp; WMR" class="platform_item" onclick="window.open('https://appsource.microsoft.com/en-us/product/web-apps/virtualmedicinesro.human_anatomy_vr?tab=overview', '_blank')">
+      <img src="img/platform-steam.svg" alt="STEAM VR" class="platform_item" onclick="window.open('https://store.steampowered.com/app/1187140/Elementary_Anatomy_With_Story_Mode/', '_blank')">
+      <img src="img/platform-ipad.svg" alt="IPAD" class="platform_item" onclick="window.open('https://apps.apple.com/sk/developer/virtual-medicine/id1518527898?l=sk', '_blank')">
+      <img src="img/platform-iphone.svg" alt="IPHONE" class="platform_item" onclick="window.open('https://apps.apple.com/sk/developer/virtual-medicine/id1518527898?l=sk', '_blank')">
+      <img src="img/platform-android.svg" alt="ANDROID" class="platform_item" onclick="window.open('https://play.google.com/store/apps/developer?id=Virtual+Medicine,+s.r.o.&amp;hl=en&amp;gl=US', '_blank')">
+      <img src="img/platform-playstation.svg" alt="PLAYSTATION VR" class="platform_item" onclick="window.open('https://store.playstation.com/en-us/concept/233596', '_blank')">
+    </div>
+  </section>
+  
+  
+  
+  
+  
+
+  <section class="solution_bar">
+    <h2>We have tailored the perfect solution for you</h2>
+    <p>Virtual Medicine considers everyone’s needs a priority and that's why we have created our products ideal for students, professionals, and institutions.</p>
+    <div class="solution_bar_item_group">
+      <div class="solution_bar_item_holder">
+        <div class="solution_bar_item_absolute">
+          <img src="img/solution-student-img.svg" alt="STUDENT">
+          <h4>Students</h4>
+          <p>Our products have been specially tailored for both medical students and students of high schools.</p>
+          <button class="buy" onclick="location.href='student.html';">MORE INFO</button>
+        </div>
+      </div>
+      <div class="solution_bar_item_holder">
+        <div class="solution_bar_item_absolute">
+          <img src="img/solution-professional-img.svg" alt="STUDENT">
+          <h4>Professionals</h4>
+          <p>Over 10,000 precisely modelled structures offer a fully-fledged environment for professional purposes. </p>
+          <button class="buy" onclick="location.href='professional.html';">MORE INFO</button>
+        </div>
+      </div>
+      <div class="solution_bar_item_holder">
+        <div class="solution_bar_item_absolute">
+          <img src="img/solution-institution-img.svg" alt="STUDENT">
+          <h4>Institutions</h4>
+          <p>Human Anatomy VR is our most advanced product yet and it is ready to be implemented at your institution.</p>
+          <button class="buy" onclick="location.href='institution.html';">MORE INFO</button>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="responsive_hidden" style="width: 20%; margin: 100px 40% 0 40%; display: flex; justify-content: center; gap: 10px;">
+      <button class="compare big" onclick="$('html, body').animate({scrollTop : $('#compare_products_index').offset().top}, 1000);">COMPARE SOLUTIONS</button>
+    </div>
+
+  <section class="features">
+    <div class="features_img">
+      <img src="img/features-professional-title-img.png">
+    </div>
+    <h2>We are innovating the<br>education of future doctors</h2>
+    <p>Virtual Medicine has created the most advanced, multi-award winning medical anatomy platform crossing Virtual Reality (VR), Mixed Reality  (MR), and Augmented Reality  (AR)  for medical education. Human Anatomy VR is the only product on the market that provides full VR anatomical atlas combined with advanced 3D VR DICOM viewer.<br><br>
+      Utilizing mobile and tablet devices or VR headsets, this powerful technology enables augmentation or replacement of student time in a dissection room with a cadaver. The available enterprise license enables a VR shared experience between an instructor and authorized participants/students in a socially distanced format.<br><br>
+    </p>
+    <div class="features_button_container">
+      <button class="buy" onclick="location.href='institution.html';">MORE INFO</button>
+    </div>
+  </section>
+
+  <section class="quotes">
+      <blockquote>
+        <q>Measurements of students’ performance show that their results improved by over 45% with Human Anatomy VR. 92% of students said that the platform greatly contributed to their improved learning and understanding of anatomy.</q>
+        <cite>Assoc. Prof. Eliška Kubíková, MD, PhD, MPH<br>Head of Institute of Anatomy, Medical Faculty of Comenius University</cite>
+      </blockquote>
+  </section>
+
+  <section class="vm_products">
+    <h2>Virtual Medicine platform</h2>
+    <p>Whether you’re a professional, student, or simply interested in Anatomy, our products will meet your requirements. </p>
+    <div class="vm_products_item_group">
+      <div class="vm_products_item">
+        <img src="img/anatomy-explorer-img.png" onclick="location.href='xrexperience.html';">
+        <h5>Anatomy Explorer 2020</h5>
+        <p>Virtual Reality<br>Desktop</p>
+      </div>
+      <div class="vm_products_item">
+        <img src="img/anatomy-human-22-img.png" onclick="window.open('https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicinevirtual.com', '_blank')">
+        <h5>Human Anatomy VR</h5>
+        <p>Virtual Reality<br>Standalone</p>
+      </div>
+      <div class="vm_products_item">
+        <img src="img/anatomy-ar-img.png" onclick="location.href='xrexperience.html';">
+        <h5>AR Anatomy</h5>
+        <p>Augmented Reality<br>Mobile &amp; Tablet</p>
+      </div>
+      <div class="vm_products_item">
+        <img src="img/anatomy-hs-img.png" onclick="location.href='xrexperience.html';">
+        <h5>High School Anatomy</h5>
+        <p>Augmented Reality<br>Mobile &amp; Tablet</p>
+      </div>
+    </div>
+  </section>
+
+  <h4 class="small h2_mobile">Over 13,000 anatomical structures with detailed descriptions</h4>
+  <section class="systems">
+    <h4 class="responsive_hidden">Over 13,000 anatomical structures with detailed descriptions</h4>
+    <div class="systems_item_group">
+      <div class="systems_item">
+        <img src="img/systems-skeleton-icon.png" alt="SKELETON">
+        <p>SKELETON</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-connective-tissues-icon.png" alt="CONNECTIVE TISSUES">
+        <p>CONNECTIVE TISSUES</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-muscles-icon.png" alt="MUSCULAR">
+        <p>MUSCULAR</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-integumentary-icon.png" alt="INTEGUMENTARY">
+        <p>INTEGUMENTARY</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-brain-icon.png" alt="BRAIN">
+        <p>BRAIN</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-respiratory-icon.png" alt="RESPIRATORY">
+        <p>RESPIRATORY</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-digestive-icon.png" alt="DIGESTIVE">
+        <p>DIGESTIVE</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-urogenital-icon.png" alt="UROGENITAL">
+        <p>UROGENITAL</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-arteries-icon.png" alt="ARTERIES">
+        <p>ARTERIES</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-veins-icon.png" alt="VEINS">
+        <p>VEINS</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-lymphatic-icon.png" alt="LYMPHATIC">
+        <p>LYMPHATIC</p>
+      </div>
+      <div class="systems_item">
+        <img src="img/systems-nervous-icon.png" alt="NERVOUS">
+        <p>NERVOUS</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="awards">
+    <h2>Multi-award winning platform</h2>
+    <div class="awards_item_group">
+        <img src="img/award-microsoft.png" alt="Microsoft Awards 2019" style="width: auto; height: 150px;">
+        <img src="img/award-30under30.png" alt="Fobers 30POD30 2018" style="width: auto; height: 150px;">
+        <img src="img/award-tel-aviv.png" alt="START TEL-AVIV 2016 COMPETITION" style="width: auto; height: 110px;">
+        <img src="img/award-ideas-from-europe.png" alt="Ideas from Europe" style="width: auto; height: 150px;">
+        <img src="img/award-tb.png" alt="TATRA BANKA" style="width: auto; height: 150px;">
+<!--      <div>-->
+        <img src="img/award-kristalove-kridlo.png" alt="Kristalove Kridlo" style="width: auto; height: 100px;">
+        <img src="img/award-eu.png" alt="European Union" style="width: auto; height: 150px;">
+        <img src="img/award-minister.png" alt="DEPUTY PRIME MINISTER'S OFFICE FOR INVESTMENTS AND INFORMATIZATION OF THE SLOVAK REPUBLIC" style="width: 300px; height: auto;">
+<!--      </div>-->
+    </div>
+  </section>
+
+  <div class="licencing_plan_bg" id="compare_products_index">
+    <section class="licencing_plan">
+      <div>
+        <h2>Virtual Reality<br>Licencing plans</h2>
+        <h5>Choose your plan</h5>
+      </div>
+      <table>
+          <tbody><tr>
+
+            <td class="licencing_plan_td">
+              <div class="licencing_plan_item">
+                <h5>Student</h5>
+                <div class="licencing_plan_icon" onclick="location.href='student.html';" style="cursor: pointer">
+                  <img src="img/licencing-plan-student.svg" alt="institution" style="height: 50px; margin: 0;">
+                </div>
+                <button class="try" onclick="window.open('https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicinevirtual.com', '_blank')">TRY FOR FREE</button>
+              </div>
+            </td>
+
+            <td class="licencing_plan_td">
+              <div class="licencing_plan_item">
+                <h5>Professional</h5>
+                <div class="licencing_plan_icon" onclick="location.href='professional.html';" style="cursor: pointer">
+                  <img src="img/licencing-plan-professional.svg" alt="institution" style="height: 60px; margin: 0;">
+                </div>
+                <button class="buy" onclick="window.open('https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicinevirtual.com', '_blank')">TRY FOR FREE</button>
+              </div>
+            </td>
+
+            <td class="licencing_plan_td">
+              <div class="licencing_plan_item">
+                <h5>Institution</h5>
+                <div class="licencing_plan_icon" onclick="location.href='institution.html';" style="cursor: pointer">
+                  <img src="img/licencing-plan-institution.svg" alt="institution" style="height: 70px; margin: 0;">
+                </div>
+                <button class="compare" onclick="window.open('http://portal.medicinevirtual.com/store', '_blank')">TRY FOR FREE</button>
+              </div>
+            </td>
+          </tr>
+
+      </tbody></table>
+    </section>
+  </div>
+
+
+  <section class="short_comparison">
+    <div class="table_container">
+      <table>
+        <caption>Human Anatomy VR</caption>
+        <tbody><tr class="small_table"><td colspan="3">Body systems<p style="font-size: 10px">(with more than 13 000 structures)</p></td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Body systems<p style="font-size: 10px">(with more than 13 000 structures)</p></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">DICOM viewer for PC <p style="font-size: 10px">(CT/MRI 3D reconstruction for Desktops)</p></td></tr>
+        <tr>
+          <td class="responsive_hidden_table">DICOM viewer for PC <p style="font-size: 10px">(CT/MRI 3D reconstruction for Desktops)</p></td>
+          <td><img src="img/compare_unmark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"><p style="font-size: 10px; line-height: 12px;">Only Extended Licence<br>(Please contact us)</p></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"><p style="font-size: 10px; line-height: 12px;">Only Extended Licence<br>(Please contact us)</p></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">DICOM viewer for Standalone <p style="font-size: 10px">(CT/MRI 3D reconstructions for Standalone devices)</p></td></tr>
+        <tr>
+          <td class="responsive_hidden_table">DICOM viewer for Standalone <p style="font-size: 10px">(CT/MRI 3D reconstructions for Standalone devices)</p></td>
+          <td><img src="img/compare_unmark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">3D images of cadavers (1500+)<p style="font-size: 10px">(With detailed descriptions)</p></td></tr>
+        <tr>
+          <td class="responsive_hidden_table">3D images of cadavers (1500+)<p style="font-size: 10px">(With detailed descriptions)</p></td>
+          <td><img src="img/compare_unmark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Multi-User collaboration</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Multi-User collaboration</td>
+          <td><img src="img/compare_unmark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"><p style="font-size: 10px; line-height: 12px;">Only Extended Licence<br>(Please contact us)</p></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Body actions</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Body actions</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Microanatomy</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Microanatomy</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Bone mapping and landmarks</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Bone mapping and landmarks</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Hand Tracking</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Hand Tracking</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">High detail mode (Ant mode)</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">High detail mode (Ant mode)</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Quizzes</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Quizzes</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Tests</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Tests</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Dynamic Cross-section</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Dynamic Cross-section</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Interactive tutorial</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Interactive tutorial</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Avatar manager</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Avatar manager</td>
+          <td><img src="img/compare_unmark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_unmark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Web manager</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Web manager</td>
+          <td><img src="img/compare_unmark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_unmark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Updates</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Updates</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+      </tbody></table>
+    </div>
+  </section>
+
+    <div class="table_end_buttons" style="margin-top: 0;">
+      <button class="buy" onclick="location.href='institution.html';">LEARN MORE</button>
+    </div>
+
+<div class="licencing_plan_bg">
+    <div class="licencing_plan">
+      <div style="width: auto;">
+        <h2>Mobile Platform Licence Plan</h2>
+        <h5>Choose your plan</h5>
+      </div>
+      <table>
+          <tbody><tr>
+
+            <td class="licencing_plan_td">
+              <div class="licencing_plan_item">
+                <h5>Student</h5>
+                <div class="licencing_plan_icon" onclick="location.href='student.html';" style="cursor: pointer">
+                  <img src="img/licencing-plan-student.svg" alt="institution" style="height: 50px; margin: 0;">
+                </div>
+                <button class="try" onclick="location.href='xrexperience.html#download_now';">TRY FOR FREE</button>
+              </div>
+            </td>
+
+            <td class="licencing_plan_td">
+              <div class="licencing_plan_item">
+                <h5>Professional</h5>
+                <div class="licencing_plan_icon" onclick="location.href='professional.html';" style="cursor: pointer">
+                  <img src="img/licencing-plan-professional.svg" alt="institution" style="height: 60px; margin: 0;">
+                </div>
+                <button class="buy" onclick="location.href='xrexperience.html#download_now';">TRY FOR FREE</button>
+              </div>
+            </td>
+
+            <td class="licencing_plan_td">
+              <div class="licencing_plan_item">
+                <h5>Institution</h5>
+                <div class="licencing_plan_icon" onclick="location.href='institution.html';" style="cursor: pointer">
+                  <img src="img/licencing-plan-institution.svg" alt="institution" style="height: 70px; margin: 0;">
+                </div>
+                <button class="compare" onclick="location.href='contact-form.php';">CONTACT US</button>
+              </div>
+            </td>
+          </tr>
+
+      </tbody></table>
+    </div>
+  </div>
+
+  <section class="short_comparison">
+    <div class="table_container">
+      <table>
+        <caption>AR Anatomy</caption>
+        <tbody><tr class="small_table"><td colspan="3">Body systems<p style="font-size: 10px">(with more than 10 000 structures)</p></td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Body systems<p style="font-size: 10px">(with more than 10 000 structures)</p></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Multi-User collaboration</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Multi-User collaboration</td>
+          <td><img src="img/compare_unmark_icon.svg" class="compare_mark_icon" style="visibility: hidden;"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"><p style="font-size: 10px; line-height: 12px;">Only Extended License<br>(Please contact us)</p></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Body actions</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Body actions</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Microanatomy</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Microanatomy</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Bone mapping and landmarks</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Bone mapping and landmarks</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Augmented Reality</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Augmented Reality</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+        <tr class="small_table"><td colspan="3">Updates</td></tr>
+        <tr>
+          <td class="responsive_hidden_table">Updates</td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+          <td><img src="img/compare_mark_icon.svg" class="compare_mark_icon"></td>
+        </tr>
+      </tbody></table>
+    </div>
+  </section>
+
+  <div class="table_end_buttons" style="margin-top: 0;">
+    <button class="buy" onclick="location.href='institution.html#institution_AR';">LEARN MORE</button>
+  </div>
+
+  <section class="partners">
+    <h2>Strategic partner</h2>
+    <div>
+      <img src="img/partners-svet-zdravia.png" class="partners_img">
+    </div>
+    <h2 style="margin-top: 50px;">Supporters</h2>
+    <div class="partners_support">
+      <img src="img/support-microsoft.png" style="width: auto; height: 30px;">
+      <img src="img/support-samsung.png" style="width: auto; height: 25px;">
+      <img src="img/support-playstationvr.png" style="width: auto; height: 40px;">
+      <img src="img/support-tatrabanka.png" style="width: auto; height: 35px;">
+      <img src="img/support-eset.png" style="width: auto; height: 40px;">
+    </div>
+  </section>
+
+  <section class="joint_vm">
+    <h2>Join our community today</h2>
+    <p>We have tailored the perfect solution for you</p>
+    <div style="display: flex;">
+      <button class="try big" onclick="window.open('https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicinevirtual.com', '_blank')">
+        <span>TRY IT FOR FREE</span>
+        <br>
+        <span style="font-size: 10px;">Personal</span>
+      </button>
+      <button class="buy big" onclick="window.open('http://portal.medicinevirtual.com/store', '_blank')">
+        <span>TRY IT FOR FREE</span>
+        <br>
+        <span style="font-size: 10px;">Institutions</span>
+      </button>
+      <button class="compare big" onclick="location.href='contact-form.php';">CONTACT US</button>
+    </div>
+  </section>
+
+  <section class="scroll_up">
+    <button class="try" onclick="$('html, body').animate({scrollTop : 0}, 1000);">SCROLL UP</button>
+  </section>
+
+  <footer>
+    <div class="footer_menu_container">
+      <div class="def_list_group">
+        <dl>
+          <dt>Virtual Medicine</dt>
+          <dd><a href="https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicinevirtual.com" target="_blank">Try for free</a></dd>
+          <dd><a href="xrexperience.html">Buy now</a></dd>
+        </dl>
+        <dl>
+          <dt>Products</dt>
+          <dd><a href="xrexperience.html#download_now">Anatomy Explorer</a></dd>
+          <dd><a href="xrexperience.html#try_for_free">AR Anatomy</a></dd>
+          <dd><a href="institution.html">Virtual Anatomy<br>Classroom</a></dd>
+          <dd><a href="xrexperience.html#try_for_free">High School Anatomy</a></dd>
+        </dl>
+        <dl>
+          <dt>License plans</dt>
+          <dd><a href="student.html">Student</a></dd>
+          <dd><a href="professional.html">Professional</a></dd>
+          <dd><a href="institution.html">Institution</a></dd>
+        </dl>
+        <dl>
+          <dt>Company</dt>
+          <dd><a href="contact.html">About us</a></dd>
+          <dd><a href="contact-form.php">Contact us</a></dd>
+          <dd><a href="contact.html#team">Team</a></dd>
+        </dl>
+      </div>
+    </div>
+    <div class="footer_menu_logo">
+      <img src="img/nav-logo.png" onclick="location.href='index.html';" style="cursor: pointer;margin: 15px 0px;">
+      <span style="font-size: 11px; margin: 15px 0px;">Copyright © 2023, Virtual Medicine | <span onclick="window.open('https://www.medicinevirtual.com/terms-and-conditions.html')" style="cursor: pointer; color: #8EC1FE;">Terms &amp; Conditions</span> | <span onclick="window.open('https://www.medicinevirtual.com/privacy-policy.html')" style="cursor: pointer; color: #8EC1FE;">Privacy Policy</span>
+    </span></div>
+  </footer>
+
+  <script src="js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="tilt.js/src/tilt.jquery.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async=""></script>
+
+
+
+</body></html>

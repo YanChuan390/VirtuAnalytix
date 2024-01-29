@@ -1,0 +1,836 @@
+<html lang="jp"><head>
+
+  <!-- googleアナリティクス -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-YHLK80MDSV&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-143767485-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-143767485-1');
+  </script>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="「SUPERTRACK/スーパートラック」は最新のMixed Reality向けキャプチャー技術を活用した実写立体動画(Volumetric Video)撮影システムです。">
+  <link rel="canonical" href="https://supertrack-mr.com/">
+  <link rel="icon" href="/favicon.ico">
+  <meta property="og:title" content="SUPERTRACK">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="「SUPERTRACK」は最新のMixed Reality向けキャプチャー技術を活用した実写立体動画(Volumetric Video)撮影システムです。">
+  <meta property="og:url" content="https://supertrack-mr.com/">
+  <meta property="og:site_name" content="SUPERTRACK">
+  <meta property="og:image" content="https://supertrack-mr.com/img/ogp_supertrack.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="fb:app_id" content="2169500579980418">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://supertrack-mr.com/">
+  <meta property="og:title" content="SUPERTRACK">
+  <meta property="og:description" content="「SUPERTRACK/スーパートラック」は最新のMixed Reality向けキャプチャー技術を活用した実写立体動画(Volumetric Video)撮影システムです。">
+  <meta property="og:image" content="https://supertrack-mr.com/img/ogp_supertrack.jpg">
+
+  <title>SUPERTRACK</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&amp;subset=japanese" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- i18next翻訳用 -->
+  <script src="js/i18next/i18next.js"></script>
+  <script src="js/jquery-i18next/jquery-i18next.min.js"></script>
+  <script src="js/i18next-jquery.min.js"></script>
+  <script src="js/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+
+  <style type="text/css">
+  .youtube {margin: 0 auto; text-align:center; padding:1rem 0 0 0;}
+  .youtube_wrap {position: relative; padding-bottom: calc(315 / 560 * 100%);box-sizing:border-box; margin: 0 auto; text-align:center;}
+  .youtube_iframe { position: absolute; top: 0; right: 0; width: 100%; height: 100%;}
+
+  @media(min-width:768px) {
+    .youtube {width: 50%; padding:2rem 0 0 0;}
+  }
+  </style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.svg" alt="SUPERTRACK"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#product" data-i18n="gnav.product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services" data-i18n="gnav.services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact" data-i18n="gnav.contact">Contact</a>
+          </li>
+
+          <!-- <li class="switch-lang">
+            <div class="dropdown">
+              <button id="dd_btn" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">JP</button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" value="Jp"><a href="javascript:;" class="lang-select lang_jp" onclick="clickBtn1('news_info_jp','news_press_jp','news_press_jp')">日本語</a></button></li>
+                <li><button class="dropdown-item" value="En"><a href="javascript:;" class="lang-select lang_en" onclick="clickBtn1('news_info_en','news_press_en','news_press_en')">English</a></button></li>
+              </ul>
+            </div>
+          </li> -->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-heading text-uppercase">Volumetric Video Solution</div>
+        <div class="intro-lead-in">Presence is there</div>
+
+      </div>
+    </div>
+  </header>
+  <!-- 動画 -->
+  <div class="conteiner">
+<p></p>
+    <div class="youtube" style="">
+      <div class="youtube_wrap" style="text-align: center;">
+        <iframe class="youtube_iframe" src="https://www.youtube.com/embed/vJDmF-yj7Lo?autoplay=1&amp;playsinline=1&amp;loop=1&amp;playlist=vJDmF-yj7Lo&amp;controls=0&amp;disablekb=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div style="position: relative; padding-bottom: 56.25%;">
+    <iframe
+      style="position: absolute; top: 0; left: 0; width: 80%; height: 80%;"
+      src="https://www.youtube.com/embed/SqNbPb2rBM4"
+      frameborder="0"
+      allow="autoplay;
+      encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div> -->
+  <!-- 動画終わり -->
+    <!-- product -->
+    <section id="product">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Product</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="img/product_1.jpg" alt="撮影">
+          <h4 class="product-heading" data-i18n="product.subtitle1">撮影</h4>
+          <p class="text-muted text-product" data-i18n="product.txt1">デプスカメラを使用した撮影システムはグリーンバックのような特別な撮影環境は必要ありません。ポータブルで可搬性があり、カメラ台数、位置、撮影範囲を自由に調整できるため、用途に応じた柔軟なセッティングが可能です。</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/product_2.jpg" alt="データ生成/配信">
+          <h4 class="product-heading" data-i18n="product.subtitle2">データ生成/配信</h4>
+          <p class="text-muted text-product" data-i18n="product.txt2">ポイントクラウドを利用した独自のデータフォーマットにより、リアルタイムに立体動画を作成できます。クラウドサーバーを経由し、録画されたVolumetricVideoをオンデマンド配信することや、低遅延でライブ配信することも可能です。</p>
+        </div>
+        <div class="col-md-4">
+          <img src="img/product_3.jpg" alt="再生">
+          <h4 class="product-heading" data-i18n="product.subtitle2">再生</h4>
+          <p class="text-muted text-product" data-i18n="product.txt3">独自のデータフォーマットに対応した様々なデバイスで再生可能なVideoPlayerを提供します。</p>
+        </div>
+      </div>
+      <!-- デバイス -->
+      <div class="device">
+        <h3 class="">Device</h3>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="img/device_sp.svg" alt="XRコンテンツ企画">
+            <h4 class="" data-i18n="xxx.subtitle1">スマートフォン</h4>
+            <p class="text-muted" data-i18n="">(android / iOS)</p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/device_pc.svg" alt="撮影">
+            <h4 class="" data-i18n="xxx.subtitle2">パソコン</h4>
+            <p class="text-muted" data-i18n="">(windows / mac)</p>
+          </div>
+          <div class="col-md-4">
+            <img src="img/device_hmd.svg" alt="開発">
+            <h4 class="" data-i18n="xxx.subtitle2">VRデバイス</h4>
+            <p class="text-muted" data-i18n="">(VIVE / Oculus)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Integrations -->
+      <div class="container integrations">
+        <h3 class="">Integrations</h3>
+        <div class="row">
+          <div class="icon_integrations col-md-15 col-6">
+            <img src="img/integrations/arcore.png" alt="ARCore">
+          </div>
+          <div class="icon_integrations col-md-15 col-6">
+            <img src="img/integrations/arkit.png" alt="arkit">
+          </div>
+          <div class="icon_integrations col-md-15 col-6">
+            <img src="img/integrations/unity.png" alt="unity">
+          </div>
+          <div class="icon_integrations col-md-15 col-6">
+            <img src="img/integrations/vive.png" alt="vive">
+          </div>
+          <div class="icon_integrations col-md-15 col-6">
+            <img src="img/integrations/oculus.png" alt="oculus">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <section id="services">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Services</h2>
+              <h3 class="section-subheading text-muted"></h3>
+              <p class="section-subtxt">
+                <span data-i18n="services.subtxt1">VR, ARアプリケーションの開発から、既存サービスへの組み込みまで、SUPERTRACK VolumetricVideo Solutionを活用したあらゆるサービスを提供します。フォトグラメトリ撮影のみでもご相談ください。</span><br>
+                <span data-i18n="services.subtxt2"></span>
+              </p>
+            </div>
+          </div>
+
+          <!-- サービス -->
+          <div class="row text-center services_detail">
+            <div class="col-md-4">
+              <img src="img/services_1.svg" alt="XRコンテンツ企画">
+              <h4 class="services-heading" data-i18n="xxx.subtitle1">xRコンテンツ企画</h4>
+              <p class="text-muted" data-i18n="xxx.txt1">ご要望に応じて、完全に実写データのみで構成されるxRコンテンツの企画・提案いたします。</p>
+            </div>
+            <div class="col-md-4">
+              <img src="img/services_2.svg" alt="撮影">
+              <h4 class="services-heading" data-i18n="xxx.subtitle2">撮影</h4>
+              <p class="text-muted" data-i18n="xxx.txt2">SUPERTRACKのVolumetricCaptureや、フォトグラメトリー撮影サービスをご提供いたします。</p>
+            </div>
+            <div class="col-md-4">
+              <img src="img/services_3.svg" alt="開発">
+              <h4 class="services-heading" data-i18n="xxx.subtitle2">開発</h4>
+              <p class="text-muted" data-i18n="xxx.txt2">VR, ARアプリケーションの開発から、既存サービスへの組み込みまで、SUPERTRACK VolumetricVideo SolutionのUnity SDK、Data Streaming APIを活用したあらゆるアプリケーションの開発を行います。</p>
+            </div>
+          </div>
+
+          <!-- ユースケース -->
+          <div class="usecase">
+            <h3 class="">ユースケース</h3>
+            <div class="wrap_card_deck">
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="./img/ex_1.jpg" alt="スポーツ">
+                  <div class="card-body">
+                    <h5 class="card-title" data-i18n="about.cardtitle1">スポーツ</h5>
+                    <p class="card-text text-muted" data-i18n="about.cardtext1">これまでの教材ビデオではなし得なかった、360度からの近距離からのフォームチェックや同じ向きから見えることで新しい体験ができます。</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="./img/ex_2.jpg" alt="ビジネス">
+                  <div class="card-body">
+                    <h5 class="card-title" data-i18n="about.cardtitle2">ビジネス</h5>
+                    <p class="card-text text-muted" data-i18n="about.cardtext2">LIVE配信が可能なことから、遠隔での打ち合わせや電話では足りなかったコミュニケーションを補うことが可能です。</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="./img/ex_3.jpg" alt="エンターテイメント">
+                  <div class="card-body">
+                    <h5 class="card-title" data-i18n="about.cardtitle3">エンターテイメント</h5>
+                    <p class="card-text text-muted" data-i18n="about.cardtext3">これまでにもあった360度だけではなく、近距離から見るという新しい体験、臨場感が新体験のエンタメを提供できることになります。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-deck">
+                <div class="card">
+                  <img class="card-img-top" src="./img/ex_4.jpg" alt="広告/ファッション">
+                  <div class="card-body">
+                    <h5 class="card-title" data-i18n="about.cardtitle4">広告/ファッション</h5>
+                    <p class="card-text text-muted" data-i18n="about.cardtext4">これまでのファッションショーでは遠くから見るだけのものだったのがお店で見るような感覚を提供することが可能に、ファッション領域に新しい表現を提供します。</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="./img/ex_5.jpg" alt="デジタルアーカイブ">
+                  <div class="card-body">
+                    <h5 class="card-title" data-i18n="about.cardtitle5">デジタルアーカイブ</h5>
+                    <p class="card-text text-muted" data-i18n="about.cardtext5">これまでアーカイブしてきたものは、写真やビデオでした、大切な思い出をそこにいるかのように記憶できる媒体としての活用が期待できます、子どもや結婚式の思い出を鮮明に残すことができます。</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="./img/ex_6.jpg" alt="カード3の画像">
+                  <div class="card-body">
+                    <h5 class="card-title" data-i18n="about.cardtitle6">教育</h5>
+                    <p class="card-text text-muted" data-i18n="about.cardtext6">図鑑ではわかりにくいサイズや少しの動きを間近でみることができ教育分野の展開も期待されます。職人の手の動きまで記憶することで技術を後世に残すことができます。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contact Us</h2>
+          <h3 class="section-subheading text-muted" data-i18n="contact.subtitle">お気軽にお問い合わせください</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <form id="contactForm" name="sentMessage" novalidate="" class="col-md-8 offset-md-2">
+          <div class="form-group row">
+            <label for="exampleSelect1exampleFormControlSelect1" class="col-12 col-form-label"><span data-i18n="contact.selecttitle">お問い合わせの種類</span><span class="essential">*</span></label>
+            <div class="col-12">
+              <select class="form-control" id="select" name="select">
+                <option value="0" data-i18n="contact.select0">選択してください</option> <!-- -->
+                <option value="1" data-i18n="contact.select1">SUPERTRACKについてのお問い合わせ</option> <!-- -->
+                <option value="2" data-i18n="contact.select2">ホログラについてのお問い合わせ</option> <!-- -->
+                <option value="3" data-i18n="contact.select3">取材についてのお問い合わせ</option> <!-- -->
+                <option value="4" data-i18n="contact.select4">業務提携についてのお問い合わせ</option> <!-- -->
+                <option value="5" data-i18n="contact.select5">採用についてのお問い合わせ</option> <!-- -->
+                <option value="6" data-i18n="contact.select6">その他の項目についてのお問い合わせ</option> <!-- -->
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="name" class="col-12 col-form-label"><span data-i18n="contact.nametitle">お名前</span><span class="essential">*</span></label>
+            <div class="col-12">
+              <input class="form-control" id="name" type="text" placeholder="" required="" data-validation-required-message="氏名を入力して下さい。">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="mail" class="col-12 col-form-label"><span data-i18n="contact.mailtitle">メールアドレス</span><span class="essential">*</span></label>
+            <div class="col-12">
+              <input class="form-control" id="email" type="email" placeholder="" required="" data-validation-required-message="メールアドレスを入力して下さい。">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="tel" class="col-12 col-form-label"><span data-i18n="contact.teltitle">お電話</span><span class="essential">*</span></label>
+            <div class="col-12">
+              <input class="form-control" id="tel" type="tel" placeholder="" required="" data-validation-required-message="お電話番号を入力して下さい。">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="message" class="col-12 col-form-label"><span data-i18n="contact.detailtitle">お問い合わせ内容</span><span class="essential">*</span></label>
+            <div class="col-12">
+              <textarea class="form-control" id="message" placeholder="" required="" data-validation-required-message="お問い合わせ内容を入力して下さい。" rows="4"></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-12 wrap_checkbox">
+              <input class="form-check-input" id="checkbox" type="checkbox" placeholder="" required="" data-validation-required-message="プライバシーポリシーに同意する必要があります">
+              <label class="form-check-label" for="invalidCheck">
+              <a href="https://www.mkb.ne.jp/pp.php" target="_blank"><span data-i18n="contact.checkboxtitle">Privacy Policyに同意する</span></a><span class="essential">*</span>
+              <p class="help-block text-danger"></p>
+            </label>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-12 text-center">
+            <div id="success"></div>
+            <button id="sendMessageButton" class="btn btn-xl" type="submit" data-i18n="contact.send">送信</button>
+          </div>
+          <div class="clearfix"></div>
+        </form>
+        <!-- <form id="contactForm" name="sentMessage" novalidate class="col-md-8 offset-md-2 scroll-animation-obj scroll-animation-hotest">
+          <div class="form-group row">
+            <label for="name" class="col-12 col-form-label"><span data-i18n="contact.nametitle">お名前</span><span class="essential">*</span></label>
+            <div class="col-12">
+              <input class="form-control" id="name" type="text" placeholder="" required data-validation-required-message="氏名を入力して下さい。">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="mail" class="col-12 col-form-label"><span data-i18n="contact.mailtitle">メールアドレス</span><span class="essential">*</span></label>
+            <div class="col-12">
+              <input class="form-control" id="email" type="email" placeholder="" required data-validation-required-message="メールアドレスを入力して下さい。">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="message" class="col-12 col-form-label"><span data-i18n="contact.detailtitle">お問い合わせ内容</span><span class="essential">*</span></label>
+            <div class="col-12">
+              <textarea class="form-control" id="message" placeholder="" required data-validation-required-message="お問い合わせ内容を入力して下さい。" rows="4"></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-12 wrap_checkbox">
+              <input class="form-check-input" id="checkbox" type="checkbox" placeholder="" required data-validation-required-message="プライバシーポリシーに同意する必要があります">
+              <label class="form-check-label" for="invalidCheck">
+              <a href="https://www.mkb.ne.jp/pp.php" target="_blank"><span data-i18n="contact.checkboxtitle">Privacy Policyに同意する</span></a><span class="essential">*</span>
+              <p class="help-block text-danger"></p>
+            </label>
+            </div>
+          </div>
+
+
+          <div class="col-lg-12 text-center">
+            <div id="success"></div>
+            <button id="sendMessageButton" class="btn btn-xl" type="submit" data-i18n="contact.send">送信</button>
+          </div>
+          <div class="clearfix"></div>
+        </form> -->
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="https://www.mkb.ne.jp/pp.php" target="_blank">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-12">
+          <span class="copyright">Copyright © Media Kobo, inc.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+
+
+  <!-- 言語切り替えfirefoxとIEの処理込み -->
+  <script type="text/javascript">
+    $(function() {
+      $('.dropdown-menu .dropdown-item').click(function() {
+        var visibleItem = $('.dropdown-toggle', $(this).closest('.dropdown'));
+        visibleItem.text($(this).attr('value'));
+
+        // firefoxとIEの処理
+        var lang_v;
+        // console.log('lang: ')
+        var la = ($(this).attr('value')).toLowerCase()
+        // console.log(la)
+        if (la == 'en') {
+          lang_v = '英語'
+        } else if (la == 'cn') {
+          lang_v = '中国語'
+        } else {
+          lang_v = '日本語'
+        }
+        i18next.changeLanguage(lang_v);
+        $('body').localize();
+        // localStorage.setItem('i18nextLng', lang_v);
+
+        news_lang();
+
+      });
+    });
+  </script>
+
+  <!-- 言語切り替えのトグル部分 -->
+  <script type="text/javascript">
+    function dropdown_btn() {
+      var btn_lang = localStorage.getItem('i18nextLng');
+      if (btn_lang === '日本語') {
+        var dropdown_txt = document.getElementById("dd_btn");
+        dd_btn.textContent = "JP";
+      } else if (btn_lang === '英語') {
+        var dropdown_txt = document.getElementById("dd_btn");
+        dd_btn.textContent = "EN";
+      } else if (btn_lang === '中国語') {
+        var dropdown_txt = document.getElementById("dd_btn");
+        dd_btn.textContent = "CN";
+      }
+    };
+    (dropdown_btn());
+  </script>
+
+
+
+
+
+  <!-- i18next 翻訳 -->
+  <script>
+    i18next
+      .use(i18nextBrowserLanguageDetector)
+      .init({
+        fallbackLng: {
+          default: ['日本語']
+        },
+        resources: {
+
+          日本語: {
+            translation: {
+              gnav: {
+                product: 'Product',
+                services: 'Services',
+                contact: 'Contact',
+              },
+              news: {
+                press: 'プレスリリース',
+                presstext1: '最新のMixed Reality向けキャプチャー技術を活用した実写立体動画(Volumetric Video)撮影システム 「SUPERTRACK」の開発と、SUPERTRACKを利用した3Dホログラムでのグラビアコンテンツ「ホログラ」制作のお知らせ',
+              },
+              intro: {
+                subtxt1: '「SUPERTRACK」は最新のMixed Reality向けキャプチャー技術を活用した実写立体動画(Volumetric Video)撮影システムです。',
+                subtxt2: '※Volumetric videoとは・・・MicrosoftやIntelも研究開発に注力している実写立体動画のこと。従来の平面動画や360度VR動画は、視点はカメラ位置で固定されていますが、Volumetric Videoは被写体を全方向から撮影して立体の映像を作るため、視聴者は完全に自由な視点から映像を鑑賞することができます。',
+                subtitle1: '撮影',
+                txt1: 'グリーンバックのような特別な環境や設備は必要ありません。独自の3D構成プログラムにより市販のPCでも動作する実寸大表示可能なVolumetric videoを作成することができます。',
+                subtitle2: 'データ生成・配信',
+                txt2: 'ポイントクラウドを利用した独自の表現技術(※特許申請中)により、リアルタイムに立体動画を作成・表示でき、クラウドサーバーを経由したライブ配信をすることも可能です。',
+                subtitle3: '活用事例',
+                txt3: 'エンターテイメント、教育、スポーツ、ビジネス、デジタルアーカイブなど、CGやモーションキャプチャーでは表現できない、人や生き物の存在感をそのまま記録することが可能です。',
+              },
+              about: {
+                subtxt1: 'SUPERTRACKでさまざまなビジネスの可能性を考えてみませんか？',
+                subtxt2: '今後、録画技術の向上のみならず、LIVE配信を展開し、SteamVR以外にもOculus、スマートフォンVRなどのプラットフォームにも対応予定です。',
+                cardtitle1: 'スポーツ',
+                cardtext1: 'これまでの教材ビデオではなし得なかった、360度からの近距離からのフォームチェックや同じ向きから見えることで新しい体験ができます。',
+                cardtitle2: 'ビジネス',
+                cardtext2: 'LIVE配信が可能なことから、遠隔での打ち合わせや電話では足りなかったコミュニケーションを補うことが可能です。',
+                cardtitle3: 'エンターテイメント',
+                cardtext3: 'これまでにもあった360度だけではなく、近距離から見るという新しい体験、臨場感が新体験のエンタメを提供できることになります。',
+                cardtitle4: '広告/ファッション',
+                cardtext4: 'これまでのファッションショーでは遠くから見るだけのものだったのがお店で見るような感覚を提供することが可能に、ファッション領域に新しい表現を提供します。',
+                cardtitle5: 'デジタルアーカイブ',
+                cardtext5: 'これまでアーカイブしてきたものは、写真やビデオでした、大切な思い出をそこにいるかのように記憶できる媒体としての活用が期待できます、子どもや結婚式の思い出を鮮明に残すことができます。',
+                cardtitle6: '教育',
+                cardtext6: '図鑑ではわかりにくいサイズや少しの動きを間近でみることができ教育分野の展開も期待されます。職人の手の動きまで記憶することで技術を後世に残すことができます。',
+              },
+              services: {
+                text1: '本技術SUPERTRACKを活用したコンテンツ第一弾として2019年8月にSteamより',
+                text2: '「ホログラ(HOLOGRA)」をリリース。',
+                text3: '本コンテンツではプロコスプレイヤーとして国内外にて著名な「五木あきら」さんをはじめ多数のコスプレイヤー・モデルを自由視点に鑑賞することができ、まるで彼女たちが目の前にいるように感じていただけます。',
+                text4: '販売価格',
+                text5: '4.99米ドル(無料体験版あり)',
+                text6: '配信時期',
+                text7: '2019年8月16日',
+                text8: '配信言語',
+                text9: '英語/日本語',
+                text10: '配信先',
+                text11: 'Steam',
+                text12: '配信先URL',
+                text13: '出演者一覧',
+                // text14: '近日公開',
+                char1: '麗華',
+                char2: '五木あきら',
+                char3: 'うらまる',
+                char4: 'シスル',
+                char5: 'やなぎばころん',
+                char6: '水月桃子',
+                char7: '福田もか。',
+                char8: '七瀬あずみ',
+              },
+              job: {
+                subtitle: '採用',
+                txt1: 'SUPERTRACK事業拡大につき、エンジニア積極採用中です。',
+                txt2: 'VR/AR/MR、AI、ライブ配信、データマーケティングなどの領域においてご活躍いただける方を募集いたします。先端の技術や開発手法を積極的に取り込み、今後新たな会社の柱となる事業を作るため、チームで思考錯誤しながら、開発環境、開発手法などゼロから組み立てます。',
+                txt3: 'メンバー全員がディレクターであり開発者でもあるため、責任感、主体性が強いチームです。ご自身の得意領域において積極的にチームを引っ張っていただける方を歓迎します。',
+                btn1: 'XRエンジニア募集',
+              },
+              contact: {
+                subtitle: 'お気軽にお問い合わせください',
+                about1: '企業名',
+                about2: '株式会社 メディア工房',
+                about3: '所在地',
+                about4: '〒107-0052',
+                about5: '東京都港区赤坂4-2-6　住友不動産新赤坂ビル12F',
+                about6: '設立',
+                about7: '平成9年10月',
+                about8: '資本金',
+                about9: '451百万円',
+                about10: '金融取引所',
+                about11: '東証マザーズ上場（証券コード3815）',
+                about12: '事業内容',
+                about13: 'デジタルコンテンツ事業、及びそれに伴う物販事業',
+                selecttitle: 'お問い合わせの種類',
+                select0: '選択してください',
+                select1: 'SUPERTRACKについてのお問い合わせ',
+                select2: 'ホログラについてのお問い合わせ',
+                select3: '取材についてのお問い合わせ',
+                select4: '業務提携についてのお問い合わせ',
+                select5: '採用についてのお問い合わせ',
+                select6: 'その他の項目についてのお問い合わせ',
+                nametitle: 'お名前',
+                mailtitle: 'メールアドレス',
+                teltitle: 'お電話',
+                detailtitle: 'お問い合わせ内容',
+                checkboxtitle: 'Privacy Policyに同意する',
+                send: '送信',
+              },
+            }
+          },
+
+          英語: {
+            translation: {
+              gnav: {
+                product: 'Product',
+                services: 'Services',
+                contact: 'Contact',
+              },
+              news: {
+                press: 'Press Release',
+                presstext1: 'Media Kobo Introduces “SUPERTRACK” System to Shoot Real-Time Live-Action 3D Video Images, Produces “HOLOGRA” 3D Content.',
+              },
+              intro: {
+                subtxt1: '"SUPERTRACK" is the real-time live-action 3D video (Volumetric Video) capture system utilize the latest mixed reality motion capture techonlogy.',
+                subtxt2: '*What is Volumetric Video?..Live-action 3D moving images, which has been the focus of intense research and development by such companies as Microsoft and Intel. While traditional videos or in 360-degree virtual reality are shot from a fixed camera viewpoint, volumetric video captures the object from all angles to create 3D images, providing viewers with complete freedom to enjoy them from a vantage point of their choice.',
+                subtitle1: 'Video Capture',
+                txt1: 'The main features of SUPERTRACK are that its environment for video shooting can be set up easily without requiring special settings or equipment such as a green backdrop screen, and that it is capable of creating high-resolution volumetric video images that can be viewed on commercially available PCs and displayed in life size by utilizing a unique 3D configuration program.',
+                subtitle2: 'reproducing and streaming',
+                txt2: 'SUPERTRACK will create and display 3D moving images in real-time, drawing on a unique technique of presentation (*patent pending) based on point cloud technology. It can also stream images live via cloud server.',
+                subtitle3: 'Application Examples',
+                txt3: 'SUPERTRACK can record the presence and motion of people and other living things as you see them, in a way that cannot be expressed by CG or motion capture, elevating the art of video from a means of recording to an immersive experience. Suitable for entertainment, education, sport, business and digital archives.',
+              },
+              about: {
+                subtxt1: 'Let’s talk about new business potencials !',
+                subtxt2: 'We are improving SUPERTRACK day by day! Live streaming will be soon be enabled and we are planning to support Oculus Quest and smartphone VR headsets.',
+                cardtitle1: 'SPORTS',
+                cardtext1: 'Studying forms and poses in yoga and sports from every possible viewpoint. A breathtaking experience you’ve never seen before.',
+                cardtitle2: 'BUSINESS',
+                cardtext2: 'Reliving the atmospheres of training sessions and seminars as they were.',
+                cardtitle3: 'Entertainment',
+                cardtext3: 'Any viewpoit at short-range will give complelling experience and realities.',
+                cardtitle4: 'Advertisement/Fashion',
+                cardtext4: 'Right now, You have to watch fashion shows from your seats. But now, you could see them from any viewpoint at short-range like looking at them in the store. A whole new experience in the fashion market.',
+                cardtitle5: 'Digital Archive',
+                cardtext5: 'What we took were photos and videos. But now we could archive your precious memories live, 3D, life-sized like you could feel you are still there with them.',
+                cardtitle6: 'Education',
+                cardtext6: 'Kids could feel the size and detail movements of animals which are hard to tell from picture books. And also could archive craftsmanship and watch their details.',
+              },
+              services: {
+                text1: 'Let’s talk about new business potencials!We are improving SUPERTRACK day by day! Live streaming will soon be enabled and we are planning to support Oculus Quest and smartphone VR headsets.',
+                text2: '',
+                text3: '"HOLOGRA” is set to release at August 16, 2019 as the first round of content drawing on this SUPERTRACK technology.',
+                text4: 'Price',
+                text5: '＄4.99',
+                text6: 'Release',
+                text7: 'August 16, 2019',
+                text8: 'Languages',
+                text9: 'English/Japanese',
+                text10: 'Platform',
+                text11: 'Steam',
+                text12: 'URL',
+                text13: 'Performer',
+                // text14: 'Coming Soon',
+                char1: 'Reika Arikawa',
+                char2: 'Akira Itsuki',
+                char3: 'Uramaru',
+                char4: 'Sithle',
+                char5: 'Coron Yanagiba',
+                char6: 'Mizuki Momoko',
+                char7: 'Moka Fukuda',
+                char8: 'Azumi Nanase',
+              },
+              job: {
+                subtitle: 'YES WE’RE HIRING!',
+                txt1: 'Are you ready for an innovative career with a new technology?',
+                txt2: 'Please click below.',
+                txt3: '',
+                btn1: 'XR Engineer',
+              },
+              contact: {
+                subtitle: 'We want to hear from you.',
+                about1: 'Name',
+                about2: 'Media Kobo, Inc.',
+                about3: 'Head office',
+                about4: '12th Floor, Sumitomo Shin-Akasaka Building,',
+                about5: 'Akasaka 4-2-6 Minato-ku,Tokyo 107-0052 Japan',
+                about6: 'Establishment',
+                about7: 'October 1997',
+                about8: 'Capital',
+                about9: '451 million JPY (4M USD)',
+                about10: 'Listed on the TSE',
+                about11: 'Mothers (code 3815)',
+                about12: 'Business contents',
+                about13: 'Digital contents business',
+                selecttitle: 'Inquiry about',
+                select0: 'Please select',
+                select1: 'General questions and inquiry regarding SUPERTRACK',
+                select2: 'General questions and inquiry regarding HOLOGRA',
+                select3: 'Press',
+                select4: 'Business',
+                select5: 'Career',
+                select6: 'Others',
+                nametitle: 'Name',
+                mailtitle: 'Mail Address',
+                teltitle: 'Phone number',
+                detailtitle: 'Inquiry',
+                checkboxtitle: 'I agree to the privacy policy',
+                send: 'send',
+              },
+            }
+          },
+
+        }
+      }, function(err, t) {
+        i18nextJquery.init(i18next, $);
+        $('body').localize();
+
+        $('.lang-select').click(function() {
+          i18next.changeLanguage(this.innerHTML);
+          $('body').localize();
+        });
+      });
+  </script>
+
+  <!-- ニュース部分の切り替え -->
+  <script type="text/javascript">
+    function news_lang() {
+      var btn_lang = localStorage.getItem('i18nextLng');
+      var lang_ja_elements = document.getElementsByClassName("lang_jp_text");
+      var lang_en_elements = document.getElementsByClassName("lang_en_text");
+      if (btn_lang === '日本語') {
+        for (i = 0; i < lang_ja_elements.length; i++) {
+          lang_ja_elements[i].style.display = "block";
+        }
+        for (j = 0; j < lang_en_elements.length; j++) {
+          lang_en_elements[j].style.display = "none";
+        }
+        //document.getElementsByClassName("lang_ja").style.display="block";
+        //document.getElementsByClassName("lang_en").style.display="none";
+      } else if (btn_lang === '英語') {
+        for (i = 0; i < lang_ja_elements.length; i++) {
+          lang_ja_elements[i].style.display = "none";
+        }
+        for (j = 0; j < lang_en_elements.length; j++) {
+          lang_en_elements[j].style.display = "block";
+        }
+        //document.getElementsByClassName("lang_ja").style.display="none";
+        //document.getElementsByClassName("lang_en").style.display="block";
+      }
+    };
+    (news_lang());
+  </script>
+
+
+  <!-- アニメーション -->
+  <script type="text/javascript">
+  const obj = $(".scroll-animation-obj");
+  const hopIn = $(".scroll-animation-hop");
+  const leftIn = $(".scroll-animation-left");
+  const rightIn = $(".scroll-animation-right");
+  $(window).on('scroll',function(){
+    obj.each(function(){
+      const objPos = $(this).offset().top;
+      const scroll = $(window).scrollTop();
+      const windowH = $(window).height();
+      if(scroll > objPos - windowH){
+        $(this).css({
+          'opacity': '1'
+        });
+      } else {
+        $(this).css({
+          'opacity': '0'
+        });
+      }
+    });
+    hopIn.each(function(){
+      const objPos = $(this).offset().top;
+      const scroll = $(window).scrollTop();
+      const windowH = $(window).height();
+      if(scroll > objPos - windowH){
+        $(this).css({
+          'transform': 'translate(0,0)'
+        });
+      } else {
+        $(this).css({
+          'transform': 'translate(0,60px)'
+        });
+      }
+    });
+    leftIn.each(function(){
+      const objPos = $(this).offset().top;
+      const scroll = $(window).scrollTop();
+      const windowH = $(window).height();
+      if(scroll > objPos - windowH){
+        $(this).css({
+          'transform': 'translate(0,0)'
+        });
+      } else {
+        $(this).css({
+          'transform': 'translate(-120px,0)'
+        });
+      }
+    });
+    rightIn.each(function(){
+      const objPos = $(this).offset().top;
+      const scroll = $(window).scrollTop();
+      const windowH = $(window).height();
+      if(scroll > objPos - windowH){
+        $(this).css({
+          'transform': 'translate(0,0)'
+        });
+      } else {
+        $(this).css({
+          'transform': 'translate(120px,0)'
+        });
+      }
+    });
+  });
+  </script>
+
+
+
+
+
+</body></html>

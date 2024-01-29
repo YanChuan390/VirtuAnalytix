@@ -1,0 +1,158 @@
+<html><head>
+    <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Averia Serif Libre" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        img {
+            display: block;
+            width: 95%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .logo {
+            //background-color: #ffffff;
+            //background: linear-gradient(to right, #ffffff, #bbbbbb);
+        }
+        body {
+           
+            //background: #  repeat fixed top center;
+            //background: linear-gradient(to bottom right, #ececec, #d8f5f8);
+
+            background: linear-gradient(to bottom right, #ffffff, #888888);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            max-width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .breakborder {
+            background: #ffffff  repeat fixed top center;
+            width: 95%;
+            //height:30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .break {
+            height: 20px
+        } 
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ccc;
+        }
+
+        li {
+            float: left;
+            font-family: 'Chivo';font-size: 29px;
+        }
+
+        li a {
+            display: block;
+            color: #222;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #333;
+            color: #aaaaaa;
+        }
+
+        .disclaimerlink{
+            text-align: right;
+            padding: 2%;
+            font-family: 'Open Sans';font-size: 16px;
+        }
+        
+        .gameinformation {
+            //margin-left: 10%;
+            //margin-right: 10%;
+            padding: 2%;
+            font-family: 'Averia Serif Libre';font-size: 22px;
+           // background-color: #301000;
+        }
+
+        .ul_specs {
+            list-style-type: none;
+            margin: 0;
+            padding: 2%;
+            overflow: auto;
+            background-color: #ffffff;
+        }
+
+        .li_specs {
+            float: left;
+            font-family: 'Averia Serif Libre';font-size: 22px;;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="breakborder">
+    <img class="logo" src="AquilaBlueLogo.png" width="1024" height="250">
+    <div class="breakborder"></div>
+    <div><ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="games.html">Games</a></li>
+             <li><a href="contactus.html">Contact Us</a></li>
+    
+            </ul></div>
+        <div class="break"></div>
+    <img src="1024x210.jpg" width="1024" height="210">
+    <div class="break"></div>
+    <div class="gameinformation">
+        <h1>TimeCluster</h1>
+        Timecluster is our first PC game. It is built specifically for VR on the Unreal Engine by Epic Games. It runs on the HTC Vive, Oculus Rift and Windows Mixed Reality (using the Windows Mixed Reality Steam plugin). The game will be available on the Steam store.
+    </div>
+    <div class="gameinformation">
+        Protect the past, save the future.
+        <div></div>
+        TimeCluster is a first person VR shooter. You are sent back in time to protect villagers in a medieval town from an alien race bent on preventing the creation of the virtuous faction that democratically rules over the known galaxy..         
+     </div>
+        <div class="disclaimerlink">
+            <a href="td.html">TimeCluster Disclaimers</a>
+        </div>
+        <div class="gameinformation">
+            <h2>Technical Specifications</h2>
+            <ul class="ul_specs">
+                <li class="li_specs">Processor - Intel™ Core™ i5-4590 or AMD FX™ 8350, equivalent or better</li>
+                <li class="li_specs">Graphics - NVIDIA GeForce™ GTX 1060 or AMD Radeon™ RX 480, equivalent or better</li>
+                <li class="li_specs">Memory - 8 GB RAM or more</li>
+                <li class="li_specs">Operating System - Windows™ 7 SP1, Windows™ 8.1 or later or Windows™ 10</li>
+            </ul>
+        </div>
+        
+        <div class="gameinformation">
+        <h2>Game Play Shots:</h2>
+        </div>
+        
+        <img src="screenshots/InGame00067.jpg">
+        <div class="break"></div>
+        <img src="screenshots/InGame00071.jpg">
+        <div class="break"></div>
+        <img src="screenshots/InGame00079.jpg">
+        <div class="break"></div>
+        <img src="screenshots/InGame00080.jpg">
+        <div class="break"></div>
+        <img src="screenshots/InGame00088.jpg">
+        <div class="break"></div>
+        <img src="screenshots/InGame00099.jpg">
+        <div class="break"></div>
+        <img src="screenshots/InGame00111.jpg">
+        <div class="break"></div>
+        <img src="screenshots/InGame00118.jpg">
+        <div class="break"></div>
+        <img src="screenshots/InGame00124.jpg">
+        <div class="break"></div>
+    </div>
+
+
+</body></html>

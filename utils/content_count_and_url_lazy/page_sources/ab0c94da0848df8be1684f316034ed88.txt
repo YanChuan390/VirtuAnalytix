@@ -1,0 +1,1256 @@
+<html lang="en-US"><head id="Head">
+<!--*********************************************-->
+<!-- DNN Platform - http://www.dnnsoftware.com   -->
+<!-- Copyright (c) 2002-2014, by DNN Corporation -->
+<!--*********************************************-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>
+	Holodance - a spatial, rhythmic, audio-visual experience of pure joy!
+</title><meta id="MetaDescription" name="DESCRIPTION" content="A spatial, rhythmic, audio-visual experience of pure ecstatic joy! Holodance is an Awesome VR and AR Dancing Game"><meta id="MetaKeywords" name="KEYWORDS" content="Virtual Reality,Unity,Multiplayer,VR,HTC Vive,DotNetNuke,DNN"><meta id="MetaCopyright" name="COPYRIGHT" content="Copyright 2023 by narayana games UG"><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke "><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW">
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta content="text/javascript" http-equiv="Content-Script-Type">
+        <meta content="text/css" http-equiv="Content-Style-Type">
+        <meta name="RESOURCE-TYPE" content="DOCUMENT">
+        <meta name="REVISIT-AFTER" content="1 DAYS">
+        <meta name="RATING" content="GENERAL">
+    <link href="/Portals/_default/default.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/DesktopModules/HFLabs_NewsSignUp/module.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/Portals/_default/Skins/20064-UnlimitedColorsPack-046/skin.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/Portals/_default/Skins/20064-UnlimitedColorsPack-046/HolodanceLandingPage.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/Portals/_default/Containers/20064-UnlimitedColorsPack-046/container.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/Portals/3/portal.css?cdv=109" media="all" type="text/css" rel="stylesheet"><script type="text/javascript" async="" defer="" src="//piwik.ramtiga.net/piwik.js"></script><script src="/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=109" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=109" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_10_03/jquery-ui.js?cdv=109" type="text/javascript"></script><!--[if LT IE 9]><link id="IE6Minus" rel="stylesheet" type="text/css" href="/Portals/_default/Skins/20064-UnlimitedColorsPack-046/ie.css" /><![endif]--><link rel="SHORTCUT ICON" href="/Portals/3/SquareIcon_32x32.ico" type="image/x-icon"><meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0"><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/54/4/intl/zh_cn/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/54/4/intl/zh_cn/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/54/4/intl/zh_cn/geocoder.js"></script></head>
+<body id="Body">
+    
+    <form method="post" action="/" onsubmit="javascript:return WebForm_OnSubmit();" id="Form" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="">
+<input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value=";;System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35:en:5bc44d53-7cae-4d56-af98-205692fecf1f:ea597d4b:b25378d2">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form'];
+if (!theForm) {
+    theForm = document.Form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=qDzGvU1vSOZ7X8tXGRPErJ9LgVyYJ2s70yAe5ohPNT0Z4FdCJtou4HM7yaB7-ITf6pfYEpBtcIrcH2xP0&amp;t=637811765229275428" type="text/javascript"></script>
+
+
+<script src="/DesktopModules/DNNGo_xPlugin/Resource/js/phototabs.js?cdv=109" type="text/javascript"></script>
+<script src="/DesktopModules/DNNGo_xPlugin/Resource/js/accordion.js?cdv=109" type="text/javascript"></script>
+<script src="/DesktopModules/DNNGo_xPlugin/Resource/js/dnngo-megamenu.js?cdv=109" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ary6qaj1PjdC9BNBh6yjfWPUOS1qHXwgnxzQcKHQwIWNINp8vv5IgX3XUC-hXNuJedgZp9oH_Ax8aKthg4_cTTqEtyrnyMB-dq1zHetD_93TUfgBxEg2EKN8KnagJcgJak6db6KH7v6jXpUk0&amp;t=2265eaa7" type="text/javascript"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a5bc44d53-7cae-4d56-af98-205692fecf1f%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="yy5JhOyjyl+wDpueD+F83TTxvo3/yBssDYZfHJYLHa7Wxv1ZQcg2C2N+8tXKWMvq6So77TOlYP/BK162x5XkdF0CjapvXLqYAMAfTTVtcjnKUzA/m2HcSeMtyRgMvnJVZ9o1CQfAc0rV9sQ7MljDR2Ygkdb30XEMWau03ZEq+NThn5MomlH/NZNUfITzYXabvWFCakZejLQ8YPtMjhsf5GkFy750ZXr+poPG5HaOnS9OSLewpyBYpEJElehGlZhg4xCwBeQmhM3MHx2KpPWWEOplFFKIv+uCLB4rgD/xzYQf9Gj+aeUkrRlOx4Y=">
+</div><script src="/js/dnn.js?cdv=109" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=109" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=109" type="text/javascript"></script><script src="/js/dnncore.js?cdv=109" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=109" type="text/javascript"></script><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
+//]]>
+</script>
+
+        
+        
+        
+
+ 
+
+
+
+<script type="application/ld+json">
+{  
+  "@context": "http://schema.org",
+  "@type":"VideoGame",
+  "name":[
+    {
+      "@language":"en",
+      "@value":"Holodance"
+    }
+  ],
+  "description":[
+    {
+      "@language":"en",
+      "@value":"Get your workout with any osu!-beatmap in pure rhythm game environments, or immerse yourself - guided by dragons - in the mindset that will save our lovely little planet ... in the only room-scale Virtual Reality rhythm game that precisely knows each note of every song in the game!"
+    }
+  ],
+  "genre":[
+    "Music game"
+  ],
+  "url":"http://holodance-vr.com",
+  "image":"http://holodance-press.com/holodance/downloads/poster.jpg",
+  "screenshot":"http://holodance-press.com/holodance/downloads/backgroundart.jpg",
+  "sameAs": [
+    "https://en.wikipedia.org/wiki/Holodance",
+    "https://www.youtube.com/channel/UCrHWHZWdLp40OWG5xH7v3iA"
+  ],
+  "trailer":{
+    "@type":"VideoObject",
+    "url":"https://www.youtube.com/watch?v=hE90cWzGK0A",
+    "inLanguage":"en",
+    "name":"Holodance V0.7.2 Gameplay Teaser (Long Version)",
+    "description":"Holodance gameplay with the osu! beatmap support.",
+    "thumbnailUrl":"https://i.ytimg.com/vi/hE90cWzGK0A/maxresdefault.jpg",
+    "uploadDate":"2016-12-27"
+  },
+  "trailer":{
+    "@type":"VideoObject",
+    "url":"https://www.youtube.com/watch?v=qE-1lkcYW3E",
+    "inLanguage":"en",
+    "name":"Holodance V0.8.0 Alpha 2: Clubbing Environment, Muzzy - Draining Atlantic",
+    "description":"This video shows the updated clubbing environment of Holodance, while I'm playing the song Muzzy - Draining Atlantic. The osu! beatmap for this song is available here: https://osu.ppy.sh/s/479671",
+    "thumbnailUrl":"https://i.ytimg.com/vi/qE-1lkcYW3E/maxresdefault.jpg",
+    "uploadDate":"2017-03-04"
+  },
+  "applicationCategory": "http://schema.org/GameApplication",
+  "operatingSystem":"Windows",
+  "aggregateRating": {
+      "@type": "AggregateRating",
+      "worstRating": "0",
+      "bestRating": "100",
+      "ratingValue": "95",
+      "ratingCount": "64"
+  },
+  "offers": {
+      "@type": "Offer",
+      "price": "14.99",
+      "priceCurrency": "USD"
+  },
+  "exampleOfWork":[
+    {
+      "@type":"VideoGame",
+      "gamePlatform":[
+        "https://en.wikipedia.org/wiki/Microsoft_Windows",
+        "https://en.wikipedia.org/wiki/HTC_Vive",
+        "https://en.wikipedia.org/wiki/Oculus_Rift"
+      ],
+      "applicationCategory": "http://schema.org/GameApplication",
+      "operatingSystem":"Windows",
+      "aggregateRating": {
+          "@type": "AggregateRating",
+          "worstRating": "0",
+          "bestRating": "100",
+          "ratingValue": "95",
+          "ratingCount": "64"
+      },
+      "offers": {
+          "@type": "Offer",
+          "price": "14.99",
+          "priceCurrency": "USD"
+      },
+      "releasedEvent":{
+        "@type":"PublicationEvent",
+        "startDate":"2016-04-05",
+        "location":{
+          "@type":"Place",
+          "name":"WW"
+        }
+      }
+    }
+  ]
+}
+</script>
+
+<!--[if lt IE 9]>
+
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+<![endif]-->
+
+<div class="body_bg">  <ul id="93c8a80bdf" class="Page_box_bg preloader">
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Bonus-02-Clubbing_HD.jpg&quot;); opacity: 0; display: block;" class=""></li>
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Bonus-01-SciFi_HD.jpg&quot;); opacity: 0; display: block;" class=""></li>
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Level-11_HD.jpg&quot;); opacity: 0; display: block;" class=""></li>
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Level-05_HD.jpg&quot;); opacity: 0; display: block;" class=""></li>
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Level-03_HD.jpg&quot;); opacity: 0.0672493; display: block;" class=""></li>
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Level-01_HD.jpg&quot;); opacity: 0;"></li>
+<div class="pic_tab_arrow"><a href="javascript:;" class="last_page">&lt;</a><a href="javascript:;" class="next_page">&gt;</a></div></ul>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $("#93c8a80bdf").phototabs({
+            switchtime: 5000,
+            animationtime: 1000,
+            startpic: 0,
+            autoPaly: true,
+            showArrow: true
+        });
+    });
+</script>
+
+    <div id="dnn_wrapper">
+    <div class="wrapper">
+      <header class="visible-xs mobile_main  ">
+        <div class="head_mid dnn_layout">
+          
+          <div class="clearfix mobilep header_element">
+          	<div class="dnn_logo  ">
+            <a id="dnn_dnnLOGO3_hypLogo" title="Holodance" href="http://holodance-vr.com/"><img id="dnn_dnnLOGO3_imgLogo" src="/Portals/3/img/HolodanceLogo_500x250.png" alt="Holodance" style="border-width:0px;"></a>
+          </div>
+          <div class="search_ps  ">
+              <div class="icon search_icon"><span class=" glyphicons glyph-search"></span></div>
+              <div class="element_box searchBox" id="search">
+                <span id="dnn_dnnSEARCH2_ClassicSearch">
+    
+    
+    <span class="searchInputContainer" data-moreresults="See More Results" data-noresult="No Results Found">
+        <input name="dnn$dnnSEARCH2$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSEARCH2_txtSearch" class="NormalTextBox text-label" autocomplete="off" placeholder="Search...">
+        <a class="dnnSearchBoxClearText"></a>
+    </span>
+    <a id="dnn_dnnSEARCH2_cmdSearch" class="search" href="javascript:__doPostBack('dnn$dnnSEARCH2$cmdSearch','')"> </a>
+</span>
+
+
+<script type="text/javascript">
+    $(function() {
+        if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
+            var searchSkinObject = new dnn.searchSkinObject({
+                delayTriggerAutoSearch : 400,
+                minCharRequiredTriggerAutoSearch : 2,
+                searchType: 'S',
+                enableWildSearch: true,
+                cultureCode: 'en-US',
+                portalId: -1
+                }
+            );
+            searchSkinObject.init();
+            
+            
+            // attach classic search
+            var siteBtn = $('#dnn_dnnSEARCH2_SiteRadioButton');
+            var webBtn = $('#dnn_dnnSEARCH2_WebRadioButton');
+            var clickHandler = function() {
+                if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
+                else searchSkinObject.settings.searchType = 'W';
+            };
+            siteBtn.on('change', clickHandler);
+            webBtn.on('change', clickHandler);
+            
+            
+        }
+    });
+</script>
+
+              </div>
+            </div>
+            <div class="headp  ">
+              <div class="icon login_icon"><span class=" glyphicons glyph-user"></span></div>
+              <div class="element_box login">
+              	<div class="languageBox  ">
+                      <div class="language-object">
+
+
+</div>
+                    </div>
+                
+<div id="dnn_dnnUser2_registerGroup" class="registerGroup">
+    <ul class="buttonGroup">
+        
+        
+    	<li class="userDisplayName"><a id="dnn_dnnUser2_enhancedRegisterLink" title="Register" rel="nofollow" onclick="return dnnModal.show('http://holodance-vr.com/Register?returnurl=http%253a%252f%252fholodance-vr.com%252f&amp;popUp=true',/*showReturn*/true,600,950,true,'')" href="http://holodance-vr.com/Register?returnurl=http%3a%2f%2fholodance-vr.com%2f">Register</a></li>
+                                               
+    </ul>
+</div>
+                <span class="sep">|</span>
+                
+<div id="dnn_dnnLogin2_loginGroup" class="loginGroup">
+    <a id="dnn_dnnLogin2_enhancedLoginLink" title="Login" class="LoginLink" rel="nofollow" onclick="return dnnModal.show('http://holodance-vr.com/Login?returnurl=/&amp;popUp=true',/*showReturn*/true,300,650,true,'')" href="http://holodance-vr.com/Login?returnurl=%2f">Login</a>
+</div>
+
+              </div>
+            </div>
+            <div class="mobilep_top ">
+              <div class="icon mobile_icon"><span class="glyphicons glyph-list"></span></div>
+              <div id="mobile_menu" class="element_box">
+                
+<div class="menu_main">
+  <div id="multi_menuc37121b455" class="multi_menu">
+<ul id="gomenuc37121b455" class="dropdown "><li class="current Item-1 "><a href="http://holodance-vr.com/" class="menuitem active" title="Holodance - a spatial, rhythmic, audio-visual experience of pure joy!"><span>Holodance</span></a></li><li class=" Item-2 "><a href="http://holodance-vr.com/news" class="menuitem " title="News"><span>News</span></a></li><li class=" Item-3 "><a href="http://holodance-vr.com/discussion" class="menuitem " title="Discussion"><span>Discussion</span></a></li><li class=" Item-4 "><a href="http://holodance-vr.com/Impressum" class="menuitem " title="Impressum"><span>Impressum</span></a></li></ul>
+   </div>
+</div>
+
+
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#multi_menuc37121b455").accordionpromulti({
+            accordion: true,
+            speed: 300,
+            closedSign: '+',
+            openedSign: '-'
+        });
+    }); 
+</script>
+
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </header>
+      
+      
+      <div class="nav_main">
+      	<div class="nav_mainshadow">
+            
+            
+            <!--header3-->
+      <header class="hidden-xs headermain roll_menu">
+      	<div class="header3">
+        <div class="head_top  ">
+          <div class="head_mid clearfix dnn_layout">
+            <div id="dnn_HeadPane" class="HeadPane   DNNEmptyPane"></div>
+            <div class="languageBox  ">
+              <div class="language-object">
+
+
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="head_nav  ">
+          <div class="head_mid clearfix dnn_layout">
+            <div class="dnn_logo   ">
+              <a id="dnn_dnnLOGO2_hypLogo" title="Holodance" href="http://holodance-vr.com/"><img id="dnn_dnnLOGO2_imgLogo" src="/Portals/3/img/HolodanceLogo_500x250.png" alt="Holodance" style="border-width:0px;"></a>
+            </div>
+            <div class="dnn_menu ">
+              <div id="dnngo_megamenu">
+                
+    <div class="dnngo_gomenu" id="dnngo_megamenue5479728c1">
+      
+         <ul class="primary_structure">
+ <li class=" current">
+<a href="http://holodance-vr.com/" title="Holodance - a spatial, rhythmic, audio-visual experience of pure joy!"><span>Holodance</span></a>
+</li>
+ <li class=" ">
+<a href="http://holodance-vr.com/news" title="News"><span>News</span></a>
+</li>
+ <li class=" ">
+<a href="http://holodance-vr.com/discussion" title="Discussion"><span>Discussion</span></a>
+</li>
+ <li class=" ">
+<a href="http://holodance-vr.com/Impressum" title="Impressum"><span>Impressum</span></a>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $("#dnngo_megamenue5479728c1").dnngomegamenu({
+            slide_speed: 200,
+            delay_disappear: 500,
+            popUp: "vertical"//level
+        });
+    });
+
+
+	jQuery(document).ready(function () {
+		jQuery("#dnngo_megamenue5479728c1").has("ul").find(".dir > a").attr("aria-haspopup", "true");
+	}); 
+
+</script>
+              </div>
+              <div class="searchandlogin">
+                <div class="search_ps header_element  ">
+                  <div class="icon search_icon"><span class=" glyphicons glyph-search"></span></div>
+                  <div class="element_box searchBox" id="search">
+                    <span id="dnn_dnnSEARCH1_ClassicSearch">
+    
+    
+    <span class="searchInputContainer" data-moreresults="See More Results" data-noresult="No Results Found">
+        <input name="dnn$dnnSEARCH1$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSEARCH1_txtSearch" class="NormalTextBox text-label" autocomplete="off" placeholder="Search...">
+        <a class="dnnSearchBoxClearText"></a>
+    </span>
+    <a id="dnn_dnnSEARCH1_cmdSearch" class="search" href="javascript:__doPostBack('dnn$dnnSEARCH1$cmdSearch','')"> </a>
+</span>
+
+
+<script type="text/javascript">
+    $(function() {
+        if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
+            var searchSkinObject = new dnn.searchSkinObject({
+                delayTriggerAutoSearch : 400,
+                minCharRequiredTriggerAutoSearch : 2,
+                searchType: 'S',
+                enableWildSearch: true,
+                cultureCode: 'en-US',
+                portalId: -1
+                }
+            );
+            searchSkinObject.init();
+            
+            
+            // attach classic search
+            var siteBtn = $('#dnn_dnnSEARCH1_SiteRadioButton');
+            var webBtn = $('#dnn_dnnSEARCH1_WebRadioButton');
+            var clickHandler = function() {
+                if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
+                else searchSkinObject.settings.searchType = 'W';
+            };
+            siteBtn.on('change', clickHandler);
+            webBtn.on('change', clickHandler);
+            
+            
+        }
+    });
+</script>
+
+                  </div>
+                </div>
+                <div class="headp header_element  ">
+                  <div class="icon login_icon"><span class=" glyphicons glyph-user"></span></div>
+                  <div class="element_box login">
+                    
+<div id="dnn_dnnUser_registerGroup" class="registerGroup">
+    <ul class="buttonGroup">
+        
+        
+    	<li class="userDisplayName"><a id="dnn_dnnUser_enhancedRegisterLink" title="Register" rel="nofollow" onclick="return dnnModal.show('http://holodance-vr.com/Register?returnurl=http%253a%252f%252fholodance-vr.com%252f&amp;popUp=true',/*showReturn*/true,600,950,true,'')" href="http://holodance-vr.com/Register?returnurl=http%3a%2f%2fholodance-vr.com%2f">Register</a></li>
+                                               
+    </ul>
+</div>
+                    <span class="sep">|</span>
+                    
+<div id="dnn_dnnLogin_loginGroup" class="loginGroup">
+    <a id="dnn_dnnLogin_enhancedLoginLink" title="Login" class="LoginLink" rel="nofollow" onclick="return dnnModal.show('http://holodance-vr.com/Login?returnurl=/&amp;popUp=true',/*showReturn*/true,300,650,true,'')" href="http://holodance-vr.com/Login?returnurl=%2f">Login</a>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </header>
+      <!-- header3 End --> 
+            
+            
+            
+      
+            
+      
+      
+		      
+     
+              
+      
+            
+            <!--Breadcrumb5-->
+      
+      <section id="dnn_bread" class=" ">
+          <div class="dnn_layout bread_mid clearfix">
+            <div class="breadcrumbicon_left">
+              <div class="bread_current">Holodance</div>
+            </div>
+            <div id="dnn_breadcrumb_Pane" class="breadcrumb_Pane DNNEmptyPane"></div>
+          </div>
+      </section>
+      
+      
+       <!--Breadcrumb5 End-->
+            
+             
+      </div>
+      	</div>
+        
+        
+        <div class="homecontent_bg">
+      
+      <section id="dnn_content">
+        <div id="dnn_Full_Screen_PaneA" class="Full_Screen_PaneA DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div id="dnn_TopPane" class="TopPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-591"><a name="591"></a><div id="dnn_ctr591_ContentPane" class="DNNAligncenter"><!-- Start_Module_591 --><div id="dnn_ctr591_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr591_HtmlModule_lblContent" class="Normal">
+	<div style="text-align: center; margin-right: auto; margin-left: auto;">
+<iframe src="https://store.steampowered.com/widget/422860/" width="646" height="190" frameborder="0"></iframe>
+</div>
+<div style="padding-top: 20px; text-align: center; margin-right: auto; margin-left: auto;">Are you a journalist? Have a look at our <a href="http://holodance-press.com">Press Kit</a>!</div>
+<div style="margin-bottom: 10px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe src="https://www.youtube.com/embed/Zl_5ywFnkQk" width="1920" height="1080" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<!--
+<p style="text-align: center; font-size: 24pt;"><strong><a href="http://store.steampowered.com/app/422860/" title="Holodance on Steam">Check out Holodance on Steam</a></strong></p>
+<p style="text-align: center;"><strong><a href="http://igg.me/at/holodance/x/1264559" title="Kickstarter on IndieGoGo">Help kickstart Holodance on IndieGoGo</a> and <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=494183373" title="Greenlight on Steam">Greenlight Holodance on Steam</a> (<a href="http://greenlight-holodance.com/" title="Greenlight Holodance">open directly in Steam</a>)!</strong></p>
+-->
+</div>
+
+</div><!-- End_Module_591 --></div>
+</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneB" class="Full_Screen_PaneB DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div id="dnn_RowOne_Grid3_Pane" class="RowOne_Grid3_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-9">
+                  <div id="dnn_RowOne_Grid9_Pane" class="RowOne_Grid9_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div id="dnn_RowTwo_Grid4_Pane" class="RowTwo_Grid4_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-8">
+                  <div id="dnn_RowTwo_Grid8_Pane" class="RowTwo_Grid8_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <div id="dnn_RowThree_Grid5_Pane" class="RowThree_Grid5_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-7">
+                  <div id="dnn_RowThree_Grid7_Pane" class="RowThree_Grid7_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div id="dnn_RowFour_Grid6_Pane1" class="RowFour_Grid6_Pane1"><div class="DnnModule DnnModule-DNN_HTML DnnModule-583"><a name="583"></a><div id="dnn_ctr583_ContentPane"><!-- Start_Module_583 --><div id="dnn_ctr583_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr583_HtmlModule_lblContent" class="Normal">
+	<p><strong><em>Holodance</em></strong> is a collaborative multiplayer Virtual Reality music game for the <a href="https://www.htcvive.com/"><strong>HTC Vive</strong></a>&nbsp;and <strong>Oculus Rift with Touch Controllers</strong> that is currently being developed by <a href="http://narayana-games.net">narayana games</a>. We went into <a href="http://steamcommunity.com/app/422860">Early Access on Steam on April 5th, 2016</a> and are aiming for a full release in late 2018. Once the PC/Windows version is completed, we will focus on porting to <strong>PlayStation 4 /</strong>&nbsp;<strong>PlayStation VR</strong>.</p>
+<p>The <strong>Story Mode</strong> of Holodance, originally called&nbsp;<strong>Holodance Episode 1: Dancing with Dragons</strong> lets you play with the music produced for the game, with perfectly timed instrument tracks, be it for the bassline, drums or melodies - while dancing with dragons!</p>
+<p>In <strong>Free Mode</strong>, you can <strong>play any osu!-beatmap in VR</strong> (that means you can play any of the <span>60,000 ranked osu! beatmaps for&nbsp;</span>about 12,000 songs) in about 20 different environments including a clubbing level with visual effects, a sci-fi level and all the environments from story-mode. Support for more beatmap-formats as well as our own in-VR beatmap editor so you can play any song from your local music library is currently in development.</p>
+</div>
+
+</div><!-- End_Module_583 --></div>
+</div></div>
+                </div>
+                <div class="col-sm-6">
+                  <div id="dnn_RowFour_Grid6_Pane2" class="RowFour_Grid6_Pane2"><div class="DnnModule DnnModule-DNN_HTML DnnModule-594"><a name="594"></a><div id="dnn_ctr594_ContentPane"><!-- Start_Module_594 --><div id="dnn_ctr594_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr594_HtmlModule_lblContent" class="Normal">
+	<p>Please check out the gameplay videos below and sign up for your newsletter to be the first to get sporadic major news (also follow us on Twitter and Facebook for more frequent updates)! You can also directly register for the page and join the discussion on the forums.</p>
+<p><a rel="me" href="https://mastodon.social/@jashan">Mastodon: @jashan@mastodon.social</a></p>
+</div>
+
+</div><!-- End_Module_594 --></div>
+</div><div class="DnnModule DnnModule-HFLabs_NewsSignUp DnnModule-584"><a name="584"></a><div id="dnn_ctr584_ContentPane" class="DNNAlignright"><!-- Start_Module_584 --><div id="dnn_ctr584_ModuleContent" class="DNNModuleContent ModHFLabsNewsSignUpC">
+	
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('input[type="text"]').each(function () {
+            this.value = $(this).attr('title');
+            $(this).addClass('text-label');
+            $(this).focus(function () {
+                if (this.value == $(this).attr('title')) {
+                    this.value = '';
+                    $(this).removeClass('text-label');
+                }
+            });
+
+            $(this).blur(function () {
+                if (this.value == '') {
+                    this.value = $(this).attr('title');
+                    $(this).addClass('text-label');
+                }
+            });
+        });
+    });
+</script> 
+<div id="SignUpDialog">
+    <div id="dnn_ctr584_View_DivSignUpContainer" class="SignUpContainer">
+        <div style="width: 100%;">
+            <div class="NewsletterSignUp clearfix"> 
+                <input name="dnn$ctr584$View$txtEmailAddress" type="text" maxlength="80" id="dnn_ctr584_View_txtEmailAddress" class="TextboxRequiredRound text-label" title="Enter your mail-address and click:">
+                <a id="dnn_ctr584_View_lbSend" title="Sign me up!" class="NewsletterSignUp_right" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;dnn$ctr584$View$lbSend&quot;, &quot;&quot;, true, &quot;SignUp&quot;, &quot;&quot;, false, true))">Sign me up!</a>
+            </div>
+        </div>
+
+<div class="count_icon" style="text-align:center; padding-top:20px;">
+<a class="social social-vimeo" href="http://vimeo.com/groups/holodance"></a>
+<a class="social social-facebook" href="https://www.facebook.com/groups/holodance/"></a>
+<a class="social social-twitter" href="https://twitter.com/HolodanceVR"></a>
+<a class="glyphicons glyph-envelope" href="mailto:holodance@narayana-games.net"></a>
+</div>        
+
+        <div id="MessageArea" class="MessageArea">
+               
+        </div>
+
+
+        
+        
+        
+        
+        
+        
+        <div class="SignUpLabel">
+             <span id="dnn_ctr584_View_valRequiredEmail" class="ErrorMessage" enablestate="false" style="display:none;">Enter your email address!</span> <span id="dnn_ctr584_View_valRegularExpressionEmail" class="ErrorMessage" style="visibility:hidden;">Wrong email format!</span>
+        </div>
+        <div id="dnn_ctr584_View_divEmailTextbox" class="SignUpControlNoLabel"></div>
+       
+        
+
+        <div class="SignUpButtonArea">
+            <p style="line-height: 1px;">&nbsp;</p>
+            
+        </div>
+
+
+</div>
+</div><!-- End_Module_584 --></div>
+</div></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-7">
+                  <div id="dnn_RowFive_Grid7_Pane" class="RowFive_Grid7_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-5">
+                  <div id="dnn_RowFive_Grid5_Pane" class="RowFive_Grid5_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <div id="dnn_RowSix_Grid8_Pane" class="RowSix_Grid8_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowSix_Grid4_Pane" class="RowSix_Grid4_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-9">
+                  <div id="dnn_RowSeven_Grid9_Pane" class="RowSeven_Grid9_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div id="dnn_RowSeven_Grid3_Pane" class="RowSeven_Grid3_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneC" class="Full_Screen_PaneC DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div id="dnn_RowEight_Grid4_Pane1" class="RowEight_Grid4_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowEight_Grid4_Pane2" class="RowEight_Grid4_Pane2 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowEight_Grid4_Pane3" class="RowEight_Grid4_Pane3 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div id="dnn_RowNine_Grid3_Pane1" class="RowNine_Grid3_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-6">
+                  <div id="dnn_RowNine_Grid6_Pane" class="RowNine_Grid6_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div id="dnn_RowNine_Grid3_Pane2" class="RowNine_Grid3_Pane2 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RownTen_Grid3_Pane1" class="RownTen_Grid3_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowTen_Grid3_Pane2" class="RowTen_Grid3_Pane2 DNNEmptyPane"></div>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowTen_Grid3_Pane3" class="RowTen_Grid3_Pane3 DNNEmptyPane"></div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowTen_Grid3_Pane4" class="RowTen_Grid3_Pane4 DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneD" class="Full_Screen_PaneD DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div id="dnn_ContentPane" class="ContentPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-585"><a name="585"></a><div id="dnn_ctr585_ContentPane" class="DNNAligncenter"><!-- Start_Module_585 --><div id="dnn_ctr585_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr585_HtmlModule_lblContent" class="Normal">
+	<div class="responsive-video">
+<iframe src="https://www.youtube.com/embed/qcVRweF1OuA" width="1920" height="1080" frameborder="0"></iframe>
+</div>
+<!--
+<div class="responsive-video">
+<iframe src="//player.vimeo.com/video/248794080" width="1920" height="1080" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+-->
+<div class="responsive-video">
+<iframe src="//player.vimeo.com/video/245752288" width="1920" height="1080" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe src="//player.vimeo.com/video/210787540" width="1920" height="1080" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe src="//player.vimeo.com/video/210754575" width="1920" height="1080" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+</div>
+
+</div><!-- End_Module_585 --></div>
+</div><div class="DnnModule DnnModule-DNN_HTML DnnModule-586"><a name="586"></a>
+
+<div class="Container-20064-H1"> 
+
+<!--Container Title-->
+    <h1>
+        <span id="dnn_ctr586_dnnTITLEH1_titleLabel" class="titleH1">Wanna know more about Holodance?</span>
+
+
+
+    </h1>
+<!--Container Title End-->
+
+<!--Container Content-->
+    <div class="contentmain1">
+    
+    <div id="dnn_ctr586_ContentPane" class="contentpane"><!-- Start_Module_586 --><div id="dnn_ctr586_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr586_HtmlModule_lblContent" class="Normal">
+	<p>What is Holodance? Holo obviously was inspired by Holodeck, so imagine "dancing in the Holodeck". Of course, "dancing" just means tuning into the rhythm and freely moving with the music. There are orbs arriving perfectly in sync with the music that you need to catch, and curves you need to follow. But no, we're not gonna tell you how to move because we consider dancing really a free expressive movement of rhythm and joy.</p>
+<p>Holodance was the first VR rhythm game shown to the public, mid 2015. Since then, it has evolved from "Dancing with Dragons" with only a few songs specifically produced for the game in its environmentalism themed Story Mode, to also letting you play your local music library as well as any of the 60,000 hand-crafted high-quality ranked maps for osu! for more than 12,000 different songs in Holodance Free Mode.</p>
+<p>Play in almost 20 diverse environments, ranging from a tropical beach or underwater environment with dolphins and whales, to trippy abstract tunnels or asteroid fields.</p>
+<p>Whether you follow our friendly dragons down the rabbit hole of a potential dystopic future, and get to fistbump Pritvitej along the way, or prefer challenging yourself with high-intensity beatmaps in a Zero Distraction environment and get a nice workout while you're at it - Holodance has you covered. The game even lets you catch those orbs with your head - and if you already have Vive trackers, you can catch them with your feet, too, Kung Fu style.</p>
+<h3 style="padding-top: 30px;">Credits</h3>
+<p>While there are currently only four people working on the game full-time, it is actually an <strong>international collaboration with talents from across the globe</strong>. For the full credits, check out our <a href="http://holodance-press.com/sheet.php?p=holodance#credits">Press Kit</a>.</p>
+<h3 style="padding-top: 30px;">Mixed Reality, Vive Trackers, Streamer Mode</h3>
+<p>Holodance has full support for Mixed Reality, using the regular SteamVR quadrant view, MixCast (which requires a subscription but has the nice benefit of doing compositing in-game), and also native LIV integration.</p>
+<p>Vive Trackers are not required to play Holodance but if you have two and attach them to your feet, you can catch orbs with your feet. Up to 7 Vive Trackers (3 recommended) are support by the Holodance Avatar system which lets you breathe life into various forms, from Animé characters to sci-fi soldiers. The Avatar system ties into Streamer Mode, which is designed to let spectators watch players from various 3rd person perspectives that can even be switched automatically by the game, perfectly on the beat.</p>
+<h3 style="padding-top: 30px;">Story Mode: 12 Songs with Several Tracks Each</h3>
+<p>
+The Story Mode of Holodance will come with 12 songs in the electronic / techno / dancehall style. However, over time there will be other musical styles added via paid-DLC <strong>musical theme packs</strong> (if you're an artist and want to have your music on Holodance: <a href="mailto:info@narayana-games.net">contact us</a>!) Each song has several tracks, like a bassdrum, the hihat, a bassline or some synth playing a melody. As these tracks have different rhythms and complexities, there's a natural progression of difficulty within each song. Once you have touched a minimum of notes per track, the next more difficult track within the song becomes available. Once you have all tracks of a song completed, the next song becomes available which will be longer and more difficult.
+</p>
+<h3 style="padding-top: 30px;">How to Touch those Notes</h3>
+<p>
+There's different ways of "touching" notes that match the instrument of a given track. For percussive instruments like drums, the notes come flying towards you in the form of orbs that you just need to touch with the right timing. Notes for softer instruments as well as very fast instruments will come as paths that you need to follow with just the right pace. Finally, there will also be stationary orbs that you can tap in any sequence - you just need to get the rhythm right. Find more details about the <a href="https://en.wikipedia.org/wiki/Holodance">Holodance gameplay mechanics on Wikipedia</a>, and <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=719640927">details on how scores are calculated in Holodance in the Guide on Steam</a>.</p>
+<h3 style="padding-top: 30px;">Collaborative Multiplayer (not quite ready, yet)</h3>
+<p>
+Holodance has a collaborative multiplayer mode where you can play songs together with friends or strangers (who will then become friends). The score is added up, so the more people you have in a session, the more maximum score is available. In this <strong>symmetric multiplayer mode</strong>, which is tied to the story of the game, you can have up to four players per session. We will also have an <strong>asymmetric multiplayer mode</strong> (in fact, probably this will arrive first), where one player "throws" the orbs, while the other is responsible for catching them. The thrower won't have to worry about timing because we will use the beatmaps for that ... and don't think you can cheat by having the thrower simply not move - we track the distance covered and that has an effect on your score.</p>
+<h2 style="padding-top: 40px;">So when will you shut up so I can give you my money?</h2>
+<p>If you don't mind playing an Early Access title that is not completely finished, yet, and if you do have an <strong>HTC Vive</strong> or <strong>Oculus Rift with Touch Controllers</strong> - go right ahead and:</p>
+<p style="text-align: center; font-size: 24pt;"><a href="http://store.steampowered.com/app/422860">Buy Holodance at its Early Access price on Steam</a></p>
+<p>
+Holodance is currently being developed full-time by Jashan Chittesh (game-design, coding, music production) and Samuel Hajek (concept art, modeling, animation). We also have more artists like Finn MK (musician), Efe Tozan (musician), Roy van Dorn (set-design), Anne Stokes (concept art for the blue mother of all dragons) and Gary Haus (modeling) helping on a project basis. Be sure to register your email or register on the site, join the discussion in our forum and follow us on Twitter, Facebook and join our group on Vimeo to follow this project's progress.</p>
+<h3 style="text-align: center; padding-top: 20px;"><strong>We can't wait to <em>holodance</em> with you!</strong></h3>
+<h3 style="padding-top: 30px;">For Arcades and Parties / Demos</h3>
+<p>We have built-in several features into Holodance to make it work well in demo / party / arcade scenarios. If you enjoy doing demos, or run an arcade, make sure to talk to us.</p>
+</div>
+
+</div><!-- End_Module_586 --></div>
+</div>
+<!--Container Content End-->
+
+<!--Container Buttons-->
+    <div class="c_footer">
+        
+        
+        
+        
+    </div>
+<!--Container Buttons End--> 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div><div class="DnnModule DnnModule-DNN_HTML DnnModule-590"><a name="590"></a><div id="dnn_ctr590_ContentPane"><!-- Start_Module_590 --><div id="dnn_ctr590_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr590_HtmlModule_lblContent" class="Normal">
+	<div style="text-align: center; float: left;">
+<a href="http://www.vrdb.com/games/holodance-vr" title="View Holodance on VRDB" target="_blank"><img src="http://button.vrdb.com/popularity/medium/games/43563.png" alt="Holodance on VRDB"></a><br>
+<a href="http://www.vrdb.com/games/holodance-vr" title="Holodance VR Windows, Mac, Linux, VR, PS4 game" target="_blank">Holodance VR on VRDB</a>
+</div>
+<div style="text-align: center; float: right;">
+<a href="http://www.indiedb.com/games/holodance-vr" title="View Holodance VR on Indie DB" target="_blank"><img style="border: none;" src="http://button.indiedb.com/popularity/medium/games/43563.png" alt="Holodance VR"></a><br>
+<a href="http://www.indiedb.com/games/holodance-vr" title="Holodance VR Windows, Mac, Linux, VR, PS4 game" target="_blank">Holodance VR on IndieDB</a>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div style="text-align: center; margin-right: auto; margin-left: auto;">
+<iframe width="646" height="190" src="http://store.steampowered.com/widget/422860/" frameborder="0"></iframe>
+</div>
+<div style="padding-top: 20px; text-align: center; margin-right: auto; margin-left: auto;">Are you a journalist? Have a look at our <a href="http://holodance-press.com">Press Kit</a>!</div>
+<!--
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/197192624" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/187434423" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/176688213" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/161643583" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/158412222" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/151304797" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/142771621" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/137143131" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/135357983" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/137043607" frameborder="0"></iframe>
+</div>
+<div style="margin-bottom: 30px;">&nbsp;</div>
+<div class="responsive-video">
+<iframe width="1920" height="1080" src="//player.vimeo.com/video/135086492" frameborder="0"></iframe>
+</div>
+-->
+<div style="margin-bottom: 50px;">&nbsp;</div>
+</div>
+
+</div><!-- End_Module_590 --></div>
+</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneE" class="Full_Screen_PaneE DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RownEleven_Grid3_Pane1" class="RownEleven_Grid3_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowEleven_Grid3_Pane2" class="RowEleven_Grid3_Pane2 DNNEmptyPane"></div>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowEleven_Grid3_Pane3" class="RowEleven_Grid3_Pane3 DNNEmptyPane"></div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowEleven_Grid3_Pane4" class="RowEleven_Grid3_Pane4 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div id="dnn_RowTwelve_Grid3_Pane1" class="RowTwelve_Grid3_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-6">
+                  <div id="dnn_RowTwelve_Grid6_Pane" class="RowTwelve_Grid6_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div id="dnn_RowTwelve_Grid3_Pane2" class="RowTwelve_Grid3_Pane2 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div id="dnn_RowThirteen_Grid4_Pane1" class="RowThirteen_Grid4_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowThirteen_Grid4_Pane2" class="RowThirteen_Grid4_Pane2 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowThirteen_Grid4_Pane3" class="RowThirteen_Grid4_Pane3 DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneF" class="Full_Screen_PaneF DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-9">
+                  <div id="dnn_RowFourteen_Grid9_Pane" class="RowFourteen_Grid9_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div id="dnn_RowFourteen_Grid3_Pane" class="RowFourteen_Grid3_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <div id="dnn_RowFifteen_Grid8_Pane" class="RowFifteen_Grid8_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowFifteen_Grid4_Pane" class="RowFifteen_Grid4_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-7">
+                  <div id="dnn_RowSixteen_Grid7_Pane" class="RowSixteen_Grid7_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-5">
+                  <div id="dnn_RowSixteen_Grid5_Pane" class="RowSixteen_Grid5_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div id="dnn_RowSeventeen_Grid6_Pane1" class="RowSeventeen_Grid6_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-6">
+                  <div id="dnn_RowSeventeen_Grid6_Pane2" class="RowSeventeen_Grid6_Pane2 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <div id="dnn_RowEighteen_Grid5_Pane" class="RowEighteen_Grid5_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-7">
+                  <div id="dnn_RowEighteen_Grid7_Pane" class="RowEighteen_Grid7_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div id="dnn_RowNineteen_Grid4_Pane" class="RowNineteen_Grid4_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-8">
+                  <div id="dnn_RowNineteen_Grid8_Pane" class="RowNineteen_Grid8_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div id="dnn_RowTwenty_Grid3_Pane" class="RowTwenty_Grid3_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-9">
+                  <div id="dnn_RowTwenty_Grid9_Pane" class="RowTwenty_Grid9_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneG" class="Full_Screen_PaneG DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div id="dnn_BottomPane" class="BottomPane DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneH" class="Full_Screen_PaneH DNNEmptyPane"></div>
+      </div></section>
+      
+      
+	  <section id="dnn_lightgreybgp">
+        <div class="dnn_layout content_mid">
+          <div id="dnn_LightGreyBGPane" class="LightGreyBGPane DNNEmptyPane"></div>
+        </div>
+      </section>
+      <section id="dnn_lightgreybgpB">
+        <div id="dnn_LightGreyBGPaneB" class="LightGreyBGPaneB DNNEmptyPane"></div>
+      </section>
+      <section id="dnn_botbgp">
+          <div class="dnn_layout bottom_mid">
+            <section class="row">
+              <div class="col-sm-6">
+                <div id="dnn_BotBGPaneA" class="BotBGPaneA DNNEmptyPane"></div>
+              </div>
+              <div class="col-sm-6">
+                <div id="dnn_BotBGPaneB" class="BotBGPaneB DNNEmptyPane"></div>
+              </div>
+            </section>
+          </div>
+      </section>
+      
+      </div>
+
+      <section id="dnn_bottom" class=" ">
+        <div class="clearfix dnn_layout bottom_mid lightgrey_title bottom_colors">
+          <div class="row">
+						<div class="col-sm-12">
+							<div id="dnn_FooterPaneJ" class="FooterPaneJ  "><div class="DnnModule DnnModule-HFLabs_NewsSignUp DnnModule-587"><a name="587"></a><div id="dnn_ctr587_ContentPane" class="DNNAligncenter"><!-- Start_Module_587 --><div id="dnn_ctr587_ModuleContent" class="DNNModuleContent ModHFLabsNewsSignUpC">
+	
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('input[type="text"]').each(function () {
+            this.value = $(this).attr('title');
+            $(this).addClass('text-label');
+            $(this).focus(function () {
+                if (this.value == $(this).attr('title')) {
+                    this.value = '';
+                    $(this).removeClass('text-label');
+                }
+            });
+
+            $(this).blur(function () {
+                if (this.value == '') {
+                    this.value = $(this).attr('title');
+                    $(this).addClass('text-label');
+                }
+            });
+        });
+    });
+</script> 
+<div id="SignUpDialog">
+    <div id="dnn_ctr587_View_DivSignUpContainer" class="SignUpContainer">
+        <div style="width: 100%;">
+            <div class="NewsletterSignUp clearfix"> 
+                <input name="dnn$ctr587$View$txtEmailAddress" type="text" maxlength="80" id="dnn_ctr587_View_txtEmailAddress" class="TextboxRequiredRound text-label" title="Enter your mail-address and click:">
+                <a id="dnn_ctr587_View_lbSend" title="Sign me up!" class="NewsletterSignUp_right" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;dnn$ctr587$View$lbSend&quot;, &quot;&quot;, true, &quot;SignUp&quot;, &quot;&quot;, false, true))">Sign me up!</a>
+            </div>
+        </div>
+
+<div class="count_icon" style="text-align:center; padding-top:20px;">
+<a class="social social-vimeo" href="http://vimeo.com/groups/holodance"></a>
+<a class="social social-facebook" href="https://www.facebook.com/groups/holodance/"></a>
+<a class="social social-twitter" href="https://twitter.com/HolodanceVR"></a>
+<a class="glyphicons glyph-envelope" href="mailto:holodance@narayana-games.net"></a>
+</div>        
+
+        <div id="MessageArea" class="MessageArea">
+               
+        </div>
+
+
+        
+        
+        
+        
+        
+        
+        <div class="SignUpLabel">
+             <span id="dnn_ctr587_View_valRequiredEmail" class="ErrorMessage" enablestate="false" style="display:none;">Enter your email address!</span> <span id="dnn_ctr587_View_valRegularExpressionEmail" class="ErrorMessage" style="visibility:hidden;">Wrong email format!</span>
+        </div>
+        <div id="dnn_ctr587_View_divEmailTextbox" class="SignUpControlNoLabel"></div>
+       
+        
+
+        <div class="SignUpButtonArea">
+            <p style="line-height: 1px;">&nbsp;</p>
+            
+        </div>
+
+
+</div>
+</div><!-- End_Module_587 --></div>
+</div></div>
+						</div>
+					</div>
+                <div class="row">
+						<div class="col-sm-8">
+							<div id="dnn_FooterPaneH" class="FooterPaneH   DNNEmptyPane"></div>
+						</div>
+						<div class="col-sm-4">
+							<div id="dnn_FooterPaneI" class="FooterPaneI   DNNEmptyPane"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div id="dnn_FooterPaneA" class="FooterPaneA   DNNEmptyPane"></div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div id="dnn_FooterPaneB" class="FooterPaneB   DNNEmptyPane"></div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div id="dnn_FooterPaneC" class="FooterPaneC   DNNEmptyPane"></div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div id="dnn_FooterPaneD" class="FooterPaneD   DNNEmptyPane"></div>
+						</div>
+					</div>	
+                    <div class="row">
+						<div class="col-sm-4">
+							<div id="dnn_FooterPaneE" class="FooterPaneE   DNNEmptyPane"></div>
+						</div>
+						<div class="col-sm-4">
+							<div id="dnn_FooterPaneF" class="FooterPaneF   DNNEmptyPane"></div>
+						</div>
+						<div class="col-sm-4">
+							<div id="dnn_FooterPaneG" class="FooterPaneG   DNNEmptyPane"></div>
+						</div>
+					</div>	
+        </div>
+      </div></section>
+      <footer>
+        <div class="clearfix dnn_layout footer_mid  ">
+          <div class="copyright_style">
+                    <span id="dnn_dnnCOPYRIGHT_lblCopyright" class="footer  ">Copyright 2023 by narayana games UG</span>
+
+                    <span class="sep  ">|</span>
+                    <a id="dnn_dnnPRIVACY_hypPrivacy" class="terms  " rel="nofollow" href="http://holodance-vr.com/Privacy">Privacy Statement</a>
+                    <span class="sep    ">|</span>
+                    <a id="dnn_dnnTERMS_hypTerms" class="terms  " rel="nofollow" href="http://holodance-vr.com/Terms">Terms Of Use</a>
+                    
+                    </div>
+          <div id="dnn_FootPane" class="FootPane DNNEmptyPane"></div>
+        </div>
+        <div class="to_topmain">
+          <div id="to_top" class=" "></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="/Portals/_default/Skins/20064-UnlimitedColorsPack-046/scripts/script.js"></script> 
+<script type="text/javascript" src="/Portals/_default/Skins/20064-UnlimitedColorsPack-046/scripts/custom.js"></script> 
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.ramtiga.net/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 18]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.ramtiga.net/piwik.php?idsite=18" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
+        <input name="ScrollTop" type="hidden" id="ScrollTop">
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/`,`sf_tabId`:`156`}">
+        <input name="__RequestVerificationToken" type="hidden" value="qXsiGI60nKY6rLvnjMR46i7yDVPIcQvsWTZNKaEQcGCIcNqv9qqZ_HbfFBUldO72U27kpem4C2SEvfWXSS9JrP_QpQRnVNg9N66UEOZ3fg5NJRXYIcrWNsHkx9c1">
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("dnn_ctr584_View_valRequiredEmail"), document.getElementById("dnn_ctr584_View_valRegularExpressionEmail"), document.getElementById("dnn_ctr587_View_valRequiredEmail"), document.getElementById("dnn_ctr587_View_valRegularExpressionEmail"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var dnn_ctr584_View_valRequiredEmail = document.all ? document.all["dnn_ctr584_View_valRequiredEmail"] : document.getElementById("dnn_ctr584_View_valRequiredEmail");
+dnn_ctr584_View_valRequiredEmail.controltovalidate = "dnn_ctr584_View_txtEmailAddress";
+dnn_ctr584_View_valRequiredEmail.focusOnError = "t";
+dnn_ctr584_View_valRequiredEmail.errormessage = "Enter your email address!";
+dnn_ctr584_View_valRequiredEmail.display = "Dynamic";
+dnn_ctr584_View_valRequiredEmail.enabled = "False";
+dnn_ctr584_View_valRequiredEmail.validationGroup = "SignUp";
+dnn_ctr584_View_valRequiredEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+dnn_ctr584_View_valRequiredEmail.initialvalue = "Enter your mail-address and click:";
+var dnn_ctr584_View_valRegularExpressionEmail = document.all ? document.all["dnn_ctr584_View_valRegularExpressionEmail"] : document.getElementById("dnn_ctr584_View_valRegularExpressionEmail");
+dnn_ctr584_View_valRegularExpressionEmail.controltovalidate = "dnn_ctr584_View_txtEmailAddress";
+dnn_ctr584_View_valRegularExpressionEmail.errormessage = "Wrong email format!";
+dnn_ctr584_View_valRegularExpressionEmail.enabled = "False";
+dnn_ctr584_View_valRegularExpressionEmail.validationGroup = "SignUp";
+dnn_ctr584_View_valRegularExpressionEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+dnn_ctr584_View_valRegularExpressionEmail.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+var dnn_ctr587_View_valRequiredEmail = document.all ? document.all["dnn_ctr587_View_valRequiredEmail"] : document.getElementById("dnn_ctr587_View_valRequiredEmail");
+dnn_ctr587_View_valRequiredEmail.controltovalidate = "dnn_ctr587_View_txtEmailAddress";
+dnn_ctr587_View_valRequiredEmail.focusOnError = "t";
+dnn_ctr587_View_valRequiredEmail.errormessage = "Enter your email address!";
+dnn_ctr587_View_valRequiredEmail.display = "Dynamic";
+dnn_ctr587_View_valRequiredEmail.enabled = "False";
+dnn_ctr587_View_valRequiredEmail.validationGroup = "SignUp";
+dnn_ctr587_View_valRequiredEmail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+dnn_ctr587_View_valRequiredEmail.initialvalue = "Enter your mail-address and click:";
+var dnn_ctr587_View_valRegularExpressionEmail = document.all ? document.all["dnn_ctr587_View_valRegularExpressionEmail"] : document.getElementById("dnn_ctr587_View_valRegularExpressionEmail");
+dnn_ctr587_View_valRegularExpressionEmail.controltovalidate = "dnn_ctr587_View_txtEmailAddress";
+dnn_ctr587_View_valRegularExpressionEmail.errormessage = "Wrong email format!";
+dnn_ctr587_View_valRegularExpressionEmail.enabled = "False";
+dnn_ctr587_View_valRegularExpressionEmail.validationGroup = "SignUp";
+dnn_ctr587_View_valRegularExpressionEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+dnn_ctr587_View_valRegularExpressionEmail.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+<script type="text/javascript" src="/Resources/Shared/scripts/initWidgets.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('dnn_ctr584_View_valRequiredEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('dnn_ctr584_View_valRequiredEmail'));
+}
+
+document.getElementById('dnn_ctr584_View_valRegularExpressionEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('dnn_ctr584_View_valRegularExpressionEmail'));
+}
+
+document.getElementById('dnn_ctr587_View_valRequiredEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('dnn_ctr587_View_valRequiredEmail'));
+}
+
+document.getElementById('dnn_ctr587_View_valRegularExpressionEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('dnn_ctr587_View_valRegularExpressionEmail'));
+}
+//]]>
+</script>
+</form>
+    
+    
+
+</body></html>

@@ -1,0 +1,67 @@
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Dick Wilde</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css">
+	</head>
+    <body>
+                <div class="Wrapper">
+            <div class="Top">
+                <div class="TopLogo">
+                    <a href="index.php">
+                        <div class="Logo">
+						</div>
+					</a>
+				</div>
+                <div class="TopMenu">
+                    <div class="Paper Menu">
+                        <div class="MenuItem">
+                            <a href="index.php" class="active">HOME</a>
+						</div>
+                        <div class="MenuItem">
+                            <a href="purchase.php">PURCHASE</a>
+						</div>
+                        <div class="MenuItem">
+                            <a href="media.php">MEDIA</a>
+                        </div>                        
+                        <div class="MenuItem">
+                            <a href="about.php" target="_blank">ABOUT US</a>
+						</div>
+                        <div class="MenuItem">
+                            <a href="contact.php" target="_blank">CONTACT</a>
+                        </div>
+                        <div class="MenuItem">
+                            <a href="dw1/index.php" target="_blank">DICK WILDE 1</a>
+						</div>
+                        <div class="Tape BottomLeft"></div>
+                        <div class="Tape TopRight"></div>
+					</div>
+				</div>
+			</div>
+            <div>
+				<img class="DW2logo" src="/img/DW2_Logo_big.png" title="Dick Wilde 2 logo" alt="Dick Wilde 2">
+                <iframe class="tvWindowIndex" src="https://www.youtube.com/embed/19L8rDoKLV4" allowfullscreen=""></iframe>
+                <div class="LeftImageIndex"></div>
+                <div class="RightImageIndex"></div>
+            </div>
+									</div>
+            
+        
+        <div class="Social">
+            <a href="https://www.facebook.com/DickWildeGame/" target="_blank"><img class="SocialIcon" src="../img/facebook.svg"></a>
+            <a href="https://twitter.com/DickWildeGame" target="_blank"><img class="SocialIcon" src="../img/Twitter.svg"></a>
+        </div>
+        <div class="Social" style="left: 5px;width: 10px;">
+            <a href="http://bolverkgames.com" target="_blank" style="display:block;"><img class="SocialIcon" style="display: inline-block;width: auto;left: 5px;margin-bottom: 0px;" src="../img/Bolverk_Games_logo_landscape.png"></a>
+            <a href="https://www.playstack.com/" target="_blank" style="display:block;width: 5px;"><img class="SocialIcon" style="display: inline-block;width: auto;" src="../img/Playstack_Logo_London_Horizontal_White.png"></a>
+        </div>
+		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="js/jquery.fancybox.min.js"></script>
+		<script>
+			function Toggle() {
+				$(this).toggle("Active");
+			}
+		</script>
+	
+					</body></html>

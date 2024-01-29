@@ -1,0 +1,354 @@
+<html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<style type="text/css">
+		@font-face {font-family:Destroy;src:url(/files/DESTROY.ttf)}
+		@font-face {font-family:PermanentMarker;src:url(/files/PermanentMarker.ttf)}
+		@font-face {font-family:Juice;src:url(/files/JUICE_Regular.ttf)}
+		body {color:#fff;font-family:Juice, Helvetica, Arial, San-Serif}
+		h1 {font-family:Destroy;display:inline-block;margin:0;font-size:1.8em}
+		h2, .h2 {font-family:PermanentMarker;font-size:1.4rem;margin:0}
+		.h2 {color:#ffeb90}
+		.destroy {font-family:Destroy}
+		.pm {font-family:PermanentMarker}
+		a {color:#888}
+		a:hover {color:#fff;text-decoration:none}
+		.link {color:orange;font-weight:bold}
+		.section {background-size:cover}
+		.filler {box-shadow: 0 10px 20px inset #000;text-align:center}
+		
+		.menu {background-color:rgba(0,0,0,0.5);position:fixed;width:100%;z-index:999}
+		.menu .links {text-align:right}
+		.menu .links a {padding-left:1em}
+		.menu a {color:#fff;line-height:3em;padding-top:1em;padding-bottom:1em}
+		.menu .links a:hover {color:#ffeb90}
+		#barLinks a {display:block}
+
+		.s1 {background-image:url(/img/bg2.jpg);height:calc(100vw)}
+		.s2 {background-image:url(/img/terje2.jpg);height:calc(56vw)}
+		.s3 {background-image:url(/img/bg4.jpg);height:auto}
+		.s4 {background-image:url(/img/bg1.jpg);height:calc(56vw)}
+		.s5 {background-image:url(/img/floria-sm.jpg);height:calc(56vw)}
+		.f1 {background: url(/img/grain.png) repeat #fff;color:#333;text-align:left;padding:6rem 1em 5rem}
+		.f2 {background-color:#333;padding:2rem}
+		.footer {padding:2em;background-color:#333}
+
+		.s1 h2 {display:inline-block}
+		.title-bg {display:inline-grid;width:auto;margin-top:3em;text-shadow:0 5px 20px black}
+		.buynow a {position:relative;top:8rem;left:0;padding:1rem;background-color:orange;border:3px solid #333;border-radius:10px;width:auto;box-shadow: 0 5px 20px #000;color:#fff;font-size:1.5em;font-weight:bold}
+		.buynow a:hover {border-color:#fff}
+		.f1 h2 {text-shadow:0 4px 3px #000;font-size:2rem;position:relative;color:#25aaff;margin-bottom:1em}
+		#mc_embed_signup{float:left;margin-top:2em;background-color:rgba(0,0,0,0.75);display:inline-grid;padding:1em;border-radius:10px}
+		#mc_embed_signup input[type=email] {margin:0.5em 0;width:100%}
+		#mc_embed_signup input[type=submit] {background-color:orange;border:3px solid #fff;color:#fff;padding:5px;border-radius:10px;text-align:center;width:100%;font-weight:bold}
+		.trailer {margin-top:2em}
+		.trailer h2 {display:none}
+		.f2 a {font-size:10vw;margin:2em .25em}
+		.middle {position:relative;text-align:center}
+		.discord {display:none;float:right}
+		.section.s3 {background-size:auto 100%}
+		.s4 .right {text-align:left}
+		.s4 .right .middle {background-color:rgba(0,0,0,.5);padding:0.3em 0;border-radius:10px}
+		.s4 a {color:#fff}
+		.s4 h2 {display:none}
+		.s4 img {display:block;margin:0.5em auto 0;height:52px}
+		.s4 ul {}
+		.s4 li {margin:1em 0;font-weight:bold;font-size:.6em}
+		.features {background-color:rgba(255,255,255,.5);color:#666;padding:2em 4em 1em;margin:auto;font-size:10px}
+		.features .column {width:100%}
+		.column.left {float:left;padding-right:2em}
+		.column.right {float:right;padding-right:2em}
+		.clear {clear:both}
+		.gameguide {margin:2em 0}
+		.s5 img {width:15%;margin:5px;border:1px solid #888;border-radius:20px}
+		.s5 img:hover {border-color:#fff}
+		.s5 h2 {text-align:center;margin-top:0.5rem;font-size:1.5rem}
+		.earlyaccess a {color:#fff}
+		.earlyaccess a:hover {color:#ffeb90}
+		.gallery {margin-top:2rem}
+		
+		@media (min-width: 576px) {
+			h1 {font-size:3.5em}
+			h2 {font-size:2.25em}
+			.h2 {font-size:2.2rem}
+			#mc_embed_signup{padding:0 1em 1em}
+			.f1 {display:block}
+			.f1 h2 {font-size:2.5rem}
+			.steam {width:546px;position:relative;top:2em;box-shadow: 0 5px 10px #000}
+			.features {font-size:1.3vw;margin:3em auto}
+			.features .column {width:50%}
+			.column.right {padding-left:2em;padding-right:0}
+			.section.s3 {background-size:cover;height:calc(56vw)}
+			.s4 img {margin:1em auto; height:104px}
+			.s4 li {font-size:1em}
+			.s5 img {width:17.5%}
+			.s5 h2 {margin-top:2rem;font-size:3rem}
+		}
+
+		@media (min-width: 768px) {
+			.section.s1 {background-image:url(/img/bg2.jpg);height:calc(100vw * 0.5)}
+			h1 {font-size:4.5em}
+			h2 {font-size:1.4em}
+			.h2 {font-size:2.8rem}
+			.buynow a {top:7rem;left:17rem}
+			#mc_embed_signup{margin-top:5em}
+			.steam {width:646px}
+			.trailer h2 {display:block;text-align:center;margin-bottom:1em}
+			.features {font-size:1.5vw}
+			.middle {top:1em;text-align:left;padding:2em 0}
+			.s4 .right .middle {display:inline-block;padding:2em}
+			.discord {display:block;height:400px}
+			.s4 h2 {display:block}
+			.s4 img {margin:1em 0}
+			.s4 ul {padding:0.5em 2em}
+			.gallery {margin-top:7rem}
+		}
+
+		@media (min-width: 992px) {
+			#barLinks a {display:inline}
+			.buynow a {top:8rem}
+			.f1 h2 {}
+			.f2 a {font-size:8vw}
+			.trailer {margin-top:0}
+			.features {font-size:1.5vw}
+			.features h2 {margin:0}
+			.middle {top:1em}
+			.discord {height:500px}
+			.s4 li {font-size:1.2em}
+		}
+		
+		@media (min-width: 1200px) {
+			.title-bg {margin-top:13em}
+			.buynow a {top:16rem}
+			#mc_embed_signup{margin:5rem 0 0 8rem}
+			.f1 h2 {top:-1rem}
+			.f2 a {font-size:6vw}
+			.features {padding:1em 3em;width:980px;margin-top:9%;border-radius:10px;font-size:1em}
+			.middle {top:20%}
+			.s4 li {font-size:1.4em}
+			.s5 {background-image:url(/img/floria-md.jpg)
+		}
+
+	</style>
+
+    <title>Terje Haakonsen's Powder VR - Extreme Winter Sports Virtual Reality Game</title>
+
+<!-- Google Tag Manager -->
+<script src="https://connect.facebook.net/signals/config/708354056440468?v=2.9.125&amp;r=stable&amp;domain=powdervrgame.com" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-P3TLCZJ"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P3TLCZJ');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '708354056440468'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=708354056440468&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+  <style type="text/css">#mc_embed_signup input.mce_inline_error { border-color:#6B0505; } #mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }</style></head>
+  <body style="zoom: 1;">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3TLCZJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<div class="container-fluid section s1">
+		<div class="row menu">
+			<div class="d-none d-xl-block col-xl-2"></div>
+			<div class="col-10 col-lg-4 col-xl-3">
+				<a href="#" class="destroy">POWDER VR</a>
+			</div>
+			<div class="links col-2 d-lg-none">
+				<a href="javascript:void(0)" onclick="jQuery('#barLinks').toggleClass('d-none')"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			</div>
+			<div id="barLinks" class="links d-none d-lg-block col-lg-8 col-xl-5">
+				<a href="https://store.steampowered.com/app/1048580/Terje_Haakonsens_Powder_VR/?ref=powdervrgame_menu" target="_blank">BUY</a>
+				<a href="https://drive.google.com/file/d/1xsCUB4-gT5bedXmi7VD1EnnQn5RbNzMl/preview" target="_blank">TRAILER</a>
+				<a href="#features">FEATURES</a>
+				<a href="https://discord.gg/4WYgXQp" target="_blank">DISCORD</a>
+				<a href="#social">SOCIAL</a>
+				<a href="#media">MEDIA</a>
+			</div>
+			<div class="d-none d-xl-block col-xl-2"></div>
+		</div>
+		<div class="row">
+			<div class="d-none d-xl-block col-xl-2"></div>
+			<div class="col-sm-12 col-xl-8">
+				<div class="title-bg">
+					<h1><div class="h2">Terje Haakonsen's</div>POWDER VR</h1>
+				</div>
+				<div class="buynow">
+					<a href="https://store.steampowered.com/app/1048580/Terje_Haakonsens_Powder_VR/?ref=powdervrgame_button" target="_blank">BUY NOW</a>
+				</div>
+			</div>
+			<div class="d-none d-xl-block col-xl-2"></div>
+		</div>
+	</div>
+	<div class="container-fluid filler f1">
+		<div class="row">
+			<div class="d-none d-xl-block col-xl-2"></div>
+			<div class="col-md-12 col-lg-6 col-xl-4">
+				<h2>Extreme<br>&nbsp;&nbsp;Winter Sports<br>&nbsp;&nbsp;&nbsp;&nbsp;Virtual Reality</h2>
+				<div>Master the mountain- snowboard, ski, and wingsuit through ice and snow at crushing velocity. Race the clock and dominate the terrain with speed and skill.</div>
+			</div>
+			<div class="col-md-12 col-lg-6 col-xl-4">
+				<div class="trailer">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe src="https://drive.google.com/file/d/1xsCUB4-gT5bedXmi7VD1EnnQn5RbNzMl/preview" width="640" height="480"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="d-none d-xl-block col-xl-2"></div>
+		</div>
+	</div>
+	<div class="container-fluid section s2">
+		<div class="row">
+			<div class="d-none d-xl-block col-xl-2"></div>
+			<div class="col-lg-12 col-xl-8">
+				<!-- Begin Mailchimp Signup Form -->
+				<div id="mc_embed_signup">
+				<form action="https://rainsoftgames.us20.list-manage.com/subscribe/post?u=ca574e4cd7a2cfa88f2bf42dd&amp;id=78a0b29d5e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+					<div id="mc_embed_signup_scroll">
+					<h2>get the latest updates</h2>
+				<div class="mc-field-group">
+					<input type="email" placeholder="Email" value="" name="EMAIL" class="required email" id="mce-EMAIL" aria-required="true">
+				</div>
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ca574e4cd7a2cfa88f2bf42dd_78a0b29d5e" tabindex="-1" value=""></div>
+					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="javascript:fbq('track', 'CompleteRegistration');"></div>
+					</div>
+				</form>
+				</div>
+				<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[6]='STEAMKEY';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[3]='WEBSITE';ftypes[3]='url';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+				<!--End mc_embed_signup-->
+			</div>
+			<div class="d-none d-xl-block col-xl-2"></div>
+		</div>
+	</div>
+	<div id="features" class="container-fluid section s3">
+		<div class="row">
+			<div class="features">
+				<h2>Game Features</h2>
+				<p>Fight the clock and the terrain- drop down sheer cliffs, soar over glaciers, and slide across frozen lakes, dense forests and abandoned towns.<br>
+				<br>
+				Visit our <a href="/feature-roadmap/" class="link">Feature Roadmap</a></p>
+				<div class="column left">
+					<h2>3 ways to get down</h2>
+					<p>Hit the slopes and choose between snowboarding, skiing, and wingsuiting your way to the finish!</p>
+					
+					<h2>6 different mountains</h2>
+					<p>From the Pacific Northwest to the French Alps to the Alaskan wilderness, navigate a mix of fictional and real world mountains.</p>
+
+					<h2>5 challenging modes</h2>
+					<p>Obliterate every speed record downhill, get the high score with the sickest tricks in freestyle, or carve the perfect line in slalom.</p>
+				</div>
+				<div class="column right">
+					<h2>Character creator</h2>
+					<p>Personalize your look, select your gear, dress your color scheme. Then snap some photos or watch your run in instant replay.</p>
+
+					<h2>Customize gameplay</h2>
+					<p>Tweak arcade and simulation settings to recreate the feeling of shredding the mountainside and the thrill of catching air.</p>
+
+					<h2>Unlimited chopper fuel</h2>
+					<p>Earn enough medals to heli-drop anywhere you like and free-roam explore every inch of the mountain.</p>
+				</div>
+				<div class="clear"></div>
+				<div class="gameguide">Playing the game and want to learn more? Read the <a class="link" href="/game-guide/">Game Guide</a>.</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid section s4">
+		<div class="row">
+			<div class="d-none d-md-block col-md-6 left">
+				<div class="middle">
+					<iframe class="discord" src="https://discord.com/widget?id=628455089446584320&amp;theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 right">
+				<div class="middle">
+					<a href="https://discord.gg/4WYgXQp" target="_blank">
+						<h2>Join us on Discord!</h2>
+						<img width="305" height="104" src="/img/discord.svg">
+					</a>
+					<ul>
+						<li>Talk with the developers</li>
+						<li>Get the latest news</li>
+						<li>Request new features</li>
+						<li>Learn tricks and tips</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="social" class="container-fluid filler f2">
+		<div class="row">
+			<div class="d-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+			<div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+				<a href="https://twitter.com/PowderVR" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/powdervrgame/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/rainsoftgames/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+				<a href="https://rainsoftgames.tumblr.com/" target="_blank"><i class="fa fa-tumblr-square" aria-hidden="true"></i></a>
+				<a href="https://store.steampowered.com/app/1048580/Powder_VR/" target="_blank"><i class="fa fa-steam-square" aria-hidden="true"></i></a>
+			</div>
+			<div class="d-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+		</div>
+	</div>
+	<div id="media" class="container-fluid section s5">
+		<div class="row">
+			<div class="d-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+			<div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+				<div class="gallery">
+					<a href="/img/01.jpg" target="_blank"><img src="/img/01t.jpg"></a>
+					<a href="/img/02.jpg" target="_blank"><img src="/img/02t.jpg"></a>
+					<a href="/img/03.jpg" target="_blank"><img src="/img/03t.jpg"></a>
+					<a href="/img/04.jpg" target="_blank"><img src="/img/04t.jpg"></a>
+					<a href="/img/05.jpg" target="_blank"><img src="/img/05t.jpg"></a>
+					<a href="/img/06.jpg" target="_blank"><img src="/img/06t.jpg"></a>
+					<a href="/img/07.jpg" target="_blank"><img src="/img/07t.jpg"></a>
+					<a href="/img/08.jpg" target="_blank"><img src="/img/08t.jpg"></a>
+					<a href="/img/09.jpg" target="_blank"><img src="/img/09t.jpg"></a>
+					<a href="/img/10.jpg" target="_blank"><img src="/img/10t.jpg"></a>
+				</div>
+				<h2 class="earlyaccess"><a href="https://store.steampowered.com/app/1048580/Terje_Haakonsens_Powder_VR/?ref=powdervrgame_earlyaccess" target="_blank">Now in Early Access</a></h2>
+			</div>
+			<div class="d-none d-md-block col-md-1 col-lg-2 col-xl-3"></div>
+		</div>
+	</div>
+	<div class="container-fluid filler footer">
+		<p>© COPYRIGHT 2021 RainSoft LLC</p>
+		Press [at] RainSoftGames [dot] com <!-- - <a href="/privacy-policy">Privacy Policy</a>-->
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+</body></html>

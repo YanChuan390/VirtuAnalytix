@@ -1,0 +1,241 @@
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Monandol Games</title>
+	<style>
+		body { background-color: #111111; margin:0px; padding:0px; }
+		body, div { font-family: sans-serif, Helvetica, courier, verdana; font-size:14pt; line-height: 150%; color:#DDDDDD; }
+		a:link, a:visited, a:hover, a:active { color:#AAFFDD; text-decoration: none; }
+		.textButton {background-color:#000000; padding:8px 20px 8px 20px; border: 3px dotted #AAFFDD; }
+		.txtBig{ font-size: 22pt; font-weight: bold }
+		.button_bar { width:180px; padding:2px; }
+		.container{
+			display: block;
+		  	height:300px;
+		  	padding:0px;
+		  	margin:0px;
+			text-align: center;
+			background-color: #101020;
+		}
+		.backImage{
+			display: block;
+			width : 100%;
+			max-height: 300px;
+			min-height:300px;
+			object-fit: cover;
+			position:absolute;
+			z-index: 0;
+			opacity: 0.4;
+			
+		}
+		.contents{
+			height:100%;
+			position:relative;
+			z-index:1;
+			text-shadow:
+				0px 0px 10px #000000,
+				0px 1px 14px #000000,
+				1px 2px 20px #000000;
+			padding:20px;
+		}
+
+		.backFar{
+			position:fixed;
+			display:block;
+			opacity:0.3;
+			z-index:-1;
+
+			max-width: 100%;
+			min-width: 100%;
+			max-height: 100%;
+			min-height: 100%;
+			object-fit: cover;
+		}
+
+		/* added */
+		.imgIconSmall { width:30px; }
+		.imgIconMiddle { width:48px; }
+		.alignCenter { text-align: center; }
+		.alignMiddle { vertical-align: middle;}
+
+		.spaceS { height:10px; border:none; margin:0; padding:0; }
+		.spaceM { height:20px; border:none; margin:0; padding:0; }
+		.spaceL { height:40px; border:none; margin:0; padding:0; }
+
+		.mainImageContainer { display: block; height:350px; padding:0px; margin:0px; text-align: center; }
+		.mainImage { display: block; width : 100%; max-height: 350px; min-height:350px; object-fit: cover; position:absolute; z-index: 0; opacity: 1.0;}
+		.mainTextOnImage { height:100%; position:relative; z-index:1; text-shadow: 0px 0px 10px #000000, 0px 1px 14px #000000, 1px 2px 20px #000000; padding:10px; }
+		
+		/* marquee */
+		.marquee {
+			height: 40px;	
+			overflow: hidden;
+			position: relative;
+			color: #AAFFDD;
+			width : 100%
+		}
+		.marquee p {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			line-height: 40px;
+			
+			/* Starting position */
+			transform:translateX(100%);			
+			
+			animation-name : slide;
+			animation-duration : 15s;
+			animation-timing-function : linear;
+			animation-iteration-count: infinite;
+		}
+		/* Move it (define the animation) */
+		@keyframes slide {
+			0%   { transform: translateX(100%); }
+			100% { transform: translateX(-100%); }
+		}
+	</style>
+</head>
+<body>
+	<!-- room background -->
+	<img src="img/room.png" class="backFar">
+	<!--
+	<div class="marquee"> <p>marquee message</p></div>
+	-->
+	<div class="alignCenter" style="height:30px; padding:4px;">
+		<img src="img/mndl_logo_t.png" style="height:30px">
+	</div>
+<!--
+	<video id="headlineVideo" oncontextmenu="return false;" width="100%">
+		<source src="img/headline_2_v.mp4" type="video/mp4">
+		The browser does not support video tag.
+	</video>
+-->
+	<div class="mainImageContainer">
+		<img src="img/headlineimg_2.gif" class="mainImage">
+		<div class="mainTextOnImage">
+			<!-- table style for vertical align -->
+			<div style="display:table; position:relative; width:100%; height:100%; margin:0px">
+				<div style="display:table-cell; vertical-align: bottom;">
+					<div style="display:block; margin: 0 auto;">
+						<div style="font-size:20pt; margin-bottom:15pt; font-weight:bold; color:#FFFFFF">Start out of Curiocity, find Amusement, and gain Experience.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr class="spaceL">
+
+	<!-- header2 -->
+	<div class="alignCenter">		
+		Welcome to Monandol Games website.<br>
+		We're making video games<br>
+		that give players an enjoyable experience.<br><br>
+		Here you can browse our games released since 2009.<br>
+		For more updates and latest information,<br>
+		follow us on 
+		<a href="https://twitter.com/MonandolGames"><img src="img/icon_twitter.png" class="imgIconSmall alignMiddle"></a>
+		<a href="https://www.instagram.com/monandolgames/"><img src="img/icon_instagram.png" class="imgIconSmall alignMiddle"></a>
+		<a href="https://www.youtube.com/channel/UCUt_oyOLm7sqQsf6B3waoaQ"><img src="img/icon_youtube.png" class="imgIconSmall alignMiddle"></a>
+	</div>
+
+	<hr class="spaceL">
+	
+	<!-- introduction -->
+	<div class="container">
+		<img src="img/showcase_cosmic_jumper.png" class="backImage">
+		<div class="contents">
+			<span class="txtBig">Cosmic Jumper</span><br>
+			The platformer Shoot'em up style game<br>
+			currently under development,<br>
+			with a goal of release in 2022.<br>
+			We are sharing our development progress on the site below.<br>			
+			<br>
+			<a href="https://twitter.com/cosmic_jumper_" class="textButton">twitter.com/cosmic_jumper_</a>
+		</div>		
+	</div>
+	<hr class="spaceS">
+	<div class="container">
+		<img src="img/showcase_cards_and_coins.jpg" class="backImage">
+		<div class="contents">
+			<span class="txtBig">Cards and Coins</span><br>
+			Choose a card and test your luck.<br>
+			<br>
+			<a href="https://play.google.com/store/apps/details?id=com.MonandolGames.CardsAndCoins">
+				<img src="img/btn_google.png" class="button_bar alignMiddle">
+			</a>
+			<br>
+			<a href="https://www.youtube.com/watch?v=uhulWpp01N0"><img src="img/btn_watch_youtube.png" class="button_bar alignMiddle"></a>
+		</div>
+	</div>
+	<hr class="spaceS">
+	<div class="container">
+		<img src="img/showcase_let_it_blow.png" class="backImage">
+		<div class="contents">
+			<span class="txtBig">Let it Blow</span><br>
+			Just Connect, then Grow, and Blow!<br>
+			<br>
+			<a href="https://play.google.com/store/apps/details?id=com.MonandolGames.CONNECT">
+				<img src="img/btn_google.png" class="button_bar alignMiddle">
+			</a>
+			<br>
+			<a href="https://www.youtube.com/watch?v=YEMUK1KqKZM"><img src="img/btn_watch_youtube.png" class="button_bar alignMiddle"></a>
+		</div>
+	</div>
+	<hr class="spaceS">
+	<div class="container">
+		<img src="img/showcase_hatchick.jpg" class="backImage">
+		<div class="contents">
+			<span class="txtBig">HATCHICK</span><br>
+			Bullet hell Shmup in Virtual Reality.<br>
+			<br>			
+			<a href="https://store.steampowered.com/app/677190/HATCHICK/">
+				<img src="img/btn_steam_vr.png" class="button_bar alignMiddle">
+			</a>
+			<br>
+			<a href="https://www.youtube.com/watch?v=9NEoHex1IPk"><img src="img/btn_watch_youtube.png" class="button_bar alignMiddle"></a>
+		</div>
+	</div>
+	<hr class="spaceS">
+	<div class="container">
+		<img src="img/showcase_arm_busters.jpg" class="backImage">
+		<div class="contents">
+			<span class="txtBig">Arm Busters</span><br>
+			Brag your strength in a tavern where warriors stay.<br>
+			<br>
+			<a href="https://play.google.com/store/apps/details?id=com.NextFloor.ArmBusters">
+				<img src="img/btn_google.png" class="button_bar">
+			</a>
+		</div>
+	</div>
+	<hr class="spaceS">
+	<div class="container">
+		<img src="img/showcase_the_experimental_chick.png" class="backImage">
+		<div class="contents">
+			<span class="txtBig">The Experimental Chick</span><br>
+			Break all walls and escape from the experimental chamber.<br>
+			<br>			
+			<a href="https://gamejolt.com/games/the-experimental-chick/2275">
+				<img src="img/btn_gamejolt.png" class="button_bar alignMiddle">
+			</a>
+			<br>
+			<a href="https://www.youtube.com/watch?v=6Se4-2kgQFY"><img src="img/btn_watch_youtube.png" class="button_bar alignMiddle"></a>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<hr class="spaceL">
+	<div class="alignCenter">
+		<img src="img/mndl_twolines.png" style="width:280px"><br><br>
+		<a href="mailto:monandolgames@gmail.com">Email</a> |
+		<a href="policy/index.html">Privacy Policy</a>
+		<br><br>
+		ⓒ2022 Monandol Games, All Rights Reserved.
+	</div>
+	<hr class="spaceL">
+
+
+</body></html>

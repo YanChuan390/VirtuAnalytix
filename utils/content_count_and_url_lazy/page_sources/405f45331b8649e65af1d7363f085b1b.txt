@@ -1,0 +1,996 @@
+<html lang="en" style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-5DFMZG7Q1X&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-130404253-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130404253-1');
+    </script>
+
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="x-ua-compatible" content="IE=9"/><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TowerHex VR</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- ==============================================
+    Favicons
+    =============================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+
+    <!-- ==============================================
+    CSS VENDOR
+    =============================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+    <!-- Bootstrap Dropdown Hover CSS -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/animate.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/vendor/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/magnific-popup.css">
+    <link href="https://fonts.googleapis.com/css?family=Metamorphous:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- ==============================================
+    Custom Stylesheet
+    =============================================== -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts/fontello/css/towerhex-icons.css">
+
+    <script src="js/vendor/modernizr.min.js"></script>
+    <meta name="yandex-verification" content="5b2206e125dcc8ea">
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+
+<body id="top-fx" data-spy="scroll" data-target="#navbar">
+
+<!-- Load page -->
+<div class="animationload1">
+    <div class="loader1"></div>
+</div>
+
+
+<!-- HEADER -->
+<div id="header" class="header-style-2">
+
+    <!-- NAVBAR SECTION -->
+    <div class="navbar navbar-main if-s">
+
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-8 col-xs-8">
+                        <div class="top-menu-info">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>+371 2925 4345</span>
+                        </div>
+                        <div class="top-menu-info">
+                            <a target="_blank" href="https://t.me/towerhex">
+                            <i class="fab fa-telegram" aria-hidden="true"></i>
+                            <span>Telegram chat</span>
+                            </a>
+                        </div>
+                        <div class="top-menu-info">
+                            <a target="_blank" href="mailto:info@towerhex.com">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <span>info@towerhex.com</span>
+                            </a>
+                        </div>
+                        <div class="top-menu-info">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span>Riga, LATVIA</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://store.steampowered.com/app/988250/TowerHex/" class="get-btn color-gradient" target="_blank"><i class="icon-social-steam icons"></i> <span>Get on Steam</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid container-nav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="/">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <nav class="collapse navbar-collapse" id="navbar" data-hover="dropdown" data-animations="fadeInDownNew fadeInRightNew fadeInUpNew fadeInLeftNew">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li> <a href="/#about-us">About</a> </li>
+                    <li> <a href="/#how-we-work">Installation</a> </li>
+                    <li> <a href="/#portfolio">Media</a> </li>
+                    <li> <a href="/faq">FAQs</a></li>
+                    <li> <a href="/forum">Forum</a></li>
+                                        <li> <a href="/#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div><!-- head-text-area -->
+<div id="banner" class="section banner banner-style-1 image-background black-overlay parallax text-center" style="background-image: url(images/Backgrounds/lavascreen.jpg);">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="head-text-area type-1">
+
+                    <div class="big-heading">
+                        TowerHex <span class="text-gradient">VR</span>
+                    </div>
+
+
+                    <div class="spacer-25"></div>
+                    <a href="https://www.youtube.com/watch?v=57wQhpDjqOw" class="popup-with-zoom-anim play popup-youtube" data-swiper-animation="fadeIn">
+                        <i class="fa fa-play"></i>
+                    </a>
+                    <div class="spacer-25"></div>
+                    <div class="spacer-25"></div>
+
+
+
+                    <div class="small-heading">
+                        <div class="tlt">
+                            <ul class="texts" style="display: none">
+                                <li data-in-effect="flipInX" data-out-effect="flipOutX">Virtual reality on a much larger scale</li>
+                                <li data-in-effect="flash" data-out-effect="fadeOut">Virtual reality on a much larger scale</li>
+                                <li data-in-effect="flipInY" data-out-effect="flipOutY">Virtual reality on a much larger scale</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="banner-text" data-swiper-animation="fadeInUp">
+                        Watch the first Escape room VR fully immersive multiplayer experience trailer.
+                    </div>
+                    <a href="https://store.steampowered.com/app/988250/TowerHex/" class="btn btn-primary color-gradient" target="_blank"><i class="icon-social-steam icons"></i> <span>Play on Steam</span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- particles.js container -->
+    <div id="particles-banner-js"></div>
+    <a href="#intro" class="scroll-down absolute-center">
+        <div class="mouse"></div>
+    </a>
+</div>
+<!-- INTRO -->
+<div id="intro" class="section intro pad">
+    <div class="container-fluid">
+                <!-- INTRO -->
+        <div class="row">
+            <div class="col-sm-6 col-md-3 intro-item-bg hidden-o visible-o animated fadeIn full-visible" data-vp-animate="fadeIn" style="animation-delay: 0ms;">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="icon-size-fullscreen icons text-gradient"></i>
+                        </div>
+                        <h3>Fits your room</h3>
+                        <p>Game adjusts the gameplay area from 3x3 to 8x8 meters + custom non-square areas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 intro-item-bg hidden-o visible-o animated fadeIn full-visible" data-vp-animate="fadeIn" style="animation-delay: 0ms;">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="fa fa-wifi text-gradient"></i>
+                        </div>
+                        <h3>Wireless</h3>
+                        <p>Game is compatible with HTC Wireless, TPCast, TPCast Pro wireless adapters or VR
+                            Backpack</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 intro-item-bg hidden-o visible-o animated fadeIn full-visible" data-vp-animate="fadeIn" data-vp-delay="100" style="animation-delay: 100ms;">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="icon-hourglass icons text-gradient"></i>
+                        </div>
+                        <h3>55 minutes</h3>
+                        <p>Players must complete all quizzes in 55 minutes after all instructions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 intro-item-bg hidden-o visible-o animated fadeIn full-visible" data-vp-animate="fadeIn" data-vp-delay="200" style="animation-delay: 200ms;">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="icon-people icons text-gradient"></i>
+                        </div>
+                        <h3>1-4 players</h3>
+                        <p>Up to 4 players in one session in one room. Team competitions available.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-3 intro-item-bg hidden-o visible-o animated fadeIn full-visible" data-vp-animate="fadeIn" data-vp-delay="300" style="animation-delay: 300ms;">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="fa fa-child text-gradient"></i>
+                        </div>
+                        <h3>For age 10-99</h3>
+                        <p>Puzzles are for kids and adults, no shocking content</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3 intro-item-bg hidden-o visible-o animated fadeIn full-visible" data-vp-animate="fadeIn" style="animation-delay: 0ms;">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="fa fa-wheelchair text-gradient"></i>
+                        </div>
+                        <h3>Wheelchair</h3>
+                        <p>Game mechanics are compatible for wheelchair users</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-md-3 intro-item-bg hidden-o visible-o animated fadeIn full-visible" data-vp-animate="fadeIn" style="animation-delay: 0ms;">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="fa fa-running text-gradient"></i>
+                        </div>
+                        <h3>Free roam</h3>
+                        <p>Free movement in virtual area in groups</p>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="col-sm-6 col-md-3 intro-item-bg hidden-o visible-o animated fadeIn full-visible" data-vp-animate="fadeIn" data-vp-delay="300" style="animation-delay: 300ms;">
+                <div class="box-icon-2">
+                    <div class="body-content">
+                        <div class="icon-area">
+                            <i class="fa fa-street-view text-gradient"></i>
+                        </div>
+                        <h3>Body tracking</h3>
+                        <p>Body can be tracked with up to 7 additional trackers</p>
+                    </div>
+                </div>
+            </div>
+
+
+                    </div>
+    </div>
+</div><!-- ABOUT US -->
+<div id="about-us" class="section about pad image-background black-overlay parallax" style="background-image: url(images/Backgrounds/Team.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 section-heading-1">
+                <h2>
+                    About TowerHex VR
+                </h2>
+                <div class="heading-after hidden-o" data-vp-animate="fadeIn" style="animation-delay: 0ms;">
+                    <svg width="54px" height="12px" viewBox="0 0 52 13" style="color: #fff;">
+                        <g fill="none">
+                            <g transform="translate(-694.000000, -294.000000)" stroke-width="4" stroke="#fff">
+                                <g transform="translate(695.000000, 297.000000)">
+                                    <polyline points="0.592857143 0.592857143 6.68571429 6.68571429 12.7857143 0.592857143 18.8785714 6.68571429 24.9785714 0.592857143 31.0714286 6.68571429 37.1714286 0.592857143 43.2714286 6.68571429 49.3642857 0.592857143" style="color: #fff;"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs">
+                    <li class="active hidden-o" data-vp-animate="fadeIn" data-vp-delay="100" style="animation-delay: 100ms;"><a data-toggle="tab" href="#tab1">What
+                            is TowerHex?</a></li>
+                    <li data-vp-animate="fadeIn" data-vp-delay="200" class="hidden-o" style="animation-delay: 200ms;"><a data-toggle="tab" href="#tab2">Hardware
+                            requirements</a></li>
+                    <li data-vp-animate="fadeIn" data-vp-delay="300" class="hidden-o" style="animation-delay: 300ms;"><a data-toggle="tab" href="#tab3">Game world</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tab-description">
+                                    <p>“TowerHex” is an hyperreality adventure
+                                        and a new achievement of technology that
+                                        gives you the chance to experience virtual
+                                        reality in more immersive way — the escape
+                                        room game with multiplayer, moving freely
+                                        in the room.
+
+                                    </p>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box-icon-1">
+                                    <div class="box-icon-top">
+
+                                        <i class="towerhex-icon towerhexicon-room text-gradient" aria-hidden="true" style="font-weight: bold"></i>
+                                        <h3>One room with
+                                            unlimited options!</h3>
+                                    </div>
+                                    <p>Each room and its area are specially calibrated for
+                                        the development of the game, so that each adventure level would be unique with
+                                        an unusual visual
+                                        environment, while preserving the actual, existing
+                                        room’s dimensions and objects. </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box-icon-1">
+                                    <div class="box-icon-top">
+                                        <i class="icon-diamond text-gradient" aria-hidden="true"></i>
+                                        <h3>Unforgettable
+                                            experience
+                                        </h3>
+                                    </div>
+                                    <p>Players interact and work in teams. The
+                                        main task is not only to solve puzzles, but
+                                        also to repel attacks and save the world
+                                        in 55 minutes.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box-icon-1">
+                                    <div class="box-icon-top">
+                                        <i class="towerhex-icon towerhexicon-run text-gradient" aria-hidden="true" style="font-weight: bold"></i>
+                                        <h3>Players
+                                            have freedom</h3>
+                                    </div>
+                                    <p>Thanks to HTC Vive Mobility and HP
+                                        OMEN VR Backpacks or other wireless solution players can move
+                                        freely in the room. This gives them the
+                                        opportunity to enjoy a completely new
+                                        gameplay experience with an new level
+                                        of immersion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tab-description">
+                                    <p>We adjust the game for accessible hardware</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel-group" id="accordion-1">
+                                    <div class="panel panel-default active">
+                                        <div class="panel-heading">
+                                            <h4 data-toggle="collapse" data-parent="#accordion-1" data-target="#collapseOne" class="panel-title">
+                                                HARDWARE VR ENTERPRISE EDITION
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <p>• VIVE Pro Full Kit (4 pcs.)
+                                                    • VIVE Tracker (2018) (12 pcs.)
+                                                    • VIVE Controller (8 pcs.)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 data-toggle="collapse" data-parent="#accordion-1" data-target="#collapseThree" class="panel-title">
+                                                HARDWARE VR PC
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>HP OMEN X P1000-001na Compact Desktop
+                                                    with VR Backpack (4 pcs.)
+                                                    • Intel i7-7820HK 2.90 GHz (Turbo 3.90 GHz)
+                                                    • NVIDIA GeForce GTX 1080
+                                                    • 512 GB SSD
+                                                    • 4 external batteries
+                                                    • 2 batteries = 90 minutes of gameplay</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="panel-group" id="accordion-2">
+                                    <div class="panel panel-default active">
+                                        <div class="panel-heading">
+                                            <h4 data-toggle="collapse" data-parent="#accordion-2" data-target="#collapseFour" class="panel-title">
+                                                REQUIRED
+                                                ROOM SPACE FOR VR
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <p>Game supports 4-player multiplayer mode,
+                                                    where you need a room dimmension space
+                                                    of 8×7 meters.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 data-toggle="collapse" data-parent="#accordion-2" data-target="#collapseSix" class="panel-title">
+                                                Additional FX
+                                            </h4>
+                                        </div>
+                                        <div id="collapseSix" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>Custom wind, heat and vibration</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-pane fade">
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tab-description">
+                                    <p>Your team will be trapped in the virtual reality, where you will be forced to battle monsters, learn the basics of magic and protect the Fantasy World from the forces of evil. All of your character's actions in the virtual reality will be done in the real world by your body movements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+
+                            <div class="col-sm-6 col-md-3 intro-item-bg">
+                                <div class="box-icon-2">
+                                    <div class="body-content">
+                                        <div class="icon-area">
+                                            <i class="icon-fire icons text-gradient"></i>
+                                        </div>
+                                        <h3>Epic visuals</h3>
+                                        <p>Puzzles are for kids and adults, no shocking content</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3 intro-item-bg">
+                                <div class="box-icon-2">
+                                    <div class="body-content">
+                                        <div class="icon-area">
+                                            <i class="icon-music-tone-alt icons text-gradient"></i>
+                                        </div>
+                                        <h3>Immersive sounds</h3>
+                                        <p>Puzzles are for kids and adults, no shocking content</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3 intro-item-bg">
+                                <div class="box-icon-2">
+                                    <div class="body-content">
+                                        <div class="icon-area">
+                                            <i class="icon-magic-wand icons text-gradient"></i>
+                                        </div>
+                                        <h3>Magic world</h3>
+                                        <p>Puzzles are for kids and adults, no shocking content</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3 intro-item-bg">
+                                <div class="box-icon-2">
+                                    <div class="body-content">
+                                        <div class="icon-area">
+                                            <i class="icon-film icons text-gradient"></i>
+                                        </div>
+                                        <h3>Stunning cinematics</h3>
+                                        <p>Puzzles are for kids and adults, no shocking content</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- HOW WE WORK -->
+<div id="how-we-work" class="section how-we-work pad particles-pointer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 section-heading-1">
+                <h2>
+                    Installation in 4 steps
+                </h2>
+                <div class="heading-after hidden-o" data-vp-animate="fadeIn" style="animation-delay: 0ms;">
+                    <svg width="54px" height="12px" viewBox="0 0 52 13" style="color: #fff;">
+                        <g fill="none">
+                            <g transform="translate(-694.000000, -294.000000)" stroke-width="4" stroke="#fff">
+                                <g transform="translate(695.000000, 297.000000)">
+                                    <polyline points="0.592857143 0.592857143 6.68571429 6.68571429 12.7857143 0.592857143 18.8785714 6.68571429 24.9785714 0.592857143 31.0714286 6.68571429 37.1714286 0.592857143 43.2714286 6.68571429 49.3642857 0.592857143" style="color: #fff;"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <p data-vp-animate="fadeIn" data-vp-delay="100" class="hidden-o" style="animation-delay: 100ms;">
+                    TowerHex can be easily and fast
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="work-step hidden-o" data-vp-animate="fadeIn" data-vp-delay="100" style="animation-delay: 100ms;">
+                    <div class="number text-gradient">
+                        01.
+                    </div>
+                    <h3>Measure</h3>
+                    <p class="description">
+                        We measure and adjust game space to your location. Custom rooms and irregular shapes with obsticles supported.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="work-step hidden-o" data-vp-animate="fadeIn" data-vp-delay="200" style="animation-delay: 200ms;">
+                    <div class="number text-gradient">
+                        02.
+                    </div>
+                    <h3>Calibrate</h3>
+                    <p class="description">
+                        Game is calibrated to fit the exact room, walls and obsticles are accurately synced with game locations
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="work-step hidden-o" data-vp-animate="fadeIn" data-vp-delay="200" style="animation-delay: 200ms;">
+                    <div class="number text-gradient">
+                        03.
+                    </div>
+                    <h3>Hardware</h3>
+                    <p class="description">
+                        We adjust the gameplay to existing hardware - computers and helmets
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="work-step hidden-o" data-vp-animate="fadeIn" data-vp-delay="300" style="animation-delay: 300ms;">
+                    <div class="number text-gradient">
+                        04.
+                    </div>
+                    <h3>Learning</h3>
+                    <p class="description">
+                        We teach local operators to be a product-champion - all tricks, story, welcome speech.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+</div><!-- FACTS -->
+<div id="facts" class="section facts pad image-background black-overlay parallax" style="background-image: url(images/Backgrounds/Team.jpg);">
+    <div class="container">
+        <div class="row fact">
+            <!-- Facts 1 -->
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <div class="box-icon-3">
+                    <div class="box-icon-top">
+                        <i class="icons icon-key" aria-hidden="true"></i>
+                        <h2 class="counter text-gradient">10</h2>
+                    </div>
+                    <h3>Escape levels</h3>
+                </div>
+            </div>
+            <!-- Facts 2 -->
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <div class="box-icon-3">
+                    <div class="box-icon-top">
+                        <i class="icon-hourglass icons"></i>
+                        <h2 class="counter text-gradient">55</h2>
+                    </div>
+                    <h3>Minutes</h3>
+                </div>
+            </div>
+            <!-- Facts 3 -->
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <div class="box-icon-3">
+                    <div class="box-icon-top">
+                        <i class="icon-puzzle icons" aria-hidden="true"></i>
+                        <h2 class="counter text-gradient">35</h2>
+                    </div>
+                    <h3>Different puzzles</h3>
+                </div>
+            </div>
+            <!-- Facts 4 -->
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <div class="box-icon-3">
+                    <div class="box-icon-top">
+                        <i class="icon-trophy icons" aria-hidden="true"></i>
+                        <h2 class="counter text-gradient">10</h2>
+                    </div>
+                    <h3>Secret achievements</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div id="portfolio" class="section portfolio">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 section-heading-1">
+                            <h2>
+                                Media
+                            </h2>
+                            <div class="heading-after hidden-o" data-vp-animate="fadeIn" style="animation-delay: 0ms;">
+                                <svg width="54px" height="12px" viewBox="0 0 52 13" style="color: #fff;">
+                                    <g fill="none">
+                                        <g transform="translate(-694.000000, -294.000000)" stroke-width="4" stroke="#fff">
+                                            <g transform="translate(695.000000, 297.000000)">
+                                                <polyline points="0.592857143 0.592857143 6.68571429 6.68571429 12.7857143 0.592857143 18.8785714 6.68571429 24.9785714 0.592857143 31.0714286 6.68571429 37.1714286 0.592857143 43.2714286 6.68571429 49.3642857 0.592857143" style="color: #fff;"></polyline>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p data-vp-animate="fadeIn" data-vp-delay="100" class="hidden-o" style="animation-delay: 100ms;">
+                                Screenshots and other game media
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <nav class="navfilter">
+                    <ul class="portfolio_filter">
+                        <li><a href="" class="active" data-filter=".all">All</a></li>
+                        <li><a href="" data-filter=".screenshots">Screenshots</a></li>
+                        <li><a href="" data-filter=".screenshots360">360 Screenshots</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+                <div class="grid-v1" style="position: relative; height: 432px;">
+                    <div class="grid-sizer-v1"></div>
+                    <div class="gutter-sizer-v1"></div>
+                    <!-- ALL -->
+
+
+                    <!-- item 1 -->
+                    <div class="grid-item-v1 grid-item-v1--width2x image-background all" style="background-image: url(&quot;images/OtherScreenshots/768x800.png&quot;); position: absolute; left: 0px; top: 0px;">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-image">
+                            <div class="portfolio-item-content">
+                                <h3>TowerHex</h3>
+                                <p>Image</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="grid-item-v1 image-background all screenshots" style="background-image: url(&quot;images/Screenshots/Screen_Level7LibraryMysteria_1600x956_2018-11-17_00-10-27.png&quot;); position: absolute; left: 0px; top: 86px;">
+                        <a class="popup-gallery-zoom overlay-portfolio-info" href="#work-modal-gallery">
+                            <div class="portfolio-item-content">
+                                <h3>TowerHex</h3>
+                                <p>Screenshots</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="grid-item-v1 image-background all" style="background-image: url(&quot;images/VideoCapture/Mysteria TowerHex.mp4_000038560.png&quot;); position: absolute; left: 0px; top: 172px;">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-youtube" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>TowerHex 2019</h3>
+                                <p>Youtube Video</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="grid-item-v1 image-background all screenshots360" style="background-image: url(&quot;images/OtherScreenshots/360screenshot.jfif&quot;); position: absolute; left: 0px; top: 259px;">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-momento360" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>TowerHex</h3>
+                                <p>360 screenshot</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="grid-item-v1 image-background grid-item-v1--width2x  all screenshots360" style="background-image: url(&quot;images/OtherScreenshots/library.jpg&quot;); position: absolute; left: 0px; top: 345px;">
+                        <a class="popup-with-zoom-anim overlay-portfolio-info" href="#work-modal-momento360_2" data-effect="mfp-zoom-in">
+                            <div class="portfolio-item-content">
+                                <h3>TowerHex</h3>
+                                <p>360 screenshot</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="work-modal-image" class="white-popup-block zoom-anim-dialog mfp-hide">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="popup-progect-title">TowerHex 2019</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <img src="images/OtherScreenshots/768x800.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-3">
+                <div class="single-portfolio">
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="work-modal-gallery" class="white-popup-block zoom-anim-dialog mfp-hide">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="popup-progect-title">TowerHex Screenshots</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="swiper-gallery-container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Screenshots/1%20(1).png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Screenshots/1%20(2).png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Screenshots/1%20(3).png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Screenshots/1%20(4).png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Screenshots/1%20(5).png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Screenshots/1%20(6).png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Screenshots/1%20(7).png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Screenshots/3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Screenshots/5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="images/Screenshots/Screen_Level3CastleGateMysteria_1906x987_2018-06-20_22-13-53.png" alt=""></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next color-gradient"></div>
+                    <div class="swiper-button-prev color-gradient"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="single-portfolio">                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="work-modal-youtube" class="white-popup-block zoom-anim-dialog mfp-hide">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="popup-progect-title">TowerHex 2019</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="video-frame">
+                    <iframe src="https://www.youtube.com/embed/57wQhpDjqOw" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="single-portfolio">                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="work-modal-momento360" class="white-popup-block zoom-anim-dialog mfp-hide">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="popup-progect-title">TowerHex 2019</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="video-frame">
+                    <iframe class="embedly-embed" src="https://momento360.com/e/u/c6182382e92e4958a363526b57f3e1a8?heading=-10.387814280411195&amp;pitch=-7.0706715971836145&amp;field-of-view=55" width="900" height="450" scrolling="no" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="single-portfolio">                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="work-modal-momento360_2" class="white-popup-block zoom-anim-dialog mfp-hide">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="popup-progect-title">TowerHex 2019</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="video-frame">
+                    <iframe class="embedly-embed" src="https://momento360.com/e/u/7dedbb6d9dfa45ddb2e96adb92586c21?heading=-10.387814280411195&amp;pitch=-7.0706715971836145&amp;field-of-view=55" width="900" height="450" scrolling="no" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="single-portfolio">                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- CONTACT -->
+<div id="contact" class="section contact pad">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 section-heading-1">
+                <h2>
+                    Contact Us
+                </h2>
+                <div class="heading-after hidden-o" data-vp-animate="fadeIn" style="animation-delay: 0ms;">
+                    <svg width="54px" height="12px" viewBox="0 0 52 13" style="color: #fff;">
+                        <g fill="none">
+                            <g transform="translate(-694.000000, -294.000000)" stroke-width="4" stroke="#fff">
+                                <g transform="translate(695.000000, 297.000000)">
+                                    <polyline points="0.592857143 0.592857143 6.68571429 6.68571429 12.7857143 0.592857143 18.8785714 6.68571429 24.9785714 0.592857143 31.0714286 6.68571429 37.1714286 0.592857143 43.2714286 6.68571429 49.3642857 0.592857143" style="color: #fff;"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <p data-vp-animate="fadeIn" data-vp-delay="100" class="hidden-o" style="animation-delay: 100ms;">
+                    Want to setup TowerHex in your area? Have other questions? Contact us via  <a target="_blank" href="https://t.me/towerhex">
+
+                        <span>Telegram</span>
+                    </a> or form below
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="contact-info clearfix">
+                    <div class="contact-text">
+                        <p>TowerHex Games</p>
+                    </div>
+                    <div class="contact-info-box">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>+371 2925 4345</span>
+                    </div>
+
+
+                    <div class="contact-info-box">
+                        <a target="_blank" href="https://t.me/towerhex">
+                            <i class="fab fa-telegram" aria-hidden="true"></i>
+                            <span>Telegram chat</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-info-box">
+                        <a target="_blank" href="mailto:info@towerhex.com">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <span>info@towerhex.com</span>
+                        </a>
+                    </div>
+                    <div class="contact-info-box">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <span>www.towerhex.com</span>
+                    </div>
+                    <div class="contact-info-box">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Riga, Latvia</span>
+                    </div>
+
+
+
+                    <ul class="social-links">
+                                                <li><a href="https://t.me/towerhex" class="color-gradient"><i class="fab fa-telegram"></i></a></li>
+                        <li><a href="skype:agb_workeg?chat" class="color-gradient"><i class="fab fa-skype"></i></a></li>
+                        <li><a href="https://discord.gg/8Gj45NT" class="color-gradient"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <form action="php/form-process.php" class="form-contact" id="contactForm" data-toggle="validator" method="post" novalidate="true">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" required="" name="name" placeholder="Full Name...">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" required="" name="email" placeholder="Enter Address...">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Write message"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <div class="form-group">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-primary color-gradient disabled" style="pointer-events: all; cursor: pointer;"><span>SEND MESSAGE</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#top-fx" id="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+<!-- JS VENDOR -->
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/jquery.appear.js"></script>
+<script src="js/vendor/wow.min.js"></script>
+<script src="js/vendor/particles.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/jquery.superslides.js"></script>
+<script src="js/vendor/swiper.min.js"></script>
+<script src="js/vendor/jquery.magnific-popup.min.js"></script>
+<script src="js/vendor/waypoints.min.js"></script>
+<script src="js/vendor/jquery.counterup.min.js"></script>
+<script src="js/vendor/isotope.pkgd.min.js"></script>
+<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="js/vendor/jquery.youtubebackground.js"></script>
+<script src="js/vendor/validator.min.js"></script>
+<script src="js/vendor/jquery.parallax-1.1.3.js"></script>
+<script src="js/vendor/jquery.localscroll-1.2.7-min.js"></script>
+<script src="js/vendor/jquery.scrollTo-1.4.2-min.js"></script>
+
+<script src="js/vendor/jquery.fittext.js"></script>
+<script src="js/vendor/jquery.lettering.js"></script>
+<script src="js/vendor/jquery.textillate.js"></script>
+
+
+<!-- CUSTOM JS -->
+<script src="js/script.js"></script>
+<!-- sendmail -->
+<script src="js/vendor/form-scripts.js"></script>
+
+
+</body></html>

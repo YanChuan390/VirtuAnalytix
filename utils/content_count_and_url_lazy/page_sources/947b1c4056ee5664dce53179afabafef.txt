@@ -1,0 +1,49 @@
+<html lang="en"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-2LBR81PK57&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-163606915-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163606915-1');
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>SYNTHSPACE - VR modular synthesizer</title>
+</head>
+<body>
+<div class="bg">
+    <img class="centered img-fluid" src="synthspace_web.jpg" alt="Synthspace" usemap="#map">
+
+    <map name="map">
+        <area shape="rect" coords="207,160,418,354" href="https://youtu.be/ieZcJAXSuBg" alt="Synthspace Tutorial Video">
+        <area shape="rect" coords="623,61,825,83" href="https://brightlight.rocks" alt="Bright Light Interstellar Limited">
+        <area shape="rect" coords="741,83,825,158" href="https://brightlight.rocks" alt="Bright Light Interstellar Limited">
+        <area shape="rect" coords="671,356,824,392" href="https://store.steampowered.com/app/1355640/SYNTHSPACE/" alt="Synthspace on Steam">
+        <area shape="rect" coords="196,433,485,481" href="https://www.patreon.com/bePatron?u=34150200" alt="Crowd-funded on PATREON">
+        <area shape="rect" coords="741,160,825,255" href="https://youtu.be/yKSLlgbM-pY" alt="Watch the Synthspace Launch Trailer">
+        <area shape="rect" coords="205,82,741,158" href="https://store.steampowered.com/app/1355640/SYNTHSPACE/" alt="Get Synthspace on Steam!">
+        <area shape="rect" coords="718,444,832,483" href="https://discord.synthspace.rocks" alt="Join the discord server!">
+    </map>
+    <!-- <div class="caption">
+        <span class="border">SYNTH<strong>SPACE</strong></span><br>
+        <span class="border sub">Virtual Modular Synthesizer</span>
+        <span class="patreon-button"><a href="https://www.patreon.com/bePatron?u=34150200" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></span>
+    </div> -->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/imageMapResizer.min.js"></script>
+<script type="text/javascript">
+$('map').imageMapResize();
+</script>
+
+</body></html>

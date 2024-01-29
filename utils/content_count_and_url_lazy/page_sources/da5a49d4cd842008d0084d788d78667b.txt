@@ -1,0 +1,340 @@
+<html><head> 
+        <meta charset="UTF-8">
+        <title>Amoreon</title>         
+        <link href="main1.css" rel="stylesheet" type="text/css"> 
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+        <style>#wrapper { /* height: 100%; */ max-width: 1200px; margin-top: 0px; margin-left: auto; margin-right: auto; color: #80097b; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; } #main_video { position: absolute; display: none; left: 0px; right: 0px; top: 0px; max-width: 1200px; width: 100%; height: 660px; margin-left: auto; margin-right: auto; z-index: 1000; } #video_centred_container { /* position:absolute;
+
+
+	left: 0px;
+	right: 0px;
+
+	width:1050px;
+	height:660px;
+	margin-left: auto;
+	margin-right: auto; */ /* z-index:1000; */ /* background-color:#C06; */ position: absolute; width: 100%; //fallback: 100vw; left: 0px; right: 0px; height: 660px; max-width: 1050px; margin-left: auto; margin-right: auto;  /* background-color: aqua; */ } /* .vid_close_button
+{
+	position:absolute;
+	width:50px;
+	height:50px;
+	top:0px;
+	right:-70px;
+
+	font-size:45px;
+	color:#FFF;
+font-family: 'Nunito', sans-serif;
+
+z-index:10000;
+
+} */#vid_close_button { position: absolute; width: 80px; height: 80px; top: 0px; right: 0px; display: none; font-size: 80px; color: #FFF; font-family: 'Nunito', sans-serif; cursor: pointer; z-index: 100000; } #video_pic { width: 60px; height: 60px; margin-left: 150px;  /* margin-top:10px; */ /* background-color:#80097b;
+
+	background-color:#0F9; */ background-image: url('images/video/play_button_purple.png'); background-size: cover; background-position: center; z-index: 1200; position: absolute; } #playbutton_background { width: 350px; height: 70px; margin-top: 500px; margin-left: auto; margin-right: auto; padding-top: 5px; cursor: pointer; left: 0px; right: 0px; position: absolute;  /* background-color:#80097b; */ background-color: #FFE1FF; border-radius: 10px; z-index: 900; } /* #playbutton_background:hover {
+    background-color: #80097b;
+} */#trailer_text { font-size: 34px; position: absolute; width: 350px; height: 34px; bottom: 0px; text-align: center; color: #80097b; z-index: 0; } /* #trailer_text:hover {
+    color: #FFE1FF;
+} */#second_video { position: absolute; width: 800px; left: 0px; right: 0px; margin-left: auto; margin-right: auto; }</style>         
+        <style>.feature_container { position: relative; margin-left: 0px; margin-right: 0px; margin-bottom: 30px; font-size: 18px; text-align: justify; width: 387px; background-color: #FF9DFF; float: left; height: 400px; cursor: pointer; overflow: hidden; } .feature_container:hover .overlay_text { height: 100%; bottom: 0; } .overlay_text { position: relative;  /* background-color: #008CBA; */ overflow: hidden; bottom: 100%; width: 90%; height: 0%; margin-left: auto; margin-right: auto; color: #80097b; font-family: 'Nunito', sans-serif; cursor: pointer; transition: .5s ease; } .overlay_text p { font-family: 'Nunito', sans-serif; font-size: 18px; cursor: pointer; } .feature_title { margin: 0px; padding: 10px; width: 100%; text-align: center; color: #80097b; cursor: pointer; } .feature_picture_box { width: 100%; height: 335px; background-size: cover; overflow: hidden; cursor: pointer; }</style>
+        <script>
+function startup()
+{
+    pagewidth_check();
+    
+ 	fn60sec();  //start banner images scrolling
+}
+    
+function pagewidth_check()
+{
+    //alert('1 running');
+  if (screen.width <1000)
+  {
+      document.getElementById("top_menu").className = "top_menu_hide";
+      document.getElementById("top_menu_mobile").className = "top_menu_mobile_display";
+            
+      document.getElementById("demo_link").style.top = "800px"; 
+      document.getElementById("mobile_title").style.display = "block"; 
+      document.getElementById("mobile_menu_button").style.display = "block"; 
+      document.getElementById("top_menu_mobile").style.display = "block"; 
+  }
+    
+}  
+        
+    var mobileMenuFlag = false;
+
+    function openMobileMenu()
+    {
+
+      if (mobileMenuFlag == false)
+      {
+        document.getElementById("mobile_menu").className = "mobile_menu_open";
+          
+        var divsToHide = document.getElementsByClassName("top_button_mobile"); //divsToHide is an array
+    	for(var i = 0; i < divsToHide.length; i++)
+        {
+        	divsToHide[i].style.visibility = "visible"; // or
+        	divsToHide[i].style.display = "block"; // depending on what you're doing
+    	}
+
+        mobileMenuFlag = true;
+      }
+      else
+      {
+        document.getElementById("mobile_menu").className = "mobile_menu_close";
+		
+        var divsToHide = document.getElementsByClassName("top_button_mobile"); //divsToHide is an array
+    	for(var i = 0; i < divsToHide.length; i++)
+        {
+        	divsToHide[i].style.visibility = "hidden"; // or
+        	divsToHide[i].style.display = "none"; // depending on what you're doing
+    	}
+          
+        mobileMenuFlag = false;
+      }
+   
+    }
+  </script>
+        <script>
+  
+      function age(yes_or_no)
+      {
+          if(yes_or_no == 1)
+          {
+          		document.getElementById('age_check_blocker').style.display = 'none';
+                document.getElementById('age_check').style.display = 'none';
+          }
+          else
+          {
+              window.location.href = 'https://www.google.com';
+          }
+      }
+        
+  </script>
+    </head>     
+    <body onload="startup()">
+        <div id="age_check_blocker">
+</div>
+        <div id="age_check">
+            <h2>Age Check</h2>
+            <p>
+            Are you over 18?    </p>
+            <div onclick="age(1);">Yes</div>
+            <div onclick="age(0);">No</div>
+        </div>
+        <!--
+<div id="container">
+-->         
+        <img class="precacheThis" src="images/temple1.jpg"> 
+        <img class="precacheThis" src="images/custom2.jpg"> 
+        <img class="precacheThis" src="images/web_sofa.jpg"> 
+        <!-- GRID CONTAINER start -->
+        <div id="master_container">
+            <div id="top_menu" class="top_menu_display"> 
+                    <div id="top_button_container"> <a href="http://www.amoreon.com/index.php"> <img src="images/amoreonsmall80px.png" width="240" height="80" alt="" style="opacity:1.0; float: left;"> </a> 
+                     <a href="http://citor3shop.com/amoreonshoppage/amoreon_buy.php">  <div class="top_button">Buy</div> </a> <a href="http://www.amoreon.com/customise_howitworks.php"> <div class="top_button">Customise</div> </a> <a href="http://www.amoreon.com/theshop.php"> <div class="top_button">The Shop</div> </a> <a href="http://www.amoreon.com/interactive.php"> <div class="top_button">Interactive</div> </a> <a href="http://www.amoreon.com/locations.php"> <div class="top_button">Locations</div> </a> <a href="http://www.amoreon.com/girls.php"> <div class="top_button">The Girls</div> </a>  
+                </div>                 
+            </div>             
+            <!--
+        <a id="email_link" href="mailto:info@citor3.com?Subject=Amoreon">
+            <div id="email_button">
+</div>
+        </a>
+        -->
+            <div id="top_picture_panel" style="background-image: url(&quot;images/banner3.jpg&quot;);"> 
+                <div id="video_centred_container" onclick="show_video()"> 
+</div>                 
+                <div id="playbutton_background"> 
+                    <div id="video_pic" onclick="show_video()"> 
+</div>                     
+                    <h1 onclick="show_video()" id="trailer_text">&nbsp;&nbsp;&nbsp;Play   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Trailer</h1> 
+                </div>                 
+                <div id="vid_close_button" onclick="close_video()">X</div>                 
+                <video id="main_video" height="400" width="800" poster="images/video/video_pic1.jpg" controls=""> 
+                    <source src="http://static.citor3.com/custom/Citor3_Amoreon_trailer.mp4" type="video/mp4"> 
+                </video>                 
+                <div id="picture_dot_container"> 
+                    <div id="dot1" class="dot" onclick="selected(0);"></div>                     
+                    <div id="dot2" class="dot" onclick="selected(1);"></div>                     
+                    <div id="dot3" class="dot_selected" onclick="selected(2);"></div>                     
+                </div>                 
+            </div><a id="demo_link" href="http://www.citor3.com/release/AmoreonDemo.rar"> <div id="demo_button"> 
+                    Demo Download    
+</div> </a>
+            <div id="wrapper"> 
+                <!--
+    <p style="margin-left:100px; margin-right:100px; font-size:18px;">Amoreon is an erotic experience like no other.  Made exclusively for high power desktop VR Amoreon transports you into en erotic world where you can create and dress your perfect woman and experience virtual sex in a variety of exotic locations.  Join the mile high club with an Airhostess in a Learjet or get Kinky with a Nurse in the Cum Clinic.
+
+    </p>
+    -->                 
+                <!--
+            <p>Start in the customisation area and create your perfect girl.  Slim, volutuous, muscular, blue eyes, brown eyes everything is customisable.  With 43 individually adjustable settings thats over 1,800 unique combinations.  Thats just the tip of the iceberg.  We have 47 different items of clothing to dress your girl in.  You can even customise the colour of the clothes providing almost limitless customisation.  Click one of the pictures opposite to watch a video and have fun with our web based live dress up tool.</p>
+            -->                 <a href="girls.php"> <div class="feature_container" style="margin-left:10px;"> 
+                        <h1 class="feature_title">Create your Perfect Girl</h1> 
+                        <div class="overlay_text"> 
+                            <p>Start in the customisation area and create your perfect girl.  Slim, voluptuous, muscular, thick, blue eyes, brown eyes, blond, brunette everything is customisable.  With 30 individually adjustable physical characteristics, 7 differnt skins and 93 items of clothing there an almost limitless number of unique combinations.  Thats just the tip of the iceberg.<br>  Download the clothes tool and you can make your own clothes and add them into the game or share them with other users.  </p> 
+                        </div>                         
+                        <div class="feature_picture_box" style="background-image:url(images/index_pics/perfectGirl.jpg);"></div>                         
+                    </div> </a> <a href="girls.php"> <div class="feature_container" style="margin-left:10px; margin-right:10px;"> 
+                        <h1 class="feature_title">Choose an Outfit</h1> 
+                        <div class="overlay_text"> 
+                            <p>Dress your girl from a selection of 93 different and customisable items of clothing.  You can even customise the colour of the clothes providing almost limitless customisation.  Click anywhere in this box to watch a video and have fun with our web based live dress up tool.</p> 
+                        </div>                         
+                        <div class="feature_picture_box" style="background-image:url(images/index_pics/outfit.jpg);"></div>                         
+                    </div> </a> <a href="locations.php"> <div class="feature_container"> 
+                        <h1 class="feature_title">Choose a Location</h1> 
+                        <div class="overlay_text"> 
+                            <p>Choose from any one of 9 themed locations.  Have a steamy encounter in an ancient temple, join the mile high club with a hot airhostess in a Learjet or have a Kinky encounter with the Nurse in the Cum Clinic.</p> 
+                        </div>                         
+                        <div class="feature_picture_box" style="background-image:url(images/index_pics/location.jpg);"></div>                         
+                    </div> </a> <a href="interactive.php#game_modes"> <div class="feature_container" style="margin-left:10px;"> 
+                        <h1 class="feature_title">Multiple Positions</h1> 
+                        <div class="overlay_text"> 
+                            <p>Let your imagination run wild as you can experience a wide variety of foreplay and sex positions.  If she's feeling frisky you get to put it.. anywhere you want.</p> 
+                        </div>                         
+                        <div class="feature_picture_box" style="background-image:url(images/index_pics/position.jpg);"></div>                         
+                    </div> </a> <a href="interactive.php#interactive"> <div class="feature_container" style="margin-left:10px; margin-right:10px;"> 
+                        <h1 class="feature_title">Full Interactivity</h1> 
+                        <div class="overlay_text"> 
+                            <p>Touch the girl of your dreams and hear her moan in delight.  Thrust into her and hear her beg for more.  But remember you need to be the perfect gentleman and every woman is a pleasurable puzzle.  Every girl has different likes and moods.<br>
+                            Use the right toy and send her to heaven use the wrong one and she will let you know in a hurry. </p> 
+                        </div>                         
+                        <div class="feature_picture_box" style="background-image:url(images/index_pics/interactivity.jpg);"></div>                         
+                    </div> </a> <a href="interactive.php#voice_actress"> <div class="feature_container"> 
+                        <h1 class="feature_title">Four Voice Actresses</h1> 
+                        <div class="overlay_text"> 
+                            <p>Seductive sound is key to making an immersive erotic experience.  <br>We have used four hot vixens to provide the voices for the girls in the game.  Let their sultry words highten your erotic experience.  Scarlett, Mia, Shibby, Persephone, Swanny.  We chose each to give real life to each of the personality types.  Closing your eyes won't help you last with the seductive words and moans these minxes will pour into your ears.</p> 
+                        </div>
+                        <div class="feature_picture_box" style="background-image:url(images/index_pics/voiceactresses.jpg);"></div>                         
+                    </div> </a> <a href="interactive.php#personality_system"> <div class="feature_container" style="margin-left:10px;"> 
+                        <h1 class="feature_title">Personality System</h1> 
+                        <div class="overlay_text"> 
+                            <p>If you create your perfect girl next door or sexy vixen you need the personality to match.  The personality system allows you to select from 4 unique personalities, each with unique dialogue.  Choose from Submissive, Shy, Naughty and Dominatrix.</p> 
+                        </div>                         
+                        <div class="feature_picture_box" style="background-image:url(images/index_pics/personality.jpg);"></div>                         
+                    </div> </a> <a href="interactive.php#mood_system"> <div class="feature_container" style="margin-left:10px;"> 
+                        <h1 class="feature_title">Mood System</h1> 
+                        <div class="overlay_text"> 
+                            <p>Enjoy getting her in the mood. As you please your lady she will become more receptive to your advances.  As you progress and earn Citor3 dollars you can buy toys and gifts in the shop to gain her favor.</p> 
+                        </div>                         
+                        <div class="feature_picture_box" style="background-image:url(images/index_pics/mood.jpg);"></div>                         
+                    </div> </a> <a href="theshop.php"> <div class="feature_container" style="margin-left:10px;"> 
+                        <h1 class="feature_title">The Shop</h1> 
+                        <div class="overlay_text"> 
+                            <p>The more your please the ladies the more money they give you to spend in the shop.  Buy new Clothes, Sex Toys and gifts like Parfumes, Candies, Candles and Drinks.  You can even buy video Cameras and TVs to make sure you can see things from every angle.</p> 
+                        </div>                         
+                        <div class="feature_picture_box" style="background-image:url(images/index_pics/shop.jpg);"></div>                         
+                    </div> </a> 
+                <!-- <a href="interactive.php#fleshlight_launch"> 
+                <div class="feature_container" style="margin-left:10px;"> 
+                    <h1 class="feature_title">Synchronized Toys</h1> 
+                    <div class="overlay_text"> 
+                        <p>Yes indeed the future is here.  We have teamed up with Fleshlight and Kiroo to bring you a truely interactive experience.  Every stroke of her hand, bob of her mouth or thrust of her hops will be translated into motion of the famous fleshlight using the new Fleshlight Launch.</p> 
+                    </div>                     
+                    <div class="feature_picture_box" style="background-image:url(images/toy.jpg);"></div>                     
+                </div>                 
+            </a>            -->                 
+            </div>
+            <!-- wrapper close -->             
+            <div id="footer">
+                <!-- FOOTER start --><a href="terms_and_conditions.php">Terms and Conditions</a>
+            </div>
+            <!-- FOOTER end -->
+        </div>
+        <!-- GRID CONTAINER end -->
+        <script>
+
+var picArray = ["images/banner1.jpg", "images/banner2.jpg", "images/banner3.jpg"];
+var picArrayIndex =0;
+var runSlideshow = true;
+
+function selected(indexIn)
+{
+	runSlideshow=false;
+
+	picArrayIndex = indexIn;
+
+	document.getElementById('top_picture_panel').style.backgroundImage = "url('"+picArray[picArrayIndex]+"')";
+
+	document.getElementById('dot1').className = "dot";
+	document.getElementById('dot2').className = "dot";
+	document.getElementById('dot3').className = "dot";
+	var tempNumber = indexIn +1;
+	document.getElementById("dot"+tempNumber).className = "dot_selected";
+
+
+	runSlideshow=true;
+
+}
+
+
+        
+function fn60sec()
+{
+	if(runSlideshow)
+	{
+			if(picArrayIndex < picArray.length)
+			{
+				//alert('running');
+				// runs every 5 sec and runs on init.
+				document.getElementById('top_picture_panel').style.backgroundImage = "url('"+picArray[picArrayIndex]+"')";
+
+				document.getElementById('dot1').className = "dot";
+				document.getElementById('dot2').className = "dot";
+				document.getElementById('dot3').className = "dot";
+
+				var tempNumber = picArrayIndex + 1;
+				var temp = 'dot'+tempNumber;
+				document.getElementById(temp).className = "dot_selected";
+
+				picArrayIndex++;
+			}
+			else
+			{
+				picArrayIndex = 0;
+			}
+	}
+}
+fn60sec();
+setInterval(fn60sec, 4*1000);
+
+
+</script>         
+        <script>
+function show_video()
+{
+
+
+	document.getElementById('main_video').style.display = 'block';
+	document.getElementById('vid_close_button').style.display = 'block';
+
+
+	document.getElementById('main_video').play();
+
+	runSlideshow = false;
+		document.getElementById('top_picture_panel').style.backgroundImage = 'none';
+	document.getElementById('top_picture_panel').style.backgroundColor = 'black';
+
+
+
+}
+
+function close_video()
+{
+	//alert('test');
+	document.getElementById('top_picture_panel').style.backgroundImage = "url('"+picArray[picArrayIndex]+"')";
+	document.getElementById('main_video').pause();
+
+	document.getElementById('main_video').style.display = 'none';
+	document.getElementById('vid_close_button').style.display = 'none';
+
+
+
+	document.getElementById('top_picture_panel').style.backgroundColor = 'none';
+	runSlideshow = true;
+
+		//alert('test1');
+
+
+}
+
+</script>
+</body></html>

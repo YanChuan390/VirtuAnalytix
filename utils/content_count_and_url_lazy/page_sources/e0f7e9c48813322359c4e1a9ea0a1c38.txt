@@ -1,0 +1,417 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Primitive</title>
+  <meta name="description" content="The future of software development">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="description" content="The future of software development">
+  <meta name="twitter:title" content="Primitive">
+  <meta name="twitter:url" content="http://primitive.io/">
+  <meta name="twitter:description" content="The future of software development">
+  <meta name="google-site-verification" content="9Tvxms0Hr6ikllNEYfybmwicyfIPrUxfN7yyKu3HYR0">
+  <meta property="og:title" content="Primitive">
+  <meta property="og:url" content="http://primitive.io/">
+  <meta property="og:description" content="The future of software development">
+  <meta property="og:image" content="http://primitive.io/rsc/mixed.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Primitive">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+<style type="text/css">.drift-conductor-item iframe,
+.drift-frame-controller {
+  display: block;
+  min-width: 0;
+  max-width: none;
+  min-height: 0;
+  max-height: none;
+}
+
+.drift-conductor-item iframe {
+  color-scheme: light only;
+  border: none !important;
+  background: transparent !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+}
+
+.drift-conductor-item.with-transition {
+  -webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
+  transition: opacity .5s ease, -webkit-transform .5s ease;
+  -o-transition: opacity .5s ease, -o-transform .5s ease;
+  -moz-transition: opacity .5s ease, transform .5s ease, -moz-transform .5s ease;
+  transition: opacity .5s ease, transform .5s ease;
+  transition: opacity .5s ease, transform .5s ease, -webkit-transform .5s ease, -moz-transform .5s ease, -o-transform .5s ease;
+}
+
+.drift-frame-chat.with-transition.drift-frame-chat__takeover {
+  -webkit-transition: opacity .5s ease;
+  -o-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+.drift-conductor-item.with-height-transition {
+  -webkit-transition: max-height .5s ease, opacity .5s ease, -webkit-transform .5s ease;
+  transition: max-height .5s ease, opacity .5s ease, -webkit-transform .5s ease;
+  -o-transition: max-height .5s ease, opacity .5s ease, -o-transform .5s ease;
+  -moz-transition: max-height .5s ease, opacity .5s ease, transform .5s ease, -moz-transform .5s ease;
+  transition: max-height .5s ease, opacity .5s ease, transform .5s ease;
+  transition: max-height .5s ease, opacity .5s ease, transform .5s ease, -webkit-transform .5s ease, -moz-transform .5s ease, -o-transform .5s ease;
+}
+
+.drift-conductor-item {
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.drift-frame-controller {
+  bottom: 24px;
+}
+
+.drift-frame-controller-align-left {
+  left: 24px;
+}
+
+.drift-frame-controller-align-right {
+  right: 24px;
+}
+
+.drift-frame-chat:not(iframe) {
+  bottom: -webkit-calc(12px + 52px + 24px);
+  bottom: -moz-calc(12px + 52px + 24px);
+  bottom: calc(12px + 52px + 24px); /* vertical margin x 2 + widget icon size*/
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transform: translateY(88px);
+
+     -moz-transform: translateY(88px);
+
+      -ms-transform: translateY(88px);
+
+       -o-transform: translateY(88px);
+
+          transform: translateY(88px);
+}
+
+.drift-frame-chat:not(iframe).drift-chat-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.drift-frame-chat.drift-frame-chat__takeover:not(iframe):not(.drift-frame--mobile) {
+  min-width: 600px;
+}
+
+.drift-frame-chat-align-left {
+  left: 12px;
+}
+
+.drift-frame-chat-align-right {
+  right: 12px;
+}
+
+.drift-frame-takeover,
+.drift-frame-landingPage,
+.drift-frame-chat__takeover {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.drift-frame-chat__takeover.hide-frame {
+  visibility: hidden;
+}
+
+.drift-frame-emailCapture {
+  bottom: 0;
+  height: -webkit-calc(100% + 30px);
+  height: -moz-calc(100% + 30px);
+  height: calc(100% + 30px);
+}
+
+.drift-frame-emailCapture-align-left {
+  left: 0;
+}
+
+.drift-frame-emailCapture-align-right {
+  right: 0;
+}
+
+.drift-frame-slider {
+  bottom: 18px;
+  height: -webkit-calc(100% + 20px);
+  height: -moz-calc(100% + 20px);
+  height: calc(100% + 20px);
+}
+
+.drift-frame-slider-align-left {
+  left: 96px;
+}
+
+.drift-frame-slider-align-right {
+  right: 96px;
+}
+
+.drift-frame--mobile.drift-frame-slider-align-left {
+  left: 68px;
+}
+
+.drift-frame--mobile.drift-frame-slider-align-right {
+  right: 68px;
+}
+
+.drift-widget-content-box {
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  z-index: 2147483647;
+  top: 0;
+  left: 0;
+}
+
+.drift-widget-content-box > * {
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-height: 80%;
+
+}
+
+@media
+(max-height: 685px),
+(min-width: 369px) and (max-width: 380px),
+(max-width: 367px),
+
+(min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait)
+
+{
+  .drift-frame--mobile.drift-frame-chat.drift-chat-open {
+    bottom: 0 !important;
+    right: 0;
+    left: 0;
+    z-index: 2147483647 !important;
+  }
+
+  .drift-frame--mobile.drift-frame-controller {
+    bottom: 0;
+  }
+
+  .drift-frame--mobile.drift-frame-controller.drift-frame-controller-align-left {
+    left: 0;
+  }
+
+  .drift-frame--mobile.drift-frame-controller.drift-frame-controller-align-right {
+    right: 0;
+  }
+
+
+  .drift-frame--mobile.drift-frame-controller.drift-chat-open {
+    display: none;
+  }
+
+  .drift-frame--mobile.drift-frame-slider {
+    bottom: 0;
+    max-width: 320px;
+  }
+
+  .drift-frame--mobile iframe.drift-frame-chat {
+    width: 1px !important;
+    min-width: 100%;
+
+    height: 1px !important;
+    min-height: 100%;
+  }
+
+  html.drift-widget-parent--chat-open,
+  html.drift-widget-parent--chat-open > body {
+    height: 100vh !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    position: static !important;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .drift-frame--mobile.drift-frame-controller.drift-chat-open {
+    display: none;
+  }
+
+  .drift-frame--mobile.drift-frame-controller {
+    bottom: 0;
+  }
+
+  .drift-frame--mobile.drift-frame-controller-align-right {
+    right: 0;
+  }
+
+  .drift-frame--mobile.drift-frame-controller-align-left {
+    left: 0;
+  }
+}
+
+.drift-frame-chat.widget--xs.drift-chat-open {
+  bottom: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+}
+
+.drift-frame-controller.widget--xs.drift-chat-open {
+  display: none;
+}
+
+</style></head>
+<body>
+  <div class="ui text menu" id="menu">
+    <div class="ui container">
+      <a class="item" href="/">
+        Home
+      </a>
+	  <a class="ui item" href="mailto:john@primitive.io">
+        Contact
+      </a>
+      <a class="ui item" href="/join">
+        Join us
+      </a>
+      <a href="/" class="white logo"></a>
+    </div>
+  </div>
+  <div class="ui fluid center aligned container" id="hero">
+  <div class="ui hidden divider"></div>  
+  <img src="rsc/Primitive.png" alt="Primitive" style="width:720px;height:209px;"> 
+  <h2 class="ui header" style="color:white;">VR Collaboration for Distributed Teams*</h2>
+  <div class="ui hidden divider"></div>  
+  <a href="https://store.steampowered.com/app/777890/Primitive/"><img src="rsc/steam.png" style="width:200px; height:46px; margin-right:50px;" title="Download Primitive on Steam" alt="Download Primitive on Steam"></a>
+  <a href="https://www.viveport.com/apps/675c92c6-7df2-4ee3-b919-1bfbb6e5e8cc"><img src="rsc/viveport.png" style="width:200px; height:65px; margin-left:50px; margin-right:50px;" title="Download Primitive on Viveport" alt="Download Primitive on Viveport"></a>
+  <a href="https://sidequestvr.com/app/1296"><img src="rsc/sidequest.png" style="width:200px; height:67px; margin-left:50px;" title="Download Primitive on SideQuest" alt="Download Primitive on SideQuest"></a>
+  <div class="ui hidden divider"></div>  
+  <div class="ui hidden divider"></div>  
+  <h3 class="ui header" style="color:white;">*Free for non-commercial use</h3>
+</div>
+<div class="ui very padded container">  
+  <div class="ui divider"></div>
+  <div class="ui very relaxed very padded stackable grid">
+    <div class="ten wide column">
+      <h1>PRIMITIVE: Immersive Development Environment</h1>
+      <p>Software development teams are only as good as their ability to comprehend and integrate the work of many different authors.</p>
+      <p>At Primitive, we believe that collaboration and immersive visualization are the future of software development. The arrival of virtual reality has provided a groundbreaking new platform to visualize data and collaborate in advanced ways. The Primitive Immersive Development Environment is taking advantage of everything that collaboration in VR can offer while applying new tools for visually analyzing software in 3D.</p>
+    </div>
+    <div class="six wide column">
+      <div class="ui embed" data-source="youtube" data-id="KVZ9u3BIUBg" data-placeholder="/rsc/caption.jpg"><i class="video play icon"></i><img class="placeholder" src="/rsc/caption.jpg"></div>
+    </div>
+  </div>
+  <div class="ui hidden divider"></div>
+  <div class="ui divider"></div>
+  <div class="ui hidden divider"></div>
+  <div class="ui very relaxed very padded stackable grid">
+    <div class="six wide column">
+      <img class="ui middle aligned image" src="/rsc/code.jpg">
+    </div>
+    <div class="ten wide column">
+      <h1>Codebase -&gt; Interactive Model</h1>
+      <p>Using our plugins for popular IDEs, code is analyzed to be displayed as an interactive 3D structure that can be experienced in collaborative, immersive VR. A team of developers will see:</p>
+      <div class="ui bulleted list">
+        <div class="item">Architectural Overviews: up to several million lines of code</div>
+        <div class="item">3D Call Graphs: spatial layouts that are clearer and more memorable</div>
+        <div class="item">Multi-thread Runtime Animations: for debugging and performance evaluation</div>
+      </div>
+    </div>
+  </div>
+  <div class="ui divider"></div>
+  <div class="ui container center aligned">
+    <a href="https://blog.primitive.io" target="_blank"><i class="big green medium icon"></i></a>
+    <a href="https://twitter.com/PrimitiveVR" target="_blank"><i class="big blue twitter icon"></i></a>
+    <a href="https://www.youtube.com/channel/UCOR_9Zltvwwv623_4msNp8Q" target="_blank"><i class="big red youtube play icon"></i></a>
+    <a href="https://github.com/PRIMITIVE-IO/primitive" target="_blank"><i class="big purple github icon"></i></a>
+  </div>
+</div>
+
+  <div class="ui text menu" id="footer">
+    <div class="ui container">
+      <a class="item" href="/">
+        Home
+      </a>      
+      <a href="/" class="logo"></a>
+      <div class="right menu">
+      <a class="ui item" href="/legal">
+        Legal
+      </a>
+      <a class="ui item" href="mailto:john@primitive.io">
+        Contact
+      </a>
+      <a class="ui item" href="/join">
+        Join us
+      </a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" async="" src="https://js.driftt.com/include/1694315100000/st4kubm6z9eh.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.0.0/turbolinks.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+  <script>
+    $('.ui.embed').embed()
+    $('.ui.modal').modal({
+      onHidden: function() {
+        $('video')[0].pause()
+      }
+    }).modal('attach events', '#video')
+    $('#video').on('click', function() {
+      $('video')[0].play()
+      $('video').css('max-height', window.innerHeight - 128)
+    })
+  </script>
+  <!-- Start of Async Drift Code -->
+  <script>
+  !function() {
+    var t;
+    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+    t.factory = function(e) {
+      return function() {
+        var n;
+        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e, n, o, i;
+      e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+      n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+    });
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('st4kubm6z9eh');
+  </script>
+  <!-- End of Async Drift Code -->
+
+
+<div id="drift-frame-chat" class="drift-conductor-item drift-frame-chat drift-frame-chat-align-right with-transition" style="right: 12px; width: 400px !important; max-width: none; position: fixed; z-index: 2147483647; max-height: 0px; bottom: 88px; visibility: hidden; min-width: 320px; height: 100% !important;"><iframe class="drift-frame-chat" scrolling="no" title="Drift Widget Chat Window" allow="autoplay; encrypted-media; fullscreen;" frameborder="0" src="https://js.driftt.com/core/chat?d=1&amp;region=US&amp;driftEnableLog=false&amp;pageLoadStartTime=1694315067477" style="background: transparent; width: 400px !important; max-width: 100%; height: 100%; border: none;"></iframe></div><div id="drift-frame-controller" class="drift-conductor-item drift-frame-controller drift-frame-controller-align-right" style="right: 24px; width: 76px !important; max-width: none; position: fixed; z-index: 2147483647; height: 0px !important; bottom: 24px;"><iframe class="drift-frame-controller" scrolling="no" title="Drift Widget Chat Controller" allow="autoplay; encrypted-media; fullscreen;" frameborder="0" src="https://js.driftt.com/core?d=1&amp;embedId=st4kubm6z9eh&amp;eId=st4kubm6z9eh&amp;region=US&amp;forceShow=false&amp;skipCampaigns=false&amp;sessionId=1c0110e3-bb70-408d-b276-7c528a742a07&amp;sessionStarted=1694315084.238&amp;campaignRefreshToken=d99467db-3c80-4b43-a245-a4082aa5e17d&amp;hideController=false&amp;pageLoadStartTime=1694315067477&amp;mode=CHAT&amp;driftEnableLog=false&amp;secureIframe=false&amp;u=https%3A%2F%2Fprimitive.io%2F" style="background: transparent; width: 100%; max-width: 100%; height: 100%; border: none;"></iframe></div></body></html>

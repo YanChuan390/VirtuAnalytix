@@ -1,0 +1,858 @@
+<html lang="de"><head>
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="description" content="MARLA – Masters of Malfunction ist ein Lernspiel um die Fehlerdiagnosekompetenz bei mechanischen, elektrischen und hydraulischen Fehlern zu trainieren. Entwickelt für die Anwendung im Berufsschulunterricht von Auszubildenden der Metall- und Elektrotechnik. Diese lernen hier die Wartung und Reparatur an einer vollständigen Offshore-Windenergieanlage - direkt im Klassenzimmer.">
+    <title>MARLA - Masters of Malfunction </title>
+    <meta name="keywords" content="Spiel, Game Based Learning, Lernspiel, Training, Hydraulikplan, the good evil, Windernergie, Virtual Reality, Berufsausbildung, Elektro, Metall, Ausbildung, Berufsschule, Unterricht, Fehlerdiagnose, Oculus Quest, Meta Quest">
+    <meta name="author" content="the Good Evil GmbH => https://thegoodevil.com">
+    <meta property="og:title" content="MARLA – Masters of Malfunction ist ein Lernspiel um die Fehlerdiagnosekompetenz bei mechanischen, elektrischen und hydraulischen Fehlern zu trainieren.">
+    <meta property="og:type" content="activity">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="MARLA - Masters of Malfunction">
+    <meta property="og:description" content="MARLA – Masters of Malfunction ist ein Lernspiel um die Fehlerdiagnosekompetenz bei mechanischen, elektrischen und hydraulischen Fehlern zu trainieren. Entwickelt für die Anwendung im Berufsschulunterricht von Auszubildenden der Metall- und Elektrotechnik. Diese lernen hier die Wartung und Reparatur an einer vollständigen Offshore-Windenergieanlage - direkt im Klassenzimmer.">
+    <!--
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
+
+     <link rel="shortcut icon" href="assets/images/ico/favicon.png">
+    -->
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="assets/style/bootstrap-uncompressed.css" type="text/css">
+    <link rel="stylesheet" href="assets/style/marla.css" type="text/css">    
+
+
+</head>
+<body style="">
+    <!-- NAVIGATION -->
+    <nav class="fixed-top" id="navigation">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12 center">
+                    <!-- MOBILE MENU BUTTON -->
+                    <div class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                    <!-- END MOBILE MENU BUTTON -->
+                    <!-- MAIN MENU -->
+                    <ul id="main-menu" class="nav-collapse collapse">
+                        <li class="nav active">
+                            <a href="#titel">MARLA</a>
+                        </li>
+                        <li class="nav">
+                            <a href="#game">Das Spiel</a>
+                        </li>
+                        <li class="nav">
+                            <a href="#unterricht">Unterricht</a>
+                        </li>             
+                        <li class="nav">
+                            <a href="forschung.html#forschung" class="external">Forschung</a>
+                        </li>
+                        <li class="nav">
+                            <a href="https://press.thegoodevil.com/sheet.php?p=marla_masters_of_malfunction" target="_new" class="external">Presse</a>
+                        </li>                                 
+                        <li class="nav">
+                            <a href="#kontakt">Kontakt</a>
+                        </li>                   
+                        <!-- <li class="nav">
+                            <a href="#privacy">Privacy Policy</a>
+                        </li> -->
+                        <!-- <li class="nav">
+                            <a href="/english.html">English 🇬🇧</a>
+                        </li >                         -->
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVIGATION -->
+    <!-- PAGE | WELCOME -->
+    <div class="pages paralax" id="page-welcome" style="background-position: 0% 0px;">
+        <div class="head" id="titel">
+            <!--  <img src="assets/images/pages/welcome/marla_bg.jpg" alt="Poster Marla"> -->
+        </div>
+        <!-- Centralized content -->
+        <div class="centralized" style="margin-top: -243.5px; margin-left: -487.5px; visibility: visible; opacity: 1;">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12 center">
+                        <div id="yellowBG" style="text-align: center;">
+                            <h1>
+                                MARLA
+                            </h1>
+                            <h2>
+                                Masters of Malfunction
+                            </h2>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="display: inline-block; text-align: left;">
+                                <p id="blueBG"> Lernspiel zum Training der Fehlerdiagnosekompetenz</p>
+                                <p id="blueBG"> von mechanischen, elektrischen und hydraulischen Fehlern.</p>
+                                <p id="blueBG"> Mit Virtual Reality auf einer Offshore-Windenergieanlage.</p>
+                                <p id="blueBG"> Spielbar auf der Oculus Quest.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid">
+                            <br><br><br>
+                            <div class="span3 offset2 center">
+                                <a href="https://www.oculus.com/experiences/quest/4750465265079360/" target="_new">
+                                    <img class="logos" style="padding-top: 0.5rem;" src="assets/images/logos/logo_Get-it-on-MetaQuest.png" alt="Meta Quest AppLab Logo">
+                                </a>
+                            </div>
+                            <div class="span3 offset1 center">
+                                <a href="https://sidequestvr.com/app/6520" target="_new">
+                                    <img class="logos" style="padding-top: 0.5rem;" src="assets/images/logos/logo_Get-it-on-SideQuest.svg" alt="SideQuest Logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider_top">
+            <!--   <img src="assets/images/pages/MARLA_Trenner-02.svg" alt=""> -->
+        </div>
+    </div>
+    <!-- END PAGE | Welcome -->
+    <!-- PAGE | DIVIDER -->
+    <div class="pages" id="trenner">
+
+    </div>
+    <!-- END PAGE | DIVIDER  -->
+    <!-- PAGE | GAME -->
+    <div class="pages" id="page-work">
+
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <section id="game">
+                    <h3>Das Spiel</h3>
+                    <br>
+                    <div class="row">
+                        <div class="span8 offset2">
+                            <p class="text-left">
+                                Schnapp dir den Sicherheitshelm, leg den Klettergurt an und dann geht es raus auf’s Meer. 
+                                35km vor Rügen liegt der Offshore-Windpark in dem du deine Fertigkeiten in der Fehlerdiagnose und Wartung unter Beweis stellst.<br><br>
+                            </p>
+                            <p class="text-left">  
+                                Bewaffnet mit Multimeter, Schraubendreher und Putzlappen begleitest du Alex auf eine Windenergieanlage. 
+                                Zusammen meistert ihr die acht Schritte der Fehlerdiagnose. Nach dem erfolgreichen Einsatz, 
+                                bist du plötzlich auf dich alleine gestellt. Jetzt kannst du dich als “Master of Malfunction” beweisen und den nächsten Fehler fachgerecht beheben.<br><br>
+                            </p>
+                            <p class="text-left"> 
+                                MARLA - Masters of Malfunction, das Serious Game mit dem schönsten Ausblick auf die Ostsee.
+                                Für VR-Brillen von Oculus Quest.
+                            </p>
+                            <p class="text-left">
+                               <!--<br /><br/>
+                               <a href="https://www.oculus.com/experiences/quest/4750465265079360/" target="_new">Meta Quest AppLab</a>
+                               &nbsp;&nbsp;
+                               <a href="https://sidequestvr.com/app/6520" target="_new">SideQuest</a> -->
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    
+                    <h4>Spielen</h4>
+                    
+                    <div class="row-fluid">
+                        <div class="span4 offset2 center">
+                            <a href="https://www.oculus.com/experiences/quest/4750465265079360/" target="_new">
+                                <img class="logos" style="padding-top: 0.5rem;" src="assets/images/logos/logo_Get-it-on-MetaQuest.png" alt="Meta Quest AppLab Logo">
+                            </a>
+                        </div>
+                        <div class="span4 center">
+                            <a href="https://sidequestvr.com/app/6520" target="_new">
+                                <img class="logos" style="padding-top: 0.5rem;" src="assets/images/logos/logo_Get-it-on-SideQuest.svg" alt="SideQuest Logo">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <h4>Trailer</h4>
+                    <div class="row-fluid">
+                        <iframe width="672" height="378" src="https://www.youtube-nocookie.com/embed/wNwegheZqKM" title="YouTube Video Player: Marla Release Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    </div>  
+                        
+                    <br>
+                    <br>                
+                    
+                    <h4>Ausgezeichnet</h4>
+                    <div class="row-fluid">
+                        <div class="span4 center">
+                            <a href="https://ak-vrarl.gi.de/wettbewerb-avril/detail/wettbewerb-avril-2021-gelungene-vr-ar-lernszenarien" target="new">
+                                <img class="logos" style="padding-top: 0.5rem;" src="assets/images/pages/blog/Siegel_AVRIL-Award.png" alt="AVRiL 2021 Award, dem Preis des Stifterverbandes für gelungene VR/AR-Lernszenarien. Der Wettbewerb zeichnet aktuelle, effektive Lernszenarien unter Einbeziehung von VR- und AR-Technologien aus. Dabei müssen die Wettbewerbsbeiträge in den Kategorien inhaltliche Qualität, Darstellung, praktische Bedeutung, Beitrag zur Theoriebildung, Innovationsgrad, Wettbewerbsrelevanz, Lernzielerreichung, Angemessenheit des didaktischen Designs, Reifegrad, Evaluation und Übertragbarkeit überzeugen."></a>
+                        </div>
+                        <div class="span4 center">
+                            <a href="https://comenius-award.de/wp-content/uploads/2022/06/COM-22-Pressemteilung.pdf" target="new">
+                                <img class="logos" style="padding-top: 0.5rem;" src="assets/images/pages/blog/Logos-Comenius-Medaille-2022.jpg" alt="Comenius EduMedia Medaille 2022 für herausragende Bildungsmedien in der Kategorie: Spielbasierte digitale Bildungsmedien (CKP)"></a>
+                        </div>                    
+                        <div class="span4 center">
+                            <a href="https://twitter.com/thegoodevilcom/status/1417104348161708035" target="new">
+                                <img class="logos" style="padding-top: 0.5rem;" src="assets/images/pages/blog/MARLA_PlacesNommination2.png" alt="Shortlist from the German Institute for Virtual Reality (#DIVR) for the #ScienceAward in the category Best Concept.">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                </section>
+            </header>
+        </div>
+    </div>
+    <!-- END PAGE | GAME -->
+    <!-- PAGE | DIVIDER -->
+    <div class="pages" id="trenner">
+            <img class="divider" src="assets/images/pages/MARLA_Trenner-01.svg" alt="">
+    </div>
+    <!-- END PAGE | DIVIDER -->
+    <!-- PAGE | BLOG -->
+    <div class="pages" id="page-blog">
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h3>Entwicklung</h3>
+                <div class="row">
+                    <div class="span8 offset2">
+                        <br>
+                        <p class="text-left">
+                            MARLA wurde im Rahmen eines dreijährigen Forschungsvorhabens entwickelt. 
+                            Mehr über die Forschungsinhalte, Publikationen und Ergebnisse, sowie unsere Projektbericht unter 
+                            <a href="forschung.html#forschung" class="external">Forschung</a>.
+                        </p>       
+                        <h5>Projektpartner</h5>
+                    </div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="span2 offset3 center">
+                        <a href="https://www.tu-berlin.de" target="new"><img class="logos" style="padding-top: 0.5rem;" src="assets/images/logos/logoTUBerlin.svg" width="75%" alt="Technische Universität Berlin"></a>
+                    </div>
+                    <div class="span2 center">
+                        <a href="https://thegoodevil.com/" target="new"><img class="logos" src="assets/images/logos/logoTGE.jpg" width="75%" alt="The Good Evil"></a>
+                    </div>
+                    <div class="span2 center">
+                        <a href="https://hwk-osnabrueck.de/" target="new"><img class="logos" style="padding-top: 1rem;" src="assets/images/logos/logoHWK_Os.png" width="75%" alt="Handwerkskammer Osnabrück, Emsland, Grafschaft Bentheim"></a>
+                        <br>
+                        <a href="https://www.hwk-koblenz.de/" target="new"><img class="logos" style="padding-top: 1rem;" src="assets/images/logos/logoHWK_KO.png" width="75%" alt="Handwerkskammer Koblenz"></a>
+                    </div>
+
+                    <div class="row">
+                        <div class="span8 offset2">
+                            <p>
+                                </p><h5>Assoziierte Partner</h5>
+                            <p></p>
+                        </div>
+                    </div>
+    
+                    <div class="row-fluid">
+                        <div class="span2 offset3 center">
+                            <a href="https://www.hein-moeller-schule.de/" target="new"><img class="logos" src="assets/images/logos/logoHMSchule.png" width="75%" alt="Hein-Möer Schule"></a>
+                        </div>                            
+                        <div class="span2 center">
+                            <a href="https://www.group.rwe/unser-portfolio-leistungen/betriebsstandorte-finden/windpark-arkona" target="new"><img class="logos" src="assets/images/logos/logoRWE.png" width="75%" alt="RWE - Offshore-Windpark Arkona"></a>
+                            <br><br>Offshore-Windpark Arkona
+                        </div>                                                      
+                        <div class="span2 center">
+                            <a href="https://www.wilabonn.de/" target="new"><img class="logos" style="padding-top: 0.5rem;" src="assets/images/logos/logoWila.png" width="75%" alt="Wissenschaftsladen Bonn e.V."></a>
+                        </div>
+                                  
+                    <div class="row-fluid">
+                        <div class="span4 offset4 center">
+                            <br><br><br>
+                            <a href="https://www.bmbf.de/foerderungen/bekanntmachung-1531.html" target="new"><img style="max-height:125px;" src="assets/images/logos/logoBmBF.png" alt="Bundesministerium für Bildung und Forschung"></a>
+                            <br><br>
+                        </div>                
+                    </div>
+            </div></div></header>
+        </div>
+    </div>
+    <!-- END PAGE | GAME -->
+    <!-- PAGE | DIVIDER -->
+    <div class="pages" id="trenner">
+        <img class="divider" src="assets/images/pages/MARLA_Trenner-03.svg" alt="">
+    </div>
+    <!-- END PAGE | DIVIDER  -->
+    <!-- PAGE | BLOG -->
+    <div class="pages" id="page-blog">
+        <div id="unterricht" class="container">
+            <!-- Header -->
+            <header>
+                <h3>Unterricht</h3>
+                <br>
+                <div class="row">
+                    <div class="span8 offset2">
+                        <p class="text-left">
+                            MARLA ist ein Lernspiel, mit dem Auszubildende der Metall- und Elektrotechnik die Fehlerdiagnose üben können. <strong>Das Spiel wurde für die Anwendung im Berufsschulunterricht und in überbetrieblichen Ausbildungsstätten entwickelt.</strong> Die Auszubildenden erlernen die verschiedenen Schritte der Fehlerdiagnose an einer vollständigen Offshore-Windenergieanlage – direkt im Klassenzimmer mittels Virtual Reality auf der Oculus Quest.
+                            <br>
+                        </p> 
+                        
+                        <p class="text-left">
+                            Im anschließenden Unterricht reflektieren und vertiefen sie in Gruppenarbeit die virtuellen Lerninhalte und wenden ihre im Spiel <strong>erworbenen Kompetenzen zur Fehlerdiagnose auf andere berufliche Situationen</strong> an. Inhaltlich liegt der Schwerpunkt auf der Kompetenzerweiterung bei der Fehlererkennung, -eingrenzung und dem Vorgehen bei der Fehlerbehebung, der sogenannten Fehlerdiagnosekompetenz. Am Rande aber lernen die Auszubildenen auch etwas über Windenergietechnik und ressourcenschonende Stromerzeugung.
+                            <br><br>
+                        </p>
+                        
+                        <div class="row-fluid">
+                            <iframe width="672" height="378" src="https://www.youtube-nocookie.com/embed/L0hHMPaEkHI" title="YouTube Video Player: Marla in der Berufsausbildung" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            <br><br>
+                        </div>  
+                        
+                        <p class="text-left">
+                            Als <strong>kostenloses Unterrichtsmaterial</strong> gibt es eine <strong>Handreichung</strong> in der Hinweise zum pädagogischen Einsatz von „MARLA - Masters of Malfunction“ in der metall- und elektrotechnischen Ausbildung sowie eine Beschreibung von <strong>sechs Lernmodule</strong>, die Sie zu einer Unterrichtseinheit kombinieren können.
+                            <br><br>
+                            <strong>Das Lernheft für die Auszubildenden</strong> und einen <strong>FAQ Guide</strong>, wo relevante Fragen und Hilfestellung nochmals zusammengefasst wurden. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row-fluid">
+                <div class="row-fluid span12">
+                
+                    <div class="center"><br><br>
+                        <h4>Lernmodule im Überblick</h4>
+                        
+                        <div class="row center">
+                            <div class="span4 offset2 center">
+                                    <ul class="text-left unstyled">
+                                        <li>
+                                            <strong class="blue">#1</strong> Schritt für Schritt zur Fehlerlösung
+                                        </li>
+                                        <li>
+                                            <strong class="blue">#2</strong> Suchraum festlegen
+                                        </li>
+                                        <li>
+                                            <strong class="blue">#3</strong> Hypothesen aufstellen, bewerten und überprüfen
+                                        </li>
+                                    </ul>
+                            </div>
+                            <div class="span5 center">
+                                    <ul class="text-left unstyled">
+                                        <li>
+                                            <strong class="blue">#4</strong> Fehlerlösung im Ausbildungsbetrieb
+                                        </li>
+                                        <li>
+                                            <strong class="blue">#5</strong> Fehlerdiagnose am realen Objekt
+                                        </li>
+                                        <li>
+                                            <strong class="blue">#6</strong> Handwerker*innenvideos
+                                        </li>
+                                    </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>                
+                </div>
+                
+                <div class="row-fluid">
+                
+                <div class="row-fluid span12">
+                
+                    <div class="center">
+                        <h4>Downloads</h4>
+                        
+                        <div class="row center">
+                            <div class="span3 offset1 center">
+                                <a href="assets/download/Lernheft_MARLA.pdf" target="new"><img class="logos" style="padding-top: 0.5rem;" src="assets/images/icons/icon_download.svg" alt="Download Lernheft Azubis [PDF]"><br>
+                                <p>
+                                    Lernheft Azubis [PDF]
+                                </p></a>
+                                
+                                <a href="assets/download/Lernheft_MARLA_docx.zip" target="new">
+                                <p>
+                                    Lernheft Azubis [DOCX]
+                                </p></a>
+                            </div>  
+                            
+                            <div class="span4 center">
+                                <a href="assets/download/Handreichung_MARLA.pdf" target="new"><img class="logos" style="padding-top: 0.5rem;" src="assets/images/icons/icon_download.svg" alt="Download Handreichung für Lehrkräfte [PDF]"><br>
+                                <p>
+                                    Handreichung für <br>Lehrkräfte [PDF]
+                                </p></a>
+                            </div>
+
+                            <div class="span3 center">
+                                <a href="assets/download/FAQ-Guide_MARLA.pdf" target="new"><img class="logos" style="padding-top: 0.5rem;" src="assets/images/icons/icon_download.svg" alt="Download FAQ Guide Marla [PDF]"><br>
+                                <p>
+                                    FAQ Guide [PDF]
+                                </p></a>
+                            </div>                                                        
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+            </header>
+        </div>
+    </div>
+    <!-- END PAGE | BLOG -->
+    <!-- PAGE | DIVIDER -->
+    <div class="pages" id="trenner">
+        <img class="divider" src="assets/images/pages/MARLA_Trenner-03.svg" alt="">
+    </div>
+    <!-- END PAGE | DIVIDER  -->
+    <!-- PAGE | CONTACT -->
+    <div class="pages" id="page-contact">
+        <div id="kontakt" class="container">
+            <!-- Header -->
+            <header>
+                <h3>Kontakt</h3>
+                <div class="row">
+                    <div class="span8 offset2">
+                        <p>
+                            </p><h5>Projektleitung</h5>
+                            <h6>Dr. Pia Spangenberger</h6>
+                            Universität Potsdam<br>
+                            Department Erziehungswissenschaft <br>
+                            Professur für Schulbezogene Medienbildung [Chair of Media Education]<br>
+                            <br>
+                            <a href="mailto:pia.spangenberger@uni-potsdam.de">
+                                <strong>pia . spangenberger [@] uni-potsdam [DOT] de </strong>
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                        <p></p>
+                        
+                        <p>
+                            </p><h4>Support</h4>
+                            <h6>the Good Evil GmbH</h6>
+                            Fehler gefunden? <br>
+                            Technische Probleme? <br>
+                            Hilfestellung benötigt?<br>
+                            <br>
+                            <a href="mailto:support@thegoodevil.com">
+                                <strong>support [@] thegoodevil [DOT] com</strong>
+                            </a>
+                            <br>
+                        <p></p>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+
+        </div>
+    </div>
+    <!-- END PAGE | CONTACT -->
+    <!-- PAGE | DIVIDER -->
+    <div class="pages" id="trenner">
+        <img class="divider" src="assets/images/pages/MARLA_Trenner-01.svg" alt="">
+    </div>
+    <!-- END PAGE | DIVIDER  -->
+    <!-- PAGE | Impressum -->
+    <div class="pages" id="page-privacy">
+        <div id="imprint" class="container">
+            <!-- Header -->
+            <header>
+                <h3>Impressum</h3>
+            </header>
+            <!-- End Header -->
+
+            <article>
+                <div class="row-fluid">
+                    <div class="span6">
+
+                        <h5>Datenschutzerklärung Webseite</h5>
+
+                        <p class="smallFontBy08">
+                            <b>
+                                Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hatte schon
+                                immer einen besonders hohen Stellenwert für die Technische Universität Berlin. Dazu müssen wir nun
+                                die folgenden Hinweise bereitstellen.
+                            </b>
+                            <br>
+                            <br>
+                            Eine Nutzung der Internetseiten der Technischen Universität Berlin ist grundsätzlich ohne jede Angabe
+                            personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres
+                            Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung
+                            personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten
+                            erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir
+                            generell eine Einwilligung der betroffenen Person ein.
+                            <br>
+                            <br>
+                            Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift,
+                            E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der
+                            Datenschutz-Grundverordnung und in Übereinstimmung mit den für die Technische Universität Berlin geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser Datenschutzerklärung möchte unser Unternehmen die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.
+                            <br>
+                            <br>
+                            Die Technische Universität Berlin hat als für die Verarbeitung Verantwortlicher zahlreiche technische und
+                            organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der über diese
+                            Internetseite verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können Internetbasierte
+                            Datenübertragungen grundsätzlich Sicherheitslücken aufweisen, sodass ein absoluter Schutz nicht
+                            gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene
+                            Daten auch auf alternativen Wegen, beispielsweise telefonisch, an uns zu übermitteln.
+                            <br>
+                            <br>
+                            <br>
+                            1. Begriffsbestimmungen
+                            <br>
+                            <br>
+                            Die Datenschutzerklärung der Technischen Universität Berlin beruht auf den Begrifflichkeiten, die durch den
+                            Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung (DS-GVO)
+                            verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere
+                            Kunden und Geschäftspartner einfach lesbar und verständlich sein. Um dies zu gewährleisten, möchten
+                            wir vorab die verwendeten Begrifflichkeiten erläutern.
+                            <br>
+                            <br>
+                            Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:
+                            <br>
+                            <br>
+                            a)    personenbezogene Daten
+                            <br>
+                            <br>
+                            Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen. Als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind, identifiziert werden kann.
+                            <br>
+                            <br>
+                            b)    betroffene Person
+                            <br>
+                            <br>
+                            Betroffene Person ist jede identifizierte oder identifizierbare natürliche Person, deren personenbezogene Daten von dem für die Verarbeitung Verantwortlichen verarbeitet werden.
+                            <br>
+                            <br>
+                            c)    Verarbeitung
+                            <br>
+                            <br>
+                            Verarbeitung ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung, das Löschen oder die Vernichtung.
+                            <br>
+                            <br>
+                            d)    Einschränkung der Verarbeitung
+                            <br>
+                            <br>
+                            Einschränkung der Verarbeitung ist die Markierung gespeicherter personenbezogener Daten mit dem Ziel, ihre künftige Verarbeitung einzuschränken.
+                            <br>
+                            <br>
+                            e)    Profiling
+                            <br>
+                            <br>
+                            Profiling ist jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte persönliche Aspekte, die sich auf eine natürliche Person beziehen, zu bewerten, insbesondere, um Aspekte bezüglich Arbeitsleistung, wirtschaftlicher Lage, Gesundheit, persönlicher Vorlieben, Interessen, Zuverlässigkeit, Verhalten, Aufenthaltsort oder Ortswechsel dieser natürlichen Person zu analysieren oder vorherzusagen.
+                            <br>
+                            <br>
+                            f)     Pseudonymisierung
+                            <br>
+                            <br>
+                            Pseudonymisierung ist die Verarbeitung personenbezogener Daten in einer Weise, auf welche die personenbezogenen Daten ohne Hinzuziehung zusätzlicher Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden können, sofern diese zusätzlichen Informationen gesondert aufbewahrt werden und technischen und organisatorischen Maßnahmen unterliegen, die gewährleisten, dass die personenbezogenen Daten nicht einer identifizierten oder identifizierbaren natürlichen Person zugewiesen werden.
+                            <br>
+                            <br>
+                            g)    Verantwortlicher oder für die Verarbeitung Verantwortlicher
+                            <br>
+                            <br>
+                            Verantwortlicher oder für die Verarbeitung Verantwortlicher ist die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet. Sind die Zwecke und Mittel dieser Verarbeitung durch das Unionsrecht oder das Recht der Mitgliedstaaten vorgegeben, so kann der Verantwortliche beziehungsweise können die bestimmten Kriterien seiner Benennung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten vorgesehen werden.
+                            <br>
+                            <br>
+                            h)    Auftragsverarbeiter
+                            <br>
+                            <br>
+                            Auftragsverarbeiter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
+                            <br>
+                            <br>
+                            i)      Empfänger
+                            <br>
+                            <br>
+                            Empfänger ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, der personenbezogene Daten offengelegt werden, unabhängig davon, ob es sich bei ihr um einen Dritten handelt oder nicht. Behörden, die im Rahmen eines bestimmten Untersuchungsauftrags nach dem Unionsrecht oder dem Recht der Mitgliedstaaten möglicherweise personenbezogene Daten erhalten, gelten jedoch nicht als Empfänger.
+                            <br>
+                            <br>
+                            j)      Dritter
+                            <br>
+                            <br>
+                            Dritter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle außer der betroffenen Person, dem Verantwortlichen, dem Auftragsverarbeiter und den Personen, die unter der unmittelbaren Verantwortung des Verantwortlichen oder des Auftragsverarbeiters befugt sind, die personenbezogenen Daten zu verarbeiten.
+                            <br>
+                            <br>
+                            k)    Einwilligung
+                            <br>
+                            <br>
+                            Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten Fall in informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung, mit der die betroffene Person zu verstehen gibt, dass sie mit der Verarbeitung der sie betreffenden personenbezogenen Daten einverstanden ist.
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            2. Name und Anschrift des für die Verarbeitung Verantwortlichen
+                            <br>
+                            <br>
+                            Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze
+                            und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:
+                            <br>
+                            <br>
+                            Technische Universität Berlin
+                            <br>
+                            Sekr. MAR 1-4
+                            <br>
+                            Marchstr. 23
+                            <br>
+                            D-10587 Berlin
+                            <br>
+                            pia.spangenberger [@] uni-potsdam [DOT] de
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            3. Cookies
+                            <br>
+                            <br>
+                            Die Internetseiten der Technischen Universität Berlin verwenden Cookies. Cookies sind Textdateien, welche über einen Internetbrowser auf einem Computersystem abgelegt und gespeichert werden.
+                            <br>
+                            <br>
+                            Zahlreiche Internetseiten und Server verwenden Cookies. Viele Cookies enthalten eine sogenannte Cookie-ID. Eine Cookie-ID ist eine eindeutige Kennung des Cookies. Sie besteht aus einer Zeichenfolge, durch welche Internetseiten und Server dem konkreten Internetbrowser zugeordnet werden können, in dem das Cookie gespeichert wurde. Dies ermöglicht es den besuchten Internetseiten und Servern, den individuellen Browser der betroffenen Person von anderen Internetbrowsern, die andere Cookies enthalten, zu unterscheiden. Ein bestimmter Internetbrowser kann über die eindeutige Cookie-ID wiedererkannt und identifiziert werden.
+                            <br>
+                            <br>
+                            Durch den Einsatz von Cookies kann die Technische Universität Berlin den Nutzern dieser Internetseite nutzerfreundlichere Services bereitstellen, die ohne die Cookie-Setzung nicht möglich wären.
+                            <br>
+                            <br>
+                            Mittels eines Cookies können die Informationen und Angebote auf unserer Internetseite im Sinne des Benutzers optimiert werden. Cookies ermöglichen uns, wie bereits erwähnt, die Benutzer unserer Internetseite wiederzuerkennen. Zweck dieser Wiedererkennung ist es, den Nutzern die Verwendung unserer Internetseite zu erleichtern. Der Benutzer einer Internetseite, die Cookies verwendet, muss beispielsweise nicht bei jedem Besuch der Internetseite erneut seine Zugangsdaten eingeben, weil dies von der Internetseite und dem auf dem Computersystem des Benutzers abgelegten Cookie übernommen wird. Ein weiteres Beispiel ist das Cookie eines Warenkorbes im Online-Shop. Der Online-Shop merkt sich die Artikel, die ein Kunde in den virtuellen Warenkorb gelegt hat, über ein Cookie.
+                            <br>
+                            <br>
+                            Die betroffene Person kann die Setzung von Cookies durch unsere Internetseite jederzeit mittels einer entsprechenden Einstellung des genutzten Internetbrowsers verhindern und damit der Setzung von Cookies dauerhaft widersprechen. Ferner können bereits gesetzte Cookies jederzeit über einen Internetbrowser oder andere Softwareprogramme gelöscht werden. Dies ist in allen gängigen Internetbrowsern möglich. Deaktiviert die betroffene Person die Setzung von Cookies in dem genutzten Internetbrowser, sind unter Umständen nicht alle Funktionen unserer Internetseite vollumfänglich nutzbar.
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            4. Erfassung von allgemeinen Daten und Informationen
+                            <br>
+                            <br>
+                            Die Internetseite der Technischen Universität Berlin erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, welche über ein zugreifendes System auf unserer Internetseite angesteuert werden, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von Angriffen auf unsere informationstechnologischen Systeme dienen.
+                            <br>
+                            <br>
+                            Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die Technische Universität Berlin keine Rückschlüsse auf die betroffene Person. Diese Informationen werden vielmehr benötigt, um (1) die Inhalte unserer Internetseite korrekt auszuliefern, (2) die Inhalte unserer Internetseite sowie die Werbung für diese zu optimieren, (3) die dauerhafte Funktionsfähigkeit unserer informationstechnologischen Systeme und der Technik unserer Internetseite zu gewährleisten sowie (4) um Strafverfolgungsbehörden im Falle eines Cyberangriffes die zur Strafverfolgung notwendigen Informationen bereitzustellen. Diese anonym erhobenen Daten und Informationen werden durch die Technische Universität Berlin daher einerseits statistisch und ferner mit dem Ziel ausgewertet, den Datenschutz und die Datensicherheit in unserem Unternehmen zu erhöhen, um letztlich ein optimales Schutzniveau für die von uns verarbeiteten personenbezogenen Daten sicherzustellen. Die anonymen Daten der Server-Logfiles werden getrennt von allen durch eine betroffene Person angegebenen personenbezogenen Daten gespeichert.
+                            <br>
+                            <br>
+                            5. Rechtsgrundlage der Verarbeitung
+                            <br>
+                            <br>
+                            Art. 6 I lit. a DS-GVO dient unserem Unternehmen als Rechtsgrundlage für Verarbeitungsvorgänge, bei denen wir eine Einwilligung für einen bestimmten Verarbeitungszweck einholen. Ist die Verarbeitung personenbezogener Daten zur Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, erforderlich, wie dies beispielsweise bei Verarbeitungsvorgängen der Fall ist, die für eine Lieferung von Waren oder die Erbringung einer sonstigen Leistung oder Gegenleistung notwendig sind, so beruht die Verarbeitung auf Art. 6 I lit. b DS-GVO. Gleiches gilt für solche Verarbeitungsvorgänge die zur Durchführung vorvertraglicher Maßnahmen erforderlich sind, etwa in Fällen von Anfragen zur unseren Produkten oder Leistungen. Unterliegt unser Unternehmen einer rechtlichen Verpflichtung durch welche eine Verarbeitung von personenbezogenen Daten erforderlich wird, wie beispielsweise zur Erfüllung steuerlicher Pflichten, so basiert die Verarbeitung auf Art. 6 I lit. c DS-GVO. In seltenen Fällen könnte die Verarbeitung von personenbezogenen Daten erforderlich werden, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen. Dies wäre beispielsweise der Fall, wenn ein Besucher in unserem Betrieb verletzt werden würde und daraufhin sein Name, sein Alter, seine Krankenkassendaten oder sonstige lebenswichtige Informationen an einen Arzt, ein Krankenhaus oder sonstige Dritte weitergegeben werden müssten. Dann würde die Verarbeitung auf Art. 6 I lit. d DS-GVO beruhen. Letztlich könnten Verarbeitungsvorgänge auf Art. 6 I lit. f DS-GVO beruhen. Auf dieser Rechtsgrundlage basieren Verarbeitungsvorgänge, die von keiner der vorgenannten Rechtsgrundlagen erfasst werden, wenn die Verarbeitung zur Wahrung eines berechtigten Interesses unseres Unternehmens oder eines Dritten erforderlich ist, sofern die Interessen, Grundrechte und Grundfreiheiten des Betroffenen nicht überwiegen. Solche Verarbeitungsvorgänge sind uns insbesondere deshalb gestattet, weil sie durch den Europäischen Gesetzgeber besonders erwähnt wurden. Er vertrat insoweit die Auffassung, dass ein berechtigtes Interesse anzunehmen sein könnte, wenn die betroffene Person ein Kunde des Verantwortlichen ist (Erwägungsgrund 47 Satz 2 DS-GVO).
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            6. Berechtigte Interessen an der Verarbeitung, die von dem Verantwortlichen oder einem Dritten verfolgt werden
+                            <br>
+                            <br>
+                            Basiert die Verarbeitung personenbezogener Daten auf Artikel 6 I lit. f DS-GVO ist unser berechtigtes Interesse die Durchführung unserer Geschäftstätigkeit zugunsten des Wohlergehens all unserer Mitarbeiter und unserer Anteilseigner.
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            7. Dauer, für die die personenbezogenen Daten gespeichert werden
+                            <br>
+                            <br>
+                            Das Kriterium für die Dauer der Speicherung von personenbezogenen Daten ist die jeweilige gesetzliche Aufbewahrungsfrist. Nach Ablauf der Frist werden die entsprechenden Daten routinemäßig gelöscht, sofern sie nicht mehr zur Vertragserfüllung oder Vertragsanbahnung erforderlich sind.
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            8. Gesetzliche oder vertragliche Vorschriften zur Bereitstellung der personenbezogenen Daten; Erforderlichkeit für den Vertragsabschluss; Verpflichtung der betroffenen Person, die personenbezogenen Daten bereitzustellen; mögliche Folgen der Nichtbereitstellung
+                            <br>
+                            <br>
+                            Wir klären Sie darüber auf, dass die Bereitstellung personenbezogener Daten zum Teil gesetzlich vorgeschrieben ist (z.B. Steuervorschriften) oder sich auch aus vertraglichen Regelungen (z.B. Angaben zum Vertragspartner) ergeben kann. Mitunter kann es zu einem Vertragsschluss erforderlich sein, dass eine betroffene Person uns personenbezogene Daten zur Verfügung stellt, die in der Folge durch uns verarbeitet werden müssen. Die betroffene Person ist beispielsweise verpflichtet uns personenbezogene Daten bereitzustellen, wenn unser Unternehmen mit ihr einen Vertrag abschließt. Eine Nichtbereitstellung der personenbezogenen Daten hätte zur Folge, dass der Vertrag mit dem Betroffenen nicht geschlossen werden könnte. Vor einer Bereitstellung personenbezogener Daten durch den Betroffenen muss sich der Betroffene an einen unserer Mitarbeiter wenden. Unser Mitarbeiter klärt den Betroffenen einzelfallbezogen darüber auf, ob die Bereitstellung der personenbezogenen Daten gesetzlich oder vertraglich vorgeschrieben oder für den Vertragsabschluss erforderlich ist, ob eine Verpflichtung besteht, die personenbezogenen Daten bereitzustellen, und welche Folgen die Nichtbereitstellung der personenbezogenen Daten hätte.
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            9. Bestehen einer automatisierten Entscheidungsfindung
+                            <br>
+                            <br>
+                            Als verantwortungsbewusstes Unternehmen verzichten wir auf eine automatische Entscheidungsfindung oder ein Profiling.
+                            <br>
+                            <br>
+                            10. Datenschutzbestimmungen zu Einsatz und Verwendung von Twitter
+                            <br>
+                            <br>
+                            Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten von Twitter integriert. Twitter ist ein multilingualer öffentlich zugänglicher Mikroblogging-Dienst, auf welchem die Nutzer sogenannte Tweets, also Kurznachrichten, die auf 280 Zeichen begrenzt sind, veröffentlichen und verbreiten können. Diese Kurznachrichten sind für jedermann, also auch für nicht bei Twitter angemeldete Personen abrufbar. Die Tweets werden aber auch den sogenannten Followern des jeweiligen Nutzers angezeigt. Follower sind andere Twitter-Nutzer, die den Tweets eines Nutzers folgen. Ferner ermöglicht Twitter über Hashtags, Verlinkungen oder Retweets die Ansprache eines breiten Publikums.
+                            <br>
+                            Betreibergesellschaft von Twitter ist die Twitter, Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. <br>
+
+                                                                                                                                                  <br>
+                            Durch jeden Aufruf einer der Einzelseiten dieser Internetseite, die durch den für die Verarbeitung Verantwortlichen betrieben wird und auf welcher eine Twitter-Komponente (Twitter-Button) integriert wurde, wird der Internetbrowser auf dem informationstechnologischen System der betroffenen Person automatisch durch die jeweilige Twitter-Komponente veranlasst, eine Darstellung der entsprechenden Twitter-Komponente von Twitter herunterzuladen. Weitere Informationen zu den Twitter-Buttons sind unter https://about.twitter.com/de/resources/buttons abrufbar. Im Rahmen dieses technischen Verfahrens erhält Twitter Kenntnis darüber, welche konkrete Unterseite unserer Internetseite durch die betroffene Person besucht wird. Zweck der Integration der Twitter-Komponente ist es, unseren Nutzern eine Weiterverbreitung der Inhalte diese Internetseite zu ermöglichen, diese Internetseite in der digitalen Welt bekannt zu machen und unsere Besucherzahlen zu erhöhen. 
+                            <br>
+                            <br>
+                            Sofern die betroffene Person gleichzeitig bei Twitter eingeloggt ist, erkennt Twitter mit jedem Aufruf unserer Internetseite durch die betroffene Person und während der gesamten Dauer des jeweiligen Aufenthaltes auf unserer Internetseite, welche konkrete Unterseite unserer Internetseite die betroffene Person besucht. Diese Informationen werden durch die Twitter-Komponente gesammelt und durch Twitter dem jeweiligen Twitter-Account der betroffenen Person zugeordnet. Betätigt die betroffene Person einen der auf unserer Internetseite integrierten Twitter-Buttons, werden die damit übertragenen Daten und Informationen dem persönlichen Twitter-Benutzerkonto der betroffenen Person zugeordnet und von Twitter gespeichert und verarbeitet.
+                            <br>
+                            <br>
+                            Twitter erhält über die Twitter-Komponente immer dann eine Information darüber, dass die betroffene Person unsere Internetseite besucht hat, wenn die betroffene Person zum Zeitpunkt des Aufrufs unserer Internetseite gleichzeitig bei Twitter eingeloggt ist; dies findet unabhängig davon statt, ob die betroffene Person die Twitter-Komponente anklickt oder nicht. Ist eine derartige Übermittlung dieser Informationen an Twitter von der betroffenen Person nicht gewollt, kann diese die Übermittlung dadurch verhindern, dass sie sich vor einem Aufruf unserer Internetseite aus ihrem Twitter-Account ausloggt.
+                            <br>
+                            <br>
+                            Die geltenden Datenschutzbestimmungen von Twitter sind unter https://twitter.com/privacy?lang=de abrufbar.
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            Diese Datenschutzerklärung wurde durch den Datenschutzerklärungs-Generator der DGD Deutsche Gesellschaft für Datenschutz GmbH, die als Externer Datenschutzbeauftragter Hof tätig ist, in Kooperation mit dem Anwalt für Datenschutzrecht Christian Solmecke erstellt.
+                            <br>
+                            <br>
+
+
+                    </p></div>
+
+                    <div class="span5 offset1">
+                        <h5>Herausgeber (während Projektlaufzeit)</h5>
+                        Technische Universität Berlin <br>
+                        <div class="media-body smallFontBy08">
+                            Institut für Berufliche Bildung und Arbeitslehre<br>
+                            Fachgebiet Fachdidaktik Bautechnik und Landschaftsgestaltung
+                        </div>
+                        <div class="media">
+                            <div class="social-icons sicon pull-left">
+                                <a href="#" class="sicon-place"><i>Location</i></a>
+                            </div>
+                            <div class="media-body smallFontBy08">
+                                Sekr. MAR 1-4 <br>
+ 
+                                Marchstr. 23 <br>
+                                D-10587 Berlin 
+                            </div>
+                        </div>
+                        <br>
+
+
+                        <h5>Konzeption/Redaktion</h5>
+                        Dr. Pia Spangenberger <br>
+                        <div class="media-body smallFontBy08">
+                            ehemals Technische Universität Berlin<br>
+                            jetzt Universität Potsdam
+                        </div>
+                        <div class="media">
+                            <div class="social-icons sicon pull-left">
+                                <a href="#" class="sicon-mail"><i>email</i></a>
+                            </div>
+                            <div class="media-body smallFontBy08">
+                                pia.spangenberger [@] uni-potsdam [DOT] de
+                            </div>
+                        </div>
+                        <br>
+                        Dr. Felix Kapp <br>
+                           <div class="media-body smallFontBy08">
+                               ehemals Technische Universität Berlin <br>
+                               jetzt IPN – Leibniz Institut für die Pädagogik der Naturwissenschaften und Mathematik
+                           </div>
+                        <br>
+
+                        <h5>Grafische Gestaltung und Realisierung</h5>
+                        the Good Evil GmbH <br>
+                        <div class="media-body smallFontBy08">
+                            Köln
+                        </div>
+                        <div class="media">
+                            <div class="social-icons sicon pull-left">
+                                <a href="#" class="sicon-mail"><i>email</i></a>
+                            </div>
+                            <div class="media-body smallFontBy08">
+                                hello [@] thegoodevil [DOT] com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+<!-- END PAGE | Impressum -->            
+    <!-- PAGE | DIVIDER -->
+<div class="pages" id="trenner">
+    <img class="divider" src="assets/images/pages/MARLA_Trenner-03.svg" alt="">
+</div>
+<!-- END PAGE | DIVIDER  -->            
+<!-- PAGE | Privacy App -->
+    <div class="pages" id="page-privacy-app">
+        <div id="privacy" class="container">
+            <!-- Header -->
+            <header>
+                <h3>Privacy Policy Game</h3>
+                <h5>(Datenschutzerklärung Game)</h5>
+                <p><small>Last updated: April 25, 2022</small></p>
+            </header>
+            <!-- End Header -->
+    
+            <article>
+                <div class="row-fluid">
+                    <div class="span10">
+                        
+                    <h5>Data Usage</h5>
+ 
+                    <p><strong>the Good Evil GmbH does not collect, retain, or store any personal information when you use our game MARLA.</strong><br></p>
+        
+                    <p>To provide our games we use the stores / platforms listed below. Some of your data is stored at a platform level. If you wish to delete your data you will need to contact the platforms directly to remove your data. If you have any questions about this process, you can contact us directly at the below listed email.</p>
+            
+                    <h5>Platform Specific Services</h5>
+                    <p>Depending on the platform where you consume our games, the platform holders may collect various data on you. The only data we have access to is aggregate data of the form of sales numbers split by geographic location (country-level). 
+                    For more info on your privacy rights and management tools on each platform:</p>
+                    
+                    <ul>
+                        <li>Meta/Oculus: <a href="https://www.oculus.com/legal/privacy-policy/" target="_new">https://www.oculus.com/legal/privacy-policy/</a></li>
+                        <li>SideQuest: <a href="https://sidequestvr.com/privacy" target="_new">https://sidequestvr.com/privacy</a></li>
+                        <!-- <li>Valve: <a href="https://store.steampowered.com/privacy_agreement/english/" target="_new">https://store.steampowered.com/privacy_agreement/english/</a></li> -->
+                    </ul>
+                    
+                    <h5>Changes to this Privacy Policy</h5>
+                    <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
+                    <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+                    
+                    
+                    <h5>Contact Us</h5>
+                    <p>If you have any questions about this Privacy Policy, You can contact us:</p>
+                    <ul>
+                    <li>By email: support [@] thegoodevil [DOT] com</li>
+                    <br><br>
+                    </ul>
+            
+            </div>
+        </div>
+    </article>
+
+        </div>
+    </div>
+    <!-- END PAGE | Privacy -->
+    <!-- PAGE | DIVIDER -->
+    <div class="pages" id="trenner">
+        <img class="divider" src="assets/images/pages/MARLA_Trenner-03.svg" alt="">
+    </div>
+    <!-- END PAGE | DIVIDER  -->
+    <!-- LOAD JS FILES -->
+    <!-- Jquery -->
+    <script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+    <!-- Less and Twitter Bootstrap -->
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/plugins/jquery.mixitup.min.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/jquery.fitvids.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/jquery.responsivevideos.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/jquery.centralized.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/jquery.hashloader.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/jquery.fixedonlater.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/jquery.nav.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/jquery.scrollTo.js" type="text/javascript"></script>
+
+
+
+
+    <!-- Treble scripts and plugin initialisation -->
+    <script src="assets/js/application.js" type="text/javascript"></script>
+
+    <script src="assets/js/chromeBugFix.js" type="text/javascript"> </script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <!--
+        <script type="text/javascript">
+    document.getElementById("navextern").onclick = function(){
+            var winPop = window.open(this.href);
+            return false;
+        }</script>
+    -->
+
+
+</body></html>

@@ -1,0 +1,431 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="DIVR LABS s.r.o.">
+
+    <title>Blue Effect</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8">
+    
+<link rel="shortcut icon" href="img/favicon.ico">
+    
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="marg">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">Menu</button>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-main-collapse">
+          <ul class="nav navbar-nav menu-links">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden active">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="http://steamcommunity.com/app/522020/discussions/">Support</a>
+            </li>
+            <li>
+              <a href="http://store.steampowered.com/app/522020" class="primary">Get the game</a>
+            </li>            
+          </ul>         
+        </div>
+          
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav social">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li><a href="https://www.facebook.com/DivrLabs" class="menu-icon icon-facebook">Facebook</a></li>
+            <li><a href="https://twitter.com/DivrLabs" class="menu-icon icon-twitter">Twitter</a></li>
+            <li><a href="https://www.youtube.com/channel/UCEuCHgb6EEX1lFfRryTkn_Q" class="menu-icon icon-youtube">YouTube</a></li>
+            <li><a href="https://www.instagram.com/divrlabs/" class="menu-icon icon-instagram">Instagram</a></li>
+          </ul>
+        </div>
+
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header>
+      <div class="intro">
+        <video autoplay="autoplay" loop="loop" preload="" class="hidden-xs">
+          <source src="video/video-trailer-1-5.mp4" type="video/mp4">
+          <source src="video/video-trailer-1-5.ogv" type="video/ogg">
+          <source src="video/video-trailer-1-5.webm" type="video/webm">
+        </video> 
+
+        <div class="intro-body">
+          <div class="logo-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <h1 title="Blue Effect">                    
+                    <img src="img/header-big.png" class="main-logo">
+                  </h1>
+                  <div class="support">
+                    <strong>Available now on Steam!</strong>
+                    <a href="http://store.steampowered.com/app/522020" class="btn btn-default btn-lg">Get the game</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section bg download-section">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8">      
+         
+            
+            <a href="https://www.youtube.com/watch?v=KRYTvm00pno" rel="prettyPhoto" class="video-background">
+              <div class="play-video">Play video</div>
+            </a>
+            
+          </div>          
+          <div class="col-lg-4">      
+            <h2>Into the Abyss...</h2>
+            <p>Play a game that will equally test your skill and your bravery. Dropped off in a dark, forgotten world, you are armed with your futuristic Blue Effect orb to light your way, and your beam pistol for protection, as you are pit against malicious creatures. Biomechanical beings that were said to be a myth. Will you fade away into the darkness or survive to see the light?</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    
+    <section id="specs" class="content-section bg download-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="row">
+            
+          <div class="col-md-4">
+            <img src="img/icon-gun.svg" alt="Little Buddy" class="img-responsive">
+            <h4>Little Buddy</h4>
+            <p>A deadly precise laser pistol that packs a punch, vaporizing anything in its path. And if anything gets too close, the pistol acts as a heavy hitting melee weapon.</p>
+          </div>
+          
+          <div class="col-md-4">
+            <img src="img/icon-enlightenment.svg" alt="Enlightenment" class="img-responsive"> 
+            <h4>Enlightenment</h4>
+            <p>State of the art illumination orb technology that works fluidly with your body movement, making it easy for you to toss the orb and light up dark areas.</p>            
+          </div>
+          
+          <div class="col-md-4">
+            <img src="img/icon-blue-effect.svg" alt="Blue Effect" class="img-responsive"> 
+            <h4>Blue Effect</h4>
+            <p>A rare energy source that powers your equipment and is the catalyst for your mission, the people that hired, and the events that will unfold.</p>            
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>    
+
+    <!-- Download Section -->
+    <section id="gallery" class="content-section download-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-12">
+            <h2>Gallery</h2>
+
+            <div class="col-md-4 portfolio-item">
+              <a href="https://www.youtube.com/watch?v=31t4Elal360&amp;width=1000&amp;height=600" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/play_mixed_reality.jpg">
+              </a>
+            </div>
+
+             <div class="col-md-4 portfolio-item">
+              <a href="https://www.youtube.com/watch?v=KRYTvm00pno&amp;width=1000&amp;height=600" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/play_trailer.jpg">
+              </a>
+            </div>
+
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/002.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/002nahled.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/004.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/004nahled.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/003.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/003nahled.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/005.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/005nahled.jpg" alt="">
+              </a>
+            </div>
+            
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/006.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/006nahled.jpg" alt="">
+              </a>
+            </div>
+
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/007.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/007nahled.jpg" alt="">
+              </a>
+            </div>  
+            
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/008.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/008nahled.jpg" alt="">
+              </a>
+            </div>            
+
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/009.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/009nahled.jpg" alt="">
+              </a>
+            </div> 
+            
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/009A.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/009Anahled.jpg" alt="">
+              </a>
+            </div>             
+            
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/010.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/010nahled.jpg" alt="">
+              </a>
+            </div>
+            
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/011.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/011nahled.jpg" alt="">
+              </a>
+            </div>            
+            
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/012.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/012nahled.jpg" alt="">
+              </a>
+            </div>
+            
+            <div class="col-md-4 portfolio-item">
+              <a href="img/gallery/013.jpg" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/013nahled.jpg" alt="">
+              </a>
+            </div>     
+            
+             
+            <div class="col-md-4 portfolio-item">
+              <a href="https://www.youtube.com/watch?v=f3ocbOwVrm0&amp;width=1000&amp;height=600" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/youtube01.jpg" alt="">
+              </a>
+            </div>            
+            
+            <div class="col-md-4 portfolio-item">
+              <a href="https://www.youtube.com/watch?v=5fARBtrhOCg&amp;width=1000&amp;height=600" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/youtube02.jpg" alt="">
+              </a>
+            </div>
+            
+            <div class="col-md-4 portfolio-item">
+              <a href="https://www.youtube.com/watch?v=nHjLuKZ4V0Q&amp;width=1000&amp;height=600" rel="prettyPhoto[pp_gal]">
+                <img class="img-responsive" src="img/gallery/youtube03.jpg" alt="">
+              </a>
+            </div>     
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+     <!-- About Section -->
+    <section id="about" class="content-section download-section">
+        <div class="container">    
+     <div class="row">
+    <div class="col-md-12 topp">
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active item-active">
+              <div class="row">
+                <div class="">
+                  <p class="testmonial">"Yes, my heart is still beating out of my chest"</p>
+                  <p class="who">VR Today Magazine</p>
+                </div>
+              </div>
+          </div>
+        
+      
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <img src="img/arrow-left.png">
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+         <img src="img/arrow-right.png">
+      </a>
+      </div>                          
+    </div>
+  </div>
+     </div>
+          </div>
+    </section>
+
+    
+    <section id="email" class="content-section bg download-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-12">    
+
+            <img src="img/lumos-logo.svg" class="lumos-logo" alt="Lumos">
+            <p>Be advised all remaining energy source Blue Effect is owned and controlled by Lumos Corp. <span class="visible-sm-inline visible-xs-inline">Subscribe here to receive the latest press releases, videos, adventures and photos from our game Blue Effect.</span></p>
+            <p class="hidden-sm hidden-xs">Subscribe here to receive the latest press releases, videos, adventures and photos from our game Blue Effect.</p>
+            <!-- Begin MailChimp Signup Form --> 
+            <div class="sign-up">
+              <form action="//divrlabs.us13.list-manage.com/subscribe/post?u=8a59eb8c5721d8a3b7324cf6d&amp;id=2a7164db18" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required="">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8a59eb8c5721d8a3b7324cf6d_2a7164db18" tabindex="-1" value=""></div>
+                <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-lg">
+
+              </form> 
+            </div>
+            
+            <a href="https://drive.google.com/drive/folders/0BxOImHZ9DBXMbW1Vcy1BRERTalU?usp=sharing" class="open-lumos-document" target="_blank"><img src="img/icon-lumos-document.svg" alt="Download Press Kit">Download Press Kit</a>
+            <!--End mc_embed_signup-->    
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="bg download-section">
+      <div class="download-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-7 col-xs-12">
+              <div class="row">
+                <div class="col-md-2 vive-logo hidden-sm">                  
+                  <img src="img/vive-logo.png" class="img-responsive" alt="Vive">
+                </div>
+                <div class="col-md-9">
+                  
+                  <div class="credits-left">
+                    <h4>MINIMUM SYSTEM REQUIREMENTS:</h4>
+                    <p>OS: Windows 10</p>
+                    <p>Processor: Intel i5-4590</p>
+                    <p>Memory: 8 GB RAM</p>
+                    <p>Grahics: NVIDIA GeForce GTX 970</p>
+                    <p>DirectX: Version 11</p>
+                    <p>Storage: 10GB available space</p>
+                    <br>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5 col-xs-12">
+              <div class="credits-right text-right">
+                <h4>CREATED BY:</h4>
+                <div class="divr-logo">
+                  <a href="http://divrlabs.com/">
+                  <img src="img/divr-logo.svg" alt="DIVR">
+                  </a>
+                </div>
+                <div class="social">
+                  <ul>
+                    <li><a href="https://www.facebook.com/DivrLabs" class="menu-icon inverse icon-facebook">Facebook</a></li>
+                    <li><a href="https://twitter.com/DivrLabs" class="menu-icon inverse icon-twitter">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCEuCHgb6EEX1lFfRryTkn_Q" class="menu-icon inverse icon-youtube">YouTube</a></li>
+                    <li><a href="https://www.instagram.com/divrlabs/" class="menu-icon inverse icon-instagram">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/10879705" class="menu-icon inverse icon-linkedin">Linked In</a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="text-muted copyright">Copyright © All rights reserved 2016 <a href="http://divrlabs.com/">DIVR LABS s.r.o.</a></p>
+            </div>
+          </div>
+        </div>
+    </div></section>
+
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-TS5D71V2WT&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+    <!-- Theme JavaScript -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81809722-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+    <script src="js/global.js"></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function () {
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+      });
+    </script>
+
+  
+
+
+</body></html>

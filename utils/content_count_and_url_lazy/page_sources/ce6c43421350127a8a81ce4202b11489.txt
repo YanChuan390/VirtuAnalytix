@@ -1,0 +1,427 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="./screenshots/resources/UberGallery.css">
+<link rel="stylesheet" type="text/css" href="./screenshots/resources/colorbox/2/colorbox.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Legend of Dungeon</title>
+<style type="text/css">
+<!--
+body {
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	background-color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #8AD3FF;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #FFFFC0;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 900px;
+	background: #000;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.quotebox {
+	width: 525px;
+	float: right;
+	position: inherit;
+	height: 425px;
+	left: 0px;
+	top: 784px;
+	padding-right: 25px;
+	padding-top: 25px;
+}
+.leftbox {
+	float: left;
+	height: 450px;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the left instead of the right, simply float these columns the opposite direction (all left instead of all right) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: right;
+	width: 200px;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 700px;
+	float: right;
+}
+#desc {
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+.versionpos {
+	position: relative;
+	top: -35px;
+	left: 0px;
+	bottom: 0px;
+	height: 2px;
+}
+#menudiv {
+	background-image: url(goblin.gif);
+	background-position: bottom;
+	padding-left: 40px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.red {
+	color: #9C392B;
+}
+#seb {
+	background-image: url(seb.gif);
+	padding-top: 100px;
+	background-repeat: no-repeat;
+}
+#dave {
+	background-image: url(dave.gif);
+	background-repeat: no-repeat;
+	height: 140px;
+	padding-top: 25px;
+}
+.tiny {font-size: x-small;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+#featurelist {
+	width: 500px;
+	float: left;
+	padding: 25px;
+	left: 50px;
+	position: relative;
+}
+#cyclops {
+	float: left;
+}
+-->
+</style>
+<script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/7ee36b0e/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="http://www.youtube.com/player_api"></script><script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="./screenshots/resources/colorbox/jquery.colorbox.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("a[rel='colorbox']").colorbox({maxWidth: "90%", maxHeight: "90%", opacity: ".5"});
+});
+</script>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script charset="utf-8" src="https://platform.twitter.com/js/timeline.16b53cc33aaa562f8f41a495bf720289.js"></script></head>
+
+<body onload="MM_preloadImages('buynow2.png','buy.gif')">
+
+<div class="container">
+  <div class="header" align="center"><img src="newlogo.PNG" width="900" height="300" id="Insert_logo"><br>
+    <br>
+    <br>
+  <!-- end .header --></div>
+  <div class="sidebar1">
+  <div align="right"><a href="buy.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Buy Now','','buy.gif',1)">
+    <img src="buynow.gif" alt="Buy Now" name="Buy Now" width="200" height="200" border="0" id="Buy Now"></a>
+  </div>
+  <div class="versionpos">
+    <p class="tiny" align="center">Current Version:<br>
+      <span class="red">
+        <a style="color:red" href="https://www.humblebundle.com/store/keyresender">
+Zombie      </a></span></p>
+</div>
+  <div id="menudiv">
+    <p align="left">
+    <a href="http://legend-of-dungeon.wikia.com/wiki/Legend_of_Dungeon_Wiki"><strong><br>
+    <br>Wiki</strong></a><strong><br>
+    <a href="http://robotloveskitty.tumblr.com/LoDFAQ">FAQ</a><br>
+      <a href="http://www.reddit.com/r/LegendofDungeon">Subreddit</a><br>
+      <a href="http://robotloveskitty.tumblr.com/">Dev Blog</a><br>
+</strong>
+      <br>
+      <br>
+      <br>
+    </p>
+  </div>
+  <div id="seb">
+    <p><span class="tiny">Charactor Design by<br>
+    </span><a href="http://quale-art.blogspot.com/">Sebastian
+Van Hijfte</a></p>
+</div>
+  <div id="dave">
+    <p align="right"><span class="tiny">Music by</span><br>
+      <a href="https://twitter.com/DDirig">David Dirig</a></p>
+  </div>
+  <p align="center">&nbsp;</p>
+    
+  <div align="center"><a class="twitter-timeline" data-chrome="transparent" href="https://twitter.com/search?q=%23LegendofDungeon" data-widget-id="329307941729607681" data-twitter-extracted-i1694378546583373845="true">Tweets about "#LegendofDungeon"</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+
+  
+  <!-- end .sidebar1 --><img src="cyclops.gif" width="200" height="250"></div>
+  
+
+  <div class="content">
+    
+          <div align="center">
+            <!-- 1. The <div> tag will contain the <iframe> (and video player) -->
+    <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Legend of Dungeon: Legend Heroes - Expansion Trailer" width="640" height="360" src="https://www.youtube.com/embed/_NyoyOc1qWk?autoplay=1&amp;controls=1&amp;autohide=1&amp;wmode=opaque&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;enablejsapi=1&amp;origin=http%3A%2F%2Frobotloveskitty.com&amp;widgetid=1"></iframe>
+   
+  <script>      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+      tag.src = "http://www.youtube.com/player_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+		  height: '360',
+          width:'640',
+          playerVars: { 'autoplay': 1, 'controls': 1,'autohide':1,'wmode':'opaque','loop':1,'rel':0,'showinfo':0 },
+          videoId: '_NyoyOc1qWk',
+          events: {
+            'onReady': onPlayerReady}
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.mute();
+      }
+</script>
+      
+  <br>
+      A 4 Player Co-op Rogue-Like-<em>like</em> Beat'em'up
+      <br>
+      with Dynamic Shading on <em>AWESOME</em> Pixel Art.
+      <br>
+      <br>
+    </div>
+    <p>
+      
+<!-- Start UberGallery 2.4.4 - Copyright (c) 2023 Chris Kankiewicz (http://www.ChrisKankiewicz.com) -->
+</p><div id="galleryWrapper">
+    
+            
+        <ul id="galleryList" class="clearfix">
+            
+                            <li><a href="./screenshots/screenshots/238280_screenshots_2013-08-18_00003.png" title="238280 screenshots 2013-08-18 00003" rel="colorbox" class="cboxElement"><img src="screenshots/resources/cache/100x100-75-7743475ba25faa6a0c02e18c520d2675.png" alt="238280 screenshots 2013-08-18 00003"></a></li>
+                            <li><a href="./screenshots/screenshots/238280_screenshots_2013-09-14_00011.png" title="238280 screenshots 2013-09-14 00011" rel="colorbox" class="cboxElement"><img src="screenshots/resources/cache/100x100-75-669582facd438ac5b3126216cf283a03.png" alt="238280 screenshots 2013-09-14 00011"></a></li>
+                            <li><a href="./screenshots/screenshots/238280_screenshots_2015-02-21_00004_1024.png" title="238280 screenshots 2015-02-21 00004 1024" rel="colorbox" class="cboxElement"><img src="screenshots/resources/cache/100x100-75-dac5fa4e6f872be824db2f84d5dddcc5.png" alt="238280 screenshots 2015-02-21 00004 1024"></a></li>
+                            <li><a href="./screenshots/screenshots/lodss130712018465543244.png" title="lodss130712018465543244" rel="colorbox" class="cboxElement"><img src="screenshots/resources/cache/100x100-75-965003a6080e91d2a3d68cd27ec3aea6.png" alt="lodss130712018465543244"></a></li>
+                            <li><a href="./screenshots/screenshots/screen1.png" title="screen1" rel="colorbox" class="cboxElement"><img src="screenshots/resources/cache/100x100-75-6a272c4c309c49a773d9acdfd5525bc3.png" alt="screen1"></a></li>
+                            <li><a href="./screenshots/screenshots/screen2.png" title="screen2" rel="colorbox" class="cboxElement"><img src="screenshots/resources/cache/100x100-75-383c02ec716983a50b700ddaf9d2c423.png" alt="screen2"></a></li>
+                        
+        </ul>
+        
+        
+    
+    <div id="galleryFooter" class="clearfix">
+
+                
+    </div>
+    
+</div>
+<!-- End UberGallery - Distributed under the MIT license: http://www.opensource.org/licenses/mit-license.php --><br>
+
+        <p></p>
+          
+    <div class="ok">
+      <div class="leftbox"><br>
+        <br>
+<br>
+      <img src="minotaur.gif" width="147" height="285"></div>
+            
+      <div class="quotebox">
+              <p align="right">"<span class="red">It's challenging to play, pretty to watch and heaps of fun,<br>
+even playing with complete strangers.</span>"  <br>
+- <a href="http://www.joystiq.com/2013/04/09/legend-of-dungeon-devs-secret-to-saving-money-live-in-a-tree/">Joystiq</a> </p>
+<p align="right">"<span class="red">Legend of Dungeon looks scrumptious</span>"  <br>
+  - <a href="http://www.rockpapershotgun.com/2013/03/12/legend-of-dungeon-randomizing-everything-even-music/">Rock, Paper, Shotgun </a></p>
+              <p align="right">"<span class="red">Easily one of my favorite surprises at PAX East this year</span>" <br> 
+              - <a href="http://www.gamezone.com/previews/2013/03/30/pax-east-2013-legend-of-dungeon-is-a-beautiful-must-play-indie">GameZone</a></p>
+              <p align="right">"<span class="red">Light makes this game look fantastic, 
+                
+                and I've never seen it used this well
+in any other game.</span>" <br>
+- <a href="http://mashthosebuttons.com/2013/04/scrambling-to-stay-alive-in-legend-of-dungeon-preview/">Mash Those Buttons</a></p>
+              <p align="right">"<span class="red">If nothing else, Legend of Dungeon is a master class in how to make the tried and true feel fresh again.</span>" <br> 
+              - <a href="http://www.gamezebo.com/games/legend-dungeon/review">Gamezebo</a></p>
+            </div>
+          
+             
+               
+    </div>
+          
+          <div id="desc">
+          <p align="justify">You and up to three companions are looking for treasure and glory in a dark flickering dungeon full of deadly. Legend has it there is a massive treasure all the way down on the 26th floor. Your quest: get the treasure, and make it back alive. Which you won't, you'll die...</p>
+<p align="right">            ...the game is about dying, and treasure!</p>
+<p align="justify">Legend of Dungeon is a randomly generated action RPG <a href="http://en.wikipedia.org/wiki/Beat_'em_up">Beat'em'up</a> with heavy <a href="http://en.wikipedia.org/wiki/Roguelike">Rogue-like</a> elements, striking visuals, and dynamic music.</p>
+</div>
+
+</div>
+
+
+<div id="featurelist">
+           <ul>
+             <li>1 to 4 Player Cooperative Gameplay (same PC, multiple controllers)&nbsp;
+             </li>
+             <li>Randomized Dungeon&nbsp;
+             </li>
+             <li>Full Controller support             </li>
+             <li>Real-Time Beat'em'up style combat&nbsp;
+             </li>
+             <li>Permadeath 
+               (with 2+ players, you become a ghost, and collect spirit
+               orbs to resurrect)&nbsp;
+             </li>
+             <li>Randomized Dynamic Music built from over 300 tracks!&nbsp;
+             </li>
+             <li>Dynamically Shaded Pixel Art!&nbsp;</li>
+             <li>Unlockable Classes
+             </li>
+             <li>Tameable Pets
+             </li>
+             <li>VR Mode!
+             </li>
+             <li>Online Score Board&nbsp;
+             </li>
+             <li>Awesome Weapons and Magic!&nbsp;
+             </li>
+             <li>Creepy Monsters and Bosses&nbsp;
+             </li>
+             <li>Made in Unity - For Windows,  Mac and Linux! Android ports coming soon!</li>
+      </ul>
+    <p></p>
+    
+  <!-- end .content --></div>
+  
+  
+  <div class="footer"><!-- end .footer -->
+    <table width="100%" border="0" cellpadding="5">
+      <tbody><tr>
+        <td width="170" align="center" class="red"><a href="http://robotloveskitty.tumblr.com/"><img src="icons/tumblr.png" alt="Facebook" width="32" height="32" border="0"></a>&nbsp; <a href="http://www.facebook.com/RobotLovesKitty/"><img src="icons/facebook.png" alt="Facebook" width="32" height="32" border="0"></a>&nbsp; <a href="https://twitter.com/robotloveskitty"><img src="icons/twitter.png" alt="Twitter" width="32" height="32" border="0"></a>&nbsp; <a href="http://www.youtube.com/user/aionskull"> <img src="icons/youtube.png" alt="Youtube" width="32" height="32" border="0"></a></td>
+        <td width="588" align="center" valign="middle" class="red">Legend of Dungeon™ ©  Robot Loves Kitty™ 2012. All rights reserved. <a href="mailto:robot@robotloveskitty.com">Contact</a> | <a href="http://www.robotloveskitty.com/privacy.html">Privacy </a>| <a href="http://robotloveskitty.com/press/sheet.php?p=Legend_of_Dungeon">Press</a><br></td>
+        <td width="104" align="center" valign="middle"><a href="http://robotloveskitty.com/"> <img src="rlksmall.gif" alt="" width="66" height="56" border="0" align="top"></a></td>
+      </tr>
+    </tbody></table>
+  </div>
+<!-- end .container --></div>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; visibility: visible;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html?origin=http%3A%2F%2Frobotloveskitty.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>

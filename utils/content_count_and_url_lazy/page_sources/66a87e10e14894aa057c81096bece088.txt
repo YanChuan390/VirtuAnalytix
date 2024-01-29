@@ -1,0 +1,773 @@
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete" style="touch-action: pan-x; overscroll-behavior: none; scroll-behavior: auto;"><head><meta name="generator" content="Hugo 0.117.0"><meta charset="utf-8"><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link nonce="2726c7f26c" href="/main.fe06b.css" rel="stylesheet" preload=""><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css" integrity="sha256-5oR7lL1eUeRKAkRd76G2tJ1pNrqsKIOmJZrzOIpq8Gc=" crossorigin="anonymous" id="fluid-css" disabled=""><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover"><meta http-equiv="x-ua-textlayoutmetrics" content="gdi"><title>Firesprite - A PlayStation Studio</title><meta name="description" content="Firesprite are an innovative First Party PlayStation development studio based in Liverpool, UK, with over 200 experienced developers creating cutting edge games."><meta name="keywords" content="games,videogames,studio,sony,sony playstion,playstation,playstation 4,playstation 5,ps4,ps5,ps4 pro,ps4,video games studio,video games,video games development,video games development studio,video games development studio liverpool,video games development studio uk,video games development studio north west,video games development studio north west uk,video games development studio north west england,video games development studio north west england uk,video games development studio"><meta property="og:title" content="Firesprite - A PlayStation Studio"><meta property="og:description" content="Firesprite are an innovative First Party PlayStation development studio based in Liverpool, UK, with over 200 experienced developers creating cutting edge games."><meta property="og:type" content="website"><meta property="og:url" content="/"><meta itemprop="image" content="/images/share/fs_navy_1920x1080-web-preview-placeholder_hu4a85cca6c7ab15eb64b0dc2323a6be7c_178178_1200x630_fill_q90_mitchellnetravali_center.jpg"><meta property="og:image" content="/images/share/fs_navy_1920x1080-web-preview-placeholder_hu4a85cca6c7ab15eb64b0dc2323a6be7c_178178_1200x630_fill_q90_mitchellnetravali_center.jpg"><meta name="twitter:image" content="/images/share/fs_navy_1920x1080-web-preview-placeholder_hu4a85cca6c7ab15eb64b0dc2323a6be7c_178178_1200x630_fill_q90_mitchellnetravali_center.jpg"><meta name="twitter:image:src" content="/images/share/fs_navy_1920x1080-web-preview-placeholder_hu4a85cca6c7ab15eb64b0dc2323a6be7c_178178_1200x630_fill_q90_mitchellnetravali_center.jpg"><meta name="twitter:title" content="Firesprite - A PlayStation Studio"><meta name="twitter:description" content="Firesprite are an innovative First Party PlayStation development studio based in Liverpool, UK, with over 200 experienced developers creating cutting edge games."><meta name="robots" content="index,follow"><meta name="googlebot" content="index,follow"><script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/7ee36b0e/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js" nonce="2726c7f26c"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-G70V015YH3&amp;l=dataLayer&amp;cx=c" nonce="2726c7f26c"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Firesprite - PlayStation development studio based in Liverpool, UK","url":"/"}</script><base href="/"><link rel="canonical" href="/"><link rel="apple-touch-icon" sizes="512x512" href="/images/favicon/android-chrome-384x384_hu510cb71b802d5447166d840be08d18a9_11991_512x512_fill_mitchellnetravali_smart1_3.png"><link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/android-chrome-384x384_hu510cb71b802d5447166d840be08d18a9_11991_180x180_fill_mitchellnetravali_smart1_3.png"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/android-chrome-384x384_hu510cb71b802d5447166d840be08d18a9_11991_96x96_fill_mitchellnetravali_smart1_3.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/android-chrome-384x384_hu510cb71b802d5447166d840be08d18a9_11991_32x32_fill_mitchellnetravali_smart1_3.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/android-chrome-384x384_hu510cb71b802d5447166d840be08d18a9_11991_16x16_fill_mitchellnetravali_smart1_3.png"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#055e74"><meta name="theme-color" content="#055e74"><link rel="alternate" href="/index.xml" type="application/rss+xml" title="Firesprite"><style>body{opacity:0}.loading{opacity:0;position:fixed;transform:translateZ(5px);height:100vh;width:100vw;top:0;left:0;clip-path:polygon(0 0,100% 0,100% 100%,0 100% );-webkit-clip-path:polygon(0 0,100% 0,100% 100%,0 100% );z-index:10000}.loading>.container{position:relative;background:#ff6969;height:100vh;width:100vw}.loading>.container>.holder{position:absolute;top:50%;left:50%;width:62px;height:157px;margin-top:-80px;margin-left:-31px}</style><script nonce="2726c7f26c" src="https://identity.netlify.com/v1/netlify-identity-widget.js" async=""></script><meta class="foundation-mq" name="foundation-mq" content=""><script async="" src="https://www.youtube.com/iframe_api"></script></head><body class="default home a-playstation-studio" data-animation="true" style="opacity: 1; visibility: inherit; height: 2989px; touch-action: pan-x; overscroll-behavior: none; scroll-behavior: auto;"><!--[if lt IE 10]><div class=oldBrowser><div class=content><h1>Firesprite</h1><h2>Old Browser</h2>You are using an <strong>outdated</strong> browser. Please update your browser.<ul id=browserlist><li id=chrome><a href=https://www.google.com/intl/en/chrome/browser/><div class=icon></div><h1>Google Chrome</h1><span>Download here</span></a></li><li id=firefox><a href="https://www.mozilla.org/en-US/firefox/new/?utm_source=firefox-com&utm_medium=referral"><div class=icon></div><h1>Mozilla Firefox</h1><span>Download here</span></a></li><li id=safari><a href=http://www.apple.com/safari/><div class=icon></div><h1>Safari</h1><span>Download here</span></a></li><li id=opera><a href="http://www.opera.com/?utm_expid=8257061-8.I2qBJab0QEqZAoVjI3nVDw.0&utm_referrer=http%3A%2F%2Fbrowsehappy.com%2F"><div class=icon></div><h1>Opera</h1><span>Download here</span></a></li><li id=ie><a href=http://windows.microsoft.com/en-us/internet-explorer/download-ie><div class=icon></div><h1>Internet Explorer</h1><span>Download here</span></a></li></ul><div class=footer>For more information please visit <a href=http://browsehappy.com/>Browse Happy</a></div></div></div><![endif]--><div id="loader-overlay" class="loading" style="opacity: 0; visibility: hidden; clip-path: polygon(100% 0px, 100% 0px, 100% 100%, 100% 100%);"><div class="container"><div class="holder"><div class="loader"><img src="/images/loading.gif" alt="loading" width="62" height="157"></div></div></div></div><header id="header-menu" class="nav sticky-container"><div class="top-bar sticky hide-for-small show-for-large"><div class="grid-container top-bar-container"><div class="top-bar-left"><ul class="menu"><li class="menu-logo"><a href="/" rel="home" class="logo-main" data-turbo="false"><img data-src="/images/uploads/logo-full-2021update-red.png?nf_resize=fit&amp;w=256&amp;h=130" alt="Firesprite" width="256" height="130" data-sizes="auto" class="lazyautosizes lazyloaded" sizes="256px" src="/images/uploads/logo-full-2021update-red.png?nf_resize=fit&amp;w=256&amp;h=130"></a></li></ul></div><div class="top-bar-right" style=""><ul class="dropdown menu" data-dropdown-menu="7q3chf-dropdown-menu" role="menubar"><li role="none"><a href="/news" data-turbo="false" role="menuitem">News</a></li><li role="none"><a href="/games" data-turbo="false" role="menuitem">Games</a></li><li role="none"><a href="/studio" data-turbo="false" role="menuitem">About Us</a></li><li role="none"><a href="/careers" data-turbo="false" role="menuitem">Jobs
+<span class="badge-wrapper" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><span class="badge"><span class="badge-count">13</span></span></span></a></li><li role="none"><a href="/support" data-turbo="false" role="menuitem">Support</a></li><li role="none"><a href="/contact" data-turbo="false" role="menuitem">Contact</a></li></ul></div></div></div><div class="top-bar-small title-bar hide-for-large"><div class="grid-x align-center-middle"><div class="auto cell"><a href="/" rel="home" class="logo-main"><img data-src="/images/uploads/logo-full-2021update-red.png" alt="Firesprite" class="lazyload"></a></div><div class="shrink cell text-right"><button class="menu-icon" type="button" data-toggle="offCanvas" aria-expanded="false" aria-controls="offCanvas">
+<img src="/images/menu.svg" width="25" height="22" alt="Open Menu" aria-label="Open Menu"></button></div></div></div></header><turbo-frame id="content"><main id="smooth-wrapper" style="inset: 0px; width: 100%; height: 100%; position: fixed; overflow: hidden;"><div id="smooth-content" style="translate: none; rotate: none; scale: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); box-sizing: border-box; width: 100%; overflow: visible;"><div id="trigger-header" class="master-header full" style="--my-width: 100%;"><section id="section-header"><div class="hero-header container"><div class="hero-header-inner"><div class="contentWrapper" style="opacity: 1; translate: none; rotate: none; scale: none; transform: translate3d(0px, -0.0011%, 0px);"><div class="grid-container"><div class="grid-y grid-frame"><div class="cell auto cell-block-container"><div class="grid-x align-middle p-t-50"><div class="cell small-11 large-8"><div class="grid-x align-middle"><div class="cell small-12"><h4 class="parent-header" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">A PlayStation Studio</h4></div><div id="header-summary" class="cell small-12"><h1 id="game-development-at-the-cutting-edge" style=""><div class="word" style="display: block; text-align: start; position: relative;"><div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Game</div> </div><div class="word" style="display: block; text-align: start; position: relative;"><div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">development</div> </div><div class="word" style="display: block; text-align: start; position: relative;"><div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">at</div> <div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">the</div> <div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">cutting</div> </div><div class="word" style="display: block; text-align: start; position: relative;"><div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">edge.</div></div></h1></div></div></div></div><div class="cell"><div class="partners" style="opacity: 1;"><div class="grid-x grid-margin-y align-middle m-b-10"><div class="cell shrink"><a href="https://playstation.com"><img src="/images/partners/psstudio.svg" alt="Playstation studio"></a></div></div></div></div></div></div></div></div></div><div class="imageWrapper" data-anim="-100" style="background-image: url(&quot;/images/headers/hcom-recentred-test2-compressed_huc79cd71deb158503f00ce179c146bf98_276583_1920x1080_fill_q50_h2_mitchellnetravali_smart1.webp&quot;); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><div class="video-vimeo video-player" style="opacity: 1; visibility: inherit;"><video autoplay="" muted="" loop="" preload="auto" disablepictureinpicture="" playsinline="" id="vimeo-player">
+<source src="https://player.vimeo.com/progressive_redirect/playback/829454313/rendition/1080p/file.mp4?loc=external&amp;log_user=0&amp;signature=4d43bdf962998d13dd5a1a35eec9d4d311b89d96493db3b1bda1b703c6291d7d" type="video/mp4"></video></div></div></div></section></div><div id="trigger-news"><section id="section-news"><div id="block-news" class="grid-container full block block-image"><div class="contentWrapper" style="opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><div class="grid-container"><div class="grid-y align-center-middle"><div class="cell"><h2 class="f-c-primary">Latest News</h2><ul class="tabs taxonomy menu m-b-30" data-tabs="vsyx6e-tabs" id="news-tabs" role="tablist"><li class="tabs-title is-active" role="presentation"><a href="#all" role="tab" aria-controls="all" aria-selected="true" id="all-label" tabindex="0">All</a></li><li class="tabs-title" role="presentation"><a href="#careers" data-tabs-target="careers" role="tab" aria-controls="careers" aria-selected="false" id="careers-label" tabindex="-1">careers</a></li><li class="tabs-title" role="presentation"><a href="#game" data-tabs-target="game" role="tab" aria-controls="game" aria-selected="false" id="game-label" tabindex="-1">game</a></li><li class="tabs-title" role="presentation"><a href="#press" data-tabs-target="press" role="tab" aria-controls="press" aria-selected="false" id="press-label" tabindex="-1">press</a></li><li class="tabs-title" role="presentation"><a href="#studio" data-tabs-target="studio" role="tab" aria-controls="studio" aria-selected="false" id="studio-label" tabindex="-1">studio</a></li></ul><div class="tabs-content text-left" data-tabs-content="news-tabs"><div class="tabs-panel is-active" id="all" role="tabpanel" aria-labelledby="all-label"><div class="show-for-large"><div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-2 large-up-3 text-left"><div class="cell i-0"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/sprite-sidekicks/&quot;"><div class="card-image-wrapper"><img class=" lazyloaded" alt="Sidekick Gaming Mental Health Journals" src="/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" width="400" height="223" data-size="auto" data-src="/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x" srcset="/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>18 August 2023</small><a href="/news/2023/08/sprite-sidekicks/">Sidekick Gaming Mental Health Journals</a></h4></header></div></div></div></div><div class="cell i-1"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/global-butterflies-language-pronouns-workshop/&quot;"><div class="card-image-wrapper"><img class=" lazyloaded" alt="Global Butterflies Language &amp; Pronouns Workshop" src="/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" width="400" height="223" data-size="auto" data-src="/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x" srcset="/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>10 August 2023</small><a href="/news/2023/08/global-butterflies-language-pronouns-workshop/">Global Butterflies Language &amp; Pronouns Workshop</a></h4></header></div></div></div></div><div class="cell i-2"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/meet-the-sprites-chris-mccann/&quot;"><div class="card-image-wrapper"><img class=" lazyloaded" alt="Meet the Sprites: Chris McCann" src="/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" width="400" height="223" data-size="auto" data-src="/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" data-srcset="/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x" srcset="/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x"></div><div class="card-section"><div><header><h4><small>8 August 2023</small><a href="/news/2023/08/meet-the-sprites-chris-mccann/">Meet the Sprites: Chris McCann</a></h4></header></div></div></div></div></div></div><div class="hide-for-large news-slider"><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/sprite-sidekicks/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Sidekick Gaming Mental Health Journals" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>18 August 2023</small><a href="/news/2023/08/sprite-sidekicks/">Sidekick Gaming Mental Health Journals</a></h4></header></div></div></div></div><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/global-butterflies-language-pronouns-workshop/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Global Butterflies Language &amp; Pronouns Workshop" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>10 August 2023</small><a href="/news/2023/08/global-butterflies-language-pronouns-workshop/">Global Butterflies Language &amp; Pronouns Workshop</a></h4></header></div></div></div></div><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/meet-the-sprites-chris-mccann/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Meet the Sprites: Chris McCann" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" data-srcset="/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x"></div><div class="card-section"><div><header><h4><small>8 August 2023</small><a href="/news/2023/08/meet-the-sprites-chris-mccann/">Meet the Sprites: Chris McCann</a></h4></header></div></div></div></div></div></div><div class="tabs-panel" id="careers" role="tabpanel" aria-labelledby="careers-label" aria-hidden="true"><div class="show-for-large"><div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-2 large-up-3 text-left"><div class="cell i-0"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/meet-the-sprites-chris-mccann/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Meet the Sprites: Chris McCann" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" data-srcset="/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x"></div><div class="card-section"><div><header><h4><small>8 August 2023</small><a href="/news/2023/08/meet-the-sprites-chris-mccann/">Meet the Sprites: Chris McCann</a></h4></header></div></div></div></div><div class="cell i-1"><div class="card card-button" onclick="window.location=&quot;/news/2023/07/sprite-stories-pete/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Sprite Stories: Pete" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/sprite-stories_webnews_1920x1080_hu540a07cdb003d8afb41a504cf7ea2882_2794867_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" data-srcset="/images/news/sprite-stories_webnews_1920x1080_hu540a07cdb003d8afb41a504cf7ea2882_2794867_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/sprite-stories_webnews_1920x1080_hu540a07cdb003d8afb41a504cf7ea2882_2794867_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/sprite-stories_webnews_1920x1080_hu540a07cdb003d8afb41a504cf7ea2882_2794867_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x"></div><div class="card-section"><div><header><h4><small>3 July 2023</small><a href="/news/2023/07/sprite-stories-pete/">Sprite Stories: Pete</a></h4></header></div></div></div></div><div class="cell i-2"><div class="card card-button" onclick="window.location=&quot;/news/2023/04/meet-the-sprites-zaid-shaikh/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Meet the Sprites: Zaid Shaikh" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/meet-the-sprites_webnews_1920x1080_v01_hu2df626b3464f4948dbb262599f9ebd4d_2755019_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" data-srcset="/images/news/meet-the-sprites_webnews_1920x1080_v01_hu2df626b3464f4948dbb262599f9ebd4d_2755019_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/meet-the-sprites_webnews_1920x1080_v01_hu2df626b3464f4948dbb262599f9ebd4d_2755019_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/meet-the-sprites_webnews_1920x1080_v01_hu2df626b3464f4948dbb262599f9ebd4d_2755019_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x"></div><div class="card-section"><div><header><h4><small>24 April 2023</small><a href="/news/2023/04/meet-the-sprites-zaid-shaikh/">Meet the Sprites: Zaid Shaikh</a></h4></header></div></div></div></div></div></div><div class="hide-for-large news-slider"><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/meet-the-sprites-chris-mccann/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Meet the Sprites: Chris McCann" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" data-srcset="/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/meet-the-sprites_webnews_1920x1080_v04_hu2df626b3464f4948dbb262599f9ebd4d_3100181_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x"></div><div class="card-section"><div><header><h4><small>8 August 2023</small><a href="/news/2023/08/meet-the-sprites-chris-mccann/">Meet the Sprites: Chris McCann</a></h4></header></div></div></div></div><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/07/sprite-stories-pete/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Sprite Stories: Pete" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/sprite-stories_webnews_1920x1080_hu540a07cdb003d8afb41a504cf7ea2882_2794867_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" data-srcset="/images/news/sprite-stories_webnews_1920x1080_hu540a07cdb003d8afb41a504cf7ea2882_2794867_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/sprite-stories_webnews_1920x1080_hu540a07cdb003d8afb41a504cf7ea2882_2794867_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/sprite-stories_webnews_1920x1080_hu540a07cdb003d8afb41a504cf7ea2882_2794867_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x"></div><div class="card-section"><div><header><h4><small>3 July 2023</small><a href="/news/2023/07/sprite-stories-pete/">Sprite Stories: Pete</a></h4></header></div></div></div></div><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/04/meet-the-sprites-zaid-shaikh/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Meet the Sprites: Zaid Shaikh" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/meet-the-sprites_webnews_1920x1080_v01_hu2df626b3464f4948dbb262599f9ebd4d_2755019_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" data-srcset="/images/news/meet-the-sprites_webnews_1920x1080_v01_hu2df626b3464f4948dbb262599f9ebd4d_2755019_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/meet-the-sprites_webnews_1920x1080_v01_hu2df626b3464f4948dbb262599f9ebd4d_2755019_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/meet-the-sprites_webnews_1920x1080_v01_hu2df626b3464f4948dbb262599f9ebd4d_2755019_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x"></div><div class="card-section"><div><header><h4><small>24 April 2023</small><a href="/news/2023/04/meet-the-sprites-zaid-shaikh/">Meet the Sprites: Zaid Shaikh</a></h4></header></div></div></div></div></div></div><div class="tabs-panel" id="game" role="tabpanel" aria-labelledby="game-label" aria-hidden="true"><div class="show-for-large"><div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-2 large-up-3 text-left"><div class="cell i-0"><div class="card card-button" onclick="window.location=&quot;/news/2023/07/horizon-call-of-the-mountain-wins-at-the-develop-star-awards/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Horizon Call of the Mountain Wins at the Develop:Star Awards" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/_hu2be605d2eb8ed88792e641939bd7114f_1122012_25882035bfd15fc6ca55413f2f43d55c.webp" data-srcset="/images/news/_hu2be605d2eb8ed88792e641939bd7114f_1122012_25882035bfd15fc6ca55413f2f43d55c.webp 1x,/images/news/_hu2be605d2eb8ed88792e641939bd7114f_1122012_a2d13e360930381b2fbae42fd7f27b13.webp 2x,/images/news/_hu2be605d2eb8ed88792e641939bd7114f_1122012_02a703a873ac6e42fd658c3a6378eee3.webp 3x"></div><div class="card-section"><div><header><h4><small>13 July 2023</small><a href="/news/2023/07/horizon-call-of-the-mountain-wins-at-the-develop-star-awards/">Horizon Call of the Mountain Wins at the Develop:Star Awards</a></h4></header></div></div></div></div><div class="cell i-1"><div class="card card-button" onclick="window.location=&quot;/news/2023/03/team-interview-horizon-call-of-the-mountain/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Team Interview: Horizon Call of The Mountain " src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/htcom_mq09_screenshot_clean_04-copy_hu051219faef896d267cc8004c23a58742_157667_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/htcom_mq09_screenshot_clean_04-copy_hu051219faef896d267cc8004c23a58742_157667_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/htcom_mq09_screenshot_clean_04-copy_hu051219faef896d267cc8004c23a58742_157667_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/htcom_mq09_screenshot_clean_04-copy_hu051219faef896d267cc8004c23a58742_157667_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>9 March 2023</small><a href="/news/2023/03/team-interview-horizon-call-of-the-mountain/">Team Interview: Horizon Call of The Mountain</a></h4></header></div></div></div></div><div class="cell i-2"><div class="card card-button" onclick="window.location=&quot;/news/2023/03/horizon-call-of-the-mountain-team-interview/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Team Interview: Horizon Call of The Mountain " src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/htcom_safari_screenshot_clean_02-copy_hu9158e0e5adf592f8bfbded4d3261d6e3_232902_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/htcom_safari_screenshot_clean_02-copy_hu9158e0e5adf592f8bfbded4d3261d6e3_232902_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/htcom_safari_screenshot_clean_02-copy_hu9158e0e5adf592f8bfbded4d3261d6e3_232902_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/htcom_safari_screenshot_clean_02-copy_hu9158e0e5adf592f8bfbded4d3261d6e3_232902_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>7 March 2023</small><a href="/news/2023/03/horizon-call-of-the-mountain-team-interview/">Team Interview: Horizon Call of The Mountain</a></h4></header></div></div></div></div></div></div><div class="hide-for-large news-slider"><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/07/horizon-call-of-the-mountain-wins-at-the-develop-star-awards/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Horizon Call of the Mountain Wins at the Develop:Star Awards" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/_hu2be605d2eb8ed88792e641939bd7114f_1122012_25882035bfd15fc6ca55413f2f43d55c.webp" data-srcset="/images/news/_hu2be605d2eb8ed88792e641939bd7114f_1122012_25882035bfd15fc6ca55413f2f43d55c.webp 1x,/images/news/_hu2be605d2eb8ed88792e641939bd7114f_1122012_a2d13e360930381b2fbae42fd7f27b13.webp 2x,/images/news/_hu2be605d2eb8ed88792e641939bd7114f_1122012_02a703a873ac6e42fd658c3a6378eee3.webp 3x"></div><div class="card-section"><div><header><h4><small>13 July 2023</small><a href="/news/2023/07/horizon-call-of-the-mountain-wins-at-the-develop-star-awards/">Horizon Call of the Mountain Wins at the Develop:Star Awards</a></h4></header></div></div></div></div><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/03/team-interview-horizon-call-of-the-mountain/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Team Interview: Horizon Call of The Mountain " src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/htcom_mq09_screenshot_clean_04-copy_hu051219faef896d267cc8004c23a58742_157667_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/htcom_mq09_screenshot_clean_04-copy_hu051219faef896d267cc8004c23a58742_157667_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/htcom_mq09_screenshot_clean_04-copy_hu051219faef896d267cc8004c23a58742_157667_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/htcom_mq09_screenshot_clean_04-copy_hu051219faef896d267cc8004c23a58742_157667_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>9 March 2023</small><a href="/news/2023/03/team-interview-horizon-call-of-the-mountain/">Team Interview: Horizon Call of The Mountain</a></h4></header></div></div></div></div><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/03/horizon-call-of-the-mountain-team-interview/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Team Interview: Horizon Call of The Mountain " src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/htcom_safari_screenshot_clean_02-copy_hu9158e0e5adf592f8bfbded4d3261d6e3_232902_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/htcom_safari_screenshot_clean_02-copy_hu9158e0e5adf592f8bfbded4d3261d6e3_232902_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/htcom_safari_screenshot_clean_02-copy_hu9158e0e5adf592f8bfbded4d3261d6e3_232902_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/htcom_safari_screenshot_clean_02-copy_hu9158e0e5adf592f8bfbded4d3261d6e3_232902_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>7 March 2023</small><a href="/news/2023/03/horizon-call-of-the-mountain-team-interview/">Team Interview: Horizon Call of The Mountain</a></h4></header></div></div></div></div></div></div><div class="tabs-panel" id="press" role="tabpanel" aria-labelledby="press-label" aria-hidden="true"><div class="show-for-large"><div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-2 large-up-3 text-left"><div class="cell i-0"><div class="card card-button" onclick="window.location=&quot;/news/2021/09/firesprite-limited-completes-acquisition-of-fabrik-games-limited/&quot;"><div class="card-image-wrapper"><img data-src="/images/uploads/fabrik-and-firesprite-1920-x-1080.jpg?nf_resize=fit&amp;w=450&amp;h=223" alt="Firesprite Limited Completes Acquisition Of Fabrik Games Limited" class="lazyload" width="450" height="223"></div><div class="card-section"><div><header><h4><small>29 September 2021</small><a href="/news/2021/09/firesprite-limited-completes-acquisition-of-fabrik-games-limited/">Firesprite Limited Completes Acquisition Of Fabrik Games Limited</a></h4></header></div></div></div></div><div class="cell i-1"><div class="card card-button" onclick="window.location=&quot;/news/2021/09/sony-interactive-entertainment-to-acquire-firesprite-games/&quot;"><div class="card-image-wrapper"><img data-src="/images/uploads/firesprite-welcome-background-min-1-.png?nf_resize=fit&amp;w=450&amp;h=223" alt=" SONY INTERACTIVE ENTERTAINMENT TO ACQUIRE FIRESPRITE GAMES" class="lazyload" width="450" height="223"></div><div class="card-section"><div><header><h4><small>8 September 2021</small><a href="/news/2021/09/sony-interactive-entertainment-to-acquire-firesprite-games/"> SONY INTERACTIVE ENTERTAINMENT TO ACQUIRE FIRESPRITE GAMES</a></h4></header></div></div></div></div><div class="cell i-2"><div class="card card-button" onclick="window.location=&quot;/news/2021/06/the-persistence-enhanced-press-release/&quot;"><div class="card-image-wrapper"><img data-src="/images/uploads/website-header.jpg?nf_resize=fit&amp;w=450&amp;h=223" alt="The Persistence Enhanced out now for PC, PlayStation 5. XBOX Series X|S Coming Soon." class="lazyload" width="450" height="223"></div><div class="card-section"><div><header><h4><small>11 June 2021</small><a href="/news/2021/06/the-persistence-enhanced-press-release/">The Persistence Enhanced out now for PC, PlayStation 5. XBOX Series X|S Coming Soon.</a></h4></header></div></div></div></div></div></div><div class="hide-for-large news-slider"><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2021/09/firesprite-limited-completes-acquisition-of-fabrik-games-limited/&quot;"><div class="card-image-wrapper"><img data-src="/images/uploads/fabrik-and-firesprite-1920-x-1080.jpg?nf_resize=fit&amp;w=450&amp;h=223" alt="Firesprite Limited Completes Acquisition Of Fabrik Games Limited" class="lazyload" width="450" height="223"></div><div class="card-section"><div><header><h4><small>29 September 2021</small><a href="/news/2021/09/firesprite-limited-completes-acquisition-of-fabrik-games-limited/">Firesprite Limited Completes Acquisition Of Fabrik Games Limited</a></h4></header></div></div></div></div><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2021/09/sony-interactive-entertainment-to-acquire-firesprite-games/&quot;"><div class="card-image-wrapper"><img data-src="/images/uploads/firesprite-welcome-background-min-1-.png?nf_resize=fit&amp;w=450&amp;h=223" alt=" SONY INTERACTIVE ENTERTAINMENT TO ACQUIRE FIRESPRITE GAMES" class="lazyload" width="450" height="223"></div><div class="card-section"><div><header><h4><small>8 September 2021</small><a href="/news/2021/09/sony-interactive-entertainment-to-acquire-firesprite-games/"> SONY INTERACTIVE ENTERTAINMENT TO ACQUIRE FIRESPRITE GAMES</a></h4></header></div></div></div></div><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2021/06/the-persistence-enhanced-press-release/&quot;"><div class="card-image-wrapper"><img data-src="/images/uploads/website-header.jpg?nf_resize=fit&amp;w=450&amp;h=223" alt="The Persistence Enhanced out now for PC, PlayStation 5. XBOX Series X|S Coming Soon." class="lazyload" width="450" height="223"></div><div class="card-section"><div><header><h4><small>11 June 2021</small><a href="/news/2021/06/the-persistence-enhanced-press-release/">The Persistence Enhanced out now for PC, PlayStation 5. XBOX Series X|S Coming Soon.</a></h4></header></div></div></div></div></div></div><div class="tabs-panel" id="studio" role="tabpanel" aria-labelledby="studio-label" aria-hidden="true"><div class="show-for-large"><div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-2 large-up-3 text-left"><div class="cell i-0"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/sprite-sidekicks/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Sidekick Gaming Mental Health Journals" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>18 August 2023</small><a href="/news/2023/08/sprite-sidekicks/">Sidekick Gaming Mental Health Journals</a></h4></header></div></div></div></div><div class="cell i-1"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/global-butterflies-language-pronouns-workshop/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Global Butterflies Language &amp; Pronouns Workshop" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>10 August 2023</small><a href="/news/2023/08/global-butterflies-language-pronouns-workshop/">Global Butterflies Language &amp; Pronouns Workshop</a></h4></header></div></div></div></div><div class="cell i-2"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/voice-at-the-table-host-an-impact-of-words-workshop-for-our-studio/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Voice at The Table Host an Impact of Words Workshop For Our Studio" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/workshop_webnews_1920x1080_v01_hud9ae3d739290631c9b6e2e6cb0c580d7_1855696_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" data-srcset="/images/news/workshop_webnews_1920x1080_v01_hud9ae3d739290631c9b6e2e6cb0c580d7_1855696_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/workshop_webnews_1920x1080_v01_hud9ae3d739290631c9b6e2e6cb0c580d7_1855696_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/workshop_webnews_1920x1080_v01_hud9ae3d739290631c9b6e2e6cb0c580d7_1855696_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x"></div><div class="card-section"><div><header><h4><small>7 August 2023</small><a href="/news/2023/08/voice-at-the-table-host-an-impact-of-words-workshop-for-our-studio/">Voice at The Table Host an Impact of Words Workshop For Our Studio</a></h4></header></div></div></div></div></div></div><div class="hide-for-large news-slider"><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/sprite-sidekicks/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Sidekick Gaming Mental Health Journals" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/sidekick-16_9-01-min_hu0da414d38ef50d2ec574c60caefe4584_584571_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>18 August 2023</small><a href="/news/2023/08/sprite-sidekicks/">Sidekick Gaming Mental Health Journals</a></h4></header></div></div></div></div><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/global-butterflies-language-pronouns-workshop/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Global Butterflies Language &amp; Pronouns Workshop" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_400x223_fill_q60_h2_mitchellnetravali_smart1.webp" data-srcset="/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_400x223_fill_q60_h2_mitchellnetravali_smart1.webp 1x,/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_800x446_fill_q60_h2_mitchellnetravali_smart1.webp 2x,/images/news/7y9a2315-1920-x-1280_hucc769f699ebd1bf3fe8a81a2f922ab80_716906_1200x669_fill_q60_h2_mitchellnetravali_smart1.webp 3x"></div><div class="card-section"><div><header><h4><small>10 August 2023</small><a href="/news/2023/08/global-butterflies-language-pronouns-workshop/">Global Butterflies Language &amp; Pronouns Workshop</a></h4></header></div></div></div></div><div class="slider-item"><div class="card card-button" onclick="window.location=&quot;/news/2023/08/voice-at-the-table-host-an-impact-of-words-workshop-for-our-studio/&quot;"><div class="card-image-wrapper"><img class="lazyload" alt="Voice at The Table Host an Impact of Words Workshop For Our Studio" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20400%20223%22/%3E" width="400" height="223" data-size="auto" data-src="/images/news/workshop_webnews_1920x1080_v01_hud9ae3d739290631c9b6e2e6cb0c580d7_1855696_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp" data-srcset="/images/news/workshop_webnews_1920x1080_v01_hud9ae3d739290631c9b6e2e6cb0c580d7_1855696_400x223_fill_q60_h2_mitchellnetravali_smart1_3.webp 1x,/images/news/workshop_webnews_1920x1080_v01_hud9ae3d739290631c9b6e2e6cb0c580d7_1855696_800x446_fill_q60_h2_mitchellnetravali_smart1_3.webp 2x,/images/news/workshop_webnews_1920x1080_v01_hud9ae3d739290631c9b6e2e6cb0c580d7_1855696_1200x669_fill_q60_h2_mitchellnetravali_smart1_3.webp 3x"></div><div class="card-section"><div><header><h4><small>7 August 2023</small><a href="/news/2023/08/voice-at-the-table-host-an-impact-of-words-workshop-for-our-studio/">Voice at The Table Host an Impact of Words Workshop For Our Studio</a></h4></header></div></div></div></div></div></div></div><div class="grid-container text-center"><a href="/news" class="button large">See All Articles</a></div></div></div></div></div><div class="imageWrapper bg-decor" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"></div></div></section></div><div id="trigger-games"><section id="section-games"><div id="block-games" class="grid-container full block block-image block-section"><div class="contentWrapper" style="opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><div class="grid-container"><div class="grid-y grid-frame"><div class="cell auto cell-block-container"><div class="grid-x align-middle p-t-50"><div class="cell small-12 medium-10 large-7"><div class="grid-x align-middle"><div class="cell small-12 header-content"><header><h2 style="translate: none; rotate: none; scale: none; transform: scale(1.5, 1.5); opacity: 0;">Featured Game</h2><h3 style=""><div class="word" style="display: block; text-align: start; position: relative;"><div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 100%); opacity: 0;">Horizon</div> <div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 100%); opacity: 0;">Call</div> <div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 100%); opacity: 0;">of</div> </div><div class="word" style="display: block; text-align: start; position: relative;"><div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 100%); opacity: 0;">the</div> <div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 100%); opacity: 0;">Mountain</div></div></h3></header><div id="header-summary"><p style="translate: none; rotate: none; scale: none; transform: translate(0px, 100%) rotateX(0.9deg); opacity: 0;">A brand-new Horizon adventure co-developed by Guerrilla and Firesprite for PlayStation VR2, this unique experience has been designed to push hardware technology, innovation and gameplay.</p></div></div><div class="cell small-12 medium-8 header-button" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><a href="/games/horizon-call-of-the-mountain/" class="button m-t-80" style="translate: none; rotate: none; scale: none; transform: translate(0px, 100%) rotateX(0.9deg); opacity: 0;">Find out more!</a></div></div></div></div></div></div></div></div><div class="imageWrapper" style="background-image: url(&quot;/images/game/hcom-recentred-test2-compressed_huc79cd71deb158503f00ce179c146bf98_276583_1920x1080_fill_q50_h2_mitchellnetravali_smart1.webp&quot;); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><img class="image ls-is-cached lazyloaded" src="/images/game/hcom-recentred-test2-compressed_huc79cd71deb158503f00ce179c146bf98_276583_1920x1080_fill_q50_h2_mitchellnetravali_smart1.webp" data-src="/images/game/hcom-recentred-test2-compressed_huc79cd71deb158503f00ce179c146bf98_276583_1920x1080_fill_q50_h2_mitchellnetravali_smart1.webp" alt="Horizon Call of the Mountain" width="1920" height="1080"></div></div></section></div><div id="trigger-studio"><section id="section-studio"><div id="block-studio" class="grid-container full block block-image block-section"><div class="contentWrapper" style="opacity: 1; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><div class="grid-container"><div class="grid-y grid-frame relax"><div class="cell auto cell-block-container"><div class="grid-x align-middle"><div class="cell small-12 medium-10 large-7"><div class="grid-x align-middle"><div class="cell small-12 header-content"><header><h2 style="translate: none; rotate: none; scale: none; transform: scale(1.5, 1.5); opacity: 0;">About Us</h2><h3 style=""><div class="word" style="display: block; text-align: start; position: relative;"><div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 100%); opacity: 0;">The</div> <div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 100%); opacity: 0;">next</div> </div><div class="word" style="display: block; text-align: start; position: relative;"><div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 100%); opacity: 0;">generation</div> </div><div class="word" style="display: block; text-align: start; position: relative;"><div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 100%); opacity: 0;">starts</div> <div style="position: relative; display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 100%); opacity: 0;">here.</div></div></h3></header></div><div class="cell small-12 medium-8 header-button" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><a href="/studio/" class="button m-t-30" style="translate: none; rotate: none; scale: none; transform: translate(0px, 100%) rotateX(0.9deg); opacity: 0;">Learn more</a></div></div></div></div></div></div></div></div><div class="imageWrapper" style="background-image:url(/images/headers/hvr_keyart_2_master_flat_wbsite250_hu22ee573defbccbef510f7cd1031d86ad_252102_1920x1080_fill_q50_h2_mitchellnetravali_smart1.webp)"><div class="video-wrapper video-background"><div id="video-player" class="video-foreground responsive-embed"><iframe id="ytplayer-studio" data-video="m8vL2KCafVI" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title=".." width="640" height="360" src="https://www.youtube-nocookie.com/embed/m8vL2KCafVI?autoplay=0&amp;controls=0&amp;disablekb=1&amp;enablejsapi=1&amp;fs=1&amp;iv_load_policy=1&amp;modestbranding=0&amp;origin=https%3A%2F%2Fwww.firesprite.com&amp;playsinline=1&amp;rel=0&amp;wmode=opaque&amp;start=0&amp;widgetid=1"></iframe></div></div></div></div></section></div><footer><div id="footer" class="grid-container full"><div class="grid-container"><div class="grid-x grid-padding-x grid-margin-y align-middle"><div class="cell small-12 large-auto social-align"><div class="social-menu mt-5"><a href="http://bit.ly/FirespriteTwitter%e2%80%8b" target="_blank" class="btn btn-circle text-neutral-content cursor-pointer" aria-label="Twitter"><svg class="svg-inline--fa fa-twitter fa-xl twitter" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fab fa-twitter fa-xl twitter"></i> Font Awesome fontawesome.com -->
+</a><a href="https://bit.ly/FirespriteFacebook" target="_blank" class="btn btn-circle text-neutral-content cursor-pointer" aria-label="Facebook"><svg class="svg-inline--fa fa-facebook-f fa-xl facebook" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><!-- <i class="fab fa-facebook-f fa-xl facebook"></i> Font Awesome fontawesome.com -->
+</a><a href="#ZgotmplZ" target="_blank" class="btn btn-circle text-neutral-content cursor-pointer" aria-label="Instagram"><svg class="svg-inline--fa fa-instagram fa-xl instagram" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fab fa-instagram fa-xl instagram"></i> Font Awesome fontawesome.com -->
+</a><a href="http://bit.ly/FirespriteLinkedIn%e2%80%8b" target="_blank" class="btn btn-circle text-neutral-content cursor-pointer" aria-label="LinkedIn"><svg class="svg-inline--fa fa-linkedin fa-xl linkedin" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg><!-- <i class="fab fa-linkedin fa-xl linkedin"></i> Font Awesome fontawesome.com -->
+</a><a href="http://bit.ly/FirespriteYouTube" target="_blank" class="btn btn-circle text-neutral-content cursor-pointer" aria-label="Youtube"><svg class="svg-inline--fa fa-youtube fa-xl youtube" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i class="fab fa-youtube fa-xl youtube"></i> Font Awesome fontawesome.com -->
+</a><a href="/contact" target="_blank" class="btn btn-circle text-neutral-content cursor-pointer" aria-label="mail"><svg class="svg-inline--fa fa-envelope fa-xl mail" aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"></path></svg><!-- <i class="far fa-envelope fa-xl mail"></i> Font Awesome fontawesome.com --></a></div></div><div class="cell small-12 medium-shrink footer-partner"><div class="partners"><div class="grid-x grid-margin-y align-middle m-b-10"><div class="cell shrink"><a href="https://playstation.com"><img src="/images/partners/psstudio.svg" alt="Playstation studio"></a></div></div></div></div></div><div class="grid-x grid-margin-y align-bottom"><div class="cell small-12 medium-auto small-order-2 medium-up-1"><div class="grid-x align-bottom legals"><div class="cell small-12"><ul class="secondary menu align-middle consent-buttons"><li><button class="manage-consent pop">Manage privacy settings</button></li><li><a href="http://www.playstation.com/legal/privacy-policy" data-turbo="false" class="secondary-nav-link">Privacy Policy</a></li></ul></div><div class="cell small-12 m-t-10">© 2023 <strong>Firesprite Ltd</strong>. All Rights Reserved.</div></div></div><div class="cell small-12 large-shrink small-order-1 medium-order-2 footer-menu"><ul class="menu" data-smooth-scroll="hrqj1z-smooth-scroll" id="nepanl-smooth-scroll"><li><a href="/news" data-turbo="false">News</a></li><li><a href="/games" data-turbo="false">Games</a></li><li><a href="/studio" data-turbo="false">About Us</a></li><li><a href="/careers" data-turbo="false">Jobs
+<span class="badge-wrapper" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><span class="badge"><span class="badge-count">13</span></span></span></a></li><li><a href="/support" data-turbo="false">Support</a></li><li><a href="/contact" data-turbo="false">Contact</a></li></ul></div></div></div></div></footer></div></main><div class="off-canvas position-right mobile is-transition-overlap is-closed" id="offCanvas" data-off-canvas="ksweur-off-canvas" aria-hidden="true"><div class="off-canvas-header"><div class="logo"></div><div class="close" data-close=""><button><svg class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path></svg><!-- <i class="fas fa-times"></i> Font Awesome fontawesome.com --></button></div></div><div class="grid-container"><div class="grid-x align-center-middle" style="height:85vh"><div class="cell"><ul class="menu vertical"><li style="translate: none; rotate: none; scale: none; transform: translate(100%, 0px);"><a href="/news">News</a></li><li style="translate: none; rotate: none; scale: none; transform: translate(100%, 0px);"><a href="/games">Games</a></li><li style="translate: none; rotate: none; scale: none; transform: translate(100%, 0px);"><a href="/studio">About Us</a></li><li style="translate: none; rotate: none; scale: none; transform: translate(100%, 0px);"><a href="/careers">Jobs</a></li><li style="translate: none; rotate: none; scale: none; transform: translate(100%, 0px);"><a href="/support">Support</a></li><li style="translate: none; rotate: none; scale: none; transform: translate(100%, 0px);"><a href="/contact">Contact</a></li></ul></div><div class="cell"><ul class="social-menu menu horizontal" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(0px, 100%);"><li><div class="social-icon twitter"><a href="http://bit.ly/FirespriteTwitter%e2%80%8b" aria-label="Twitter Firesprite"><svg class="svg-inline--fa fa-twitter icon" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="icon fab fa-twitter"></i> Font Awesome fontawesome.com --></a></div></li><li><div class="social-icon facebook"><a href="https://bit.ly/FirespriteFacebook" aria-label="Facebook Firesprite"><svg class="svg-inline--fa fa-facebook-f icon" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><!-- <i class="icon fab fa-facebook-f"></i> Font Awesome fontawesome.com --></a></div></li><li><div class="social-icon instagram"><a href="#ZgotmplZ" aria-label="Instagram Firesprite"><svg class="svg-inline--fa fa-instagram icon" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="icon fab fa-instagram"></i> Font Awesome fontawesome.com --></a></div></li><li><div class="social-icon linkedin"><a href="http://bit.ly/FirespriteLinkedIn%e2%80%8b" aria-label="LinkedIn Firesprite"><svg class="svg-inline--fa fa-linkedin icon" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg><!-- <i class="icon fab fa-linkedin"></i> Font Awesome fontawesome.com --></a></div></li><li><div class="social-icon youtube"><a href="http://bit.ly/FirespriteYouTube" aria-label="Youtube Firesprite"><svg class="svg-inline--fa fa-youtube icon" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i class="icon fab fa-youtube"></i> Font Awesome fontawesome.com --></a></div></li><li><div class="social-icon mail"><a href="/contact" aria-label="mail Firesprite"><svg class="svg-inline--fa fa-envelope icon" aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"></path></svg><!-- <i class="icon far fa-envelope"></i> Font Awesome fontawesome.com --></a></div></li></ul></div></div></div></div><div class="js-off-canvas-overlay is-overlay-fixed"></div><script src="/main.fe06b.js" defer=""></script><div id="consent-notice" style="display: block;"><div class="grid-x align-center-middle"><div class="cell small-12 medium-shrink"><span>This website uses cookies to ensure you get the best experience on our website.<a href="https://www.playstation.com/legal/privacy-policy/" class="button tiny secondary privacy-link">Privacy Policy</a></span></div><div class="cell small-12 medium-shrink"><div class="button-group"><button class="button tiny primary manage-consent">Manage preferences</button>
+<button class="button tiny primary deny-consent">Deny</button>
+<button class="button tiny primary approve-consent">Allow</button></div></div></div></div><div id="consent-overlay"><div><div><input type="checkbox" id="item0" value="1" name="item0">
+<label for="item0"><h3>Google Anaytics</h3><p>This code gives us insight into the number of people that visit our website, where they are from and what they are clicking on.</p></label></div><div><input type="checkbox" id="item1" value="1" name="item1">
+<label for="item1"><h3>Facebook Pixel</h3><p>The cookie is set by Facebook to show relevant advertisements to the users and measure and improve the advertisements. The cookie also tracks the behaviour of the user across the web on sites that have Facebook pixel or Facebook social plugin.</p></label></div><div><input type="checkbox" id="item2" value="1" name="item2" checked="" disabled="">
+<label for="item2"><h3>YouTube (functional)</h3><p>Youtube cookies are required for the site to function correctly. All marketing and tracking cookies for the YouTube player are turned off.</p></label></div><div><div class="button-group"><button id="save-consent" class="button save-consent" data-consentvalue="0">Save preferences</button>
+<button class="button approve-consent">Allow all</button></div></div></div></div><script>const scripts=[];scripts[0]="/js/ga.js",scripts[1]="/js/facebook.js";function createCookie(e,t,n){var s,o="";n&&(s=new Date,s.setTime(s.getTime()+n*24*60*60*1e3),o="; expires="+s.toUTCString()),document.cookie=e+"="+t+o+"; path=/"}function readCookie(e){for(var t,s=e+"=",o=document.cookie.split(";"),n=0;n<o.length;n++){for(t=o[n];t.charAt(0)==" ";)t=t.substring(1,t.length);if(t.indexOf(s)==0)return t.substring(s.length,t.length)}return null}function eraseCookie(e){createCookie(e,"",-1)}function denyAllConsentScripts(){var e="";scripts.forEach(function(){e=e+"0"}),acceptSomeConsentScripts(e)}function acceptAllConsentScripts(){var e="";scripts.forEach(function(){e=e+"1"}),acceptSomeConsentScripts(e)}function acceptSomeConsentScripts(e){setConsentInputs(e),createCookie("consent-settings",e,31),document.getElementById("consent-notice").style.display="none",document.getElementById("consent-overlay").classList.remove("active"),loadConsentScripts(e)}function loadConsentScripts(e){scripts.forEach(function(t,n){if(e[n]=="1"){var s=document.createElement("script");s.type="text/javascript",s.src=t,document.body.appendChild(s)}})}function setConsentInputs(e){var t=document.querySelectorAll("#consent-overlay input:not([disabled])");t.forEach(function(t,n){e[n]=="1"?t.checked=!0:t.checked=!1})}function setConsentValue(){var t=document.querySelectorAll("#consent-overlay input:not([disabled])"),e="";t.forEach(function(t){t.checked?e=e+"1":e=e+"0"}),document.getElementById("save-consent").dataset.consentvalue=e}var elements=document.querySelectorAll("#consent-overlay input:not([disabled])"),consentValue;elements.forEach(function(e){e.checked=!1}),readCookie("consent-settings")?(consentValue=readCookie("consent-settings").toString(),setConsentInputs(consentValue),loadConsentScripts(consentValue)):document.getElementById("consent-notice").style.display="block",elements=document.querySelectorAll(".manage-consent"),elements.forEach(function(e){e.addEventListener("click",function(){document.getElementById("consent-overlay").classList.toggle("active")})}),elements=document.querySelectorAll(".deny-consent"),elements.forEach(function(e){e.addEventListener("click",function(){denyAllConsentScripts()})}),elements=document.querySelectorAll(".approve-consent"),elements.forEach(function(e){e.addEventListener("click",function(){acceptAllConsentScripts()})}),document.getElementById("save-consent").addEventListener("click",function(){setConsentValue(),acceptSomeConsentScripts(this.dataset.consentvalue)}),document.getElementById("consent-overlay").addEventListener("click",function(e){document.querySelector("#consent-overlay > div").contains(e.target)||this.classList.toggle("active")})</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-159821960-1"></script>
+<script>window.dataLayer=window.dataLayer||[],window["ga-disable-"]=!0;function gtag(){dataLayer.push(arguments)}function trackOutboundLink(e){gtag("event","click",{event_category:"outbound",event_label:e,transport_type:"beacon",event_callback:function(){document.location=e}}),console.debug("Outbound link clicked: "+e)}function onClickCallback(e){if(e.target.tagName!=="A"||e.target.host===window.location.host)return;trackOutboundLink(e.target)}gtag("js",new Date),gtag("config","UA-159821960-1",{})</script></turbo-frame><iframe id="netlify-identity-widget" title="Netlify identity widget" style="position: fixed; top: 0; left: 0; border: none; width: 100%; height: 100%; overflow: visible; background: transparent; display: none; z-index: 99; " src="about:blank"></iframe></body></html>

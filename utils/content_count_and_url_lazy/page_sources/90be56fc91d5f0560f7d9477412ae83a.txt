@@ -1,0 +1,2094 @@
+<html class="hasSidebar hasPageActions hasBreadcrumb conceptual has-default-focus theme-light" lang="zh-cn" dir="ltr" data-css-variable-support="true" data-authenticated="false" data-auth-status-determined="true" data-target="docs" x-ms-format-detection="none"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="将 SteamVR 与 Windows Mixed Reality 结合使用 - Enthusiast Guide">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality">
+			<meta property="og:description" content="了解如何在兼容电脑的 Windows Mixed Reality 头戴显示设备和控制器上设置和玩 SteamVR 游戏。">
+
+	<meta property="og:image" content="https://learn.microsoft.com/en-us/media/open-graph-image.png">
+
+	<meta property="og:image:alt" content="Microsoft Learn">
+
+	<meta name="twitter:card" content="summary_large_image">
+
+	<meta name="twitter:site" content="@MicrosoftLearn">
+
+	<meta name="color-scheme" content="light dark">
+
+
+	<meta name="adobe-target" content="true">
+<meta name="author" content="qianw211">
+<meta name="breadcrumb_path" content="/windows/mixed-reality/enthusiast-guide/breadcrumb/toc.json">
+<meta name="depot_name" content="MSDN.enthusiast-guide">
+<meta name="description" content="了解如何在兼容电脑的 Windows Mixed Reality 头戴显示设备和控制器上设置和玩 SteamVR 游戏。">
+<meta name="document_id" content="7290b872-634d-f755-d81c-a6bdb4ddb6a2">
+<meta name="document_version_independent_id" content="c3a75771-abd8-1632-09ff-a1bd56df64dd">
+<meta name="git_commit_id" content="88ff3d55dfd510f3de176d536fadd6ee53538635">
+<meta name="gitcommit" content="https://github.com/MicrosoftDocs/mixed-reality-pr/blob/88ff3d55dfd510f3de176d536fadd6ee53538635/enthusiast-guide/using-steamvr-with-windows-mixed-reality.md">
+<meta name="keywords" content="Windows Mixed Reality, 混合现实, 虚拟现实, VR, MR, 游戏, SteamVR, Steam, 系统要求">
+<meta name="loc_file_id" content="Github-114812297.live.MSDN.enthusiast-guide.using-steamvr-with-windows-mixed-reality.md">
+<meta name="loc_source_id" content="Github-114812297#live">
+<meta name="loc_version" content="2023-07-12T08:40:30.2505407Z">
+<meta name="locale" content="zh-cn">
+<meta name="ms.author" content="qianwen">
+<meta name="ms.contentlocale" content="zh-cn">
+<meta name="ms.date" content="9/23/2021">
+<meta name="ms.prod" content="mixed-reality">
+<meta name="ms.technology" content="enthusiast-guide">
+<meta name="ms.topic" content="article">
+<meta name="ms.translationtype" content="MT">
+<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/mixed-reality-pr/blob/live/enthusiast-guide/using-steamvr-with-windows-mixed-reality.md">
+<meta name="page_type" content="conceptual">
+<meta name="schema" content="Conceptual">
+<meta name="site_name" content="Docs">
+<meta name="toc_rel" content="toc.json">
+<meta name="uhfHeaderId" content="MSDocsHeader-Hololens">
+<meta name="updated_at" content="2023-09-03 08:04 PM">
+<meta name="word_count" content="3555">
+
+
+	<meta name="recommendation_types" content="Training">
+	<meta name="recommendation_types" content="Certification">
+	
+
+	<meta name="persistent_id" content="39449fad-30f5-9418-a36d-c78592299124">
+	
+
+
+	<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/b8947e3d-9c04-465e-b7b7-ed89d526dedd" data-source="generated">
+
+	<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8" data-source="generated">
+
+	
+
+	<meta name="scope" content="Mixed Reality, Windows Mixed Reality">
+	<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/mixed-reality/blob/docs/enthusiast-guide/using-steamvr-with-windows-mixed-reality.md">
+<link href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality" rel="canonical">
+	<title>将 SteamVR 与 Windows Mixed Reality 结合使用 - Enthusiast Guide | Microsoft Learn</title>
+
+		<link rel="stylesheet" href="/_themes/docs.theme/master/zh-cn/_themes/styles/a771ae71.site-ltr.css ">
+
+	
+
+	<script id="msdocs-script">
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'zh-cn',
+			contentDir: 'ltr',
+			userLocale: 'zh-cn',
+			userDir: 'ltr',
+			pageTemplate: 'Conceptual',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: true,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'None',
+			feedbackGitHubRepo: '',
+			feedbackProductUrl: '',
+			extendBreadcrumb: true,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: true,
+			hasBookmark: true,
+			hasShare: true,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: true,
+			contributors: [
+						{ name: "qianw211", url: "https://github.com/qianw211" },
+						{ name: "TimShererWithAquent", url: "https://github.com/TimShererWithAquent" },
+						{ name: "rgerd", url: "https://github.com/rgerd" },
+						{ name: "DCtheGeek", url: "https://github.com/DCtheGeek" },
+						{ name: "tmlyon", url: "https://github.com/tmlyon" },
+						{ name: "tesych", url: "https://github.com/tesych" }
+],
+		},
+		functions:{}
+	};
+	</script>
+	<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+	<script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js"></script>
+
+	<script src="/_themes/docs.theme/master/zh-cn/_themes/global/67a45209.deprecation.js"></script>
+		<link rel="preconnect" href="//mscom.demdex.net" crossorigin="">
+		<link rel="dns-prefetch" href="//target.microsoft.com">
+		<link rel="dns-prefetch" href="//microsoftmscompoc.tt.omtrdc.net">
+		<link rel="preload" as="script" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" crossorigin="anonymous" id="adobe-target-script" type="application/javascript">
+		<script src="/_themes/docs.theme/master/zh-cn/_themes/scripts/b655b49f.index-docs.js"></script><style></style>
+<style id="ms-consent-banner-main-styles">.w8hcgFksdo30C8w-bygqu{color:#000}.ydkKdaztSS0AeHWIeIHsQ a{color:#0067B8}.erL690_8JwUW-R4bJRcfl{background-color:#EBEBEB;border:none;color:#000}.erL690_8JwUW-R4bJRcfl:enabled:hover{color:#000;background-color:#DBDBDB;box-shadow:0px 4px 10px rgba(0,0,0,0.25);border:none}.erL690_8JwUW-R4bJRcfl:enabled:focus{background-color:#DBDBDB;box-shadow:0px 4px 10px rgba(0,0,0,0.25);border:2px solid #000}.erL690_8JwUW-R4bJRcfl:disabled{opacity:1;color:rgba(0,0,0,0.2);background-color:rgba(0,0,0,0.2);border:none}._1zNQOqxpBFSokeCLGi_hGr{border:none;background-color:#0067B8;color:#fff}._1zNQOqxpBFSokeCLGi_hGr:enabled:hover{color:#fff;background-color:#0067B8;box-shadow:0px 4px 10px rgba(0,0,0,0.25);border:none}._1zNQOqxpBFSokeCLGi_hGr:enabled:focus{background-color:#0067B8;box-shadow:0px 4px 10px rgba(0,0,0,0.25);border:2px solid #000}._1zNQOqxpBFSokeCLGi_hGr:disabled{opacity:1;color:rgba(0,0,0,0.2);background-color:rgba(0,120,215,0.2);border:none}._23tra1HsiiP6cT-Cka-ycB{position:relative;display:flex;z-index:9999;width:100%;background-color:#F2F2F2;justify-content:space-between;text-align:left}div[dir="rtl"]._23tra1HsiiP6cT-Cka-ycB{text-align:right}._1Upc2NjY8AlDn177YoVj0y{margin:0;padding-left:5%;padding-top:8px;padding-bottom:8px}div[dir="rtl"] ._1Upc2NjY8AlDn177YoVj0y{margin:0;padding:8px 5% 8px 0;float:none}._23tra1HsiiP6cT-Cka-ycB svg{fill:none;max-width:none;max-height:none}._1V_hlU-7jdtPiooHMu89BB{display:table-cell;padding:12px;width:24px;height:24px;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:24px;line-height:0}.f6QKJD7fhSbnJLarTL-W-{display:table-cell;vertical-align:middle;padding:0;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:13px;line-height:16px}.f6QKJD7fhSbnJLarTL-W- a{text-decoration:underline}._2j0fmugLb1FgYz6KPuB91w{display:inline-block;margin-left:5%;margin-right:5%;min-width:40%;min-width:calc((150px + 3 * 4px) * 2 + 150px);min-width:-webkit-fit-content;min-width:-moz-fit-content;min-width:fit-content;align-self:center;position:relative}._1XuCi2WhiqeWRUVp3pnFG3{margin:4px;padding:5px;min-width:150px;min-height:36px;vertical-align:top;cursor:pointer;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px;text-align:center}._1XuCi2WhiqeWRUVp3pnFG3:focus{box-sizing:border-box}._1XuCi2WhiqeWRUVp3pnFG3:disabled{cursor:not-allowed}._2bvsb3ubApyZ0UGoQA9O9T{display:block;position:fixed;z-index:10000;top:0;left:0;width:100%;height:100%;background-color:rgba(255,255,255,0.6);overflow:auto;text-align:left}div[dir="rtl"]._2bvsb3ubApyZ0UGoQA9O9T{text-align:right}div[dir="rtl"] ._2bvsb3ubApyZ0UGoQA9O9T{left:auto;right:0}.AFsJE948muYyzCMktdzuk{position:relative;top:8%;margin-bottom:40px;margin-left:auto;margin-right:auto;box-sizing:border-box;width:640px;background-color:#fff;border:1px solid #0067B8}._3kWyBRbW_dgnMiEyx06Fu4{float:right;z-index:1;margin:2px;padding:12px;border:none;cursor:pointer;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:13px;line-height:13px;display:flex;align-items:center;text-align:center;color:#666;background-color:#fff}div[dir="rtl"] ._3kWyBRbW_dgnMiEyx06Fu4{margin:2px;padding:12px;float:left}.uCYvKvHXrhjNgflv1VqdD{position:static;margin-top:36px;margin-left:36px;margin-right:36px}._17pX1m9O_W--iZbDt3Ta5r{margin-top:0;margin-bottom:12px;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:600;font-size:20px;line-height:24px;text-transform:none}._1kBkHQ1V1wu3kl-YcLgUr6{height:446px;overflow:auto}._20_nXDf6uFs9Q6wxRXG-I-{margin-top:0;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px}._20_nXDf6uFs9Q6wxRXG-I- a{text-decoration:underline}dl._2a0NH_GDQEQe5Ynfo7suVH{margin-top:36px;margin-bottom:0;padding:0;list-style:none;text-transform:none}dt._3j_LCPv7fyXv3A8FIXVwZ4{margin-top:20px;float:none;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:600;font-size:18px;line-height:24px;list-style:none}.k-vxTGFbdq1aOZB2HHpjh{margin:0;padding:0;border:none}._2Bucyy75c_ogoU1g-liB5R{margin:0;padding:0;border-bottom:none;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:600;font-size:18px;line-height:24px;text-transform:none}._63gwfzV8dclrsl2cfd90r{display:inline-block;margin-top:0;margin-bottom:13px;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px}._1l8wM_4mRYGz3Iu7l3BZR7{display:block}._2UE03QS02aZGkslegN_F-i{display:inline-block;position:relative;left:5px;margin-bottom:13px;margin-right:34px;padding:3px}div[dir="rtl"] ._2UE03QS02aZGkslegN_F-i{margin:0 0 13px 34px;padding:3px;float:none}div[dir="rtl"] ._2UE03QS02aZGkslegN_F-i{left:auto;right:5px}._23tra1HsiiP6cT-Cka-ycB *::before,._2bvsb3ubApyZ0UGoQA9O9T *::before,._23tra1HsiiP6cT-Cka-ycB *::after,._2bvsb3ubApyZ0UGoQA9O9T *::after{box-sizing:inherit}._1HSFn0HzGo6w4ADApV8-c4{outline:2px solid rgba(0,0,0,0.8)}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2{display:inline-block;position:relative;margin-top:0;margin-left:0;margin-right:0;height:0;width:0;border-radius:0;cursor:pointer;outline:none;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2+label::before{display:block;position:absolute;top:5px;left:3px;height:19px;width:19px;content:"";border-radius:50%;border:1px solid #000;background-color:#fff}div[dir="rtl"] input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2+label::before{left:auto;right:3px}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:hover::before{border:1px solid #0067B8}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:hover::after{display:block;position:absolute;top:10px;left:8px;height:9px;width:9px;content:"";border-radius:50%;background-color:rgba(0,0,0,0.8)}div[dir="rtl"] input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:hover::after{left:auto;right:8px}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:focus::before{border:1px solid #0067B8}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:focus::after{display:block;position:absolute;top:10px;left:8px;height:9px;width:9px;content:"";border-radius:50%;background-color:#000}div[dir="rtl"] input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:not(:disabled)+label:focus::after{left:auto;right:8px}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:checked+label::after{display:block;position:absolute;top:10px;left:8px;height:9px;width:9px;content:"";border-radius:50%;background-color:#000}div[dir="rtl"] input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:checked+label::after{left:auto;right:8px}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:disabled+label{cursor:not-allowed}input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:disabled+label::before{border:1px solid rgba(0,0,0,0.2);background-color:rgba(0,0,0,0.2)}._3RJzeL3l9Rl_lAQEm6VwdX{display:block;position:static;float:right;margin-top:0;margin-bottom:0;margin-left:19px;margin-right:0;padding-top:0;padding-bottom:0;padding-left:8px;padding-right:0;width:80%;width:calc(100% - 19px);font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px;text-transform:none;cursor:pointer;box-sizing:border-box}div[dir="rtl"] ._3RJzeL3l9Rl_lAQEm6VwdX{margin:0 19px 0 0;padding:0 8px 0 0;float:left}.nohp3sIG12ZBhzcMnPala{margin-top:20px;margin-bottom:48px}._2uhaEsmeotZ3P-M0AXo2kF{padding:0;width:278px;height:36px;cursor:pointer;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px;text-align:center}._2uhaEsmeotZ3P-M0AXo2kF:focus{box-sizing:border-box}._2uhaEsmeotZ3P-M0AXo2kF:disabled{cursor:not-allowed}._3tOu1FJ59c_xz_PmI1lKV5{float:right;padding:0;width:278px;height:36px;cursor:pointer;font-family:Segoe UI, SegoeUI, Arial, sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:20px;text-align:center}._3tOu1FJ59c_xz_PmI1lKV5:focus{box-sizing:border-box}._3tOu1FJ59c_xz_PmI1lKV5:disabled{cursor:not-allowed}div[dir="rtl"] ._3tOu1FJ59c_xz_PmI1lKV5{margin:0;padding:0;float:left}@media only screen and (max-width: 768px){._2j0fmugLb1FgYz6KPuB91w,._1Upc2NjY8AlDn177YoVj0y{padding-top:8px;padding-bottom:12px;padding-left:3.75%;padding-right:3.75%;margin:0;width:92.5%}._23tra1HsiiP6cT-Cka-ycB{display:block}._1XuCi2WhiqeWRUVp3pnFG3{margin-bottom:8px;margin-left:0;margin-right:0;width:100%}._2bvsb3ubApyZ0UGoQA9O9T{overflow:hidden}.AFsJE948muYyzCMktdzuk{top:1.8%;width:93.33%;height:96.4%;overflow:hidden}.uCYvKvHXrhjNgflv1VqdD{margin-top:24px;margin-left:24px;margin-right:24px;height:100%}._1kBkHQ1V1wu3kl-YcLgUr6{height:62%;height:calc(100% - 188px);min-height:50%}._2uhaEsmeotZ3P-M0AXo2kF{width:100%}._3tOu1FJ59c_xz_PmI1lKV5{margin-bottom:12px;margin-left:0;width:100%}div[dir="rtl"] ._3tOu1FJ59c_xz_PmI1lKV5{margin:0 0 12px 0;padding:0;float:none}}@media only screen and (max-width: 768px) and (orientation: landscape), only screen and (max-height: 260px), only screen and (max-width: 340px){.AFsJE948muYyzCMktdzuk{overflow:auto}}@media only screen and (max-height: 260px), only screen and (max-width: 340px){._1XuCi2WhiqeWRUVp3pnFG3{min-width:0}._3kWyBRbW_dgnMiEyx06Fu4{padding:3%}.uCYvKvHXrhjNgflv1VqdD{margin-top:3%;margin-left:3%;margin-right:3%}._17pX1m9O_W--iZbDt3Ta5r{margin-bottom:3%}._1kBkHQ1V1wu3kl-YcLgUr6{height:calc(79% - 64px)}.nohp3sIG12ZBhzcMnPala{margin-top:5%;margin-bottom:10%}._3tOu1FJ59c_xz_PmI1lKV5{margin-bottom:3%}div[dir="rtl"] ._3tOu1FJ59c_xz_PmI1lKV5{margin:0 0 3% 0;padding:0;float:none}}
+</style><style type="text/css" id="ms-consent-banner-theme-styles">._23tra1HsiiP6cT-Cka-ycB {
+            background-color: #F2F2F2 !important;
+        }.w8hcgFksdo30C8w-bygqu {
+            color: #000000 !important;
+        }.ydkKdaztSS0AeHWIeIHsQ a {
+            color: #0067B8 !important;
+        }._2bvsb3ubApyZ0UGoQA9O9T {
+            background-color: rgba(255, 255, 255, 0.6) !important;
+        }.AFsJE948muYyzCMktdzuk {
+            background-color: #FFFFFF !important;
+            border: 1px solid #0067B8 !important;
+        }._3kWyBRbW_dgnMiEyx06Fu4 {
+            color: #666666 !important;
+            background-color: #FFFFFF !important;
+        }._1zNQOqxpBFSokeCLGi_hGr {
+            border: none !important;
+            background-color: #0067B8 !important;
+            color: #FFFFFF !important;
+        }._1zNQOqxpBFSokeCLGi_hGr:enabled:hover {
+            color: #FFFFFF !important;
+            background-color: #0067B8 !important;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25) !important;
+            border: none !important;
+        }._1zNQOqxpBFSokeCLGi_hGr:enabled:focus {
+            background-color: #0067B8 !important;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25) !important;
+            border: 2px solid #000000 !important;
+        }._1zNQOqxpBFSokeCLGi_hGr:disabled {
+            opacity: 1 !important;
+            color: rgba(0, 0, 0, 0.2) !important;
+            background-color: rgba(0, 120, 215, 0.2) !important;
+            border: none !important;
+        }.erL690_8JwUW-R4bJRcfl {
+            border: none !important;
+            background-color: #EBEBEB !important;
+            color: #000000 !important;
+        }.erL690_8JwUW-R4bJRcfl:enabled:hover {
+            color: #000000 !important;
+            background-color: #DBDBDB !important;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25) !important;
+            border: none !important;
+        }.erL690_8JwUW-R4bJRcfl:enabled:focus {
+            background-color: #DBDBDB !important;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25) !important;
+            border: 2px solid #000000 !important;
+        }.erL690_8JwUW-R4bJRcfl:disabled {
+            opacity: 1 !important;
+            color: rgba(0, 0, 0, 0.2) !important;
+            background-color: rgba(0, 0, 0, 0.2) !important;
+            border: none !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2 + label::before {
+            border: 1px solid #000000 !important;
+            background-color: #FFFFFF !important;
+        }._1HSFn0HzGo6w4ADApV8-c4 {
+            outline: 2px solid rgba(0, 0, 0, 0.8) !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:checked + label::after {
+            background-color: #000000 !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2 + label:hover::before {
+            border: 1px solid #0067B8 !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2 + label:hover::after {
+            background-color: rgba(0, 0, 0, 0.8) !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2 + label:focus::before {
+            border: 1px solid #0067B8 !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2 + label:focus::after {
+            background-color: #000000 !important;
+        }input[type="radio"]._1dp8Vp5m3HwAqGx8qBmFV2:disabled + label::before {
+            border: 1px solid rgba(0, 0, 0, 0.2) !important;
+            background-color: rgba(0, 0, 0, 0.2) !important;
+        }</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"name":"Learn","position":1,"@type":"ListItem","item":"https://learn.microsoft.com/zh-cn/"},{"name":"Windows","position":2,"@type":"ListItem","item":"https://learn.microsoft.com/zh-cn/windows/"},{"name":"混合现实","position":3,"@type":"ListItem","item":"https://learn.microsoft.com/zh-cn/windows/mixed-reality/"},{"name":"Windows Mixed Reality 发烧友文档","position":4,"@type":"ListItem","item":"https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/"},{"name":"使用 Windows Mixed Reality","position":5,"@type":"ListItem","item":"https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/learn-mixed-reality"},{"name":"使用 SteamVR","position":6,"@type":"ListItem"}]}</script></head>
+
+<body lang="zh-cn" dir="ltr">
+	<div class="header-holder has-default-focus">
+		<a href="#main" class="skip-to-main-link has-outline-color-text visually-hidden-until-focused position-fixed has-inner-focus focus-visible top-0 left-0 right-0 padding-xs has-text-centered has-body-background" tabindex="1">跳转至主内容</a>
+
+		<div id="cookie-consent-holder" data-test-id="cookie-consent-container"><div id="wcpConsentBannerCtrl" class="_23tra1HsiiP6cT-Cka-ycB" dir="ltr" role="alert">
+        <div class="_1Upc2NjY8AlDn177YoVj0y">
+            <span class="_1V_hlU-7jdtPiooHMu89BB w8hcgFksdo30C8w-bygqu">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 44 44" width="24px" height="24px" fill="none" stroke="currentColor">
+          <circle cx="22" cy="22" r="20" stroke-width="2"></circle>
+          <line x1="22" x2="22" y1="18" y2="33" stroke-width="3"></line>
+          <line x1="22" x2="22" y1="12" y2="15" stroke-width="3"></line>
+        </svg>
+        </span> <!--  used for icon  -->
+            <p class="f6QKJD7fhSbnJLarTL-W- ydkKdaztSS0AeHWIeIHsQ w8hcgFksdo30C8w-bygqu">
+                我们使用可选的 Cookie，通过社交媒体连接等方式改善你在我们网站上的体验，并且根据你的在线活动投放个性化的广告。 如果你拒绝可选 Cookie，则我们将仅使用为你提供服务所必须的 Cookie。 你可以单击页面底部的“管理 Cookie”更改你的选择。<a target="_blank" href="https://go.microsoft.com/fwlink/?LinkId=521839">隐私声明</a> <a target="_blank" href="https://aka.ms/3rdpartycookies">第三方 Cookie</a>
+            </p>
+        </div>
+
+        <div class="_2j0fmugLb1FgYz6KPuB91w">
+            <button type="button" class="_1XuCi2WhiqeWRUVp3pnFG3 erL690_8JwUW-R4bJRcfl">接受</button>
+            <button type="button" class="_1XuCi2WhiqeWRUVp3pnFG3 erL690_8JwUW-R4bJRcfl">拒绝</button>
+            <button type="button" class="_1XuCi2WhiqeWRUVp3pnFG3 erL690_8JwUW-R4bJRcfl">管理 Cookie</button>
+        </div>
+        </div></div>
+
+		<div id="unsupported-browser" style="
+			background-color: white;
+			color: black;
+			padding: 16px;
+			border-bottom: 1px solid grey;" hidden="">
+			<div style="max-width: 800px; margin: 0 auto;">
+				<p style="font-size: 24px">此浏览器不再受支持。</p>
+				<p style="font-size: 16px; margin-top: 16px;">请升级到 Microsoft Edge 以使用最新的功能、安全更新和技术支持。</p>
+				<div style="margin-top: 12px;">
+					<a href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 " style="
+						background-color: #0078d4;
+						border: 1px solid #0078d4;
+						color: white;
+						padding: 6px 12px;
+						border-radius: 2px;
+						display: inline-block;
+						">
+下载 Microsoft Edge					</a>
+					<a href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge" style="
+							background-color: white;
+							padding: 6px 12px;
+							border: 1px solid #505050;
+							color: #171717;
+							border-radius: 2px;
+							display: inline-block;
+							">
+有关 Internet Explorer 和 Microsoft Edge 的详细信息					</a>
+				</div>
+			</div>
+
+		</div>
+		<!-- liquid-tag banners global -->
+		<div id="headerAreaHolder" data-bi-name="header">
+<header role="banner" itemscope="itemscope" itemtype="http://schema.org/Organization"><!----> <div class="nav-bar" data-test-id="primary-nav-bar" data-bi-name="L1-header"><!----> <div class="nav-bar-brand display-flex align-items-center padding-none margin-left-xs margin-left-none-tablet margin-right-xxs">
+		
+					<a class="nav-bar-button padding-inline-none" itemprop="url" href="https://www.microsoft.com" aria-label="Microsoft" data-bi-name="microsoft-logo-link">
+						 <div class="nav-bar-logo" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope">
+				
+		<svg xmlns="http://www.w3.org/2000/svg" width="108" height="23" viewBox="72 72 337 74" preserveAspectRatio="xMidYMin slice">
+			<g data-name="MS-symbol">
+				<clipPath>
+					<path transform="matrix(1 0 0 -1 0 216)" d="M0 216h482V0H0z"></path>
+				</clipPath>
+				<g clip-path="url(#a)">
+					<path d="M394.942 104.59h-10.858v25.003h-7.38V104.59h-5.182v-5.965h5.182v-4.308c0-3.254 1.06-5.92 3.178-7.998 2.12-2.079 4.835-3.118 8.15-3.118.882 0 1.666.045 2.35.135a9.37 9.37 0 011.806.407v6.296c-.24-.14-.663-.31-1.265-.512-.603-.2-1.296-.3-2.078-.3-1.528 0-2.702.476-3.526 1.43-.824.954-1.235 2.365-1.235 4.232v3.736h10.858v-6.959l7.321-2.229v9.188h7.381v5.965h-7.38v14.49c0 1.91.345 3.254 1.038 4.037.693.783 1.782 1.175 3.27 1.175.42 0 .927-.1 1.52-.3a7.178 7.178 0 001.552-.724v6.025c-.463.261-1.23.502-2.305.723a15.742 15.742 0 01-3.178.331c-3.073 0-5.378-.817-6.914-2.455-1.537-1.637-2.305-4.102-2.305-7.396zm-48.407 9.73c0 3.233.733 5.703 2.2 7.411 1.465 1.707 3.564 2.56 6.295 2.56 2.652 0 4.67-.853 6.055-2.56 1.386-1.708 2.08-4.238 2.08-7.592 0-3.334-.719-5.849-2.155-7.547-1.436-1.697-3.45-2.545-6.04-2.545-2.67 0-4.745.888-6.22 2.666-1.477 1.777-2.215 4.313-2.215 7.607m-7.592.24c0-5.12 1.446-9.177 4.338-12.17 2.892-2.993 6.91-4.489 12.05-4.489 4.841 0 8.621 1.441 11.343 4.323 2.721 2.883 4.082 6.774 4.082 11.674 0 5.021-1.447 9.018-4.338 11.99-2.892 2.973-6.829 4.458-11.81 4.458-4.8 0-8.61-1.41-11.432-4.232-2.822-2.82-4.233-6.673-4.233-11.554m-16.417-7.802c0 1.045.331 1.863.994 2.456.662.592 2.128 1.34 4.398 2.243 2.912 1.166 4.956 2.476 6.131 3.932 1.175 1.456 1.762 3.22 1.762 5.287 0 2.912-1.12 5.252-3.359 7.02-2.24 1.767-5.267 2.65-9.083 2.65-1.285 0-2.706-.155-4.263-.467-1.556-.31-2.877-.707-3.96-1.19v-7.169a17.945 17.945 0 004.277 2.198c1.526.543 2.911.814 4.157.814 1.647 0 2.862-.23 3.645-.693.784-.46 1.175-1.235 1.175-2.319 0-1.005-.406-1.853-1.22-2.546-.813-.693-2.355-1.492-4.624-2.395-2.69-1.125-4.599-2.39-5.724-3.796-1.125-1.406-1.687-3.193-1.687-5.362 0-2.792 1.11-5.086 3.33-6.884 2.217-1.797 5.095-2.696 8.63-2.696 1.084 0 2.3.12 3.645.361 1.346.242 2.47.553 3.374.934v6.93c-.964-.644-2.089-1.195-3.374-1.658-1.286-.462-2.56-.693-3.826-.693-1.386 0-2.465.271-3.238.813-.774.543-1.16 1.286-1.16 2.23m-35.066 7.562c0 3.233.733 5.703 2.2 7.411 1.465 1.707 3.564 2.56 6.295 2.56 2.652 0 4.67-.853 6.055-2.56 1.386-1.708 2.08-4.238 2.08-7.592 0-3.334-.719-5.849-2.155-7.547-1.436-1.697-3.449-2.545-6.039-2.545-2.672 0-4.745.888-6.222 2.666-1.476 1.777-2.214 4.313-2.214 7.607m-7.592.24c0-5.12 1.446-9.177 4.338-12.17 2.893-2.993 6.91-4.489 12.051-4.489 4.84 0 8.621 1.441 11.342 4.323 2.721 2.883 4.082 6.774 4.082 11.674 0 5.021-1.446 9.018-4.338 11.99-2.892 2.973-6.828 4.458-11.809 4.458-4.8 0-8.61-1.41-11.433-4.232-2.822-2.82-4.233-6.673-4.233-11.554m-3.136-16.448c.582 0 1.105.041 1.567.121.462.08.853.18 1.175.301v7.38c-.382-.28-.939-.546-1.672-.798-.733-.25-1.622-.376-2.666-.376-1.788 0-3.299.753-4.534 2.26-1.235 1.505-1.853 3.825-1.853 6.958v15.635h-7.29V98.624h7.29v4.88h.12c.663-1.687 1.667-3.007 3.013-3.96 1.346-.954 2.962-1.432 4.85-1.432m-27.956 26.18c1.084 0 2.28-.25 3.585-.754a15.06 15.06 0 003.615-1.988v6.778c-1.165.663-2.485 1.165-3.962 1.506-1.475.342-3.098.512-4.865.512-4.559 0-8.265-1.44-11.116-4.323-2.852-2.88-4.278-6.562-4.278-11.04 0-4.98 1.456-9.083 4.37-12.307 2.91-3.224 7.037-4.835 12.38-4.835 1.366 0 2.746.176 4.143.527 1.395.352 2.504.758 3.328 1.22v6.99c-1.125-.824-2.274-1.462-3.45-1.914a9.966 9.966 0 00-3.599-.678c-2.872 0-5.192.934-6.959 2.802-1.768 1.868-2.652 4.388-2.652 7.562 0 3.132.85 5.573 2.546 7.32 1.697 1.748 4.002 2.621 6.914 2.621m-22.112 5.302h-7.29V98.624h7.29zm-8.044-39.916c0-1.205.437-2.214 1.311-3.028.874-.813 1.913-1.22 3.118-1.22 1.285 0 2.35.417 3.193 1.25.844.834 1.266 1.833 1.266 2.998 0 1.185-.432 2.18-1.296 2.982-.864.804-1.918 1.205-3.163 1.205-1.246 0-2.295-.406-3.148-1.219-.854-.815-1.28-1.803-1.28-2.968m-6.274-3.284v43.2h-7.5v-33.86h-.12l-13.408 33.86h-4.97l-13.738-33.86h-.09v33.86h-6.929v-43.2h10.755l12.412 32.024h.18l13.105-32.024z" class="fill-current-color fill-link-text-forced-colors color-text-subtle"></path>
+					<path d="M106.214 106.214H71.996V71.996h34.218z" fill="#f25022"></path>
+					<path d="M143.993 106.214h-34.218V71.996h34.218z" fill="#7fba00"></path>
+					<path d="M106.214 143.993H71.996v-34.218h34.218z" fill="#00a4ef"></path>
+					<path d="M143.993 143.993h-34.218v-34.218h34.218z" fill="#ffb900"></path>
+				</g>
+			</g>
+		</svg>
+	
+		  </div>
+					</a>
+			  
+	</div> 
+				
+		<div class="nav-bar-item is-hidden-tablet">
+			<div class="nav-bar-menu">
+				<button class="nav-bar-button is-title" data-test-id="mobile-nav-expander" title="全球导航" aria-expanded="false">
+					<span class="nav-bar-menu-title"><!---->文档<!----></span>
+					<div class="nav-bar-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span class="nav-bar-burger-label"><!---->全球导航<!----></span>
+					</div>
+				</button>
+			</div>
+		</div>
+	
+				
+		<nav class="nav-bar-nav" role="navigation" aria-label="全球">
+			<ul class="nav-bar-nav-list">
+				
+		<li class="nav-bar-item is-category">
+			<a data-test-id="header-link-category" class="nav-bar-button is-title has-hover-underline" itemprop="url" data-bi-name="L1-category-link" href="/zh-cn/">
+				<span><!---->Learn<!----></span>
+			</a>
+		</li>
+	
+				<!---->
+				<li class="nav-bar-item">
+					<a data-test-id="header-link-文档" class=" nav-bar-button has-hover-underline is-active" href="/zh-cn/docs/" aria-current="true" data-bi-name="L1-navigation-link">
+						<span><!---->文档<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a data-test-id="header-link-培训" class=" nav-bar-button has-hover-underline " href="/zh-cn/training/" data-bi-name="L1-navigation-link">
+						<span><!---->培训<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a data-test-id="header-link-认证" class=" nav-bar-button has-hover-underline " href="/zh-cn/certifications/" data-bi-name="L1-navigation-link">
+						<span><!---->认证<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a data-test-id="header-link-q&amp;a" class=" nav-bar-button has-hover-underline " href="/zh-cn/answers/" data-bi-name="L1-navigation-link">
+						<span><!---->Q&amp;A<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a data-test-id="header-link-代码示例" class=" nav-bar-button has-hover-underline " href="/zh-cn/samples/browse/" data-bi-name="L1-navigation-link">
+						<span><!---->代码示例<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a data-test-id="header-link-评估" class=" nav-bar-button has-hover-underline " href="/zh-cn/assessments/" data-bi-name="L1-navigation-link">
+						<span><!---->评估<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a data-test-id="header-link-节目" class=" nav-bar-button has-hover-underline " href="/zh-cn/shows/" data-bi-name="L1-navigation-link">
+						<span><!---->节目<!----></span>
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a data-test-id="header-link-事件" class=" nav-bar-button has-hover-underline " href="/zh-cn/events/" data-bi-name="L1-navigation-link">
+						<span><!---->事件<!----></span>
+					</a>
+				</li>
+		  <!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-143" data-bi-name="L1-navigation-menu" value="undefined">
+			<span><!---->更多<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-143" aria-label="更多">
+			<!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button is-active" href="/zh-cn/docs/" aria-current="true" data-bi-name="L1-navigation-link">
+						文档
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="/zh-cn/training/" data-bi-name="L1-navigation-link">
+						培训
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="/zh-cn/certifications/" data-bi-name="L1-navigation-link">
+						认证
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="/zh-cn/answers/" data-bi-name="L1-navigation-link">
+						Q&amp;A
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="/zh-cn/samples/browse/" data-bi-name="L1-navigation-link">
+						代码示例
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="/zh-cn/assessments/" data-bi-name="L1-navigation-link">
+						评估
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="/zh-cn/shows/" data-bi-name="L1-navigation-link">
+						节目
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="/zh-cn/events/" data-bi-name="L1-navigation-link">
+						事件
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+			</ul>
+		</nav>
+	
+				<span class="nav-bar-spacer"></span>
+				
+		<div class="nav-bar-search " id="ax-144" hidden="">
+			
+		<form class="nav-bar-search-form" method="GET" name="nav-bar-search-form" role="search" id="nav-bar-search-form" aria-label="搜索" action="/zh-cn/search/">
+			<div class="autocomplete" data-bi-name="autocomplete"><!---->
+			<div class="field-body control ">
+				<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="site-search-input" data-test-id="site-search-input" class="autocomplete-input input input-sm
+						
+						" type="search" name="terms" aria-expanded="false" aria-owns="ax-145-listbox" aria-controls="ax-145-listbox" aria-activedescendant="" aria-label="搜索" aria-describedby="ms--site-search-input-description" placeholder="搜索" pattern=".*">
+
+				<span aria-hidden="true" class="icon is-small is-left" hidden="">
+					<span class="has-text-primary docon docon-"></span>
+				</span>
+
+				<span aria-hidden="true" class="autocomplete-loader loader has-text-primary " hidden=""></span>
+
+				<span hidden="" id="ms--site-search-input-description">
+					建议将在你键入时进行筛选
+				</span>
+			</div>
+
+			<ul role="listbox" id="ax-145-listbox" data-test-id="site-search-input-listbox" class="autocomplete-suggestions is-vertically-scrollable padding-xxs " aria-label="建议" hidden="">
+				
+				
+			</ul>
+		<!----></div>
+			<!-- mobile safari will not dispatch submit event unless there's a submit button that is not display:none -->
+			<button type="submit" class="visually-hidden" tabindex="-1" aria-hidden="true"></button>
+			<input name="category" hidden="" value="">
+			
+			
+		</form>
+	
+		</div>
+		
+					<div class="nav-bar-search" hidden="">
+						<!-- hidden when the width drops to tablet -->
+						
+		<form class="nav-bar-search-form" method="GET" name="nav-bar-search-form" role="search" id="nav-bar-search-form-desktop" aria-label="搜索" action="/zh-cn/search/">
+			<div class="autocomplete" data-bi-name="autocomplete"><!---->
+			<div class="field-body control has-icons-left">
+				<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="site-search-input-desktop" data-test-id="site-search-input-desktop" class="autocomplete-input input input-sm
+						control has-icons-left
+						" type="search" name="terms" aria-expanded="false" aria-owns="ax-146-listbox" aria-controls="ax-146-listbox" aria-activedescendant="" aria-label="搜索" aria-describedby="ms--site-search-input-desktop-description" placeholder="搜索" pattern=".*">
+
+				<span aria-hidden="true" class="icon is-small is-left">
+					<span class="has-text-primary docon docon-search"></span>
+				</span>
+
+				<span aria-hidden="true" class="autocomplete-loader loader has-text-primary " hidden=""></span>
+
+				<span hidden="" id="ms--site-search-input-desktop-description">
+					建议将在你键入时进行筛选
+				</span>
+			</div>
+
+			<ul role="listbox" id="ax-146-listbox" data-test-id="site-search-input-desktop-listbox" class="autocomplete-suggestions is-vertically-scrollable padding-xxs " aria-label="建议" hidden="">
+				
+				
+			</ul>
+		<!----></div>
+			<!-- mobile safari will not dispatch submit event unless there's a submit button that is not display:none -->
+			<button type="submit" class="visually-hidden" tabindex="-1" aria-hidden="true"></button>
+			<input name="category" hidden="" value="">
+			
+			
+		</form>
+	
+					</div>
+			  
+		<div class="nav-bar-search ">
+			<div class="nav-bar-search-form-expander">
+				<button id="form-expander" data-test-id="form-expander" class="nav-bar-button has-hover-underline " title="搜索" aria-expanded="false" aria-controls="ax-144">
+					
+		<span class="is-visually-hidden-mobile"><!---->搜索<!----></span>
+		<span class="icon margin-left-xxs" aria-hidden="true">
+			<span class="docon docon-search"></span>
+		</span>
+	
+				</button>
+			</div>
+		</div>
+	
+				
+		<div class="nav-bar-profile">
+			
+		<a class="docs-sign-in auth-status-determined not-authenticated" href="#"> 登录 </a>
+	 
+		<div class="dropdown has-caret auth-status-determined authenticated">
+			<button class="dropdown-trigger button-reset" aria-controls="user-menu" aria-expanded="false" data-bi-name="L1-user-menu" aria-label="你的帐户">
+				<figure class="image is-36x36">
+					<img class="has-body-background-medium border-radius-rounded" alt="" data-profile-property="avatarThumbnailUrl">
+				</figure>
+			</button>
+			<div class="dropdown-menu box justify-content-flex-start has-body-background" id="user-menu" data-bi-name="user-menu" role="menu">
+				<div class="media is-user-dir">
+					<div class="media-left">
+						<figure class="image is-48x48" aria-hidden="true">
+							<img class="has-body-background-medium border-radius-rounded" aria-labelledby="displayName" alt="" data-profile-property="avatarUrl">
+						</figure>
+					</div>
+					<div class="media-content">
+						<h2 class="title font-size-lg">
+							<span id="displayName" class="is-inline-truncated has-max-width-200" data-profile-property="displayName"></span>
+						</h2>
+						<p class="subtitle font-size-sm margin-bottom-none">
+							<span class="is-inline-truncated has-max-width-200" data-profile-property="upn"></span>
+						</p>
+					</div>
+				</div>
+				<ul class="padding-top-xs padding-bottom-xs">
+					<li class="padding-bottom-xs">
+						<a data-profile-property="profileUrl" href="https://learn.microsoft.com/zh-cn/users/me/activity/"><!---->配置文件<!----></a>
+					</li>
+					<li>
+						<a data-profile-property="settingsUrl" href="https://learn.microsoft.com/zh-cn/users/me/settings/"><!---->设置<!----></a>
+					</li>
+				</ul>
+				<div class="border-top padding-top-xs">
+					<a class="docs-sign-out" href="#"><!---->注销<!----></a>
+				</div>
+			</div>
+		</div>
+	
+		</div>
+	
+			 <!----></div> <div class="nav-bar border-top is-hidden-mobile" data-test-id="secondary-nav-bar" data-bi-name="L2-header"><!----> 
+		<a class="nav-bar-button is-title has-hover-underline" itemprop="url" data-bi-name="L2-category-link" href="/zh-cn/windows/mixed-reality/">
+			<span>
+				混合现实
+				
+			</span>
+		</a>
+	 
+		
+		<nav class="nav-bar-nav" role="navigation" aria-label="站点">
+			<ul class="nav-bar-nav-list">
+				
+				<!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-147" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->产品<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-147" aria-label="产品">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/?WT.mc_id=mixedreality_product" data-bi-name="L2-navigation-link">
+						HoloLens
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/enthusiast-guide/?WT.mc_id=mixedreality_product" data-bi-name="L2-navigation-link">
+						Windows Mixed Reality
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/whats-new/azure-services/?WT.mc_id=mixedreality_product" data-bi-name="L2-navigation-link">
+						Azure 混合现实服务
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/dynamics365/mixed-reality/?WT.mc_id=mixedreality_product" data-bi-name="L2-navigation-link">
+						Dynamics 365 混合现实
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/mesh/?WT.mc_id=mixedreality_product" data-bi-name="L2-navigation-link">
+						Microsoft Mesh
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-148" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->开发人员<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-148" aria-label="开发人员">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/discover/get-started-with-mr?WT.mc_id=mixedreality_developer" data-bi-name="L2-navigation-link">
+						发现
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/design/design?WT.mc_id=mixedreality_developer" data-bi-name="L2-navigation-link">
+						设计
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/develop/development?tabs=unity&amp;WT.mc_id=mixedreality_developer" data-bi-name="L2-navigation-link">
+						开发
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/distribute/distribute-overview?tabs=hololens&amp;WT.mc_id=mixedreality_developer" data-bi-name="L2-navigation-link">
+						分发
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-149" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->IT 专业人士<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-149" aria-label="IT 专业人士">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/hololens-requirements?WT.mc_id=mixedreality_itpros" data-bi-name="L2-navigation-link">
+						准备
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/hololens-csp-policy-overview?WT.mc_id=mixedreality_itpros" data-bi-name="L2-navigation-link">
+						配置
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/common-scenarios?WT.mc_id=mixedreality_itpros" data-bi-name="L2-navigation-link">
+						部署
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/hololens-updates?WT.mc_id=mixedreality_itpros" data-bi-name="L2-navigation-link">
+						维护
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-150" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->VR 爱好者<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-150" aria-label="VR 爱好者">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="/zh-cn/windows/mixed-reality/enthusiast-guide/vr-journey" data-bi-name="L2-navigation-link">
+						开启你的 VR 之旅
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-buy-faqs?WT.mc_id=mixedreality_vrenthusiasts" data-bi-name="L2-navigation-link">
+						购买前
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start?WT.mc_id=mixedreality_vrenthusiasts" data-bi-name="L2-navigation-link">
+						入门
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/enthusiast-guide/learn-mixed-reality?WT.mc_id=mixedreality_vrenthusiasts" data-bi-name="L2-navigation-link">
+						使用设备
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-151" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->资源与支持<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-151" aria-label="资源与支持">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/hololens2-support?WT.mc_id=mixedreality_support" data-bi-name="L2-navigation-link">
+						支持与社区帮助
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://www.microsoft.com/hololens/partner-program" data-bi-name="L2-navigation-link">
+						加入混合现实合作伙伴计划
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-152" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->更多<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-152" aria-label="更多">
+			<!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-153" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->产品<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-153" aria-label="产品">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/?WT.mc_id=mixedreality_product" data-bi-name="L2-navigation-link">
+						HoloLens
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/enthusiast-guide/?WT.mc_id=mixedreality_product" data-bi-name="L2-navigation-link">
+						Windows Mixed Reality
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/whats-new/azure-services/?WT.mc_id=mixedreality_product" data-bi-name="L2-navigation-link">
+						Azure 混合现实服务
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/dynamics365/mixed-reality/?WT.mc_id=mixedreality_product" data-bi-name="L2-navigation-link">
+						Dynamics 365 混合现实
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/mesh/?WT.mc_id=mixedreality_product" data-bi-name="L2-navigation-link">
+						Microsoft Mesh
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-154" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->开发人员<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-154" aria-label="开发人员">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/discover/get-started-with-mr?WT.mc_id=mixedreality_developer" data-bi-name="L2-navigation-link">
+						发现
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/design/design?WT.mc_id=mixedreality_developer" data-bi-name="L2-navigation-link">
+						设计
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/develop/development?tabs=unity&amp;WT.mc_id=mixedreality_developer" data-bi-name="L2-navigation-link">
+						开发
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/distribute/distribute-overview?tabs=hololens&amp;WT.mc_id=mixedreality_developer" data-bi-name="L2-navigation-link">
+						分发
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-155" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->IT 专业人士<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-155" aria-label="IT 专业人士">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/hololens-requirements?WT.mc_id=mixedreality_itpros" data-bi-name="L2-navigation-link">
+						准备
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/hololens-csp-policy-overview?WT.mc_id=mixedreality_itpros" data-bi-name="L2-navigation-link">
+						配置
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/common-scenarios?WT.mc_id=mixedreality_itpros" data-bi-name="L2-navigation-link">
+						部署
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/hololens-updates?WT.mc_id=mixedreality_itpros" data-bi-name="L2-navigation-link">
+						维护
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-156" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->VR 爱好者<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-156" aria-label="VR 爱好者">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="/zh-cn/windows/mixed-reality/enthusiast-guide/vr-journey" data-bi-name="L2-navigation-link">
+						开启你的 VR 之旅
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-buy-faqs?WT.mc_id=mixedreality_vrenthusiasts" data-bi-name="L2-navigation-link">
+						购买前
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start?WT.mc_id=mixedreality_vrenthusiasts" data-bi-name="L2-navigation-link">
+						入门
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/windows/mixed-reality/enthusiast-guide/learn-mixed-reality?WT.mc_id=mixedreality_vrenthusiasts" data-bi-name="L2-navigation-link">
+						使用设备
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-157" data-bi-name="L2-navigation-menu" value="undefined">
+			<span><!---->资源与支持<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-157" aria-label="资源与支持">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://learn.microsoft.com/hololens/hololens2-support?WT.mc_id=mixedreality_support" data-bi-name="L2-navigation-link">
+						支持与社区帮助
+					</a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://www.microsoft.com/hololens/partner-program" data-bi-name="L2-navigation-link">
+						加入混合现实合作伙伴计划
+					</a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+		</ul>
+	</li><!---->
+			</ul>
+		</nav>
+	
+		<span class="nav-bar-spacer"></span>
+		
+		<ol class="nav-bar-list">
+			 
+		<li class="nav-bar-item ">
+			<a data-test-id="navbar-primary-cta" class="button button-sm button-primary button-filled" href="https://www.microsoft.com/hololens" data-bi-name="L2-primary-cta">
+				获取 HoloLens
+			</a>
+		</li>
+	
+		</ol>
+	 
+	 <!----></div> <!----></header>		</div>
+
+
+			<div id="content-header" class="content-header uhf-container has-padding has-default-focus border-bottom-none" data-bi-name="content-header">
+				<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+					<button type="button" class="contents-button button button-sm margin-right-xxs" data-bi-name="contents-expand" aria-haspopup="true" data-contents-button="">
+						<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+						<span class="contents-expand-title">
+目录						</span>
+					</button>
+					<button type="button" class="ap-collapse-behavior ap-expanded button button-sm" data-bi-name="ap-collapse" aria-controls="action-panel">
+						<span class="icon"><span class="docon docon-exit-mode" aria-hidden="true"></span></span>
+						<span>退出焦点模式</span>
+					</button>
+				</div>
+			</div>
+
+		<div id="disclaimer-holder" class="has-overflow-hidden has-default-focus"><!---->
+			<section data-dismissable="disappearing" data-bi-name="banner" class="is-info alert is-banner">
+				<div class="uhf-container">
+					<button data-dismiss="" data-bi-name="close" type="button" class="delete position-absolute top-0 right-0 margin-xxs delete-lg">
+						<span class="visually-hidden"><!---->消除警报<!----></span>
+					</button>
+					<div class="columns">
+						<div class="column is-12">
+							<div class="level justify-content-flex-start">
+								<div class="level-left flex-shrink-1">
+									<div class="level-item flex-shrink-1">
+										<p class="has-text-white-static disclaimer-title margin-top-xxs margin-right-xs has-line-height-reset">
+											<span class="icon">
+												<span class="docon docon-status-error-outline" aria-hidden="true"></span>
+											</span>
+											<span><!---->本主题的部分内容可能是由机器翻译。<!----></span>
+										</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		<!----></div>
+	</div>
+
+	<div class="mainContainer  uhf-container has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps is-gapless-mobile ">
+
+			<div id="left-container" class="left-container is-hidden-mobile column is-one-third-tablet is-one-quarter-desktop">
+				<nav id="affixed-left-container" class="margin-top-sm-tablet position-sticky display-flex flex-direction-column" role="navigation" aria-label="主要" data-bi-name="left toc" style="top: 24px; height: calc(100vh - 253.8px); max-height: 9260.1px;"><form action="javascript:" role="search" aria-label="搜索" class="margin-bottom-xxs"><label class="visually-hidden" for="ax-158">搜索</label><div class="autocomplete display-block" data-bi-name="autocomplete"><!---->
+			<div class="field-body control has-icons-left">
+				<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="ax-158" data-test-id="ax-158" class="autocomplete-input input input-sm
+						control has-icons-left
+						width-full" type="text" aria-expanded="false" aria-owns="ax-159-listbox" aria-controls="ax-159-listbox" aria-activedescendant="" aria-describedby="ms--ax-158-description" placeholder="按标题筛选" pattern=".*">
+
+				<span aria-hidden="true" class="icon is-small is-left">
+					<span class="has-text-primary docon docon-filter-settings"></span>
+				</span>
+
+				<span aria-hidden="true" class="autocomplete-loader loader has-text-primary " hidden=""></span>
+
+				<span hidden="" id="ms--ax-158-description">
+					建议将在你键入时进行筛选
+				</span>
+			</div>
+
+			<ul role="listbox" id="ax-159-listbox" data-test-id="ax-158-listbox" class="autocomplete-suggestions is-vertically-scrollable padding-xxs " aria-label="建议" hidden="">
+				
+				
+			</ul>
+		<!----></div></form><ul class="tree table-of-contents is-vertically-scrollable flex-grow-1 flex-shrink-1" role="tree" aria-label="目录" data-bi-name="tree" data-is-collapsible="true"><li role="none"><a aria-setsize="8" aria-level="1" aria-posinset="1" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/">Windows Mixed Reality 发烧友文档</a></li><li class="tree-item" aria-setsize="8" aria-level="1" aria-posinset="2" role="treeitem" tabindex="-1" id="title-2-1" aria-expanded="false"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>入门</span></li><li class="tree-item is-expanded" aria-setsize="8" aria-level="1" aria-posinset="3" role="treeitem" tabindex="-1" id="title-3-1" aria-expanded="true"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>使用 Windows Mixed Reality</span><ul class="tree-group" role="group"><li role="none"><a aria-setsize="9" aria-level="2" aria-posinset="1" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/learn-mixed-reality">混合现实中的学习体验</a></li><li role="none"><a aria-setsize="9" aria-level="2" aria-posinset="2" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home">混合现实主页</a></li><li role="none"><a aria-setsize="9" aria-level="2" aria-posinset="3" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/controllers-in-wmr">Windows Mixed Reality 中的控制器</a></li><li role="none"><a aria-setsize="9" aria-level="2" aria-posinset="4" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/using-speech-in-wmr">使用语音输入</a></li><li role="none"><a aria-setsize="9" aria-level="2" aria-posinset="5" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality">使用游戏、360 视频和应用</a></li><li role="none"><a aria-setsize="9" aria-level="2" aria-posinset="6" role="treeitem" tabindex="0" class="tree-item is-leaf has-external-link-indicator is-selected" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality" aria-current="page">使用 SteamVR</a></li><li role="none"><a aria-setsize="9" aria-level="2" aria-posinset="7" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/using-microsoft-edge">使用 Microsoft Edge</a></li><li role="none"><a aria-setsize="9" aria-level="2" aria-posinset="8" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/webvr">什么是 WebVR</a></li><li role="none"><a aria-setsize="9" aria-level="2" aria-posinset="9" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/using-wmr-faq">使用 Windows Mixed Reality 常见问题解答</a></li></ul></li><li class="tree-item" aria-setsize="8" aria-level="1" aria-posinset="4" role="treeitem" tabindex="-1" id="title-4-1" aria-expanded="false"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>企业应用场景</span></li><li class="tree-item" aria-setsize="8" aria-level="1" aria-posinset="5" role="treeitem" tabindex="-1" id="title-5-1" aria-expanded="false"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>Location-Based娱乐</span></li><li class="tree-item" aria-setsize="8" aria-level="1" aria-posinset="6" role="treeitem" tabindex="-1" id="title-6-1" aria-expanded="false"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>故障排除和常见问题解答</span></li><li class="tree-item" aria-setsize="8" aria-level="1" aria-posinset="7" role="treeitem" tabindex="-1" id="title-7-1" aria-expanded="false"><span data-bi-name="tree-expander" class="tree-expander"><span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>资源</span></li><li role="none"><a aria-setsize="8" aria-level="1" aria-posinset="8" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/contributing">贡献指南</a></li></ul><div class="padding-xxs padding-none-tablet border-top border-bottom-tablet"><button class="button button-sm button-clear button-block inner-focus justify-content-flex-start-tablet" data-bi-name="download-pdf" rel="nofollow"><!---->
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-dictionary-download"></span>
+			</span>
+			<span><!---->下载 PDF<!----></span>
+		<!----></button></div></nav>
+			</div>
+
+			<!-- .primary-holder -->
+			<section class="primary-holder column is-two-thirds-tablet is-three-quarters-desktop">
+				<!--div.columns -->
+				<div class="columns is-gapless-mobile has-large-gaps ">
+
+
+					<div id="main-column" class="column  is-full is-8-desktop">
+
+						<main id="main" class="" role="main" data-bi-name="content" lang="zh-cn" dir="ltr">
+							<!-- article-header -->
+							<div id="article-header" class="background-color-body margin-top-sm-tablet margin-bottom-xs display-none-print">
+								<div class="display-flex align-items-center ">
+									<details id="article-header-breadcrumbs-overflow-popover" class="popover" data-for="article-header-breadcrumbs">
+										<summary class="button button-clear button-primary button-sm inner-focus" aria-label="所有痕迹">
+											<span class="icon">
+												<span class="docon docon-more"></span>
+											</span>
+										</summary>
+										<div id="article-header-breadcrumbs-overflow" class="popover-content padding-none"><!---->
+			<nav>
+				<ol class="list-style-none">
+					<!---->
+								<li class="line-clamp-1">
+									<a class="display-block has-inner-focus padding-inline-xs padding-block-xxs border-radius font-size-sm" href="https://learn.microsoft.com/zh-cn/">
+										Learn
+									</a>
+								</li>
+							<!----><!---->
+								<li class="line-clamp-1">
+									<a class="display-block has-inner-focus padding-inline-xs padding-block-xxs border-radius font-size-sm" href="https://learn.microsoft.com/zh-cn/windows/">
+										Windows
+									</a>
+								</li>
+							<!----><!---->
+								<li class="line-clamp-1">
+									<a class="display-block has-inner-focus padding-inline-xs padding-block-xxs border-radius font-size-sm" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/">
+										混合现实
+									</a>
+								</li>
+							<!----><!---->
+								<li class="line-clamp-1">
+									<a class="display-block has-inner-focus padding-inline-xs padding-block-xxs border-radius font-size-sm" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/">
+										Windows Mixed Reality 发烧友文档
+									</a>
+								</li>
+							<!----><!---->
+								<li class="line-clamp-1">
+									<a class="display-block has-inner-focus padding-inline-xs padding-block-xxs border-radius font-size-sm" href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/learn-mixed-reality">
+										使用 Windows Mixed Reality
+									</a>
+								</li>
+							<!----><!----><!---->
+				</ol>
+			</nav>
+			
+		<!----></div>
+									</details>
+
+									<bread-crumbs id="article-header-breadcrumbs" data-test-id="article-header-breadcrumbs" class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop margin-left-negative-xxs padding-left-xxs" style="display: block; white-space: nowrap; overflow: hidden;"><!---->
+			<nav>
+				<ol class="breadcrumbs breadcrumbs-initial-slash">
+					<!---->
+								<li class="breadcrumbs-item" data-bread-crumbs-collapse-target="" hidden="">
+									<a href="https://learn.microsoft.com/zh-cn/"><!---->Learn<!----></a>
+								</li>
+							<!----><!---->
+								<li class="breadcrumbs-item" data-bread-crumbs-collapse-target="" hidden="">
+									<a href="https://learn.microsoft.com/zh-cn/windows/"><!---->Windows<!----></a>
+								</li>
+							<!----><!---->
+								<li class="breadcrumbs-item" data-bread-crumbs-collapse-target="" hidden="">
+									<a href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/"><!---->混合现实<!----></a>
+								</li>
+							<!----><!---->
+								<li class="breadcrumbs-item" data-bread-crumbs-collapse-target="">
+									<a href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/"><!---->Windows Mixed Reality 发烧友文档<!----></a>
+								</li>
+							<!----><!---->
+								<li class="breadcrumbs-item" data-bread-crumbs-collapse-target="" style="">
+									<a href="https://learn.microsoft.com/zh-cn/windows/mixed-reality/enthusiast-guide/learn-mixed-reality" style=""><!---->使用 Windows Mixed Reality<!----></a>
+								</li>
+							<!----><!----><!---->
+				</ol>
+			</nav>
+		<!----></bread-crumbs>
+
+									<div id="article-header-page-actions" class="margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch">
+
+										<a id="lang-link-tablet" class="button button-primary button-clear button-sm display-none display-inline-flex-tablet" title="使用英语阅读" data-bi-name="language-toggle" data-read-in-link="" href="https://learn.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality" data-bi="{&quot;cN&quot;:&quot;language-toggle&quot;,&quot;value&quot;:&quot;off&quot;}">
+											<span class="icon margin-none" aria-hidden="true" data-read-in-link-icon="">
+												<span class="docon docon-locale-globe"></span>
+											</span>
+											<span class="is-visually-hidden" data-read-in-link-text="">使用英语阅读</span>
+										</a>
+
+											<button type="button" class="collection button button-clear button-sm button-primary display-none display-inline-flex-tablet" data-list-type="collection" data-bi-name="collection" title="将 将 SteamVR 与 Windows Mixed Reality 结合使用 - Enthusiast Guide | Microsoft Learn 添加到集合" data-pressed="false">
+												<span class="icon margin-none" aria-hidden="true">
+													<span class="docon docon-circle-addition"></span>
+												</span>
+												<span class="collection-status is-visually-hidden">添加</span>
+											</button>
+										
+
+										
+
+
+										
+										<details class="popover popover-right" id="article-header-page-actions-overflow">
+											<summary class="justify-content-flex-start button button-clear button-sm button-primary" aria-label="更多操作">
+												<span class="icon" aria-hidden="true">
+													<span class="docon docon-more-vertical"></span>
+												</span>
+											</summary>
+											<div class="popover-content padding-none">
+													<button data-page-action-item="overflow-mobile" type="button" class="justify-content-flex-start button-block button-sm has-inner-focus button button-clear display-none-tablet" data-bi-name="contents-expand" data-contents-button="" data-popover-close="">
+														<span class="icon">
+															<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+														</span>
+															<span class="contents-expand-title">目录</span>
+													</button>
+
+												<a id="lang-link-overflow" class="justify-content-flex-start button-sm has-inner-focus button button-clear button-block display-none-tablet" title="使用英语阅读" data-bi-name="language-toggle" data-page-action-item="overflow-mobile" data-check-hidden="true" data-read-in-link="" href="https://learn.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality" data-bi="{&quot;cN&quot;:&quot;language-toggle&quot;,&quot;value&quot;:&quot;off&quot;}">
+													<span class="icon" aria-hidden="true" data-read-in-link-icon="">
+														<span class="docon docon-locale-globe"></span>
+													</span>
+													<span data-read-in-link-text="">使用英语阅读</span>
+												</a>
+
+													<button type="button" class="collection justify-content-flex-start button button-clear button-sm has-inner-focus button-block display-none-tablet" data-list-type="collection" data-bi-name="collection" title="将 将 SteamVR 与 Windows Mixed Reality 结合使用 - Enthusiast Guide | Microsoft Learn 添加到集合" data-page-action-item="overflow-mobile" data-check-hidden="true" data-popover-close="" data-pressed="false">
+														<span class="icon" aria-hidden="true">
+															<span class="docon docon-circle-addition"></span>
+														</span>
+														<span class="collection-status">添加</span>
+													</button>
+
+
+													<button class="button button-block button-clear button-sm justify-content-flex-start has-inner-focus" title="打印" type="button" aria-label="打印" data-bi-name="print" data-page-action-item="overflow-all" data-popover-close="" data-print-page="" data-check-hidden="true">
+														<span class="icon" aria-hidden="true">
+															<span class="docon docon-print"></span>
+														</span>
+														<span>打印</span>
+													</button>
+
+													<div aria-hidden="true" class="margin-none
+														border-top" data-page-action-item="overflow-all"></div>
+
+													
+														<a class="button button-clear button-sm has-inner-focus button-block text-decoration-none justify-content-flex-start share-twitter" data-bi-name="twitter" data-page-action-item="overflow-all" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Flearn.microsoft.com%2Fzh-cn%2Fwindows%2Fmixed-reality%2Fenthusiast-guide%2Fusing-steamvr-with-windows-mixed-reality%3FWT.mc_id%3Dtwitter&amp;text=%E5%B0%86%20SteamVR%20%E4%B8%8E%20Windows%20Mixed%20Reality%20%E7%BB%93%E5%90%88%E4%BD%BF%E7%94%A8%20-%20Enthusiast%20Guide%20%7C%20Microsoft%20Learn&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Flearn.microsoft.com%2Fzh-cn%2Fwindows%2Fmixed-reality%2Fenthusiast-guide%2Fusing-steamvr-with-windows-mixed-reality%3FWT.mc_id%3Dtwitter">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-brand-twitter"></span>
+															</span>
+															<span>Twitter</span>
+														</a>
+														<a class="button button-clear button-sm has-inner-focus button-block text-decoration-none justify-content-flex-start share-linkedin" data-bi-name="linkedin" data-page-action-item="overflow-all" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Flearn.microsoft.com%2Fzh-cn%2Fwindows%2Fmixed-reality%2Fenthusiast-guide%2Fusing-steamvr-with-windows-mixed-reality%3FWT.mc_id%3Dlinkedin">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-brand-linkedin"></span>
+															</span>
+															<span>LinkedIn</span>
+														</a>
+														<a class="button button-clear button-sm button-block has-inner-focus text-decoration-none justify-content-flex-start share-facebook" data-bi-name="facebook" data-page-action-item="overflow-all" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flearn.microsoft.com%2Fzh-cn%2Fwindows%2Fmixed-reality%2Fenthusiast-guide%2Fusing-steamvr-with-windows-mixed-reality%3FWT.mc_id%3Dfacebook">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-brand-facebook"></span>
+															</span>
+															<span>Facebook</span>
+														</a>
+														<a class="button button-clear button-sm button-block has-inner-focus text-decoration-none justify-content-flex-start share-email" data-bi-name="email" data-page-action-item="overflow-all" href="mailto:?subject=%5B%E5%85%B1%E4%BA%AB%E6%96%87%E7%AB%A0%5D%20%E5%B0%86%20SteamVR%20%E4%B8%8E%20Windows%20Mixed%20Reality%20%E7%BB%93%E5%90%88%E4%BD%BF%E7%94%A8%20-%20Enthusiast%20Guide%20%7C%20Microsoft%20Learn&amp;body=%E5%B0%86%20SteamVR%20%E4%B8%8E%20Windows%20Mixed%20Reality%20%E7%BB%93%E5%90%88%E4%BD%BF%E7%94%A8%20-%20Enthusiast%20Guide%20%7C%20Microsoft%20Learn%0A%0Ahttps%3A%2F%2Flearn.microsoft.com%2Fzh-cn%2Fwindows%2Fmixed-reality%2Fenthusiast-guide%2Fusing-steamvr-with-windows-mixed-reality%3FWT.mc_id%3Demail">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-mail-message-fill"></span>
+															</span>
+															<span>电子邮件</span>
+														</a>
+												
+											</div>
+										</details>
+										
+									</div>
+								</div>
+							</div>
+							<!-- end article-header -->
+
+
+							<div>
+								<button type="button" class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="">
+									<span class="icon">
+										<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+									</span>
+										<span class="contents-expand-title">目录</span>
+								</button>
+							</div>
+
+							<!-- end mobile-contents button  -->
+
+							<div class="content ">
+
+
+								<h1 id="using-steamvr-with-windows-mixed-reality">将 SteamVR 与 Windows Mixed Reality 结合使用</h1>
+
+
+									<div class="display-flex justify-content-space-between align-items-center flex-wrap-wrap page-metadata-container">
+										<div class="margin-right-xxs">
+											<ul class="metadata page-metadata" data-bi-name="page info" lang="zh-cn" dir="ltr">
+													<li>
+项目													</li>
+
+													<li class="visibility-hidden-visual-diff">
+														<time class="" data-article-date="" aria-label="文章评审日期" datetime="2023-03-21T00:00:00.000Z" data-article-date-source="calculated">2023/03/21</time>
+													</li>
+														<li class="contributors-holder display-none-print">
+															<button aria-label="查看所有参与者" class="contributors-button link-button" data-bi-name="contributors" title="查看所有参与者">
+																	6 个参与者
+															</button>
+														</li>
+											</ul>
+										</div>
+
+<div id="user-feedback" class="margin-block-xxs display-none-print" data-hide-on-archived="">
+	<button id="user-feedback-button" data-test-id="conceptual-feedback-button" class="button button-sm button-clear button-primary" type="button" data-bi-name="user-feedback-button" data-user-feedback-button="">
+		<span class="icon" aria-hidden="true">
+			<span class="docon docon-like"></span>
+		</span>
+		<span>反馈</span>
+	</button>
+</div>
+									</div>
+
+									<div id="ms--content-well-notifications" data-bi-name="content-well-notification"></div>
+
+										<nav id="center-doc-outline" class="doc-outline display-none-print margin-bottom-sm" data-bi-name="intopic toc" role="navigation" aria-label="本文内容"><!----> 
+		<h2 id="ms--in-this-article" class="title is-6 margin-block-xs"><!---->本文内容<!----></h2>
+		<ol id="content-well-in-this-article-list" class="border-left padding-left-xxs" aria-live="polite" aria-relevant="additions">
+			<!---->
+					<li class="">
+						<a href="#get-your-pc-ready"><!---->准备好电脑<!----></a>
+					</li>
+				<!---->
+					<li class="">
+						<a href="#set-up-windows-mixed-reality-for-steamvr"><!---->设置 Windows Mixed Reality for SteamVR<!----></a>
+					</li>
+				<!---->
+					<li class="">
+						<a href="#set-up-windows-mixed-reality-for-steamvr-in-an-environment-without-internet-access"><!---->在一个无法访问 Internet 的环境中设置 Windows Mixed Reality for SteamVR<!----></a>
+					</li>
+				<!---->
+					<li class="">
+						<a href="#play-steamvr-games"><!---->玩 SteamVR 游戏<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#using-motion-controllers-with-steamvr"><!---->将运动控制器与 SteamVR 结合使用<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#changing-the-resolution"><!---->更改分辨率<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#using-multiple-headsets"><!---->使用多个头戴显示设备<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#preview-programs"><!---->预览程序<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#enabling-motion-reprojection-for-steamvr-apps"><!---->为 SteamVR 应用启用运动重投影<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#sharing-feedback-on-steamvr"><!---->共享有关 SteamVR 的反馈<!----></a>
+					</li>
+				<!---->
+					<li class="expandable">
+						<a href="#see-also"><!---->请参阅<!----></a>
+					</li>
+				<!---->
+		</ol>
+	 
+		<button type="button" aria-expanded="false" data-show-more="" class="link-button font-weight-semibold font-size-sm margin-top-xxs margin-left-xs" aria-controls="content-well-in-this-article-list" data-title="显示另外 7 个" data-bi-name="show-more-btn">
+			<span class="show-more-text "><!---->显示另外 7 个<!----></span>
+			
+		</button>
+	 <!----></nav>
+
+								<!-- <content> -->
+									<p>通过 Windows Mixed Reality for SteamVR，用户可以在 Windows Mixed Reality 沉浸式头戴显示设备上运行 SteamVR 体验。 安装 Windows Mixed Reality for SteamVR 后，用户可以从他们的桌面或 Steam 库启动喜爱的 SteamVR 应用程序，并直接在他们的 Windows 头戴显示设备上玩。</p>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#get-your-pc-ready" aria-label="节标题：准备好电脑"></a><h2 id="get-your-pc-ready" class="heading-anchor">准备好电脑</h2></div>
+<ul>
+<li>确保没有挂起的更新：选择<strong>“开始&gt;设置”“&gt;更新&amp;安全&gt;Windows 更新</strong>”。 如果有可用更新，请选择“立即安装”。 如果没有可用更新，请选择“检查是否有更新”，然后安装任何新更新。</li>
+<li>Steam 上的应用和内容对电脑的要求各不相同。 请参阅每个游戏的最低要求。 配备 GTX 1070 显卡（或同等显卡）和 Intel® Core™ i7 处理器的电脑应该能为众多游戏提供良好的体验。</li>
+<li>如果尚未设置 <a href="set-up-windows-mixed-reality" data-linktype="relative-path">Windows Mixed Reality</a>，请进行设置。</li>
+</ul>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#set-up-windows-mixed-reality-for-steamvr" aria-label="节标题：设置 Windows Mixed Reality for SteamVR"></a><h2 id="set-up-windows-mixed-reality-for-steamvr" class="heading-anchor">设置 Windows Mixed Reality for SteamVR</h2></div>
+<ol>
+<li><a href="https://steamcdn-a.akamaihd.net/client/installer/SteamWindowsMRInstaller.exe" data-linktype="external">下载并安装 SteamVR。</a></li>
+<li>准备就绪后，启动 SteamVR。 SteamVR 教程应会自动启动。</li>
+</ol>
+<blockquote>
+<p>              “注意：”对于 SteamVR 设置的高级故障排除，请确保已安装以下软件组件：</p>
+<ol>
+<li>安装 <a href="http://store.steampowered.com/about/" data-linktype="external">Steam</a> 并“登录”或“创建一个新帐户”。</li>
+<li>安装 <a href="https://store.steampowered.com/app/250820/SteamVR/" data-linktype="external">SteamVR</a>。 插入头戴显示设备后，启动 Steam，应会看到一个对话框，提示你安装 SteamVR。 请按照对话框中的提示进行安装。
+* 如果未看到弹出窗口，请导航到“库”的“工具”部分来安装 SteamVR。 在列表中找到 SteamVR，然后右键单击并选择“安装游戏”。</li>
+<li>安装 <a href="https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/" data-linktype="external">Windows Mixed Reality for SteamVR</a>。</li>
+</ol>
+</blockquote>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#set-up-windows-mixed-reality-for-steamvr-in-an-environment-without-internet-access" aria-label="节标题：在一个无法访问 Internet 的环境中设置 Windows Mixed Reality for SteamVR"></a><h2 id="set-up-windows-mixed-reality-for-steamvr-in-an-environment-without-internet-access" class="heading-anchor">在一个无法访问 Internet 的环境中设置 Windows Mixed Reality for SteamVR</h2></div>
+<p>              将必要的介质存储在便携式存储设备上</p>
+<ol>
+<li>在可完全访问 Internet 的电脑上使用 <a href="http://store.steampowered.com/about/" data-linktype="external">Steam</a> 按照上述说明安装 <a href="https://store.steampowered.com/app/250820/SteamVR/" data-linktype="external">SteamVR</a> 和 <a href="https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/" data-linktype="external">Windows Mixed Reality for SteamVR</a>。</li>
+<li>在 Steam 中，打开“库”部分并找到标记为“工具”的部分。</li>
+<li>安装 SteamVR 后，右键单击“SteamVR”条目，然后在出现的弹出菜单中单击“属性”条目。</li>
+<li>包含多个选项卡的新窗口随即打开。 选择“本地文件”选项卡并单击标记为“浏览本地文件”的按钮。</li>
+<li>包含 SteamVR 运行时的目录随即打开。 将整个目录（名为 SteamVR）复制到所选的便携式介质（例如 USB 拇指驱动器）上。</li>
+<li>对 Windows Mixed Reality for SteamVR 以及你希望在目标电脑上安装的任何与 SteamVR 兼容的应用执行相同的操作。</li>
+</ol>
+<p>              “在目标电脑上运行 SteamVR”</p>
+<ol>
+<li><p>将便携式存储设备插入目标电脑后，将 SteamVR、MixedRealityVRDriver 和其他文件夹移动到目标电脑上方便的位置。
+<img src="images/steamvr-install-files.png" alt="安装在目标电脑上的 SteamVR 和用于 SteamVR 的Windows Mixed Reality" data-linktype="relative-path"></p>
+</li>
+<li><p>确保 SteamVR 和 MixedRealityVRDriver 在同一文件夹中，打开命令提示符。 对于此示例，我们假设包含文件夹位于 C:\SteamVRInstall。 在这种情况下，应在命令提示符下运行：</p>
+</li>
+</ol>
+<div class="codeHeader" id="code-try-0" data-bi-name="code-header"><span class="language">PowerShell</span>
+		<button type="button" class="action position-relative display-none-print" data-bi-name="copy">
+			<span class="icon margin-right-xxs" aria-hidden="true">
+				<span class="docon docon-edit-copy"></span>
+			</span>
+			<span>复制</span>
+			<div class="successful-copy-alert position-absolute right-0 top-0 left-0 bottom-0 display-flex align-items-center justify-content-center has-text-success-invert has-background-success is-transparent" aria-hidden="true">
+				<span class="icon font-size-lg">
+					<span class="docon docon-check-mark"></span>
+				</span>
+			</div>
+		</button>
+	</div><pre class="has-inner-focus" role="group" aria-label="可水平滚动的代码" tabindex="0"><code class="lang-powershell" data-author-content="chdir &quot;C:\SteamVRInstall&quot;
+.\SteamVR\bin\win64\vrpathreg.exe adddriver &quot;C:\SteamVRInstall\MixedRealityVRDriver&quot;
+"><span>chdir <span class="hljs-string">"C:\SteamVRInstall"</span>
+.\SteamVR\bin\win64\vrpathreg.exe adddriver <span class="hljs-string">"C:\SteamVRInstall\MixedRealityVRDriver"</span>
+</span></code></pre>
+<p>（请注意，如果运行的是 32 位版本的 Windows，则上述路径的 <code>win64</code> 部分应改为 <code>win32</code>。）</p>
+<p>这将允许运行时在你的自定义安装中找到 Windows Mixed Reality for SteamVR 驱动程序。</p>
+<ol start="4">
+<li>若要运行 SteamVR，应双击位于 SteamVR\bin\win64\vrstartup.exe 的“vrstartup.exe”文件，或者如果目标电脑运行的是 32 位版本的 Windows，则双击位于 SteamVR\bin\win32\vrstartup.exe 的该文件。</li>
+</ol>
+<p>有关详细信息和故障排除，请参阅 <a href="https://partner.steamgames.com/doc/features/steamvr/enterprise#2" data-linktype="external">Steamworks 文档页</a>。</p>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#play-steamvr-games" aria-label="节标题：玩 SteamVR 游戏"></a><h2 id="play-steamvr-games" class="heading-anchor">玩 SteamVR 游戏</h2></div>
+<ol>
+<li>将头戴显示设备连接到电脑并打开运动控制器。</li>
+<li>加载 Windows Mixed Reality 主页并显示控制器后，打开桌面上的 Steam 应用。</li>
+<li>使用 Steam 应用从 Steam 库中启动 SteamVR 游戏。</li>
+</ol>
+<p>              “提示”：若要在不摘下头戴显示设备的情况下启动 SteamVR 游戏，请使用桌面应用（“启动”&gt;“桌面”）在 Windows Mixed Reality 中查看电脑桌面并与之交互。</p>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#using-motion-controllers-with-steamvr" aria-label="节标题：将运动控制器与 SteamVR 结合使用"></a><h2 id="using-motion-controllers-with-steamvr" class="heading-anchor">将运动控制器与 SteamVR 结合使用</h2></div>
+<p>你将在不同游戏中以不同方式使用运动控制器。 以下是一些可帮助你入门的基础知识：</p>
+<ul>
+<li>若要打开 Steam 仪表板，请直接按下左或右控制杆。</li>
+<li>若要退出 SteamVR 游戏并返回 Windows Mixed Reality 主页，请按 Windows 按钮。</li>
+</ul>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#changing-the-resolution" aria-label="节标题：更改分辨率"></a><h2 id="changing-the-resolution" class="heading-anchor">更改分辨率</h2></div>
+<p>如果想以更高的分辨率玩游戏，可以随时在“SteamVR”-&gt;设置”-&gt;“应用程序”窗口中调整应用程序分辨率滑块。 **使用分辨率更高的乘数时，可以预期到游戏会对电脑造成更大负担。 如果增加乘数并看到性能下降，请将滑块重新调整为默认级别并重启游戏，以确保更改生效。<img src="images/steamvr_settings_applications.png" alt="调整应用程序分辨率" data-linktype="relative-path"></p>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#using-multiple-headsets" aria-label="节标题：使用多个头戴显示设备"></a><h2 id="using-multiple-headsets" class="heading-anchor">使用多个头戴显示设备</h2></div>
+<p>如果你是一名 VR 爱好者，你可能经常在同一台电脑上使用多个 VR 头戴显示设备。 如果是这种情况，请注意，只要插入了 Windows Mixed Reality 头戴显示设备，SteamVR 游戏将始终在该设备上启动。 如果想在另一个头戴显示设备上启动 SteamVR 游戏，请确保在继续之前先拔下 Windows Mixed Reality 头戴显示设备。</p>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#preview-programs" aria-label="节标题：预览程序"></a><h2 id="preview-programs" class="heading-anchor">预览程序</h2></div>
+<p>我们会定期发布更新，以提高在 Windows Mixed Reality 沉浸式头戴显示设备上使用 SteamVR 的性能、可靠性和整体体验。 虽然这些预览程序都不是必需的，但如果你想更快更频繁地获得更新（并就这些更新向我们提供反馈！），我们鼓励你使用它们。</p>
+<div class="heading-wrapper" data-heading-level="h3"><a class="anchor-link docon docon-link" href="#windows-mixed-reality-for-steamvr-beta" aria-label="节标题：Windows Mixed Reality for SteamVR Beta 版"></a><h3 id="windows-mixed-reality-for-steamvr-beta" class="heading-anchor">Windows Mixed Reality for SteamVR Beta 版</h3></div>
+<p>Windows Mixed Reality for SteamVR 是你从 Steam 商店安装的组件，通过该组件可将 SteamVR 与 Windows Mixed Reality 头戴显示设备配合使用。  我们会定期发布该“桥”的更新，并且 Steam 会自动安装它们。</p>
+<p>如果想更频繁地获得更新，建议你加入我们的公开 Beta 版。  更新首先会面向 Beta 版受众，我们会利用他们的反馈来确保更新质量过关，然后再向所有用户发布。  如果你未加入 Beta 版计划，你最终也会获得同样的修补程序和功能，只是会在 Beta 版用户对其进行测试之后。</p>
+<p>若要加入，请执行以下操作：</p>
+<ol>
+<li>在 Steam 中，使用“库”菜单下的下拉菜单筛选“软件”。</li>
+<li>在列表中，右键单击“Windows Mixed Reality for SteamVR”并选择“属性”。</li>
+<li>选择“Beta”选项卡。</li>
+<li>选择加入“Beta 版 - 公开 Beta 版”，然后选择“关闭”进行确认。 Beta 访问代码字段应留空。</li>
+</ol>
+<div class="heading-wrapper" data-heading-level="h3"><a class="anchor-link docon docon-link" href="#steamvr-beta" aria-label="节标题：SteamVR Beta 版"></a><h3 id="steamvr-beta" class="heading-anchor">SteamVR Beta 版</h3></div>
+<p>SteamVR 由 Valve 构建和发布，适用于所有 SteamVR 头戴显示设备。  它遵循一种类似的模式，即先向 Beta 版成员发布更新，然后再发布给所有用户。</p>
+<p>若要加入，请执行以下操作：</p>
+<ol>
+<li>在 Steam 中，使用“库”菜单下的下拉菜单筛选“工具”。</li>
+<li>在列表中，右键单击“SteamVR”并选择“属性”。</li>
+<li>选择“Beta”选项卡。</li>
+<li>选择加入“Beta 版 - 公开 Beta 版”，然后选择“关闭”进行确认。  beta 访问代码字段应留空。<img src="images/steamvr-beta.png" alt="在 SteamVR 的属性对话框中切换到 SteamVR beta 版本" data-linktype="relative-path"></li>
+</ol>
+<div class="heading-wrapper" data-heading-level="h3"><a class="anchor-link docon docon-link" href="#windows-insider-program" aria-label="节标题：Windows 预览体验计划"></a><h3 id="windows-insider-program" class="heading-anchor">Windows 预览体验计划</h3></div>
+<p>Windows Mixed Reality 是 Windows 10 和 Windows 11 的一部分。  Windows OS 附带了许多影响 SteamVR 用户的修复程序和功能。  若要试用最新的 Windows 10 和 Windows 11 预览版，建议加入 <a href="https://insider.windows.com" data-linktype="external">Windows 预览体验计划</a>。</p>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#enabling-motion-reprojection-for-steamvr-apps" aria-label="节标题：为 SteamVR 应用启用运动重投影"></a><h2 id="enabling-motion-reprojection-for-steamvr-apps" class="heading-anchor">为 SteamVR 应用启用运动重投影</h2></div>
+<p>Windows Mixed Reality for SteamVR 具有一项实验性的运动重投影功能，使 90 FPS 重投影更加流畅。</p>
+<p>启用运动重投影后，所有 Steam VR 游戏在名义上都将以 ½ 帧速率（45 fps 而不是 90 FPS）呈现，而 Windows Mixed Reality for SteamVR 使用 GPU 生成的运动矢量来推断下一帧。 对于在给定电脑上可靠地达到 60 FPS+ 的 SteamVR 游戏而言，这应该会带来稳定的 90 FPS 体验，偶尔出现伪影，同时保持舒适的体验。</p>
+<p>可用的运动重投影模式如下所示：</p>
+<ul>
+<li>              “SteamVR 每应用设置”：允许你通过 SteamVR 设置 UI 控制运动重投影。 然后，可以打开 SteamVR 设置，转至“视频”&gt;“每应用程序视频设置”，并选择“运动平滑处理”选项。</li>
+<li>              “自动”：如果游戏呈现速度过慢，无法保持 90 FPS，请将运动重投影设置为自动打开。 当游戏开始保持 90 FPS 或开始以低于 45 FPS 呈现时，运动重投影将关闭。 异步旋转重投影始终处于启用状态。</li>
+<li>              “运动向量”：强制应用程序始终以运动矢量重投影的半帧率运行。</li>
+<li>              “无”：禁用运动重投影。</li>
+</ul>
+<p>              “预期视觉假象”</p>
+<ol>
+<li>使用大于 150% 的应用程序分辨率时，可能会出现模糊。 使用运动重投影时，建议使用小于 150% 的值。</li>
+<li>鲜明对比的边缘或文本，尤其是在游戏中的 HUD 或菜单上，可能会因去除遮挡而暂时变形或扭曲。</li>
+<li>SteamVR Home 和电脑上无法可靠地达到 50-60 FPS 的其他许多游戏在此模式下的体验仍然很差。</li>
+<li>据报道，某些游戏以 50% 的速度运行或延迟增加（滞后）。 通过下面的 <a href="filing-feedback" data-linktype="relative-path">Windows 反馈中心</a>说明报告这些游戏。</li>
+</ol>
+<p>最初，我们为最新一代 NVidia GPU 提供实验性支持。 我们将继续迭代和改进对更多 GPU 的运动重投影支持，我们很期待收到你的反馈。</p>
+<p>              “支持的 GPU：”Nvidia GeForce GTX1060、AMD RX470 或更高版本（安装了兼容 Windows Mixed Reality 的图形驱动程序）。</p>
+<p>启用运动重投影：</p>
+<ol>
+<li>确保已按照上述说明选择加入 “Windows Mixed Reality for SteamVR Beta 版”。</li>
+<li>打开 SteamVR 仪表板。</li>
+<li>选择左侧带有 Windows Mixed Reality 徽标的按钮以打开 “Windows Mixed Reality for SteamVR” 设置。</li>
+<li>在弹出的 UI 中，选择“图形”选项卡。</li>
+<li>为“默认 SteamVR 应用运动重投影模式”选择“自动”以启用自动运动重投影。</li>
+</ol>
+<p><img src="images/settingsux-enable-lsr.gif" alt="使用设置启用 LSR &amp; LSR 指示器UX" data-linktype="relative-path"></p>
+<p>              “运动重投影指示器”</p>
+<p>运动重投影指示器有助于诊断实验性自动运动重投影功能的问题。 当设置为 true 时，你将在自动运动重投影期间在头戴显示设备的左上方看到一个指示器。 该指示器的颜色和位置对应于当前的运动重投影模式 - 有关示例，请参阅下图。</p>
+<p><img src="images/mvlsrindicator.png" alt="mvLSR 指示器" data-linktype="relative-path"></p>
+<p>绿色 = 运动重投影处于关闭状态，因为应用程序能够以全帧速率呈现。</p>
+<p>青色 = 运动重投影处于打开状态，因为应用程序受 CPU 限制。</p>
+<p>蓝色 = 运动重投影处于打开状态，因为应用程序受 GPU 限制。</p>
+<p>红色 = 运动重投影处于关闭状态，因为应用程序正在以低于一半的帧速率运行；如果已启用，请尝试减少超级采样。</p>
+<p>绿色 + 青色 + 蓝色 = 运动重投影处于半帧率模式或应用程序请求运动重投影。</p>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#sharing-feedback-on-steamvr" aria-label="节标题：共享有关 SteamVR 的反馈"></a><h2 id="sharing-feedback-on-steamvr" class="heading-anchor">共享有关 SteamVR 的反馈</h2></div>
+<p>在改进 Windows Mixed Reality SteamVR 体验方面，你的反馈非常宝贵。 通过 <a href="filing-feedback" data-linktype="relative-path">Windows 反馈中心</a>提交所有反馈和错误。 请遵循以下建议，以帮助我们充分利用你的反馈：</p>
+<ol>
+<li>在反馈中心，在顶部的“这是什么类型的反馈？”部分指出你正在报告新问题。</li>
+<li>选择“混合现实”类别和“应用”子类别。</li>
+<li>在问题摘要中注明“SteamVR”一词。 这有助于我们找到你的反馈。</li>
+<li>描述你遇到问题时使用的 SteamVR 游戏或应用程序。</li>
+<li>考虑在你的反馈中附上一份 SteamVR 系统报告。 这将提供更多日志，帮助我们诊断你的问题。
+<ol>
+<li>在 SteamVR 窗口（显示控制器状态的小窗口）上，选择游戏以打开菜单。</li>
+<li>选择“创建系统报告”。</li>
+<li>保存到文件。</li>
+<li>将生成的文件直接附加到“反馈中心”条目。</li>
+</ol>
+</li>
+<li>如果你的反馈与 SteamVR 性能有关，请收集混合现实性能跟踪： <ol>
+<li>选择“重新创建我的问题”按钮。</li>
+<li>在“包含的数据类型”旁边的下拉菜单中，选择“混合现实性能”。</li>
+<li>确保游戏正在运行并选择“开始捕获”。</li>
+<li>花几秒钟玩游戏来捕获跟踪内容。 捕获跟踪的时间不要超过 10-15 秒，否则会太大而无法提交。</li>
+<li>选择“停止捕获”。</li>
+</ol>
+</li>
+<li>完成其余字段后，选择“提交”。</li>
+</ol>
+<p>如果有任何问题或意见想要分享，也可以通过我们的 <a href="http://steamcommunity.com/app/719950/discussions/" data-linktype="external">Steam 论坛</a>与我们联系。</p>
+<div class="heading-wrapper" data-heading-level="h2"><a class="anchor-link docon docon-link" href="#see-also" aria-label="节标题：请参阅"></a><h2 id="see-also" class="heading-anchor">请参阅</h2></div>
+<ul>
+<li><a href="steamvr-questions" data-linktype="relative-path">对使用 Windows Mixed Reality 的 SteamVR 进行故障排除</a></li>
+<li><a href="using-games-and-apps-in-windows-mixed-reality" data-linktype="relative-path">在 Windows Mixed Reality 中使用游戏和应用</a></li>
+<li><a href="/zh-cn/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers" data-linktype="absolute-path">使用 Unity 中的 HP 控制器</a></li>
+<li><a href="/zh-cn/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers" data-linktype="absolute-path">使用 Unreal 中的 HP 控制器</a></li>
+<li><a href="filing-feedback" data-linktype="relative-path">提交 bug 和反馈</a></li>
+</ul>
+
+							</div>
+
+							<div id="assertive-live-region" role="alert" aria-live="assertive" class="visually-hidden" aria-relevant="additions" aria-atomic="true"></div>
+							<div id="polite-live-region" role="status" aria-live="polite" class="visually-hidden" aria-relevant="additions" aria-atomic="true"></div>
+							<!-- </content> -->
+
+						</main>
+
+
+
+
+
+						<!-- recommendations section -->
+						<!-- end recommendations section -->
+
+						<!-- feedback section -->
+						<!-- end feedback section -->
+
+						<!-- feedback report section -->
+						<!-- end feedback report section -->
+
+							<div id="ms--additional-resources-mobile" role="complementary" aria-label="其他资源" class="display-none-desktop display-none-print">
+								<hr class="hr">
+								<h2 id="ms--additional-resources-mobile-heading" class="title is-3">其他资源</h2>
+								<section id="right-rail-recommendations-mobile" data-bi-name="recommendations"><!---->
+		<hr class="hr display-none display-block-desktop">
+		<article class="margin-top-md margin-top-sm-desktop">
+			
+		<p class="font-weight-semibold font-size-md display-flex align-items-center">
+			<span class="icon margin-right-xxs" aria-hidden="true">
+				<span class="docon docon-book-art64"></span>
+			</span>
+			文档
+		</p>
+	
+			<div class="margin-top-xs ">
+				
+		<ul aria-live="polite" aria-relevant="additions" id="right-rail-recommendations-list-0">
+			<!---->
+					<li class="padding-none margin-top-xs margin-bottom-none position-relative ">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality?source=recommendations" data-bi-name="right-rail-recommendation-item-0">
+				设置 Windows Mixed Reality - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			如何设置 Windows Mixed Reality 运动控制器、语音和音频，并定义房间边界以获得安全的游戏空间。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative ">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/controllers-in-wmr?source=recommendations" data-bi-name="right-rail-recommendation-item-1">
+				Windows Mixed Reality 中的控制器 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			了解如何设置 Windows Mixed Reality 中的控制器、如何为它们配对、如何使用它们，以及如何排查它们的常见问题。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative ">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines?source=recommendations" data-bi-name="right-rail-recommendation-item-2">
+				Windows Mixed Reality 电脑兼容性指南 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			概述 Windows Mixed Reality 最低电脑系统要求兼容性的概览图。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative expandable">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/wmr-setup-faq?source=recommendations" data-bi-name="right-rail-recommendation-item-3">
+				Windows Mixed Reality 开发人员工具包常见问题解答 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			获取有关使用 Windows Mixed Reality 应用程序和设备时的常见设置问题的解答。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative expandable">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/vr-journey?source=recommendations" data-bi-name="right-rail-recommendation-item-4">
+				你的 VR 之旅 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			查看我们的特选检查点，通过设置和使用沉浸式 VR 设备指导新设备用户。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative expandable">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality?source=recommendations" data-bi-name="right-rail-recommendation-item-5">
+				安装 Windows Mixed Reality 软件 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			插入 Windows Mixed Reality 头戴显示设备之后，使用混合现实门户应用开始并下载 Windows Mixed Reality 功能。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative expandable">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality?source=recommendations" data-bi-name="right-rail-recommendation-item-6">
+				在 Windows Mixed Reality 中使用游戏和应用 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			如何启动沉浸式和 2D 应用与游戏、查看桌面以及体验 WebVR 和 SteamVR 内容。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative expandable">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/get-help-with-pc-compatibility?source=recommendations" data-bi-name="right-rail-recommendation-item-7">
+				获取有关电脑兼容性的帮助 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			及时获得解决那些在使用 Windows Mixed Reality 应用程序和设备时出现的电脑兼容性问题所需的最新资源。
+		</p>
+	
+					</li>
+				<!---->
+		</ul>
+	
+			</div>
+			<!---->
+				
+		<button type="button" aria-expanded="false" data-show-more="" class="link-button font-weight-semibold font-size-sm margin-top-sm" aria-controls="right-rail-recommendations-list-0" data-title="显示另外 5 个" data-bi-name="show-more-btn">
+			<span class="show-more-text "><!---->显示另外 5 个<!----></span>
+			
+		</button>
+	
+		  <!---->
+		</article>
+	<!----></section>
+								<section id="right-rail-training-mobile" data-bi-name="learning-resources-card"><!---->
+		<hr class="hr display-none display-block-desktop">
+		<article class="margin-top-md margin-top-sm-desktop">
+			
+		<p class="font-weight-semibold font-size-md display-flex align-items-center">
+			<span class="icon margin-right-xxs" aria-hidden="true">
+				<span class="docon docon-cube-cone-ball-shapes"></span>
+			</span>
+			培训
+		</p>
+	
+			<div class="margin-top-xs position-relative">
+				<!---->
+		<div class="position-relative margin-top-xs">
+			
+		
+				<p class="has-line-height-reset color-text-subtle font-size-xs font-weight-semibold">
+					模块
+				</p>
+		  
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/training/modules/mixed-reality-toolkit-project-unity/?source=recommendations">
+				使用混合现实工具包在 Unity 中创建混合现实项目 - Training
+			</a>
+		</p>
+	
+			
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			将混合现实工具包 (MRTK) 导入 Unity 项目中，以加速混合现实开发。 你还可以将项目部署到 HoloLens。
+		</p>
+	
+		</div>
+	<!----><!---->
+			</div>
+			
+		</article>
+	<!----></section>
+								<section id="right-rail-events-mobile" data-bi-name="events-card" hidden=""></section>
+								<section id="right-rail-qna-mobile" data-bi-name="qna-link-card" hidden=""></section>
+							</div>
+
+						<div class="border-top is-visible-interactive has-default-focus margin-top-sm ">
+
+
+
+	<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+	<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+			<a data-mscc-ic="false" class="locale-selector-link button button-sm button-clear flex-shrink-0" href="/zh-cn/locale?target=https%3A%2F%2Flearn.microsoft.com%2Fzh-cn%2Fwindows%2Fmixed-reality%2Fenthusiast-guide%2Fusing-steamvr-with-windows-mixed-reality" data-bi-name="select-locale" aria-label="内容语言选择器。 当前设置为 中文 (简体)。">
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-world"></span>
+					</span>
+					<span class="local-selector-link-text">中文 (简体)</span></a>
+		<div class="flex-shrink-0">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button button-clear button-sm has-inner-focus theme-dropdown-trigger" aria-controls="theme-menu-interactive" aria-expanded="false" title="主题" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>主题</span>
+		<span class="icon expanded-indicator" aria-hidden="true">
+			<span class="docon docon-chevron-down-light"></span>
+		</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu-interactive" role="menu">
+		<ul class="theme-selector padding-xxs" role="none">
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start is-selected" data-theme-to="light" aria-pressed="true">
+					<span class="theme-light margin-right-xxs">
+						<span class="theme-selector-icon css-variable-support border display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+亮					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start" data-theme-to="dark" aria-pressed="false">
+					<span class="theme-dark margin-right-xxs">
+						<span class="border theme-selector-icon css-variable-support display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+暗					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start" data-theme-to="high-contrast" aria-pressed="false">
+					<span class="theme-high-contrast margin-right-xxs">
+						<span class="border theme-selector-icon css-variable-support display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+高对比度					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+		</div>
+	</div>
+	<ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder"><button data-bi-name="manageCookies">管理 Cookie</button></li>
+				<li><a class="external-link-indicator" data-mscc-ic="false" href="/zh-cn/previous-versions/" data-bi-name="archivelink">早期版本</a></li>
+				<li><a class="external-link-indicator" data-mscc-ic="false" href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog" data-bi-name="bloglink">博客</a></li>
+				<li><a class="external-link-indicator" data-mscc-ic="false" href="/zh-cn/contribute/" data-bi-name="contributorGuide">参与</a></li>
+					<li><a class="external-link-indicator" data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">隐私</a></li>
+				<li><a class="external-link-indicator" data-mscc-ic="false" href="/zh-cn/legal/termsofuse" data-bi-name="termsofuse">使用条款</a></li>
+				<li><a class="external-link-indicator" data-mscc-ic="false" href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/" data-bi-name="trademarks">商标</a></li>
+		<li>© Microsoft 2023</li>
+	</ul>
+</footer>
+						</div>
+
+					</div>
+
+						<div id="ms--additional-resources" class="right-container column is-4-desktop display-none display-block-desktop" data-bi-name="pageactions" role="complementary" aria-label="其他资源">
+							<div id="affixed-right-container" class="margin-top-sm-tablet position-sticky" data-bi-name="right-column" style="top: 36px; bottom: 36px;">
+								<h2 id="ms--additional-resources-heading" class="title is-6 margin-top-md">其他资源</h2>
+								<section id="right-rail-events" data-bi-name="events-card" hidden=""></section>
+								<section id="right-rail-training" data-bi-name="learning-resources-card"><!---->
+		<hr class="hr display-none display-block-desktop">
+		<article class="margin-top-md margin-top-sm-desktop">
+			
+		<p class="font-weight-semibold font-size-md display-flex align-items-center">
+			<span class="icon margin-right-xxs" aria-hidden="true">
+				<span class="docon docon-cube-cone-ball-shapes"></span>
+			</span>
+			培训
+		</p>
+	
+			<div class="margin-top-xs position-relative">
+				<!---->
+		<div class="position-relative margin-top-xs">
+			
+		
+				<p class="has-line-height-reset color-text-subtle font-size-xs font-weight-semibold">
+					模块
+				</p>
+		  
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/training/modules/mixed-reality-toolkit-project-unity/?source=recommendations">
+				使用混合现实工具包在 Unity 中创建混合现实项目 - Training
+			</a>
+		</p>
+	
+			
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			将混合现实工具包 (MRTK) 导入 Unity 项目中，以加速混合现实开发。 你还可以将项目部署到 HoloLens。
+		</p>
+	
+		</div>
+	<!----><!---->
+			</div>
+			
+		</article>
+	<!----></section>
+								<section id="right-rail-recommendations" data-bi-name="recommendations"><!---->
+		<hr class="hr display-none display-block-desktop">
+		<article class="margin-top-md margin-top-sm-desktop">
+			
+		<p class="font-weight-semibold font-size-md display-flex align-items-center">
+			<span class="icon margin-right-xxs" aria-hidden="true">
+				<span class="docon docon-book-art64"></span>
+			</span>
+			文档
+		</p>
+	
+			<div class="margin-top-xs ">
+				
+		<ul aria-live="polite" aria-relevant="additions" id="right-rail-recommendations-list-1">
+			<!---->
+					<li class="padding-none margin-top-xs margin-bottom-none position-relative ">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality?source=recommendations" data-bi-name="right-rail-recommendation-item-0">
+				设置 Windows Mixed Reality - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			如何设置 Windows Mixed Reality 运动控制器、语音和音频，并定义房间边界以获得安全的游戏空间。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative ">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/controllers-in-wmr?source=recommendations" data-bi-name="right-rail-recommendation-item-1">
+				Windows Mixed Reality 中的控制器 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			了解如何设置 Windows Mixed Reality 中的控制器、如何为它们配对、如何使用它们，以及如何排查它们的常见问题。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative ">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines?source=recommendations" data-bi-name="right-rail-recommendation-item-2">
+				Windows Mixed Reality 电脑兼容性指南 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			概述 Windows Mixed Reality 最低电脑系统要求兼容性的概览图。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative expandable">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/wmr-setup-faq?source=recommendations" data-bi-name="right-rail-recommendation-item-3">
+				Windows Mixed Reality 开发人员工具包常见问题解答 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			获取有关使用 Windows Mixed Reality 应用程序和设备时的常见设置问题的解答。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative expandable">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/vr-journey?source=recommendations" data-bi-name="right-rail-recommendation-item-4">
+				你的 VR 之旅 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			查看我们的特选检查点，通过设置和使用沉浸式 VR 设备指导新设备用户。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative expandable">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality?source=recommendations" data-bi-name="right-rail-recommendation-item-5">
+				安装 Windows Mixed Reality 软件 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			插入 Windows Mixed Reality 头戴显示设备之后，使用混合现实门户应用开始并下载 Windows Mixed Reality 功能。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative expandable">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality?source=recommendations" data-bi-name="right-rail-recommendation-item-6">
+				在 Windows Mixed Reality 中使用游戏和应用 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			如何启动沉浸式和 2D 应用与游戏、查看桌面以及体验 WebVR 和 SteamVR 内容。
+		</p>
+	
+					</li>
+				<!---->
+					<li class="padding-none margin-top-sm margin-bottom-none position-relative expandable">
+						
+		
+		<p class="line-clamp-3">
+			<a class="display-block inner-focus font-weight-semibold font-size-sm has-line-height-reset stretched-link" href="/zh-cn/windows/mixed-reality/enthusiast-guide/get-help-with-pc-compatibility?source=recommendations" data-bi-name="right-rail-recommendation-item-7">
+				获取有关电脑兼容性的帮助 - Enthusiast Guide
+			</a>
+		</p>
+	
+						
+		<p class="font-size-sm has-line-height-reset color-text-subtle margin-top-xxs line-clamp-3">
+			及时获得解决那些在使用 Windows Mixed Reality 应用程序和设备时出现的电脑兼容性问题所需的最新资源。
+		</p>
+	
+					</li>
+				<!---->
+		</ul>
+	
+			</div>
+			<!---->
+				
+		<button type="button" aria-expanded="false" data-show-more="" class="link-button font-weight-semibold font-size-sm margin-top-sm" aria-controls="right-rail-recommendations-list-1" data-title="显示另外 5 个" data-bi-name="show-more-btn">
+			<span class="show-more-text "><!---->显示另外 5 个<!----></span>
+			
+		</button>
+	
+		  <!---->
+		</article>
+	<!----></section>
+								<nav id="side-doc-outline" class="doc-outline" data-bi-name="intopic toc" role="navigation" aria-label="本文内容">
+									<h3>本文内容</h3>
+								</nav>
+								<section id="right-rail-qna" class="margin-top-xxs" data-bi-name="qna-link-card" hidden=""></section>
+							</div>
+						</div>
+
+				</div>
+				<!--end of div.columns -->
+
+			</section>
+			<!--end of .primary-holder -->
+
+			<!-- interactive container -->
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+			<!-- end of interactive container -->
+		</div>
+
+	</div>
+	<!--end of .mainContainer -->
+
+	<section class="border-top has-default-focus is-hidden-interactive margin-top-sm ">
+
+
+
+	<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+	<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+			<a data-mscc-ic="false" class="locale-selector-link button button-sm button-clear flex-shrink-0" href="/zh-cn/locale?target=https%3A%2F%2Flearn.microsoft.com%2Fzh-cn%2Fwindows%2Fmixed-reality%2Fenthusiast-guide%2Fusing-steamvr-with-windows-mixed-reality" data-bi-name="select-locale" aria-label="内容语言选择器。 当前设置为 中文 (简体)。">
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-world"></span>
+					</span>
+					<span class="local-selector-link-text">中文 (简体)</span></a>
+		<div class="flex-shrink-0">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button button-clear button-sm has-inner-focus theme-dropdown-trigger" aria-controls="theme-menu" aria-expanded="false" title="主题" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>主题</span>
+		<span class="icon expanded-indicator" aria-hidden="true">
+			<span class="docon docon-chevron-down-light"></span>
+		</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu" role="menu">
+		<ul class="theme-selector padding-xxs" role="none">
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start is-selected" data-theme-to="light" aria-pressed="true">
+					<span class="theme-light margin-right-xxs">
+						<span class="theme-selector-icon css-variable-support border display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+亮					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start" data-theme-to="dark" aria-pressed="false">
+					<span class="theme-dark margin-right-xxs">
+						<span class="border theme-selector-icon css-variable-support display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+暗					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start" data-theme-to="high-contrast" aria-pressed="false">
+					<span class="theme-high-contrast margin-right-xxs">
+						<span class="border theme-selector-icon css-variable-support display-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span>
+高对比度					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+		</div>
+	</div>
+	<ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder"><button data-bi-name="manageCookies">管理 Cookie</button></li>
+				<li><a class="external-link-indicator" data-mscc-ic="false" href="/zh-cn/previous-versions/" data-bi-name="archivelink">早期版本</a></li>
+				<li><a class="external-link-indicator" data-mscc-ic="false" href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog" data-bi-name="bloglink">博客</a></li>
+				<li><a class="external-link-indicator" data-mscc-ic="false" href="/zh-cn/contribute/" data-bi-name="contributorGuide">参与</a></li>
+					<li><a class="external-link-indicator" data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">隐私</a></li>
+				<li><a class="external-link-indicator" data-mscc-ic="false" href="/zh-cn/legal/termsofuse" data-bi-name="termsofuse">使用条款</a></li>
+				<li><a class="external-link-indicator" data-mscc-ic="false" href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/" data-bi-name="trademarks">商标</a></li>
+		<li>© Microsoft 2023</li>
+	</ul>
+</footer>
+	</section>
+
+	<div id="action-panel" role="region" aria-label="操作面板" class="action-panel has-default-focus" tabindex="-1"></div>
+
+
+</body></html>

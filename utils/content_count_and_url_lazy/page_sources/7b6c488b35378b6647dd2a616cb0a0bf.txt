@@ -1,0 +1,1120 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><head><meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="facebook-domain-verification" content="vdretby8ilivxqhl2l9ta3ukslr1g6">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
+<link rel="manifest" href="/public/favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>Hockey VR - Oculus Quest 1, 2 and Rift VR Hockey Game with RealStick</title>
+<meta name="title" content="Melcher Studios - Virtual Reality, Augmented Reality, Game Development, E-learning and Apps Regina, Saskatoon, Calgary, Ottawa">        
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="7 days">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="city" content="Regina">
+<meta name="country" content="Canada">
+<meta name="subject" content="interactive agency">
+<meta name="description" content="Strap on your skates, step up to the blue line and test your skills in the most realistic physics-based hockey simulation available! Target practice against an AI goalie, choose between timed or shot count game modes with your choice of 3 different environments.">
+<meta name="keywords" content="">
+<meta name="google-site-verification" content="K_WP3QNQr2GE9610XXBQSgTcECmqSajJUqG3Oh8stl4">
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#1ABC9C">
+<meta name="msapplication-navbutton-color" content="#1ABC9C">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1ABC9C">
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<link rel="stylesheet" type="text/css" href="/public/Melcher2015/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="/public/Melcher2015/css/animate.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" type="text/css" href="/public/Melcher2015/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="/public/Melcher2015/css/main.css?v=1.001">
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-QV8ETFZS4R&amp;cx=c&amp;_slc=1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/en_US/sdk.js?hash=e8c8ceb7317083e18549a83fff6ad867" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/0hCdE87LyjzAkFO5Ff-v7Hj1/recaptcha__zh_cn.js" crossorigin="anonymous" integrity="sha384-nvvERczED3KjSxZfEFFVT2H6DgamVMjw61V5MHFkDryTDTBoWFoG/24MiImPw34y"></script><script src="https://connect.facebook.net/signals/config/4579907485361623?v=2.9.125&amp;r=stable&amp;domain=www.melcher.ca" async=""></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.4"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" src="/public/Melcher2015/js/vendor/modernizr-2.6.2.min.js"></script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4579907485361623');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4579907485361623&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script async="true" id="xo-pptm" src="https://www.paypal.com/tagmanager/pptm.js?client_id=ASt64TC261D09tjpK8s5UW0moAXoW7-luNi4yml_JnMje2AWt1s_iyZCEO37xQt0Mdbp_QvLctlRrQoL&amp;id=www.melcher.ca&amp;source=checkoutjs&amp;t=xo&amp;v=4.0.338"></script><script async="true" type="text/javascript" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/932722633/?random=1694075483322&amp;cv=9&amp;fst=1694075483322&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=375603261%2C466465925%2C512247839&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_his=2&amp;u_tz=480&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.melcher.ca%2Fhockeyvr%3Fmodal%3Dprivacy-policy&amp;tiba=Hockey%20VR%20-%20Oculus%20Quest%201%2C%202%20and%20Rift%20VR%20Hockey%20Game%20with%20RealStick&amp;hn=www.googleadservices.com&amp;rfmt=3&amp;fmt=4"></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style><script type="text/javascript" async="" src="https://www.paypalobjects.com/muse/muse.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/54/4/intl/zh_cn/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/54/4/intl/zh_cn/util.js"></script></head>
+<body class="modal-open" style="padding-right: 17px;">
+<div class="jqueryCSS_Style"></div>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="mobileVersionMenu"><span class="leftToright"></span><span class="rightToleft"></span><a href="" class="menuButton"><span></span><span></span><span></span><span></span></a>
+	<ul>
+		<li><a href="/work">WORK</a></li>
+		<li><a href="/services">SERVICES</a></li>
+		<li><a href="/vr-mr-hub">VR/MR HUB</a></li>
+		<li><a href="/store">STORE</a></li>
+		<li><a href="/news">NEWS</a></li>
+		<li><a href="/about">ABOUT</a></li>
+		<li><a href="/contact">CONTACT</a></li>
+	</ul>
+</div>
+<div class="header">
+	<div class="headerFixed">
+		<div class="logo"><a href="/"><span class="bg_img"><img src="/public/Melcher2015/img/MelcherLogo.svg"></span><span class="line"></span><span class="text">An Interactive Agency</span></a></div>
+		<div class="mainNav"><a href="" class="menuButton"><span></span><span></span><span></span><span></span></a>
+			<ul>
+				<li><a href="/work">WORK</a></li>
+				<li><a href="/services">SERVICES</a></li>
+				<li><a href="/vr-mr-hub">VR/MR HUB</a></li>
+				<li><a href="/store">STORE</a></li>
+				<li><a href="/about">ABOUT</a></li>
+				<li><a href="/contact">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- .header -->
+<div class="greenDisappear" style="height: 0px;"></div>
+<!-- .greenDisappear --><div class="contentOtherAlignLeft">
+<div>
+
+<div class="content">
+    
+    <div class="row no-padding col-12"> 
+
+      <div class="col-6 hockeyVrDiv hockeyvrBg2">
+        <div class="realStickBg hockeyBg">
+          <p class="realStickText padding-bottom-5">Strap on your skates, step up to the blue line and test your skills in the most realistic physics-based hockey simulation available! Target practice against an AI goalie, choose between timed or shot count game modes with your choice of 3 different environments. </p>
+          <p class="realStickText"><span>*Available for Quest 1 &amp; 2 / Oculus Rift S.</span></p>
+        </div>
+        <div class="text-center">
+          <div class="min-height-490px">
+            <img class="hockeyRealstick" src="/public/Melcher2015/img/hockeyVrLogo.png">
+          </div>
+          <div class="text-center iframeDiv padding-bottom-50 padding-top-50">
+                <iframe width="520" height="300" src="https://www.youtube.com/embed/1lemYaoTarU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                </iframe>
+          </div>
+<div class="hockeyVrBuy">
+<a href="https://store.steampowered.com/app/1769010/Hockey_VR/" target="_blank"><img class="hockeyBuyNow" src="/public/Melcher2015/img/steam-buy-now.png"></a>
+          <a href="https://www.oculus.com/experiences/quest/3708667385911604/?utm_source=melcher.ca" target="_blank"><img class="hockeyBuyNow" src="/public/Melcher2015/img/oculus-buy-now.png"></a>
+</div>
+          <p class="text-center realStickText color-blue padding-bottom-20"><span>USD $3.99</span></p>
+      </div>
+      </div>
+
+      <div class="col-6 hockeyVrDiv hockeyvrBg">
+        <div class="realStickBg realStickBg1 hockeyBg">
+          <p class="realStickText padding-bottom-5">RealStick easily clips onto your controller and secures it to any hockey stick, making your shots more accurate with a natural feel.</p>
+          <p class="realStickText"><span>*Available for Quest 1 &amp; 2 / Oculus Rift S / HTC Vive / Knuckles.</span></p>
+<p class="realStickText">*Not required to play.</p>
+          <div class="hockeyNet"><img src="/public/Melcher2015/img/hovkeyNet.png"></div>
+        </div>
+        <div class="text-center">
+          <div class="min-height-490px">
+            <img class="hockeyRealstick" src="/public/Melcher2015/img/RealStick.png">
+          </div>
+          <div class="text-center iframeDiv padding-bottom-50 padding-top-50" style="padding-bottom:17px;">
+                <iframe width="520" height="300" src="https://www.youtube.com/embed/I9tbZoJXWps?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                </iframe>
+          </div>
+          <div class="defaultDiv">
+            <p class="text-center realStickText font-bold no-padding">Hockey VR Bundle</p>
+              <a data-toggle="modal" data-target="#exampleModalCenter2" class="relativeDiv">
+                <!--<img src="/public/Melcher2015/img/Bow.png" class="bowImg" />-->
+                <img class="hockeyBuyNow" src="/public/Melcher2015/img/bundle-buy-now.png">
+              </a>
+            <p class="text-center realStickText padding-bottom-20 mobilePaddingBottom-40">CAD $599.99</p>
+          </div>
+          <div class="defaultDiv">
+            <p class="text-center realStickText font-bold">RealStick Attachment</p>
+            <a data-toggle="modal" data-target="#exampleModalCenter"><img class="hockeyBuyNow" src="/public/Melcher2015/img/paypal-buy-now.png"></a>
+            <p class="text-center realStickText padding-bottom-20 mobilePaddingBottom-40">CAD $14.99</p>
+          </div>
+      </div>
+      </div>
+
+<div class="relativeDiv">
+<div class="hockeySubFooterBg">
+<div class="rightDiv">
+  <ul>
+      <li><a href="/hockeyvr/privacy-policy">Privacy Policy</a></li>
+      <li><a href="/hockeyvr/support">Support</a></li>
+      <li><a href="/hockeyvr/eula">EULA</a></li>
+      <li><a href="/hockeyvr/terms-of-use">Terms of Use</a></li>
+  </ul>
+<span class="verifiedImg"><img src="public/Melcher2015/img/godaddy-ssl.png"></span>
+</div>
+<div class="leftDiv"><span>*The RealStick adapter is not a product of Oculus or Facebook LLC. It was designed and tested to be safe and reliable. However, we are not responsible for any damage to Oculus controllers or surroundings while using RealStick.</span></div>
+</div>
+</div>
+
+<!-- 1st Modal -->
+<div class="modal fade hockeyvrModal" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <form>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title font-bold" id="exampleModalLongTitle">Hockey VR Bundle - $599.99</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="/public/Melcher2015/img/HockeyVR_Holiday_Bundle.jpg" height="auto" width="100%">
+        <div class="font-bold">After receiving many requests from parents and grandparents, we've prepared a ready-to-play bundle!</div>
+        <div class="margin-top-30">The Hockey VR Bundle comes with everything required to start playing, no need to purchase each part separately. Start up the game using the Oculus Quest 2, and play using the RealStick, an attatchment that easily clips onto a hockey stick. If you're having any trouble or questions, a setup guide and support is provided. </div>
+          <div class="font-bold padding-bottom-7px">This Bundle Includes:</div>
+          <div>
+            - An Oculus Quest 2 (VR Headset)<br>
+            - Two RealStick adapters with a choice between three colours<br>
+            - Setup Intructions<br>
+            - Support<br>
+            - Hockey VR Game (Unlimited Use)<br>
+            - Custom name engraving on RealStick adapter (up to 12 characters, some   
+              restrictions apply)<br>
+          </div>
+          <br>
+          <div>
+            <small>* Currently offered only in Canada and the USA due to shipping constraints caused by the pandemic<br>
+            * Need to supply your own hockey stick
+            </small>
+          </div>
+          <div class="form-group padding-top-30px">
+            <label for="exampleInputEmail1">Quantity:</label>
+            <input type="number" name="quantity" value="1" id="bundleQuantity" min="1" max="100" class="form-control" placeholder="Enter Qty.">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Choose Country to Ship to:</label>
+              <div class="form-check">
+              <input class="form-check-input" type="radio" name="bundleCountry" id="country" value="ca" checked="">
+              <label class="form-check-label font-weight-normal" for="exampleRadios1">
+                Canada
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="bundleCountry" value="usa">
+              <label class="form-check-label font-weight-normal" for="exampleRadios2">
+                United States
+              </label>
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Choose a RealStick Adapter Colour:</label>
+            <div class="form-check">
+              <label class="form-check-label font-weight-normal radio-inline padding-right-30px" for="exampleRadios1">
+                <div class="bg-ffffff border-solid">&nbsp;</div>
+                <input class="form-check-input" type="radio" name="bundleColor" value="White" checked="">White
+              </label>
+              <label class="form-check-label font-weight-normal radio-inline padding-right-30px" for="exampleRadios2">
+                <div class="bg-c5c5c5 border-solid">&nbsp;</div>
+                <input class="form-check-input" type="radio" name="bundleColor" value="Grey">Grey
+              </label>
+              <label class="form-check-label font-weight-normal radio-inline padding-right-30px" for="exampleRadios2">
+                <div class="bg-000000 border-solid">&nbsp;</div>
+                <input class="form-check-input" type="radio" name="bundleColor" value="Black">Black
+              </label>
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name Engraving Text (Limit: 12 Characters):</label>
+            <input type="text" name="engravingText" value="" id="engravingText" class="form-control w-50" placeholder="Enter Text" required="" maxlength="12">
+            <span>*If you do not want any engraving, put "blank" in the field</span>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary closeBtn" data-dismiss="modal">Close</button>
+        <div id="paypal-button1"><div id="zoid-paypal-button-048537c58a" class="paypal-button paypal-button-context-iframe paypal-button-label-checkout paypal-button-size-small paypal-button-layout-horizontal" data-paypal-smart-button-version="4.0.338" style=""><style>
+                    #zoid-paypal-button-048537c58a {
+                        font-size: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        min-width: 75px;
+                    }
+
+                    #zoid-paypal-button-048537c58a.paypal-button-size-responsive {
+                        text-align: center;
+                    }
+
+                    #zoid-paypal-button-048537c58a > .zoid-outlet {
+                        display: inline-block;
+                        min-width: 75px;
+                        max-width: 750px;
+                        position: relative;
+                    }
+
+                    #zoid-paypal-button-048537c58a.paypal-button-layout-vertical > .zoid-outlet {
+                        min-width: 75px;
+                    }
+
+                    #zoid-paypal-button-048537c58a > .zoid-outlet {
+                        width:  150px;
+                        height: 25px;
+                    }
+
+                     #zoid-paypal-button-048537c58a.paypal-button-size-responsive > .zoid-outlet {
+                        width: 100%;
+                    }
+
+                    #zoid-paypal-button-048537c58a > .zoid-outlet > iframe {
+                        min-width: 100%;
+                        max-width: 100%;
+                        width: 75px;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    #zoid-paypal-button-048537c58a > .zoid-outlet > iframe.zoid-component-frame {
+                        z-index: 100;
+                    }
+
+                    #zoid-paypal-button-048537c58a > .zoid-outlet > iframe.zoid-prerender-frame {
+                        transition: opacity .2s linear;
+                        z-index: 200;
+                    }
+
+                    #zoid-paypal-button-048537c58a > .zoid-outlet > iframe.zoid-visible {
+                        opacity: 1;
+                    }
+
+                    #zoid-paypal-button-048537c58a > .zoid-outlet > iframe.zoid-invisible {
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+                </style><div class="zoid-outlet" style="transition: all 0.5s ease-in-out 0.3s;"><iframe class="zoid-component-frame zoid-visible" frameborder="0" allowtransparency="true" name="xcomponent__ppbutton__4__pmrhk2leei5cenbzha2dqobwmuywmirmej2gczzchirhaylzobqwyllcov2hi33oeiwcey3pnvyg63tfnz2faylsmvxhiir2pmrhezlgei5ce5dpoarh2lbcojsw4zdfojigc4tfnz2ceot3ejzgkzrchirhi33qej6syitqojxxa4zchj5se5dzobsseorcojqxoirmej3gc3dvmurdu6zcmvxhmir2ejyhe33eovrxi2lpnyrcyitdnruwk3tuei5hwittmfxgiytpparduisbmfdta2stk5exsocnkz2foojrgjehgsjtj5wuuncchfxuk532gu4hurzxha4he3kzmvhu4rjsl5wtq4ryn5uvmt3gmjjfk5jvjnzfiv2rieywsqsppjdgim2pnbneorzcfqrha4tpmr2wg5djn5xceorcifjxinrukrbtenrriqyds5dkobftq4zvkvlta3lpifmg6vzxfvwhkttjgr4w23c7jjxe22tfgjavo5bronpws6k2incu6mzxpbiximcnmrrhax2rozggg5dmkjzfc32mej6syitdn5ww22luei5hi4tvmuwce4dbpfwwk3tuei5hwis7l52hs4dfl5pseorcl5pwm5lomn2gs33ol5pse7jmejxw4qlvorug64tjpjsseot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpuwcezdpnvqws3rchirho53xfzwwk3ddnbsxeltdmercyittmvzxg2lpnzeuiir2ej2wszc7grrtmzbtgnqwgmbrl5wwizzwnv5gkntnnjuselbcmj2xi5dpnzjwk43tnfxw4skeei5ce5ljmrptmnbzmnstamtbgrtf63lem43g26tfgzwwu2jcfqrhezlomrsxezleij2xi5dpnzzseorcobqxs4dbnqrcyittorxxeylhmveuiir2ej2wszc7meydkzlemqzteyrql5wwizzwnv5gkntnnjuselbcnvsxiyjchj5x2lbcmvxgcytmmvhgc5djozsug2dfmnvw65luei5gmylmonssyittn52xey3fei5ce3lbnz2wc3bcfqrha4tfmzsxiy3ijrxwo2loei5gmylmonssyitvobsgc5dfinwgszloorbw63tgnftxk4tboruw63rchj2he5lffqrgc5lunbbw6zdfei5ceirmejthk3tenfxgoir2pmrgc3dmn53wkzbchjnv2lbcmruxgylmnrxxozleei5fwitwmvxg23zcluwce4tfnvsw2ytfojswiir2lnosyitsmvwwk3lcmvzceot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpv6syitpnzjgk3temvzceot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpuwce33oivzhe33sei5hwis7l52hs4dfl5pseorcl5pwm5lomn2gs33ol5pse7jmejxw4q3bnzrwk3bchj5sex27or4xazk7l4rduis7l5thk3tdoruw63s7l4rh2lbcn5xeg3djmnvseot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpuwce33okjsxg2l2murdu6zcl5pxi6lqmvpv6ir2ejpv6ztvnzrxi2lpnzpv6it5fqrgy33dmfwgkir2ej5gqx2djyrcyittor4wyzjchj5sey3pnrxxeir2ejtw63deeiwce43imfygkir2ejygs3dmeiwce43jpjsseorconwwc3dmeiwce3dbmjswyir2ejrwqzldnnxxk5bcfqrgm5lomruw4z3jmnxw44zchjtgc3dtmuwce3dbpfxxk5bchirgq33snf5g63tumfwce7jmejwg6z2mmv3gk3bchirhoylsnyrcyitbo5qws5cqn5yhk4ccojuwiz3fei5hwis7l52hs4dfl5pseorcl5pwm5lomn2gs33ol5pse7jmejtwk5cqmftwkvlsnqrdu6zcl5pxi6lqmvpv6ir2ejpv6ztvnzrxi2lpnzpv6it5fqrhizltoqrdu6zcmfrxi2lpnyrduitdnbswg23pov2ce7jmej2wszbchirdanbyguztoyzvhbqselbcozsxe43jn5xceorcgqrh27jmejrwq2lmmrcg63lbnfxceorcnb2hi4dthixs653xo4xhaylzobqwyltdn5wselbcnfsceorcgjqtizrxgjstamtceiwcezdpnvqws3rchirgq5duobztulzpo53xoltnmvwgg2dfoixggyjcpu__" title="PayPal" scrolling="no" allowpaymentrequest="allowpaymentrequest" src="https://www.paypal.com/smart/button?env=production&amp;commit=true&amp;domain=www.melcher.ca&amp;sessionID=uid_4c6d33ac01_mdg6mze6mji&amp;buttonSessionID=uid_649ce02a4f_mdg6mze6mji&amp;renderedButtons=paypal&amp;storageID=uid_a05edd32b0_mdg6mze6mji&amp;funding.disallowed=venmo&amp;locale.x=zh_CN&amp;style.color=gold&amp;style.shape=pill&amp;style.size=small&amp;style.label=checkout&amp;style.fundingicons=false&amp;style.layout=horizontal&amp;logLevel=warn&amp;sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWxvYmplY3RzLmNvbS9hcGkvY2hlY2tvdXQuanMifQ&amp;uid=048537c58a&amp;version=4&amp;xcomponent=1" style="background-color: transparent;"></iframe></div></div></div>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- 2nd Modal -->
+<div class="modal fade hockeyvrModal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <form>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLongTitle">Realstick - HockeyVR</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <br>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Quantity:</label>
+          <input type="number" name="quantity" value="1" id="quantity" min="1" max="100" class="form-control" placeholder="Enter Qty.">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="exampleInputEmail1">For:</label>
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="quest" id="quest" value="2" checked="">
+          <label class="form-check-label font-weight-normal" for="exampleRadios1">
+            Oculus Quest 2
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="quest" value="1">
+          <label class="form-check-label font-weight-normal" for="exampleRadios2">
+            Oculus Quest 1
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="quest" value="3">
+          <label class="form-check-label font-weight-normal" for="exampleRadios2">
+            Oculus Rift S
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="quest" value="4">
+          <label class="form-check-label font-weight-normal" for="exampleRadios2">
+            HTC Vive Pre-sale (coming January 2022)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="quest" value="5">
+          <label class="form-check-label font-weight-normal" for="exampleRadios2">
+            Knuckles Pre-sale (coming January 2022)
+          </label>
+        </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Choose Country to Ship:</label>
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="country" id="country" value="ca" checked="">
+          <label class="form-check-label font-weight-normal" for="exampleRadios1">
+            Canada
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="country" value="usa">
+          <label class="form-check-label font-weight-normal" for="exampleRadios2">
+            United States
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" value="other" name="country">
+          <label class="form-check-label font-weight-normal" for="exampleRadios3">
+            World
+          </label>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary closeBtn" data-dismiss="modal">Close</button>
+    <div id="paypal-button"><div id="zoid-paypal-button-65e85bd379" class="paypal-button paypal-button-context-iframe paypal-button-label-checkout paypal-button-size-small paypal-button-layout-horizontal" data-paypal-smart-button-version="4.0.338" style=""><style>
+                    #zoid-paypal-button-65e85bd379 {
+                        font-size: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        min-width: 75px;
+                    }
+
+                    #zoid-paypal-button-65e85bd379.paypal-button-size-responsive {
+                        text-align: center;
+                    }
+
+                    #zoid-paypal-button-65e85bd379 > .zoid-outlet {
+                        display: inline-block;
+                        min-width: 75px;
+                        max-width: 750px;
+                        position: relative;
+                    }
+
+                    #zoid-paypal-button-65e85bd379.paypal-button-layout-vertical > .zoid-outlet {
+                        min-width: 75px;
+                    }
+
+                    #zoid-paypal-button-65e85bd379 > .zoid-outlet {
+                        width:  150px;
+                        height: 25px;
+                    }
+
+                     #zoid-paypal-button-65e85bd379.paypal-button-size-responsive > .zoid-outlet {
+                        width: 100%;
+                    }
+
+                    #zoid-paypal-button-65e85bd379 > .zoid-outlet > iframe {
+                        min-width: 100%;
+                        max-width: 100%;
+                        width: 75px;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    #zoid-paypal-button-65e85bd379 > .zoid-outlet > iframe.zoid-component-frame {
+                        z-index: 100;
+                    }
+
+                    #zoid-paypal-button-65e85bd379 > .zoid-outlet > iframe.zoid-prerender-frame {
+                        transition: opacity .2s linear;
+                        z-index: 200;
+                    }
+
+                    #zoid-paypal-button-65e85bd379 > .zoid-outlet > iframe.zoid-visible {
+                        opacity: 1;
+                    }
+
+                    #zoid-paypal-button-65e85bd379 > .zoid-outlet > iframe.zoid-invisible {
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+                </style><div class="zoid-outlet" style="transition: all 0.5s ease-in-out 0.3s;"><iframe class="zoid-component-frame zoid-visible" frameborder="0" allowtransparency="true" name="xcomponent__ppbutton__4__pmrhk2leei5cemrrgq4dgnbzgaytsirmej2gczzchirhaylzobqwyllcov2hi33oeiwcey3pnvyg63tfnz2faylsmvxhiir2pmrhezlgei5ce5dpoarh2lbcojsw4zdfojigc4tfnz2ceot3ejzgkzrchirhi33qej6syitqojxxa4zchj5se5dzobsseorcojqxoirmej3gc3dvmurdu6zcmvxhmir2ejyhe33eovrxi2lpnyrcyitdnruwk3tuei5hwittmfxgiytpparduisbmfdta2stk5exsocnkz2foojrgjehgsjtj5wuuncchfxuk532gu4hurzxha4he3kzmvhu4rjsl5wtq4ryn5uvmt3gmjjfk5jvjnzfiv2rieywsqsppjdgim2pnbneorzcfqrha4tpmr2wg5djn5xceorcifjxinrukrbtenrriqyds5dkobftq4zvkvlta3lpifmg6vzxfvwhkttjgr4w23c7jjxe22tfgjavo5bronpws6k2incu6mzxpbiximcnmrrhax2rozggg5dmkjzfc32mej6syitdn5ww22luei5hi4tvmuwce4dbpfwwk3tuei5hwis7l52hs4dfl5pseorcl5pwm5lomn2gs33ol5pse7jmejxw4qlvorug64tjpjsseot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpuwcezdpnvqws3rchirho53xfzwwk3ddnbsxeltdmercyittmvzxg2lpnzeuiir2ej2wszc7grrtmzbtgnqwgmbrl5wwizzwnv5gkntnnjuselbcmj2xi5dpnzjwk43tnfxw4skeei5ce5ljmrpwmnbrgy2demrwme2v63lem43g26tfgzwwu2jcfqrhezlomrsxezleij2xi5dpnzzseorcobqxs4dbnqrcyittorxxeylhmveuiir2ej2wszc7meydkzlemqzteyrql5wwizzwnv5gkntnnjuselbcnvsxiyjchj5x2lbcmvxgcytmmvhgc5djozsug2dfmnvw65luei5gmylmonssyittn52xey3fei5ce3lbnz2wc3bcfqrha4tfmzsxiy3ijrxwo2loei5gmylmonssyitvobsgc5dfinwgszloorbw63tgnftxk4tboruw63rchj2he5lffqrgc5lunbbw6zdfei5ceirmejthk3tenfxgoir2pmrgc3dmn53wkzbchjnv2lbcmruxgylmnrxxozleei5fwitwmvxg23zcluwce4tfnvsw2ytfojswiir2lnosyitsmvwwk3lcmvzceot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpv6syitpnzjgk3temvzceot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpuwce33oivzhe33sei5hwis7l52hs4dfl5pseorcl5pwm5lomn2gs33ol5pse7jmejxw4q3bnzrwk3bchj5sex27or4xazk7l4rduis7l5thk3tdoruw63s7l4rh2lbcn5xeg3djmnvseot3ejpv65dzobsv6xzchirf6x3govxgg5djn5xf6xzcpuwce33okjsxg2l2murdu6zcl5pxi6lqmvpv6ir2ejpv6ztvnzrxi2lpnzpv6it5fqrgy33dmfwgkir2ej5gqx2djyrcyittor4wyzjchj5sey3pnrxxeir2ejtw63deeiwce43imfygkir2ejygs3dmeiwce43jpjsseorconwwc3dmeiwce3dbmjswyir2ejrwqzldnnxxk5bcfqrgm5lomruw4z3jmnxw44zchjtgc3dtmuwce3dbpfxxk5bchirgq33snf5g63tumfwce7jmejwg6z2mmv3gk3bchirhoylsnyrcyitbo5qws5cqn5yhk4ccojuwiz3fei5hwis7l52hs4dfl5pseorcl5pwm5lomn2gs33ol5pse7jmejtwk5cqmftwkvlsnqrdu6zcl5pxi6lqmvpv6ir2ejpv6ztvnzrxi2lpnzpv6it5fqrhizltoqrdu6zcmfrxi2lpnyrduitdnbswg23pov2ce7jmej2wszbchirdmnlfha2wezbtg44selbcozsxe43jn5xceorcgqrh27jmejrwq2lmmrcg63lbnfxceorcnb2hi4dthixs653xo4xhaylzobqwyltdn5wselbcnfsceorcgm3tmylcmu2winryeiwcezdpnvqws3rchirgq5duobztulzpo53xoltnmvwgg2dfoixggyjcpu__" title="PayPal" scrolling="no" allowpaymentrequest="allowpaymentrequest" src="https://www.paypal.com/smart/button?env=production&amp;commit=true&amp;domain=www.melcher.ca&amp;sessionID=uid_4c6d33ac01_mdg6mze6mji&amp;buttonSessionID=uid_f4164226a5_mdg6mze6mji&amp;renderedButtons=paypal&amp;storageID=uid_a05edd32b0_mdg6mze6mji&amp;funding.disallowed=venmo&amp;locale.x=zh_CN&amp;style.color=gold&amp;style.shape=pill&amp;style.size=small&amp;style.label=checkout&amp;style.fundingicons=false&amp;style.layout=horizontal&amp;logLevel=warn&amp;sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWxvYmplY3RzLmNvbS9hcGkvY2hlY2tvdXQuanMifQ&amp;uid=65e85bd379&amp;version=4&amp;xcomponent=1" style="background-color: transparent;"></iframe></div></div></div>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+
+</div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+a{cursor:pointer;}
+.modal {
+  text-align: center;
+}
+.hockeyvrModal ul{list-style-type: none; padding: 0px 40px; }
+.hockeyvrModal ul li{margin-bottom: 20px;}
+.row{margin: 0px !important;}
+.font-weight-normal{font-weight: 400;}
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+#paypal-button,#paypal-button1{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 11px;
+}
+.closeBtn{
+  border-radius: 16px;
+    padding: 3px 12px;
+}
+</style>
+
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+function ParseFloat(str,val) {
+  str = str.toString();
+  str = str.slice(0, (str.indexOf(".")) + val + 1); 
+  return Number(str);   
+}
+paypal.Button.render({
+  env: 'production',
+  client: {
+  sandbox: 'AaG0jSWIy8MVtW912HsI3OmJ4B9oEwz58zG788rmYeONE2_m8r8oiVOfbRUu5KrTWQA1iBOzFd3OhZGG',
+  production: 'ASt64TC261D09tjpK8s5UW0moAXoW7-luNi4yml_JnMje2AWt1s_iyZCEO37xQt0Mdbp_QvLctlRrQoL'
+  },
+  commit: true,
+  payment: function (data, actions) {
+    var cost = 14.99;
+    var quantity = document.getElementById("quantity").value;
+    var country = $('input[name="country"]:checked').val();
+    var quest = $('input[name="quest"]:checked').val();
+
+    if(quest==2){var name = "Realstick - HockeyVR - Oculus Quest 2"; var sku = "RealstickHockeyVROculusQuest2";}
+    else if(quest==1){var name = "Realstick - HockeyVR - Oculus Quest 1"; var sku = "RealstickHockeyVROculusQuest1";}
+    else if(quest==3){var name = "Realstick - HockeyVR - Oculus Rift S"; var sku = "RealstickHockeyVROculusQuest1";}
+    else if(quest==4){var name = "Realstick - HockeyVR - HTC Vive Pre-sale"; var sku = "RealstickHockeyVRHTCVivePreSale";}
+    else if(quest==5){var name = "Realstick - HockeyVR - Knuckles Pre-sale"; var sku = "RealstickHockeyVRKnucklesPreSale";}
+
+    if(country=="ca"){
+      var tax = 0.75;
+
+      var shipping = 15.99;  
+      if(quantity>3){
+        var shipping = (ParseFloat((((shipping * 75)/100) + 15.99), 2));
+      }
+      else if(quantity>2){ 
+        var shipping = (ParseFloat((((shipping * 70)/100) + 15.99), 2));
+      }
+      else if(quantity>1){ 
+        var shipping = (ParseFloat((((shipping * 50)/100) + 15.99), 2));
+      }
+    }
+    else if(country=="usa"){
+      var tax = 0.00;
+      
+      var shipping = 14.99;  
+      if(quantity>3){
+        var shipping = (ParseFloat((((shipping * 75)/100) + 14.99), 2));
+      }
+      else if(quantity>2){ 
+        var shipping = (ParseFloat((((shipping * 70)/100) + 14.99), 2));
+      }
+      else if(quantity>1){ 
+        var shipping = (ParseFloat((((shipping * 50)/100) + 14.99), 2));
+      }
+    }
+    else{
+      var tax = 0.00;
+      
+      var shipping = 19.99;  
+      if(quantity>3){
+        var shipping = (ParseFloat((((shipping * 75)/100) + 19.99), 2));
+      }
+      else if(quantity>2){ 
+        var shipping = (ParseFloat((((shipping * 70)/100) + 19.99), 2));
+      }
+      else if(quantity>1){ 
+        var shipping = (ParseFloat((((shipping * 50)/100) + 19.99), 2));
+      }
+    }
+
+    var t1 = parseFloat(cost * quantity);
+    var t2 = parseFloat(shipping);
+    var t3 = parseFloat(tax);
+
+    var total = t1+t2+t3;
+    total = total.toFixed(2);
+
+  return actions.payment.create({
+    transactions: [{
+      amount: {
+     total: total,
+     currency: 'CAD',
+     details: {
+      subtotal: t1,
+      shipping: t2,
+      tax: t3
+     }
+    },
+    item_list: {
+       items: [
+       {
+         name: name,
+         quantity: quantity,
+         price: cost,
+         sku: sku,
+         currency: 'CAD',
+       }
+      ],
+     }
+    }]
+  });
+  },
+  onAuthorize: function (data, actions) {
+  return actions.payment.execute()
+    .then(function () {
+    window.location = "https://www.melcher.ca/hockeyvr?paymentID="+data.paymentID+"&payerID="+data.payerID+"&token="+data.paymentToken+"&message=1";
+    });
+  }
+}, '#paypal-button');
+</script>
+<!-- Bundle Payment -->
+<script>
+paypal.Button.render({
+  env: 'production',
+  client: {
+  sandbox: 'AaG0jSWIy8MVtW912HsI3OmJ4B9oEwz58zG788rmYeONE2_m8r8oiVOfbRUu5KrTWQA1iBOzFd3OhZGG',
+  production: 'ASt64TC261D09tjpK8s5UW0moAXoW7-luNi4yml_JnMje2AWt1s_iyZCEO37xQt0Mdbp_QvLctlRrQoL'
+  },
+  commit: true,
+  payment: function (data, actions) {
+    var cost = 599.99;
+    var quantity = document.getElementById("bundleQuantity").value;
+    var country = $('input[name="bundleCountry"]:checked').val();
+    var bundleColor = $('input[name="bundleColor"]:checked').val();
+    var engravingText = document.getElementById("engravingText").value;
+    var name = "Realstick - Hockey VR Bundle - "+bundleColor+" - "+engravingText;
+
+    if(bundleColor=="White"){var sku = "RealstickHockeyVRBundleWhite";}
+    else if(bundleColor=="Grey"){var sku = "RealstickHockeyVRBundleGrey";}
+    else if(bundleColor=="Black"){var sku = "RealstickHockeyVRBundleBlack";}
+
+    if(country=="ca"){
+      var tax = 29.95;
+    }
+    else if(country=="usa"){
+      var tax = 0.00;
+    }
+
+    if(country=="ca"){
+    var shipping = 20.00;
+    }
+    else if(country=="usa"){
+      var shipping = 30.00;
+    }
+    else{
+      var shipping = 22.03;
+    }
+
+    var t1 = parseFloat(cost * quantity);
+    var t2 = parseFloat(shipping);
+    var t3 = parseFloat(tax);
+
+    var total = t1+t2+t3;
+    total = total.toFixed(2);
+
+  return actions.payment.create({
+    transactions: [{
+      amount: {
+     total: total,
+     currency: 'CAD',
+     details: {
+      subtotal: t1,
+      shipping: t2,
+      tax: t3
+     }
+    },
+    item_list: {
+       items: [
+       {
+         name: name,
+         quantity: quantity,
+         price: cost,
+         sku: sku,
+         currency: 'CAD',
+       }
+      ],
+     }
+    }]
+  });
+  },
+  onAuthorize: function (data, actions) {
+  return actions.payment.execute()
+    .then(function () {
+    window.location = "https://www.melcher.ca/hockeyvr?paymentID="+data.paymentID+"&payerID="+data.payerID+"&token="+data.paymentToken+"&message=1";
+    });
+  }
+}, '#paypal-button1');
+</script>
+
+
+<div class="modal fade in" id="privacy-policy" tabindex="-1" role="dialog" aria-hidden="true" style="display: block;">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body padding-md text-left text-dark">
+        <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="content-area">
+        <br style="clear:both">
+        <div class="spacer dark"></div><br>
+        <div class="hockeyvrPrivacyPolicy">
+<h2><span style="line-height: 1.5;">Hockey VR Privacy Policy</span></h2>
+<ol class="firstLevel">
+<li><b>About Us</b>
+	<ol>
+		<li>We are Melcher Media &amp; Design Inc., located in Canada at delivery address #202 - 815 7th Avenue, Regina SK S4N 6M7. We are entered in Canada's Business Registry under business number (BN) 843496407.</li>
+		<li>If you have any questions or concerns with this document, feel free to contact us at <a href="mailto:info@melcher.ca">info@melcher.ca</a>.</li>
+	</ol>
+</li>
+<li><b>Who and what does this policy apply to?</b>
+	<ol>
+		<li>This policy applies to those who purchase, download, or use any Melcher Studios games or services. This includes "Hockey VR", our websites, and any other related services.</li>
+		<li>In this policy, "Melcher Studios", "we," "us," and "our" means Melcher Media &amp; Design Inc..</li>
+		<li>You must be 16 years of age or older to accept this agreement. If you are under 16, you must review this policy with a parent or guardian and have them accept on your behalf, and your parent or guardian will be responsible for all of your activities when you use our games or services.</li>
+	</ol>
+</li>
+<li><b>When do we collect your data?</b>
+	<ol>
+		<li>When you purchase or play a Melcher Studios game.</li>
+		<li>When you access one of our websites.</li>
+	</ol>
+</li>
+<li><b>What data do we collect?</b>
+	<ol>
+		<li>When accessing any of our websites we will use Google Analytics to collect visitor information.</li>
+		<li>When playing a Melcher Studios game, we will collect your gamer ID for the platform on which you play, your scores and other gameplay stats. We may also collect information about the hardware and operating system the game is run on, the user experience (performance and errors), and your activities within the game.</li>
+		<li>Apart from us, your personal data will also be processed by the platforms through which you have purchased our game:
+			<ol>
+				<li>Oculus</li>
+				<li>Steam</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li><b>How do we collect your data?</b>
+	<ol>
+		<li>We use Google Analytics (<a href="https://policies.google.com/technologies/partner-sites" target="_blank">https://policies.google.com/technologies/partner-sites</a>) to collect website visitor information.</li>
+		<li>When playing a Melcher Studios game, some information may be collected, stored, or managed by the the distribution platform where you purchased the game, in which case that platform's policies will apply with respect to your data. We may also use Unity Analytics (<a href="https://unity3d.com/legal/privacy-policy" target="_blank">https://unity3d.com/legal/privacy-policy</a>) or GameAnalytics (<a href="https://gameanalytics.com/privacy" target="_blank">https://gameanalytics.com/privacy</a>) to collect additional information about your gameplay activities.</li>
+	</ol>
+</li>
+<li><b>How will we use your data?</b>
+	<ol>
+		<li>The data collected when playing a Melcher Studios game will be used as an integral part of the gameplay experience, enabling features such as leaderboards, achievements, and gameplay statistics. We will use any errors, bugs, or performance data collected to identify and fix issues with the games, and to improve the overall gameplay experience for all users. We will also use information on gameplay activities to identify popular and unpopular aspects of our games in order to improve their overall quality. The information collected may be used for marketing and analytics purposes.</li>
+	</ol>
+</li>
+<li><b>How do we store your data?</b>
+	<ol>
+		<li>Your gameplay data such as scores and stats will be stored on the distribution platform where you play the game, if applicable, and is subject to the storage policies of those platforms. Analytics data collected through third-party services will be stored with those services, and for a period of time determined by those services' policies.</li>
+		<li>Information collected elsewhere, or directly provided by you, may be stored in email or data storage services provided by Google, Dropbox, Clubhouse, or GitHub.</li>
+	</ol>
+</li>
+<li><b>Who has access to your data?</b>
+	<ol>
+		<li>Melcher Studios does not sell or disclose your personal data to any third-parties without your consent, or unless necessary for the provision of our services or compliance with applicable laws.</li>
+		<li>Your personal data are also processed by Unity, which ensures the creation and management of statistics concerning our game as mentioned above. (Privacy policy available at: <a href="https://unity3d.com/legal/privacy-policy" target="_blank">https://unity3d.com/legal/privacy-policy</a>)</li>
+	</ol>
+</li>
+<li><b>What are your data protection rights?</b>
+	<ol>
+		<li>Every user is entitled to the following:
+			<ol>
+				<li>The right to access – You have the right to request from Melcher Studios copies of your personal data.</li>
+				<li>The right to rectification – You have the right to request that Melcher Studios correct any information you believe is inaccurate. You also have the right to request Melcher Studios to complete the information you believe is incomplete.</li>
+				<li>The right to erasure – You have the right to request that Melcher Studios erase your personal data, under certain conditions.</li>
+				<li>The right to restrict processing – You have the right to request that Melcher Studios restrict the processing of your personal data, under certain conditions.</li>
+				<li>The right to object to processing – You have the right to object to Melcher Studios's processing of your personal data, under certain conditions.</li>
+				<li>The right to data portability – You have the right to request that Melcher Studios transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+			</ol>
+		</li>
+		<li>If you would like to exercise any of these rights, please contact us at <a href="mailto:info@melcher.ca">info@melcher.ca</a> and we will answer any questions or meet any requests you may have. Please note our ability to respond to your requests is limited to that of the data that we store and control directly, and that any requests related to data collected by a third-party service or platform outside of our control will need to be handled by that third-party, and subject to that party's privacy policy.</li>
+	</ol>
+</li>
+</ol>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="support" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body padding-md text-left text-dark">
+        <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="content-area">
+        <br style="clear:both">
+        <div class="spacer dark"></div><br>
+        <h1>Hockey VR Support</h1>
+<br>
+<h2>Assembling Realstick</h2>
+<br>
+<p><iframe allow="autoplay" allowfullscreen="" frameborder="0" height="260" src="https://www.youtube.com/embed/RbZxf6RsxVg?rel=0" width="460"></iframe></p>
+<br>
+<ol type="1">
+<li>Locate and use the left Oculus touch controller. The left controller features the menu button with 3 lines (hamburger icon).</li>
+<li>Slide the controller handle into the oval shaped ring by first stringing the controller strap through the loop. The controller’s ring should cover the “melcher.ca” lettering and with gentle force, snap onto the clip.</li>
+<li>Bring the controller strap around the right side of the controller and around the controller’s ring and back through the inside of the ring. There should be just enough slack to hook the strap onto the small hook on the top of the Realstick attachment.</li>
+<li>To attach to a hockey stick, slide the butt of the stick through the front of the controller ring so that the hockey stick slides across the tops of the buttons of the controller. Turn the controller in place to snap the stick into the two clips.</li>
+<li>Do not let go of the attachment. It can still slide up and down the stick. Slide the attachment to about 1 foot away from the butt of the stick to allow for room for your hands on the stick. Tighten the screw knob on the side of the stick clip to secure the attachment in place.</li>
+</ol>
+<br>
+<h2>Using Realstick in game</h2>
+<ol type="1">
+<li>Once you have your left controller mounted on a real hockey stick you can load up the game. You will not need the other controller to play with Realstick. You can place the right controller in a safe place where it will not be hit.</li>
+<li>Once the game loads into the main menu, the gloves and stick in game will likely not match with the real stick you are holding. It may look like it is pointing off to the side, this is because we need to do a quick one- time setup to enable and calibrate realstick mode. We have created a simplified way of doing this using just the real hockey stick. When you are in the main menu, tap 3 times on the ground with the stick. The taps must be hard enough to register with the controller and fast enough to count together. When the game detects that you have tapped 3 times in a row it will switch to Realstick mode and automatically start Realstick calibration.</li>
+<li>Realstick calibration will tell the game where the controller is on the stick so that the real hockey stick and VR stick visually match. When in calibration you will see a screen with instructions. Place the blade of your real stick on the real ground and hold the stick still. A progress bar will appear above your stick. After two seconds the calibration will be complete and the blade of the VR stick should roughly match where the blade of the real stick is.</li>
+<li>You can calibrate again or enable/disable Realstick mode by navigating in the game to the settings screen and selecting “Calibrate” or toggling the Realstick checkbox respectively.</li>
+</ol>
+<br>
+<h2>Tapping with Realstick is not working</h2>
+<ul>
+<li>Tapping is only detected while in the main menu.</li>
+<li>The stick must be pointing roughly toward the ground.</li>
+<li>Make sure you are holding the real stick and not the controller when you tap</li>
+<li>Taps must be made fairly quickly. The time between each tap must be less than a second (or 3 seconds to do all 3 taps) for it to count. The time for all three taps should be longer than one second. You can try tapping faster or slower.</li>
+<li>Tapping must be hard enough to register with the controller.</li>
+</ul>
+<br>
+<h2>Tapping on the ground is still not working / not an option for me</h2>
+<p>If tapping is not an option due to living in an apartment or if it is not working for whatever reason, there are a few options:</p>
+<ul>
+<li>You can attempt to bang on the butt of the stick with a closed fist or vibrate the stick gently by tapping something against it that will not damage it. Make sure the stick is pointing roughly toward the ground.</li>
+<li>If tapping is still not working, you will have to manually do the one-time setup to change to realstick mode in the settings using the default two controller control scheme.
+    <br>
+    <ol style="margin-left: -5rem;">
+        <li>Remove the headset and detach the controller attachment from the real stick.</li>
+        <li>Use both controllers in hand to navigate the in-game menu by using them to line up the VR stick with the menu buttons. You can leave the realstick attachment attached to the controller, just remember to use the wrist strap on your wrist.</li>
+        <li>Once you have enabled realstick mode, remove the headset again, re-attach the wrist strap to the attachment and re-attach the attachment to the stick.</li>
+        <li>Put on the headset again and select “Calibrate” from the menu. Instructions on calibration can be found above in the “Using Realstick in game” section.</li>
+    </ol>
+</li>
+</ul>
+<br>
+<h2>My gloves do not match with my hands / my stick is pointing in a strange direction</h2>
+<ul>
+<li>Are you using a real stick? If you are using the realstick attachment please review “Using Realstick in game” section above.</li>
+<li>If you are able to move your controllers to point the virtual stick, navigate to the settings menu. Toggle Realstick mode, one handed, and left/right handedness to see which works intuitively for you.</li>
+<li>If you are unable to move your controllers to point the virtual stick or if all the above has not worked for you, try the steps below in the “My gloves are missing” section.</li>
+</ul>
+<br>
+<h2>My gloves are missing</h2>
+<ul>
+<li>Are you using a real stick? Gloves are not displayed when using a real stick. If you do not have your controllers attached to a real stick, make sure Realstick mode is turned off in the settings.</li>
+<li>Press a button on each controller to make sure they have not gone to sleep.</li>
+<li>Check to ensure that the batteries are not dead in your controller(s).</li>
+</ul>
+<br>
+<h2>Redeeming your Hockey VR game key for the Meta Quest</h2>
+<ol>
+<li>Run the <b>Meta Quest</b> app on your phone. If it's not installed, you'll need to download it for free from your device's app store.</li>
+<li>Within the Meta Quest app, ensure you are signed in under the account where you wish to redeem Hockey VR. Then proceed with the following steps.</li>
+<li>Tap <b>Menu</b> in the bottom right corner.</li>
+<li>Tap <b>Settings</b>.</li>
+<li><b>Account Settings</b> &gt; <b>Redeem Store Code</b>.</li>
+<li>Enter your 25-character Hockey VR key into the box and tap <b>Submit</b>.</li>
+<li>You're finished! Visit your App Library to download and start playing Hockey VR.</li>
+</ol>
+<br>
+<br>
+<p><b>If you have a questions or issue not listed above, a member of staff will always be happy to help. Feel free to contact us at <a>+1.306.359.1666</a> or email us at <a>info@melcher.ca</a> and we will be sure to get back to you.</b></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<style type="text/css">
+ol li, ul li {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}</style>
+</p>        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="eula" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body padding-md text-left text-dark">
+        <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="content-area">
+        <br style="clear:both">
+        <div class="spacer dark"></div><br>
+        <h2><span style="line-height: 1.5;">EULA</span></h2>
+<br>
+<p style="font-size: 16px;"><b>LICENSE AGREEMENT</b></p>
+<p><span style="line-height: 1.5;">YOUR USE OF THE SERVICES IS SUBJECT TO THIS LICENSE AGREEMENT (THE “AGREEMENT”) AND THE TERMS SET FORTH BELOW. BY USING THE SERVICES, YOU HEREBY ACCEPT THE TERMS OF THIS AGREEMENT WITH [MELCHER MEDIA &amp; DESIGN INC.] (“Licensor”, “we”, “us” or “our”). IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT DO NOT LAUNCH OR USE THE SERVICE.</span></p>
+<p><span style="line-height: 1.5;">YOU CERTIFY THAT YOU ARE OF THE LEGAL AGE OF MAJORITY IN THE JURISDICTION IN WHICH YOU RESIDE OR, IF YOU ARE BETWEEN THE AGES OF 13 AND THE LEGAL AGE OF MAJORITY, THAT YOU ARE USING THE SERVCIES WITH THE SUPERVISION OF YOUR PARENT OR LEGAL GUARDIAN WHO AGREES TO BE BOUND BY THIS AGREEMENT. MAKE SURE TO REVIEW THIS AGREEMENT WITH YOUR PARENT OR GUARDIAN SO THAT YOU BOTH UNDERSTAND ALL OF YOUR RIGHTS AND OBLIGATIONS.</span></p>
+<p><span style="line-height: 1.5;">If you are using the Services on behalf of any entity, you represent and warrant that you are authorized to accept this Agreement on such entity’s behalf and that such entity agrees to be responsible to us if you or that entity violate this Agreement.</span></p>
+<p><span style="line-height: 1.5;">WE RESERVE THE RIGHT TO CHANGE OR MODIFY THIS AGREEMENT ON A GOING FORWARD BASIS AT ANY TIME AND IN OUR SOLE DISCRETION. If we make changes to this Agreement, we will provide notice of such changes as appropriate, such as providing notice through the Services and/or updating the “Last Updated” date at the top of this Agreement. Your continued use of the Services will confirm your acceptance of the revised Agreement. If you do not agree to the revised Agreement, you must stop using the Services. We encourage you to review the Agreement from time to time to ensure you understand the terms and conditions that apply to your access to, and use of, the Services.</span></p>
+<br>
+<p style="font-size: 16px;"><b>Eligibility</b></p>
+<p>You must be at least 13 years of age to access and use the Services. There is no exception to this requirement. We do not knowingly collect any personal information from children under the age of 13. By your use of the Services, you agree that you are either 18 years of age or older, or an emancipated minor, or possess legal parental or guardian consent, and that you are fully able and competent to understand and accept this Agreement as a binding contract and to abide by all terms and conditions contained herein.</p>
+
+<p style="font-size: 16px;"><b>Services Description</b></p>
+<ol type="a">
+<li><b>Description:</b> The “Services” consists of the software, website, applications, content, including video and other graphics and other materials and documentation.  To use the Services you must download and install on your device a portion of the software.  Using the Services will require access to our website and the content contained therein, which will be streamed to your device.</li>
+<li><b>Third Party Software:</b> Certain third party software may be required to access and use the Services.  If your device does not have such third party software you must obtain such third party software from the appropriate vendor and agree to the terms of such vendor agreement.  This Agreement does not cover the use of such third party software and we do not take any, and disclaim all, responsibility and liability regarding such third party software.</li>
+<li><b>Updates:</b> We may need to automatically update some of the software you obtain through the Services or provide you with new software to keep the Services functioning properly, which could include bug fixes, patches, enhanced features, missing plug-ins and new versions. By using the Services, you agree to such automatic updating.</li>
+<li><b>Modifications to the Services:</b>  We reserve the right to change, modify, add, enhance, remove or discontinue access to the Services or particular portions thereof, at any time and without notice. In no event will we be liable for the removal of or disabling of access to any portion or feature of the Services.</li>
+</ol>
+<br>
+<p style="font-size: 16px;"><b>Your Use of Services</b></p>
+<ol type="a">
+<li><b>Content and Software License:</b> Subject to the terms and conditions of this Agreement commencing as of the date that is the earlier of: (i) the date you downloaded the software; (ii) the date of first use of  the Services; or (iii) the date you clicked “I agree” to this Agreement; and for the duration of the Term (as defined below), we hereby grant to you a non-exclusive, non-transferable, revocable right, for your personal non-commercial use, to access and use the Services and each component thereof.</li>
+<li><b>Restrictions on Use:</b> Any rights not granted herein are strictly reserved by us.  You shall not (i) permit any third person to use the Service; (ii) re-license, sublicense, lease, loan or otherwise provide the Services to any third person; or (iii) publicly display, publicly perform, transmit, stream, broadcast or otherwise exploit the Services.  You shall not, and shall not permit others to, decrypt, adapt, modify, reverse engineer, decompile, disassemble or translate any software used by us to deliver the Services, or otherwise attempt to view, display or print such software, including its source code.  Any unauthorized use of the Services is strictly prohibited and will terminate the license granted in this Agreement.</li>
+<li><b>Availability:</b> The Services may not be available in all territories and jurisdictions, and we may restrict or prohibit use of all or a portion of the Services in certain territories and jurisdictions.</li>
+<li><b>Network Costs:</b> You may be charged by your network provider for data services or any other third party charges as may arise while using the Services and you accept responsibility for such charges. If you are not the bill payer, we will assume that you have received permission from the bill payer.</li>
+<li><b>Prohibited Activities:</b> You shall not:</li>
+<ul style="padding: 0px 20px;">
+<li>use the Services for improper or unlawful purposes;</li>
+<li>include, or knowingly allow others to include, any Objectionable Content or introduce Viruses to the Service;</li>
+<li>intercept or attempt to intercept any messages transmitted to and from the Service that are not intended for you;</li>
+<li>take any action that imposes an unreasonable or disproportionately large load on the Service;</li>
+<li>use the Services to develop any derivative works or any functionally compatible or competitive software; or</li>
+<li>remove any copyright or other proprietary rights notice on the Software or the User Documentation or any copies thereof.</li>
+</ul>
+<li><b>For the purposes of the preceding:</b> “Objectionable Content” means content that infringes any applicable laws, regulations or third party rights, including intellectual property rights; and content which is obscene, indecent, pornographic, seditious, offensive, defamatory, threatening, liable to incite racial hatred, menacing, blasphemous, misleading or deceptive; and “Virus” means a piece of code usually (but not necessarily) disguised as something else that causes some unexpected and, for the victim, usually undesirable, event and which is designed so that it may automatically spread to other computer users; the term ‘Virus’ will also be deemed to include worms, cancelbots, trojan horses, harmful contaminants (whether self-replicating or not) and nuisance causing or otherwise harmful applets.</li>
+<li><b>Suspension:</b> We reserve the right, in our sole and absolute discretion, to disable your access to or ability to use the Services if we reasonably determine that you are using the Services: for an improper or unlawful purpose; otherwise in contravention of Section 3(e); or that you may have uploaded any Objectionable Content or Virus.  We may also suspend your access to or ability to use the Service if we deem necessary to protect the integrity and operation of the Services.  We will not incur any liability or responsibility if we choose to remove, disable, or delete such access or ability to use any or all portion(s) of the Services.</li>
+</ol>
+
+<br>
+<p style="font-size: 16px;"><b>Purchases</b></p>
+<ol type="a">
+<li><b>Account:</b> You may be required to be a registered user in order to purchase some Services. You are responsible for all charges incurred in connection with your account. We may attempt to collect unpaid charges, including by attempting additional charges to your payment instrument, use of collections agencies and any other legal means. If you decide to cancel your account, we reserve the right, subject to any limitations under applicable laws, to collect fees, surcharges, or costs incurred before cancellation. Any delinquent or unpaid accounts must be settled before we will allow you to register again.</li>
+<li><b>Virtual Items:</b> Your purchase of a virtual item or in-game currency within the Services is a payment for a limited, non-assignable license to access and use such content or functionality in the Services. Virtual items (including characters and character names) or in-game currency purchased or available to you in the Services can only be used in connection with the Services where you obtained them or where they were developed by you as a result of game play. These items are not redeemable or subject to refund and cannot be traded outside of the Services for money or other items for value. We may modify or discontinue virtual items or in-game currency at any time.</li>
+<li><b>Pricing and Payment:</b> We may accept various forms of payment, including credit and debit cards, and additional terms with your payment provider may apply. Prices are subject to change without notice. We reserve the right to refuse or cancel orders at any time and in our sole discretion.</li>
+<li><b>Taxes:</b> If your purchase or use of the Services is subject to any type of use or sales tax, duty or other governmental tax or fee (“Taxes”), then we may charge you for those Taxes. Applicable Taxes may be presented at checkout. You are responsible for any Taxes due with respect to your use of the Services.</li>
+<li><b>Content Cancellations; Returns:</b>  All purchases of digital content are final except as required by law.  Once you purchase Content, we encourage you to download, install and/or access it promptly. If you are located in the EU, you consent that the supply of the digital content may begin immediately following the completion of your purchase and you acknowledge that you therefore will lose any statutory rights you may have to withdraw and receive a refund. If you are unable to download, install or access purchased content, please contact us at <a mailto:info@melcher.ca="">info@melcher.ca</a>.</li>
+</ol>
+
+<br>
+<p style="font-size: 16px;"><b>Code of Conduct</b></p>
+<ol type="a">
+<li><b>Compliance:</b> You agree to abide by our code of conduct, as we may amend from time to time during multiplayer or co-op gameplay sessions.  In addition, you agree to:</li>
+(i) not use derogatory, demeaning, malicious, defamatory, abusive, offensive, hateful or discriminatory language.
+(ii) not harass, bully, threaten, harm or cause discomfort for other users. For example:
+<ul style="padding: 10px 40px;">
+<li>use of hate speech or racial, ethnic, sexist, homophobic or religious slurs;</li>
+<li>harassment of a specific person (repeated flaming or personal attacks); or</li>
+<li>disclosing any personal or private information of another person, or any confidential information pertaining to a business, without consent.</li>
+</ul>
+(iii) not promote, plan, glorify or engage in any illegal activity or otherwise make available content that would encourage or provide instructions for an illegal activity. These topics include but are not limited to crimes relating to drugs, drug paraphernalia, rape, solicitation of a minor, computer hacking, counterfeiting and fraud.
+(iv) not impersonate other persons, including fellow users or we staff or attempt to obtain sensitive information from other users. For example:
+<ul style="padding: 10px 40px;">
+<li>falsely claiming an official title or to hold position relating to we;</li>
+<li>falsely claiming the representation of another business or websites;</li>
+<li>falsely claiming to be a law enforcement officer; or</li>
+<li>soliciting passwords or personal information from other users.</li>
+</ul>
+(v) not engage another user under false pretenses or otherwise defraud another user.
+<li><b>Remedy:</b>  We, at our sole discretion, may issue a warning or expel you from accessing or using the Services for violations of the Code of Conduct or Section 5(a).</li>
+</ol>
+
+<br>
+<p style="font-size: 16px;"><b>User Content</b></p>
+<ol type="a">
+<li><b>User Content and Communication by You:</b>  Our Services may include interactive features and areas where you may interact with other users of the Services and by so interacting may submit, post, upload, publish, send or otherwise transmit content to such other users (collectively, “User Content”).  You acknowledge that we do not store, intercept, keep collect, use or distribute any User Content, but are merely facilitating the communication by you with other users for the purposes of using the Services.  We do not claim any ownership rights in or to your User Content.</li>
+<li><b>Responsibility:</b>  You are solely responsible for the User Content you make available through the Services and you represent and warrant that: (i) you either are the sole and exclusive rights owner of all User Content that you provide, or you have obtained all rights, licenses, permissions, consents and releases that are necessary to submit the User Content to other users of the Services; (ii) the provision of your User Content, and the communication of same to other users of the  Service, will not infringe, misappropriate or violate any third party’s patent, copyright, trademark, trade secret, moral rights or other proprietary or intellectual property rights, or rights of publicity or privacy, or result in the violation of any applicable laws or regulations; and (iii) your User Content does not violate our community standards.  WE STRONGLY ADVISE THAT YOU DO NOT TRANSMIT, SUBMIT OR OTHERWISE PROVIDE THROUGH THE USE OF OUR SERVICES TO OTHER USERS ANY PERSONAL INFORMATION, WHETHER YOUR PERSONAL INFORMATION OR THAT OF OTHER INDIVIDUALS.</li>
+<li><b>Disclaimer:</b>  We do not endorse or guarantee the opinions, views, advice, or recommendations posted or sent by users. We have no responsibility or liability for User Content made available through the Services, and we have no obligation to screen, edit or monitor such content.</li>
+</ol>
+
+<br>
+<p style="font-size: 16px;"><b>Ownership and Confidentiality</b></p>
+<ol type="a">
+<li><b>Ownership:</b>  You acknowledge that we and our licensors retain all right, title and interest, including all intellectual property rights, in and to the Services, each component of the Services, including without limitation, the software, website, applications, content, including video and other graphics and other materials and documentation and the Services’ design and any modification, update, upgrade or enhancement made thereto by us.  The Services are the property of us or our licensors and are protected by copyright, trademark and other applicable laws.  You do not acquire any rights, title or ownership interests of any kind whatsoever, express or implied, in any of the foregoing other than the license granted herein.</li>
+<li><b>Confidentiality:</b>  You acknowledge that the software used by us in connection with the Services, including its source code, is our confidential information.  You will hold our confidential information in confidence, and shall use the same degree of care by instruction, agreement or otherwise, to maintain the confidentiality of our confidential information that you use to maintain the confidentiality of your own confidential information, but with at least a reasonable degree of care commensurate with the nature and importance of such confidential information.  You agree not to make use of our confidential information other than for the exercise of rights or the performance of obligations under this Agreement, and not to release, disclose, communicate it or make it available to any third person.</li>
+</ol>
+
+<br>
+<p style="font-size: 16px;"><b>Disclaimer of Warranty</b></p>
+<p><span style="line-height: 1.5;">YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOUR ACCESS TO AND USE OF THE SERVICES IS AT YOUR SOLE RISK. AS BETWEEN YOU AND US, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS AND WE EXPRESSLY DISCLAIMS ALL REPRESENTATIONS, WARRANTIES AND CONDITIONS (EXPRESS OR IMPLIED, ORAL OR WRITTEN), INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN ADDITION, WE DO NOT REPRESENT OR WARRANT THAT (A) THE FUNCTIONS CONTAINED IN THE SERVICES WILL BE ACCURATE OR MEET YOUR REQUIREMENTS; (B) THE OPERATION OF THE SERVICES WILL BE SECURE, UNINTERRUPTED, ERROR-FREE OR VIRUS-FREE, (C) ANY DEFECTS IN THE SERVICES WILL BE CORRECTED; OR (D) THAT THE SERVICES WILL BE AVAILABLE AT ALL TIMES. NO ORAL OR WRITTEN INFORMATION, GUIDELINES OR ADVICE GIVEN BY US WILL CREATE A WARRANTY.</span></p>
+<p><span style="line-height: 1.5;">YOU FURTHER ACKNOWLEDGE AND AGREE THAT WE ARE NOT RESPONSIBLE FOR THE CONDUCT, WHETHER ONLINE OR OFFLINE, OF ANY USER OF THE SERVICES. UNDER NO CIRCUMSTANCES WILL WE BE RESPONSIBLE FOR ANY LOSS OR DAMAGE, INCLUDING PERSONAL INJURY OR DEATH, RESULTING FROM YOUR USE OF THE SERVICES, ANY USER-GENERATED CONTENT IN THE SERVICES OR TRANSMITTED TO ANOTHER USER, OR ANY TRANSACTIONS BETWEEN OR AMONG YOU AND OTHER USERS, WHETHER ONLINE OR OFFLINE.</span></p>
+<p><span style="line-height: 1.5;">THE FOREGOING DISCLAIMER OF WARRANTIES WILL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW. THE LAWS OF SOME STATES OR JURISDICTIONS DO NOT ALLOW THE DISCLAIMER OF IMPLIED WARRANTIES, SO SOME OR ALL OF THE DISCLAIMERS IN THIS SECTION MAY NOT APPLY TO YOU.</span></p>
+
+
+<br>
+<p style="font-size: 16px;"><b>Indemnification</b></p>
+<p><span style="line-height: 1.5;">You agree to defend, indemnify and hold harmless us and our affiliates, independent contractors and service providers, and each of our respective directors, officers, employees and agents (collectively, “Our Parties”) from and against all third-party claims, damages, costs, liabilities and expenses (including, but not limited to, reasonable attorneys’ fees) caused by, arising out of or related to (a) your purchase or use of, or inability to use, the Services; (b) your violation of this Agreement or any other applicable terms, policies, warnings or instructions provided by us or a third party in relation to the Services, (c) your violation of any applicable law or any rights of any third party; or (d) any User Content or feedback you provide.</span></p>
+
+
+<br>
+<p style="font-size: 16px;"><b>Limitation of Liability</b></p>
+<p><span style="line-height: 1.5;">OUR PARTIES SHALL HAVE NO LIABILITY FOR ANY LOST PROFITS, LOST DATA OR FOR ANY CONSEQUENTIAL, SPECIAL, PUNITIVE, INDIRECT, OR INCIDENTAL DAMAGES, ARISING FROM OR RELATED TO YOUR USE OR INABILITY TO USE THE SERVICES, EVEN IF OUR PARTIES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL THE AGGREGATE LIABILITY OF OUR PARTIES ARISING OUT OF OR RELATING TO THE USE OF OR INABILITY TO USE THE SERVICES EXCEED THE GREATER OF ONE HUNDRED CANADIAN DOLLARS (CDN$100) OR THE AMOUNT YOU PAID US TO USE OUR SERVICES. THE FOREGOING DISCLAIMER OF CERTAIN DAMAGES AND LIMITATION OF LIABILITY WILL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW. THE LAWS OF SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES, SO SOME OR ALL OF THE EXCLUSIONS AND LIMITATIONS SET FORTH ABOVE MAY NOT APPLY TO YOU.</span></p>
+
+<br>
+<p style="font-size: 16px;"><b>Privacy</b></p>
+<p><span style="line-height: 1.5;">You accept and agree to our Privacy Policy as found at <a href="https://www.melcher.ca/hockeyvr?modal=privacy-policy">https://www.melcher.ca/hockeyvr?modal=privacy-policy</a>.</span></p>
+<br>
+<p style="font-size: 16px;"><b>No Assignments</b></p>
+<p><span style="line-height: 1.5;">You may not assign or otherwise transfer any rights or obligations under this Agreement.</span></p>
+<br>
+<p style="font-size: 16px;"><b>Severability</b></p>
+<p><span style="line-height: 1.5;">In the event that any provision (or any portion of a provision) of this Agreement shall for any reason be held by a court of competent jurisdiction to be invalid, illegal, or unenforceable for any reason, such invalidity, illegality or unenforceability shall not affect any other provision hereof and this Agreement shall be construed as if such invalid, illegal or unenforceable provision (or portion of a provision) had never been contained herein in regards to that particular jurisdiction.</span></p>
+<br>
+<p style="font-size: 16px;"><b>Non-waiver</b></p>
+<p><span style="line-height: 1.5;">The failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights.</span></p>
+<br>
+<p style="font-size: 16px;"><b>Governing Law</b></p>
+<p><span style="line-height: 1.5;">This Agreement shall be governed by, and construed and enforced in accordance with, the laws in force in the Province of Ontario (excluding any conflict of laws rule or principle which might refer such construction to the laws of another jurisdiction).  The Parties hereto agree to submit to the exclusive jurisdiction of the courts of the Province of Ontario and waive any objection relating to improper venue or forum non conveniens to the conduct of any proceeding in any such court.</span></p>
+<br>
+<p style="font-size: 16px;"><b>Term and Termination</b></p>
+<p><span style="line-height: 1.5;">In addition to our other rights of termination or suspension contained in this Agreement, we reserve the right to terminate this Agreement and your rights hereunder, including access and use of the Services if you violate or breach any provision of this Agreement or any other terms or policies referenced herein, including our code of conduct.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="terms-use" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body padding-md text-left text-dark">
+        <button type="button" class="close pull-right text-white text-xlg" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="content-area">
+        <br style="clear:both">
+        <div class="spacer dark"></div><br>
+        <h2><span style="line-height: 1.5;">Terms of Use</span></h2>
+<br>
+<p><span style="line-height: 1.5;">Melcher Studios, the Hockey VR logo is registered to Melcher Media &amp; Design Inc.. Software license terms available at https://www.melcher.ca/hockeyvr.  The content of this videogame is purely fictional, is not intended to represent or depict any actual event, person, or entity, and any such similarities are purely coincidental. Unauthorized copying, reverse engineering, transmission, public performance, rental, pay for play, or circumvention of copy protection is strictly prohibited for both the game and the peripherals.</span></p>
+<p><span style="line-height: 1.5;">PLEASE READ THE FOLLOWING CAREFULLY BEFORE PLAYING, PURCHASING OR USING</span></p>
+<p><span style="line-height: 1.5;">Please note that certain people are susceptible to various symptoms and conditions when playing a game with virtual reality headsets and peripherals, including:</span></p>
+<ul>
+<li><span style="line-height: 1.5;">epileptic seizures or loss of consciousness; </span></li>
+<li><span style="line-height: 1.5;">altered vision;</span></li>
+<li><span style="line-height: 1.5;">motion sickness, dizziness, disorientation or nausea;</span></li>
+<li><span style="line-height: 1.5;">damage to surroundings due to use of peripherals;</span></li>
+<li><span style="line-height: 1.5;">and/or repetitive motion injuries and eye strain.</span></li>
+</ul>
+<p><span style="line-height: 1.5;">Immediately stop playing if you do not feel well or if you experience any of the above symptoms. In any event, we strongly recommend that you take reasonable breaks from gameplay every 10 to 15 minutes and that you do not play for excessive overall periods. If you are pregnant or if you have any pre-existing medical condition, you should talk with a physician to obtain professional advice before playing the game. You should not play the game under the influence of alcohol or drugs or while using prescription or non-prescription medication. Always be aware of your surroundings when playing the game. When playing with a virtual reality headset or other headset it is best to remain seated if that mode is supported. Since the game is an immersive reality experience, you may not be able to fully see or hear your surroundings while playing. Whether or not you remain seated during gameplay, give yourself plenty of room and make sure the play area is clear of objects and people that could be bumped into during gameplay. Ensure you are in a safe environment and not near stairs, balconies, windows, walls, furniture, objects that could cause tripping hazards or other objects or people that may pose a danger to you or them or could be damaged or cause injury during gameplay. Sound volume for the game should be kept at a low enough level so that you can be aware of your surroundings while playing, and to avoid any damage to your hearing..</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    //$("#terms-use").modal("show");
+</script>
+
+<script type="text/javascript">
+    $("#privacy-policy").modal("show");
+</script>
+</div>
+<div class="footer">
+<div class="footer1">© 2023 <a href="/">Melcher Studios</a>. All Rights Reserved.&nbsp;|&nbsp;<a href="/privacy-policy">Privacy Policy</a>
+</div>
+<div class="footer2"><ul><li><a target="_blank" href="https://www.linkedin.com/company/melcher-media-&amp;-design"><img src="/public/Melcher2015/img/sIcon1.png" onmouseout="this.src='/public/Melcher2015/img/sIcon1.png'" onmousemove="this.src='/public/Melcher2015/img/sIcon10.png'" border="0"></a></li><li><a target="_blank" href="https://twitter.com/melchermedia"><img src="/public/Melcher2015/img/sIcon2.png" onmouseout="this.src='/public/Melcher2015/img/sIcon2.png'" onmousemove="this.src='/public/Melcher2015/img/sIcon20.png'" border="0"></a></li><li><a target="_blank" href="https://www.youtube.com/melchermedia"><img src="/public/Melcher2015/img/sIcon3.png" onmouseout="this.src='/public/Melcher2015/img/sIcon3.png'" onmousemove="this.src='/public/Melcher2015/img/sIcon30.png'" border="0"></a></li><li><a target="_blank" class="facebook" href="https://www.facebook.com/melchermedia"><img src="/public/Melcher2015/img/sIcon4.png" onmouseout="this.src='/public/Melcher2015/img/sIcon4.png'" onmousemove="this.src='/public/Melcher2015/img/sIcon40.png'" border="0"></a></li><li><a class="addthis_button" href="httsp://www.addthis.com/bookmark.php?v=250&amp;username=xa-4bc33d361d05dfcc"><img src="/public/Melcher2015/img/sIcon5.png" onmouseout="this.src='/public/Melcher2015/img/sIcon5.png'" onmousemove="this.src='/public/Melcher2015/img/sIcon50.png'" border="0"></a><script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#username=xa-4bc33d361d05dfcc"></script></li><li><a href="/news"><img src="/public/Melcher2015/img/blog.png" onmouseout="this.src='/public/Melcher2015/img/blog.png'" onmousemove="this.src='/public/Melcher2015/img/blog_white.png'" border="0"></a></li><li><a target="_blank" href="https://www.instagram.com/melcherstudios/"><img src="/public/Melcher2015/img/instagram.png" onmouseout="this.src='/public/Melcher2015/img/instagram.png'" onmousemove="this.src='/public/Melcher2015/img/instagram_white.png'" border="0"></a></li><li><a href="/melchercms"><img src="/public/Melcher2015/img/cms.png" onmouseout="this.src='/public/Melcher2015/img/cms.png'" onmousemove="this.src='/public/Melcher2015/img/cms_white.png'" border="0"></a></li>
+<li><a href="/our-team"><img src="/public/Melcher2015/img/Team.png" onmouseout="this.src='/public/Melcher2015/img/Team.png'" onmousemove="this.src='/public/Melcher2015/img/Team_white.png'" border="0"></a></li></ul>
+</div>
+<div class="footer3">Contact:&nbsp;T.&nbsp;+1.306.359.1666&nbsp;|&nbsp;E.&nbsp;info@melcher.ca.
+</div>
+</div><!-- .footer -->
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<div id="dialog" title="Basic dialog"><div class="text"><span class="big">Thank you for your inquiry!</span><span class="small">You will be hearing from our team shortly.</span><p></p><button>CLOSE</button></div></div><!-- #dialog -->
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.1.js"></script>
+<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="/public/Melcher2015/js/plugins.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfEXmtZdQPkDjhUnwfF2RuI6mPThRXymM&amp;v=3.exp&amp;sensor=false"></script>
+<script type="text/javascript" src="/public/Melcher2015/js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="/public/Melcher2015/js/main.js"></script>
+<script type="text/javascript" src="/public/Melcher2015/js/popupPlugins.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15163843-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 932722633;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<div style="display:none;">
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+</div>
+<noscript>
+<div style="display:inline; overflow:hidden;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/932722633/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<script>
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $(".subServiceMenu ul li").removeClass('selected');
+    $(this).parent().addClass('selected');
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 800);
+});
+</script>
+
+
+</div></div><div class="modal-backdrop fade in"></div><iframe id="paypal-offers--iframe-7d5897e7-dddb-4886-92f9-e94749c472d4" src="https://www.paypalobjects.com/muse/analytics/index.html#frameId=7d5897e7-dddb-4886-92f9-e94749c472d4&amp;propertyId=3P4UVS3C8MFJ2-1&amp;flow=visitor-info&amp;variant=analytics&amp;mrid=3P4UVS3C8MFJ2&amp;isMobileEnabled=true&amp;isDesktopEnabled=true&amp;shouldCheckCountry=true&amp;mobileVariant=analytics&amp;mobileFlow=visitor-info&amp;disableSetCookie=false" data-merchant="3P4UVS3C8MFJ2-1" style="z-index: 2147483647; display: none;"></iframe></body></html>

@@ -1,0 +1,174 @@
+<html><head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title>Hollow World Games</title>
+</head>
+<body class="background-steelblue">
+    <script>
+        function showSupport() {
+            $('#support-modal').modal('show');
+        }
+
+		function goToChannel() {
+			window.location.href = 'https://www.youtube.com/channel/UCjQTmu4jMw2nNtpNbiUSjrg';
+        }
+
+        function goToGalaxyExplorer() {
+            document.Location.href = '/GalaxyExplorer.html';
+        }
+    </script>
+    <style>
+        .background-grey {
+            background-color: grey;
+        }
+
+        .background-ltblue {
+            background-color: lightsteelblue;
+            color: white;
+        }
+
+        .background-steelblue {
+            background-image: url(images/Logo.jpg);
+            
+            color: white !important;
+        }
+
+        .active a {
+            background-color: #04327c !important;
+            color: white !important;
+        }
+
+        .navbar-nav a:hover {
+            background-color: #04327c !important;
+            color: white !important;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+    </style>
+    <video autoplay="" muted="" loop="" id="myVideo">
+        <source src="Videos/hwgbackground.mov" type="video/mp4">
+    </video>
+    <div>
+        <div style="float:left;width:100%;height:900px;position: fixed; bottom: 0; top: 0;background: rgba(0,0,0,0.5);width: 100%;">
+            <nav class="navbar navbar-default background-steelblue" style="margin-bottom:0px;border-bottom: 1px solid black;">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand background-steelblue" href="#">Hollow World Games</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li>
+                            <a href="#" id="products-menu" class="background-steelblue dropdown" data-toggle="dropdown">Products<span class="caret"></span></a>
+                            <ul class="dropdown-menu background-steelblue" id="submenu-products">
+                                <li><a href="http://www.TacticalWarfareSimulator.com" class="background-steelblue">Tactical Warfare Simulator</a></li>
+                                <li><a href="./OperationInsanity/Index.html" class="background-steelblue">Operation Insanity</a></li>
+                                <li><a href="./EpicSpaceBattlesVR/Index.html" class="background-steelblue">Epic Space Battles VR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="goToChannel()" class="background-steelblue">Channel</a></li>
+                        <!--<li><a href="#" onclick="showSupport()" class="background-steelblue">Support</a></li>-->
+                    </ul>
+                </div>
+            </nav>
+
+            <!--<div style="width:100%;border-bottom: 1px solid black;">
+            <img style="width:100%;" src="images/logo.png" />
+        </div>-->
+            <div style="position:relative;top:0px;height:1000px;">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active" style="height:900px;padding:200px;cursor: pointer;">
+                            <a href="http://www.TacticalWarfareSimulator.com">
+                                <img style="margin-left:500px;" src="images/wings-sub-transparent.png">
+                                <h3 style="text-align:center;">Dogfight on the western front in World War I.</h3>
+                            </a>
+                        </div>
+                        <div class="item" style="height:900px;padding:200px;cursor: pointer;">
+                            <a href="OperationInsanity/index.html">
+                                <img style="margin-left:500px;" width="768" height="256" src="images/OperationInsanityTitle.png">
+                                <h3 style="text-align:center;">Fight through dynamic scaling levels.</h3>
+                            </a>
+                        </div>
+                        <div class="item" style="height:900px;padding:200px;cursor: pointer;">
+                            <a href="EpicSpaceBattlesVR/index.html">
+                                <img style="margin-left:500px;" width="768" height="256" src="images/EpicSpaceBattlesVRTitle.png">
+                                <h3 style="text-align:center;">Title says it all.</h3>
+                            </a>
+                        </div>
+                        <div class="item" style="height:900px;padding:200px;cursor:pointer;">
+                            <a href="https://www.youtube.com/channel/UCjQTmu4jMw2nNtpNbiUSjrg">
+                                <h1 style="text-align:center;">YouTube Channel</h1>
+                                <h3 style="text-align:center;">Join us for entertaining and informative videos on Hollow World Games.</h3>
+                            </a>
+                        </div>
+
+                        <!--<div class="item" style="height:500px;">
+        <h1 style="text-align:center">Notice 2 here</h1>
+    </div>-->
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            <h3 class="center-text">© 2019 Hollow World Games LLC.</h3>
+        </footer>
+    </div>
+    <div id="support-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header background-steelblue">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Email Support</h4>
+            </div>
+            <div class="modal-body">
+                <form method="post" name="contact_form" action="contact-form-handler.php">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user" style="padding-right:10px;"></i>Name</span>
+                        <input class="form-control" type="text" name="name" style="width:600px;">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope" style="padding-right:10px;"></i>Email-Address</span>
+                        <input class="form-control" type="text" name="email" style="width:600px;">
+                    </div>
+                    <br>
+                    <label for="message">Message</label><textarea class="form-control" name="message" style="height:300px;"></textarea>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" data-dismiss="modal">Send</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+</body></html>

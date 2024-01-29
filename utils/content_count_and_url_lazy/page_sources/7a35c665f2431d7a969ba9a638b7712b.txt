@@ -1,0 +1,112 @@
+<html lang="en-US"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Megaton Rainfall</title>
+<style type="text/css">
+html, body {
+	height: 100%;
+	margin: 0px 0px;
+	background-color: black;
+}
+.header {
+	background-color: #040404;
+	border: none;
+	color: white;
+	padding: 5px 0px;
+	margin: 0px 0px;
+	text-decoration: none;
+	display: inline-block;
+	font:20px Helvetica,Arial,sans-serif;
+	width: 100%;
+	text-align: right;
+}
+.footer {
+	background-color: #040404;
+	border: none;
+	color: #808080;
+	text-decoration: none;
+	display: inline-block;
+	font:14px Helvetica,Arial,sans-serif;
+	text-align: left;
+	width: 100%;
+	padding: 5px 0px;
+}
+.header_link {
+	display: inline-block;
+	background-color: #040404;
+	border: none;
+	color: white;
+	cursor:pointer;
+	text-decoration: none;
+	font:20px Helvetica,Arial,sans-serif;
+}
+.video {
+	display: inline-block;
+	width: 100%;
+	height: 75%;
+}
+.buttons {
+	text-align: center;
+	margin: 10px 0px;
+}
+.button {
+	display: inline-block;
+	background-color: #6080c0d0;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	font:14px Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	margin: 4px 2px;
+	border-radius: 7px;
+	cursor:pointer;
+}
+.buttons_text {
+	color: white;
+	font:14px Helvetica,Arial,sans-serif;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+<!-- <img src="background.jpg" style="position:fixed;height:100%;margin:auto;z-index:-1">-->
+<div class="header">
+<span>
+	<button class="header_link" onclick="location.href='mailto: contact@pentadimensional.com'" type="button"><b>Contact</b></button>
+	<button class="header_link" onclick="location.href='press.html'" type="button"><b>Press</b></button>
+	<a href="https://twitter.com/alfonsodelcerro"> <img src="twitter.png" alt="Twitter" style="width:25px;height:25px"></a>
+</span>
+</div>
+<div class="video">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Bb9eQoxtqb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+</div>
+<div class="buttons">
+<span>
+	<div class="buttons_text">Get on</div>
+	<a href="#"><button id="ps4" class="button" type="button" onclick="document.getElementById('ps4_us').style.display='inline-block';document.getElementById('ps4_eu').style.display='inline-block';document.getElementById('ps4').style.display='none';">PS4 + PSVR</button></a>
+	<a href="https://store.playstation.com/en-us/product/UP1060-CUSA06983_00-MEGATONRAINFALL0"><button id="ps4_us" class="button" type="button" style="display:none">PS4 + PSVR (America)</button></a>
+	<a href="https://store.playstation.com/en-uk/product/EP1055-CUSA06563_00-MEGATONRAINFALL0"><button id="ps4_eu" class="button" type="button" style="display:none">PS4 + PSVR (Europe)</button></a>
+	<a href="https://www.microsoft.com/en-us/p/megaton-rainfall/9mtrx759zjkt"><button class="button" type="button">Xbox One</button></a>
+	<a href="https://store.steampowered.com/app/430210"><button class="button" type="button">Steam / Steam VR</button></a>
+	<a href="https://www.nintendo.com/games/detail/megaton-rainfall-switch"><button class="button" type="button">Nintendo Switch</button></a>
+	<a href="https://www.oculus.com/experiences/rift/1571143122994237/"><button class="button" type="button">Oculus Store</button></a>
+</span>
+</div>
+<div class="buttons" style="width:100%">
+	<form action="https://pentadimensional.us21.list-manage.com/subscribe/post?u=ad88a714e43abf2b28fa7a261&amp;id=161b2c2319&amp;f_id=0095d8e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+		<span>
+			<input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="Email address" style="width:45%;max-width:250px;height:25px;">
+			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div style="position: absolute; left: -5000px;"><input type="text" name="b_d416510eb6a823871617d759f_3ef47482c3" tabindex="-1" value=""></div>
+			<input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe for updates" style="width:35%;max-width:200px;height:30px;padding:0;margin:0;">
+		</span>
+	</form>
+</div>
+<div class="footer">
+Copyright (c) Pentadimensional Games, SL - <a href="https://pentadimensional.com/tos.html">Terms of Service</a> - <a href="https://pentadimensional.com/privacy.html">Privacy Policy</a>
+</div>
+
+
+</body></html>

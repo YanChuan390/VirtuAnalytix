@@ -1,0 +1,162 @@
+<html><head><style type="text/css" data-tag-name="trix-editor">trix-editor:empty:not(:focus)::before {
+  content: attr(placeholder);
+  color: graytext;
+}
+
+trix-editor a[contenteditable=false] {
+  cursor: text;
+}
+
+trix-editor img {
+  max-width: 100%;
+  height: auto;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea {
+  resize: none;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea.trix-autoresize-clone {
+  position: absolute;
+  left: -9999px;
+  max-height: 0px;
+}
+
+trix-editor [data-trix-attachment][data-trix-mutable] figcaption:empty::before {
+  content: "Add a caption…";
+  color: graytext;
+}
+
+trix-editor [data-trix-cursor-target] {
+  display: inline-block !important;
+  width: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+trix-editor [data-trix-cursor-target=left] {
+  vertical-align: top !important;
+  margin-left: -1px !important;
+}
+
+trix-editor [data-trix-cursor-target=right] {
+  vertical-align: bottom !important;
+  margin-right: -1px !important;
+}
+trix-editor { display: block; }</style><style type="text/css" data-tag-name="trix-toolbar">trix-toolbar {
+  white-space: nowrap;
+}
+
+trix-toolbar .dialog {
+  display: none;
+}
+
+trix-toolbar .dialog.active {
+  display: block;
+}
+
+trix-toolbar .dialog input.validate:invalid {
+  background-color: #ffdddd;
+}
+
+trix-toolbar[native] {
+  display: none;
+}
+trix-toolbar { display: block; }</style><title>Jestercraft - Creator of the Seeker -Universe</title><meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="LuSNjipUumearBIDoPo470Sanr9ozYIluJgloxZWlAbY9zjDLxjSZeeatE67Uu7OAZhB1k5b_YgmmbIz8S7pZQ"><meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"><meta charset="UTF-8"><meta content="en" http-equiv="content-language"><meta content="notranslate" name="google"><meta content="manakeep" name="cloud"><meta content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" name="viewport"><meta content="no-cache" name="turbolinks-cache-control"><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}.tippy-iOS{cursor:pointer!important;-webkit-tap-highlight-color:transparent}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><link href="https://static.manakeep.com/photos/2023/06/19/5qr0961xsn_jclogo.png" rel="icon" type="image/png"><link href="https://jestercraft.com/" rel="canonical"><link href="https://jestercraft.com/news.atom" rel="alternate" title="Atom feed" type="application/atom+xml"><link href="https://jestercraft.com/news.atom" rel="alternate" type="application/rss+xml"><link rel="stylesheet" media="all" href="//static.manakeep.com/assets/application-cf3517262561da4120ce2af614a38ea4d1b1dc4846782f9f2040b9b2fcef2e97.css" data-turbolinks-track="reload"><script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script src="//static.manakeep.com/assets/game-8c2a4cbc381e23bbd7dc2be58066fc6a61ae3c2bb96ea11d3f6ef9f64fdfdb0d.js" data-turbolinks-track="reload"></script><meta content="pk_live_aDaUP2KDhS9CKzxPYpXRmexm" name="stripe-key"><script src="https://js.stripe.com/v3/" type="text/javascript"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147099554-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147099554-1');
+</script>
+
+<script type="text/javascript">
+  $(document).on('turbolinks:load', function() {
+    // first point
+    var point1 = $('.page-home .block_points .point:nth-child(1) .point-photo');
+    var html1 =  '<a href="https://jestercraft.com/games">' + point1.html() + '</a>';
+    point1.html(html1);
+
+    // second point
+    var point2 = $('.page-home .block_points .point:nth-child(2) .point-photo');
+    var html2 =  '<a href="https://jestercraft.com/education">' + point2.html() + '</a>';
+    point2.html(html2);
+
+    // third point
+    var point3 = $('.page-home .block_points .point:nth-child(3) .point-photo');
+    var html3 =  '<a href="https://jestercraft.com/mentoring-publishing">' + point3.html() + '</a>';
+    point3.html(html3);
+  });
+</script><meta name="description" content="Crafts &amp; Stories - I'm building the epic Seeker -Universe - Come follow the daily life of an independent game developer from Finland"><meta content="summary_large_image" name="twitter:card"><meta content="Jestercraft" name="twitter:title"><meta content="Crafts &amp; Stories - I'm building the epic Seeker -Universe - Come follow the daily life of an independent game developer from Finland" property="twitter:description"><meta content="https://static.manakeep.com/photos/2023/09/09/4wpwr3kvoh_Favimage.png" name="twitter:image"><meta content="https://jestercraft.com" property="og:url"><meta content="website" property="og:type"><meta content="Jestercraft" property="og:title"><meta content="Crafts &amp; Stories - I'm building the epic Seeker -Universe - Come follow the daily life of an independent game developer from Finland" property="og:description"><meta content="https://static.manakeep.com/photos/2023/09/09/4wpwr3kvoh_Favimage.png" property="og:image"><meta content="550101485133184" property="fb:app_id"></head><body class="wall page-home font-arvo" data-class-name="Views.Pages.Show" data-game-id="5d2ec4697263835d283c6a4b" data-page-name="Home" id="wallpaper"><style id="theme-css" type="text/css">
+body, label, input, textarea, select, button { font-family: "Arvo", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Arvo", sans-serif; }
+
+.body-bg { background-color: #212628; }
+#wallpaper { background-color: #212628; }
+.minisite, .minisite .form-input option { background-color: #212628; }
+.devlog_post.link .website-card { background-color: #212628; }
+.popup:not(.dropit-submenu) { background-color: #212628; }
+.popup:not(.dropit-submenu) .popper-arrow:before { background-color: #212628; border-color: transparent; }
+.picmo__light { background-color: #212628; }
+.block-bg { background-color: #282e30; }
+.block:nth-child(even) { background-color: #282e30; }
+#menu-bar { background-color: rgba(33, 38, 40, 0.3); }
+#menu-bar { color: #ffffff; }
+#menu-bar .placeholder-image { background-color: rgba(255, 255, 255, 0.7); }
+#header { background-color: #212628; }
+#header { color: #ffffff; }
+#banner .placeholder-image { background-color: rgba(33, 38, 40, 0.7); }
+#footer { background-color: #212628; }
+#footer { color: #cccccc; }
+#footer a:hover { color: #bfbfbf; }
+#mobile-menu { background-color: rgb(33, 38, 40); }
+#mobile-menu { color: #ffffff; }
+body { color: #eeeeee; }
+.minisite, .minisite .form-input, .minisite .form-input option { color: #eeeeee; }
+.devlog_post .hashtag { background-color: #eeeeee20; }
+.devlog_post.link .website-card:hover .card-without-image i { color: #eeeeee; }
+.devlog_post.link .website-card .card-without-image i { color: #eeeeee; }
+.popup:not(.dropit-submenu) { color: #eeeeee; }
+.picmo__light { color: #eeeeee; }
+h1,h2,h3,h4,h5,h6 { color: #ffac00; }
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover { color: #e69b00 !important; }
+a { color: #ffac00; }
+.icon-pin { color: #ffac00; }
+.devlog_post .btn.action.reacted { background-color: #ffac0020; }
+.devlog_post .btn.action.reacted { box-shadow: inset 0 0 0 2px #ffac0026; }
+.devlog_post .btn.action.reacted .user_count { color: #ffac00; }
+a:hover { color: #f0a200; }
+.muted { color: rgba(238, 238, 238, 0.55); }
+blockquote, .icon-lock { color: rgba(238, 238, 238, 0.55); }
+.btn.action { color: rgba(238, 238, 238, 0.55); }
+.picmo__picker .picmo__categoryButtons .picmo__categoryTab:not(.picmo__categoryTabActive) { color: rgba(238, 238, 238, 0.55); }
+.picmo__picker .picmo__emojiCategory .picmo__noRecents { color: rgba(238, 238, 238, 0.55); }
+a.muted:hover { color: rgba(238, 238, 238, 0.6); }
+.btn.action:hover { color: rgba(238, 238, 238, 0.6); }
+.btn.primary, .turbolinks-progress-bar { background-color: #ffac00; }
+.btn.primary:hover { background-color: #f0a200; }
+.btn.primary { color: #f9f9f9; }
+.btn.secondary { background-color: #eeeeee; }
+.popup.dropit-submenu { background-color: #eeeeee; }
+.popup.dropit-submenu .popper-arrow:before { background-color: #eeeeee; border-color: transparent; }
+.btn.secondary:hover { background-color: #e6e6e6; }
+.popup.dropit-submenu a:hover { background-color: #e6e6e6; }
+.btn.secondary { color: #7eb83d; }
+.popup.dropit-submenu { color: #7eb83d; }
+.popup.dropit-submenu a { color: #7eb83d; }
+.divider { border-color: rgba(238, 238, 238, 0.15) !important; }
+.minisite .fields, .minisite .form-input, .minisite .form-input option { border-color: rgba(238, 238, 238, 0.15); }
+.count-border { border-color: rgba(238, 238, 238, 0.15); }
+.btn.action { box-shadow: inset 0 0 0 2px rgba(238, 238, 238, 0.15); }
+.devlog_post.link .card-without-image { background-color: rgba(238, 238, 238, 0.15); }
+</style><style id="theme-custom-css" type="text/css">/*
+Add CSS to further enhance your design!
+
+Need help?  Send @manakeep a tweet or email us at support@manakeep.com =)
+*/</style><div id="page-body"><div class="standard parallax" id="header" style="background-color: rgba(255, 255, 255, 0.25); background-image: url(&quot;/photos/2023/09/09/7gluzctpvp_JCBG.png&quot;); background-size: cover; background-repeat: no-repeat; background-position: 50% -100px;"><div id="header-overlay" style="background-color: rgba(75, 50, 87, 0.6)"><div class="blueprint1" id="menu-bar-container"><div id="menu-bar"><div class="container"><div class="content"><div id="menu-logo"><div class="photo"><a href="/"><img alt="" src="//static.manakeep.com/photos/2023/09/09/8lsalsv715_jclogo.png"></a></div></div><nav id="main-menu"><a class="mobile-menu-trigger menu-item visible-mobile" href="#"><i class="icon-menu"></i></a><a class="menu-item hidden-mobile " href="https://jestercraft.com/devlog">Journal</a><a class="menu-item hidden-mobile " href="https://jestercraft.com/news">Blog</a></nav></div></div></div></div><div id="banner"><div class="container"><div class="cell-12"><div id="header-logo"><div class="photo"><img alt="" src="//static.manakeep.com/photos/2023/09/09/86n85ygjdm_jclogo.png"></div></div><div id="header-media"><div class="photo"><img alt="" src="//static.manakeep.com/photos/2023/09/09/9olt1ae6a7_JestercraftVideoPreview.webp"><a class="lightbox mfp-iframe btn primary play" href="https://www.youtube.com/watch?v=HN6aeHvJPdk"><i class="icon-arrow-point-right"></i></a></div></div><div id="header-btns"><div class="header-btn"><a class="btn primary large" href="https://www.patreon.com/Jestercraft959">JOIN OUR PATREON</a></div></div></div></div></div></div></div><div id="content" style="min-height: calc(100vh - 1090px)"><div class="page-home" id="page-64fcc65872638304902a270d"><div id="blocks"><section class="block block_photo_text blueprint1" style="" data-block-id="64fcc65872638304902a2720" data-position="6" id="block_64fcc65872638304902a2720"><div class="block-overlay" id="block6" style=" background-color: rgba(0,0,0,0);"><div class="block-container"><div class="block-content"><div class="cell-6"><div class="block-photo" id="block_photo_64fcc65872638304902a272f"><img alt="" loading="lazy" src="//static.manakeep.com/photos/2023/09/09/3my30niayv_Klaus.png"></div></div><div class="cell-6"><div class="text-entry"><h3>Greetings adventurer!</h3><div>It's <strong>Klaus 'Jestercraft' Kääriäinen</strong> here. I'm an independent veteran game developer from Finland.<br><br>I'm here to <strong>craft epic 'Seeker' universe</strong> for you and adventure craving families, while sharing my journey on the way as educational digital and physical content.</div></div></div></div></div></div></section><section class="block block_connect blueprint1" style=" background-color: #212628;" data-block-id="64fcc65872638304902a2721" data-position="7" id="block_64fcc65872638304902a2721"><div class="block-overlay" id="block7" style=" background-color: rgba(172, 226, 255, 0);"><div class="block-container"><div class="block-content"><div class="cell-12"><div class="platforms"><a class="btn primary platform" target="_blank" href="https://twitter.com/jestercrafted"><i class="icon-twitter"></i></a> <a class="btn primary platform" target="_blank" href="https://discord.gg/Pus7MXU"><i class="icon-discord"></i></a> <a class="btn primary platform" target="_blank" href="https://www.instagram.com/jestercraft/"><i class="icon-instagram"></i></a> <a class="btn primary platform" target="_blank" href="https://www.youtube.com/channel/UCRnq-_0w1yC_ZmF-7i14gng"><i class="icon-youtube"></i></a> </div></div></div></div></div></section><section class="block block_photo_text blueprint4" style="" data-block-id="64fcc65872638304902a272c" data-position="8" id="block_64fcc65872638304902a272c"><div class="block-overlay" id="block8" style=" background-color: rgba(0,0,0,0);"><div class="block-container"><div class="block-content"><div class="cell-12"><div class="block-photo" id="block_photo_64fcc65872638304902a2730"><img alt="" loading="lazy" src="//static.manakeep.com/photos/2023/09/09/9za0u7rlr_Favimage.png"></div><div class="text-entry"><h3>Jestercraft Patreon</h3><div>We are updating our Patreon regularly and offer Seeker -related extra content for our Patreons. We also provide interesting and transparent resources for independent game development.</div></div><div class="block-btns"><div class="block-btn"><a class="btn primary large" href="https://www.patreon.com/Jestercraft959">Join Jestercraft Patreon</a></div></div></div></div></div></div></section><section class="block block_photo_text blueprint4" style="" data-block-id="64fcc65872638304902a272d" data-position="9" id="block_64fcc65872638304902a272d"><div class="block-overlay" id="block9" style=" background-color: rgba(0,0,0,0);"><div class="block-container"><div class="block-content"><div class="cell-12"><div class="block-photo" id="block_photo_64fcc65872638304902a2731"><img alt="" loading="lazy" src="//static.manakeep.com/photos/2023/09/09/3tfwqkmy1b_Frame_109.png"></div><div class="text-entry"><h3>Seeker: Battle Cards</h3><div>The physical card game for the Seeker universe. Seeker: Battle Cards is a physical card game which features turn-based 2-6 player games with casual, but strategic elements. Prepare your seekers to battle with equipment and abilities, but keep them reinforced for upcoming defensive measures.</div><div><br></div><div>The game features epic battles with calculations for younger players to learn math while playing and having fun with friends and family. Seeker: Battle Cards have been designed for players of all ages. The box contains 50 playing cards and instructions &amp; rules both in English and Finnish.</div><div><br><br></div></div><div class="block-btns"><div class="block-btn"><a class="btn primary large" href="https://jestercraft.com/seeker-battle-cards">Learn more &amp; Subscribe to waiting list</a></div></div></div></div></div></div></section><section class="block block_email_list blueprint1" style="" data-block-id="64fcc65872638304902a272e" data-position="10" id="block_64fcc65872638304902a272e"><div class="block-overlay" id="block10" style=" background-color: rgba(172, 226, 255, 0);"><div class="block-container"><div class="block-content"><div class="cell-12"><div class="text-entry"><h3>GET NOTIFIED OF MY JOURNEY</h3></div><div class="mailing-list-subscription"><form class="simple_form new_email_subscriber" id="new_email_subscriber" novalidate="novalidate" action="/email/subscribe" accept-charset="UTF-8" data-remote="true" method="post"><input type="hidden" name="page_id" id="page_id" value="64fcc65872638304902a270d" autocomplete="off"><input type="hidden" name="block_id" id="block_id" value="64fcc65872638304902a272e" autocomplete="off"><div class="grid"><div class="cell"><div><div class="field email required email_subscriber_email"><input class="string email required form-input" placeholder="Email address" type="email" name="email_subscriber[email]" id="email_subscriber_email"></div><input class="string email-confirm form-input" id="email_subscriber_email_confirm" name="email_subscriber[email_confirm]" placeholder="Confirm Email" type="email"><style>#email_subscriber_email_confirm { display: none; }</style><script>var e = document.getElementById("email_subscriber_email_verify");
+e.parentNode.removeChild(e);</script></div></div><div class="cell"><div><button class="btn primary large" type="submit">Subscribe</button></div></div></div></form></div></div></div></div></div></section></div></div></div><div class="has-social" id="footer"><div class="container"><div class="content"><div class="cell footer-text"><div class="footer-entry"><div>Jestercraft, Jyväskylä, Finland. <a href="https://jestercraft.com/privacypolicy"><strong>Privacy &amp; Policy</strong></a></div></div></div><div class="cell footer-connects"><div><a href="https://discord.gg/hdZXeMJ" target="_blank"><i class="icon-discord"></i></a> <a href="https://www.instagram.com/jestercraft/" target="_blank"><i class="icon-instagram"></i></a> <a href="https://twitter.com/jestercrafted" target="_blank"><i class="icon-twitter"></i></a> <a href="https://facebook.com/Jestercraft" target="_blank"><i class="icon-facebook"></i></a> <a href="https://twitch.tv/Jestercraft_TV" target="_blank"><i class="icon-twitch"></i></a> <a href="https://www.youtube.com/channel/UCRnq-_0w1yC_ZmF-7i14gng" target="_blank"><i class="icon-youtube"></i></a> </div></div></div></div></div></div><div id="mobile-menu"><div class="mobile-menu-content level-one"><div class="level-one"><nav><a href="https://jestercraft.com/devlog">Journal</a><a href="https://jestercraft.com/news">Blog</a></nav></div></div></div><div class="popper popup" id="popper"><div class="popper-content"></div><div class="popper-arrow" data-popper-arrow=""></div></div><iframe name="__privateStripeMetricsController0630" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" allow="payment *" src="https://js.stripe.com/v3/m-outer-27c67c0d52761104439bb051c7856ab1.html#url=https%3A%2F%2Fjestercraft.com%2F&amp;title=Jestercraft%20-%20Creator%20of%20the%20Seeker%20-Universe&amp;referrer=&amp;muid=NA&amp;sid=NA&amp;version=6&amp;preview=false" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe></body></html>

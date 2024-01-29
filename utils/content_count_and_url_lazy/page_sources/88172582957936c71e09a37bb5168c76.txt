@@ -1,0 +1,353 @@
+<html lang="en"><!--
+	▄▄▄█████▓ ██░ ██  ▄▄▄       ███▄    █  ██ ▄█▀  ██████      █████▒▒█████   ██▀███
+	▓  ██▒ ▓▒▓██░ ██▒▒████▄     ██ ▀█   █  ██▄█▒ ▒██    ▒    ▓██   ▒▒██▒  ██▒▓██ ▒ ██▒
+	▒ ▓██░ ▒░▒██▀▀██░▒██  ▀█▄  ▓██  ▀█ ██▒▓███▄░ ░ ▓██▄      ▒████ ░▒██░  ██▒▓██ ░▄█ ▒
+	░ ▓██▓ ░ ░▓█ ░██ ░██▄▄▄▄██ ▓██▒  ▐▌██▒▓██ █▄   ▒   ██▒   ░▓█▒  ░▒██   ██░▒██▀▀█▄
+	  ▒██▒ ░ ░▓█▒░██▓ ▓█   ▓██▒▒██░   ▓██░▒██▒ █▄▒██████▒▒   ░▒█░   ░ ████▓▒░░██▓ ▒██▒
+	  ▒ ░░    ▒ ░░▒░▒ ▒▒   ▓▒█░░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒▒ ▒▓▒ ▒ ░    ▒ ░   ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░
+	    ░     ▒ ░▒░ ░  ▒   ▒▒ ░░ ░░   ░ ▒░░ ░▒ ▒░░ ░▒  ░ ░    ░       ░ ▒ ▒░   ░▒ ░ ▒░
+	  ░       ░  ░░ ░  ░   ▒      ░   ░ ░ ░ ░░ ░ ░  ░  ░      ░ ░   ░ ░ ░ ▒    ░░   ░
+	          ░  ░  ░      ░  ░         ░ ░  ░         ░                ░ ░     ░
+	 ▄████▄   ██░ ██ ▓█████  ▄████▄   ██ ▄█▀ ██▓ ███▄    █   ▄████    ▄▄▄█████▓ ██░ ██ ▓█████
+	▒██▀ ▀█  ▓██░ ██▒▓█   ▀ ▒██▀ ▀█   ██▄█▒ ▓██▒ ██ ▀█   █  ██▒ ▀█▒   ▓  ██▒ ▓▒▓██░ ██▒▓█   ▀
+	▒▓█    ▄ ▒██▀▀██░▒███   ▒▓█    ▄ ▓███▄░ ▒██▒▓██  ▀█ ██▒▒██░▄▄▄░   ▒ ▓██░ ▒░▒██▀▀██░▒███
+	▒▓▓▄ ▄██▒░▓█ ░██ ▒▓█  ▄ ▒▓▓▄ ▄██▒▓██ █▄ ░██░▓██▒  ▐▌██▒░▓█  ██▓   ░ ▓██▓ ░ ░▓█ ░██ ▒▓█  ▄
+	▒ ▓███▀ ░░▓█▒░██▓░▒████▒▒ ▓███▀ ░▒██▒ █▄░██░▒██░   ▓██░░▒▓███▀▒     ▒██▒ ░ ░▓█▒░██▓░▒████▒
+	░ ░▒ ▒  ░ ▒ ░░▒░▒░░ ▒░ ░░ ░▒ ▒  ░▒ ▒▒ ▓▒░▓  ░ ▒░   ▒ ▒  ░▒   ▒      ▒ ░░    ▒ ░░▒░▒░░ ▒░ ░
+	  ░  ▒    ▒ ░▒░ ░ ░ ░  ░  ░  ▒   ░ ░▒ ▒░ ▒ ░░ ░░   ░ ▒░  ░   ░        ░     ▒ ░▒░ ░ ░ ░  ░
+	░         ░  ░░ ░   ░   ░        ░ ░░ ░  ▒ ░   ░   ░ ░ ░ ░   ░      ░       ░  ░░ ░   ░
+	░ ░       ░  ░  ░   ░  ░░ ░      ░  ░    ░           ░       ░              ░  ░  ░   ░  ░
+	░                       ░
+	  ██████  ▒█████   █    ██  ██▀███   ▄████▄  ▓█████     ▄████▄   ▒█████  ▓█████▄ ▓█████
+	▒██    ▒ ▒██▒  ██▒ ██  ▓██▒▓██ ▒ ██▒▒██▀ ▀█  ▓█   ▀    ▒██▀ ▀█  ▒██▒  ██▒▒██▀ ██▌▓█   ▀
+	░ ▓██▄   ▒██░  ██▒▓██  ▒██░▓██ ░▄█ ▒▒▓█    ▄ ▒███      ▒▓█    ▄ ▒██░  ██▒░██   █▌▒███
+	  ▒   ██▒▒██   ██░▓▓█  ░██░▒██▀▀█▄  ▒▓▓▄ ▄██▒▒▓█  ▄    ▒▓▓▄ ▄██▒▒██   ██░░▓█▄   ▌▒▓█  ▄
+	▒██████▒▒░ ████▓▒░▒▒█████▓ ░██▓ ▒██▒▒ ▓███▀ ░░▒████▒   ▒ ▓███▀ ░░ ████▓▒░░▒████▓ ░▒████▒
+	▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░ ░▒ ▒  ░░░ ▒░ ░   ░ ░▒ ▒  ░░ ▒░▒░▒░  ▒▒▓  ▒ ░░ ▒░ ░
+	░ ░▒  ░ ░  ░ ▒ ▒░ ░░▒░ ░ ░   ░▒ ░ ▒░  ░  ▒    ░ ░  ░     ░  ▒     ░ ▒ ▒░  ░ ▒  ▒  ░ ░  ░
+	░  ░  ░  ░ ░ ░ ▒   ░░░ ░ ░   ░░   ░ ░           ░      ░        ░ ░ ░ ▒   ░ ░  ░    ░
+	      ░      ░ ░     ░        ░     ░ ░         ░  ░   ░ ░          ░ ░     ░       ░  ░
+	                                    ░                  ░                  ░
+
+	site by dom -  twitter.com/@zerstoerer
+	--><head>
+		<!-- blade runner -->
+		<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-18V4HGCDL0&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-110548423-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+		<script>
+			var trackPSLink = function(url) {
+			 ga('send', 'event', 'outbound', 'click', url, {
+				 'transport': 'beacon',
+				 'hitCallback': function(){document.location = url;}
+			 });
+			}
+
+			var trackTrailerLink = function(url) {
+			 ga('send', 'event', 'outbound2', 'click', url, {
+				 'transport': 'beacon',
+				 'hitCallback': function(){document.location = url;}
+			 });
+			}
+		</script>
+
+		<meta charset="utf-8">
+		<title>ACCOUNTING+</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="assets/css/reset.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="shortcut icon" href="assets/images/favicon.ico">
+		<link rel="canonical" href="https://accountingpl.us">
+
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="ACCOUNTING+">
+		<meta property="og:description" content="A Nightmare Adventure Comedy game by Crows Crows Crows, designed with Squanch Games.">
+		<meta property="og:image" content="http://accountingpl.us/assets/images/share_facebook_image.png">
+		<meta property="og:image:secure_url" content="https://accountingpl.us/assets/images/share_facebook_image.png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:image:type" content="images/png">
+		<meta property="og:url" content="https://accountingpl.us">
+
+		<meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@crowsx3">
+    <meta name="twitter:title" content="ACCOUNTING+">
+    <meta name="twitter:description" content="A Nightmare Adventure Comedy game by Crows Crows Crows, designed with Squanch Games.">
+    <meta name="twitter:image" content="https://accountingpl.us/assets/images/share_twitter_image.png">
+    <meta name="twitter:image:alt" content="A picture of Tree Guy, voiced by Justin Roiland.">
+
+		<meta name="description" content="A Nightmare Adventure Comedy game by Crows Crows Crows, designed with Squanch Games.">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+		<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type":"VideoGame",
+			"applicationCategory":"Game",
+			"operatingSystem":[
+				"https://en.wikipedia.org/wiki/HTC_Vive",
+				"https://en.wikipedia.org/wiki/Oculus_Rift",
+				"https://en.wikipedia.org/wiki/PlayStation_VR"
+			],
+		  "name":[
+		    {
+		      "@language":"en",
+		      "@value":"Accounting+"
+		    }
+		  ],
+		  "description":[
+		    {
+		      "@language":"en",
+		      "@value":"A nightmare adventure comedy from Crows Crows Crows and Squanch Games. Experience classic virtual reality gameplay: clean up your office, take the battery out of the cooling machine, play the skeleton xylophone, and/or summon thousands upon thousands of demons."
+		    }
+		  ],
+		  "genre":[
+		    "Adventure",
+		    "Comedy",
+		    "Horror"
+		  ],
+		  "url":"https://accountingpl.us",
+		  "image":"https://accountingpl.us/poster.jpg",
+		  "screenshot":"https://accountingpl.us/backgroundart.jpg",
+		  "sameAs": [
+		    "https://en.wikipedia.org/wiki/Accounting_(video_game)",
+		    "https://www.youtube.com/channel/UC_6qm9hr5czPglKbY_NfylQ"
+		  ],
+		  "trailer":{
+		    "@type":"VideoObject",
+				"name":"ACCOUNTING+ Coming Soon to HTC Vive, Oculus Rift and PS VR",
+		    "url":"https://www.youtube.com/watch?v=5EbZ12c0Ccg",
+		    "inLanguage":"en",
+				"description":"What began as a small game jam between William Pugh (The Stanley Parable), Dominik Johann (Minit), and Justin Roiland (Rick and Morty) is now—two years later—an aberration of warped technology, weird worlds, and strange, disturbing creatures.",
+				"uploadDate":"2018-09-20",
+				"thumbnailUrl":"https://accountingpl.us/thumbnail.jpg"
+		  },
+		  "exampleOfWork":[
+		    {
+		      "@type":"VideoGame",
+					"applicationCategory":"Game",
+		      "gamePlatform":[
+		        "https://en.wikipedia.org/wiki/PlayStation_VR"
+		      ],
+					"operatingSystem":[
+		        "https://en.wikipedia.org/wiki/PlayStation_VR"
+		      ],
+		      "contentRating":"ESRB M",
+		      "releasedEvent":{
+		        "@type":"PublicationEvent",
+		        "startDate":"2017-12-19",
+		        "location":{
+		          "@type":"Place",
+		          "name":"WW"
+		        }
+		      }
+		    },
+		    {
+		      "@type":"VideoGame",
+					"applicationCategory":"Game",
+		      "gamePlatform":[
+		        "https://en.wikipedia.org/wiki/HTC_Vive",
+		        "https://en.wikipedia.org/wiki/Oculus_Rift"
+		      ],
+					"operatingSystem":[
+		        "https://en.wikipedia.org/wiki/HTC_Vive",
+		        "https://en.wikipedia.org/wiki/Oculus_Rift"
+		      ],
+		      "contentRating":"ESRB M",
+		      "releasedEvent":{
+		        "@type":"PublicationEvent",
+		        "startDate":"2017-10-11",
+		        "location":{
+		          "@type":"Place",
+		          "name":"WW"
+		        }
+		      }
+		    }
+		  ]
+		}
+		</script>
+
+	</head>
+	<body>
+		<nav id="top">
+			<ul>
+			<li><a href="https://discord.gg/crows">🌎 JOIN OUR DISCORD</a></li>
+			<li><a href="http://accountingpl.us/press">✏️ PRESS KIT</a></li>
+			<li><a href="mailto:hello@crowscrowscrows.com">✉️ CONTACT</a></li>
+			</ul>
+		</nav>
+
+		<div id="treeworld">
+			<header>
+				<figure>
+					<h1 id="gamename">ACCOUNTING+ / ACCOUNTING PLUS</h1>
+					<img src="assets/images/accountingplus_logo.png">
+				</figure>
+			</header>
+
+			<!-- <figure class="quote">
+				<blockquote>
+					This game is giving me literal nightmares. Please make it stop.</blockquote>
+				<figcaption>— Steve</figcaption>
+			</figure> -->
+
+			<div id="zigzag"></div>
+		</div>
+
+			<section id="makeawish">
+				<!-- <div id="coolvrplatform"><img src="assets/images/psvr.svg"/></div> -->
+				<h1 id="platformhead">Get it on</h1>
+				<div id="platformlinks">
+					<a class="plsteam" href="https://store.steampowered.com/app/927270/Accounting/">STEAM</a>
+					<a class="ploculus" href="https://www.oculus.com/experiences/rift/1709744419154115/">OCULUS STORE</a>
+					<a class="plviveport" href="https://www.viveport.com/apps/8f08b944-f67a-4e99-a281-00f7f9a40243/Accounting+/">VIVEPORT</a>
+					<a class="plpsvr" href="https://store.playstation.com/?resolve=UP3613-CUSA10154_00-CLOWNASSPASSWORD">PS VR</a>
+				</div>
+
+				<!-- <div id="preorder">
+					<a href="#"><img src="assets/images/accountingplus_boxart.png"/></a>
+					 <a id="preorder-button" href="https://store.playstation.com/?resolve=UP3613-CUSA10154_00-0123456789ABCDEF" onclick="trackPSLink('https://store.playstation.com/?resolve=UP3613-CUSA10154_00-0123456789ABCDEF'); return false;"><span>Get it on the PS Store</a>
+
+				</div> -->
+			</section>
+
+		<div id="bigblue">
+			<section id="trailer">
+				<figure class="softwareproduct">
+					<div class="windowtitle">FINALLY ON OCULUS QUEST.MP4</div>
+					<div class="window">
+						<div class="youtube">
+							<iframe src="https://youtube.com/embed/r-fYqOa1Tds" frameborder="0" allowfullscreen="" class="ytvideo"></iframe>
+						</div>
+					</div>
+				<figure>
+			</figure></figure></section>
+
+			<section id="introtext">
+				<h2>What is Accounting+?</h2>
+
+				<p><em>Accounting+</em> is a NIGHTMARE ADVENTURE COMEDY by <em>Crows Crows Crows</em>, designed with <em>Squanch Games</em> for PlayStation®VR. Double the size of the original (critically, critically acclaimed) <em>Accounting</em>. Experience <em>classic</em> virtual reality gameplay: clean up your office, take the battery out of the cooling machine, play the skeleton xylophone, and/or summon thousands upon thousands of demons.</p>
+			</section>
+		</div>
+
+
+		<div id="checkers">
+			<div id="bubbles-black">
+				<div id="bubbles"></div>
+			</div>
+
+			<h2>SCREENSHOTS? YES</h2>
+
+			<section id="screenshots">
+				<div class="screenshot">
+					<figure class="screenshotimg screenshotleft">
+						<img src="assets/images/screenshots/ritual.jpg">
+					</figure>
+					<div class="scrcap">
+						<p>These two friendly faces are listening to RAP and summoning Satan. Satan will kill everyone but it will still be cool.</p>
+					</div>
+				</div>
+				<div class="screenshot">
+					<figure class="screenshotimg screenshotright">
+						<img src="assets/images/screenshots/bonezone.jpg">
+					</figure>
+					<div class="scrcap">
+						<p>That's right! The rumours were true! The bone xylophone is in the game! Literally infinite melodies are possible. That's infinite playtime.</p>
+					</div>
+				</div>
+				<div class="screenshot">
+					<figure class="screenshotimg screenshotleft">
+						<img src="assets/images/screenshots/treeguy.jpg">
+					</figure>
+					<div class="scrcap">
+						<p>This is Tree Guy. We all know him. He says “f*ck you” and sounds like Rick and Morty. This is because he is voiced by Justin Roiland.</p>
+					</div>
+				</div>
+
+			</section>
+
+			<div id="zigzag-grey"></div>
+		</div>
+		<div id="biggrey">
+			<h2>INFO SECTION</h2>
+
+			<section>
+				<h3>What's going on?</h3>
+				<p>Accounting+ is a game by Crows Crows Crows (founded by The Stanley Parable designer William Pugh and REAL GERMAN Dominik Johann) and designed with Squanch Games (founded by Rick and Morty co-creator Justin Roiland). It’s a VR game for HTC Vive, Oculus Rift and Playstation®VR!</p>
+			</section>
+
+			<section>
+				<h3>More!</h3>
+				<p>To get notified about Accounting+ news and to receive more games and secrets, sign up to the Crows Crows Crows mailing list!</p>
+
+				<p class="privacy">(We'll never send you spam. Take a look at our <a href="https://crowscrowscrows.com/privacy">Privacy Policy</a> to learn how we collect and use your data.)</p>
+				<form action="https://crowscrowscrows.com/sendy/subscribe" method="POST" accept-charset="utf-8">
+					<input type="email" name="email" id="email" placeholder="my@email.com">
+					<div style="display:none;">
+					<label for="hp">HP</label><br>
+					<input type="text" name="hp" id="hp">
+					</div>
+					<input type="hidden" name="list" value="OHixBMptrGwIdf3q0sbhWQ">
+					<button class="goldbutton" data-sitekey="6LeNeW8UAAAAALXmP4Br_MfxgY-UII2tP78mPV19" data-callback="onSubmit" id="submitbutton" data-badge="inline" type="submit">Sign me up</button>
+				</form>
+
+				<p>For more Squanch Games news, follow <a href="https://twitter.com/squanchgames">@squanchgames</a>!</p>
+			</section>
+
+			<section>
+				<h3>Members of the press:</h3>
+				<p>Access our press kit with videos, imagery, and more!</p>
+				<a class="goldbutton" href="http://accountingpl.us/press">Go to press kit</a>
+			</section>
+
+			<section>
+				<h3>Streamer / Video Creator Notice:</h3>
+				<p>It's good for games if people see them. If you create videos or live streams of our games, that's 100% cool with us. You have our permission to publish and monetize Accounting+ footage, 100%, no questions asked. Please refer to this website if you need to.</p>
+			</section>
+
+
+			<section class="companylogos">
+				<div class="column-left">
+					<h3>A Game By</h3>
+					<a href="https://crowscrowscrows.com" title="Crows Crows Crows"><img src="assets/images/crowscrowscrows.svg"></a>
+				</div>
+				<div class="column-right">
+					<h3>Designed With</h3>
+					<a href="http://squanchgames.com" title="Squanch Games"><img src="assets/images/squanchgames.png"></a>
+				</div>
+			</section>
+
+
+
+			<div id="zigzag"></div>
+		</div>
+
+		<footer>
+			<!-- <figure id="pizza">
+				<img src="assets/images/pizza.png"/>
+			</figure>
+
+			in case you're hungry
+			-->
+			<div id="disclaimer">
+				<img src="assets/images/ratings-cd.jpg">
+				<p>
+					<span>© 2017 Crows Crows Crows (Do NOT Steal)</span> <span><a href="http://accountingpl.us/press">Press</a></span> <span><a href="http://crowscrowscrows.com/legal.html">Legal</a></span> <span><a href="mailto:hello@crowscrowscrows.com">Contact</a></span>
+				</p>
+			</div>
+		</footer>
+	
+
+</body></html>

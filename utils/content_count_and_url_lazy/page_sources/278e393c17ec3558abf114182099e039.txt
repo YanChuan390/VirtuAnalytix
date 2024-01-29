@@ -1,0 +1,1368 @@
+<html lang="en"><!--<![endif]--><head>
+	<meta charset="UTF-8">
+	<title>Privacy Policy | Virtual Rock VR</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://virtualrockvr.com/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://s0.wp.com/wp-content/themes/pub/parament/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+	<meta name="robots" content="max-image-preview:large">
+
+<!-- Async WordPress.com Remote Login -->
+<script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.parentNode.removeChild( dom_node ); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[ i ].parentNode.removeChild( dom_nodes[ i ] );
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+					+ '//' + window.location.hostname
+					+ '&postid=16'
+					+ '&is_singular=';
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly92aXJ0dWFscm9ja3ZyLmNvbQ%3D%3D"
+		+ "&wpcomid=105925508"
+		+ "&time=1694364187";
+	document.body.appendChild( iframe );
+}, false );
+</script>
+<link rel="dns-prefetch" href="//ced.sascdn.com">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//wordpress.com">
+<link rel="dns-prefetch" href="//s.pubmine.com">
+<link rel="dns-prefetch" href="//x.bidswitch.net">
+<link rel="dns-prefetch" href="//static.criteo.net">
+<link rel="dns-prefetch" href="//ib.adnxs.com">
+<link rel="dns-prefetch" href="//aax.amazon-adsystem.com">
+<link rel="dns-prefetch" href="//bidder.criteo.com">
+<link rel="dns-prefetch" href="//cas.criteo.com">
+<link rel="dns-prefetch" href="//gum.criteo.com">
+<link rel="dns-prefetch" href="//ads.pubmatic.com">
+<link rel="dns-prefetch" href="//gads.pubmatic.com">
+<link rel="dns-prefetch" href="//tpc.googlesyndication.com">
+<link rel="dns-prefetch" href="//ad.doubleclick.net">
+<link rel="dns-prefetch" href="//googleads.g.doubleclick.net">
+<link rel="dns-prefetch" href="//www.googletagservices.com">
+<link rel="dns-prefetch" href="//cdn.switchadhub.com">
+<link rel="dns-prefetch" href="//delivery.g.switchadhub.com">
+<link rel="dns-prefetch" href="//delivery.swid.switchadhub.com">
+<link rel="dns-prefetch" href="//a.teads.tv">
+<link rel="dns-prefetch" href="//prebid.media.net">
+<link rel="dns-prefetch" href="//adserver-us.adtech.advertising.com">
+<link rel="dns-prefetch" href="//fastlane.rubiconproject.com">
+<link rel="dns-prefetch" href="//prebid-server.rubiconproject.com">
+<link rel="dns-prefetch" href="//hb-api.omnitagjs.com">
+<link rel="dns-prefetch" href="//mtrx.go.sonobi.com">
+<link rel="dns-prefetch" href="//apex.go.sonobi.com">
+<link rel="dns-prefetch" href="//u.openx.net">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Virtual Rock VR » Feed" href="https://virtualrockvr.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Virtual Rock VR » Comments Feed" href="https://virtualrockvr.com/comments/feed/">
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1677072837i&ver=6.3.1-alpha-56423"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link crossorigin="anonymous" rel="stylesheet" id="all-css-0-1" href="https://s0.wp.com/_static/??-eJyFUVtuwyAQvFDxxlVqKR9Vj1KtYYWIeQkWW759iFu7jqLUP0jDzOwsA0xRyOCZPENvgxbRFm18hikkhSqDtqFH28ic3+BIGzGhq6wY358MrvzJjdLEGahUNgyGhMUJmFy0yJQh82zpvwHWDFV2JY4oB7GgJ/mq1aXCnpKuTCIY267pmhP0xVh1f8UyoE+Y5uPcNfEHQy5+vfoeyauQAAsHh8xGbuLRKAoxUc4PoaQMV8MCMiyietK05RsvbVH3d2ZwVY1kyS0L7UBtbKYkLGmUc+OMP7ZXbo8fTK/L+91z6xznUFjoZNSL2g5HJGTj9e63v9xn213Op3PbflyuN3Zt+uY=&amp;cssminify=yes" type="text/css" media="all">
+<style id="wp-block-library-inline-css">
+.has-text-align-justify {
+	text-align:justify;
+}
+.wp-block-cover__image-background.has-parallax {
+	background-size: cover;
+}
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link crossorigin="anonymous" rel="stylesheet" id="all-css-2-1" href="https://s0.wp.com/_static/??/wp-content/mu-plugins/core-compat/wp-mediaelement.css,/wp-content/mu-plugins/wpcom-bbpress-premium-themes.css?m=1432920480j&amp;cssminify=yes" type="text/css" media="all">
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans';--wp--preset--font-family--alegreya: Alegreya;--wp--preset--font-family--arvo: Arvo;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda';--wp--preset--font-family--cabin: Cabin;--wp--preset--font-family--chivo: Chivo;--wp--preset--font-family--commissioner: Commissioner;--wp--preset--font-family--cormorant: Cormorant;--wp--preset--font-family--courier-prime: 'Courier Prime';--wp--preset--font-family--crimson-pro: 'Crimson Pro';--wp--preset--font-family--dm-mono: 'DM Mono';--wp--preset--font-family--dm-sans: 'DM Sans';--wp--preset--font-family--domine: Domine;--wp--preset--font-family--eb-garamond: 'EB Garamond';--wp--preset--font-family--epilogue: Epilogue;--wp--preset--font-family--figtree: Figtree;--wp--preset--font-family--fira-sans: 'Fira Sans';--wp--preset--font-family--fraunces: Fraunces;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono';--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans';--wp--preset--font-family--inter: Inter;--wp--preset--font-family--josefin-sans: 'Josefin Sans';--wp--preset--font-family--jost: Jost;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville';--wp--preset--font-family--libre-franklin: 'Libre Franklin';--wp--preset--font-family--literata: Literata;--wp--preset--font-family--lora: Lora;--wp--preset--font-family--merriweather: Merriweather;--wp--preset--font-family--montserrat: Montserrat;--wp--preset--font-family--newsreader: Newsreader;--wp--preset--font-family--nunito: Nunito;--wp--preset--font-family--open-sans: 'Open Sans';--wp--preset--font-family--overpass: Overpass;--wp--preset--font-family--petrona: Petrona;--wp--preset--font-family--piazzolla: Piazzolla;--wp--preset--font-family--playfair-display: 'Playfair Display';--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans';--wp--preset--font-family--poppins: Poppins;--wp--preset--font-family--raleway: Raleway;--wp--preset--font-family--roboto-slab: 'Roboto Slab';--wp--preset--font-family--roboto: Roboto;--wp--preset--font-family--rubik: Rubik;--wp--preset--font-family--sora: Sora;--wp--preset--font-family--source-sans-pro: 'Source Sans Pro';--wp--preset--font-family--source-serif-pro: 'Source Serif Pro';--wp--preset--font-family--space-mono: 'Space Mono';--wp--preset--font-family--texturina: Texturina;--wp--preset--font-family--work-sans: 'Work Sans';--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+</style>
+<link crossorigin="anonymous" rel="stylesheet" id="all-css-4-1" href="https://s0.wp.com/_static/??-eJx9jlkOwjAMRC9EcIoAiQ/EWdLUBEM2xQ7L7UlBArGofzMjv/HAJSubomAUCFVlXx1FhjOWvgYYiAUoDnidW+YZ/D+2KYQWKU8nbI6/kidKEJNQo/klfjrlgKE15NpDNsWMFcBy8zj13WFSPlkjlOKHUXtvqEyhBXufXJPusfptR2gXtt16s1x0K6318Q4Qx25v&amp;cssminify=yes" type="text/css" media="all">
+<link crossorigin="anonymous" rel="stylesheet" id="print-css-5-1" href="https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035i&amp;cssminify=yes" type="text/css" media="print">
+<style id="jetpack-global-styles-frontend-style-inline-css">
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link crossorigin="anonymous" rel="stylesheet" id="all-css-8-1" href="https://s0.wp.com/_static/??-eJyNjcsKAjEMRX/IGmcQHRfip0hNQ9sxTYppGfx7H7gRN+7ugcs5sFSHKo2kQemuco9ZDGZq1eP1w2BdoGjoTAaW/I2CD+H+nlniGs1W8LfonAXBFLNnxxrVvuBH1hKVZzZtIbJePL8Op3IcdtNhvxmHcZofuRVIZA==&amp;cssminify=yes" type="text/css" media="all">
+<script id="wpcom-actionbar-placeholder-js-extra">
+var actionbardata = {"siteID":"105925508","siteURL":"https:\/\/virtualrockvr.com","xhrURL":"https:\/\/virtualrockvr.com\/wp-admin\/admin-ajax.php","nonce":"3e33a03805","isLoggedIn":"","statusMessage":"","subsEmailDefault":"instantly","proxyScriptUrl":"https:\/\/s0.wp.com\/wp-content\/js\/wpcom-proxy-request.js?ver=20211021","shortlink":"https:\/\/wp.me\/P7as3W-g","i18n":{"followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/read\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar"}};
+</script>
+<script crossorigin="anonymous" type="text/javascript" src="https://s0.wp.com/_static/??-eJxdjUEOwiAQRS/kSGpMmy6MZ6EwEsgwQxiw7e21GxO7/e+9fLMWcMINuZmkJssSCaErVhu+G0R+yTXpxfx7lRqUKtt+ZrlDoR4iq3ljXXo2fmebowMS67Ge/YUk/IpVqrdewZFVRT2OXC7AwhB8OdpnfgzjPNxv0zTO6QNXckVY"></script>
+<script id="rlt-proxy-js-after" type="text/javascript">
+	window.addEventListener( 'DOMContentLoaded', function() {
+		rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+	} );
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://virtualrock.wordpress.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://virtualrockvr.com/privacy-policy/">
+<link rel="shortlink" href="https://wp.me/P7as3W-g">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fvirtualrockvr.com%2Fprivacy-policy%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fvirtualrockvr.com%2Fprivacy-policy%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Privacy Policy">
+<meta property="og:url" content="https://virtualrockvr.com/privacy-policy/">
+<meta property="og:description" content="This Privacy Policy discloses the privacy practices for the virtualrockvr.com site and various related services (together referred to as the “site”). VirtualRock VR, the provider of the site (refer…">
+<meta property="article:published_time" content="2016-11-01T05:30:17+00:00">
+<meta property="article:modified_time" content="2016-11-07T05:14:28+00:00">
+<meta property="og:site_name" content="Virtual Rock VR">
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg">
+<meta property="og:image:alt" content="">
+<meta property="og:locale" content="en_US">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<meta name="twitter:text:title" content="Privacy Policy">
+<meta name="twitter:card" content="summary">
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://s0.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" type="image/x-icon" href="https://s0.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="apple-touch-icon" href="https://s0.wp.com/i/webclip.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://virtualrockvr.com/osd.xml" title="Virtual Rock VR">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Virtual Rock VR"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-task" content="name=Subscribe;action-uri=https://virtualrockvr.com/feed/;icon-uri=https://s0.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s0.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s0.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s0.wp.com/i/favicon.ico"><meta name="description" content="This Privacy Policy discloses the privacy practices for the virtualrockvr.com site and various related services (together referred to as the “site”). VirtualRock VR, the provider of the site (referred to as “us” or “we”), is committed to protecting your privacy online. Please read the information below to learn the following regarding your use of this…">
+
+			<style>
+			.wordads-ad-wrapper {
+				display:none;
+				font: normal 11px Arial, sans-serif;
+				letter-spacing: 1px;
+				text-decoration: none;
+				width: 100%;
+				margin: 25px auto;
+				padding: 0;
+			}
+			.wordads-ad-title {
+				margin-bottom: 5px;
+			}
+			.wordads-ad-controls {
+				margin-top: 5px;
+				text-align: right;
+			}
+			.wordads-ad-controls span {
+				cursor: pointer;
+			}
+			.wordads-ad {
+				width: 300px;
+				max-width: 580px;
+				margin: 0 auto;
+			}
+			.wordads-ad.wordads-ad-responsive {
+				width: 100%;
+			}
+			</style>
+					<script type="text/javascript">
+				var wa_smart = { 'network_id': 3905, 'site_id': 474853, 'page_id': 1572546, 'formats': [ { 'id': 110354, 'tagId': 'sas_110354' } ], 'blog_id': 105925508, 'target': 'wp_blog_id=105925508;language=en', 'inline': { 'title': 'Advertisement', 'gdpr': '', 'format_id': 110354, 'max_slots': 20, 'max_blaze_slots': 1, 'enabled': false } };
+				wa_smart.cmd = [];
+				
+				var sas = sas || {};
+				sas.cmd = sas.cmd || [];
+			</script>		<script>
+			window.sas_fallback = window.sas_fallback || [];
+			window.sas_fallback.push( { tag: "&lt;div class=&quot;OUTBRAIN wa-ob-widget&quot;data-ob-contentUrl=&quot;https://virtualrockvr.com/privacy-policy/&quot;data-widget-id=&quot;AR_2&quot;data-ob-installation-key=&quot;WORDP263NC92GIANECJP6HEPM&quot;data-ob-psub=&quot;&quot;&gt;&lt;/div&gt;&lt;script&gt;window._stq = window._stq || [];window._stq.push( [ \'extra\', { x_wordads_outbrain: \'widget_render_ar_2\', }, ] );&lt;/script&gt;&lt;script src=&quot;https://widgets.outbrain.com/outbrain.js&quot;&gt;&lt;/script&gt;", type: 'belowpost' } );
+		</script>		<script type="text/javascript">
+		function __ATA_CC() {var v = document.cookie.match('(^|;) ?personalized-ads-consent=([^;]*)(;|$)');return v ? 1 : 0;}
+		var __ATA_PP = { 'pt': 2, 'ht': 0, 'tn': 'parament', 'uloggedin': 0, 'amp': false, 'consent': __ATA_CC(), 'gdpr_applies': false, 'ad': { 'label': { 'text': 'Advertisements' }, 'reportAd': { 'text': 'Report this ad' } }, 'disabled_slot_formats': [], 'siteid': 8982, 'blogid': 105925508 };
+		var __ATA = __ATA || {};
+		__ATA.cmd = __ATA.cmd || [];
+		__ATA.criteo = __ATA.criteo || {};
+		__ATA.criteo.cmd = __ATA.criteo.cmd || [];
+		</script>
+		<script type="text/javascript">
+		(function(){var g=Date.now||function(){return+new Date};function h(a,b){a:{for(var c=a.length,d="string"==typeof a?a.split(""):a,e=0;e<c;e++)if(e in d&&b.call(void 0,d[e],e,a)){b=e;break a}b=-1}return 0>b?null:"string"==typeof a?a.charAt(b):a[b]};function k(a,b,c){c=null!=c?"="+encodeURIComponent(String(c)):"";if(b+=c){c=a.indexOf("#");0>c&&(c=a.length);var d=a.indexOf("?");if(0>d||d>c){d=c;var e=""}else e=a.substring(d+1,c);a=[a.substr(0,d),e,a.substr(c)];c=a[1];a[1]=b?c?c+"&"+b:b:c;a=a[0]+(a[1]?"?"+a[1]:"")+a[2]}return a};var l=0;function m(a,b){var c=document.createElement("script");c.src=a;c.onload=function(){b&&b(void 0)};c.onerror=function(){b&&b("error")};a=document.getElementsByTagName("head");var d;a&&0!==a.length?d=a[0]:d=document.documentElement;d.appendChild(c)}function n(a){var b=void 0===b?document.cookie:b;return(b=h(b.split("; "),function(c){return-1!=c.indexOf(a+"=")}))?b.split("=")[1]:""}function p(a){return"string"==typeof a&&0<a.length}
+		function r(a,b,c){b=void 0===b?"":b;c=void 0===c?".":c;var d=[];Object.keys(a).forEach(function(e){var f=a[e],q=typeof f;"object"==q&&null!=f||"function"==q?d.push(r(f,b+e+c)):null!==f&&void 0!==f&&(e=encodeURIComponent(b+e),d.push(e+"="+encodeURIComponent(f)))});return d.filter(p).join("&")}function t(a,b){a||((window.__ATA||{}).config=b.c,m(b.url))}var u=Math.floor(1E13*Math.random()),v=window.__ATA||{};window.__ATA=v;window.__ATA.cmd=v.cmd||[];v.rid=u;v.createdAt=g();var w=window.__ATA||{},x="s.pubmine.com";
+		w&&w.serverDomain&&(x=w.serverDomain);var y="//"+x+"/conf",z=window.top===window,A=window.__ATA_PP&&window.__ATA_PP.gdpr_applies,B="boolean"===typeof A?Number(A):null,C=window.__ATA_PP||null,D=z?document.referrer?document.referrer:null:null,E=z?window.location.href:document.referrer?document.referrer:null,F,G=n("__ATA_tuuid");F=G?G:null;var H=window.innerWidth+"x"+window.innerHeight,I=n("usprivacy"),J=r({gdpr:B,pp:C,rid:u,src:D,ref:E,tuuid:F,vp:H,us_privacy:I?I:null},"",".");
+		(function(a){var b=void 0===b?"cb":b;l++;var c="callback__"+g().toString(36)+"_"+l.toString(36);a=k(a,b,c);window[c]=function(d){t(void 0,d)};m(a,function(d){d&&t(d)})})(y+"?"+J);}).call(this);
+		</script><script src="//s.pubmine.com/conf?gdpr=0&amp;pp.pt=2&amp;pp.ht=0&amp;pp.tn=parament&amp;pp.uloggedin=0&amp;pp.amp=false&amp;pp.consent=0&amp;pp.gdpr_applies=false&amp;pp.ad.label.text=Advertisements&amp;pp.ad.reportAd.text=Report%20this%20ad&amp;pp.siteid=8982&amp;pp.blogid=105925508&amp;rid=3708368721158&amp;ref=https%3A%2F%2Fvirtualrockvr.com%2Fprivacy-policy%2F&amp;vp=1036x668&amp;cb=callback__lmdoousv_1"></script>	<script>
+		var sas_fallback = sas_fallback || [];
+		sas_fallback.push(
+			{ tag: "&lt;div id=&quot;atatags-26942-64fdf21b69e13&quot;&gt;&lt;/div&gt;&lt;script&gt;__ATA.cmd.push(function() {__ATA.initDynamicSlot({id: \'atatags-26942-64fdf21b69e13\',location: 120,formFactor: \'001\',label: {text: \'Advertisements\',},creative: {reportAd: {text: \'Report this ad\',},privacySettings: {text: \'Privacy\',}}});});&lt;/script&gt;", type: 'belowpost' },
+			{ tag: "&lt;div id=&quot;atatags-26942-{{unique_id}}&quot;&gt;&lt;/div&gt;&lt;script&gt;__ATA.cmd.push(function() {__ATA.initDynamicSlot({id: \'atatags-26942-{{unique_id}}\',location: 310,formFactor: \'001\',label: {text: \'Advertisements\',},creative: {reportAd: {text: \'Report this ad\',},privacySettings: {text: \'Privacy\',}}});});&lt;/script&gt;", type: 'inline' }
+		);
+	</script>		<script type="text/javascript">
+
+			window.doNotSellCallback = function() {
+
+				var linkElements = [
+					'a[href="https://wordpress.com/?ref=footer_blog"]',
+					'a[href="https://wordpress.com/?ref=footer_website"]',
+					'a[href="https://wordpress.com/?ref=vertical_footer"]',
+					'a[href^="https://wordpress.com/?ref=footer_segment_"]',
+				].join(',');
+
+				var dnsLink = document.createElement( 'a' );
+				dnsLink.href = 'https://wordpress.com/advertising-program-optout/';
+				dnsLink.classList.add( 'do-not-sell-link' );
+				dnsLink.rel = 'nofollow';
+				dnsLink.style.marginLeft = '0.5em';
+				dnsLink.textContent = 'Do Not Sell or Share My Personal Information';
+
+				var creditLinks = document.querySelectorAll( linkElements );
+
+				if ( 0 === creditLinks.length ) {
+					return false;
+				}
+
+				Array.prototype.forEach.call( creditLinks, function( el ) {
+					el.insertAdjacentElement( 'afterend', dnsLink );
+				});
+
+				return true;
+			};
+
+		</script>
+		<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_gat._anonymizeIp']);
+	_gaq.push(['_setDomainName', 'none']);
+	_gaq.push(['_setAllowLinker', true]);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+<script src="https://c0.pubmine.com/2.37.11677685674593/ata.js"></script><script src="https://a.teads.tv/analytics/tag.js"></script><script src="https://s0.wp.com/wp-includes/js/wp-emoji-release.min.js?m=1677072837i&amp;ver=6.3.1-alpha-56423" defer=""></script><link rel="stylesheet" id="gravatar-card-css" href="https://0.gravatar.com/js/hovercards/hovercards.min.css?ver=202336aeb24331352c11f5446dd670d75325a3c4e3b8a6bd7f92ee1c88f8b8636d4d9c"><script type="text/javascript" src="https://odb.outbrain.com/utils/platforms?contentUrl=https%3A%2F%2Fvirtualrockvr.com%2Fprivacy-policy%2F&amp;idx=0&amp;rand=12119&amp;widgetJSId=AR_2&amp;va=true&amp;et=true&amp;format=html&amp;px=50&amp;py=4946&amp;vpd=4278&amp;cw=628&amp;settings=true&amp;recs=true&amp;key=WORDP263NC92GIANECJP6HEPM&amp;tch=0&amp;adblck=false&amp;abwl=false&amp;ab=0&amp;wl=0&amp;umv=0&amp;activeTab=true&amp;version=2010444&amp;sig=MzldSklc&amp;apv=false&amp;osLang=zh-CN&amp;winW=1019&amp;winH=668&amp;scrW=1536&amp;scrH=864&amp;dpr=1.25&amp;secured=true&amp;cmpStat=1&amp;ccpaStat=1&amp;chs=1&amp;ogn=https%3A%2F%2Fvirtualrockvr.com%2Fprivacy-policy%2F" charset="UTF-8" async=""></script><script type="text/javascript" src="https://libs.outbrain.com/video/obVideo/current/obVideo.js?e=1" charset="UTF-8" async=""></script><style>div[id^=wrapperContainerForShadowDom_],.obv-video-wrapper{position:relative}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper,.obv-video-wrapper .ob-player-wrapper{z-index:1;top:0;margin-right:auto;margin-left:auto;display:flex;flex-direction:column;position:relative}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.above-widget,.obv-video-wrapper .ob-player-wrapper.above-widget{margin-bottom:20px}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.below-widget,.obv-video-wrapper .ob-player-wrapper.below-widget{margin-top:20px}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.obv-hide-wrapper,.obv-video-wrapper .ob-player-wrapper.obv-hide-wrapper{visibility:hidden;position:absolute;z-index:-999999999999}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.ob-sticky .omp-native-description,div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.ob-sticky .omp-native-title,.obv-video-wrapper .ob-player-wrapper.ob-sticky .omp-native-description,.obv-video-wrapper .ob-player-wrapper.ob-sticky .omp-native-title{-webkit-line-clamp:1}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.ob-sticky .omp-native-title,.obv-video-wrapper .ob-player-wrapper.ob-sticky .omp-native-title{font-size:16px}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.ob-sticky .omp-native-description,.obv-video-wrapper .ob-player-wrapper.ob-sticky .omp-native-description{font-size:12px}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.ob-sticky .omp-sponsor-brand,.obv-video-wrapper .ob-player-wrapper.ob-sticky .omp-sponsor-brand{font-size:11px}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.ob-sticky .omp-native-button,.obv-video-wrapper .ob-player-wrapper.ob-sticky .omp-native-button{font-size:11px}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.ob-sticky-z-index,.obv-video-wrapper .ob-player-wrapper.ob-sticky-z-index{z-index:1}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .ob-inner-player-wrapper,.obv-video-wrapper .ob-player-wrapper .ob-inner-player-wrapper{position:relative;flex:1;overflow:hidden;max-height:100%;max-width:100%}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .ob-inner-player-wrapper .ob-player,.obv-video-wrapper .ob-player-wrapper .ob-inner-player-wrapper .ob-player{width:100%;height:100%;position:absolute;z-index:-99999999999;top:0}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .ob-inner-player-wrapper .ob-player.obv-playing,.obv-video-wrapper .ob-player-wrapper .ob-inner-player-wrapper .ob-player.obv-playing{position:relative;z-index:1;display:block}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .ob-inner-player-wrapper .ob-player.obv-playing .ob-inner-player-wrapper,.obv-video-wrapper .ob-player-wrapper .ob-inner-player-wrapper .ob-player.obv-playing .ob-inner-player-wrapper{overflow:visible}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .obv-title-wrapper,.obv-video-wrapper .ob-player-wrapper .obv-title-wrapper{padding:8px 6px 0;font-size:14px;color:#000}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .obv-skip-wrapper,.obv-video-wrapper .ob-player-wrapper .obv-skip-wrapper{position:absolute;direction:ltr !important;bottom:14%;right:0;z-index:3;border-radius:2px;border:solid .5px rgba(255,255,255,.7);background-color:rgba(0,0,0,.8);cursor:pointer;font-family:Lato,"sans-serif";font-size:12px;display:flex;align-items:center;color:#fff;gap:8px;padding:8px;line-height:1}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .obv-skip-wrapper.minimize-skip-button,.obv-video-wrapper .ob-player-wrapper .obv-skip-wrapper.minimize-skip-button{bottom:20%}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .obv-skip-wrapper.minimize-skip-button>span:first-child,.obv-video-wrapper .ob-player-wrapper .obv-skip-wrapper.minimize-skip-button>span:first-child{font-size:13px}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .obv-skip-wrapper.minimize-skip-button>.obv-skip-icon,.obv-video-wrapper .ob-player-wrapper .obv-skip-wrapper.minimize-skip-button>.obv-skip-icon{font-size:10px}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .obv-skip-wrapper.minimize-skip-button>.obv-skip-icon:after,.obv-video-wrapper .ob-player-wrapper .obv-skip-wrapper.minimize-skip-button>.obv-skip-icon:after{font-size:12px}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .obv-skip-wrapper>span:first-child,.obv-video-wrapper .ob-player-wrapper .obv-skip-wrapper>span:first-child{direction:ltr !important;font-family:Arial,"sans-serif";font-size:18px}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .obv-skip-wrapper>.obv-skip-icon,.obv-video-wrapper .ob-player-wrapper .obv-skip-wrapper>.obv-skip-icon{font-size:12px;position:relative}div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper .obv-skip-wrapper>.obv-skip-icon:after,.obv-video-wrapper .ob-player-wrapper .obv-skip-wrapper>.obv-skip-icon:after{content:"⏽";font-size:14px;margin-left:1px}div[id^=wrapperContainerForShadowDom_] #skip-btn,.obv-video-wrapper #skip-btn{display:none !important}in-widget-styling,div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.in-widget,.obv-video-wrapper .ob-player-wrapper.in-widget,div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.covering-widget,.obv-video-wrapper .ob-player-wrapper.covering-widget{position:absolute}in-widget-styling .ob-player[id$=VI_Player],div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.in-widget .ob-player[id$=VI_Player],.obv-video-wrapper .ob-player-wrapper.in-widget .ob-player[id$=VI_Player],div[id^=wrapperContainerForShadowDom_] .ob-player-wrapper.covering-widget .ob-player[id$=VI_Player],.obv-video-wrapper .ob-player-wrapper.covering-widget .ob-player[id$=VI_Player]{display:flex !important;align-items:center;background:#000}.no-transition{transition:unset !important}</style><script src="https://player.aniview.com/script/6.1/aniview.js"></script><script src="https://static.vidazoo.com/basev/vpts.js"></script><script src="https://libs.outbrain.com/video/outbrain-media-player/current/omp.min.js"></script><script type="text/javascript" src="https://static.vidazoo.com/basev/1.0.811/sbt.js"></script><style>.sbt{width:100%;height:100%;position:relative;line-height:0;background:#000;overflow:hidden}.sbt,.sbt *{box-sizing:border-box}.sbt button:focus{outline:0}.sbt .sbt-wrapper::-webkit-scrollbar{width:0!important;height:0!important}.sbt .sbt-wrapper{position:absolute;height:100%;width:100%;overflow:hidden;-ms-overflow-style:none;overflow:-moz-scrollbars-none}.sbt .sbt-wrapper .sbt-placeholder{min-width:100%;min-height:100%;width:100%;height:100%}.sbt .sbt-wrapper .sbt-placeholder>canvas,.sbt .sbt-wrapper .sbt-placeholder>div,.sbt .sbt-wrapper .sbt-placeholder>iframe,.sbt .sbt-wrapper .sbt-placeholder>img,.sbt .sbt-wrapper .sbt-placeholder>object,.sbt .sbt-wrapper .sbt-placeholder>video{min-width:100%;min-height:100%;width:100%;height:100%;position:absolute;background:#000;top:0;left:0;z-index:1;border:none}.sbt .sbt-nonlin-close{position:absolute;z-index:1001;top:15px;font-size:1.5em;color:#efefef;right:10px;cursor:pointer}</style><script type="text/javascript" src="https://static.vidazoo.com/basev/skins/outbrain/outbrain.js"></script><style type="text/css">@font-face{font-family:materialicons;src:url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBVcAAAC8AAAAYGNtYXDjgIysAAABHAAAAHRnYXNwAAAAEAAAAZAAAAAIZ2x5ZiuRYbcAAAGYAAAB7GhlYWQOewzKAAADhAAAADZoaGVhB0IDywAAA7wAAAAkaG10eB4ABL4AAAPgAAAAKGxvY2ECJgG2AAAECAAAABZtYXhwAA8AMQAABCAAAAAgbmFtZUu5ugUAAARAAAAB5nBvc3QAAwAAAAAGKAAAACAAAwO3AZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADodgPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAWAAAABIAEAADAAIAAQAg4DTgN+BQ5c3odv/9//8AAAAAACDgNOA34E/lzeh2//3//wAB/+Mf0B/OH7caOxeTAAMAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAPAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAIBAACBAwAC1QADAAcAAAEzESMhETMRAlaqqv6qqgLV/awCVP2sAAABAVYAgQMqAtUAAgAACQIBVgHU/iwC1f7W/tYABACAACsDgAMrAAIAFAAmAC4AAAEVJycBBycOAQc1PgE3JxEnIxEzJwE0LgInNR4DFRQGByc+ASccAQcnNR4BAgBa8ALKNlgiTiwbMBW21qrKygKqHzlNL0BuTy0XFUAKDGoCaDA6AwG0WoT9NjZYGykKWAcaEbb+4NYBAMr+tjNcSzYOWA9FY3tEMFsnQhk5HggMBmheGFsAAAAAAwCAADUDgAMhABUAHAAiAAABHgMVFA4CBzU+AzU0LgInExQGBxEeASUzNxEnIwJWQG5PLS1PbUEuTjkfHzlNL2o6MDA6/cCq1taqAyEPRWN7REV7Y0UOWA03S1wzM1xLNg7+4jlbGAFYGFtH1v1U1gAAAAABANYAgQMqAtUACwAAAQcXBycHJzcnNxc3Ayru7jzu7jzu7jzu7gKZ7u487u487u487u4AAQCSAIEDgAK9AAUAACUBFwEnNwGAAcQ8/gDuOvcBxjz+AO48AAAAAAEAAAABAAD+kIdjXw889QALBAAAAAAA1e5kUQAAAADV7mRRAAAAAAOAAysAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAAA4AAAQAAAAAAAAAAAAAAAAAAAAoEAAAAAAAAAAAAAAACAAAABAABAAQAAVYEAACABAAAgAQAANYEAACSAAAAAAAKABQAHgAyAEAAjgDIAOIA9gAAAAEAAAAKAC8ABAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAPAAAAAQAAAAAAAgAHAKgAAQAAAAAAAwAPAE4AAQAAAAAABAAPAL0AAQAAAAAABQALAC0AAQAAAAAABgAPAHsAAQAAAAAACgAaAOoAAwABBAkAAQAeAA8AAwABBAkAAgAOAK8AAwABBAkAAwAeAF0AAwABBAkABAAeAMwAAwABBAkABQAWADgAAwABBAkABgAeAIoAAwABBAkACgA0AQR2aWRhem9vLWluLXJlYWQAdgBpAGQAYQB6AG8AbwAtAGkAbgAtAHIAZQBhAGRWZXJzaW9uIDEuMABWAGUAcgBzAGkAbwBuACAAMQAuADB2aWRhem9vLWluLXJlYWQAdgBpAGQAYQB6AG8AbwAtAGkAbgAtAHIAZQBhAGR2aWRhem9vLWluLXJlYWQAdgBpAGQAYQB6AG8AbwAtAGkAbgAtAHIAZQBhAGRSZWd1bGFyAFIAZQBnAHUAbABhAHJ2aWRhem9vLWluLXJlYWQAdgBpAGQAYQB6AG8AbwAtAGkAbgAtAHIAZQBhAGRGb250IGdlbmVyYXRlZCBieSBJY29Nb29uLgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format("truetype"),url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAaUAAsAAAAABkgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgDxIFV2NtYXAAAAFoAAAAdAAAAHTjgIysZ2FzcAAAAdwAAAAIAAAACAAAABBnbHlmAAAB5AAAAewAAAHsK5Fht2hlYWQAAAPQAAAANgAAADYOewzKaGhlYQAABAgAAAAkAAAAJAdCA8tobXR4AAAELAAAACgAAAAoHgAEvmxvY2EAAARUAAAAFgAAABYCJgG2bWF4cAAABGwAAAAgAAAAIAAPADFuYW1lAAAEjAAAAeYAAAHmS7m6BXBvc3QAAAZ0AAAAIAAAACAAAwAAAAMDtwGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA6HYDwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEAFgAAAASABAAAwACAAEAIOA04DfgUOXN6Hb//f//AAAAAAAg4DTgN+BP5c3odv/9//8AAf/jH9Afzh+3GjsXkwADAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAACAQAAgQMAAtUAAwAHAAABMxEjIREzEQJWqqr+qqoC1f2sAlT9rAAAAQFWAIEDKgLVAAIAAAkCAVYB1P4sAtX+1v7WAAQAgAArA4ADKwACABQAJgAuAAABFScnAQcnDgEHNT4BNycRJyMRMycBNC4CJzUeAxUUBgcnPgEnHAEHJzUeAQIAWvACyjZYIk4sGzAVttaqysoCqh85TS9Abk8tFxVACgxqAmgwOgMBtFqE/TY2WBspClgHGhG2/uDWAQDK/rYzXEs2DlgPRWN7RDBbJ0IZOR4IDAZoXhhbAAAAAAMAgAA1A4ADIQAVABwAIgAAAR4DFRQOAgc1PgM1NC4CJxMUBgcRHgElMzcRJyMCVkBuTy0tT21BLk45Hx85TS9qOjAwOv3AqtbWqgMhD0Vje0RFe2NFDlgNN0tcMzNcSzYO/uI5WxgBWBhbR9b9VNYAAAAAAQDWAIEDKgLVAAsAAAEHFwcnByc3JzcXNwMq7u487u487u487u4Cme7uPO7uPO7uPO7uAAEAkgCBA4ACvQAFAAAlARcBJzcBgAHEPP4A7jr3AcY8/gDuPAAAAAABAAAAAQAA/pCHY18PPPUACwQAAAAAANXuZFEAAAAA1e5kUQAAAAADgAMrAAAACAACAAAAAAAAAAEAAAPA/8AAAAQAAAAAAAOAAAEAAAAAAAAAAAAAAAAAAAAKBAAAAAAAAAAAAAAAAgAAAAQAAQAEAAFWBAAAgAQAAIAEAADWBAAAkgAAAAAACgAUAB4AMgBAAI4AyADiAPYAAAABAAAACgAvAAQAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADwAAAAEAAAAAAAIABwCoAAEAAAAAAAMADwBOAAEAAAAAAAQADwC9AAEAAAAAAAUACwAtAAEAAAAAAAYADwB7AAEAAAAAAAoAGgDqAAMAAQQJAAEAHgAPAAMAAQQJAAIADgCvAAMAAQQJAAMAHgBdAAMAAQQJAAQAHgDMAAMAAQQJAAUAFgA4AAMAAQQJAAYAHgCKAAMAAQQJAAoANAEEdmlkYXpvby1pbi1yZWFkAHYAaQBkAGEAegBvAG8ALQBpAG4ALQByAGUAYQBkVmVyc2lvbiAxLjAAVgBlAHIAcwBpAG8AbgAgADEALgAwdmlkYXpvby1pbi1yZWFkAHYAaQBkAGEAegBvAG8ALQBpAG4ALQByAGUAYQBkdmlkYXpvby1pbi1yZWFkAHYAaQBkAGEAegBvAG8ALQBpAG4ALQByAGUAYQBkUmVndWxhcgBSAGUAZwB1AGwAYQBydmlkYXpvby1pbi1yZWFkAHYAaQBkAGEAegBvAG8ALQBpAG4ALQByAGUAYQBkRm9udCBnZW5lcmF0ZWQgYnkgSWNvTW9vbi4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format("woff");font-weight:400;font-style:normal}</style><style type="text/css">._12d6H{border-radius:5px}._12d6H,.x-LP8{overflow:hidden}.x-LP8{transition:height .2s}</style><style type="text/css">._33vU3{opacity:1!important}._33SJW{direction:ltr;position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;z-index:2;opacity:0;pointer-events:none}._33SJW *{box-sizing:border-box;line-height:100%;direction:inherit}._33SJW._33vU3 ._1UrEn ._16d1e,._33SJW._33vU3 ._1UrEn .Zn3T9{transform:translateY(0);opacity:1}._33SJW._33vU3._3YbIt{pointer-events:all}._33SJW ._1UrEn{position:relative;width:100%;height:100%;cursor:pointer}._33SJW ._1UrEn .Zn3T9{position:absolute;justify-content:space-between;bottom:0;left:0;width:100%;padding:10px;background:-webkit-linear-gradient(transparent,rgba(0,0,0,.6));background:-moz-linear-gradient(transparent 0,rgba(0,0,0,.6) 100%);background:-o-linear-gradient(transparent 0,rgba(0,0,0,.6) 100%);background:linear-gradient(transparent,rgba(0,0,0,.6));transition:transform .5s,opacity .5s;opacity:0;transform:translateY(50%)}._33SJW ._1UrEn .Zn3T9,._33SJW ._1UrEn .Zn3T9 ._3RvOK{display:flex;align-items:center}._33SJW ._1UrEn .Zn3T9 ._3RvOK div+div{margin-left:6px}._33SJW ._1UrEn ._16d1e{position:absolute;display:flex;align-items:center;justify-content:flex-start;top:0;left:0;width:100%;padding:10px;background:-webkit-linear-gradient(bottom,transparent,rgba(0,0,0,.6));background:-moz-linear-gradient(bottom,transparent 0,rgba(0,0,0,.6) 100%);background:-o-linear-gradient(bottom,transparent 0,rgba(0,0,0,.6) 100%);background:linear-gradient(0deg,transparent 0,rgba(0,0,0,.6));transition:transform .5s,opacity .5s;opacity:0;transform:translateY(-50%);min-height:55px}._33SJW ._1UrEn ._16d1e ._3g_pA{cursor:pointer;padding:5px;opacity:0;pointer-events:none}._33SJW ._1UrEn ._16d1e ._3g_pA._33vU3{pointer-events:all}._33SJW ._1UrEn ._16d1e ._3g_pA i{font-size:22px;color:#fff;text-shadow:0 0 3px rgba(0,0,0,.5)}</style><style type="text/css">._2yWZT:before{content:"\E037"}._2yWZT:before,._3dhkp:before{font-family:materialicons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}._3dhkp:before{content:"\E034"}._2T36N:before{content:"\E050"}._2T36N:before,._3_3I2:before{font-family:materialicons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}._3_3I2:before{content:"\E04F"}._1o6eJ:before{font-family:materialicons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;content:"\E5CD"}</style><style type="text/css">._1QQvl{position:absolute;width:100%;bottom:0;left:0;z-index:10;height:3px;transition:height .1s}._1QQvl._2dc_N._1ztp8{height:8px}._1QQvl._2dc_N._1ztp8 ._1uGNr{transform:scaleX(.95) translateY(-50px)}._1QQvl._2sbxu ._1uGNr ._2o_Tj{background-color:#fc0}._1QQvl._1ztp8 ._1uGNr ._2o_Tj{background-color:#4080ff}._1QQvl ._1uGNr{position:relative;height:100%;width:100%;background-color:hsla(0,0%,100%,.5);transition:transform .2s}._1QQvl ._1uGNr ._2o_Tj{width:0;height:100%;transition:background-color .2s}</style><style type="text/css">._20fW7{cursor:pointer;padding:5px;pointer-events:all}._20fW7 ._10stO{font-size:22px;color:#fff;text-shadow:0 0 3px rgba(0,0,0,.5)}</style><style type="text/css">._3AZMS{cursor:pointer;padding:5px;pointer-events:all}._3AZMS img._2Cfml{max-width:32px}</style><style type="text/css">@keyframes _3GYy6{0%{transform:scale(0);opacity:0}50%{transform:scale(1);opacity:1}to{transform:scale(2);opacity:0}}._1ZGDn{width:100%;height:100%;position:absolute;pointer-events:none;font-size:10px}._1ZGDn,._1ZGDn ._3dNO8{display:flex;align-items:center;justify-content:center}._1ZGDn ._3dNO8{width:5em;height:5em;background-color:rgba(0,0,0,.5);border-radius:5em;transform:scale(0);opacity:0}._1ZGDn ._3dNO8._3CoSq{animation:_3GYy6 .5s linear 1 normal}._1ZGDn ._3dNO8 .Efhjq{font-size:2em;color:#fff}</style><style type="text/css">a._2xvNZ{text-decoration:none;position:absolute;align-items:center;justify-content:center;pointer-events:all;z-index:1}a._2xvNZ,a._2xvNZ ._3prrU,a._2xvNZ ._29yId,a._2xvNZ ._29yId._2TCKu{display:flex}a._2xvNZ._2pGu4{display:none}</style><style type="text/css">.T6BTS{position:absolute;display:none;pointer-events:none;font-family:Arial,Helvetica,sans-serif}.T6BTS.pBSte{display:block}.T6BTS:after{content:attr(title)}</style><style type="text/css">._2tC1O{background-color:rgba(0,0,0,.9);border:1px solid #fff;padding:10px;cursor:pointer;position:absolute;pointer-events:all;border-radius:2px;z-index:10}._2tC1O._2dZOZ{display:none}._2tC1O ._3qhve{color:#fff;font-size:14px;font-family:Arial,Helvetica,sans-serif}</style><style type="text/css">@-webkit-keyframes _3pFUO{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes _3pFUO{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}._2Z2bN{position:absolute;width:100%;height:100%;z-index:10;pointer-events:none;display:flex;align-items:center;justify-content:center}._2Z2bN._1v9bW{display:none}._2Z2bN .JV0BG,._2Z2bN .JV0BG:after{border-radius:50%;width:32px;height:32px}._2Z2bN .JV0BG{font-size:10px;position:relative;border-top:3px solid hsla(0,0%,100%,.2);border-right:3px solid hsla(0,0%,100%,.2);border-bottom:3px solid hsla(0,0%,100%,.2);border-left:3px solid #fff;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation:_3pFUO .7s infinite linear;animation:_3pFUO .7s infinite linear}</style><style type="text/css">._2Tpcc{width:100%;height:100%;top:0;left:0;background-size:cover;background-position:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;pointer-events:all}._2Tpcc._2xWwj{display:none}._2Tpcc .M3qTj{width:5em;height:5em;background-color:rgba(0,0,0,.5);border-radius:5em;display:flex;align-items:center;justify-content:center}._2Tpcc .M3qTj>i{font-size:2em;color:#fff}</style><style type="text/css">._3JM7v:before{content:"\E037"}._3JM7v:before,.opWbT:before{font-family:materialicons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opWbT:before{content:"\E034"}._1UzXk:before{content:"\E050"}._1UzXk:before,.hFYko:before{font-family:materialicons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.hFYko:before{content:"\E04F"}._3rKTn:before{font-family:materialicons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;content:"\E5CD"}</style><link href="https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.css?v=20210915" type="text/css" rel="stylesheet"></head>
+
+<body class="page-template-default page page-id-16 customizer-styles-applied">
+
+<div id="page-wrap" class="contain">
+	<header id="branding" role="banner">
+		<h1 id="site-title"><a href="https://virtualrockvr.com">Virtual Rock VR</a></h1>
+		
+			</header><!-- #branding -->
+
+	<nav id="menu" role="navigation"><div id="primary-menu" class="menu"><ul>
+<li class="page_item page-item-1"><a href="https://virtualrockvr.com/about/">About</a></li>
+<li class="page_item page-item-16 current_page_item"><a href="https://virtualrockvr.com/privacy-policy/" aria-current="page">Privacy Policy</a></li>
+<li class="page_item page-item-14"><a href="https://virtualrockvr.com/terms-of-service/">Terms of Service</a></li>
+</ul></div>
+</nav>
+
+<div id="container" class="contain">
+
+	<div id="main" role="main">
+									
+<article id="post-16" class="post-16 page type-page status-publish hentry">
+
+	<div class="title">
+		<h2 class="entry-title">Privacy Policy</h2>
+			</div><!-- end title -->
+
+	<div class="entry-content">
+		<p data-adtags-visited="true">This Privacy Policy discloses the privacy practices for the virtualrockvr<em>.com</em> site and various related services (together referred to as the “site”). <i>VirtualRock VR</i>, the provider of the site (referred to as “us” or “we”), is committed to protecting your privacy online. Please read the information below to learn the following regarding your use of this site.<br>
+You acknowledge that this Privacy Policy is part of our Site Terms of Use, and by accessing or using our site, you agree to be bound by all of its terms and conditions. If you do not agree to these terms, please do not access or use this site.<br>
+We reserve the right to change this Privacy Policy at any time. Such changes, modifications, additions, or deletions shall be effective immediately upon notice thereof, which may be given by means including, but not limited, to issuing an e-mail to the e-mail address listed by registered users and posting the revised Policy on this page. You acknowledge and agree that it is your responsibility to maintain a valid e-mail address as a registered user, review this site and this Policy periodically, and to be aware of any modifications. Your continued use of the site after such modifications will constitute your: (a) acknowledgment of the modified Policy; and (b) agreement to abide and be bound by the modified Policy.</p>
+<p data-adtags-visited="true"><strong>1</strong>. <strong>Types of Information Collected</strong><br>
+In order to better provide you with our numerous services, we collect two types of information about our users: Personally Identifiable Information and Non-Personally Identifiable Information. Our primary goal in collecting information from you is to provide you with a smooth, efficient, and customized experience while using our site.<br>
+<strong><em>Personally Identifiable Information:</em></strong> This refers to information that lets us know the specifics of who you are. When you engage in certain activities on this site, such as registering for a membership, ordering a product or service, submitting content and/or posting content in discussion forums or other public areas, entering a contest or sweepstakes, filling out a survey, or sending us feedback, we may ask you to provide certain information about yourself by filling out and submitting an online form. It is completely optional for you to engage in these activities; however, we may ask that you provide us personal information, such as your first and last name, mailing address (including zip code), e-mail address, employer, job title and department, telephone and facsimile numbers, and other personally identifying information. When ordering products or services on the site, you may be asked to provide a credit card number. Depending upon the activity, some of the information we ask you to provide is identified as mandatory and some as voluntary. If you do not provide the mandatory data with respect to a particular activity, you will not be able to engage in that activity.<br>
+<strong><em>Non-Personally Identifiable Information:</em></strong> This refers to information that does not by itself identify a specific individual. We gather certain information about you based upon where you visit on our site in several ways. This information is compiled and analyzed on both a personal and an aggregated basis. This information may include the Web site’s Uniform Resource Locator (“URL”) that you just came from, which URL you next go to, what browser you are using, and/or your Internet Protocol (“IP”) address. A URL is the global address of documents and other resources on the World Wide Web. An IP address is an identifier for a computer or device on a Transmission Control Protocol/Internet Protocol (“TCP/IP”) network, such as the World Wide Web. Networks like the Web use the TCP/IP protocol to route information based on the IP address of the destination. In other words, an IP address is a number that is automatically assigned to your computer whenever you are surfing the Web, allowing Web servers to locate and identify your computer. Computers require IP addresses in order for users to communicate on the Internet.</p>
+<p class="inline-ad-slot" id="inline-ad-0" style="float:left;height:0px;margin:0 auto;overflow:hidden;width:628px;" data-adtags-width="628" data-adtags-visited="true"></p><p data-adtags-visited="true"><strong>2</strong>. <strong>Collection Methods and Use of Information</strong><br>
+We do not collect any Personally Identifiable Information about you unless you voluntarily provide it to us. You provide certain Personally Identifiable Information to us when you (a) register for our services and register your e-mail address with us; (b) enter sweepstakes or contests sponsored by us or one of our partners; (c) sign up for special offers from selected third parties; (d) send e-mail messages, submit forms, or transmit other information by telephone or letter; or (e) submit your credit card or other payment information when ordering and purchasing products and services on our site. We may also collect information from you at other points on our site that state that such information is being collected.<br>
+In addition, we may also collect, or our third-party ad server and/or content server may collect, certain Non-Personally Identifiable Information. This information is ultimately stored in the form of store categories, and, in some cases, specific URLs. We use your IP address to diagnose problems with our servers, software, to administer our site, and to gather demographic information. Our third-party ad servers will also provide us with summary, but not individual, reports that will tell us how many ads were presented and clicked upon at our site.<br>
+We will primarily use your Personally Identifiable Information to provide our services to you, as required by our agreements with you. We will also use Personally Identifiable Information to enhance the operation of our site, fill orders, improve our marketing and promotional efforts, statistically analyze site use, improve our product and service offerings, and customize our site’s content, layout, and services. We may use Personally Identifiable Information to deliver information to you and to contact you regarding administrative notices. We may also use Personally Identifiable Information to resolve disputes, troubleshoot problems, and enforce our agreements with you, including our Site Terms of Use, Sales Terms and Conditions, and this Privacy Policy.<br>
+<strong>3</strong>. <strong>Release of Information</strong><br>
+We do not sell, trade, or rent your Personally Identifiable Information to others. We do provide some of our services through contractual arrangements with affiliates, services providers, partners, and other third parties. We and our service partners use your Personally Identifiable Information to operate our sites and to deliver their services. For example, we must release your credit card information to the card-issuing bank to confirm payment for products and services purchased on this site; release your address information to the delivery service to deliver products that you ordered; and provide order information to third parties that help us provide customer service.<br>
+We will encourage our service partners to adopt and post privacy policies. However, the use of your Personally Identifiable Information by our service partners is governed by the privacy policies of those service partners and is not subject to our control.<br>
+Occasionally, we may be required by law enforcement or judicial authorities to provide Personally Identifiable Information to the appropriate governmental authorities. We will disclose Personally Identifiable Information upon receipt of a court order or subpoena or to cooperate with a law enforcement investigation. We fully cooperate with law enforcement agencies in identifying those who use our services for illegal activities. We reserve the right to report to law enforcement agencies any activities that we in good faith believe to be unlawful.<br>
+We may also provide Non-Personally Identifiable Information about our customers’ sales, traffic patterns, and related site information to third-party advertisers, but these statistics do not include any Personally Identifiable Information.</p>
+<p data-adtags-visited="true"><strong>4</strong>. <strong>Updating and Correcting Information</strong><br>
+We believe you should have the ability to access and edit the Personally Identifiable Information that you have provided to us. You may change any of your Personally Identifiable Information in your account online at any time by linking to your account in accordance with instructions posted elsewhere on this site. You may also access and correct your personal information and privacy preferences by writing us at:<a id="Ia5df46f0392811db9ff4a47a7648e6ca" name="Ia5df46f0392811db9ff4a47a7648e6ca"></a></p>
+<table style="height:44px;" border="0" width="682" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="2%"></td>
+<td valign="top" width="98%"></td>
+</tr>
+<tr>
+<td valign="top" width="2%"></td>
+<td valign="top" width="98%">&nbsp;VirtualRockVR@<span class="skimlinks-unlinked">Gmail.com</span></td>
+</tr>
+</tbody>
+</table>
+<p class="inline-ad-slot" id="inline-ad-1" style="float:left;height:0px;margin:0 auto;overflow:hidden;width:628px;" data-adtags-width="628" data-adtags-visited="true"></p><p data-adtags-visited="true">Please include your name, address, and/or e-mail address when you contact us.<br>
+We encourage you to promptly update your Personally Identifiable Information if it changes. You may ask to have the information on your account deleted or removed; however, because we keep track of past transactions, you cannot delete information associated with past transactions on this site. In addition, it may be impossible to completely delete your information without some residual information because of backups.</p>
+<p data-adtags-visited="true"><strong>5</strong>. <strong>User Choices on Collection and Use of Information</strong><br>
+We may, from time to time, send you e-mail regarding our products and services. In addition, if you indicated upon registration that you are interested in receiving offers or information from us and our partners, we may occasionally send you direct mail about products and services that we feel may be of interest to you. Only <em>[505 Games]</em> (or agents working on behalf of <em>[505 Games]</em> and under confidentiality agreements) will send you these direct mailings and only if you indicated that you do not object to these offers. If you do not want to receive such mailings, simply tell us when you give us your personal information. Or, at any time, you can easily edit your account information to no longer receive such offers and mailings.<br>
+You also have choices with respect to cookies, as described below. By modifying your browser preferences, you have the choice to accept all cookies, to be notified when a cookie is set, or to reject all cookies. If you choose to reject all cookies, some parts of our site may not work properly.</p>
+<p data-adtags-visited="true"><strong>6</strong>. <strong>Security of Information</strong><br>
+At our site, you can be assured that your Personally Identifiable Information is secure, consistent with current industry standards. The importance of security for all Personally Identifiable Information associated with our users is of utmost concern to us. Your Personally Identifiable Information is protected in several ways. Access by you to your Personally Identifiable Information is available through a password and unique customer ID selected by you. This password is encrypted. We recommend that you do not divulge your password to anyone. In addition, your Personally Identifiable Information resides on a secure server that only selected <em>[505 Games]</em> personnel and contractors have access to via password. We encrypt your Personally Identifiable Information and thereby prevent unauthorized parties from viewing such information when it is transmitted to us.<br>
+Personal information that you provide that is not Personally Identifiable Information also resides on a secure server and is only accessible via password. Since this information is not accessible from outside <em>[name of company]</em>, you will not be asked to select a password in order to view or modify such information.<br>
+In order to most efficiently serve you, credit card transactions and order fulfillment are handled by established third-party banking, processing agents and distribution institutions. They receive the information needed to verify and authorize your credit card or other payment information and to process and ship your order.<br>
+Unfortunately, no data transmission over the Internet or any wireless network can be guaranteed to be 100% secure. As a result, while we strive to protect your Personally Identifiable Information, you acknowledge that: (a) there are security and privacy limitations of the Internet which are beyond our control; (b) the security, integrity, and privacy of any and all information and data exchanged between you and us through this site cannot be guaranteed; and (c) any such information and data may be viewed or tampered with in transit by a third party.</p>
+<p class="inline-ad-slot" id="inline-ad-2" style="float:left;height:0px;margin:0 auto;overflow:hidden;width:628px;" data-adtags-width="628" data-adtags-visited="true"></p><p data-adtags-visited="true"><strong>7</strong>. <strong>Cookies</strong><br>
+When you use our site we will store cookies on your computer in order to facilitate and customize your use of our site. A cookie is a small data text file, which a Web site stores on your computer’s hard drive (if your Web browser permits) that can later be retrieved to identify you to us. Our cookies store randomly assigned user identification numbers, the country where you are located, and your first name to welcome you back to our site. The cookies make your use of the site easier, make the site run more smoothly, and help us to maintain a secure site. You are always free to decline our cookies if your browser permits, but some parts of our site may not work properly in that case.<br>
+We may use an outside ad serving company to display banner advertisements on our site. As part of their service, they will place a separate cookie on your computer. We will not provide any third-party ad server with any of your Personally Identifiable Information or information about your purchases. We and our third-party ad server will collect and use Non-Personally Identifiable Information about you, such as your IP address, browser type, the server your computer is logged onto, the area code and zip code associated with your server, and whether you responded to a particular ad. Other advertisers may also place banner ads on our site in the same manner as above, but we will not disclose any Personally Identifiable Information to them.</p>
+<p data-adtags-visited="true"><strong>8</strong>. <strong>Privacy Policies of Third-Party Sites</strong><br>
+Except as otherwise discussed in this Privacy Policy, this document only addresses the use and disclosure of information we collect from you. Other sites accessible through our site have their own privacy policies and data collection, use, and disclosure practices. Please consult each site’s privacy policy. We are not responsible for the policies or practices of third parties. Additionally, other companies which place advertising on our site may collect information about you when you view or click on their advertising through the use of cookies. We cannot control this collection of information. You should contact these advertisers directly if you have any questions about their use of the information that they collect.</p>
+<p data-adtags-visited="true"><strong>9</strong>. <strong>Your California Privacy Rights</strong><br>
+If you are a California resident, California Civil Code Section 1798.83 provides you with the right to receive: a) information identifying any third party company(ies) to whom 505 Games may have disclosed, within the past year, personal information pertaining to you and your family for that company’s direct marketing purposes; and b) a description of the categories of personal information disclosed. To obtain such information, please email your request via the Contact link at the bottom of the 505 Games website pages.</p>
+<p data-adtags-visited="true">Moreover, if you are a California resident, California law provides that you be given the opportunity to opt out of our sharing your personal information with third parties that would use such personal information for their own direct marketing. Absent such an opt-out, we may share your information with other affiliates of 505 Games, to provide you with information about their products, services or promotions that we think may be of interest to you. Accordingly, per California law, we provide a way for you to opt out if you do not want us to share your information in this manner.</p>
+<p data-adtags-visited="true">California residents can also opt out of our sharing your information as described above by contacting Customer Service, Monday – Friday 9:00 AM – 5:00 p.m. (PST) at the following toll-free number: (818) 540-3000, and requesting that you would like to opt out from receiving all marketing communications from 505 Games and/or any of its affiliates. If you have already received communications from us, it will expedite the opt-out process if you are prepared to provide us with the exact name, and e-mail and/or postal mail addresses under which you have been receiving communications from us. Please note that it may take us up to 30 days to fully process your opt-out request.</p>
+<p class="inline-ad-slot" id="inline-ad-3" style="float:left;height:0px;margin:0 auto;overflow:hidden;width:628px;" data-adtags-width="628" data-adtags-visited="true"></p><p data-adtags-visited="true"><strong>10</strong>. <strong>Miscellaneous Privacy Issues</strong><br>
+You should also be aware that when Personally Identifiable Information is voluntarily disclosed (i.e. your name, e-mail address, etc.) in the discussion forums or other public areas on this site, that information, along with any information disclosed in your communication, can be collected and used by third parties and may result in unsolicited messages from third parties. Such activities are beyond our control and this Policy does not apply to such information. Any submissions to chat rooms or other public areas on this site are accepted with the understanding that they are accessible to all third parties. If you do not want your comments to be viewed by third parties, you are advised not to make any submissions. Ultimately, you are solely responsible for maintaining the secrecy of your password and/or account information. Please be careful and responsible whenever you are online.<br>
+If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us by sending an email&nbsp;at &nbsp;VirtualRockVR@<span class="skimlinks-unlinked">Gmail.com</span>&nbsp;<a id="I4a3cc82049c311dc86c6c5594b0912a9" name="I4a3cc82049c311dc86c6c5594b0912a9"></a></p>
+<p data-adtags-visited="true"><strong><br>
+11</strong>. <strong>Guidelines for Children</strong>You may also contact us by e-mail at&nbsp;irtualRockVR@<span class="skimlinks-unlinked">Gmail.com</span></p>
+<p data-adtags-visited="true">Protection Act of 1998 and all other applicable laws. By accessing the Web Site and/or Service(s), you affirm that you are more than 18 years old, are an emancipated minor, or have the consent of your parents or legal guardian and, therefore, are fully capable and competent to abide by and enter into the agreements and obligations set forth in these Terms of Services. Otherwise, you further affirm that you are at least 13 years old as the Web Site and/or Service(s) are not intended for children under 13 years old. If you do not comply with this age restriction, please do not use the Web Site and/or Service(s).</p>
+<div id="atatags-370373-64fdf21b6ba62">
+		<script type="text/javascript">
+			__ATA.cmd.push(function() {
+				__ATA.initVideoSlot('atatags-370373-64fdf21b6ba62', {
+					sectionId: '370373',
+					format: 'inread'
+				});
+			});
+		</script>
+	</div>	<div id="ob_holder" style="display: none;"><iframe id="ob_iframe" src="https://widgets.outbrain.com/widgetOBUserSync/obUserSync.html#pid=198143&amp;dmpenabled=true&amp;filterDMP=&amp;d=4qh_L-BAqS61Oa5dS0bOT8DigG-QLILac_2JCz-MdrE0VJ_QN9_26wAWZlIUqu2R&amp;gdpr=0&amp;cmpNeeded=false&amp;gdprVer=2&amp;ccpa=1---&amp;country=SG&amp;obRecsAbtestAndVars=1024-3192,833-2564,386-1123,1090-3454,1155-3748,1125-3606,998-3155,1323-4540,1164-3777,1103-3503,1328-4554,784-2396,1169-3790,1203-3960,1300-4501,981-4504,822-2522,792-2427,699-2356,1309-4483,1149-3716,927-3026,1151-3722" style="display: none; width: 1px; height: 1px;"></iframe></div><div class="OUTBRAIN wa-ob-widget" data-ob-contenturl="https://virtualrockvr.com/privacy-policy/" data-widget-id="AR_2" data-ob-installation-key="WORDP263NC92GIANECJP6HEPM" data-ob-psub="" data-ob-mark="true" data-browser="chrome" data-os="win32" data-dynload="" data-idx="0" id="outbrain_widget_0"><div class="ob-widget ob-grid-layout AR_2" data-dynamic-truncate="true">
+            <style type="text/css">.ob-grid-layout,.ob-grid-layout *{-webkit-box-sizing:content-box;box-sizing:content-box}.ob-grid-layout .ob-widget-items-container{display:-ms-grid;display:grid;clear:both}.ob-grid-layout .ob-dynamic-rec-container{position:relative}.ob-grid-layout .ob-dynamic-rec-link{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;text-decoration:none}.ob-grid-layout .ob-unit{display:block;-webkit-box-flex:1;-ms-flex:auto;flex:auto}.ob-grid-layout .ob-unit.ob-rec-image-container{position:relative;width:100%;height:auto}.ob-grid-layout .ob-unit .ob-rec-logo-container.logo-over-image{position:absolute}.ob-grid-layout .ob-rec-comments-count{font-size:11px;font-family:Lato,sans-serif;text-decoration:none;border-radius:0 2px 2px 0;position:absolute;bottom:11px;color:#fff;font-weight:700;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:5px 8px 6px;height:13px}.ob-grid-layout .ob-rec-comments-count__icon{margin:2px 5px 0 0}.ob-grid-layout .ob-rec-image,.ob-grid-layout .ob-rec-video{position:absolute;top:0;left:0;bottom:0;right:0;width:100%;max-height:100%}.ob-grid-layout .ob-rec-rtb-image{background-color:#fff;background-position:top;background-repeat:no-repeat;width:100%;position:absolute;top:0;bottom:0;left:0;right:0}.ob-grid-layout .ob-rec-label{position:absolute;bottom:0;left:0;padding:0 3px;color:#fff;font-size:10px;line-height:15px}.ob-grid-layout .ob-rec-source-wrapper,.ob-grid-layout .ob-rec-text-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}.ob-grid-layout .ob-rec-source-wrapper .ob-rec-label,.ob-grid-layout .ob-rec-text-wrapper .ob-rec-label{position:static;-ms-flex-item-align:baseline;align-self:baseline;border-radius:2px;padding:2px 6px}.ob-grid-layout .ob-video-icon-container{position:absolute;left:0}.ob-grid-layout .ob-video-icon-container .ob-video-icon{height:100%;opacity:.7}.ob-grid-layout .ob-rec-author{text-overflow:ellipsis;overflow:hidden}.ob-grid-layout.ob-text-on-image .ob-unit.ob-rec-image-container:after{content:"";display:block;background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,4,7,0)),color-stop(76%,rgba(0,4,7,.41)),to(rgba(0,4,7,.54)));background-image:linear-gradient(180deg,rgba(0,4,7,0),rgba(0,4,7,.41) 76%,rgba(0,4,7,.54));height:100%;position:absolute;width:100%;top:0;left:0}.ob-grid-layout.ob-text-on-image .ob-dynamic-rec-link{position:relative}.ob-grid-layout.ob-text-on-image .ob-sub-units{position:absolute;bottom:0}.ob-grid-layout .ob-widget-footer{position:relative}.ob-grid-layout .ob-widget-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.ob-grid-layout .ob-rec-source{word-break:break-all}
+.AR_2.ob-grid-layout .ob-widget-items-container {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    -ms-grid-rows: (1fr)[1];
+    grid-template-rows: repeat(1, auto);
+    margin: 0px 0px 15px 0px
+}
+.AR_2.ob-grid-layout .ob-unit.ob-rec-image-container .ob-image-ratio {padding-top: 61.53846153846154%;}
+.AR_2.ob-widget .ob-rec-image-container .ob-rec-image {opacity:0;transition:all 750ms;}
+.AR_2.ob-widget .ob-rec-image-container .ob-rec-image.ob-show {opacity:1;}
+.AR_2.ob-widget .ob-widget-header {font-weight:bold;}
+.AR_2.ob-widget .ob-dynamic-rec-container .ob-rec-text,
+.AR_2.ob-widget .ob-dynamic-rec-container .ob-rec-source,
+.AR_2.ob-widget .ob-dynamic-rec-container .ob-rec-customText,
+.AR_2.ob-widget .ob-dynamic-rec-container .ob-rec-description{display: -webkit-box;-webkit-box-orient: vertical;overflow: hidden;max-height: initial;}
+.AR_2.ob-widget .ob-dynamic-rec-container .ob-rec-text{-webkit-line-clamp: 3;}
+.AR_2.ob-widget .ob-dynamic-rec-container .ob-rec-source{-webkit-line-clamp: 1;}
+.AR_2.ob-widget .ob-dynamic-rec-container .ob-rec-description{-webkit-line-clamp: 3;}
+.AR_2.ob-widget .ob-dynamic-rec-container .ob-rec-customText{-webkit-line-clamp: 1;}
+.AR_2.ob-widget .ob-rec-text {font-weight:bold;}
+.AR_2.ob-widget .ob-rec-source {font-weight:normal;}
+.AR_2.ob-widget .ob-rec-date {font-weight:bold;}
+.AR_2.ob-widget .ob-rec-description {max-height:53.0px;overflow:hidden;font-weight:normal;}
+
+.AR_2.ob-widget .ob-rec-image-container .ob-video-icon-container {position:absolute;left:0;height:30%;width:100%;text-align:center;top:35%;}
+.AR_2.ob-widget .ob-rec-image-container .ob-video-icon {display:inline-block;height:100%;float:none;opacity:0.7;transition: opacity 500ms;}
+.AR_2.ob-widget .ob-rec-image-container .ob-video-icon:hover {opacity:1;}
+            .AR_2 .ob_what a:after {content: "";;;background-image: url('https://widgets.outbrain.com/images/widgetIcons/achoice.svg');background-size:100% 100%;width:12px;height:12px;padding-left:4px;display:inline-block;background-repeat:no-repeat;background-position:right center;border-left:1px solid #999;}
+    .AR_2.ob-widget .ob_what{direction:ltr;clear:both;padding:5px 10px 0px;}
+.AR_2.ob-widget .ob_what a{color:#757575;font-size:11px;font-family:arial;text-decoration: none;}
+.AR_2.ob-widget .ob_what.ob-hover:hover a{text-decoration: underline;}
+.AR_2.ob-widget .ob_amelia,
+.AR_2.ob-widget .ob_amelia_covid,
+.AR_2.ob-widget .ob_logo,
+.AR_2.ob-widget .ob_feed_logo,
+.AR_2.ob-widget .ob_sfeed_logo,
+.AR_2.ob-widget .ob_text_logo{vertical-align:baseline !important;display:inline-block;vertical-align:text-bottom;padding:0px 5px;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;}.AR_2.ob-widget .ob_amelia{background:url('https://widgets.outbrain.com/images/widgetIcons/ob_logo_16x16.svg') no-repeat center top;width:16px;height:16px;margin-bottom:-2px;}@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+.AR_2.ob-widget .ob_amelia{background:url('https://widgets.outbrain.com/images/widgetIcons/ob_logo_16x16@2x.png') no-repeat center top;width:16px;height:16px;margin-bottom:-2px; background-size:16px 32px;}}
+.AR_2.ob-widget:hover .ob_amelia,
+.AR_2.ob-widget:hover .ob_logo,
+.AR_2.ob-widget:hover .ob_text_logo{background-position:center bottom;}
+  .AR_2.ob-widget {position:relative;}
+  .AR_2.ob-widget .ob_what{position:absolute;top:5px;right:0px;}
+  .AR_2.ob-widget .ob_what{text-align:right;}
+  .AR_2.ob-widget .ob_what.ob_what_resp{position: static;float:  right;padding: 0px;font-weight: normal;flex:none;}
+
+.AR_2.ob-widget .ob_what.ob_what_resp{padding:5px 0;}.AR_2.ob-grid-layout .ob-sub-units.ob-cta {display:flex;flex-direction:row;flex-wrap:wrap;}
+.AR_2.ob-grid-layout .ob-sub-units.ob-cta .ob-unit{width:100%;flex: 0 0 100%;}
+.AR_2.ob-grid-layout .ob-sub-units.ob-cta .ob-rec-text{flex: 1 1 25%;margin-right:0;}
+.AR_2.ob-grid-layout .ob-sub-units.ob-cta .ob-grid-button-container{flex: 0 0 auto;margin: 0px 0px 0px 15px;box-sizing:border-box;display:flex;align-items:center;justify-content: flex-end;align-self: baseline;font-size: 12px;}
+.AR_2.ob-grid-layout .ob-sub-units.ob-cta .ob-grid-button-container .ob-grid-button-text{color: #2172CE;border-radius: 4px;border: solid 1px #2172CE;padding: 6px 5px 5px;text-align: center;}
+.AR_2.ob-grid-layout .ob-rec-image-container .ob-rec-label {bottom:0;left:0}
+.AR_2.ob-grid-layout .ob-rec-image-container .ob-rec-label {font-size:10px;font-weight:normal;}
+
+.AR_2.ob-grid-layout .ob-widget-header {font-family:inherit;font-size:18px;color:black;margin:8px 0px 12px 0px}
+.AR_2.ob-grid-layout .ob-sub-units {margin:6px 0px 0px 0px}
+.AR_2.ob-grid-layout .ob-grid-button-container {font-family:inherit;line-height:1.25;font-size:18px;}
+.AR_2.ob-grid-layout .ob-rec-text {font-family:inherit;color:inherit;margin:0px 0px 0px 0px;text-align:left;line-height:1.25;font-size:18px;}
+.AR_2.ob-grid-layout .ob-rec-text:hover {color:inherit;}
+.AR_2.ob-grid-layout .ob-rec-source {font-family:inherit;color:#757575;margin:0px 0px 0px 0px;text-align:left;font-size:12px;line-height:1.25;}
+.AR_2.ob-grid-layout .ob-rec-date {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;font-size:12px;}
+.AR_2.ob-grid-layout .ob-rec-author {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;font-size:12px;}
+.AR_2.ob-grid-layout .ob-rec-description {font-family:inherit;color:black;margin:0;text-align:left;font-size:14px;line-height:1.25;}
+.AR_2.ob-grid-layout .ob-rec-customText {font-family:inherit;color:black;font-size:14px;background-color:}
+.AR_2.ob-grid-layout .ob-rec-brandName {font-family:inherit;padding:$dynamic:TitleMarginTop$px 0 $dynamic:TitleMarginBottom$px;line-height:1.25;font-size:13px;font-weight:400;}
+.AR_2.ob-grid-layout .ob-rec-brandLogo {width:$dynamic:BrandLogoWidth$px;height:$dynamic:BrandLogoHeight$px;}
+.AR_2.ob-grid-layout .ob-unit.ob-rec-image-container span.ob-rec-label {background-color:#666;color:;font-family:;}
+.AR_2.ob-grid-layout .ob-rec-text-wrapper span.ob-rec-label,.ob-rec-source-wrapper span.ob-rec-label {background-color:#666;color:;font-family:;}
+.AR_2.ob-grid-layout .ob-widget-items-container {grid-row-gap:15px;grid-column-gap:15px;}
+.AR_2.ob-grid-layout .ob-widget-items-container .ob-dynamic-rec-container {padding:0px;border:none;background-color:initial;}
+</style>
+                <style type="text/css" class="ob-custom-css"></style>
+        <div class="ob-widget-header">
+    <span class="ob-grid-header-text">Sponsored Content</span>
+<div class="ob_what ob_what_resp">
+		<a href="https://www.outbrain.com/what-is/default/en" rel="nofollow" onclick="OBR.extern.callWhatIs('https://www.outbrain.com/what-is/default/en',-1,-1,true ,null);return false"><span class="ob_amelia" title="outbrain.com"></span></a>
+	</div>
+</div>
+
+
+
+
+        <div class="obv-video-wrapper"><div id="outbrain_widget_0_AR_2_playerWrapper" class="ob-player-wrapper above-widget obv-hide-wrapper" style="width: 628.4px !important; height: 353px;"><div class="ob-inner-player-wrapper"><div class="ob-player" id="outbrain_widget_0_AR_2_aniplayer"></div><div class="ob-player" id="outbrain_widget_0_AR_2_omp"></div></div></div></div><div class="ob-widget-items-container"><div class="ob-dynamic-rec-container ob-recIdx-0 ob-p" data-pos="0">
+    <a class="ob-dynamic-rec-link " onclick="" href="https://www.motorist.sg/sell-car?utm_source=outbrain&amp;utm_medium=cpc&amp;utm_campaign=sell-sell-conversion-wm&amp;obOrigUrl=true" onmousedown="this.href='https://paid.outbrain.com/network/redir?p=bNORguNzijbFB0oLFbA0ZnbwSDhLFxn8aj4z0EAxEKwrvi4ct5UBdSVPEkScn-nlmAD162Mv9CsuowogUSoiyvI2UA8Mh3L9CZx14BI6kAlfeDOsHi8pof22QoanBSAYl3gO6re3f22zt108ZQdlfNkxaryJ8RjXWV-4FuLVsPOBzpoj9qYlkMORKZb4UKBTcyRSvmrYIVWj3BK56h8zBmeO30YsR2nbGiQ-_LxsP7b_MlUmyExk43idhKuY5qNB27iY28s03xNnzuMb9lE59M7Z5V6ZyYLDpGQoVtKSZnkrxhFwhuharRT5RqFKQPFZ2XULrUMWAgipgj1xvKPzOchFwUl_IvoiXJ8xbJtsizUyp6sbIKUgskY4W_mfdJnhyi5uAwdFaFyCc0weHnibDSYcZvC6PBl2yQx3TAfv9NL0-RSL74SAQ86QUR3LJx9mXU2Wr01f7kztgyMkPA-M67TLFeddGjcvC3JrQrcXlFWtpoCxif8KUMmzMPgVycch7qo7KFdTK2M4-jQy7EY97QNij4ttXgCn3ON9_A6QH4VljX_OxYDzbQlrwYTFB2bNsBuDrY6h4Pp6BWUEBl52Ppoko-MtM2lH-TlX4e2kuibNU8DJ0Fomeg14C9eWRcR6jTzgBMwvmYffJrJ8-0dxKaRlo2ZcdI_1VXsQ3SULL78-8-rXkItTTTwxSx4iLmvdHqZLpKafb7wZDK9cNbWedMuofoADhRFFvVZy0p6R9_LKyC0yvjYPaNcgqwsuV6OiGAnFgiv-Erb7409iYJ9CcnpV1leOzee1sbTato1IpyPRpQt04wd0tUgiXxNExrNDm_tn33I7sKpKR20SpJAeoye_-Gl68CfmR0DDzEEv20SKKtJAhwi3qRh4Y9kIBh6m&amp;c=a64bf53e&amp;v=4';" target="_blank" data-rec-en-did="MPE7GfGHbL-17J-qOvTpDw" data-adv-id="50785990" rel="nofollow noopener">
+    <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+                      <img class="ob-rec-image" loading="lazy" aria-hidden="true" src="https://images.outbrainimg.com/transform/v3/eyJpdSI6IjhhOTUyZDZjYjBkNTc3NTM0OWE3ZDliM2VlMDQwNDEwYzQ2YmM4ZmQzMDlhNWFhZjI2MGU2NmFjYzc3ZDVkZGIiLCJ3IjozOTAsImgiOjI0MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp" onload="this.className+=' ob-show'" alt="COE SKYROCKETS! check your car value now!" title="COE SKYROCKETS! check your car value now!" onerror="OBR.extern.imageError(this)">
+                                                    </span>
+    <section class="ob-sub-units">
+        <span class="ob-unit ob-rec-text" data-type="Title" title="COE SKYROCKETS! check your car value now!">COE SKYROCKETS! check your car value now!</span>
+            <span class="ob-unit ob-rec-source" data-type="Source">Motorist.sg | Sponsored</span>
+    
+
+    </section>
+    </a>
+   </div>
+<div class="ob-dynamic-rec-container ob-recIdx-1 ob-p" data-pos="1">
+    <a class="ob-dynamic-rec-link " onclick="" href="https://asia.nikkei.com/Business/Business-Spotlight/Cambodia-s-scamdemic-reputation-scares-off-travelers-from-China?utm_source=paid.outbrain.com&amp;utm_campaign=BA_SG&amp;utm_medium=referral&amp;utm_content=E15-1&amp;obOrigUrl=true" onmousedown="this.href='https://paid.outbrain.com/network/redir?p=6ko6YhL4xglIS6N84iPDK3MCR4mucxDUjMI0n47FFNi0geMkGGYBSdtoGHn7tCb_EZ2-b2ktbP9X5G82Qpxj-rOUrUlbtB5KQRSg6-aeTEortDA4ByVvBPZ-O3mKaFZY53WywOsLNueqmnCvb12sVdl0OFSLarvKbPeA9sR1hbrMqzhAlHmyW1XOaFH-BIbVQYM1QPrbQWK6HxYOqLFwFfavLvnYM4TE7dKnejIKzTas0BzZCL0yefPIJS299bviYdP52vWv-KvqviJHqHlLO2mNjeVqFBt0V07W8D4scmhZdernXeHl2qC7x9g9DBWA5XokSitI44YoFRIUTCMcUM5LwJr-JyFg4LsoIJ0XuWU5QKuJ7I2dy1yG6bZpkdNHPy_9oudu4DwxvJ-bmlbwBcMgr3pF6GJ2RVd9o2jy2_7i9Eha0ZVO6Ip8p0UZPxl6Stpsj05gZdhmwvIyRu9SxbQ3zzDayyUej0PN5GTAKpRJPs4FZ-bfLclbT0y7V-VQG7bzfWrGG1GgPSd9_JkWqa6k1VitzHQTC0_xTAlpXu2DBfOJqN35dphatkZ1QRSKn6j43n9pc8yRpshXFwQOyeWP1v5GXbMrPZ53z2ZM6ZAXlAnpzOWDR7NkORAT0qfKC2-tPzdFKHyXxM83nsD7tkGeZ01u0f_yg1srC7y1Jg8ISm8Hp-HPhvK8AHejt-qn_AoujMySfyQOuTuPMtuKhWclK510AJr0lMjber5EI9RYpWrTrgyh9uOZDhCP9y4_7R5nroA00NDH5Pt_ftAjPOGkKotWl9ybAtJpzSBcr6daTmg6GgQdcONFlDlRsrI1NDtvDTQczWMMO3u1AZJeG2nyb85zyEP4elYAv3LHYy-KyZ0FK1sqa1EsU6xnkGTumE25V8FTar1sS_B3ntEt4Q&amp;c=8fe996d1&amp;v=4';" target="_blank" data-rec-en-did="0vEwOPDiP1ddcPqP74656Q" data-adv-id="8884" rel="nofollow noopener">
+    <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+                      <img class="ob-rec-image" loading="lazy" aria-hidden="true" src="https://images.outbrainimg.com/transform/v3/eyJpdSI6IjU4ZGZlZjgwM2U0MDZjZmFjMThkMWFkOGNlYTQ1YTdiM2M0NjM3M2ZkNTZkMDA2M2Q1NmU1MTQzZTA3OTg5ODUiLCJ3IjozOTAsImgiOjI0MCwiZCI6MS41LCJjcyI6MCwiZiI6NH0.webp" onload="this.className+=' ob-show'" alt="Cambodia's 'scamdemic' reputation scares off travelers from China" title="Cambodia's 'scamdemic' reputation scares off travelers from China" onerror="OBR.extern.imageError(this)">
+                                                    </span>
+    <section class="ob-sub-units">
+        <span class="ob-unit ob-rec-text" data-type="Title" title="Cambodia's 'scamdemic' reputation scares off travelers from China">Cambodia's 'scamdemic' reputation scares off travelers from China</span>
+            <span class="ob-unit ob-rec-source" data-type="Source">Nikkei Asia | Sponsored</span>
+    
+
+    </section>
+    </a>
+   </div>
+<div class="ob-dynamic-rec-container ob-recIdx-2 ob-p" data-pos="2">
+    <a class="ob-dynamic-rec-link " onclick="" href="https://tinnisave.com/view/XpJDNlNyR9Z3KaKEYrjQibVcRfroZNZuSLOiaiSZ9IU?c=42400&amp;pid=4443&amp;tid=$ob_click_id$&amp;ob_marketer=BP_Web4&amp;ob_publisher_id=$publisher_id$&amp;ob_section_id=$section_id$&amp;ob_ad_id=00df19539955f73431d5dbc113c0c1fa7f&amp;ob_timestamp=$time_stamp$&amp;ob_platform=WEB&amp;ob_campaign_id=00aeefe371ca94c777cb3fbbf63cfaa59d&amp;ob_doc_title=Top+Doctor%3A+Do+This+To+Relieve+Tinnitus+%26+Fight+Ringing+Ears&amp;site=TinnitusALLTier1Max2_$publisher_name$_$section_name$_00df19539955f73431d5dbc113c0c1fa7f&amp;mavcid=40187&amp;ob_marketer_id=00154897799c7ea16fa37f2ab3bcd6fd04&amp;ob_cpc=$cpc$&amp;obOrigUrl=true" onmousedown="this.href='https://paid.outbrain.com/network/redir?p=PrhcK09Il09VPMhAoR0y6zrpSrkbIXLbA031m8VPk_RhiXHeG0yIbRbtP6Uj1fwK2UPonM-JlPhaqhpI8vYeMJg9zvITSHnp0frQc9WIW8oMXmL2UzUodQyMNT2U5Mji_UfB8nc73cQaCOy9gjCLWBjhsnAHcBsJEzBhsv5Ud4gsIMtVRe-SHI5-Vt8s1hBjjJufhDCDDnZ-b-nDS6mZCKOOR_3htYCubpaA_iek63CJZTX4MJVm8g3I8imyOfMiCN6bF6ZAxmMw6xzrmC1Gbn8blT33QNGSqSNSGR7_T73SNjcWCKLP15BnZm8bfext_OKZn1q66uVxggDuOeCZ8WolhoNK-NSr1tE2uiWnpsz27jer0tY8Cjly50d8QiuWrMPiljNAS8JRyBcw5WXT4O_fethJwKoSKUtjrGFoxar6fZCMhJLRyXsS7Kc8D7cZUf4ksUKwETVNfWelkz_PYTizcua84WiQRku4FzRxqY5-vqWgs0pCzCHgDCjMr9nWReK5UO3GQwfExfLm-yalhoEdmnXKWmzDDNTYrySrhPEh7w-7_j5TECAZRHpz624sLWyuO5ZHx3jmRSRw9AXF3YEmIpxj46z1fJnO8lpTOKIb_7rvvopNJB_BePrz6eBMtMeYzTvkyUFUuQuIjjsx40DezO48dIvGQJg2YJDpZqUY5k1-aI60WZXiZRKG3WlKThMyKAfgz3bwxiNhvz1jjJ4NUcWHvAhTQbdVvDnnfdBtJNz1ToA6uvEmIbwS2Fb_zBAOLndP6HQoCpqQMRIJ3xYnJuJtiWTSif62yEfkGdrTLc6d2lOFo3HcmNf3Q9ETyth83yp55ygzdIbHHoVSQgdHgqOGdWQBykMMLySEw6SLQUyQky5yHugrMcy50xt9Sc1tG2XMfqbDKMVoDLe0Aw&amp;c=eff62ee6&amp;v=4';" target="_blank" data-rec-en-did="MTVcHb0SYbbtsitbrAWAbg" data-adv-id="54342597" rel="nofollow noopener">
+    <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+                      <img class="ob-rec-image" loading="lazy" aria-hidden="true" src="https://images.outbrainimg.com/transform/v3/eyJpdSI6IjlhN2Q0OWNlZGEzOWViNDNhNTE2NjE4ZDc3NjYxNjNhMmRkMTMxYmFlMWJhMDY5MWE0MjYzM2YxMjVhMWJkZTIiLCJ3IjozOTAsImgiOjI0MCwiZCI6MS41LCJjaCI6MjA1OTczODQwMiwiY3MiOjAsImYiOjR9.webp" onload="this.className+=' ob-show'" alt="Brain Surgeon - Do This to Relieve Tinnitus and Hearing Loss (Try Tonight)!" title="Brain Surgeon - Do This to Relieve Tinnitus and Hearing Loss (Try Tonight)!" onerror="OBR.extern.imageError(this)">
+                                                    </span>
+    <section class="ob-sub-units">
+        <span class="ob-unit ob-rec-text" data-type="Title" title="Brain Surgeon - Do This to Relieve Tinnitus and Hearing Loss (Try Tonight)!">Brain Surgeon - Do This to Relieve Tinnitus and Hearing Loss (Try Tonight)!</span>
+            <span class="ob-unit ob-rec-source" data-type="Source">healthtrend.live | Sponsored</span>
+    
+
+    </section>
+    </a>
+   </div>
+</div>        <div class="ob-widget-footer">
+<div class="ob-pixels">
+</div>
+</div>
+    </div></div>
+	<script>
+		window._stq = window._stq || [];
+		window._stq.push( [ 'extra', { x_wordads_outbrain: 'widget_render_ar_2', }, ] );
+	</script><div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul data-sharing-events-added="true"><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-16" class="share-twitter sd-button share-icon" href="https://virtualrockvr.com/privacy-policy/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-16" class="share-facebook sd-button share-icon" href="https://virtualrockvr.com/privacy-policy/?share=facebook&amp;nb=1" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded" id="like-post-wrapper-105925508-16-64fdf21b6c562" data-src="//widgets.wp.com/likes/index.html?ver=20230309#blog_id=105925508&amp;post_id=16&amp;origin=virtualrock.wordpress.com&amp;obj_id=105925508-16-64fdf21b6c562&amp;domain=virtualrockvr.com" data-name="like-post-frame-105925508-16-64fdf21b6c562" data-title="Like or Reblog"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><span class="sd-text-color"></span><a class="sd-link-color"></a></div></div>	</div>
+
+</article>							
+<div id="comments">
+
+	
+	
+</div><!-- #comments -->	</div><!-- end main -->
+
+	<ul id="sidebar" role="complementary">
+	<li id="widget_contact_info-3" class="widget widget_contact_info"><h2 class="widget-title">Contact</h2><div itemscope="" itemtype="http://schema.org/LocalBusiness"><div class="confit-address" itemscope="" itemtype="http://schema.org/PostalAddress" itemprop="address"><a href="https://maps.google.com/maps?z=16&amp;q=virtualrockvr%40gmail.com" target="_blank" rel="noopener noreferrer">VirtualRockVR@Gmail.com</a></div></div></li><li id="rss_links-3" class="widget widget_rss_links"><h2 class="widget-title">RSS </h2><ul><li><a href="https://virtualrockvr.com/feed/" title="Subscribe to Posts">RSS - Posts</a></li><li><a href="https://virtualrockvr.com/comments/feed/" title="Subscribe to Comments">RSS - Comments</a></li></ul>
+</li><li id="blog_subscription-3" class="widget widget_blog_subscription jetpack_subscription_widget"><h2 class="widget-title"><label for="subscribe-field">Subscribe to Blog via Email</label></h2>
+
+			<div class="wp-block-jetpack-subscriptions__container">
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" data-blog="105925508" data-post_access_level="everybody" id="subscribe-blog">
+				<p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+				<p id="subscribe-email">
+					<label id="subscribe-field-label" for="subscribe-field" class="screen-reader-text">
+						Email Address:					</label>
+
+					<input type="email" name="email" style="width: 95%; padding: 1px 10px" placeholder="Email Address" value="" id="subscribe-field" required="">				</p>
+
+				<p id="subscribe-submit">
+					<input type="hidden" name="action" value="subscribe">
+					<input type="hidden" name="blog_id" value="105925508">
+					<input type="hidden" name="source" value="https://virtualrockvr.com/privacy-policy/">
+					<input type="hidden" name="sub-type" value="widget">
+					<input type="hidden" name="redirect_fragment" value="subscribe-blog">
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="01da08ce07">					<button type="submit" class="wp-block-button__link">
+						Subscribe					</button>
+				</p>
+			</form>
+							<div class="wp-block-jetpack-subscriptions__subscount">
+					Join 2 other subscribers				</div>
+						</div>
+			
+</li>			<div id="atatags-286348-64fdf21b7d108" data-adtags-width="260"></div>
+			
+			<script>
+				__ATA.cmd.push(function() {
+					__ATA.initDynamicSlot({
+						id: 'atatags-286348-64fdf21b7d108',
+						location: 140,
+						formFactor: '003',
+						label: {
+							text: 'Advertisements',
+						},
+						creative: {
+							reportAd: {
+								text: 'Report this ad',
+							},
+							privacySettings: {
+								text: 'Privacy',
+								
+							}
+						}
+					});
+				});
+			</script></ul><!-- end sidebar -->
+</div><!-- end container -->
+
+
+</div><!-- end page-wrap -->
+<footer id="colophon" role="contentinfo">
+	<div id="site-generator">
+		<a href="https://wordpress.com/?ref=footer_custom_svg" title="Create a website or blog at WordPress.com" rel="nofollow"><svg style="fill: currentColor; position: relative; top: 1px;" width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="title" role="img">
+				<desc id="title">Create a website or blog at WordPress.com</desc>
+				<path d="M12.5225848,4.97949746 C13.0138466,5.87586309 13.2934037,6.90452431 13.2934037,7.99874074 C13.2934037,10.3205803 12.0351007,12.3476807 10.1640538,13.4385638 L12.0862862,7.88081544 C12.4453251,6.98296834 12.5648813,6.26504621 12.5648813,5.62667922 C12.5648813,5.39497674 12.549622,5.17994084 12.5225848,4.97949746 L12.5225848,4.97949746 Z M7.86730089,5.04801561 C8.24619178,5.02808979 8.58760099,4.98823815 8.58760099,4.98823815 C8.9267139,4.94809022 8.88671369,4.44972248 8.54745263,4.46957423 C8.54745263,4.46957423 7.52803983,4.54957381 6.86996227,4.54957381 C6.25158863,4.54957381 5.21247202,4.46957423 5.21247202,4.46957423 C4.87306282,4.44972248 4.83328483,4.96816418 5.17254589,4.98823815 C5.17254589,4.98823815 5.49358462,5.02808979 5.83269753,5.04801561 L6.81314716,7.73459399 L5.43565839,11.8651647 L3.14394256,5.04801561 C3.52312975,5.02808979 3.86416859,4.98823815 3.86416859,4.98823815 C4.20305928,4.94809022 4.16305906,4.44972248 3.82394616,4.46957423 C3.82394616,4.46957423 2.80475558,4.54957381 2.14660395,4.54957381 C2.02852925,4.54957381 1.88934333,4.54668493 1.74156477,4.54194422 C2.86690406,2.83350881 4.80113651,1.70529256 6.99996296,1.70529256 C8.638342,1.70529256 10.1302017,2.33173369 11.2498373,3.35765419 C11.222726,3.35602457 11.1962815,3.35261718 11.1683554,3.35261718 C10.5501299,3.35261718 10.1114609,3.89113285 10.1114609,4.46957423 C10.1114609,4.98823815 10.4107217,5.42705065 10.7296864,5.94564049 C10.969021,6.36482346 11.248578,6.90326506 11.248578,7.68133501 C11.248578,8.21992476 11.0413918,8.84503256 10.7696866,9.71584277 L10.1417574,11.8132391 L7.86730089,5.04801561 Z M6.99996296,14.2927074 C6.38218192,14.2927074 5.78595654,14.2021153 5.22195356,14.0362644 L7.11048207,8.54925635 L9.04486267,13.8491542 C9.05760348,13.8802652 9.07323319,13.9089317 9.08989995,13.9358945 C8.43574834,14.1661896 7.73285573,14.2927074 6.99996296,14.2927074 L6.99996296,14.2927074 Z M0.706448182,7.99874074 C0.706448182,7.08630113 0.902152921,6.22015756 1.25141403,5.43749503 L4.25357806,13.6627848 C2.15393732,12.6427902 0.706448182,10.4898387 0.706448182,7.99874074 L0.706448182,7.99874074 Z M6.99996296,0.999 C3.14016476,0.999 0,4.13905746 0,7.99874074 C0,11.8585722 3.14016476,14.999 6.99996296,14.999 C10.8596871,14.999 14,11.8585722 14,7.99874074 C14,4.13905746 10.8596871,0.999 6.99996296,0.999 L6.99996296,0.999 Z" id="wordpress-logo-simplified-cmyk" stroke="none" fill="“currentColor”" fill-rule="evenodd"></path>
+			</svg></a>
+			</div>
+</footer>
+
+<!--  -->
+<script src="//0.gravatar.com/js/hovercards/hovercards.min.js?ver=202336aeb24331352c11f5446dd670d75325a3c4e3b8a6bd7f92ee1c88f8b8636d4d9c" id="grofiles-cards-js"></script>
+<script id="wpgroho-js-extra">
+var WPGroHo = {"my_hash":""};
+</script>
+<script crossorigin="anonymous" type="text/javascript" src="https://s0.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240i"></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init(
+					'body',
+					'#wp-admin-bar-my-account',
+					{
+						i18n: {
+							'Edit your profile': 'Edit your profile',
+							'View profile': 'View profile',
+							'Sorry, we are unable to load this Gravatar profile.': 'Sorry, we are unable to load this Gravatar profile.',
+							'Sorry, we are unable to load this Gravatar profile. Please check your internet connection.': 'Sorry, we are unable to load this Gravatar profile. Please check your internet connection.',
+						},
+					}
+				);
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	</div>
+		<script type="text/javascript">
+		( function() {
+			function init() {
+				document.body.addEventListener( 'is.post-load', function() {
+					if ( typeof __ATA.insertInlineAds === 'function' ) {
+						__ATA.insertInlineAds();
+					}
+				} );
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+		</script>		<!-- CCPA [start] -->
+		<script type="text/javascript">
+			( function () {
+
+				var setupPrivacy = function() {
+
+					// Minimal Mozilla Cookie library
+					// https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework
+					var cookieLib = window.cookieLib = {getItem:function(e){return e&&decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*"+encodeURIComponent(e).replace(/[\-\.\+\*]/g,"\\$&")+"\\s*\\=\\s*([^;]*).*$)|^.*$"),"$1"))||null},setItem:function(e,o,n,t,r,i){if(!e||/^(?:expires|max\-age|path|domain|secure)$/i.test(e))return!1;var c="";if(n)switch(n.constructor){case Number:c=n===1/0?"; expires=Fri, 31 Dec 9999 23:59:59 GMT":"; max-age="+n;break;case String:c="; expires="+n;break;case Date:c="; expires="+n.toUTCString()}return"rootDomain"!==r&&".rootDomain"!==r||(r=(".rootDomain"===r?".":"")+document.location.hostname.split(".").slice(-2).join(".")),document.cookie=encodeURIComponent(e)+"="+encodeURIComponent(o)+c+(r?"; domain="+r:"")+(t?"; path="+t:"")+(i?"; secure":""),!0}};
+
+					// Implement IAB USP API.
+					window.__uspapi = function( command, version, callback ) {
+
+						// Validate callback.
+						if ( typeof callback !== 'function' ) {
+							return;
+						}
+
+						// Validate the given command.
+						if ( command !== 'getUSPData' || version !== 1 ) {
+							callback( null, false );
+							return;
+						}
+
+						// Check for GPC. If set, override any stored cookie.
+						if ( navigator.globalPrivacyControl ) {
+							callback( { version: 1, uspString: '1YYN' }, true );
+							return;
+						}
+
+						// Check for cookie.
+						var consent = cookieLib.getItem( 'usprivacy' );
+
+						// Invalid cookie.
+						if ( null === consent ) {
+							callback( null, false );
+							return;
+						}
+
+						// Everything checks out. Fire the provided callback with the consent data.
+						callback( { version: 1, uspString: consent }, true );
+					};
+
+					// Initialization.
+					document.addEventListener( 'DOMContentLoaded', function() {
+
+						// Internal functions.
+						var setDefaultOptInCookie = function() {
+							var value = '1YNN';
+							var domain = '.wordpress.com' === location.hostname.slice( -14 ) ? '.rootDomain' : location.hostname;
+							cookieLib.setItem( 'usprivacy', value, 365 * 24 * 60 * 60, '/', domain );
+						};
+
+						var setDefaultOptOutCookie = function() {
+							var value = '1YYN';
+							var domain = '.wordpress.com' === location.hostname.slice( -14 ) ? '.rootDomain' : location.hostname;
+							cookieLib.setItem( 'usprivacy', value, 24 * 60 * 60, '/', domain );
+						};
+
+						var setDefaultNotApplicableCookie = function() {
+							var value = '1---';
+							var domain = '.wordpress.com' === location.hostname.slice( -14 ) ? '.rootDomain' : location.hostname;
+							cookieLib.setItem( 'usprivacy', value, 24 * 60 * 60, '/', domain );
+						};
+
+						var setCcpaAppliesCookie = function( applies ) {
+							var domain = '.wordpress.com' === location.hostname.slice( -14 ) ? '.rootDomain' : location.hostname;
+							cookieLib.setItem( 'ccpa_applies', applies, 24 * 60 * 60, '/', domain );
+						}
+
+						var maybeCallDoNotSellCallback = function() {
+							if ( 'function' === typeof window.doNotSellCallback ) {
+								return window.doNotSellCallback();
+							}
+
+							return false;
+						}
+
+						// Look for usprivacy cookie first.
+						var usprivacyCookie = cookieLib.getItem( 'usprivacy' );
+
+						// Found a usprivacy cookie.
+						if ( null !== usprivacyCookie ) {
+
+							// If the cookie indicates that CCPA does not apply, then bail.
+							if ( '1---' === usprivacyCookie ) {
+								return;
+							}
+
+							// CCPA applies, so call our callback to add Do Not Sell link to the page.
+							maybeCallDoNotSellCallback();
+
+							// We're all done, no more processing needed.
+							return;
+						}
+
+						// We don't have a usprivacy cookie, so check to see if we have a CCPA applies cookie.
+						var ccpaCookie = cookieLib.getItem( 'ccpa_applies' );
+
+						// No CCPA applies cookie found, so we'll need to geolocate if this visitor is from California.
+						// This needs to happen client side because we do not have region geo data in our $SERVER headers,
+						// only country data -- therefore we can't vary cache on the region.
+						if ( null === ccpaCookie ) {
+
+							var request = new XMLHttpRequest();
+							request.open( 'GET', 'https://public-api.wordpress.com/geo/', true );
+
+							request.onreadystatechange = function () {
+								if ( 4 === this.readyState ) {
+									if ( 200 === this.status ) {
+
+										// Got a geo response. Parse out the region data.
+										var data = JSON.parse( this.response );
+										var region      = data.region ? data.region.toLowerCase() : '';
+										var ccpa_applies = ['california', 'colorado', 'connecticut', 'utah', 'virginia'].indexOf( region ) > -1;
+										// Set CCPA applies cookie. This keeps us from having to make a geo request too frequently.
+										setCcpaAppliesCookie( ccpa_applies );
+
+										// Check if CCPA applies to set the proper usprivacy cookie.
+										if ( ccpa_applies ) {
+											if ( maybeCallDoNotSellCallback() ) {
+												// Do Not Sell link added, so set default opt-in.
+												setDefaultOptInCookie();
+											} else {
+												// Failed showing Do Not Sell link as required, so default to opt-OUT just to be safe.
+												setDefaultOptOutCookie();
+											}
+										} else {
+											// CCPA does not apply.
+											setDefaultNotApplicableCookie();
+										}
+									} else {
+										// Could not geo, so let's assume for now that CCPA applies to be safe.
+										setCcpaAppliesCookie( true );
+										if ( maybeCallDoNotSellCallback() ) {
+											// Do Not Sell link added, so set default opt-in.
+											setDefaultOptInCookie();
+										} else {
+											// Failed showing Do Not Sell link as required, so default to opt-OUT just to be safe.
+											setDefaultOptOutCookie();
+										}
+									}
+								}
+							};
+
+							// Send the geo request.
+							request.send();
+						} else {
+							// We found a CCPA applies cookie.
+							if ( ccpaCookie === 'true' ) {
+								if ( maybeCallDoNotSellCallback() ) {
+									// Do Not Sell link added, so set default opt-in.
+									setDefaultOptInCookie();
+								} else {
+									// Failed showing Do Not Sell link as required, so default to opt-OUT just to be safe.
+									setDefaultOptOutCookie();
+								}
+							} else {
+								// CCPA does not apply.
+								setDefaultNotApplicableCookie();
+							}
+						}
+					} );
+				};
+
+				// Kickoff initialization.
+				if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+					defQueue.items.push( setupPrivacy );
+				} else {
+					setupPrivacy();
+				}
+
+			} )();
+		</script>
+
+		<!-- CCPA [end] -->
+			<div id="actionbar" class="actnbr-pub-parament actnbr-has-follow">
+		<ul>
+								<li class="actnbr-btn actnbr-hidden">
+								<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon gridicons-reader-follow" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon gridicons-reader-following" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 13.482L15.508 21 12 17.4l1.412-1.388 2.106 2.188 6.094-6.094L23 13.482zm-7.455 1.862L20 10.89V2H2v14c0 1.1.9 2 2 2h4.538l4.913-4.832 2.095 2.176zM8 13H4v-1h4v1zm3-2H4v-1h7v1zm0-2H4V8h7v1zm7-3H4V4h14v2z"></path></g></svg><span>Following</span>
+		</a>
+							<div class="actnbr-popover tip tip-top-left actnbr-notice" id="follow-bubble">
+							<div class="tip-arrow"></div>
+							<div class="tip-inner actnbr-follow-bubble">
+															<ul>
+											<li class="actnbr-sitename">
+			<a href="https://virtualrockvr.com">
+				<img alt="" src="https://s0.wp.com/i/logo/wpcom-gray-white.png" srcset="https://s0.wp.com/i/logo/wpcom-gray-white.png 1x" class="avatar avatar-50" height="50" width="50">				Virtual Rock VR			</a>
+		</li>
+										<form method="post" action="https://subscribe.wordpress.com" accept-charset="utf-8" style="display: none;">
+																				<div>
+										<input type="email" name="email" placeholder="Enter your email address" class="actnbr-email-field" aria-label="Enter your email address">
+										</div>
+										<input type="hidden" name="action" value="subscribe">
+										<input type="hidden" name="blog_id" value="105925508">
+										<input type="hidden" name="source" value="https://virtualrockvr.com/privacy-policy/">
+										<input type="hidden" name="sub-type" value="actionbar-follow">
+										<input type="hidden" id="_wpnonce" name="_wpnonce" value="01da08ce07">										<div class="actnbr-button-wrap">
+											<button type="submit" value="Sign me up">
+												Sign me up											</button>
+										</div>
+									</form>
+									<li class="actnbr-login-nudge">
+										<div>
+											Already have a <span class="skimlinks-unlinked">WordPress.com</span> account? <a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fvirtualrockvr.com%252Fprivacy-policy%252F">Log in now.</a>										</div>
+									</li>
+								</ul>
+															</div>
+						</div>
+					</li>
+							<li class="actnbr-ellipsis actnbr-hidden">
+				<svg class="gridicon gridicons-ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M7 12c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm12-2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-7 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"></path></g></svg>				<div class="actnbr-popover tip tip-top-left actnbr-more">
+					<div class="tip-arrow"></div>
+					<div class="tip-inner">
+						<ul>
+									<li class="actnbr-sitename">
+			<a href="https://virtualrockvr.com">
+				<img alt="" src="https://s0.wp.com/i/logo/wpcom-gray-white.png" srcset="https://s0.wp.com/i/logo/wpcom-gray-white.png 1x" class="avatar avatar-50" height="50" width="50">				Virtual Rock VR			</a>
+		</li>
+								<li class="actnbr-folded-customize">
+								<a href="https://virtualrock.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fvirtualrock.wordpress.com%2Fprivacy-policy%2F">
+									<svg class="gridicon gridicons-customize" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z"></path></g></svg>									<span>Customize</span>
+								</a>
+							</li>
+																<li class="actnbr-folded-follow">
+												<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon gridicons-reader-follow" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon gridicons-reader-following" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 13.482L15.508 21 12 17.4l1.412-1.388 2.106 2.188 6.094-6.094L23 13.482zm-7.455 1.862L20 10.89V2H2v14c0 1.1.9 2 2 2h4.538l4.913-4.832 2.095 2.176zM8 13H4v-1h4v1zm3-2H4v-1h7v1zm0-2H4V8h7v1zm7-3H4V4h14v2z"></path></g></svg><span>Following</span>
+		</a>
+										</li>
+																	<li class="actnbr-signup"><a href="https://wordpress.com/start/">Sign up</a></li>
+									<li class="actnbr-login"><a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fvirtualrockvr.com%252Fprivacy-policy%252F">Log in</a></li>
+																	<li class="actnbr-shortlink"><a href="https://wp.me/P7as3W-g">Copy shortlink</a></li>
+																	<li class="flb-report">
+										<a href="http://en.wordpress.com/abuse/?report_url=https://virtualrockvr.com/privacy-policy/" target="_blank">
+											Report this content										</a>
+									</li>
+																	<li class="actnbr-reader">
+										<a href="https://wordpress.com/read/blogs/105925508/posts/16">
+											View post in Reader										</a>
+									</li>
+																	<li class="actnbr-subs">
+										<a href="https://subscribe.wordpress.com/">Manage subscriptions</a>
+									</li>
+																		<li class="actnbr-fold"><a href="">Collapse this bar</a></li>
+															</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+<script>
+window.addEventListener( "load", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.css?v=20210915";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.js?v=20220329";
+	script.defer = true;
+	document.body.appendChild( script );
+} );
+</script>
+
+	
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/virtualrockvr.com\/privacy-policy\/":16};
+	</script>
+				<script crossorigin="anonymous" type="text/javascript" src="https://s0.wp.com/wp-content/js/devicepx.js?m=1574978559i"></script>
+<script src="https://ced.sascdn.com/tag/3905/smart.js" id="smart-tag-lib-js"></script>
+<script id="comment-like-js-extra">
+var comment_like_text = {"loading":"Loading...","swipeUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/comment-likes\/js\/lib\/swipe.js?ver=20131008"};
+</script>
+<script id="verbum-settings-js-before" type="text/javascript">
+window.VerbumComments = {"Receive web and mobile notifications for posts on this site.":"Receive web and mobile notifications for posts on this site.","Name":"Name","Email (address never made public)":"Email (address never made public)","Website (optional)":"Website (optional)","(optional)":"(optional)","Logged in via %s":"Logged in via %s","Log out":"Log out","Email":"Email","Instantly":"Instantly","Daily":"Daily","Reply":"Reply","WordPress":"WordPress","Weekly":"Weekly","Notify me of new posts":"Notify me of new posts","Email me new posts":"Email me new posts","Email me new comments":"Email me new comments","Log in to leave a reply.":"Log in to leave a reply.","Cancel":"Cancel","siteId":105925508,"isAuthRequired":true,"connectURL":"https:\/\/virtualrock.wordpress.com\/public.api\/connect\/?action=request&domain=virtualrockvr.com","logoutURL":"https:\/\/virtualrock.wordpress.com\/wp-login.php?action=logout&_wpnonce=ec563d055f","homeURL":"https:\/\/virtualrockvr.com\/","subscribeToBlog":true,"subscribeToComment":true}
+</script>
+<script crossorigin="anonymous" type="text/javascript" src="https://s0.wp.com/_static/??-eJx9jNsKwjAQRH/IuGhLwQfxUyQmS910czG7ob9vQEHpQx/nzJyBtRiXk2JSeHCeTeE2UxJYc/XWi3FsRVAg/JBEW/UY5AB/cmw/lfyMKoCtt3khNGxXUIyFreKG7/wwLX39atjwaZNnrDtjl2PsyHyksAE7YkAt1i3fDNIS3Ck50JVUsRqliEwJ+8UtXk/TZRiHaTyP4Q3Eb3XX"></script><div class="widget widget_eu_cookie_law_widget" style="display: block;">
+<div class="hide-on-button ads-active" data-hide-timeout="30" data-consent-expiration="180" id="eu-cookie-law" style="display: block;">
+	<form method="post">
+		<input type="submit" value="Close and accept" class="accept">
+
+		Privacy &amp; Cookies: This site uses cookies. By continuing to use this website, you agree to their use. <br>
+To find out more, including how to control cookies, see here:
+				<a href="https://automattic.com/cookies/" rel="nofollow">
+			Cookie Policy		</a>
+ </form>
+</div>
+</div>
+<script src="https://widgets.outbrain.com/outbrain.js?ver=20221005" id="outbrain-js"></script><iframe style="display: none" src="https://sync.go.sonobi.com/us.gif?loc=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D13%26external_user_id%3D%5BUID%5D%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D"></iframe><iframe style="display: none" src="https://sync.go.sonobi.com/uc.html?"></iframe><iframe style="display: none" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&amp;gdpr_consent=&amp;us_privacy=&amp;predirect=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D11%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D%26external_user_id%3D"></iframe><iframe style="display: none" src="https://ups.analytics.yahoo.com/ups/58666/occ?uid=80a8fe56-f421-487c-b741-e5f6a39e1a84&amp;gdpr=0&amp;gdpr_consent="></iframe><iframe style="display: none" src="https://ssbsync-global.smartadserver.com/api/sync?callerId=5&amp;gdpr=0&amp;gdpr_consent=&amp;US_privacy=&amp;redirectUri=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D23%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D%26external_user_id%3D[ssb_sync_pid]"></iframe><iframe style="display: none" src="https://ssum-sec.casalemedia.com/usermatch?s=197465&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=&amp;cb=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D21%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D%26external_user_id%3D"></iframe><iframe style="display: none" src="https://ssc-cms.33across.com/ps/?m=xch&amp;rt=html&amp;id=0010b00002CphGRAAZ&amp;gdpr_consent=&amp;ru=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D6%26external_user_id%3D33XUSERID33X%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26gdpr%3D0%26gdpr_consent%3D%26us_privacy%3D"></iframe><iframe style="display: none" src="https://ad-cdn.technoratimedia.com/html/usersync.html?cb=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D30%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D%26external_user_id%3D%5BUSER_ID%5D"></iframe><iframe style="display: none" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=0&amp;gdpr_consent=&amp;us_privacy=&amp;predirect=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D26%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D%26external_user_id%3D"></iframe><iframe style="display: none" src="https://ic.tynt.com/r/d?m=xch&amp;rt=html&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=&amp;ru=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D24%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D%26external_user_id%3D33XUSERID33X&amp;id=zzz000000000002zzz"></iframe><iframe style="display: none" src="https://visitor.omnitagjs.com/visitor/bsync?uid=19340f4f097d16f41f34fc0274981ca4&amp;name=PrebidServer&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=&amp;url=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D22%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D%26external_user_id%3D[BUYER_USERID]"></iframe><iframe style="display: none" src="https://sync.inmobi.com/prebid?gdpr=0&amp;gdpr_consent=&amp;us_privacy=&amp;redirect=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D20%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D%26external_user_id%3D%7BID5UID%7D"></iframe><iframe style="display: none" src="https://x.bidswitch.net/check_uuid/https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D18%26external_user_id%3D%24%7BBSW_UUID%7D%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D"></iframe><iframe style="display: none" src="https://s.ad.smaato.net/c/?adExInit=p&amp;redir=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D29%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D%26external_user_id%3D%24UID"></iframe><iframe style="display: none" src="https://ups.analytics.yahoo.com/ups/58366/occ?uid=80a8fe56-f421-487c-b741-e5f6a39e1a84"></iframe><iframe style="display: none" src="https://rtb.gumgum.com/usync/prbds2s?gdpr=0&amp;gdpr_consent=&amp;us_privacy=&amp;r=https%3A%2F%2Fs.pubmine.com%2Fmatch%3Fbidder_id%3D25%26ssp_data%3D80a8fe56-f421-487c-b741-e5f6a39e1a84%26rid%3D%26us_privacy%3D%26gdpr%3D0%26gdpr_consent%3D%26external_user_id%3D"></iframe><iframe style="display: none" src="https://acdn.adnxs.com/ib/static/usersync/v3/async_usersync.html"></iframe><iframe style="display: none" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156204&amp;gdpr=0&amp;gdpr_consent="></iframe><iframe style="display: none" src="https://eus.rubiconproject.com/usync.html"></iframe><iframe style="display: none" src="https://contextual.media.net/checksync.php?cid=8CU8HDVRS&amp;cs=13"></iframe><iframe style="display: none" src="https://u.openx.net/w/1.0/pd"></iframe><iframe style="display: none" src="https://sync.teads.tv/iframe"></iframe><iframe style="display: none" src="https://x.bidswitch.net/sync?ssp=themediagrid&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy="></iframe><div class="bottom-sticky__ad-container bottom-sticky__ad-container_hidden" id="bottom-sticky__ad-container" style="">
+            <div class="bottom-sticky__ad-close-btn"></div>
+            <div id="bottom-sticky-ad" style="margin:0 auto;width:728px;"></div>
+        </div><style>.bottom-sticky__ad-container {
+    background: #f1f1f1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(0,0);
+    transition: transform .2s ease-in-out;
+    user-select: none;
+    padding-top: 10px;
+    z-index: 49999;         /* AUTOMATTIC-2205 - because cookie consent banner has 50000 z-index */
+}
+.bottom-sticky__ad-container_hidden {
+    visibility: hidden;
+    transform: translate(0,1000px);
+}
+.bottom-sticky__ad-close-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    box-sizing: content-box;
+    border: 2px solid #9d9d9d;
+    right: 2px;
+    top: -14px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-width='4' stroke='%239d9d9d' d='M0 0l24 24M0 24L24 0'/%3E%3C/svg%3E");
+}
+.bottom-sticky__ad-container .adtags-button {
+    color: #000;
+}</style><style>.ata-controls__complain-btn:hover,
+.ata-controls__privacy-btn:hover {
+    color: #666666 !important;
+}
+.ata-controls__complain-btn:active,
+.ata-controls__privacy-btn:active {
+    color: #5ac8fa !important;
+}
+.ata-controls__complain-btn_clicked,
+.ata-controls__complain-btn_clicked:hover,
+.ata-controls__complain-btn_clicked:active {
+    color: #000 !important;
+    cursor: default !important;
+}
+.ata-frame-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+</style>
+<script id="sharing-js-js-extra">
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+</script>
+<script crossorigin="anonymous" type="text/javascript" src="https://s0.wp.com/wp-content/mu-plugins/jetpack-plugin/sun/_inc/build/sharedaddy/sharing.min.js?m=1685112397i"></script>
+<script id="sharing-js-js-after" type="text/javascript">
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-twitter' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-twitter' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<iframe src="https://widgets.wp.com/likes/master.html?ver=20230309#ver=20230309&amp;origin=https://virtualrockvr.com" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+	<div id="likes-other-gravatars">
+		<div class="likes-text">
+			<span>%d</span> bloggers like this:		</div>
+		<ul class="wpl-avatars sd-like-gravatars"></ul>
+	</div>
+
+		<script src="//stats.wp.com/w.js?63" defer=""></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'105925508','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'105925508','v':'wpcom','tz':'0','user_id':'0','post':'16','subd':'virtualrock'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWtpP0NsWnVkPS9sL0ViLndld3BsSjRjQ0FmMWk0bjhwYkI9bVh4bTM3ZU5oUj1jenJXRlVPK09aLnQvUmYmRnNqWV1qMkJhfHU5PVd5PzAtfnBxNEF0NnAyNXdJTjZweG5SPWR1X19ndEVLLFosUUxyYXxLbmd5RDdEeVhrZEkseDdkTS9GVFUtbC1TTSVOTUJCWX4zJlVhTDhHUVJFbEJWay9fWVFSNi9HYytHeXBIb1FhajM1NndLXz9PdTV3WGJlOF9GP1d6b3xsMEFwR3lbYkR1Yj0wXTM4JnNyVm8sVnosclQlOCtwfD16JkZmSWF5Jn4sTSZdWTUlMF8xcnxoczFxP2tpfjlPMVFsclFoelYxWXBGckNp'}]);
+_stq.push([ 'clickTrackerInit', '105925508', '16' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+<script>
+(function() {
+	'use strict';
+
+	const fetches = {};
+	const promises = {};
+	const urls = {
+		'verbum': 'https://s0.wp.com/wp-content/mu-plugins/verbum/dist/index.js?m=1694107491i&ver=1694107491'
+	};
+	const loaders = {
+		'verbum': () => {
+			fetchExternalScript('verbum');
+			promises['verbum'] = promises['verbum'] || loadWPScript('verbum');
+			return promises['verbum'];
+		},
+		
+	};
+	const scriptExtras = {
+		
+	};
+
+	window.WP_Enqueue_Dynamic_Script = {
+		loadScript: (handle) => {
+			if (!loaders[handle]) {
+				console.error('WP_Enqueue_Dynamic_Script: unregistered script `' + handle + '`.');
+			}
+			return loaders[handle]();
+		}
+	};
+
+	function fetchExternalScript(handle) {
+		if (!urls[handle]) {
+			return Promise.resolve();
+		}
+
+		fetches[handle] = fetches[handle] || fetch(urls[handle], { mode: 'no-cors' });
+		return fetches[handle];
+	}
+
+	function runExtraScript(handle, type, index) {
+		const id = 'wp-enqueue-dynamic-script:' + handle + ':' + type + ':' + (index + 1);
+		const template = document.getElementById(id);
+		if (!template) {
+			return Promise.reject();
+		}
+
+		const script = document.createElement( 'script' );
+		script.innerHTML = template.innerHTML;
+		document.body.appendChild( script );
+		return Promise.resolve();
+	}
+
+	function loadExternalScript(handle) {
+		if (!urls[handle]) {
+			return Promise.resolve();
+		}
+
+		return fetches[handle].then(() => {
+			return new Promise((resolve, reject) => {
+				const script = document.createElement('script');
+				script.onload = () => resolve();
+				script.onerror = (e) => reject(e);
+				script.src = urls[handle];
+				document.body.appendChild(script);
+			});
+		});
+	}
+
+	function loadExtra(handle, pos) {
+		const count = (scriptExtras[handle] && scriptExtras[handle][pos]) || 0;
+		let promise = Promise.resolve();
+
+		for (let i = 0; i < count; i++) {
+			promise = promise.then(() => runExtraScript(handle, pos, i));
+		}
+
+		return promise;
+	}
+
+	function loadWPScript(handle) {
+		return loadExtra(handle, 'before')
+			.then(() => loadExternalScript(handle))
+			.then(() => loadExtra(handle, 'after'));
+	}
+} )();
+</script>
+
+
+<style>img#wpstats {
+			position: absolute !important;
+			clip: rect(0, 0, 0, 0);
+			padding: 0 !important;
+			border: 0 !important;
+			height: 0 !important;
+			width: 0 !important;
+			overflow: hidden;
+		}</style><img src="https://pixel.wp.com/g.gif?blog=105925508&amp;v=wpcom&amp;tz=0&amp;user_id=0&amp;post=16&amp;subd=virtualrock&amp;host=virtualrockvr.com&amp;ref=&amp;rand=0.5497638501643343" alt="" id="wpstats"><iframe name="__tcfapiLocator" style="display: none;"></iframe><div class="comment-likes-overlay" style="display: none;"></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html?origin=https%3A%2F%2Fvirtualrockvr.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe scrolling="no" id="wpcom_remote_login_key" src="https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=key&amp;origin=aHR0cHM6Ly92aXJ0dWFscm9ja3ZyLmNvbQ%3D%3D&amp;wpcomid=105925508&amp;time=1694364187" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe><iframe id="ob-user-test" style="display:none;width:0;height:0;" src="https://widgets.outbrain.com/nanoWidget/externals/obUserFrame/test.html?lsd=de6a49f4-8943-4473-89f5-28808e2e9a83"></iframe><iframe style="display:none;width:0;height:0;" src="https://widgets.outbrain.com/nanoWidget/externals/cookie/put.html"></iframe><script src="https://s.skimresources.com/js/725X1342.skimlinks.js"></script><script src="https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.js?v=20220329" defer=""></script><iframe id="skimlinks-pixels-iframe" width="0" height="0" style="display: none;"></iframe></body></html>

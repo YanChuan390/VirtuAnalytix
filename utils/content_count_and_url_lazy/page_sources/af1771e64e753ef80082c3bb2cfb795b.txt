@@ -1,0 +1,77 @@
+<html lang="ru"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Privacy Policy</title>
+	<style>
+		body {margin:0;padding:0;font: 12px Tahoma;}
+		h1 {font-size:20px;color:#1F84FF;margin-bottom:20px;margin-top:0;font-weight:normal;line-height:30px;}
+		a {color:#1873b4;}
+		div {width: 700px;margin: 100px auto 0 auto;padding-top: 50px;height: 120px;line-height: 150%;}
+	</style>
+	
+<script nonce="08fa2557">
+
+		window.languages = {
+            'en': {
+                'title': 	 'Privacy Policy',
+                'h1': 		 'Privacy Policy',
+                '.message1': 'We do not collect, use or share any kind of personally identifiable data.'
+            },
+            'pl': {
+                'title': 	 'Privacy Policy',
+                'h1': 		 'Privacy Policy',
+                '.message1': 'We do not collect, use or share any kind of personally identifiable data.'
+            },
+            'de': {
+                'title': 	 'Privacy Policy',
+                'h1': 		 'Privacy Policy',
+                '.message1': 'We do not collect, use or share any kind of personally identifiable data.'
+            },
+            'uk': {
+                'title': 	 'Privacy Policy',
+                'h1': 		 'Privacy Policy',
+                '.message1': 'We do not collect, use or share any kind of personally identifiable data.'
+            },
+            'cn': {
+                'title': 	 'Privacy Policy',
+                'h1': 		 'Privacy Policy',
+                '.message1': 'We do not collect, use or share any kind of personally identifiable data.'
+            },
+            'ru': {
+                'title': 	 'Privacy Policy',
+                'h1': 		 'Privacy Policy',
+                '.message1': 'We do not collect, use or share any kind of personally identifiable data.'
+            }
+        };
+
+        function display(){
+            let default_lang = 'en',
+                browser_lang = window.navigator.language || navigator.userLanguage,
+                lang = '';
+
+            browser_lang = browser_lang.substr(0, 2).toLowerCase();
+
+            if( window.languages.hasOwnProperty(browser_lang) ){
+                lang = browser_lang;
+            }else{
+                lang = default_lang;
+            }
+
+            for (let key in window.languages[lang]){
+                if(undefined !== document.querySelector(key)){
+                    document.querySelector(key).innerHTML = window.languages[lang][key];
+				}
+			}
+
+			return false;
+		}
+
+        document.addEventListener("DOMContentLoaded", display);
+	</script>
+</head>
+<body>
+<div>
+	<h1 style="font-size: 80px; margin-bottom: 100px">Privacy Policy</h1>
+	<p class="message1" style="font-size: 20px">We do not collect, use or share any kind of personally identifiable data.</p>
+</div>
+
+</body></html>

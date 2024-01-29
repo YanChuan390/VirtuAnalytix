@@ -1,0 +1,252 @@
+<html lang="en"><head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-L81ETCNGNW&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115610833-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-115610833-1');
+    </script>
+    
+    <meta name="robots" value="index">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>PanoPainter</title>
+
+    <meta name="description" content="PanoPainter is the first 360 painting and animation dedicated software. It's powerful, intuitive and available for most of the platforms.">
+    <meta name="author" content="OmixLab Ltd.">
+
+    <meta property="og:url" content="https://panopainter.com/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="PanoPainter">
+    <meta property="og:description" content="PanoPainter is the first 360 painting and animation dedicated software. It's powerful, intuitive and available for most of the platforms.">
+    <meta property="og:site_name" content="PanoPainter">
+    <meta property="og:image" content="https://panopainter.com/images/og-image-001.jpg">
+    <meta property="fb:app_id" content="1520014031436095">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@panopainter">
+    <meta name="twitter:title" content="PanoPainter">
+    <meta name="twitter:description" content="PanoPainter is the first 360 painting and animation dedicated software. It's powerful, intuitive and available for most of the platforms.">
+    <meta name="twitter:image" content="https://panopainter.com/images/og-image-001.jpg">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css?ver=002">
+    <link rel="stylesheet" type="text/css" href="libs/pannellum.css">
+    <script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="libs/pannellum.js"></script>
+    <script type="text/javascript" src="libs/js.cookie.js"></script>
+    <script type="text/javascript" src="video-playback.js?"></script>
+    <script type="text/javascript" src="libs/threejs/three.min.js"></script>
+    <script type="text/javascript" src="libs/threejs/OrbitControls.js"></script>
+    <script type="text/javascript">
+        function panopainter_web_popup()
+        {
+            window.open("https://panopainter.com/webgl", "_blank", 
+                "menubar=no,resizable=yes,scrollbars=no,status=no,toolbar=no,titlebar=no,width=1024,height=768");
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <a href="/"><img src="images/p-white.svg" class="icon"></a>
+            <div class="menu">
+                <a href="/tutorial.html">Tutorials</a>
+                <!-- <a href="#" style="color: #888888;">Gallery</a> -->
+                <a href="#appstore">Download</a>
+                <a href="/privacy.html">Privacy</a>
+            
+        </div>
+    </div></nav>
+    <div class="content">
+        <div class="section" style="padding-top: 20px;">
+            <article>
+                <h1>PanoPainter</h1>
+                <h2>360 painting made easy</h2>
+                <a class="green-button" href="/webgl" onclick="return panopainter_web_popup();" style="margin-top: 30px;">Try PanoPainter Web</a>
+                <div class="image-caption">
+                    This is an <b>experimental</b> web application.<br>
+                    Performance and features are very <b>limited</b> in the web version.<br>
+                    Recommend <b>Chrome</b> and <b>Firefox</b> (with Shared Memory option enabled).
+                </div>
+                <!--
+                <div style="margin-top: 30px;">
+                    <h2 style="margin-bottom: 20px;">Download it now!</h2>
+                    <a href="/get-mac"><img src="images/appstore-icon-mac.png" class="appstore-link"></a>
+                    <a href="/get-ios"><img src="images/appstore-icon-ios.png" class="appstore-link"></a>
+                    <a href="/get-win"><img src="images/appstore-icon-win10.png" class="appstore-link"></a>
+                    <a href="/get-android"><img src="images/appstore-icon-android.png" class="appstore-link"></a>
+                    <a href="/get-steam"><img src="images/appstore-icon-steam.png" class="appstore-link"></a>
+                </div>
+                -->
+                <div style="height: 40px;"></div>
+                <div id="panorama" class="pnlm-container" tabindex="0"><div class="pnlm-ui pnlm-grab"><div class="pnlm-dragfix"></div><span class="pnlm-about-msg"><a href="https://pannellum.org/" target="_blank">Pannellum</a> 2.4.0</span><div class="pnlm-sprite pnlm-hot-spot-debug-indicator" style="display: none;"></div><div class="pnlm-panorama-info" style="display: none;"><div class="pnlm-title-box"></div><div class="pnlm-author-box"></div></div><div class="pnlm-load-box" style="display: none;"><p>Loading...</p><div class="pnlm-lbox"><div class="pnlm-loading"></div></div><div class="pnlm-lbar"><div class="pnlm-lbar-fill" style="width: 100%;"></div></div><p class="pnlm-lmsg"></p></div><div class="pnlm-error-msg pnlm-info-box"></div><div class="pnlm-controls-container"><div class="pnlm-zoom-controls pnlm-controls" style="display: none;"><div class="pnlm-zoom-in pnlm-sprite pnlm-control"></div><div class="pnlm-zoom-out pnlm-sprite pnlm-control"></div></div><div class="pnlm-fullscreen-toggle-button pnlm-sprite pnlm-fullscreen-toggle-button-inactive pnlm-controls pnlm-control" style="display: none;"></div></div><div class="pnlm-load-button" style="display: none;"><p>Click to<br>Load<br>Panorama</p></div><div class="pnlm-compass pnlm-controls pnlm-control" style="display: none;"></div><div class="panorama-frame"></div></div><div class="pnlm-render-container"><canvas width="900" style="height: 100%; width: 100%;" height="648"></canvas></div></div>
+                <div class="image-caption">"Prague", by <a href="https://www.artstation.com/artwork/8Yo0w" target="_blank">Sergey Orekhov</a></div>
+                <script>
+                    pannellum.viewer('panorama', {
+                        "type": "equirectangular",
+                        "panorama": "pano/Sergey-Orekhov.jpg",
+                        "showControls": false,
+                        "autoLoad": true,
+                        "autoRotate": 3,
+                        "mouseZoom": false
+                    });
+                    $(".pnlm-ui").append('<div class="panorama-frame"></div>');
+                </script>
+            </article>
+        </div>
+        <div class="section" id="appstore" style="padding-top: 0px;">
+            <article>
+                <h1>Download Now</h1>
+                <h2>Available on MacOS, Windows, iOS and Android.</h2>
+                <div style="height: 50px;"></div>
+                <div class="appstore-block">
+                    <img src="images/appstore-mac.jpg" style="width: 100%;">
+                    <a href="/get-mac"><img src="images/appstore-icon-mac.png" style="height: 60px;"></a>
+                </div>
+                <div class="appstore-block">
+                    <img src="images/appstore-ios.jpg" style="width: 100%;">
+                    <a href="/get-ios"><img src="images/appstore-icon-ios.png" style="height: 60px;"></a>
+                </div>
+                <div style="clear: left;"></div>
+                <div class="appstore-block">
+                    <img src="images/appstore-win10.jpg" style="width: 100%;">
+                    <a href="/get-win"><img src="images/appstore-icon-win10.png" style="height: 60px;"></a>
+                </div>
+                <div class="appstore-block">
+                    <img src="images/appstore-android.jpg" style="width: 100%;">
+                    <a href="/get-android"><img src="images/appstore-icon-android.png" style="height: 60px;"></a>
+                </div>
+                <div style="clear: left;"></div>
+                <div class="appstore-block">
+                    <img src="images/appstore-steam.jpg" style="width: 100%;">
+                    <a href="/get-steam"><img src="images/appstore-icon-steam.png" style="height: 60px;"></a>
+                </div>
+                <div style="clear: left;"></div>
+            </article>
+        </div>
+        <div class="section" style="background-color: #F2F2F2;">
+            <article>
+                <h1>Parallax Effect</h1>
+                <h2>With PanoPainter you can make your painting even more interactive and immersive.</h2>
+                <div style="height: 50px;"></div>
+                <div id="parallax-viewer" style="height: 577.12px;"><div class="parallax-frame"></div><canvas width="720" height="519" style="width: 720px; height: 519.401px;"></canvas></div>
+                <h2>Right click or two fingers to pan around.</h2>
+                <script src="libs/parallax-viewer.js"></script>
+            </article>
+        </div>
+        <div class="section" style="background-color: #E8E8E8; padding-bottom: 0;">
+            <article>
+                <h1>Cross Platform</h1>
+                <h2>PanoPainter is available on many platforms so you can work on your projects from anywhere</h2>
+                <div style="height: 50px;"></div>
+                <div class="platforms"></div>
+            </article>
+        </div>
+        <div class="section">
+            <article>
+                <h1>Import &amp; Paint</h1>
+                <h2>Any supported 360 format can be imported and edited directly within PanoPainter</h2>
+                <div style="height: 50px;"></div>
+                <div class="video-frame-dell">
+                    <video loop="" autobuffer="" playsinline="" muted="">
+                        <source src="videos/import.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </article>
+        </div>
+        <div class="section" style="background-color: #E8E8E8;">
+            <article>
+                <h1>Animate</h1>
+                <h2>PanoPainter is the first dedicated 360 animation software</h2>
+                <div style="height: 50px;"></div>
+                <div class="video-frame-ipad">
+                    <video loop="" autobuffer="" playsinline="" muted="">
+                        <source src="videos/anim.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </article>
+        </div>
+        <div class="section">
+            <article>
+                <h1>Cloud</h1>
+                <h2>Share your work across multiple devices and keep working everywhere</h2>
+                <div style="height: 50px;"></div>
+                <div class="video-frame-imac">
+                    <video loop="" autobuffer="" playsinline="" muted="">
+                        <source src="videos/cloud.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </article>
+        </div>
+        <div class="section" style="background-color: #E8E8E8;">
+            <article>
+                <h1>Virtual Reality</h1>
+                <h2>PanoPainter implements the most recent VR technologies supporting a broad range of devices</h2>
+                <div style="height: 50px;"></div>
+                <img src="images/vive-back.jpg" style="width: 80%">
+            </article>
+        </div>
+        <!--
+        <div class="section">
+            <article>
+                <h1>Partners</h1>
+                <h2>A great thanks to our amazing parners who deeply believed in this project</h2>
+                <div style="height: 50px;"></div>
+                <div class="partners">
+                    <a href="#"><div class="logo" style="background-image: url(images/partner-veer.png);"></div></a>
+                    <a href="#"><div class="logo" style="background-image: url(images/partner-cygames.png);"></div></a>
+                    <a href="#"><div class="logo" style="background-image: url(images/partner-vroslo.png); background-size: 60%;"></div></a>
+                </div>
+            </article>
+        </div>
+        -->
+        <div id="subscribe" class="section">
+            <article>
+                <h1>Subscribe</h1>
+                <h2><b>Get notified</b> when there are new <b>updates!</b></h2>
+                <div style="height: 50px;"></div>
+                <form id="signup" method="post">
+                    <input type="text" name="email" placeholder="email@example.com">
+                    <input type="submit" name="signup" value="Sign Up">
+                </form>
+                <div id="subscribe-policy">
+                    By clicking <b>Sign Up</b>, you agree to our <a href="/tos.html">Terms of Service</a>.
+                </div>
+                <div id="message"></div>
+            </article>
+        </div>
+        <div class="section" style="background-color: #E8E8E8; padding-bottom: 5px;">
+            <article>
+                <div style="height: 80px;"></div>
+                <div class="footer">
+                    <a href="https://instagr.am/panopainter/" target="_blank">Instagram</a>
+                    <a href="https://fb.me/panopainter" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/panopainter" target="_blank">Twitter</a>
+                    <a href="https://twitch.tv/panopainter" target="_blank">Twitch</a>
+                    <a id="email-link" href="mailto:info@panopainter.com">info@panopainter.com</a>
+                   <!-- <a href="#">YouTube</a> -->
+                </div>
+                <div class="copyright">
+                    <a href="/tos.html">Term of Service</a> - <a href="/privacy.html">Privacy Policy</a><br>
+                    Copyright © 2018 OmixLab Ltd. All rights reserved.
+                </div>
+            </article>
+        </div>
+    </div>
+    <div id="cookie-alert">
+        This website uses cookies to operate, continue if you agree with our <a href="/privacy.html">Privacy Policy</a>. 
+        <a id="cookie-button" href="#">Agree</a>
+    </div>
+
+
+</body></html>

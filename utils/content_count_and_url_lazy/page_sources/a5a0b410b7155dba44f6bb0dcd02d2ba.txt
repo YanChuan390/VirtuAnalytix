@@ -1,0 +1,578 @@
+<html><head>
+    <title>IRRATIONAL EXUBERANCE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/style.css" rel="stylesheet">
+    <link href="../css/bv_style.css" rel="stylesheet">
+    <style type="text/css">
+        :root {
+            --bgX: -1100px;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, sans-serif;
+            padding: 0 !important;
+            font-size: 30px;
+            background: #000;
+            letter-spacing: -.5px;
+            margin-top: 0 !important;
+            background-image: url('irrex_backdrop_ingame_hi.jpg');
+            background-repeat: no-repeat;
+            background-position-x: var(--bgX);
+            background-size: 450%;
+        }
+
+        div {
+            color: #bbbbbb;
+            /* margin: 0 auto; */
+            /*width: 400px;*/
+            text-align: center;
+            /* border-radius */
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 0px;
+            /* box-shadow */
+            /*
+        -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+        -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+        box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+        */
+        }
+
+        .trow {
+            display: table;
+            width: 100%;
+            /*Optional*/
+            height: auto;
+            table-layout: fixed;
+            border-spacing: 30px;
+        }
+
+        .tcolumn {
+            display: table-cell;
+            max-width: 14vw;
+            height: auto;
+            filter: grayscale(100%);
+            mix-blend-mode: screen;
+        }
+
+        .tcolumn img {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            mix-blend-mode: screen;
+        }
+        
+        .mega {
+            font-size: 50px;
+            text-align: center;
+            margin: -10px;
+        }
+
+        .right {
+            text-align: right;
+            padding-right: 0px;
+            font-size:  2.5vw;
+        }
+
+        .left {
+            text-align: left;
+            padding-left: 1vw;
+        }
+
+        .circle {
+            background: #fff;
+            border-radius: 50%;
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 3px;
+            /* width and height can be anything, as long as they're equal */
+        }
+
+        .nav {
+            padding-top: 50px;
+            font-size: 24px;
+        }
+
+        .nav2 {
+            padding-top: 80px;
+            font-size: 24px;
+        }
+
+        .about {
+            font-size: 1.4vw;
+            text-align: center;
+            /* margin-top: 0px; */
+            padding: 15px;
+        }
+
+        img.check {
+            width: 25px;
+            height: 25px;
+            /* filter: brightness(70%); */
+            vertical-align: baseline;
+            margin-bottom: -3px;
+        }
+
+        .socials img {
+            width: 40px;
+            margin: 5px;
+            -webkit-filter: brightness(70%);
+            filter: brightness(70%);
+        }
+
+        .socials img:hover {
+            -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+        }
+
+        h1 {
+            color: white;
+            font-weight: 100;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        #tablediv {
+            max-width: 800px;
+        }
+
+        .tdpad {
+            width: 15%;
+        }
+
+        .tdcontent {
+            width: 35%;
+        }
+
+        .bigImg {
+            margin: 0 auto;
+            position: relative;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .smallImg {
+            width: 20%;
+        }
+
+        .screenshots {
+
+            margin: 0px 0px 25px 0px;
+            width: 60%;
+        }
+
+        .videoWrapper {
+            position: relative;
+            padding-bottom: calc(56.25% * 0.8);
+            /* 16:9 */
+            width: 80%;
+            height: 0;
+            margin: 0 auto;
+        }
+
+        .videoWrapper iframe {
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            background: #000;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+            /* width: 800px; */
+            text-align: left;
+        }
+
+        #mc_embed_signup input {
+            min-width: 170px !important;
+        }
+
+        #mc_embed_signup input.button {
+            min-width: 90px !important;
+        }
+
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <script type="text/javascript" src="../js/youtube.js"></script>
+    <style>
+        .youtube-player {
+            position: relative;
+            padding-bottom: 56.23%;
+            /* Use 75% for 4:3 videos */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 5px;
+        }
+
+        .youtube-player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            background: transparent;
+        }
+
+        .youtube-player img {
+            bottom: 0;
+            display: block;
+            left: 0;
+            margin: auto;
+            max-width: 100%;
+            width: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            height: auto;
+            cursor: pointer;
+            -webkit-transition: .4s all;
+            -moz-transition: .4s all;
+            transition: .4s all;
+        }
+
+        .youtube-player img:hover {
+            -webkit-filter: brightness(150%);
+            filter: brightness(150%);
+        }
+
+        .youtube-player .play {
+            height: 72px;
+            width: 72px;
+            left: 50%;
+            top: 50%;
+            margin-left: -36px;
+            margin-top: -36px;
+            position: absolute;
+            background: url("http://i.imgur.com/TxzC70f.png") no-repeat;
+            cursor: pointer;
+        }
+
+        .block {
+            padding: 50px;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="about">
+        <img src="irrex_logo_white_stacked.png" class="bigImg">
+
+        <div class="block">
+            <h3><i>
+                    A surreal exploration through the far reaches of space.
+                </i></h3>
+        </div>
+        <br><br>
+        <div class="videoWrapper">
+            <iframe src="https://www.youtube.com/embed/1hUNoME0FKo" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+           <!--        <i></i> - <a href="http://versions.killscreen.com/12-anticipated-titles-virtual-reality-2017/">12 most anticipated VR titles for 2017, Versions/Killscreen</a> -->
+
+           <i>"It's nothing like reality, and that's wonderful."
+        </i> - <a href="http://www.theverge.com/2016/1/29/10871384/sundance-film-festival-2016-best-vr">The Verge, Best
+            VR of Sundance 2016</a>
+        <br>
+        <i>"...consistently left visitors with amazed smiles on their faces" -</i> <a href="http://www.indiewire.com/article/virtual-reality-is-here-but-what-is-vr-storytelling-20160203">Indiewire</a>
+        <br>
+        <i>"...immediate and immersive in a way games rarely are." - </i><a href="http://www.pastemagazine.com/articles/2014/03/gdc-2014-virtual-reality-and-irrational-exuberance.html">Paste
+            Magazine</a>
+        <br>
+        <i>"I have never felt so intimately connected to a digital space." -</i> <a href="http://gamechurch.com/the-search-for-god-in-the-game-industry-gdc-day-3-virtual-reality-is-here/">Game
+            Church</a>
+
+    <br>
+    <br>
+    <br>
+    <div class="row marketing">
+        <div class="col-md-12 column">
+            <div class="trow">
+                <a href="https://www.sundance.org/projects/irrational-exuberance">
+                    <div class="tcolumn"><img src="Sundance_bw.jpg"></div>
+                </a>
+                <a href="https://www.protoawards.com/">
+                    <div class="tcolumn"><img src="ProtoAwards_Nominee.png"></div>
+                </a>
+                <a href="https://novellamag.com/realworldvirtual/">
+                    <div class="tcolumn"><img src="TIFFpop.jpg"></div>
+                </a>
+                <a href="https://www.indiecade.com/games/selected/irrational-exuberance">
+                    <div class="tcolumn"><img src="IndieCadeSelection2016.png"></div>
+                </a>
+                <a href="https://kaleidovr.com/event/indiebo">
+                    <div class="tcolumn"><img src="indiebo.png"></div>
+                </a>
+                <a href="https://fivars.net/#!/irrational-exuberance">
+                    <div class="tcolumn"><img src="FIVARS2016.png"></div>
+                </a>
+                <a href="https://kaleidovr.com/showcase/irrational-exuberance">
+                    <div class="tcolumn"><img src="Kaleid_bw.jpg"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <h1>Get the free Prologue now:</h1>
+    <iframe
+        src="http://store.steampowered.com/widget/343730/?t=Irrational%20Exuberance%3A%20Prologue%20is%20a%20surreal%20odyssey%20through%20deep%20space%20uniquely%20designed%20for%20room-scale%20VR.%20Explore%20mysterious%20phenomenon%2C%20hidden%20beauty%2C%20wonder%2C%20and%20awe.%20Go%20face%20to%20face%20with%20the%20infinite."
+        frameborder="0" width="500" height="200" style="vertical-align: text-top;"></iframe>
+    <br /> -->
+
+    <!--
+        <h4><i>Also available on</i></h4>
+-->
+    &nbsp; &nbsp;
+    <!--        <a   href="https://transport.wevr.com/irrational-exuberance-prologue-26" target="_blank"><img style= "border-color: grey; 
+            border-width:1px; 
+            border-style:solid; vertical-align: text-top;" height="166px" src="TransportLogo.png"/></a>-->
+    <!--End mc_embed_signup-->
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- <h1>The Full Experience is in development!</h1> -->
+
+    We are committed to excellence and creating a VR-defining experience.<br>
+    You can support our development:
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="trow">
+        <table>
+            <tbody><tr>
+                <td class="tdcontent">
+                    <a href="http://store.steampowered.com/app/443790/">
+                        <div class="right">Wishlist it &nbsp;<img src="check.png" class="check"></div>
+                    </a>
+                </td>
+                <td class="tdcontent">
+                    <div class="left" style="padding-left: 3%;" "="">
+                        <a href="http://store.steampowered.com/app/443790/">
+                            <img src="wishlist_sm.jpg" style="border: 1px solid #808080;"></a>
+                        <!--    <iframe src="http://store.steampowered.com/widget/443790/" frameborder="0" width="600" height="190"></iframe>-->
+                    </div>
+                </td>
+            </tr>
+        </tbody></table>
+        
+        <table>
+            <tbody><tr>
+                
+                <td class="tdcontent">
+                    <div class="right">Subscribe  &nbsp;<img src="check.png" class="check"></div>
+                </td>
+                <td class="tdcontent">
+                    <!-- Begin MailChimp Signup Form -->
+
+                    <div style="margin:auto;" id="mc_embed_signup" class="overlay">
+                        <form action="//buffalovisiongames.us7.list-manage.com/subscribe/post?u=eabb702e444a7825aba3f9bf4&amp;id=706314f779" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                            <div id="mc_embed_signup_scroll">
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required="">
+                                <div style="position: absolute; left: -5000px;"><input type="text" name="b_eabb702e444a7825aba3f9bf4_706314f779" tabindex="-1" value=""></div>
+                                <div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            </div>
+                        </form>
+                    </div>
+
+                </td>
+                
+            </tr>
+        </tbody></table>
+        
+        <table>
+            <tbody><tr>
+                
+                <td class="tdcontent">
+                    <div class="right">Sponsor development  &nbsp;<img src="check.png" class="check"></div>
+                </td>
+                <td class="tdcontent">
+                    <div class="left">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIIAQYJKoZIhvcNAQcEoIIH8jCCB+4CAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYA2wq7zTAjuMkoDeZjWtMs9DEfR+LAbwFPOsOr3gukC3eOdRIkD9w5X4lp6Y/n7ONkwDVgOZPq4pWGBCRiTXbFAfTg0xS+cMyBO7JO/qoROD4bps+j2oH8epKMv8r5eoPcV8QXkbnNwhTZNm/rq0ak3MNi0jHIwYP2B2MrpuNJHPjELMAkGBSsOAwIaBQAwggF9BgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECE2S4dKRnSvrgIIBWJG8Lh45S9ZjjjuUADZWdu5qf75Zm0veagdzr7jNugcE/3tkW7uDTymtBgCak3Hs/Yv7bqhyrTohoru7aApGbdjFKQ4w5xWzfZSsPpSQ3RzxbscJPWc6TTP5eOQksylPKLsv2ozE3Me9mK4dPvEWXjA72jOpeWwMaztBxb/HMx4IodUGzwq0TffCu2cW+3GiSUTBmyimnay5ZKvhynW24GBr5d4XjdXqakfHzbe1Fu4riuehcqJ1SFn9Q7NZbZl+FD3Re1m3hWMZAsvc56AySApScMAAcryfY/2xgj7P3blE9nNWkxaFMiYgussxGp4jfgr5TfzgTKZ3+SbwtKB7Xo42NQgH+GLYcJbvmk6pSO8ZwXvc6PYfykTxwDUKf2tSblPnkd1fRV9nKDguyC/mLwYC9ktz/v4w2tT5HcH5/fAzyvobdiQx8hpyTQUzjjNFSkj1BwUIrnZBoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTcwNDEyMTEyMTE2WjAjBgkqhkiG9w0BCQQxFgQUBt7TIVFO72CPqWTBqbFQ+K5nvM0wDQYJKoZIhvcNAQEBBQAEgYCGLO9UmETOaBQ15K4yuFzTViz2tEfbUvaMz3PKthq2tnEL/HW7HD04IqQASMjkSQJCWkF0ubE5ha+4u3EHUJm/k+KtQdx0v9bm9lhQC2Nw7vK6jFSPHvWukW5voUTCtzawJkouJG+PMBTfpm8DmT2qOdb30Qn08UvQDKR8cwjMIQ==-----END PKCS7-----
+">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
+                    </div>
+                </td>
+                
+            </tr>
+        </tbody></table>
+
+        <table>
+            <tbody><tr>
+                
+                <td class="tdcontent" style="padding-top: 40px;">
+                    <div class="right">Follow &nbsp;<img src="check.png" class="check"></div>
+                </td>
+                <td class="tdcontent" style="padding-top: 40px; padding-left: 1.3%;">
+                    <div class="left">
+                        <a class="socials" target="_blank" href="http://twitter.com/irr_ex"><img src="icons/twitter.png"></a>
+                        <a class="socials" target="_blank" href="http://irrationalexuberancevr.tumblr.com/"><img src="icons/tumblr.png"></a>
+                        <a class="socials" target="_blank" href="http://www.facebook.com/IrrationalExuberanceVR"><img src="icons/facebook.png"></a>
+                        <a class="socials" target="_blank" href="http://www.instagram.com/irr_ex"><img src="icons/insta.png"></a>
+                    </div>
+                </td>
+                
+            </tr>
+        </tbody></table>
+
+        <br>
+        <br>
+        <br>
+ 
+        <br><br><br><br>
+        <!--<img src="screenshots/ie_001.jpg" /><br />-->
+        <img class="screenshots" src="screenshots/ie_006.jpg"><br>
+        <img class="screenshots" src="screenshots/ie_002.jpg">
+        <img class="screenshots" src="screenshots/ie_003.jpg">
+        <img class="screenshots" src="screenshots/ie_004.jpg">
+        <img class="screenshots" src="screenshots/ie_005.jpg">     
+        <br>
+        <!--        or <a href="mailto:irrex@buffalovisiongames.com">email us</a>-->
+
+        <br>
+        <br>
+        <a href="http://steamvr.com"><img src="SteamVR.jpg" height="125" class="overlay"></a>
+        <a href="http://htcvive.com"><img src="Vive.jpg" height="125" class="overlay"></a>
+        <br>
+        <br>
+        <br>
+        <hr width="80%">
+
+        <br>
+        <br>
+
+        <h1><a id="Festivals_and_Events_0"></a>Festivals and Events</h1>
+        <div class="row marketing" style="margin-top:40px">
+            <div class="col-md-12 column">     
+        <!-- <p>2017</p> -->
+            <a href="http://lineup.nightonbroadway.la/band/buffalo-vision-games">Night on Broadway, LA, Jan 28</a>
+        <!-- <p>2016</p> -->
+            <a href="http://worldvrforum.com/nabshow-shanghai-vr-selection/">NAB 2016, Shanghai, China, Dec 7-9</a><br>
+            <a href="https://www.eventbrite.com/e/virtual-perception-vrla-school-mack-sennett-studios-tickets-29586057695#">VRLA
+                School: Virtual Perception, LA, Dec 3</a><br>
+            <a href="http://www.cucalorus.org/">Cucalorus 2016, Wilmington, NC, Nov 9-13</a><br>
+            <a href="https://toa.berlin/world-tour/">TOA World Tour, LA, Nov 4</a><br>
+            <a href="http://www.indiecade.com/games/selected/irrational-exuberance">IndieCade 2016, Oct 15-16</a><br>
+            <a href="http://nextart.tech/">Next Art Night 2016, LA, Sept 1</a><br>
+            <a href="http://fivars.net/#!/irrational-exuberance">FIVARS 2016, Toronto, Canada, Sept 16-18</a><br>
+            Burning Man 2016, Black Rock Desert, Nevada, Aug 29-Sept 5<br>
+            <a href="http://www.virtualrealityla.com/summer-expo-16/">VRLA Summer Expo 2016, LA, Aug 5-6</a><br>
+            <a href="http://www.motovunfilmfestival.com/">Motovun Film Festival 2016, Motovun, Croatia, July
+                26-30</a><br>
+            <a href="http://kaleidovr.com/event/indiebo">IndieBo 2016, Bogota, Columbia, July 18-24</a><br>
+            <a href="http://tiff.net/pop02">Toronto International Film Festival (TIFF) Pop 02 2016, Toronto, Canada,
+                July 15-17</a><br>
+            <a href="http://transatlantyk.org/pl/program/2016/edukacja-inspiracje/czasoprzestrzenie-kaleidoscope-vr/halucynogen-blok-viii">Transatlantyk
+                Festival 2016, Lodz, Poland, June 25-26</a><br>
+            <a href="http://rulesandplay.org/?paged=2&amp;portfolioID=45&amp;termID=#ut-portfolio-items-45-anchor">Rules and
+                Play, Lexington, Kentucky, June 24-26</a><br>
+            <a href="http://conference.virtualreality.to/">VRTO 2016, Toronto, Canada, June 24-26</a><br>
+            <a href="http://www.indiecade.com/e3_2016/games">IndieCade showcase @ E3 2016, LA, June 14-16</a><br>
+            <a href="http://artpower.ucsd.edu/programs/filmatic-festival-2016/#schedule">Filmatic Festival 2016,
+                ArtPower at UC San Deigo, California, May 7</a><br>
+            <a href="http://kaleidovr.com/2016worldtour">Kaleidoscope World Tour 2016, 10 cities, March-April
+                2016</a><br>
+            <a href="http://artshow.vrscout.com/">VRScout Art Show</a> hosted by <a href="https://www.vice.com/">Vice</a>, LA, March 31<br>
+            <a href="http://www.glasanimation.com/special-programs/">GLAS Animation Festival 2016 Special Programs via
+                GHOSTING.TV, Berkeley, California, March 4</a><br>
+            <a href="http://www.sundance.org/festivals/sundance-film-festival/program/NFF-guide">Sundance New Frontiers
+                2016, Park City, Utah, January 19-29</a><br>
+        
+        <!-- <p>2015</p> -->
+            <a href="http://dayofthedevs.com/">Day of the Devs 2015, San Francisco, California, November 7th</a>
+        
+                </div>
+        <br>
+    </div>
+
+    <br>
+    <br>
+    <hr width="80%">
+    <br>
+    <br>
+    <br>
+
+    <center><a href="http://www.buffalovisiongames.com"><img src="http://www.buffalovisiongames.com/buffalo_vision_clear_header.png" width="250px"></a></center>
+    <br>
+
+    <p style="width:600px; text-align:left; margin:auto;"><a href="http://www.buffalovisiongames.com">Buffalo Vision</a>
+        is an independent developer making iconoclastic games and VR in Los Angeles, CA.
+        Buffalo Vision's experience with VR technologies old and new has provided it a foundation of expertise and
+        sensitivity to the nuances of VR.</p>
+
+    <br>
+    <a class="socials" target="_blank" href="http://twitter.com/irr_ex"><img src="icons/twitter.png"></a>
+    <a class="socials" target="_blank" href="http://irrationalexuberancevr.tumblr.com/"><img src="icons/tumblr.png"></a>
+    <a class="socials" target="_blank" href="http://www.facebook.com/IrrationalExuberanceVR"><img src="icons/facebook.png"></a>
+    <a class="socials" target="_blank" href="http://www.instagram.com/irr_ex"><img src="icons/insta.png"></a>
+    <br>
+    <br>
+    <br>
+
+    </div>
+
+    <script type="text/javascript">
+            (function () {
+
+                var parallax = document.querySelectorAll("body"),
+                    speed = 0.7;
+
+                var xPos = getComputedStyle(document.documentElement).getPropertyValue('--bgX');
+                window.onscroll = function () {
+                    [].slice.call(parallax).forEach(function (el, i) {
+
+                        var windowYOffset = window.pageYOffset;
+                            elBackgrounPos = xPos + " " + (windowYOffset * speed) + "px";
+
+                        el.style.backgroundPosition = elBackgrounPos;
+
+                    });
+                };
+
+            })();
+    </script>
+
+
+</div></body></html>

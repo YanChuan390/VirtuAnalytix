@@ -1,0 +1,99 @@
+<html><head>
+        <title>NinjaBee Hive</title>
+            <link rel="shortcut icon" href="favicon.ico">
+            <meta name="description" content="NinjaBee is a game development studio. Our awesome programmers, artists and designers effectively blend creativity, innovation, humor and fun game play.">
+            <meta name="google-site-verification" content="v-FX7BK9q34bOFFBAy_4nTUCce_PwZe5prjj3Wue31U">
+            <link rel="stylesheet" type="text/css" href="/style/main_layout.css?v=101">
+            <link rel="stylesheet" type="text/css" href="/style/overrides.css?v=102">
+            <link rel="stylesheet" type="text/css" href="/style/popups.css?v=100">
+            <script type="text/javascript" src="/scripts/jquery-1.9.1.min.js"></script>
+            <script type="text/javascript" src="/scripts/scrollableThumbnails.js?v=100"></script>
+            <script type="text/javascript" src="/scripts/popup.js?v=100"></script>
+            <script type="text/javascript" src="/scripts/hoverpop.js?v=100"></script>
+            <script type="text/javascript" src="/scripts/slidearrows.js?v=101"></script>
+            <script type="text/javascript" src="/scripts/fadingslideshow.js?v=100"></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    scrollableThumbnails('media_scroll', 'media_viewer', 164, 4, 'image01');
+                    SetupPopups({popupFadeTime: 250,});
+                });
+            </script>
+    </head>
+    <body>	
+        <div id="main_container">
+            <div id="content_container">
+                <div id="header">
+                    <div id="logo">
+                        <img src="/img/general/TopBanner.png" id="mainBanner" usemap="#banner">
+                        <map name="banner">
+                            <area shape="rect" coords="21,14,186,164" alt="NinjaBee" href="/">
+                            <area shape="rect" coords="187,37,478,123" alt="NinjaBee" href="/">
+                            <area shape="rect" coords="516,37,573,137" alt="Ancients of Ooga" href="/games/ancientsofooga/">
+                            <area shape="rect" coords="594,37,781,137" alt="A World of Keflings" href="/games/aworldofkeflings/">
+                            <area shape="rect" coords="791,37,830,137" alt="Akimi Village" href="/games/akimivillage/">
+                        </map>
+                    </div>
+                    <ul id="nav">
+                        <li><a href="/games"><img id="navGames" class="hoverPop" src="/img/general/navGames.png"></a></li>
+                        <li><a href="/forums"><img id="navForums" class="hoverPop" src="/img/general/navForums.png"></a></li>
+                        <li><a href="/store"><img id="navStore" class="hoverPop" src="/img/general/navStore.png"></a></li>
+                        <li><a href="http://blog.ninjabee.com/"><img id="navBlog" class="hoverPop" src="/img/general/navBlog.png"></a></li>
+                        <li><a href="https://www.facebook.com/NinjaBeeGames?fref=ts" target="_blank"><img id="navFacebook" class="hoverPop" src="/img/general/facebook.png"></a></li>
+                        <li><a href="https://twitter.com/NinjaBeeGames" target="_blank"><img id="navTwitter" class="hoverPop" src="/img/general/twitter.png"></a></li>
+                        <li><a href="http://www.youtube.com/user/ninjabeegames" target="_blank"><img id="navYoutube" class="hoverPop" src="/img/general/youtube.png"></a></li>
+                    </ul>
+                </div>				
+                <div id="main_content"><br>
+                    <div id="slideshow" class="awesome-banner" name="slide" fading-now="FALSE" timer="1">
+                        <div class="slide-list">
+                            <ul class="banner-slot">
+                                <li name="slide1"><a href="/games/nutjitsu/"><img class="slideImage" src="/img/slideshow/slide_nutjitsu.png" width="765px" height="285px"></a></li>
+                                <li name="slide2"><a href="/store/enchantersemporium/"><img class="slideImage" src="/img/slideshow/slide_enchanters.png" width="765px" height="285px"></a></li>
+                                <li name="slide3"><a href="/store/merchandise/"><img class="slideImage" src="/img/slideshow/slide_merchandise.png" width="765px" height="285px"></a></li>
+                                <li name="slide4" style="opacity: 1"><a href="/games/aworldofkeflings/"><img class="slideImage" src="/img/slideshow/slide_awokwiiu.png" width="765px" height="285px"></a></li>
+                            </ul>
+                        </div>						
+                        <div class="previous-slide-button"><img id="switchBack" class="hiding hoverPop arrowButton" src="img/slideshow/switch_back.png"></div>
+                        <div class="next-slide-button"><img id="switchForward" class="hiding hoverPop arrowButton" src="img/slideshow/switch_forward.png"></div>
+                    </div>
+                    <div id="left_featured_buttons">
+                        <a href="http://blog.ninjabee.com/search/label/The%20Friday%20Review?max-results=20"><img class="hoverPop" src="/img/main/featured_1.png"></a>
+                    </div>
+                    <div id="right_featured_buttons">
+                        <a href="https://www.facebook.com/NinjaBeeGames?fref=ts" target="_blank"><img class="hoverPop" src="/img/main/featured_2.png"></a>
+                        <a href="https://twitter.com/NinjaBeeGames" target="_blank"><img class="hoverPop" src="/img/main/featured_3.png"></a>
+                    </div>
+                    <div id="text_content">
+                        <div id="description_title">
+                            <b>Welcome to the NinjaBee Universe!</b><br><br>
+                        </div>
+                        <div id="description">
+                        <!-- GENERAL DESCRIPTION -->
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step over the Keflings and don't mind the unruly clones. This gateway leads to our many wonderful worlds. Our games are fun, bright, and friendly. Take a peek! Whether you find a tiny <a href="/games/bandofbugs/" style="text-decoration:none;color:darkgreen;">Band of Bugs</a> or a bustling <a href="/games/akimivillage/" style="text-decoration:none;color:darkpurple;">Akimi Village</a>, there are plenty of places to visit, characters to talk to, and adventures to share.
+                            You can do more than just visit. Go ahead and take some <a href="/games/aworldofkeflings/" style="text-decoration:none;color:darkblue;">Keflings</a> home with you, they're very helpful and ever so eager. Carry a <a href="/games/nutjitsu/" style="text-decoration:none;color:darkred;">ninja squirrel</a> around in your pocket (make sure to feed him often). We made all of this for you, so enjoy!
+						
+                        <!-- HALLOWEEN DESCRIPTION --><!--
+                            &nbsp&nbsp&nbsp&nbsp&nbsp
+                        -->
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="links">
+                        <a href="/info/contact/">Contact Us</a>
+                        <a href="/info/about/">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="imagePool">
+            <img src="/img/main/featured_1_hover.png">
+            <img src="/img/main/featured_2_hover.png">
+            <img src="/img/main/featured_3_hover.png">
+            <img src="/img/slideshow/slide_nutjitsu_hover.png">
+            <img src="/img/slideshow/slide_enchanters_hover.png">
+            <img src="/img/slideshow/slide_awokwiiu_hover.png">
+            <img src="/img/slideshow/slide_merchandise_hover.png">
+        </div>        	
+    
+</body></html>

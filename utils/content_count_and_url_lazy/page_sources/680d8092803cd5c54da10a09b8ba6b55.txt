@@ -1,0 +1,103 @@
+<html><head>
+    <meta charset="UTF-8">
+    <title>Emergence</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+<link href="http://fonts.googleapis.com/css?family=Codystar:300,400" rel="stylesheet" type="text/css"><script type="text/javascript" src="js/paper-full.js"></script><script type="text/paperscript" canvas="canvas" data-paper-ignore="true">
+    // The amount of metatron we want to place;
+    var count = 10;
+
+    // Create a metatron, which we will use to place instances of later:
+
+
+    var segments = [new Point(50, 50),
+        new Point(50, 0),
+        new Point(93.3, 25),
+        new Point(93.3, 75),
+        new Point(50, 100),
+        new Point(7.7, 75),
+        new Point(7.7, 25),        
+        new Point(50, 0),        
+        new Point(50, 50),        
+        new Point(7.7, 75),        
+        new Point(50, 50),        
+        new Point(93.3, 75),                
+        new Point(50, 50)]
+    var path = new Path(segments);
+    path.strokeColor = 'white';
+    path.strokeWidth = 2;
+    var metatron = new Symbol(path);
+
+    // Place the instances of the metatron:
+    for (var i = 0; i < count; i++) {
+        // The center position is a random point in the view:
+        var center = Point.random() * view.size;
+        var placed = metatron.place(center);
+        var scale = (i + 1) / count;
+        placed.scale(scale);
+        placed.data.vector = new Point({
+            angle: Math.random() * 360,
+            length : scale * Math.random() / 5
+        });
+    }
+
+    var vector = new Point({
+        angle: 45,
+        length: 0
+    });
+
+    var mouseVector = vector.clone();
+
+    function onMouseMove(event) {
+        mouseVector = view.center - event.point;
+    }
+
+    // The onFrame function is called up to 60 times a second:
+    function onFrame(event) {
+        vector = vector + (mouseVector - vector) / 100000000;
+
+        // Run through the active layer's children list and change
+        // the position of the placed metatrons:
+        for (var i = 0; i < count; i++) {
+            var item = project.activeLayer.children[i];
+            var size = item.bounds.size;
+            var length = vector.length / 10 * size.width / 10;
+            item.position += vector.normalize(length) + item.data.vector;
+            keepInView(item);
+        }
+    }
+
+    function keepInView(item) {
+        var position = item.position;
+        var itemBounds = item.bounds;
+        var bounds = view.bounds;
+        if (itemBounds.left > bounds.width) {
+            position.x = -item.bounds.width;
+        }
+
+        if (position.x < -itemBounds.width) {
+            position.x = bounds.width + itemBounds.width;
+        }
+
+        if (itemBounds.top > view.size.height) {
+            position.y = -itemBounds.height;
+        }
+
+        if (position.y < -itemBounds.height) {
+            position.y = bounds.height  + itemBounds.height / 2;
+        }
+    }
+    </script></head>
+
+    
+    
+
+<body style="background-color:black">
+    <center style="left:40%;font-family: Codystar,cursive;padding:0px;margin:0px;position:absolute;color:white">
+    <h1>Emergence <a style="color:lightblue" href="https://forms.gle/ZhQQc7kp2bSVq6u96"> Beta </a></h1>
+ </center>
+        <canvas id="canvas" resize="" hidpi="off" style="background: black; user-select: none; touch-action: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" width="1036" height="668" data-paper-scope="1"></canvas>
+
+
+</body></html>

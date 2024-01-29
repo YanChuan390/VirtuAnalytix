@@ -1,0 +1,787 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" id="arve" class="" style="height: 100%;"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link type="text/css" media="all" href="https://www.ikarus.net/wp-content/cache/autoptimize/css/autoptimize_b11bad0a95ead49f1134471cfe0a2205.css" rel="stylesheet"><link type="text/css" media="screen" href="https://www.ikarus.net/wp-content/cache/autoptimize/css/autoptimize_d915127bb73a7b548f05fe3557ad854e.css" rel="stylesheet"><title></title>
+<meta name="description" content="Die Nr.1 Flugsimulatoren von IKARUS">
+
+<meta name="keywords" content="Flugsimulator, IPACS, aerofly, Modellflug, flight simulator, controller, simulation game, virtual reality">
+
+
+
+<!-- wp_header -->
+
+	  <link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="» Feed" href="https://www.ikarus.net/en/feed/">
+<link rel="alternate" type="application/rss+xml" title="» Comments Feed" href="https://www.ikarus.net/en/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ikarus.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.23"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://www.ikarus.net/wp-includes/js/wp-emoji-release.min.js?ver=4.9.23" type="text/javascript" defer=""></script>
+		
+
+
+
+
+
+
+
+
+<link rel="stylesheet" id="dashicons-css" href="https://www.ikarus.net/wp-includes/css/dashicons.min.css?ver=4.9.23" type="text/css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.ikarus.net/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"0","time":"1694383444","secure":"1"};
+/* ]]> */
+</script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var imgmap = {"ajaxurl":"https:\/\/www.ikarus.net\/wp-admin\/admin-ajax.php","pulseOption":"never","admin_logged":"","alt_dialog":""};
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var cnArgs = {"ajaxurl":"https:\/\/www.ikarus.net\/wp-admin\/admin-ajax.php","hideEffect":"fade","onScroll":"","onScrollOffset":"100","cookieName":"cookie_notice_accepted","cookieValue":"true","cookieTime":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"","cache":"","refuse":"no","revoke_cookies":"0","revoke_cookies_opt":"automatic","secure":"1"};
+/* ]]> */
+</script>
+
+
+
+
+<link rel="https://api.w.org/" href="https://www.ikarus.net/en/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ikarus.net/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.ikarus.net/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.23">
+<link rel="canonical" href="https://www.ikarus.net/en/">
+<link rel="shortlink" href="https://www.ikarus.net/en/">
+<link rel="alternate" type="application/json+oembed" href="https://www.ikarus.net/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ikarus.net%2Fen%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.ikarus.net/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ikarus.net%2Fen%2F&amp;format=xml">
+<link rel="alternate" hreflang="x-default" href="https://www.ikarus.net">
+<link rel="alternate" hreflang="de-de" href="https://www.ikarus.net">
+<link rel="alternate" hreflang="en-us" href="https://www.ikarus.net/en/">
+<link rel="alternate" hreflang="fr" href="https://www.ikarus.net/fr/">
+<link rel="alternate" hreflang="dk" href="https://www.ikarus.net/dk/">
+<link rel="alternate" hreflang="es" href="https://www.ikarus.net/es/">
+<link rel="alternate" hreflang="it" href="https://www.ikarus.net/it/">
+<link rel="alternate" hreflang="cz" href="https://www.ikarus.net/cz/">
+<link rel="alternate" hreflang="nl" href="https://www.ikarus.net/nl/">
+<link rel="alternate" hreflang="pl" href="https://www.ikarus.net/pl/">
+<link rel="alternate" hreflang="ru" href="https://www.ikarus.net/ru/">
+
+<!-- Open Graph Tags -->
+<meta property="og:site_name" content="">
+<meta property="og:type" content="website">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://www.ikarus.net/en">
+<meta property="og:title" content="">
+<!-- End Open Graph Tags -->
+
+<!-- modules styling -->
+
+
+
+	<!-- media-queries.js -->
+	<!--[if lt IE 9]>
+		<script src="https://www.ikarus.net/wp-content/themes/itheme2/js/respond.js"></script>
+	<![endif]-->
+	
+	<!-- html5.js -->
+	<!--[if lt IE 9]>
+		<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+	<!--[if lt IE 9]>
+	<script src="https://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script> 
+	<![endif]-->
+	
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/d=0/rs=AN8SPfp0QXhhaDDdjg_LgcSqoZiPEzC1tw/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.zh_CN.5Pv-_sbOPxU.O/d=1/exm=el_conf/ed=1/rs=AN8SPfp5dDpUqEpyHx51s27Q7g3Ay3vf1Q/m=el_main"></script><style type="text/css">.fancybox-margin{margin-right:17px;}</style></head>
+
+<body class="home page-template-default page page-id-2 language-en skin-default webkit not-ie sidebar-none cookies-not-set" style="position: relative; min-height: 100%; top: 0px;">
+
+<div id="pagewrap">
+
+    <div id="headerwrap">
+    	        <div id="header" class="pagewidth">
+        	    
+            <h1 id="site-logo"><a href="https://www.ikarus.net/en" title=""></a></h1>
+                
+                    
+            <div class="social-widget">
+                    
+                            </div>
+
+
+<div class="GTranslate"><!-- GTranslate: https://gtranslate.io/ -->
+
+<div class="switcher notranslate">
+<div class="selected">
+<a href="#" onclick="return false;"><img src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/de.png" height="16" width="16" alt="de"> German</a>
+</div>
+<div class="option">
+<a href="#" onclick="doGTranslate('de|ar');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Arabic" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/ar.png" height="16" width="16" alt="ar"> Arabic</a><a href="#" onclick="doGTranslate('de|bs');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Bosnian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/bs.png" height="16" width="16" alt="bs"> Bosnian</a><a href="#" onclick="doGTranslate('de|bg');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Bulgarian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/bg.png" height="16" width="16" alt="bg"> Bulgarian</a><a href="#" onclick="doGTranslate('de|zh-CN');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Chinese (Simplified)" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/zh-CN.png" height="16" width="16" alt="zh-CN"> Chinese (Simplified)</a><a href="#" onclick="doGTranslate('de|co');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Corsican" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/co.png" height="16" width="16" alt="co"> Corsican</a><a href="#" onclick="doGTranslate('de|hr');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Croatian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/hr.png" height="16" width="16" alt="hr"> Croatian</a><a href="#" onclick="doGTranslate('de|cs');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Czech" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/cs.png" height="16" width="16" alt="cs"> Czech</a><a href="#" onclick="doGTranslate('de|da');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Danish" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/da.png" height="16" width="16" alt="da"> Danish</a><a href="#" onclick="doGTranslate('de|nl');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Dutch" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/nl.png" height="16" width="16" alt="nl"> Dutch</a><a href="#" onclick="doGTranslate('de|en');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="English" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/en.png" height="16" width="16" alt="en"> English</a><a href="#" onclick="doGTranslate('de|fi');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Finnish" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/fi.png" height="16" width="16" alt="fi"> Finnish</a><a href="#" onclick="doGTranslate('de|fr');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="French" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/fr.png" height="16" width="16" alt="fr"> French</a><a href="#" onclick="doGTranslate('de|de');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="German" class="nturl selected"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/de.png" height="16" width="16" alt="de"> German</a><a href="#" onclick="doGTranslate('de|el');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Greek" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/el.png" height="16" width="16" alt="el"> Greek</a><a href="#" onclick="doGTranslate('de|hu');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Hungarian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/hu.png" height="16" width="16" alt="hu"> Hungarian</a><a href="#" onclick="doGTranslate('de|is');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Icelandic" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/is.png" height="16" width="16" alt="is"> Icelandic</a><a href="#" onclick="doGTranslate('de|id');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Indonesian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/id.png" height="16" width="16" alt="id"> Indonesian</a><a href="#" onclick="doGTranslate('de|ga');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Irish" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/ga.png" height="16" width="16" alt="ga"> Irish</a><a href="#" onclick="doGTranslate('de|it');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Italian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/it.png" height="16" width="16" alt="it"> Italian</a><a href="#" onclick="doGTranslate('de|ja');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Japanese" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/ja.png" height="16" width="16" alt="ja"> Japanese</a><a href="#" onclick="doGTranslate('de|mk');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Macedonian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/mk.png" height="16" width="16" alt="mk"> Macedonian</a><a href="#" onclick="doGTranslate('de|mt');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Maltese" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/mt.png" height="16" width="16" alt="mt"> Maltese</a><a href="#" onclick="doGTranslate('de|no');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Norwegian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/no.png" height="16" width="16" alt="no"> Norwegian</a><a href="#" onclick="doGTranslate('de|fa');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Persian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/fa.png" height="16" width="16" alt="fa"> Persian</a><a href="#" onclick="doGTranslate('de|pl');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Polish" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/pl.png" height="16" width="16" alt="pl"> Polish</a><a href="#" onclick="doGTranslate('de|pt');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Portuguese" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/pt.png" height="16" width="16" alt="pt"> Portuguese</a><a href="#" onclick="doGTranslate('de|ro');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Romanian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/ro.png" height="16" width="16" alt="ro"> Romanian</a><a href="#" onclick="doGTranslate('de|ru');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Russian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/ru.png" height="16" width="16" alt="ru"> Russian</a><a href="#" onclick="doGTranslate('de|sr');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Serbian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/sr.png" height="16" width="16" alt="sr"> Serbian</a><a href="#" onclick="doGTranslate('de|sk');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Slovak" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/sk.png" height="16" width="16" alt="sk"> Slovak</a><a href="#" onclick="doGTranslate('de|sl');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Slovenian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/sl.png" height="16" width="16" alt="sl"> Slovenian</a><a href="#" onclick="doGTranslate('de|es');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Spanish" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/es.png" height="16" width="16" alt="es"> Spanish</a><a href="#" onclick="doGTranslate('de|sv');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Swedish" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/sv.png" height="16" width="16" alt="sv"> Swedish</a><a href="#" onclick="doGTranslate('de|th');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Thai" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/th.png" height="16" width="16" alt="th"> Thai</a><a href="#" onclick="doGTranslate('de|tr');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Turkish" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/tr.png" height="16" width="16" alt="tr"> Turkish</a><a href="#" onclick="doGTranslate('de|uk');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Ukrainian" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/uk.png" height="16" width="16" alt="uk"> Ukrainian</a><a href="#" onclick="doGTranslate('de|vi');jQuery('div.switcher div.selected a').html(jQuery(this).html());return false;" title="Vietnamese" class="nturl"><img data-gt-lazy-src="//www.ikarus.net/wp-content/plugins/gtranslate/flags/16/vi.png" height="16" width="16" alt="vi"> Vietnamese</a></div>
+</div>
+<script type="text/javascript">
+jQuery('.switcher .selected').click(function() {jQuery('.switcher .option a img').each(function() {if(!jQuery(this)[0].hasAttribute('src'))jQuery(this).attr('src', jQuery(this).attr('data-gt-lazy-src'))});if(!(jQuery('.switcher .option').is(':visible'))) {jQuery('.switcher .option').stop(true,true).delay(100).slideDown(500);jQuery('.switcher .selected a').toggleClass('open')}});
+jQuery('.switcher .option').bind('mousewheel', function(e) {var options = jQuery('.switcher .option');if(options.is(':visible'))options.scrollTop(options.scrollTop() - e.originalEvent.wheelDelta);return false;});
+jQuery('body').not('.switcher').click(function(e) {if(jQuery('.switcher .option').is(':visible') && e.target != jQuery('.switcher .option').get(0)) {jQuery('.switcher .option').stop(true,true).delay(100).slideUp(500);jQuery('.switcher .selected a').toggleClass('open')}});
+</script>
+
+
+<div id="google_translate_element2"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="语言翻译微件"><option value="">选择语言</option><option value="zh-CN">中文（简体）</option><option value="sq">阿尔巴尼亚语</option><option value="ar">阿拉伯语</option><option value="am">阿姆哈拉语</option><option value="as">阿萨姆语</option><option value="az">阿塞拜疆语</option><option value="ee">埃维语</option><option value="ay">艾马拉语</option><option value="ga">爱尔兰语</option><option value="et">爱沙尼亚语</option><option value="or">奥利亚语</option><option value="om">奥罗莫语</option><option value="eu">巴斯克语</option><option value="be">白俄罗斯语</option><option value="bm">班巴拉语</option><option value="bg">保加利亚语</option><option value="is">冰岛语</option><option value="pl">波兰语</option><option value="bs">波斯尼亚语</option><option value="fa">波斯语</option><option value="bho">博杰普尔语</option><option value="af">布尔语(南非荷兰语)</option><option value="tt">鞑靼语</option><option value="da">丹麦语</option><option value="dv">迪维希语</option><option value="ti">蒂格尼亚语</option><option value="doi">多格来语</option><option value="ru">俄语</option><option value="fr">法语</option><option value="sa">梵语</option><option value="tl">菲律宾语</option><option value="fi">芬兰语</option><option value="fy">弗里西语</option><option value="km">高棉语</option><option value="ka">格鲁吉亚语</option><option value="gom">贡根语</option><option value="gu">古吉拉特语</option><option value="gn">瓜拉尼语</option><option value="kk">哈萨克语</option><option value="ht">海地克里奥尔语</option><option value="ko">韩语</option><option value="ha">豪萨语</option><option value="nl">荷兰语</option><option value="ky">吉尔吉斯语</option><option value="gl">加利西亚语</option><option value="ca">加泰罗尼亚语</option><option value="cs">捷克语</option><option value="kn">卡纳达语</option><option value="co">科西嘉语</option><option value="kri">克里奥尔语</option><option value="hr">克罗地亚语</option><option value="qu">克丘亚语</option><option value="ku">库尔德语（库尔曼吉语）</option><option value="ckb">库尔德语（索拉尼）</option><option value="la">拉丁语</option><option value="lv">拉脱维亚语</option><option value="lo">老挝语</option><option value="lt">立陶宛语</option><option value="ln">林格拉语</option><option value="lg">卢干达语</option><option value="lb">卢森堡语</option><option value="rw">卢旺达语</option><option value="ro">罗马尼亚语</option><option value="mg">马尔加什语</option><option value="mt">马耳他语</option><option value="mr">马拉地语</option><option value="ml">马拉雅拉姆语</option><option value="ms">马来语</option><option value="mk">马其顿语</option><option value="mai">迈蒂利语</option><option value="mi">毛利语</option><option value="mni-Mtei">梅泰语（曼尼普尔语）</option><option value="mn">蒙古语</option><option value="bn">孟加拉语</option><option value="lus">米佐语</option><option value="my">缅甸语</option><option value="hmn">苗语</option><option value="xh">南非科萨语</option><option value="zu">南非祖鲁语</option><option value="ne">尼泊尔语</option><option value="no">挪威语</option><option value="pa">旁遮普语</option><option value="pt">葡萄牙语</option><option value="ps">普什图语</option><option value="ny">齐切瓦语</option><option value="ak">契维语</option><option value="ja">日语</option><option value="sv">瑞典语</option><option value="sm">萨摩亚语</option><option value="sr">塞尔维亚语</option><option value="nso">塞佩蒂语</option><option value="st">塞索托语</option><option value="si">僧伽罗语</option><option value="eo">世界语</option><option value="sk">斯洛伐克语</option><option value="sl">斯洛文尼亚语</option><option value="sw">斯瓦希里语</option><option value="gd">苏格兰盖尔语</option><option value="ceb">宿务语</option><option value="so">索马里语</option><option value="tg">塔吉克语</option><option value="te">泰卢固语</option><option value="ta">泰米尔语</option><option value="th">泰语</option><option value="tr">土耳其语</option><option value="tk">土库曼语</option><option value="cy">威尔士语</option><option value="ug">维吾尔语</option><option value="ur">乌尔都语</option><option value="uk">乌克兰语</option><option value="uz">乌兹别克语</option><option value="es">西班牙语</option><option value="iw">希伯来语</option><option value="el">希腊语</option><option value="haw">夏威夷语</option><option value="sd">信德语</option><option value="hu">匈牙利语</option><option value="sn">修纳语</option><option value="hy">亚美尼亚语</option><option value="ig">伊博语</option><option value="ilo">伊洛卡诺语</option><option value="it">意大利语</option><option value="yi">意第绪语</option><option value="hi">印地语</option><option value="su">印尼巽他语</option><option value="id">印尼语</option><option value="jw">印尼爪哇语</option><option value="en">英语</option><option value="yo">约鲁巴语</option><option value="vi">越南语</option><option value="zh-TW">中文（繁体）</option><option value="ts">宗加语</option></select></div>由 <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com" target="_blank"><img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google 翻译">翻译</a></span>强力驱动</div></div>
+<script type="text/javascript">
+function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'de',autoDisplay: false}, 'google_translate_element2');}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+<script type="text/javascript">
+function GTranslateGetCurrentLang() {var keyValue = document['cookie'].match('(^|;) ?googtrans=([^;]*)(;|$)');return keyValue ? keyValue[2].split('/')[2] : null;}
+function GTranslateFireEvent(element,event){try{if(document.createEventObject){var evt=document.createEventObject();element.fireEvent('on'+event,evt)}else{var evt=document.createEvent('HTMLEvents');evt.initEvent(event,true,true);element.dispatchEvent(evt)}}catch(e){}}
+function doGTranslate(lang_pair){if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];if(GTranslateGetCurrentLang() == null && lang == lang_pair.split('|')[0])return;var teCombo;var sel=document.getElementsByTagName('select');for(var i=0;i<sel.length;i++)if(/goog-te-combo/.test(sel[i].className)){teCombo=sel[i];break;}if(document.getElementById('google_translate_element2')==null||document.getElementById('google_translate_element2').innerHTML.length==0||teCombo.length==0||teCombo.innerHTML.length==0){setTimeout(function(){doGTranslate(lang_pair)},500)}else{teCombo.value=lang;GTranslateFireEvent(teCombo,'change');GTranslateFireEvent(teCombo,'change')}}
+if(GTranslateGetCurrentLang() != null)jQuery(document).ready(function() {var lang_html = jQuery('div.switcher div.option').find('img[alt="'+GTranslateGetCurrentLang()+'"]').parent().html();if(typeof lang_html != 'undefined')jQuery('div.switcher div.selected a').html(lang_html.replace('data-gt-lazy-', ''));});
+</script>
+</div>
+					
+
+            <!--/social widget --> 
+    
+            <!-- header wdiegt -->
+            <div class="header-widget">
+                <div id="wpm_language_switcher-2" class="widget wpm widget_language_switcher"><ul class="wpm-language-switcher switcher-list">
+			<li class="item-language-de">
+							<a href="https://www.ikarus.net" data-lang="de">
+												<img src="https://www.ikarus.net/wp-content/plugins/wp-multilang/flags/de.png" alt="Deutsch">
+															</a>
+					</li>
+			<li class="item-language-en active">
+							<span data-lang="en">
+												<img src="https://www.ikarus.net/wp-content/plugins/wp-multilang/flags/uk.png" alt="English (US)">
+															</span>
+					</li>
+			<li class="item-language-fr">
+							<a href="https://www.ikarus.net/fr/" data-lang="fr">
+																		</a>
+					</li>
+			<li class="item-language-dk">
+							<a href="https://www.ikarus.net/dk/" data-lang="dk">
+																		</a>
+					</li>
+			<li class="item-language-es">
+							<a href="https://www.ikarus.net/es/" data-lang="es">
+																		</a>
+					</li>
+			<li class="item-language-it">
+							<a href="https://www.ikarus.net/it/" data-lang="it">
+																		</a>
+					</li>
+			<li class="item-language-cz">
+							<a href="https://www.ikarus.net/cz/" data-lang="cz">
+																		</a>
+					</li>
+			<li class="item-language-nl">
+							<a href="https://www.ikarus.net/nl/" data-lang="nl">
+																		</a>
+					</li>
+			<li class="item-language-pl">
+							<a href="https://www.ikarus.net/pl/" data-lang="pl">
+																		</a>
+					</li>
+			<li class="item-language-ru">
+							<a href="https://www.ikarus.net/ru/" data-lang="ru">
+																		</a>
+					</li>
+	</ul>
+</div>            </div>
+            <!--/header widget --> 
+    
+					<div id="searchform-wrap">
+				<div id="search-icon" class="mobile-button"></div>
+				<form method="get" id="searchform" action="https://www.ikarus.net/en/">
+	<input type="text" name="s" id="s" placeholder="Search" class="placeholder">
+</form>
+			</div>
+			<!-- /#searchform-wrap -->
+		    
+            <div id="main-nav-wrap">
+                <div id="menu-icon" class="mobile-button"></div>
+                <div id="nav-bar">
+                    <ul id="main-nav" class="main-nav"><li class="home"><a href="https://www.ikarus.net/en/">Home</a></li><li id="menu-item-54" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54"><a href="https://shop.ikarus.net">Shop</a>
+<ul class="sub-menu">
+	<li id="menu-item-87" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="https://shop.ikarus.net">Shop Europe</a></li>
+	<li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a target="_blank" href="https://www.amazon.com/s?marketplaceID=ATVPDKIKX0DER&amp;me=A2HPNR0GYFJHD2&amp;merchant=A2HPNR0GYFJHD2&amp;redirect=true">Shop at Amazon USA</a></li>
+</ul>
+</li>
+<li id="menu-item-15426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15426"><a href="#">aeroflyRC9 / RC8</a>
+<ul class="sub-menu">
+	<li id="menu-item-15533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15533"><a href="https://www.ikarus.net/en/rc8-kaufen/">Purchase</a></li>
+	<li id="menu-item-15431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15431"><a href="https://www.ikarus.net/en/rc9-models/">Models</a></li>
+	<li id="menu-item-15630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15630"><a href="https://www.ikarus.net/en/rc8-szenen/">Sceneries</a></li>
+	<li id="menu-item-15427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15427"><a href="https://www.ikarus.net/en/rc8-specs/">Requirements</a></li>
+	<li id="menu-item-15429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15429"><a href="https://www.ikarus.net/en/rc8-control/">Control</a></li>
+	<li id="menu-item-15430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15430"><a href="https://www.ikarus.net/en/rc9-features/">Features</a></li>
+	<li id="menu-item-15428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15428"><a href="https://www.ikarus.net/en/rc8-virtual-reality/">Virtual Reality</a></li>
+	<li id="menu-item-15433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15433"><a href="https://www.ikarus.net/en/rc8-support/">Support / Manual</a></li>
+	<li id="menu-item-15434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15434"><a href="https://www.ikarus.net/en/rc8-activate/">Offline activation</a></li>
+	<li id="menu-item-16206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16206"><a href="https://www.ikarus.net/en/rc9-user-models/">User models</a></li>
+	<li id="menu-item-17278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17278"><a href="https://www.ikarus.net/en/rc9-userscenes/">User sceneries</a></li>
+	<li id="menu-item-19682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19682"><a href="https://www.ikarus.net/en/rc9-update/">RC9 updates</a></li>
+	<li id="menu-item-15432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15432"><a href="https://www.ikarus.net/en/rc8-update/">RC8 updates</a></li>
+	<li id="menu-item-16582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16582"><a href="https://www.ikarus.net/en/rc8-stickmover/">StickMover</a></li>
+</ul>
+</li>
+<li id="menu-item-3035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3035"><a href="#">aeroflyRC7</a>
+<ul class="sub-menu">
+	<li id="menu-item-15585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15585"><a href="https://www.ikarus.net/en/rc7-kaufen/">RC7 Kaufen</a></li>
+	<li id="menu-item-3034" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3034"><a href="https://www.ikarus.net/en/aeroflyrc-7/rc7-features/">RC7 Features</a></li>
+	<li id="menu-item-3859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3859"><a href="https://www.ikarus.net/en/gamecommander-und-usb-interface/">RC7 Control</a></li>
+	<li id="menu-item-3054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3054"><a href="https://www.ikarus.net/en/aeroflyrc-7/rc7-anforderungen/">RC7  Requirments</a></li>
+	<li id="menu-item-3079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="https://www.ikarus.net/en/?page_id=3076">RC7 Models</a></li>
+	<li id="menu-item-4050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4050"><a href="https://www.ikarus.net/en/aeroflyrc-7/rc7-szenerien/">RC7  Sceneries</a></li>
+	<li id="menu-item-7965" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7965"><a href="https://www.ikarus.net/en/rc7-fpv-und-multicopter/">RC7 FPV and Multicopter</a></li>
+	<li id="menu-item-14186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14186"><a href="https://www.ikarus.net/en/rc7-manual/">RC7-Anleitung</a></li>
+	<li id="menu-item-12947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12947"><a href="https://www.ikarus.net/en/rc7-updates/">RC7 Updates</a></li>
+	<li id="menu-item-13170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-13170"><a href="https://www.ikarus.net/en/download-user-modelle-und-landschaften/">RC7 User models and sceneries</a>
+	<ul class="sub-menu">
+		<li id="menu-item-13171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13171"><a href="https://www.ikarus.net/en/download-user-aircraft/">Download User Models</a></li>
+		<li id="menu-item-13172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13172"><a href="https://www.ikarus.net/en/download-user-szenerien/">Download User Sceneries</a></li>
+		<li id="menu-item-13410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13410"><a href="https://www.ikarus.net/en/workshop/">RC7 Szenerie Workshop</a></li>
+		<li id="menu-item-19137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19137"><a href="https://www.ikarus.net/en/workshop-usermodelle/">RC7 Modelle-Workshop</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-6135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6135"><a href="https://www.ikarus.net/en/hilfe/">Help</a>
+<ul class="sub-menu">
+	<li id="menu-item-6112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6112"><a href="https://www.ikarus.net/en/aeroflyrc-news/">aerofly News</a></li>
+	<li id="menu-item-8383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8383"><a href="https://www.ikarus.net/en/downloadkauf/">Info Download Installer</a></li>
+	<li id="menu-item-13765" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-13765"><a href="https://www.ikarus.net/en/installation/">Info Installation</a></li>
+	<li id="menu-item-13501" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-13501"><a href="https://www.ikarus.net/en/grafikkarten/">Info Graphiccards</a></li>
+	<li id="menu-item-6271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6271"><a href="https://www.ikarus.net/en/hilfe_rc7/">Help RC-Flugsimulatoren</a></li>
+	<li id="menu-item-15729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15729"><a href="https://www.ikarus.net/en/rc8-activate/">RC8 Offline Activation</a></li>
+	<li id="menu-item-8384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8384"><a href="https://www.ikarus.net/en/offlineaktivierung/">RC7 Offline Activation</a></li>
+	<li id="menu-item-19131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19131"><a href="https://www.ikarus.net/en/aeroflyrc-expertentipps/">aeroflyRC Expertentipps</a></li>
+	<li id="menu-item-7970" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7970"><a href="https://www.ikarus.net/en/filebase/">Manuals</a></li>
+</ul>
+</li>
+<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a target="_blank" href="https://www.aerofly.com/community/forum/">Forum</a></li>
+<li id="menu-item-4956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4956"><a href="https://www.ikarus.net/en/newsletter/">Newsletter</a></li>
+<li id="menu-item-5982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5982"><a href="https://www.ikarus.net/en/kontakt-de/">Contact</a>
+<ul class="sub-menu">
+	<li id="menu-item-11301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11301"><a href="https://www.ikarus.net/en/support/">Contact Support</a></li>
+	<li id="menu-item-16434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16434"><a href="https://www.ikarus.net/en/handlersuche/">Händlersuche</a></li>
+	<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://www.ikarus.net/en/deutsch-news-uber-uns/">About us</a></li>
+</ul>
+</li>
+</ul>                </div><!--/nav bar -->
+			</div>
+            <!-- /#main-nav-wrap -->
+
+			        </div>
+
+
+
+        <!--/header -->
+            </div>
+    <!-- /headerwrap -->
+
+	<div id="body" class="clearfix">
+    
+
+
+		<div id="header-slider" class="pagewidth slider" style="height: auto; visibility: visible;">
+    				
+		<div class="carousel-wrap" style="position: relative;"><div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; inset: auto; width: 938px; height: 320px; margin: 0px; overflow: hidden;"><ul class="slides clearfix" style="text-align: left; float: none; position: absolute; top: 0px; left: 0px; margin: 0px; width: 14070px; height: 320px;">
+
+    		                
+
+					
+                    	<li style="width: 938px;">
+                    		<div class="slide-feature-image">
+                    			<a href="https://www.ikarus.net/en/19613-2/" title="">
+																	</a>
+							</div>
+						<!-- /.slide-feature-image -->
+
+						<div class="slide-content-wrap">
+
+															<h3 class="slide-post-title"><a href="https://www.ikarus.net/en/19613-2/" title=""></a></h3>
+														
+															<div class="slide-excerpt">
+								<p><a href="https://shop.ikarus.net/en/143-aeroflyrc9-the-new"><img class="alignleft size-full wp-image-19608" src="https://www.ikarus.net/wp-content/uploads/rc9-webbanner-980-280-EN.png" alt="" width="960" height="280" srcset="https://www.ikarus.net/wp-content/uploads/rc9-webbanner-980-280-EN.png 960w, https://www.ikarus.net/wp-content/uploads/rc9-webbanner-980-280-EN-150x44.png 150w, https://www.ikarus.net/wp-content/uploads/rc9-webbanner-980-280-EN-300x88.png 300w, https://www.ikarus.net/wp-content/uploads/rc9-webbanner-980-280-EN-768x224.png 768w" sizes="(max-width: 960px) 100vw, 960px"></a></p>
+<div id="themify_builder_content-19613" data-postid="19613" class="themify_builder_content themify_builder_content-19613 themify_builder themify_builder_front">
+	
+	
+</div>
+<!-- /themify_builder_content -->								</div>
+															
+						</div>
+						<!-- /.slide-content-wrap -->
+                        	
+                 		</li>
+               			                
+
+					
+                    	<li style="width: 938px;">
+                    		<div class="slide-feature-image">
+                    			<a href="https://www.ikarus.net/en/20112-2/" title="">
+																	</a>
+							</div>
+						<!-- /.slide-feature-image -->
+
+						<div class="slide-content-wrap">
+
+															<h3 class="slide-post-title"><a href="https://www.ikarus.net/en/20112-2/" title=""></a></h3>
+														
+															<div class="slide-excerpt">
+								<p><a href="https://www.ikarus.net/rc9-user-models/"><img class="alignleft size-full wp-image-20113" src="https://www.ikarus.net/wp-content/uploads/web-slider-ebrettchen.png" alt="" width="980" height="280" srcset="https://www.ikarus.net/wp-content/uploads/web-slider-ebrettchen.png 980w, https://www.ikarus.net/wp-content/uploads/web-slider-ebrettchen-150x43.png 150w, https://www.ikarus.net/wp-content/uploads/web-slider-ebrettchen-300x86.png 300w, https://www.ikarus.net/wp-content/uploads/web-slider-ebrettchen-768x219.png 768w" sizes="(max-width: 980px) 100vw, 980px"></a></p>
+<div id="themify_builder_content-20112" data-postid="20112" class="themify_builder_content themify_builder_content-20112 themify_builder themify_builder_front">
+	
+	
+</div>
+<!-- /themify_builder_content -->								</div>
+															
+						</div>
+						<!-- /.slide-content-wrap -->
+                        	
+                 		</li>
+               			                
+
+					
+                    	<li style="width: 938px;">
+                    		<div class="slide-feature-image">
+                    			<a href="https://www.ikarus.net/en/slider-rc8/" title="">
+																	</a>
+							</div>
+						<!-- /.slide-feature-image -->
+
+						<div class="slide-content-wrap">
+
+															<h3 class="slide-post-title"><a href="https://www.ikarus.net/en/slider-rc8/" title=""></a></h3>
+														
+															<div class="slide-excerpt">
+								<p><img class="alignleft size-full wp-image-18550" src="https://www.ikarus.net/wp-content/uploads/web-slider-rc8-EN-960-280.jpg" alt="" width="960" height="280" srcset="https://www.ikarus.net/wp-content/uploads/web-slider-rc8-EN-960-280.jpg 960w, https://www.ikarus.net/wp-content/uploads/web-slider-rc8-EN-960-280-150x44.jpg 150w, https://www.ikarus.net/wp-content/uploads/web-slider-rc8-EN-960-280-300x88.jpg 300w, https://www.ikarus.net/wp-content/uploads/web-slider-rc8-EN-960-280-768x224.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"></p>
+<div id="themify_builder_content-15805" data-postid="15805" class="themify_builder_content themify_builder_content-15805 themify_builder themify_builder_front">
+	
+	
+</div>
+<!-- /themify_builder_content -->								</div>
+															
+						</div>
+						<!-- /.slide-content-wrap -->
+                        	
+                 		</li>
+               			                
+
+					
+                    	<li style="width: 938px;">
+                    		<div class="slide-feature-image">
+                    			<a href="https://www.ikarus.net/en/slider-hott/" title="">
+																	</a>
+							</div>
+						<!-- /.slide-feature-image -->
+
+						<div class="slide-content-wrap">
+
+															<h3 class="slide-post-title"><a href="https://www.ikarus.net/en/slider-hott/" title=""></a></h3>
+														
+															<div class="slide-excerpt">
+								<p><a href="https://shop.ikarus.net/en/40-adapters-and-accessories"><img class="alignleft size-full wp-image-18566" src="https://www.ikarus.net/wp-content/uploads/slider-hott-EN-960-280.jpg" alt="" width="960" height="280" srcset="https://www.ikarus.net/wp-content/uploads/slider-hott-EN-960-280.jpg 960w, https://www.ikarus.net/wp-content/uploads/slider-hott-EN-960-280-150x44.jpg 150w, https://www.ikarus.net/wp-content/uploads/slider-hott-EN-960-280-300x88.jpg 300w, https://www.ikarus.net/wp-content/uploads/slider-hott-EN-960-280-768x224.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"></a></p>
+<div id="themify_builder_content-15793" data-postid="15793" class="themify_builder_content themify_builder_content-15793 themify_builder themify_builder_front">
+	
+	
+</div>
+<!-- /themify_builder_content -->								</div>
+															
+						</div>
+						<!-- /.slide-content-wrap -->
+                        	
+                 		</li>
+               			                
+
+					
+                    	<li style="width: 938px;">
+                    		<div class="slide-feature-image">
+                    			<a href="https://www.ikarus.net/en/automatisch-gespeicherter-entwurf-2/" title="">
+																	</a>
+							</div>
+						<!-- /.slide-feature-image -->
+
+						<div class="slide-content-wrap">
+
+															<h3 class="slide-post-title"><a href="https://www.ikarus.net/en/automatisch-gespeicherter-entwurf-2/" title=""></a></h3>
+														
+															<div class="slide-excerpt">
+								<p><a href="https://www.ikarus.net/en/infos-win7/"><img class="alignleft size-full wp-image-18552" src="https://www.ikarus.net/wp-content/uploads/slider-upgrades-EN-win7-960-280px.jpg" alt="" width="960" height="280" srcset="https://www.ikarus.net/wp-content/uploads/slider-upgrades-EN-win7-960-280px.jpg 960w, https://www.ikarus.net/wp-content/uploads/slider-upgrades-EN-win7-960-280px-150x44.jpg 150w, https://www.ikarus.net/wp-content/uploads/slider-upgrades-EN-win7-960-280px-300x88.jpg 300w, https://www.ikarus.net/wp-content/uploads/slider-upgrades-EN-win7-960-280px-768x224.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"></a></p>
+<div id="themify_builder_content-17494" data-postid="17494" class="themify_builder_content themify_builder_content-17494 themify_builder themify_builder_front">
+	
+	
+</div>
+<!-- /themify_builder_content -->								</div>
+															
+						</div>
+						<!-- /.slide-content-wrap -->
+                        	
+                 		</li>
+               			                
+
+					
+                    	<li style="width: 938px;">
+                    		<div class="slide-feature-image">
+                    			<a href="https://www.ikarus.net/en/16712-2/" title="">
+																	</a>
+							</div>
+						<!-- /.slide-feature-image -->
+
+						<div class="slide-content-wrap">
+
+															<h3 class="slide-post-title"><a href="https://www.ikarus.net/en/16712-2/" title=""></a></h3>
+														
+															<div class="slide-excerpt">
+								<p><a href="https://shop.ikarus.net/de/aeroflyfs2-flugsimulator/839-aerofly-fs2-auf-dvd-fur-windows-.html"><img class="alignleft size-full wp-image-18556" src="https://www.ikarus.net/wp-content/uploads/slider-web-fs2-960-280.jpg" alt="" width="960" height="280" srcset="https://www.ikarus.net/wp-content/uploads/slider-web-fs2-960-280.jpg 960w, https://www.ikarus.net/wp-content/uploads/slider-web-fs2-960-280-150x44.jpg 150w, https://www.ikarus.net/wp-content/uploads/slider-web-fs2-960-280-300x88.jpg 300w, https://www.ikarus.net/wp-content/uploads/slider-web-fs2-960-280-768x224.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"></a></p>
+<div id="themify_builder_content-16712" data-postid="16712" class="themify_builder_content themify_builder_content-16712 themify_builder themify_builder_front">
+	
+	
+</div>
+<!-- /themify_builder_content -->								</div>
+															
+						</div>
+						<!-- /.slide-content-wrap -->
+                        	
+                 		</li>
+               			                
+
+					
+                    	<li style="width: 938px;">
+                    		<div class="slide-feature-image">
+                    			<a href="https://www.ikarus.net/en/slider-rc7/" title="">
+																	</a>
+							</div>
+						<!-- /.slide-feature-image -->
+
+						<div class="slide-content-wrap">
+
+															<h3 class="slide-post-title"><a href="https://www.ikarus.net/en/slider-rc7/" title=""></a></h3>
+														
+															<div class="slide-excerpt">
+								<p><a href="https://www.ikarus.net/en/rc7-kaufen/"><img class="alignleft size-full wp-image-18561" src="https://www.ikarus.net/wp-content/uploads/slider-web-rc7-89-EN.jpg" alt="" width="960" height="280" srcset="https://www.ikarus.net/wp-content/uploads/slider-web-rc7-89-EN.jpg 960w, https://www.ikarus.net/wp-content/uploads/slider-web-rc7-89-EN-150x44.jpg 150w, https://www.ikarus.net/wp-content/uploads/slider-web-rc7-89-EN-300x88.jpg 300w, https://www.ikarus.net/wp-content/uploads/slider-web-rc7-89-EN-768x224.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"></a></p>
+<div id="themify_builder_content-15799" data-postid="15799" class="themify_builder_content themify_builder_content-15799 themify_builder themify_builder_front">
+	
+	
+</div>
+<!-- /themify_builder_content -->								</div>
+															
+						</div>
+						<!-- /.slide-content-wrap -->
+                        	
+                 		</li>
+               					</ul></div><div class="carousel-nav-wrap"><a href="#" class="carousel-prev" style="display: block;">«</a><a href="#" class="carousel-next" style="display: block;">»</a></div></div>
+        
+	  		</div>
+	<!-- /#slider -->
+    
+<!-- layout-container -->
+<div id="layout" class="clearfix">	
+
+		<!-- content -->
+	<div id="content" class="clearfix">
+    	
+							
+			
+									<div id="page-2" class="type-page">
+			
+				<div class="page-content clearfix">
+					
+					<!-- page-title -->
+					 
+						<h1 class="page-title"></h1>
+						
+					<!-- /page-title -->
+					
+					<div class="dropshadowboxes-container " style="width:100%;">
+                            <div class="dropshadowboxes-drop-shadow dropshadowboxes-rounded-corners dropshadowboxes-outside-shadow dropshadowboxes-curved dropshadowboxes-effect-default" style=" border: 1px solid #bdbdbd; height:; background-color:#ffffff;    ">
+                            
+<h2><em><span style="color: #ff0000;">NEW!</span> aerofly<span style="color: #ff0000;">RC9</span> for Windows 8/10/11</em></h2>
+<p><strong><em><img class="size-full wp-image-19785 alignright" style="border-width: 1px;" src="https://www.ikarus.net/wp-content/uploads/rc9_promo_win.png" alt="" width="400" height="202" srcset="https://www.ikarus.net/wp-content/uploads/rc9_promo_win.png 400w, https://www.ikarus.net/wp-content/uploads/rc9_promo_win-150x76.png 150w, https://www.ikarus.net/wp-content/uploads/rc9_promo_win-300x152.png 300w" sizes="(max-width: 400px) 100vw, 400px"></em></strong></p>
+<ul>
+<li>From now with 273 Modellen (<a href="https://www.ikarus.net/rc9-models/">See here all models)</a></li>
+<li>59 sceneries</li>
+<li>With FES large scale gliders</li>
+<li>With 4D aerobatic (reverse thrust)</li>
+<li>Adjustable stall range at many models</li>
+<li>VR support (Virtual Reality)</li>
+<li>FPV-City, FPV-Parcours, Racetrack</li>
+<li>Scale your model up to two times bigger or smaller, adjust model mass.</li>
+<li>Adjustable stall range at many models</li>
+<li>LED position and landing lights, illumination mit night flying</li>
+<li>Set wind, clouds and time of day for challenging training conditions</li>
+<li>Different model types: Multicopters, electric and gas powered airplanes, helicopters, gliders, jets, autogyros and scale models</li>
+<li>Multiplayer Mode with voicechat</li>
+<li>Train your skills with interactive hover trainer, torque trainer and contests like airrace</li>
+</ul>
+<p><a href="https://shop.ikarus.net/en/143-aeroflyrc9-the-new"><img class="alignleft size-full wp-image-15568" src="https://www.ikarus.net/wp-content/uploads/button-shop-ansehen_en.png" alt="" width="200" height="26" srcset="https://www.ikarus.net/wp-content/uploads/button-shop-ansehen_en.png 200w, https://www.ikarus.net/wp-content/uploads/button-shop-ansehen_en-150x20.png 150w" sizes="(max-width: 200px) 100vw, 200px"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+                            </div>
+                        </div> <div class="dropshadowboxes-container " style="width:100%;">
+                            <div class="dropshadowboxes-drop-shadow dropshadowboxes-rounded-corners dropshadowboxes-outside-shadow dropshadowboxes-curved dropshadowboxes-effect-default" style=" border: 1px solid #bdbdbd; height:; background-color:#ffffff;    ">
+                            
+<p><code></code></p>
+<h2><em><span style="color: #ff0000;"><span style="color: #000000;"><img class="size-full wp-image-19795 alignright" style="border-width: 1px;" src="https://www.ikarus.net/wp-content/uploads/rc9_promo_mac.png" alt="" width="400" height="202" srcset="https://www.ikarus.net/wp-content/uploads/rc9_promo_mac.png 400w, https://www.ikarus.net/wp-content/uploads/rc9_promo_mac-150x76.png 150w, https://www.ikarus.net/wp-content/uploads/rc9_promo_mac-300x152.png 300w" sizes="(max-width: 400px) 100vw, 400px"></span></span></em><em><span style="color: #ff0000;">NEW!</span> aerofly<span style="color: #ff0000;">RC9</span> for Apple Mac:<br>
+</em></h2>
+<p>The aeroflyRC9 is available for AppleMac computers as an app directly from the Apple AppStore. All aerofly accessories from the IKARUS shop can also be used on your Mac.&nbsp;</p>
+<p><strong>With 273 models, 59 sceneries, fantastic features and 10 menu languages:<br>
+</strong>DE – EN – FR – SP – IT – NL – DK – CZ – PL -RU</p>
+<p><a href="https://apps.apple.com/us/app/aerofly-rc-9-r-c-simulator/id1622788394"><img class=" wp-image-15563 alignleft" src="https://www.ikarus.net/wp-content/uploads/button_web-appstore-EN.png" alt="" width="200" height="20"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+                            </div>
+                        </div>
+<div class="dropshadowboxes-container " style="width:100%;">
+                            <div class="dropshadowboxes-drop-shadow dropshadowboxes-rounded-corners dropshadowboxes-outside-shadow dropshadowboxes-curved dropshadowboxes-effect-default" style=" border: 1px solid #bdbdbd; height:; background-color:#ffffff;    ">
+                            
+<p><img class="size-full wp-image-18903 alignright" style="border-width: 1px;" src="https://www.ikarus.net/wp-content/uploads/3031050.jpg" alt="" width="250" height="250" srcset="https://www.ikarus.net/wp-content/uploads/3031050.jpg 500w, https://www.ikarus.net/wp-content/uploads/3031050-150x150.jpg 150w, https://www.ikarus.net/wp-content/uploads/3031050-300x300.jpg 300w" sizes="(max-width: 250px) 100vw, 250px"><span style="font-size: 18pt;">The&nbsp;</span><strong style="font-size: 18pt;"><em>aerofly<span style="color: #ff0000;">RC8</span></em></strong><span style="font-size: 18pt;">&nbsp;</span><strong style="font-size: 18pt;">STANDARD</strong></p>
+<ul>
+<li>25 Models / 4 Sceneries / 4D landscape</li>
+<li>10 menu languages!</li>
+<li>All models are instantly scalable!</li>
+<li>Fyling 2D on a PC monitor</li>
+<li>Flying real 3D with &nbsp;VR Headset (Virtual Reality)</li>
+<li>FPV-Parcour for multi copter</li>
+<li>Helis, jets, multi copter, aerobatic, glider, scale models</li>
+<li>As a complete &nbsp;set with the &nbsp;<strong>IKARUS&nbsp;</strong>RC FlightController</li>
+</ul>
+<p><strong>#3031050 with flight controller for only<span style="font-size: 18pt;">&nbsp;<span style="color: #ff0000;">99,- €</span></span></strong></p>
+<p><a href="https://shop.ikarus.net/en/aeroflyrc8-the-new/889-set-aeroflyrc8-with-usb-flightcontroller--0758176912084.html"><span style="text-decoration: underline;">See the RC8 STANDARD in the IKARUS shop</span></a></p>
+
+                            </div>
+                        </div>
+<div class="dropshadowboxes-container " style="width:100%;">
+                            <div class="dropshadowboxes-drop-shadow dropshadowboxes-rounded-corners dropshadowboxes-outside-shadow dropshadowboxes-curved dropshadowboxes-effect-default" style=" border: 1px solid #bdbdbd; height:; background-color:#ffffff;    ">
+                            
+<h2><em style="caret-color: #ff0000;"><span style="color: #ff0000;"><img class="alignleft  wp-image-18569" style="border-width: 1px;" src="https://www.ikarus.net/wp-content/uploads/aerofly-Hott-Sets-web.jpg" alt="" width="349" height="215" srcset="https://www.ikarus.net/wp-content/uploads/aerofly-Hott-Sets-web.jpg 450w, https://www.ikarus.net/wp-content/uploads/aerofly-Hott-Sets-web-150x92.jpg 150w, https://www.ikarus.net/wp-content/uploads/aerofly-Hott-Sets-web-300x185.jpg 300w" sizes="(max-width: 349px) 100vw, 349px">New at the Shop: HoTT Interfacesets</span></em></h2>
+<p>From now on you can get the ready programmed HoTT receivers and HoTT-USB interface sets &nbsp;for the <strong><em>aerofly<span style="color: #ff0000;">RC</span></em></strong>&nbsp;in the IKARUS shop!</p>
+<p><strong><span style="color: #ff0000;">NEW</span>:</strong> From now on we offer sets with the <strong>Gr-12</strong> and <strong>Gr-16</strong>! All receivers are also useable for RC models!</p>
+<p><span style="text-decoration: underline;"><a href="https://shop.ikarus.net/en/134-aerofly-zubehor-fur-hott">See all HoTT accessories here</a></span></p>
+
+                            </div>
+                        </div><div class="dropshadowboxes-container " style="width:100%;">
+                            <div class="dropshadowboxes-drop-shadow dropshadowboxes-rounded-corners dropshadowboxes-outside-shadow dropshadowboxes-curved dropshadowboxes-effect-default" style=" border: 1px solid #bdbdbd; height:; background-color:#ffffff;    ">
+                            
+<h1><img class="alignleft  wp-image-17254" style="margin-top: 20px; margin-bottom: 20px;" src="https://www.ikarus.net/wp-content/uploads/rc8-userscene-Gerlitzen-Alpe.jpg" alt="" width="449" height="122" srcset="https://www.ikarus.net/wp-content/uploads/rc8-userscene-Gerlitzen-Alpe.jpg 1000w, https://www.ikarus.net/wp-content/uploads/rc8-userscene-Gerlitzen-Alpe-150x41.jpg 150w, https://www.ikarus.net/wp-content/uploads/rc8-userscene-Gerlitzen-Alpe-300x82.jpg 300w, https://www.ikarus.net/wp-content/uploads/rc8-userscene-Gerlitzen-Alpe-768x209.jpg 768w" sizes="(max-width: 449px) 100vw, 449px"></h1>
+<h1><span style="font-size: x-large; color: #808080;"><span style="color: #ff0000;">NEW:</span> RC9 user sceneries for Win and Mac<br>
+</span></h1>
+<p>Expand the RC8 scenes with these new user scenes. Fly at airflields or different slopes with fantastic panorama views. Made by</p>
+<p><span style="text-decoration: underline;"><a href="https://www.ikarus.net/en/rc9-userscenes/">See all downloads here</a></span></p>
+
+                            </div>
+                        </div><div class="dropshadowboxes-container " style="width:100%;">
+                            <div class="dropshadowboxes-drop-shadow dropshadowboxes-rounded-corners dropshadowboxes-outside-shadow dropshadowboxes-curved dropshadowboxes-effect-default" style=" border: 1px solid #bdbdbd; height:; background-color:#ffffff;    ">
+                            
+<h1><img class="alignleft  wp-image-16173" src="https://www.ikarus.net/wp-content/uploads/rc8-usermodel-grumman-goose.jpg" alt="" width="451" height="203" srcset="https://www.ikarus.net/wp-content/uploads/rc8-usermodel-grumman-goose.jpg 400w, https://www.ikarus.net/wp-content/uploads/rc8-usermodel-grumman-goose-150x68.jpg 150w, https://www.ikarus.net/wp-content/uploads/rc8-usermodel-grumman-goose-300x135.jpg 300w" sizes="(max-width: 451px) 100vw, 451px"><span style="font-size: x-large; color: #808080;"><span style="color: #ff0000;">NEW:</span> RC9 user models for Win and Mac<br>
+</span></h1>
+<p>The model editor in the aeroflyRc8 offers an incredibly wide range of possible modifications. Some users have already created complete models and make them available here!</p>
+<p><span style="text-decoration: underline;"><a href="https://www.ikarus.net/en/rc8-user-models/">See all downloads here</a></span></p>
+<p>&nbsp;</p>
+
+                            </div>
+                        </div>
+<div style="clear:both;"></div><div class="post-views post-2 entry-meta">
+			
+			<span class="post-views-label">IKA-5102- </span>
+			<span class="post-views-count">0</span>
+			</div><div id="themify_builder_content-2" data-postid="2" class="themify_builder_content themify_builder_content-2 themify_builder themify_builder_front">
+	
+	
+</div>
+<!-- /themify_builder_content -->					
+										
+										
+					<!-- comments -->
+										<!-- /comments -->
+					
+				</div>
+				<!-- /.page-content -->
+			
+				</div><!-- /.type-page -->
+				
+		
+				        
+        	</div>
+	<!-- /content -->
+    	
+		
+</div>
+<!-- /layout-container -->
+	
+
+		</div>
+	<!-- /body -->
+		
+	<div id="footerwrap">
+    
+    			<footer id="footer" class="pagewidth clearfix">
+        				
+				
+	<div class="footer-widgets clearfix">
+
+								<div class="col3-1 first">
+							</div>
+								<div class="col3-1 ">
+							</div>
+								<div class="col3-1 ">
+							</div>
+		
+	</div>
+	<!-- /.footer-widgets -->
+
+	
+			<p class="back-top"><a href="#header">↑</a></p>
+		
+			<ul id="footer-nav" class="footer-nav"><li class="home"><a href="https://www.ikarus.net/en/">Home</a></li><li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="https://www.ikarus.net/en/agb/">Terms</a></li>
+<li id="menu-item-244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244"><a href="https://www.ikarus.net/en/impressum/">Imprint</a></li>
+<li id="menu-item-4958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4958"><a href="https://www.ikarus.net/en/newsletter/">Newsletter</a></li>
+<li id="menu-item-7941" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7941"><a href="https://www.ikarus.net/en/disclaimer/">Disclaimer</a></li>
+<li id="menu-item-13998" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13998"><a href="https://www.ikarus.net/en/datenschutzerklaerung/">Datenschutzerklärung</a></li>
+</ul>	
+			<div class="footer-text clearfix">
+				<div class="one">© <a href="https://www.ikarus.net/en"></a> 2023</div>				<div class="two">Powered by <a href="http://wordpress.org">WordPress</a> • <a href="http://themify.me">Themify WordPress Themes</a></div>			</div>
+			<!-- /footer-text --> 
+
+					</footer>
+		<!-- /#footer --> 
+                
+	</div>
+	<!-- /#footerwrap -->
+	
+</div>
+<!-- /#pagewrap -->
+
+
+<!-- wp_footer -->
+
+
+		<script type="text/javascript">
+		/////////////////////////////////////////////
+		// Slider	 							
+		/////////////////////////////////////////////
+		jQuery(window).load(function(){
+			
+			if(jQuery('#header-slider').length > 0){
+				jQuery('#header-slider .slides').carouFredSel({
+					responsive: true,
+					prev: '#header-slider .carousel-prev',
+					next: '#header-slider .carousel-next',
+					width: '100%',
+					circular: true,
+					infinite: true,
+					auto: {
+						play : true,
+						pauseDuration: 5000,
+						duration: 2000					},
+					scroll: {
+						items: 1,
+						duration: 2000,
+						wipe: true
+					},
+					items: {
+						visible: {
+							min: 1,
+							max: 1						},
+						width: 150
+					},
+					onCreate : function (){
+						jQuery('#header-slider').css( {
+							'height': 'auto',
+							'visibility' : 'visible'
+						});
+					}
+				});
+			}
+			
+		});
+		</script>
+        
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.ikarus.net\/en\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var JQLBSettings = {"fitToScreen":"0","resizeSpeed":"400","displayDownloadLink":"0","navbarOnTop":"0","loopImages":"","resizeCenter":"","marginSize":"0","linkTarget":"_self","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","prevLinkText":"\u00ab Previous","nextLinkText":"Next \u00bb","closeTitle":"close image gallery","image":"Image","of":"of","download":"Download","jqlb_overlay_opacity":"80","jqlb_overlay_color":"#000000","jqlb_overlay_close":"1","jqlb_border_width":"10","jqlb_border_color":"#ffffff","jqlb_border_radius":"0","jqlb_image_info_background_transparency":"100","jqlb_image_info_bg_color":"#ffffff","jqlb_image_info_text_color":"#000000","jqlb_image_info_text_fontsize":"10","jqlb_show_text_for_image":"1","jqlb_next_image_title":"next image","jqlb_previous_image_title":"previous image","jqlb_next_button_image":"https:\/\/www.ikarus.net\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/next.gif","jqlb_previous_button_image":"https:\/\/www.ikarus.net\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/prev.gif","jqlb_maximum_width":"","jqlb_maximum_height":"","jqlb_show_close_button":"1","jqlb_close_image_title":"close image gallery","jqlb_close_image_max_heght":"22","jqlb_image_for_close_lightbox":"https:\/\/www.ikarus.net\/wp-content\/plugins\/wp-lightbox-2\/styles\/images\/closelabel.gif","jqlb_keyboard_navigation":"1","jqlb_popup_size_fix":"0"};
+/* ]]> */
+</script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var themifyScript = {"lightbox":{"lightboxSelector":".lightbox","lightboxOn":true,"lightboxContentImages":false,"lightboxContentImagesSelector":".post-content a[href$=jpg],.page-content a[href$=jpg],.post-content a[href$=gif],.page-content a[href$=gif],.post-content a[href$=png],.page-content a[href$=png],.post-content a[href$=JPG],.page-content a[href$=JPG],.post-content a[href$=GIF],.page-content a[href$=GIF],.post-content a[href$=PNG],.page-content a[href$=PNG],.post-content a[href$=jpeg],.page-content a[href$=jpeg],.post-content a[href$=JPEG],.page-content a[href$=JPEG]","theme":"pp_default","social_tools":false,"allow_resize":true,"show_title":false,"overlay_gallery":false,"screenWidthNoLightbox":600,"deeplinking":false,"contentImagesAreas":".post, .type-page, .type-highlight, .type-slider"},"lightboxContext":"#pagewrap","isTouch":"false"};
+/* ]]> */
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var fb_timeout, fb_opts={'overlayShow':true,'hideOnOverlayClick':true,'overlayOpacity':0.7,'overlayColor':'#777','showCloseButton':true,'width':400,'height':210,'padding':2,'margin':20,'centerOnScroll':true,'enableEscapeButton':true,'autoScale':true };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery('.nofancybox,a.wp-block-file__button,a.pin-it-button,a[href*="pinterest.com/pin/create"],a[href*="facebook.com/share"],a[href*="twitter.com/share"]').addClass('nolightbox');
+/* YouTube */
+jQuery('a[href*="youtu.be/"],area[href*="youtu.be/"],a[href*="youtube.com/"],area[href*="youtube.com/"]').filter(function(){return this.href.match(/\/(?:youtu\.be|watch\?|embed\/)/);}).not('.nolightbox,li.nolightbox>a').addClass('fancybox-youtube');
+jQuery('a.fancybox-youtube,area.fancybox-youtube,li.fancybox-youtube a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'type':'iframe','width':640,'height':360,'keepRatio':1,'titleShow':false,'titlePosition':'outside','titleFromAlt':true,'onStart':function(a,i,o){var splitOn=a[i].href.indexOf("?");var urlParms=(splitOn>-1)?a[i].href.substring(splitOn):"";o.allowfullscreen=(urlParms.indexOf("fs=0")>-1)?false:true;o.href=a[i].href.replace(/https?:\/\/(?:www\.)?youtu(?:\.be\/([^\?]+)\??|be\.com\/watch\?(.*(?=v=))v=([^&]+))(.*)/gi,"https://www.youtube.com/embed/$1$3?$2$4&autoplay=1");}}))});};
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+
+<!-- KCCounter --><script>(function($){var kcckey = 'kcccount',pidkey = 'kccpid',urlpatt = 'https://www.ikarus.net/en?download={download}&kcccount={url}',onclickEvents = 'click contextmenu mousedown',kccclick__fn = function(e){this.href = e.data.kccurl;},q_symbol_to_alts__fn = function(url){return url.replace(/[?]/g, '__QUESTION__').replace(/[&]/g, '__AMPERSAND__');};$('a.count').each(function(){var $a = $(this),href = $a.attr('href'),pid = $a.data( pidkey ),kccurl;if( href.indexOf(kcckey) !== -1 ) return;kccurl = urlpatt.replace('{in_post}', (pid ? pid : '') );kccurl = kccurl.replace('{download}', ( !! $a.data('kccdownload') ? 1 : '') );kccurl = kccurl.replace('{url}', q_symbol_to_alts__fn( href ) );$a.attr('data-kcc', 1).on( onclickEvents, { kccurl: kccurl }, kccclick__fn );});$('a[href*="'+ kcckey +'"]').each(function(){var $a = $(this),href = $a.attr('href'),re = new RegExp( kcckey +'=(.*)' ),url;if( url = href.match(re)[1] ){if( !! parseInt(url) )url = '/#download'+ url;$a.attr('data-kcc', 1).attr('href', url ).on(onclickEvents, { kccurl: href.replace( url, q_symbol_to_alts__fn(url) ) }, kccclick__fn );}});})(jQuery);</script>
+
+			<div id="cookie-notice" role="banner" class="cn-bottom bootstrap" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); visibility: visible;"><div class="cookie-notice-container"><span id="cn-notice-text">Diese Website benutzt Cookies. Wenn du die Website weiter nutzt, gehen wir von deinem Einverständnis aus.</span><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button bootstrap button">OK</a>
+				</div>
+				
+			</div>
+<script>
+	jQuery(window).load(function(){ jQuery(window).resize(); });
+</script>
+
+<script type="text/javascript" defer="" src="https://www.ikarus.net/wp-content/cache/autoptimize/js/autoptimize_3cc5638c678628a2c370744294a35101.js"></script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">原文</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">请对此翻译评分</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">您的反馈将用于改进谷歌翻译</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="翻译质量很棒" aria-label="翻译质量很棒" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="翻译质量很差" aria-label="翻译质量很差" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div>
+<div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

@@ -1,0 +1,518 @@
+<html lang="ko"><head>
+        <title>컴투스로카 | COM2US ROCA</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="format-detection" content="telephone=no">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="COM2US ROCA - 컴투스 로카">
+        <meta property="og:description" content="컴투스 로카(COM2US ROCA), VR 게임 전문 개발사">
+        <meta property="og:url" content="https://com2usroca.com">
+        <meta property="og:image" content="/static/favicon-32x32.png">
+        <meta property="og:site_name" content="컴투스 로카(COM2US ROCA)">
+        <meta name="title" content="컴투스 로카(COM2US ROCA)">
+        <meta name="description" content="컴투스 로카(COM2US ROCA), VR 게임 전문 개발사">
+        <meta name="keywords" content="컴투스로카, 컴투스 로카, 게임, VR, COM2US ROCA, COM2USROCA, COM2US, ROCA, 컴투스, 로카">
+
+        <link rel="shortcut icon" href="/static/favicon.ico">
+        <link rel="icon" href="/static/favicon.ico">
+        <link rel="icon" sizes="32x32" href="/static/favicon-32x32.png">
+        <link rel="icon" sizes="16x16" href="/static/favicon-16x16.png">
+        <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+        <link href="/static/portal/css/import.css" rel="stylesheet" type="text/css">
+
+        <script src="/static/portal/js/jquery-1.12.4.min.js"></script>
+        <script src="/static/portal/js/slick.min.js"></script>
+        <script src="/static/portal/js/jquery.rolling.js"></script>
+        <script src="/static/portal/js/common.js"></script>
+        <script src="/static/portal/js/jquery.cookie.min.js"></script>
+    </head>
+
+    <body id="main" class="sub">
+        <div id="skipNavi">
+            <ul>
+                <li>
+                    <a href="#container">본문 바로가기</a>
+                    <a href="#gnb">주메뉴 바로가기</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="wrap">
+            <header id="header">
+                <div class="inner">
+                    <div class="logo"><a href="/">컴투스 로카(COM2US ROCA)</a></div>
+                    <button id="btn_show_l" type="button" class="btn-nav">전체 메뉴보기</button>
+                    <div class="menu_box">
+                        <a href="mailto:contact@com2usroca.com" class="btn-contact">Contact us</a>
+                        <ul class="lang">
+                            <li><a class="ko-KR on" onclick="fnSetLanguage('ko-KR')">KOR</a></li>
+                            <li><a class="en-US" onclick="fnSetLanguage('en-US')">ENG</a></li>
+                            <li><a class="zh-CN" onclick="fnSetLanguage('zh-CN')">中文</a></li>
+                        </ul>
+                        <ul class="dep1_wrap" id="main_menu">
+    <li class="dep1" data-url="/company/">
+        
+            <a onclick="fnRedirectMainMenu('/company/', $(this));">ABOUT US</a>
+        
+    </li>
+
+    <script>
+        $(document).ready(function () {
+            let urlPath = '/' + String(window.location.pathname).split('/')[1] + '/';
+
+            $('ul#main_menu').find('li[data-url="' + urlPath + '"]').addClass('on');
+        });
+    </script>
+
+    <li class="dep1" data-url="/news/">
+        
+            <a onclick="fnRedirectMainMenu('/news/', $(this));">PRESS RELEASE</a>
+        
+    </li>
+
+    <script>
+        $(document).ready(function () {
+            let urlPath = '/' + String(window.location.pathname).split('/')[1] + '/';
+
+            $('ul#main_menu').find('li[data-url="' + urlPath + '"]').addClass('on');
+        });
+    </script>
+
+    <li class="dep1" data-url="https://www.gamejob.co.kr/Recruit/joblist?menucode=searchtot&amp;searchtype=all&amp;searchstring=%ec%bb%b4%ed%88%ac%ec%8a%a4%eb%a1%9c%ec%b9%b4">
+        
+            <a target="_blank" href="https://www.gamejob.co.kr/Recruit/joblist?menucode=searchtot&amp;searchtype=all&amp;searchstring=%ec%bb%b4%ed%88%ac%ec%8a%a4%eb%a1%9c%ec%b9%b4" onclick="fnCloseMenu();">CAREERS</a>
+        
+    </li>
+
+    <script>
+        $(document).ready(function () {
+            let urlPath = '/' + String(window.location.pathname).split('/')[1] + '/';
+
+            $('ul#main_menu').find('li[data-url="' + urlPath + '"]').addClass('on');
+        });
+    </script>
+</ul>
+                    </div>
+                </div>
+            </header><!-- //header -->
+
+            <div id="content-area">
+                
+    
+        <div id="container" class="policy_container">
+            <div class="category_area">
+                
+                    <div class="category active" onclick="fnPolicyInfo($(this), 'privacy-policy');">
+                        개인정보 정책
+                    </div>
+                
+                    <div class="category " onclick="fnPolicyInfo($(this), 'user-license');">
+                        사용자 라이센스
+                    </div>
+                
+            </div>
+            <div id="policy_contents" class="policy_contents">
+                <p><strong>DARKSWORD: BATTLE ETERNITY </strong><strong>개인정보</strong><strong> </strong><strong>정책</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>개인정보</strong><strong> </strong><strong>처리방침</strong></p>
+
+<p>&nbsp;</p>
+
+<p>㈜컴투스로카(이하 ‘회사’라 한다)는 이용자가 모바일 및 온라인 서비스를 안전하게 이용 할 수 있도록 개인정보 보호법 제30조에 따라 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리방침을 수립・공개합니다.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>1</strong><strong>조</strong><strong>(</strong><strong>개인정보의</strong><strong> </strong><strong>처리목적</strong><strong>) </strong></p>
+
+<p>회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 상세하게 안내하고 이용자로부터 별도의 동의를 받습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>회원식별 및 관리</p>
+
+<p>- 회원식별 및 연령확인, 게임서비스 제공, 서비스 제공에 따른 본인인증, 구매 및 요금결제, 상품 및 서비스의 배송 등</p>
+
+<p>- 불량 회원의 부정이용 방지와 비인가 사용 방지, 가입의사 확인, 회원 식별, 가입 및 가입 횟수 제한, 구매내역 확인, 타인에 의한 결제사실 확인</p>
+
+<p>- 정보주체의 개인정보 열람, 정정, 삭제, 처리정지 요구 시 본인확인 및 개인정보처리</p>
+
+<p>- 만 14세 미만 아동의 법정대리인 본인확인 및 법정대리인의 동의의사 확인</p>
+
+<p>고객상담 및 민원처리</p>
+
+<p>- 고객문의 대응, 분쟁 조정을 위한 기록보존, 불만처리 등 민원처리, 고지사항 전달</p>
+
+<p>광고 및 마케팅 활용</p>
+
+<p>- 이벤트 등의 마케팅 활동 안내</p>
+
+<p>- 게임 업데이트, 신규서비스 이용 안내</p>
+
+<p>- 이벤트 참여 의사 확인, 이벤트 참여자에 대한 경품 배송, 제세공과금 처리</p>
+
+<p>게임퍼블리싱 제안사 관리</p>
+
+<p>- 퍼블리싱 게임 및 퍼블리싱 제안사 관리, 제휴 신청에 따른 본인확인 및 원활한 의사소통 경로 확보</p>
+
+<p>기타</p>
+
+<p>- 신규 서비스 개발 및 맞춤 서비스 제공, 통계학적 특성에 따른 서비스 제공 및 광고 게재, 서비스의 유효성 확인, 이용자의 서비스 이용에 대한 통계</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>2</strong><strong>조</strong><strong>(</strong><strong>처리하는</strong><strong> </strong><strong>개인정보</strong><strong> </strong><strong>항목</strong><strong> </strong><strong>및</strong><strong> </strong><strong>방법</strong><strong>) </strong></p>
+
+<p>회사는 개별 게임 어플리케이션이나 홈페이지, 문의 전화 등을 통해 아래와 같이 최소한의 개인정보를 수집하고 있습니다. 또한, 선택정보의 경우 입력하지 않아도 게임 및 서비스 이용에 제한이 없습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>고객 상담 및 민원처리 서비스</p>
+
+<p>- [온라인문의] 이메일, 아이디 또는 게임 닉네임, IP 주소</p>
+
+<p>- [유선문의] 전화번호 또는 휴대폰번호</p>
+
+<p>- 문의에 대한 확인 및 답변을 위하여 필요한 정보</p>
+
+<p>&nbsp;</p>
+
+<p>광고 및 마케팅 활용</p>
+
+<p>- [경품배송시] 이름, 휴대폰번호, 주소 ※ 단, 개별 이벤트 페이지에 기재된 항목을 우선함</p>
+
+<p>&nbsp;</p>
+
+<p>인터넷 서비스 이용과정에서 자동으로 수집되는 정보</p>
+
+<p>- IP주소, 쿠키, 서비스 이용기록, 방문기록, 불량 이용기록 등</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>3</strong><strong>조</strong><strong>(</strong><strong>개인정보의</strong><strong> </strong><strong>처리</strong><strong> </strong><strong>및</strong><strong> </strong><strong>보유기간</strong><strong>) </strong></p>
+
+<p>회사는 개인정보의 수집 및 이용목적 달성 후에는 수집한 개인정보를 지체없이 파기합니다.</p>
+
+<p>다만 관계법령의 규정에 의해 보관해야 하는 경우, 아래 법령에 따라 개인정보를 보관하고 있습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>회원식별정보</p>
+
+<p>- 탈퇴 시 (단, ID, E-mail은 탈퇴한 날로부터 14일 후)</p>
+
+<p>- 근거: 정보주체 동의(개인정보보호법)</p>
+
+<p>법정대리인의 동의를 위해 수집한 정보</p>
+
+<p>- 법정대리인 동의완료시 (단, 동의이력보관을 목적으로 아동개인정보 수집목적 달성시까지 보관)</p>
+
+<p>- 근거: 정보주체 동의(개인정보보호법)</p>
+
+<p>고객 상담 및 민원처리 정보</p>
+
+<p>- 3년</p>
+
+<p>- 근거: 전자상거래 등에서의 소비자보호에 관한 법률</p>
+
+<p>결제/환불관련 정보</p>
+
+<p>- 5년</p>
+
+<p>- 근거: 전자상거래 등에서의 소비자보호에 관한 법률</p>
+
+<p>이벤트 및 프로모션 정보</p>
+
+<p>- 개별 이벤트 페이지에 기재된 기간</p>
+
+<p>- 근거: 정보주체 동의(개인정보보호법)</p>
+
+<p>제세공과금 처리를 위한 정보</p>
+
+<p>- 5년</p>
+
+<p>- 근거: 국세기본법, 소득세법</p>
+
+<p>광고성 정보전송에 따른 수신동의이력</p>
+
+<p>- 18개월</p>
+
+<p>- 근거: 정보통신망 이용촉진 및 정보보호 등에 관한 법률</p>
+
+<p>게임 퍼블리싱 제안 정보</p>
+
+<p>- 게임검토 완료 후 1개월</p>
+
+<p>- 근거: 정보주체 동의(개인정보보호법)</p>
+
+<p>이용자의 인터넷 등 로그기록/ 이용자의 접속지 추적자료</p>
+
+<p>- 3개월</p>
+
+<p>- 근거: 통신비밀보호법</p>
+
+<p>그 외의 통신사실 확인 자료</p>
+
+<p>- 1년</p>
+
+<p>- 근거: 통신비밀보호법</p>
+
+<p>&nbsp;</p>
+
+<p>또한, 회사는 개인정보 유효기간제에 따라 1년간 서비스를 이용하지 않은 이용자의 개인정보를 별도로 분리 보관 또는 파기합니다.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>4</strong><strong>조</strong><strong>(</strong><strong>개인정보의</strong><strong> </strong><strong>제</strong><strong>3</strong><strong>자</strong><strong> </strong><strong>제공</strong><strong>) </strong></p>
+
+<p>회사는 이용자의 개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며, 이용자의 동의가 있거나, 법률에서 허용하는 특별한 사유가 있는 경우에만 개인정보를 제3자에게 제공합니다. 다만 아래의 경우에는 주의를 기울여 개인정보를 제공할 수 있습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>1. 이용자가 사전에 동의한 경우</p>
+
+<p>2. 법령의 규정에 의거하여 자료 제공이 강제되는 경우 또는 적법한 절차에 의한 법원, 수사기관, 기타 행정기관의 요청이 있는 경우</p>
+
+<p>3. 서비스 제공에 따른 요금 정산을 위해 필요한 경우</p>
+
+<p>4. 특정 개인을 식별할 수 없는 형태로 제3자에게 제공하는 경우</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>5</strong><strong>조</strong><strong>(</strong><strong>이용자</strong><strong> </strong><strong>및</strong><strong> </strong><strong>법정대리인의</strong><strong> </strong><strong>권리와</strong><strong> </strong><strong>그</strong><strong> </strong><strong>행사방법</strong><strong>) </strong></p>
+
+<p>① 이용자는 회사에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.</p>
+
+<p>&nbsp;&nbsp; 1. 개인정보 열람요구</p>
+
+<p>&nbsp;&nbsp; 2. 오류 등이 있을 경우 정정 요구</p>
+
+<p>&nbsp;&nbsp; 3. 삭제요구</p>
+
+<p>&nbsp;&nbsp; 4. 처리정지 요구</p>
+
+<p>&nbsp;&nbsp; 5. 동의 철회 요구</p>
+
+<p>② 제1항에 따른 권리 행사는 회사에 대해 서면, 전화, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 개인정보 보호책임자 및 담당부서(contact@com2usroca.com)로 문의하실 수 있습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp; 회사는 이용자의 요청이 있는 경우 지체없이 필요한 조치를 취하겠습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>③ 이용자가 개인정보의 오류 등에 대한 정정 또는 삭제를 요구한 경우에는 회사는 정정 또는 삭제를 완료할 때까지 당해 개인정보를 이용하거나 제3자에게 제공하지 않습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>④ 제1항에 따른 권리 행사는 이용자의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하여야 합니다.</p>
+
+<p>&nbsp;</p>
+
+<p>⑤ 이용자는 개인정보 보호법 등 관계법령을 위반하여 회사가 처리하고 있는 이용자 본인이나 타인의 개인정보 및 사생활을 침해하여서는 안됩니다.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>6</strong><strong>조</strong><strong>(</strong><strong>개인정보</strong><strong> </strong><strong>자동</strong><strong> </strong><strong>수집</strong><strong> </strong><strong>장치의</strong><strong> </strong><strong>설치</strong><strong>・</strong><strong>운영</strong><strong> </strong><strong>및</strong><strong> </strong><strong>거부에</strong><strong> </strong><strong>관한</strong><strong> </strong><strong>사항</strong><strong>) </strong></p>
+
+<p>① 회사는 이용자에게 개별적인 맞춤서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를 사용합니다.</p>
+
+<p>② 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에게 보내는 소량의 정보이며 이용자의 PC 컴퓨터내의 하드디스크에 저장되기도 합니다.</p>
+
+<p>1. 쿠키의 사용목적: 이용자가 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 인기 검색어, 보안접속 여부, 등을 파악하여 이용자에게 최적화된 정보 제공을 위해 사용됩니다.</p>
+
+<p>2. 쿠키의 설치・운영 및 거부 : 웹브라우저 상단의 도구&gt;인터넷 옵션&gt;개인정보 메뉴의 옵션 설정을 통해 쿠키 저장을 거부 할 수 있습니다.</p>
+
+<p>3. 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>7</strong><strong>조</strong><strong>(</strong><strong>개인정보의</strong><strong> </strong><strong>파기</strong><strong>) </strong></p>
+
+<p>① 회사는 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.</p>
+
+<p>② 또한 더 이상 사용자에게 앱 경험이나 서비스를 제공할 필요가 없을 경우(기능 구현에 필수적으로 필요한 정보가 아닌 것으로 판단되는 경우), 연계된 SNS 계정을 삭제하는 경우, 계정정보를 연계하는 해당 업체의 요청이 있는 경우, 법이나 규정에 의해 필요한 경우, 해당 정보는 즉시 삭제됩니다.</p>
+
+<p>③ 이용자로부터 동의 받은 개인정보 보유기간이 경과하거나 처리목적이 달성되었음에도 불구하고 다른 법령에 따라 개인정보를 계속 보존하여야 하는 경우에는,</p>
+
+<p>&nbsp;</p>
+
+<p>해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여 보존합니다.</p>
+
+<p>&nbsp;</p>
+
+<p>④ 개인정보 파기의 절차 및 방법은 다음과 같습니다.</p>
+
+<p>&nbsp;&nbsp; 1. 파기절차</p>
+
+<p>&nbsp; &nbsp; 이용자의 회원정보는 고지 및 동의 받은 기간 동안 보유하고 이용하며, 개인정보의 수집 및 이용목적이 달성되거나 보유기간 만료, 회원 탈퇴 시 지체 없이 파기하는 것을 원칙으로 합니다.</p>
+
+<p>&nbsp;&nbsp; 2. 파기방법</p>
+
+<p>&nbsp; &nbsp; 회사는 전자적 파일 형태로 기록・저장된 개인정보는 기록을 재생할 수 없도록 로우레벨포멧(Low Level Format) 등의 방법을 이용하여 파기하며, 종이 문서에 기록・저장된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>8</strong><strong>조</strong><strong>(</strong><strong>개인정보의</strong><strong> </strong><strong>안전성</strong><strong> </strong><strong>확보조치</strong><strong>) </strong></p>
+
+<p>회사는 이용자의 개인정보를 처리함에 있어 개인정보가 분실, 도난, 유출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 조치를 취하고 있습니다.</p>
+
+<p>① 관리적 조치: 내부관리계획 수립 및 시행, 임직원 및 개인정보취급자 교육, 개인정보보호 전담조직 운영 등</p>
+
+<p>② 기술적 조치: 개인정보처리시스템 등의 접근권한관리, 보안프로그램 설치, 접근통제시스템 설치, 고유식별정보 등의 암호화 등</p>
+
+<p>③ 물리적 조치: 전산실, 자료보관실 등의 접근통제, 출입통제 절차 수립 등</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>9</strong><strong>조</strong><strong>(</strong><strong>개인정보</strong><strong> </strong><strong>보호책임자</strong><strong>) </strong></p>
+
+<p>① 회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 이용자의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</p>
+
+<p>&nbsp;&nbsp; ▶ 개인정보 보호책임자</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; 성명 : 이영헌 COO</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; 소속 : 경영사업실&nbsp;<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp;전화 : 031-625-0923</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; 연락처 : contact@com2usroca.com ※ 개인정보 보호 담당부서로 연결됩니다.</p>
+
+<p>&nbsp;</p>
+
+<p>② 이용자는 회사의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 보호책임자 및 담당부서로 문의하실 수 있습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>회사는 이용자의 문의에 대해 지체없이 답변 및 처리해드릴 것입니다.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>10</strong><strong>조</strong><strong>(</strong><strong>개인정보</strong><strong> </strong><strong>열람청구</strong><strong>) </strong></p>
+
+<p>이용자는 개인정보 보호법 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다.</p>
+
+<p>회사는 정보주체의 개인정보 열람청구가 신속하게 처리되도록 노력하겠습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp; ▶ 개인정보 열람청구 접수・처리 부서</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; 부서명 : 경영사업실<br>
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; 전화 : 031-625-0923</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; 연락처 : contact@com2usroca.com</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>11</strong><strong>조</strong><strong>(</strong><strong>권익침해</strong><strong> </strong><strong>구제방법</strong><strong>) </strong></p>
+
+<p>정보주체는 아래의 기관에 대해 개인정보 침해에 대한 피해구제, 상담 등을 문의하실 수 있습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>&lt;아래의 기관은 회사와는 별개의 기관으로서, 회사의 자체적인 개인정보 불만처리, 피해구제 결과에 만족하지 못하시거나 보다 자세한 도움이 필요하시면 문의하여 주시기 바랍니다&gt;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp; ▶ 개인정보 침해신고센터 (한국인터넷진흥원 운영)</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; - 소관업무 : 개인정보 침해사실 신고, 상담 신청</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; - 홈페이지 : privacy.kisa.or.kr</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; - 전화 : (국번없이) 118</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; - 주소 : (58324) 전남 나주시 진흥길 9(빛가람동 301-2) 3층 개인정보침해신고센터</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp; ▶ 개인정보 분쟁조정위원회</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; - 소관업무 : 개인정보 분쟁조정신청, 집단분쟁조정 (민사적 해결)</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; - 홈페이지 : www.kopico.go.kr</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; - 전화 : (국번없이) 1833-6972</p>
+
+<p>&nbsp;&nbsp; &nbsp; &nbsp; - 주소 : (03171)서울특별시 종로구 세종대로 209 정부서울청사 4층</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp; ▶ 대검찰청 사이버수사과 : (국번없이)1301 (www.spo.go.kr)</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp; ▶ 경찰청 사이버수사국 : (국번없이)182 (https://ecrm.cyber.go.kr/minwon/main)</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>12</strong><strong>조</strong><strong>(</strong><strong>기타</strong><strong>)</strong></p>
+
+<p>회사는 다른 회사의 웹사이트 또는 자료에 대한 링크를 제공할 수 있습니다. 이 경우 회사는 외부사이트 및 자료에 대한 아무런 통제권이 없으므로 그로부터 제공받는 서비스나 자료의 유용성, 진실성, 적법성에 대해 책임질 수 없으며 보증할 수 없습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>회사가 포함하고 있는 링크를 클릭(click)하여 타 사이트(site)의 페이지로 옮겨갈 경우 해당 사이트의 개인정보 처리방침은 회사와 무관하므로 새로 방문한 사이트의 정책을 확인하시기 바랍니다.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>제</strong><strong>13</strong><strong>조</strong><strong>(</strong><strong>개인정보</strong><strong> </strong><strong>처리방침</strong><strong> </strong><strong>변경</strong><strong>) </strong></p>
+
+<p>회사는 개인정보 처리방침의 변경(내용 추가, 삭제 및 수정)이 있을 시 개정 최소 7일 전부터 이용자에게 공지하도록 하겠습니다. 특히, 이용자의 권리에 중대한 변경이 있을 경우에는 최소 30일 전에 공지합니다.</p>
+
+            </div>
+        </div><!-- //container -->
+        <script>
+            
+        </script>
+    
+
+            </div>
+
+            <footer id="footer">
+                <div class="inner">
+                    <p class="logo">컴투스 로카(COM2US ROCA)</p>
+                    <ul class="info">
+                        <li>COM2US ROCA</li>
+                        <li>대표 : 신현승</li>
+                        <li>주소 : 경기도 성남시 분당구 대왕판교로 670 B동 701호 컴투스로카</li>
+                        <li>TEL : 031-625-0923</li>
+                    </ul>
+                    <p class="policy"><a target="_self" href="/policy/privacy-policy">개인정보 정책</a> | <a target="_self" href="/policy/user-license">사용자 라이센스</a></p>
+                    <p class="copy">Copyright © Com2usroca Corporation. <span class="m-block">All rights reserved.</span></p>
+                    <ul class="sns-link">
+                        <li class="facebook"><a onclick="alert('준비중 입니다.');return false;" title="Facebook">facebook</a></li>
+                        <li class="youtube"><a onclick="alert('준비중 입니다.');return false;" title="Youtube">youtube</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div><!-- //wrap -->
+	
+    <script>
+        $(document).ready(function (){
+           initMainMenu();
+        });
+    </script>
+</body></html>

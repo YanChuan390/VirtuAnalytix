@@ -1,0 +1,317 @@
+<html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #but
+        {
+          color: white;
+        }
+        #but:hover
+        {
+          color: yellow;
+        }
+
+        textarea{
+            width: 100%;
+            background: transparent;
+            color:orange;
+            border-style: solid;
+            border-width: 2px;
+            font-weight:bold
+            font-family:Verdana;
+            font-size:18px;
+            resize: none;
+        }
+
+        .for_input{
+            width: 100%;
+            background: transparent;
+            color:orange;
+            border-style: solid;
+            border-width: 2px;
+            font-weight:bold
+            font-family:Verdana;
+            font-size:18px;
+        }
+
+        .for_button{
+            background: transparent;
+            color:white;
+            border-style: solid;
+            border-width: 2px;
+            font-size: 20px;
+            font-weight:bold;
+        }
+
+        .texte {
+           text-align: justify;
+           color: white;
+           padding: 10px;
+           font-weight: normal;
+           font-size: 22px;
+        }
+
+        .text_neopunk {
+           color: cyan;
+        }
+
+        .text_copyright {
+           color: cyan;
+           padding: 10px;
+        }
+
+        .text_magenta {
+           color: magenta;
+           padding: 10px;
+        }
+
+        .text_orange {
+           color: orange;
+           padding: 10px;
+        }
+
+        .orange{
+         color: orange;
+        }
+
+        .yellow{
+         color: yellow;
+        }
+
+        .red{
+         color: red;
+        }
+
+
+        .title {
+            color: #A4D8D8;
+            padding: 10px;
+            font-size: 70px;
+        }
+
+        .link_selected {
+            color: #C1E1C1;
+            font-family: Verdana;
+            padding: 10px;
+            font-size: 38px;
+        }
+
+        .link_ready {
+            font-family: Verdana;
+            padding: 10px;
+            font-size: 38px;
+        }
+
+        .lang_selected {
+            color: lawngreen;
+            font-family: Verdana;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .lang_ready {
+            font-family: Verdana;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        a:link {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .menuitem {
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .pic{
+            width: 100%;
+            border: 1px solid white;
+            margin-top: 10px;
+        }
+
+
+        @media only screen and (max-width:800px) {
+            /* For tablets: */
+            .link_ready {
+                font-size: 22px;
+            }
+
+            .link_selected {
+                font-size: 22px;
+            }
+         
+            .lang_ready {
+               font-size: 18px;
+            }
+
+            .lang_selected {
+                font-size: 18px;
+            }
+
+            .title{
+                font-size: 46px;
+            }
+
+            textarea{
+               font-size:14px;
+            }
+            .texte {
+                font-size: 20px;
+             }
+        }
+
+        @media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .link_ready {
+                font-size: 17px;
+                padding: 9px;
+            }
+
+            .link_selected {
+                font-size: 17px;
+                padding: 9px;
+            }
+
+            .lang_ready {
+               font-size: 14px;
+                padding: 9px;
+            }
+
+            .lang_selected {
+                font-size: 14px;
+                padding: 9px;
+            }
+
+            .title{
+                font-size: 36px;
+                padding: 9px;
+            }
+            
+            textarea{
+               font-size:14px;
+                padding: 9px;
+            }
+            .texte {
+                font-size: 16px;
+             }
+        }
+
+         @media only screen and (max-width:400px) {
+            /* For mobile phones: */
+            .link_ready {
+                font-size: 14px;
+                padding: 7px;
+            }
+
+            .link_selected {
+                font-size: 14px;
+                padding: 7px;
+            }
+
+            .lang_ready {
+               font-size: 10px;
+                padding: 7px;
+            }
+
+            .lang_selected {
+                font-size: 10px;
+                padding: 7px;
+            }
+
+            .title{
+                font-size: 26px;
+                padding: 7px;
+            }
+            
+            textarea{
+               font-size:14px;
+                padding: 7px;
+            }
+                      .texte {
+                font-size: 12px;
+             }
+        }
+
+         @media only screen and (max-width:300px) {
+            /* For mobile phones: */
+            .link_ready {
+                font-size: 12px;
+                padding: 5px;
+            }
+
+            .link_selected {
+                font-size: 12px;
+                padding: 5px;
+            }
+
+            .lang_ready {
+               font-size: 8px;
+               padding: 5px;
+            }
+
+            .lang_selected {
+                font-size: 8px;
+                padding: 5px;
+            }
+
+            .title{
+                font-size: 20px;
+                padding: 5px;
+            }
+            
+            textarea{
+               font-size:14px;
+                padding: 5px;
+            }
+            .texte {
+               font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body style="font-weight:bold; font-family:Verdana; background-color:black;">
+
+    <div class="title">
+        Arcade
+    </div>
+<span class="link_selected">Privacy Policy</span>
+<div class="texte">
+     <p>To ensure the best experience with Arcade, the game collects the following personal informations:</p>
+     - The user ID<br>
+     - The user name profile<br>
+     <p>All these informations are ONLY used to feed the games's Leaderboards.</p>
+     <p>But what is a Leaderboard?<br>
+     Leaderboards provide a way to keep track of players and their scores in relation to other.<br>
+     These can help create competition and increase engagement among all users.<br></p>
+    <p><b>Deletion</b><br>If you wish to have your personal data deleted, please contact us at contact@neopunk.org</p>
+    <p>NeoPunk</p>
+</div>
+
+
+
+</body></html>

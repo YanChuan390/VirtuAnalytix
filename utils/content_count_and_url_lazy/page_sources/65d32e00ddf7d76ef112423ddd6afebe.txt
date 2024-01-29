@@ -1,0 +1,40 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+    <style>
+      body,
+      html {
+        padding: 8px;
+        margin: 0;
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+
+      iframe {
+        width: calc(100vw - 16px);
+        height: calc(100% - 16px);
+        border: none;
+        box-sizing: border-box;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <iframe id="iframe" src="/api/contentmanagement/title/privacy/html?lang=en"></iframe>
+    <script>
+      window.onload = () => {
+        const privacyLink = document.createElement('link');
+        privacyLink.rel = 'stylesheet';
+        privacyLink.href = '/components/termsAndPrivacy/dialog.privacyPolicy.css';
+        const iframe = document.getElementById("iframe");
+        iframe.contentWindow.document.head.appendChild(privacyLink);
+      }
+    </script>
+  
+
+
+</body></html>

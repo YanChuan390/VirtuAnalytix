@@ -1,0 +1,119 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeons &amp; Treasure</title>
+  <meta name="description" content="Dungeons &amp; Treasure VR - Endless Roguelike Multiplayer Experience">
+  <meta name="author" content="SDC Ventures">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.min.VSep271518172021.css">
+  <link rel="stylesheet" href="css/style.min.VSep271518172021.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html"> <img id="dandt-logo" src="images/dungeonsandtreasure-logo.png" alt="Dungeons &amp; Treasure VR"> </a>
+    <a href="https://store.steampowered.com/app/686360/Dungeons__Treasure_VR/" alt="Steam Link Nav" aria-label="Steam Link Nav"> <img id="steam-logo" src="images/steam-logo.png" alt="Steam Nav"> </a>
+  </div>
+
+  <video autoplay="" muted="" loop="" id="background-video-pc">
+    <source src="videos/background-video-pc.mp4" type="video/mp4" id="background-video-pc">
+  </video>
+
+  <video autoplay="" muted="" loop="" id="background-video-mobile">
+  <source src="videos/background-video-mobile.mp4" type="video/mp4" id="background-video-mobile">
+  </video>
+
+  <div class="background-image">
+
+    <div class="yt-video">
+      <iframe src="https://www.youtube.com/embed/5g3lgG1N1aQ" title="Dungeons &amp; Treasure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+      </iframe>
+    </div>
+
+    <div id="steam-logo-mobile">
+    <h1> Get it now on Steam! </h1>
+    <a href="https://store.steampowered.com/app/686360/Dungeons__Treasure_VR/" alt="Steam Link"> <img id="steam-logo-mobile" src="images/steam-logo.png" alt="Steam"> </a>
+    </div>
+
+    <div id="form">
+    <h1> Sign up for news and updates </h1>
+  <form class="form" method="post" action="postmail.php">
+    <input type="email" placeholder="Your E-Mail" name="email" id="txtEmail">
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+  <div id="submitModal">
+    <div class="submitModal-content">
+      <span id="submitModal-content"> <p> You successfully signed up, thank you for your interest. </p> </span>
+    </div>
+  </div>
+  </div>
+  
+  <div class="about">
+
+    
+   <div id="text-content" class="text-content">
+
+    <h1> About Dungeons &amp; Treasure </h1>
+    <p>Dungeons &amp; Treasure VR is a roguelike multiplayer. The game is an endless fast-paced action adventure that gets harder as you progress.
+    You progress through different environments with unique enemies, bosses and challenges like traps and minor puzzles.
+     After a playthrough you earn a special currency which can be used to unlock new items, weapons and companions.</p>
+
+    </div>
+ 
+
+    <div id="imagesContainer" class="images" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 262.525px;">
+      <div id="s0" class="img-c visibility-hidden display-none"></div>
+      <div id="s1" class="img-c display-none" onclick="makeActive(this.id)">
+        <img src="images/Locomotions.jpg" alt="Locomotions">
+      </div>
+      <div id="s2" class="img-c display-none" onclick="makeActive(this.id)">
+        <img src="images/Multiplayer.jpg" alt="Multiplayer">
+      </div>
+      <div id="s3" class="img-c display-none" onclick="makeActive(this.id)">
+        <img src="images/WeaponsItems.jpg" alt="Weapons &amp; Items">
+      </div>
+      <div id="s4" class="img-c" onclick="makeActive(this.id)">
+        <img src="images/Boss.jpg" alt="Boss">
+      </div>
+      <div id="s5" class="img-c active" onclick="makeActive(this.id)">
+        <img src="images/About.jpg" alt="About">
+      </div>
+      <div id="s6" class="img-c" onclick="makeActive(this.id)">
+        <img src="images/Enemies.jpg" alt="Enemies">
+      </div>
+      <div id="s7" class="img-c display-none" onclick="makeActive(this.id)">
+        <img src="images/Misc.jpg" alt="Misc">
+      </div>
+      <div id="s8" class="img-c display-none" onclick="makeActive(this.id)">
+        <img src="images/Save.jpg" alt="Save">
+      </div>
+      <div id="s9" class="img-c visibility-hidden display-none"></div> 
+    </div>
+
+    <div id="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <span id="modal-content"> </span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer">
+      <a href="mailto:VRGaming@sdc-ventures.com"> <p>  VRGaming@sdc-ventures.com  </p> </a>
+    </div>
+    <div class="rights">
+      <p> © <span id="year">2023</span> Dungeons &amp; Treasure. All rights reserved. </p>
+    </div>
+  </footer>
+
+<script src="js/hammer.js"></script>
+<script src="js/main.VOct11546592021.js"></script>
+
+</body></html>

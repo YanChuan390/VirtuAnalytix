@@ -1,0 +1,463 @@
+<html class="not-ie  js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths csstransforms csstransforms3d csstransitions" lang="en" style=""><!--<![endif]--><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>FlyInside: Virtual Reality Flight Simulation</title>
+
+	<link rel="stylesheet" href="/content/css/style.css?v=3" media="screen">
+
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,800,700,400italic|PT+Serif:400,400italic">
+
+	<link rel="stylesheet" href="/content/css/fancybox.css" media="screen">
+
+    <!-- Global site tag (gtag.js) - Google Ads: 818887353 -->
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-VENYD0RJSS&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" charset="UTF-8" async="" src="https://consent.cookiebot.com/477ea70a-a452-4ae8-a134-376f948abe30/cc.js?renew=false&amp;referer=flyinside-fsx.com&amp;dnt=false&amp;init=false"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/signals/config/329859757747168?v=2.9.125&amp;r=stable&amp;domain=flyinside-fsx.com" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-818887353"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-818887353');
+    </script>
+
+
+	<script src="/Scripts/modernizr-2.6.2.js"></script>
+
+	
+
+	<script src="/js/modernizr.custom.js"></script>
+	<meta name="google-site-verification" content="tks7HATGLeCgVOJ6UvGBmPuHc9OlcES1Sk9nsd7gxG4">
+	<script src="/Scripts/jquery-1.10.2.js"></script>
+
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '329859757747168');
+		fbq('track', 'PageView');
+	</script>
+
+	<!-- End Facebook Pixel Code -->
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="477ea70a-a452-4ae8-a134-376f948abe30" type="text/javascript" async=""></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/54/4/intl/zh_cn/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/54/4/intl/zh_cn/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/54/4/intl/zh_cn/geocoder.js"></script><style type="text/css" id="CookieConsentStateDisplayStyles">.cookieconsent-optin-preferences,.cookieconsent-optin-statistics,.cookieconsent-optin-marketing,.cookieconsent-optin{display:none;}.cookieconsent-optout-preferences,.cookieconsent-optout-statistics,.cookieconsent-optout-marketing,.cookieconsent-optout{display:block;display:initial;}</style><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="true" type="text/javascript" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/818887353/?random=1694373487356&amp;cv=11&amp;fst=1694373487356&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be3960&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fflyinside-fsx.com%2FHome%2FSim&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=FlyInside%3A%20Virtual%20Reality%20Flight%20Simulation&amp;us_privacy=1YNY&amp;auid=413312717.1694373487&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B116.0.5845.180%7CNot)A%253BBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B116.0.5845.180&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script><style type="text/css" id="CookiebotDialogStyle">#CybotCookiebotDialog{clip:auto;text-rendering:geometricPrecision;animation:none;animation-delay:0;animation-direction:normal;animation-duration:0;animation-fill-mode:none;animation-iteration-count:1;animation-name:none;animation-play-state:running;animation-timing-function:ease;backface-visibility:visible;background:0;background-attachment:scroll;background-clip:border-box;background-color:transparent;background-color:#ffffff;background-image:none;background-origin:padding-box;background-position:0 0;background-position-x:0;background-position-y:0;background-repeat:repeat;background-size:auto auto;border:0;border-bottom-left-radius:0;border-bottom-right-radius:0;border-collapse:separate;border-image:none;border-radius:0;border-spacing:0;border-top-color:inherit;border-top-left-radius:0;border-top-right-radius:0;border-top-style:none;border-top-width:medium;bottom:auto;box-shadow:none;box-shadow:2px 2px 14px 2px #121212;caption-side:top;clear:none;color:inherit;color:#2a2a2a;column-fill:balance;column-gap:normal;column-rule:medium none currentColor;column-rule-color:currentColor;column-rule-style:none;column-rule-width:none;column-span:1;columns:auto;content:normal;counter-increment:none;counter-reset:none;cursor:auto;display:inline;empty-cells:show;filter:Alpha(opacity=100);float:none;font:normal;font-family:inherit;font-family:Segoe UI,Arial,Helvetica,Verdana,sans-serif;font-size:medium;font-size:8pt;font-style:normal;font-variant:normal;font-weight:400;height:auto;hyphens:none;left:auto;left:0;letter-spacing:normal;line-height:normal;line-height:1.231;list-style:none;list-style-image:none;list-style-position:outside;list-style-type:disc;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;opacity:1;orphans:0;outline:0;outline-color:invert;outline-style:none;outline-width:medium;overflow:visible;overflow-x:visible;overflow-y:visible;padding:0 0 8px;page-break-after:auto;page-break-before:auto;page-break-inside:auto;perspective:none;perspective-origin:50% 50%;position:static;position:fixed;right:auto;tab-size:8;table-layout:auto;text-align:inherit;text-align:left;text-align-last:auto;text-decoration:none;text-decoration-color:inherit;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-shadow:none;text-transform:none;top:auto;top:-800px;transform:none;transform-style:flat;transition:none;transition-delay:0s;transition-duration:0s;transition-property:none;transition-timing-function:ease;vertical-align:baseline;visibility:visible;white-space:normal;widows:0;width:auto;width:100%;word-spacing:normal;z-index:auto;z-index:2147483645}#CybotCookiebotDialog,#CybotCookiebotDialog :after,#CybotCookiebotDialog :before,#CybotCookiebotDialog:after,#CybotCookiebotDialog:before,#CybotCookiebotDialogBody *,#CybotCookiebotDialogDetail *{box-sizing:content-box}#CybotCookiebotDialog[dir=rtl]{text-align:right}#CybotCookiebotDialog a{font-family:Segoe UI,Arial,Helvetica,Verdana,sans-serif;line-height:1.231}#CybotCookiebotDialog a,#CybotCookiebotDialog a:hover{color:#2a2a2a;text-decoration:underline}#CybotCookiebotDialog div{font-family:Segoe UI,Arial,Helvetica,Verdana,sans-serif;line-height:1.231}#CybotCookiebotDialog br,#CybotCookiebotDialog td{line-height:1.231}#CybotCookiebotDialogDetailBodyContentCookieContainerAdvertising,#CybotCookiebotDialogDetailBodyContentCookieContainerNecessary,#CybotCookiebotDialogDetailBodyContentCookieContainerPreference,#CybotCookiebotDialogDetailBodyContentCookieContainerStatistics,#CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified{margin:0}#CybotCookiebotDialogPoweredbyLink{height:36px;margin-left:6px;margin-right:0;margin-top:12px;position:absolute;width:48px;z-index:2147483646}div[dir=rtl] #CybotCookiebotDialogPoweredbyLink{margin-left:0;margin-right:6px}#CybotCookiebotDialogPoweredbyImage{border:none;margin:2px 0 0 3px;padding:0;width:46px}#CybotCookiebotDialogBody{margin-left:auto;margin-right:auto;max-width:640px;overflow:hidden;padding-left:0;padding-right:8px;vertical-align:top}div[dir=rtl] #CybotCookiebotDialogBody{padding-left:8px;padding-right:0}#CybotCookiebotDialogBodyContent{font-size:9.5pt;font-weight:400;line-height:130%;min-height:32px;padding:12px 0 8px 80px}div[dir=rtl] #CybotCookiebotDialogBodyContent{padding-left:0;padding-right:80px}#CybotCookiebotDialogBodyContentControls{font-family:Segoe UI,Arial,Helvetica,Verdana,sans-serif;font-size:9.5pt;font-weight:400;line-height:130%;min-height:10px;padding:12px 0 8px 80px}div[dir=rtl] #CybotCookiebotDialogBodyContentControls{padding-left:0;padding-right:80px}.CybotCookiebotDialogBodyContentControlsWrapper{display:inline-block;line-height:16px;margin-left:0;margin-right:14px;position:relative}div[dir=rtl] .CybotCookiebotDialogBodyContentControlsWrapper{margin-left:14px;margin-right:0}#CybotCookiebotDialogBodyContentTitle{color:#2a2a2a;display:block;float:none;font-family:Segoe UI,Arial,Helvetica,Verdana,sans-serif;font-size:12pt;font-weight:700;letter-spacing:normal;line-height:100%;margin:2px 0 6px;padding:0;position:static;text-align:left;visibility:visible}div[dir=rtl] #CybotCookiebotDialogBodyContentTitle{text-align:right}#CybotCookiebotDialogBodyContentText{text-align:left}#CybotCookiebotDialogBodyContentText ul{display:block;list-style-type:disc;margin:1em 0 1.25em;padding:0 0 0 40px}#CybotCookiebotDialogBodyContentText ul li{display:list-item;list-style-type:disc;margin:0;padding:0}div[dir=rtl] #CybotCookiebotDialogBodyContentText{text-align:right}#CybotCookiebotDialogBodyButtons{display:block;margin:0 0 6px 6px;padding-left:63px;padding-right:0;z-index:10}div[dir=rtl] #CybotCookiebotDialogBodyButtons{margin:0 6px 6px 0;padding-left:0;padding-right:63px}#CybotCookiebotDialogBodyButtons a,#CybotCookiebotDialogBodyButtons a:hover{color:#ffffff;text-decoration:none}.CybotCookiebotDialogBodyButton{box-sizing:content-box;display:inline-block;font-size:9.5pt;font-weight:600;margin-left:12px;margin-right:0;margin-top:8px;min-width:80px;padding:2px 4px;text-align:center;white-space:nowrap;z-index:10}.CybotCookiebotDialogBodyButton:after,.CybotCookiebotDialogBodyButton:before{box-sizing:content-box}div[dir=rtl] .CybotCookiebotDialogBodyButton{margin-left:0;margin-right:12px}#CybotCookiebotDialogBodyButtonAccept{background-color:#188600;border:1px solid #188600}#CybotCookiebotDialogBodyButtonDecline{background-color:#333333;border:1px solid #333333}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink,#CybotCookiebotDialogBodyLevelDetailsButton{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAMAAAAmGUT3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI3NDEyNDEwNzk0MjExRTQ5RUE5RkRFMUQ3MEU1NTZDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI3NDEyNDExNzk0MjExRTQ5RUE5RkRFMUQ3MEU1NTZDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Qjc0MTI0MEU3OTQyMTFFNDlFQTlGREUxRDcwRTU1NkMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Qjc0MTI0MEY3OTQyMTFFNDlFQTlGREUxRDcwRTU1NkMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz70ohqeAAAABlBMVEVgYGAAAAAPhzbbAAAAAnRSTlP/AOW3MEoAAAAjSURBVHjaYmBkYAQBBkYGIAAxQBQcQ/ggCiLFCGFBCIAAAwADkwAg7Yr51AAAAABJRU5ErkJggg==);background-position:right 12px;background-position-x:right;background-position-y:12px;background-repeat:no-repeat;border-left:0;border-right:5px solid transparent;color:#2a2a2a;display:inline-block;font-size:9pt;margin-top:8px;padding:7px 19px 0 0;text-align:right;text-decoration:none}div[dir=rtl] #CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink,div[dir=rtl] #CybotCookiebotDialogBodyLevelDetailsButton{background-position:left 12px;background-position-x:left;background-position-y:12px;border-left:5px solid transparent;border-right:0;padding-left:19px;padding-right:0}div[dir=rtl] #CybotCookiebotDialogBodyLevelDetailsButton{background-position:left 5px!important;background-position-x:left!important;background-position-y:5px!important}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink:hover,#CybotCookiebotDialogBodyLevelDetailsButton:hover{color:#2a2a2a;text-decoration:underline}.CybotCookiebotDialogBodyLevelDetailsButtonExpanded,.CybotCookiebotDialogBodyLinkExpanded{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAYAAAARx7TFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU0QzAwODExNzk0MjExRTQ4QzBERTBGMTkxMUY2M0M0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjU0QzAwODEyNzk0MjExRTQ4QzBERTBGMTkxMUY2M0M0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTRDMDA4MEY3OTQyMTFFNDhDMERFMEYxOTExRjYzQzQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTRDMDA4MTA3OTQyMTFFNDhDMERFMEYxOTExRjYzQzQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz576KdnAAAATklEQVR42kyO2xEAMQgCJZ3afxFcyGRz+uMD3EHdXbYrJSltrz4Dt4UBNfsWPG614oRwO2Q/Eg+IwvnDj8kjk+48MzmZeNYI/4jRPwEGAFy/MS7NcXxJAAAAAElFTkSuQmCC)!important}div[dir=rtl] .CybotCookiebotDialogBodyLevelDetailsButtonExpanded{background-position:left 5px!important;background-position-x:left!important;background-position-y:5px!important}a#CybotCookiebotDialogBodyLevelDetailsButton{background-position:right 5px;background-position-x:right;background-position-y:5px;color:#2a2a2a;line-height:16px;margin:1px 0 0;padding-left:4px;padding-top:0;text-align:left;text-decoration:none}div[dir=rtl] a#CybotCookiebotDialogBodyLevelDetailsButton{text-align:right}a#CybotCookiebotDialogBodyLevelDetailsButton:hover{color:#2a2a2a;text-decoration:none}#CybotCookiebotDialogBodyButtonDetails{display:inline-block;float:right;outline:none}div[dir=rtl] #CybotCookiebotDialogBodyButtonDetails{float:left}#CybotCookiebotDialogBodyButtonDetails:focus,#CybotCookiebotDialogBodyLevelDetailsButton:focus{text-decoration:underline}#CybotCookiebotDialogBodyLevelWrapper{display:none;pointer-events:none;text-align:right}div[dir=rtl] #CybotCookiebotDialogBodyLevelWrapper{text-align:left}#CybotCookiebotDialogBodyLevelButtons{float:left;font-size:9pt;margin-left:8px;margin-right:0;pointer-events:auto}div[dir=rtl] #CybotCookiebotDialogBodyLevelButtons{float:right;margin-left:0;margin-right:8px}#CybotCookiebotDialogBodyLevelButtonsTable{display:inline-table;margin:5px 0}div[dir=rtl] #CybotCookiebotDialogBodyLevelButtonsTable{margin-left:16px;margin-right:0}#CybotCookiebotDialogBodyLevelButtonsRow{display:table-row}#CybotCookiebotDialogBodyLevelButtonsSelectPane{border:1px solid #cccccc;-webkit-border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px;border-radius:4px 0 0 4px;display:table-cell;padding:4px 3px 3px 9px;text-align:left;vertical-align:top}div[dir=rtl] #CybotCookiebotDialogBodyLevelButtonsSelectPane{-webkit-border-radius:0 4px 4px 0;-moz-border-radius:0 4px 4px 0;border-radius:0 4px 4px 0;text-align:right}#CybotCookiebotDialogBodyLevelButtonAcceptWrapper{display:inline-block;float:right;margin-left:0;margin-right:0;pointer-events:auto}div[dir=rtl] #CybotCookiebotDialogBodyLevelButtonAcceptWrapper{display:inline-block;float:left;margin-left:0;margin-right:0}a#CybotCookiebotDialogBodyLevelButtonAccept{background-color:#188600;border:1px solid #188600;color:#ffffff;display:inline-block;font-size:9.5pt;font-weight:600;margin-left:0;margin-right:0;margin-top:6px;min-width:80px;padding:3px 10px;text-align:center;text-decoration:none;white-space:nowrap;z-index:10}a#CybotCookiebotDialogBodyLevelButtonAccept:hover{color:#ffffff;text-decoration:none}#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper{display:inline-block;float:right;margin-left:0;margin-right:0;padding-bottom:2px;pointer-events:auto}div[dir=rtl] #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper{display:inline-block;float:left;margin-left:0;margin-right:0;padding-bottom:2px}a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection,a#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll{color:#ffffff;display:inline-block;font-size:9.5pt;font-weight:600;height:16px;margin-top:6px;padding:2px 4px;text-align:center;text-decoration:none;white-space:nowrap;z-index:10}a#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll{background-color:#333333;border:1px solid #333333}a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll{background-color:#188600;border:1px solid #188600}a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection{background-color:#188600;border:1px solid #188600}a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover,a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:hover,a#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:hover{color:#ffffff;text-decoration:none}.CybotCookiebotDialogBodyLevelButtonWrapper{display:inline-block;line-height:16px;margin-left:0;margin-right:14px;position:relative}div[dir=rtl] .CybotCookiebotDialogBodyLevelButtonWrapper{margin-left:14px;margin-right:0}.CybotCookiebotDialogBodyLevelButtonWrapper:last-of-type{margin-left:0;margin-right:7px}div[dir=rtl] .CybotCookiebotDialogBodyLevelButtonWrapper:last-of-type{margin-left:7px;margin-right:0}.CybotCookiebotDialogBodyLevelButtonWrapper label{white-space:nowrap}input[type=checkbox].CybotCookiebotDialogBodyLevelButton{cursor:pointer;left:0;opacity:0;position:absolute;top:0;z-index:2}input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label:after,input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label:before{content:normal}input [type=checkbox].CybotCookiebotDialogBodyLevelButton.CybotCookiebotDialogBodyLevelButtonDisabled{cursor:default}input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label{background-image:url();background-position:left 1px;background-repeat:no-repeat;color:inherit;cursor:pointer;display:inline-block;font-size:inherit;height:auto;left:0;line-height:16px;margin-bottom:0;margin-top:0;min-height:14px;padding:1px 0 0 17px;position:relative;top:0;vertical-align:top;width:auto;z-index:1}div[dir=rtl] input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label{background-position:right 1px;padding:2px 17px 0 0}input[type=checkbox].CybotCookiebotDialogBodyLevelButton:checked+label{background-image:url();background-position:left 1px;background-repeat:no-repeat;display:inline-block;height:auto;line-height:16px;min-height:14px;padding:1px 0 0 17px;vertical-align:top;width:auto}div[dir=rtl] input[type=checkbox].CybotCookiebotDialogBodyLevelButton:checked+label{background-position:right 1px;padding:2px 17px 0 0}input[type=checkbox].CybotCookiebotDialogBodyLevelButton.CybotCookiebotDialogBodyLevelButtonDisabled+label{background-image:url();background-position:left 1px;background-repeat:no-repeat;cursor:default;display:inline-block;height:auto;left:0;line-height:16px;min-height:14px;padding:1px 0 0 17px;position:relative;top:0;vertical-align:top;width:auto;z-index:1}div[dir=rtl] input[type=checkbox].CybotCookiebotDialogBodyLevelButton.CybotCookiebotDialogBodyLevelButtonDisabled+label{background-position:right 1px;padding:2px 17px 0 0}input[type=checkbox].CybotCookiebotDialogBodyLevelButton:focus+label{background-image:url();background-position:left 1px;background-repeat:no-repeat;display:inline-block;height:auto;line-height:16px;min-height:14px;padding:1px 0 0 17px;vertical-align:top;width:auto}div[dir=rtl] input[type=checkbox].CybotCookiebotDialogBodyLevelButton:focus+label{background-position:right 1px;padding:2px 17px 0 0}input[type=checkbox].CybotCookiebotDialogBodyLevelButton:checked:focus+label{background-image:url();background-position:left 1px;background-repeat:no-repeat;display:inline-block;height:auto;line-height:16px;min-height:14px;padding:1px 0 0 17px;vertical-align:top;width:auto}div[dir=rtl] input[type=checkbox].CybotCookiebotDialogBodyLevelButton:checked:focus+label{background-position:right 1px;padding:2px 17px 0 0}#CybotCookiebotDialogBodyLevelDetailsWrapper{background-color:#f6f6f9;border:1px solid #cccccc;border-left:none;cursor:pointer;display:table-cell;height:14px;padding:4px 0 4px 4px;text-align:left;vertical-align:top}div[dir=rtl] #CybotCookiebotDialogBodyLevelDetailsWrapper{border:1px solid #cccccc;border-right:none;padding:4px 4px 4px 0;text-align:right}#CybotCookiebotDialogDetail{background-color:#ffffff;display:none;overflow:auto;padding-bottom:1px;padding-top:0}#CybotCookiebotDialogDetailBody{margin-left:auto;margin-right:auto;max-width:632px;vertical-align:top;width:100%}div[dir=rtl] #CybotCookiebotDialogDetailBody{text-align:right}#CybotCookiebotDialogDetailBodyContent{background-color:#ffffff;border:solid #cccccc;border-width:1px 1px 4px;color:#2a2a2a;height:170px}#CybotCookiebotDialogDetailBodyContent a{font-size:9pt}#CybotCookiebotDialogDetailBodyContentTabs a{font-size:10.5pt}#CybotCookiebotDialogDetailBodyContentText{font-size:10pt;padding:8px}#CybotCookiebotDialogDetailBodyContentTabs{display:inline-block;height:auto;position:relative;white-space:nowrap}a.CybotCookiebotDialogDetailBodyContentTabsItem{margin:0;text-decoration:none!important}a.CybotCookiebotDialogDetailBodyContentTabsItem:focus,a.CybotCookiebotDialogDetailBodyContentTabsItem:hover{background-color:#ffffff!important;border-right:1px solid #cccccc;border-top:1px solid #cccccc;color:#2a2a2a!important;opacity:.9;text-decoration:none!important}a.CybotCookiebotDialogDetailBodyContentTabsItemSelected{color:#2a2a2a!important;margin:0;opacity:1;text-decoration:none!important}a.CybotCookiebotDialogDetailBodyContentTabsItemSelected:focus,a.CybotCookiebotDialogDetailBodyContentTabsItemSelected:hover{border-right:1px solid #cccccc;border-top:1px solid #cccccc;color:#2a2a2a!important;cursor:default;text-decoration:none!important}.CybotCookiebotDialogDetailBodyContentTabsItem{background:#f6f6f9;border-right:1px solid #cccccc;border-top:1px solid #cccccc;color:#2a2a2a!important;cursor:pointer;display:inline-block;font-size:10.5pt;font-weight:400;line-height:100%;margin:1px 0 0;opacity:.85;padding:7px 18px 5px;position:relative;top:1px;white-space:normal;z-index:10}.CybotCookiebotDialogDetailBodyContentTabsItem:first-of-type{border-left:1px solid #cccccc}.CybotCookiebotDialogDetailBodyContentTabsItemSelected{background:#ffffff;border-right:1px solid #cccccc;border-top:1px solid #cccccc;color:#2a2a2a;display:inline-block;font-size:10.5pt;font-weight:400;line-height:100%;opacity:1;padding:8px 18px 6px;position:relative;top:1px;white-space:normal;z-index:10}.CybotCookiebotDialogDetailBodyContentTab:first-child{border-left:1px solid #cccccc;-webkit-border-radius:4px 0 0 0;-moz-border-radius:4px 0 0 0;border-radius:4px 0 0 0}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentTab:first-child{border-left:none;-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0;border-radius:0 4px 0 0}.CybotCookiebotDialogDetailBodyContentTab{border-left:none}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentTab{border-left:1px solid #cccccc}#CybotCookiebotDialogDetailFooter{background-color:#ffffff;color:#2a2a2a;opacity:.85;padding-right:2px;padding-top:4px;text-align:right}div[dir=rtl] #CybotCookiebotDialogDetailFooter{text-align:left}#CybotCookiebotDialogDetailFooter a{color:#2a2a2a}#CybotCookiebotDialogDetailBodyContentTextAbout{display:none;font-size:9pt;height:140px;overflow:auto;padding:18px 12px 12px}#CybotCookiebotDialogDetailBodyContentTextOverview{display:inline-block}#CybotCookiebotDialogDetailBodyContentTextIABv2{word-wrap:break-word;display:none;text-overflow:ellipsis}#CybotCookiebotDialogDetailBodyContentTabsIABv2,#CybotCookiebotDialogDetailBodyContentTextIABv2{display:none}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes,#CybotCookiebotDialogDetailBodyContentIABv2Tabs{background-color:#f6f6f9;float:left;font-size:9pt;padding:0;white-space:nowrap}div[dir=rtl] #CybotCookiebotDialogDetailBodyContentCookieContainerTypes,div[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs{float:right}#CybotCookiebotDialogDetailBodyContentCookieContainerTypeDetails,#CybotCookiebotDialogDetailBodyContentIABv2Details{font-size:9pt;height:146px;max-height:146px;overflow:auto;padding:12px}.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected,.CybotCookiebotDialogDetailBodyContentIABv2TabSelected{background-color:#ffffff;border-bottom:1px solid #cccccc;border-left:none;border-right:1px solid #ffffff;color:#2a2a2a!important;display:block;padding:8px;text-decoration:none!important}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected,div[dir=rtl] .CybotCookiebotDialogDetailBodyContentIABv2TabSelected{border-left:1px solid #ffffff;border-right:none}.CybotCookiebotDialogDetailBodyContentCookieContainerTypes,.CybotCookiebotDialogDetailBodyContentIABv2Tab{background-color:#f6f6f9;border-bottom:1px solid #cccccc;border-left:none;border-right:1px solid #cccccc;color:#2a2a2a!important;cursor:pointer;display:block;opacity:1;padding:8px;text-decoration:none!important}.CybotCookiebotDialogDetailBodyContentCookieContainerTypes:first-child,.CybotCookiebotDialogDetailBodyContentIABv2Tab:first-child{border-top:1px solid #cccccc}.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected:first-child{border-top:1px solid #ffffff}#CybotCookiebotDialogDetailBodyContentIABv2Tabs a:first-child{border-top:0}.CybotCookiebotDialogDetailBodyContentCookieContainerTypes label,.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected label,.CybotCookiebotDialogDetailBodyContentIABv2Tab label,.CybotCookiebotDialogDetailBodyContentIABv2TabSelected label{cursor:pointer;display:none;margin:0}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieContainerTypes,div[dir=rtl] .CybotCookiebotDialogDetailBodyContentIABv2Tab{border-left:1px solid #cccccc;border-right:none}a.CybotCookiebotDialogDetailBodyContentCookieContainerTypes:focus,a.CybotCookiebotDialogDetailBodyContentCookieContainerTypes:hover,a.CybotCookiebotDialogDetailBodyContentIABv2Tab:focus,a.CybotCookiebotDialogDetailBodyContentIABv2Tab:hover{background:#ffffff!important;border-bottom:1px solid #cccccc;border-left:none;border-right:1px solid #cccccc;color:#2a2a2a!important;opacity:1;text-decoration:none!important}a.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected:focus,a.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected:hover,a.CybotCookiebotDialogDetailBodyContentIABv2TabSelected:focus,a.CybotCookiebotDialogDetailBodyContentIABv2TabSelected:hover{border-bottom:1px solid #cccccc;border-left:none;border-right:1px solid #ffffff;color:#2a2a2a!important;cursor:default;text-decoration:none!important}#CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising,#CybotCookiebotDialogDetailBodyContentCookieTabsPreference,#CybotCookiebotDialogDetailBodyContentCookieTabsStatistics,#CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified,#CybotCookiebotDialogDetailBodyContentIABv2TabFeatures,#CybotCookiebotDialogDetailBodyContentIABv2TabPartners{display:none}.CybotCookiebotDialogBodyLevelButtonIABContainer,.CybotCookiebotDialogBodyLevelButtonIABContainerCollapsed{border:1px solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin-bottom:8px;overflow:hidden;padding:4px 4px 4px 8px}.CybotCookiebotDialogBodyLevelButtonIABContainerCollapsed{height:18px}.CybotCookiebotDialogBodyLevelButtonIABContainerToggleShow{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAMAAAAmGUT3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI3NDEyNDEwNzk0MjExRTQ5RUE5RkRFMUQ3MEU1NTZDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI3NDEyNDExNzk0MjExRTQ5RUE5RkRFMUQ3MEU1NTZDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Qjc0MTI0MEU3OTQyMTFFNDlFQTlGREUxRDcwRTU1NkMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Qjc0MTI0MEY3OTQyMTFFNDlFQTlGREUxRDcwRTU1NkMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz70ohqeAAAABlBMVEVgYGAAAAAPhzbbAAAAAnRSTlP/AOW3MEoAAAAjSURBVHjaYmBkYAQBBkYGIAAxQBQcQ/ggCiLFCGFBCIAAAwADkwAg7Yr51AAAAABJRU5ErkJggg==);background-position:left 6px;background-position-x:left;background-position-y:6px;background-repeat:no-repeat;display:inline-block;float:right;height:20px;position:relative;width:16px}.CybotCookiebotDialogBodyLevelButtonIABContainerToggleHide{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAYAAAARx7TFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU0QzAwODExNzk0MjExRTQ4QzBERTBGMTkxMUY2M0M0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjU0QzAwODEyNzk0MjExRTQ4QzBERTBGMTkxMUY2M0M0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTRDMDA4MEY3OTQyMTFFNDhDMERFMEYxOTExRjYzQzQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTRDMDA4MTA3OTQyMTFFNDhDMERFMEYxOTExRjYzQzQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz576KdnAAAATklEQVR42kyO2xEAMQgCJZ3afxFcyGRz+uMD3EHdXbYrJSltrz4Dt4UBNfsWPG614oRwO2Q/Eg+IwvnDj8kjk+48MzmZeNYI/4jRPwEGAFy/MS7NcXxJAAAAAElFTkSuQmCC);background-position:left 6px;background-position-x:left;background-position-y:6px;background-repeat:no-repeat;display:inline-block;float:right;height:20px;position:relative;width:16px}.CybotCookiebotDialogDetailBodyContentCookieTypeTable{border-collapse:collapse;border-spacing:0;font-size:9pt;margin:8px 0 0;padding:0;width:100%}.CybotCookiebotDialogDetailBodyContentCookieTypeTable thead td,.CybotCookiebotDialogDetailBodyContentCookieTypeTable thead th{background-color:#f6f6f9!important;border-bottom:1px solid #cccccc;color:#2a2a2a!important;font-weight:400;padding:2px;text-align:left;vertical-align:top}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieTypeTable thead td,div[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieTypeTable thead th{text-align:right}.CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td{border-bottom:1px solid #cccccc;border-right:1px solid #f6f6f9;color:#2a2a2a!important;font-size:9pt;max-width:72px;overflow:hidden;padding:4px;text-align:left;vertical-align:top}.CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td:last-child{border-right:0}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td{text-align:right}.CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td.CybotCookiebotDialogDetailBodyContentCookieTypeTableEmpty{border:none;border-top:1px solid #cccccc;padding:4px 0 0}#CybotCookiebotDialogBodyIABIntro,.CybotCookiebotDialogBodyIABIntroContainer{margin-bottom:12px}.CybotCookiebotDialogBodyLevelButtonIABHeader{font-weight:700;text-transform:uppercase}.CybotCookiebotDialogBodyLevelButtonIABHeader,.CybotCookiebotDialogBodyLevelSectionIAB{border-top:1px solid #cccccc;margin-bottom:12px;margin-top:2px;padding-top:8px}.CybotCookiebotDialogBodyLevelButtonIABDescription{margin-bottom:12px;margin-top:8px}.CybotCookiebotDialogBodyLevelButtonIABLabel{font-weight:700}ul.CybotCookiebotDialogBodyLevelButtonIABBullet{list-style-type:disc;margin:3px 0 0;padding-inline-start:18px}.CybotCookiebotDialogBodyLevelButtonIABHeaderToggle{float:right}.CybotCookiebotDialogBodyContentLabelPersonalInformation{font-weight:400!important}</style></head>
+<body style=""><div id="CybotCookiebotDialog" name="CybotCookiebotDialog" role="dialog" aria-describedby="CybotCookiebotDialogBodyContentTitle" lang="en" dir="ltr" ng-non-bindable="" style="display: block; opacity: 1; top: 503px; width: 100%; height: auto;"><div id="CybotCookiebotDialogBody"><div id="CybotCookiebotDialogPoweredbyLink"><img id="CybotCookiebotDialogPoweredbyImage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAhUSURBVGhD7ZkPbBPXHccvhY0Ogu/OgUIYhMa+Oyduy1bWaps0SgGtLZ1akRD77DgQxARb12Zd/yyFVmo0MbaJlpVAEvvs2PH5b2JKslUldEwaIKRubAzYxoASO46dhH+BQrUNWo3u7fcuv4ZkMZCkadJJ+Ugnv++7y93vvfd7v/d7L8wE/eCtnsdz7EoBSoa1KGvphZLRO5xmzupcjXL8oIZOL6kzoWQ4q7KFtSnPoWR0smcDa1UqUTKcxfU0Z3X9EiWTY6ufw1pdL6D8DImRSVjSYK3Oyv6G8NY6GxiyDSUYrmxgZffzKBlOdr7BW5x2lAxtJCs7t6PU0JV49FgcPQyBjqVCILEFJXOXzTMLDN0/qywwjWrWVnc/K7tC2k0AGlXBWpzrUIJ27uFsngUo6Qjs5lfW3IMSOkJZwcmKG+Xokat0TxX88YNGte2bWMWwsrKJK3Hdp4nF+ybT4dfKlMeqpzCW2Bd7BcniZWU5U95wJ1XQ4CXUcO0WBZ6DEXyXNh5rPh1CIF5lUOMPoGTEcPJxMdjuQzliaGN1VuVBlLQhP4UReg2lhs7q3Mja3CUoh4fBH18uqIk/G9REHlYxBWpXDhZHBerXnOx6c6alJhurqBuVg/8fyLYrM7Dq9oj+9JexqCEG2tcbA4mnUY4+ltgkZr3yBVQwyd2Pwnw4Osho6nq3Qgi0v270x2uZGLxwjNE7gjpwm1a9XFuIVRowP2ho3YwyM4v3kcmCP+E3qolXsGrsgN6fW7L1S6gYpqrqDvD9BnCdloyh0lR/cnqucngqSg1DIH4XFscFtsSdD+F1P7jNL7BqMMZg20Ih1HFQCCbKvqYc7vO38aR3XVAsKG+OEOwwC6GUR/S/N2ByTjCa0MVFajq3XQgmv8FUkTuw+vPP/IYkJ8bOrReDyXoheFGH1aMGfX//xeszR1IT3xJj5yuMjd0L/zcrHA6Q11RAfrMVZUaMwY6F0s5zz4nRrh/D7zIa4fBWZuCBOebYcUyCBlIQ7ZLAhV4Vo92/EyNdf4NJu9sYTj1PXWtuU/pGnL0NghpXjf42J8oBSNGuZWIo/RYYTEy7LhFBba+BAPGqEElXGkPJJQwhWfjoQCAH2WRqubyHpqtYlRHq/0I4VQ3Gd0k7LxDQ/4LV9bfgXi8bg50PFzR/cNPcBYw+JoaSO1FSssTomWIx0rlfajpLTDt7CLyLGH3vXRdDKVL49lVS0HKRwN+dyqv7K49/Mxhz7Pxsc1N6yMm7GEwtgnjvEoMdlwv3/Bs+dA0+nICGJA8IoeQWKZxeURg6M58+a1C786CR70Njr9Oep2sEdMBRaqwUOw89HCeCv41IjWeI6c0LUNd9HN7jmv3S3ihsMn71SQo8qsCku1OKnlkOjVDFQPJK4e4Pifmdj3uHPBC/BrnOETDqnBhOaQaK4TQB19OMpMbSOjp6UhMY3Xxhr1Ftr8hZE3iRLXYd4uwq0RXXyvipgQhq8n5TywdPCN7TM7FqxAit/9HBsFuFcHoXuM+HUrRbM5AaKzSc7jXU39u7kGlC4y7CvdTHBc0XwkbPKRnykB/qimpO6NfuIlyp7yPWUrMGXz0YGN6VBb/+hwte9BWsGgEweRZXTYZC3ySSIp1LqdG0d3sNptdpIoY6oGffJ2Ik/c+ClkvVBtffl7Eratbpil1HYDtHOFv9Hzm5/mV9UfVcfNXoAQnPes4ReAeS/ibI2Jpgq9UI5SjUR3ibJwQb41pImqfk+07eRyc8TLBL2gTsNbjH1NLzk/xtRx7MfvKNdexK5wl+VZDwZQHC2jzHuFL/Q/iZ0QeyNCf9EG9z35Nj2zGHJvq8RWG1zbKlqi+s0jALhm6DiEXAbbqklp7KeVX7Hpj+2OtrWYvrMGdzQw+7wWiVaMbTq7SBQGf8gbP7nuVk9yJ81WCEUOdLMImeQjkkYCv1Xd4BH5Nr52HVAIy+tnkQ5upNzZcJxP+rUuPZytkbW81Tv/2zR9iiHS+COzypd3jN01fsyGFLvQbe5rWyds92GDVwE9d1rSGrQ72NsNXX9T8R6EMMdzwDq9qjKIcEV6Is5leFCP3Fqk/IgjC3gboFvaC8af6WQ7OZvHW5bNH2pZytdgEv++bRX3x+EJzV7dCvaQTDI4Sz14PhHsI7/LT8eyiX99+PDhvo8bt5RwOB375ZP9959G5YUN417yUQKTqb+uUlWXpHdV/uw1vr7oUde98ZSybYEhjRshDd7T+UXeKdqZNdj3A271aINAfh+g1nH9RhQ6Siegr4+Udw/ZxKCGkGMdKdNjVfIoZge7n2zE2AuZDHW5XvoRw22fawNp9oHP++EGzfoYW0YcBZnHG4dtGyqCZ8C/5E6HKtNeRW0InMycozKEcOjd+CP2VEOWQgBLZCZDhGy/REy9RyJQbJkipGO4thj3qv2XNcnyk5mlX22jTYvf8I5dgDbrKVtdZdobtvrGIshEzKC6f43Le6p97qSENndf6AHtOhHDlS+NSM/EhiFsohQQ8xaQwezgkT9U2Iz0/QhevGWeJIgeGEtFYV1Xgx1gwJiCgPa2EqU4ztB2+thyjieQEiyQF49hrv8F0HNwvj7U+H0Hr61kdaGdBCYqkPYnntd7BKYxo9cpY9xTAaPrjO0sWEGgwLzNs0Ds8ocuXio+NEResU6Lmr4Osb6bkHZ/e8Akv0Ib7US/TlsHjI7h6o84JePtMSG/micTvEYGIR5MKrUA4J8PO/0BWUXx3Wlmgw9iQkWZv1Nu/Xx+ykQArGlw136eetzs18WXA/LMfP9v9n1QTDQQp05OcFT4zzBBoBsEl9ChL/JSgnGDPokZkpkrrxn7P/F8RQ8quS2p75aGCCkcIw/wW7S7AreMG7kAAAAABJRU5ErkJggg==" alt="logo"></div><div id="CybotCookiebotDialogBodyContent"><h2 id="CybotCookiebotDialogBodyContentTitle" lang="en">This website uses cookies</h2><div id="CybotCookiebotDialogBodyContentText" lang="en">We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. You consent to our cookies if you continue to use our website.</div></div><div id="CybotCookiebotDialogBodyContentControls" style="display: none;"><div class="CybotCookiebotDialogBodyContentControlsWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyContentCheckboxPersonalInformation" class="CybotCookiebotDialogBodyLevelButton" tabindex="0"> <label class="CybotCookiebotDialogBodyContentLabelPersonalInformation" for="CybotCookiebotDialogBodyContentCheckboxPersonalInformation">Do not sell or share my personal information</label></div></div><div id="CybotCookiebotDialogBodyButtons"><a id="CybotCookiebotDialogBodyButtonDecline" class="CybotCookiebotDialogBodyButton" href="#" tabindex="0" lang="en" style="width: 155px;">Use necessary cookies only </a><a id="CybotCookiebotDialogBodyButtonAccept" class="CybotCookiebotDialogBodyButton" href="#" tabindex="0" lang="en" style="width: 155px;">Allow all cookies </a><a id="CybotCookiebotDialogBodyButtonDetails" class="CybotCookiebotDialogBodyLink" href="#" tabindex="0" lang="en">Show details</a></div><div id="CybotCookiebotDialogBodyLevelWrapper"><div id="CybotCookiebotDialogBodyLevelButtonAcceptWrapper"><a id="CybotCookiebotDialogBodyLevelButtonAccept" href="#" tabindex="0" lang="en">OK</a></div><div id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper" style="display:none"><a id="CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll" class="CybotCookiebotDialogBodyButton" href="#" tabindex="0" lang="en">Use necessary cookies only </a><a id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection" class="CybotCookiebotDialogBodyButton" href="#" tabindex="0" lang="en">Allow selection </a><a id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll" class="CybotCookiebotDialogBodyButton" href="#" tabindex="0" lang="en">Allow all cookies</a></div><div id="CybotCookiebotDialogBodyLevelButtons"><div id="CybotCookiebotDialogBodyLevelButtonsTable"><div id="CybotCookiebotDialogBodyLevelButtonsRow"><div id="CybotCookiebotDialogBodyLevelButtonsSelectPane"><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessary" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked"> <label for="CybotCookiebotDialogBodyLevelButtonNecessary">Necessary</label></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferences" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0"> <label for="CybotCookiebotDialogBodyLevelButtonPreferences">Preferences</label></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0"> <label for="CybotCookiebotDialogBodyLevelButtonStatistics">Statistics</label></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketing" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0"> <label for="CybotCookiebotDialogBodyLevelButtonMarketing">Marketing</label></div></div><div id="CybotCookiebotDialogBodyLevelDetailsWrapper"><a id="CybotCookiebotDialogBodyLevelDetailsButton" class="CybotCookiebotDialogBodyLink" href="#" tabindex="0" lang="en">Show details</a></div></div></div></div></div></div><div id="CybotCookiebotDialogDetail"><div id="CybotCookiebotDialogDetailBody"><div id="CybotCookiebotDialogDetailBodyContentTabs"><a id="CybotCookiebotDialogDetailBodyContentTabsOverview" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItemSelected" href="#" lang="en">Cookie declaration </a><a id="CybotCookiebotDialogDetailBodyContentTabsIABv2" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItem" href="#" lang="en" style="display: none;">[#IABV2SETTINGS#] </a><a id="CybotCookiebotDialogDetailBodyContentTabsAbout" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItem" href="#" lang="en">About</a></div><div id="CybotCookiebotDialogDetailBodyContent"><div id="CybotCookiebotDialogDetailBodyContentTextOverview" lang="en"><div id="CybotCookiebotDialogDetailBodyContentCookieContainer"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerTypes"><a id="CybotCookiebotDialogDetailBodyContentCookieContainerNecessary" href="#" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected" lang="en" aria-label="Necessary (6)"><label for="CybotCookiebotDialogDetailBodyContentCookieContainerNecessary" aria-hidden="true"> </label>Necessary (6)</a> <a id="CybotCookiebotDialogDetailBodyContentCookieContainerPreference" href="#" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="en" aria-label="Preferences (0)"><label for="CybotCookiebotDialogDetailBodyContentCookieContainerPreference" aria-hidden="true"> </label>Preferences (0)</a> <a id="CybotCookiebotDialogDetailBodyContentCookieContainerStatistics" href="#" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="en" aria-label="Statistics (5)"><label for="CybotCookiebotDialogDetailBodyContentCookieContainerStatistics" aria-hidden="true"> </label>Statistics (5)</a> <a id="CybotCookiebotDialogDetailBodyContentCookieContainerAdvertising" href="#" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="en" aria-label="Marketing (24)"><label for="CybotCookiebotDialogDetailBodyContentCookieContainerAdvertising" aria-hidden="true"> </label>Marketing (24)</a> <a id="CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified" href="#" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="en" aria-label="Unclassified (0)"><label for="CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified" aria-hidden="true"> </label>Unclassified (0)</a></div><div id="CybotCookiebotDialogDetailBodyContentCookieContainerTypeDetails"><div id="CybotCookiebotDialogDetailBodyContentCookieTabsNecessary"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><table id="CybotCookiebotDialogDetailTableNecessary" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"><thead><tr><th scope="col">Name</th><th scope="col">Provider</th><th scope="col">Purpose</th><th scope="col">Expiry</th><th scope="col">Type</th></tr></thead><tbody><tr><td title="__RequestVerificationToken">__RequestVerificationToken</td><td>flyinside-fsx.com</td><td title="Helps prevent Cross-Site Request Forgery (CSRF) attacks.">Helps prevent Cross-Site Request Forgery (CSRF) attacks.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="ARRAffinity">ARRAffinity</td><td>flyinside-fsx.com</td><td title="Used to distribute traffic to the website on several servers in order to optimise response times.">Used to distribute traffic to the website on several servers in order to optimise response times.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="ARRAffinitySameSite">ARRAffinitySameSite</td><td>flyinside-fsx.com</td><td title="Used to distribute traffic to the website on several servers in order to optimise response times.">Used to distribute traffic to the website on several servers in order to optimise response times.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="ASP.NET_SessionId">ASP.NET_SessionId</td><td>flyinside-fsx.com</td><td title="Preserves the visitor's session state across page requests.">Preserves the visitor's session state across page requests.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="CookieConsent">CookieConsent</td><td>flyinside-fsx.com</td><td title="Stores the user's cookie consent state for the current domain">Stores the user's cookie consent state for the current domain</td><td title="1 year">1 year</td><td title="HTTP">HTTP</td></tr><tr><td title="CONSENT">CONSENT</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  ">Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  </td><td title="2 years">2 years</td><td title="HTTP">HTTP</td></tr></tbody></table></div></div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsPreference"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.</div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><table id="CybotCookiebotDialogDetailTablePreference" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"><tbody><tr><td class="CybotCookiebotDialogDetailBodyContentCookieTypeTableEmpty">We do not use cookies of this type.</td></tr></tbody></table></div></div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsStatistics"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.</div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><table id="CybotCookiebotDialogDetailTableStatistics" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"><thead><tr><th scope="col">Name</th><th scope="col">Provider</th><th scope="col">Purpose</th><th scope="col">Expiry</th><th scope="col">Type</th></tr></thead><tbody><tr><td title="_ga">_ga</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Registers a unique ID that is used to generate statistical data on how the visitor uses the website.">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</td><td title="2 years">2 years</td><td title="HTTP">HTTP</td></tr><tr><td title="_ga_#">_ga_#</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. ">Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. </td><td title="2 years">2 years</td><td title="HTTP">HTTP</td></tr><tr><td title="_gat">_gat</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Used by Google Analytics to throttle request rate">Used by Google Analytics to throttle request rate</td><td title="1 day">1 day</td><td title="HTTP">HTTP</td></tr><tr><td title="_gid">_gid</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Registers a unique ID that is used to generate statistical data on how the visitor uses the website.">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</td><td title="1 day">1 day</td><td title="HTTP">HTTP</td></tr><tr><td title="td">td</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. ">Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator. </td><td title="Session">Session</td><td title="Pixel">Pixel</td></tr></tbody></table></div></div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><table id="CybotCookiebotDialogDetailTableAdvertising" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"><thead><tr><th scope="col">Name</th><th scope="col">Provider</th><th scope="col">Purpose</th><th scope="col">Expiry</th><th scope="col">Type</th></tr></thead><tbody><tr><td title="IDE">IDE</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.">Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.</td><td title="1 year">1 year</td><td title="HTTP">HTTP</td></tr><tr><td title="test_cookie">test_cookie</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Used to check if the user's browser supports cookies.">Used to check if the user's browser supports cookies.</td><td title="1 day">1 day</td><td title="HTTP">HTTP</td></tr><tr><td title="_fbp">_fbp</td><td><a href="https://www.facebook.com/policy.php/" target="_blank" rel="noopener noreferrer nofollow" title=" Meta Platforms, Inc.'s privacy policy"> Meta Platforms, Inc.</a></td><td title="Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.">Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.</td><td title="3 months">3 months</td><td title="HTTP">HTTP</td></tr><tr><td title="_gcl_au">_gcl_au</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  ">Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.  </td><td title="3 months">3 months</td><td title="HTTP">HTTP</td></tr><tr><td title="pagead/1p-user-list/818887353/">pagead/1p-user-list/818887353/</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Pending">Pending</td><td title="Session">Session</td><td title="Pixel">Pixel</td></tr><tr><td title="LAST_RESULT_ENTRY_KEY">LAST_RESULT_ENTRY_KEY</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Used to track user’s interaction with embedded content.">Used to track user’s interaction with embedded content.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="LogsDatabaseV2:V#||LogsRequestsStore">LogsDatabaseV2:V#||LogsRequestsStore</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Pending">Pending</td><td title="Persistent">Persistent</td><td title="IDB">IDB</td></tr><tr><td title="nextId">nextId</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Used to track user’s interaction with embedded content.">Used to track user’s interaction with embedded content.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="remote_sid">remote_sid</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Necessary for the implementation and functionality of YouTube video-content on the website.  ">Necessary for the implementation and functionality of YouTube video-content on the website.  </td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="requests">requests</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Used to track user’s interaction with embedded content.">Used to track user’s interaction with embedded content.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="TESTCOOKIESENABLED">TESTCOOKIESENABLED</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Used to track user’s interaction with embedded content.">Used to track user’s interaction with embedded content.</td><td title="1 day">1 day</td><td title="HTTP">HTTP</td></tr><tr><td title="VISITOR_INFO1_LIVE">VISITOR_INFO1_LIVE</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Tries to estimate the users' bandwidth on pages with integrated YouTube videos.">Tries to estimate the users' bandwidth on pages with integrated YouTube videos.</td><td title="180 days">180 days</td><td title="HTTP">HTTP</td></tr><tr><td title="VISITOR_PRIVACY_METADATA">VISITOR_PRIVACY_METADATA</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Pending">Pending</td><td title="180 days">180 days</td><td title="HTTP">HTTP</td></tr><tr><td title="YSC">YSC</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Registers a unique ID to keep statistics of what videos from YouTube the user has seen.">Registers a unique ID to keep statistics of what videos from YouTube the user has seen.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="yt.innertube::nextId">yt.innertube::nextId</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Registers a unique ID to keep statistics of what videos from YouTube the user has seen.">Registers a unique ID to keep statistics of what videos from YouTube the user has seen.</td><td title="Persistent">Persistent</td><td title="HTML">HTML</td></tr><tr><td title="ytidb::LAST_RESULT_ENTRY_KEY">ytidb::LAST_RESULT_ENTRY_KEY</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Persistent">Persistent</td><td title="HTML">HTML</td></tr><tr><td title="YtIdbMeta#databases">YtIdbMeta#databases</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Used to track user’s interaction with embedded content.">Used to track user’s interaction with embedded content.</td><td title="Persistent">Persistent</td><td title="IDB">IDB</td></tr><tr><td title="yt-remote-cast-available">yt-remote-cast-available</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Session">Session</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-cast-installed">yt-remote-cast-installed</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Session">Session</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-connected-devices">yt-remote-connected-devices</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Persistent">Persistent</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-device-id">yt-remote-device-id</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Persistent">Persistent</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-fast-check-period">yt-remote-fast-check-period</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Session">Session</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-session-app">yt-remote-session-app</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Session">Session</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-session-name">yt-remote-session-name</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Session">Session</td><td title="HTML">HTML</td></tr></tbody></table></div></div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies.</div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><table id="CybotCookiebotDialogDetailTableUnclassified" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"><tbody><tr><td class="CybotCookiebotDialogDetailBodyContentCookieTypeTableEmpty">We do not use cookies of this type.</td></tr></tbody></table></div></div></div></div></div><div id="CybotCookiebotDialogDetailBodyContentTextIABv2" lang="en"><div id="CybotCookiebotDialogDetailBodyContentIABContainer"><div id="CybotCookiebotDialogDetailBodyContentIABv2Tabs"><a id="CybotCookiebotDialogDetailBodyContentIABv2Purposes" href="#" class="CybotCookiebotDialogDetailBodyContentIABv2TabSelected" lang="en" aria-label="[#IABV2_LABEL_PURPOSES#]"><label for="CybotCookiebotDialogDetailBodyContentIABv2Purposes" aria-hidden="true"> </label>[#IABV2_LABEL_PURPOSES#]</a> <a id="CybotCookiebotDialogDetailBodyContentIABv2Features" href="#" class="CybotCookiebotDialogDetailBodyContentIABv2Tab" lang="en" aria-label="[#IABV2_LABEL_FEATURES#]"><label for="CybotCookiebotDialogDetailBodyContentIABv2Features" aria-hidden="true"> </label>[#IABV2_LABEL_FEATURES#]</a> <a id="CybotCookiebotDialogDetailBodyContentIABv2Partners" href="#" class="CybotCookiebotDialogDetailBodyContentIABv2Tab" lang="en" aria-label="[#IABV2_LABEL_PARTNERS#]"><label for="CybotCookiebotDialogDetailBodyContentIABv2Partners" aria-hidden="true"> </label>[#IABV2_LABEL_PARTNERS#]</a></div><div id="CybotCookiebotDialogDetailBodyContentIABv2Details"><div id="CybotCookiebotDialogDetailBodyContentIABv2TabPurposes"><div class="CybotCookiebotDialogDetailBodyContentIABv2PurposesBody">[#IABV2_BODY_PURPOSES#]</div></div><div id="CybotCookiebotDialogDetailBodyContentIABv2TabFeatures"><div class="CybotCookiebotDialogDetailBodyContentIABv2FeaturesBody">[#IABV2_BODY_FEATURES#]</div></div><div id="CybotCookiebotDialogDetailBodyContentIABv2TabPartners"><div class="CybotCookiebotDialogDetailBodyContentIABv2PartnersBody">[#IABV2_BODY_PARTNERS#]</div></div></div></div></div><div id="CybotCookiebotDialogDetailBodyContentTextAbout" lang="en">Cookies are small text files that can be used by websites to make a user's experience more efficient.<br style=""><br style="">The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.<br style=""><br style="">This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.<br style=""><br style="">You can at any time change or withdraw your consent from the Cookie Declaration on our website.<br style=""><br style="">Learn more about who we are, how you can contact us and how we process personal data in our Privacy Policy.</div></div><div id="CybotCookiebotDialogDetailFooter" lang="en">Cookie declaration last updated on 2023/8/16 by <a href="https://www.cookiebot.com" target="_blank" rel="noopener" title="Cookiebot">Cookiebot</a></div></div></div></div>
+<form action="/Account/LogOff" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="jCw8Oil1lVOQ4a32kjnDUwkgvxkPLhdGqFcs1p_7-QKSe5YEO5N3d0lfdUDa8ZSgxKu5peyxXyF7MOpmsnWaU37JgVUhs4SDjNtSLrU9f0Q1"></form>	<header id="header" class="container clearfix">
+		<a href="/" id="logo">
+			<img src="/Content/img/logo.png" alt="FlyInside">
+		</a>
+		<nav id="main-nav">
+			<ul>
+                <li class="">
+                    <a href="/">Home</a>
+                    <ul>
+                        <li><a href="/News">News</a></li>
+                        <li><a href="/Download/ChangeLog">Change Log</a></li>
+                    </ul>
+				</li>
+                <li class="current">
+                    <a href="/Home/Sim">Sim</a>
+                    <ul>
+                        <li><a href="/Home/Sim#aircraft">Aircraft</a></li>
+                        <li><a href="/Home/Sim#virtual-reality">Virtual Reality</a></li>
+                        <li><a href="/Home/Sim#scenery">Scenery</a></li>
+                        <li><a href="/Home/Sim#technology">Technology</a></li>
+                        <li><a href="/Home/Sim#sdk">SDK</a></li>
+                    </ul>
+                </li>
+				<li class="">
+					<a href="/Home/AddOns" data-description="powerful and fun">Add-Ons</a>
+					<ul>
+						<li><a href="/Features">Features</a></li>
+						<li><a href="/Features/Interaction">Interaction</a></li>
+						<li><a href="/Features/LeapMotion">Leap Motion</a></li>
+						<li><a href="/Features/VirtualWindows">Virtual Windows</a></li>
+					</ul>
+				</li>
+				<li class="">
+					<a href="/Download" data-description="free trial">Try &amp; Buy</a>
+					<ul>
+						<li><a href="/Download">Download Free Trial</a></li>
+						<li><a href="/Products">Buy Online</a></li>
+					</ul>
+				</li>
+				<li>
+                    <a href="http://wiki.flyinside-fsx.com" data-description="user manual and more">Support</a>
+                    <ul>
+                        <li><a href="http://wiki.flyinside-fsx.com">User Manual</a></li>
+                        <li><a href="http://forum.flyinside-fsx.com/">Message Board</a></li>
+                    </ul>
+				</li>
+                <li>
+                    <a href="/Home/CustomSoftware">Custom Solutions</a>
+                </li>
+                <li>
+                    <a href="https://flyinside-helis.com/" data-description="multi-sim helicopters">Helis</a>
+                    <ul>
+                        <li><a href="https://flyinside-helis.com">Bell 47-G2 for MSFS and FlyInside Flight Sim</a></li>
+                    </ul>
+                </li>
+				<li class="">
+						<a href="/Account/Login" data-description="manage your account">Log In</a>
+						<ul>
+							<li><a href="/Account/Login">Log In</a></li>
+							<li><a href="/Account/Login">Register</a></li>
+						</ul>
+				</li>
+			</ul><select class="responsive-nav"><option value="" selected="">Navigate...</option><option value="/"> Home</option><option value="/News"> -  News</option><option value="/Download/ChangeLog"> -  Change Log</option><option value="/Home/Sim"> Sim</option><option value="/Home/Sim#aircraft"> -  Aircraft</option><option value="/Home/Sim#virtual-reality"> -  Virtual Reality</option><option value="/Home/Sim#scenery"> -  Scenery</option><option value="/Home/Sim#technology"> -  Technology</option><option value="/Home/Sim#sdk"> -  SDK</option><option value="/Home/AddOns"> Add-Ons</option><option value="/Features"> -  Features</option><option value="/Features/Interaction"> -  Interaction</option><option value="/Features/LeapMotion"> -  Leap Motion</option><option value="/Features/VirtualWindows"> -  Virtual Windows</option><option value="/Download"> Try &amp; Buy</option><option value="/Download"> -  Download Free Trial</option><option value="/Products"> -  Buy Online</option><option value="http://wiki.flyinside-fsx.com"> Support</option><option value="http://wiki.flyinside-fsx.com"> -  User Manual</option><option value="http://forum.flyinside-fsx.com/"> -  Message Board</option><option value="/Home/CustomSoftware"> Custom Solutions</option><option value="https://flyinside-helis.com/"> Helis</option><option value="https://flyinside-helis.com"> -  Bell 47-G2 for MSFS and FlyInside Flight Sim</option><option value="/Account/Login"> Log In</option><option value="/Account/Login"> -  Log In</option><option value="/Account/Login"> -  Register</option></select>
+
+		</nav><!-- end #main-nav -->
+
+	</header><!-- end #header -->
+	<section id="content" class="container clearfix" style="min-height: 250.4px;">
+		
+
+<a href="/Download"><img class="align-center" src="/Content/Images/SimSplash.jpg"></a>
+<div class="bottom_bar">
+    <a class="button" href="/Download">Download Free Trial</a>
+    <a class="button" href="/Products">Buy Online</a>
+</div>
+<br>
+<p>
+	Fly virtual reality like never before in <b>FlyInside Flight Simulator</b>.  FlyInside Flight Simulator includes cutting-edge <b>VR support</b> (but works great on the desktop too), a <b>64-bit engine</b> designed for modern GPUs and multi-core systems, ten high-quality stock aircraft,
+    and an innovative scenery system!
+</p>
+<p>
+	FlyInside Flight Simulator is in Early Access, so we're constantly working on new features, improvements, and fixes.  You can expect a steady stream of updates, both major and minor.
+</p>
+<section id="features-slider" class="ss-slider show-content-onhover fully-loaded" style="max-height: 550px; max-width: 940px;">
+
+    <!-- end .slide (Responsive Layout) -->
+
+    <!-- end .slide (HTML5 / CSS3) -->
+
+    <!-- end .slide (Easily Customisable) -->
+
+    <!-- end .slide (Unique & Clean) -->
+
+<div class="slide-images-container" style="max-height: 380px;"><img src="/content/img/placeholders/slider-slide-1.jpg" alt="" class="slide-bg-image" style="cursor: auto;"><img src="/Content/img/placeholders/slider-slide-2.jpg" alt="" class="slide-bg-image" style="cursor: auto;"><img src="/Content/img/placeholders/slider-slide-3.jpg" alt="" class="slide-bg-image" style="cursor: auto;"><img src="/Content/img/placeholders/slider-slide-4.jpg" alt="" class="slide-bg-image" style="cursor: auto;"></div><div class="slides-container" style="max-height: 380px; overflow: hidden; width: 100%;"><article class="slide" style="display: block; height: 380px; background-image: url(&quot;/content/img/placeholders/slider-slide-1.jpg&quot;); background-position: 0px 0px; cursor: auto; width: 235px;"><div class="slide-img" style="width: 235px;"></div>
+
+        
+
+        
+
+        
+
+    </article><article class="slide" style="display: block; height: 380px; background-image: url(&quot;/content/img/placeholders/slider-slide-1.jpg&quot;); background-position: -235px 0px; cursor: auto; width: 235px;"><div class="slide-img" style="width: 235px;"></div>
+
+        
+
+        
+
+        
+
+    </article><article class="slide" style="display: block; height: 380px; background-image: url(&quot;/content/img/placeholders/slider-slide-1.jpg&quot;); background-position: -470px 0px; cursor: auto; width: 235px;"><div class="slide-img" style="width: 235px;"></div>
+
+        
+
+        
+
+        
+
+    </article><article class="slide" style="display: block; height: 380px; background-image: url(&quot;/content/img/placeholders/slider-slide-1.jpg&quot;); background-position: -705px 0px; cursor: auto; width: 235px;"><div class="slide-img" style="width: 235px;"></div>
+
+        
+
+        
+
+        
+
+    </article></div><div class="buttons-container"><div class="slide-button active" style="width: 25%; max-width: 195px;">
+            <span class="dropcap">1</span>
+            <h5>Immersive Aircraft</h5>
+            <span class="description">Fly 10 jaw-dropping aircraft</span>
+        </div><div class="slide-button" style="width: 25%; max-width: 195px;">
+            <span class="dropcap">2</span>
+            <h5>Cutting-edge VR</h5>
+            <span class="description">Enjoy Oculus Rift, HTC Vive, with ease</span>
+        </div><div class="slide-button" style="width: 25%; max-width: 195px;">
+            <span class="dropcap">3</span>
+            <h5>Beautiful Scenery</h5>
+            <span class="description">An eye-pleasing world</span>
+        </div><div class="slide-button" style="width: 25%; max-width: 195px;">
+            <span class="dropcap">4</span>
+            <h5>Modern Technology</h5>
+            <span class="description">Designed for today's computers</span>
+        </div></div><div class="content-container" style="height: 183px;"><div class="slide-content slide-content_0" style="display: block;">
+            <h2>Immersive Aircraft</h2>
+            <p>FlyInside Flight Simulator includes stunning aircraft, including military, general aviation, transport, and helicopters.  Experience detailed systems, a realistic flight model, and beautiful artwork!</p>
+            <p><a class="button" href="/Home/Sim#aircraft">Read More</a></p>
+        </div><div class="slide-content slide-content_1">
+            <h2>Cutting-edge Virtual Reality</h2>
+            <p>FlyInside Flight Simulator is built with VR in mind!  Oculus Touch, Vive wand, and Leap Motion are all supported.  All dialogs and settings are accessible from within VR.</p>
+            <p><a class="button" href="/Home/Sim#virtual-reality">Read More</a></p>
+        </div><div class="slide-content slide-content_2">
+            <h2>Beautiful Scenery</h2>
+            <p>FlyInside's ground-breaking scenery system combines photoscenery, computer generated imagery, and a wide variety of data sources to produce a world that's both beautiful and fun to explore.</p>
+            <p><a class="button" href="/Home/Sim#scenery">Read More</a></p>
+        </div><div class="slide-content slide-content_3">
+            <h2>Modern Technology</h2>
+            <p>FlyInside Flight Simulator is built for today's systems.  It can utilize multi-core processors and modern GPUs to great effect.  Enjoy fluid frame-rates, high auto-gen density, and large draw distances.</p>
+            <p><a class="button" href="/Home/Sim#technology">Read More</a></p>
+        </div></div><div class="pagination-container"> <a class="prev" style="height: 118.5px;">�</a> <a class="next" style="height: 118.5px; bottom: 234.5px;">�</a> </div><div class="active-slide-bar" style="bottom: 80.2px; left: 0px; visibility: visible; width: 235px;"> </div></section><!-- end #features-slider -->
+<section id="update">
+    <h1>Updates</h1>
+    So far we've launched three major updates.  Since our initial launch, we've completely revamped our scenery engine, and added an amazing new controller interaction system.  Check the <a href="/News">News</a> section for more info.
+    <br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cXr7I658aRI" frameborder="0" allowfullscreen=""></iframe>
+    <br><br>
+</section>
+<section id="aircraft">
+    <h1>Aircraft</h1>
+    <p>FlyInside Flight Simulator ships with ten beautiful high-quality aircraft out of the box, from MilViz and TFDI!  We'll be adding more too.  You'll enjoy complex systems, a challenging flight model, detailed interiors, and a variety of liveries.</p>
+    <h3>Twins</h3>
+    <ul class="dotted arrow">
+        <li>MilViz B-55<br>
+                <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/B55_Cockpit_Night.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/B55_Cockpit_Night.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/B55_Ext_3.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/B55_Ext_3.jpg_Thumb.jpg">
+    </a>
+
+        </li>
+        <li>MilViz 310R<br>
+                <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/C310_Cockpit.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/C310_Cockpit.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/C310_Ext_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/C310_Ext_1.jpg_Thumb.jpg">
+    </a>
+
+        </li>
+        <li>MilViz T-50<br>
+                <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/T50_Cockpit.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/T50_Cockpit.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/T50_Ext_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/T50_Ext_1.jpg_Thumb.jpg">
+    </a>
+
+        </li>
+        <li>MilViz DHC-3<br>
+                <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/DHC3_Cockpit.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/DHC3_Cockpit.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/DHC3_Ext_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/DHC3_Ext_1.jpg_Thumb.jpg">
+    </a>
+
+        </li>
+    </ul>
+    <h3>Jets</h3>
+    <ul class="dotted arrow">
+        <li>MilViz 737<br>
+                <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/737_Cockpit_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/737_Cockpit_1.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/737_Cockpit_4.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/737_Cockpit_4.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/737_Ext_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/737_Ext_1.jpg_Thumb.jpg">
+    </a>
+
+        </li>
+        <li>TFDi Design 717<br>
+                <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/717_Cockpit_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/717_Cockpit_1.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/717_Cockpit_4.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/717_Cockpit_4.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/717_Ext_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/717_Ext_1.jpg_Thumb.jpg">
+    </a>
+
+        </li>
+        <li>MilViz T-38A<br>
+                <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/T38A_Cockpit_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/T38A_Cockpit_1.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/T38A_Ext_2.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/T38A_Ext_2.jpg_Thumb.jpg">
+    </a>
+</li>
+    </ul>
+    <h3>Helicopters</h3>
+    <ul class="dotted arrow">
+        <li>
+            MilViz B-407<br>
+                <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/B407_Cockpit_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/B407_Cockpit_1.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/B407_Ext_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/B407_Ext_1.jpg_Thumb.jpg">
+    </a>
+
+        </li>
+        <li>MilViz MD-530<br>
+                <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/MD530_Cockpit_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/MD530_Cockpit_1.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/MD530_Ext_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/MD530_Ext_1.jpg_Thumb.jpg">
+    </a>
+
+        </li>
+        <li>MilViz CH-47D<br>
+                <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/CH47D_Cockpit_1.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/CH47D_Cockpit_1.jpg_Thumb.jpg">
+    </a>
+    <a class="thumbnail fancybox" rel="lightbox" href="/Content/Images/ACS/CH47D_Ext_3.jpg">
+            <img class="img-responsive" alt="" src="/Content/Images/ACS/CH47D_Ext_3.jpg_Thumb.jpg">
+    </a>
+
+        </li>
+    </ul>
+    <p>We're also in process of bringing other popular add-on aircraft to FlyInside Flight Simulator.  If you're an add-on developer who'd like to port your aircraft models, contact <a href="mailto:support@flyinside-fsx.com">support@flyinside-fsx.com</a></p>
+</section>
+<section id="virtual-reality">
+    <h1>Virtual Reality</h1>
+    <p>
+        While FlyInside Flight Simulator runs great on a standard monitor, it was built with virtual reality in mind.  FlyInside's innovative virtual windowing system allows you to use every simulator dialog and menu within VR intuitively.
+    </p>
+    <video src="https://cdn.flyinside-fsx.com/VR_MouseVid.mp4" autoplay="" loop=""></video>
+    <p>
+        FlyInside supports multiple forms of input.  You can easily use your mouse from within VR, thanks to our virtual 3d mouse cursor.  If you don't want to take your hand off of your joystick, you're welcome to use FlyInside's interaction dot.
+        For added immersion, we support Leap Motion, Oculus Touch, and Vive controllers.  You can use your virtual hands to start, fly, land, and manipulate aircraft.
+    </p>
+</section>
+<section id="scenery">
+    <h1>Scenery</h1>
+    <p>
+        FlyInside Flight Simulator has a unique and innovative scenery system.  It's designed to run at 90fps at VR resolutions, while displaying dense clouds, huge amounts of auto-gen, and detailed landscapes.
+    </p>
+	<img src="/Content/Images/Autogen.jpg">
+    <p>
+        Our scenery system combines a variety of data sources including ortho-imagery, building footprints, meta-data, and more, to produce a virtual landscape worth flying in.
+    </p>
+	<img src="/Content/Images/Mountains.jpg">
+    <p>
+        The innovative night-lighting system makes night-time city-scapes a joy to fly, without dragging down FPS.
+    </p>
+	<img src="/Content/Images/Night717.jpg">
+</section>
+<section id="technology">
+    <h1>Technology</h1>
+    <p>
+        FlyInside Flight Simulator is built on a brand-new engine.  This isn't a set of upgrades, patches, and duct-tape on software that's been in development since the 80s or 90s.  This is modern technology built for modern computers.
+    </p>
+    <p>
+        We split work across multiple cores, so that you aren't stuck at 30fps while 3 of your cores remain idle.  We keep your GPU busy pumping out graphics and maintaining high frame-rates!
+    </p>
+    <img src="/Content/Images/CPUCores.jpg">
+    <p>
+        At the same time, our engine is designed to make the best use of your GPU possible.  FlyInside Flight Simulator chews through traditionally heavy features such as dense weather and detailed night-lighting with ease, where other simulators
+        can't keep up.  We test FlyInside Flight Simulator on modern headsets like the Vive Pro, where the goal is always 90fps at supersampled resolution.  The benefit will only grow as more demanding VR headsets come to market.
+    </p>
+</section>
+<section id="sdk">
+    <h1>FlyInside Flight Simulator SDK</h1>
+    <p>
+        Our goal is to make FlyInside Flight Simulator an open platform.  Your add-ons don't require our approval, and you're free to sell them via your own website, royalty free.
+    </p>
+    <p>
+        Using our <a href="https://cdn.flyinside-fsx.com/sdk">scripting SDK</a> you can create add-ons in minutes, add-ons capable of manipulating simulator variables, displaying user interfaces, drawing 3d graphics, and much much more.
+    </p>
+    <img src="https://cdn.flyinside-fsx.com/sdk/Tutorials/Flaps1.png">
+    <p>
+        We're in the process of finalizing our aircraft SDK, along with creating user friendly tools around our scenery system.  If you're interested in creating aircraft, porting an existing aircraft from another simulator, or in creating scenery,
+        please contact <a href="mailto:support@flyinside-fsx.com">support@flyinside-fsx.com</a>.  We'd like your input as we finalize these tools, and can provide you with additional information.
+    </p>
+</section>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        $(".fancybox").fancybox({
+            openEffect: "fade",
+            closeEffect: "fade"
+        });
+    });
+</script>
+	</section>
+	<footer id="footer" class="clearfix">
+		<div class="container">
+			<div class="three-fourth">
+				<nav id="footer-nav" class="clearfix">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/Features">Features</a></li>
+						<li><a href="/Download">Try &amp; Buy</a></li>
+						<li><a href="/News">News</a></li>
+						<li><a href="http://forum.flyinside-fsx.com/">Message Board</a></li>
+					</ul>
+				</nav><!-- end #footer-nav -->
+				<ul class="contact-info">
+					<li class="email"><a href="mailto:support@flyinside-fsx.com">support@flyinside-fsx.com</a></li>
+                    <li class="email"><a href="mailto:sales@flyinside-fsx.com">sales@flyinside-fsx.com</a></li>
+				</ul><!-- end .contact-info -->
+			</div><!-- end .three-fourth -->
+			<div class="one-fourth last">
+				<span class="title">Stay connected</span>
+				<ul class="social-links">
+					<li class="twitter"><a href="https://twitter.com/FlyInsideFSX">Twitter</a></li>
+					<li class="facebook"><a href="https://www.facebook.com/FlyInsideFSX/">Facebook</a></li>
+				</ul><!-- end .social-links -->
+			</div><!-- end .one-fourth.last -->
+		</div><!-- end .container -->
+	</footer><!-- end #footer -->
+	<footer id="footer-bottom" class="clearfix">
+		<div class="container">
+			<ul>
+				<li>FlyInside Inc. © 2018</li>
+				<li><a href="/PrivacyPolicy">Privacy Policy</a></li>
+			</ul>
+		</div><!-- end .container -->
+	</footer><!-- end #footer-bottom -->
+	<!--[if !lte IE 6]><!-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+	<!--[if lt IE 9]> <script src="js/selectivizr-and-extra-selectors.min.js"></script> <![endif]-->
+	<script src="/js/respond.min.js"></script>
+	<script src="/js/jquery.easing-1.3.min.js"></script>
+	<script src="/js/jquery.fancybox.pack.js"></script>
+	<script src="/js/jquery.smartStartSlider.min.js"></script>
+	<script src="/js/jquery.jcarousel.min.js"></script>
+	<script src="/js/jquery.cycle.all.min.js"></script>
+	<script src="/js/jquery.isotope.min.js"></script>
+	<script src="/js/audioplayerv1.min.js"></script>
+	<script src="//maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="/js/jquery.gmap.min.js"></script>
+	<script src="/js/jquery.touchSwipe.min.js"></script>
+	<script src="/js/custom.js"></script>
+	<!--<![endif]-->
+	<script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/respond.js"></script>
+
+	<script src="/Scripts/FI/controls.js?v=5"></script>
+	<script src="/Scripts/FI/downloads.js?v=5"></script>
+	
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-60577508-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+
+<a href="#" id="back-to-top" title="Back to Top">Back to Top</a><iframe name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe><iframe tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="https://consentcdn.cookiebot.com/sdk/bc-v4.min.html" style="position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe></body></html>

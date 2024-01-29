@@ -1,0 +1,478 @@
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no">  
+  <title>VertoStudio.com</title>
+  <style type="text/css">
+    body 
+    { 
+      background-color: #B0C4DE; 
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: lighter;
+    }
+    .lw 
+    {
+      border: 2px solid black;
+      background-color: #FFFFFF;
+      box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.25);
+      padding: 15px 20px;
+      margin: 10px;
+      font-size: 30px; 
+      text-align: center;  
+    }    
+    
+    h1.main
+    {
+      font-size: 2.25em;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    h2.main
+    {
+      font-size: 1.7em;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 500;
+    }
+    
+    #verto_backdrop
+    {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -100;
+      background-image: url("bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;    
+    }
+        
+    #verto_bouncedrop
+    {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 300px;
+      z-index: -99;      
+      background-color: #ffffff;
+    }
+    
+    #page_content
+    {
+      box-shadow: inset 1px 4px 9px -6px;    
+      padding: 15px 60px 20px 60px;
+      background-color: #ffffff;
+      margin-bottom: 0;
+    }
+    
+    .verto_paragraph
+    {
+      padding: 5px 10px 15px 20px;
+    }
+    
+    .shadow
+    {
+      box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.75);    
+    }   
+    
+    a.content_link
+    {
+      font-weight: 600;
+      color: #000099;
+    }
+    a.content_link:visited
+    {
+      color: #000099;
+    }    
+    
+    a.no_hover:hover
+    {
+      text-decoration: none;
+    }
+
+    #privAnim {    
+      position:fixed; left: 5px; bottom: 5px; width: 300px;
+      -webkit-animation: ease-out;
+      -webkit-animation-name: run;
+      -webkit-animation-duration: 2s;      
+    }
+    
+    @-webkit-keyframes run {
+        0% { left: -500px;}
+        100%{ left: 5px;}
+    }    
+  </style>
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">-->
+  <link rel="stylesheet" href="bootstrap/bootstrap.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>   
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>   
+  
+ </head>
+ 
+  <body>   
+    <script src="safarihacks.js"></script>
+  
+      <script src="aws/aws-cognito-sdk.min.js"></script>
+  <script src="aws/amazon-cognito-auth.min.js"></script>
+  
+  <script>
+    var cognitoAuth;
+
+    $(document).ready(function () {
+        $("input#login_submit").click(function(){
+            window.alert('login submit');
+            
+            /*$.ajax({
+                type: "POST",
+                url: "/forum/ucp.php?mode=login", //process to mail
+                data: $('form.login').serialize(),
+                success: function(msg){
+                    $("#login_modal").modal('hide'); //hide popup  
+                    window.location.reload();
+                },
+                error: function(){
+                    alert("The login has failed, please try again");
+                }
+            });*/
+        });
+    });  
+    
+    var timeout;
+
+    function preventPopup() 
+    {
+      clearTimeout(timeout);
+      timeout = null;
+      window.removeEventListener('pagehide', preventPopup);
+    }
+
+    function doCreate() 
+    {    
+      var time = (new Date()).getTime();
+
+      var iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+      
+      $("<iframe id='appLaunchFrame'/>")
+      .attr('src', 'vertostudio3d:/create')
+      .attr('style', 'display:none;')
+      .appendTo('body');
+
+      timeout = setTimeout(function() {
+          if(iOS)
+          {
+            var now = (new Date()).getTime();
+
+            if((now - time)<550) 
+            {
+              alert("This action requires Verto Studio 3D to be installed on this system.");
+              window.location = 'ios.php';
+            }
+          }
+      }, 500);
+      window.addEventListener('pagehide', preventPopup);
+    }     
+    
+    function initCognitoSDK() {
+        var authData = {
+            ClientId : '6eef343eq8v992dt8lu490hktc',
+            AppWebDomain : 'vertostudio.auth.us-east-1.amazoncognito.com',
+            TokenScopesArray : ['email','profile'],
+            RedirectUriSignIn : 'https://vertostudio.com/signin.php',
+            RedirectUriSignOut : 'https://vertostudio.com/signout.php',
+            UserPoolId : 'us-east-1_HfAxFX01n', 
+            AdvancedSecurityDataCollectionFlag: false
+        };
+        var auth = new AmazonCognitoIdentity.CognitoAuth(authData);
+        
+        auth.userhandler = {
+            onSuccess: function(result) {
+                console.log(result);
+                alert("Sign in success");
+            },
+            onFailure: function(err) {
+                console.log(err);
+                alert("Error!" + err);
+            }
+        };
+        
+        return auth;
+    }   
+         
+    cognitoAuth = initCognitoSDK();
+    
+    function doLogin() { 
+        cognitoAuth.getSession();                    
+    }    
+    
+    function doLogout() {
+	    cognitoAuth.signOut();    
+    }
+    
+  </script>    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Verto Studio</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cloud <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="javascript:doCreate()">Create</a></li>              
+                <li><a href="/cloud">Browse</a></li>
+                <li class="divider"></li><li><a href="javascript:doLogin()">Sign in...</a></li>
+
+              </ul>
+            </li>          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Verto Studio 3D <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="ios.php">iPad/iPhone</a></li>
+                <li><a href="desktop.php">Mac</a></li>
+                <li><a href="vr.php">Windows Desktop</a></li>                
+                <li><a href="vr.php">Virtual Reality</a></li>                               
+                <li><a href="mr.php">Mixed Reality</a></li>
+                <li><a href="holo.php">HoloLens</a></li>                                
+                <!--<li><a href="#">Web</a></li>-->
+                <li class="divider"></li>
+                <li><a href="ios_tour.php">Tour</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://discord.gg/TdpBUPV">Discord</a></li>
+                <li><a href="/pub/legal_and_priv_policy_holo.pdf">Legal &amp; Privacy Policy</a></li>
+              </ul>
+            </li>        
+            <li class="nav-item">
+              <a class="nav-link" href="services.php">Services</a>
+            </li>                
+<!--            <li><a href="/gamedev">Games</a></li>            -->
+          </ul>
+          
+                    
+          
+          <ul class="nav navbar-nav navbar-right">
+          
+          
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>          <!-- Modal -->
+        <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel_login" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">Verto Studio Cloud Login</h4>
+              </div>
+              <div class="modal-body">
+                  <form class="login" name="login">
+                    <div class="form-group">
+                      <label for="username">Username</label><br>
+                      <input type="text" name="username" id="username" class="form-control" placeholder="Enter Username"><br>
+                    </div>
+                    <div class="form-group">                    
+                      <label for="password">Password</label><br>
+                      <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password"><br>
+                    </div>                  
+                    <div class="checkbox">
+                      &nbsp;&nbsp;&nbsp;<label><input type="checkbox" name="autologin">Remember me</label>
+                    </div>         
+                <input type="hidden" name="login" value="Login">
+                 <!--<input type="hidden" name="redirect" value="../index.php" />-->
+                </form>              
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>              
+                <button type="button" class="btn btn-default" onclick="window.location='/forum/ucp.php?mode=register'">Register</button>
+                <input class="btn btn-success" type="submit" value="Submit" id="login_submit">
+              </div>
+            </div>
+        </div>
+      </div>            
+<!--    <div align="center"><br><br><br><br><br><br><br><br><h1 class="main">3D Artists Deserve a 3D Environment</h1></div>        -->
+<br><br><br><br><br><br><br><br><h1 class="main">
+    <!-- todo: fix this abomination to man and all that his holy -->
+    <div align="center">
+    <div style="position: relative; width: 0; height: 0">    
+      <font style="position: relative; top: -40px; left: 60px; color: rgba(58, 59, 113, 0.25);">Virtual</font>
+      <font style="position: relative; top: 5px; left: 62px; color: rgba(58, 59, 113, 0.25);">Mixed</font> 
+      <font style="position: relative; top: 5px; left: 62px; color: rgba(58, 59, 113, 0.25);">Augmented</font>       
+    </div>    
+    </div>
+
+    <div align="center">
+    Your Launchpad to <font style="font-weight: 500">Any</font> <font style="position: relative; left: 40px;">Reality</font></div></h1>        
+    <br><br><br><br><br><br><br><br>    
+    
+              <div id="privAnim" class="panel panel-info">
+           <div class="panel-body">
+              Privacy Policy Update
+            </div>
+            <div class="panel-footer"><p style="margin-bottom: 10px;">This site uses cookies to keep you logged in among a few other things.&nbsp;<br>
+            Read up on what we fully collect <a style="font-weight: bold; color: #0030D0" href="priv.php" target="_this">here</a></p>
+            <button type="button" onclick="submitPrivAgree()" class="btn btn-xs btn-primary">Agree</button>
+            </div>          
+          </div>
+        
+          <script>
+            function setCookie(name,value,days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days*24*60*60*1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+            }
+            function getCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }          
+          
+            function submitPrivAgree() {
+              setCookie("privAgree2", 1, 365*30);
+              $("#privAnim").remove();
+            }
+          </script>
+    <div width="100%" id="page_content">
+
+    <a class="no_hover" style="color: #393972" href="vertojs.php"><h2 class="main">Introducing VertoJS <span class="label label-default">New</span></h2>
+    </a><p class="verto_paragraph"><a class="no_hover" style="color: #393972" href="vertojs.php">Verto Studio is now fully programmable via scripts!  Check it out </a><a class="content_link" href="vertojs.php">here</a>.<br>
+    </p>
+    
+    <a class="no_hover" style="color: #393972" href="quest.php"><h2 class="main">Verto Studio VR for Oculus Quest Now Available!</h2>
+    </a><p class="verto_paragraph"><a class="no_hover" style="color: #393972" href="quest.php">Verto Studio VR finally comes to the Oculus Quest. &nbsp;Existing Verto Studio PC VR users can use it for free right now! &nbsp; More exciting details </a><a class="content_link" href="quest.php">here</a>.<br>
+    </p>
+        
+    <h2 class="main">3D Modeling can be Easy</h2>
+    <p class="verto_paragraph">Whether you're a professional 3D modeler, or a beginner looking to get your feet wet, 
+    Verto Studio 3D is a desktop-class mobile modeling tool; our flagship product which was designed on principles of ease-of-use &amp; efficiency.  
+    Verto Studio 3D can take your 3D content places that you never thought possible. <br> <a class="content_link" href="ios.php">Learn More.</a>
+    </p>
+    
+    <div class="collapse" id="content_product">
+      <p class="verto_paragraph">
+        Those of us who have attempted to export and convert models and scenes to production systems understand the pain and frustration associated with     
+        doing such tasks.  
+       </p>    
+    </div>
+
+    <!--<div align="right"><a class="btn btn-primary" data-toggle="collapse" id="content_product_more" href="#content_product" aria-expanded="false" aria-controls="collapseExample">
+      More...
+    </a></div>-->
+    <script>    
+      $('#content_product_more').click(function() {  
+        $(this).text(function(i,old){
+            return old.trim()=='More...' ?  'Less' : 'More...';
+        });
+      });
+    </script>
+
+    <div align="right"><h2 class="main">Verto Studio Technology :: Truly Mobile</h2></div>
+    <p class="verto_paragraph">Verto Studio's products are powered by a versatile graphics engine that can run on just about any modern platform.
+    This means that you create your scene just the way you like it using just the right textures, shaders, lighting and camera settings.  Then run your
+    scene on the desired medium of your choice.
+     </p>    
+     
+    <div class="collapse" id="content_tech">
+       <script>
+        function openImageModal(imageSrc)
+        {
+          $("#image_viewer_image").attr('src', imageSrc);
+          $("#image_viewer_link").attr('href', imageSrc);          
+          $('#image_viewer').modal({});
+        }
+       </script>
+       
+       <div align="center">
+       <table border="0"><tbody><tr><td colspan="3">
+         <div align="center">
+         <a href="javascript:openImageModal('mac_ss1.png');"><img src="mac_ss1.png" width="380px"></a><br>
+         </div>
+         <div align="center">Create using Verto Studio</div><br>
+      </td></tr><tr><td>
+         <a href="javascript:openImageModal('mobile_ss1.png');"><img src="mobile_ss1.png" width="280px"></a><br>
+      </td><td>
+         <div style="padding: 0px 10px 0px 20px;">
+         <a href="javascript:openImageModal('desktop_ss1.png');"><img src="desktop_ss1.png" width="280px"></a><br>
+         </div>
+      </td><td>      
+         <a href="javascript:openImageModal('web_ss1.png');"><img src="web_ss1.png" width="280px"></a><br>
+      </td></tr>
+      <tr>
+        <td><div width="100%" align="center">Run on Mobile</div></td>
+        <td><div width="100%" align="center">Run on Desktop</div></td>        
+        <td><div width="100%" align="center">Run on Web</div></td>        
+      </tr>
+      
+      </tbody></table></div>
+      <br><br>
+      <div align="center"><h3>Verto Studio's Graphics Engine</h3></div>
+      <p class="verto_paragraph">For advanced interactive applications, Verto Studio's graphics engine is 100% available for usage
+      on all classes of projects ranging from enterprise to small business with deployment to web, desktop, or mobile devices.  
+      For more information on using the Verto Studio Graphics Engine or integration of Verto Studio Technology into your pipeline, please
+      <a class="content_link" href="mailto:Michael.L.Farrell@gmail.com?subject=VGLPP Engine">Contact Us</a>.
+       </p>    
+             
+       <!--Image viewer Modal -->
+      <div class="modal fade" id="image_viewer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title" id="myModalLabel">Image Viewer</h4>
+            </div>
+            <div class="modal-body">
+              <a href="#" id="image_viewer_link" target="_this"><img id="image_viewer_image" border="0" width="90%"></a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <div align="right"><a class="btn btn-primary" data-toggle="collapse" id="content_tech_more" href="#content_tech" aria-expanded="false" aria-controls="collapseExample">
+      More...
+    </a></div>
+    <script>        
+      $('#content_tech_more').click(function() {  
+        $(this).text(function(i,old){
+            return old.trim()=='More...' ?  'Less' : 'More...';
+        });
+      });
+    </script>
+     
+    </div>
+
+    <div width="100%" id="verto_backdrop">
+      <!-- note to self, don't be a dumbass and accidentally put anything in here -->
+    </div>
+    <div id="verto_bouncedrop" style="z-index: -101;"></div>
+    
+        
+  
+</body></html>

@@ -1,0 +1,812 @@
+<html lang="en-US" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><head>
+
+		<meta charset="UTF-8">
+
+		<title> EducationXR</title>
+
+
+
+		
+
+        <link href="https://educationxr.com/core/assets/cd3f47f5cf/img/icons/touch.png" rel="apple-touch-icon-precomposed">
+
+
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="description" content="">
+
+
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
+
+
+
+		
+<script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" charset="UTF-8" async="" src="https://consent.cookiebot.com/d3deb571-0b40-42d3-a873-285ae946bf7a/cc.js?renew=false&amp;referer=educationxr.com&amp;dnt=false&amp;init=false"></script><script type="text/javascript" charset="UTF-8" src="https://consentcdn.cookiebot.com/consentconfig/d3deb571-0b40-42d3-a873-285ae946bf7a/educationxr.com/configuration.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.12.2';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-177509109-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( 'undefined' === typeof gaOptout ) {
+		function gaOptout() {
+			__gaTrackerOptout();
+		}
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-177509109-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('require', 'linkid', 'linkid.js');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/educationxr.com\/lib\/js\/wp-emoji-release.min.js"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://educationxr.com/lib/js/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://educationxr.com/lib/css/dist/block-library/style.min.css" media="all">
+<link rel="stylesheet" id="wp-video-popup-css" href="https://educationxr.com/core/modules/responsive-youtube-vimeo-popup/assets/css/wp-video-popup.css" media="all">
+<link rel="stylesheet" id="tss-css" href="https://educationxr.com/core/modules/testimonial-slider-and-showcase/assets/css/wptestimonial.css" media="all">
+<link rel="stylesheet" id="normalize-css" href="https://educationxr.com/core/assets/cd3f47f5cf/normalize.css" media="all">
+<link rel="stylesheet" id="aos-styles-css" href="https://educationxr.com/core/assets/cd3f47f5cf/aos/dist/aos.css" media="all">
+<link rel="stylesheet" id="uikit-styles-css" href="https://educationxr.com/core/assets/cd3f47f5cf/uikit/css/uikit.min.css" media="all">
+<link rel="stylesheet" id="slick-styles-css" href="https://educationxr.com/core/assets/cd3f47f5cf/js/lib/slick/slick.css" media="all">
+<link rel="stylesheet" id="html5blank-css" href="https://educationxr.com/core/assets/cd3f47f5cf/style.css" media="all">
+<link rel="stylesheet" id="main-styles-css" href="https://educationxr.com/core/assets/cd3f47f5cf/css/styles.css" media="all">
+<script type="text/javascript" src="https://educationxr.com/core/assets/cd3f47f5cf/js/lib/conditionizr-4.3.0.min.js"></script>
+<script type="text/javascript" src="https://educationxr.com/core/assets/cd3f47f5cf/js/lib/modernizr-2.7.1.min.js"></script>
+<script type="text/javascript" src="https://educationxr.com/lib/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://educationxr.com/lib/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://educationxr.com/core/assets/cd3f47f5cf/aos/dist/aos.js"></script>
+<script type="text/javascript" src="https://educationxr.com/core/assets/cd3f47f5cf/js/lib/slick/slick.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/educationxr.com","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://educationxr.com/core/modules/974388b53b/assets/js/frontend.min.js"></script>
+<link rel="https://api.w.org/" href="https://educationxr.com/wp-json/">
+<link rel="alternate" type="application/json+oembed" href="https://educationxr.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feducationxr.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://educationxr.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feducationxr.com%2F&amp;format=xml">
+
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="d3deb571-0b40-42d3-a873-285ae946bf7a" data-blockingmode="auto" type="text/javascript"></script><style type="text/css" id="CookieConsentStateDisplayStyles">.cookieconsent-optin-preferences,.cookieconsent-optin-statistics,.cookieconsent-optin-marketing,.cookieconsent-optin{display:none;}.cookieconsent-optout-preferences,.cookieconsent-optout-statistics,.cookieconsent-optout-marketing,.cookieconsent-optout{display:block;display:initial;}</style>
+
+<style type="text/css">
+  a#CybotCookiebotDialogPoweredbyCybot,
+  div#CybotCookiebotDialogPoweredByText {
+    display: none !important;
+  }
+
+  #CookiebotWidget .CookiebotWidget-body .CookiebotWidget-main-logo {
+    display: none !important;
+  }
+</style>
+
+<link rel="icon" href="https://educationxr.com/storage/2020/08/cropped-favico-32x32.png" sizes="32x32">
+<link rel="icon" href="https://educationxr.com/storage/2020/08/cropped-favico-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://educationxr.com/storage/2020/08/cropped-favico-180x180.png">
+<meta name="msapplication-TileImage" content="https://educationxr.com/storage/2020/08/cropped-favico-270x270.png">
+		<style type="text/css" id="custom-css">
+			.header-logo {
+	object-fit: fill;
+	width: 450px;
+	height: 100%;
+}
+
+.wp-block-columns.quote-no-wrap {
+	display: inline;
+}
+
+section.hero-block .panel {
+	background: #FFFFFFEE;
+}
+
+header {
+	z-index: 99
+}
+
+header button {
+	background: transparent;
+  border: none;
+}
+
+header button:active,
+header button:focus{
+	outline: none;
+}
+
+header button i {
+	color: white;
+	font-size: 28px;
+}
+
+header .uk-inline .menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header .uk-inline .menu li {
+	margin-bottom: 10px
+}
+header .uk-inline .menu li:last-child {
+	margin-bottom: 0;
+} 
+
+header .uk-inline .menu li a {
+	color: #163A60;
+	font-weight: 600;
+}		</style>
+		
+		<script type="text/javascript">
+
+        // conditionizr.com
+
+        // configure environment tests
+
+        conditionizr.config({
+
+            assets: 'https://educationxr.com/core/assets/educationxr',
+
+            tests: {}
+
+        });
+
+    </script>
+
+
+
+	<style type="text/css" id="CookiebotDialogStyle">#CybotCookiebotDialog *,#CybotCookiebotDialogBodyUnderlay *{background:transparent;box-sizing:border-box;color:inherit;font-family:inherit;font-size:15px;margin:0;outline:0;padding:0;vertical-align:baseline}#CybotCookiebotDialog #CybotCookiebotDialogNav :after,#CybotCookiebotDialog #CybotCookiebotDialogNav :before{content:none}#CybotCookiebotDialog label{width:auto}#CybotCookiebotDialogBodyUnderlay{background-color:#000;height:100%;left:0;margin:0;opacity:0;overflow:hidden;padding:0;pointer-events:none;position:fixed;top:0;transition:opacity .5s ease;width:100%;z-index:2147483630}#CybotCookiebotDialog.CybotCookiebotDialogActive+#CybotCookiebotDialogBodyUnderlay{opacity:.75;pointer-events:auto}#CybotCookiebotDialog{background-color:#ffffff;border-radius:8px;box-shadow:0 32px 68px rgba(0,0,0,.3);box-sizing:border-box;color:#141414;font-family:sans-serif;font-size:15px;height:auto;left:50%;letter-spacing:.1px;line-height:24px;max-height:calc(100% - 16px);overflow:hidden;position:fixed;text-align:initial;top:50%;transform:translate(-50%,-50%);transition:all .5s ease;transition-property:width,max-width,top,bottom,left,opacity;width:calc(100% - 16px);z-index:2147483631}#CybotCookiebotDialog ol,#CybotCookiebotDialog ul{list-style-position:inside}#CybotCookiebotDialog .CybotCookiebotDialogContentWrapper{align-items:flex-start;display:flex;flex-direction:column;width:100%}:root #CybotCookiebotDialog,:root #CybotCookiebotDialog #CybotCookiebotDialogTabContent,_:-ms-fullscreen{height:100%}:root #CybotCookiebotDialogBody,:root #CybotCookiebotDialogTabContent .CybotCookiebotDialogTabPanel,_:-ms-fullscreen{flex:auto}@media screen and (min-width:601px){#CybotCookiebotDialog{max-width:900px}}@media screen and (min-width:1280px){#CybotCookiebotDialog{left:50%;max-height:80vh;top:0;transform:translate(-50%)}#CybotCookiebotDialog.CybotEdge{box-shadow:0 30px 70px rgba(0,0,0,.3);height:auto;max-height:70vh;max-width:100vw;min-width:100vw;padding:24px;transition-property:transform,opacity,top;width:100vw}#CybotCookiebotDialog.CybotEdge .CybotCookiebotDialogContentWrapper{flex-direction:row;margin:0 auto;max-width:1600px;position:relative}#CybotCookiebotDialog[data-template=bottom]{top:100%;transform:translate(-50%,-100%)}#CybotCookiebotDialog[data-template=pushdown],#CybotCookiebotDialog[data-template=slidedown]{transform:translate(-50%,-150%)}#CybotCookiebotDialog[data-template=pushdown].CybotCookiebotDialogActive,#CybotCookiebotDialog[data-template=slidedown].CybotCookiebotDialogActive{transform:translate(-50%)}#CybotCookiebotDialog[data-template=slideup]{top:100%;transform:translate(-50%,50%)}#CybotCookiebotDialog[data-template=slideup].CybotCookiebotDialogActive{transform:translate(-50%,-100%)}#CybotCookiebotDialog[data-template=overlay],#CybotCookiebotDialog[data-template=popup]{opacity:0;top:50%;transform:translate(-50%,-50%)}#CybotCookiebotDialog[data-template=overlay].CybotCookiebotDialogActive,#CybotCookiebotDialog[data-template=popup].CybotCookiebotDialogActive{opacity:1}}#CybotCookiebotDialogHeader{align-items:center;border-bottom:1px solid #D6D6D6;display:flex;padding:1em;width:100%}#CybotCookiebotDialogHeaderLogosWrapper{align-items:center;display:flex;flex:1;justify-content:space-between}#CybotCookiebotDialogPoweredbyCybot,#CybotCookiebotDialogPoweredbyLink{align-items:center;display:flex;width:50%}#CybotCookiebotDialogPoweredbyCybot{justify-content:flex-end;width:175px}#CybotCookiebotDialogPoweredbyImage{max-height:1.5em;width:auto}#CybotCookiebotDialogPoweredbyCybot svg{fill:#141414;display:none;height:1.733em;max-width:163px;opacity:.6}#CybotCookiebotDialogPoweredByText{display:block;margin-top:.5em;opacity:.6;text-align:center}#CybotCookiebotDialogPoweredByText a{color:#141414;direction:ltr;display:block;font-size:.867em;letter-spacing:.25px;line-height:19px;text-decoration:none}#CybotCookiebotDialogPoweredByText a span{display:inline-block;font-weight:700}@media screen and (min-width:601px){#CybotCookiebotDialogPoweredByText{margin-top:1em}}@media screen and (min-width:1280px){#CybotCookiebotDialogHeader{padding:1.5em}#CybotCookiebotDialogPoweredbyImage{max-height:2.125em}#CybotCookiebotDialogPoweredbyCybot svg{display:block}#CybotCookiebotDialogPoweredByText{display:none}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogHeader{align-items:center;align-self:stretch;border:none;justify-content:space-between;padding:0;width:210px}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogHeaderLogosWrapper{align-self:stretch;flex-direction:column}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogPoweredbyLink{flex:1}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogPoweredbyImage{height:auto;max-height:6em;max-width:100%}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogPoweredbyCybot{height:2em;margin-top:2em}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogPoweredbyCybot,#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogPoweredbyLink{justify-content:center}}#CybotCookiebotDialogNav{border-bottom:1px solid #D6D6D6;position:relative;width:100%}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogNav{display:none}#CybotCookiebotDialogNav .CybotCookiebotDialogNavItems{display:flex;list-style:none;overflow-x:auto}#CybotCookiebotDialogNav .CybotCookiebotDialogNavItems::-webkit-scrollbar{height:0;width:0}#CybotCookiebotDialogNav .CybotCookiebotDialogNavItem{flex:1 1 0%;margin:0 auto}#CybotCookiebotDialogNav .CybotCookiebotDialogNavItemLink{border-bottom:1px solid #ffffff;color:#141414;display:block;font-weight:600;height:100%;outline-offset:-5px;padding:1em;text-align:center;text-decoration:none;white-space:nowrap}#CybotCookiebotDialogNav .CybotCookiebotDialogNavItemLink:hover{color:#1032CF}#CybotCookiebotDialogNav .CybotCookiebotDialogNavItemLink.CybotCookiebotDialogActive{border-bottom:1px solid #1032CF;color:#1032CF}@media screen and (min-width:1280px){#CybotCookiebotDialogNav .CybotCookiebotDialogNavItemLink.CybotCookiebotDialogActive{border-width:3px}}#CybotCookiebotDialogTabContent{display:flex;flex-direction:column;height:auto;overflow:auto;width:100%}#CybotCookiebotDialogTabContent .CybotCookiebotScrollContainer{display:flex;flex:1;flex-direction:column}#CybotCookiebotDialogTabContent .CybotCookiebotDialogTabPanel{flex:1;overflow-x:hidden;overflow-y:auto;width:100%}#CybotCookiebotDialogSpecialFeaturesText ul{margin:.25em 0 .25em 2em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogSpecialFeaturesText ul{margin:.25em 2em .25em 0}#CybotCookiebotDialog .CybotCookiebotScrollContainer{border-bottom:1px solid #D6D6D6;height:100%;min-height:20vh;padding:.375em;position:relative}#CybotCookiebotDialog .CybotCookiebotScrollArea{height:100%}#CybotCookiebotDialog .CybotCookiebotDialogBodyBottomWrapper{width:100%}@media screen and (min-width:601px){#CybotCookiebotDialog .CybotCookiebotScrollContainer{display:flex;min-height:auto}}@media screen and (min-width:1280px){#CybotCookiebotDialog.CybotEdge .CybotCookiebotScrollContainer{border-bottom:none;display:none}#CybotCookiebotDialog.CybotEdge.CybotMultilevel .CybotCookiebotScrollContainer{width:calc(100% - 286px - 1.5em)}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogTabContent{flex:1;margin-left:1.5em;overflow:visible}#CybotCookiebotDialog.CybotEdge[dir=rtl] #CybotCookiebotDialogTabContent{margin-left:0;margin-right:1.5em}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogTabContent .CybotCookiebotDialogTabPanel{overflow:visible}#CybotCookiebotDialog.CybotEdge .CybotCookiebotDialogBodyBottomWrapper{align-items:flex-end;display:flex;flex-wrap:wrap;justify-content:flex-start;margin-top:1.5em;padding-left:.375em}#CybotCookiebotDialog.CybotEdge[dir=rtl] .CybotCookiebotDialogBodyBottomWrapper{padding-left:0;padding-right:.375em}#CybotCookiebotDialog.CybotEdge.CybotMultilevel .CybotCookiebotDialogBodyBottomWrapper{border-top:1px solid #D6D6D6;padding-top:1em}}@media screen and (min-width:1510px){#CybotCookiebotDialog.CybotEdge:not([lang=ta]):not([lang=bg]):not([lang=is]):not([lang=el]) #CybotCookiebotDialogTabContent{margin:0 1.5em}#CybotCookiebotDialog.CybotEdge:not([lang=ta]):not([lang=bg]):not([lang=is]):not([lang=el]) .CybotCookiebotScrollContainer{width:auto}#CybotCookiebotDialog.CybotEdge:not([lang=ta]):not([lang=bg]):not([lang=is]):not([lang=el]) .CybotCookiebotDialogBodyBottomWrapper{border-top:none;padding-top:0}}#CybotCookiebotDialog .CybotCookiebotFader{bottom:0;height:5em;left:1px;opacity:0;pointer-events:none;position:absolute;transition:opacity .3s;width:calc(100% - 1em);z-index:10}#CybotCookiebotDialog[dir=rtl] .CybotCookiebotFader:not(.CybotCookiebotFaderLeft){left:auto;right:1px}#CybotCookiebotDialog .CybotCookiebotFader.CybotCookiebotDialogActive{opacity:1}#CybotCookiebotDialog .CybotCookiebotFaderLeft,#CybotCookiebotDialog .CybotCookiebotFaderRight{height:100%;width:3.5em}#CybotCookiebotDialog .CybotCookiebotFaderLeft{left:0}#CybotCookiebotDialog .CybotCookiebotFaderRight{left:auto;right:0}@media screen and (min-width:1280px){#CybotCookiebotDialog .CybotCookiebotFader:not(.CybotCookiebotFaderLeft):not(.CybotCookiebotFaderRight){width:calc(100% - 1.5em)}}#CybotCookiebotDialogBody{display:flex;flex-direction:column;height:100%}#CybotCookiebotDialogBody .CybotCookiebotScrollContainer{display:flex;flex-direction:column;max-height:18em}#CybotCookiebotDialog #CybotCookiebotDialogBodyContent{max-height:inherit}#CybotCookiebotDialog h2{font-weight:600;letter-spacing:.25px;line-height:1.6em;margin-bottom:.5em}#CybotCookiebotDialogBodyContent{flex:1;height:100%;letter-spacing:.5px;line-height:1.6em;max-height:100%;overflow-x:hidden;padding:1.625em .625em}#CybotCookiebotDialogDetailBulkConsent{border:1px solid #D6D6D6;border-radius:.5em;margin:0 .625em 1em;padding:1em}#CybotCookiebotDialogDetailBulkConsent:before{border-top:1px solid #D6D6D6;content:"";width:100%}#CybotCookiebotDialogDetailBulkConsentLink{color:#141414;display:block;font-weight:600;line-height:1.6em;margin-bottom:.625em;text-decoration:none}#CybotCookiebotDialogDetailBulkConsentLink:hover{color:#1032CF}#CybotCookiebotDialogTabContent .CybotCookiebotDialogDetailBulkConsentCount{background-color:#D6D6D6;border-radius:5em;display:inline-block;font-size:.8em;font-weight:700;letter-spacing:.25px;line-height:1.2em;margin-left:.5em;padding:.25em .5em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogTabContent .CybotCookiebotDialogDetailBulkConsentCount{margin-left:0;margin-right:.5em}#CybotCookiebotDialogDetailBulkConsentListWrapper{background-color:rgba(0, 0, 0, 0.05);border:1px solid #D6D6D6;border-radius:.5em;margin-top:1.5em;padding:1em}#CybotCookiebotDialogDetailBulkConsentListWrapper>span{border-bottom:1px solid #D6D6D6;display:block;font-weight:600;padding-bottom:1em}#CybotCookiebotDialogDetailBulkConsentList{margin-top:1em}#CybotCookiebotDialogDetailFooter{letter-spacing:.3px;line-height:1.6em;padding:0 1em 1em}#CybotCookiebotDialogDetailFooter a{color:#141414}#CybotCookiebotDialogDetailBulkConsentList dt:not(:last-of-type){margin-bottom:.5em}@media screen and (min-width:1280px){#CybotCookiebotDialog #CybotCookiebotDialogBody .CybotCookiebotScrollContainer{display:flex;flex:auto;height:auto;max-height:15.5em;overflow:hidden}#CybotCookiebotDialogBodyContent{padding:1.125em}#CybotCookiebotDialogDetailBulkConsent{margin:0 2em 1em;padding:1.5em}#CybotCookiebotDialogDetailFooter{padding:0 2em 1.125em}#CybotCookiebotDialogDetailBulkConsentListWrapper{margin-top:2em;padding:1.5em}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBody{display:flex;justify-content:space-between;overflow:hidden}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyContent{height:auto;padding:0 1.125em 0 0}#CybotCookiebotDialog[dir=rtl].CybotEdge #CybotCookiebotDialogBodyContent{padding-left:1.125em;padding-right:0}}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeader{font-weight:600;line-height:1.6em;margin-bottom:1em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABWrapper{border:2px solid #D6D6D6;border-radius:1em;margin:1.5em 0 1em;padding:1em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABWrapper:last-of-type{margin-bottom:0}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainer,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainerCollapsed{background-color:rgba(0, 0, 0, 0.05);border:2px solid #D6D6D6;border-radius:1em;margin-bottom:.5em;padding:.5em 1em 1em;position:relative}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainer:last-of-type,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainerCollapsed:last-of-type{margin-bottom:0}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonWrapper{align-items:center;display:flex;font-weight:600;margin:.5em 2em 0 0}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonWrapper{margin:.5em 0 0 2em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonWrapper:nth-of-type(2){margin-right:0}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonWrapper:nth-of-type(2){margin-left:0;margin-right:0}#CybotCookiebotDialogDetailBodyContentIABv2Tabs a+.CybotCookiebotDialogBodyLevelButtonIABContainerTogglesWrapper .CybotCookiebotDialogBodyLevelButtonWrapper:nth-of-type(2){margin-right:3.5em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs a+.CybotCookiebotDialogBodyLevelButtonIABContainerTogglesWrapper .CybotCookiebotDialogBodyLevelButtonWrapper:nth-of-type(2){margin-left:3.5em;margin-right:0}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABDescription{border-top:1px solid #D6D6D6;margin-top:1em;padding-top:1em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABDescription a{align-items:center;display:inline-flex;margin-top:.5em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABDescription .CybotCookiebotDialogBodyLevelButtonIABBullet{margin:1em 0 0 1em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABDescription .CybotCookiebotDialogBodyLevelButtonIABBullet{margin:1em 1em 0 0}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainerCollapsed .CybotCookiebotDialogBodyLevelButtonIABDescription{display:none}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainer .CybotCookiebotDialogBodyLevelButtonIABDescription,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABDescription.CybotCookiebotDialogShow{display:block}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainerToggleHide,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainerToggleShow{display:block;height:2em;position:absolute;right:1.4em;width:2em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainerToggleHide,#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainerToggleShow{left:1.4em;right:auto}#CybotCookiebotDialogDetailBodyContentIABv2PartnersBody .CybotCookiebotDialogBodyLevelButtonIABContainer:before,#CybotCookiebotDialogDetailBodyContentIABv2PartnersBody .CybotCookiebotDialogBodyLevelButtonIABContainerCollapsed:before{border-style:solid;border-width:.15em .15em 0 0;content:"";display:inline-block;height:.5em;position:absolute;right:2em;top:1.3em;transform:rotate(-225deg);width:.5em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2PartnersBody .CybotCookiebotDialogBodyLevelButtonIABContainer:before,#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2PartnersBody .CybotCookiebotDialogBodyLevelButtonIABContainerCollapsed:before{left:2em;right:auto}#CybotCookiebotDialogDetailBodyContentIABv2PartnersBody .CybotCookiebotDialogBodyLevelButtonIABContainer:before{top:1.6em;transform:rotate(-45deg)}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyIABIntroContainer{padding-bottom:1em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABLabel{line-height:1.5em}@media screen and (min-width:1280px){#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABWrapper{padding:1.5em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeader{align-items:center;border-bottom:1px solid #D6D6D6;display:flex;margin-bottom:1.5em;padding-bottom:1.5em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyIABIntroContainer{padding-bottom:1.5em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainerTogglesWrapper{align-items:center;display:flex;justify-content:space-between;width:100%}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainer,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABContainerCollapsed{padding:1em 1.5em 1.5em}#CybotCookiebotDialogDetailBodyContentIABv2PartnersBody .CybotCookiebotDialogBodyLevelButtonIABContainer:before,#CybotCookiebotDialogDetailBodyContentIABv2PartnersBody .CybotCookiebotDialogBodyLevelButtonIABContainerCollapsed:before{top:1.8em}#CybotCookiebotDialogDetailBodyContentIABv2PartnersBody .CybotCookiebotDialogBodyLevelButtonIABContainer:before{top:2.1em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABDescription{width:100%}}#CybotCookiebotDialogDetailBodyContentTextAbout{padding:1.625em .625em}@media screen and (min-width:1280px){#CybotCookiebotDialogDetailBodyContentTextAbout{padding:1.125em}}#CybotCookiebotDialogFooter{padding:1em;width:100%}#CybotCookiebotDialogBodyButtons{align-items:flex-start;display:flex;flex-direction:column;flex-wrap:wrap}@media screen and (min-width:601px){#CybotCookiebotDialogBodyButtons{align-items:center;flex-direction:row}}@media screen and (min-width:1280px){#CybotCookiebotDialog #CybotCookiebotDialogFooter{padding:1em 1.5em 1.5em}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogFooter{padding:0;width:auto}#CybotCookiebotDialog.CybotEdge.CybotMultilevel #CybotCookiebotDialogFooter{position:absolute;right:0;top:0}#CybotCookiebotDialog.CybotEdge[dir=rtl] #CybotCookiebotDialogFooter{left:0;right:auto}#CybotCookiebotDialog.CybotEdge.CybotMultilevel.CybotCloseButtonEnabled #CybotCookiebotDialogFooter{right:51px}#CybotCookiebotDialog.CybotEdge[dir=rtl].CybotCloseButtonEnabled #CybotCookiebotDialogFooter{left:51px;right:auto}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyButtons{align-items:flex-end;flex-direction:column-reverse;max-width:286px}}@media screen and (min-width:1510px){#CybotCookiebotDialog.CybotEdge:not([lang=ta]):not([lang=bg]):not([lang=is]):not([lang=el]) #CybotCookiebotDialogFooter{position:relative;right:0}#CybotCookiebotDialog.CybotEdge[dir=rtl]:not([lang=ta]):not([lang=bg]):not([lang=is]):not([lang=el]) #CybotCookiebotDialogFooter{left:0;position:relative;right:auto}}#CybotCookiebotDialog .CybotCookiebotScrollContainer>div:first-of-type::-webkit-scrollbar{width:.25em}#CybotCookiebotDialog .CybotCookiebotScrollContainer>div:first-of-type::-webkit-scrollbar-track{background:#f2f2f2;border-radius:.313em}#CybotCookiebotDialog .CybotCookiebotScrollContainer>div:first-of-type::-webkit-scrollbar-thumb{background:#141414;border-radius:.313em}#CybotCookiebotDialog .CybotCookiebotScrollContainer>div:first-of-type:focus{outline:none}#CybotCookiebotDialog .CybotCookiebotScrollContainer>div:first-of-type:focus::-webkit-scrollbar-thumb{background:#1032CF}#CybotCookiebotDialog .CybotCookiebotScrollContainer>div:first-of-type{scrollbar-track-color:#f2f2f2;scrollbar-face-color:#141414;scrollbar-color:#141414 #f2f2f2;scrollbar-width:thin}#CybotCookiebotDialog .CybotCookiebotScrollContainer>div:first-of-type:focus{scrollbar-color:#1032CF #f2f2f2}#CybotCookiebotDialog #CybotCookiebotBannerCloseButtonE2E,#CybotCookiebotDialog .CybotCookiebotBannerCloseButton{fill:#141414;border:none;display:none}#CybotCookiebotDialog.CybotCloseButtonEnabled .CybotCookiebotBannerCloseButton{display:flex}#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyButtonsWrapper{display:flex;flex-direction:column-reverse;width:100%}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyButton:not(:last-of-type),#CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton:not(:first-of-type){margin-bottom:.5em}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyContentControlsWrapper{align-items:center;display:flex;margin-bottom:.5em}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyContentControlsWrapper .CybotCookiebotDialogBodyLevelButtonSliderWrapper{margin-right:1em}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyContentControlsWrapper .CybotCookiebotDialogBodyLevelButtonDescription{font-weight:600}#CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton{background-color:transparent;border:2px solid #1032CF;border-radius:.25em;color:#141414;display:block;font-weight:600;padding:1em;text-align:center;user-select:none;width:100%}#CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton:hover{opacity:.85}#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonCustomize,#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection{background-color:transparent;border-color:#1032CF;color:#141414}#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyButtonAccept,#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonAccept,#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll{background-color:#1032CF;border-color:#1032CF;color:#ffffff}#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonCustomize{align-items:center}#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonCustomize .CybotCookiebotDialogArrow{border-style:solid;border-width:.15em .15em 0 0;display:inline-block;height:.5em;margin-left:1em;transform:rotate(45deg);vertical-align:baseline;width:.5em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogFooter #CybotCookiebotDialogBodyLevelButtonCustomize .CybotCookiebotDialogArrow{margin-left:0;margin-right:1em;transform:rotate(-135deg)}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderToggle{border-bottom:1px solid #D6D6D6;display:flex;flex-direction:row-reverse;flex-wrap:wrap;justify-content:flex-end;margin:1em 0 1.5em auto;padding-bottom:1.5em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderButton,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderToggleDeselectVendorsLink,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderToggleSelectVendorsLink{align-items:center;background-color:transparent;border:2px solid #1032CF;border-radius:.25em;color:#141414;display:flex;font-weight:600;padding:.75em 1em;text-decoration:none;user-select:none}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderButton:hover,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderToggleDeselectVendorsLink:hover,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderToggleSelectVendorsLink:hover{opacity:.85}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderButton.select,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderToggleSelectVendorsLink{background-color:#1032CF;border-color:#1032CF;color:#ffffff;margin-left:.5em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderButton.select,#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderToggleSelectVendorsLink{margin-left:0;margin-right:.5em}@media screen and (min-width:601px){#CybotCookiebotDialog .CybotCookiebotBannerCloseButton{margin-left:2.313rem}#CybotCookiebotDialog[dir=rtl] .CybotCookiebotBannerCloseButton{margin-left:auto;margin-right:2.313rem}#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyButtonsWrapper{align-items:stretch;flex:1;flex-direction:row;justify-content:flex-end}#CybotCookiebotDialogFooter #CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyButton:not(:last-of-type),#CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton,#CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton:not(:first-of-type){margin-bottom:0;width:33%}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyContentControlsWrapper:not(.CybotCookiebotDialogHide)+#CybotCookiebotDialogBodyButtonsWrapper .CybotCookiebotDialogBodyButton{max-width:286px;width:100%}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyButton:not(:last-of-type){margin-right:.5em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton:not(:last-of-type){margin-left:.5em;margin-right:0}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyContentControlsWrapper{margin-bottom:0;margin-right:1em}}@media screen and (min-width:1280px){#CybotCookiebotDialog.CybotEdge .CybotCookiebotBannerCloseButton{display:none}#CybotCookiebotDialog.CybotEdge.CybotCloseButtonEnabled #CybotCookiebotBannerCloseButtonE2E{display:flex}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderToggle{border-bottom:none;justify-content:flex-start;margin:0 0 0 auto;padding:0}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonIABHeaderToggle{margin-left:0;margin-right:auto}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogFooter #CybotCookiebotDialogBodyButtonsWrapper{flex:auto;flex-direction:column-reverse}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton{max-width:none;width:286px}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogFooter .CybotCookiebotDialogBodyButton:not(:first-of-type){margin-bottom:.5em}}#CybotCookiebotDialogBodyLevelWrapper{width:100%}#CybotCookiebotDialogBodyEdgeMoreDetails{display:none}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyEdgeMoreDetails{display:flex;justify-content:flex-end;margin:1.5em 2em .5em 0}#CybotCookiebotDialog.CybotEdge[dir=rtl] #CybotCookiebotDialogBodyEdgeMoreDetails{margin-left:1.125em;margin-right:0}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyEdgeMoreDetails a{align-items:center;color:#1032CF;display:flex;font-weight:600;text-decoration:none}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyEdgeMoreDetails a:after{border-style:solid;border-width:.15em .15em 0 0;color:#141414;content:"";display:block;height:.563em;margin-left:1em;transform:rotate(45deg);width:.563em}#CybotCookiebotDialog.CybotEdge[dir=rtl] #CybotCookiebotDialogBodyEdgeMoreDetails a:after{margin-left:0;margin-right:1em;transform:rotate(225deg)}#CybotCookiebotDialogBodyLevelButtons{width:100%}#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSliderWrapper{-webkit-backface-visibility:hidden;backface-visibility:hidden;display:flex;flex-shrink:0;height:32px;position:relative;width:57px}#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSliderWrapper:hover input[type=checkbox]:not(:disabled)+.CybotCookiebotDialogBodyLevelButtonSlider{opacity:.85}#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSliderWrapper input[type=checkbox].CybotCookiebotDialogBodyLevelButton{opacity:0}#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSlider{background-color:#141414;border-radius:32px;bottom:0;left:0;pointer-events:none;position:absolute;right:0;top:0;transition:background-color .4s}#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSlider:before{background-color:#ffffff;border-radius:50%;bottom:4px;content:"";height:24px;left:4px;position:absolute;transition:transform .4s;width:24px}#CybotCookiebotDialog input:checked+.CybotCookiebotDialogBodyLevelButtonSlider{background-color:#1032CF}#CybotCookiebotDialog input:checked+.CybotCookiebotDialogBodyLevelButtonSlider:before,#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogTabContent input+.CybotCookiebotDialogBodyLevelButtonSlider:before{background-color:#ffffff;transform:translateX(26px)}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogTabContent input:checked+.CybotCookiebotDialogBodyLevelButtonSlider:before{transform:translateX(0)}#CybotCookiebotDialog form input[type=checkbox][disabled]:checked+.CybotCookiebotDialogBodyLevelButtonSlider{background-color:#D6D6D6;pointer-events:none}#CybotCookiebotDialogBodyLevelButtonsSelectPane{border-bottom:1px solid #D6D6D6;padding:1em 0}#CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonWrapper{align-items:center;display:flex;justify-content:space-between;padding:1em;text-align:center;width:100%}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogBodyLevelButtonWrapper+.CybotCookiebotDialogBodyLevelButtonWrapper label{font-size:.875em;font-style:italic;font-weight:400;letter-spacing:.15px;padding-bottom:0}#CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonDescription{font-weight:700}#CybotCookiebotDialogBodyLevelButtonsSelectPane label:not([for=CybotCookiebotDialogBodyLevelButtonNecessary]) .CybotCookiebotDialogBodyLevelButtonDescription:hover{color:#1032CF}@media screen and (min-width:601px){#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonsSelectPane{padding:0}#CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonWrapper{flex-direction:column;padding:1.5em 1em;width:25%}#CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonWrapper:not(:last-of-type){border-right:1px solid #D6D6D6}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonWrapper:not(:last-of-type){border-left:1px solid #D6D6D6;border-right:none}#CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonLabel{margin-bottom:.75em}#CybotCookiebotDialogTabContent input:focus+.CybotCookiebotDialogBodyLevelButtonSlider{box-shadow:0 0 1px #1032CF}}@media screen and (min-width:1280px){#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyLevelButtonsSelectPane{border-bottom:none}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonWrapper{border:none;flex-direction:row;margin:.5em 2.5em 0 0;padding:0;width:auto}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonLabel{margin-bottom:0}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyLevelWrapper{width:auto}#CybotCookiebotDialog.CybotEdge .CybotCookiebotDialogBodyLevelButtonLabel{margin-right:1em}#CybotCookiebotDialog.CybotEdge[dir=rtl] .CybotCookiebotDialogBodyLevelButtonLabel{margin-left:1em;margin-right:0}#CybotCookiebotDialog.CybotEdge[dir=rtl] #CybotCookiebotDialogBodyLevelButtonsSelectPane .CybotCookiebotDialogBodyLevelButtonWrapper{border-left:none;margin:.5em 0 0 2.5em}#CybotCookiebotDialog.CybotEdge #CybotCookiebotDialogBodyEdgeMoreDetails{display:inline-flex;height:2em;margin:0}}#CybotCookiebotDialog input[type=checkbox]{height:1.5em;margin-right:.5em;width:1.5em}#CybotCookiebotDialog[dir=rtl] input[type=checkbox]{margin-left:.5em;margin-right:0}#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSliderWrapper form{height:100%;width:100%}#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSliderWrapper input[type=checkbox]{height:100%;margin-right:0;width:100%}#CybotCookiebotDialog #CybotCookiebotDialogDetailBodyContentIABv2Tabs input[type=checkbox]{-moz-appearance:none;-webkit-appearance:none;-o-appearance:none;background-color:#ffffff;border:2px solid #D6D6D6;border-radius:4px;position:relative}#CybotCookiebotDialog #CybotCookiebotDialogDetailBodyContentIABv2Tabs input[type=checkbox]:not(:checked):hover{border-color:#141414}#CybotCookiebotDialog #CybotCookiebotDialogDetailBodyContentIABv2Tabs input[type=checkbox]:checked{background-color:#1032CF;border-color:#1032CF}#CybotCookiebotDialog #CybotCookiebotDialogDetailBodyContentIABv2Tabs input[type=checkbox]:checked:after{border-bottom:2px solid #ffffff;border-right:2px solid #ffffff;content:"";display:inline-block;height:50%;left:50%;position:absolute;top:calc(50% - 2px);transform:translate(-50%,-50%) rotate(45deg);width:25%}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes,#CybotCookiebotDialogDetailBodyContentIABv2Tabs{padding:0 .625em;width:100%}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogDetailBodyContentIABv2TabsIntro{padding:1.125em 1.125em .25em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogDetailBodyContentIABv2TabsIntro:nth-child(3){margin-bottom:1.5em}.CybotCookiebotDialogDetailBodyContentCookieContainerHeader{display:flex;justify-content:space-between}.CybotCookiebotDialogDetailBodyContentCookieContainerButton:before,.CybotCookiebotDialogDetailBodyContentIABv2Tab:before{border-style:solid;border-width:.15em .15em 0 0;content:"";display:inline-block;height:.5em;left:0;margin-right:1.875em;position:relative;top:.625em;transform:rotate(-45deg);vertical-align:top;width:.5em}#CybotCookiebotDialog[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieContainerButton:before,#CybotCookiebotDialog[dir=rtl] .CybotCookiebotDialogDetailBodyContentIABv2Tab:before{margin-left:1.875em;margin-right:0}.CybotCookiebotDialogDetailBodyContentCookieContainerButton.CybotCookiebotDialogCollapsed:before,.CybotCookiebotDialogDetailBodyContentIABv2Tab.CybotCookiebotDialogCollapsed:before{top:.25em;transform:rotate(-225deg)}#CybotCookiebotDialog .CookieCard{border-bottom:1px solid #D6D6D6;padding:1.5em 0}#CybotCookiebotDialog .CookieCard:not(:first-child){padding-top:1.5em}#CybotCookiebotDialog #CybotCookiebotDialogDetailBodyContentIABContainer .CookieCard{border-bottom:none;border-top:1px solid #D6D6D6}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CookieCard:last-of-type{margin-bottom:1em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CookieCard:first-of-type{padding-top:1.625em}#CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentCookieContainerButton,#CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentIABv2Tab{border:1px solid transparent;font-weight:700;line-height:1.5em;padding-right:.75em;user-select:none}#CybotCookiebotDialog[dir=rtl] .CookieCard .CybotCookiebotDialogDetailBodyContentCookieContainerButton,#CybotCookiebotDialog[dir=rtl] .CookieCard .CybotCookiebotDialogDetailBodyContentIABv2Tab{padding-left:.75em;padding-right:0}#CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentCookieContainerButton:hover,#CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentIABv2Tab:hover,#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieProvider:not(.CybotCookiebotDialogDetailBodyContentCookieInfoCount):hover{color:#1032CF}#CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentCookieTypeIntro,#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CollapseCard{padding-top:1em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CollapseCard>div:not(.CybotCookiebotDialogBodyLevelButtonIABWrapper){letter-spacing:.3px;line-height:1.6em;margin-left:2.9em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogDetailBodyContentIABv2CardIntro{letter-spacing:.3px;line-height:1.6em;margin-left:2.9em;padding-top:1em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CollapseCard>div:not(.CybotCookiebotDialogBodyLevelButtonIABWrapper),#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CybotCookiebotDialogDetailBodyContentIABv2CardIntro{margin-left:0;margin-right:2.9em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyEmptyCategoryMessage{border:1px solid #D6D6D6;border-radius:.5em;font-weight:600;margin:1em 0;padding:1em 1.5em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieGroup{border:1px solid #D6D6D6;border-radius:.5em;margin-bottom:.5em;padding:1em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieGroup:not(.open):hover{background-color:rgba(0,0,0,.05)}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieGroup:last-of-type{margin-bottom:0}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieProvider{display:block;font-weight:700;position:relative;text-decoration:none}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieProvider>div{pointer-events:none}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieProvider:not(.CybotCookiebotDialogDetailBodyContentCookieInfoCount){color:#141414}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieProvider.CybotCookiebotDialogCollapsed:after,#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieProvider:after{border-style:solid;border-width:.15em .15em 0 0;content:"";display:inline-block;height:.5em;position:absolute;right:1em;top:.5em;transform:rotate(-45deg);width:.5em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieProvider.CybotCookiebotDialogCollapsed:after,#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieProvider:after{left:1em;right:auto}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieProvider.CybotCookiebotDialogCollapsed:after{transform:rotate(-225deg)}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieLink{align-items:center;display:inline-flex;padding-top:1em;position:relative}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfo{background-color:rgba(0, 0, 0, 0.05);border:1px solid #D6D6D6;border-radius:1em;margin-bottom:.5em;padding:1em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfo:last-of-type{margin-bottom:0}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfo.CybotCookiebotDialogShow{display:block}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfo.CybotCookiebotDialogShow:first-of-type{margin-top:3.125em;position:relative}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfo.CybotCookiebotDialogShow:first-of-type:before{border-top:1px solid #D6D6D6;content:"";left:0;position:absolute;top:-1.5em;width:100%}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfoTitle{display:block;font-weight:700;line-height:1.6em;margin-bottom:.5em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfoDescription{display:block;letter-spacing:.3px;padding-bottom:1em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfoFooter{border-top:1px solid #D6D6D6;display:flex;flex-wrap:wrap;padding-top:.5em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent{margin-top:.5em;width:100%}@media screen and (min-width:1280px){#CybotCookiebotDialogDetailBodyContentCookieContainerTypes,#CybotCookiebotDialogDetailBodyContentIABv2Tabs{padding:0 1.125em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer{margin-top:2em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer,#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CollapseCard{margin-left:3em;padding-top:.5em}#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer,#CybotCookiebotDialog[dir=rtl] #CybotCookiebotDialogDetailBodyContentIABv2Tabs .CollapseCard{margin-left:0;margin-right:3em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CollapseCard>div:not(.CybotCookiebotDialogBodyLevelButtonIABWrapper){margin-left:0}#CybotCookiebotDialog .CookieCard{padding:1.125em 0 1.5em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CookieCard:last-of-type{margin-bottom:1.5em;padding-bottom:2em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CookieCard:first-of-type{padding-top:1.125em}#CybotCookiebotDialogDetailBodyContentIABv2Tabs .CookieCard:last-of-type{padding-bottom:1.125em}#CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentCookieTypeIntro{padding-left:3em}#CybotCookiebotDialog[dir=rtl] .CookieCard .CybotCookiebotDialogDetailBodyContentCookieTypeIntro{padding-left:0;padding-right:3em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyEmptyCategoryMessage{margin:0 0 1.5em;padding:1.5em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieGroup,#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfo{padding:1.5em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfo.CybotCookiebotDialogShow:first-of-type{margin-top:3.75em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfo.CybotCookiebotDialogShow:first-of-type:before{top:-2em}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes .CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent{width:50%}}#CybotCookiebotDialog .CybotCookiebotDialogHide{display:none}.CybotExpandLink{position:relative}.CybotExpandLink.CybotCookiebotDialogCollapsed:after,.CybotExpandLink:after{border-style:solid;border-width:.15em .15em 0 0;content:"";height:.5em;position:absolute;right:1em;top:.3em;transform:rotate(-45deg);width:.5em}#CybotCookiebotDialog[dir=rtl] .CybotExpandLink.CybotCookiebotDialogCollapsed:after,#CybotCookiebotDialog[dir=rtl] .CybotExpandLink:after{left:0;right:auto}.CybotExpandLink.CybotCookiebotDialogCollapsed:after{transform:rotate(-225deg)}#CybotCookiebotDialog .CybotExternalLinkArrow{margin-left:.625em}#CybotCookiebotDialog[dir=rtl] .CybotExternalLinkArrow{margin-left:0;margin-right:.625em;transform:scaleX(-1)}#CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentCookieContainerButton:not(:disabled):not(.disabled),#CybotCookiebotDialog .CookieCard .CybotCookiebotDialogDetailBodyContentIABv2Tab:not(:disabled):not(.disabled),#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSliderWrapper input[type=checkbox],#CybotCookiebotDialog button,#CybotCookiebotDialog input,#CybotCookiebotDialog label:not([for=CybotCookiebotDialogBodyLevelButtonNecessary]){cursor:pointer}#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSliderWrapper input[type=checkbox]:disabled{pointer-events:none}#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSliderWrapperDisabled{cursor:not-allowed}#CybotCookiebotDialog dt{word-break:break-all}#CybotCookiebotDialog fieldset{border:none;width:100%}#CybotCookiebotDialog fieldset #CybotCookiebotDialogBodyFieldsetInnerContainer{display:flex;flex-wrap:wrap;width:100%}#CybotCookiebotDialog legend.visuallyhidden{display:block}#CybotCookiebotDialog .visuallyhidden{height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}#CybotCookiebotDialog #CybotCookiebotDialogBodyContentText a,#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonIABHeaderViewPartnersLink,#CybotCookiebotDialog #CybotCookiebotDialogDetailBulkConsentList dt a,#CybotCookiebotDialog #CybotCookiebotDialogDetailFooter a,#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonIABDescription a,#CybotCookiebotDialog .CybotCookiebotDialogDetailBodyContentCookieLink,#CybotCookiebotDialogDetailBodyContentTextAbout a{color:#1032CF;font-weight:600;text-decoration:none}#CybotCookiebotDialog #CybotCookiebotDialogBodyContentText a:hover,#CybotCookiebotDialog #CybotCookiebotDialogBodyLevelButtonIABHeaderViewPartnersLink:hover,#CybotCookiebotDialog #CybotCookiebotDialogDetailBulkConsentList dt a:hover,#CybotCookiebotDialog #CybotCookiebotDialogDetailFooter a:hover,#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonIABDescription a:hover,#CybotCookiebotDialog .CybotCookiebotDialogDetailBodyContentCookieLink:hover,#CybotCookiebotDialogDetailBodyContentTextAbout a:hover{opacity:.85}#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSliderWrapper input:focus-visible+span,#CybotCookiebotDialog :focus-visible,#CybotCookiebotDialog:focus-visible{outline:none}@media screen and (min-width:601px){#CybotCookiebotDialog .CybotCookiebotDialogBodyLevelButtonSliderWrapper input:focus-visible+span,#CybotCookiebotDialog :focus-visible{outline:2px solid #1032CF}}@media not all and (min-resolution:.001dpcm){@media screen and (min-width:1280px){#CybotCookiebotDialog #CybotCookiebotDialogBody .CybotCookiebotScrollContainer{display:block}}}</style></head>
+
+	<body data-rsssl="1" class="home page-template-default page page-id-12"><div id="CybotCookiebotDialog" name="CybotCookiebotDialog" role="dialog" aria-modal="true" aria-labelledby="CybotCookiebotDialogBodyContentTitle" tabindex="-1" lang="en" dir="ltr" ng-non-bindable="" style="display: flex;" class="CybotMultilevel CybotCookiebotDialogActive" data-template="popup"><div class="CybotCookiebotDialogContentWrapper"><div id="CybotCookiebotDialogHeader"><div id="CybotCookiebotDialogHeaderLogosWrapper"><div id="CybotCookiebotDialogPoweredbyLink"><img id="CybotCookiebotDialogPoweredbyImage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAt3SURBVGhD1Zd5VNZVGsfvu/DiTJ1qZk6dtGZO0zJOejpN09hMTseZSUtB3DCUFPcFTdlBlE1iX0UTU0REBFMRF8QQlU1WEdncMgWpzNLih56y1Ba/8/0tL+/7App2/IfnnO+5z+/e5z73c597f78XhCmxtc1+xSed9omtUp8QWfsltrYKU8LZb+1XXYR9cnvfkMyacPYbYYo7I9kntcE+7qO+IbKa4j7qEKaY0xJ3APuYU7CPPQUTZfYV0TeZn82+WVax1vNsfKvY+5FbZjXFniR49HHJPu4M2PYJKaxRxwke2Swpu4ps7htSWQke0SiZok+Abd+Qykrw8GOSKbIFpvD6viGVleBhdZKyk+V1qsK09m793nS78fuRW2YNO9Ih7EJrJVYdptBaqqarNYbUQCythgiuhSGkFiKIfpDaZwiugY7PBsaYwtQxOzl+GWOWqTFyHj3jzL6Q/UA5H+dS8picR5mj5VTWkOO1nDKDymThUllrCB5cJSk7Ca7qkiGoCg+H12DaluNwyWzA4MRavLzqGNyymzB5cwseCavG4OSjeDyKmwqsxJDVx2AfUoVXUxswM6cZI9KaYGT/n2Lr8D/ZX1aBCRsbsCjvFMZlNGBQUh3+HFeH3y2vgVtOiyI55wspxzAktRHCtxwvrazHoxHMTxZrNpmVzAQPqpCU3QRVgL4iEXgYz8TWYOH2FvQPO4zfBJZhanYzBidU4cXEKrhsasL4jY0YxA0JX3Xs9bUNmLa5EX9YVop/pbCaS8oxYm09luw6jgdCKvBQSBm88+gHleG11UfxZloDJmc1YWBsJZ6Pq1RyjmRfVnUbHuZGJzL/c3G10JFFZusSWclI8KVlkrwTtl0SS0rxZGQVQvJPwGF1NX4fXIrxrNQfo6ogvIrhmtWIyZsa8UwMnz0OKmMzcprwYjI3wnFZDwQfhkduC2ZlN2D42mMQPiWYuaUZIqAMQ1KOwDnjmJLHHO/KfKPX18Nh7REWohGTMhvxVDTzk8WaTWENLCd4YImkVDqwpEvCvxhPR1dgwdYm9A8tw8NLS+DGag5ddYRVPIqxaXV4KaESU7jwCwk1mJ3TiKfDS+HO+IHc3H9XH8G49HpM2ViHv8WUwnNHC+wDijlOcL9DGLqyFsPXMCbtCKtfh2GpdYo/gn2DE6rxbEQptte1YcC7hxUWazaFdUkJwQMOSXZLy8G2Swb/g/ht4CE4plbCKbUCg6JK8UxECcasqcDwVYdh738AOp8DeC25HBPTqvFY8CEIzyL8JbIEznweFF3KxUtgCjjIE1H7H1x6SOnT+R3EYyHFLEgxTL5FyhoOlL1fEZ5YXoLHQ1k4ryL8Pb4MjwQVQ08WoxWbUvmAgwT3OyBxB7DjxC75F8FICc9CiAUFEIv2qZL9hfu4sQNKjPDiuMeH3IQ85wCE934I971q7GKKY0qM/OxJX2692Mr9i7V27h4qHzpuQue735LLi7m4voE8gn06n/3KmhorwX0LJWUnvoVdMvoUQr8oHzH7T6PhwlUcae9UVEsNW8VP1oJ8m3izxPw98Mw70RX/S6pqk5BTfwEuvO86D7lAewml5tJ57sM/EsoRvrsR7tlH8eiyAzB4f6hW3bewQxi9CySlyt77bKQj+KDwIvz044+wto8vfYN+nnuh9+Ai5ngf+TT2YHBUCX766Wct8t6s/OzXeCqElV6wG0bmfND/Q0zPqEbF6QuIyG/CsGR+NMiksRLcM19SKubFThvxyGfvgOv6Si21xRIPfQwxKxdGLdbgweN2z0NV69daxK+z9o5rGBDI67NwF4uzBzMyqrCj9mMkF7bgn7F8jxbuVk6D6xLcY7dk510AtjayowyUmPkBsqrOaqlVu3XrFl6J40s0h/CejJmxFV65Tdpo7/bzz7dw7fvrFn13XRuxtb0tF3nnt0O8swsDluRj9IoivJFYhH4eu1QulZXgi3ZKrDqMi3dqyrPyd7KSO/DQou1ov3xVS61a82edsHPP5alsxdPB+3Dthu2V6m6nPu9Ef98dGOC/E08G7MQA3zwMjSjAqQsdWoTFXoljdecRfmGe2s7P5TunMSmseQR/Z4dklHfzDqt3G4kZOfhP3H651Fpq1YJ3t0BM3IADJ7/QelRru3QFZy5K2pNqTZ90cJMfEGQbQQjjTk3ZjFdjCpXTsLbIguMQ07J7ZVFYF+YSfMFWybiIVV6w7bYyLORiUzIRs7dRS63a1e9vYsXB09qT2W5hWHQBik58rj2r1vwpwedtgd59a1deMe8DPOSxHZ3f2l6bnJpWCLdNVgyWORorwd23SNwB2N5R+rlbYJiRifrWL7X0vVviviaewjrUn/9K61FNAZ+zGXrCm3OKmVl4wm8Hrv9ge83Wl51hoTJs1u+SzDp/C8HnZUvKjubxaO6k+dk8vkw8H5iL72/c1Jawteb2y7CbnsG4jahvu6z1qtbAjYhJaRCu6YTaoLYuaUgsPKFFWMw9sxLi7Q29c6isHcIwN0viDmCcw6OZkwXjXMrsm6X0qa1wWYfZaSXKl8Xarl67joEBWwlFoBkZPcA7r91AdtU5ZFe3Kldhc+VZFJ+6qI1a7LvrN9HfI4c5MrtxaL7KSvBZGyXjvM0wzt6oyKC11urqm5PJa7AGs9LLewG/gecC+MK5rmPF0wl+SRu5N/PL5p/VLu9zTYJ3X18WWflM8JkbJHk3bO+sWTzeye/jrwHb8N2NH7RlbK2x/WsYpxLc9f17Br9x8wck5dfxOqVCP6OX9TVprASfniYZZmXwxUu7o3Ru66B3XYO6c3cGiuWXRzgm8SW+N/CsspMQoxIgpvdc20YqK8GnrZUMM9PB9o4SY5MRseuotoxqV/nrt7KgTnuy2NCwXBQ1t2tPqp2/1IkxMXlwis7DtJUFuM4KW9sVXrWBvrzbb70Hw/TeGRTJrG5rCe62RmLV+bDmthLjkxWY7vc6dBvf/tcjUNxyXutR7ewXEk5fsP27pYFXR4xJZK4VEG/GYkl2mTZisbJTFyCcV0A/JbVXDkUy69Q1BJ/ynmRw48swhTvtRcIlBQ+wPfdlp5ZetZOfXILJJRliXBKeW5yO67f5RJqtuZ3gk1Kge3sVdK6roHdOQsO5nl+VuWn8uR8dT7jVvfIorG+/R3DXlZJhKnfourKH9JRwjMH64hYtrdlu4d9B/K6P4QIEEQ7RCNhUrI31bs3nCS5vdHIK5zDv2AS87J/Jn3vbP4Ov8Ff08Tm8mtyYHNeDS2Ul+OQVkrw4W1u58kgdojA+freW0mKr9/HtHxkJvRarI5B+XCzqz17QInpa8/kv+SnlyzcpWZkjz5VzxO+s1iIstr3qI2VtvRZrI4U1uUPoJyVKBrkKLonQa5J9QZDnF6/XUlnss8udeNAlHmICq22On5TE443GS94948326VdXOCeOL1+CZQ3nePRzjkXrxZ5/x89K5X9Uo6OUOBu5psjzCT4xXtJzYf1b8RZNjIduTBScIrYgZVcl4raXK4qnhgbwJ90xwibW7Mv9bkl5iM9V463neaXxvypC6ibG2cwTjpEY4puuxJjjEzjfY20BTzGG8Zb8ilRWgk+IkfRyFZhU7xxjaSfGQjhFQAwPgRhBya2s0YTmmBpnljZPnjNyuSXWWm+G9Yw3r8OcSoz1Og7hva+jshJ8fJSkl6swgXfKrPFW/t3qbudYx/2aOSorwcdGSPoJ0TwWVrIvSGYd+y7Bx4RL+nH8Qozh0Sharsns301/d/9Osffa382XWZ2WE9wpVNKPZYdTaN+QzDo6lOCOQZLeiS+OYzAVpLX3S9b57lNusuocgzuEbtRSSe7QOSxVNcqqvRtfbu/Vl9u78eW2uy+zjlpG8JFLJJ3DMrDtG1JYAwj+ht+3OocgbSBQ0/3wf+28X/Bl1jf8vhG6ET5tdDp1w72lPiGF1af1/548BzZAcnaIAAAAAElFTkSuQmCC" alt="logo"></div><a href="https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/" rel="noopener nofollow" target="_blank" id="CybotCookiebotDialogPoweredbyCybot"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.7 26"><title>Powered by Cookiebot</title><path d="M56 11.4c-1.1 0-1.5.7-1.7 1.1h-.1v-3H53v8h1.1v-.9h.1c.2.4.6 1.1 1.7 1.1 1.5 0 2.5-1.2 2.5-3.1.1-2-1-3.2-2.4-3.2zm-.3 5.2c-1 0-1.6-.9-1.6-2.1 0-1.3.5-2.1 1.6-2.1s1.6.9 1.6 2.1c0 1.2-.5 2.1-1.6 2.1zM9.9 11.4c-1.7 0-2.8 1.2-2.8 3.1 0 1.9 1.1 3.1 2.8 3.1 1.7 0 2.8-1.2 2.8-3.1 0-1.8-1.1-3.1-2.8-3.1zm0 5.2c-1.1 0-1.6-1-1.6-2.1s.5-2.1 1.6-2.1 1.6 1 1.6 2.1c0 1.2-.5 2.1-1.6 2.1zM19.9 15.9h-.1l-1.1-4.4h-1.2l-1.2 4.4h-.1l-1.1-4.4h-1.3l1.8 6h1.2l1.2-4.3h.1l1.2 4.3h1.2l1.8-6h-1.2zM26.2 11.4c-1.7 0-2.8 1.3-2.8 3.1 0 1.9 1.1 3.1 2.9 3.1 1.3 0 2.2-.6 2.5-1.6l-1.1-.2c-.2.6-.7.9-1.4.9-1 0-1.7-.6-1.7-1.8h4.3v-.4c0-2.2-1.3-3.1-2.7-3.1zM24.6 14c0-.9.7-1.6 1.6-1.6.9 0 1.5.7 1.5 1.6h-3.1zM2.9 9.5H0v8h1.2v-2.8h1.6c1.9 0 2.8-1.1 2.8-2.6s-.9-2.6-2.7-2.6zm-.2 4.2H1.2v-3.1h1.5c1.2 0 1.7.6 1.7 1.6 0 .8-.5 1.5-1.7 1.5zM37.7 11.4c-1.7 0-2.8 1.3-2.8 3.1 0 1.9 1.1 3.1 2.9 3.1 1.3 0 2.2-.6 2.5-1.6l-1.1-.2c-.2.6-.7.9-1.4.9-1 0-1.7-.6-1.7-1.8h4.3v-.4c-.1-2.2-1.4-3.1-2.7-3.1zM36.1 14c0-.9.7-1.6 1.6-1.6.9 0 1.5.7 1.5 1.6h-3.1zM62.5 16.2l-1.6-4.7h-1.2l2.2 6.1-.2.4c-.3.8-.7.9-1.4.7l-.3 1c.1.1.4.1.8.1 1 0 1.6-.5 1.9-1.4l2.5-6.8h-1.3l-1.4 4.6zM31.9 12.5l-.1-1h-1.1v6h1.2v-3.7c0-.8.6-1.4 1.4-1.4.2 0 .5 0 .6.1v-1.1h-.5c-.7 0-1.3.4-1.5 1.1zM46.2 12.5c-.3-.4-.7-1.1-1.8-1.1-1.4 0-2.5 1.1-2.5 3.1 0 1.9 1.1 3.1 2.5 3.1 1.1 0 1.5-.7 1.7-1.1h.1v.9h1.1v-8h-1.2v3.1zm-1.6 4.1c-1 0-1.6-.9-1.6-2.1 0-1.2.5-2.1 1.6-2.1 1 0 1.6.8 1.6 2.1s-.6 2.1-1.6 2.1zM99.9 19.1c-.3 0-.6.1-.8.2-.3.2-.5.4-.6.6h-.1v-2.5h-1V24h.9v-.8h.1c.1.3.3.5.6.6.3.2.5.2.8.2 1.2 0 2.1-1 2.1-2.6 0-1.3-.8-2.3-2-2.3zm-.2 4.3c-.8 0-1.3-.7-1.3-1.7s.4-1.7 1.3-1.7 1.3.7 1.3 1.7-.5 1.7-1.3 1.7zM104.6 23l-1.3-3.8h-1l1.8 5-.1.3c-.2.7-.6.7-1.1.6l-.2.8c.2.1.4.1.7.1.8 0 1.3-.4 1.6-1.2l2-5.6h-1l-1.4 3.8zM114 21.8c0 .9-.6 1.5-1.6 1.5s-1.6-.6-1.6-1.5v-4.3h-1v4.3c0 1.4 1.1 2.4 2.6 2.4s2.6-1 2.6-2.4v-4.3h-1v4.3zM118.6 21.4l-.8-.2c-.5-.1-.8-.3-.8-.6 0-.4.4-.6 1-.6.2 0 .4 0 .6.2.2.1.3.3.4.5l.9-.2c-.2-.8-.8-1.3-1.9-1.3-1.1 0-1.9.6-1.9 1.5 0 .7.4 1.2 1.4 1.4l.8.2c.5.1.7.3.7.6 0 .4-.4.7-1.1.7-.6 0-.9-.2-1.1-.7l-.9.1c.2.9.9 1.4 2 1.4 1.2 0 2-.6 2-1.5.1-.9-.4-1.3-1.3-1.5zM122.9 19.1c-1.4 0-2.3 1-2.3 2.6 0 1.5.9 2.5 2.4 2.5 1.1 0 1.8-.5 2.1-1.3l-.9-.2c-.1.2-.2.4-.5.5-.2.1-.4.2-.7.2-.8 0-1.4-.5-1.4-1.5h3.5v-.3c0-1.8-1.1-2.5-2.2-2.5zm-1.4 2.1c0-.4.1-.7.4-.9.2-.2.6-.4.9-.4.7 0 1.2.6 1.2 1.3h-2.5zM127.4 19.3c-.2.2-.4.4-.5.6v-.8h-.9V24h1v-3c0-.2 0-.3.1-.4.1-.1.1-.3.3-.4.1-.1.2-.2.4-.2.1-.1.3-.1.4-.1.2 0 .3 0 .5.1v-.9h-.4c-.4 0-.7.1-.9.2zM131.1 19.9c.3 0 .5.1.7.2.2.2.3.4.4.6h.9c-.1-1-.9-1.7-2-1.7-1.4 0-2.3 1-2.3 2.6 0 1.5.9 2.6 2.3 2.6 1.2 0 1.9-.7 2-1.7h-.9c0 .2-.2.5-.4.6-.2.2-.5.2-.7.2-.8 0-1.3-.7-1.3-1.8-.1-.9.5-1.6 1.3-1.6zM136 19.1c-1.4 0-2.3 1-2.3 2.6 0 1.5.9 2.5 2.4 2.5 1.1 0 1.8-.5 2.1-1.3l-.9-.2c-.1.2-.2.4-.5.5-.2.1-.4.2-.7.2-.8 0-1.4-.5-1.4-1.5h3.5v-.3c0-1.8-1.1-2.5-2.2-2.5zm-1.4 2.1c0-.4.1-.7.4-.9.2-.2.6-.4.9-.4.7 0 1.2.6 1.2 1.3h-2.5zM141.5 19.1c-.3 0-.6 0-.9.2-.3.2-.5.4-.6.7h-.1v-.8h-.9v4.9h1v-2.9c0-.8.5-1.2 1.2-1.2s1.1.4 1.1 1.1v3.1h1V21c-.2-1.2-.8-1.9-1.8-1.9zM146.1 23.3c-.3 0-.6-.1-.6-.7V20h1v-.8h-1V18h-1v1.2h-.7v.8h.7v2.9c0 .9.7 1.3 1.4 1.3.2 0 .4 0 .6-.1l-.2-.8h-.2zM148.8 19.3c-.2.2-.4.4-.5.6v-.8h-.9V24h1v-3c0-.2 0-.3.1-.4.1-.1.1-.3.3-.4.1-.1.2-.2.4-.2.1-.1.3-.1.4-.1.2 0 .3 0 .5.1v-.9h-.4c-.4 0-.7.1-.9.2zM150.6 19.2h1v4.9h-1zM151.2 17.2c-.1 0-.2 0-.4.1-.1.1-.2.1-.3.2-.1.1-.1.2-.1.3 0 .2.1.3.2.4.1.1.3.2.4.2.1 0 .2 0 .3-.1.1-.1.2-.2.2-.3 0-.1.1-.2 0-.4 0-.1-.1-.2-.2-.3.1 0 0-.1-.1-.1zM154.7 19.9c.3 0 .5.1.7.2.2.2.3.4.4.6h.9c-.1-1-.9-1.7-2-1.7-1.4 0-2.3 1-2.3 2.6 0 1.5.9 2.6 2.3 2.6 1.2 0 1.9-.7 2-1.7h-.9c0 .2-.2.5-.4.6-.2.2-.5.2-.7.2-.8 0-1.3-.7-1.3-1.8 0-.9.5-1.6 1.3-1.6zM160 21.4l-.8-.2c-.6-.1-.8-.3-.8-.6 0-.4.4-.6 1-.6.2 0 .4 0 .6.2.2.1.3.3.4.5l.9-.2c-.2-.8-.8-1.3-1.9-1.3-1.1 0-1.9.6-1.9 1.5 0 .7.4 1.2 1.4 1.4l.8.2c.5.1.7.3.7.6 0 .4-.4.7-1.1.7-.6 0-.9-.2-1.1-.7l-.9.1c.2.9.9 1.4 2 1.4 1.2 0 2-.6 2-1.5.1-.9-.4-1.3-1.3-1.5zM118.5 14.3l-4.2-5.5 4-4.6h-3.2l-3.8 4.6V.4h-2.7v14h2.7v-2.6l1.2-1.3 2.6 3.9h3.4zM119.1 2.7c.1.1.3.3.5.3.2.1.4.1.6.1.4 0 .8-.2 1.1-.5.3-.3.5-.7.5-1.1s-.2-.8-.5-1.1c-.3-.3-.7-.5-1.1-.5-.2 0-.4 0-.6.1-.2.1-.4.2-.5.3-.1.1-.3.3-.4.5-.1.2-.1.4-.1.6 0 .2 0 .4.1.6.1.4.3.6.4.7zM118.9 4.3h2.6v10.1h-2.6zM136.5 13.1c.4.5.8.9 1.4 1.1.5.3 1.1.4 1.7.4 2.5 0 4.5-1.9 4.5-5.3 0-3.3-1.9-5.3-4.5-5.3-.6 0-1.2.1-1.7.4s-1 .7-1.4 1.1V.4h-2.7v14h2.7v-1.3zm0-5.6c.3-.4.6-.7 1-.9.4-.2.8-.3 1.3-.3 1.5 0 2.5 1.2 2.5 2.9s-1 2.9-2.5 2.9c-.4 0-.9-.1-1.3-.3s-.7-.5-1-.8V7.5zM156.6 11.9c0 1.9 1 2.8 2.9 2.8.8 0 1.5-.2 2.2-.6l-.5-2c-.3.2-.6.3-.9.3h-.1c-.3 0-.5-.2-.7-.4-.2-.2-.2-.5-.2-.7V6.7h2.1V4.4h-2.1V1.6h-2.7v2.8H155v2.3h1.7v5.2zM129.5 11.7c-.6.4-1.3.5-2 .4-.7-.1-1.3-.5-1.7-1l6.5-3.7-.3-.6c-1.7-2.9-4.5-3.8-7.1-2.3l-.2.1c-.6.4-1.1.8-1.5 1.4-.4.5-.7 1.2-.8 1.8-.2.7-.2 1.3-.1 2s.4 1.3.7 1.9c.1.1.1.3.2.4.7 1.1 1.9 2 3.2 2.2 1.3.3 2.7 0 3.9-.7 1.3-.7 2.3-1.8 2.8-3.2l-1.9-.9c-.2.9-.9 1.7-1.7 2.2zm-4.7-4c.2-.6.6-1.1 1.1-1.4.3-.2.6-.3.9-.3h.9c.3 0 .6.2.8.4s.5.4.6.7l-4.3 2.5c-.1-.7-.2-1.3 0-1.9zM86.6 13.1c-.5.5-1.1 1-1.8 1.3-.7.3-1.4.5-2.2.5-.9 0-1.8-.2-2.6-.7-.8-.4-1.5-1.1-2-1.8-.5-.8-.8-1.6-.9-2.6-.1-.9 0-1.8.4-2.7s.9-1.6 1.6-2.2c.7-.6 1.5-1 2.4-1.2.9-.2 1.8-.1 2.7.1.9.3 1.7.7 2.3 1.4.6-.9 1.4-1.6 2.4-2.1C87.7 1.8 86.2.9 84.5.5 82.8.1 81 .2 79.3.9s-3 1.8-4 3.2c-1 1.5-1.5 3.2-1.5 5 0 1.1.2 2.3.6 3.3.4 1.1 1.1 2 1.9 2.8.8.8 1.8 1.5 2.8 1.9 1.1.4 2.2.7 3.3.7h.1c1.2 0 2.4-.3 3.5-.8s2.1-1.2 2.9-2.1c-.8-.3-1.6-1-2.3-1.8zM104.7 4.2c-1-.4-2-.5-3.1-.3-1 .2-2 .7-2.7 1.5-.7.8-1.2 1.7-1.4 2.7-.2 1-.1 2.1.3 3.1s1.1 1.8 2 2.4c.9.6 1.9.9 3 .9 1.4 0 2.7-.6 3.7-1.6s1.5-2.3 1.5-3.8c0-1.1-.3-2.1-.9-2.9-.6-.9-1.4-1.6-2.4-2zm.7 6c-.2.5-.6.9-1 1.3-.5.3-1 .5-1.6.5-.7 0-1.4-.3-2-.8-.5-.5-.8-1.2-.8-2 0-.6.2-1.1.5-1.6s.7-.8 1.3-1 1.1-.3 1.6-.2c.5.1 1 .4 1.4.8.4.4.7.9.8 1.4.1.5 0 1.1-.2 1.6z"></path><path d="M93.7 4.2c-1-.4-2-.5-3.1-.3-1 .2-2 .7-2.7 1.5-.7.8-1.2 1.7-1.4 2.7-.2 1-.1 2.1.3 3.1s1.1 1.8 2 2.4c.9.6 1.9.9 3 .9 1.4 0 2.7-.6 3.7-1.6S97 10.6 97 9.2v-.1c0-1.1-.3-2.1-.9-3-.6-.8-1.5-1.5-2.4-1.9zm.6 6c-.2.5-.6.9-1 1.3s-1 .5-1.6.5c-.7 0-1.4-.3-2-.8-.5-.5-.8-1.2-.8-2 0-.6.2-1.1.5-1.6s.7-.8 1.3-1 1.1-.3 1.6-.2c.5.1 1 .4 1.4.8.4.4.7.9.8 1.4.1.5 0 1.1-.2 1.6zM149.9 14.5c1.4 0 2.7-.6 3.7-1.6s1.5-2.3 1.5-3.8c0-1.1-.3-2.1-.9-2.9-.6-.9-1.4-1.5-2.4-1.9-1-.4-2-.5-3.1-.3-1 .2-2 .7-2.7 1.5-.7.8-1.2 1.7-1.4 2.7-.2 1-.1 2.1.3 3.1s1.1 1.8 2 2.4 2 .8 3 .8zm-2.7-5.4c0-.6.2-1.1.5-1.6s.7-.8 1.3-1c.5-.2 1.1-.3 1.6-.2.5.1 1 .4 1.4.8s.7.9.8 1.4c.1.5.1 1.1-.2 1.6-.2.5-.6.9-1 1.3s-1 .5-1.6.5c-.7 0-1.4-.3-2-.8-.5-.5-.8-1.2-.8-2z"></path></svg></a></div><button class="CybotCookiebotBannerCloseButton" aria-label=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"></path></svg></button></div><div id="CybotCookiebotDialogNav" class="CybotCookiebotScrollAreaSide"><div class="CybotCookiebotFader CybotCookiebotFaderLeft" style="background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));"></div><div class="CybotCookiebotFader CybotCookiebotFaderRight" style="background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));"></div><ul id="CybotCookiebotDialogNavList" class="CybotCookiebotDialogNavItems" role="tablist"><li class="CybotCookiebotDialogNavItem" role="presentation"><a id="CybotCookiebotDialogNavDeclaration" class="CybotCookiebotDialogNavItemLink CybotCookiebotDialogActive" href="#" data-target="CybotCookiebotDialogBody" tabindex="0" role="tab" aria-selected="true" lang="en">Consent</a></li><li class="CybotCookiebotDialogNavItem" role="presentation"><a id="CybotCookiebotDialogNavDetails" class="CybotCookiebotDialogNavItemLink" href="#" data-target="CybotCookiebotDialogTabContentDetails" tabindex="0" role="tab" aria-selected="false" lang="en">Details</a></li><li id="CybotCookiebotDialogNavItemAdSettings" class="CybotCookiebotDialogNavItem CybotCookiebotDialogHide" role="presentation"><a id="CybotCookiebotDialogNavAdSettings" class="CybotCookiebotDialogNavItemLink" href="#" data-target="CybotCookiebotDialogDetailBodyContentTextIABv2" tabindex="0" role="tab" aria-selected="false" lang="en">[#IABV2SETTINGS#]</a></li><li class="CybotCookiebotDialogNavItem" role="presentation"><a id="CybotCookiebotDialogNavAbout" class="CybotCookiebotDialogNavItemLink" href="#" data-target="CybotCookiebotDialogDetailBodyContentTextAbout" tabindex="0" role="tab" aria-selected="false" lang="en">About</a></li></ul></div><div id="CybotCookiebotDialogTabContent"><div id="CybotCookiebotDialogBody" class="CybotCookiebotDialogTabPanel" role="tabpanel" aria-labelledby="CybotCookiebotDialogNavDeclaration" lang="en"><div class="CybotCookiebotScrollContainer"><div id="CybotCookiebotDialogBodyContent" class="CybotCookiebotScrollArea" tabindex="0"><div class="CybotCookiebotFader" style="background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));"></div><h2 id="CybotCookiebotDialogBodyContentTitle" lang="en">This website uses cookies</h2><div id="CybotCookiebotDialogBodyContentText" lang="en">We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. </div></div></div><div class="CybotCookiebotDialogBodyBottomWrapper"><div id="CybotCookiebotDialogBodyLevelWrapper"><div id="CybotCookiebotDialogBodyLevelButtons"><div id="CybotCookiebotDialogBodyLevelButtonsTable"><div id="CybotCookiebotDialogBodyLevelButtonsRow"><div id="CybotCookiebotDialogBodyLevelButtonsSelectPane"><form><fieldset><legend class="visuallyhidden">Consent Selection</legend><div id="CybotCookiebotDialogBodyFieldsetInnerContainer"><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><label class="CybotCookiebotDialogBodyLevelButtonLabel" for="CybotCookiebotDialogBodyLevelButtonNecessary"><span class="CybotCookiebotDialogBodyLevelButtonDescription">Necessary</span></label><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper CybotCookiebotDialogBodyLevelButtonSliderWrapperDisabled"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessary" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></div></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><label class="CybotCookiebotDialogBodyLevelButtonLabel" for="CybotCookiebotDialogBodyLevelButtonPreferences"><span class="CybotCookiebotDialogBodyLevelButtonDescription">Preferences</span></label><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferences" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonPreferencesInline" checked="checked" tabindex="0"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></div></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><label class="CybotCookiebotDialogBodyLevelButtonLabel" for="CybotCookiebotDialogBodyLevelButtonStatistics"><span class="CybotCookiebotDialogBodyLevelButtonDescription">Statistics</span></label><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonStatisticsInline" checked="checked" tabindex="0"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></div></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper"><label class="CybotCookiebotDialogBodyLevelButtonLabel" for="CybotCookiebotDialogBodyLevelButtonMarketing"><span class="CybotCookiebotDialogBodyLevelButtonDescription">Marketing</span></label><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketing" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonMarketingInline" checked="checked" tabindex="0"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></div></div></div></fieldset></form></div></div></div></div></div><div id="CybotCookiebotDialogBodyEdgeMoreDetails"><a id="CybotCookiebotDialogBodyEdgeMoreDetailsLink" href="#" class="">Show details</a></div></div></div><div class="CybotCookiebotScrollContainer CybotCookiebotDialogHide"><div id="CybotCookiebotDialogTabContentDetails" class="CybotCookiebotDialogTabPanel CybotCookiebotDialogHide CybotCookiebotScrollArea" role="tabpanel" aria-labelledby="CybotCookiebotDialogNavDetails" lang="en"><div class="CybotCookiebotFader" style="background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));"></div><div id="CybotCookiebotDialogDetailBody"><div id="CybotCookiebotDialogDetailBodyContent"><div id="CybotCookiebotDialogDetailBodyContentTextOverview" lang="en"><div id="CybotCookiebotDialogDetailBodyContentCookieContainer"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerTypes"><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerNecessaryCard"><div class="CybotCookiebotDialogDetailBodyContentCookieContainerHeader"><button id="CybotCookiebotDialogDetailBodyContentCookieContainerNecessary" class="CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed" lang="en" data-target="CybotCookiebotDialogDetailBodyContentCookieTabsNecessary" aria-label="Necessary (5)" aria-controls="CybotCookiebotDialogDetailBodyContentCookieTabsNecessary" aria-expanded="false"><label for="CybotCookiebotDialogBodyLevelButtonNecessaryInline">Necessary </label> <span class="CybotCookiebotDialogDetailBulkConsentCount">5</span></button><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper CybotCookiebotDialogBodyLevelButtonSliderWrapperDisabled"><form><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessaryInline" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></form></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsNecessary" class="CollapseCard CybotCookiebotDialogHide" aria-labelledby="CybotCookiebotDialogDetailBodyContentCookieContainerNecessaryCard"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><div class="CybotCookiebotDialogDetailBodyContentCookieTabContent"><div class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">Google<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">2</div></a><a class="CybotCookiebotDialogDetailBodyContentCookieLink" target="_blank" rel="noopener noreferrer nofollow" href="https://policies.google.com/privacy" title="Google's privacy policy">Learn more about this provider<img class="CybotExternalLinkArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgBpdTdCcMgEAdwT/vk04EOkBG6QifpHH3rCF2hk3SVvBaEuoDYu4IgRRMv/iEkD/Hn+QnOuatS6gEAqDoJIQC/vfe594+m576FjAZKL6XXkSDiYox5UQFLXZEoNZJzXg9B/0hK6SKGWkiMcRVBewjnNIuURdIzyFBFo0jZPnoGqaMbCEqRJkSNIiFPCfILj7F1GLkySfvuqnFlShDxWesF6D76zF4jPJ/GWvum7/NRjBCegtsXQuuTY/odOJIAAAAASUVORK5CYII=" alt="Arrow icon"></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">CONSENT</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: 2 years</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">docs/common/netcheck.gif</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Necessary for the general functionality of the website. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: Pixel</span></div></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#"><div>consent.cookiebot.com<br>heizenrader.com<br></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">3</div></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">CookieConsent&nbsp;[x3]</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Stores the user's cookie consent state for the current domain</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: 1 year</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP</span></div></div></div></div></div></div></div></div><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerPreferenceCard"><div class="CybotCookiebotDialogDetailBodyContentCookieContainerHeader"><button id="CybotCookiebotDialogDetailBodyContentCookieContainerPreference" class="CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed" lang="en" data-target="CybotCookiebotDialogDetailBodyContentCookieTabsPreference" aria-label="Preferences (0)" aria-controls="CybotCookiebotDialogDetailBodyContentCookieTabsPreference" aria-expanded="false"><label for="CybotCookiebotDialogBodyLevelButtonPreferencesInline">Preferences </label> <span class="CybotCookiebotDialogDetailBulkConsentCount">0</span></button><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><form><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferencesInline" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonPreferences" checked="checked" tabindex="0"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></form></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.</div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsPreference" class="CollapseCard CybotCookiebotDialogHide" aria-labelledby="CybotCookiebotDialogDetailBodyContentCookieContainerPreferenceCard"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><div class="CybotCookiebotDialogDetailBodyContentCookieTabContent"><p class="CybotCookiebotDialogDetailBodyEmptyCategoryMessage">We do not use cookies of this type.</p></div></div></div></div></div><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerStatisticsCard"><div class="CybotCookiebotDialogDetailBodyContentCookieContainerHeader"><button id="CybotCookiebotDialogDetailBodyContentCookieContainerStatistics" class="CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed" lang="en" data-target="CybotCookiebotDialogDetailBodyContentCookieTabsStatistics" aria-label="Statistics (8)" aria-controls="CybotCookiebotDialogDetailBodyContentCookieTabsStatistics" aria-expanded="false"><label for="CybotCookiebotDialogBodyLevelButtonStatisticsInline">Statistics </label> <span class="CybotCookiebotDialogDetailBulkConsentCount">8</span></button><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><form><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatisticsInline" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonStatistics" checked="checked" tabindex="0"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></form></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.</div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsStatistics" class="CollapseCard CybotCookiebotDialogHide" aria-labelledby="CybotCookiebotDialogDetailBodyContentCookieContainerStatisticsCard"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><div class="CybotCookiebotDialogDetailBodyContentCookieTabContent"><div class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">Google<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">8</div></a><a class="CybotCookiebotDialogDetailBodyContentCookieLink" target="_blank" rel="noopener noreferrer nofollow" href="https://policies.google.com/privacy" title="Google's privacy policy">Learn more about this provider<img class="CybotExternalLinkArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgBpdTdCcMgEAdwT/vk04EOkBG6QifpHH3rCF2hk3SVvBaEuoDYu4IgRRMv/iEkD/Hn+QnOuatS6gEAqDoJIQC/vfe594+m576FjAZKL6XXkSDiYox5UQFLXZEoNZJzXg9B/0hK6SKGWkiMcRVBewjnNIuURdIzyFBFo0jZPnoGqaMbCEqRJkSNIiFPCfILj7F1GLkySfvuqnFlShDxWesF6D76zF4jPJ/GWvum7/NRjBCegtsXQuuTY/odOJIAAAAASUVORK5CYII=" alt="Arrow icon"></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">_ga&nbsp;[x2]</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: 2 years</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">_gat&nbsp;[x2]</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by Google Analytics to throttle request rate</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: 1 day</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">_gid&nbsp;[x2]</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: 1 day</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">collect</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: Pixel</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">_ga_#</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: 2 years</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP</span></div></div></div></div></div></div></div></div><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerAdvertisingCard"><div class="CybotCookiebotDialogDetailBodyContentCookieContainerHeader"><button id="CybotCookiebotDialogDetailBodyContentCookieContainerAdvertising" class="CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed" lang="en" data-target="CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising" aria-label="Marketing (6)" aria-controls="CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising" aria-expanded="false"><label for="CybotCookiebotDialogBodyLevelButtonMarketingInline">Marketing </label> <span class="CybotCookiebotDialogDetailBulkConsentCount">6</span></button><div class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><form><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketingInline" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox" data-target="CybotCookiebotDialogBodyLevelButtonMarketing" checked="checked" tabindex="0"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></form></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising" class="CollapseCard CybotCookiebotDialogHide" aria-labelledby="CybotCookiebotDialogDetailBodyContentCookieContainerAdvertisingCard"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><div class="CybotCookiebotDialogDetailBodyContentCookieTabContent"><div class="CybotCookiebotDialogDetailBodyContentCookieGroup"><a class="CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed" role="button" aria-expanded="false" href="#">Google<div class="CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount">6</div></a><a class="CybotCookiebotDialogDetailBodyContentCookieLink" target="_blank" rel="noopener noreferrer nofollow" href="https://policies.google.com/privacy" title="Google's privacy policy">Learn more about this provider<img class="CybotExternalLinkArrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVHgBpdTdCcMgEAdwT/vk04EOkBG6QifpHH3rCF2hk3SVvBaEuoDYu4IgRRMv/iEkD/Hn+QnOuatS6gEAqDoJIQC/vfe594+m576FjAZKL6XXkSDiYox5UQFLXZEoNZJzXg9B/0hK6SKGWkiMcRVBewjnNIuURdIzyFBFo0jZPnoGqaMbCEqRJkSNIiFPCfILj7F1GLkySfvuqnFlShDxWesF6D76zF4jPJ/GWvum7/NRjBCegtsXQuuTY/odOJIAAAAASUVORK5CYII=" alt="Arrow icon"></a><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">GFE_RTT</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to implement the content through Google Docs. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">punchv-e-f</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to implement the content through Google Docs. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: Persistent</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">punchv-e-n</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to implement the content through Google Docs. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: Persistent</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">punchv-e-v</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used to implement the content through Google Docs. </span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: Persistent</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTML</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">ads/ga-audiences</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Used by Google AdWords to re-engage visitors that are likely to convert to customers based on the visitor's online behaviour across websites.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: Session</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: Pixel</span></div></div><div class="CybotCookiebotDialogDetailBodyContentCookieInfo CybotCookiebotDialogHide"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoTitle">NID</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoDescription">Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.</span><div class="CybotCookiebotDialogDetailBodyContentCookieInfoFooter"><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Expiry</b>: 6 months</span><span class="CybotCookiebotDialogDetailBodyContentCookieInfoFooterContent"><b>Type</b>: HTTP</span></div></div></div></div></div></div></div></div><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerUnclassifiedCard"><button id="CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified" class="CybotCookiebotDialogDetailBodyContentCookieContainerButton CybotCookiebotDialogCollapsed" lang="en" data-target="CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified" aria-label="Unclassified (0)" aria-controls="CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified" aria-expanded="false">Unclassified  <span class="CybotCookiebotDialogDetailBulkConsentCount">0</span></button><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies.</div></div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified" class="CollapseCard CybotCookiebotDialogHide" aria-labelledby="CybotCookiebotDialogDetailBodyContentCookieContainerUnclassifiedCard" aria-expanded="false"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"><div class="CybotCookiebotDialogDetailBodyContentCookieTabContent"><p class="CybotCookiebotDialogDetailBodyEmptyCategoryMessage">We do not use cookies of this type.</p></div></div></div></div></div></div></div></div><div id="CybotCookiebotDialogDetailBulkConsent" lang="en"><a id="CybotCookiebotDialogDetailBulkConsentLink" href="#" class="CybotExpandLink CybotCookiebotDialogCollapsed" data-target="CybotCookiebotDialogDetailBulkConsentListWrapper">Cross-domain consent<span class="CybotCookiebotDialogDetailBulkConsentCount">3</span></a> <span class="CybotCookiebotDialogDetailBulkConsentDescription">Your consent applies to the following domains:</span><div id="CybotCookiebotDialogDetailBulkConsentListWrapper" class="CybotCookiebotDialogHide" aria-expanded="false"><span>List of domains your consent applies to:</span> <dl id="CybotCookiebotDialogDetailBulkConsentList"><dt><a target="_blank" href="https://heizenrader.com" rel="noopener noreferrer nofollow">heizenrader.com</a></dt><dt><a target="_blank" href="https://admin.educationxr.com" rel="noopener noreferrer nofollow"> admin.educationxr.com</a></dt><dt><a target="_blank" href="https://educationxr.com" rel="noopener noreferrer nofollow"> educationxr.com</a></dt></dl></div></div><div id="CybotCookiebotDialogDetailFooter" lang="en">Cookie declaration last updated on 2023/9/6 by <a href="https://www.cookiebot.com" target="_blank" rel="noopener" title="Cookiebot">Cookiebot</a></div></div></div></div><div class="CybotCookiebotScrollContainer CybotCookiebotDialogHide"><div id="CybotCookiebotDialogDetailBodyContentTextIABv2" class="CybotCookiebotDialogTabPanel CybotCookiebotDialogHide CybotCookiebotScrollArea" role="tabpanel" aria-labelledby="CybotCookiebotDialogNavAdSettings" lang="en"><div class="CybotCookiebotFader" style="background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));"></div><div id="CybotCookiebotDialogDetailBodyContentIABContainer"><div id="CybotCookiebotDialogDetailBodyContentIABv2Tabs"><div class="CybotCookiebotDialogDetailBodyContentIABv2TabsIntro"><h2>[#IABV2_TITLE#]</h2>[#IABV2_BODY_INTRO#]</div><div class="CybotCookiebotDialogDetailBodyContentIABv2TabsIntro">[#IABV2_BODY_LEGITIMATE_INTEREST_INTRO#]</div><div class="CybotCookiebotDialogDetailBodyContentIABv2TabsIntro">[#IABV2_BODY_PREFERENCE_INTRO#]</div><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentIABv2PurposesCard"><button id="CybotCookiebotDialogDetailBodyContentIABv2Purposes" class="CybotCookiebotDialogDetailBodyContentIABv2Tab CybotCookiebotDialogCollapsed" tabindex="0" data-target="CybotCookiebotDialogDetailBodyContentIABv2PurposesBody" lang="en" aria-label="[#IABV2_LABEL_PURPOSES#]" aria-controls="CybotCookiebotDialogDetailBodyContentIABv2PurposesBody">[#IABV2_LABEL_PURPOSES#]</button><div class="CybotCookiebotDialogDetailBodyContentIABv2CardIntro">[#IABV2_BODY_PURPOSES_INTRO#]</div></div><div id="CybotCookiebotDialogDetailBodyContentIABv2PurposesBody" class="CollapseCard CybotCookiebotDialogHide" aria-labelledby="CybotCookiebotDialogDetailBodyContentIABv2PurposesCard" aria-expanded="false">[#IABV2_BODY_PURPOSES#]</div></div><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentIABv2FeaturesCard"><button id="CybotCookiebotDialogDetailBodyContentIABv2Features" class="CybotCookiebotDialogDetailBodyContentIABv2Tab CybotCookiebotDialogCollapsed" tabindex="0" data-target="CybotCookiebotDialogDetailBodyContentIABv2FeaturesBody" lang="en" aria-label="[#IABV2_LABEL_FEATURES#]" aria-controls="CybotCookiebotDialogDetailBodyContentIABv2FeaturesBody">[#IABV2_LABEL_FEATURES#]</button><div class="CybotCookiebotDialogDetailBodyContentIABv2CardIntro">[#IABV2_BODY_FEATURES_INTRO#]</div></div><div id="CybotCookiebotDialogDetailBodyContentIABv2FeaturesBody" class="CollapseCard CybotCookiebotDialogHide" aria-labelledby="CybotCookiebotDialogDetailBodyContentIABv2FeaturesCard" aria-expanded="false">[#IABV2_BODY_FEATURES#]</div></div><div class="CookieCard"><div id="CybotCookiebotDialogDetailBodyContentIABv2PartnersCard"><button id="CybotCookiebotDialogDetailBodyContentIABv2Partners" class="CybotCookiebotDialogDetailBodyContentIABv2Tab CybotCookiebotDialogCollapsed" tabindex="0" data-target="CybotCookiebotDialogDetailBodyContentIABv2PartnersBody" lang="en" aria-label="[#IABV2_LABEL_PARTNERS#]" aria-controls="CybotCookiebotDialogDetailBodyContentIABv2PartnersBody">[#IABV2_LABEL_PARTNERS#]</button><div class="CybotCookiebotDialogDetailBodyContentIABv2CardIntro">[#IABV2_BODY_PARTNERS_INTRO#]</div></div><div id="CybotCookiebotDialogDetailBodyContentIABv2PartnersBody" class="CollapseCard CybotCookiebotDialogHide" aria-labelledby="CybotCookiebotDialogDetailBodyContentIABv2PartnersCard" aria-expanded="false">[#IABV2_BODY_PARTNERS#]</div></div></div></div></div></div><div class="CybotCookiebotScrollContainer CybotCookiebotDialogHide"><div id="CybotCookiebotDialogDetailBodyContentTextAbout" class="CybotCookiebotDialogTabPanel CybotCookiebotDialogHide CybotCookiebotScrollArea" role="tabpanel" aria-labelledby="CybotCookiebotDialogNavAbout" lang="en"><div class="CybotCookiebotFader" style="background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));"></div>Cookies are small text files that can be used by websites to make a user's experience more efficient.<br style=""><br style="">The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.<br style=""><br style="">This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.<br style=""><br style="">You can at any time change or withdraw your consent from the Cookie Declaration on our website.<br style=""><br style="">Learn more about who we are, how you can contact us and how we process personal data in our Privacy Policy.<br style=""><br style="">Please state your consent ID and date when you contact us regarding your consent.<br><br></div></div></div><div id="CybotCookiebotDialogFooter"><div id="CybotCookiebotDialogBodyButtons"><div class="CybotCookiebotDialogBodyLevelButtonWrapper CybotCookiebotDialogBodyContentControlsWrapper CybotCookiebotDialogHide"><form class="CybotCookiebotDialogBodyLevelButtonSliderWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyContentCheckboxPersonalInformation" class="CybotCookiebotDialogBodyLevelButton"> <span class="CybotCookiebotDialogBodyLevelButtonSlider"></span></form><label class="CybotCookiebotDialogBodyLevelButtonLabel" for="CybotCookiebotDialogBodyContentCheckboxPersonalInformation"><span class="CybotCookiebotDialogBodyLevelButtonDescription">Do not sell or share my personal information</span></label></div><div id="CybotCookiebotDialogBodyButtonsWrapper"><button id="CybotCookiebotDialogBodyButtonDecline" class="CybotCookiebotDialogBodyButton" tabindex="0" lang="en">Deny</button> <button id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection" class="CybotCookiebotDialogBodyButton" tabindex="0" lang="en">Allow selection</button> <button id="CybotCookiebotDialogBodyLevelButtonCustomize" class="CybotCookiebotDialogBodyButton CybotCookiebotDialogHide" tabindex="0" lang="en">Customize<div class="CybotCookiebotDialogArrow"></div></button> <button id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll" class="CybotCookiebotDialogBodyButton" tabindex="0" lang="en">Allow all</button></div></div><div id="CybotCookiebotDialogPoweredByText"><a href="https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/" rel="noopener nofollow" target="_blank">Powered by <span>Cookiebot by Usercentrics</span></a></div></div><button id="CybotCookiebotBannerCloseButtonE2E" class="CybotCookiebotBannerCloseButton" aria-label=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"></path></svg></button></div></div>
+
+
+
+		<header>
+
+			<div class="uk-container">
+
+				<div class="uk-flex uk-flex-middle">
+
+					<a href="https://educationxr.com">
+
+						<img src="https://educationxr.com/storage/2020/08/edxr-logo.png" alt="Logo" class="header-logo">
+
+					</a>
+
+					<div class="uk-inline" style="margin-left: auto">
+						<button type="button" aria-expanded="false">
+							<i class="fas fa-bars"></i>
+						</button>
+						<div uk-dropdown="mode: click; animation: uk-animation-slide-top-small;" class="uk-dropdown">
+							<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-598" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-598"><a href="/" aria-current="page">Home</a></li>
+<li id="menu-item-599" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599"><a href="https://admin.educationxr.com/#/login">Login</a></li>
+<li id="menu-item-601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-601"><a href="https://educationxr.com/about-us/">About Us</a></li>
+<li id="menu-item-843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-843"><a href="https://educationxr.com/user-guide/">User Guide</a></li>
+<li id="menu-item-686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-686"><a href="https://status.educationxr.com">System Status</a></li>
+<li id="menu-item-753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-753"><a href="https://admin.educationxr.com/public/legal/terms">Terms &amp; Conditions</a></li>
+<li id="menu-item-754" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-754"><a href="https://admin.educationxr.com/public/legal/privacy">Privacy Policy</a></li>
+<li id="menu-item-773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-773"><a href="https://educationxr.com/sla/">SLA</a></li>
+<li id="menu-item-758" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-758"><a href="https://trust.educationxr.com">Trust Report</a></li>
+</ul></div>						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</header>
+<main>
+			
+
+
+
+<section class="banner-block" style="background: url(https://educationxr.com/storage/2020/12/site_header.jpg) no-repeat center center / cover">
+
+  <div class="uk-container">
+
+    <div class="uk-width-1-2@m">
+		
+		<div class="inner has-overlay">
+			<h1>Extended Reality Training &amp; Education</h1>
+
+			<div class="subtitle">Immersive, collaborative and remote training from any device – VR, mobile, tablet and desktop</div>
+
+			
+			<a href="/get-started" class="btn yellow">Get Started</a>
+
+					</div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h1 class="has-text-align-center">Any Device</h1>
+
+
+
+<div class="wp-block-image wp-video-popup"><figure class="aligncenter size-large"><a class="wp-video-popup" href="https://educationxr.com/collage-video/"><img src="https://educationxr.com/storage/2022/08/collage-video-700x463.png" alt="" class="wp-image-742" srcset="https://educationxr.com/storage/2022/08/collage-video-700x463.png 700w, https://educationxr.com/storage/2022/08/collage-video-250x165.png 250w, https://educationxr.com/storage/2022/08/collage-video-768x508.png 768w, https://educationxr.com/storage/2022/08/collage-video-1536x1015.png 1536w, https://educationxr.com/storage/2022/08/collage-video-2048x1353.png 2048w, https://educationxr.com/storage/2022/08/collage-video-120x79.png 120w" sizes="(max-width: 700px) 100vw, 700px"></a></figure></div>
+
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></div>
+
+
+
+
+
+
+<section class="hero-block" style="background: url(https://educationxr.com/storage/2020/08/hero_multiplayer.png) no-repeat center center / cover;">
+
+  <div class="uk-position-center">
+
+    <div class="panel">
+
+      <h2><p style="text-align: center;">Remote Learning</p></h2>
+
+      <div class="subtitle">
+
+        <p style="text-align: center;">Eliminate the barriers of physical location and connect in shared experiences across hardware devices</p>
+
+      </div>
+
+      
+    </div>
+
+  </div>
+
+</section>
+
+
+<div class="wp-block-group is-style-has-background"><div class="wp-block-group__inner-container">
+<div style="height:65px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+<style type="text/css" media="all">#tss-container-1542757875.tss-wrapper .tss-layout10 .item-content-wrapper,
+					#tss-container-1542757875.tss-wrapper .tss-isotope3 .item-content-wrapper,
+					#tss-container-1542757875.tss-wrapper .tss-isotope5 .item-content-wrapper,
+					#tss-container-1542757875.tss-wrapper .tss-carousel10 .item-content-wrapper{background: transparent;}</style><div class="rt-container-fluid tss-wrapper " id="tss-container-1542757875" data-layout="carousel1" data-desktop-col="2" data-tab-col="2" data-mobile-col="1"><div data-title="Loading ..." class="rt-row tss-carousel1 tss-even"><div class="carousel-wrapper"><div class="tss-carousel swiper instance-0 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" data-loop="true" data-items-desktop="2" data-items-tab="2" data-items-mobile="1" data-autoplay="true" data-autoplay-timeout="5000" data-autoplay-hover-pause="false" data-dots="true" data-nav="false" data-lazy-load="false" data-auto-height="false" data-smart-speed="2000"><div class="swiper-wrapper" id="swiper-wrapper-65b0dd3da59eaf30" aria-live="off" style="transform: translate3d(-939px, 0px, 0px); transition-duration: 0ms;"><div class="rt-col-md-12 rt-col-sm-12 rt-col-xs-12 even-grid-item tss-grid-item slide-item swiper-slide default-margin tss-img-circle swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="1 / 2" style="width: 469.5px;"><div class="single-item-wrapper"><div class="tss-meta-info tss-left"><div class="profile-img-wrapper"><img alt="Dr. Jonathan Morris, MD" class="rt-responsive-img" src="https://educationxr.com/storage/2023/03/jonathan-morris-13804171-e1678737137259-150x150.jpg"></div><h3 class="author-name">Dr. Jonathan Morris, MD</h3><h4 class="author-bio"><span class="author-designation">Medical Director of the Center for Biomedical &amp; Scientific Visualization</span>, <span class="item-company">Mayo Clinic</span></h4></div><div class="item-content-wrapper tss-right"><div class="item-content">Due to the current constraints of COVID, the ability to train our staff using EducationXR helps us to deliver expert medical education while practicing safe distance learning.</div></div></div></div><div class="rt-col-md-12 rt-col-sm-12 rt-col-xs-12 even-grid-item tss-grid-item slide-item swiper-slide default-margin tss-img-circle swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 469.5px;"><div class="single-item-wrapper"><div class="tss-meta-info tss-left"><div class="profile-img-wrapper"><img alt="Dr. Crystal Nasio" class="rt-responsive-img" src="https://educationxr.com/storage/2023/03/c.nasio_headshot-e1678742959577-150x150.jpg"></div><h3 class="author-name">Dr. Crystal Nasio</h3><h4 class="author-bio"><span class="author-designation">Executive Dean of Strategic Partnerships &amp; Workforce Development</span>, <span class="item-company">Barstow Community College</span></h4></div><div class="item-content-wrapper tss-right"><div class="item-content">EducationXR is allowing us the opportunity to provide students interactive career skills training as they prepare to secure jobs. The material is hardware agnostic, so students can access from any device they have at their fingertips. We are also able to make this available to K-12 students.</div></div></div></div><div class="rt-col-md-12 rt-col-sm-12 rt-col-xs-12 even-grid-item tss-grid-item slide-item swiper-slide default-margin tss-img-circle swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="1 / 2" style="width: 469.5px;"><div class="single-item-wrapper"><div class="tss-meta-info tss-left"><div class="profile-img-wrapper"><img alt="Dr. Jonathan Morris, MD" class="rt-responsive-img" src="https://educationxr.com/storage/2023/03/jonathan-morris-13804171-e1678737137259-150x150.jpg"></div><h3 class="author-name">Dr. Jonathan Morris, MD</h3><h4 class="author-bio"><span class="author-designation">Medical Director of the Center for Biomedical &amp; Scientific Visualization</span>, <span class="item-company">Mayo Clinic</span></h4></div><div class="item-content-wrapper tss-right"><div class="item-content">Due to the current constraints of COVID, the ability to train our staff using EducationXR helps us to deliver expert medical education while practicing safe distance learning.</div></div></div></div><div class="rt-col-md-12 rt-col-sm-12 rt-col-xs-12 even-grid-item tss-grid-item slide-item swiper-slide default-margin tss-img-circle swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 469.5px;"><div class="single-item-wrapper"><div class="tss-meta-info tss-left"><div class="profile-img-wrapper"><img alt="Dr. Crystal Nasio" class="rt-responsive-img" src="https://educationxr.com/storage/2023/03/c.nasio_headshot-e1678742959577-150x150.jpg"></div><h3 class="author-name">Dr. Crystal Nasio</h3><h4 class="author-bio"><span class="author-designation">Executive Dean of Strategic Partnerships &amp; Workforce Development</span>, <span class="item-company">Barstow Community College</span></h4></div><div class="item-content-wrapper tss-right"><div class="item-content">EducationXR is allowing us the opportunity to provide students interactive career skills training as they prepare to secure jobs. The material is hardware agnostic, so students can access from any device they have at their fingertips. We are also able to make this available to K-12 students.</div></div></div></div><div class="rt-col-md-12 rt-col-sm-12 rt-col-xs-12 even-grid-item tss-grid-item slide-item swiper-slide default-margin tss-img-circle swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="1 / 2" style="width: 469.5px;"><div class="single-item-wrapper"><div class="tss-meta-info tss-left"><div class="profile-img-wrapper"><img alt="Dr. Jonathan Morris, MD" class="rt-responsive-img" src="https://educationxr.com/storage/2023/03/jonathan-morris-13804171-e1678737137259-150x150.jpg"></div><h3 class="author-name">Dr. Jonathan Morris, MD</h3><h4 class="author-bio"><span class="author-designation">Medical Director of the Center for Biomedical &amp; Scientific Visualization</span>, <span class="item-company">Mayo Clinic</span></h4></div><div class="item-content-wrapper tss-right"><div class="item-content">Due to the current constraints of COVID, the ability to train our staff using EducationXR helps us to deliver expert medical education while practicing safe distance learning.</div></div></div></div><div class="rt-col-md-12 rt-col-sm-12 rt-col-xs-12 even-grid-item tss-grid-item slide-item swiper-slide default-margin tss-img-circle swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" role="group" aria-label="2 / 2" style="width: 469.5px;"><div class="single-item-wrapper"><div class="tss-meta-info tss-left"><div class="profile-img-wrapper"><img alt="Dr. Crystal Nasio" class="rt-responsive-img" src="https://educationxr.com/storage/2023/03/c.nasio_headshot-e1678742959577-150x150.jpg"></div><h3 class="author-name">Dr. Crystal Nasio</h3><h4 class="author-bio"><span class="author-designation">Executive Dean of Strategic Partnerships &amp; Workforce Development</span>, <span class="item-company">Barstow Community College</span></h4></div><div class="item-content-wrapper tss-right"><div class="item-content">EducationXR is allowing us the opportunity to provide students interactive career skills training as they prepare to secure jobs. The material is hardware agnostic, so students can access from any device they have at their fingertips. We are also able to make this available to K-12 students.</div></div></div></div></div><div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div><div class="rt-loading-overlay" style="display: none;"></div><div class="rt-loading rt-ball-clip-rotate" style="display: none;"><div></div></div></div></div>
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></div>
+
+
+
+<section class="deployment-block">
+  <div class="uk-container">
+    <h2>Build Once. Deploy Everywhere.</h2>
+    <div class="subtitle">
+      <p>All content is instantly available on VR, mobile, tablet, and desktop so education &amp; training can reach more people, in more ways, in more parts of the world.</p>
+    </div>
+    <img class="main-img" src="https://educationxr.com/storage/2020/08/Main-Graphic.png" alt="">
+  </div>
+  <div class="uk-container uk-container-small">
+    <div class="rows">
+              <div class="uk-child-width-1-2@m uk-grid-small1 uk-flex uk-flex-middle uk-grid" uk-grid="">
+          <div class="uk-first-column">
+            <div class="top">
+              <h3>Virtual Reality</h3>
+              <div class="subtitle">
+                <p>Use VR headsets (Oculus, HTC, Samsung, Index etc) to explore learning content at the fullest level of immersion</p>
+              </div>
+            </div>
+                        <div class="platforms">
+                                                <a href="https://config.api.educationxr.com/api/v2/app-store-proxy/QLXmpwuykoSNZyplanMW/store">
+                    <img width="160" src="https://educationxr.com/core/assets/cd3f47f5cf/img/steam-logo.png">
+                  </a>
+                                                                				                                                                              				                  <a href="https://config.api.educationxr.com/api/v2/app-store-proxy/tlGkPVAjdnRlPVVSrPWf/store">
+                    <img width="160" src="https://educationxr.com/storage/2021/04/Oculus.png">
+                  </a>
+                                          </div>
+          </div>
+          <div>
+            <img class="img" src="https://educationxr.com/storage/2020/06/VR.png" alt="">
+          </div>
+        </div>
+              <div class="uk-child-width-1-2@m uk-grid-small1 uk-flex uk-flex-middle uk-grid" uk-grid="">
+          <div class="uk-first-column">
+            <div class="top">
+              <h3>Mobile Devices</h3>
+              <div class="subtitle">
+                <p>3D immersive content at your fingertips, from any mobile device, anywhere</p>
+              </div>
+            </div>
+                        <div class="platforms">
+                                                                <a href="https://config.api.educationxr.com/api/v2/app-store-proxy/CMPDoBOvFLSdtiaIFOwW/store">
+                    <img width="160" src="https://educationxr.com/core/assets/cd3f47f5cf/img/apple-logo.png">
+                  </a>
+                                                				                                                                                <a href="https://config.api.educationxr.com/api/v2/app-store-proxy/OrtEUNWbVMWzrrbZrhsq/store">
+                    <img width="160" src="https://educationxr.com/core/assets/cd3f47f5cf/img/google-logo.png">
+                  </a>
+                                				                          </div>
+          </div>
+          <div>
+            <img class="img" src="https://educationxr.com/storage/2020/06/img2.png" alt="">
+          </div>
+        </div>
+              <div class="uk-child-width-1-2@m uk-grid-small1 uk-flex uk-flex-middle uk-grid" uk-grid="">
+          <div class="uk-first-column">
+            <div class="top">
+              <h3>Tablets</h3>
+              <div class="subtitle">
+                <p>Apple and Android tablets for a comfortable high fidelity experience on the go</p>
+              </div>
+            </div>
+                        <div class="platforms">
+                                                                <a href="https://config.api.educationxr.com/api/v2/app-store-proxy/CMPDoBOvFLSdtiaIFOwW/store">
+                    <img width="160" src="https://educationxr.com/core/assets/cd3f47f5cf/img/apple-logo.png">
+                  </a>
+                                                				                                                                                <a href="https://config.api.educationxr.com/api/v2/app-store-proxy/OrtEUNWbVMWzrrbZrhsq/store">
+                    <img width="160" src="https://educationxr.com/core/assets/cd3f47f5cf/img/google-logo.png">
+                  </a>
+                                				                          </div>
+          </div>
+          <div>
+            <img class="img" src="https://educationxr.com/storage/2020/06/img3.png" alt="">
+          </div>
+        </div>
+              <div class="uk-child-width-1-2@m uk-grid-small1 uk-flex uk-flex-middle uk-grid" uk-grid="">
+          <div class="uk-first-column">
+            <div class="top">
+              <h3>PC &amp; Mac</h3>
+              <div class="subtitle">
+                <p>Use Windows or Mac computers to explore immersive content</p>
+              </div>
+            </div>
+                        <div class="platforms">
+                                                                <a href="https://admin.educationxr.com/download/app/MbJldvViKuwXBmwddeny">
+                    <img width="160" src="https://educationxr.com/core/assets/cd3f47f5cf/img/apple-logo.png">
+                  </a>
+                                                				                                                                                                <a href="https://config.api.educationxr.com/api/v2/app-store-proxy/VUiBiRnHbEhSGvddsmlK/store">
+                    <img width="160" src="https://educationxr.com/core/assets/cd3f47f5cf/img/windows-logo.png">
+                  </a>
+                				                          </div>
+          </div>
+          <div>
+            <img class="img" src="https://educationxr.com/storage/2020/06/img4.png" alt="">
+          </div>
+        </div>
+              <div class="uk-child-width-1-2@m uk-grid-small1 uk-flex uk-flex-middle uk-grid" uk-grid="">
+          <div class="uk-first-column">
+            <div class="top">
+              <h3>Augmented Reality</h3>
+              <div class="subtitle">
+                <p>Dive into immersive spaces at the push of a button, a spatial experience for anyone</p>
+              </div>
+            </div>
+                        <div class="platforms">
+                          </div>
+          </div>
+          <div>
+            <img class="img" src="https://educationxr.com/storage/2020/08/AR.png" alt="">
+          </div>
+        </div>
+          </div>
+  </div>
+
+</section>
+
+
+<div class="wp-block-group has-background" style="background-color:#ffe8ba"><div class="wp-block-group__inner-container">
+<div style="height:85px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://store.steampowered.com/app/1160420/EducationXR/"><img src="https://educationxr.com/storage/2020/08/icon-steam-blue.png" alt="" class="wp-image-460"></a></figure></div>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://play.google.com/store/apps/details?id=com.heizenrader.educationxr"><img src="https://educationxr.com/storage/2020/08/icon-android-blue.png" alt="" class="wp-image-462"></a></figure></div>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://apps.apple.com/us/app/id1479104639"><img src="https://educationxr.com/storage/2020/06/icon5.png" alt="" class="wp-image-73"></a></figure></div>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://www.microsoft.com/en-us/p/educationxr/9ncsfhcs7rdp?activetab=pivot:overviewtab"><img src="https://educationxr.com/storage/2020/06/icon4.png" alt="" class="wp-image-72"></a></figure></div>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://www.oculus.com/experiences/quest/4965092343561838/"><img src="https://educationxr.com/storage/2020/06/unnamed.png" alt="" class="wp-image-172"></a></figure></div>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://unity.com"><img src="https://educationxr.com/storage/2020/06/icon2.png" alt="" class="wp-image-70"></a></figure></div>
+</div>
+</div>
+
+
+
+<div style="height:55px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></div>
+
+
+
+<div class="wp-block-group is-style-has-background"><div class="wp-block-group__inner-container">
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="has-text-align-center">Platform Users</h2>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img src="https://educationxr.com/storage/2020/08/recent-content-mayo.png" alt="" class="wp-image-323" srcset="https://educationxr.com/storage/2020/08/recent-content-mayo.png 500w, https://educationxr.com/storage/2020/08/recent-content-mayo-250x250.png 250w, https://educationxr.com/storage/2020/08/recent-content-mayo-150x150.png 150w, https://educationxr.com/storage/2020/08/recent-content-mayo-120x120.png 120w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://educationxr.com/storage/2023/03/recent-content-mgh.png" alt="" class="wp-image-779" srcset="https://educationxr.com/storage/2023/03/recent-content-mgh.png 500w, https://educationxr.com/storage/2023/03/recent-content-mgh-250x250.png 250w, https://educationxr.com/storage/2023/03/recent-content-mgh-150x150.png 150w, https://educationxr.com/storage/2023/03/recent-content-mgh-120x120.png 120w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img src="https://educationxr.com/storage/2020/09/recent-content-volkswagen.png" alt="" class="wp-image-619" srcset="https://educationxr.com/storage/2020/09/recent-content-volkswagen.png 500w, https://educationxr.com/storage/2020/09/recent-content-volkswagen-250x250.png 250w, https://educationxr.com/storage/2020/09/recent-content-volkswagen-150x150.png 150w, https://educationxr.com/storage/2020/09/recent-content-volkswagen-120x120.png 120w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://educationxr.com/storage/2023/03/recent-content-ge.png" alt="" class="wp-image-778" srcset="https://educationxr.com/storage/2023/03/recent-content-ge.png 500w, https://educationxr.com/storage/2023/03/recent-content-ge-250x250.png 250w, https://educationxr.com/storage/2023/03/recent-content-ge-150x150.png 150w, https://educationxr.com/storage/2023/03/recent-content-ge-120x120.png 120w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img src="https://educationxr.com/storage/2020/08/recent-content-merck-copy.png" alt="" class="wp-image-331" srcset="https://educationxr.com/storage/2020/08/recent-content-merck-copy.png 500w, https://educationxr.com/storage/2020/08/recent-content-merck-copy-250x250.png 250w, https://educationxr.com/storage/2020/08/recent-content-merck-copy-150x150.png 150w, https://educationxr.com/storage/2020/08/recent-content-merck-copy-120x120.png 120w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://educationxr.com/storage/2023/03/recent-content-el-camino.png" alt="" class="wp-image-777" srcset="https://educationxr.com/storage/2023/03/recent-content-el-camino.png 500w, https://educationxr.com/storage/2023/03/recent-content-el-camino-250x250.png 250w, https://educationxr.com/storage/2023/03/recent-content-el-camino-150x150.png 150w, https://educationxr.com/storage/2023/03/recent-content-el-camino-120x120.png 120w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img src="https://educationxr.com/storage/2023/03/recent-content-barstow.png" alt="" class="wp-image-776" srcset="https://educationxr.com/storage/2023/03/recent-content-barstow.png 500w, https://educationxr.com/storage/2023/03/recent-content-barstow-250x250.png 250w, https://educationxr.com/storage/2023/03/recent-content-barstow-150x150.png 150w, https://educationxr.com/storage/2023/03/recent-content-barstow-120x120.png 120w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+
+
+
+<figure class="wp-block-image size-large"><img src="https://educationxr.com/storage/2023/03/recent-content-unmc.png" alt="" class="wp-image-780" srcset="https://educationxr.com/storage/2023/03/recent-content-unmc.png 500w, https://educationxr.com/storage/2023/03/recent-content-unmc-250x250.png 250w, https://educationxr.com/storage/2023/03/recent-content-unmc-150x150.png 150w, https://educationxr.com/storage/2023/03/recent-content-unmc-120x120.png 120w" sizes="(max-width: 500px) 100vw, 500px"></figure>
+</div>
+</div>
+
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></div>
+
+
+
+<div class="wp-block-group has-text-color has-background" style="background-color:#222228;color:#ffffff"><div class="wp-block-group__inner-container">
+<div style="height:85px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns is-style-vertical-center">
+<div class="wp-block-column" style="flex-basis:33.33%">
+<h2 class="has-text-color" style="color:#ffffff">Extended Reality</h2>
+
+
+
+<p>We are huge believers of pushing the envelope of what’s possible. Mobile and tablet devices are spatial computing devices packed with sensors, offering tracking capabilities. </p>
+
+
+
+<p>We use that power to offer a window into immersive environments, making spatial experiences available to anyone. Jump into XR mode and walk around with full reach of motion in shared sessions. </p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:66.66%">
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://educationxr.com/storage/2020/08/XR-Combined-700x397.png" alt="" class="wp-image-342" srcset="https://educationxr.com/storage/2020/08/XR-Combined-700x397.png 700w, https://educationxr.com/storage/2020/08/XR-Combined-250x142.png 250w, https://educationxr.com/storage/2020/08/XR-Combined-768x436.png 768w, https://educationxr.com/storage/2020/08/XR-Combined-1536x871.png 1536w, https://educationxr.com/storage/2020/08/XR-Combined-120x68.png 120w, https://educationxr.com/storage/2020/08/XR-Combined.png 1800w" sizes="(max-width: 700px) 100vw, 700px"></figure></div>
+</div>
+</div>
+
+
+
+<div style="height:55px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></div>
+
+
+
+<div class="wp-block-group has-background" style="background-color:#fdc352"><div class="wp-block-group__inner-container">
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns is-style-vertical-center">
+<div class="wp-block-column" style="flex-basis:33.33%">
+<h2>Analytics &amp; Heatmaps  </h2>
+
+
+
+<p>Gain key insights into the way your training is being utilized to its fullest. Track user behavior and proficiency and use your knowledge to improve your curriculum and outcomes.</p>
+
+
+
+<p>Our 3D heatmap engine offers an invaluable tool to understand user behavior. Use heatmaps to validate your courses, track people’s gaze or to test users’ attention skills.</p>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:66.66%">
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://educationxr.com/storage/2020/08/analytics-heatmaps-700x545.png" alt="" class="wp-image-253" srcset="https://educationxr.com/storage/2020/08/analytics-heatmaps-700x545.png 700w, https://educationxr.com/storage/2020/08/analytics-heatmaps-250x195.png 250w, https://educationxr.com/storage/2020/08/analytics-heatmaps-768x598.png 768w, https://educationxr.com/storage/2020/08/analytics-heatmaps-1536x1196.png 1536w, https://educationxr.com/storage/2020/08/analytics-heatmaps-120x93.png 120w, https://educationxr.com/storage/2020/08/analytics-heatmaps.png 1987w" sizes="(max-width: 700px) 100vw, 700px"></figure></div>
+</div>
+</div>
+
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></div>
+
+
+
+<div class="wp-block-group has-very-light-gray-background-color has-text-color has-background" style="color:#ffffff"><div class="wp-block-group__inner-container">
+<div style="height:85px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns is-style-vertical-center">
+<div class="wp-block-column" style="flex-basis:33.33%">
+<h2 class="has-very-dark-gray-color has-text-color">Assessments</h2>
+
+
+
+<p class="has-text-color has-very-dark-gray-color">Fully integrated, our assessment builder allows stakeholders to create knowledge based tests directly from your browser and deploy immediately to all devices. </p>
+
+
+
+<p class="has-text-color has-very-dark-gray-color">Use these tests as part of your accreditation efforts and obtain detailed reports directly from your admin panel. An invaluable tool for educators and leaders.</p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:66.66%">
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://educationxr.com/storage/2020/08/image-6-700x434.png" alt="" class="wp-image-586" srcset="https://educationxr.com/storage/2020/08/image-6-700x434.png 700w, https://educationxr.com/storage/2020/08/image-6-250x155.png 250w, https://educationxr.com/storage/2020/08/image-6-768x476.png 768w, https://educationxr.com/storage/2020/08/image-6-1536x952.png 1536w, https://educationxr.com/storage/2020/08/image-6-120x74.png 120w, https://educationxr.com/storage/2020/08/image-6.png 1936w" sizes="(max-width: 700px) 100vw, 700px"></figure></div>
+
+
+
+<p></p>
+</div>
+</div>
+
+
+
+<div style="height:55px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-buttons aligncenter">
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://educationxr.com/get-started">Get Started</a></div>
+</div>
+</div></div>
+
+
+
+<div style="height:55px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></div>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns has-background" style="background-color:#ffffff">
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://educationxr.com/storage/2020/09/vrara_standard-1200x396-1-700x231.png" alt="" class="wp-image-621" width="350" height="116" srcset="https://educationxr.com/storage/2020/09/vrara_standard-1200x396-1-700x231.png 700w, https://educationxr.com/storage/2020/09/vrara_standard-1200x396-1-250x83.png 250w, https://educationxr.com/storage/2020/09/vrara_standard-1200x396-1-768x253.png 768w, https://educationxr.com/storage/2020/09/vrara_standard-1200x396-1-120x40.png 120w, https://educationxr.com/storage/2020/09/vrara_standard-1200x396-1.png 1200w" sizes="(max-width: 350px) 100vw, 350px"></figure></div>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><a href="https://cleanboxtech.com" target="_blank"><img src="https://educationxr.com/storage/2022/08/cleanbox-logo-700x284.png" alt="" class="wp-image-734" width="286" height="116" srcset="https://educationxr.com/storage/2022/08/cleanbox-logo-700x284.png 700w, https://educationxr.com/storage/2022/08/cleanbox-logo-250x101.png 250w, https://educationxr.com/storage/2022/08/cleanbox-logo-768x311.png 768w, https://educationxr.com/storage/2022/08/cleanbox-logo-120x49.png 120w, https://educationxr.com/storage/2022/08/cleanbox-logo.png 863w" sizes="(max-width: 286px) 100vw, 286px"></a></figure></div>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://educationxr.com/storage/2021/05/ivrha-logo-700x180.jpg" alt="" class="wp-image-687" width="350" height="90" srcset="https://educationxr.com/storage/2021/05/ivrha-logo-700x182.jpg 700w, https://educationxr.com/storage/2021/05/ivrha-logo-250x64.jpg 250w, https://educationxr.com/storage/2021/05/ivrha-logo-120x31.jpg 120w, https://educationxr.com/storage/2021/05/ivrha-logo.jpg 708w" sizes="(max-width: 350px) 100vw, 350px"></figure></div>
+</div>
+</div>
+
+
+
+	<div class="wp-video-popup-wrapper">
+		<div class="wp-video-popup-close"></div>
+		<iframe class="wp-video-popup-video is-hosted is-landscape is-resizable" data-wp-video-popup-url="https://youtube.com/embed/W61QzcKOIJM?autoplay=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay" src=""></iframe>
+	</div>
+	
+	</main><iframe name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe>
+
+<footer>
+
+    <div class="uk-container">
+
+        <div class="uk-flex uk-flex-middle uk-grid uk-grid-stack" uk-grid="">
+
+            <div class="uk-width-2-3@s uk-first-column">
+
+                <div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-684" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-684"><a href="https://status.educationxr.com">System Status</a></li>
+<li id="menu-item-756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-756"><a href="https://admin.educationxr.com/public/legal/terms">Terms &amp; Conditions</a></li>
+<li id="menu-item-755" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-755"><a href="https://admin.educationxr.com/public/legal/privacy">Privacy Policy</a></li>
+<li id="menu-item-774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-774"><a href="https://educationxr.com/sla/">SLA</a></li>
+<li id="menu-item-757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-757"><a href="https://trust.educationxr.com">Trust Report</a></li>
+</ul></div>
+            </div>
+
+            <div class="uk-width-expand@s uk-text-right@s">
+
+                <a href="https://educationxr.com">
+
+
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<link rel="stylesheet" id="swiper-css" href="https://educationxr.com/core/modules/testimonial-slider-and-showcase/assets/vendor/swiper/swiper.min.css" media="all">
+<link rel="stylesheet" id="tss-fontello-css" href="https://educationxr.com/core/modules/testimonial-slider-and-showcase/assets/vendor/fontello/css/tss-font.min.css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://educationxr.com/lib/css/dashicons.min.css" media="all"><iframe tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="https://consentcdn.cookiebot.com/sdk/bc-v4.min.html" style="position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe>
+<script type="text/javascript" src="https://educationxr.com/core/modules/responsive-youtube-vimeo-popup/assets/js/wp-video-popup.js"></script>
+<script type="text/javascript" src="https://educationxr.com/lib/js/wp-embed.min.js"></script>
+<script type="text/javascript" src="https://educationxr.com/core/modules/testimonial-slider-and-showcase/assets/vendor/isotope/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="https://educationxr.com/core/modules/testimonial-slider-and-showcase/assets/vendor/swiper/swiper.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var tss = {"ajaxurl":"https:\/\/educationxr.com\/secret-admin\/admin-ajax.php","nonce":"96adca63ad","nonceId":"tss_nonce"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://educationxr.com/core/modules/testimonial-slider-and-showcase/assets/js/wptestimonial.js"></script>
+
+
+
+<script src="https://educationxr.com/core/assets/cd3f47f5cf/uikit/js/uikit.min.js" type="text/javascript"></script>
+
+<script src="https://educationxr.com/core/assets/cd3f47f5cf/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+</body></html>

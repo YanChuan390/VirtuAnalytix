@@ -1,0 +1,90 @@
+<html><head></head><body>​
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Monandol Games - Privacy Policy</title>
+	<style>
+		body {  margin:10px; padding:0px; font-family: sans-serif; }
+		body { background-color:#333333; color:#ffffff; }
+		a:link, a:visited, a:hover, a:active { color:#AAFFDD; text-decoration: none; }
+		.area { margin-left:20px; margin-right:20px; display:none; }
+
+		#English {font-family: sans-serif, Arial, Helvetica; font-size:14pt; }
+		#Korean {font-family:  "맑은 고딕", Malgun Gothic, "바탕", Batang, "굴림", Gulim, Arial, sans-serif; font-size:14pt; }
+
+		h2 { margin-top:0pt; margin-bottom:30pt; font-weight:bold; }
+		h3 { margin-top:20pt; margin-bottom:14pt; }
+	</style>
+
+
+	<span>
+		<a href="#" onclick="changeLanguage('English')">English</a> |
+		<a href="#" onclick="changeLanguage('Korean')">Korean</a>
+	</span>
+	
+	<div style="height:24px;"></div>
+
+	<div class="area" id="English" style="display: block;">
+	<h2>Privacy Policy</h2>
+	<h3>Introduction</h3>
+	We, Monandol Games, regards your personal data significant by the regulations of the world data protection act.<br>
+	This Privacy Policy tells you what information we collect and how we use it.<br>
+	<h3>Information usage</h3>
+	We do not collect any of your personal data.<br>
+	We don't have a server database to store your personal data.<br>
+	Also, we do not outsource information processing such as sharing your personal information with third parties.<br>
+	<!--
+	We physically can't. We have nowhere to store it.<br>
+	We don't even have a server database to store it.<br>
+	So even if you ask nicely to see your data, we wouldn't have anything to show you.<br>
+	-->
+	<br>
+	※ Ad companies may use and collect anonymous data about your interests to customize content and advertising here and in other sites and applications.<br>
+	Interest and location data may be linked to your device, but is not linked to your identity. Click to see company privacy policies and opt-out choices:<br>
+	- Apple: http://www.apple.com/privacy/<br>
+	- Google: https://www.google.com/intl/en/policies/privacy/<br>
+	<br><br>
+	This Privacy Policy may be updated from time to time for any reason. We will notify you of any changes to our Privacy Policy by posting the new Privacy Policy.<br>
+	<br>
+	If you have any questions or concerns about our Privacy Policy, please contact us by emailing : monandolgames@gmail.com<br>
+	<br><br>
+	This Privacy Policy was updated on January 6, 2021.
+	</div>
+
+	<div class="area" id="Korean">
+	<h2>개인정보 보호정책</h2>
+	<h3>소개</h3>
+	모난돌 게임즈(이하 "회사")는 이용자에게 즐거운 경험을 제공하는 게임을 만드는 기업입니다.<br>
+	회사는 이용자에게 제공하는 회사의 게임, 웹사이트 및 모든 관련 서비스(이하 "서비스")를 이용하는 모든 사람의 개인정보를 존중합니다.<br>
+	본 "개인정보 보호정책"에서는 회사가 이용자에 속하는 개인정보를 수집, 처리 및 보관하는 방법을 설명합니다.<br>	
+	<h3>회사의 개인정보 취급방침</h3>	
+	회사는 이용자에 관한 어떠한 개인정보도 수집, 처리 및 보관하고 있지 않습니다.<br>
+	회사에는 이용자에 관한 개인정보를 수집, 처리 및 보관할만한 서버 데이터베이스가 존재하지 않습니다.<br>
+	또한 회사는 이용자의 개인정보를 제3자와 공유하는 등 정보처리를 외부 위탁하는 경우도 없습니다.<br>
+	<h3>이용자의 권리</h3>	
+	회사는 본 개인정보 보호정책을 회사 홈페이지(https://monandolgames.com)의 첫 화면에 공개함으로써 이용자가 언제나 용이하게 볼 수 있도록 하고 있습니다.<br>
+	본 개인정보 보호정책은 관계 법령 및 지침의 변경이나 회사의 내부 방침 변경 등으로 인하여 변경될 수 있습니다.<br>
+	만약 새로운 개인정보 보호정책을 게시하게 된다면 이용자에게 고지하여 개인정보 보호정책의 변경사항을 알려드릴것입니다.<br>	
+	<br><br>
+	이용자의 개인정보 보호정책과 관련된 문제에 대해 문의하시려면, monandolgames@gmail.com 으로 이메일을 보내주십시오.<br>
+	문제가 있는 경우, 이용자는 현지의 정보보호 당국에 이의를 제기할 수 있는 권리가 있습니다.<br>
+	<br><br>
+	본 개인정보 보호정책은 2021년 1월 6일에 마지막으로 갱신되었습니다.
+	</div>
+​
+<script>
+	window.onload = function()
+	{
+		document.getElementById("English").style.display = 'block';
+	}
+	
+	function changeLanguage(languageName)
+	{
+		document.getElementById("English").style.display = 'none';
+		document.getElementById("Korean").style.display = 'none';
+
+		document.getElementById(languageName).style.display = 'block';
+	}
+</script>
+</body></html>

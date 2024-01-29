@@ -1,0 +1,444 @@
+<html lang="EN"><head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-DVE7EKMC4V&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-52998412-50"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-52998412-50');
+</script>
+
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>GUNGRAVE</title>
+<link rel="icon" href="common\img_jp\favicon.ico">
+<link rel="stylesheet" href="common\css_jp\style.css?version=1" type="text/css">
+<link rel="stylesheet" href="skin\latest\basic\style.css">
+<link rel="stylesheet" href="css\default.css">
+<!--[if lte IE 8]>
+<script src="http://www.gungravevr.jp/js/html5.js"></script>
+<![endif]-->
+<script>
+// Declaring global variables used in JavaScript
+var g5_url	= "http://www.gungravevr.jp";
+var g5_cmm_url	= "http://www.gungravevr.jp/common";
+var g5_bbs_url   = "http://www.gungravevr.jp/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+<script src="js\jquery-1.8.3.min.js"></script>
+<script src="common\js\edit_jquery.js"></script>
+<script src="js\wrest.js"></script>
+<script src="js\jquery.menu.js"></script>
+<script src="js\common.js"></script>
+<script src="common\js\jquery.bxslider.min.js"></script>
+<script src="js\menuAllControll.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var $body = $(document.body), //Put it into a variable to be cached for frequent use
+        $top = '';
+
+    $top=$('<div>') //div To create
+            .addClass('top') //top classNameGive
+            .hide() //It was hidden at first
+            .click(function(){  //Click to assign this event
+                $body.animate({ scrollTop: 0 }); //Move to scollTop = 0 with animation effect
+				$('html,body').animate({scrollTop: 0}, 600);//for IE7
+            })
+            .appendTo($body); //Put the top in the body
+
+    //Create a handler to show the back button to the scroll position of the window
+    $(window).scroll(function(){
+
+        var y = $(this).scrollTop();
+
+        if(y >= 100){
+            $top.fadeIn();
+        }
+        else {
+            $top.fadeOut();
+        }
+    });
+});
+</script>
+<script type="text/javascript" src="animate\noframework.waypoints.min.js"></script>
+<script type="text/javascript" src="animate\scrollAnimateCtrl.js"></script>
+<script type="text/javascript" src="animate\animateControll.js"></script>
+</head>
+<body><script type="text/javascript">
+var g5_doc_id = "";
+</script>
+<div id="wrap">
+	
+	<!--Sub Page -->
+	
+<!-- Start pop-up layer { -->
+<div id="hd_pop">
+    <!-- <h2>Pop-up layer notifications</h2> -->
+
+<span class="sound_only">No pop-up layer notifications.</span></div>
+
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000); Movie part script 
+});
+</script>
+<!-- } End of pop-up layer --><script src="http://gladcomm.dmcart.gethompy.com/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		/*Video part script*/
+		$('.btn-example').click(function(){
+				var $href = $(this).attr('href');
+				layer_popup($href);
+			});
+			function layer_popup(el){
+
+				var $el = $(el);        //Save layer's id to $ el variable
+				var isDim = $el.prev().hasClass('dimBg');   // A boolean variable to detect the dimmed layer
+
+				isDim ? $('.dim-layer').fadeIn() : $el.fadeIn();
+
+				var $elWidth = ~~($el.outerWidth()),
+					$elHeight = ~~($el.outerHeight()),
+					docWidth = $(document).width(),
+					docHeight = $(document).height();
+
+				// Floats the layer in the center of the screen.
+				if ($elHeight < docHeight || $elWidth < docWidth) {
+					$el.css({
+						marginTop: -$elHeight /2,
+						marginLeft: -$elWidth/2
+					})
+				} else {
+					$el.css({top: 0, left: 0});
+				}
+
+				$el.find('a.btn-layerClose').click(function(){
+					isDim ? $('.dim-layer').fadeOut() : $el.fadeOut(); // 닫기 버튼을 클릭하면 레이어가 닫힌다.
+					return false;
+				});
+
+				$('.layer .dimBg').click(function(){
+					$('.dim-layer').fadeOut();
+					return false;
+				});
+
+				$('.dimBg').click(function(){
+					$('.dim-layer').fadeOut();
+					return false;
+				});
+			}
+			/* When you click on the menu */
+			var new_li = $('#head ul li.new');
+			var story_li = $('#head ul li.story');
+			var character_li = $('#head ul li.character');
+			var system_li = $('#head ul li.system');
+			var package_li = $('#head ul li.package');
+			var un_li = $('#head ul li.un');
+
+			$(new_li).click(function(){
+				var ht= $('#new_section').offset().top-0;
+				$('html,body').animate({scrollTop:ht-0},800);
+			});
+
+			$(story_li).click(function(){
+				var ht= $('#story_section').offset().top-0;
+				$('html,body').animate({scrollTop:ht-0},800);
+			});
+
+			$(character_li).click(function(){
+				var ht= $('#character_section').offset().top-0;
+				$('html,body').animate({scrollTop:ht-0},800);
+			});
+
+			$(system_li).click(function(){
+				var ht= $('#system_section').offset().top-0;
+				$('html,body').animate({scrollTop:ht-0},800);
+			});
+			
+			$(package_li).click(function(){
+				var ht= $('#package_section').offset().top-0;
+				$('html,body').animate({scrollTop:ht-0},800);
+			});			
+
+			$(un_li).click(function(){
+				var ht= $('#un_section').offset().top-0;
+				$('html,body').animate({scrollTop:ht-0},800);
+			});
+
+		});
+	</script>
+
+
+<div id="main_container">
+	<div id="head">
+		<div class="inside">
+			<p class="head_logo"><a href="index.html"><img src="common\img_jp\new_logo.png" alt=""></a></p>
+			<ul>
+				<li class="story"><a href="#"><img src="common\img_jp\gnb_story.png" alt=""></a></li>
+				<li class="character"><a href="#"><img src="common\img_jp\gnb_character.png" alt=""></a></li>
+				<li class="system"><a href="#"><img src="common\img_jp\gnb_system.png" alt=""></a></li>
+				<li class="package"><a href="#"><img src="common\img_jp\package_new.png" alt=""></a></li>
+				<li class="un"><a href="#"><img src="common\img_jp\gnb_un.png" alt=""></a></li>
+				<li class="new"><a href="#"><img src="common\img_jp\gnb_new.png" alt=""></a></li>
+				
+				
+			</ul>
+		</div>
+	</div>
+	
+	<div id="main">
+		<div class="inside">
+			<p class="v_txt"><img src="common\img_jp\main\new_main_txt.png" alt="Gungrave VR"></p>
+		</div>
+	</div>
+
+<!--- STORY--->	
+	<div id="story_section">
+		<div class="inside">
+			<p class="title"><img src="common\img_jp\story.png" alt="Story"></p>
+			<p class="story_con"><img src="common\img_jp\story_con.png" alt="Story"></p>
+		</div>
+	</div>	
+
+<!--- CHARACTERS --->
+	<!--- Grave --->
+	<div id="character_section">
+		<div class="character1">
+			<div class="inside">
+				<p class="title"><img src="common\img_jp\character.png" alt="Beyond the Grave"></p>
+				<p class="char1"><img src="common\img_jp\character_1.png" alt="Beyond the Grave"></p>
+				<div class="chr_con">
+					<p class="character1_c1"><img src="common\img_jp\character_tet1.png" alt="Beyond the Grave: the ultmate undead soldier"></p>
+					<p class="character1_c2">
+						A gunman also known as "The Grim Reaper."<br>
+						He was once the trusted hitman of Big Daddy, respected boss of the Millenion syndicate.
+						<br><br>
+						After Grave's death, he was resurrected as an immortal, undead soldier through the experimental<br>
+						Necrolyzation method. He has devoted himself to the eradication of the nefarious drug,<br>
+						SEED.
+						<br><br>
+						His memories were destroyed when he was resurrected, but he<br>
+						still shows remnants of his former humanity when he is with<br>
+						his charge, Mika Asagi. 
+						<br><br>
+						After his last battle with SEED, he went into a long slumber.<br>
+						Thirteen years later, he is awakened by Mika's voice.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	<!--- Mika --->		
+		<div class="character2">
+			<div class="inside">
+				<p class="char2"><img src="common\img_jp\character_2.png" alt="Mika Asagi"></p>
+				<div class="chr_con">
+					<p class="character1_c1"><img src="common\img_jp\character_tet2.png" alt="Mika Asagi: the tireless warrior against SEED"></p>
+					<p class="character1_c2">
+						Daughter of Maria, the woman Grave once loved, and Big Daddy, his former boss.
+						<br><br>
+						In their last mission, she was injected with undiluted SEED. Her body coexists with the powerful drug,<br>
+						causing her to age more slowly than normal humans. The SEED in her body becomes visible<br>
+						when she displays strong emotions.
+						<br><br>
+						After the conclusion of the battle against SEED, she watched over Grave as he slumbered.<br>
+						It was a peaceful life.
+						<br><br>
+						But, when she discovered the horrific resurgence of SEED in South City,<br>
+						she chose to wake Grave to fight again.
+						<br><br>
+						And now, hoping to finish the war against the drug once and for all, she throws herself headlong into battle.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	<!--- HECTOR --->	
+		<div class="character3">
+			<div class="inside">
+				<p class="char3"><img src="common\img_jp\character_3.png" alt="Hector"></p>
+				<div class="chr_con">
+					<p class="character1_c1"><img src="common\img_jp\character_tet3.png" alt="Hector: a mercenary shrouded in mystery"></p>
+					<p class="character1_c2">
+						The captain of a mercenary squad fighting the organization distributing SEED across South City.<br>
+						He is a warrior who is works with Mika and the awakened Grave.
+						<br><br>
+						There are rumors that he is a former Millenion executive, but his origins are completely<br>
+						shrouded in mystery.
+						<br><br>
+						He is skilled with every kind of artillery and is knowledgeable about different combat<br>
+						techniques. He takes on the role of retraining Grave after the soldier's awakening.
+					</p>
+				</div>
+			</div>
+		</div>
+
+	<!--- DLC Character --->
+
+		<!---<div class="character4">
+			<div class="inside">
+				<p class="character1_c1"><img src="common\img_jp\character_tet4.png" alt=""></p>
+			</div>
+		</div>--->
+	</div>
+
+<!--- SYSTEM --->	
+	<div id="system_section">
+		<div class="system01">
+			<div class="inside">
+				<p class="title"><img src="common\img_jp\character5_con1.png" alt=""><br><img src="common\img_jp\character5_con2.png" alt=""><br><img src="common\img_jp\character5_con3.png" alt=""></p>
+			</div>
+		</div>
+		<div class="system02">
+			<div class="inside">
+				<p class="title"><img src="common\img_jp\character6_con.png" alt=""></p>
+			</div>
+		</div>
+		<div class="system03">
+			<div class="inside">
+				<p class="title"><img src="common\img_jp\character7_con.png" alt=""></p>
+			</div>
+		</div>
+		<div class="system04">
+			<div class="inside">
+				<p class="title"><img src="common\img_jp\character8_con.png" alt=""></p>
+			</div>
+		</div>
+		<div class="system05">
+			<div class="inside">
+				<p class="title"><img src="common\img_jp\character9_con.png" alt=""></p>
+			</div>
+		</div>
+	</div>
+
+<!--- PRE-ORDER --->	
+	<div id="package_section">
+		<div class="inside">
+			<p class="package_con"><img src="common\img_jp\package_con.png" alt=""></p>
+			<center><a href="https://www.amazon.com/Gungrave-VR-loaded-Coffin-PlayStation-4/dp/B07FRV8R2Y" target="_new" id="polink">Amazon</a><img src="common\img_jp\bullet.png" alt=""><a href="https://www.bestbuy.com/site/gungrave-vr-loaded-coffin-edition-playstation-4/6292341.p?skuId=6292341" target="_new" id="polink">Best Buy</a><img src="common\img_jp\bullet.png" alt="">
+			<a href="https://www.gamestop.com/games/gungrave-loaded-coffin-edition-vr/166336#productDetails" target="_new" id="polink">GameStop</a><img src="common\img_jp\bullet.png" alt=""><a href="https://www.ebgames.ca/Platform/Games/756089" target="_new" id="polink">EB Games</a>
+			<img src="common\img_jp\bullet.png" alt=""><a href="https://store.playstation.com/en-us/product/UP1023-CUSA12241_00-GUNGRAVEVRLOADED" target="_new" id="polink">PlayStation®Store</a></center>
+		</div>
+	</div>	
+	
+	<div id="un_section">
+		<div class="inside">
+			<p class="title"><img src="common\img_jp\character10_con.png" alt=""></p>
+		</div>
+	</div>
+</div>
+	
+<!-- Multimedia -->
+	<div id="new_section">
+		<div class="inside">
+			<div class="new_whats">
+				<p><a href="bbs\board.html?bo_table=new"><img src="common\img_jp\whats_new.png" alt="Multimedia"></a></p>
+				<div class="inside">
+					<p class="title">
+					<img src="common\img_jp\wallpapers.png" width="1100" height="365" border="0" usemap="#Map">
+					<map name="Map" id="Map">
+						<area shape="rect" coords="7,282,107,317" href="common\img_jp\Wallpapers\1024x768\GGVR_Main_Wallpaper_(1024x768).png" target="_blank" alt="1024x768">
+						<area shape="rect" coords="121,282,236,317" href="common\img_jp\Wallpapers\1280x1040\GGVR_Main_Wallpaper_(1280x1040).png" target="_blank" alt="1280x1040">
+						<area shape="rect" coords="246,282,368,317" href="common\img_jp\Wallpapers\1920x1080\GGVR_Main_Wallpaper_(1920x1080).png" target="_blank" alt="1920x1080">
+						<area shape="rect" coords="382,282,495,317" href="common\img_jp\Wallpapers\1920x1200\GGVR_Main_Wallpaper_(1920x1200).png" target="_blank" alt="1920x1200">
+						<area shape="rect" coords="608,282,707,317" href="common\img_jp\Wallpapers\1024x768\GGVR_Sketch_Wallpaper_(1024x768).png" target="_blank" alt="1024x768">
+						<area shape="rect" coords="720,282,837,317" href="common\img_jp\Wallpapers\1280x1040\GGVR_Sketch_Wallpaper_(1280x1040).png" target="_blank" alt="1280x1040">
+						<area shape="rect" coords="851,282,969,317" href="common\img_jp\Wallpapers\1920x1080\GGVR_Sketch_Wallpaper_(1920x1080).png" target="_blank" alt="1920x1080">
+						<area shape="rect" coords="979,282,1095,317" href="common\img_jp\Wallpapers\1920x1200\GGVR_Sketch_Wallpaper_(1920x1200).png" target="_blank" alt="1920x1200">
+					</map>
+					<br>
+					<img src="common\img_jp\wallpapers2.png" width="1100" height="365" border="0" usemap="#Map2">
+					<map name="Map2" id="Map2">
+						<area shape="rect" coords="7,282,107,317" href="common\img_jp\Wallpapers\1024x768\GGVR_Theme 1_Wallpaper_(1024x768).png" target="_blank" alt="1024x768">
+						<area shape="rect" coords="121,282,236,317" href="common\img_jp\Wallpapers\1280x1040\GGVR_Theme 1_Wallpaper_(1280x1040).png" target="_blank" alt="1280x1040">
+						<area shape="rect" coords="246,282,368,317" href="common\img_jp\Wallpapers\1920x1080\GGVR_Theme 1_Wallpaper_(1920x1080).png" target="_blank" alt="1920x1080">
+						<area shape="rect" coords="382,282,495,317" href="common\img_jp\Wallpapers\1920x1200\GGVR_Theme 1_Wallpaper_(1920x1200).png" target="_blank" alt="1920x1200">
+						<area shape="rect" coords="608,282,707,317" href="common\img_jp\Wallpapers\1024x768\GGVR_Theme 2_Wallpaper_(1024x768).png" target="_blank" alt="1024x768">
+						<area shape="rect" coords="720,282,837,317" href="common\img_jp\Wallpapers\1280x1040\GGVR_Theme 2_Wallpaper_(1280x1040).png" target="_blank" alt="1280x1040">
+						<area shape="rect" coords="851,282,969,317" href="common\img_jp\Wallpapers\1920x1080\GGVR_Theme 2_Wallpaper_(1920x1080).png" target="_blank" alt="1920x1080">
+						<area shape="rect" coords="979,282,1095,317" href="common\img_jp\Wallpapers\1920x1200\GGVR_Theme 2_Wallpaper _(1920x1200).png" target="_blank" alt="1920x1200">
+					</map>				
+					</p>
+					
+					<p><a href="bbs\board.html?bo_table=new"><img src="common\img_jp\trailer.png" alt="Trailer"></a></p>
+					<div class="new_video">
+					<a href="#layer1" class="btn-example"><img src="common\img_jp\new_video.png" alt=""></a>
+						<div class="dim-layer">
+							<div class="dimBg"></div>
+							<div id="layer1" class="pop-layer">
+								<div class="pop-container">
+									<div class="pop-conts">
+
+										<iframe src="https://www.youtube.com/embed/49b1-LCjwWc" frameborder="0" allowfullscreen=""></iframe>
+										<div class="btn-r">
+											<a href="#" class="btn-layerClose"><img src="common\img_jp\close_btn.png" alt=""></a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+<!--Footer-->
+	<div id="footer">
+		<div class="inside">
+			<h1 class="foot_logo"><a href="#"><img src="common\img_jp\foot_logo.png" alt=""></a></h1>
+			<div class="foot_info">
+				<img src="common\img_jp\foot_con.png" alt="">
+			</div>
+		</div>
+	</div>	
+
+<!-- Do not forget to hide it for a while (mobile source version when writing mobile)-->
+
+<script type="text/javascript">
+$(function() {
+    // Run font resize cookies
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+<!-- Fixed the problem that the side view in the IE6,7 is hidden in the side view below the bulletin board list -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+</div>
+
+<div class="top" style="display: none;"></div></body></html>

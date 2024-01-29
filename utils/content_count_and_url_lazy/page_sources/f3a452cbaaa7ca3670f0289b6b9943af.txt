@@ -1,0 +1,561 @@
+<html lang="en"><head>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Immersive story-based VR strategy game in a dystopian future, Immersives storygetriebenes VR-Strategiespiel in dystopischer Zukunft">
+	<meta name="author" content="Lara Wietschorke, Michelle Martinussen, Jennifer Stark">
+	<meta name="keywords" content="bevair, game, vr, strategy, cyberpunk, virtual reality, startup, serious game, cyboro, divina, xevolu, sci-fi, 80s, retro, future, futuristic, dystopy, dystopian, innovation, experience, adventure, rhythm, music, innovative, gaming, family friendly, computer generated, dynamic, oculus, htc vive">
+
+	<title>beVaiR | Story-based VR Strategy Game</title>
+
+	<!-- CSS -->
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<!-- Font Awesome CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+	<!-- Animate css -->
+	<link href="assets/css/animate.min.css" rel="stylesheet">
+
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.min.css" rel="stylesheet" media="screen">
+
+	<script src="assets/js/factionColorAdaption.js"></script>
+
+	<!-- START - We recommend to place the below code in head tag of your website html  -->
+	<style>
+		@font-face {
+			font-display: block;
+			font-family: Roboto;
+			src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+		}
+
+		@font-face {
+			font-display: fallback;
+			font-family: Roboto;
+			font-weight: 600;
+			src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+		}
+
+		@font-face {
+			font-display: fallback;
+			font-family: Roboto;
+			font-weight: 700;
+			src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+		}
+
+		.input{
+			color: #333 !important;
+			padding-top: 6px !important;
+			padding-right: 20px !important;
+			padding-bottom: 6px !important;
+			padding-left: 20px !important;
+			height: 42px !important;
+			line-height: 1.42857143 !important;
+		}
+
+		.entry__field{
+			border-radius: 6px !important;
+			border: none !important;
+			margin: 0px !important;
+		}
+
+		.entry__field:focus-within{
+			box-shadow: none !important;
+		}
+
+		.btn-default[disabled] {
+			background-color: #333;
+		}
+
+		.clickable__icon:not(.icon_standalone){
+			fill: #888;
+		}
+
+		.entry__error{
+			display: block !important;
+			line-height: initial !important;
+			font-size: 15px !important;
+			font-family: 'oxaniumlight', sans-serif;
+			font-weight: 700;
+		}
+
+		.entry_errored:before{
+			width: 0px !important;
+		}
+
+		#sib-container{
+		    background:rgba(0, 0, 0, 0) !important;
+				font-family: 'oxaniumlight', sans-serif;
+				font-weight: 700;
+				font-size: 15px;
+		}
+
+		#sib-container,
+		#sib-container:hover,
+		#sib-container:focus {
+			-webkit-box-shadow: none;
+					box-shadow: none;
+		}
+
+		#sib-container input:-ms-input-placeholder {
+			text-align: left;
+			font-family: "oxaniumlight", sans-serif;
+			font-weight: 700;
+			font-size: 15px;
+			color: #888;
+			border-width: px;
+		}
+
+		#sib-container input::placeholder {
+			text-align: left;
+			font-family: "oxaniumlight", sans-serif;
+			font-weight: 700;
+			font-size: 15px;
+			color: #888;
+			border-width: px;
+		}
+
+		#left {
+		  /* force div to have at least 300px and exclude #right from its width */
+		  overflow: hidden;
+		  min-width: 300px;
+		  display: table-column;
+			float: left;
+			width: 72%
+		}
+		#right {
+		  /* show on the right; width always set, height equal to #left's height */
+		  float: right;
+		  height: 50px;
+		  width: 120px;
+		  display: table-column;
+			float: right;
+			width: 27%
+		}
+
+		@media screen and (max-width: 540px) {
+		  #left {
+		    float: left;
+		    min-width: 100%;
+		  }
+		  #right {
+		    float: left;
+				min-width: 100%;
+		  }
+		}
+
+	</style>
+	<!--<link rel="stylesheet" href="https://assets.sendinblue.com/component/form/2ef8d8058c0694a305b0.css">
+	<link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/b056d6397f4ba3108595.css">
+	<link rel="stylesheet" href="https://assets.sendinblue.com/component/progress-indicator/f86d65a4a9331c5e2851.css">
+	<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css"> -->
+	<!--  END - We recommend to place the above code in head tag of your website html -->
+
+</head>
+<body style="overflow: visible;">
+
+	<!-- Preloader -->
+	<div id="preloader" style="display: none;">
+		<div id="status" style="display: none;"></div>
+	</div>
+
+	<!-- Intro section start -->
+	<section class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="i_header">
+						<div class="logo">
+							<img id="productlogo" style="max-width: 60%;" src="assets/images/logo.png" alt="beVaiR logo. Composed shape which consists of a pink triangle, a green circle and a violett rectangle with the name beVaiR in the middle.">
+						</div>
+						<p><br>You've been here before. You vaguely remember.</p>
+						<h1 style="color:#56ee66; font-size:50px" id="startHeading">Curious to find out what happened last time?</h1>
+					</div>
+
+					<iframe src="https://store.steampowered.com/widget/1711940/" frameborder="0" width="646" height="190"></iframe>
+
+					<!-- <div class="i_cicle" role ="banner" aria-label="Countdown for the release.">
+						<div class="countdown-time animated bounceIn" data-date="2021-10-01 00:00:00" data-timer="100"></div>
+					</div> -->
+
+					<div class="i_header">
+						<p><br>Brace yourself for an entangled web of truth and lie, <br>
+							where you can never be sure who you can trust.</p>
+					</div>
+
+					<div class="i_footer">
+						<!--<a href="#subscribe" class="btn btn-default btn-lg btn-theme">Register Now</a>-->
+						<a href="twitch-integration.html" class="btn btn-default btn-lg btn-theme">Twitch Integration Guide</a>
+						<a href="#colaborations" class="btn btn-default btn-lg btn-theme">Meet the Artists</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="particles-js" role="img" aria-label="Galaxy background with dotted stars and lines between nearby neighbouring stars."><canvas width="1273" height="1520" style="width: 100%; height: 100%;"></canvas></div>
+	</section>
+	<!-- Intro section end -->
+
+	<!-- Teaser section start -->
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Neurohack to the Truth</h2>
+					<div class="header-deveider"></div>
+					<p class="wow fadeInUp" style="margin-bottom: 50px; visibility: hidden; animation-name: none;">
+					Become a neuro-composer and unveil the multidimensional truth in the neural network of uncertainty.
+					A unique combination of story and immersive <font color="#ea028b">VR</font> strategy game.
+					</p>
+					<p class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+						<video autoplay="" muted="" src="assets/videos/beVaiRTrailer.mp4" width="70%" type="video/mp4" controls="" poster="assets/images/TitelbildTrailer.jpg"></video>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Teaser section end -->
+
+	<!-- Factions section start -->
+	<section class="about" style="background: #242424; padding-bottom: 45px">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<img style="max-width: 50%;" src="assets/images/cyboro.png" alt="Cyboro logo. Text: be Cyboro with violett accent color. The emblem is a zero in the font of a development environment. The claim is: Patch. Link.">
+					<div class="header-deveider-static" style="background: #8556f1"></div>
+					<p class="wow fadeInUp" style="margin-bottom: 50px; visibility: hidden; animation-name: none;">
+					Be a client. Patch the erroneous. <br>Link yourself.
+					</p>
+					<p class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+						<video autoplay="" muted="" src="assets/videos/CyboroTeaser.mp4" width="70%" type="video/mp4" controls="" poster="assets/images/TitelbildCyboro.jpg"></video>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" style="background: #242424; padding-bottom: 45px; padding-top: 45px">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<img style="max-width: 50%;" src="assets/images/divina.png" alt="Divina logo. Text: be Divina with pink accent color. The emblem is a V with a flame in the middle. The claim is: Burn. Raise. ">
+					<div class="header-deveider-static" style="background: #ea028b"></div>
+					<p class="wow fadeInUp" style="margin-bottom: 50px; visibility: hidden; animation-name: none;">
+					Be a flame. Burn the dark. <br>Raise your soul.
+					</p>
+					<p class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+						<video autoplay="" muted="" src="assets/videos/DivinaTeaser.mp4" width="70%" type="video/mp4" controls="" poster="assets/images/TitelbildDivina.jpg"></video>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" style="background: #242424; padding-top: 45px">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<img style="max-width: 50%;" src="assets/images/xevolu.png" alt="Xevolu logo. Text: be Xevolu with green accent color. The emblem is a chromosome. The claim is: Fight. Breed.">
+					<div class="header-deveider-static" style="background: #56ee66"></div>
+					<p class="wow fadeInUp" style="margin-bottom: 50px; visibility: hidden; animation-name: none;">
+					Be a predator. Fight the parasites. <br>Breed your future.
+					</p>
+					<p class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+						<video autoplay="" muted="" src="assets/videos/XevoluTeaser.mp4" width="70%" type="video/mp4" controls="" poster="assets/images/TitelbildXevolu.jpg"></video>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Factions section end -->
+
+	<!-- Features section start -->
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Make the Difference</h2>
+					<div class="header-deveider"></div>
+					<p class="wow fadeInUp" style="margin-bottom: 50px; visibility: hidden; animation-name: none;">
+						Follow your calling into a dystopian future and figure out how everything is connected.
+						Choose a faction and help it dominate.
+						Actively influence the game by choosing your favorite songs from your local music library.
+						Direct the brain activity of the AI and manipulate its neurons while moving in the VR world. Experience the rhythmic flow.
+						Expose information little by little, questioning its meaning and understanding the structural composition of the dystopian future. Solve the perplexing puzzle of clues.
+						And keep in mind: truth is in the eye of the beholder.
+					</p>
+					<p class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+						<video autoplay="" muted="" src="assets/videos/beVaiRTeaser.mp4" width="70%" type="video/mp4" controls="" poster="assets/images/Titelbild.png"></video>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Features section end -->
+
+	<!-- Next steps section start -->
+	<section class="about" style="background: #242424; padding-top: 45px">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 style="color: #FFF">Your Agenda</h2>
+					<div class="header-deveider"></div>
+					<p class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+					VaiR chose you. Be part of the revolution. Change the future.<br>
+					Trust VaiR. No compulsion.
+					</p>
+				</div>
+
+				<iframe src="https://store.steampowered.com/widget/1711940/" frameborder="0" width="646" height="190"></iframe>
+
+			</div>
+		</div>
+	</section>
+	<!-- Next steps section end -->
+
+	<!-- Developer section start -->
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Meet VaiR's Neural Network Service Provider</h2>
+					<div class="header-deveider"></div>
+					<p class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+						VaiR's code is maintained by <a href="https://www.randalynrage.com/"><font color="#ea028b">Randalyn Rage, an artistic tech company</font></a>. Check it out and learn more about VaiR's publisher and developer.
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- Developer section end -->
+
+	<!-- Cooperations section start -->
+	<section class="features">
+		<div class="container">
+			<div class="row">
+				<div id="colaborations" class="col-md-12 subtitle">
+					<h2 style="color: #FFF">Check out VaiR's Assistants</h2>
+					<div class="header-deveider"></div>
+					<p class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+					Get a climpse of the atmosphere that awaits you.
+					</p>
+				</div>
+
+				<div class="col-md-4 col-sm-4 wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+					<div class="features-item">
+						<h3 style="color: #FFF">Check out the Virtuoso <br>behind the Music</h3>
+						<a href="https://www.queplay-music.com/">
+						<img style="max-width: 60%;" src="assets/images/queplay.png" alt="queplay logo and link to homepage">
+						<p>Ingame Music by Queplay.</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 wow fadeInUp" style="visibility: hidden; animation-name: none;">
+					<div class="features-item">
+						<h3 style="color: #FFF">Check out the Magician <br>behind the Virtual World</h3>
+						<a href="https://www.donaldkeeya.com">
+						<img style="max-width: 60%;" src="assets/images/DonaldKeeya.png" alt="donald keeya logo and link to homepage">
+						<p>3D Models by Donald Keeya.</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 wow fadeInRight" style="visibility: hidden; animation-name: none;">
+					<div class="features-item">
+						<h3 style="color: #FFF">Check out the Enthusiast <br>behind the Moving Logo</h3>
+						<a href="https://www.klnpesch.de/">
+						<img style="max-width: 60%;" src="assets/images/LauridsPesch.png" alt="laurids pesch logo and link to homepage">
+						<p>Logo Animations by Laurids Pesch.</p>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Cooperations section end -->
+
+	<!-- Footer start -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+				<!--
+				<div id="subscribe" class="col-md-12 subtitle" style="margin-bottom = 40px">
+					<h2 style="color:#56ee66" id="registerHeading">Register Now</h2>
+					<div class="header-deveider"></div>
+					<p class="wow fadeInUp">
+					Register for VaiR's newsletter. Gain insight into your tasks lying ahead. Make yourself essential.
+					</p>
+				</div>
+			-->
+
+				<!-- START - We recommend to place the below code where you want the form in your website html  -->
+				<!--
+				<div class="sib-form wow fadeInUp" style="visibility: hidden; animation-name: none;">
+				  <div id="sib-form-container" class="sib-form-container">
+				    <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#ff4949; border-radius:6px; border-color:#ff4949; max-width:540px; border-width:2px;">
+				      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+				        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+				          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"
+				          />
+				        </svg>
+				        <span class="sib-form-message-panel__inner-text">
+				                          Your subscription could not be validated.
+				                      </span>
+				      </div>
+				    </div>
+				    <div></div>
+				    <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; color:#8656f2; border-radius:6px; border-color:#8656f2; max-width:540px; border-width:2px;">
+				      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+				        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+				          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"
+				          />
+				        </svg>
+				        <span class="sib-form-message-panel__inner-text">
+				                          Please check your mailbox.
+				                      </span>
+				      </div>
+				    </div>
+				    <div></div>
+				    <div id="sib-container" class="sib-container--large sib-container--vertical" style="max-width: 540px; padding: 0px">
+				      <form id="sib-form" method="POST" action="https://f7cc77fa.sibforms.com/serve/MUIEAKIb9QyunjKWKTGjW8WcxmaU02hVBkUI050bqRL0U2RWWCk6oHu4kgcMo3j0XJvsgTMKhGnXhm62E-le557cFrWTooVSHgFVKOgNubkZP8nEXLnwImMFz0Vm_HvYaPwtkN_GjVW7HkkDsN5sCHPEiU7NO4gYJlFteNpSef1SUeiPyNcTwc7vuwR3V6A5lJ5Sf7f5RU0K2GeU"
+				        data-type="subscription">
+				        <div id="left">
+				          <div class="sib-input sib-form-block" style="padding:0px;">
+				            <div class="form__entry entry_block">
+				              <div class="form__label-row ">
+				                <div class="entry__field">
+				                  <input class="input input-box" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Your Email" data-required="true" required/>
+				                </div>
+				              </div>
+				              <label class="entry__error entry__error--primary" style="font-size:16px; display: block;">
+				              </label>
+				            </div>
+				          </div>
+				        </div>
+				        <div id="right">
+				          <div class="sib-form-block" style="text-align: right; padding:0px; box-sizing: border-box; min-width: fit-content;">
+				            <button class="btn btn-default btn-theme"
+				              form="sib-form" type="submit" style="margin:0px; width:100%; box-sizing: border-box">
+				              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+				                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
+				                />
+				              </svg>
+				              Subscribe
+				            </button>
+										<label class="entry__error entry__error--primary" style="font-size:16px; display: block;">
+										</label>
+				          </div>
+				        </div>
+
+				        <input type="text" name="email_address_check" value="" class="input--hidden">
+				        <input type="hidden" name="locale" value="de">
+				      </form>
+				    </div>
+				  </div>
+				</div> -->
+				<!-- END - We recommend to place the below code where you want the form in your website html  -->
+<!--
+				<div class="col-md-12">
+					<form class="subscription-form form-inline wow fadeInUp" role="form">
+						<div class="form-group">
+							<label class="sr-only" for="sub-email">Your Email</label>
+							<input type="email" id="sub-email" name="sub-email" class="form-control input-box" placeholder="Your Email" >
+						</div>
+						<button type="submit" class="btn btn-default btn-theme"><i class="fa fa-rss"></i> Take the plunge</button>
+					</form>
+					<div class="subscription-message"></div>
+				</div>
+-->
+
+				<div id="share" class="col-md-12 wow fadeInUp" style="margin-top: 0px; visibility: hidden; animation-name: none;">
+					<ul class="socials-links">
+						<!-- <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+						<li><a href=""><i class="fa fa-pinterest-square"></i></a></li>
+						<li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
+						<li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+						<li><a href=""><i class="fa fa-github-square"></i></a></li>
+						<li><a href=""><i class="fa fa-tumblr-square"></i></a></li> -->
+					  <li><a href="https://twitter.com/bevairgame/"><i class="fa fa-twitter-square"></i></a></li>
+						<li><a href="https://www.instagram.com/bevairgame/"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="mailto:vair@bevairgame.com"><i class="fa fa-envelope-square"></i></a></li>
+						<li><a href="https://www.xing.com/pages/randalyn-rage-ug"><i class="fa fa-xing-square"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/randalyn-rage-ug"><i class="fa fa-linkedin-square"></i></a></li>
+					</ul>
+					<p class="copyright">
+						© 2020 beVaiR, All Rights Reserved - <a href="datenschutz.html" title="Datenschutzerklärung" role="text" aria-label="Datenschutzerklärung with link">Datenschutzerklärung</a> <a href="impressum.html" title="Impressum" role="text" aria-label="Impressum with link">Impressum</a>
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+		<script>
+			window.REQUIRED_CODE_ERROR_MESSAGE = 'Please select a country code';
+
+			window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The entered information are invalid. Please check your mail adress and try again.";
+
+			window.REQUIRED_ERROR_MESSAGE = "This field must not be blank.";
+
+			window.GENERIC_INVALID_MESSAGE = "The entered information is invalid. Please check your mail adress and try again.";
+
+			window.translation = {
+				common: {
+					selectedList: '{quantity} list chosen',
+					selectedLists: '{quantity} list chosen'
+				}
+			};
+
+			var AUTOHIDE = Boolean(0);
+		</script>
+		<script src="https://sibforms.com/forms/end-form/build/main.js">
+		</script>
+		<!--<script src="https://www.google.com/recaptcha/api.js?hl=de"></script>-->
+		<!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Exist section start -->
+	<section class="about">
+		<div class="container">
+			<div class="row" style="display: flex; justify-content: center; align-items: center;">
+				<div class="col-md-12 subtitle" style="width:50% ">
+					<p class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+					VaiR's project was funded as part of the EXIST-program by the Federal Ministry for Economic Affairs and Energy and the European Social Fund from January 2020 to March 2021.
+					</p>
+				</div>
+				<div style="width:50%" class="col-md-12 subtitle"><img style="max-height: 100px;" src="assets/images/ExistLogos/Logo-EXIST-png.png" alt="Exist Logo">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Exist section end -->
+
+
+	<!-- Javascript files -->
+	<!-- jQuery -->
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Background slider -->
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<!-- Count Down - Time Circles  -->
+	<script src="assets/js/TimeCircles.js"></script>
+	<!-- WOW - Reveal Animations When You Scroll -->
+	<script src="assets/js/wow.min.js"></script>
+	<!-- Smooth scroll -->
+	<script src="assets/js/smoothscroll.js"></script>
+	<!-- Particles animation -->
+	<script src="assets/js/particles.min.js"></script>
+	<!-- Custom scripts -->
+	<script src="assets/js/custom.js"></script>
+
+
+
+<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 668px; width: 1019px; z-index: -999999; position: fixed;"><img src="assets/images/bg1.png" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1068.8px; height: 668px; max-height: none; max-width: none; z-index: -999999; left: -24.9px; top: 0px;"></div></body></html>

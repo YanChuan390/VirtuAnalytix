@@ -1,0 +1,994 @@
+<html id="wholeDocument" lang="en" style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Broken Compass</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Cemre Tellioğlu Tunçay">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" rel="stylesheet"> 
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" type="image/png" href="logo_32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="logo_16x16.png" sizes="16x16">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/54/4/intl/zh_cn/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/54/4/intl/zh_cn/util.js"></script></head>
+    <body><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 377px; width: 1019px;"><img class="parallax-slider" src="img/slider/contact_us.jpg" style="position: absolute; height: 536px; width: 1019px; max-width: none;"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 447px; width: 1019px;"><img class="parallax-slider" src="img/slider/estatua_1.jpg" style="position: absolute; height: 610px; width: 1159px; max-width: none;"></div>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Header Area Start -->
+		<header class="top">
+                  <div class="fixedArea">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12 noPadding">
+                            <div class="content-wrapper one">
+                                <!-- Main Menu Start -->
+                                <!-- Navbar-->
+                                <header class="header">
+                                    <nav class="navbar navbar-default myNavBar">
+                                        <div class="container">
+
+                                            <!-- Brand and toggle get grouped for better mobile display -->
+                                            <div class="navbar-header">
+                                                <div class="row">
+                                                    <div class="col-md-9 col-sm-9 col-xs-9">
+                                                        <div class="row">
+                                                            <!--<div class="col-md-3 col-xs-3 col-sm-3">
+                                                                <a style="padding-top:0px;" class="navbar-brand navBrandText text-uppercase font-weight-bold" href="index.html"><img src="img/logo/logo_broken_pequeno.png" alt="restorant" /></a>
+                                                                
+                                                            </div>-->
+                                                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                                                <a href="index.html"><img class="img-responsive logo" src="img/logo/logo_broken_pequeno_en_blanco.png" alt="restorant"></a>
+                                                                
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-3 col-xs-3">
+                                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                                            <span class="sr-only">Toggle navigation</span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                                     
+                                            <!-- Collect the nav links, forms, and other content for toggling -->
+                                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                                <div class="en">
+                                                    <ul class="nav navbar-nav navbar-right navBar">
+                                                            <li class="nav-item active"><a href="#section0" class="nav-link text-uppercase font-weight-bold js-scroll-trigger" lang="en">Home <span class="sr-only">(current)</span></a></li>
+                                                            <li class="nav-item"><a href="#section2" class="nav-link text-uppercase font-weight-bold js-scroll-trigger" lang="en">Company</a></li>
+                                                            <li class="nav-item"><a href="#section3" class="nav-link text-uppercase font-weight-bold js-scroll-trigger" lang="en">Games</a>
+                                                            </li><li class="nav-item"><a href="#section4" class="nav-link text-uppercase font-weight-bold js-scroll-trigger" lang="en">News</a></li>
+                                                            <li class="nav-item"><a href="#section5" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Services</a></li>
+                                                            <li class="nav-item"><a href="#section6" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Careers</a></li>
+                                                            <li class="nav-item"><a href="#section7" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Contact us</a></li>
+                                                            <button id="switch-lang-es" class="button-lang">Español</button>
+                                                            <!--<li class="nav-item"><a href="#section6" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Contact</a></li>
+                                                            <li class="nav-item"><a href="#section7" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Address</a></li>-->
+                                                            
+
+                                                    </ul>
+                                                </div>
+                                                <div class="es" hidden="">
+                                                    <ul class="nav navbar-nav navbar-right navBar">
+                                                            <li class="nav-item active"><a href="#section0" class="nav-link text-uppercase font-weight-bold js-scroll-trigger" lang="en">Inicio <span class="sr-only">(current)</span></a></li>
+                                                            <li class="nav-item"><a href="#section2" class="nav-link text-uppercase font-weight-bold js-scroll-trigger" lang="en">Compañia</a></li>
+                                                            <li class="nav-item"><a href="#section3" class="nav-link text-uppercase font-weight-bold js-scroll-trigger" lang="en">Juegos</a>
+                                                            </li><li class="nav-item"><a href="#section4" class="nav-link text-uppercase font-weight-bold js-scroll-trigger" lang="en">Noticias</a></li>
+                                                            <li class="nav-item"><a href="#section5" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Servicios</a></li>
+                                                            <li class="nav-item"><a href="#section6" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Trabajos</a></li>
+                                                            <li class="nav-item"><a href="#section7" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Contactanos</a></li>
+                                                            <button id="switch-lang-en" class="button-lang">English</button>
+                                                            <!--<li class="nav-item"><a href="#section6" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Contact</a></li>
+                                                            <li class="nav-item"><a href="#section7" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Address</a></li>-->
+                                                            
+
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div>
+
+                                            </div>
+                                            
+                                        </div>
+                                    </nav>
+                                </header>
+                                <!-- Main Menu End -->
+                            </div>
+						</div>
+                  </div>
+			</div>
+		</header>
+		<!-- Header Area End -->
+		<!-- Section0 Area Start -->
+        <section id="section0" class="slider-area"> 
+            <div class="main-slider owl-theme owl-carousel owl-loaded owl-drag"> 
+                <!-- Start Slingle Slide -->
+                
+                <!-- End Single Slide -->
+                <!-- Start Slingle Slide -->
+                	
+                
+                
+             <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2038px, 0px, 0px); transition: all 0s ease 0s; width: 6114px;"><div class="owl-item cloned" style="width: 1019px;"><div class="single-slide item" style="background-image: url(img/slider/slider_1_1900x1000_1.jpg)">
+
+
+                    <!-- <img src="img/slider/placehold.png"> -->
+
+                    <!-- Start Slider Content -->
+
+                    <!--<div class="slider-content-area">  
+                                <div class="row">
+                                        <div class="slide-content-wrapper text-center">
+                                            <div class="slide-content">
+                                                <img class="classic" src="img/logo/logo_broken_pequeno_en_blanco.png">
+                                                <h3>Broken Compass </h3>
+                                                <h2>Welcome to our site</h2>
+                                                <h3>Where the latest technology and the most exquisite art meet</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div>-->
+                    <!-- Start Slider Content -->
+                </div></div><div class="owl-item cloned" style="width: 1019px;"><div class="single-slide item" style="background-image: url(img/slider/slider_1_1900x1000_2.jpg)">
+
+                    <!-- <img src="img/slider/bakery.jpg"> -->
+                    <!-- Start Slider Content -->
+
+                        <div class="slider-content-area">   
+                                <div class="row">
+                                        <div class="slide-content-wrapper text-center">
+                                            <div class="slide-content">
+                                              <!--  <img class="classic" src="img/logo/cemrebakerylogo.png">
+
+                                                <h3>BAKERY MAKES </h3>
+                                                <h2>A Taste Of  The Good Life</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis leo vitae lacinia congue.</p>
+                                            -->
+                                            </div>
+                                    </div>
+                            </div>
+                  </div>
+                    <!-- Start Slider Content -->
+                </div></div><div class="owl-item active" style="width: 1019px;"><div class="single-slide item" style="background-image: url(img/slider/slider_1_1900x1000_1.jpg)">
+
+
+                    <!-- <img src="img/slider/placehold.png"> -->
+
+                    <!-- Start Slider Content -->
+
+                    <!--<div class="slider-content-area">  
+                                <div class="row">
+                                        <div class="slide-content-wrapper text-center">
+                                            <div class="slide-content">
+                                                <img class="classic" src="img/logo/logo_broken_pequeno_en_blanco.png">
+                                                <h3>Broken Compass </h3>
+                                                <h2>Welcome to our site</h2>
+                                                <h3>Where the latest technology and the most exquisite art meet</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div>-->
+                    <!-- Start Slider Content -->
+                </div></div><div class="owl-item" style="width: 1019px;"><div class="single-slide item" style="background-image: url(img/slider/slider_1_1900x1000_2.jpg)">
+
+                    <!-- <img src="img/slider/bakery.jpg"> -->
+                    <!-- Start Slider Content -->
+
+                        <div class="slider-content-area">   
+                                <div class="row">
+                                        <div class="slide-content-wrapper text-center">
+                                            <div class="slide-content">
+                                              <!--  <img class="classic" src="img/logo/cemrebakerylogo.png">
+
+                                                <h3>BAKERY MAKES </h3>
+                                                <h2>A Taste Of  The Good Life</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis leo vitae lacinia congue.</p>
+                                            -->
+                                            </div>
+                                    </div>
+                            </div>
+                  </div>
+                    <!-- Start Slider Content -->
+                </div></div><div class="owl-item cloned" style="width: 1019px;"><div class="single-slide item" style="background-image: url(img/slider/slider_1_1900x1000_1.jpg)">
+
+
+                    <!-- <img src="img/slider/placehold.png"> -->
+
+                    <!-- Start Slider Content -->
+
+                    <!--<div class="slider-content-area">  
+                                <div class="row">
+                                        <div class="slide-content-wrapper text-center">
+                                            <div class="slide-content">
+                                                <img class="classic" src="img/logo/logo_broken_pequeno_en_blanco.png">
+                                                <h3>Broken Compass </h3>
+                                                <h2>Welcome to our site</h2>
+                                                <h3>Where the latest technology and the most exquisite art meet</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div>-->
+                    <!-- Start Slider Content -->
+                </div></div><div class="owl-item cloned" style="width: 1019px;"><div class="single-slide item" style="background-image: url(img/slider/slider_1_1900x1000_2.jpg)">
+
+                    <!-- <img src="img/slider/bakery.jpg"> -->
+                    <!-- Start Slider Content -->
+
+                        <div class="slider-content-area">   
+                                <div class="row">
+                                        <div class="slide-content-wrapper text-center">
+                                            <div class="slide-content">
+                                              <!--  <img class="classic" src="img/logo/cemrebakerylogo.png">
+
+                                                <h3>BAKERY MAKES </h3>
+                                                <h2>A Taste Of  The Good Life</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis leo vitae lacinia congue.</p>
+                                            -->
+                                            </div>
+                                    </div>
+                            </div>
+                  </div>
+                    <!-- Start Slider Content -->
+                </div></div></div></div><div class="owl-nav"><div class="owl-prev"><img src="./img/slider/rightarrow.png"></div><div class="owl-next"><img src="./img/slider/leftarrow.png"></div></div><div class="owl-dots disabled"></div></div>
+        </section>
+
+		<!-- Section0 Area End -->
+        <!-- Section1 Start -->
+        <!--<section id="section1" class="topOff">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body colorfullPanel text-center">
+                                <h3>Upp to %15 off</h3>
+                                <h2><span>June</span> Special Offer
+                                    <img class="classic" src="img/new/icon.png">
+
+                                    </h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis leo vitae lacinia congue.</p>                            
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default colorfullParent">
+                            <div class="panel-body colorfullPanel text-center">
+                                <h3>Are You New Here?</h3>
+                                <h2><span>Learn</span> About Us
+                                    <img class="classic" src="img/new/icon.png">
+
+                                    </h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis leo vitae lacinia congue.</p>                            
+                                    </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body colorfullPanel text-center">
+                                <h3>Are You New Here?</h3>
+                                <h2><span>Learn</span> About Us
+                                    <img class="classic" src="img/new/icon.png">
+
+                                    </h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis leo vitae lacinia congue.</p>                            
+                                    </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- Section1 End -->
+        <!-- Section2 Start -->
+        <section id="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 ">
+                        <div class="maintext text-center">
+                            <div class="en">
+                                <span lang="en">Serve You Since 2018</span>
+                                <h2 lang="en">Welcome To Broken Compass</h2>
+                                <p lang="en">Founded in 2018 in Buenos Aires, Argentina, Broken Compass Studio is a specialized VR and AR studio with the highest international standard level.
+                                    Our focus is to offer the greatest quality and innovation in the industry.
+                                    Broken Compass Studio is where the latest in visual technology, Virtual Reality and Augmented Reality meet the finest art to bring the most attractive experiences and amusing videogames.
+                                </p>
+                            </div> 
+
+                            <div class="es" hidden="">
+                                <span lang="en">Sirviendo desde 2018</span>
+                                <h2 lang="en">Bienvenidos a Broken Compass</h2>
+                                <p lang="en">Fundada en 2018 en Buenos Aires, Argentina, Broken Compass Studio es un estudio de videojuegos de Realidad Virtual y Realidad Aumentada con los más altos canones a nivel internacional.
+                                    Nuestro foco es ofrecer más calidad e innovación en el mercado.
+                                    Broken Compass Studios es donde lo último en tecnología visual, Realidad Virtual y Aumentada se unen al más fino arte.
+                                </p>
+                            </div> 
+                            
+                        </div>  
+                    </div>
+                </div>
+                <div class="row shapes">
+                    <!--<div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 minHeightProp">
+                                <img class="imgback" src="img/shape/shape1.png">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <span>Serve You Since 1988</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis leo vitae lacinia congue.</p>                                
+                                    </div> 
+                            </div> 
+                        </div>
+                    </div> -->
+                    <div class="col-md-4 col-sm-4 col-xs-12" id="centered-row">
+                        <div class="row">
+                            <div class="col-md-12 minHeightProp">
+                                <img class="imgback" src="img/shape/icono_VR.png">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <span class="en">VR-AR videogames</span>
+                                    <span class="es" hidden="">Videojuegos VR-AR</span>
+                                </div> 
+                            </div> 
+                    </div>
+                    
+                    <!--<div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 minHeightProp">
+                                <img class="imgback" src="img/shape/shape3.png">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <span>Serve You Since 1988</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis leo vitae lacinia congue. </p>
+                                </div> 
+                            </div> 
+                        </div>  
+                    </div> -->
+                </div>
+                <img class="game-info" src="img/new/imagen_espadas.jpg" alt="">
+            </div>
+        </div></section>
+        <!-- Section2 End -->
+        <!-- Section3 Start -->
+        <section id="section3">
+            <div class="container">
+
+                <div class="row">
+                     <div class="col-xs-12">
+                        <div class="section-title text-center">
+                            <h2 class="en">Games</h2>
+                            <h2 class="es" hidden="">Juegos</h2>
+                        </div>
+                    </div>
+                </div>
+                    <div class="en">
+                        <img class="game-info" src="img/new/FUNGUS_IN_MY_GARDEN_LOGO2.jpg" alt="">
+                            <div class="maintext text-center">
+                                <p class="text-info">A Fungus in my Garden is a FPS where the warrior (player) has to face mutant insects and defeat four giants, one per level. These bosses can only be hurt by the super-power or last resource the magic sword the Gods conceded, possess. This super power can only be achieved by killing an enormous quantity of insects. 
+                                    As chapters go by, the story is told in a comic like style where illustrations get mixed with little 2d animations and all these combined with an amazing audio specially designed for the storytelling and the immersive VR tridimensionality.
+                                    This is an innovative videogame from its mechanics to the narrative style. Enjoy!
+                                </p>                        
+                            </div>
+                    </div>
+                    <div class="es" hidden="">
+                        <img class="game-info" src="img/new/FUNGUS_IN_MY_GARDEN_LOGO2.jpg" alt="">
+                            <div class="maintext text-center">
+                                <p class="text-info">A Fungus in my Garden es un first person shooter donde el guerrero (player) debe luchar contra insectos mutantes y cuatro gigantes, uno por cada nivel, a quienes lo único que los daña es el SuperPoder o último recurso de la espada que los Dioses de los Bosques le han confiado. Este SuperPoder sólo se consigue eliminando gran cantidad de insectos.
+                                    Mientras van pasando los capítulos, la historia se narra en un estilo comic donde se mezclan recursos de ilustración, pequeñas animaciones 2D y donde se aprovecha la tridimensionalidad del VR y el sonido stereo especialmente diseñado para esta narrativa.
+                                    Sumérgete en una historia innovadora desde sus mecánicas a la narrativa.
+                                </p>                        
+                            </div>
+                    </div>
+                <div class="col-md-4 col-sm-4 col-xs-12" id="centered-row">
+                    <div class="row">
+                        <div class="col-md-12 minHeightProp">
+                            <img class="imgback" src="img/shape/icono_VR.png">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <div class="en">
+                                    <span class="margin-general">Coming soon</span>
+                                </div>
+                                <div class="es" hidden="">
+                                    <span class="margin-general">Pronto</span>
+                                </div>
+                            </div> 
+                        </div> 
+                        
+                        
+                        
+                    </div> 
+                </div>
+            </div>
+
+
+            <div class="container">   
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 minHeightProp">
+                                <img class="storeimg" src="img/Stores/PS logo 200x200 2.png">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <span class="text-store"><a class="text-store" href="https://store.playstation.com/es-ar/concept/10003179" target="_blank" rel="noreferrer noopener">PlayStation</a></span>
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 minHeightProp">
+                                <img class="storeimg" src="img/Stores/steam logo 1.png">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <span class="text-store"><a class="text-store" href="https://store.steampowered.com/app/1850860/A_Fungus_In_My_Garden/" target="_blank" rel="noreferrer noopener">Steam</a></span>
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-12 minHeightProp">
+                                <img class="storeimg" src="img/Stores/META LOGO.png">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <span class="text-store"><a class="text-store" href="#" target="_blank" rel="noreferrer noopener">Meta</a></span>
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>          
+                </div>
+                
+            </div>
+        </section>
+        <!-- Section3 End -->
+        <!-- Testimonial Area Start -->
+        <section id="section4" class="parallax-window" data-parallax="scroll" data-image-src="img/slider/estatua_1.jpg">
+            <div class="container">
+
+                <div class="row">
+                     <div class="col-xs-12">
+                        <div class="section-title text-center">
+                            <h3 class="en">Stay tuned</h3>
+                            <h3 class="es" hidden="">Mantente al tanto</h3>
+                            <h2 class="en">Our social media</h2>
+                            <h2 class="es" hidden="">Nuestras redes sociales</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="container">
+                        <div class="col-md-12 noPadding">
+                            <div id="news-slider" class="news-slider owl-theme owl-carousel owl-loaded owl-drag">
+                                
+                 
+                                
+                                
+                                
+                                
+                                <div class="owl-stage-outer owl-height" style="height: 137px;"><div class="owl-stage" style="transform: translate3d(-480px, 0px, 0px); transition: all 0s ease 0s; width: 1600px;"><div class="owl-item cloned" style="width: 150px; margin-right: 10px;"><div class="post-slide">
+                                    <div class="post-img">
+                                        <div class="post-abs"><p>Twitter</p></div>
+                                        <img src="img/new/twitter_logo1.jpg" alt="">
+
+                                    </div>
+                                    <h3 class="post-title"><a href="https://twitter.com/BrokenCompassVR?s=20" target="_blank" rel="noreferrer noopener">Twitter</a></h3>
+                                    <p class="post-description">
+                                        @BrokenCompassVR
+                                    </p>
+                                </div></div><div class="owl-item cloned" style="width: 150px; margin-right: 10px;"><div class="post-slide">
+                                    <div class="post-img">
+                                        <div class="post-abs"><p>YouTube</p></div>
+                                        <img src="img/new/youtube_logo1.jpg" alt="">
+
+                                    </div>
+                                    <h3 class="post-title"><a href="https://www.youtube.com/channel/UC6v1Jsvk1ZmrrxzGRhGDhpw">YouTube</a></h3>
+                                    <p class="post-description">
+                                        Broken Compass Studio
+                                    </p>
+                                </div></div><div class="owl-item cloned" style="width: 150px; margin-right: 10px;"><div class="post-slide">
+                                    <div class="post-img">
+                                        <div class="post-abs"><p>Facebook</p></div>
+                                        <img src="img/new/Facebook_logo1.jpg" alt="">
+
+                                    </div>
+                                    <h3 class="post-title"><a href="https://www.facebook.com/BrokenCompassStudio2022/">Facebook</a></h3>
+                                    <p class="post-description">
+                                        BrokenCompassStudio2022
+                                    </p>
+                                </div></div><div class="owl-item active" style="width: 150px; margin-right: 10px;"><div class="post-slide">
+                                    <div class="post-img">
+                                        <div class="post-abs"><p>Instagram</p></div>
+                                        <img src="img/new/instagram_logo1.jpg" alt="">
+                                    </div>
+                                    <h3 class="post-title"><a href="https://www.instagram.com/broken_compass_studio_/">Instagram</a></h3>
+                                    <p class="post-description">
+                                       broken_compass_studio_
+                                    </p>
+                                </div></div><div class="owl-item active" style="width: 150px; margin-right: 10px;"><div class="post-slide">
+                                    <div class="post-img">
+                                        <div class="post-abs"><p>Twitter</p></div>
+                                        <img src="img/new/twitter_logo1.jpg" alt="">
+
+                                    </div>
+                                    <h3 class="post-title"><a href="https://twitter.com/BrokenCompassVR?s=20" target="_blank" rel="noreferrer noopener">Twitter</a></h3>
+                                    <p class="post-description">
+                                        @BrokenCompassVR
+                                    </p>
+                                </div></div><div class="owl-item active" style="width: 150px; margin-right: 10px;"><div class="post-slide">
+                                    <div class="post-img">
+                                        <div class="post-abs"><p>YouTube</p></div>
+                                        <img src="img/new/youtube_logo1.jpg" alt="">
+
+                                    </div>
+                                    <h3 class="post-title"><a href="https://www.youtube.com/channel/UC6v1Jsvk1ZmrrxzGRhGDhpw">YouTube</a></h3>
+                                    <p class="post-description">
+                                        Broken Compass Studio
+                                    </p>
+                                </div></div><div class="owl-item" style="width: 150px; margin-right: 10px;"><div class="post-slide">
+                                    <div class="post-img">
+                                        <div class="post-abs"><p>Facebook</p></div>
+                                        <img src="img/new/Facebook_logo1.jpg" alt="">
+
+                                    </div>
+                                    <h3 class="post-title"><a href="https://www.facebook.com/BrokenCompassStudio2022/">Facebook</a></h3>
+                                    <p class="post-description">
+                                        BrokenCompassStudio2022
+                                    </p>
+                                </div></div><div class="owl-item cloned" style="width: 150px; margin-right: 10px;"><div class="post-slide">
+                                    <div class="post-img">
+                                        <div class="post-abs"><p>Instagram</p></div>
+                                        <img src="img/new/instagram_logo1.jpg" alt="">
+                                    </div>
+                                    <h3 class="post-title"><a href="https://www.instagram.com/broken_compass_studio_/">Instagram</a></h3>
+                                    <p class="post-description">
+                                       broken_compass_studio_
+                                    </p>
+                                </div></div><div class="owl-item cloned" style="width: 150px; margin-right: 10px;"><div class="post-slide">
+                                    <div class="post-img">
+                                        <div class="post-abs"><p>Twitter</p></div>
+                                        <img src="img/new/twitter_logo1.jpg" alt="">
+
+                                    </div>
+                                    <h3 class="post-title"><a href="https://twitter.com/BrokenCompassVR?s=20" target="_blank" rel="noreferrer noopener">Twitter</a></h3>
+                                    <p class="post-description">
+                                        @BrokenCompassVR
+                                    </p>
+                                </div></div><div class="owl-item cloned" style="width: 150px; margin-right: 10px;"><div class="post-slide">
+                                    <div class="post-img">
+                                        <div class="post-abs"><p>YouTube</p></div>
+                                        <img src="img/new/youtube_logo1.jpg" alt="">
+
+                                    </div>
+                                    <h3 class="post-title"><a href="https://www.youtube.com/channel/UC6v1Jsvk1ZmrrxzGRhGDhpw">YouTube</a></h3>
+                                    <p class="post-description">
+                                        Broken Compass Studio
+                                    </p>
+                                </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+        </section>
+        <!-- Testimonial Area End -->
+        <!-- Blog Area Start -->
+        <section id="section5" class="blog-area">
+            <div class="row">
+                    <div class="col-xs-12">
+                        <div class="blog-section-title text-center">
+                            <h2 class="en">Services</h2>
+                            <h2 class="es" hidden="">Servicios</h2>
+                        </div>
+                    </div>
+                <div class="container">   
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 minHeightProp">
+                                    <img class="imgback" src="img/shape/icono_Programming.png">
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        <span class="en">PROGRAMMING</span>
+                                        <span class="es" hidden="">PROGRAMACION</span>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 minHeightProp">
+                                    <img class="imgback" src="img/shape/icono_Art.png">
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        <span class="en">ART</span>
+                                        <span class="es" hidden="">ARTE</span>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 minHeightProp">
+                                    <img class="imgback" src="img/shape/icono_UI_Desing.png">
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        <span class="en">UI/DESING</span>
+                                        <span class="es" hidden="">UI</span>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 minHeightProp">
+                                    <img class="imgback" src="img/shape/icono_Audio.png">
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        <span>AUDIO</span>
+                                        <p></p>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 minHeightProp">
+                                    <img class="imgback" src="img/shape/icono_Prototyping.png">
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        <span class="en">PROTOTYPING</span>
+                                        <span class="es" hidden="">PROTOTIPADO</span>
+                                        <p></p>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 minHeightProp">
+                                    <img class="imgback" src="img/shape/icono_Porting.png">
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        <span class="en">PORTING SOLUTIONS</span>
+                                        <span class="es" hidden="">PORTABILIDAD</span>
+                                        <p></p>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        
+                        
+                        <img class="game-info" src="img/new/imagen_services.jpg" alt="">
+                            <div class="maintext text-center">
+                                <div class="en">
+                                    <p class="text-info">Our talented TEAM is capable of creating a complete videogame from concept to launch as well as take part in co-productions.
+                                        We offer reliable development solutions wether it’s for an original idea or joining an existing team to work together on a project that needs code, art, design, cinematics, audio or all of the prior.
+                                        Efficient production pipelines
+                                    </p> 
+                                </div>      
+                                <div class="es" hidden="">
+                                    <p class="text-info">Nuestro talentoso EQUIPO es capaz de crear un videojuego desde el concepto hasta su lanzamiento así como también formar parte de un equipo de co-producción y sumarse a un proyecto ya existente.
+                                        Ofrecemos soluciones de desarrollo confiables ya sea para ideas originales o aportando trabajo en equipo en donde se necesite código, arte, diseño, audio o todas las anteriores y más.
+                                        Trabajo confiable, alta calidad y pipelines eficientes nos caracterizan.
+                                    </p> 
+                                </div>                 
+                            </div>
+
+                            
+                                
+                            </div>
+
+                    </div>
+                </div>
+            
+        </section>
+        <!-- Blog Area End -->
+        <!-- Contact Start -->
+        <section id="section6" class="contact">
+            <div class="row">
+                
+            <div class="container">   
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="blog-section-title text-center">
+                            <h2 class="en">Come work with us</h2>
+                            <h2 class="es" hidden="">Trabaja con nosotros</h2>
+                        </div>
+                    </div>
+
+                    <img class="game-info" src="img/new/come_work_with_us_imagen.jpg" alt="">
+                        <div class="maintext text-center">
+                            <div class="en">
+                                <p class="text-info">
+                                    We at Broken Compass Studio are constantly looking for all those amazing and undiscovered talents out there as well as those experienced professionals of the industry who want 
+                                    to join our growing TEAM.
+                                    It’s the perfect workplace for talented people with interest in self-development and a big passion for games and entertainment. We are looking for Unity and Unreal programmers, 
+                                    Jr. and Sr., 2D and 3D artists, environment artist, illustrators, conceptual artists, etc. We offer a welcoming small team atmosphere and possibility to work freelance or in-house.
+                                </p>     
+                            </div>  
+                            <div class="es" hidden="">
+                                <p class="text-info">
+                                    En Broken Compass Studio estamos en la búsqueda constante de todos aquellos increíbles talentos ahi afuera que probablemente aún no han sido descubiertos así como de profesionales de la industria con amplia experiencia que quieran sumarse a nuestro EQUIPO. Es el lugar perfecto de trabajo para todos aquellos que quieran seguir desarrollándose y creciendo a nivel personal y profesional y que compartan con nosotros una gran pasión por los videojuegos y el entretenimiento. Estamos siempre abiertos a recibir CV de programadores Unity y Unreal Jr. y Sr., artistas 2D y 3D, environment artists, ilustradores, artistas conceptuales, etc. 
+                                    Ofrecemos un ambiente de trabajo de equipo pequeño donde serás bienvenido y valorado y con la posibilidad de realizar trabajos freelance o in-house.
+                                </p>
+                            </div>                 
+                        </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Contact End -->
+        <!-- Address Section Start -->
+        <section id="section7" class="row address parallax-window" data-parallax="scroll" data-image-src="img/slider/contact_us.jpg">
+            <div class="col-md-12">
+                    <div class="row">
+
+                        <div class="col-md-5 col-md-offset-1 addess-description">
+                            <span>Broken Compass Studio</span>
+                            <h2 class="en">Contact us</h2>
+                            <h2 class="es" hidden="">Contactanos</h2>
+                            <p class="en">Please send us an email with any inquiries and we will get back to you.</p>
+                            <p class="es" hidden="">Envianos un email con tus inquietudes y te responderemos cuanto antes.</p>
+                            <ul>
+                                
+                                <li class="address-section">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-2 col-xs-2">
+                                            <i class="fa fa-envelope"></i>                                       
+                                        </div>
+                                        <div class="col-md-10 col-sm-10 col-xs-10 lineHeight">
+                                            info@broken-compass.com
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Adress Section End -->
+        <!-- Footer Start -->
+        <footer class="footer-area">
+           <!-- <div class="container main-footer">
+                
+                <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-widget pr-60">
+                                <div class="footer-logo pb-25">
+                                    <div class="col-md-4 noPadding text-center">
+                                        <a class="" href="index.html"><img class="img-responsive" src="img/logo/cemrebakerylogo.png" alt="restorant" /></a>
+                                    </div>
+                                    <div class="col-md-8 noPadding logo-text">
+                                        <a class="" href="index.html"><img class="img-responsive" src="img/logo/cemrebakerytextlogo.png" alt="restorant" /></a>
+                                        <p class="colorfullText">Fresh Bakery Store</p>
+                                    </div>        
+                                </div>
+                                <p>I must explain to you how all this mistaken idea of denoung pleure and praising pain was born and give you a coete account of the system. </p>
+                                <div class="footer-social">
+                                    <ul class="list-group">
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-widget">
+                                <h3>information</h3>
+                                <p class="lock"></p>
+                                <ul>
+                                    <li class="footer-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2 text-center">
+                                                <div class="footer-icon"></div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <a href=""><p>About Our Shop</p></a>
+                                            </div>
+                                        </div>
+                                    </li>                                    
+                                    <li class="footer-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <div class="footer-icon"></div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <a href=""><p>Top Sellers</p></a>
+                                            </div>
+                                        </div>
+                                    </li>                                
+                                    <li class="footer-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <div class="footer-icon"></div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <a href=""><p>Our Blog</p></a>
+                                            </div>
+                                        </div>
+                                    </li> 
+                                    <li class="footer-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <div class="footer-icon"></div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <a href=""><p>New Products</p></a>
+                                            </div>
+                                        </div>
+                                    </li>                                     
+                                    <li class="footer-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <div class="footer-icon"></div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <a href=""><p>Secure Shopping</p></a>
+                                            </div>
+                                        </div>
+                                    </li>                               
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-widget">
+                                <h3>useful links</h3>
+                                <p class="lock"></p>
+                                <ul>
+                                    <li class="footer-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <div class="footer-icon"></div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <a href=""><p>About Our Shop</p></a>
+                                            </div>
+                                        </div>
+                                    </li>                                    
+                                    <li class="footer-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <div class="footer-icon"></div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <a href=""><p>Top Sellers</p></a>
+                                            </div>
+                                        </div>
+                                    </li>                                
+                                    <li class="footer-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <div class="footer-icon"></div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <a href=""><p>Our Blog</p></a>
+                                            </div>
+                                        </div>
+                                    </li> 
+                                    <li class="footer-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <div class="footer-icon"></div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <a href=""><p>New Products</p></a>
+                                            </div>
+                                        </div>
+                                    </li>                                     
+                                    <li class="footer-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <div class="footer-icon"></div>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                                <a href=""><p>Secure Shopping</p></a>
+                                            </div>
+                                        </div>
+                                    </li>                               
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="single-widget">
+                                <h3>get in touch</h3>
+                                <p class="lock"></p>
+                                <p>Your address goes here, Street<br>City, Roadno 785 New York</p>
+                                <p>+880  548  986  898  87<br>+880  659  785  658  98</p>
+                                <ul>
+                                    <li class="address-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <i class="fa fa-address-card"></i>
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10 single-widget-description noPadding">
+                                                <span>Primary:Lorem Ipsum Dolar Sıt</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="address-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <i class="fa fa-phone"></i>                                       
+                                             </div>
+                                             <div class="col-md-10 col-sm-10 col-xs-10 single-widget-description noPadding">
+                                                <span>Primary:Lorem Ipsum Dolar Sıt</span>
+                                            </div>
+                                        </div>
+                                        </li>
+                                    <li class="address-section">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <i class="fa fa-envelope"></i>                                       
+                                            </div>
+                                            <div class="col-md-10 col-sm-10 col-xs-10 single-widget-description noPadding">
+                                                <span>Primary:Lorem Ipsum Dolar Sıt</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>   -->
+            <div class="footer-bottom text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p class="es" hidden="">Copyright © <a href="termsEspañol.html" target="_blank">Broken Compass Studio,Inc.</a> 2022. TODOS LOS DERECHOS RESERVADOS.</p>
+                            <p class="en">Copyright © <a href="termsEnglish.html" target="_blank">Broken Compass Studio,Inc.</a> 2022. ALL RIGHTS RESERVED.</p>
+                        </div> 
+                    </div>
+                </div>    
+            </div>
+        </footer>
+        <!-- Footer End -->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/jquery-easing/jquery.easing.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="js/ajax-mail.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/main.js"></script>
+        <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyIMWhs-crjT0yhctbRjfJFq75FlEhSzE&amp;callback=initMap">
+        </script>
+    
+
+</body></html>

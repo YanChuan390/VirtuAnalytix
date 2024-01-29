@@ -1,0 +1,993 @@
+<html class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head><style type="text/css">.truste_cursor_pointer {cursor: pointer;}.truste_border_none {border: none;}</style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>VRMark - The Virtual Reality Benchmark</title>
+	<link rel="shortcut icon" href="/static/images/favicon-ul-solutions.png" type="image/x-icon">
+	<link rel="canonical" href="https://benchmarks.ul.com/vrmark">
+	<link rel="alternate" hreflang="en" href="https://benchmarks.ul.com/vrmark">
+	<link rel="alternate" hreflang="de" href="https://benchmarks.ul.com/de/vrmark">
+	<link rel="alternate" hreflang="zh" href="https://benchmarks.ul.com/zh-hans/vrmark">
+	<link rel="alternate" hreflang="ja" href="https://benchmarks.ul.com/jp/vrmark">
+	<link rel="alternate" hreflang="pt" href="https://benchmarks.ul.com/pt-br/vrmark">
+	
+	<link href="/static/uLormxOd9adeWSzhW4bCDmzKFewDcAhfwtBQS6VO7up.css" type="text/css" rel="stylesheet" media="screen, projection">
+<script id="stickyfill" src="https://commons.ul.com/gnaas/prod/stickyfill/stickyfill.min.js"></script><script async="" src="https://snap.licdn.com/li.lms-analytics/insight.old.min.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="//munchkin.marketo.net/163/munchkin.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-TJJY48Y6C4&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-N3MM734&amp;cid=107772497.1694373314"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MQ6QV9FM"></script><script src="/static/yZ4MdRJ5KQzKzeJ9Ubq1kcCPHP8tLMNmoyQGYJw2m2i.js" type="text/javascript"></script>
+<link href="/static/MlUGgg6xM1AkPKjA879jeA5opRQzWpCt62UuFhEwBIL.css" type="text/css" rel="stylesheet" media="screen, projection">
+
+
+	
+    <meta content="beachhead" name="layout">
+    
+    <meta content="Is your PC ready for VR? Find out with VRMark, the virtual reality benchmark. Download VRMark for free and test your PC today." name="description">
+    <meta content="" name="keywords">
+    <meta content="website" property="og:type">
+    <meta content="https://benchmarks.ul.com/vrmark" property="og:url">
+    <meta content="VRMark - The Virtual Reality Benchmark" property="og:title">
+    <meta content="Is your PC ready for VR? Find out with VRMark, the virtual reality benchmark. Download VRMark for free and test your PC today." property="og:description">
+    <meta content="https://benchmarks.ul.com/static/images/facebook/vrmark-fb-og.jpg" property="og:image">
+    <meta content="always" name="referrer">
+    
+    
+  
+	<meta name="referrer" content="always">
+	<meta name="format-detection" content="telephone=no">
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQ6QV9FM');</script>
+<!-- End Google Tag Manager -->
+
+	<!-- Google Analytics -->
+<!-- Anti-flicker snippet -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+    {'GTM-N3MM734':true});</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1629879-17', 'auto', {'allowLinker': true});
+    ga('require', 'linker');
+    ga('require', 'GTM-N3MM734');
+    ga('linker:autoLink', ['futuremark.com', '3dmark.com', 'benchmarks.ul.com', 'support.benchmarks.ul.com', 'steampowered.com', 'steamcommunity.com', 'futuremark.onfastspring.com', 'fastspring.com', 'onfastspring.com', 'benchmarks.formtitan.com']);      // Domains that are linked from this page.
+    ga('send', 'pageview');
+</script>
+<!-- End of Google Analytics -->
+	<!-- FastSpring checkout code -->
+<script id="fsc-api" src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.7.3/fastspring-builder.min.js" type="text/javascript" data-storefront="futuremark.onfastspring.com/popup-ul" data-decorate-callback="decorateURL">
+</script>
+<!-- End of FastSpring checkout code -->
+	<!-- Lightboxform -->
+<script type="text/javascript" src="https://benchmarks.formtitan.com/publish/v1/lightbox"></script>
+<!-- end of lightboxform -->
+	<!-- Marketo -->
+<script type="text/javascript">
+    (function() {
+        var didInit = false;
+        function initMunchkin() {
+            if(didInit === false) {
+                didInit = true;
+                Munchkin.init('519-JVY-663');
+            }
+        }
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//munchkin.marketo.net/munchkin.js';
+        s.onreadystatechange = function() {
+            if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                initMunchkin();
+            }
+        };
+        s.onload = initMunchkin;
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+</script><script type="text/javascript" async="" src="//munchkin.marketo.net/munchkin.js"></script>
+<!-- End of Marketo code -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-962365731"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'AW-962365731');
+</script>
+
+	<!--[if  ie 9]>
+	<style type="text/css" media="screen">
+		.defaultbox, .graycontent, #footer, .noticebox, a.more {filter: none;}
+	</style>
+	<![endif]-->
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="true" type="text/javascript" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/962365731/?random=1694373313772&amp;cv=11&amp;fst=1694373313772&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be3960&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fbenchmarks.ul.com%2Fvrmark&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=VRMark%20-%20The%20Virtual%20Reality%20Benchmark&amp;auid=990239220.1694373314&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B116.0.5845.180%7CNot)A%253BBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B116.0.5845.180&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script><style id="ul-global-gnaas">#ul-global-footer{flex-shrink:0;color:#585858;direction:ltr;line-height:1.75;font-family:OpenSans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif}#ul-global-footer section{padding:0!important}#ul-global-footer .wwwulcom-wrapper{margin-left:auto;margin-right:auto;max-width:1600px;padding-left:15px;padding-right:15px}#ul-global-footer .wwwulcom-footer{font-size:16px;color:#fff;padding:0!important;min-width:0!important}#ul-global-footer .wwwulcom-footer .wwwulcom-footer-logo img,#ul-global-footer .wwwulcom-footer .wwwulcom-footer-logo svg{fill:#fff;width:90px;height:109px;padding-top:22px}#ul-global-footer .wwwulcom-footer a{text-decoration:none}#ul-global-footer .wwwulcom-footer a:hover{color:#64b0e4;text-decoration:underline}#ul-global-footer .wwwulcom-footer h4{letter-spacing:2px;font-size:12px;font-weight:500;text-transform:uppercase}#ul-global-footer .wwwulcom-footer-choose-region .js-form-type-select{display:block;margin:0 auto;max-width:400px;position:relative}#ul-global-footer .wwwulcom-footer-choose-region .js-form-type-select select{background:#3d3d3d;border:0;color:#fff}#ul-global-footer .wwwulcom-footer-choose-region .js-form-type-select select:focus{border-color:hsla(0,0%,100%,.7)}#ul-global-footer .wwwulcom-footer-nav{font-size:12px;padding-bottom:30px}#ul-global-footer .wwwulcom-footer-nav .menu-item-no-link{font-size:12px;display:block;margin-bottom:10px;text-transform:uppercase}#ul-global-footer .wwwulcom-footer-nav .menu-list--footer-nav,#ul-global-footer .wwwulcom-footer-nav .menu-list--footer-nav ul{list-style:none;margin-bottom:0;padding-left:0}#ul-global-footer .wwwulcom-footer-nav .menu-list--footer-nav a{color:#e2e2e2;display:block;font-size:14px;font-weight:300}#ul-global-footer .wwwulcom-footer-nav .menu-list--footer-nav li{margin-bottom:10px}#ul-global-footer .wwwulcom-footer-nav .menu-list--footer-nav li a{color:#fff;font-size:12px;font-weight:500;letter-spacing:.2px;margin-bottom:10px;text-transform:uppercase}#ul-global-footer .wwwulcom-footer-copyright{max-width:400px}#ul-global-footer .wwwulcom-footer-copyright p{margin:10px 0 0;display:inline-block;font-size:14px}#ul-global-footer .wwwulcom-footer-copyright ul.wwwulcom-policy-links{margin-top:0;list-style:none;padding:0;margin-bottom:0;display:block}#ul-global-footer .wwwulcom-footer-copyright ul.wwwulcom-policy-links li{display:inline-block;margin:0 10px 0 0}#ul-global-footer .wwwulcom-footer-copyright ul.wwwulcom-policy-links a{color:#fff;text-decoration:underline;font-size:14px}#ul-global-footer .wwwulcom-footer-copyright ul.wwwulcom-policy-links a:hover,#ul-global-footer .wwwulcom-footer-copyright ul.wwwulcom-policy-links li{color:inherit}#ul-global-footer .wwwulcom-footer-copyright,#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-footer-logo,#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav{text-align:center;margin:0 auto;width:100%}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav li:first-child{padding-right:inherit!important;line-height:inherit!important;border-right:none!important}#ul-global-footer .wwwulcom-footer-copyright,#ul-global-footer .wwwulcom-policy-links .wwwulcomicon{font-size:14px!important}#ul-global-footer .wwwulcom-footer__bottom{background:#3d3d3d}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-wrapper{display:flex;align-items:center}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-wrapper>:first-child{padding-left:0}#ul-global-footer .wwwulcom-footer-nav .menu-list--footer-nav ul{margin-bottom:-10px}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-footer-logo{width:109px}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-footer-copyright{text-align:left;padding:20px 0;flex-basis:55%;max-width:55%}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-footer-logo,#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav{text-align:left}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav{padding-right:0;text-align:right;flex-basis:30%;max-width:30%;background:none}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav ul{display:block;list-style-type:none;margin:0;padding:0;width:100%}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav ul li{display:inline-block;font-size:20px;margin:0 15px 0 0;position:relative;text-align:left}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav ul li:last-child{margin-right:0}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav ul li:before{opacity:.7;transition:opacity .2s ease}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav ul li:hover:before{opacity:1}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav ul a{background:transparent;border:0;cursor:pointer;height:100%;left:0;opacity:.7;overflow:hidden;padding:0;position:absolute;text-indent:-999999px;width:100%}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav ul a:after{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-family:icomoon;font-style:normal;line-height:inherit;speak:none;text-transform:none;vertical-align:baseline;color:currentColor;font-size:10px}#ul-global-footer .wwwulcom-footer-nav{padding-bottom:15px;width:60%}@media (max-width:767px){#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-wrapper{display:block}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-wrapper>:first-child{padding-bottom:0}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-footer-copyright{text-align:center;max-width:88%;padding-top:0;padding-bottom:0}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-footer-copyright p span{display:block}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav{padding-left:0;max-width:100%}#ul-global-footer .wwwulcom-footer__bottom .wwwulcom-social-nav ul{text-align:center}}.md-screen-only{display:none}@media (max-width:767px){.md-screen-only{display:block}}.md-screen-hide{display:block}@media (max-width:767px){.md-screen-hide{display:none!important}}.ul-global-no-overflow{overflow:hidden}body{margin:0}@font-face{font-family:Open Sans Regular;src:url(https://commons.ul.com/gnaas/prod/fonts/OpenSans/OpenSans-Regular.eot#iefix) format("embedded-opentype"),url(https://commons.ul.com/gnaas/prod/fonts/OpenSans/OpenSans-Regular.ttf) format("truetype"),url(https://commons.ul.com/gnaas/prod/fonts/OpenSans/OpenSans-Regular.woff) format("woff")}@font-face{font-family:Open Sans Semibold;src:url(https://commons.ul.com/gnaas/prod/fonts/OpenSans/OpenSans-Semibold.eot#iefix) format("embedded-opentype"),url(https://commons.ul.com/gnaas/prod/fonts/OpenSans/OpenSans-Semibold.ttf) format("truetype"),url(https://commons.ul.com/gnaas/prod/fonts/OpenSans/OpenSans-Semibold.woff) format("woff")}@font-face{font-family:icomoon;src:url(https://commons.ul.com/gnaas/prod/fonts/icomoon/icomoon.ttf?fdh9g9=) format("truetype"),url(https://commons.ul.com/gnaas/prod/fonts/icomoon/icomoon.ttf?fdh9g9=) format("woff"),url(https://commons.ul.com/gnaas/prod/fonts/icomoon/icomoon.ttf?fdh9g9=) format("svg");font-weight:400;font-style:normal}[class*=" wwwulcomicon-"]:after,[class*=" wwwulcomicon-"]:before,[class^=wwwulcomicon-]:after,[class^=wwwulcomicon-]:before{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.wwwulcomicon{font-size:20px}.wwwulcom-policy-links .wwwulcomicon:after,.wwwulcom-policy-links .wwwulcomicon:before{font-size:12px}.wwwulcomicon-facebook:before{content:"\ea90"}.wwwulcomicon-instagram:before{content:"\ea92"}.wwwulcomicon-twitter:before{content:"\ea96"}.wwwulcomicon-youtube:before{content:"\ea9d"}.wwwulcomicon-linkedin:before{content:"\eac9"}.wwwulcomicon-external:after{content:"\e900"}.wwwulcomicon-langswitch:before{content:"\e9c9";padding:5px}.wwwulcomicon-selectedlang:before{content:"\ea10";padding:3px}.ulparent-header #ul-global-nav{position:relative;top:0!important}#ul-global-nav{background-color:#000;transition:background-color .35s;font-family:Open Sans Regular,sans-serif;font-size:14px;z-index:99999!important}#ul-global-nav *{box-sizing:border-box}#ul-global-nav h1,#ul-global-nav h2,#ul-global-nav h3,#ul-global-nav h4,#ul-global-nav h5{text-transform:none}#ul-global-nav a{text-decoration:none}#ul-global-nav ul{list-style-type:none}#ul-global-nav ul,#ul-global-nav ul li{padding:0;margin:0}#ul-global-nav ul li:after,#ul-global-nav ul li:before{display:none}#ul-global-nav svg.down-arrow{width:10px;height:6px;stroke:none;fill:#fff;margin:0 -5px 0 10px}#ul-global-nav #ul-global-nav-overlay-trigger{padding-right:10px;border-radius:2px}#ul-global-nav #ul-global-nav-overlay-trigger:hover{background:hsla(0,0%,100%,.3)}#ul-global-nav.show .ul-global-nav-wrapper:after{opacity:1}#ul-global-nav.show .ul-global-modal-btn-close{opacity:1;visibility:visible}#ul-global-nav .ul-global-nav-wrapper{padding:0 30px;height:42px;display:flex;align-items:center;position:relative}#ul-global-nav .ul-global-nav-wrapper:after{content:"";opacity:0;border-color:#fff transparent;border-style:solid;border-width:9px 10px 0;height:0;position:absolute;left:0;bottom:0;transition:opacity .35s;transform:rotate(180deg);margin-left:10.5%}@media (max-width:1199px){#ul-global-nav .ul-global-nav-wrapper{padding-left:5vw;padding-right:5vw}}#ul-global-nav .ul-global-nav-wrapper-logo a{display:flex;align-items:center;color:#fff;transition:color .35s}#ul-global-nav .ul-global-nav-wrapper-logo svg.ul-global-nav-logo{width:91px;height:29px;fill:#fff;margin-right:12px;transition:fill .35s}#ul-global-nav .ul-global-nav-wrapper-nav{flex-grow:1;text-align:right}#ul-global-nav .ul-global-nav-wrapper-nav>li{display:inline-block;margin-left:24px;position:relative}#ul-global-nav .ul-global-nav-wrapper-nav>li:first-child{margin-left:0}#ul-global-nav .ul-global-nav-wrapper-nav>li>a{color:#fff;font-family:Open Sans Semibold,sans-serif;font-size:13px;transition:color .35s}#ul-global-nav #ul-global-language-trigger{position:relative;padding:11px}#ul-global-nav #ul-global-language-selector{visibility:hidden;overflow:hidden;position:absolute;z-index:100000000000000000;top:-10px;left:-14px;padding:0;background-color:#fff;box-shadow:0 2px 4px 0 rgba(0,0,0,.2);opacity:0;transition:opacity .35s,visibility .35s}#ul-global-nav #ul-global-language-selector.show{opacity:1;visibility:visible}#ul-global-nav #ul-global-language-selector li a{padding:6px 20px;width:100%;display:inline-block;text-align:left;font-size:13px;line-height:28px;font-family:Open Sans Semibold,sans-serif;color:#4a4a4a;white-space:nowrap}#ul-global-nav #ul-global-language-selector li a:hover{color:#000;background:rgba(0,0,0,.1)}#ul-global-nav #ul-global-language-selector li a svg{display:none;fill:#000}#ul-global-nav #ul-global-language-selector li:first-child a svg{display:inline-block}#ul-global-nav .ul-global-button{font-size:15px;color:#fff;font-family:Open Sans Semibold,sans-serif;text-align:center;padding:7px 19px;background-color:#3ea047;border-radius:5px;display:inline-block;transition:border-color .1s,color .1s,background-color .1s}#ul-global-nav .ul-global-button:hover{background-color:#79cb80}#ul-global-nav .ul-global-button--clear{background-color:transparent;border:2px solid silver;color:#9b9b9b;padding:5px 17px}#ul-global-nav .ul-global-button--clear:hover{background-color:transparent;border-color:#8d8d8d;color:#686868}#ul-global-nav .ul-global-button--red{color:#9b9b9b;background-color:transparent}#ul-global-nav .ul-global-button--red.selected,#ul-global-nav .ul-global-button--red:hover{color:#fff;background-color:#ce1b2b}@media (max-width:1199px){#ul-global-nav .ul-global-nav-overlay-secondary-mobile{padding-right:15px}}#ul-global-nav .ulhr-divide{border-top:2px solid rgba(0,0,0,.3);margin-top:10px!important;padding-top:10px!important}#ul-global-nav .ul-global-nav-overlay{visibility:hidden;background-color:#fff;margin:0;position:fixed;top:42px;height:calc(100% - 42px);width:100%;z-index:1000;overflow:auto;opacity:0;transition:opacity .35s,visibility .35s}#ul-global-nav .ul-global-nav-overlay.show{display:block}#ul-global-nav .ul-global-nav-overlay-inner{margin:58px auto 0;padding:0 10vw;position:relative;overflow:auto}@media (max-width:1199px){#ul-global-nav .ul-global-nav-overlay-inner{padding-left:5vw;padding-right:5vw}}@media (max-width:767px){#ul-global-nav .ul-global-nav-overlay-inner{margin-top:0}}#ul-global-nav .ul-global-nav-overlay-inner h2{font-size:28px;line-height:42px;color:#000;font-family:Open Sans Regular,sans-serif;margin:0}@media (max-width:767px){#ul-global-nav .ul-global-nav-overlay-inner h2{font-size:24px}}#ul-global-nav .ul-global-nav-overlay-col-wrapper{display:flex;justify-content:space-between;margin-top:21px}#ul-global-nav .ul-global-nav-overlay-col{width:23.77193%}#ul-global-nav .ul-global-nav-overlay-col:last-child{padding-left:1.66667%}#ul-global-nav .ul-global-nav-overlay-col img{border-radius:5px;display:block;margin-bottom:19px;width:100%}#ul-global-nav .ul-global-nav-overlay-col h3{font-size:20px;line-height:27px;font-family:Open Sans Semibold,sans-serif;color:#000;margin:0}#ul-global-nav .ul-global-nav-overlay-col p{margin:10px 0 0;font-size:15px;line-height:18px;font-family:Open Sans Regular,sans-serif;color:#000}#ul-global-nav .ul-global-nav-overlay-link-list{margin:18px 0 0;padding:0}#ul-global-nav .ul-global-nav-overlay-link-list li{line-height:24px}#ul-global-nav .ul-global-nav-overlay-link-list li a{color:#ce1b2b;font-size:15px;font-family:Open Sans Semibold,sans-serif}#ul-global-nav .ul-global-nav-overlay-link-list li a svg{width:10px;height:9px;margin-left:3px}#ul-global-nav .ul-global-nav-overlay-primary-mobile{margin-bottom:25px}#ul-global-nav .ul-global-nav-overlay-primary-mobile li{border-bottom:1px solid #efefef}#ul-global-nav .ul-global-nav-overlay-primary-mobile a{font:13px/66px Open Sans Semibold,sans-serif;color:#000}#ul-global-nav .ul-global-nav-overlay-secondary-mobile a{font:13px/32px Open Sans Semibold,sans-serif;color:#ce1b2b}#ul-global-nav .ul-global-modal-btn-close{display:block;position:absolute;right:10vw;top:10%}@media (max-width:1199px){#ul-global-nav .ul-global-modal-btn-close{right:8%}}#ul-global-nav .ul-global-modal-btn-close span{display:block;width:24px;height:24px;background-color:silver;border-radius:50%;padding:1px;transition:background-color .1s}#ul-global-nav .ul-global-modal-btn-close svg{display:block;width:22px;height:22px;stroke:silver;fill:#fff;transition:stroke .1s,fill .1s}#ul-global-nav .ul-global-modal-btn-close:hover span{background-color:#000}#ul-global-nav .ul-global-modal-btn-close:hover svg{stroke:#fff;fill:#000}#ul-global-nav.show .ul-global-nav-overlay{opacity:1;visibility:visible}.ul-sticky{position:-webkit-sticky;position:sticky;top:0;width:100%;z-index:1000}.ul-sticky:after,.ul-sticky:before{content:"";display:table}.ul-body,html{height:100%}.ul-body{display:flex;flex-direction:column}.ul-content{flex:1 0 auto}.ul-sticky.ul-top{position:fixed!important;top:42px!important;bottom:inherit!important}@media (-ms-high-contrast:active),(-ms-high-contrast:none){.page-template .site-content{padding-top:0!important}}</style></head>
+
+<body class="beachhead">
+	<!-- trustArc Cookies Consent Notice start for benchmarks.ul.com beachHead -->
+<div id="consent_blackbar"></div>
+<script async="async" src="//consent.trustarc.com/notice?domain=ulsolutionsweb.com&amp;c=teconsent&amp;js=nj&amp;noticeType=bb&amp;text=true&amp;gtm=1" crossorigin="" id="truste_0.32887654505352915"></script>
+<!-- trustArc Cookies Consent Notice end for benchmarks.ul.com beachHead-->
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-MQ6QV9FM
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	
+	<div class="wrapper">
+		<!-- GNaaS FULL configuration start -->
+<script src="https://commons.ul.com/gnaas/prod/index.js"></script>
+<script defer="">
+    jQuery(document).ready(function() {
+        UL_GnaaS({
+//Careers and Contact Links:
+            attachNaaSTo: '#GNaaS',
+            careersPageUrl: false,
+            contactPageUrl: false,
+            impressum: false,
+//Languages Section:
+            /*lang: "en",
+            multisite: {
+                en: "https://benchmarks.ul.com/",
+                de: "https://benchmarks.ul.com/de/",
+                zhhans: "https://benchmarks.ul.com/zh-hans/",
+            },
+            */
+//Social Media Section:
+            social: {
+                linkedin: "https://www.linkedin.com/company/ul-benchmarks/",
+                twitter: "https://twitter.com/UL_Benchmarks",
+                facebook: "https://www.facebook.com/ULBenchmarks",
+                youtube: false,
+                instagram: false,
+            },
+        })
+    })
+</script>
+<!-- GNaaS configuration end -->
+		
+<div id="GNaaS"><div id="ul-global-nav" class="ul-sticky"><svg style="display:none">
+    <symbol id="ul-global-logo" viewBox="0 0 486.8 200" xmlns="http://www.w3.org/2000/svg">
+ <path class="ag" d="M95.5 175c43.5 0 74.5-35 74.5-75s-31.5-70-70-70c-4 0-9 .5-11.5 1 4.5-1.5 12-2 16-2 51 0 81.5 41 81.5 85 0 51.5-38.5 86-86 86C45 200 0 155 0 100c0-19.5 6-45 26.5-67.5-13 18-16.5 36-16.5 54C10 133 41.5 175 95.5 175z" fill="#fff"></path>
+ <path class="ag" d="M104.5 25C61 25 30 60 30 100s31.5 70 70 70c4 0 9-.5 11.5-1-4.5 1.5-12 2-16 2-51 0-81.5-41-81.5-85 0-51.5 38.5-86 86-86 55 0 100 45 100 100 0 19.5-6 45-26.5 67.5 13-18 16.5-36 16.5-54C190 67 158.5 25 104.5 25z" fill="#fff"></path>
+ <path class="ag" d="M245.1 124.8c-10 0-15.5-6-16-15.5h9.5c0 5 2.5 7.5 6 7.5 2.5 0 5-1 5-4.5s-2.5-5.5-7-8l-3.5-2c-5-2.5-9-6-9-13 0-9 6.5-13.5 15-13.5 9 0 14.5 5.5 14.5 14.5h-9.5c-.5-5-2-7.5-5.5-7.5-3 0-4.5 2-4.5 4.5 0 3.5 3 5.5 6.5 7.5l3 2c3.5 2 10 5.5 10 14.5.5 9.5-7 13.5-14.5 13.5zm34-.5c8.5 0 15.5-6 15.5-18s-7-18-15.5-18-15.5 6.5-15.5 18c0 12.1 7 18.5 15.5 18zm0-7.9c-3.5 0-6-3.5-6-10s2.5-10 6-10 6 3.5 6 10-2 10-6 10zm20.5 7.9h9.5V74.9h-9.5v49.4zm44.4-.5v-34h-9.5v21c0 4-2 6-5 6s-5-2-5-6V89.3H315v23.5c0 7.5 4 12 10.5 12 4.5 0 7-2 8.5-4.5h.5l1 3.5h8.5zm38.5-38.9c3 0 5.5-2.5 5.5-5.5s-2.5-5.5-5.5-5.5c-3.5 0-6 2.5-6 5.5s3 5.5 6 5.5zm-5 38.9h9.5V89.3h-9.5v34.5zm30.4.5c8.5 0 15.5-6 15.5-18s-7-18-15.5-18-15.5 6.5-15.5 18c0 12.1 7 18 15.5 18zm0-7.9c-3.5 0-6-3.5-6-10s2.5-10 6-10 6 3.5 6 10-2.5 10-6 10zm66.4 7.4c6.5 0 12.5-3 12.5-10s-5-9.5-9.5-11l-2.5-1c-2.5-1-4.5-2-4.5-4s1-3 3-3c2.5 0 4 1.5 4 4h9c0-6-4.5-10.5-12.5-10.5-7 0-12.5 3.5-12.5 10.5 0 6.5 5 8.5 9 10l2.5 1c3 1 5 2 5 4.5 0 2-1.5 3-3.5 3-2.5 0-4-1-4.5-4.5h-9c.6 7.5 5 11.5 13.5 11zm-109.8.5c2 0 4.5 0 6-.5v-7c-1 .5-2 .5-3 .5-3 0-4-2-4-4V96.8h8.5v-7.5h-8.5v-9H355v4c0 3.5-1.5 5-5 5h-1.5v7.5h6v18c0 5.5 3 10 10 9.5zm63.4-34.9v34.5h9.5v-21c0-4.5 2-6.5 5-6.5s5 2 5 6v21.5h9.5v-23.5c0-7.5-4-12-10.5-12-4.5 0-7 2-8.5 4.5h-.5l-1-3.5h-8.5zM56.6 52.5v50.1c0 14.2 8 20.8 21.8 20.8 16.6 0 21.8-9 21.8-20.8V52.5H84v51.8c0 2.9-1.3 6.6-5.5 6.6-4.6 0-5.6-2.9-5.6-6.2V52.5H56.6m50 94.3V77.5h16.2v55.4h19.8v13.9h-36" fill="#fff"></path>
+ </symbol>
+ <symbol id="ul-global-arrow" viewBox="0 0 10 9"><defs><polygon points="10 8.9 0 8.9 0 0 10 0 10 8.9"></polygon></defs><g fill="none"><mask fill="white"><use xlink:href="#path-1"></use></mask><path d="M5 1.6L6.8 3.5 0.9 3.5C0.4 3.5 0 3.9 0 4.4 0 5 0.4 5.4 0.9 5.4L6.8 5.4 5 7.2C4.6 7.6 4.6 8.2 5 8.6 5.2 8.8 5.4 8.9 5.7 8.9 5.9 8.9 6.1 8.8 6.3 8.6L9.7 5.1C9.7 5.1 9.7 5.1 9.7 5.1 9.7 5.1 9.7 5.1 9.7 5.1 9.8 5.1 9.8 5 9.8 5 9.8 5 9.9 4.9 9.9 4.9 9.9 4.9 9.9 4.8 9.9 4.8 9.9 4.8 9.9 4.7 9.9 4.7 10 4.7 10 4.7 10 4.6 10 4.5 10 4.4 10 4.3 10 4.2 10 4.2 9.9 4.2 9.9 4.1 9.9 4.1 9.9 4.1 9.9 4 9.9 4 9.9 4 9.9 4 9.8 3.9 9.8 3.9 9.8 3.9 9.8 3.8 9.7 3.8 9.7 3.8 9.7 3.8 9.7 3.8L6.3 0.3C6-0.1 5.4-0.1 5 0.3 4.6 0.7 4.6 1.3 5 1.6" mask="url(#mask-2)" fill="#CE1B2A"></path></g></symbol>
+    <symbol id="ul-global-close" viewBox="0 0 39.18 39.18"><circle style="stroke:none;" class="circle" cx="19.59" cy="19.59" r="18.09"></circle><line style="stroke-miterlimit:10;stroke-width:3px;stroke-linecap:round;" x1="14.92" y1="14.92" x2="24.26" y2="24.26"></line><line style="stroke-miterlimit:10;stroke-width:3px;stroke-linecap:round;" x1="24.26" y1="14.92" x2="14.92" y2="24.26"></line></symbol>
+    <symbol id="ul-global-down-arrow" viewBox="0 0 10 6"><g stroke-width="1" fill-rule="evenodd"><path d="M5.27261369,2.67193452 L2.77465536,5.47037202 C2.40840536,5.84687202 2.40840536,6.45758631 2.77465536,6.83408631 C2.95757202,7.02222917 3.19757202,7.11651488 3.43757202,7.11651488 C3.67736369,7.11651488 3.91736369,7.02222917 4.10048869,6.83408631 L7.48298869,3.35472917 C7.53007202,3.3048006 7.56778036,3.25765774 7.60090536,3.20687202 C7.61694702,3.18222917 7.62798869,3.15544345 7.64153036,3.12972917 C7.65715536,3.10037202 7.67444702,3.07208631 7.68694702,3.04101488 C7.70007202,3.00822917 7.70778036,2.97394345 7.71736369,2.94008631 C7.72486369,2.91372917 7.73486369,2.88844345 7.74007202,2.8608006 C7.76423869,2.73608631 7.76423869,2.60772917 7.74007202,2.48301488 C7.73486369,2.45537202 7.72486369,2.43008631 7.71736369,2.40372917 C7.70778036,2.36987202 7.70007202,2.33558631 7.68694702,2.3028006 C7.67444702,2.27172917 7.65715536,2.24365774 7.64153036,2.21408631 C7.62798869,2.18837202 7.61694702,2.16158631 7.60090536,2.13694345 C7.56778036,2.08615774 7.53007202,2.03901488 7.48861369,1.99572917 C7.48694702,1.99401488 4.10028036,-1.49027083 4.10028036,-1.49027083 C3.73423869,-1.86677083 3.14069702,-1.86677083 2.77465536,-1.49027083 C2.40840536,-1.11377083 2.40840536,-0.503056548 2.77465536,-0.126556548 L5.27261369,2.67193452 Z" transform="translate(5.129082, 2.671935) rotate(-270.000000) translate(-5.129082, -2.671935) "></path></g></symbol>
+    </svg>
+    <div class="ul-global-nav-wrapper">
+    
+        <div class="ul-global-nav-wrapper-logo">
+            <a id="ul-global-nav-overlay-trigger" href="#">
+            
+                <svg class="ul-global-nav-logo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ul-global-logo"></use></svg>
+            
+                <span class="md-screen-hide">Explore all of ul.com
+<!--                <svg class="down-arrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ul-global-down-arrow"></use></svg>-->
+                </span>
+                <span class="md-screen-only">Explore UL Solutions
+<!--                <svg class="down-arrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ul-global-down-arrow"></use></svg>-->
+                </span>
+            </a>
+        </div>
+<!--        <ul class="ul-global-nav-wrapper-nav">-->
+<!--            -->
+<!--        </ul>  -->
+        <ul class="ul-global-nav-wrapper-nav">
+        <li class="md-screen-hide"><a href="https://www.ul.com/about/mission" target="_blank">Our Mission</a></li><li class="md-screen-hide"><a href="https://www.ul.com/about/locations" target="_blank">Worldwide Locations</a></li>
+            
+            
+        </ul>
+    </div>
+    </div></div>
+<div id="header">
+    <div class="container clearfix">
+        <div class="content">
+            <div class="left sitetitle"><a href="/">Benchmarks</a></div>
+            <a id="menuswapper" class="menu-icon" href="javascript:void(0)"></a>
+            <div class="left">
+                <!-- <div class="language-wrapper"><a href="https://benchmarks.ul.com" data-lang="EN" onclick="gotoLanguage(event)">English</a> <span>|</span> <a href="https://benchmarks.ul.com/zh-hans" data-lang="ZH-CN" onclick="gotoLanguage(event)">中文</a> <span>|</span> <a href="https://benchmarks.ul.com/de" data-lang="DE" onclick="gotoLanguage(event)">Deutsch</a><span>|</span> <a href="https://benchmarks.ul.com/jp" data-lang="JP" onclick="gotoLanguage(event)">日本語</a><span>|</span> <a href="https://benchmarks.ul.com/pt-br" data-lang="PT-BR" onclick="gotoLanguage(event)">Português</a></div> -->
+                <ul class="nav nav-wrapper right">
+                    <li>
+                        <p>Software</p>
+                        <ul>
+                            <li><a href="/procyon">UL Procyon benchmark suite</a></li>
+                            <li><a href="/procyon/ai-inference-benchmark-for-android">AI Inference Benchmark for Android</a></li>
+                            <li><a href="/procyon/ai-inference-benchmark-for-windows">AI Inference Benchmark for Windows</a></li>
+                            <li><a href="/procyon/battery-life-benchmark">Battery Life Benchmark</a></li>
+                            <li><a href="/procyon/office-productivity-benchmark">Office Productivity Benchmark</a></li>
+                            <li><a href="/procyon/photo-editing-benchmark">Photo Editing Benchmark</a></li>
+                            <li><a href="/procyon/video-editing-benchmark">Video Editing Benchmark</a></li>
+                            <li><a href="/testdriver-cloud-edition">Testdriver</a></li>
+                            <hr class="mt10">
+                            <li class="mt20"><a href="/3dmark">3DMark</a></li>
+                            <li><a href="/3dmark-android">3DMark for Android</a></li>
+                            <li><a href="/3dmark-ios">3DMark for iOS</a></li>
+                            <li><a href="/pcmark10">PCMark 10</a></li>
+                            <li><a href="/pcmark-android">PCMark for Android</a></li>
+                            <li><a href="/vrmark">VRMark</a></li>
+
+                            <hr class="mt10">
+                            <li class="mt20"><a href="/support/which-benchmark-should-i-use">MORE...</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Services</p>
+                        <ul>
+                            <li><a href="/services/retail-solutions">Performance data for retailers</a></li>
+                            <li><a href="/services/benchmark-development-program">Benchmark Development Program</a></li>
+                            <li><a href="/services/public-sector-procurement">Public sector procurement</a></li>
+                            <li><a href="/resources/windows11-image-testing">Windows 11 image testing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Support</p>
+                        <ul>
+                            <li><a href="https://support.benchmarks.ul.com/">Support</a></li>
+                            <li><a href="/resources">Resources</a></li>
+                            <li><a href="https://support.benchmarks.ul.com/en/support/solutions">User guides</a></li>
+                            <li><a href="/download">Downloads</a></li>
+                            <li><a href="/support/how-to-benchmark">How to benchmark</a></li>
+                            <li><a href="/support/approved-drivers">Approved drivers</a></li>
+                            <li><a href="/support/benchmark-rules">Benchmark rules</a></li>
+                            <li><a href="/systeminfo">SystemInfo</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Insights</p>
+                        <ul>
+                            <li><a href="/insights/procyon-insights">Procyon Insights</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Compare</p>
+                        <ul>
+                            <li><a href="/compare/best-cpus">CPUs</a></li>
+                            <li><a href="/compare/best-gpus">GPUs</a></li>
+                            <li><a href="/compare/best-smartphones">Smartphones</a></li>
+                            <li><a href="/compare/best-tablets">Tablets</a></li>
+                            <li><a href="/compare/best-vr-headsets">VR headsets</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>More</p>
+                        <ul>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/news">News</a></li>
+                            <li><a href="/press">Reviewers</a></li>
+                            <li><a href="/careers">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="language-button">
+                        <img src="/static/images/icons/globe_ULWhite.svg" alt="language logo">
+                        <ul>
+                            <li><a href="https://benchmarks.ul.com" data-lang="EN" onclick="gotoLanguage(event)">English</a></li>
+                            <li><a href="https://benchmarks.ul.com/zh-hans" data-lang="ZH-CN" onclick="gotoLanguage(event)">中文</a></li>
+                            <li><a href="https://benchmarks.ul.com/de" data-lang="DE" onclick="gotoLanguage(event)">Deutsch</a></li>
+                            <li><a href="https://benchmarks.ul.com/jp" data-lang="JP" onclick="gotoLanguage(event)">日本語</a></li>
+                            <li><a href="https://benchmarks.ul.com/pt-br" data-lang="PT-BR" onclick="gotoLanguage(event)">Português (Brasil)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="https://www.ul.com" class="header-logo-link"><img src="/static/images/logos/ul-solutions-logo-white.svg" height="60" alt="UL Solutions logo" class="right logo"></a>
+        </div>
+    </div>
+</div>
+		<div class="mainarea container">
+			
+    
+    <div class="container clearfix">
+      <div class="defaultbox" style="min-height: 0px;">
+        <img src="/static/images/contentboxes/vrmark-hero.jpg" alt="VRMark - The Virtual Reality Benchmark" class="imagestretch">
+        
+      </div>
+      <div class="clearfix contentrow">
+        <div class="defaultbox" style="min-height: 347px;">
+          <div class="clearfix">
+            <div class="col4 left">
+              <h1 class="mainheader">Is your PC ready for VR?</h1>
+            </div>
+            <div class="col2 left">
+              <div class="padding">
+                <p class="mt20">The performance requirements for VR games are much higher than for typical PC games. So if you're thinking about buying an HTC Vive or an Oculus Rift, wouldn't it be good to know that your PC is ready for VR?</p>
+                <p>VRMark includes three VR benchmark tests. You can run the tests on your monitor, no headset required, or on a connected HMD. At the end of each test, you'll see whether your PC is VR ready, and if not, how far it falls short.</p>
+              </div>
+            </div>
+            <div class="col2 left">
+              <div class="padding">
+                <ul class="mt20">
+                  <li>See if your PC meets the requirements for HTC Vive and Oculus Rift.</li>
+                  <li>Test your PC with three VR benchmarks, headset not required.</li>
+                  <li>Detailed results and hardware monitoring charts.</li>
+                  <li>Explore each scene in VR or on your monitor with Experience mode.</li>
+                  <li>In-house graphics engine and test content ensures fair and neutral results.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix contentrow">
+        <div class="col4">
+          <div class="defaultbox clearfix nopadding textarea" style="min-height: 609px;">
+            <div class="col3 left">
+              <div class="padding">
+                <h2>VRMark Orange Room</h2>
+                <p class="accent">VR ready for HTC Vive and Oculus Rift</p>
+              </div>
+            </div>
+            <div class="col1 left">
+              <div class="padding right">
+                <!-- %g:img.mt25.mr10(dir="images/icons" file="windows40-gray.png" alt="Windows benchmark") -->
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col4">
+              <hr>
+              <img src="/static/images/contentboxes/vrmark-orange-room-hero.jpg" alt="VRMark Orange Room VR benchmark test" class="imagestretch">
+              <hr>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Benchmark</h3>
+                <p>The Orange Room benchmark shows the impressive level of detail that can be achieved on a PC that meets the recommended hardware requirements for the HTC Vive and Oculus Rift. If your PC passes this test, it's ready for the two most popular VR systems available today.</p>
+              </div>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Experience</h3>
+                <p>Use Experience mode to judge the performance of a system with your own eyes. VR headsets use clever techniques to compensate for missed frames. Even when the frame rate is low, you may be surprised by the quality of the VR experience. Take your time and explore in VR or on your monitor.</p>
+              </div>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Features</h3>
+                <ul>
+                  <li>VR ready benchmark for HTC Vive and Oculus Rift.</li>
+                  <li>Detailed frame-by-frame performance charts.</li>
+                  <li>Fine-tune your testing with custom settings.</li>
+                  <li>Run it on your desktop monitor or a VR headset.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix contentrow">
+        <a class="link" name="cyanroom"></a>
+        <div class="col4">
+          <div class="defaultbox clearfix nopadding textarea" style="min-height: 588px;">
+            <div class="col3 left">
+              <div class="padding">
+                <h2>VRMark Cyan Room</h2>
+                <p class="accent">DirectX 12 benchmark for VR</p>
+              </div>
+            </div>
+            <div class="col1 left">
+              <div class="padding right">
+                <!-- %g:img.mt25.mr10(dir="images/icons" file="windows40-gray.png" alt="Windows benchmark") -->
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col4">
+              <hr>
+              <img src="/static/images/contentboxes/vrmark-cyan-room-hero.jpg" alt="VRMark Cyan Room VR benchmark test" class="imagestretch">
+              <hr>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Benchmark</h3>
+                <p>Cyan Room is a DirectX 12 benchmark. It features a large, complex scene and many eye-catching effects. Cyan Room shows how using an API with less overhead can help developers deliver impressive VR experiences even on modest PC systems.</p>
+              </div>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Experience</h3>
+                <p>VR systems use clever techniques to compensate for missed frames. Even when the frame rate is low, you may be surprised by the quality of the experience. Use Experience mode with a VR headset to judge the performance of a system with your own eyes.</p>
+              </div>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Features</h3>
+                <ul>
+                  <li>Pure DirectX 12 VR engine built in-house.</li>
+                  <li>Detailed frame-by-frame performance charts.</li>
+                  <li>Fine-tune your testing with custom settings.</li>
+                  <li>Run it on your desktop monitor or a VR headset.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix contentrow">
+        <div class="col4">
+          <div class="defaultbox clearfix nopadding textarea" style="min-height: 609px;">
+            <div class="col3 left">
+              <div class="padding">
+                <h2>VRMark Blue Room</h2>
+                <p class="accent">The high bar for future hardware</p>
+              </div>
+            </div>
+            <div class="col1 left">
+              <div class="padding right">
+                <!-- %g:img.mt25.mr10(dir="images/icons" file="windows40-gray.png" alt="Windows benchmark") -->
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col4">
+              <hr>
+              <img src="/static/images/contentboxes/vrmark-blue-room-hero.jpg" alt="VRMark Blue Room VR benchmark test" class="imagestretch">
+              <hr>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Benchmark</h3>
+                <p>The Blue Room is the most demanding VRMark test. It's ideal for benchmarking the latest graphics cards. With its massive 5K rendering resolution and spectacular volumetric lighting effects, the Blue Room sets the bar for future hardware generations.</p>
+              </div>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Experience</h3>
+                <p>VR systems use clever techniques to compensate for missed frames. Even when the frame rate is low, you may be surprised by the quality of the experience. Use Experience mode with a VR headset to judge the performance of a system with your own eyes.</p>
+              </div>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Features</h3>
+                <ul>
+                  <li>The world's most demanding VR benchmark.</li>
+                  <li>Massive 5K rendering resolution (5120 × 2880).</li>
+                  <li>Fine-tune your testing with custom settings.</li>
+                  <li>Run it on your desktop monitor or a VR headset.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix contentrow">
+        <a class="link" name="upgrade"></a>
+        <div class="col4 left">
+          <div class="defaultbox" style="min-height: 243px;">
+            <img src="/static/images/contentboxes/vrmark-hero.jpg" alt="VRMark logo" class="imagestretch">
+            
+          </div>
+        </div>
+      </div>
+      <div class="clearfix contentrow">
+        <div class="col2half left">
+          <div class="defaultbox" style="min-height: 1056px;">
+            <div class="padding">
+              <h3>For home use</h3>
+            </div>
+            <div class="col2 left">
+              <div class="padding">
+                <h2>VRMark <span class="opensans-light">Basic Edition</span></h2>
+                <a class="more" href="https://store.steampowered.com/app/464170/VRMark/?utm_source=benchmarksulcom&amp;utm_medium=website&amp;utm_campaign=demo&amp;utm_content=vrmark" onclick="ga('send', 'event', 'download', 'vrmark', 'steam');">Steam</a>
+                <h3>Free</h3>
+                <hr class="mt30">
+                <ul>
+                  <li class="mt20">Orange Room</li>
+                </ul>
+                <p class="accent mt20">Click the "Download Demo" button on the Steam store page to download VRMark Basic Edition.</p>
+              </div>
+            </div>
+            <div class="col2 left">
+              <div class="padding">
+                <h2>VRMark <span class="opensans-light">Advanced Edition</span></h2>
+                <a class="more" data-fsc-action="Add,Checkout" data-fsc-item-path-value="vrmark-advanced-edition" href="#" onclick="ga('send', 'event', 'buy button', 'vrmark advanced', '/vrmark');">Buy</a>
+                <a class="more ml5" href="https://store.steampowered.com/app/464170/VRMark/?utm_source=benchmarksulcom&amp;utm_medium=website&amp;utm_campaign=buy&amp;utm_content=vrmark" onclick="ga('send', 'event', 'buy button', 'vrmark advanced', '/vrmark - steam');" rel="nofollow">Steam</a>
+                
+                  <h3>$19.99</h3>
+                
+                
+                <hr class="mt30">
+                <ul>
+                  <li class="mt20">Orange Room</li>
+                  <li>Cyan Room</li>
+                  <li>Blue Room</li>
+                  <li>Custom benchmark settings</li>
+                  <li>Install tests independently</li>
+                  <li>Save results offline</li>
+                </ul>
+                <div class="extra">
+                  <hr>
+                  <h3 class="mt20">Advanced Edition bundle</h3>
+                  
+                  <p>3DMark + PCMark 10 + VRMark <br>The complete benchmarking bundle.</p>
+                  
+                    <h3><span class="price" data-product="3dmandpcm10andvrm" data-edition="adv"></span>&nbsp;&nbsp;<span class="opensans-light">Save 25%</span></h3>
+                  
+                  
+                  <!-- %h3 <span class="price" data-product="3dmandpcm10andvrm" data-edition="adv"></span> -->
+                  <a class="morevague mb10" data-fsc-action="Add,Checkout" data-fsc-item-path-value="3dmark-pcmark-10-vrmark" href="#" onclick="ga('send', 'event', 'buy button', '3dmark and pcmark 10 and vrmark bundle advanced', '/vrmark');">Buy</a>
+                  <a class="morevague ml5" href="https://store.steampowered.com/bundle/3743/3DMark__PCMark_10__VRMark/" onclick="ga('send', 'event', 'buy button', '3dmark and pcmark 10 and vrmark bundle advanced', '/vrmark - steam');">Steam</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1half left">
+          <div class="defaultbox" style="min-height: 1056px;">
+            <div class="padding">
+              <h3>For business use</h3>
+              
+            </div>
+            <div class="padding">
+              <h2>VRMark <span class="opensans-light">Professional Edition</span></h2>
+              <a class="more lightboxBenchmarks" data-form="Quote" data-product="VRMark" href="#quote-en-vrmark" onclick="mktoExtra(this);MktoForms2.loadForm(&quot;//empoweringtrust.ul.com&quot;, &quot;117-ZLR-399&quot;, 3520, function (form){MktoForms2.lightbox(form).show();});ga('send', 'event', 'buy button', 'vrmark professional', '/vrmark');">Get quote</a>
+              
+<script src="//empoweringtrust.ul.com/js/forms2/js/forms2.min.js"></script>
+<script>
+    function showForm(src="//empoweringtrust.ul.com/js/forms2/js/forms2.min.js") {
+        MktoForms2.loadForm("//empoweringtrust.ul.com",
+            "117-ZLR-399", 2079,
+            function (form) {
+                MktoForms2.lightbox(form).show();
+            });
+    }
+
+    MktoForms2.whenReady(function(form) {
+        // var formEl = form.getFormElem()[0],
+        //     moveEl = formEl.querySelector('#PrivacyPolicy');
+        // [].forEach.call(formEl.querySelectorAll('.mktoForm > .mktoFormRow'), function(row) {
+        //     !row.contains(moveEl) || formEl.appendChild(row);
+        // });
+
+        form.onSubmit(function(form){
+            if(extra) {
+                form.vals({customerComments: extra.product + ' | ' + extra.form + ' | ' + form.vals().customerComments});
+                extra = null;
+            }
+        });
+
+        form.vals({
+            "formLanguage":"en",
+            "lastInterest":"Product Performance Benchmarking",
+            "pageURL": window.location.href,
+            "pageURLReferral": document.referrer,
+        });
+
+        form.onSuccess(function(form) {
+            if(form.pageURL.indexOf('guide-efficent-performance-testing') > -1) {
+                if(form.pageURL.indexOf('/zh-hans/') > -1) {
+                    location.href = "https://benchmarks.ul.com/downloads/guide-to-efficient-pc-performance-testing-for-enterprise-IT-SC.pdf";
+                    return false;
+                } else if(form.pageURL.indexOf('/de/') > -1) {
+                    location.href = "https://benchmarks.ul.com/downloads/guide-to-efficient-pc-performance-testing-for-enterprise-IT-DE.pdf";
+                    return false;
+                } else if(form.pageURL.indexOf('/jp/') > -1) {
+                    location.href = "https://benchmarks.ul.com/downloads/guide-to-efficient-pc-performance-testing-for-enterprise-IT-JP.pdf";
+                    return false;
+                } else if(form.pageURL.indexOf('/pt-br/') > -1) {
+                    location.href = "https://benchmarks.ul.com/downloads/guide-to-efficient-pc-performance-testing-for-enterprise-IT-PT.pdf";
+                    return false;
+                } else {
+                    location.href = "https://benchmarks.ul.com/downloads/guide-to-efficient-pc-performance-testing-for-enterprise-IT.pdf";
+                    return false;
+
+                }
+            }
+        });
+
+        console.log("url is " + window.location.href)
+
+        if (window.location.href.indexOf('/en-sc/') > 0 || window.location.href.indexOf('/zh-hans/') > 0) {
+            console.log("locale is zh-hans")
+            form.vals({
+                "formLanguage": "zh-hans"
+            });
+            window.optinlang = "zh-hans";
+        } else if (window.location.href.indexOf('/en-de/') > 0 || window.location.href.indexOf('/de/') > 0 || window.location.href.indexOf('testdriver-cloud-edition-de') > 0) {
+            console.log("locale is de")
+            form.vals({
+                "formLanguage": "de"
+            });
+            window.optinlang = "de";
+        } else if (window.location.href.indexOf('solve-an-it-hardware-challenge-contest-pt') > 0 || (window.location.href.indexOf('/cmp/') > 0 && window.location.href.indexOf('-pt') > 0)) {
+            console.log("locale is pt")
+            form.vals({
+                "formLanguage": "pt-br"
+            });
+            window.optinlang = "pt-br";
+        } else if (window.location.href.indexOf('/cmp/') > 0 && window.location.href.indexOf('-es') > 0) {
+            console.log("locale is es")
+            form.vals({
+                "formLanguage": "es"
+            });
+            window.optinlang = "es";
+        } else {
+            console.log("locale is en")
+        }
+
+        $('#How_can_we_help__c').val('-');
+        $('#LblindustryFBNNA').parents('.mktoRequiredField').addClass('privacy-check');
+        $('#emailOptin').parents('.mktoFormRow').addClass('optin-check');
+        $('#optin-mssg').parents('.mktoFormRow').addClass('margin-fix');
+    });
+
+    MktoForms2.whenRendered(function(form) {
+        //var js_script = document.createElement('script');
+        //js_script.type = "text/javascript";
+        //https:www.ul.com/modules/custom/ul_marketo/js/marketo-countries.js
+        //js_script.src = "/web-app/js/marketo-countries.js";
+        //js_script.defer = true;
+        //document.getElementsByTagName('head')[0].appendChild(js_script);
+    //     var lang = form.vals().formLanguage,
+    //         msg = '';
+    //     if(lang == 'zh-hans') {
+    //         msg = "我希望收到来自 UL LLC (UL) 的包含与 UL 产品和服务的最佳实践、教育、行业研究、新闻、更新及推广的定期电邮。我明白，我可以随时退订，并同意遵守 UL 的在线政策。"
+    //     }
+    //     else if(lang == 'de') {
+    //         msg = "Ich möchte regelmäßig E-Mails von UL LLC (UL) mit Inhalten zu den Themen Best-Practices, industrielle Forschung, Neuigkeiten, Updates und Werbeaktionen im Zusammenhang mit Produkten und Dienstleistungen von UL erhalten. Ich verstehe, dass ich das Abonnement jederzeit kündigen kann und stimme den Online-Richtlinien von UL zu."
+    //     }
+    //     else if(lang == 'pt-br') {
+    //         msg = "Concordo em receber e-mails periódicos contendo melhores práticas, educação, pesquisa do setor, notícias, atualizações e promoções relacionadas aos produtos e serviços de referência da UL. Eu entendo que posso cancelar a assinatura a qualquer momento e concordo com as Políticas Online da UL."
+    //     }
+    //     else {
+    //         msg = "I agree to receive periodic emails containing best practices, education, industry research, news, updates and promotions related to UL's benchmark products and services. I understand that I can unsubscribe at any time and agree to UL's Online Policies."
+    //     }
+    //
+    //     $('.gdpr_mssg').text(msg);
+    });
+
+    if (location.href.indexOf("aliId") != -1) {
+        console.log("b");
+        MktoForms2.whenReady(function(form) {
+            var formEl = form.getFormElem()[0],
+                tyTemplate = '<h2>Thank you</h2><p>You should receive an email from us in the next few </br>minutes. (Check your junk folder if you do not see it </br>in your inbox.) </br></br>To comply with the latest privacy regulations, we kindly </br>ask you to <strong>confirm your email address</strong> by following </br>the instructions in the email.';
+            form.onSuccess(function(vals, tyLink) {
+                MktoForms2.lightbox(form).show();
+                formEl.parentNode.innerHTML = tyTemplate;
+                return false;
+            });
+        });
+    }
+
+    var extra = null;
+
+    function mktoExtra(elem) {
+        extra = {
+            product: elem.dataset.product,
+            form: elem.dataset.form
+        }
+    }
+</script>
+              <a class="morevague ml5" onclick="callFTlightbox('ft3dba2cf81527585715729?fld46=VRMark&amp;fld59=1', '100%' ,'1000');">Press license</a>
+              <h3>From $995 per year</h3>
+              <hr class="mt30">
+              <ul>
+                <li class="mt20">Orange Room</li>
+                <li>Cyan Room</li>
+                <li>Blue Room</li>
+                <li>Custom benchmark settings</li>
+                <li>Install tests independently</li>
+                <li>Save results offline</li>
+                <li>Private, offline results option</li>
+                <li>Command line automation</li>
+                <!-- %li Export result data as XML -->
+                <li>Licensed for commercial use</li>
+                <li>Compatible with Testdriver<sup>®</sup></li>
+                <li>Priority support by email and phone</li>
+              </ul>
+              <hr class="mt30">
+              <h4>Heavy user?</h4>
+              <p>Ask us about <a href="/testdriver">Testdriver</a> — our easy benchmark automation solution for enterprise IT, production line QA, and PC lifecycle management.</p>
+              <hr class="mt30">
+              <h3 class="mt20">Professional Edition bundle</h3>
+              <p>Buy two or more benchmarks to qualify for a bundle discount.</p>
+              <h3>Contact us</h3>
+              <a class="morevague mb10" onclick="callFTlightbox('48f777f31520496423278?fld15=Bundle&amp;fld34=1', '100%' ,'880');ga('send', 'event', 'buy button', 'bundle professional', '/vrmark');">Get quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix contentrow">
+        
+        <div class="col4 mt40">
+          <div class="defaultbox clearfix graybg" style="min-height: 416px;">
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Minimum system requirements</h3>
+                <table class="info">
+                  <tbody><tr>
+                    <th>OS</th>
+                    <td>Windows 7, 64-bit with Service Pack 1</td>
+                  </tr>
+                  <tr>
+                    <th>Processor</th>
+                    <td>Dual core CPU with SSE 4.1 support</td>
+                  </tr>
+                  <tr>
+                    <th>Memory</th>
+                    <td>2 GB of system memory</td>
+                  </tr>
+                  <tr>
+                    <th>Graphics</th>
+                    <td>DirectX 11 with 1.5 GB memory</td>
+                  </tr>
+                  <tr>
+                    <th>Storage</th>
+                    <td>2 GB free space</td>
+                  </tr>
+                </tbody></table>
+                <h3>Ready for Windows 11</h3>
+                <p>VRMark is compatible with Windows 11.</p>
+              </div>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Support</h3>
+                <p class="mt10">Latest version 1.3.2020 | June 20, 2018</p>
+                <ul class="mt10">
+                  <li>
+                    <a href="https://support.benchmarks.ul.com/">VRMark support</a>
+                  </li>
+                  <li>
+                    <a href="https://benchmarks.ul.com/downloads/vrmark-technical-guide.pdf">VRMark Technical Guide</a>
+                  </li>
+                  <li>
+                    <a href="https://benchmarks.ul.com/downloads/vrmark-command-line-guide.pdf">VRMark Command Line Guide</a>
+                  </li>
+                </ul>
+                <h3>Languages</h3>
+                <ul>
+                  <li>English</li>
+                  <li>German</li>
+                  <li>Russian</li>
+                  <li>Simplified Chinese</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col1half left">
+              <div class="padding">
+                <h3>Professional Edition licensing</h3>
+                <p>Single-seat licenses require an Internet connection for online activation. A single-seat license allows you to install the software on one system at a time.</p>
+                <p>With a site license, you can activate and use the software offline. A site license allows you to run the software on multiple systems at the same time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+		</div>
+	</div><script type="text/javascript" id="">var __dispatched__={},__i__=self.postMessage&&setInterval(function(){if(self.PrivacyManagerAPI&&__i__){var b={PrivacyManagerAPI:{action:"getConsentDecision",timestamp:(new Date).getTime(),self:self.location.host}};self.top.postMessage(JSON.stringify(b),"*");__i__=clearInterval(__i__)}},50);
+self.addEventListener("message",function(b,a){try{if(b.data&&(a=JSON.parse(b.data))&&(a=a.PrivacyManagerAPI)&&a.capabilities&&"getConsentDecision"==a.action&&!a.from){var d=self.PrivacyManagerAPI.callApi("getGDPRConsentDecision",self.location.host).consentDecision;console.log("Received new decision: "+d);d&&d.forEach(function(c){__dispatched__[c]||(self.dataLayer&&self.dataLayer.push({event:"GDPR Pref Allows "+c}),__dispatched__[c]=1)})}}catch(c){}});</script><script src="https://consent.trustarc.com/asset/notice.js/v/v1.7-920" async="async" crossorigin="" importance="high"></script>
+
+
+
+<div id="footer">
+    <div class="container clearfix ulmenu">
+        <div class="col1 left">
+            <div class="footerpad mt-sm-35">
+                <ul>
+                    <li class="ulopen">
+                        <h3 class="mt0 pt0">UL Procyon</h3>
+                        <ul>
+                            <li class=""><a href="/procyon">UL Procyon benchmark suite</a></li>
+                            <li class=""><a href="/procyon/ai-inference-benchmark-for-windows">AI Inference Benchmark for Windows</a></li>
+                            <li class=""><a href="/procyon/ai-inference-benchmark-for-android">AI Inference Benchmark for Android</a></li>
+                            <li class=""><a href="/procyon/battery-life-benchmark">Battery Life Benchmark</a></li>
+                            <li class=""><a href="/procyon/office-productivity-benchmark">Office Productivity Benchmark</a></li>
+                            <li class=""><a href="/procyon/photo-editing-benchmark">Photo Editing Benchmark</a></li>
+                            <li class=""><a href="/procyon/video-editing-benchmark">Video Editing Benchmark</a></li>
+                            <li class=""><a href="/testdriver-cloud-edition">Testdriver</a></li>
+                        </ul>
+                    </li>
+                    <li class="ulopen">
+                        <h3><a href="/">Benchmarks</a></h3>
+                        <ul>
+                            <li class=""><a href="/3dmark">3DMark</a></li>
+							<li class=""><a href="/3dmark-android">3DMark for Android</a></li>
+							<li class=""><a href="/3dmark-ios">3DMark for iOS</a></li>
+                            <li class=""><a href="/pcmark10">PCMark 10</a></li>
+							<li class=""><a href="/pcmark-android">PCMark for Android</a></li>
+                            <li class=""><a href="/vrmark">VRMark</a></li>
+
+							<li class="mt10"><a href="/support/which-benchmark-should-i-use">More benchmarks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col1 left">
+            <div class="footerpad borderleft">
+                <ul>
+					<li class="ulopen">
+                        <h3 class="mt0 pt0">Services</h3>
+                        <ul>
+							<li class=""><a href="/services/retail-solutions">Performance data for retailers</a></li>
+							<li class=""><a href="/services/benchmark-development-program">Benchmark Development Program</a></li>
+                            <li class=""><a href="/services/public-sector-procurement">Public sector procurement</a></li>
+                            <li class=""><a href="/resources/windows11-image-testing">Windows 11 image testing</a></li>
+						</ul>
+					</li>
+					<li class="ulopen">
+                        <h3>Support</h3>
+                        <ul>
+                            <li class=""><a href="https://support.benchmarks.ul.com/">Customer support</a></li>
+                            <li class=""><a href="/resources">Resources</a></li>
+                            <li class=""><a href="https://support.benchmarks.ul.com/en/support/solutions">User guides</a></li>
+                            <li class=""><a href="/download">Downloads</a></li>
+							<li class=""><a href="/support/how-to-benchmark">How to benchmark</a></li>
+                            <li class=""><a href="/support/approved-drivers">Approved drivers</a></li>
+							<li class=""><a href="/support/benchmark-rules">Benchmark rules</a></li>
+                            <li class=""><a href="/systeminfo">SystemInfo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col1 left">
+            <div class="footerpad borderleft">
+                <ul>
+                    <li class="ulopen">
+                        <h3 class="mt0 pt0">Insights</h3>
+                        <ul>
+                            <li class=""><a href="/insights/procyon-insights">Procyon Insights</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col1 left">
+            <div class="footerpad borderleft">
+				<ul>
+                    <li class="ulopen">
+						<h3 class="mt0 pt0">Compare</h3>
+						<ul>
+							<li class=""><a href="/compare/best-cpus">CPUs</a></li>
+							<li class=""><a href="/compare/best-gpus">GPUs</a></li>
+							<li class=""><a href="/compare/best-smartphones">Smartphones</a></li>
+							<li class=""><a href="/compare/best-tablets">Tablets</a></li>
+							<li class=""><a href="/compare/best-vr-headsets">VR headsets</a></li>
+						</ul>
+					</li>
+                </ul>
+            </div>
+        </div>
+		<div class="col1 left">
+            <div class="footerpad borderleft">
+				<ul>
+                    <li class="ulopen">
+                        <h3 class="mt0 pt0">UL Benchmarks</h3>
+                        <ul>
+                            <li class=""><a href="/about">About us</a></li>
+                            <li class=""><a href="/contact">Contact us</a></li>
+							<li class=""><a href="/news">Our news</a></li>
+							<li class=""><a href="/press">For press</a></li>
+							<li class=""><a href="/careers">Careers</a></li>
+                        </ul>
+                    </li>
+					<li class="ulopen">
+                        <h3>About UL Solutions</h3>
+                        <p class="footer-description"><a href="http://www.ul.com/"> UL Solutions is a global safety science company that's dedicated to helping its customers achieve their safety, security and sustainability goals. Discover more at UL.com.</a></p>
+                    </li>
+                    <li class="ulopen">
+                        <h3 class="menu-language mt0 pt0">Languages</h3>
+                        <ul>
+                            <li class="footer-languages-new">
+                                <p class="">
+                                    <a href="https://benchmarks.ul.com" data-lang="EN" onclick="gotoLanguage(event)">English</a> <span>|</span>
+                                    <a href="https://benchmarks.ul.com/zh-hans" data-lang="ZH-CN" onclick="gotoLanguage(event)">中文</a> <span>|</span>
+                                    <a href="https://benchmarks.ul.com/de" data-lang="DE" onclick="gotoLanguage(event)">Deutsch</a> <span>|</span>
+                                    <a href="https://benchmarks.ul.com/jp" data-lang="JP" onclick="gotoLanguage(event)">日本語</a> <span>|</span>
+                                    <a href="https://benchmarks.ul.com/pt-br" data-lang="PT-BR" onclick="gotoLanguage(event)">Português (Brasil)</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ulfooter" class="clearfix">
+    <div class="container clearfix">
+        <div class="center">
+            <a href="/privacy-policy">Privacy Policy</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="/cookie-policy">Cookie Policy</a>
+        </div>
+    </div>
+</div>
+<script src="/static/VdM4xyoFqpaFtwudOrGUeOTrDdRrpKywho8tBUpWbzq.js" type="text/javascript"></script>
+<script src="/static/qSC26riUX42oNhqK6N3sBN09VPsjUdsbKGYisRk9Tib.js" type="text/javascript"></script>
+<script src="/static/wnQnFMm0XMpEGVGxF4eQrVvE8ktz8LUdiuOabPfqNu7.js" type="text/javascript"></script>­<style>@font-face {font-family:"font";src:url("https://")}@media (touch-enabled),(-webkit-touch-enabled),(-moz-touch-enabled),(-o-touch-enabled),(-ms-touch-enabled),(modernizr){#touch{top:9px;position:absolute}}@media (transform-3d),(-webkit-transform-3d),(-moz-transform-3d),(-o-transform-3d),(-ms-transform-3d),(modernizr){#csstransforms3d{left:9px;position:absolute;height:3px;}}#generatedcontent:after{content:":)";visibility:hidden}</style>
+
+
+
+
+
+
+<!-- FastSpring tracking code -->
+<script>
+    function decorateURL(url) {
+        var linkerParam = null;
+        ga(function() {
+            var trackers = ga.getAll();
+            linkerParam = trackers[0].get('linkerParam');
+        });
+        return (linkerParam ? url + '?' + linkerParam : url);
+    }
+</script>
+<!-- End of FastSpring tracking code -->
+<!-- LinkedIn -->
+<script type="text/javascript">
+    _linkedin_partner_id = "38432";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+    (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=38432&fmt=gif" />
+</noscript>
+<!-- LinkedIn -->
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; padding-bottom: 42px; padding-right: 42px;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div id="ul-global-footer" class="ul-sticky"><footer class="wwwulcom-footer">
+<div class="wwwulcom-footer__bottom">
+    <div class="wwwulcom-wrapper">
+        <div class="wwwulcom-footer-logo">
+            <a href="https://www.ul.com/" target="_blank" aria-label="UL Logo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ll_footer" viewBox="0 0 486.8 200">
+                <defs>
+                <style>.g{fill:#fff}</style>
+                </defs>
+                  <g id="a"></g>
+                    <g id="b">
+                      <g id="c">
+                        <g id="d">
+                          <g id="e">
+                          <g id="f">
+                            <path class="g" d="M95.5 175c43.5 0 74.5-35 74.5-75s-31.5-70-70-70c-4 0-9 .5-11.5 1 4.5-1.5 12-2 16-2 51 0 81.5 41 81.5 85 0 51.5-38.5 86-86 86C45 200 0 155 0 100c0-19.5 6-45 26.5-67.5-13 18-16.5 36-16.5 54C10 133 41.5 175 95.5 175Z"></path>
+                            <path class="g" d="M104.5 25C61 25 30 60 30 100s31.5 70 70 70c4 0 9-.5 11.5-1-4.5 1.5-12 2-16 2-51 0-81.5-41-81.5-85 0-51.5 38.5-86 86-86 55 0 100 45 100 100 0 19.5-6 45-26.5 67.5 13-18 16.5-36 16.5-54C190 67 158.5 25 104.5 25Z"></path>
+                          </g>
+                            <path class="g" d="M245.1 124.8c-10 0-15.5-6-16-15.5h9.5c0 5 2.5 7.5 6 7.5 2.5 0 5-1 5-4.5s-2.5-5.5-7-8l-3.5-2c-5-2.5-9-6-9-13 0-9 6.5-13.5 15-13.5 9 0 14.5 5.5 14.5 14.5h-9.5c-.5-5-2-7.5-5.5-7.5-3 0-4.5 2-4.5 4.5 0 3.5 3 5.5 6.5 7.5l3 2c3.5 2 10 5.5 10 14.5.5 9.5-7 13.5-14.5 13.5Zm34-.5c8.5 0 15.5-6 15.5-18s-7-18-15.5-18-15.5 6.5-15.5 18c0 12.1 7 18.5 15.5 18Zm0-7.9c-3.5 0-6-3.5-6-10s2.5-10 6-10 6 3.5 6 10-2 10-6 10Zm20.5 7.9h9.5V74.9h-9.5v49.4Zm44.4-.5v-34h-9.5v21c0 4-2 6-5 6s-5-2-5-6V89.3H315v23.5c0 7.5 4 12 10.5 12 4.5 0 7-2 8.5-4.5h.5l1 3.5h8.5Zm38.5-38.9c3 0 5.5-2.5 5.5-5.5s-2.5-5.5-5.5-5.5c-3.5 0-6 2.5-6 5.5s3 5.5 6 5.5Zm-5 38.9h9.5V89.3h-9.5v34.5Zm30.4.5c8.5 0 15.5-6 15.5-18s-7-18-15.5-18-15.5 6.5-15.5 18c0 12.1 7 18 15.5 18Zm0-7.9c-3.5 0-6-3.5-6-10s2.5-10 6-10 6 3.5 6 10-2.5 10-6 10Zm66.4 7.4c6.5 0 12.5-3 12.5-10s-5-9.5-9.5-11l-2.5-1c-2.5-1-4.5-2-4.5-4s1-3 3-3c2.5 0 4 1.5 4 4h9c0-6-4.5-10.5-12.5-10.5-7 0-12.5 3.5-12.5 10.5 0 6.5 5 8.5 9 10l2.5 1c3 1 5 2 5 4.5 0 2-1.5 3-3.5 3-2.5 0-4-1-4.5-4.5h-9c.6 7.5 5 11.5 13.5 11Zm-109.8.5c2 0 4.5 0 6-.5v-7c-1 .5-2 .5-3 .5-3 0-4-2-4-4V96.8h8.5v-7.5h-8.5v-9H355v4c0 3.5-1.5 5-5 5h-1.5v7.5h6v18c0 5.5 3 10 10 9.5Zm63.4-34.9v34.5h9.5v-21c0-4.5 2-6.5 5-6.5s5 2 5 6v21.5h9.5v-23.5c0-7.5-4-12-10.5-12-4.5 0-7 2-8.5 4.5h-.5l-1-3.5h-8.5ZM56.6 52.5v50.1c0 14.2 8 20.8 21.8 20.8 16.6 0 21.8-9 21.8-20.8V52.5H84v51.8c0 2.9-1.3 6.6-5.5 6.6-4.6 0-5.6-2.9-5.6-6.2V52.5H56.6m50 94.3V77.5h16.2v55.4h19.8v13.9h-36"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                </a>
+        </div>
+        <div class="wwwulcom-footer-copyright">
+            <p>© 2023 UL LLC.  <span>All rights reserved.</span></p>
+            <ul class="wwwulcom-policy-links">
+                
+                <li class="wwwulcomicon">
+                    <a href="https://www.ul.com/customer-resources/online-policies/" target="_blank">Online Policies</a>
+                </li>
+                <li class="wwwulcomicon">
+                    <a href="https://www.ul.com/customer-resources/online-policies/about-cookies/" target="_blank">About Cookies</a>
+                </li>
+                <li class="wwwulcomicon wwwulcomicon-external">
+                    <a href="https://submit-irm.trustarc.eu/services/validation/0d4cb432-d0b6-4d78-ba6a-cb3c5a9a4174" target="_blank">Data Subject Access Request Portal</a>
+                </li>
+                
+                <li class="wwwulcomicon"><div id="teconsent" consent="undefined" aria-label="Open Cookie Preferences Modal" role="complementary"><a role="link" id="icon-id0032685018201814575" tabindex="0" lang="zh" aria-haspopup="dialog" aria-label="Cookie Preferences, opens a dedicated popup modal window" class="truste_cursor_pointer">Cookie 喜好设置</a></div></li>
+            </ul>
+        </div>
+        <nav class="wwwulcom-social-nav">
+            <ul>
+                <li class="wwwulcomicon wwwulcomicon-linkedin"><a href="https://www.linkedin.com/company/ul-benchmarks/" target="_blank">LinkedIn</a></li><li class="wwwulcomicon wwwulcomicon-twitter"><a href="https://twitter.com/UL_Benchmarks" target="_blank">Twitter</a></li><li class="wwwulcomicon wwwulcomicon-facebook"><a href="https://www.facebook.com/ULBenchmarks" target="_blank">Facebook</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+</footer></div></body></html>

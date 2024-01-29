@@ -1,0 +1,161 @@
+<html lang="en"><head>
+	<title>Emiline: The Ghost of White Willow</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.2.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button"><b class="inline_icon">home</b>HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><b class="inline_icon">water_drop</b>ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><b class="inline_icon">photo_camera</b> SCREENSHOTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><b class="inline_icon">store</b> WHERE TO BUY</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right">
+      A Got Bacon Games Production by Graham Jones
+    </a>
+	<audio uasortautoplay="">
+		<source src="intro.mp3" type="audio/mpeg">
+	</audio>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">SCREENSHOTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">WHERE TO BUY</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <img class="w3-image w3-center" style="width: 100%; max-width: 600px; height:auto;" src="images/Emiline_Logo.png" alt="Emiline: The Ghost of White Willow">
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT EMILINE: THE GHOST OF WHITE WILLOW</h3>
+  <p class="w3-center"><em>A psychological horror VR game. Taking place during the events of D-day, find yourself trapped in the gothic horrors of White Willow Manor Hall. Follow your sections lieutenant into combat before fighting a new battle of survival in the dark haunted past of the house.</em></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/dul6vnIlAvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+		It's 1945, D-Day a section of British paratroopers assault a gun emplacement on the German occupied island of Jersey. But when the paratroopers take refuge in an old manor house, the horrors of its past begin to haunt the new occupants within its walls.
+		<br><br>
+		You play as Alfred Stuart a sergeant in the British Parachute regiment. Take part in an immersive story as Stuart and his brothers in arms take on the German axis forces. Stuart has access to a sten gun, a fully automatic machine gun. Follow your squad into combat in the early hours of the morning.
+	  </p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">SCREENSHOTS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <p class="w3-center"><em>Here are some of the latest screenshots.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="content/screenshots/IMG_0878.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="content/screenshots/IMG_0879.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Menu Scene - Airfield">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="content/screenshots/IMG_0880.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The journey...">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="content/screenshots/IMG_0881.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Upstairs?">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">More to Come..</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">WHERE TO BUY</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">COMING SOON TO STEAMVR!</h3>
+  <div class="w3-row w3-padding-32 w3-section w3-center">
+    <iframe src="https://store.steampowered.com/widget/2385330/" frameborder="0" width="100%" height="190"></iframe>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <br><br>
+  <p>A Got Bacon Games Production by Graham Jones</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+
+</body></html>

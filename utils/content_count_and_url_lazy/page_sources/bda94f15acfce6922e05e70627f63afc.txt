@@ -1,0 +1,1384 @@
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths wf-opensans-n4-active wf-active" lang="it" style="--home-demo-bg: url(../assets/images/bi-uk.png;"><head>
+<meta charset="utf-8">
+<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+<link href="/dl/rai/images/favicon.gif" rel="Shortcut Icon">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,700|Open+Sans">
+<link href="/dl/components/css/foundation-flex.css?20160916164727" type="text/css" rel="stylesheet">
+<link href="/dl/components/css/xlarge.css?20160831165013" type="text/css" rel="stylesheet">
+<link href="/dl/components/css/normalize.css?20160831165013" type="text/css" rel="stylesheet">
+<link href="/dl/components/css/slick.css?20160930155639" type="text/css" rel="stylesheet">
+<link href="/dl/components/css/slick-theme.css?20160930155643" type="text/css" rel="stylesheet">
+<link href="/dl/components/css/raisso.css?20161117124128" type="text/css" rel="stylesheet">
+<link href="/dl/components/css/profiloSso.css?20210507161035" type="text/css" rel="stylesheet">
+<link href="/dl/components/css/premium.css?20200702175931" type="text/css" rel="stylesheet">
+<script async="" src="https://cdn-gl.imrworldwide.com/conf/PA6C62438-C296-4984-8B10-B30636C39D4E.js#name=raiStatic_1694049515962&amp;ns=NOLBUNDLE"></script><script async="" type="text/javascript" src="https://responder.wt-safetag.com/resp/api/get/602039762736393?url=https%3A%2F%2Fwww.rai.it%2Fprivacy%2FPrivacyPolicy.html"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NKHS7M"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MCMQWSP"></script><script src="https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js"></script><script async="" type="text/javascript" src="https://responder.wt-safetag.com/resp/api/get/602039762736393?url=https%3A%2F%2Fwww.rai.it%2Fprivacy%2FPrivacyPolicy.html"></script><script src="/dl/components/js/vendor/jquery.min.js?20160307121932" type="text/javascript"></script><script src="/dl/components/js/jquery-ui.min.js?20160517114026" type="text/javascript" defer=""></script><script src="/dl/components/js/vendor/modernizr.js?20160627122221" type="text/javascript" defer=""></script><script src="/dl/components/js/analytics/webtrekk_v4.min.js?20200129154026" type="text/javascript"></script><script src="/dl/js/cookie.pack.js?20100115133026" type="text/javascript"></script><script type="text/javascript" defer="">var UserLocation='ITA';function getServerDateTime(){var ServerDate='2018/05/04';var ServerTime='11:30:04';var ServerDateTime='2018/05/04 11:30:04';return[ServerDate,ServerTime,ServerDateTime];}var pageRai='HP',timerStart=Date.now();</script>
+<link href="/dl/components/img/logo-app.png?20160919122828" rel="apple-touch-icon">
+<meta name="google-play-app" content="app-id=it.rainet">
+<script src="/dl/components/js/rai.webcomponents-init.js?20220224165335" type="text/javascript"></script><script>
+                var attributes = {
+                    disableOnLoadTrack:false,
+			              disableTrackingSystems:'akamai, raitrack',
+			              mode:'',
+			              pageInfo:{
+                      'id': 'account_rai',
+                      'domain': 'rai',
+                      'section': 'area riservata',
+                      'sub_section':'modifica'
+			              }
+		            };
+                raiWebComponents.loadAndPrint("rai-tracker-retrocomp", attributes);
+            </script><script src="/common/assets/js/webcomponents/polyfills/core-js.577a5602a7262d6256830802d4aaab43.js"></script><script src="/common/assets/js/webcomponents/polyfills/regenerator-runtime.92d44da139046113cb3739b173605787.js"></script><script src="/dl/components/js/foundation.min.js?20180917162425"></script><script src="/dl/components/js/slick.min.js?20170503142400" type="text/javascript"></script><script type="text/javascript" defer="">//
+      $(document).ready(function(){var it=moment.defineLocale('it',{months:'gennaio_febbraio_marzo_aprile_maggio_giugno_luglio_agosto_settembre_ottobre_novembre_dicembre'.split('_'),monthsShort:'gen_feb_mar_apr_mag_giu_lug_ago_set_ott_nov_dic'.split('_'),weekdays:'Domenica_Lunedì_Martedì_Mercoledì_Giovedì_Venerdì_Sabato'.split('_'),weekdaysShort:'Dom_Lun_Mar_Mer_Gio_Ven_Sab'.split('_'),weekdaysMin:'Do_Lu_Ma_Me_Gi_Ve_Sa'.split('_'),longDateFormat:{LT:'HH:mm',LTS:'HH:mm:ss',L:'DD/MM/YYYY',LL:'D MMMM YYYY',LLL:'D MMMM YYYY HH:mm',LLLL:'dddd, D MMMM YYYY HH:mm'},calendar:{sameDay:'[Oggi alle] LT',nextDay:'[Domani alle] LT',nextWeek:'dddd [alle] LT',lastDay:'[Ieri alle] LT',lastWeek:function(){switch(this.day()){case 0:return'[la scorsa] dddd [alle] LT';default:return'[lo scorso] dddd [alle] LT';}},sameElse:'L'},relativeTime:{future:function(s){return((/^[0-9].+$/).test(s)?'tra':'in')+' '+s;},past:'%s fa',s:'alcuni secondi',m:'un minuto',mm:'%d minuti',h:'un\'ora',hh:'%d ore',d:'un giorno',dd:'%d giorni',M:'un mese',MM:'%d mesi',y:'un anno',yy:'%d anni'},ordinalParse:/\d{1,2}º/,ordinal:'%dº',week:{dow:1,doy:4}});});
+      //# sourceMappingURL=http://www.raiplay.it/dl/components/js/it.js,q20160524161715.pagespeed.sm.IqzRUlI4ls.map
+      //</script><script type="text/javascript" defer="">//
+      jQuery(document).ready(function($){$('.mainMenuContainer a').each(function(index,el){var disabled=$(this).attr('disabled');if(document.location.pathname==$(el).attr('href')){if(typeof disabled==typeof undefined&&disabled==false){$(el).addClass('active');}}});$(".menuItem a[href='#empty']").removeClass('active');$('#mainMenuBtn').click(function(event){openMainMenu();});$('#barraRaiBtn').click(function(event){$(this).toggleClass('opened');if($(this).hasClass('opened')){showBarraRai();}else{hideBarraRai();$("#barraRai .raissoClose").trigger('click');$("#barraRai .networkEsp").slideUp("slow").removeClass('opened');}});$('.mainMenuContainer').click(function(){closeMainMenu();}).children().click(function(e){e.stopPropagation()});$('.maskOverlay').click(function(){$('#barraRaiBtn').toggleClass('opened');if($('#barraRaiBtn').hasClass('opened')){showBarraRai();}else{hideBarraRai();$("#barraRai .raissoClose").trigger('click');$("#barraRai .networkEsp").slideUp("slow").removeClass('opened');}}).children().click(function(e){e.stopPropagation()});});var lastScrollTop=0;$(window).scroll(function(event){var st=$(this).scrollTop();if(st>lastScrollTop){$('header').removeClass('visible');if($(window).scrollTop()>180){$('header').addClass('fixed');}}else{$('header').addClass('visible');if($(window).scrollTop()<=0){$('header').removeClass('fixed').removeClass('visible');}}lastScrollTop=st;});function showBarraRai(){$('.maskOverlay').addClass('opened');$('#barraRai').slideDown().addClass('opened');}function hideBarraRai(){$('.maskOverlay').removeClass('opened');$('#barraRai').slideUp().removeClass('opened');}function openMainMenu(){$('.mainMenuContainer').addClass('opened');setTimeout(function(){$('#closeMainMenuBtn').get(0).focus();},100);}function closeMainMenu(){$('.mainMenuContainer').removeClass('opened');setTimeout(function(){$('#mainMenuBtn').get(0).focus();},100);}
+      //# sourceMappingURL=http://www.raiplay.it/dl/components/js/jsTestataRaiPlay.js,q20161018151915.pagespeed.sm.aiA5eNSyTz.map
+      //</script><script src="/dl/components/js/moment.min.js?20160324152736" type="text/javascript"></script><script src="/dl/components/js/moment-range.min.js?20160505172056" type="text/javascript" defer=""></script><script src="https://use.fontawesome.com/e24a9722c1.js"></script>
+<link href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css" type="text/css" rel="stylesheet">
+<title>Privacy Policy FRIENDLY di RAI.IT</title>
+<meta content="Privacy Policy FRIENDLY di RAI.IT" property="og:title">
+<meta content="Privacy Policy FRIENDLY di RAI.IT" property="twitter:title">
+<meta content="rai.it" property="dominio">
+<meta content="rai.it" property="ambiente">
+<meta content="pagina" property="contenuto">
+<meta content="" property="sezione">
+<meta content="" property="sottosezione">
+<script>bazadebezolkohpepadr="1972706687"</script><script type="text/javascript" src="https://www.rai.it/akam/13/75951c14" defer=""></script><meta class="foundation-mq"><script async="" src="https://www.rai.it/dl/components/js/cookiebanner/oil-lib/oilstub.min.js"></script><script async="" src="https://www.rai.it/dl/components/js/cookiebanner/oil-lib/oil.min.js"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" media="all"><style>/* START FONT */
+.as-oil__close-banner::after,
+.as-oil__intro-txt,
+.as-oil__btn-primary,
+.as-oil-back-button,
+.as-oil-cpc__category-link,
+.as-oil__btn-secondary,
+.as-oil__btn-tertiary,
+.as-oil-cpc__row-title,
+.as-oil-cpc__purpose-header,
+.as-oil-cpc__purpose-text, 
+.as-oil-cpc__purpose-legal-text,
+.as-oil-cpc__row-thirdPartiesText, 
+.as-oil-cpc__row-customThirdPartiesText,
+.as-oil-third-party-list-element
+.as-oil-third-party-name,
+.as-oil-cpc__purpose-more, 
+.as-oil-cpc__stack-more,
+.as-oil-third-party-list-element .as-oil-third-party-category-list,
+.as-oil-third-party-list-element .as-oil-third-party-link {
+  font-size: 14px !important;
+  font-size: calc(14px * var(--avacy_font_base_scale)) !important;
+}
+
+.as-oil__heading {
+  font-size: 19px !important;
+  font-size: calc(19px * var(--avacy_font_base_scale)) !important;
+}
+
+.as-oil-icon-plus,
+.as-oil-icon-minus {
+  height: 14px !important;
+  width: 14px !important;
+  margin-top: 4px;
+}
+/* END FONT */
+
+/* START COLORS */
+a.js-cpc-category-link.as-oil-cpc__category-link {
+  color: #aab1c6 !important;
+  --avacy_text_color_primary: #aab1c6 !important;
+}
+
+a.js-cpc-category-link.as-oil-cpc__category-link.as-oil-cpc__category-link--active {
+  color: #252a3f !important;
+  --avacy_accent_secondary: #252a3f !important;
+}
+
+.as-oil-cpc__switch input:checked ~ span.as-oil-cpc__slider {
+  --avacy_accent_secondary: #0ae16d !important;
+  background-color: #0ae16d !important;
+}
+.as-oil-cpc__purpose-more, 
+.as-oil-cpc__stack-more {
+  color: #aab1c6 !important;
+  --avacy_text_color_primary: #aab1c6 !important;
+}
+
+.as-oil-back-button__icon path {
+  fill: #252a3f !important;
+}
+/* END COLORS */
+
+/* START BOTTONI */
+span.as-oil__close-banner {
+  width: 100%;
+  max-width: 16rem;
+  height: 2.625rem;
+  color: #d6dbe6;
+  border: 2px solid #d6dbe6;
+  border-radius: 7px;
+}
+
+span.as-oil__close-banner::after {
+  content: 'Continua senza accettare';
+  position: absolute;
+  line-height: 1;
+  color: #252a3f;
+  color: var(--avacy_text_color_primary) !important;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  font-size: 13px !important;
+  font-size: calc(13px * var(--avacy_font_base_scale)) !important;
+}
+
+.as-oil-l-row.as-oil-l-buttons {
+  border-top: none;
+  margin-top: 0;
+}
+
+.as-oil-l-item__advanced-settings {
+  order: 0
+}
+
+.as-oil-l-item__optin {
+  order: 1
+}
+
+button.as-oil__btn-primary,
+.as-oil__btn-tertiary.as-js-optin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.as-oil__btn-primary.as-js-optin::before,
+.as-oil__btn-tertiary.as-js-optin::before {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,<svg width=%2724%27 height=%2724%27 viewBox=%270 0 24 24%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27><path d=%27M10.4964 20.5328L9.67203 21.4048C9.9344 21.6529 10.2945 21.7696 10.6525 21.7226C11.0105 21.6757 11.3283 21.47 11.5178 21.1627L10.4964 20.5328ZM2.8244 11.628C2.34282 11.1727 1.58332 11.194 1.12802 11.6756C0.672709 12.1572 0.694011 12.9167 1.1756 13.372L2.8244 11.628ZM22.0214 4.12987C22.3693 3.56576 22.194 2.82646 21.6299 2.47859C21.0658 2.13073 20.3265 2.30603 19.9786 2.87013L22.0214 4.12987ZM11.3208 19.6608L2.8244 11.628L1.1756 13.372L9.67203 21.4048L11.3208 19.6608ZM19.9786 2.87013L9.47503 19.903L11.5178 21.1627L22.0214 4.12987L19.9786 2.87013Z%27 fill=%27white%27/></svg>");
+  margin-right: 0.6rem;
+}
+
+
+button.as-oil__btn-primary.as-js-advanced-settings::before {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,<svg width=%2717%27 height=%2716%27 viewBox=%270 0 17 16%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27><path fill-rule=%27evenodd%27 clip-rule=%27evenodd%27 d=%27M2.64932 13.8001H1.33271C0.890887 13.8001 0.532715 13.442 0.532715 13.0001C0.532715 12.5583 0.890887 12.2001 1.33271 12.2001H2.64932C2.99354 11.0435 4.06496 10.2001 5.33337 10.2001C6.60177 10.2001 7.67319 11.0435 8.01741 12.2001H15.35C15.7918 12.2001 16.15 12.5583 16.15 13.0001C16.15 13.442 15.7918 13.8001 15.35 13.8001H8.01741C7.67319 14.9567 6.60177 15.8001 5.33337 15.8001C4.06496 15.8001 2.99354 14.9567 2.64932 13.8001ZM6.53327 13.015C6.5253 13.6709 5.99114 14.2001 5.33337 14.2001C4.67062 14.2001 4.13337 13.6629 4.13337 13.0001C4.13337 12.3374 4.67062 11.8001 5.33337 11.8001C5.99114 11.8001 6.5253 12.3294 6.53327 12.9853L6.53314 13.0001L6.53327 13.015ZM16.15 3.00013C16.15 2.55831 15.7918 2.20013 15.35 2.20013H8.01741C7.67319 1.04354 6.60177 0.200134 5.33337 0.200134C4.06496 0.200134 2.99354 1.04354 2.64932 2.20013H1.33271C0.890887 2.20013 0.532715 2.55831 0.532715 3.00013C0.532715 3.44196 0.890887 3.80013 1.33271 3.80013H2.64932C2.99354 4.95673 4.06496 5.80013 5.33337 5.80013C6.60177 5.80013 7.67319 4.95673 8.01741 3.80013H15.35C15.7918 3.80013 16.15 3.44196 16.15 3.00013ZM5.33337 1.80013C5.99112 1.80013 6.52527 2.32933 6.53327 2.98519L6.53314 3.00013L6.53327 3.01508C6.52527 3.67093 5.99112 4.20013 5.33337 4.20013C4.67062 4.20013 4.13337 3.66288 4.13337 3.00013C4.13337 2.33739 4.67062 1.80013 5.33337 1.80013ZM1.33301 7.20013C0.891181 7.20013 0.533009 7.55831 0.533009 8.00013C0.533009 8.44196 0.891181 8.80013 1.33301 8.80013H8.66556C9.00978 9.95673 10.0812 10.8001 11.3496 10.8001C12.618 10.8001 13.6894 9.95673 14.0337 8.80013H15.3503C15.7921 8.80013 16.1503 8.44196 16.1503 8.00013C16.1503 7.55831 15.7921 7.20013 15.3503 7.20013H14.0337C13.6894 6.04354 12.618 5.20013 11.3496 5.20013C10.0812 5.20013 9.00978 6.04354 8.66556 7.20013H1.33301ZM11.3496 6.80013C10.6869 6.80013 10.1496 7.33739 10.1496 8.00013C10.1496 8.66288 10.6869 9.20013 11.3496 9.20013C12.0124 9.20013 12.5496 8.66288 12.5496 8.00013C12.5496 7.33739 12.0124 6.80013 11.3496 6.80013Z%27 fill=%27white%27/></svg>");
+  margin-right: 0.6rem;
+}
+
+.as-oil-l-row.as-oil-l-buttons .as-oil-l-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.as-oil-l-row.as-oil-l-buttons .as-oil-l-item button {
+    width: 100%;
+    max-width: none;
+}
+.as-oil-cpc__right .as-oil-l-row.as-oil-l-buttons .as-oil-l-item {
+  width: 100%;
+}
+
+.as-oil-cpc__row-btn-all .as-oil__btn-secondary {
+  max-width: none !important;
+}
+/* END CSS BOTTONI */
+
+/* START CSS SCROLLBAR */
+  div.as-oil__intro-txt::-webkit-scrollbar {
+    display: block;
+    width: 2px;
+  }
+  
+  /* Track */
+  div.as-oil__intro-txt::-webkit-scrollbar-track {
+    --avacy_third_parties_background: #edeff3;
+    border-radius: 0;
+    background: #edeff3;
+    background: var(--avacy_third_parties_background);
+  }
+  
+  /* Handle */
+  div.as-oil__intro-txt::-webkit-scrollbar-thumb {
+    --avacy_accent_primary: #252a3f;
+    background: #252a3f;
+    background: var(--avacy_accent_primary);
+    border-radius: 0;
+  }
+  
+  /* Handle on hover */
+  div.as-oil__intro-txt::-webkit-scrollbar-thumb:hover {
+    --avacy_accent_primary: #252a3f;
+    background: #252a3f;
+    background: var(--avacy_accent_primary);
+  }
+/* END CSS SCROLLBAR */
+
+/* START GENERALE */
+  div.as-oil-content-overlay {
+    padding: 1.5rem 1rem;
+  }
+  
+  .as-oil__intro-txt {
+    height: 15vh;
+  }
+
+  #as-oil-cpc > div > div.as-oil__top-cpc > div.as-oil__top-cpc-content > p {
+    height: 7vh;
+  }
+
+  body.avacy-mobile-env .as-oil-content-overlay {
+    height: 100vh !important; /* set height as viewport height for all devices */
+  }
+
+  div.as-oil-l-wrapper-layout-max-width {
+    padding-top: 5rem;
+  }
+
+
+  body.avacy-mobile-env div.as-oil-l-wrapper-layout-max-width {
+    height: 100% !important;
+  }
+
+  div.as-oil-l-wrapper-layout-max-width.as-oil-cpc-wrapper {
+    padding-top: 0;
+  }
+
+  div.as-oil__intro-txt {
+    max-height: 40vh;
+  }
+
+  div.as-oil__heading {
+    min-width: 100%;
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .as-oil-cpc__purpose-header {
+    margin: 0 2rem 0 0 !important;
+  }
+  
+  .as-oil-cpc__purpose-text {
+    padding-right: 50px !important;
+  }
+  
+  .as-oil-third-party-list-element .as-oil-third-party-toggle-part {
+    margin-left: 0 !important;
+    margin-top: 0.5rem !important;
+  }
+  
+  .as-oil-third-party-name {
+    margin: 0 1.5rem !important;
+    flex: 1;
+  }
+  
+  .as-oil-cpc__purpose {
+    padding: 2rem 0.5rem !important;
+  }
+  
+  .Vendor.as-oil-third-party-list-element {
+    padding: 1.5rem !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .Vendor__Heading {
+    align-items: flex-start !important;
+  }
+  
+  .as-oil-back-button__icon {
+    max-height: 1.1rem !important;
+    max-width: 1.1rem !important;
+  }
+
+  .as-oil-cpc__content {
+    width: 100%;
+    padding-top: 1rem;
+    position: relative;
+    height: 100%;
+  }
+
+  .as-oil-cpc__content::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 2rem);
+    left: 1rem;
+    top: 0;
+    background-color: #eaeaea;
+  }
+
+  body.avacy-mobile-env div.as-oil-cpc__middle {
+    height: 100%;
+    max-height: calc(100vh - 24rem);
+  }
+
+  .as-oil-cpc__switch {
+    width: 58px !important;
+    height: 32px !important;
+  }
+
+  .as-oil-cpc__slider:before {
+      height: 26px !important;
+      width: 26px !important;
+  }
+
+  .as-oil-cpc__switch input:checked ~ .as-oil-cpc__slider:before {
+    transform: translateX(26px) !important;
+  }
+/* END GENERALE */
+
+/* START SECOND LAYER */
+div#as-oil-cpc {
+  padding: 1.5rem 0 0 !important;
+}
+
+
+.as-oil-cpc-wrapper .as-oil__heading,
+.as-oil-cpc-wrapper div.as-oil__intro-txt,
+.as-oil-cpc__row-btn-all,
+.as-oil-cpc__left,
+.as-oil-cpc__middle,
+button.as-oil-back-button.as-js-oilback {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.as-oil-cpc__row-title {
+  padding-top: 1.3rem;
+}
+
+.as-oil-cpc__row-btn-all {
+  margin-top: 0 !important;
+}
+
+.as-oil__btn-secondary {
+    min-width: auto !important;
+}
+
+.as-oil-l-row .as-oil-l-buttons {
+    padding: 0;
+}
+
+.as-oil-cpc__right {
+    padding: 1rem;
+    border-top: 0 !important;
+}
+/* END SECOND LAYER */
+
+/* START MOBILE */
+.as-oil.OilMobile,
+.as-oil.OilMobile .as-oil-cpc__purpose-text, 
+.as-oil.OilMobile .as-oil-cpc__purpose-legal-text {
+  color: #252a3f !important;
+}
+
+.as-oil.OilMobile .as-oil__intro-txt {
+  height: 45vh;
+  max-height: 40vh !important;
+  color: #252a3f !important;
+}
+
+.as-oil.OilMobile .as-oil__top-cpc {
+  height: 19vh !important;
+}
+
+.as-oil.OilMobile .as-oil__top-cpc .as-oil__intro-txt {
+  height: auto;
+}
+
+/* Regola per mobile < 4" */
+@media screen and (max-width: 320px) {
+  body.avacy-mobile-env .as-oil.OilMobile .as-oil__intro-txt{
+    max-height: 30vh !important; /* stretch text div in first layer */
+  }
+
+  body.avacy-mobile-env .as-oil-cpc__right {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+.as-oil.OilMobile .as-oil__intro-txt a,
+.as-oil.OilMobile .as-oil-back-button__text {
+  font-weight: bold;
+  color: #252a3f;
+}
+
+.as-oil.OilMobile .as-oil__heading {
+  font-weight: bold;
+}
+
+.as-oil.OilMobile .as-oil__btn-secondary {
+  background-color: #d6dbe6;
+  color: #252a3f;
+}
+
+.as-oil.OilMobile .as-oil__btn-secondary:hover {
+  background-color: #d6dbe6;
+  color: #252a3f;
+}
+
+.as-oil.OilMobile .as-oil__btn-primary,
+.as-oil.OilMobile .as-oil__btn-tertiary {
+  background-color: #000099;
+}
+
+.as-oil.OilMobile .as-oil-third-party-list-element svg path {
+  fill: #252a3f;
+}
+
+.as-oil.OilMobile .as-oil-cpc__row-thirdPartiesText, 
+.as-oil.OilMobile .as-oil-cpc__row-customThirdPartiesText{
+  color: #252a3f;
+}
+
+.as-oil.OilMobile .as-oil-cpc__row-thirdPartiesText a, 
+.as-oil.OilMobile .as-oil-cpc__row-customThirdPartiesText a {
+  font-weight: bold;
+  color: #252a3f;
+}
+
+.as-oil.OilMobile .as-oil__btn-primary:hover,
+.as-oil.OilMobile .as-oil__btn-tertiary:hover {
+  background-color: #000099;
+}
+
+.as-oil.OilMobile .as-oil-content-overlay[data-qa="oil-cpc-overlay"] .as-oil-cpc__row-btn-all {
+  padding-bottom: 1rem !important;
+}
+
+.as-oil.OilMobile .as-oil-cpc__left a {
+  white-space: nowrap !important;
+  width: auto !important;
+  min-width: initial !important;
+  display: table;
+}
+
+.as-oil.OilMobile .as-oil-cpc__row-title,
+.as-oil.OilMobile .as-oil-cpc__purpose-header.Purpose__Title,
+.as-oil.OilMobile .as-oil-cpc__left a {
+  font-weight: bold;
+}
+/* END MOBILE */
+
+@media screen and (min-width: 350px) {
+ 
+  body.avacy-mobile-env div.as-oil-content-overlay {
+    padding: 2rem 1rem 2rem 1rem !important;
+  }
+
+  body.avacy-mobile-env .as-oil.OilMobile .as-oil__intro-txt {
+    max-height: 50vh !important;
+  }
+  
+}
+@media screen and (min-width: 376px) {
+  .as-oil__close-banner::after,
+  .as-oil__intro-txt,
+  .as-oil__btn-primary,
+  .as-oil-back-button,
+  .as-oil-cpc__category-link,
+  .as-oil__btn-secondary,
+  .as-oil-cpc__row-title,
+  .as-oil-cpc__purpose-header,
+  .as-oil-cpc__purpose-text, 
+  .as-oil-cpc__purpose-legal-text,
+  .as-oil-cpc__row-thirdPartiesText, 
+  .as-oil-cpc__row-customThirdPartiesText,
+  .as-oil-third-party-list-element
+  .as-oil-third-party-name,
+  .as-oil-cpc__purpose-more, 
+  .as-oil-cpc__stack-more,
+  .as-oil-third-party-list-element .as-oil-third-party-category-list,
+  .as-oil-third-party-list-element .as-oil-third-party-link {
+      font-size: 16px !important;
+      font-size: calc(16px * var(--avacy_font_base_scale)) !important;
+  }
+
+  body.avacy-mobile-env .as-oil.OilMobile .as-oil__intro-txt {
+    max-height: 45vh !important;
+  }
+
+  body.avacy-mobile-env div#as-oil-cpc {
+    padding: 1rem 0 0 !important; /* adjusting Save button in pref center for iPhone Pro Max */ 
+  }
+  .as-oil__heading {
+    font-size: 32px !important;
+    font-size: calc(32px * var(--avacy_font_base_scale)) !important;
+  }
+
+  body.avacy-mobile-env .as-oil__heading {
+      font-size: 24px !important;
+      font-size: calc(24px * var(--avacy_font_base_scale)) !important; /* resize heading banner text */
+  }
+
+  body.avacy-mobile-env .div.as-oil-l-wrapper-layout-max-width {
+    padding-top: 4rem;
+  }
+
+  body.avacy-mobile-env .as-oil-cpc__right {
+    padding: 0.5rem 1rem 1rem 1rem;
+    border-top: 0 !important;
+  }
+
+  body.avacy-mobile-env .as-oil-cpc__content {
+    padding-top: 0.2rem;
+  }
+
+  body.avacy-mobile-env .as-oil.OilMobile .as-oil-content-overlay[data-qa="oil-cpc-overlay"] .as-oil-cpc__row-btn-all {
+    padding-bottom: 0.4rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .as-oil-l-row.as-oil-l-buttons {
+    flex-direction: column;
+  }
+
+  .as-oil-cpc__left a {
+      white-space: nowrap !important;
+      width: auto !important;
+      min-width: auto !important;
+  }
+
+  .as-oil-cpc__row-btn-all {
+      margin-top: 0 !important;
+  }
+
+  .as-oil__heading.is-scrolled {
+      margin-bottom: 0;
+  }
+
+  .as-oil-cpc__middle {
+      transition: all 0.5s linear;
+      
+  }
+  .as-oil-cpc__middle.is-scrolled {
+      padding: 0 1rem 0.3rem 1rem !important;
+      max-height: none !important;
+  }
+
+  .as-oil-l-wrapper-layout-max-width.as-oil-cpc-wrapper .as-oil__intro-txt {
+      transition: all 0.5s linear;
+      overflow: hidden;
+  }
+
+  .as-oil-l-wrapper-layout-max-width.as-oil-cpc-wrapper .as-oil__intro-txt.is-scrolled {
+      height: 0 !important;
+      visibility: hidden;
+  }
+}
+@media screen and (min-width: 601px) {
+  div.as-oil-content-overlay {
+    padding: 3rem 2rem;
+  }
+
+  .as-oil-cpc__left-wrapper {
+      align-items: flex-start !important;
+      text-align: center;
+  }
+
+  div.as-oil__heading {
+      font-size: 32px !important;
+      font-size: calc(32px * var(--avacy_font_base_scale)) !important;
+  }
+
+  .as-oil-l-row.as-oil-l-buttons {
+      justify-content: space-between;
+      flex-direction: row;
+  }
+
+  .as-oil-l-row.as-oil-l-buttons .as-oil-l-item {
+      width: 49%;
+  }
+
+  div.as-oil__intro-txt {
+      width: 100%;
+      overflow: auto;
+      max-height: 40vh;
+  }
+
+  div.as-oil-cpc__middle {
+    max-height: 35vh;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+
+  .as-oil-cpc__right {
+    margin-top: 0 !important;
+  }
+
+  .as-oil-l-row.as-oil-l-buttons {
+    width: 100%;
+    margin-top: 1rem;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+  div#as-oil-cpc .as-oil-l-row.as-oil-l-buttons {
+    margin-top: 0rem;
+  }
+
+  div#as-oil-cpc {
+    padding: 2.5rem 0 0 !important;
+  }
+
+  .as-oil-cpc-wrapper .as-oil__heading,
+  .as-oil-cpc-wrapper div.as-oil__intro-txt,
+  .as-oil-cpc__row-btn-all,
+  .as-oil-cpc__left,
+  .as-oil-cpc__middle,
+  button.as-oil-back-button.as-js-oilback {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  div.as-oil-cpc__middle-wrapper::-webkit-scrollbar {
+    display: block;
+    width: 6px;
+  }
+  
+  /* Track */
+  div.as-oil-cpc__middle-wrapper::-webkit-scrollbar-track {
+    --avacy_third_parties_background: #edeff3;
+    background: #edeff3;
+    background: var(--avacy_third_parties_background);
+  }
+  
+  /* Handle */
+  div.as-oil-cpc__middle-wrapper::-webkit-scrollbar-thumb {
+    --avacy_accent_primary: #252a3f;
+    background: #252a3f;
+    background: var(--avacy_accent_primary);
+  }
+  
+  /* Handle on hover */
+  div.as-oil-cpc__middle-wrapper::-webkit-scrollbar-thumb:hover {
+    --avacy_accent_primary: #252a3f;
+    background: #252a3f;
+    background: var(--avacy_accent_primary);
+  }
+
+  .as-oil-cpc__content {
+    padding-top: 2rem;
+    margin-top: 1rem;
+  }
+
+  body.avacy-mobile-env .as-oil-cpc__content {
+    height: 25rem; /* stretched central view in second layer  */
+  }
+
+  .as-oil-cpc__content::before {
+    width: calc(100% - 4rem);
+    left: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  div.as-oil-cpc__middle {
+    max-height: 40vh;
+    position: relative;
+  }
+
+  body.avacy-mobile-env .as-oil.OilMobile .as-oil__intro-txt {
+    max-height: 40vh !important;
+  }
+
+  body.avacy-mobile-env  div.as-oil-cpc__middle {
+    max-height: 25vh; /* compress second layer view with back-button in landscape mode */
+  }
+
+  body.avacy-mobile-env .as-oil__top-cpc-img {
+    max-width: 100px !important; 
+  }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .as-oil-cpc__middle.scroll-content-start::before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #dfdfdf !important;
+    background: -moz-linear-gradient(180deg, #dfdfdf 0%, rgba(249, 249, 249, 0) 100%) !important;
+    background: -webkit-linear-gradient(180deg, #dfdfdf 0%, rgba(249, 249, 249, 0) 100%) !important;
+    background: linear-gradient(180deg, #dfdfdf 0%, rgba(249, 249, 249, 0) 100%) !important;
+    height: 1.5rem !important;
+    opacity: 0.4;
+  }
+  .as-oil-cpc__middle.scroll-content-end::after {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #dfdfdf !important;
+    background: -moz-linear-gradient(0, #dfdfdf 0%, rgba(249, 249, 249, 0) 100%) !important;
+    background: -webkit-linear-gradient(0, #dfdfdf 0%, rgba(249, 249, 249, 0) 100%) !important;
+    background: linear-gradient(0, #dfdfdf 0%, rgba(249, 249, 249, 0) 100%) !important;
+    height: 1.5rem !important;
+    opacity: 0.4;
+  }
+}
+@media screen and (min-width: 1024px) {
+
+  body.avacy-mobile-env  div.as-oil-cpc__middle {
+    max-height: 45vh; /* stretch second layer view with back-button in landscape mode */
+  }
+
+  div.as-oil__intro-txt {
+      padding: 0;
+  }
+
+  a.js-cpc-category-link.as-oil-cpc__category-link {
+      text-align: left;
+  }
+
+  .as-oil-cpc__row-title {
+    padding-top: 0.5rem;
+  }
+
+  .as-oil-cpc-wrapper div.as-oil__intro-txt {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .as-oil-cpc-wrapper .as-oil-cpc__row-btn-all {
+    margin-left: auto;
+  }
+
+  .as-oil-cpc__right .as-oil-l-row.as-oil-l-buttons {
+    width: auto;
+  }
+
+  .as-oil-cpc__right {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+}
+@media screen and (min-width: 1281px) {
+  div.as-oil-l-wrapper-layout-max-width {
+    padding-top: 0rem;
+  }
+
+  div.as-oil__heading {
+    font-size: 42px;
+    font-size: calc(42px * var(--avacy_font_base_scale));
+  }
+
+  .as-oil-l-row.as-oil-l-buttons {
+      justify-content: flex-end;
+  }
+  .as-oil-l-row.as-oil-l-buttons > * + *{
+      margin-right: 1rem;
+  }
+  .as-oil-l-row.as-oil-l-buttons .as-oil-l-item {
+      width: auto;
+      min-width: 15rem;
+      max-width: none;
+  }
+  .as-oil-l-row.as-oil-l-buttons .as-oil-l-item button {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .as-oil-l-wrapper-layout-max-width.as-oil-cpc-wrapper {
+    align-items: flex-end;
+  }
+
+  .as-oil-cpc-wrapper .as-oil__top-cpc {
+    width: 60%;
+  }
+}
+
+/* Mobile browsing landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)  
+  and (orientation: landscape) { 
+
+    div.as-oil-content-overlay {
+      padding: 1rem 2rem;
+    }
+
+    div.as-oil-l-wrapper-layout-max-width {
+      padding-top: 4rem;
+    }
+
+    div.as-oil__heading{
+      font-size: calc(24px * var(--avacy_font_base_scale)) !important;
+    }
+
+    .as-oil__intro-txt {
+      height: 20vh;
+    }
+
+    .as-oil-cpc__row-title,
+    .as-oil__intro-txt, /* testo introduttivo  */
+    .as-oil-cpc__purpose-text { /* desc nelle pref  */ 
+      font-size: calc(14px * var(--avacy_font_base_scale)) !important;
+    }
+
+    .as-oil__btn-secondary, /* btn secondari */
+    .as-oil-cpc__category-link, /* link delle tab  */
+    .as-oil__btn-tertiary { /* btn salva  */
+      font-size: calc(12px * var(--avacy_font_base_scale)) !important;
+      min-height: 32px !important;
+    }
+
+    .as-oil-cpc__category-link {
+      padding: 5px 4px;
+      min-width: 150px;
+    }
+
+    .as-oil-cpc__purpose {
+      padding: 1rem 0.5rem !important;
+    }
+
+    .as-oil-cpc__switch {
+      width: 50px !important;
+      height: 25px !important;
+    }
+
+    .as-oil-cpc__slider:before {
+      height: 20px !important;
+      width: 20px !important;
+    }
+
+    .as-oil-cpc__left-wrapper{
+      overflow-x: hidden;
+    }
+
+    div.as-oil-cpc__middle{
+      max-height: 30vh;
+    }
+
+    .as-oil-cpc__right{
+      padding: .5rem;
+    }
+
+    .as-oil-cpc__content {
+      padding-top: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .as-oil-cpc__row-title {
+      margin: 0 0.5rem 0.5rem 0.5rem;
+    }
+
+    .as-oil-cpc__right{
+      padding-top: 0.5rem !important;
+    }
+
+    .as-oil-cpc__left{
+      margin-bottom: 0.5rem !important;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+
+    .as-oil-cpc__row-btn-all{
+      padding-bottom: 0.5rem !important;
+    }
+
+    .as-oil-cpc__purpose-text, 
+    .as-oil-cpc__purpose-legal-text {
+      margin: 0.5rem 0;
+    }
+
+    div#as-oil-cpc {
+      padding: 1rem 0 0 !important;
+    }
+
+    .as-oil-cpc-wrapper .as-oil__top-cpc{
+      display: none !important;
+    }
+}
+
+/* iPhone Pro Max */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+      .as-oil-cpc__row-btn-all {
+        padding: 1rem !important;
+      }
+  }
+</style><script src="/common/assets/js/webcomponents/rai-tracker-retrocomp.js" type="module"></script><style type="text/css">.as-oil__btn-optin{min-width:150px;max-width:220px;min-height:42px;margin:0;padding:.5rem 1rem;font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale));font-weight:700;font-family:Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;font-family:var(--avacy_font_family);border:none;border-radius:7px;cursor:pointer;width:100%;color:#fff;color:var(--avacy_btn_primary_text_color);background-color:#0099f2;background-color:var(--avacy_btn_primary_background);transition:opacity .8s ease 0s}.as-oil__btn-optin:focus{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px}@media (max-width:419px){.as-oil__btn-optin{padding:0}}@media (min-width:420px){.as-oil__btn-optin{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}}.as-oil__btn-optin:hover{background-color:#0099f2;background-color:var(--avacy_btn_primary_background_hover)}.as-oil__btn-optin-clicked{opacity:.3}@media (max-width:419px){.as-oil__btn-optin{width:auto;padding:0}}.as-oil__btn-blue{min-width:150px;max-width:220px;min-height:42px;margin:0;padding:.5rem 1rem;font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale));font-weight:700;font-family:Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;font-family:var(--avacy_font_family);border:none;border-radius:7px;cursor:pointer;width:100%;color:#fff;color:var(--avacy_btn_primary_text_color);background-color:#0099f2;background-color:var(--avacy_btn_primary_background)}.as-oil__btn-blue:focus{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px}@media (max-width:419px){.as-oil__btn-blue{padding:0}}@media (min-width:420px){.as-oil__btn-blue{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}}.as-oil__btn-blue:hover{background-color:#0099f2;background-color:var(--avacy_btn_primary_background_hover)}.as-oil__btn-grey{min-width:150px;max-width:220px;min-height:42px;margin:0;padding:.5rem 1rem;font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale));font-weight:700;font-family:Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;font-family:var(--avacy_font_family);border:none;border-radius:7px;cursor:pointer;width:100%;color:#aaa;color:var(--avacy_btn_secondary_text_color,var(--avacy_btn_primary_text_color));background-color:#eee;background-color:var(--avacy_btn_secondary_background,var(--avacy_btn_primary_background))}.as-oil__btn-grey:focus{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px}@media (max-width:419px){.as-oil__btn-grey{padding:0}}@media (min-width:420px){.as-oil__btn-grey{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}}.as-oil__btn-grey:hover{background-color:#eee;background-color:var(--avacy_btn_secondary_background_hover,var(--avacy_btn_primary_background_hover))}.as-oil__btn-primary{min-width:150px;max-width:220px;min-height:42px;margin:0;padding:.5rem 1rem;font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale));font-weight:700;font-family:Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;font-family:var(--avacy_font_family);border:none;border-radius:7px;cursor:pointer;width:100%;color:#fff;color:var(--avacy_btn_primary_text_color);background-color:#0099f2;background-color:var(--avacy_btn_primary_background);transition:opacity .8s ease 0s}.as-oil__btn-primary:focus{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px}@media (max-width:419px){.as-oil__btn-primary{padding:0}}@media (min-width:420px){.as-oil__btn-primary{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}}.as-oil__btn-primary:hover{background-color:#0099f2;background-color:var(--avacy_btn_primary_background_hover)}.as-oil__btn-primary-clicked{opacity:.3}@media (max-width:419px){.as-oil__btn-primary{width:auto;padding:0}}.as-oil__btn-secondary{min-width:150px;max-width:220px;min-height:42px;margin:0;padding:.5rem 1rem;font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale));font-weight:700;font-family:Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;font-family:var(--avacy_font_family);border:none;border-radius:7px;cursor:pointer;width:100%;color:#fff;color:var(--avacy_btn_secondary_text_color,var(--avacy_btn_primary_text_color));background-color:#0099f2;background-color:var(--avacy_btn_secondary_background,var(--avacy_btn_primary_background))}.as-oil__btn-secondary:focus{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px}@media (max-width:419px){.as-oil__btn-secondary{padding:0}}@media (min-width:420px){.as-oil__btn-secondary{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}}.as-oil__btn-secondary:hover{background-color:#0099f2;background-color:var(--avacy_btn_secondary_background_hover,var(--avacy_btn_primary_background_hover))}.as-oil__btn-tertiary{min-width:150px;max-width:220px;min-height:42px;margin:0;padding:.5rem 1rem;font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale));font-weight:700;font-family:Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;font-family:var(--avacy_font_family);border:none;border-radius:7px;cursor:pointer;width:100%;color:#fff;color:var(--avacy_btn_tertiary_text_color,var(--avacy_btn_primary_text_color));background-color:#0099f2;background-color:var(--avacy_btn_tertiary_background,var(--avacy_btn_primary_background))}.as-oil__btn-tertiary:focus{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px}@media (max-width:419px){.as-oil__btn-tertiary{padding:0}}@media (min-width:420px){.as-oil__btn-tertiary{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}}.as-oil__btn-tertiary:hover{background-color:#0099f2;background-color:var(--avacy_btn_tertiary_background_hover,var(--avacy_btn_primary_background_hover))}.as-oil-l-buttons{align-items:center;width:100%}.as-oil-l-buttons,.as-oil-l-buttons>*{display:flex;justify-content:center}@media (max-width:1022px){.as-oil-l-buttons{margin-top:1rem;border-top:1px solid #d3d3d3;padding-top:1rem}}@media (min-width:1024px){.as-oil-l-buttons{width:25%;flex-direction:column;margin-top:1rem;align-items:flex-end}}.Reject .as-oil-l-buttons{flex-direction:column}.Reject .as-oil-l-buttons .as-oil__btn-primary{width:100%;max-width:none}@media (min-width:767px){.Reject .as-oil-l-buttons{flex-direction:row;justify-content:center}}@media (min-width:1024px){.Reject .as-oil-l-buttons{width:100%;flex-direction:row;margin-top:1rem;align-items:flex-end;justify-content:flex-end}}.as-oil-back-button-wrapper{width:100%}.as-oil-back-button{border:none;background-color:transparent;order:0;padding:0;margin-bottom:1rem;border-radius:2px;display:flex;align-items:center}.as-oil-back-button__icon{max-height:1rem;max-width:1rem}.as-oil-back-button__text{margin-left:1rem}.as-oil{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;position:fixed;z-index:2147483647;bottom:0;left:0;width:100%}.as-oil,.as-oil *,.as-oil:after,.as-oil :after,.as-oil:before,.as-oil :before{box-sizing:border-box}.as-oil--optin{visibility:hidden}.as-oil__intro-txt{display:inline-block;width:100%;margin:.5rem 0;max-height:30vh;padding-right:.6rem;overflow-y:scroll}.as-oil__intro-txt>:last-child{margin-bottom:0}.as-oil__intro-txt>:first-child{margin-top:0}.as-oil__heading{min-width:90%;flex:1;padding-right:1.5rem;display:flex;align-items:center}.as-oil__close-banner{cursor:pointer;position:absolute;top:0;right:0;border-radius:2px}.as-oil__close-banner:after{content:"\D7";font-size:2rem;font-weight:500;width:1rem;height:1rem;display:flex;align-items:center;justify-content:center}.as-oil__close-banner:focus-visible{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px}.as-oil__banner-logo{margin:0 auto;padding-right:1rem}.as-oil__banner-logo img{max-width:3rem;max-height:3rem;object-fit:contain;width:100%;height:100%}@media (max-width:418px){.as-oil__banner-logo{padding-right:0}}@media (min-width:1024px){.as-oil__intro-txt{width:75%;margin:1rem 0;padding-right:2rem;max-height:none;overflow:hidden}.Reject .as-oil__intro-txt{width:100%}.as-oil__banner-logo{padding-right:0;margin:0 1rem 0 0}}.as-oil-content-overlay{position:absolute;width:100%;bottom:0;left:0;padding:1rem}.as-oil-content-overlay:after{content:"";display:table;clear:both}@media (min-width:420px){.as-oil-content-overlay{padding:2rem}}@media (max-width:419px){.as-oil-l-row{width:100%}}.as-oil-l-row--fixed-width,.as-oil-l-wrapper-layout-max-width{max-width:1280px;position:relative;margin:0 auto;display:flex;flex-wrap:wrap}.as-oil-l-item{float:right;clear:both;text-align:right;width:100%;padding:.2rem .5em}@supports (display:flex){.as-oil-l-item{float:none}}@media (min-width:767px){.as-oil-l-item{width:auto}.Reject .as-oil-l-item__optin{order:2}.Reject .as-oil-l-item__reject-all{order:1}.Reject .as-oil-l-item__advanced-settings{order:0;margin-right:auto}}@media (min-width:1023px){.as-oil-l-item{width:100%}.Reject .as-oil-l-item{max-width:20%}}.as-oil,.as-oil .as-oil-content-overlay{bottom:auto;top:auto;left:auto;right:auto}.as-oil.PositionBottom{bottom:0;left:0}.as-oil.PositionBottom.SlideIn{animation:slide-from-bottom .7s;animation-fill-mode:forwards;left:0}.as-oil.PositionBottom.FadeIn{animation:fade-in .7s;animation-fill-mode:forwards}.as-oil.PositionBottom .as-oil-content-overlay{bottom:0;left:0}.as-oil.PositionTop{top:0;left:0}.as-oil.PositionTop.SlideIn{animation:slide-from-top .7s;animation-fill-mode:forwards;left:0}.as-oil.PositionTop.FadeIn{animation:fade-in .7s;animation-fill-mode:forwards}.as-oil.PositionCenterTop,.as-oil.PositionTop .as-oil-content-overlay{top:0;left:0}.as-oil.PositionCenterTop.SlideIn{animation:slide-from-top .7s;animation-fill-mode:forwards;left:0}.as-oil.PositionCenterTop.FadeIn{animation:fade-in .7s;animation-fill-mode:forwards}.as-oil.PositionCenterTop .as-oil-content-overlay{top:32px;left:50%;transform:translate(-50%);max-width:1280px;box-shadow:0 4px 10px 0 rgba(0,0,0,.2)}.as-oil.PositionCenter{left:50%;top:50%}.as-oil.PositionCenter .as-oil-content-overlay{max-width:1280px;box-shadow:0 4px 10px 0 rgba(0,0,0,.2)}.as-oil.PositionCenter.FadeIn{animation:fade-in .7s;animation-fill-mode:forwards}.as-oil.PositionCenter .as-oil-content-overlay{bottom:50%;left:0;transform:translate(-50%,50%)}.as-oil.PositionCenterBottom{left:0;bottom:0}.as-oil.PositionCenterBottom.SlideIn{animation:slide-from-bottom .7s;animation-fill-mode:forwards;left:0}.as-oil.PositionCenterBottom.FadeIn{animation:fade-in .7s;animation-fill-mode:forwards}.as-oil.PositionCenterBottom .as-oil-content-overlay{bottom:32px;left:50%;transform:translate(-50%);max-width:1280px;box-shadow:0 4px 10px 0 rgba(0,0,0,.2)}@keyframes slide-from-bottom{0%{transform:translateY(300px)}}@keyframes slide-from-top{0%{top:-300px}to{top:0}}@keyframes fade-in{0%{opacity:0}to{opacity:1}}.as-oil.OilMobile{position:static}.as-oil.OilMobile .as-oil-content-overlay{overflow:auto;position:static}.as-oil.OilMobile .as-oil-content-overlay[data-qa=oil-cpc-overlay]{top:0}.as-oil.OilMobile .as-oil-content-overlay[data-qa=oil-cpc-overlay] .as-oil-cpc__row-btn-all{margin-top:0;padding-bottom:0}.as-oil.OilMobile .as-oil-content-overlay[data-qa=oil-cpc-overlay] .as-oil-cpc__purpose{padding-left:10px}.as-oil.OilMobile .as-oil__intro-txt{max-height:none;overflow:auto}.as-oil.OilMobile .as-oil-cpc-wrapper{height:100%;flex-direction:column;flex-wrap:nowrap;justify-content:flex-start}.as-oil{font-family:Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;font-family:var(--avacy_font_family);font-size:16px;font-size:calc(16px * var(--avacy_font_base_scale));color:#80888c;color:var(--avacy_text_color_primary)}.as-oil a{cursor:pointer;border-radius:2px}.as-oil a:focus-visible{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:0}.as-oil__heading{font-size:18px;font-size:calc(18 * var(--avacy_font_base_scale));font-weight:600;line-height:1.2;color:#262626;color:var(--avacy_text_color_secondary)}.as-oil__intro-txt{font-size:12px;font-size:calc(12px * var(--avacy_font_base_scale));font-weight:400;line-height:1.5}.as-oil__intro-txt a{margin:0 1px;text-decoration:none;font-weight:600}.as-oil__intro-txt a,.as-oil__intro-txt a:hover{color:#0099f2;color:var(--avacy_accent_primary)}@media (min-width:420px){.as-oil__heading{font-size:22px;font-size:calc(22px * var(--avacy_font_base_scale))}}@media (min-width:1280px){.as-oil__intro-txt{font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale))}}.as-oil-cpc__left{text-align:center}.as-oil-cpc__left a{text-decoration:none}.as-oil-cpc__row-btn-all{text-align:center}.as-oil-cpc__row-title{font-size:15px;font-size:calc(15px * var(--avacy_font_base_scale));font-weight:600;color:#262626;color:var(--avacy_text_color_secondary)}.as-oil-cpc__row-customThirdPartiesText,.as-oil-cpc__row-thirdPartiesText{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale));color:#80888c;color:var(--avacy_text_color_primary)}.as-oil-cpc__row-customThirdPartiesText a,.as-oil-cpc__row-thirdPartiesText a{color:#0099f2;color:var(--avacy_accent_primary);font-weight:600;text-decoration:none}.as-oil-cpc__object-legint{font-weight:600;font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}.as-oil-cpc__category-link{font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale));font-weight:600;color:#80888c;color:var(--avacy_text_color_primary);min-width:110px}.as-oil-cpc__category-link--active{color:#0099f2;color:var(--avacy_accent_secondary,var(--avacy_text_color_secondary))}.as-oil-cpc__purpose-header{font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale));font-weight:600;color:#262626;color:var(--avacy_text_color_secondary)}.as-oil-cpc__purpose-legal-text,.as-oil-cpc__purpose-text{font-size:12px;font-size:calc(12px * var(--avacy_font_base_scale));color:#80888c;color:var(--avacy_text_color_primary);margin:1rem 0}.as-oil-cpc__purpose-more,.as-oil-cpc__stack-more{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}@media (min-width:1024px){.as-oil-cpc__left{text-align:left}.as-oil-cpc__row-title{font-size:21px;font-size:calc(21px * var(--avacy_font_base_scale))}.as-oil-cpc__purpose-header{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}.as-oil-cpc__purpose-legal-text,.as-oil-cpc__purpose-text{font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale))}.as-oil-cpc__category-link{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}}.as-oil-back-button{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale));line-height:1}.as-oil-back-button__text{font-family:Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;font-family:var(--avacy_font_family);font-weight:600;color:#80888c;color:var(--avacy_text_color_primary)}.as-oil-back-button__icon{font-size:18px;font-size:calc(18px * var(--avacy_font_base_scale))}.InfoPanel__Close{font-size:2.5rem;line-height:.5}.InfoPanel__Close,.InfoPanel__Title{color:#262626;color:var(--avacy_text_color_secondary)}.InfoPanel__Title{font-size:18px;font-size:calc(18 * var(--avacy_font_base_scale));font-weight:600;line-height:1.2}.InfoPanel__Content{font-size:12px;font-size:calc(12px * var(--avacy_font_base_scale));font-weight:400;line-height:1.5}.InfoPanel__Content b,.InfoPanel__Content strong{color:#262626;color:var(--avacy_text_color_secondary);font-weight:600}@media (min-width:420px){.InfoPanel__Title{font-size:22px;font-size:calc(22px * var(--avacy_font_base_scale))}}@media (min-width:1280px){.InfoPanel__Content{font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale))}}.as-oil-content-overlay{background-color:#f9f9f9;background-color:var(--avacy_background_color);box-shadow:0 -8px 20px 0 rgba(0,0,0,.2)}.as-oil-content-overlay:focus-visible{outline-color:transparent}</style><style type="text/css">#oil-preference-center{overflow:hidden}#oil-preference-center .as-oil-back-button{display:none}#as-oil-cpc.as-oil-content-overlay:focus-visible{outline-color:transparent}.as-oil-cpc__slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#b1b6b8;background-color:var(--avacy_slider_background);transition:.4s;border-radius:17px}.as-oil-cpc__slider:focus-visible{outline-color:var(--avacy_btn_primary_background_hover);outline-offset:2px}.as-oil-cpc__slider:before{position:absolute;content:"";height:14px;width:14px;left:3px;bottom:3px;background-color:#fff;background-color:var(--avacy_slider_background_circle);box-shadow:0 2px 4px 0 rgba(0,0,0,.08);transition:.4s;border-radius:50%}.as-oil-cpc-wrapper{font-family:Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;font-family:var(--avacy_font_family)}.as-oil-cpc-wrapper button{cursor:pointer}.as-oil-cpc-wrapper button.as-oil-back-button:hover{background-color:transparent}.as-oil-cpc-wrapper button:focus-visible{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px}.as-oil-cpc-wrapper .as-oil__heading,.as-oil-cpc-wrapper .as-oil__intro-txt{display:block;width:100%;order:1}.as-oil-cpc-wrapper .as-oil__heading>:last-child,.as-oil-cpc-wrapper .as-oil__intro-txt>:last-child{margin-bottom:0}.as-oil-cpc-wrapper .as-oil__heading>:first-child,.as-oil-cpc-wrapper .as-oil__intro-txt>:first-child{margin-top:0}.as-oil-cpc-wrapper .as-oil__heading{padding-right:0;min-width:100%}.as-oil-cpc-wrapper .as-oil__top-cpc{order:1;display:flex}.as-oil-cpc-wrapper .as-oil__top-cpc-img{display:none}.as-oil-cpc-wrapper .as-oil-l-item{justify-content:flex-end;padding:.2rem}.as-oil-cpc-wrapper #as-js-third-parties-list,.as-oil-cpc-wrapper #as-oil-additional-consent-list,.as-oil-cpc-wrapper #as-oil-custom-third-parties-list{background-color:#eff0f0;background-color:var(--avacy_third_parties_background)}@media (min-width:768px){.as-oil-cpc-wrapper .as-oil__top-cpc{order:1;display:flex}.as-oil-cpc-wrapper .as-oil__top-cpc-img{display:block;width:20%;max-width:150px;padding:.5rem 0 0 2rem}.as-oil-cpc-wrapper .as-oil__top-cpc-img img{width:100%;height:auto}.as-oil-cpc-wrapper .as-oil__top-cpc-content{flex:1}}@media (min-width:1024px){.as-oil-cpc-wrapper .as-oil__intro-txt{width:60%}}.as-oil-cpc__content{order:1;display:flex;flex-direction:row;flex-wrap:wrap}.as-oil-cpc__left{display:flex;align-items:center;margin-bottom:1rem;width:100%}@media (max-width:418px){.as-oil-cpc__left.scroll-tabs-end{position:relative}.as-oil-cpc__left.scroll-tabs-end:after{position:absolute;content:"";right:0;top:0;height:100%;width:2rem;background:#f9f9f9;background:-moz-linear-gradient(270deg,#f9f9f9 0,hsla(0,0%,98%,0) 100%);background:-webkit-linear-gradient(270deg,#f9f9f9,hsla(0,0%,98%,0));background:linear-gradient(270deg,#f9f9f9,hsla(0,0%,98%,0))}.as-oil-cpc__left.scroll-tabs-start{position:relative}.as-oil-cpc__left.scroll-tabs-start:after{position:absolute;content:"";left:0;top:0;height:100%;width:2rem;background:#f9f9f9;background:-moz-linear-gradient(90deg,#f9f9f9 0,hsla(0,0%,98%,0) 100%);background:-webkit-linear-gradient(90deg,#f9f9f9,hsla(0,0%,98%,0));background:linear-gradient(90deg,#f9f9f9,hsla(0,0%,98%,0))}}@media (min-width:1024px){.as-oil-cpc__left{align-items:flex-start;width:auto}}.as-oil-cpc__left-wrapper{display:flex;align-items:center;overflow-x:scroll;padding:2px}.as-oil-cpc__left-wrapper::-webkit-scrollbar{display:none}@media (min-width:1024px){.as-oil-cpc__left-wrapper{flex-direction:column;align-items:flex-start;width:auto}}.as-oil-cpc__middle{display:flex;max-height:300px;height:30vh;width:100%}@media (max-width:418px){.as-oil-cpc__middle.scroll-content-end{position:relative}.as-oil-cpc__middle.scroll-content-end:after{pointer-events:none;position:absolute;z-index:1;content:"";left:0;bottom:0;width:100%;height:2rem;background:#f9f9f9;background:-moz-linear-gradient(0,#f9f9f9 0,hsla(0,0%,98%,0) 100%);background:-webkit-linear-gradient(0,#f9f9f9,hsla(0,0%,98%,0));background:linear-gradient(0,#f9f9f9,hsla(0,0%,98%,0))}.as-oil-cpc__middle.scroll-content-start{position:relative}.as-oil-cpc__middle.scroll-content-start:before{pointer-events:none;position:absolute;content:"";z-index:1;left:0;top:0;width:100%;height:2rem;background:#f9f9f9;background:-moz-linear-gradient(180deg,#f9f9f9 0,hsla(0,0%,98%,0) 100%);background:-webkit-linear-gradient(180deg,#f9f9f9,hsla(0,0%,98%,0));background:linear-gradient(180deg,#f9f9f9,hsla(0,0%,98%,0))}}@media (min-width:420px){.as-oil-cpc__middle{padding:0 1.5rem 1.5rem;max-height:300px;height:40vh}}@media (min-width:768px){.as-oil-cpc__middle{flex:1}}.as-oil-cpc__middle-wrapper{height:100%;overflow:auto}.as-oil-cpc__middle-wrapper::-webkit-scrollbar{display:none}@media (min-width:768px){.as-oil-cpc__middle-wrapper{flex:1;padding-right:.5rem}.as-oil-cpc__middle-wrapper::-webkit-scrollbar{display:block;width:.5rem}.as-oil-cpc__middle-wrapper::-webkit-scrollbar-track{border-radius:.3rem;background:#eff0f0;background:var(--avacy_third_parties_background)}.as-oil-cpc__middle-wrapper::-webkit-scrollbar-thumb{border-radius:.3rem}.as-oil-cpc__middle-wrapper::-webkit-scrollbar-thumb,.as-oil-cpc__middle-wrapper::-webkit-scrollbar-thumb:hover{background:#0099f2;background:var(--avacy_accent_primary)}}.as-oil-cpc__right{width:100%;display:flex}@media (min-width:420px){.as-oil-cpc__right{justify-content:flex-end;padding-top:1rem;margin-top:1rem;border-top:1px solid #d3d3d3}}.as-oil-cpc__row-btn-all{width:100%;order:1;margin-top:1rem;padding-bottom:1rem;display:flex}.as-oil-cpc__row-btn-all button,.as-oil-cpc__row-btn-all span{display:inline-flex;align-items:center;justify-content:center;width:49%;margin:.2rem;text-align:center;padding:.7rem 1rem}.as-oil-cpc__row-title{margin:0 .5rem 1.2rem}.as-oil-cpc__row-title:focus-visible{outline:none}.as-oil-cpc__row-customThirdPartiesText,.as-oil-cpc__row-thirdPartiesText,.as-oil-cpc__row-title#as-oil-cpc-additional-consent,.as-oil-cpc__row-title#as-oil-cpc-custom-third-parties,.as-oil-cpc__row-title#as-oil-cpc-third-parties{padding:1rem 1rem 0;margin:0;background-color:#eff0f0;background-color:var(--avacy_third_parties_background)}.as-oil-cpc__category-link{padding:6px 8px;display:block}.js-stack .as-oil-cpc__purpose{padding:1rem 0 1rem 1rem}.as-oil-cpc__purpose{border-top:1px solid #eaeaea;padding:2rem 1rem}.as-oil-cpc__purpose-container{position:relative;display:flex}.as-oil-cpc__purpose-header{margin:0 10px 0 0}.as-oil-cpc__purpose-legal-text,.as-oil-cpc__purpose-text{margin-top:10px}.as-oil-cpc__switch{width:40px;height:20px;position:relative}.as-oil-cpc__switch input{display:none}.as-oil-cpc__switch input:checked~.as-oil-cpc__slider{background-color:#0099f2;background-color:var(--avacy_accent_primary)}.as-oil-cpc__switch input:focus~.as-oil-cpc__slider{box-shadow:0 0 1px #0099f2;box-shadow:0 0 1px var(--avacy_accent_primary)}.as-oil-cpc__switch input:checked~.as-oil-cpc__slider:before{transform:translateX(20px)}.as-oil-cpc__purpose-legal-text{padding-left:1rem;border-left:3px solid #eff0f0;border-left:3px solid var(--avacy_third_parties_background);margin-top:0;margin-left:.2rem}.as-oil-cpc__purpose-more,.as-oil-cpc__stack-more{font-weight:700;font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale));cursor:pointer;border-radius:2px;align-self:start}.as-oil-cpc__purpose-more:focus-visible,.as-oil-cpc__stack-more:focus-visible{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px}.as-oil-cpc__stack-more{margin-bottom:1rem}.as-oil-cpc__object-legint{padding:2rem 1.5rem 1rem;display:flex;align-items:center;justify-content:center;background-color:#eff0f0;background-color:var(--avacy_third_parties_background)}@media (max-width:1022px){.as-oil-cpc__row-btn-all{justify-content:center}}@media (min-width:1024px){.as-oil-cpc__row-btn-all{margin-top:0;width:40%;justify-content:flex-end}.as-oil-cpc__object-legint{justify-content:flex-end}}.LegintRejectPanel{display:flex;align-items:center;padding:1rem;background-color:#dedede;background-color:var(--avacy_secondary_background_color);max-width:350px;width:95%}.LegintRejectPanel__Title{flex:1}.LegintRejectPanel__Info{cursor:pointer;color:#0099f2;color:var(--avacy_accent_primary)}.Purpose__Container,.Vendor__Container{display:flex;flex-direction:column}.Purpose__Heading,.Vendor__Heading{display:flex;justify-content:space-between}.Purpose__Switches,.Vendor__Switches{position:relative;display:flex;flex-direction:column;align-items:flex-end}@media (min-width:1280px){.Purpose__Switches,.Vendor__Switches{flex-direction:row;align-items:center;justify-content:flex-end}}.Vendor{padding:1rem 1.5rem;display:flex;flex-wrap:wrap}.Vendor__Heading{flex:1;display:flex;align-items:center;justify-content:flex-start;border-radius:2px}.Vendor__Heading .as-oil-third-party-name{font-weight:700;cursor:pointer;font-size:13px;font-size:calc(13px * var(--avacy_font_base_scale));margin-left:.5rem}.Vendor__Heading:focus-visible{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px}@media (min-width:500px){.Vendor__Heading{flex:none;margin-right:auto}}.LegintBlock{background-color:#dedede;background-color:var(--avacy_secondary_background_color);padding:1rem 1.5rem;margin:.7rem 0;width:100%;display:flex;align-items:center}.LegintBlock__Description{flex:1;font-size:12px;font-size:calc(12px * var(--avacy_font_base_scale));padding-right:.5rem}@media (min-width:1280px){.LegintBlock__Description{font-size:14px;font-size:calc(14px * var(--avacy_font_base_scale))}}.LegintBlock__Input input{display:none}.LegintBlock__Input input:checked~.LegintBlock__CheckBox{border:2px solid #0099f2;border:2px solid var(--avacy_accent_primary);position:relative;background-color:#0099f2;background-color:var(--avacy_accent_primary)}.LegintBlock__Input input:checked~.LegintBlock__CheckBox:after{position:absolute;content:"";width:100%;height:100%;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='512' viewBox='0 0 515.556 515.556' width='512'%3E%3Cpath d='M0 274.226l176.549 176.886L515.556 112.44l-48.67-47.997-290.337 290L47.996 225.891z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23FFF'/%3E%3C/svg%3E");background-position:50%;background-repeat:no-repeat;background-size:70%}.LegintBlock__CheckBox{background-color:#b1b6b8;background-color:var(--avacy_slider_background);border:2px solid #b1b6b8;border:2px solid var(--avacy_slider_background);width:1rem;height:1rem;border-radius:3px;display:block;cursor:pointer}.InfoPanel{position:absolute;bottom:0;left:0;width:100%;padding:2rem;z-index:2}.InfoPanel__Wrapper{position:relative;flex-wrap:nowrap;flex-direction:column}.InfoPanel__Close{position:absolute;top:0;right:0;cursor:pointer}.InfoPanel__Close:focus-visible{outline:2px solid var(--avacy_btn_primary_background_hover);border-radius:2px}.InfoPanel__Version{position:absolute;bottom:0;right:0;cursor:pointer}.InfoPanel__Content{max-height:60vh;overflow:auto;margin-bottom:2rem}.DiscloseVendorCookies{margin:1rem 0;display:flex;flex-direction:column}.DiscloseVendorCookies__Row{display:flex}.DiscloseVendorCookies__Label{font-weight:700;margin-right:.5rem}.CookieMaxDuration{padding-top:1rem}.CookieMaxDuration__MoreInfo{text-decoration:underline;cursor:pointer}.CookieMaxDuration__MoreInfo:focus-visible{outline:2px solid var(--avacy_btn_primary_background_hover);outline-offset:2px;border-radius:2px}</style><style type="text/css">#oil-preference-center{overflow:hidden}#oil-preference-center .as-oil-back-button{display:none}#as-oil-cpc.as-oil-content-overlay:focus-visible{outline-color:transparent}.as-oil-cpc__slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#b1b6b8;background-color:var(--avacy_slider_background);transition:.4s;border-radius:17px}.as-oil-cpc__slider:focus-visible{outline-color:var(--avacy_btn_primary_background_hover);outline-offset:2px}.as-oil-cpc__slider:before{position:absolute;content:"";height:14px;width:14px;left:3px;bottom:3px;background-color:#fff;background-color:var(--avacy_slider_background_circle);box-shadow:0 2px 4px 0 rgba(0,0,0,.08);transition:.4s;border-radius:50%}.as-oil-tabs-cpc__headline{display:block;max-width:100%;font-size:1.45rem;font-weight:600;line-height:1.15}@media (max-width:419px){.as-oil-tabs-cpc__headline{margin-right:20px}}.as-oil-tabs-cpc__wrapper hr{border:0;border-top:1px solid #d8d8d8}.as-oil-tabs-cpc__wrapper .as-oil-tabs-cpc__purpose-labels{border-collapse:separate;border-spacing:1px;display:table;width:100%}.as-oil-tabs-cpc__wrapper .as-oil-tabs-cpc__purpose-labels span{border-radius:5px;box-sizing:border-box;display:table-cell;font-size:14px;font-weight:700;height:50px;overflow:hidden;text-align:center;text-overflow:ellipsis;transition:all .3s ease-in-out;vertical-align:middle;white-space:nowrap}@media (max-width:419px){.as-oil-tabs-cpc__wrapper .as-oil-tabs-cpc__purpose-labels span{display:table-header-group;height:auto}}.as-oil-tabs-cpc__wrapper .as-oil-tabs-cpc__purpose-text section{animation-direction:normal;animation-duration:.3s;animation-iteration-count:1;animation-name:content;animation-timing-function:ease-in-out;display:none;line-height:1.4;position:relative}.as-oil-tabs-cpc__wrapper .as-oil-tabs-cpc__purpose-text section:first-child{display:block}.as-oil-tabs-cpc__wrapper .as-oil-tabs-cpc__purpose-text section div{display:table;width:100%}.as-oil-tabs-cpc__wrapper .as-oil-tabs-cpc__purpose-text section p{display:table-cell;width:80%}.as-oil-tabs-cpc__purpose-feature-texts{display:table}.as-oil-tabs-cpc__purpose-feature-texts ul{display:table-cell;list-style:none;width:100%}@media (max-width:419px){.as-oil-tabs-cpc__purpose-feature-texts ul{padding-left:1.5rem}}.as-oil-tabs-cpc__purpose-feature-texts ul li{list-style-position:inside;text-indent:-1.3rem}.as-oil-tabs-cpc__purpose-feature-texts ul li span:nth-child(2){margin-left:1.3rem}@keyframes content{0%{opacity:0;transform:translateY(5%)}to{opacity:1;transform:translateY(0)}}.as-js-tab-label:first-child:last-child,.as-js-tab-label:first-child:last-child ~ .as-js-tab-label{width:100%}.as-js-tab-label:first-child:nth-last-child(2),.as-js-tab-label:first-child:nth-last-child(2)~.as-js-tab-label{width:50%}.as-js-tab-label:first-child:nth-last-child(3),.as-js-tab-label:first-child:nth-last-child(3)~.as-js-tab-label{width:33.33333%}.as-js-tab-label:first-child:nth-last-child(4),.as-js-tab-label:first-child:nth-last-child(4)~.as-js-tab-label{width:25%}.as-js-tab-label:first-child:nth-last-child(5),.as-js-tab-label:first-child:nth-last-child(5)~.as-js-tab-label{width:20%}.as-oil-tabs-cpc__purpose-label-active{background:#0099f2;color:#fff;cursor:default}.as-oil-tabs-cpc__purpose-label-inactive{color:#aaa;background:#eee;cursor:pointer}.as-oil-tabs-cpc__third-parties-link{cursor:pointer;text-decoration:none}.as-oil-tabs-cpc__third-parties-link span{background:#0099f2;border-radius:50%;color:#fff;display:inline-block;font-weight:700;height:20px;line-height:20px;margin-right:.5rem;text-align:center;width:20px}.as-oil-tabs-cpc__third-parties-list{margin-left:1.7rem;margin-top:.5rem}.as-oil-tabs-cpc__purpose-description{font-size:.7375rem;font-weight:400;line-height:1.4}.as-oil-tabs-cpc__switch{display:table-cell;height:26px;margin-left:30px;position:absolute;width:50px}@media (max-width:419px){.as-oil-tabs-cpc__switch{margin-left:5px}}.as-oil-tabs-cpc__switch input{display:none}.as-oil-tabs-cpc__switch input:checked~.as-oil-cpc__slider{background-color:#0099f2;background-color:var(--avacy_accent_primary)}.as-oil-tabs-cpc__switch input:focus~.as-oil-cpc__slider{box-shadow:0 0 1px #0099f2;box-shadow:0 0 1px var(--avacy_accent_primary)}.as-oil-tabs-cpc__switch input:checked~.as-oil-cpc__slider:before{transform:translateX(20px)}</style><style type="text/css">.as-oil-optout-confirm{position:absolute;width:100%;height:100%;z-index:1;background-color:rgba(0,0,0,.7);margin:-2rem -5rem}@media (max-width:419px){.as-oil-optout-confirm{margin:-1rem}}@media (min-width:420px) and (max-width:849px){.as-oil-optout-confirm{margin:-2rem -1rem}}.as-oil-optout-confirm .as-oil-optout-confirm__dialog{text-align:center;min-width:320px;max-width:420px;background-color:#f9f9f9;margin:0 auto;margin-top:10%;padding:1rem}.as-oil-optout-confirm .as-oil-optout-confirm__dialog p{width:100%;text-align:justify}.as-oil-optout-confirm .as-oil-optout-confirm__dialog .as-oil-optout-confirm__dialog__heading{font-size:1.25rem;font-weight:500;line-height:1.15}@media (min-width:420px) and (max-width:1022px){.as-oil-optout-confirm .as-oil-optout-confirm__dialog .as-oil-l-buttons{max-width:unset}}.dark .as-oil-optout-confirm__dialog{background-color:#262626}</style><script charset="utf-8" src="https://www.rai.it/dl/components/js/cookiebanner/oil-lib/0.chunk.js"></script></head>
+<body id="Page-a34d087e-d132-4a05-bde4-565f3430c2f1" class="profiloSso premium account">
+<div class="as-oil PositionBottom SlideIn" data-qa="oil-Layer" style="--avacy_text_color_primary: #252a3f; --avacy_text_color_secondary: #262628; --avacy_background_color: #ffffff; --avacy_secondary_background_color: #dedede; --avacy_accent_primary: #252a3f; --avacy_btn_primary_background: #000099; --avacy_btn_primary_background_hover: #000099; --avacy_btn_primary_text_color: #ffffff; --avacy_btn_secondary_background: #d6dbe6; --avacy_btn_secondary_background_hover: #d6dbe6; --avacy_btn_secondary_text_color: #252a3f; --avacy_btn_disabled_background: #dfdfdf; --avacy_btn_disabled_text_color: #545454; --avacy_slider_background: #edeff3; --avacy_slider_background_circle: #ffffff; --avacy_third_parties_background: #f6f7f9; --avacy_font_base_scale: 1; --avacy_font_family: Montserrat, sans-serif;">
+    <div id="as-oil-first-layer" class="as-oil-content-overlay" data-qa="oil-full" data-nosnippet="" tabindex="-1" aria-labelledby="firstlayer-heading">
+        <div class="as-oil-l-wrapper-layout-max-width Reject">
+            <span id="a11y-action" tabindex="0" role="button" aria-pressed="false" aria-label="Continua senza accettare" class="as-oil__close-banner as-js-close-banner"></span>
+            
+            <div id="firstlayer-heading" class="as-oil__heading">
+                Preferenze Cookie
+            </div>
+            <div class="as-oil__intro-txt">
+                Rai utilizza, sui propri siti web e app, cookie e altri identificatori tecnici per garantire la fruizione dei contenuti digitali Rai e facilitare la navigazione e, previo consenso dell'utente, cookie e strumenti equivalenti, anche di terzi, per misurare il consumo e proporre pubblicità mirata.<br>Per quanto riguarda la pubblicità, dietro tuo consenso, Rai e terzi selezionati possono utilizzare dati di geolocalizzazione, l'identificativo del dispositivo, archiviare e/o accedere a informazioni sul dispositivo ed elaborare dati personali (es. dati di navigazione, indirizzi IP, etc) al fine di creare, selezionare e mostrare annunci personalizzati, valutare le performance dell'annuncio e derivare osservazioni sul pubblico.<br>Puoi liberamente prestare, rifiutare o revocare il tuo consenso senza incorrere in limitazioni sostanziali.<br><br>Per saperne di più puoi visionare l'informativa estesa sui cookie <a href="https://www.rai.it/privacy/CookiePolicy.html" target="_blank" rel="noopener" aria-label="Prendi visione dell'informativa estesa sui cookie">cliccando qui</a>. Premendo "ACCETTA" acconsenti all'uso di cookie e strumenti equivalenti. Usa il pulsante "PREFERENZE” per selezionare in modo analitico soltanto alcune finalità, terze parti e cookie, negare il consenso o revocare quello già prestato ovvero gestire le tue preferenze. Il tasto “CONTINUA SENZA ACCETTARE” chiude il banner, continuerai la navigazione in assenza di cookie o altri strumenti di tracciamento diversi da quelli tecnici.<br><br>Le scelte da te espresse verranno applicate al solo dispositivo in utilizzo.
+            </div>
+            <div class="as-oil-l-row as-oil-l-buttons">
+                <div class="as-oil-l-item as-oil-l-item__optin">
+                    
+    <button class="as-oil__btn-primary as-js-optin" data-optin-mode="consent-all" data-optin-layer="1" data-context="YES" data-qa="oil-YesButton">
+        Accetta
+    </button>
+                </div>
+                
+                    <div class="as-oil-l-item as-oil-l-item__reject-all">
+                        
+      <button class="as-oil__btn-primary as-js-reject-all" data-context="REJECTALL" data-qa="oil-reject-all-btn">
+        Rifiuta tutto
+      </button>
+    
+                    </div>
+                
+                
+                    <div class="as-oil-l-item as-oil-l-item__advanced-settings">
+                        
+      <button class="as-oil__btn-primary as-js-advanced-settings" data-context="ADVANCEDSETTINGS" data-qa="oil-AdvancedSettingsButton">
+        Preferenze
+      </button>
+    
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</div><div class="maskOverlay barraStatica"></div>
+<div id="barraRai" class="row top_row align-middle collapse">
+    <div class="small-12 columns">
+        <div class="title-bar row small hide-for-medium" data-responsive-toggle="main-menu" style="display: none;">
+            <div class="top-bar-left">
+            	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="logoRai">
+					<g display="inline">
+                        <path d="m199.960999,0.02613h-199.961259v199.97387h199.961259v-199.97387l0,0zm-159.700298,97.626572h2.007999c6.765999,0 14.394001,-1.250999 14.394001,-9.946999c0,-8.671005 -7.628002,-9.948006 -14.394001,-9.948006h-2.007999v19.895004l0,0zm45.645,44.068291h-25.841l-19.595001,-30.716995h-0.209v30.716995h-20.756001v-79.869293h31.017002c15.789097,0 27.757,7.535004 27.757,24.575996c0,11.030006 -6.153999,20.561302 -17.483002,22.568306l25.110001,32.724991l0,0zm20.691299,-27.104996c0,6.871002 4.551003,12.177002 12.399002,12.177002c7.835999,0 12.386002,-5.306 12.386002,-12.177002c0,-6.675995 -4.550003,-12.281998 -12.386002,-12.281998c-7.848,0 -12.399002,5.606003 -12.399002,12.281998m43.416,27.104996h-19.257004v-6.022995h-0.233994c-3.377007,5.397003 -10.039001,7.822006 -16.415001,7.822006c-16.102203,0 -27.431305,-13.455002 -27.431305,-29.022003c0,-15.567299 11.147003,-28.918304 27.236305,-28.918304c6.231995,0 12.815994,2.334 16.843994,7.106003v-5.292999h19.257004v54.328293l0,0zm32.399002,-75.202293c0,5.945 -4.889008,10.808998 -10.807999,10.808998c-5.919006,0 -10.807999,-4.863998 -10.807999,-10.808998c0,-5.918999 4.888992,-10.782001 10.807999,-10.782001c5.918991,0 10.807999,4.863003 10.807999,10.782001m-1.173004,75.202293h-19.257004v-54.328293h19.257004v54.328293l0,0zm-181.238998,23.27301v-88.318306v-18.617996v-25.202h-0.987l0.987,132.138302z" fill="#fff" id="path2901"></path>
+					</g>
+				</svg>
+            </div>
+            <div class="top-bar-right">
+                <button class="menu-icon" type="button" data-toggle=""></button>
+            </div>
+        </div>
+        <div class="top-bar" id="main-menu">
+            <div class="logo columns small-1">
+                <h1><a href="//www.rai.it/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="logoRai">
+                        <g display="inline">
+                            <path d="m199.960999,0.02613h-199.961259v199.97387h199.961259v-199.97387l0,0zm-159.700298,97.626572h2.007999c6.765999,0 14.394001,-1.250999 14.394001,-9.946999c0,-8.671005 -7.628002,-9.948006 -14.394001,-9.948006h-2.007999v19.895004l0,0zm45.645,44.068291h-25.841l-19.595001,-30.716995h-0.209v30.716995h-20.756001v-79.869293h31.017002c15.789097,0 27.757,7.535004 27.757,24.575996c0,11.030006 -6.153999,20.561302 -17.483002,22.568306l25.110001,32.724991l0,0zm20.691299,-27.104996c0,6.871002 4.551003,12.177002 12.399002,12.177002c7.835999,0 12.386002,-5.306 12.386002,-12.177002c0,-6.675995 -4.550003,-12.281998 -12.386002,-12.281998c-7.848,0 -12.399002,5.606003 -12.399002,12.281998m43.416,27.104996h-19.257004v-6.022995h-0.233994c-3.377007,5.397003 -10.039001,7.822006 -16.415001,7.822006c-16.102203,0 -27.431305,-13.455002 -27.431305,-29.022003c0,-15.567299 11.147003,-28.918304 27.236305,-28.918304c6.231995,0 12.815994,2.334 16.843994,7.106003v-5.292999h19.257004v54.328293l0,0zm32.399002,-75.202293c0,5.945 -4.889008,10.808998 -10.807999,10.808998c-5.919006,0 -10.807999,-4.863998 -10.807999,-10.808998c0,-5.918999 4.888992,-10.782001 10.807999,-10.782001c5.918991,0 10.807999,4.863003 10.807999,10.782001m-1.173004,75.202293h-19.257004v-54.328293h19.257004v54.328293l0,0zm-181.238998,23.27301v-88.318306v-18.617996v-25.202h-0.987l0.987,132.138302z" fill="#fff" id="path2901"></path>
+                        </g>
+                    </svg>
+                </a></h1>
+            </div>
+            <div class="columns">
+                <div class="top-bar-left">
+                    
+	
+		
+	
+
+
+
+
+	<!-- Google Tag Manager head -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MCMQWSP');</script>
+	
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NKHS7M');</script>
+	
+	<!-- End Google Tag Manager head -->
+	
+<ul data-dropdown-menu="pfheeh-dropdown-menu" class="dropdown menu vertical medium-horizontal" role="menubar">
+<li role="menuitem">
+<a title="RAIPLAY" target="_top" href="https://www.raiplay.it/" tabindex="0">RAIPLAY</a>
+</li>
+<li role="menuitem">
+<a title="TV" target="_top" href="https://www.raiplay.it/dirette">TV</a>
+</li>
+<li role="menuitem">
+<a title="RAIPLAY SOUND" target="_top" href="https://www.raiplaysound.it/">RAIPLAY SOUND</a>
+</li>
+<li role="menuitem">
+<a title="NEWS" target="_top" href="https://www.rainews.it">NEWS</a>
+</li>
+<li role="menuitem">
+<a title="SPORT" target="_top" href="https://www.raisport.rai.it">SPORT</a>
+</li>
+<li role="menuitem">
+<a title="BAMBINI" target="_top" href="https://www.raiplay.it/bambini/">BAMBINI</a>
+</li>
+<li role="menuitem">
+<a title="RAICULTURA" target="_top" href="https://www.raicultura.it/">RAICULTURA</a>
+</li>
+<li role="menuitem">
+<a title="RAIPLAYLEARNING" target="_top" href="https://www.raiplay.it/learning/">RAIPLAYLEARNING</a>
+</li>
+</ul>
+
+                    <!--
+                    <ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu>
+                        <li><a target="_top" href="https://www.rainews.it" title="News">News</a></li>
+                        <li><a target="_top" href="http://www.raisport.rai.it/" title="Sport">Sport</a></li>
+                        <li><a target="_top" href="http://www.rai.tv" title="Tv">Tv</a></li>
+                        <li><a target="_top" href="http://www.radio.rai.it" title="Radio">Radio</a></li>
+                        <li><a target="_top" href="http://www.rai.it/raiplay/guidatv/" title="Guida programmi">Guida programmi</a>
+                    </ul>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row top_row align-middle collapse expanded" id="menuDedicato">
+  <div class="small-12 columns">
+    <div id="site-menu" class="top-bar">
+      <div class="columns">
+        <button id="mainMenuBtn" class="menu-icon" aria-label="Premi per aprire il menu"></button>
+        <span class="title">Le Piattaforme Digitali della Rai</span>
+      </div>
+      <div class="columns show-for-large">
+        <div class="top-bar-right">
+          <ul class="dropdown menu hideApp">
+            <!-- user loggato -->
+            <li id="loggedUser" class="hide-for-small-only">
+              <a href="/account/" title="Vai alla pagina profilo">
+                <div>
+                  <img src="/dl/siti/images/avatar.png" alt="Utente">
+                  <span></span>
+                </div>
+              </a>
+            </li>
+            <!-- end user loggato -->
+            <li id="barraRaiBtn">
+              <button id="barraRaiMenuIcon" class="menu-icon"></button>
+              <div id="barraRaiCloseIcon">
+                <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+      <path class="st0" d="M21.7,20l9.8-9.8C32,9.7,32,9,31.5,8.5C31,8,30.3,8,29.8,8.5L20,18.3l-9.8-9.8C9.7,8,9,8,8.5,8.5
+        C8,9,8,9.7,8.5,10.2l9.8,9.8l-9.8,9.8C8,30.3,8,31,8.5,31.5c0.2,0.2,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4l9.8-9.8l9.8,9.8
+        c0.2,0.2,0.6,0.4,0.9,0.4s0.6-0.1,0.9-0.4c0.5-0.5,0.5-1.3,0-1.7L21.7,20z"></path>
+      </svg>
+              </div>
+              <img src="/dl/components/img/logoMenu.png">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div data-item-type="highlight" data-uniquename="ContentItem-a78abbd5-551e-4a0c-835c-51309a71cb34" class="highlightSfondo premium-module premium-highlight premium-highlight-img-rx">
+<div class="row containerPadding">
+<div class="columns small-12 medium-12 large-6">
+<h1>Chi siamo e quali sono le nostre garanzie sulla protezione dei tuoi dati personali</h1>
+<p>Rai Radiotelevisione italiana S.p.A. (“<strong>Rai</strong>”) è la società concessionaria in esclusiva del Servizio Pubblico radiofonico, televisivo e multimediale in Italia.</p>
+</div>
+<div class="columns small-12 medium-12 large-6">
+<img alt="Titolo" src="/dl/img/2018/05/30/1527683657114_garanzie_protezione.png"></div>
+</div>
+</div><div class="premium-module premium-testo" data-item-type="testo" data-uniquename="ContentItem-bfac6965-ced9-4a4e-886d-9d627d7c672e">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<p>Rai considera da sempre di fondamentale importanza la tutela dei dati personali dei propri utenti e garantisce che il trattamento dei dati personali, effettuato sia in modalità elettronica (cioè attraverso strumenti e applicazioni web) che manuale, avvenga nel pieno rispetto dei principi, delle tutele e dei diritti riconosciuti dal Regolamento (UE) 2016/679 del Parlamento Europeo e del Consiglio, del 27 aprile 2016, relativo alla protezione delle persone fisiche con riguardo al trattamento dei dati personali, nonché alla libera circolazione di tali dati (nel seguito il “<strong>Regolamento</strong>”), del Decreto Legislativo n. 196 del 2003 come novellato dal Decreto Legislativo n. 101 del 10 agosto 2018 (“<strong>Codice Privacy</strong>”) e dalle ulteriori norme applicabili in tema di protezione dei dati personali.</p>
+</div>
+</div>
+</div><div class="premium-module premium-citazione" data-item-type="citazione" data-uniquename="ContentItem-5303294e-8324-42e3-8205-63645e2b97c9">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<p class="citazione">Se vuoi avere ulteriori informazioni in merito a cosa è un “dato personale” e a cosa intendiamo quando ci riferiamo al “trattamento” dei dati personali, clicca sul seguente&nbsp;<a href="http://www.rai.it/account/Privacy-Policy-Estesa-da55777c-6ea7-4b80-b6fb-111a7d7bdf42.html">link</a></p>
+</div>
+</div>
+</div><div class="premium-module premium-testo" data-item-type="testo" data-uniquename="ContentItem-68d243e5-7387-490a-b416-a8db394fbef4">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<h2>Perché questo documento?</h2>
+<p>Questo documento ha lo scopo di fornirti, attraverso l’uso di un linguaggio semplice e chiaro, tutte le informazioni necessarie al fine di permetterti di comunicarci i tuoi dati personali con la piena consapevolezza dell’uso che ne faremo, delle garanzie che ti offriamo e dei diritti che puoi esercitare nei nostri confronti.</p>
+</div>
+</div>
+</div><div class="premium-module premium-image-full" data-item-type="immagine-full" data-uniquename="ContentItem-f65c71a5-491c-45ae-a2fa-c775ea2cb068">
+<div class="row">
+<div class="columns small-12">
+<img alt="Titolo" src="/dl/img/2018/05/30/1527688737680_img_full_1.png"></div>
+</div>
+</div><div class="premium-module premium-testo" data-item-type="testo" data-uniquename="ContentItem-5f8cbcb7-e67c-455c-ac9f-034269dcc235">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<p>Il documento che stai leggendo è parte dell’informativa prescritta dall’art. 13 del Regolamento che è stata redatto nel pieno rispetto dei requisiti di legge e del principio di trasparenza che Rai ha sempre adottato nel rapporto con i propri utenti.&nbsp;<br>
+Tale principio è, ora, presupposto fondamentale del trattamento dei dati esplicitamente previsto dalla legge (vedi l’art. 5, comma 1 del Regolamento).&nbsp;<br>
+<br>
+Le informazioni che intendiamo fornirti sono numerose e riguardano numerosi aspetti del trattamento che effettuiamo sui tuoi dati. Per questo motivo, abbiamo scelto di strutturare la nostra informativa adottando un approccio che ti permetterà di:</p>
+</div>
+</div>
+</div><div data-item-type="testo-immagine" data-uniquename="ContentItem-4dc47d2e-6ffc-4cf6-984f-9c5253dc1b10" class="premium-module premium-testo-immagine premium-testo-immagine-sx">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<div class="row testoImmagine">
+<div class="columns small-12 medium-2">
+<img alt="Titolo" src="/dl/img/2018/05/29/1527601775844_premium_01.png"></div>
+<div class="columns small-12 medium-10">selezionare le informazioni rilevanti semplicemente visitando la sezione di tuo interesse, evitandoti lo sforzo di dover scorrere l’interna informativa per trovare le informazioni che cerchi;</div>
+</div>
+</div>
+</div>
+</div><div data-item-type="testo-immagine" data-uniquename="ContentItem-7f19f46d-2110-46bf-bba0-37d968a82911" class="premium-module premium-testo-immagine premium-testo-immagine-sx">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<div class="row testoImmagine">
+<div class="columns small-12 medium-2">
+<img alt="Titolo" src="/dl/img/2018/05/29/1527601860591_premium_02.png"></div>
+<div class="columns small-12 medium-10">offrirti ulteriori approfondimenti accessibili con un semplice click sui link disponibili in calce ad ogni sezione. Questo ti permetterà un accesso immediato, semplice ed intuitivo a tutti gli approfondimenti di cui hai bisogno;</div>
+</div>
+</div>
+</div>
+</div><div data-item-type="testo-immagine" data-uniquename="ContentItem-93bb8179-b81d-4487-8dda-4d495753d2ff" class="premium-module premium-testo-immagine premium-testo-immagine-sx">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<div class="row testoImmagine">
+<div class="columns small-12 medium-2">
+<img alt="Titolo" src="/dl/img/2018/05/30/1527687392059_premium_03.png"></div>
+<div class="columns small-12 medium-10">sapere a chi devi rivolgerti e quali sono le informazioni di contatto da utilizzare qualora non trovassi le informazioni che cerchi su queste pagine.</div>
+</div>
+</div>
+</div>
+</div><div class="premium-module premium-citazione" data-item-type="citazione" data-uniquename="ContentItem-6c9bcbca-eaa7-4ed7-99cb-954591cbb048">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<p class="citazione">Per ulteriori informazioni sulla struttura della nostra informativa, clicca&nbsp;<a href="http://www.rai.it/account/Privacy-Policy-Estesa-da55777c-6ea7-4b80-b6fb-111a7d7bdf42.html#definizioni">qui</a></p>
+</div>
+</div>
+</div><div class="premium-module premium-testo" data-item-type="testo" data-uniquename="ContentItem-96023622-e5f6-4e00-8ef7-def6ec52d867">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<h2>A quali Prodotti Multimediali RAI si riferisce questa informativa?</h2>
+<p>Questa informativa si riferisce a tutti i siti web (“Siti”), alle applicazioni mobili (“Applicazioni”) nonché alle applicazioni su TV connesse ad internet (“Smart TV”) per i quali non sia richiesto il preventivo accesso al proprio profilo utente per l’utilizzo. Nel proseguo si farà riferimento ai Siti, alle Applicazioni unitamente alle Smart TV come ai “<strong>Prodotti Multimediali Rai</strong>”.</p>
+</div>
+</div>
+</div><div class="premium-module premium-testo" data-item-type="testo" data-uniquename="ContentItem-51cde86f-9b69-4994-a775-ce4937550d15">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<h2>Chi tratterà i miei dati personali e a chi posso rivolgermi per le mie richieste?</h2>
+<p>Il titolare del trattamento è<br>
+<br>
+<strong>RAI - Radiotelevisione italiana Spa&nbsp;</strong><br>
+con sede legale sita in Viale Mazzini 14 - 00195 Roma, Italia.<br>
+Codice fiscale e P. IVA n. 06382641006</p>
+</div>
+</div>
+</div><div class="premium-module premium-image-full" data-item-type="immagine-full" data-uniquename="ContentItem-fa301284-7871-4b67-a85d-41f47d68dcac">
+<div class="row">
+<div class="columns small-12">
+<img alt="Titolo" src="/dl/img/2018/05/29/1527597777721_img_full.png"></div>
+</div>
+</div><div class="premium-module premium-testo" data-item-type="testo" data-uniquename="ContentItem-045af1f6-17ca-416d-9a84-3149e6f3f890">
+<div class="row">
+<div class="columns small-12  large-8  large-offset-2">
+<p>Rai ha provveduto a nominare un Responsabile per la protezione dei dati (“RPD”), cui potrai rivolgerti per tutte le questioni legate al trattamento dei tuoi dati e per esercitare i tuoi diritti.&nbsp;<br>
+Il nostro RPD può essere contattato direttamente&nbsp;<a href="mailto:dpo@rai.it">dpo@rai.it</a>.<br>
+<br>
+Altri soggetti possono essere coinvolti nel trattamento dei tuoi dati personali in qualità di responsabili del trattamento (quando questi soggetti trattano i tuoi dati per conto nostro) o di persone autorizzate a trattare i tuoi dati personali.<br>
+<br>
+Se desideri conoscere maggiori dettagli sulle figure del titolare, responsabile e RPD e se vuoi sapere quali altri soggetti sono autorizzati al trattamento dei tuoi dati, clicca sul seguente&nbsp;<a href="http://www.rai.it/account/Privacy-Policy-Estesa-da55777c-6ea7-4b80-b6fb-111a7d7bdf42.html#ContentItem-efff97e2-54c8-4fe9-abc9-a0ca2487ab16">link</a>.</p>
+</div>
+</div>
+</div>
+
+<div class="premium-module premium-blocco-html" data-item-type="blocco-html" data-uniquename="ContentItem-94ac43bc-dec0-4951-a905-65c67e9d2952"><style type="text/css"><!--
+.premium-module.premium-image-full[data-uniquename=ContentItem-f65c71a5-491c-45ae-a2fa-c775ea2cb068] {
+    background: rgb(241,242,247);
+    background: -moz-linear-gradient(top, rgba(241,242,247,1) 0%, rgba(241,242,247,1) 71%, rgba(255,255,255,1) 71%);
+    background: -webkit-linear-gradient(top, rgba(241,242,247,1) 0%,rgba(241,242,247,1) 71%,rgba(255,255,255,1) 71%);
+    background: linear-gradient(to bottom, rgba(241,242,247,1) 0%,rgba(241,242,247,1) 71%,rgba(255,255,255,1) 71%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#f1f2f7&#39;, endColorstr=&#39;#ffffff&#39;,GradientType=0 );
+    margin-bottom: 40px;
+}
+
+
+.premium-image-full[data-uniquename=ContentItem-845b5198-a394-4a1d-826e-36206198a309] {
+    background: rgb(241,242,247);
+    background: -moz-linear-gradient(top, rgba(241,242,247,1) 0%, rgba(241,242,247,1) 73%, rgba(255,255,255,1) 73%);
+    background: -webkit-linear-gradient(top, rgba(241,242,247,1) 0%,rgba(241,242,247,1) 73%,rgba(255,255,255,1) 73%);
+    background: linear-gradient(to bottom, rgba(241,242,247,1) 0%,rgba(241,242,247,1) 73%,rgba(255,255,255,1) 73%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#f1f2f7&#39;, endColorstr=&#39;#ffffff&#39;,GradientType=0 );
+    margin-bottom: 40px;
+}
+
+.premium-image-full[data-uniquename=ContentItem-fa301284-7871-4b67-a85d-41f47d68dcac] {
+    background: rgb(241,242,247);
+    background: -moz-linear-gradient(top, rgba(241,242,247,1) 0%, rgba(241,242,247,1) 73%, rgba(255,255,255,1) 73%);
+    background: -webkit-linear-gradient(top, rgba(241,242,247,1) 0%,rgba(241,242,247,1) 73%,rgba(255,255,255,1) 73%);
+    background: linear-gradient(to bottom, rgba(241,242,247,1) 0%,rgba(241,242,247,1) 73%,rgba(255,255,255,1) 73%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#f1f2f7&#39;, endColorstr=&#39;#ffffff&#39;,GradientType=0 );
+    margin-bottom: 40px;
+}
+--></style></div>
+
+<div class="premium-module premium-accordion" data-item-type="accordion" data-uniquename="PublishingBlock-4d6e1bf4-ee79-4663-a77a-4895995fafbb">
+<div class="row">
+<div class="columns small-12 large-8 large-offset-2">
+<div id="accordionRai">
+<div class="row collapse no-aside-margin">
+<div class="columns">
+<ul data-uniquename="ContentSet-572c6dae-a2bb-432a-9864-1f96948945fe" data-deep-link-smudge-delay="500" data-deep-link-smudge="true" data-update-history="true" data-deep-link="true" data-allow-all-closed="true" data-accordion="data-accordion" data-set="1" class="accordion" role="tablist"><li class="accordion-item" data-accordion-item="data-accordion-item" data-id="achiverrannocomunicatiimieidati?_" data-uniquename="ContentItem-1c98c1c5-bfb0-47a0-8d5a-f67e35478ddd"><a class="accordion-title" id="nbmomp-accordion-label" href="#" aria-controls="nbmomp-accordion" role="tab" aria-expanded="false" aria-selected="false">A chi verranno comunicati i miei dati?</a>
+<div data-tab-content="data-tab-content" class="accordion-content" role="tabpanel" aria-labelledby="nbmomp-accordion-label" aria-hidden="true" id="nbmomp-accordion">I tuoi dati personali possono essere comunicati a terzi se ce lo impone la legge, se ci dai il permesso per farlo o se terze parti ci aiutano a fornirti i servizi che ti offriamo.<br>
+<br>
+In ogni caso, abbiamo adottato tutte le misure necessarie perché i tuoi dati siano trattati secondo gli alti standard di sicurezza che Rai ti garantisce.<br>
+<br>
+Per scoprire di più, clicca&nbsp;<a href="http://www.rai.it/account/Privacy-Policy-Estesa-da55777c-6ea7-4b80-b6fb-111a7d7bdf42.html#ContentItem-0e15f90c-7ebc-48cb-8db1-c848798a2e7e">qui</a></div></li><li class="accordion-item" data-accordion-item="data-accordion-item" data-id="perchéavetebisognodeimieidati?_" data-uniquename="ContentItem-a803a6d1-1472-4820-b363-3bcdb3cf0071"><a class="accordion-title" id="p5yenh-accordion-label" href="#" aria-controls="p5yenh-accordion" role="tab" aria-expanded="false" aria-selected="false">Perché avete bisogno dei miei dati?</a>
+<div data-tab-content="data-tab-content" class="accordion-content" role="tabpanel" aria-labelledby="p5yenh-accordion-label" aria-hidden="true" id="p5yenh-accordion">I siti web e le applicazioni mobili di Rai si limitano, di default, alla raccolta di dati di navigazione (ad esempio il tuo indirizzo IP, altri identificativi online - anche di terze parti -, identificativi connessi al dispositivo che utilizzi etc.) soprattutto per permettere la corretta gestione operativa dei nostri &nbsp;Prodotti Multimediali e per motivi di sicurezza.&nbsp;<br>
+<br>
+A partire da tali dati di navigazione, possiamo inoltre effettuare statistiche sul funzionamento e l’utilizzo del sito e/o applicazione. Quando usiamo i tuoi dati a fini esclusivamente di statistica, questo trattamento non ci permette di risalire in alcun modo alla tua identità, perché effettuiamo indagini a livello aggregato, e quindi anonimo.<br>
+<br>
+Alcuni dati così detti “indentificativi” potrebbero esserti richiesti quanto hai bisogno di contattarci, quando ti candidi ad una posizione aperta attraverso i form dedicati, quando ci invii una richiesta di assistenza etc.<br>
+<br>
+In questi casi, i dati richiesti possono variare di volta in volta a seconda del servizio di cui intendi beneficiare e sono quelli corrispondenti alle caselle presenti nel modulo online che ti chiediamo di compilare. &nbsp;<br>
+<br>
+Abbiamo bisogno dei tuoi dati anche per essere sicuri di poterci difendere qualora un nostro diritto sia leso (in caso, ad esempio, di frodi o altre attività illecite perpetrate sui nostri Prodotti Multimediali) e per adempiere a tutti gli obblighi che la legge ci impone di rispettare.<br>
+<br>
+Per ogni ulteriore dettagli in merito alle finalità del trattamento perseguite da Rai e alla base giuridica che ci legittima ad effettuare ciascun trattamento, ti invitiamo a consultare la pagina disponibile al seguente&nbsp;<a href="http://www.rai.it/account/Privacy-Policy-Estesa-da55777c-6ea7-4b80-b6fb-111a7d7bdf42.html#ContentItem-e6b80dcd-3c7d-4d7e-98b7-10dce3f22d25">link</a></div></li><li class="accordion-item" data-accordion-item="data-accordion-item" data-id="cosasonoicookie?_" data-uniquename="ContentItem-c7261355-cf03-4eae-83c2-e94597238072"><a class="accordion-title" id="6zue5p-accordion-label" href="#" aria-controls="6zue5p-accordion" role="tab" aria-expanded="false" aria-selected="false">Cosa sono i cookie?</a>
+<div data-tab-content="data-tab-content" class="accordion-content" role="tabpanel" aria-labelledby="6zue5p-accordion-label" aria-hidden="true" id="6zue5p-accordion">I cookie sono piccoli file di testo che vengono salvati sul tuo computer in modo da permetterci di riconoscere il tuo computer ad ogni visita successiva.<br>
+<br>
+I cookie si distinguono in cookie di prima o di terza parte a seconda del sito da cui vengono installati (se sono cookie che installiamo noi direttamente allora sono cookie di prima parte).<br>
+<br>
+I cookie si distinguono anche in cookie tecnici o di profilazione.<br>
+<br>
+I cookie tecnici sono quelli che ci permettono di garantire la normale navigazione del sito o applicazione, elaborare statistiche a livello aggregato, e quindi anonime, sul numero di utenti che frequentano i nostri &nbsp;Prodotti Multimediali o sulle modalità della visita o che ci permettano di memorizzare alcune tue preferenze (quali la lingua) al fine di migliorare la tua esperienza di navigazione.<br>
+<br>
+I cookie di profilazione sono, semplicemente, tutti i restanti.<br>
+Per ottenere informazioni dettagliate sulle tipologie di cookie che vengono utilizzate da Rai, t’invitiamo a consultare la nostra&nbsp;<a href="https://www.rai.it/privacy/CookiePolicy.html">Cookie Policy</a>.</div></li><li class="accordion-item" data-accordion-item="data-accordion-item" data-id="comeusiamoicookie?_" data-uniquename="ContentItem-b8d62440-ed1b-478f-b5d7-05661f0b819f"><a class="accordion-title" id="p8rrm5-accordion-label" href="#" aria-controls="p8rrm5-accordion" role="tab" aria-expanded="false" aria-selected="false">Come usiamo i cookie?</a>
+<div data-tab-content="data-tab-content" class="accordion-content" role="tabpanel" aria-labelledby="p8rrm5-accordion-label" aria-hidden="true" id="p8rrm5-accordion">Usiamo i cookie soprattutto per garantire l’operatività dei nostri siti o applicazioni, per effettuare statistiche d’uso a livello aggregato e per monitorare la sicurezza dei nostri Prodotti Multimediali.<br>
+<br>
+Per scoprire in dettaglio per quali finalità installiamo i cookie e come puoi gestire i cookie anche tramite le impostazioni del tuo browser, t’invitiamo a consultare la nostra&nbsp;<a href="https://www.rai.it/privacy/CookiePolicy.html">Cookie Policy</a>.</div></li><li class="accordion-item" data-accordion-item="data-accordion-item" data-id="qualimisureaveteadottatoperlaprotezionedeibambiniinrete?_" data-uniquename="ContentItem-b4b11817-dada-4796-97f2-7fba28588cf9"><a class="accordion-title" id="46bsgo-accordion-label" href="#" aria-controls="46bsgo-accordion" role="tab" aria-expanded="false" aria-selected="false">Quali misure avete adottato per la protezione dei bambini in rete?</a>
+<div data-tab-content="data-tab-content" class="accordion-content" role="tabpanel" aria-labelledby="46bsgo-accordion-label" aria-hidden="true" id="46bsgo-accordion">Rai ha adottato, da sempre, una politica interna estremamente protettiva dei bambini che navigano sui propri siti o applicazioni.<br>
+<br>
+Questi i capisaldi della nostra politica di protezione:<br>
+&nbsp;<br>
+-&nbsp;&nbsp; &nbsp;invitiamo e incoraggiamo gli adulti a monitorare&nbsp;<strong><em>sempre</em></strong>&nbsp;il comportamento dei bambini in rete&nbsp;<br>
+-&nbsp;&nbsp; &nbsp;non offriamo contenuti pubblicitari sui portali dedicati all’infanzia&nbsp;<br>
+-&nbsp;&nbsp; &nbsp;siamo sempre molto attenti alle richieste che ci arrivano da minori e incoraggiamo gli adulti a contattarci per ogni esigenza o richiesta di informazioni<br>
+-&nbsp;&nbsp; &nbsp;ci sforziamo di offrire contenuti di alto valore educativo e di intrattenimento, la cui qualità monitoriamo costantemente e cerchiamo di migliorare.<br>
+Per ulteriori informazioni sulla nostra politica di trattamento dei dati dei minori in rete, ti invitiamo a consultare la pagina accessibile al seguente&nbsp;<a href="http://www.rai.it/account/Privacy-Policy-Estesa-da55777c-6ea7-4b80-b6fb-111a7d7bdf42.html#ContentItem-de446c4c-0df8-4ada-97e0-abcbf7e30976">link</a><br>
+<br>
+I prodotti dedicati ai minori, presenti su tutti i siti e app Rai sono liberamenti accessibili senza necessità di accreditarsi con un proprio account. Inoltre, Rai incoraggia l’uso dell’app RaiPlay Yoyo, priva di registrazione e pubblicità, dedicata al pubblico dei più piccoli ove il monitoraggio da parte degli adulti non è solo promosso ma agevolato da funzionalità specifiche (quali, ad esempio, blocco di contenuti non graditi, impostazione del tempo massimo di navigazione etc.)</div></li><li class="accordion-item" data-accordion-item="data-accordion-item" data-id="trasferiteimieidatiall'estero(cioèfuoridallospazioeconomicoeuropeo)?_" data-uniquename="ContentItem-77d8aed8-0b95-4543-83a4-43318097dec6"><a class="accordion-title" id="p6r9gf-accordion-label" href="#" aria-controls="p6r9gf-accordion" role="tab" aria-expanded="false" aria-selected="false">Trasferite i miei dati all'estero (cioè fuori dallo Spazio Economico Europeo)?</a>
+<div data-tab-content="data-tab-content" class="accordion-content" role="tabpanel" aria-labelledby="p6r9gf-accordion-label" aria-hidden="true" id="p6r9gf-accordion">Il trasferimento può avvenire per esigenze tecniche o operative ma, quando avviene, ci assicuriamo che ti siano garantiti i medesimi diritti e le medesime garanzie di protezione che sono illustrate in questo documento.&nbsp;<br>
+<br>
+In generale, non permettiamo a terze parti, sia che si trovino al di fuori dello Spazio Economico Europeo o che siano all’interno dell’Unione Europea, di trattare i tuoi dati se non è garantito il rispetto degli alti standard di sicurezza che noi stessi applichiamo ai nostri utenti.<br>
+<br>
+Per ulteriori informazioni sul trasferimento dei dati all’estero e sulle basi giuridiche dei trasferimenti effettuati, clicca&nbsp;<a href="http://www.rai.it/account/Privacy-Policy-Estesa-da55777c-6ea7-4b80-b6fb-111a7d7bdf42.html#ContentItem-1ac07b50-b571-47e6-9d4a-d9bce588fedd">qui</a>.</div></li><li class="accordion-item" data-accordion-item="data-accordion-item" data-id="qualisonoimieidiritti?_" data-uniquename="ContentItem-287a7dea-10e2-417a-8602-b9035477f9c6"><a class="accordion-title" id="qjooyu-accordion-label" href="#" aria-controls="qjooyu-accordion" role="tab" aria-expanded="false" aria-selected="false">Quali sono i miei diritti?</a>
+<div data-tab-content="data-tab-content" class="accordion-content" role="tabpanel" aria-labelledby="qjooyu-accordion-label" aria-hidden="true" id="qjooyu-accordion">Il Regolamento ti garantisce l’esercizio di numerosi diritti, che riassumiamo come segue:<br>
+&nbsp;<br>
+-&nbsp;&nbsp; &nbsp;<u>Diritto d’accesso:</u>&nbsp;hai diritto a sapere, tra le altre cose, quali dati personali trattiamo, per quali fini li trattiamo, a chi li comunichiamo e hai diritto ad ottenere una copia degli stessi;<br>
+-&nbsp;&nbsp; &nbsp;<u>Diritto di revocare il consenso:</u>&nbsp;se ci hai prestato il tuo consenso puoi comunque revocarlo in ogni momento, agevolmente e, in ogni caso, con la stessa semplicità con cui lo hai prestato controllando le impostazioni privacy del tuo account qui. &nbsp;La revoca del tuo consenso, non pregiudica la legittimità del trattamento svolto da Rai fino a quel momento;<br>
+-&nbsp;&nbsp; &nbsp;<u>Diritto di rettifica:</u>&nbsp;se ti accorgi che un dato che ci hai comunicato è incorretto o incompleto, provvederemo a correggere l’errore o a completare le informazioni in nostro possesso;<br>
+-&nbsp;&nbsp; &nbsp;<u>Diritto alla cancellazione</u>: puoi chiedere la cancellazione dei tuoi dati personali salvo che: la legge ci imponga di tenerli, o abbiamo bisogno dei dati per poter dimostrare di aver subito un illecito e difenderci davanti ad un giudice o dobbiamo utilizzarli per rilevanti motivi di interesse pubblico.<br>
+-&nbsp;&nbsp; &nbsp;<u>Diritto di limitazione al trattamento</u>: se chiedi che il trattamento effettuato sui tuoi dati sia limitato, ci impedisci di trattare i dati per le finalità per cui i dati sono stati raccolti. Questo implica che ci limiteremo a conservare i tuoi dati e solleciteremo il tuo consenso ogni qual volta dovremo effettuare dei trattamenti per ciascuna ulteriore finalità perseguita. Anche sei hai esercitato questo diritto, ti ricordiamo che i tuoi dati potranno comunque essere trattati per l’esercizio o la difesa di un diritto in sede giudiziaria oppure per tutelare i diritti di un’altra persona o per rilevanti motivi di interesse pubblico.<br>
+-&nbsp;&nbsp; &nbsp;<u>Diritto alla portabilità dei dati</u>: potrai, in qualsiasi momento, richiedere e ricevere i tuoi dati personali in un formato strutturato, di uso comune e leggibile sul tuo dispositivo per trasferirli direttamente ad un altro titolare.<br>
+-&nbsp;&nbsp; &nbsp;<u>Diritto di proporre un reclamo all’autorità di controllo</u>: fatto salvo il tuo diritto di tutelare i tuoi interessi nelle sedi giudiziarie competenti, hai diritto di proporre un reclamo all’Autorità Garante per la Protezione dei Dati Personali competente (in Italia, Il Garante Privacy).<br>
+-&nbsp;&nbsp; &nbsp;<u>Diritto di opposizione</u>: potrai opporti, in qualsiasi momento, al trattamento dei tuoi dati personali qualora questi vengano trattati senza il tuo consenso purché motivi dettagliatamente le tue ragioni. Rai non effettua attività di marketing diretto, inclusa profilazione, senza il tuo consenso.<br>
+A tal riguardo, ti invitiamo a leggere con attenzione gli approfondimenti disponibili&nbsp;<a href="http://www.rai.it/account/Privacy-Policy-Estesa-da55777c-6ea7-4b80-b6fb-111a7d7bdf42.html#ContentItem-dd61e7a6-532d-42cd-8f9f-d5598e2b50b4">qui</a>.</div></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><script src="/dl/components/js/accordion-rai.js?20180605165610" type="text/javascript"></script>
+
+<div class="premium-module premium-testo" data-item-type="testo" data-uniquename="ContentItem-ef89fe07-b52e-440f-bd27-b2a9054c7344">
+<div class="row">
+<div class="columns small-12 large-8 large-offset-2">
+<p>Per avere ulteriori informazioni e dettagli sulla Privacy Policy e sul trattamento dei tuoi dati da parte di Rai, ti invitiamo a consultare gli approfondimenti disponibili&nbsp;<a href="http://www.rai.it/account/Privacy-Policy-Estesa-da55777c-6ea7-4b80-b6fb-111a7d7bdf42.html">qui</a>&nbsp;</p>
+</div>
+</div>
+</div><div class="premium-module premium-citazione" data-item-type="citazione" data-uniquename="ContentItem-17a0a573-07e7-40f3-a0e2-ccea9d5719f0">
+<div class="row">
+<div class="columns small-12 large-8 large-offset-2">
+<p class="citazione"><strong>Ultimo aggiornamento: 25/05/2023</strong></p>
+</div>
+</div>
+</div>
+
+<div class="hideApp" id="containerFooter">
+
+
+
+
+<script src="/common/assets/js/webcomponents/rai-footer.js"></script>
+<rai-footer></rai-footer>
+
+<!-- <style type="text/css">
+@import url("/dl/components/css/footer.css");
+</style>
+<div class="row footer">
+	<div class="columns small-12">
+		<div class="row inner-footer">
+			<div class="columns small-12 medium-12 large-3 large-order-3 links">
+				<div class="row">
+					<div class="columns small-4 large-12"><a href="https://www.rai.it/privacy/PrivacyPolicy.html">Privacy policy</a></div>
+					<div class="columns small-4 large-12"><a href="https://www.rai.it/privacy/CookiePolicy.html">Cookie policy</a></div>
+					<div class="columns small-4 large-12"><a href="https://www.rai.it/trasparenza/">Società trasparente</a></div>
+				</div>
+			</div>
+			<div class="columns small-12 medium-12 large-9">
+				<div class="logo_footer">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="logoRai">
+						<g display="inline">
+							<path d="m199.960999,0.02613h-199.961259v199.97387h199.961259v-199.97387l0,0zm-159.700298,97.626572h2.007999c6.765999,0 14.394001,-1.250999 14.394001,-9.946999c0,-8.671005 -7.628002,-9.948006 -14.394001,-9.948006h-2.007999v19.895004l0,0zm45.645,44.068291h-25.841l-19.595001,-30.716995h-0.209v30.716995h-20.756001v-79.869293h31.017002c15.789097,0 27.757,7.535004 27.757,24.575996c0,11.030006 -6.153999,20.561302 -17.483002,22.568306l25.110001,32.724991l0,0zm20.691299,-27.104996c0,6.871002 4.551003,12.177002 12.399002,12.177002c7.835999,0 12.386002,-5.306 12.386002,-12.177002c0,-6.675995 -4.550003,-12.281998 -12.386002,-12.281998c-7.848,0 -12.399002,5.606003 -12.399002,12.281998m43.416,27.104996h-19.257004v-6.022995h-0.233994c-3.377007,5.397003 -10.039001,7.822006 -16.415001,7.822006c-16.102203,0 -27.431305,-13.455002 -27.431305,-29.022003c0,-15.567299 11.147003,-28.918304 27.236305,-28.918304c6.231995,0 12.815994,2.334 16.843994,7.106003v-5.292999h19.257004v54.328293l0,0zm32.399002,-75.202293c0,5.945 -4.889008,10.808998 -10.807999,10.808998c-5.919006,0 -10.807999,-4.863998 -10.807999,-10.808998c0,-5.918999 4.888992,-10.782001 10.807999,-10.782001c5.918991,0 10.807999,4.863003 10.807999,10.782001m-1.173004,75.202293h-19.257004v-54.328293h19.257004v54.328293l0,0zm-181.238998,23.27301v-88.318306v-18.617996v-25.202h-0.987l0.987,132.138302z" fill="#7c8589" id="path2901"></path>
+						</g>
+					</svg>
+				</div>
+				<span>
+					Rai - Radiotelevisione Italiana Spa <br>
+					Sede legale: Viale Mazzini, 14 - 00195 Roma |
+					Cap. Soc. Euro 242.518.100,00 interamente versato<br>
+					<span class="hide-for-small-only">Ufficio del Registro delle Imprese di Roma 
+					© RAI 2014 - tutti i diritti riservati. P.Iva 06382641006</span>
+				</span>	
+			</div>
+		</div>
+	</div>
+</div> -->
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script><script type="text/javascript"> $(document).foundation(); //</script><script>var WebFontConfig={custom:{families:['Open Sans:400,300,600,700,800'],urls:['https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800']}};WebFont.load(WebFontConfig);</script><script src="/dl/components/js/raisso.js?20230125121020" type="text/javascript" defer=""></script><script src="/dl/components/js/premium.js?20181002153132" type="text/javascript" defer=""></script>
+<!-- Cookie Banner -->
+
+<script type="text/javascript" src="/dl/components/js/cookiebanner/cookieBanner.js?20230724113422"></script>
+<noscript><img src="https://www.rai.it/akam/13/pixel_75951c14?a=dD0xZjQ4MTRjMjdhMTM3Yjk5YmIyMTY2OTFmZjY2OTQxZWZhNTEwNTA5JmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript>
+
+
+
+
+<script data-type="text/javascript" data-managed="as-oil" data-purposes="9" type="as-oil" data-src="/dl/components/js/analytics/nielsen/initnielsen.js?12345"></script>
+<script type="text/javascript" id="">var checkComScore=function(){if(!window._comscore||-1!=document.location.host.indexOf("raiplayradio")){window._comscore=[];_comscore.push({c1:"2",c2:"15866303"});var c=("https:"==document.location.protocol?"https://sb":"http://b")+".scorecardresearch.com",a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src=c+"/beacon.js";b.parentNode.insertBefore(a,b);a=document.createElement("noscript");b=document.createElement("img");b.setAttribute("src",c+"p?c1\x3d2\x26c2\x3d15866303\x26cv\x3d2.0\x26cj\x3d1");
+a.appendChild(b);document.getElementsByTagName("body")[0].appendChild(a)}};$(function(){"undefined"!=typeof raiTrack&&raiTrack.addPageTracker(checkComScore)});</script><script type="text/javascript" id="">var ready=new Event("tag-manager-ready");window.dispatchEvent(ready);var domain="http:"==document.location.protocol?"http://www.rai.it":"https://secure.rai.it";"undefined"==typeof jQuery?loadjQuery(domain+"/dl/js/jquery/jquery-1.10.1.min.js",loadIub):loadIub();
+function loadjQuery(b,c){var a=document.createElement("script");a.setAttribute("src",b);a.onload=c;a.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||c()};document.getElementsByTagName("head")[0].appendChild(a)}function getDomainBanner(){window.dfpEnabled=!0}
+function loadIub(){"undefined"==typeof utils?$.ajax({url:domain+"/dl/js/cookie.pack.js",dataType:"script",cache:!1,success:function(b){console.log("script scaricato");$("head").append("\x3cscript\x3e"+b+"\x3c/script\x3e");getDomainBanner()}}):getDomainBanner()};</script><script type="text/javascript" id="">var trackPageWebtrekk=function(b){"undefined"===typeof window.wt&&raiTrack.initWebtrekk();if("string"!==typeof b)if(-1!=document.location.href.indexOf("?")){var a=document.location.href.substring(document.location.href.indexOf("?")+1);b=document.location.href.substring(0,document.location.href.indexOf("?"));-1!=a.indexOf("canale")&&-1!=a.indexOf("giorno")&&(raiTrack.pageInfo.cp[2]=a.split("\x26")[0].substring(a.indexOf("\x3d")+1),raiTrack.pageInfo.cp[3]=a.split("\x26")[1].substring(a.indexOf("\x3d")+
+1))}else b=document.location.href;if("string"==typeof window.predictHpType)raiTrack.pageInfo.cp[5]+=";predictHpType\x3d"+window.predictHpType;else try{var d=utils.cookie.get("predictPageRef");d&&(raiTrack.pageInfo.cp[5]+=";predictHpType\x3d"+d);utils.cookie.remove("predictPageRef","/",document.location.host)}catch(c){console.log(c)}wt.contentId=b;wt.customParameter=raiTrack.pageInfo.cp;wt.contentGroup=raiTrack.pageInfo.cg;wt.internalSearch=raiTrack.pageInfo.internalSearch;delete raiTrack.pageInfo.internalSearch;
+window.Raisso&&Raisso.checkLogin()&&(window.raiSsoUserObject.ua&&(wt.customerId=window.raiSsoUserObject.ua),wt.urmCategory={1:window.raiSsoUserObject.personalizzazione?"true":"false"},window.raiSsoUserObject.birthYear&&window.raiSsoUserObject.age&&(18<=window.raiSsoUserObject.age&&(wt.birthdayJ=window.raiSsoUserObject.birthYear),wt.birthdayM="01",wt.birthdayD="01"),wt.gender=window.raiSsoUserObject.gender?"m"==window.raiSsoUserObject.gender?"1":"2":"3");try{wt.sendinfo()}catch(c){console.log(c)}};
+$(function(){"undefined"!=typeof raiTrack&&("undefined"==typeof window.wt&&raiTrack.loadScript?raiTrack.loadScript("/dl/components/js/analytics/webtrekk_v4.min.js",function(){raiTrack.addPageTracker(trackPageWebtrekk);!1}):raiTrack.addPageTracker(trackPageWebtrekk))});</script><script type="text/javascript" id="" src="/dl/components/js/analytics/comscore/comScore-JS-6.3.1.181004.min.js"></script><iframe name="__tcfapiLocator" style="display: none;"></iframe><div id="tracker"><!----><rai-tracker-retrocomp pageinfo="[object Object]" disableonloadtrack="false" disabletrackingsystems="akamai, raitrack" mode=""></rai-tracker-retrocomp><!----></div>
+<script type="text/javascript" id="" src="/dl/components/js/analytics/comscore/comscore.rp.v1.0.18.js"></script><iframe width="0" height="0" sandbox="allow-same-origin allow-scripts" referrerpolicy="origin" src="https://www.rai.it/domain-cookie.html" style="display: none;"></iframe></body></html>

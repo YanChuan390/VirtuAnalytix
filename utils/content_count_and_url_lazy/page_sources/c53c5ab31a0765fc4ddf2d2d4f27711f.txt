@@ -1,0 +1,190 @@
+<html lang="en" style="scroll-behavior: smooth;"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <title>Pandora VR</title>
+</head>
+
+<body style="">
+
+    <!-- Hero Section ---------------------------------------->
+    <section id="hero">
+        <div class="hero-container"></div>
+        <div>
+            <img src="img/coverart_split.jpg" alt="coverart" width="100%">
+        </div>
+    </section>
+
+    <!-- Parallax------------------------------------------------------------------>
+    <section id="parallax">
+        <div>
+            <img src="img/coverart_logo.png" alt="logo" id="logo" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+            <img src="img/skull.png" alt="skull" id="skull" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.to('#skull', {
+                scrollTrigger: {
+                    scrub: true
+                },
+                y: 150, scale: 2.2, rotation: 10
+            })
+            gsap.to('#logo', {
+                scrollTrigger: {
+                    scrub: true
+                },
+                y: -70,
+            })
+        </script>
+    </section>
+
+    <!-- Navigation bar -------------------------------------->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a class="unselectable">|</a></li> -->
+            <li><a href="#trailer">Trailer</a></li>
+            <!-- <li><a class="unselectable">|</a></li> -->
+            <li><a href="#download">Download</a></li>
+            <!-- <li><a class="unselectable">|</a></li> -->
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section --------------------------------------->
+    <section id="about"></section>
+    <div class="about container">
+        <div class="about-top">
+            <h1 class="section-title">About</h1>
+            <p>Open the box and gain the powers that reside within. Open the box and interrupt their slumber <b>... if
+                    you dare.</b>
+            </p><p>
+                <br>
+                Pandora is a retro-style arcade shooter infused with the haptics and the scale of VR. Face hordes of
+                demons and beat
+                your highscores - or try your luck in various short but demanding challenge scenarios. Let them drown in
+                a barrage of
+                magic, manipulate time and collect crystals for upgrades and to unleash your most powerful attacks!
+            </p>
+            <br>
+            <p>Magic has its limits. Still, the limits can be overcome by special talent. Those who do not have this
+                talent seek
+                other means. One such is Pandora’s box. Through binding to the cosmos, Pandora's Box can enhance the
+                abilities of those
+                unskilled magicians. But in order to win Pandora's power for oneself, strong will and perseverance are
+                required, since
+                that box not only represents hope - but also includes the evil of the cosmos.
+
+                Step Closer. Open the Box and Decide Your Fate.</p>
+            <br>
+            <h4>Big Update coming soon!</h4>
+            <br>
+            <p>We are pleased to announce that a non-VR update (only on Steam) is currently in the works. This update aims to expand the
+            horizons of Pandora and make it accessible to even more players. Whether you're a fan of virtual reality or prefer
+            traditional gaming, we're committed to providing an enjoyable experience for everyone.</p>
+        </div>
+    </div>
+
+    <!-- Trailer Section ------------------------------------->
+    <section id="trailer">
+        <div class="trailer-container">
+            <h1 class="section-title">Trailer</h1>
+            <div class="trailer-video">
+                <iframe src="https://www.youtube-nocookie.com/embed/miJKSiNt3P8" title="Pandora Launch Trailer | Sucurema GmbH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="hell">
+        <div>
+            <!-- Download Section ------------------------------------>
+            <section id="download">
+                <div class="download-container">
+                    <div class="buttons">
+                        <ul>
+                            <li><a href="https://www.oculus.com/experiences/quest/5882528768454391?utm_source=pandora-vr.com/" type="button" class="cta" target="_blank " rel="noopener noreferrer"><img src="img/btn_oculus.png"></a></li>
+                            <li><a href="https://store.steampowered.com/app/2294290?utm_source=pandora-vr.com" type="button" class="cta" target="_blank " rel="noopener noreferrer"><img src="img/btn_steam.png"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Gallery  tutorial ------------------------------->
+            <section id="gallery" class="wrapper-gallery">
+                <div class="gallery-img img1">
+                    <div><a href="#"><img src="img/img_1.jpg" alt="Screenshot 1" style="width: 100%"></a></div>
+                </div>
+                <div class="gallery-img img2">
+                    <div><a href="#"><img id="gImg" src="img/img_2.jpg" alt="Screenshot 2" style="width: 100%"></a>
+                    </div>
+                </div>
+                <div class="gallery-img img3">
+                    <div><a href="#"><img src="img/img_3.jpg" alt="Screenshot 3" style="width: 100%"></a></div>
+                </div>
+                <div class="gallery-img img4">
+                    <div><a href="#"><img src="img/img_4.jpg" alt="Screenshot 4" style="width: 100%"></a></div>
+                </div>
+                <div class="gallery-img img5">
+                    <div><a href="#"><img src="img/img_5.jpg" alt="Screenshot 5" style="width: 100%"></a></div>
+                </div>
+                <div class="gallery-img img6">
+                    <div><a href="#"><img src="img/img_6.jpg" alt="Screenshot 6" style="width: 100%"></a></div>
+                </div>
+                <div class="gallery-img img7">
+                    <div><a href="#"><img src="img/img_7.jpg" alt="Screenshot 7" style="width: 100%"></a></div>
+                </div>
+                <div class="gallery-img img8">
+                    <div><a href="#"><img src="img/img_8.jpg" alt="Screenshot 8" style="width: 100%"></a></div>
+                </div>
+                <div class="gallery-img img9">
+                    <div><a href="#"><img src="img/img_9.jpg" alt="Screenshot 9" style="width: 100%"></a></div>
+                </div>
+                <hr>
+            </section>
+            <script src="js/gallery.js"></script>
+
+            <!-- Footer ---------------------------------------------->
+            <footer>
+                <p>
+                    <a>
+                        </a></p><p><a>© 2023 Sucurema GmbH</a></p><a><br>
+                    </a>
+                <ul>
+                    <li>
+                        <a href="https://sucurema.com/en/imprint" target="_blank " rel="noopener noreferrer">Imprint</a>
+                    </li>
+
+                    <li><a class="unselectable">|</a></li>
+
+                    <li>
+                        <a href="https://sucurema.com/en/privacy-policy" target="_blank " rel="noopener noreferrer">Privacy
+                            Policy</a>
+                    </li>
+
+                    <li><a class="unselectable">|</a></li>
+
+                    <li>
+                        <a href="https://www.dropbox.com/sh/vgec85myw4x1ars/AADrlLO1GGihCUJhTp7a91NSa?dl=0" target="_blank" rel="noopener noreferrer">
+                            Presskit</a>
+
+                    </li>
+                    <li><a class="unselectable">|</a></li>
+                
+                    <li>
+                        <a href="mailto:vr@sucurema.com">Contact</a>
+                    </li>
+                </ul>
+                <p></p>
+            </footer>
+        </div>
+    </section>
+
+
+
+</body></html>

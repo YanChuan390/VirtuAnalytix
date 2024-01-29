@@ -1,0 +1,228 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>VRPuzzle</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet" type="text/csss">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
+
+    <link href="/assets/css/theme.css?v=1595501336" rel="stylesheet">
+
+    <script src="https://partner.googleadservices.com/gampad/cookie.js?domain=drodin.com&amp;callback=_gfp_s_&amp;client=ca-pub-4136695078828985"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202308310101/show_ads_impl_fy2021.js" id="google_shimpl"></script><script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script data-ad-client="ca-pub-4136695078828985" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-checked-head="true"></script>
+  <meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="></head>
+
+  <body>
+    <div class="content-wrapper">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">drodin.com</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/posts">Posts</a></li>
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    
+    
+    <li><a href="/xenowar/">Xenowar</a></li>
+    
+    <li><a href="/billiards/">Pyramid Billiards</a></li>
+    
+    <li><a href="/vrpuzzle/">VRPuzzle</a></li>
+    
+    <li><a href="/extremetuxracer/">Extreme Tux Racer</a></li>
+    
+    <li><a href="/neverball/">Neverball</a></li>
+    
+    <li><a href="/neverputt/">Neverputt</a></li>
+    
+    <li><a href="/stratagus/">Stratagus</a></li>
+    
+    <li><a href="/crimson/">Crimson Fields</a></li>
+    
+    <li><a href="/zxdroid/">ZXdroid</a></li>
+    
+    <li><a href="/tuxrider/">Tux Rider</a></li>
+    
+    <li><a href="/elastik/">Elastik Blocks</a></li>
+    
+    <li><a href="/fboard/">FBoard</a></li>
+    
+  </ul>
+</li>
+              <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apps <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    
+    
+    <li><a href="/One-Click-Translate-for-Safari/">One Click Translate for Safari</a></li>
+    
+  </ul>
+</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="page container" role="main" style="height: auto !important;">
+        
+
+<meta itemprop="headline" content="VRPuzzle">
+<meta itemprop="description" content="Put together 3D puzzles in a beautiful and spacious VR surrounding.">
+
+<div class="item-header clearfix">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <img src="/assets/icons/icon_vrpuzzle.png">
+  
+
+  
+
+  
+
+
+  <h1><strong>VRPuzzle</strong></h1>
+  <h4>Put together 3D puzzles in a beautiful and spacious VR surrounding.
+</h4>
+</div>
+
+<div class="row">
+  
+
+  
+
+  
+    <div class="market col-sm-3">
+      <a href="https://www.oculus.com/experiences/quest/5760575520637860">
+        <div class="clearfix">
+          <img class="market-icon" src="/assets/images/oculus_logo.png">
+          <span>
+            <b>Oculus App Lab</b><br>
+            <i>Version 0.1</i>
+          </span>
+        </div>
+        <img src="https://chart.apis.google.com/chart?cht=qr&amp;chld=|0&amp;chs=120x120&amp;chl=https://www.oculus.com/experiences/quest/5760575520637860">
+      </a>
+    </div>
+  
+
+  <div class="download col-sm-3">
+    <div class="clearfix">
+      <b>Direct Download:</b><br>
+      <i>&nbsp;</i><br>
+    </div>
+    
+
+    
+
+    
+      <a class="btn btn-md btn-primary" href="https://sidequestvr.com/app/2534/vrpuzzle">
+        <b>Oculus Quest</b> <i>Version 0.1</i>
+      </a>
+    
+
+    
+  </div>
+</div><div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-4136695078828985" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color: transparent; height: 280px;"><div id="aswift_1_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 280px; width: 1003px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:1003px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1003" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4136695078828985&amp;output=html&amp;h=280&amp;adk=3103916770&amp;adf=4140110316&amp;pi=t.aa~a.3711612684~rp.4&amp;w=1003&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1659587006&amp;rafmt=1&amp;to=qs&amp;pwprc=6360725819&amp;format=1003x280&amp;url=https%3A%2F%2Fdrodin.com%2Fvrpuzzle%2F%23privacy-policy&amp;fwr=0&amp;pra=3&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=40&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTE2LjAuNTg0NS4xNDIiLFtdLDAsbnVsbCwiNjQiLFtbIkNocm9taXVtIiwiMTE2LjAuNTg0NS4xNDIiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXSxbIkdvb2dsZSBDaHJvbWUiLCIxMTYuMC41ODQ1LjE0MiJdXSwwXQ..&amp;dt=1694052727321&amp;bpp=2&amp;bdt=21349&amp;idt=15348&amp;shv=r20230906&amp;mjsv=m202308310101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0&amp;nras=2&amp;correlator=8055131454684&amp;frm=20&amp;pv=1&amp;ga_vid=1991552039.1694052743&amp;ga_sid=1694052743&amp;ga_hid=958154336&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=8&amp;ady=540&amp;biw=1019&amp;bih=668&amp;scr_x=0&amp;scr_y=0&amp;eid=44759927%2C44759842%2C44759876%2C44795921&amp;oid=2&amp;pvsid=1313633249741637&amp;tmod=1832989854&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C668&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=128&amp;bc=31&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;xpc=74PCemf7qt&amp;p=https%3A//drodin.com&amp;dtd=15352" data-google-container-id="a!2" data-load-complete="true" data-google-query-id="CKrG_Z-2l4EDFSlhDwIdRUUBtQ"></iframe></div></ins></div>
+
+
+
+
+
+
+
+
+
+  
+
+  <div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-4136695078828985" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color: transparent; height: 0px;"><div id="aswift_2_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 1003px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"><iframe id="aswift_2" name="aswift_2" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 1003px; height: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1003" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4136695078828985&amp;output=html&amp;h=60&amp;adk=2765563893&amp;adf=1712765404&amp;pi=t.aa~a.291027028~rp.1&amp;w=1003&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1659587006&amp;rafmt=1&amp;to=qs&amp;pwprc=6360725819&amp;format=1003x60&amp;url=https%3A%2F%2Fdrodin.com%2Fvrpuzzle%2F%23privacy-policy&amp;fwr=0&amp;pra=3&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=40&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTE2LjAuNTg0NS4xNDIiLFtdLDAsbnVsbCwiNjQiLFtbIkNocm9taXVtIiwiMTE2LjAuNTg0NS4xNDIiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXSxbIkdvb2dsZSBDaHJvbWUiLCIxMTYuMC41ODQ1LjE0MiJdXSwwXQ..&amp;dt=1694052743008&amp;bpp=1&amp;bdt=37036&amp;idt=1&amp;shv=r20230906&amp;mjsv=m202308310101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Df6d577ede1e6350b-22ed51456de300c4%3AT%3D1694052743%3ART%3D1694052743%3AS%3DALNI_MZWxDqlVprrgoLs1g2NV0uyJ-Zv9A&amp;gpic=UID%3D00000d9091031889%3AT%3D1694052743%3ART%3D1694052743%3AS%3DALNI_MYuzddrL25xlDYlmpR54_TPpsSiNQ&amp;prev_fmts=0x0%2C1003x280&amp;nras=3&amp;correlator=8055131454684&amp;frm=20&amp;pv=1&amp;ga_vid=1991552039.1694052743&amp;ga_sid=1694052743&amp;ga_hid=958154336&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=8&amp;ady=830&amp;biw=1019&amp;bih=668&amp;scr_x=0&amp;scr_y=0&amp;eid=44759927%2C44759842%2C44759876%2C44795921&amp;oid=2&amp;pvsid=1313633249741637&amp;tmod=1832989854&amp;uas=0&amp;nvt=1&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C668&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=128&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=1&amp;fsb=1&amp;xpc=38mFbXs10x&amp;p=https%3A//drodin.com&amp;dtd=5" data-google-container-id="a!3" data-load-complete="true" data-google-query-id="COLDiKC2l4EDFR1fDwIdQ6kGDA"></iframe></div></ins></div><div class="gallery clearfix">
+    
+      <div class="col-sm-3">
+        <a data-fancybox="gallery" href="/assets/screens/vrpuzzle1.png">
+          <img class="thumbnail img-responsive" src="/assets/screens/vrpuzzle1_.png" alt="">
+        </a>
+      </div>
+    
+      <div class="col-sm-3">
+        <a data-fancybox="gallery" href="/assets/screens/vrpuzzle2.png">
+          <img class="thumbnail img-responsive" src="/assets/screens/vrpuzzle2_.png" alt="">
+        </a>
+      </div>
+    
+      <div class="col-sm-3">
+        <a data-fancybox="gallery" href="/assets/screens/vrpuzzle3.png">
+          <img class="thumbnail img-responsive" src="/assets/screens/vrpuzzle3_.png" alt="">
+        </a>
+      </div>
+    
+      <div class="col-sm-3">
+        <a data-fancybox="gallery" href="/assets/screens/vrpuzzle4.png">
+          <img class="thumbnail img-responsive" src="/assets/screens/vrpuzzle4_.png" alt="">
+        </a>
+      </div>
+    
+  </div>
+
+
+
+<p>Put together 3D puzzles in a beautiful and spacious surrounding.<br>
+Be rewarded with a piece of art in your hands and in your own personal gallery.<br>
+Choose a comfortable level of difficulty from easy, medium or hard to relax, meditate and concentrate.</p>
+
+
+<h3><a href="#privacy-policy">Privacy Policy:</a></h3>
+
+We don't collect any personal data from our games and applications.<br>
+If you have any questions please don't hesitate to contact us: <a href="mailto:support+vrpuzzle@drodin.com">support+vrpuzzle@drodin.com</a>
+
+      </div>
+    </div>
+
+    <footer>
+      © Copyright 2008 - 2021 by drodin
+    </footer>
+
+  
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4136695078828985&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1659587006&amp;plat=3%3A65536%2C4%3A65536%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fdrodin.com%2Fvrpuzzle%2F%23privacy-policy&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;asrtr=1&amp;asiscm=1&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1&amp;asladp=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTE2LjAuNTg0NS4xNDIiLFtdLDAsbnVsbCwiNjQiLFtbIkNocm9taXVtIiwiMTE2LjAuNTg0NS4xNDIiXSxbIk5vdClBO0JyYW5kIiwiMjQuMC4wLjAiXSxbIkdvb2dsZSBDaHJvbWUiLCIxMTYuMC41ODQ1LjE0MiJdXSwwXQ..&amp;dt=1694052727300&amp;bpp=21&amp;bdt=21329&amp;idt=15340&amp;shv=r20230906&amp;mjsv=m202308310101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=8055131454684&amp;frm=20&amp;pv=2&amp;ga_vid=1991552039.1694052743&amp;ga_sid=1694052743&amp;ga_hid=958154336&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1019&amp;bih=668&amp;scr_x=0&amp;scr_y=0&amp;eid=44759927%2C44759842%2C44759876%2C44795921&amp;oid=2&amp;pvsid=1313633249741637&amp;tmod=1832989854&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C668&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=15366" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230906/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>

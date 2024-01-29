@@ -1,0 +1,739 @@
+<html><head><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 9999;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style>
+    <script type="text/javascript" async="" src="https://widget.intercom.io/widget/jdykmlm9"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-5Z41L30H3X&amp;cx=c&amp;_slc=1"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-488863079&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PSG79TS"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K7DPRS9"></script><script src="https://js.stripe.com/v3/"></script>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="abu2w8OjB2zjX9v0BjTIX3m_4P-4beFBD0vJaYwokFRxOff6eJ-GrhDP4XdmU0fdiZp6BTLWjOaokhrSQL6dKw">
+    
+    <meta charset="utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-14e9efbd493ad38b389","applicationID":"420322944","transactionName":"IV1XTEUJXVRSEBtZAgxWUFZQSUFKXhRVVho=","queueTime":0,"applicationTime":17,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-14e9efbd493ad38b389",applicationID:"420322944"};;/*! For license information please see nr-loader-rum-1.238.0.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={763:(e,t,n)=>{n.d(t,{P_:()=>f,Mt:()=>p,C5:()=>s,DL:()=>m,OP:()=>j,lF:()=>T,Yu:()=>y,Dg:()=>g,CX:()=>c,GE:()=>b,sU:()=>E});var r=n(632),i=n(567);const o={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,r.Qy)(e,a[e],"info")}var d=n(56);const u=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},harvest:{tooManyRequestsDelay:60},session_replay:{enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10}}},l={};function f(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=(0,i.D)(t,u()),(0,r.Qy)(e,l[e],"config")}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var n=f(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const h={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function m(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!v[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return v[e]}function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=(0,i.D)(t,h),(0,r.Qy)(e,v[e],"loader_config")}const y=(0,r.mF)().o;var w=n(385),A=n(818);const x={buildEnv:A.Re,bytesSent:{},queryBytesSent:{},customTransaction:void 0,disabled:!1,distMethod:A.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(w._A?.performance?.timeOrigin||w._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+w._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof w._A.XMLHttpRequest?.prototype?.addEventListener,version:A.q4,denyList:void 0},D={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function E(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,x),(0,r.Qy)(e,D[e],"runtime")}function T(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(n).length?e:n;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?n[a]=i(e[a],t[a]):n[a]=e[a]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>o,q4:()=>r});const r="1.238.0",i="PROD",o="CDN"},385:(e,t,n)=>{n.d(t,{IF:()=>c,Nk:()=>u,Tt:()=>a,_A:()=>o,il:()=>r,pL:()=>s,v6:()=>i,w1:()=>d});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=(o?.location,/iPad|iPhone|iPod/.test(navigator.userAgent)),s=a&&"undefined"==typeof SharedWorker,c=(()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),d=Boolean(r&&window.document.documentMode),u=!!navigator.sendBeacon},711:(e,t,n)=>{n.d(t,{w:()=>o});var r=n(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},0:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(148),i=n(284),o=n(322),a=n(325);const s={};function c(e,t){const n={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const n=[...s[e]];function a(t){const n=e?r.ee.get(e):r.ee,a=o.X.handlers;if(n.backlog&&a){var s=n.backlog[t],c=a[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete a[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((e=>{let[t]=e;a(t)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],o=e[3],a=e[2];i.apply(o,a)}}))}},148:(e,t,n)=>{n.d(t,{A:()=>c,ee:()=>d});var r=n(632),i=n(210),o=n(763);class a{constructor(e){this.contextId=e}}var s=n(117);const c="nr@context:".concat(s.a),d=function e(t,n){var r={},s={},u={},f=!1;try{f=16===n.length&&(0,o.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,o){!1!==o&&(o=!0);if(d.aborted&&!i)return;t&&o&&t.emit(e,n,r);for(var a=p(r),c=v(e),u=c.length,l=0;l<u;l++)c[l].apply(a,n);var f=b()[s[e]];f&&f.push([g,e,n,a]);return a},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return u[t]=u[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),u=(0,r.fP)();function l(){d.aborted=!0,d.backlog={}}u.ee||(u.ee=d)},546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(148).ee.get("handle");function i(e,t,n,i,o){o?(o.buffer([e],i),o.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},322:(e,t,n)=>{n.d(t,{X:()=>o});var r=n(546);o.on=a;var i=o.handlers={};function o(e,t,n,o){a(o||r.E,i,e,t,n)}function a(e,t,n,i,o){o||(o="feature"),e||(e=r.E);var a=t[o]=t[o]||{};(a[n]=a[n]||[]).push([e,i])}},239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var r=n(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(n,r))}},117:(e,t,n)=>{n.d(t,{a:()=>r});const r=(0,n(402).Rl)()},402:(e,t,n)=>{n.d(t,{Rl:()=>a,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++n).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(n,++i).toString(16));return a.join("")}},56:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>o,oD:()=>i});const r="NRBA",i=144e5,o=18e5},894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(148),i=n(546),o=n(0),a=n(325);const s={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]};function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(Object.entries(e).forEach((e=>{let[t,r]=e;void 0===d[t]&&(s[t]?s[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r))})),Object.keys(s).forEach((e=>{void 0===d[e]&&(s[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),(0,o.L)(t,a.D.pageViewEvent))}const d={}},210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},351:(e,t,n)=>{n.d(t,{P:()=>o});var r=n(148);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},960:(e,t,n)=>{n.d(t,{K:()=>a,b:()=>o});var r=n(239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,r.bP)("load",e,t)}function a(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>u,mF:()=>s});var r=n(894),i=n(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[n]:t}},i}function d(e,t){a()[e]=t}function u(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;return void(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"==document.visibilityState&&e());e(document.visibilityState)}),n,i)}},81:(e,t,n)=>{n.d(t,{gF:()=>o,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>a});const r=n(325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},633:(e,t,n)=>{n.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>r});const r=n(325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(325).D.pageViewTiming},938:(e,t,n)=>{n.d(t,{W:()=>o});var r=n(763),i=n(148);class o{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},144:(e,t,n)=>{n.d(t,{j:()=>v});var r=n(325),i=n(763),o=n(546),a=n(148),s=n(894),c=n(0),d=n(960),u=n(385),l=n(50),f=n(81),g=n(632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...r))})),o.length>1?o:o[0]}(t,...r)}}))}var h=n(587);function v(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},v=arguments.length>2?arguments[2]:void 0,m=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:A={loaderType:v},exposed:x=!0}=t;const D=(0,g.gG)();y||(b=D.init,y=D.info,w=D.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),y.jsAttributes??={},u.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y);const j=(0,i.P_)(e);A.denyList=[...j.ajax?.deny_list||[],...j.ajax?.block_internal?[y.beacon,y.errorBeacon]:[]],(0,i.sU)(e,A),p();const E=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,o){const a=(0,i.C5)(e);return null===n?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:n}}),A(v,r,!0,o||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>g[e]=A(v,e,!0,"api"))),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,a="function"==typeof t;return(0,o.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],n),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function x(){n.e(75).then(n.bind(n,438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>x()),!0):x(),g}(e,m);return(0,g.Qy)(e,E,"api"),(0,g.Qy)(e,x,"exposed"),(0,g.EZ)("activatedFeatures",h.T),E}},325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var o=r[e]={exports:{}};return n[e](o,o.exports,i),o.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum.3709cb75-1.238.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.238.0.PROD:",i.l=(n,r,o,a)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var o=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var o=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,o,[a,s,c]=n,d=0;if(a.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},n=self["webpackChunk:NRBA-1.238.0.PROD"]=self["webpackChunk:NRBA-1.238.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var n=i(325),r=i(763);const o=Object.values(n.D);function a(e){const t={};return o.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(144);var c=i(546),d=i(385),u=i(0),l=i(938),f=i(960);class g extends l.W{constructor(e,t,n){let r=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=r,this.abortHandler,this.featAggregate,this.onAggregateImported,r&&(0,u.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;const n=d.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,u.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),o(!1)}};d.il?(0,f.b)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var p=i(633),h=i(894);class v extends g{static featureName=p.t9;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||d.Tt)&&"undefined"!=typeof PerformanceTiming){const t=(0,r.OP)(e);t[p.Dz]=Math.max(Date.now()-t.offset,0),(0,f.K)((()=>t[p.qw]=Math.max((0,h.z)()-t[p.Dz],0))),(0,f.b)((()=>{const e=(0,h.z)();t[p.OJ]=Math.max(e-t[p.Dz],0),(0,c.p)("timing",["load",e],void 0,n.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var m=i(711),b=i(284);class y extends m.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var o=this.getBucket(e,t,n,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,b.D)(e,(function(e,n){t[e]=w(n,t[e])})),t}(r,o.metrics),o}merge(e,t,n,r,i){var o=this.getBucket(e,t,r,i);if(o.metrics){var a=o.metrics;a.count+=n.count,(0,b.D)(n,(function(e,t){if("count"!==e){var r=a[e],i=n[e];i&&!i.c?a[e]=w(i.t,r):a[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=w(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=x(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function x(e){return"object"!=typeof e?[]:(0,b.D)(e,D)}function D(e,t){return t}var j=i(632),E=i(402),T=i(351);var _=i(956),k=i(239),P=i(251);class C extends g{static featureName=P.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,n),d.il&&((0,r.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,_.N)((()=>(0,c.p)("docHidden",[(0,h.z)()],void 0,P.t,this.ee)),!0),(0,k.bP)("pagehide",(()=>(0,c.p)("winPagehide",[(0,h.z)()],void 0,P.t,this.ee))),this.importAggregator())}}var I=i(81);class N extends g{static featureName=I.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),d._A?(this.agentIdentifier=n,this.sharedAggregator=new y({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(v),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.start()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}start(){const t="features";try{const r=a(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>r[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,T.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,j.Qy)(this.agentIdentifier,this.features,t)}catch(n){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",n);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,j.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[v,C,N],loaderType:"lite"})})()})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Have your desktop in VR on Mac, PC, and Linux with Immersed!">
+    <meta name="keywords" content="Oculus,Macbook,VR,reality,virtual,collaboration,work,future,remote,distributed,screen-share,conferencing,XR,mac,vr,desktop,linux,pc">
+    
+
+    <link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon/apple-icon-57x57-d05eec0d22f6c3fc16a1c4cbfaacc84c55337efdd4e3d8d2fc37b1de840c06a1.png" sizes="57x57">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon/apple-icon-60x60-72e88b7d19bb874cef9c3b94f4b0ff79d9c0bfb0cb78a4aa0ec163cdda9ed675.png" sizes="60x60">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon/apple-icon-72x72-26f9a079ddba39591dad6fd7b7ae28fb7beaac27f67979437a147d52d5a63bda.png" sizes="72x72">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon/apple-icon-76x76-f8e67d5f52ede2ff9950cc05002526f1aedb40fe12db0361105c0828607da5ea.png" sizes="76x76">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon/apple-icon-114x114-912e70e09fdafdef5ce9a5ff49c0055684ac2dc8b0031b39275999ec52c56c9c.png" sizes="114x114">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon/apple-icon-120x120-d4d61e01da37ba710a73daa183fab1dccbc27490924a1ecd2861c34390f2d895.png" sizes="120x120">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon/apple-icon-144x144-f9fe5cbd50895e3b428283a6f4522292d823c8de9ff2704e7fecc3c5d4218d60.png" sizes="144x144">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon/apple-icon-152x152-31eaabf1e86a056da7567af90526d8d90a5df9d51d173f8f12305a6b0e493a74.png" sizes="152x152">
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon/apple-icon-180x180-a1231e5e2ec4a1c1cc245aa28fcb72180beb1f3aed2202729c1a149eb094e6f8.png" sizes="180x180">
+<link rel="icon" type="image/x-icon" href="/assets/favicon/android-icon-192x192-202d04a8c19d3974616bc5dd9136796dbc04f4c10a4b32277d5eeb0d22e846b0.png" sizes="192x192">
+<link rel="icon" type="image/x-icon" href="/assets/favicon/android-icon-144x144-f9fe5cbd50895e3b428283a6f4522292d823c8de9ff2704e7fecc3c5d4218d60.png" sizes="144x144">
+<link rel="icon" type="image/x-icon" href="/assets/favicon/android-icon-96x96-2b31778bf073cec40fb0e23a8092f6907f5eda4a3ede8a3a580f85ed6bbe4996.png" sizes="96x96">
+<link rel="icon" type="image/x-icon" href="/assets/favicon/android-icon-72x72-26f9a079ddba39591dad6fd7b7ae28fb7beaac27f67979437a147d52d5a63bda.png" sizes="72x72">
+<link rel="icon" type="image/x-icon" href="/assets/favicon/android-icon-48x48-76bf1daa029b416108557fe645c76ec35a9038fcb2264a9c4bb67ff6781a57ca.png" sizes="48x48">
+<link rel="icon" type="image/x-icon" href="/assets/favicon/android-icon-36x36-5e10576696f09b1a1db1293ac2218a5e51c80227a8925f6d4e3e8c9a1922d140.png" sizes="36x36">
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon-32x32-3e823d40e492ee515bbe678b23d5d0613aaa69b7f04301b905f9b73ae8ac7f85.png" sizes="32x32">
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon-96x96-2b31778bf073cec40fb0e23a8092f6907f5eda4a3ede8a3a580f85ed6bbe4996.png" sizes="96x96">
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon-16x16-96535c1896d998101808adbf78ed140421b7b54256b47c7fba50a5138de696ff.png" sizes="16x16">
+
+<link rel="shortcut icon" href="/assets/favicon/favicon-32x32-3e823d40e492ee515bbe678b23d5d0613aaa69b7f04301b905f9b73ae8ac7f85.png">
+
+    <!-- TODO review the manifest, the links were already added in the metags above only link rel="manifest" href="/images/favicon/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144-f9fe5cbd50895e3b428283a6f4522292d823c8de9ff2704e7fecc3c5d4218d60.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:400,500,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/application-new-design-60229581d1bab2f2e512c160fd8b759139ae9849fa2544fafd95a6ac2ec06103.css" data-turbo-track="reload">
+    <link rel="stylesheet" href="/assets/tailwind-07e484800bfaa8cbabfddd47da79c777d8a15761607a790ef351dc851105b00e.css" data-turbo-track="reload">
+<link rel="stylesheet" href="/assets/inter-font-8c3e82affb176f4bca9616b838d906343d1251adc8408efe02cf2b1e4fcf2bc4.css" data-turbo-track="reload">
+    <script src="/assets/application-e8daa136ef8cec41339b2faf8f1e420e93c9c8595218739cd8bec5f3f6c90451.js" data-turbo-track="reload" defer="defer"></script>
+    <script src="//cdn.ckeditor.com/4.6.1/full/ckeditor.js"></script><style>.cke{visibility:hidden;}</style>
+
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-K7DPRS9');</script>
+      <!-- End Google Tag Manager -->
+
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PSG79TS');</script>
+      <!-- End Google Tag Manager -->
+      <!-- Global site tag (gtag.js) - Google Ads: 488863079 -->
+      <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-488863079"></script> -->
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-488863079');
+      </script>
+      <!-- Intercom  Code -->
+        <script>
+          window.intercomSettings = {
+                      app_id: "jdykmlm9"
+                    };
+          (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/jdykmlm9';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+        </script>
+    <!-- end Intercom  Code -->
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/488863079/?random=1694024873889&amp;cv=11&amp;fst=1694024873889&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be38u0&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Fimmersed.com%2Fprivacy&amp;hn=www.googleadservices.com&amp;frm=0&amp;auid=430902103.1694024874&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B116.0.5845.142%7CNot)A%253BBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B116.0.5845.142&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script><style type="text/css">.dg ul{list-style:none;margin:0;padding:0;width:100%;clear:both}.dg.ac{position:fixed;top:0;left:0;right:0;height:0;z-index:0}.dg:not(.ac) .main{overflow:hidden}.dg.main{-webkit-transition:opacity .1s linear;-o-transition:opacity .1s linear;-moz-transition:opacity .1s linear;transition:opacity .1s linear}.dg.main.taller-than-window{overflow-y:auto}.dg.main.taller-than-window .close-button{opacity:1;margin-top:-1px;border-top:1px solid #2c2c2c}.dg.main ul.closed .close-button{opacity:1 !important}.dg.main:hover .close-button,.dg.main .close-button.drag{opacity:1}.dg.main .close-button{-webkit-transition:opacity .1s linear;-o-transition:opacity .1s linear;-moz-transition:opacity .1s linear;transition:opacity .1s linear;border:0;line-height:19px;height:20px;cursor:pointer;text-align:center;background-color:#000}.dg.main .close-button.close-top{position:relative}.dg.main .close-button.close-bottom{position:absolute}.dg.main .close-button:hover{background-color:#111}.dg.a{float:right;margin-right:15px;overflow-y:visible}.dg.a.has-save>ul.close-top{margin-top:0}.dg.a.has-save>ul.close-bottom{margin-top:27px}.dg.a.has-save>ul.closed{margin-top:0}.dg.a .save-row{top:0;z-index:1002}.dg.a .save-row.close-top{position:relative}.dg.a .save-row.close-bottom{position:fixed}.dg li{-webkit-transition:height .1s ease-out;-o-transition:height .1s ease-out;-moz-transition:height .1s ease-out;transition:height .1s ease-out;-webkit-transition:overflow .1s linear;-o-transition:overflow .1s linear;-moz-transition:overflow .1s linear;transition:overflow .1s linear}.dg li:not(.folder){cursor:auto;height:27px;line-height:27px;padding:0 4px 0 5px}.dg li.folder{padding:0;border-left:4px solid rgba(0,0,0,0)}.dg li.title{cursor:pointer;margin-left:-4px}.dg .closed li:not(.title),.dg .closed ul li,.dg .closed ul li>*{height:0;overflow:hidden;border:0}.dg .cr{clear:both;padding-left:3px;height:27px;overflow:hidden}.dg .property-name{cursor:default;float:left;clear:left;width:40%;overflow:hidden;text-overflow:ellipsis}.dg .cr.function .property-name{width:100%}.dg .c{float:left;width:60%;position:relative}.dg .c input[type=text]{border:0;margin-top:4px;padding:3px;width:100%;float:right}.dg .has-slider input[type=text]{width:30%;margin-left:0}.dg .slider{float:left;width:66%;margin-left:-5px;margin-right:0;height:19px;margin-top:4px}.dg .slider-fg{height:100%}.dg .c input[type=checkbox]{margin-top:7px}.dg .c select{margin-top:5px}.dg .cr.function,.dg .cr.function .property-name,.dg .cr.function *,.dg .cr.boolean,.dg .cr.boolean *{cursor:pointer}.dg .cr.color{overflow:visible}.dg .selector{display:none;position:absolute;margin-left:-9px;margin-top:23px;z-index:10}.dg .c:hover .selector,.dg .selector.drag{display:block}.dg li.save-row{padding:0}.dg li.save-row .button{display:inline-block;padding:0px 6px}.dg.dialogue{background-color:#222;width:460px;padding:15px;font-size:13px;line-height:15px}#dg-new-constructor{padding:10px;color:#222;font-family:Monaco, monospace;font-size:10px;border:0;resize:none;box-shadow:inset 1px 1px 1px #888;word-wrap:break-word;margin:12px 0;display:block;width:440px;overflow-y:scroll;height:100px;position:relative}#dg-local-explain{display:none;font-size:11px;line-height:17px;border-radius:3px;background-color:#333;padding:8px;margin-top:10px}#dg-local-explain code{font-size:10px}#dat-gui-save-locally{display:none}.dg{color:#eee;font:11px 'Lucida Grande', sans-serif;text-shadow:0 -1px 0 #111}.dg.main::-webkit-scrollbar{width:5px;background:#1a1a1a}.dg.main::-webkit-scrollbar-corner{height:0;display:none}.dg.main::-webkit-scrollbar-thumb{border-radius:5px;background:#676767}.dg li:not(.folder){background:#1a1a1a;border-bottom:1px solid #2c2c2c}.dg li.save-row{line-height:25px;background:#dad5cb;border:0}.dg li.save-row select{margin-left:5px;width:108px}.dg li.save-row .button{margin-left:5px;margin-top:1px;border-radius:2px;font-size:9px;line-height:7px;padding:4px 4px 5px 4px;background:#c5bdad;color:#fff;text-shadow:0 1px 0 #b0a58f;box-shadow:0 -1px 0 #b0a58f;cursor:pointer}.dg li.save-row .button.gears{background:#c5bdad url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJJREFUeNpiYKAU/P//PwGIC/ApCABiBSAW+I8AClAcgKxQ4T9hoMAEUrxx2QSGN6+egDX+/vWT4e7N82AMYoPAx/evwWoYoSYbACX2s7KxCxzcsezDh3evFoDEBYTEEqycggWAzA9AuUSQQgeYPa9fPv6/YWm/Acx5IPb7ty/fw+QZblw67vDs8R0YHyQhgObx+yAJkBqmG5dPPDh1aPOGR/eugW0G4vlIoTIfyFcA+QekhhHJhPdQxbiAIguMBTQZrPD7108M6roWYDFQiIAAv6Aow/1bFwXgis+f2LUAynwoIaNcz8XNx3Dl7MEJUDGQpx9gtQ8YCueB+D26OECAAQDadt7e46D42QAAAABJRU5ErkJggg==) 2px 1px no-repeat;height:7px;width:8px}.dg li.save-row .button:hover{background-color:#bab19e;box-shadow:0 -1px 0 #b0a58f}.dg li.folder{border-bottom:0}.dg li.title{padding-left:16px;background:#000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;cursor:pointer;border-bottom:1px solid rgba(255,255,255,0.2)}.dg .closed li.title{background-image:url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlGIWqMCbWAEAOw==)}.dg .cr.boolean{border-left:3px solid #806787}.dg .cr.color{border-left:3px solid}.dg .cr.function{border-left:3px solid #e61d5f}.dg .cr.number{border-left:3px solid #2FA1D6}.dg .cr.number input[type=text]{color:#2FA1D6}.dg .cr.string{border-left:3px solid #1ed36f}.dg .cr.string input[type=text]{color:#1ed36f}.dg .cr.function:hover,.dg .cr.boolean:hover{background:#111}.dg .c input[type=text]{background:#303030;outline:none}.dg .c input[type=text]:hover{background:#3c3c3c}.dg .c input[type=text]:focus{background:#494949;color:#fff}.dg .c .slider{background:#303030;cursor:ew-resize}.dg .c .slider-fg{background:#2FA1D6;max-width:100%}.dg .c .slider:hover{background:#3c3c3c}.dg .c .slider:hover .slider-fg{background:#44abda}
+</style><style type="text/css">.dg ul{list-style:none;margin:0;padding:0;width:100%;clear:both}.dg.ac{position:fixed;top:0;left:0;right:0;height:0;z-index:0}.dg:not(.ac) .main{overflow:hidden}.dg.main{-webkit-transition:opacity .1s linear;-o-transition:opacity .1s linear;-moz-transition:opacity .1s linear;transition:opacity .1s linear}.dg.main.taller-than-window{overflow-y:auto}.dg.main.taller-than-window .close-button{opacity:1;margin-top:-1px;border-top:1px solid #2c2c2c}.dg.main ul.closed .close-button{opacity:1 !important}.dg.main:hover .close-button,.dg.main .close-button.drag{opacity:1}.dg.main .close-button{-webkit-transition:opacity .1s linear;-o-transition:opacity .1s linear;-moz-transition:opacity .1s linear;transition:opacity .1s linear;border:0;line-height:19px;height:20px;cursor:pointer;text-align:center;background-color:#000}.dg.main .close-button.close-top{position:relative}.dg.main .close-button.close-bottom{position:absolute}.dg.main .close-button:hover{background-color:#111}.dg.a{float:right;margin-right:15px;overflow-y:visible}.dg.a.has-save>ul.close-top{margin-top:0}.dg.a.has-save>ul.close-bottom{margin-top:27px}.dg.a.has-save>ul.closed{margin-top:0}.dg.a .save-row{top:0;z-index:1002}.dg.a .save-row.close-top{position:relative}.dg.a .save-row.close-bottom{position:fixed}.dg li{-webkit-transition:height .1s ease-out;-o-transition:height .1s ease-out;-moz-transition:height .1s ease-out;transition:height .1s ease-out;-webkit-transition:overflow .1s linear;-o-transition:overflow .1s linear;-moz-transition:overflow .1s linear;transition:overflow .1s linear}.dg li:not(.folder){cursor:auto;height:27px;line-height:27px;padding:0 4px 0 5px}.dg li.folder{padding:0;border-left:4px solid rgba(0,0,0,0)}.dg li.title{cursor:pointer;margin-left:-4px}.dg .closed li:not(.title),.dg .closed ul li,.dg .closed ul li>*{height:0;overflow:hidden;border:0}.dg .cr{clear:both;padding-left:3px;height:27px;overflow:hidden}.dg .property-name{cursor:default;float:left;clear:left;width:40%;overflow:hidden;text-overflow:ellipsis}.dg .cr.function .property-name{width:100%}.dg .c{float:left;width:60%;position:relative}.dg .c input[type=text]{border:0;margin-top:4px;padding:3px;width:100%;float:right}.dg .has-slider input[type=text]{width:30%;margin-left:0}.dg .slider{float:left;width:66%;margin-left:-5px;margin-right:0;height:19px;margin-top:4px}.dg .slider-fg{height:100%}.dg .c input[type=checkbox]{margin-top:7px}.dg .c select{margin-top:5px}.dg .cr.function,.dg .cr.function .property-name,.dg .cr.function *,.dg .cr.boolean,.dg .cr.boolean *{cursor:pointer}.dg .cr.color{overflow:visible}.dg .selector{display:none;position:absolute;margin-left:-9px;margin-top:23px;z-index:10}.dg .c:hover .selector,.dg .selector.drag{display:block}.dg li.save-row{padding:0}.dg li.save-row .button{display:inline-block;padding:0px 6px}.dg.dialogue{background-color:#222;width:460px;padding:15px;font-size:13px;line-height:15px}#dg-new-constructor{padding:10px;color:#222;font-family:Monaco, monospace;font-size:10px;border:0;resize:none;box-shadow:inset 1px 1px 1px #888;word-wrap:break-word;margin:12px 0;display:block;width:440px;overflow-y:scroll;height:100px;position:relative}#dg-local-explain{display:none;font-size:11px;line-height:17px;border-radius:3px;background-color:#333;padding:8px;margin-top:10px}#dg-local-explain code{font-size:10px}#dat-gui-save-locally{display:none}.dg{color:#eee;font:11px 'Lucida Grande', sans-serif;text-shadow:0 -1px 0 #111}.dg.main::-webkit-scrollbar{width:5px;background:#1a1a1a}.dg.main::-webkit-scrollbar-corner{height:0;display:none}.dg.main::-webkit-scrollbar-thumb{border-radius:5px;background:#676767}.dg li:not(.folder){background:#1a1a1a;border-bottom:1px solid #2c2c2c}.dg li.save-row{line-height:25px;background:#dad5cb;border:0}.dg li.save-row select{margin-left:5px;width:108px}.dg li.save-row .button{margin-left:5px;margin-top:1px;border-radius:2px;font-size:9px;line-height:7px;padding:4px 4px 5px 4px;background:#c5bdad;color:#fff;text-shadow:0 1px 0 #b0a58f;box-shadow:0 -1px 0 #b0a58f;cursor:pointer}.dg li.save-row .button.gears{background:#c5bdad url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAYAAAB/9ZQ7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJJREFUeNpiYKAU/P//PwGIC/ApCABiBSAW+I8AClAcgKxQ4T9hoMAEUrxx2QSGN6+egDX+/vWT4e7N82AMYoPAx/evwWoYoSYbACX2s7KxCxzcsezDh3evFoDEBYTEEqycggWAzA9AuUSQQgeYPa9fPv6/YWm/Acx5IPb7ty/fw+QZblw67vDs8R0YHyQhgObx+yAJkBqmG5dPPDh1aPOGR/eugW0G4vlIoTIfyFcA+QekhhHJhPdQxbiAIguMBTQZrPD7108M6roWYDFQiIAAv6Aow/1bFwXgis+f2LUAynwoIaNcz8XNx3Dl7MEJUDGQpx9gtQ8YCueB+D26OECAAQDadt7e46D42QAAAABJRU5ErkJggg==) 2px 1px no-repeat;height:7px;width:8px}.dg li.save-row .button:hover{background-color:#bab19e;box-shadow:0 -1px 0 #b0a58f}.dg li.folder{border-bottom:0}.dg li.title{padding-left:16px;background:#000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;cursor:pointer;border-bottom:1px solid rgba(255,255,255,0.2)}.dg .closed li.title{background-image:url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlGIWqMCbWAEAOw==)}.dg .cr.boolean{border-left:3px solid #806787}.dg .cr.color{border-left:3px solid}.dg .cr.function{border-left:3px solid #e61d5f}.dg .cr.number{border-left:3px solid #2FA1D6}.dg .cr.number input[type=text]{color:#2FA1D6}.dg .cr.string{border-left:3px solid #1ed36f}.dg .cr.string input[type=text]{color:#1ed36f}.dg .cr.function:hover,.dg .cr.boolean:hover{background:#111}.dg .c input[type=text]{background:#303030;outline:none}.dg .c input[type=text]:hover{background:#3c3c3c}.dg .c input[type=text]:focus{background:#494949;color:#fff}.dg .c .slider{background:#303030;cursor:ew-resize}.dg .c .slider-fg{background:#2FA1D6;max-width:100%}.dg .c .slider:hover{background:#3c3c3c}.dg .c .slider:hover .slider-fg{background:#44abda}
+</style>
+  <script charset="utf-8" data-webpack="NRBA-1.238.0.PROD:chunk-75" src="https://js-agent.newrelic.com/nr-rum.3709cb75-1.238.0.min.js"></script></head>
+
+  <body class="work_view tw-bg-[#190A2A] text-white tw-font-['Rubik']" style="">
+    <nav data-controller="landing" id="navbar-mobile" class="tw-bg-[#190A2A]/60 tw-px-2 lg:tw-px-6 tw-fixed tw-w-full tw-z-20 tw-top-0 tw-left-0 tw-text-white">
+  <div class="tw-flex tw-flex-col lg:tw-flex-row lg:tw-justify-between">
+    <div class="tw-flex tw-justify-start tw-py-3 lg:tw-py-0">
+      <button id="navbar-mobile-toggler" type="button" class="collapsed tw-inline-flex tw-items-center lg:tw-hidden focus:tw-outline-none" aria-controls="navbar-sticky" aria-expanded="false">
+        <ul id="mobile_menu">
+          <li class="tw-bg-white"></li>
+          <li class="tw-bg-white"></li>
+          <li class="tw-bg-white"></li>
+        </ul>
+      </button>
+      <a href="/" class="tw-flex tw-grow tw-justify-center tw-items-center">
+        <svg viewBox="0 0 109 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="tw-w-32 lg:tw-w-52 lg:tw-h-10">
+            <path d="M20.3794 14.9854V10C20.3794 8.33826 20.0666 7.181 18.1882 7.181C15.9431 7.181 15.9431 7.181 15.9431 10V17.1053C13.4376 17.1053 13.4376 17.1053 13.4376 14.9854V10C13.4436 8.33826 13.1308 7.18699 11.2524 7.18699C8.96393 7.18699 8.96393 7.18699 8.96393 10.006V17.1113C6.50781 17.1113 6.50781 17.1113 6.50781 14.9914V5.26022C8.3817 5.25423 8.3817 5.25423 8.3817 6.79624C8.76786 6.02524 9.82753 5.10901 12.0427 5.10901C13.8013 5.10901 14.7877 5.7842 15.2935 6.93997C15.6543 6.0971 16.7139 5.10901 18.9785 5.10901C22.2054 5.10901 22.8804 7.37413 22.8804 10.1438V17.1053C20.3794 17.1053 20.3794 17.1053 20.3794 14.9854Z" fill="white"></path>
+  <path d="M40.6569 14.9854V10C40.6569 8.33826 40.3426 7.181 38.4642 7.181C36.2191 7.181 36.2191 7.181 36.2191 10V17.1053C33.7151 17.1053 33.7151 17.1053 33.7151 14.9854V10C33.7151 8.33826 33.4008 7.181 31.5224 7.181C29.2354 7.181 29.2354 7.181 29.2354 10V17.1053C26.7793 17.1053 26.7793 17.1053 26.7793 14.9854V5.25423C28.6577 5.25423 28.6577 5.25423 28.6577 6.79624C29.0423 6.02524 30.102 5.10901 32.3172 5.10901C34.0758 5.10901 35.0636 5.7842 35.568 6.93997C35.9302 6.0971 36.9899 5.10901 39.2529 5.10901C42.4799 5.10901 43.1549 7.37412 43.1549 10.1438V17.1053C40.6569 17.1053 40.6569 17.1053 40.6569 14.9854Z" fill="white"></path>
+  <path d="M55.2974 12.1678H49.1325C49.1325 13.9254 50.2161 15.1306 52.4073 15.1306H55.0086C56.9543 15.1306 56.9543 15.1306 56.9543 17.1307H52.5031C47.8318 17.1307 46.627 14.3117 46.627 11.1558C46.627 7.99991 47.8558 5.10901 52.5525 5.10901C56.1446 5.10901 57.8494 7.32622 57.8494 10.1992C57.8494 12.1678 57.8493 12.1678 55.2974 12.1678ZM55.2974 10.1677C55.3214 10.1677 55.3214 10.1438 55.2974 10.1438C55.3453 8.52989 54.5745 7.01183 52.3354 7.01183C49.2043 7.01183 49.1325 7.01183 49.1325 10.1917H55.2974C55.2974 10.1917 55.3214 10.1917 55.2974 10.1677Z" fill="white"></path>
+  <path d="M66.1335 7.30249C64.0381 7.30249 64.0381 7.88037 64.0381 10.5542V17.1055C61.582 17.1055 61.582 17.1055 61.582 15.059V5.25445C63.4604 5.25445 63.4604 5.25445 63.4604 6.88779C63.869 6.06888 65.0978 5.08079 67.6991 5.20206C67.6991 7.37435 67.6991 7.30249 66.1335 7.30249Z" fill="white"></path>
+  <path d="M74.9245 17.1307H70.2757C70.2757 15.1305 70.2757 15.1305 72.1541 15.1305H74.8751C77.7189 15.1305 77.7189 15.3237 77.7189 13.8296C77.7189 11.2755 70.2053 13.0106 70.1095 8.77085C70.0602 6.69885 71.6063 5.25415 75.2867 5.25415H79.5014C79.5014 7.22883 79.5014 7.22883 77.7189 7.22883H75.2133C72.5642 7.22883 72.5642 7.07912 72.5642 8.67503C72.5642 10.7949 80.1256 9.32477 80.1256 13.6858C80.1256 15.421 78.6573 17.1307 74.9245 17.1307Z" fill="white"></path>
+  <path d="M91.6846 12.1678H85.5196C85.5196 13.9254 86.6033 15.1306 88.7944 15.1306H91.3957C93.3415 15.1306 93.3415 15.1306 93.3415 17.1307H88.8917C84.219 17.1307 83.0156 14.3117 83.0156 11.1558C83.0156 7.99991 84.2429 5.10901 88.9396 5.10901C92.5317 5.10901 94.238 7.32622 94.238 10.1992C94.238 12.1678 94.238 12.1678 91.6846 12.1678ZM91.6846 10.1677C91.7086 10.1677 91.7086 10.1438 91.6846 10.1438C91.7325 8.52989 90.9617 7.01183 88.7226 7.01183C85.5915 7.01183 85.5196 7.01183 85.5196 10.1917H91.6846C91.6846 10.1917 91.7086 10.1917 91.6846 10.1677Z" fill="white"></path>
+  <path d="M107.122 15.3957C106.688 16.2146 105.387 17.2506 102.57 17.2506C98.6682 17.2506 97.5127 14.3836 97.5127 11.1559C97.5127 7.90417 98.6203 5.06117 102.545 5.06117C104.881 5.06117 106.062 5.88008 106.568 6.67504V0.749512C109 0.749512 109 0.749512 109 2.8215V17.1054C107.122 17.1054 107.122 17.1054 107.122 15.3957ZM103.292 7.13316C100.041 7.13316 100.041 7.13316 100.041 11.1559C100.041 13.5408 100.57 15.198 103.268 15.198C106.592 15.198 106.592 15.198 106.592 11.1559C106.592 8.8668 106.117 7.13316 103.292 7.13316Z" fill="white"></path>
+  <path d="M1.36351 3.54923C0.627125 3.54923 0.0538819 3.48785 0.0538819 3.48785C0.0538819 3.48785 0 2.75876 0 2.23777C0 1.14489 0.528341 0.890381 1.36351 0.890381C2.17024 0.890381 2.71056 0.935294 2.71056 0.935294C2.71056 0.935294 2.72852 1.68385 2.72852 2.24077C2.72702 3.3097 2.14031 3.54923 1.36351 3.54923ZM0.10926 14.7565V5.24096C0.603177 5.24096 1.83947 5.14515 2.27651 5.5808C2.56238 5.87124 2.61926 6.40421 2.61926 7.54051V17.1025C0.279886 17.104 0.10926 16.9827 0.10926 14.7565Z" fill="white"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="lg:tw-flex lg:tw-justify-between lg:tw-grow" id="navbar-sticky">
+      <ul class="tw-flex tw-flex-col tw-transition-all tw-overflow-hidden tw-duration-500 tw-w-screen tw-h-0 tw-pr-14 tw-bg-[#190A2A] tw-divide-y tw-text-sm lg:tw-flex-row lg:tw-justify-between lg:tw-items-center lg:tw-grow lg:tw-h-auto lg:tw-w-auto lg:tw-pr-0 lg:tw-p-4 lg:tw-divide-y-0 lg:tw-mt-0 lg:tw-text-md lg:tw-border-0 lg:tw-bg-transparent">
+        <div class="tw-flex tw-flex-col tw-divide-y lg:tw-flex-row lg:tw-flex-grow lg:tw-justify-center lg:tw-divide-y-0 lg:tw-space-x-8" id="navbar-options">
+          <li>
+            <a href="/" class="tw-block tw-py-6 tw-px-6 lg:tw-p-0">Home</a>
+          </li>
+          <li>
+            <button id="dropdown-company-toggler" class="tw-flex tw-items-center tw-justify-between tw-py-6 tw-px-6 lg:tw-p-0">Company
+              <svg class="tw-w-4 tw-h-4 tw-ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdown-company" class="lg:tw-text-white tw-z-10 tw-hidden tw-px-2 lg:tw-absolute lg:tw-bg-[#190A2A]/60">
+              <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="/company" class="tw-block tw-px-6 tw-py-2 lg:tw-px-0"><i class="bi bi-building pe-2"></i>About Immersed</a>
+                </li>
+                <li>
+                  <a href="https://angel.co/company/immersed/jobs" target="_blank" class="tw-block tw-px-6 tw-py-2 lg:tw-px-0"><i class="bi bi-briefcase pe-2"></i>Jobs</a>
+                </li>
+                <li>
+                  <a href="https://shop.immersed.com/" target="_blank" class="tw-block tw-px-6 tw-py-2 lg:tw-px-0"><i class="bi bi-shop pe-2"></i>Merchandise</a>
+                </li>
+                <li>
+                  <a href="https://medium.com/immersedteam/" target="_blank" class="tw-block tw-px-6 tw-py-2 lg:tw-px-0"><i class="bi bi-file-earmark-text pe-2"></i>From The Blog</a>
+                  <p><a id="latest_posts1" target="_blank" href="https://medium.com/immersedteam/split-screen-your-virtual-webcam-in-10-steps-b14f6396702d?source=rss----b6392ae522f4---4" class="tw-block tw-px-6 tw-py-2 tw-text-amber-400 hover:tw-text-amber-400"><p style="color:#fab42a !important;">Split-Screen Your Virtual Webcam in 10 Steps! →</p></a></p>
+                  <p><a id="latest_posts2" target="_blank" href="https://medium.com/immersedteam/working-from-orbit-39bf95a6d385?source=rss----b6392ae522f4---4" class="tw-block tw-px-6 tw-py-2 tw-text-amber-400 hover:tw-text-amber-400"><p style="color:#fab42a !important;">Working From Orbit →</p></a></p>
+                  <p><a id="latest_posts3" target="_blank" href="https://medium.com/immersedteam/which-vr-productivity-app-is-right-for-me-6e8493dcd331?source=rss----b6392ae522f4---4" class="tw-block tw-px-6 tw-py-2 tw-text-amber-400 hover:tw-text-amber-400"><p style="color:#fab42a !important;">Which VR Productivity App is Right For Me? →</p></a></p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button id="dropdown-support-toggler" class="tw-flex tw-items-center tw-justify-between tw-py-6 tw-px-6 lg:tw-p-0">Support
+              <svg class="tw-w-4 tw-h-4 tw-ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdown-support" class="lg:tw-text-white tw-z-10 tw-hidden tw-px-2 lg:tw-absolute lg:tw-bg-[#190A2A]/60">
+              <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="/faq" class="tw-block tw-px-6 tw-py-2 lg:tw-px-0"><i class="bi bi-question-square pe-2"></i>FAQ</a>
+                </li>
+                <li>
+                  <a href="https://immersed.zendesk.com/hc/en-us" target="_blank" class="tw-block tw-px-6 tw-py-2 lg:tw-px-0"><i class="bi bi-info-square pe-2"></i>Help Docs</a>
+                </li>
+                <li>
+                  <a href="https://immersed.com/community" target="_blank" class="tw-block tw-px-6 tw-py-2 lg:tw-px-0"><i class="bi bi-headset pe-2"></i>Live Support</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+              <a href="#" class="tw-block tw-py-6 tw-px-6 lg:tw-p-0" data-bs-toggle="modal" data-bs-target="#loginModal">Account</a>
+          </li>
+            <li>
+              <a href="/marketplace" class="tw-block tw-py-6 tw-px-6 lg:tw-p-0">Marketplace</a>
+            </li>
+        </div>
+        <li class="d-flex justify-content-center ms-2 p-4 p-lg-1 lg:tw-ml-28 menu_right">
+          <a href="/setup" class="setup_button tw-text-white tw-rounded-full tw-border-2 tw-border-red-400 tw-p-2.5 tw-px-12 tw-bg-transparent lg:tw-p-2 lg:tw-px-10 tw-text-center hover:tw-border-white">DOWNLOAD FOR FREE</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div id="content">
+      <div id="share_bar">
+        <a class="fb" target="_blank" href="https://www.facebook.com/immersedvr"></a>
+        <a class="in" target="_blank" href="https://www.linkedin.com/company/immersed/"></a>
+        <a class="ig" target="_blank" href="https://instagram.com/immersedvr"></a>
+        <a class="tw" target="_blank" href="https://twitter.com/immersedvr"></a>
+      </div>
+      <div class="modal-wrapper" id="modal">
+  <div class="modal-screen" id="modal-screen">
+    <div class="modal-content modal-search" id="modal-content">
+      <div class="close-icon">
+        <a onclick="jQuery('#modal').hide(); return false" href="#"></a>
+      </div>
+      <div class="modal-container" id="modal-container"></div>
+    </div>
+  </div>
+  <script type="module">
+    jQuery('#modal-screen').click(function() {  jQuery('#modal').hide();  });
+    jQuery('#modal-content').click(function(e) {  e.stopPropagation();});
+  </script>
+</div>
+
+  <button id="loginModalButton" class="tw-hidden" data-bs-target="#loginModal" data-bs-toggle="modal"></button>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content py-5 px-4 tw-rounded-2xl tw-border-2 tw-border-slate-600 tw-bg-neutral-900/[.04] tw-backdrop-blur-xl">
+        <div class="modal-body px-3 text-center" id="login-modal-container">
+          <div data-controller="authentications">
+  <form id="login-form" action="/admin/session" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="8VfCGXnMaUktnRhyhyniWFXFSqzXLW6fqmWxe-zfJuECk0-zqaY0740pvmx0tatux8rCoXhPSrARwhV6qZJO1Q" autocomplete="off">
+    <h3 class="tw-text-xl tw-font-exo mb-5">Log in or Sign up</h3>
+      <a href="/auth/google_oauth2" class="d-flex align-items-center justify-content-center mb-4 tw-text-white tw-rounded-full tw-border-2 tw-border-white tw-bg-transparent tw-p-3 tw-px-10 tw-text-center hover:tw-opacity-75 tw-transition-all tw-duration-500"><img class="me-3" src="/assets/bs_google_icon-701a689c62215e4904ec8c3086161277533cdb2e45ed4bf30f3c918e1b62f3b1.svg"> Continue with Google</a>
+      <a href="/auth/facebook" class="d-flex align-items-center justify-content-center mb-4 tw-text-white tw-rounded-full tw-border-2 tw-border-white tw-bg-transparent tw-p-3 tw-px-10 tw-text-center hover:tw-opacity-75 tw-transition-all tw-duration-500"><img class="me-3" src="/assets/bs_facebook_icon-a59cb3d3eb5e8a23624f2a5b29f8704852d67fd95d37724a79893a4c08484e08.svg"> Continue with Facebook</a>
+      <a href="/auth/linkedin" class="d-flex align-items-center justify-content-center mb-4 tw-text-white tw-rounded-full tw-border-2 tw-border-white tw-bg-transparent tw-p-3 tw-px-10 tw-text-center hover:tw-opacity-75 tw-transition-all tw-duration-500"><img class="me-3" src="/assets/bs_linkedin_icon-88b99f14a4ba4b541c58225bf46b1107dedeca86eb813c4d4b9abdf3707997ca.svg"> Continue with LinkedIn</a>
+      <div class="d-flex align-items-center justify-content-center">
+        <hr class="d-inline-block tw-w-2/5 tw-text-white tw-border-2">
+        <span class="mx-5">OR</span>
+        <hr class="d-inline-block tw-w-2/5 tw-text-white tw-border-2">
+      </div>
+    <div class="my-4">
+      <div class="tw-relative mb-3">
+        <div class="tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-3 tw-pointer-events-none"><i class="bi bi-envelope fs-4"></i></div>
+        <input type="text" name="login" id="email" placeholder=" " class="tw-block tw-bg-gray-200/20 tw-rounded-md focus:tw-ring-blue-500 focus:tw-border-blue-500 tw-block tw-w-full tw-pl-10 tw-p-4 tw-peer">
+        <label class="tw-absolute tw-text-sm tw-text-zinc-400 tw-duration-300 tw-transform -tw-translate-y-4 tw-scale-75 tw-top-4 tw-z-10 tw-origin-[0] tw-left-11 peer-focus:tw-text-zinc-400 peer-placeholder-shown:tw-scale-100 peer-placeholder-shown:tw-translate-y-0 peer-focus:tw-scale-75 peer-focus:-tw-translate-y-4" for="email">Email</label>
+      </div>
+      <div class="tw-relative mb-3">
+        <div class="tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-3 tw-pointer-events-none"><i class="bi bi-key fs-4"></i></div>
+        <input type="password" name="password" id="password" placeholder=" " class="tw-block tw-bg-gray-200/20 tw-rounded-md focus:tw-ring-blue-500 focus:tw-border-blue-500 tw-block tw-w-full tw-pl-10 tw-p-4 tw-peer">
+        <label class="tw-absolute tw-text-sm tw-text-zinc-400 tw-duration-300 tw-transform -tw-translate-y-4 tw-scale-75 tw-top-4 tw-z-10 tw-origin-[0] tw-left-11 peer-focus:tw-text-zinc-400 peer-placeholder-shown:tw-scale-100 peer-placeholder-shown:tw-translate-y-0 peer-focus:tw-scale-75 peer-focus:-tw-translate-y-4" for="password">Password</label>
+      </div>
+    </div>
+    <div class="actions">
+      <a href="#" data-action="click->authentications#submitLoginForm" class="d-block mb-4 text-white tw-border-none tw-rounded-full tw-py-3 tw-bg-gradient-to-r tw-from-red-500 tw-to-amber-500"><span>CONTINUE</span></a>
+      <input type="submit" name="commit" value="CONTINUE" id="log-in-submit" class="d-none" data-disable-with="CONTINUE">
+    </div>
+    <div class="clear"></div>
+</form>
+  <div class="tw-text-xs mb-3">
+    <span class="translation_missing" title="translation missing: en.admin.sessions.form.forgot_password">Forgot Password</span>
+    <a onclick="$.getScript('/immersed_authentication/new_forgotten_password'); return false" id="forgotten-password-link" class="tw-text-orange-400" href="#">CLICK HERE</a>
+  </div>
+</div>
+
+<div class="tw-text-xs">
+  <p>
+    DON'T HAVE AN ACCOUNT YET?
+    <a onclick="$.getScript('/immersed_authentication/new'); return false" id="sign-up-link" class="tw-text-orange-400" href="#">SIGN UP</a>
+  </p>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <script type="module"></script>
+
+      <noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PSG79TS"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+      </noscript>
+
+      <canvas id="webgl_login" class="tw-absolute tw-rotate-[320deg] -tw-left-[20%] tw-bottom-[35%] md:tw-bottom-[20%] tw-w-[calc(100vw_-_20px)] tw-h-[130%]" width="1036" height="668"></canvas>
+<div class="container">
+  <div class="tw-flex tw-flex-col tw-items-center">
+    <picture>
+      <source srcset="/assets/privacy-5fc5c020689c72979dced8f9b5b74a393ed5e959049166d728f2e6fb71cb7a21.webp 1x, /assets/privacy@2x-03d295a3800a234cbda39c0b7496b39160b55e4d91324daf8f4a0c609f09cb11.webp 2x" type="image/webp">
+      <source srcset="/assets/privacy-3df066614d4d6d0f76020e982516b1bb0f43ff6410309752d7efc04a5fc47539.png 1x, /assets/privacy@2x-56a877db0cf64fc8030d7c1f22043cc678a0544aa2856e931eb8a025ba2b5c26.png 2x" type="image/jpeg">
+      <img alt="privacy" src="/assets/privacy-3df066614d4d6d0f76020e982516b1bb0f43ff6410309752d7efc04a5fc47539.png">
+    </picture>
+    <h1 class="tw-font-exo tw-text-[4rem] tw-font-light">Privacy Policy</h1>
+    <h5 class="tw-text-xl tw-mb-3">Last Updated: Oct 18, 2021</h5>
+  </div>
+</div>
+<div class="container tw-font-ibm tw-text-[#BABABA] tw-text-xl -tw-tracking-[.2px] tw-mb-20">
+  <p class="tw-mb-4">This privacy policy (Policy) describes how Immersed Inc. and its related companies (Company) collect, use and share personal information of consumer users of this website, https://immersed.com (the Site). This Policy also appliesto any of our other websites that post this Policy. This Policy does not apply to websites that post different statements.</p>
+  <h5 class="tw-text-white tw-font-medium tw-mb-3">WHAT WE DO NOT COLLECT</h5>
+  <p class="tw-mb-4">Screen Content. We will not record your screens nor push any screen content to our servers. All of your screen content is 256-bit encrypted end-to-end and only visible to you and the peers you allow (direct peer-to-peer screen-sharing) on the local networks for the devices you first give permission to.</p>
+  <p class="tw-mb-4">Audio Content. We will not record any audio coming from your computer/headset nor push any audio content to our servers. All of your audio content is 256-bit encrypted end-to-end and only audible to you and the peers you allow (direct peer-to-peer conversations) on the local networks for the devices you first give permission to.</p>
+  <h5 class="tw-text-white tw-font-medium tw-mb-3">WHAT WE COLLECT</h5>
+  <p class="tw-mb-4">We get information about you in a range of ways. Information You Give Us. We collect your username as well as other information you directly give us on our Site and desktop Agent. Information We Get From Others. We may get information about you from other sources. We may add this to information we get from this Site.Information Automatically Collected. We automatically log information about you and your computer. For example, when visiting our Site, we log your computer operating system type, how long you spent on a page, access times, Computer hardware specifications and information about your use of and actions on our Site. </p>
+  <p class="tw-mb-4">Cookies. We may log information using "cookies." Cookies are small data files stored on your hard drive by a website. We may use both session Cookies (which expire once you close your web browser) and persistent Cookies (which stay on your computer until you delete them) to provide you with a more personal and interactive experience on our Site.    This type of information is collected to make the Site more useful to you and to tailor the experience with us to meet your special interests and needs.</p>
+  <p class="tw-mb-4">NOTE: We will never sell your data.</p>
+
+  <h5 class="tw-text-white tw-font-medium tw-mb-3">USE OF PERSONAL INFORMATION</h5>
+  <p class="tw-mb-4">We use your personal information as follows:</p>
+  <p class="tw-mb-4">* Operate, maintain, and improve our sites, products, and services.</p>
+  <p class="tw-mb-4">* Create, manage, and authenticate your account.</p>
+  <p class="tw-mb-4">* Conduct internal research and development.</p>
+  <p class="tw-mb-4">* Respond to customer service requests.</p>
+  <p class="tw-mb-4">* Debug our services.</p>
+  <p class="tw-mb-4">* Complete the transactions you request and perform our contractual obligations.</p>
+  <p class="tw-mb-4">* Send you technical notices, updates, security alerts, invoices and other support and administrative messages.</p>
+  <p class="tw-mb-4">* Communicate with you about products, services, offers, promotions, and events, and provide other news and information we think will be of interest to you (for information about how to opt out of these communications, see “INFORMATION CHOICES AND CHANGES” below).</p>
+  <p class="tw-mb-4">* Monitor and analyze trends, usage, and activities in connection with our services.</p>
+  <p class="tw-mb-4">* Protect the rights and property of Immersed, customers, and others and comply with our legal obligations and to enforce our agreements, policies, and terms of use.</p>
+  <p class="tw-mb-4">We may use each of the categories of personal information we collect for all of the uses described above.</p>
+
+  <h5 class="tw-text-white tw-font-medium tw-mb-3">SHARING OF PERSONAL INFORMATION</h5>
+  <p class="tw-mb-4">We may share personal information as follows:</p>
+  <p class="tw-mb-4">* We may share personal information with your consent. For example, you may let us share personal information with others for their
+  own marketing uses. Those uses will be subject to their privacy policies.</p>
+  <p class="tw-mb-4">* We may share personal information when we do a business deal, or negotiate a business deal, involving the sale or transfer of all or
+  a part of our business or assets. These deals can include any merger, financing, acquisition, or bankruptcy transaction or proceeding.</p>
+  <p class="tw-mb-4">* We may share personal information for legal, protection, and safety purposes.</p>
+  <p class="tw-mb-4">* We may share information to comply with laws.</p>
+  <p class="tw-mb-4">* We may share information to respond to lawful requests and legal processes.</p>
+  <p class="tw-mb-4">* We may share information to protect the rights and property of Immersed Inc., our agents, customers, and others. This includes
+  enforcing our agreements, policies, and terms of use.</p>
+  <p class="tw-mb-4">* We may share information with those who need it to do work for us.</p>
+  <p class="tw-mb-4">We may also share aggregated and/or anonymized data with others for their own uses.</p>
+
+  <h5 class="tw-text-white tw-font-medium tw-mb-3">USER DATA DELETION REQUESTS</h5>
+  <p class="tw-mb-4">If you have decided to no longer use Immersed and would like your information stored in our servers to be deleted, please email info@immersed.com using the email address you registered with, and also let us know your username. We will respond as a confirmation once all of your data has been permanently deleted.</p>
+
+  <h5 class="tw-text-white tw-font-medium tw-mb-3">INFORMATION CHOICES AND CHANGES</h5>
+  <p class="tw-mb-4">Our marketing emails tell you how to opt-out. If you opt out, we may still send you non-marketing emails. Non-marketing emails include emails about your accounts and our business dealings with you.</p>
+  <p class="tw-mb-4">You may send requests about personal information to our Contact Information below. You can request to change contact choices, opt-out of our sharing with others, and update your personal information.</p>
+  <p class="tw-mb-4">You can typically remove and reject cookies from our Site with your browser settings. Many browsers are set to accept cookies until you change your settings. If you remove or reject our cookies, it could affect how our Site works for you. </p>
+  <h5 class="tw-text-white tw-font-medium tw-mb-3">CONTACT INFORMATION. </h5>
+  <p class="tw-mb-4">We welcome your comments or questions about this privacy policy. You may also contact us at our address:</p>
+  <p class="tw-mb-4"><strong>Immersed Inc.</strong><br>P.O. Box 40681<br>
+  Austin, TX 78704</p>
+  <p class="tw-mb-4">Changes to this Privacy Policy. We may change this privacy policy. If we make any changes, we will change the Last Updated date above.</p>
+</div>
+
+
+    </div> <!-- #content -->
+
+    <section class="container mt-5" id="landing-footer">
+  <div class="row mx-4 justify-content-center">
+    <div class="tw-absolute tw-h-[150px] tw-w-[400px] -tw-left-[100px] tw-bg-purple-700/20 tw-blur-2xl tw-rounded-full -tw-z-10"></div>
+    <div class="tw-absolute tw-right-0 tw-overflow-hidden tw-h-[520px] md:tw-h-[300px] lg:tw-h-[200px] -tw-z-10 ">
+      <div class="tw-relative -tw-right-[90%] tw-top-1/3 tw-h-1/2 tw-w-[400px] tw-bg-purple-700/20 tw-rounded-full tw-blur-2xl -tw-z-10"></div>
+      <div class="tw-relative -tw-right-3/4 tw-top-1/4 tw-h-1/2 tw-w-[300px] tw-bg-cyan-500/20 tw-rounded-full tw-blur-2xl -tw-z-10"></div>
+    </div>
+    <a class="col-12 col-md-6 col-lg-2 d-flex justify-content-center justify-content-md-start mb-4" href="">
+      <svg width="109" height="18" viewBox="0 0 109 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.3794 14.9854V10C20.3794 8.33826 20.0666 7.181 18.1882 7.181C15.9431 7.181 15.9431 7.181 15.9431 10V17.1053C13.4376 17.1053 13.4376 17.1053 13.4376 14.9854V10C13.4436 8.33826 13.1308 7.18699 11.2524 7.18699C8.96393 7.18699 8.96393 7.18699 8.96393 10.006V17.1113C6.50781 17.1113 6.50781 17.1113 6.50781 14.9914V5.26022C8.3817 5.25423 8.3817 5.25423 8.3817 6.79624C8.76786 6.02524 9.82753 5.10901 12.0427 5.10901C13.8013 5.10901 14.7877 5.7842 15.2935 6.93997C15.6543 6.0971 16.7139 5.10901 18.9785 5.10901C22.2054 5.10901 22.8804 7.37413 22.8804 10.1438V17.1053C20.3794 17.1053 20.3794 17.1053 20.3794 14.9854Z" fill="white"></path>
+  <path d="M40.6569 14.9854V10C40.6569 8.33826 40.3426 7.181 38.4642 7.181C36.2191 7.181 36.2191 7.181 36.2191 10V17.1053C33.7151 17.1053 33.7151 17.1053 33.7151 14.9854V10C33.7151 8.33826 33.4008 7.181 31.5224 7.181C29.2354 7.181 29.2354 7.181 29.2354 10V17.1053C26.7793 17.1053 26.7793 17.1053 26.7793 14.9854V5.25423C28.6577 5.25423 28.6577 5.25423 28.6577 6.79624C29.0423 6.02524 30.102 5.10901 32.3172 5.10901C34.0758 5.10901 35.0636 5.7842 35.568 6.93997C35.9302 6.0971 36.9899 5.10901 39.2529 5.10901C42.4799 5.10901 43.1549 7.37412 43.1549 10.1438V17.1053C40.6569 17.1053 40.6569 17.1053 40.6569 14.9854Z" fill="white"></path>
+  <path d="M55.2974 12.1678H49.1325C49.1325 13.9254 50.2161 15.1306 52.4073 15.1306H55.0086C56.9543 15.1306 56.9543 15.1306 56.9543 17.1307H52.5031C47.8318 17.1307 46.627 14.3117 46.627 11.1558C46.627 7.99991 47.8558 5.10901 52.5525 5.10901C56.1446 5.10901 57.8494 7.32622 57.8494 10.1992C57.8494 12.1678 57.8493 12.1678 55.2974 12.1678ZM55.2974 10.1677C55.3214 10.1677 55.3214 10.1438 55.2974 10.1438C55.3453 8.52989 54.5745 7.01183 52.3354 7.01183C49.2043 7.01183 49.1325 7.01183 49.1325 10.1917H55.2974C55.2974 10.1917 55.3214 10.1917 55.2974 10.1677Z" fill="white"></path>
+  <path d="M66.1335 7.30249C64.0381 7.30249 64.0381 7.88037 64.0381 10.5542V17.1055C61.582 17.1055 61.582 17.1055 61.582 15.059V5.25445C63.4604 5.25445 63.4604 5.25445 63.4604 6.88779C63.869 6.06888 65.0978 5.08079 67.6991 5.20206C67.6991 7.37435 67.6991 7.30249 66.1335 7.30249Z" fill="white"></path>
+  <path d="M74.9245 17.1307H70.2757C70.2757 15.1305 70.2757 15.1305 72.1541 15.1305H74.8751C77.7189 15.1305 77.7189 15.3237 77.7189 13.8296C77.7189 11.2755 70.2053 13.0106 70.1095 8.77085C70.0602 6.69885 71.6063 5.25415 75.2867 5.25415H79.5014C79.5014 7.22883 79.5014 7.22883 77.7189 7.22883H75.2133C72.5642 7.22883 72.5642 7.07912 72.5642 8.67503C72.5642 10.7949 80.1256 9.32477 80.1256 13.6858C80.1256 15.421 78.6573 17.1307 74.9245 17.1307Z" fill="white"></path>
+  <path d="M91.6846 12.1678H85.5196C85.5196 13.9254 86.6033 15.1306 88.7944 15.1306H91.3957C93.3415 15.1306 93.3415 15.1306 93.3415 17.1307H88.8917C84.219 17.1307 83.0156 14.3117 83.0156 11.1558C83.0156 7.99991 84.2429 5.10901 88.9396 5.10901C92.5317 5.10901 94.238 7.32622 94.238 10.1992C94.238 12.1678 94.238 12.1678 91.6846 12.1678ZM91.6846 10.1677C91.7086 10.1677 91.7086 10.1438 91.6846 10.1438C91.7325 8.52989 90.9617 7.01183 88.7226 7.01183C85.5915 7.01183 85.5196 7.01183 85.5196 10.1917H91.6846C91.6846 10.1917 91.7086 10.1917 91.6846 10.1677Z" fill="white"></path>
+  <path d="M107.122 15.3957C106.688 16.2146 105.387 17.2506 102.57 17.2506C98.6682 17.2506 97.5127 14.3836 97.5127 11.1559C97.5127 7.90417 98.6203 5.06117 102.545 5.06117C104.881 5.06117 106.062 5.88008 106.568 6.67504V0.749512C109 0.749512 109 0.749512 109 2.8215V17.1054C107.122 17.1054 107.122 17.1054 107.122 15.3957ZM103.292 7.13316C100.041 7.13316 100.041 7.13316 100.041 11.1559C100.041 13.5408 100.57 15.198 103.268 15.198C106.592 15.198 106.592 15.198 106.592 11.1559C106.592 8.8668 106.117 7.13316 103.292 7.13316Z" fill="white"></path>
+  <path d="M1.36351 3.54923C0.627125 3.54923 0.0538819 3.48785 0.0538819 3.48785C0.0538819 3.48785 0 2.75876 0 2.23777C0 1.14489 0.528341 0.890381 1.36351 0.890381C2.17024 0.890381 2.71056 0.935294 2.71056 0.935294C2.71056 0.935294 2.72852 1.68385 2.72852 2.24077C2.72702 3.3097 2.14031 3.54923 1.36351 3.54923ZM0.10926 14.7565V5.24096C0.603177 5.24096 1.83947 5.14515 2.27651 5.5808C2.56238 5.87124 2.61926 6.40421 2.61926 7.54051V17.1025C0.279886 17.104 0.10926 16.9827 0.10926 14.7565Z" fill="white"></path>
+      </svg>
+    </a>
+    <ul class="col-12 col-md-6 col-lg-2 tw-font-exo mb-4 d-flex justify-content-between flex-md-column tw-border-y-2 tw-py-7 md:tw-border-y-0 md:tw-py-0">
+      <li><a href="https://medium.com/immersedteam/" target="_blank">Blog</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/setup">Setup</a></li>
+      <li><a href="/community">Contact us</a></li>
+      <li><a href="https://angel.co/company/immersed/jobs" target="_blank">Careers</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+    </ul>
+
+    <div class="d-none d-lg-block col-lg-1 tw-border-l-[1px] tw-border-slate-600 tw-w-[5%]"></div>
+    <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center align-items-md-start mb-4 mb-md-0">
+      <h5 class="tw-font-exo tw-text-center md:tw-text-left mb-2">Follow us</h5>
+      <div class="mb-5">
+        <a class="me-3" href="https://www.facebook.com/immersedvr" target="_blank">
+          <i class="fs-2 bi bi-facebook text-secondary"></i>
+        </a>
+        <a class="me-3" href="https://www.linkedin.com/company/immersed/" target="_blank">
+          <i class="fs-2 bi bi-linkedin text-secondary"></i>
+        </a>
+        <a class="me-3" href="https://instagram.com/immersedvr" target="_blank">
+          <i class="fs-2 bi bi-instagram text-secondary"></i>
+        </a>
+        <a class="me-3" href="https://twitter.com/immersedvr" target="_blank">
+          <i class="fs-2 bi bi-twitter text-secondary"></i>
+        </a>
+      </div>
+
+      <a href="/community" class="tw-text-center md:tw-text-left tw-p-0.5 tw-rounded-full tw-w-52 tw-bg-gradient-to-r tw-from-red-500 tw-to-amber-500">
+        <div id="footer-discord-button" class="d-flex justify-content-center align-items-center tw-h-full tw-w-full tw-rounded-full tw-p-2 tw-bg-[#190A2A] text-white tw-text-sm tw-font-medium">
+          <i class="fs-5 bi bi-discord text-secondary pe-2"></i>
+          JOIN OUR DISCORD
+        </div>
+      </a>	
+    </div>
+
+    <div class="d-none d-lg-block col-lg-1 tw-border-l-[1px] tw-border-slate-600 tw-w-[5%]"></div>
+    <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center align-items-md-start tw-z-20">
+      <h5 class="tw-font-exo mb-2">Newsletter</h5>
+      <p id="newsletter-copy" class="text-white-50 tw-text-center tw-text-sm md:tw-text-left mb-3">Subscribe to our newsletter so you don't miss out on special events, updates, and more!</p>
+      <button id="newsletter-button" type="button" class="tw-rounded-full tw-w-32 tw-text-xs tw-bg-transparent mb-4 border-white text-white tw-border-2" data-bs-target="#subscribeModal" data-bs-toggle="modal">
+        <div class="d-flex justify-content-center align-items-center tw-h-full tw-w-full tw-p-1.5">
+          SUBSCRIBE
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content tw-bg-[#190A2A] tw-border-2 tw-rounded-2xl tw-border-[#494867] tw-py-14 tw-px-5">
+        <div class="modal-body">
+          <iframe class="tw-w-full tw-h-[500px]" src="https://cdn.forms-content.sg-form.com/a09d4922-3f6b-11ed-9e87-a2002321f5df"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <textarea class="form-control" style="display:none" rows="" placeholder="" id="SRCSRCSRCS" name="info"></textarea>
+  
+
+  <script type="text/javascript">
+    function checkCookie(){
+          var cookieEnabled = navigator.cookieEnabled;
+          if (!cookieEnabled){ 
+                document.cookie = "testcookie";
+                cookieEnabled = document.cookie.indexOf("testcookie")!=-1;
+              }
+          return cookieEnabled;
+        }
+
+    function setCookie(name,value,days) {
+          eraseCookie(name);
+          var expires = "";
+          if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days*24*60*60*1000));
+                expires = "; expires=" + date.toUTCString();
+              }
+          document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+        }
+    function getCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+              }
+          return null;
+        }
+    function eraseCookie(name) {   
+          document.cookie = name+'=; Max-Age=-99999999;';  
+        }
+
+    var utms = {}
+    var source = /[&?]utm_source=([^&]+)/.exec(location.search);
+    var medium = /[&?]utm_medium=([^&]+)/.exec(location.search);
+    var campaign = /[&?]utm_campaign=([^&]+)/.exec(location.search);
+    var content = /[&?]utm_content=([^&]+)/.exec(location.search);
+    var term = /[&?]utm_term=([^&]+)/.exec(location.search);
+    var fbclid = /[&?]fbclid=([^&]+)/.exec(location.search);
+    var gclid = /[&?]gclid=([^&]+)/.exec(location.search);
+
+    if(source || medium || campaign || content || term || fbclid){
+          utms['cf_utm_source'] = source ? source[1] : null;
+          utms['cf_utm_medium'] = medium ? medium[1] : null;
+          utms['cf_utm_campaign'] = campaign ? campaign[1] : null;
+          utms['cf_utm_content'] = content ? content[1] : null;
+          utms['cf_utm_term'] = term ? term[1] : null;
+          if(fbclid) {
+                utms['cf_clid'] = fbclid[1];
+              }
+          if(gclid) {
+                utms['cf_clid'] = gclid[1];
+              }
+          if(!fbclid && !gclid) {
+                utms['cf_clid'] = null;
+              }
+          setCookie('utms', JSON.stringify(utms), 30);
+        }
+
+    var url = window.location.href
+    var src = /[&?]src=([^&]+)/.exec(url);
+
+    if (src) {
+          url = url.replace('src=' + src[1]+'&','');
+          url = url.replace('src=' + src[1],'');
+          document.getElementById('SRCSRCSRCS').value += "src: " + src[1];
+        } else {
+              if (document.referrer) {
+                    document.getElementById('SRCSRCSRCS').value += "src: see referrer";
+                  } else{
+                        document.getElementById('SRCSRCSRCS').value += "src: organic";
+                      }
+            }
+
+    if (url.substring(url.length-1) == "&")
+    {
+          url = url.substring(0, url.length-1);
+        }
+    if (url.substring(url.length-1) == "?")
+    {
+          url = url.substring(0, url.length-1);
+        }
+    window.history.replaceState("", "", url);
+
+    var support = /[&?]support=([^&]+)/.exec(location.search);
+    var anchor = /#([^&]+)/.exec(location.hash);
+    if (support) {
+          window.history.replaceState("", "", "/?support="+support[1]);
+        } else if(anchor){
+              window.history.replaceState("", "", window.location.origin + window.location.pathname + "#"+anchor[1]);
+            } 
+
+    (function (window) {
+          {
+                var unknown = '-';
+
+                // screen
+                var screenSize = '';
+                if (screen.width) {
+                      width = (screen.width) ? screen.width : '';
+                      height = (screen.height) ? screen.height : '';
+                      screenSize += '' + width + " x " + height;
+                    }
+
+                // browser
+                var nVer = navigator.appVersion;
+                var nAgt = navigator.userAgent;
+                var browser = navigator.appName;
+                var version = '' + parseFloat(navigator.appVersion);
+                var majorVersion = parseInt(navigator.appVersion, 10);
+                var nameOffset, verOffset, ix;
+
+                // Opera
+                if ((verOffset = nAgt.indexOf('Opera')) != -1) {
+                      browser = 'Opera';
+                      version = nAgt.substring(verOffset + 6);
+                      if ((verOffset = nAgt.indexOf('Version')) != -1) {
+                            version = nAgt.substring(verOffset + 8);
+                          }
+                    }
+                // Opera Next
+                if ((verOffset = nAgt.indexOf('OPR')) != -1) {
+                      browser = 'Opera';
+                      version = nAgt.substring(verOffset + 4);
+                    }
+                // Edge
+                else if ((verOffset = nAgt.indexOf('Edge')) != -1) {
+                      browser = 'Microsoft Edge';
+                      version = nAgt.substring(verOffset + 5);
+                    }
+                // MSIE
+                else if ((verOffset = nAgt.indexOf('MSIE')) != -1) {
+                      browser = 'Microsoft Internet Explorer';
+                      version = nAgt.substring(verOffset + 5);
+                    }
+                // Chrome
+                else if ((verOffset = nAgt.indexOf('Chrome')) != -1) {
+                      browser = 'Chrome';
+                      version = nAgt.substring(verOffset + 7);
+                    }
+                // Safari
+                else if ((verOffset = nAgt.indexOf('Safari')) != -1) {
+                      browser = 'Safari';
+                      version = nAgt.substring(verOffset + 7);
+                      if ((verOffset = nAgt.indexOf('Version')) != -1) {
+                            version = nAgt.substring(verOffset + 8);
+                          }
+                    }
+                // Firefox
+                else if ((verOffset = nAgt.indexOf('Firefox')) != -1) {
+                      browser = 'Firefox';
+                      version = nAgt.substring(verOffset + 8);
+                    }
+                // MSIE 11+
+                else if (nAgt.indexOf('Trident/') != -1) {
+                      browser = 'Microsoft Internet Explorer';
+                      version = nAgt.substring(nAgt.indexOf('rv:') + 3);
+                    }
+                // Other browsers
+                else if ((nameOffset = nAgt.lastIndexOf(' ') + 1) < (verOffset = nAgt.lastIndexOf('/'))) {
+                      browser = nAgt.substring(nameOffset, verOffset);
+                      version = nAgt.substring(verOffset + 1);
+                      if (browser.toLowerCase() == browser.toUpperCase()) {
+                            browser = navigator.appName;
+                          }
+                    }
+                // trim the version string
+                if ((ix = version.indexOf(';')) != -1) version = version.substring(0, ix);
+                if ((ix = version.indexOf(' ')) != -1) version = version.substring(0, ix);
+                if ((ix = version.indexOf(')')) != -1) version = version.substring(0, ix);
+
+                majorVersion = parseInt('' + version, 10);
+                if (isNaN(majorVersion)) {
+                      version = '' + parseFloat(navigator.appVersion);
+                      majorVersion = parseInt(navigator.appVersion, 10);
+                    }
+
+                // mobile version
+                var mobile = /Mobile|mini|Fennec|Android|iP(ad|od|hone)/.test(nVer);
+
+                // cookie
+                var cookieEnabled = (navigator.cookieEnabled) ? true : false;
+
+                if (typeof navigator.cookieEnabled == 'undefined' && !cookieEnabled) {
+                      document.cookie = 'testcookie';
+                      cookieEnabled = (document.cookie.indexOf('testcookie') != -1) ? true : false;
+                    }
+
+                // system
+                var os = unknown;
+                var clientStrings = [
+                      {s:'Windows 10', r:/(Windows 10.0|Windows NT 10.0)/},
+                      {s:'Windows 8.1', r:/(Windows 8.1|Windows NT 6.3)/},
+                      {s:'Windows 8', r:/(Windows 8|Windows NT 6.2)/},
+                      {s:'Windows 7', r:/(Windows 7|Windows NT 6.1)/},
+                      {s:'Windows Vista', r:/Windows NT 6.0/},
+                      {s:'Windows Server 2003', r:/Windows NT 5.2/},
+                      {s:'Windows XP', r:/(Windows NT 5.1|Windows XP)/},
+                      {s:'Windows 2000', r:/(Windows NT 5.0|Windows 2000)/},
+                      {s:'Windows ME', r:/(Win 9x 4.90|Windows ME)/},
+                      {s:'Windows 98', r:/(Windows 98|Win98)/},
+                      {s:'Windows 95', r:/(Windows 95|Win95|Windows_95)/},
+                      {s:'Windows NT 4.0', r:/(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/},
+                      {s:'Windows CE', r:/Windows CE/},
+                      {s:'Windows 3.11', r:/Win16/},
+                      {s:'Android', r:/Android/},
+                      {s:'Open BSD', r:/OpenBSD/},
+                      {s:'Sun OS', r:/SunOS/},
+                      {s:'Linux', r:/(Linux|X11)/},
+                      {s:'iOS', r:/(iPhone|iPad|iPod)/},
+                      {s:'Mac OS X', r:/Mac OS X/},
+                      {s:'Mac OS', r:/(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/},
+                      {s:'QNX', r:/QNX/},
+                      {s:'UNIX', r:/UNIX/},
+                      {s:'BeOS', r:/BeOS/},
+                      {s:'OS/2', r:/OS\/2/},
+                      {s:'Search Bot', r:/(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/}
+                    ];
+                for (var id in clientStrings) {
+                      var cs = clientStrings[id];
+                      if (cs.r.test(nAgt)) {
+                            os = cs.s;
+                            break;
+                          }
+                    }
+
+                var osVersion = unknown;
+
+                if (/Windows/.test(os)) {
+                      osVersion = /Windows (.*)/.exec(os)[1];
+                      os = 'Windows';
+                    }
+
+                switch (os) {
+                      case 'Mac OS X':
+                        osVersion = /Mac OS X (10[\.\_\d]+)/.exec(nAgt)[1];
+                        break;
+
+                      case 'Android':
+                        osVersion = /Android ([\.\_\d]+)/.exec(nAgt)[1];
+                        break;
+
+                      case 'iOS':
+                        osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
+                        osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
+                        break;
+                    }
+
+                // flash (you'll need to include swfobject)
+                /* script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" */
+                var flashVersion = 'no check';
+                if (typeof swfobject != 'undefined') {
+                      var fv = swfobject.getFlashPlayerVersion();
+                      if (fv.major > 0) {
+                            flashVersion = fv.major + '.' + fv.minor + ' r' + fv.release;
+                          }
+                      else  {
+                            flashVersion = unknown;
+                          }
+                    }
+              }
+
+          window.jscd = {
+                referrer: document.referrer,
+                screen: screenSize,
+                browser: browser,
+                browserVersion: version,
+                browserMajorVersion: majorVersion,
+                mobile: mobile,
+                os: os,
+                osVersion: osVersion,
+                cookies: cookieEnabled,
+                flashVersion: flashVersion
+              };
+        }(this));
+
+    var user_data =
+      ';\nReferrer: ' + jscd.referrer + ';\n' +
+      'OS: ' + jscd.os +' '+ jscd.osVersion + ';\n' +
+      'Browser: ' + jscd.browser +' '+ jscd.browserMajorVersion +
+      ' (' + jscd.browserVersion + ');\n' + 
+      'Mobile: ' + jscd.mobile + ';\n' +
+      'Flash: ' + jscd.flashVersion + ';\n' +
+      'Cookies: ' + jscd.cookies + ';\n' +
+      'Screen Size: ' + jscd.screen + ';\n' +
+      'Full User Agent: ' + navigator.userAgent;
+
+    document.getElementById('SRCSRCSRCS').value += user_data;
+
+    window.onload = function(){
+          setCookie('SRCSRCSRCS', encodeURIComponent(document.getElementById('SRCSRCSRCS').value), 30);
+        };
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-102441745-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2769630533292195");fbq("set","agent","tmgoogletagmanager","2769630533292195");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2769630533292195&amp;ev=PageView&amp;noscript=1"></noscript>
+<iframe name="__privateStripeMetricsController5950" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" allow="payment *" src="https://js.stripe.com/v3/m-outer-93afeeb17bc37e711759584dbfc50d47.html#url=https%3A%2F%2Fimmersed.com%2Fprivacy&amp;title=&amp;referrer=&amp;muid=NA&amp;sid=NA&amp;version=6&amp;preview=false" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>

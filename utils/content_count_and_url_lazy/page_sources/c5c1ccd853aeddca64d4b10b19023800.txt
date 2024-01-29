@@ -1,0 +1,309 @@
+<html lang="en"><head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>DownhillVR | VR Mountain Biking Video Game</title>
+    <meta name="keywords" content="DownhillVR, Downhill VR, VR Video Game, Video Game, VR, Downhill, Virtual reality, Action Biking Game,
+          Biking Game, Extreme Downhill, Extreme Action Biking, Action Sports, Extreme Sports, Freeride biking game">
+    <meta name="description" content="Experience the ultimate thrill of extreme downhill racing in your living room with DownhillVR. Early Access release coming soon!">
+    <meta name="author" content="FiredBy s.r.o.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://downhillvr.com">
+    <meta property="og:title" content="DownhillVR | VR Mountain Biking Video Game">
+    <meta property="og:description" content="Experience the ultimate thrill of extreme downhill racing in your living room with DownhillVR. Early Access release coming soon!">
+    <meta property="og:image" content="https://downhillvr.com/images/og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://downhillvr.com">
+    <meta property="twitter:title" content="DownhillVR | VR Mountain Biking Game">
+    <meta property="twitter:description" content="Experience the ultimate thrill of extreme downhill racing in your living room with DownhillVR. Early Access release coming soon!">
+    <meta property="twitter:image" content="https://downhillvr.com/images/og.jpg">
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#222222">
+
+    <!-- STYLES -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <!-- Video Modal -->
+    <link href="css/modal-video.min.css" rel="stylesheet">
+    <!-- Animations -->
+    <link href="css/animations.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
+
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BJMT9PB9VG"></script><script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-BJMT9PB9VG');
+</script></head>
+<!-- Google tag (gtag.js) -->
+
+
+<body>
+<!-- Loading Screen -->
+<div id="loader-wrapper" class="loaded">
+    <h1 class="loader-logo">
+        <img src="./images/logo.svg" alt="DownhillVR" width="400px">
+    </h1>
+    <div id="progress" style="width: 100%;"></div>
+    <h3 class="loader-text">LOADING</h3>
+</div>
+<!-- Cookies Notification -->
+<div id="cookies">
+    <div class="cookies-bar open">
+        <div class="cookies-wrapper">
+            <p>This website uses cookies. Please see our <a href="privacy_policy.html">Privacy
+                Policy</a> for more information.</p>
+        </div>
+        <button class="button" id="cookies-close">X</button>
+    </div>
+</div>
+<!-- //// HEADER //// -->
+<header id="main-header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container">
+            <!-- Logo-->
+            <a href="./#">
+                <img src="./images/logo.svg" id="main-logo" class="navbar-brand" alt="DownhillVR" width="100px">
+            </a>
+            <!-- Dropdown Button -->
+            <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./#learn-more">Learn more</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./#media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./#purchase">Purchase</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./#social-media">Social media</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header><!-- Header End -->
+
+<div class="extra-page">
+    <!-- /// HERO SECTION /// -->
+    <section id="hero-section" class="extra-page">
+        <div class="row hero-unit">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class="hero-caption"><!-- Main Tagline -->
+                            <h1>Privacy &amp; Cookie Policy</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Hero Section End -->
+
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb" class="small-margin breadcrumb-nav">
+        <div class="container">
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Privacy &amp; Cookie Policy</li>
+                </ol>
+            </div>
+        </div>
+    </nav>
+
+    <section class="extra-page small-margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="text-container my-2">
+                        <h2>Privacy Policy:</h2>
+                        <p>At FiredBy s.r.o, we are committed to protecting the privacy of our website visitors. This
+                            Privacy Policy explains how we collect, use, and disclose information about you when you
+                            visit
+                            our website.</p>
+                    </div>
+                    <div class="text-container my-2">
+
+                        <h3>Information We Collect:</h3>
+                        <p>When you visit our website, we may collect certain information about you automatically
+                            through
+                            cookies and similar tracking technologies. This information may include your IP address,
+                            browser
+                            type, operating system, referral source, length of visit, and pages viewed.</p>
+                        <p>We may also collect information about you voluntarily when you fill out our contact form or
+                            subscribe to our newsletter. This information may include your name, email address, and any
+                            other information you choose to provide.</p>
+                    </div>
+                    <div class="text-container my-2">
+                        <h3>How We Use Your Information:</h3>
+                        <p>We may use the information we collect about you to:</p>
+                        <ul>
+                            <li>Improve our website and the services we offer</li>
+                            <li>Respond to your inquiries and provide customer support</li>
+                            <li>Send you marketing communications that you have opted-in to receive</li>
+                            <li>Comply with our legal obligations</li>
+
+                        </ul>
+                    </div>
+                    <div class="text-container my-2">
+                        <h3>Information Sharing and Disclosure:</h3>
+                        <p>We may share your information with third-party service providers who help us operate our
+                            website
+                            and provide services to you, such as Google Analytics for website analytics. We do not sell,
+                            trade, or rent your personal information to third parties.</p>
+                        <p>We may also disclose your information if required by law or in response to a valid subpoena
+                            or
+                            court order.</p>
+                    </div>
+                    <div class="text-container my-4">
+                        <h2>Cookies:</h2>
+                        <p>Our website uses cookies to enhance your user experience and provide personalized content. A
+                            cookie is a small text file that is stored on your device when you visit our website. You
+                            can
+                            control the use of cookies through your browser settings.</p>
+                    </div>
+                    <div class="text-container my-2">
+                        <h3>Your Rights:</h3>
+                        <p>You have the right to access, update, and delete the personal information we have about you.
+                            You
+                            may also withdraw your consent to receive marketing communications at any time.</p>
+                        <p>If you have any questions or concerns about our Privacy Policy, please contact us at <a href="mailto:contact@downhillvr.com">contact@downhillvr.com</a>.</p>
+                    </div>
+                    <div class="text-container my-2">
+
+                        <h3>Cookie Policy:</h3>
+                        <p>Our website uses cookies to enhance your user experience and provide personalized content. A
+                            cookie is a small text file that is stored on your device when you visit our website.</p>
+                    </div>
+                    <div class="text-container my-2">
+                        <h3>We use cookies to:</h3>
+                        <ul>
+                            <li>Understand how you interact with our website</li>
+                            <li>Remember your preferences</li>
+                            <li>Provide personalized content</li>
+                            <li>Analyze website traffic</li>
+                        </ul>
+                    </div>
+                    <div class="text-container my-4">
+                        <h2>Google Analytics</h2>
+                        <p>We use Google Analytics to analyze website traffic. Google Analytics uses cookies to collect
+                            anonymous information about your visits to our website, such as your IP address, browser
+                            type, operating system, referral source, length of visit, and pages viewed. This information
+                            is used to improve our website and the services we offer.</p>
+                        <p>You can control the use of cookies through your browser settings. Please note that disabling
+                            cookies may limit your ability to use certain features of our website.</p>
+                        <p>If you have any questions or concerns about our Cookie Policy, please contact us at <a href="mailto:contact@downhillvr.com">contact@downhillvr.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <div class="container">
+            <div class="row">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+                </ol>
+            </div>
+        </div>
+    </nav>
+
+    <!-- /// FOOTER /// -->
+    <div id="footer-extra">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./images/logo.svg" alt="DownhillVR" class="mx-auto d-block">
+                </div>
+                <div class="col-md-4 mt-3">
+                    <a href="//firedby.com">
+                        <img src="./images/firedby.svg" class="mx-auto d-block" style="max-height: 60px">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Social Links</h3>
+                    <ul class="social-links"> <!-- Social Media Icons -->
+                        <li><a href="https://www.facebook.com/DownhillVR.game" target="_blank">
+                            <i class="fab fa-facebook-f fa-lg icon-social"></i>
+                        </a></li>
+                        <li><a href="https://twitter.com/DownhillVR" target="_blank">
+                            <i class="fab fa-twitter fa-lg icon-social"></i>
+                        </a></li>
+                        <li><a href="https://instagram.com/downhillvr.game" target="_blank">
+                            <i class="fab fa-instagram fa-lg icon-social"></i>
+                        </a></li>
+                        <li><a href="https://www.youtube.com/@DownhillVR" target="_blank">
+                            <i class="fab fa-youtube fa-lg icon-social"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <p id="copyright">
+                        © FiredBy s.r.o <span id="year">2023</span> - <a href="//firedby.com">firedby.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- //// SCRIPTS //// -->
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/blazy.min.js"></script>
+<script src="js/jquery-modal-video.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/validator.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>

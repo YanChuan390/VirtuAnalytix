@@ -1,0 +1,266 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>The Tower 2 | A Virtual Reality game by Headroom.one</title>
+        <meta name="description" content="Munich based VR forge Headroom.one presents The Tower 2, delivering an action-packed breakneck ride through a futuristic apocalypse!">
+        <link rel="stylesheet" href="css/latofonts.css" type="text/css">
+        <link rel="stylesheet" href="css/simpleLightbox.min.css" type="text/css">
+        <link rel="stylesheet" href="css/parallax.css" type="text/css">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@headroom_one">
+        <meta name="twitter:creator" content="@my_kane">
+        <meta name="twitter:title" content="The Tower II - We're not gonna make it">
+        <meta name="twitter:description" content="A full body movement VR experience in the dark world of 80ies sci-fi cinema. No more parties at the Tech Noir and no DeLorean to take you back in time and save the world. The machines have taken over and you have to ﬁght your way through the deadly streets of Delta City to reach the last rescue shuttle. Will you make it or will you be lost in time, like tears in the rain?">
+        <meta name="twitter:image" content="https://www.thetower2.com/img/artwork/Landscape.jpg">
+        <!-- Facebook META Tags -->
+        <meta property="og:title" content="The Tower II - We're not gonna make it">
+        <meta property="og:image" content="https://www.thetower2.com/img/artwork/Landscape.jpg">
+        <meta property="og:site_name" content="The Tower 2 | A Virtual Reality game by Headroom.one">
+        <meta property="og:description" content="A full body movement VR experience in the dark world of 80ies sci-fi cinema. No more parties at the Tech Noir and no DeLorean to take you back in time and save the world. The machines have taken over and you have to ﬁght your way through the deadly streets of Delta City to reach the last rescue shuttle. Will you make it or will you be lost in time, like tears in the rain?">
+        <!-- A-Frame needs to be put here -->
+        <script src="js/aframe-v0.9.2.min.js"></script>
+    </head>
+
+    <body>
+        <div class="parallax">
+            <section id="group1" class="tt2-heroY parallax__group">
+                <h1>The Tower II</h1>
+                <div class="parallax__layer parallax__layer--back-light"></div>
+                <div class="parallax__layer parallax__layer--back"></div>
+                <div class="parallax__layer parallax__layer--deep"></div>
+            </section>
+            <section id="group2" class="fade parallax__group">
+                <article class="title">
+                    <p>
+                        No more parties at the Tech Noir and no DeLorean to take you back in time and save the world. The
+                        machines have taken over and you have to ﬁght your way through the deadly streets of Delta City to
+                        reach the last rescue shuttle. Will you make it or will you be lost in time, like tears in the rain?
+                    </p>
+                    <h2 class="claim">A full body movement VR experience in the <br> dark world of 80ies sci-fi cinema.</h2>
+                    <video width="800" height="450" controls="">
+                        <source src="/video/T2-Trailer-1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!--<img src="img/screens/screen-01.jpg" alt="Welcome to Delta City" title="Welcome to Delta City" />-->
+                    <p class="subtitle">
+                        The action packed sequel to Headroom.one’s highly acclaimed Virtual Reality debut The Tower for
+                        Oculus Rift, HTC Vive and Windows MR.
+                    </p>
+                </article>
+            </section>
+            <section id="group3" class="parallax__group">
+                <div class="parallax__layer parallax__layer--back"></div>
+                <article class="title">
+                    <h2>I’ve seen things, you people wouldn’t believe!</h2>
+                    <div>
+                        <p>
+                            Get ready for an action-packed breakneck ride through a futuristic apocalypse! You will run, swing
+                            and glide through a dystopia taken right out of your favorite 80s sci-ﬁ action movies. <!--But moving
+                            along conveyor belts, sliding down ramps and swinging over urban chasms on ropes will only get you
+                            so far.-->
+                        </p>
+                        <div class="imgs">
+                            <a href="img/screens/screen-05.jpg"><img src="img/screens/thumbs/screen-05-thumb.jpg"></a>
+                            <a href="img/screens/screen-02.jpg"><img src="img/screens/thumbs/screen-02-thumb.jpg"></a>
+                            <a href="img/screens/screen-03.jpg"><img src="img/screens/thumbs/screen-03-thumb.jpg"></a>
+                            <a href="img/screens/screen-04.jpg"><img src="img/screens/thumbs/screen-04-thumb.jpg"></a>
+                            <a href="img/screens/screen-40.jpg"><img src="img/screens/thumbs/screen-40-thumb.jpg"></a>
+                            <a href="img/screens/screen-46.jpg"><img src="img/screens/thumbs/screen-46-thumb.jpg"></a>
+                        </div>
+                        <p>
+                            If you want to catch that last ride off the planet, you’ll have to master wall-running, use
+                            jump-pads and rise above the city holding on to ﬂying drones. But your run has not gone unnoticed:
+                            Machines will try and stop you, so you’ll have to shoot your way out of your encounters with the
+                            vicious Hunter Killers, ﬂying assassination-robots that don’t feel pity, or remorse, or fear.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section id="group4" class="fade parallax__group">
+                <article class="title">
+                    <div id="vpl">
+                        <img class="no-webgl" src="img/logos/vpl.png" alt="VPL Logo">
+                        <a-scene embedded="" renderer="antialias: true; maxCanvasWidth: 220; maxCanvasHeight: 220;">
+                            <a-box position="0 -1 -3.5" color="#fff" animation="property: rotation; to: 0 360 0; loop: true; dur: 6000; easing: linear">
+                                <a-box position="-1 0 0" color="#fff"></a-box>
+                                <a-box position="-1 1 0" color="#fff"></a-box>
+                                <a-box position="-1 2 0" color="#fff"></a-box>
+                                <a-box position="0 1 0" color="#fff"></a-box>
+                                <a-box position="1 0 0" color="#fff"></a-box>
+                                <!-- grid front -->
+                                <a-box position="0 -0.5 0.5" scale="3.025 0.025 0.025" color="#666"></a-box>
+                                <a-box position="0 0.5 0.5" scale="3.025 0.025 0.025" color="#666"></a-box>
+                                <a-box position="-0.5 1.5 0.5" scale="2.025 0.025 0.025" color="#666"></a-box>
+                                <a-box position="-1 2.5 0.5" scale="1.025 0.025 0.025" color="#666"></a-box>
+                                <a-box position="-1.5 1 0.5" scale="0.025 3.025 0.025" color="#666"></a-box>
+                                <a-box position="-0.5 1 0.5" scale="0.025 3.025 0.025" color="#666"></a-box>
+                                <a-box position="0.5 0.5 0.5" scale="0.025 2.025 0.025" color="#666"></a-box>
+                                <a-box position="1.5 0 0.5" scale="0.025 1.025 0.025" color="#666"></a-box>
+                                <!-- grid back -->
+                                <a-box position="0 -0.5 -0.5" scale="3.025 0.025 0.025" color="#666"></a-box>
+                                <a-box position="0 0.5 -0.5" scale="3.025 0.025 0.025" color="#666"></a-box>
+                                <a-box position="-0.5 1.5 -0.5" scale="2.025 0.025 0.025" color="#666"></a-box>
+                                <a-box position="-1 2.5 -0.5" scale="1.025 0.025 0.025" color="#666"></a-box>
+                                <a-box position="-1.5 1 -0.5" scale="0.025 3.025 0.025" color="#666"></a-box>
+                                <a-box position="-0.5 1 -0.5" scale="0.025 3.025 0.025" color="#666"></a-box>
+                                <a-box position="0.5 0.5 -0.5" scale="0.025 2.025 0.025" color="#666"></a-box>
+                                <a-box position="1.5 0 -0.5" scale="0.025 1.025 0.025" color="#666"></a-box>
+                                <!-- grid sides -->
+                                <a-box position="1.5 0.5 0" scale="0.025 0.025 1.025" color="#666"></a-box>
+                                <a-box position="1.5 -0.5 0" scale="0.025 0.025 1.025" color="#666"></a-box>
+                                <a-box position="-1.5 -0.5 0" scale="0.025 0.025 1.025" color="#666"></a-box>
+                                <a-box position="-1.5 0.5 0" scale="0.025 0.025 1.025" color="#666"></a-box>
+                                <a-box position="-1.5 1.5 0" scale="0.025 0.025 1.025" color="#666"></a-box>
+                                <a-box position="-1.5 2.5 0" scale="0.025 0.025 1.025" color="#666"></a-box>
+                                <a-box position="-0.5 2.5 0" scale="0.025 0.025 1.025" color="#666"></a-box>
+                                <a-box position="-0.5 1.5 0" scale="0.025 0.025 1.025" color="#666"></a-box>
+                                <a-box position="0.5 1.5 0" scale="0.025 0.025 1.025" color="#666"></a-box>
+                                <a-box position="0.5 0.5 0" scale="0.025 0.025 1.025" color="#666"></a-box>
+                            </a-box>
+                            <a-camera look-controls-enabled="false"></a-camera>
+                        </a-scene>
+                    </div>
+                    <h2>It’s VPL time!</h2>
+                    <div>
+                        <p>
+                            Join the VIRTUAL PARKOUR LEAGUE, the thrilling future sport in the World of Tower 2. Show your
+                            friends who’s boss in 8 challenging courses in 4 different worlds. Master combinations of exciting
+                            obstacles and movement patterns and shoot your way through walls and windows before they stop you
+                            in your dash for the ﬁnishing line. The only help comes from time boni, which can be grabbed while
+                            hurtling through the levels by players with the perfect rhythm in their movement.
+                        </p>
+                        <br><br>
+                        <video width="800" height="450" controls="">
+                            <source src="/video/T2-Trailer-VPL.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <br><br>
+                        <div class="imgs vpl right">
+                            <a href="img/screens/screen-07.jpg"><img src="img/screens/thumbs/screen-07-thumb.jpg"></a>
+                            <a href="img/screens/screen-06.jpg"><img src="img/screens/thumbs/screen-06-thumb.jpg"></a>
+                            <a href="img/screens/screen-08.jpg"><img src="img/screens/thumbs/screen-08-thumb.jpg"></a>
+                            <a href="img/screens/screen-09.jpg"><img src="img/screens/thumbs/screen-09-thumb.jpg"></a>
+                            <a href="img/screens/screen-14.jpg"><img src="img/screens/thumbs/screen-14-thumb.jpg"></a>
+                            <a href="img/screens/screen-26.jpg"><img src="img/screens/thumbs/screen-26-thumb.jpg"></a>
+                        </div>
+                        <!--
+                        <div class="flex-cols center">
+                            <a class="arrow center" title="" href="vpl.html">Global Highscores</a>
+                        </div>
+                        -->
+                        <p>
+                            Feel the rush of the most exciting personal workout since aerobics and pumping iron. Highscores
+                            are saved so you can experience the electrifying competition with your friends and players from
+                            all over the world.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section id="group5" class="parallax__group">
+                <div class="parallax__layer parallax__layer--back"></div>
+                <article class="title">
+                    <!-- <h2>Out NOW!</h2>
+                    <p>
+                        Available for Oculus Rift and Rift S, as well as HTC Vive and all compatible Steam VR headsets!
+                    </p> -->
+                    <h2>OUT NOW!</h2>
+                    <p>
+                        Available for Oculus Rift and Rift S, as well as Valve Index, HTC Vive and all compatible Steam VR headsets!
+                    </p>
+                    <div class="flex-cols">
+                        <div class="c50 r">
+                            <a class="arrow left" title="Out now!" href="https://www.oculus.com/experiences/rift/1754831947938552/" target="_blank">Oculus Rift</a>
+                        </div>
+                        <div class="c50">
+                            <a class="arrow" title="Out now!" href="https://store.steampowered.com/app/1119740/The_Tower_2/" target="_blank">Vive / Index - SteamVR</a>
+                        </div>
+                    </div>
+                    <p>
+                        So slip on your Oculus Rift or HTC Vive and dive into a neon lighted hommage to countless 1980s
+                        sci-ﬁ and cyberpunk spectacles. A successful run through the story mission will keep you on your
+                        feet for approximately 60 minutes, a run in one of the VPL levels is a 3 to 6 minute sprint.
+                        Hidden in the world of The Tower 2 are VHS tapes that unlock precious collectibles right from
+                        the future for the holographic trophy cabinet. Get pumped by the original Tower II 80s-style soundtrack.
+                        <!--Get ready for your mission and the VPL with a tutorial and--> 
+                        <br>
+                        <br>
+                        
+                    </p>
+                    <p style="text-align: center;">
+                        Get the original Soundtrack by The New Meta on Bandcamp. 
+                    </p>    
+                    <div class="flex-cols center">
+                            <a class="arrow center" title="" target="_blank" href="https://thenewmeta.bandcamp.com/album/the-tower-2-ost">Soundtrack</a>
+                    </div>
+                </article>
+            </section>
+            <footer id="footer" class="fade parallax__group">
+                <div class="parallax__layer parallax__layer--back-light"></div>
+                <article class="title">
+                    <div>
+                        <img class="tt2" src="img/parallax/TT2-Logo.png" alt="The Tower II">
+                    </div>
+                    <div class="flex-cols">
+                        <div class="c50 r">
+                            <p>
+                                <strong>Codivo GmbH</strong><br>
+                                c/o Headroom.one<br>
+                                Franz-Joseph-Straße 38<br>
+                                80801 München
+                                <br>
+                                <br>
+                                Telefon +49 (89) 416 158 53<br>
+                                Telefax +49 (89) 416 158 54
+                            </p>
+                        </div>
+                        <div class="c50">
+                            <p>
+                                Geschäftsführer: Ivo Heckmann<br>
+                                Registergericht: Amtsgericht München<br>
+                                Registernummer: HRB 192731<br>
+                                USt-IdNr: DE 277998448
+                                <br>
+                                <br>
+                                E-Mail: <a href="mailto:vr@headroom.one">vr@headroom.one</a><br>
+                                Web: <a href="http://www.headroom.one" rel="nofollow" target="_blank">headroom.one</a><br>
+                                Twitter: <a href="https://twitter.com/headroom_one" rel="nofollow" target="_blank">@headroom_one</a><br>
+                                Instagram: <a href="https://www.instagram.com/headroom.one/" rel="nofollow" target="_blank">@headroom.one</a>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="subtitle">
+                        ©2019 by
+                        <img class="hr1" src="img/logos/hr-one-white-2.png" title="HEADROOM.ONE" alt="HEADROOM.ONE">
+                        - the registered VR brand of Codivo GmbH
+                    </p>
+                </article>
+            </footer>
+        </div>
+
+        <script src="js/simpleLightbox.min.js"></script>
+        <script>
+            new SimpleLightbox({elements: '#group3 .imgs a'});
+            new SimpleLightbox({elements: '#group4 .imgs a'});
+
+            function webglAvailable() {
+                try {
+                    var canvas = document.createElement("canvas");
+                    return !!
+                        window.WebGLRenderingContext &&
+                        (canvas.getContext("webgl") ||
+                            canvas.getContext("experimental-webgl"));
+                } catch(e) {
+                    return false;
+                }
+            }
+
+            if (!webglAvailable()) {
+                document.body.classList.add('no-webgl');
+            }
+
+        </script>
+
+    
+
+</body></html>

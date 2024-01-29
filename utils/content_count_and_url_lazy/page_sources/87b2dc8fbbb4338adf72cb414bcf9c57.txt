@@ -1,0 +1,188 @@
+<html><head><script language="javascript">
+var r_text = new Array (); 
+r_text[0] = "<b>ANGWITCH CRYPT</b><br><br>The <b>Chapel of Angwitch,</b> north of Harlath, has stood tall on its hill for time immemorial.<br><br>Islanders bring offerings to the chapel above but avoid the crypts below where rumor has it that <b>unnatural experiments</b> took place.<br><br>Now the dead, and worse, stalk the dark and narrow halls underground."; 
+r_text[1] = "<b>THE NORTH-WESTERN TOWER</b><br><br>The Northwestern tower has always been a <b>center of knowledge</b> in Harlath. <br><br>The Tower houses countless exotic tomes on magic, gateways to powerful spells and ancient wisdom.<br><br>Nowadays, the tower is the domain of the <b>ever-curious Friar Lyle,</b> a wise monk who rarely leaves his study, but certainly knows the Island’s lore.";  
+r_text[2] = "<b>THE FISKRADDIR VILLAGES</b><br><br>Since the downfall of Harlath, islanders have seen <b>Fiskraddir</b> building camps on their shores, particularly in the north of the island.<br><br>At first, these people, scaly and cold, rarely ventured too far from camp, but they grow bolder as their numbers increase.<br><br>Their aggression ramped up after the mysterious emergence of <b>F’Zuhnuh, a temple to their god, </b>from the ocean."; 
+r_text[3] = "<b>F'ZUHNUH SUNKEN TEMPLE</b><br><br>Not much is known about the <b>Sunken Temple</b> and who built it.<br><br>One thing seems certain however: the Temple rose from the Sea, summoned by the Fiskraddirs’ powerful prayers. Now they jealously guard it.<br><br>No outsider has gotten close enough to see the <b>secret god who dwells within,</b> but all fear that the Fiskraddir will call on this mysterious power for great evil."; 
+r_text[4] = "<b>GROUNDGUT MINE</b><br><br>Historically used to extract <b>precious crystals used by mages</b>, Groundgut saw its fair share of unfortunate accidents and was decommissioned.<br><br>Since no one in Harleth has set foot in the mines in recent memory, its <b>cavernous depths</b> have most likely been taken over by creatures that thrive in darkness.<br><br>Exploring the mines is <b>not for the faint of heart</b> but may well prove essential to understanding the mystery surrounding the island."; 
+r_text[5] = "<b>THE LAVA PITS</b><br><br>An <b>ancestral temple</b> carved into the flank of Harlath Volcano, the true purpose of the Lava Pits remains a mystery.<br><br>Friar Lyle once put forth the hypothesis that the Lava Pits may have been a place where <b>sacrifices were made to summon Chthonian gods</b> – but even he is not so sure anymore. <br><br>Those few who have ventured in and lived to tell the tell are changed forever, their minds overwhelmed."; 
+r_text[6] = "<b>MARHAVEN</b><br><br>Once, Marhaven was a typical fisherman’s village full of life and laughter.<br><br>Today, a gloom has descended and the visitors who do come, rarely stay long. Still, there is some comfort on offer.<br>A <b>wine merchant, a mapmaker, and an arcane expert</b> provide what is necessary to brave the island.<br><br>And <b>The Wailing Widow Inn</b> always has a warm fire and an open table where would-be adventurers gather."; 
+r_text[7] = "<b>THE THEATER OF PAIN</b><br><br>The Theater of Pain is a <b>cursed arena</b> not far from the Old Wizard’s Lair.<br><br>Within the ruins of a crumbling colosseum, hordes of <b>monsters, specters, and unholy wizards</b> lie in wait for the next adventurer foolish enough to step in the Arena.<br><br>Of those who ventured in, few returned to bask in the glory of their success."; 
+r_text[8] = "<b>THE WIZARD'S LAIR</b><br><br>Thoughts of the <b>forsaken experiments</b> that took place in this dilapidated castle would send shivers down anyone’s spine.<br><br>Its dark tower looms over the island, often illuminated by the <b>vile glow of forbidden magic.</b><br><br>The Wizard’s Lair is a stark reminder that unfathomable secrets and dangerous creatures loom in Harlath’s dark tunnels."; 
+r_text[9] = "<b>THE NORTH-EASTERN TOWER</b><br><br>If the sickly-green glow was not obvious enough, the <b>tortured whispers</b> heard all around the derelict tower are a sure sign that this monument dedicated to arcane knowledge and the mastery of magic has fallen to a dark power.<br><br>Who – or what – <b>haunts the tower</b> is anyone’s guess and no-one, so far, has been in a rush to figure it out.";
+r_text[10] = "<b>THE STARLIGHT FALLS</b><br><br>One of the most popular sights on Harlath, the <b>Starlight Falls</b> are the favorite spot of bird-watchers, and lovers.<br><br>Located close to Marhaven, the Falls provide clean drinking water to the villagers, as well as the occasional freshwater fish.<br><br>Some say that the source of the falls, deep inside Harlath’s volcano, <b>hides many treasures.</b>";
+	
+var randomPix = new Array();
+randomPix[0] = "featureAngWitch.jpg";
+randomPix[1] = "featureNorthWesternTower.jpg";
+randomPix[2] = "featureFishVillages.jpg";
+randomPix[3] = "featureFZuhnuh.jpg";
+randomPix[4] = "featureGroundGut.jpg";
+randomPix[5] = "featureLavaPits.jpg";
+randomPix[6] = "featureMarHaven.jpg";
+randomPix[7] = "featureTheater.jpg";
+randomPix[8] = "featureWizardCastle.jpg";
+randomPix[9] = "featureNorthEasternTower.jpg";
+randomPix[10] = "featureStarLight.jpg";
+	
+var i = Math.floor(r_text.length * Math.random()); 
+var myText = r_text[i];
+var myPicture = randomPix[i];
+	
+	window.onload = function() {
+       //when the document is finished loading, replace everything
+       //between the <a ...> </a> tags with the value of splitText
+   		document.getElementById("myRandomContent").innerHTML=myText;
+		document.getElementById("myRandomPicture").src=myPicture;
+} 
+</script>
+
+<meta charset="utf-8">
+<meta name="description" content="Stones of Harlath">
+<meta name="keywords" content="VR,video game,RPG,First person RPG,retro">
+<meta name="author" content="Cyril Guichard, Garage Collective">
+<title>STONES OF HARLATH - A RETRO VR RPG</title>
+<link href="myStyles.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Grenze" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+  <div id="navBarStatic">
+    <ul>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#media">MEDIA</a></li>
+      <li><a href="#features">FEATURES</a></li>
+	  <li><a href="#magic">MAGIC</a></li>
+	  <li><a href="#dungeons">DUNGEONS</a></li>
+	  <li><a href="#featured">FEATURED</a></li>
+      <li><a href="#updates">UPDATES</a></li>
+      <li><a href="#credits">CREDITS</a></li>
+		<li><a href="http://garage-collective.com/">GARAGE COLLECTIVE</a></li>
+    </ul>
+  </div>
+  <div id="hero">
+	  <img src="logo.png" alt="" class="center">
+	  <video autoplay="" muted="" loop="" id="videoLoop" style="z-index: -100; overflow: hidden;"><source src="anim.mp4" type="video/mp4"></video> 
+  </div>
+  <div id="heroContent">
+	  <a href="https://www.youtube.com/watch?v=9BwAMirsziI" onclick="MyWindow=window.open('https://youtu.be/Z32wCZpSl_k','Theta Legion Trailer','width=1280,height=720','location=no'); return false;" class="play" title="Play Now" style="margin-left: 50px; margin-top: 0px;"><span class="invisible">Play Trailer</span></a>
+  </div>
+	<div id="rolloverPlay"></div>
+	<img src="grass1.png" alt="" class="imgOverLeft">
+	<img src="grass2.png" alt="" class="imgOverRight">
+<div id="aboutContent">
+	<!--<img src="aboutTitle.png" alt=""/>--><img src="mageArt.png" alt="" style="float:right; margin-right: 30px; margin-top: 20px;">
+	<p><br><b>AWAKEN YOUR INNER BATTLEMAGE Q4 2020</b></p><br>
+	<p>Shipwrecked on the small island of Harlath, players will adventure through a semi-open-world environment and multiple dungeons, battling foes, solving puzzles, and ultimately <b>discovering the nature of the curse that looms over the island.</b> </p>
+	<p>&nbsp;</p>
+	<p>Stones of Harlath is a <b>first person RPG in VR</b>. Players will play as a powerful battle mage, wield swords, shields and maces and <b>cast powerful magic by drawing runes with their controller.</b></p>
+	<p>&nbsp;</p>
+	<p>Stones of Harlath is inspired by gaming classics such as Ultima Underworld, Arx Fatalis and Heretic/Hexen, but enhanced by modern lighting and the immersive nature of VR. The game visual features include <b>pixel-art textures</b>, low poly models and high-quality lighting in a mix of <b>3D environments and 2D sprites.</b></p>
+	<br>
+  </div>
+<a name="media"></a>
+<div id="mediaContent"><img src="mediaGalleryTitle.png" alt=""><br>
+	<div id="mediaContentdiv">
+	<a href="screenshots_1.png" target="_blank"><img src="screen1.jpg" alt=""></a>
+	<a href="screenshots_2.png" target="_blank"><img src="screen2.jpg" alt=""></a>
+	<a href="screenshots_3.png" target="_blank"><img src="screen3.jpg" alt=""></a>
+	<a href="screenshots_4.png" target="_blank"><img src="screen4.jpg" alt=""></a>
+	<a href="screenshots_5.png" target="_blank"><img src="screen5.jpg" alt=""></a>
+	<a href="screenshots_6.png" target="_blank"><img src="screen6.jpg" alt=""></a>
+	<a href="screenshots_7.png" target="_blank"><img src="screen7.jpg" alt=""></a>
+	<a href="screenshots_8.png" target="_blank"><img src="screen8.jpg" alt=""></a>
+	</div>
+  </div>
+<a name="features"></a>
+<div id="featuresContent"><img src="gameFeaturesTitle.png" alt=""><br><br>
+	<div class="featuresMyContent">
+		AN IMMERSIVE RETRO RPG...IN VR!
+		<ul>
+		<li>Semi open-world island to explore</li>
+		<li>6 creepy dungeons to adventure in</li>
+		<li>Quests and NPCs unveil a mysterious story</li>
+		<li>Over 25 different foes to battle</li>
+		<li>6 DoF and customizable options</li>
+		</ul>
+	</div>
+	<div class="featuresMyContent">
+		WEAPONS AND COMBAT
+		<ul>
+		<li>Sword and Board Melee Combat</li>
+		<li>6 Schools of Magic with 2 spells each</li>
+		<li>Bend time, Freeze your foes, summon Fire...</li>
+		<li>Collect Magic Powerups for your weapons</li>
+		<li>Hunt and defeat unique foes on the Island</li>
+		</ul>	
+	</div>
+  </div>
+	<img src="img_mage.png" alt="" style="float:left; margin-top: -220px; margin-left: -70px;">
+	<img src="img_imperial.png" alt="" style="float:right; margin-top: -220px; margin-right: -65px;">
+
+<a name="magic"></a>
+<div id="gameContent">
+	<img src="gameMagicTitle.png" alt="">
+		<p><br>When in <b>Mage mode</b> mode, the player will carry a magic Grimoire.<br>This grimoire does a lot more than just be a <b>spell reference</b>. It also acts as a portable <b>game help</b>, a <b>mini-map</b> and a <b>quest guide</b>.
+</p>
+	<img src="grimoireTotal.png" alt="" style=" margin-left: 0px;">
+  </div>
+		<img src="grass2.png" alt="" class="imgOverLeft">
+	<img src="grass1.png" alt="" class="imgOverRight">
+<a name="dungeons"></a>
+<div id="dungeonContent">
+	<img src="dungeonsTitle.png" alt="">
+	<div>
+		<p><b>6 dungeons</b> and <b>1 Arena,</b> the Theater of Pain, will give you plenty of content to battle in.<br>First <b>unlocked through Quests,</b> each dungeon can be then replayed at will.</p>
+	</div>
+	<img src="grimoire_minimap.png" alt="" style=" margin-left: 0px;">
+  </div>
+<a name="featured"></a>
+<div id="randomContent">
+	<span id="myRandomContent"><b>THE NORTH-WESTERN TOWER</b><br><br>The Northwestern tower has always been a <b>center of knowledge</b> in Harlath. <br><br>The Tower houses countless exotic tomes on magic, gateways to powerful spells and ancient wisdom.<br><br>Nowadays, the tower is the domain of the <b>ever-curious Friar Lyle,</b> a wise monk who rarely leaves his study, but certainly knows the Island’s lore.</span><img src="featureNorthWesternTower.jpg" width="920" height="540" id="myRandomPicture" style="position: relative;">
+	<!--<img src="featureTitle.png" alt=""/>-->
+	<!--<p><br><b>THE FISH PEOPLE VILLAGES</b></p><br>
+	<p>Since the downfall of Harlath, the island denizens witnessed pop-up camps of <b>Fish People,</b> particularly in the north of the Island.</p>
+	<p>&nbsp;</p>
+	<p>While they rarely venture too far from their village, the Fish People have been galvanized by their growing number and became aggressive.</p>
+	<p>&nbsp;</p>
+	<p>Their activity took a turn for the worst since the <b>unexpected emergence of F'Zuhnuh,</b> a sunken temple dedicated to their God.</p>
+	<p>&nbsp;</p>-->
+	<!--<p id="myRandomContent">r_text[4]</p>;-->
+  </div>
+<a name="updates"></a>
+<div id="updatesContent"><img src="updateTitle.png" alt=""><br>
+	<img src="grass2.png" alt="" class="imgOverLeft">
+	<img src="grass1.png" alt="" class="imgOverRight">
+	<h1>PRE-ORDER NOW!</h1><p><b>05/24/2021</b> - You can now pre-order Stones of Harlath on the Quest store <a href="#" target="_blank"> at this link</a></p>
+	<h1>TRAILER REVEALED</h1><p><b>05/20/2021</b> - Our official trailer is done, check it in 4K <a href="https://youtu.be/Z32wCZpSl_k" target="_blank"> at this link</a></p>
+	<h1>WEBSITE LIVE</h1><p><b>07/14/2020</b> - Learn what makes Stones of Harlath tick</p>
+	<h1>TEASER REVEALED</h1><p><b>06/20/2020</b> - Our teaser is officially revealed, check it in 4K <a href="https://youtu.be/9BwAMirsziI" target="_blank"> at this link</a></p>
+	<h1>STONES OF HARLATH</h1><p><b>11/20/2019</b> - Work starts on Stones of Harlath, a VR RPG with a classic feel</p>
+  </div>
+	<img src="img_frogGod.png" alt="" style="float:right; margin-top: -200px; margin-right: 40px;">
+<a name="credits"></a>
+<div id="creditsContent"><img src="creditsTitle.png" alt=""><br><br>
+<div class="creditsMyContent"><img src="por_mateusz.gif" alt="">
+    <h1>Music+Sound Effects</h1><p>Mateusz Gojski</p>
+	<!--<a href="#" class="rolloverTwitter" title="Twitter"><span class="invisible">Twitter</span></a>-->
+	<a href="https://www.facebook.com/Retrovex/" class="rolloverFacebook" title="Facebook"><span class="invisible">Facebook</span></a>
+    </div>
+<div class="creditsMyContent"><img src="por_cyril.gif" alt="">
+    <h1>Art+Design</h1><p>Cyril Guichard</p>
+	<a href="https://twitter.com/luxregina" class="rolloverTwitter" title="Twitter"><span class="invisible">Twitter</span></a>
+	<a href="https://www.facebook.com/stonesOfHarlath/" class="rolloverFacebook" title="Facebook"><span class="invisible">Facebook</span></a>
+    </div>
+<div class="creditsMyContent"><img src="por_simeon.gif" alt="">
+    <h1>Code+Design</h1><p>Simeon Acker</p>
+	<div id="centerDiv">
+		<a href="https://www.facebook.com/stonesOfHarlath/" class="rolloverFacebook" title="Facebook"><span class="invisible">Facebook</span></a>
+		<!--<a href="#" class="rolloverFacebook" title="Facebook"><span class="invisible">Facebook</span></a>-->
+	</div>
+    </div>
+  </div>
+  <div id="footer"><img src="logo_garco.png" alt=""><br>© All rights reserved - 2020 - Garage collective<br><a href="#" target="_blank">PRESSKIT</a></div>
+</div>
+
+
+</body></html>

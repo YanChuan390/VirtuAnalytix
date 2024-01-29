@@ -1,0 +1,29 @@
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | VR Mahjong</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/build5.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(130, 128, 128);"><canvas id="#canvas" style="width: 100%; height: 100%;"></canvas></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">VR Mahjong</div>
+      </div>
+<div class="footer">
+        <div class="title2">Control: Cursor arrows, W/S/A/D keys - moving and rotate, Mouse scroll and Q/E keys zoom</div>
+        <div class="title2">This product is supports VR devices  (Oculus Rift, HTC Vive) and normal windows desktops </div>
+	<div class="title2">Store link:<br><a href="http://store.steampowered.com/app/686620/VR_Mahjong_worlds/"><img src="header.jpg"></a></div><a href="http://store.steampowered.com/app/686620/VR_Mahjong_worlds/">
+
+      </a></div><a href="http://store.steampowered.com/app/686620/VR_Mahjong_worlds/">
+    </a></div><a href="http://store.steampowered.com/app/686620/VR_Mahjong_worlds/">
+  
+</a></body></html>

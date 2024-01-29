@@ -1,0 +1,160 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="" class=" js flexbox webgl no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow csstransforms csstransforms3d csstransitions fontface generatedcontent video audio svg inlinesvg smil svgclippaths"><head>
+<meta charset="utf-8">
+<title>Once Upon a Sea</title>
+<meta name="description" content="An interactive exploration of a vanishing wonder">
+<link rel="canonical" href="https://deadseavr.com/">
+<link rel="shortlink" href="https://deadseavr.com/">
+<meta name="HandheldFriendly" content="true">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="A.css,,_styles.css,,qv==0.6+js,,_libs,,_swiper,,_swiper-bundle.min.css,Mcc.c9YP7CXczF.css.pagespeed.cf._lGi9A-_OF.css"><script type="application/javascript" src="js/libs/jquery/jquery-3.4.1.min.js.pagespeed.jm.tJmcu2pzqb.js"></script>
+<script type="application/javascript" src="js/libs/gsap/TweenMax.min.js.pagespeed.jm.je2cQ0p0Ga.js"></script>
+<script type="application/javascript" src="js/libs/gsap/EasePack.min.js.pagespeed.jm.jxtD808PV1.js"></script>
+<script type="application/javascript" src="js/libs/gsap/jquery.gsap.min.js.pagespeed.jm.sz2-9NM0h-.js"></script>
+<script type="application/javascript" src="js/libs/modernizr.min.js.pagespeed.jm.l31XstMWAM.js"></script>
+<script type="application/javascript" src="js/libs/jquery.alterclass.js.pagespeed.jm._DD_P3aHx4.js"></script>
+<script type="application/javascript" src="js/libs/scrollmagic/ScrollMagic.js.pagespeed.jm.o2NRYWkXFc.js"></script>
+<script type="application/javascript" src="js/libs/scrollmagic/plugins/debug.addIndicators.min.js.pagespeed.jm.4v-clzEZA2.js"></script>
+<script type="application/javascript" src="js/libs/scrollmagic/plugins/animation.gsap.min.js.pagespeed.jm.e4RfWI1gOD.js"></script>
+<script type="application/javascript" src="js/libs/threejs107/three.min.js.pagespeed.ce.wl2IUv2dln.js"></script>
+<script type="application/javascript" src="js/libs/THREE.MeshLine.js.pagespeed.jm.JK3nUvDbgg.js"></script>
+<script type="application/javascript" src="js/libs/THREE.GausianBlurShader.js.pagespeed.jm.kzEjvZrpUI.js"></script>
+<script type="application/javascript" src="js/libs/THREE.CopyShader.js.pagespeed.jm.0B1n1yIRxh.js"></script>
+<script type="application/javascript" src="js/libs/THREE.EffectComposer.js.pagespeed.jm.3saz_4ln1F.js"></script>
+<script type="application/javascript" src="js/libs/THREE.RenderPass.js.pagespeed.jm.OfZvcJagTr.js"></script>
+<script type="application/javascript" src="js/libs/THREE.ShaderPass.js.pagespeed.jm.jpxukoucCK.js"></script>
+<script type="application/javascript" src="js/libs/impetus/impetus.js.pagespeed.jm.5XtZdPoPfB.js"></script>
+<script type="application/javascript" src="js/libs/swiper/swiper-bundle.min.js.pagespeed.jm.koeQqXUNSh.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script type="application/javascript" src="js/compiled/onceuponasea.js,qv=0.6.pagespeed.jm.-tejz8Pvsc.js"></script>
+</head>
+<body class="page-home" oncontextmenu="return false;" ontouchstart="">
+<header id="menu">
+<a href="#" id="panoramic-close" alt="Go back">Back</a>
+<div id="navigation">
+<ul class="menu">
+<li class="item">
+<a href="./dead-sea">THE DEAD SEA</a>
+</li>
+<li class="item">
+<a href="./help" class="">HELP THE DEAD SEA</a>
+</li>
+<li class="title"><h1>
+<a href="./main" class="trigger" data-action="homeClick"><img id="logo" alt="Once Upon a Sea" src="images/logo_en.png.pagespeed.ce.gkqD82FgLg.png"></a>
+</h1></li>
+<li class="item">
+<a href="./videos" class="">THE STORIES</a>
+</li>
+<li class="item">
+<a href="./vr-experience">THE VR EXPERIENCE</a>
+</li>
+</ul>
+</div>
+</header>
+<div id="preloader" class="shown">
+<div class="center">
+<div class="logo"><img src="images/logo_en.png.pagespeed.ce.gkqD82FgLg.png"></div>
+<div class="loading-rect">
+<div class="fill" style="width: 6.25%;"></div>
+</div>
+<div class="loader-label">
+<div class="loading" style="visibility: inherit; opacity: 1;">
+<div class="text">Loading...</div>
+</div>
+<div class="request-click" style="visibility: hidden; opacity: 0;">
+<div class="text">Click to start</div>
+<div class="animation"><img class="svg" src="images/click_grab.svg"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="intro">
+<div class="center">
+<p class="text-1">Once Upon a Sea tells the tragic tale of the Dead Sea:<br>one of the world's soon to be extinct wonders.</p>
+<p class="text-2">Due to centuries of human intervention and neglect, the Sea has receded dramatically: exposing a fragile, sinkhole-ridden land.</p>
+<p class="text-3">The destruction is quickly progressing.<br>For those who inhabit the area around the Dead Sea, its demise has changed where and how they live their lives.</p>
+</div>
+</div>
+<div id="main">
+<div id="video-player-wrapper">
+<div id="video-player-overlay"></div>
+<div id="video-player" class="vimeo"></div>
+<a href="#" id="video-player-close" alt="Close"></a>
+</div>
+<div id="continue-to-scroll" alt="Scroll to explore">
+<div class="separator">
+<img class="scroll-animation" src="images/animated_scroll.png.pagespeed.ce.9lmNoiYjqY.png">
+</div>
+<p>SCROLL TO EXPLORE</p>
+</div>
+<div id="partners-logos" class="shown">
+<img src="images/partners-logos.png.pagespeed.ce.jatvo8HYsk.png">
+</div>
+<div id="canvas-wrapper">
+<canvas width="1036" height="668" id="ouas-main-canvas" style="width: 1036px; height: 668px;"></canvas></div>
+<div id="game-1" class="game hidden">
+<div class="container movable" id="screen-1-text-container">
+<div id="screen-1-main-title">
+<h1>ONCE UPON A SEA</h1>
+<div class="subtitle-text">
+<p class="reveal-on-scoll" data-reveal-id="1">A poetic, interactive XR documentary telling the tragic tale of the legendary Dead Sea.</p>
+<p class="reveal-on-scoll" data-reveal-id="2">Through a physical exploration of the sea’s forbidden, moonlike landscapes, to intimate encounters with local characters, the user gets a rare glimpse into one of the world’s most dangerous, soon to be extinct, wonders.</p>
+<p class="reveal-on-scoll" data-reveal-id="3">Centuries of human intervention and political neglect have turned the Dead Sea into a precarious place. Its water levels have dropped dramatically, leaving behind sinkholes and collapsing beaches.</p>
+<p class="reveal-on-scoll" data-reveal-id="4">The experience offers a deep insight into the complexity and very human impact of this ecological and geopolitical crisis.</p>
+<p class="reveal-on-scoll" data-reveal-id="5">Once Upon a Sea is our call to action.</p>
+</div>
+</div>
+<div id="screen-1-progression-line-container" class="progression-line-container">
+<span class="legend">Surface <span>(km²)</span></span>
+<span class="cursor">
+<span class="surface">1050</span>
+<span>km<sup>2</sup></span>
+</span>
+<ul class="progression-line">
+<li>1930</li>
+<li>1940</li>
+<li>1950</li>
+<li>1960</li>
+<li>1970</li>
+<li>1980</li>
+<li>1990</li>
+<li>2010</li>
+<li>2020</li>
+</ul>
+</div>
+<div id="screen-1-laurels">
+<img draggable="false" src="images/laurels/CANNES_XR_2019.png.pagespeed.ce.j_mSQ4aDsV.png">
+<img draggable="false" src="images/laurels/ST20.png.pagespeed.ce.s-vaSX1lxo.png">
+<img draggable="false" src="images/laurels/SXSW21.png.pagespeed.ce.uh2YI5gLDV.png">
+<img draggable="false" src="images/laurels/VRE20.png.pagespeed.ce.4R11zpOuR_.png">
+</div>
+</div>
+<div class="container movable" id="screen-3-text-container">
+<div id="screen-3-text">
+<h2>THE LAST MAN STANDING</h2>
+<p>
+</p><div href="#" class="trigger button-pano" data-action="gotoPano" data-action-arg="shimon">
+<div class="middle-text">MEET SHIMON SHUKRUN</div>
+</div>
+<p></p>
+<p>EXPERIENCE SHIMON'S STRUGGLE TO KEEP HIS HOME BY THE SEA</p>
+</div>
+</div>
+<section class="screen screen-1" data-ref="1950">
+</section>
+<section class="screen screen-2" data-ref="2000">
+</section>
+<section class="screen screen-3" data-ref="house">
+</section>
+</div>
+</div>
+<script type="text/javascript">window.language="en";window.OUAS_VERSION="0.6";var ready=function(){window.app=new OUAS();};window.addEventListener('load',ready,false);</script>
+<script data-pagespeed-no-defer="">//<![CDATA[
+(function(){function f(b){var a=window;if(a.addEventListener)a.addEventListener("load",b,!1);else if(a.attachEvent)a.attachEvent("onload",b);else{var c=a.onload;a.onload=function(){b.call(this);c&&c.call(this)}}};window.pagespeed=window.pagespeed||{};var k=window.pagespeed;function l(b,a,c,g,h){this.h=b;this.i=a;this.l=c;this.j=g;this.b=h;this.c=[];this.a=0}l.prototype.f=function(b){for(var a=0;250>a&&this.a<this.b.length;++a,++this.a)try{document.querySelector(this.b[this.a])&&this.c.push(this.b[this.a])}catch(c){}this.a<this.b.length?window.setTimeout(this.f.bind(this),0,b):b()};
+k.g=function(b,a,c,g,h){if(document.querySelector&&Function.prototype.bind){var d=new l(b,a,c,g,h);f(function(){window.setTimeout(function(){d.f(function(){for(var a="oh="+d.l+"&n="+d.j,a=a+"&cs=",b=0;b<d.c.length;++b){var c=0<b?",":"",c=c+encodeURIComponent(d.c[b]);if(131072<a.length+c.length)break;a+=c}k.criticalCssBeaconData=a;var b=d.h,c=d.i,e;if(window.XMLHttpRequest)e=new XMLHttpRequest;else if(window.ActiveXObject)try{e=new ActiveXObject("Msxml2.XMLHTTP")}catch(m){try{e=new ActiveXObject("Microsoft.XMLHTTP")}catch(n){}}e&&
+(e.open("POST",b+(-1==b.indexOf("?")?"?":"&")+"url="+encodeURIComponent(c)),e.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),e.send(a))})},0)})}};k.criticalCssBeaconInit=k.g;})();
+pagespeed.selectors=["#intro","#intro h1","#intro p","#intro p.subtitle","#main","#main #canvas-wrapper","#main #canvas-wrapper.cursor-default","#main #canvas-wrapper.cursor-pointer","#main #continue-to-scroll","#main #continue-to-scroll .separator","#main #continue-to-scroll .separator img.scroll-animation","#main #continue-to-scroll p","#main #continue-to-scroll.shown","#main #partners-logos","#main #partners-logos img","#main #partners-logos.shown","#main .game","#main .game#game-1","#main .game#game-1 #screen-1-text-container #screen-1-laurels","#main .game#game-1 #screen-1-text-container #screen-1-laurels img","#main .game#game-1 #screen-1-text-container #screen-1-main-title","#main .game#game-1 #screen-1-text-container #screen-1-main-title .subtitle-text","#main .game#game-1 #screen-1-text-container #screen-1-main-title .subtitle-text p.reveal-on-scoll","#main .game#game-1 #screen-1-text-container #screen-1-main-title .subtitle-text p.reveal-on-scoll[data-reveal-id=\"1\"]","#main .game#game-1 #screen-1-text-container #screen-1-main-title h1","#main .game#game-1 #screen-1-text-container #screen-1-main-title h2","#main .game#game-1 #screen-1-text-container #screen-1-main-title p","#main .game#game-1 #screen-1-text-container #screen-3-text h1","#main .game#game-1 #screen-1-text-container #screen-3-text h2","#main .game#game-1 #screen-1-text-container .progression-line-container","#main .game#game-1 #screen-1-text-container .progression-line-container .cursor","#main .game#game-1 #screen-1-text-container .progression-line-container .cursor span","#main .game#game-1 #screen-1-text-container .progression-line-container .cursor span.surface","#main .game#game-1 #screen-1-text-container .progression-line-container .legend","#main .game#game-1 #screen-1-text-container .progression-line-container .progression-line","#main .game#game-1 #screen-1-text-container .progression-line-container .progression-line li","#main .game#game-1 #screen-3-text-container #screen-1-main-title h1","#main .game#game-1 #screen-3-text-container #screen-1-main-title h2","#main .game#game-1 #screen-3-text-container #screen-3-text","#main .game#game-1 #screen-3-text-container #screen-3-text h1","#main .game#game-1 #screen-3-text-container #screen-3-text h2","#main .game#game-1 #screen-3-text-container #screen-3-text p","#main .game#game-1 #screen-3-text-container .button-pano","#main .game#game-1 #screen-3-text-container .button-pano .middle-text","#main .game#game-1 .container","#main .game#game-1.hidden","#menu","#menu #panoramic-close","#menu #panoramic-close.active","#menu ul","#menu ul li","#menu ul li a","#menu ul li.item","#menu ul li.language-switcher","#menu ul li.title h1","#menu ul li.title h1 #logo","#messages","#preloader","#preloader .loader-label","#preloader .loader-label .request-click","#preloader .loader-label .request-click .animation","#preloader .loader-label .request-click .animation .svg","#preloader .loader-label .request-click .animation img","#preloader .loading-rect","#preloader .loading-rect .fill","#preloader .logo img","#video-player-wrapper","#video-player-wrapper #video-player","#video-player-wrapper #video-player-close","#video-player-wrapper #video-player-close.active","#video-player-wrapper #video-player-overlay","#video-player-wrapper #video-player.vimeo","#video-player-wrapper #video-player.vimeo iframe","*",".button",".button span",".button.button-big",".center",".message",".message.error",".message.status",".message.success",".message.warning",".page-dead-sea",".page-dead-sea .gmap",".page-dead-sea .gmap iframe",".page-dead-sea .main",".page-dead-sea .main .button",".page-dead-sea .main .title-italic",".page-dead-sea .main .video-wrapper",".page-dead-sea .main .video-wrapper iframe",".page-dead-sea .main a.button",".page-dead-sea .main h2",".page-dead-sea .main h3",".page-dead-sea .main p",".page-dead-sea .main p.summary",".page-help",".page-help .main",".page-help .main .button",".page-help .main .title-italic",".page-help .main .video-wrapper",".page-help .main .video-wrapper iframe",".page-help .main a.button",".page-help .main h2",".page-help .main h3",".page-help .main p",".page-help .main p.summary",".page-videos",".page-videos .main",".page-videos .main .button",".page-videos .main .title-italic",".page-videos .main .video-wrapper",".page-videos .main .video-wrapper iframe",".page-videos .main a.button",".page-videos .main h2",".page-videos .main h3",".page-videos .main p",".page-videos .main p.summary",".page-videos .swiper-container",".page-videos .swiper-container .swiper-slide",".page-videos .swiper-container .swiper-slide a",".page-vr-experience",".page-vr-experience .button",".page-vr-experience .main",".page-vr-experience .main .button",".page-vr-experience .main .title-italic",".page-vr-experience .main .video-wrapper",".page-vr-experience .main .video-wrapper iframe",".page-vr-experience .main a.button",".page-vr-experience .main h2",".page-vr-experience .main h3",".page-vr-experience .main p",".page-vr-experience .main p.summary",".page-vr-experience .partners-logos",".page-vr-experience .partners-logos img",".page-vr-experience .store-link",".page-vr-experience .store-link img",".page-vr-experience .video-wrapper",".page-vr-experience .video-wrapper iframe",".page-vr-experience a.button",".scenario-timeline-maker",".spacer",".spacer.s0",".spacer.s1",".spacer.s10",".spacer.s2",".spacer.s3",".spacer.s4",".spacer.s5",".spacer.s6",".spacer.s7",".spacer.s8",".spacer.s9",".spacer.s_half",".spacer.s_viewport",".swiper-button-lock",".swiper-button-next",".swiper-button-next.swiper-button-black",".swiper-button-next.swiper-button-disabled",".swiper-button-next.swiper-button-white",".swiper-button-prev",".swiper-button-prev.swiper-button-black",".swiper-button-prev.swiper-button-disabled",".swiper-button-prev.swiper-button-white",".swiper-container",".swiper-container .swiper-notification",".swiper-container-3d",".swiper-container-3d .swiper-cube-shadow",".swiper-container-3d .swiper-slide",".swiper-container-3d .swiper-slide-shadow-bottom",".swiper-container-3d .swiper-slide-shadow-left",".swiper-container-3d .swiper-slide-shadow-right",".swiper-container-3d .swiper-slide-shadow-top",".swiper-container-3d .swiper-wrapper",".swiper-container-android .swiper-slide",".swiper-container-autoheight",".swiper-container-autoheight .swiper-slide",".swiper-container-autoheight .swiper-wrapper",".swiper-container-css-mode > .swiper-wrapper",".swiper-container-css-mode > .swiper-wrapper > .swiper-slide",".swiper-container-cube",".swiper-container-cube .swiper-cube-shadow",".swiper-container-cube .swiper-slide",".swiper-container-cube .swiper-slide .swiper-slide",".swiper-container-cube .swiper-slide-active",".swiper-container-cube .swiper-slide-active .swiper-slide-active",".swiper-container-cube .swiper-slide-next",".swiper-container-cube .swiper-slide-next + .swiper-slide",".swiper-container-cube .swiper-slide-prev",".swiper-container-cube .swiper-slide-shadow-bottom",".swiper-container-cube .swiper-slide-shadow-left",".swiper-container-cube .swiper-slide-shadow-right",".swiper-container-cube .swiper-slide-shadow-top",".swiper-container-cube.swiper-container-rtl .swiper-slide",".swiper-container-fade .swiper-slide",".swiper-container-fade .swiper-slide .swiper-slide",".swiper-container-fade .swiper-slide-active",".swiper-container-fade .swiper-slide-active .swiper-slide-active",".swiper-container-fade.swiper-container-free-mode .swiper-slide",".swiper-container-flip",".swiper-container-flip .swiper-slide",".swiper-container-flip .swiper-slide .swiper-slide",".swiper-container-flip .swiper-slide-active",".swiper-container-flip .swiper-slide-active .swiper-slide-active",".swiper-container-flip .swiper-slide-shadow-bottom",".swiper-container-flip .swiper-slide-shadow-left",".swiper-container-flip .swiper-slide-shadow-right",".swiper-container-flip .swiper-slide-shadow-top",".swiper-container-free-mode > .swiper-wrapper",".swiper-container-horizontal > .swiper-pagination-bullets",".swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet",".swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic",".swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet",".swiper-container-horizontal > .swiper-pagination-progressbar",".swiper-container-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite",".swiper-container-horizontal > .swiper-scrollbar",".swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper",".swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet",".swiper-container-multirow > .swiper-wrapper",".swiper-container-multirow-column > .swiper-wrapper",".swiper-container-pointer-events",".swiper-container-pointer-events.swiper-container-vertical",".swiper-container-rtl .swiper-button-next",".swiper-container-rtl .swiper-button-prev",".swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill",".swiper-container-vertical > .swiper-pagination-bullets",".swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet",".swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic",".swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet",".swiper-container-vertical > .swiper-pagination-progressbar",".swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite",".swiper-container-vertical > .swiper-scrollbar",".swiper-container-vertical > .swiper-wrapper",".swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper",".swiper-lazy-preloader",".swiper-lazy-preloader-black",".swiper-lazy-preloader-white",".swiper-pagination",".swiper-pagination-black",".swiper-pagination-bullet",".swiper-pagination-bullet-active",".swiper-pagination-bullets-dynamic",".swiper-pagination-bullets-dynamic .swiper-pagination-bullet",".swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active",".swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main",".swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next",".swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next",".swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev",".swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev",".swiper-pagination-clickable .swiper-pagination-bullet",".swiper-pagination-custom",".swiper-pagination-fraction",".swiper-pagination-lock",".swiper-pagination-progressbar",".swiper-pagination-progressbar .swiper-pagination-progressbar-fill",".swiper-pagination-white",".swiper-pagination.swiper-pagination-hidden",".swiper-scrollbar",".swiper-scrollbar-cursor-drag",".swiper-scrollbar-drag",".swiper-scrollbar-lock",".swiper-slide",".swiper-slide-invisible-blank",".swiper-slide-zoomed",".swiper-wrapper",".swiper-zoom-container",".swiper-zoom-container > canvas",".swiper-zoom-container > img",".swiper-zoom-container > svg","a","a.button","a.button span","a.button.button-big","a.disabled","body","body.game-shown #main","body.intro-shown","body.intro-shown #menu","button.swiper-pagination-bullet","h1","h2","h3","html","p","sup"];pagespeed.criticalCssBeaconInit('/mod_pagespeed_beacon','https://deadseavr.com/','xDrlxOjYoh','n1slgpa1_T0',pagespeed.selectors);
+//]]></script>
+
+</body></html>

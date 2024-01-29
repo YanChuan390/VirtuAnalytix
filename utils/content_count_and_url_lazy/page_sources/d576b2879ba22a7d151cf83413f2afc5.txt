@@ -1,0 +1,421 @@
+<html lang="pt-br"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How long can you survive the Viking Days? The ultimate Viking simulator trains you until your beard can reach the floor.
+                    Be challenged by every day normal situations of a Viking! Inspired by games such as WarioWare and Job Simulator, interact with the environment and be a REAL VIKING!">
+    <meta name="author" content="VRMonkey">
+	<meta name="keywords" content="Melhor empresa, Realidade Virtual, VRMonkey, Oculus Rift, Brasil Virtual, Herança Virtual, Dinos do Brasil, Naked Monkey, Games, Empresa Realidade Virtual, VR Monkey, HTC ReVive, Samsung GearVR, Sony PSVR, Facebook, Google, Projetos Baratos, Brasil">
+	
+	 <!-- Open graphics -->
+	<meta property="og:title" content="Viking Days - A Virtual training to be a REAL Viking">
+	<meta property="og:description" content="How long can you survive the Viking Days? The ultimate Viking simulator trains you until your beard can reach the floor.
+                    Be challenged by every day normal situations of a Viking! Inspired by games such as WarioWare and Job Simulator, interact with the environment and be a REAL VIKING!">
+	<meta property="og:image" content="http://www.vrmonkey.com.br/projects/vikingdays/img/VikingDays_Screenshots02.jpg">
+	<meta property="og:url" content="http://vrmonkey.com.br/projects/vikingdays">
+
+	<!-- Twitter -->
+	<meta name="twitter:title" content="Viking Days - A Virtual training to be a REAL Viking">
+	<meta name="twitter:description" content="How long can you survive the Viking Days? The ultimate Viking simulator trains you until your beard can reach the floor.
+                    Be challenged by every day normal situations of a Viking! Inspired by games such as WarioWare and Job Simulator, interact with the environment and be a REAL VIKING!">
+	<meta name="twitter:image" content=" http://www.vrmonkey.com.br/projects/vikingdays/img/VikingDays_Screenshots02.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	
+    <title>Viking Days - A Virtual training to be a REAL Viking </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../../css/ekko-lightbox.min.css" rel="stylesheet"> -->
+	
+    <!-- Custom CSS -->
+    <link href="css/vikingdays.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	
+	<link rel="image_src" href="https://www.vrmonkey.com.br/projects/vikingdays/img/VikingDays_Screenshots02.jpg" alt="VRMonkey logo">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="./img/LogoHorizont.png" alt="Viking Days Icon">  
+                </a>
+            </div>
+
+            <div class="collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a class="page-scroll" data-toggle="collapse" data-target=".navbar-main-collapse" href="#page-top"></a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" data-toggle="collapse" data-target=".navbar-main-collapse" href="#about">About</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" data-toggle="collapse" data-target=".navbar-main-collapse" href="#buy">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" data-toggle="collapse" data-target=".navbar-main-collapse" href="#contact">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="vikingdays.zip">Press Kit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Intro Header -->
+    <!-- Intro Header -->
+    <header class="">
+        <div class=" trailer screen">
+
+            <!--<button class="mute-video">toggle</button>-->
+
+            <span onclick="muteTrailer()" class="float">
+                <i id="mute_icon" class="fa fa-volume-off my-float"></i>
+            </span>
+
+            <video autoplay="" muted="" loop="" id="trailer" width="668" height="375">
+                <source src="./video/trailer.mp4" type="video/mp4">
+            </video>
+            <!--<iframe class="fill" id="iframe" allowfullscreen frameborder="0" src="https://pekayatt.github.io/vrview/?image=images/VikingDaysPam4kLight.jpg"></iframe>-->
+
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <!--<section id="demo" class=" service-section">
+        <div class="container">
+            <div class="">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Are you ready to be a Viking?</h2>
+                    <div class='embed-container'>
+                        <iframe src="https://www.youtube.com/embed//JhVfCjNk8Jo" frameborder='0' allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>-->
+    <!-- About Section -->
+    <section id="about" class="container  text-center about-section">
+        <div class="about-box col-md-12">
+            <div class="col-lg-8 col-lg-offset-2">
+                <img width="40%" src="./img/Logo_Viking_Days.png">
+                <p>
+                    Are you ready to be a Viking?
+                </p>
+                <p>
+                    How long can you survive the Viking Days? The ultimate Viking simulator trains you until your beard can reach the floor.
+                    Be challenged by every day normal situations of a Viking! Inspired by games such as WarioWare and Job Simulator, interact with the environment and be a REAL VIKING!
+                </p>
+
+                <p>10 ULTRA REALISTIC VIKING DAYS!</p>
+
+                <ul class="about-list">
+                    <li>Forge Swords</li>
+                    <li>Drink Beer</li>
+                    <li>Target Practice</li>
+                    <li>Defend from Arrows</li>
+                    <li>Run from Giants</li>
+                    <li>Face the Dragon</li>
+                    <li>Cross Bridges</li>
+                    <li>Sharp the Axe</li>
+                    <li>Keep the Rythym</li>
+                    <li>Burn Ships</li>
+                </ul>
+
+
+                <p><br><br>*More mini-games to be added</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portifolio Section -->
+    <section id="screenshots" class="text-center portifolio-section">
+        <div class="container-fluid">
+            <div class="no-gutter row">
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <a href="./img/VikingDays_Screenshots01.jpg" data-toggle="lightbox" data-title="Forge Swords" data-footer="Be a blacksmith and forge swords for your Viking Village">
+                        <img src="./img/VikingDays_Screenshots01.jpg" class="img-responsive">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Forge
+                                </div>
+                                <div class="project-name">
+                                    Swords
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <a href="./img/VikingDays_Screenshots02.jpg" data-toggle="lightbox" data-title="Throw Axes" data-footer="Hit the bullseye">
+                        <img src="./img/VikingDays_Screenshots02.jpg" class="img-responsive" alt="Viking Days">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Throw
+                                </div>
+                                <div class="project-name">
+                                    Axes
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <a href="./img/VikingDays_Screenshots03.jpg" data-toggle="lightbox" data-title="Drink it up!" data-footer="Can you really be a Viking without the drinking?">
+                        <img src="./img/VikingDays_Screenshots03.jpg" class="img-responsive" alt="Viking Days">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Drink
+                                </div>
+                                <div class="project-name">
+                                    it up!
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="no-gutter row">
+
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <a href="./img/VikingDays_Screenshots04.jpg" data-toggle="lightbox" data-title="Rain of Arrows!" data-footer="Cover yourself and defeat the enemies!">
+                        <img src="./img/VikingDays_Screenshots04.jpg" class="img-responsive" alt="Viking Days">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Defend
+                                </div>
+                                <div class="project-name">
+                                    from arrows
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-4 portfolio-box">
+                    <a href="./img/VikingDays_Screenshots05.jpg" data-toggle="lightbox" data-title="Burn them all!" data-footer="Defend your Viking Village by burning the enemy ships">
+                        <img src="./img/VikingDays_Screenshots05.jpg" class="img-responsive" alt="Viking Days">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Burn
+                                </div>
+                                <div class="project-name">
+                                    ships
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <a href="./img/VikingDays_Screenshots06.jpg" data-toggle="lightbox" data-title="Face the Dragon" data-footer="Lure the dragon and defeat it with the help of your fellow Vikings!">
+                        <img src="./img/VikingDays_Screenshots06.jpg" class="img-responsive" alt="Viking Days">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Face
+                                </div>
+                                <div class="project-name">
+                                    Dragons
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        
+    </section>
+
+
+
+    <!-- Partners Section -->
+    <section id="buy" class="container  text-center partner-section">
+        <div class="partner-box">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Where to download?</h2>
+            </div>
+
+            <div class="container">
+                <div class="partner-row">
+                    <a href="https://store.steampowered.com/app/863580/Viking_Days/"> 
+                        <div class="col-lg-2 col-md-6 text-center partner-text">
+
+                            <!-- <h4>Steam</h4> -->
+                            <img src="./img/steam_logo.png" height="105px" alt="Steam VR">
+                        </div>
+                    </a>
+                    <a href="https://www.oculus.com/experiences/gear-vr/1379118102193143/">
+                        <div class="col-lg-2 col-md-6 text-center partner-text">
+                            <!-- <h4>Samsung Gear VR</h4> -->
+                            <img src="./img/gearvr.png" height="105px" alt="Oculus Store">
+                        </div>
+                    </a>
+					<a href="https://www.oculus.com/experiences/go/1379118102193143/">
+                        <div class="col-lg-2 col-md-6 text-center partner-text">
+                            <!-- <h4>Oculus Go</h4>	 -->
+                            <img src="./img/OculusGo.png" height="105px" alt="Oculus Store">
+                        </div>
+                    </a>
+                    <a href="https://www.oculus.com/experiences/app/1482674305192007/"> 
+                        <div class="col-lg-2 col-md-6 text-center partner-text">
+                            <!-- <h4>Oculus Rift</h4> -->
+                            <img src="./img/Oculus_VR_Logo.png" height="105px" alt="Oculus Store">
+                        </div>
+                    </a>
+                    <a href="https://www.playstation.com/en-us/games/viking-days-ps4/"> 
+                        <div class="col-lg-2 col-md-6 text-center partner-text">
+                            <!-- <h4>DayDream</h4> -->
+                            <img src="./img/logo-sony.png" height="105px" alt="Playstation VR">
+                        </div>
+                    </a> 
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container  text-center contact-section">
+        <div class="">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Any comments?</h2>
+                <p>Please get in contact and let us know what you think!</p>
+                <p>
+                    <a style="color: #FFCC00" href="mailto:contact@vrmonkey.com.br">contact@vrmonkey.com.br</a>
+                </p>
+                <br>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/vr_monkey" class="btn btn-default btn-lg"><i class="fa fa-2x fa-twitter fa-fw"></i> <span class="network-name"></span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pages/VRMonkey/1583193065287022" class="btn btn-default btn-lg"><i class="fa fa-2x fa-facebook fa-fw"></i> <span class="network-name"></span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/u/0/b/102141279893432203414/102141279893432203414" class="btn btn-default btn-lg"><i class="fa fa-2x fa-google-plus fa-fw"></i> <span class="network-name"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Map Section -->
+    <!-- <div id="map"></div> -->
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright © VR Monkey 2018</p>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/ekko-lightbox.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+
+    <script>
+        function vidRescale() {
+            var trailer = document.getElementById("trailer"); 
+
+            var w = $(window).width(),
+                h = $(window).height();
+
+            if (w / h > 16 / 9) {
+                trailer.width = w;
+                trailer.height = w / 16 * 9;
+                $('.trailer .screen').css({ 'left': '0px' });
+            } else {
+                trailer.width = h;
+                trailer.height = h/ 16 * 9;
+                $('.trailer .screen').css({ 'left': -($('.trailer .screen').outerWidth() - w) / 2 });
+            }
+        }
+
+        $(window).on('load resize', function () {
+            vidRescale();
+        });
+
+        function muteTrailer() {
+            var muteIcon = document.getElementById("mute_icon");
+            muteIcon.classList.toggle("fa-volume-off");
+            muteIcon.classList.toggle("fa-volume-up");
+
+            //if (menuIcon.classList.contains("fa-volume-on")) {
+            //    muteIcon.classList.toggle("fa-volume-on");
+            //} else {
+            //    muteIcon.classList.addclass("fa-volume-on");
+            //}
+
+
+
+            if ($("video").prop('muted')) {
+                $("video").prop('muted', false);
+                $(this).addClass('unmute-video');
+
+            } else {
+                $("video").prop('muted', true);
+                $(this).removeClass('unmute-video');
+            }
+            console.log($("video").prop('muted'))
+        }
+    </script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../../js/vrmonkey.js"></script>
+
+
+
+</body></html>

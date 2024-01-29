@@ -1,0 +1,308 @@
+<html lang="ko"><head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>:Throw Anything</title>
+<link rel="stylesheet" href="http://www.vltgame.com/board/css/default.css?ver=171222">
+<link rel="stylesheet" href="http://www.vltgame.com/board/skin/latest/basic/style.css?ver=171222">
+<link rel="stylesheet" href="http://www.vltgame.com/board/skin/latest/youtube/style.css?ver=171222">
+<!--[if lte IE 8]>
+<script src="http://www.vltgame.com/board/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://www.vltgame.com/board";
+var g5_bbs_url   = "http://www.vltgame.com/board/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+<script src="http://www.vltgame.com/board/js/jquery-1.8.3.min.js"></script>
+<script src="http://www.vltgame.com/board/js/jquery.menu.js?ver=171222"></script>
+<script src="http://www.vltgame.com/board/js/common.js?ver=171222"></script>
+<script src="http://www.vltgame.com/board/js/wrest.js?ver=171222"></script>
+<script src="http://www.vltgame.com/board/js/placeholders.min.js"></script>
+<script src="http://www.vltgame.com/board/js/throwanything.js"></script>
+<script src="http://www.vltgame.com/board/js/jquery.DB_navi2DSwap.min.js"></script>
+<script src="http://www.vltgame.com/board/js/jquery.d_lightBox.min.js"></script>
+<link rel="stylesheet" href="http://www.vltgame.com/board/js/font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600" rel="stylesheet">
+<link rel="apple-touch-icon" href="http://www.vltgame.com/board/img/mobile/icon_android.png">
+<link rel="shortcut icon" href="http://www.vltgame.com/board/img/mobile/icon_android.png">
+
+<script src="http://www.vltgame.com/board/js/jquery.bxslider.js"></script>
+</head>
+<body>
+
+<!-- 상단 시작 { -->
+<div id="hd" style="z-index: 1000;">
+    <h1 id="hd_h1">:Throw Anything</h1>
+    <div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
+    
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <h2>팝업레이어 알림</h2>
+
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 -->    
+    <div id="m_bg" style="height: 651px;">    
+         
+     <div id="menu_bg">
+           <div id="_inner"> 
+               <!-- 로고 -->         
+               <div id="logo"><a href="http://www.vltgame.com/board"><img src="http://www.vltgame.com/board/img/logo.png" alt=":Throw Anything"></a></div>
+               
+               <!-- 메뉴 -->
+<div id="DB_navi15_3" class="DB_navi15">
+	<ul class="DB_wrap">		
+		<li class="DB_main"><a href="/board/bbs/board.php?bo_table=notice">NEWS</a>
+			<ul class="DB_sub s1">			
+				<li><a href="/board/bbs/board.php?bo_table=notice">News</a></li>
+				<li><a href="/board/bbs/board.php?bo_table=video">Video</a></li>
+			</ul>
+		</li>
+		<li class="DB_main"><a href="/board/sub/stage.php">GAME</a>
+			<ul class="DB_sub s2">
+                <li><a href="/board/sub/story.php">Game Story</a></li>
+				<li><a href="/board/sub/stage.php">Stage</a></li>                
+			</ul>
+		</li>
+		<li class="DB_main"><a href="/board/bbs/board.php?bo_table=gallery">WEBCARTOON</a></li>
+		<li class="DB_main"><a href="/board/sub/contract.php">CONTACT</a></li>		
+	</ul>
+</div>
+<script type="text/javascript">
+		$('#DB_navi15_3').DB_navi2DSwap({
+			motionType:'fade',      //모션타입(none,fade,slide)
+			motionSpeed:200,        //모션속도(밀리초)
+			delayTime:500             //메뉴아웃시 되돌아가는 딜레이시간(밀리초)
+		});
+</script>
+<!-- #메뉴-->
+           </div> <!--#_inner -->
+        </div> <!-- #menu_bg -->      
+        <!-- 구매버튼 -->
+        <div class="btn_buy">
+            <a href="https://store.playstation.com/en-us/product/UP4649-CUSA16985_00-0000000000000001" target="_blank"> 
+            <img src="http://www.vltgame.com/board/img/btn_buy_play.png" alt="BUY it now on  Playstation VR"></a>
+            <a href="https://store.steampowered.com/app/746660/Throw_Anything/" target="_blank">
+            <img src="http://www.vltgame.com/board/img/btn_buy.png" alt="BUY it now on STEAM"></a>
+            <a href="https://www.oculus.com/experiences/rift/2857479394322354" target="_blank"><img src="http://www.vltgame.com/board/img/btn_buy_oculus.png" alt="BUY it now on OCULUS"></a>
+            <a href="https://www.viveport.com/apps/2a88d9ed-7296-42a9-83bc-87a7065aae70/Throw_Anything/" target="_blank"><img src="http://www.vltgame.com/board/img/btn_buy_vive.png" alt="BUY it now on VIVEPORT"></a>
+        </div>
+    </div> <!-- #m_bg -->
+     
+</div>
+<!-- } 상단 끝 -->
+
+
+<hr>
+
+<!-- 콘텐츠 시작 { -->
+<div id="wrapper">
+    <div id="container_wr">
+   
+    <div id="container2">
+        
+
+<!-- 뉴스 -->
+<div id="mainArea1">
+    <div class="news">
+      <h2>NEWS</h2>
+        <p>
+          
+</p><div class="lat">
+    <ul>
+            <li> 
+            <a href="http://www.vltgame.com/board/bbs/board.php?bo_table=notice&amp;wr_id=7"> <strong>"Throw Anything"  PlayStation VR !</strong></a>Finally, The PS VR Version of "Throw Anthing" has been released.
+<br>We are happy to report that the PSVR version is available  – and it’s a massive 
+<br>improvement over the initial release on PC.
+<br>-Updated Lobby:
+<br> Take a break by throwing darts, shooting some hoops,  reading 
+<br> comic books, eating a snack  or enjoying some target  practice.
+<br> Open the comic book in the lobby, there's a funny cartoon like a hidden treasure.
+<br>-Special Assignment:
+<br> Complete a special mission by order of the  Secret Delivery Agency and
+<br> collect all cube relics and  chunks.
+<br>
+<br>And here are some brand-new content and feature updates to celebrate the launch 
+<br>of the PSVR port:
+<br>- Item Shop:
+<br>  Buy and receive items as if you ordered them from the  Internet! All 
+<br>  purchases are delivered by courier at game start by the SDA.
+<br>- Art &amp; Audio Upgrades: 
+<br>  Immerse yourself in enhanced graphics and sound effects.
+<br>Thank you for loving "Throw Anthing"!        </li>
+            <li> 
+            <a href="http://www.vltgame.com/board/bbs/board.php?bo_table=notice&amp;wr_id=6"> <strong>Throw Anything for PlayStation4!</strong></a>The long-awaited Playstation 4 version of the game will be released soon.
+<br>With the PlayStation version, we've further enhanced our story, UI, graphics, sound, and more.
+<br>Everyone will enjoy these new features of the Playstation 4 version!        </li>
+            </ul>
+
+
+</div>
+        <p></p>
+        <p>&nbsp;</p>
+    </div>
+</div> <!-- #mainArea1 -->
+
+<!-- VIDEO -->
+<div id="mainArea2">
+    <div id="_inner" class="video">
+        <h2>VIDEO</h2>
+        <h3>Throw Anything</h3>
+        <p class="txt_s">Recent Video of Throw Anything!</p>
+        
+<div class="pic_lt2">
+    <ul>
+            <li>
+            <a href="http://www.vltgame.com/board/bbs/board.php?bo_table=video&amp;wr_id=11" class="lt_img"><img src="//img.youtube.com/vi/Vziql6LBq9E/sddefault.jpg" alt="Throw Anything Trailer" width="507" height="343"></a>
+            <a href="http://www.vltgame.com/board/bbs/board.php?bo_table=video&amp;wr_id=11"> Throw Anything Trailer</a>            <!--span class="lt_date">07-30</span-->
+        </li>
+            <li>
+            <a href="http://www.vltgame.com/board/bbs/board.php?bo_table=video&amp;wr_id=10" class="lt_img"><img src="//img.youtube.com/vi/u7JN6-VD1mA/sddefault.jpg" alt="Throw Anything Early Access Gameplay - j…" width="507" height="343"></a>
+            <a href="http://www.vltgame.com/board/bbs/board.php?bo_table=video&amp;wr_id=10"> Throw Anything Early Access Gameplay - j…</a>            <!--span class="lt_date">07-30</span-->
+        </li>
+            </ul>
+
+</div>
+        <div class="btn_more"><a href="/board/bbs/board.php?bo_table=video"><img src="http://www.vltgame.com/board/img/btn_more.gif" alt="MORE"></a></div>
+    </div>
+</div> <!-- #mainArea2 -->
+
+
+<!-- GANE -->
+<div id="mainArea3">
+    <div id="_inner" class="game">
+        <h2>GAME</h2>
+        <div class="s_link"><a href="http://www.vltgame.com/board/sub/stage.php">Stage</a>  |  <a href="http://www.vltgame.com/board/sub/story.php">Story</a></div>
+        <h3>STAGE STORY</h3>         
+        <p class="txt_s">
+       There is nowhere to run... and nowhere to hide as zombies climb up the walls hoping to satisfy <br>their appetite for brains. The only way to survive: reload your guns, destroy all furniture in the room,<br> grab them all, and throw anything you can find to take them down - and we mean ANYTHING.<br>
+Face off against starving zombies in high-rise buildings across the globe in the VR action defense game,<br> Throw Anything!
+        
+  </p>
+
+         <ul class="d_lightBox">
+	       <li><a href="/board/img/s_stage_b1_1.gif" data-title=""><img src="/board/img/m_game1_1.jpg"></a></li>
+	       <li><a href="/board/img/s_stage_b2_1.gif" data-title=""><img src="/board/img/m_game1_2.jpg"></a></li>
+	       <li><a href="/board/img/s_stage_b3_1.gif" data-title=""><img src="/board/img/m_game1_3.jpg"></a></li>
+           <li><a href="/board/img/s_stage_b4_1.gif" data-title=""><img src="/board/img/m_game1_4.jpg"></a></li>
+           <li><a href="/board/img/s_stage_b5_1.gif" data-title=""><img src="/board/img/m_game1_5.jpg"></a></li>
+           <li><a href="/board/img/s_stage_b6_1.gif" data-title=""><img src="/board/img/m_game1_6.jpg"></a></li>
+        </ul>
+         <script>
+	      // .lightBox 내 a 를 기준으로 생성합니다
+	      $('.d_lightBox').d_lightBox({
+		  key:"c88809&c36082",          //key
+		  speed:300,             //속도(1000=1초)
+		  opacity:0.8            //0.1~1
+	     });
+       </script>
+
+    </div>
+</div> <!-- #mainArea3 -->
+
+<h2 class="sound_only">최신글</h2>
+
+
+
+
+
+
+
+    </div>
+  
+</div>
+
+</div>
+<!-- } 콘텐츠 끝 -->
+
+<hr>
+
+<!-- 하단 시작 { -->
+<div id="ft">
+        <!-- SNS --> 
+        <div id="ft_sns">
+            <a href="https://www.youtube.com/channel/UCTjs6iPtU5xnXlqse599GTg?view_as=subscriber" target="_blank"><img src="http://www.vltgame.com/board/img/ft_sns1.png" alt="YouTube"></a>
+            <a href="https://twitter.com/PlayVisualLight" target="_blank"><img src="http://www.vltgame.com/board/img/ft_sns4.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/Visuallight-126120768117157/" target="_blank"><img src="http://www.vltgame.com/board/img/ft_sns3.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/visuallightgame/?hl=ko" target="_blank"><img src="http://www.vltgame.com/board/img/ft_sns2.png" alt="Instagram"></a>
+            <a href="/presskit.zip" target="_blank" class="ft_down"><img src="http://www.vltgame.com/board/img/ft_down.png" alt="PRESS KIT DOWNLOAD"></a>
+        </div>
+       
+        <!-- 로고 -->
+        <div id="ft_logo">
+              <img src="http://www.vltgame.com/board/img/ft_logo.gif" alt="그누보드5">
+        </div>
+        
+        <!-- 모바일 -->
+        <div id="ft_mobile">
+            <a href="http://www.vltgame.com/board/index.php?device=mobile">[ MOBILE VERSION ]</a>
+        </div>
+        
+   
+    <button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+        <script>
+        
+        $(function() {
+            $("#top_btn").on("click", function() {
+                $("html, body").animate({scrollTop:0}, '500');
+                return false;
+            });
+        });
+        </script>
+</div>
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+
+
+</body></html>

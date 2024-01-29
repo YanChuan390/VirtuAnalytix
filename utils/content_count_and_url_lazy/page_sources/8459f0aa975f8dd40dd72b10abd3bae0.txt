@@ -1,0 +1,683 @@
+<html class=" js " lang="en"><!--<![endif]--><head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Blob Group Ltd</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.min.css">
+   <link rel="stylesheet" href="css/main.css">     
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body>
+
+	<!-- header
+   ================================================== -->
+   <header id="main-header">
+
+   	<div class="row">
+
+	      <div class="logo">
+	         <a href="index.html">Blob</a>
+	      </div>
+
+	      <nav id="nav-wrap"><a id="toggle-btn" title="Menu" href="#"><span class="menu-icon">Menu</span></a>         
+	         
+	         
+         	            
+
+	         <ul id="nav" class="nav">
+	            <li class="current"><a class="smoothscroll" href="#hero">Home.</a></li>
+		         <li class=""><a class="smoothscroll" href="#portfolio">Works.</a></li>
+	            <li><a class="smoothscroll" href="#services">Services.</a></li>
+	            <li><a class="smoothscroll" href="#contact">Contact.</a></li>
+	         </ul> <!-- end #nav -->
+
+	      </nav> <!-- end #nav-wrap -->
+
+	   </div>
+
+   </header> <!-- end header -->
+
+
+   <!-- homepage hero
+   ================================================== -->
+   <section id="hero">	
+   	  
+		<div class="row hero-content">
+
+			<div class="twelve columns hero-container">
+
+			   <!-- hero-slider start-->
+			   <div id="hero-slider" class="flexslider" style="height: 315px;">
+
+				   <ul class="slides">
+
+					   <!-- slide -->
+					   <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+						   <div class="flex-caption">
+								<h1 class="animated fadeInDown show"><span>Blob Lab</span>: Virtual Reality games and solutions.
+								</h1>	
+									
+								<h3 class="animated fadeInUp show">Games made for VR. We design and develop games specially made for Virtual Reality devices, such as HTC Vive and Oculus Rift; and publish them on market places like Steam, Oculus Store and Viveport.</h3>				   
+							</div>						
+					   </li>
+
+					   <!-- slide -->
+					   <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">						
+							<div class="flex-caption">
+								<h1 class=""><span>Blob Lab</span>: Extended Reality, Mobile and 3D games &amp; applications.</h1>
+
+								<h3 class="">We are working on some innovative augmented reality projects that range from storytelling concepts to gamification. We utilize open data, geolocation and other techniques for smart applications.</h3>			   
+							</div>					
+					   </li>
+
+					   <!-- slide -->
+					   <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">						
+							<div class="flex-caption">
+								<h1 class=""><span>Blob Media</span>: Communications, graphic design and media projects. </h1>
+
+								<h3 class="">Our media projects include everything from graphic design for print to communications strategies, PR and international marketing &amp; branding.</h3>			   
+							</div>					
+					   </li>
+					   
+					   <!-- slide 
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">Take a look at some of <a class="smoothscroll" href="#portfolio" title="portfolio" >our works</a> or 
+								<a class="smoothscroll" href="#contact" title="contact us">get in touch</a> to discuss how we can help you.</h1>
+
+								<h3 class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</h3>			   
+							</div>
+					   </li>	-->				              
+
+				   </ul>
+
+			   </div> <!-- end hero-slider -->				   
+
+	      <ol class="flex-control-nav flex-control-paging"><li><a class="flex-active">1</a></li><li><a>2</a></li><li><a>3</a></li></ol></div> <!-- end twelve columns-->
+
+		</div> <!-- end row -->	
+
+		<div id="more">
+		      <a class="smoothscroll" href="#services">More About Us<i class="fa fa-angle-down"></i></a>
+		</div> 	
+
+   </section> <!-- end homepage hero -->
+
+
+   <!-- portfolio
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Some of our Projects<span>.</span></h1>
+
+	         <hr>               
+
+	         <p>We have produced VR and mobile games for different market places, and versatile media content projects for various industries. Our latest project focuses on innovative Extended Reality solution for travel industry.
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row items">
+
+         <!-- portfolio-wrapper -->
+         <div id="portfolio-wrapper" class="bgrid-third s-bgrid-third tab-bgrid-half">
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-01">
+	                  <img src="images/portfolio/xr.jpg" alt="Project XR">
+                     <div class="overlay"></div>                       
+                     <div class="portfolio-item-meta">
+     					      <h5>Project XR (2019)</h5>
+                        <p>Extended Reality Project</p>
+     					   </div> 
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+        		</div> <!-- item end -->
+				
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-02">
+	                  <img src="images/portfolio/RoboHeist.jpg" alt="RoboHeist VR">
+                     <div class="overlay"></div>                       
+                     <div class="portfolio-item-meta">
+     					      <h5>RoboHeist VR (2018)</h5>
+                        <p>Virtual Reality game</p>
+     					   </div> 
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+        		</div> <!-- item end -->
+				
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-03">
+                     <img src="images/portfolio/ar.jpg" alt="Project AR">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Project AR (2017)</h5>
+                           <p>Augmented Reality Project</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-04">
+                     <img src="images/portfolio/ElephantExpressVR.jpg" alt="Elephant Express VR">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Elephant Express VR (2016)</h5>
+                           <p>Virtual Reality game</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-05">
+                     <img src="images/portfolio/MurkWoods.jpg" alt="MurkWoods 3D">                        
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>MurkWoods 3D (2015)</h5>
+                           <p>Mobile 3D / VR game for Android</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-06">
+                     <img src="images/portfolio/ElephantExpressMobile.jpg" alt="Elephant Express for Android">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Elephant Express (2013)</h5>
+                           <p>Mobile game for Android</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+ 
+         </div> <!-- end portfolio-wrapper -->
+         
+
+         <!-- modal popup
+	   	========================================================= -->
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-xr.jpg" alt="Project XR">
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>PROJECT XR - EXTENDED REALITY MOBILE APP
+			      <br><br>Innovative extended reality project for the travel industry.<br>Mobile application for smartphones combining open data, mobile VR, augmented reality and geolocation to produce a new way of storytelling.
+               </h4><span class="categories">Extended Reality Project</span>
+		      </div>
+
+            <div class="link-box group">
+            	<a href="#" class="popup-modal-dismiss">Close</a>         
+            </div>
+
+	      </div><!-- modal-01 end -->
+		  
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-RoboHeist.jpg" alt="RoboHeist VR">
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>ROBOHEIST VR - VIRTUAL REALITY GAME
+			      <br><br>RoboHeist is an intensive and immersive Virtual Reality stealth game specially designed for HTC Vive VR device.<br><br>Mission is to complete tasks on each level avoiding evil robots, lasers and alarms. Hide in closets and chests, climb ladders, crawl and crouch. Sneak around in shadows and use weapons to destroy the robots.<br><br>Launched on STEAM 2018 for HTC Vive.
+              </h4><span class="categories">Virtual Reality Game</span>
+		      </div>
+
+            <div class="link-box group">
+            	<a href="http://store.steampowered.com//app/800510">Details</a>
+            	<a href="#" class="popup-modal-dismiss">Close</a>         
+            </div>
+
+	      </div><!-- modal-02 end -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-ar.jpg" alt="Project AR">
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>PROJECT AR - AUGMENTED STORYTELLING
+			      <br><br>Storytelling project made for the creative industry.<br>Augmented reality brings traditional children´s stories alive using new tracking technics and 3D modelling.
+               </h4><span class="categories">Augmented Reality Project</span>
+		      </div>
+
+            <div class="link-box">            	
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 end -->
+		  
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-ElephantExpressVR.jpg" alt="Elephant Express VR">
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>ELEPHANT EXPRESS VR - VIRTUAL REALITY GAME
+			      <br><br>Elephant Express is a Virtual Reality game designed for HTC Vive and published on STEAM and VIVEPORT 2016.<br><br>Mission is to control a flying elephant around the jungle giving friends a taxi ride and delivering the mail packages. Game takes you to exotic places from jungles to dark nights and dangerous caves. Each Episode, designed for VR, has its special theme and characteristics. Hours of gameplay: 60+ levels and more!<br><br>LANGUAGES:<br>English, Chinese, French, German, Spanish, Swedish and Finnish!
+              </h4><span class="categories">Virtual Reality Game</span>
+		      </div>
+
+            <div class="link-box">            	
+               <a href="http://store.steampowered.com//app/566170">Details</a>
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 end -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-MurkWoods.jpg" alt="MurkWoods 3D VR">
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>MURKWOODS 3D VR - MOBILE VR EXPERIENCE
+			      <br><br>First Person Shooter (FPS) style 3D virtual reality horror experience that utilizes procedural game level design.<br><br>MurkWoods supports Google Cardboard and all the other Mobile Virtual Reality (VR) glasses that you use together with your smartphone. Great way to use your new Virtual Reality glasses! Game can be played also as a normal 3D version without mobile VR device, it´s up to you!
+               </h4><span class="categories">Mobile 3D/VR Game</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://play.google.com/store/apps/details?id=fi.blob.murkwoods3dvr">Details</a>
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-05 end -->
+
+			<div id="modal-06" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-ElephantExpressMobile.jpg" alt="Elephant Express">
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>ELEPHANT EXPRESS - MOBILE GAME FOR ANDROID
+			      <br><br>Elephant Express is a mobile game launched for Android on Google Play and Amazon Appstore in 2013.<br><br>It has a unique game mechanics, single and multiplayer game modes and more than 150 levels in total. Special themed episodes have unique characteristics and range from jungles and caves to China and zombies. In multiplayer mode (split screen) you can play with or against your friends.<br><br>LANGUAGES:<br>English, Chinese, French, German, Spanish, Swedish and Finnish!
+               </h4><span class="categories">Mobile Game</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://play.google.com/store/apps/details?id=fi.blob.elephantexpress2015">Details</a>
+		         <a href="#" class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-06 end -->
+
+      </div>  <!-- end row -->
+
+   </section> <!-- end portfolio -->
+
+
+   
+   
+   <!-- Services Section
+   ================================================== -->
+   <section id="services">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Examples of our Services<span>.</span></h1>
+
+	         <hr>      	         
+
+	         <p>We produce diverse content on all the available platforms from mobile smartphones to web and desktop. Services include everything from 3D animations to Mobile services and Virtual Reality / Augmented Reality applications. We are based in Turku, Finland
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row mobile-no-padding">      	
+
+	      <div class="service-list bgrid-third s-bgrid-half tab-bgrid-whole group">
+
+	      	<div class="bgrid">	               
+
+	            <h3>Extended Reality.</h3>
+
+	            <div class="service-content">
+					<img src="images/portfolio/services1.jpg" alt="Extended Reality">				
+		            <p>Virtual Reality, Augmented Reality, Mobile VR... Projects range from virtual reality games to augmented reality 3D projects and mobile VR applications for smartphones &amp; tablets.
+	         		</p> 
+	         	</div>  
+
+				</div> <!-- end bgrid -->
+
+				<div class="bgrid">	              
+
+	            <h3>3D Modelling and Visualizations.</h3>                  
+
+	            <div class="service-content">	                  
+					<img src="images/portfolio/services2.jpg" alt="3D Modelling and Visualizations">				
+		            <p>We use world´s best 3D and game engines to produce high quality content and visualizations for videos, print, web and other purposes.
+	         		</p> 
+	            </div>	              
+
+			   </div> <!-- end bgrid -->
+
+			   <div class="bgrid">	              
+
+	            <h3>Mobile Solutions.</h3>
+
+	            <div class="service-content">		                  
+					<img src="images/portfolio/services3.jpg" alt="Mobile Solutions">				
+		            <p>Gamification, mobile Apps, games and other solutions for public or internal use. We can also utilize open data, geolocation and other technics for your disposal.
+	        			</p> 
+	            </div> 	               
+
+			   </div> <!-- end bgrid -->
+
+				<div class="bgrid">	              
+	                  
+	            <h3>Branding and Communications.</h3> 
+
+	            <div class="service-content">	                  
+					<img src="images/portfolio/services4.jpg" alt="Branding and Communications">				
+		            <p>Communication strategies and consulting for organizations. International marketing and branding communications. PR and media services.
+	         		</p> 
+	            </div>                
+
+				</div> <!-- end bgrid -->
+
+			   <div class="bgrid">
+
+	            <h3>Web and Graphic Design.</h3>
+
+	            <div class="service-content">	                  
+					<img src="images/portfolio/services5.jpg" alt="Web and Graphic Design">		
+		            <p>Graphic design for Print and Web. We are experienced on roll-ups, leaflets, posters and other print materials. We can help you also with specialized campaign websites and other internet solutions.
+	        			</p> 
+	            </div>	               
+
+			   </div> <!-- end bgrid -->
+
+			   <div class="bgrid">	               
+
+	            <h3>Photo and Videography.</h3>
+
+	            <div class="service-content">
+					<img src="images/portfolio/services6.jpg" alt="Photo and Videography">	
+		            <p>Video content and advertisement for enterprises, internet, TV and other media channels. We can deliver for example corporate B2B videos, Social Media campaign videos and event documentaries tailored for our customers.
+	        			</p> 
+	            </div>	               
+
+			   </div> <!-- end bgrid -->
+
+	      </div> <!-- end service-list -->	      
+
+      </div> <!-- end row -->      
+
+   </section> <!-- end services -->
+   
+ 
+   <!-- contact
+   ================================================== -->
+   <section id="contact">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Get In Touch With Us<span>.</span></h1>
+
+	         <hr>	        
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+	  
+	  
+	
+ 
+ 
+ 
+
+      <div class="row">
+
+         <div id="team-wrapper" class="bgrid-fourth s-bgrid-third tab-bgrid-half mob-bgrid-whole group">
+
+            <div class="bgrid member">
+
+					<div class="member-pic">
+						<img src="images/team/Team0.jpg" alt="">
+                 	<div class="mask"></div>       	
+               </div>
+               <div class="member-name">
+                  <h3>Petri Nieminen</h3>
+                  <span>Creative Director, Producer</span>
+               </div>
+
+               <p>Several years experience on game industry and media production. Feel free to contact me if any projects in mind.
+			   <br><br>+358 44 5436756
+			   <br>petri.nieminen (ät) blob.fi</p>
+
+
+            </div> <!-- end member -->
+
+            <div class="bgrid member">
+								
+					<div class="member-pic">
+                  <img src="images/team/Team1.jpg" alt="">
+               	<div class="mask"></div>  
+               </div>
+               <div class="member-name">
+                  <h3>Hiring!</h3>
+                  <span>3D artist</span>
+               </div>
+
+               <p>Want to be our new top 3D artist? Experience in 3D modelling, texturing and animations required. Other graphic and creative industry skills is an asset. Send us an open application and we´ll get back to you!</p>
+
+ 
+            </div> <!-- end member -->
+
+            <div class="bgrid member">
+								
+					<div class="member-pic">
+						<img src="images/team/Team2.jpg" alt="">
+                 	<div class="mask"></div>                          	
+               </div>
+               <div class="member-name">
+                  <h3>Hiring!</h3>
+                  <span>Unity3D developer</span>
+               </div>
+
+               <p>We are looking for an experienced Unity3D developer. Big plus for knowledge on Virtual Reality / Augmented Reality projects. Send us an open application and we´ll get back to you!</p>
+
+ 
+     			</div> <!-- end member -->
+ 
+         </div> <!-- end team-wrapper -->
+
+      </div> <!-- end row -->
+
+ 
+ 
+
+
+	  
+	  
+      <div class="row">
+      	
+      	<div id="contact-form" class="six columns tab-whole left">
+            <h3>Send us a message and we´ll get back to you!</h3>
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="group">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div>
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div>
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>                       
+                  <div>
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>                      
+                  <div>
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="icon-ok"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div>
+
+         <div class="six columns tab-whole right">
+
+      <!--        <p class="lead">Send us a message and we´ll get back to you! 
+
+	       <h3 class="address">Come Visit</h3>
+
+	         <p>
+            1600 Amphitheatre Parkway<br>
+            Mountain View, CA<br>
+            94043 US
+            </p> -->
+
+	
+			
+			
+            <h3>Contact Details:</h3>
+			   <p>Phone: +358 50 351 3371<br>
+			   	Email: info (ät) blob.fi<br>
+			   	firstname.lastname (ät) blob.fi<br><br>
+			   	Postal Address:<br>Blob Group Oy<br>Käpytie 2 C 91<br>20810 Turku, Finland<br>
+			    <br><a href="http://www.blob.fi">www.blob.fi</a>
+			   </p>
+               	
+         </div>     	
+
+      </div> <!-- end row -->     
+
+   </section>  <!-- end contact -->
+
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">  
+
+      	<div class="twelve columns content group">
+      		
+
+            <hr>
+
+            <div class="info">
+
+            	<div class="footer-logo"></div>
+				
+	<!--            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+	            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+	            nibh id elit. 
+	            </p> -->	        
+
+	         </div>
+
+      	</div>           
+
+         <ul class="copyright">
+         	<li>© Copyright 2019 Blob Group Ltd.</li> 
+         	<li>Design by <a href="http://www.styleshout.com/">Styleshout.</a>.</li>
+         </ul>
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero">Back to Top<i class="fa fa-angle-up"></i></a>
+         </div>
+
+      </div> <!-- end row -->
+
+   </footer> <!-- end footer -->
+
+   <div id="preloader" style="display: none;"> 
+    	<div id="loader" style="display: none;"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider-min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.placeholder.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>  
+   <script src="js/main.js"></script>
+
+
+
+</body></html>

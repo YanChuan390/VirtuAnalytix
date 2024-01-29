@@ -1,0 +1,979 @@
+<html lang="en-US"><head id="Head">
+<!--*********************************************-->
+<!-- DNN Platform - http://www.dnnsoftware.com   -->
+<!-- Copyright (c) 2002-2014, by DNN Corporation -->
+<!--*********************************************-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>
+	Holodance - a spatial, rhythmic, audio-visual experience of pure joy!
+</title><meta id="MetaDescription" name="DESCRIPTION" content="A spatial, rhythmic, audio-visual experience of pure ecstatic joy! Holodance is an Awesome VR and AR Dancing Game"><meta id="MetaKeywords" name="KEYWORDS" content="Virtual Reality,Unity,Multiplayer,VR,HTC Vive,DotNetNuke,DNN"><meta id="MetaCopyright" name="COPYRIGHT" content="Copyright 2023 by narayana games UG"><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke "><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW">
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta content="text/javascript" http-equiv="Content-Script-Type">
+        <meta content="text/css" http-equiv="Content-Style-Type">
+        <meta name="RESOURCE-TYPE" content="DOCUMENT">
+        <meta name="REVISIT-AFTER" content="1 DAYS">
+        <meta name="RATING" content="GENERAL">
+    <link href="/Portals/_default/default.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/Resources/Search/SearchSkinObjectPreview.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/Portals/_default/Skins/20064-UnlimitedColorsPack-046/skin.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/Portals/_default/Skins/20064-UnlimitedColorsPack-046/HolodanceLandingPage.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/Portals/_default/Containers/20064-UnlimitedColorsPack-046/container.css?cdv=109" media="all" type="text/css" rel="stylesheet"><link href="/Portals/3/portal.css?cdv=109" media="all" type="text/css" rel="stylesheet"><script type="text/javascript" async="" defer="" src="//piwik.ramtiga.net/piwik.js"></script><script src="/Resources/libraries/jQuery/01_09_01/jquery.js?cdv=109" type="text/javascript"></script><script src="/Resources/libraries/jQuery-Migrate/01_02_01/jquery-migrate.js?cdv=109" type="text/javascript"></script><script src="/Resources/libraries/jQuery-UI/01_10_03/jquery-ui.js?cdv=109" type="text/javascript"></script><!--[if LT IE 9]><link id="IE6Minus" rel="stylesheet" type="text/css" href="/Portals/_default/Skins/20064-UnlimitedColorsPack-046/ie.css" /><![endif]--><link rel="SHORTCUT ICON" href="/Portals/3/SquareIcon_32x32.ico" type="image/x-icon"><meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0"></head>
+<body id="Body">
+    
+    <form method="post" action="/Privacy" id="Form" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="">
+<input type="hidden" name="ScriptManager_TSM" id="ScriptManager_TSM" value=";;System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35:en:5bc44d53-7cae-4d56-af98-205692fecf1f:ea597d4b:b25378d2">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form'];
+if (!theForm) {
+    theForm = document.Form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=qDzGvU1vSOZ7X8tXGRPErJ9LgVyYJ2s70yAe5ohPNT0Z4FdCJtou4HM7yaB7-ITf6pfYEpBtcIrcH2xP0&amp;t=637811765229275428" type="text/javascript"></script>
+
+
+<script src="/DesktopModules/DNNGo_xPlugin/Resource/js/phototabs.js?cdv=109" type="text/javascript"></script>
+<script src="/DesktopModules/DNNGo_xPlugin/Resource/js/accordion.js?cdv=109" type="text/javascript"></script>
+<script src="/DesktopModules/DNNGo_xPlugin/Resource/js/dnngo-megamenu.js?cdv=109" type="text/javascript"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a5bc44d53-7cae-4d56-af98-205692fecf1f%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Q8x6BKcVAKiZmaSBgAN9C3ozoaKKpblhyDnSPZyhe7XXWRAwlyzpjpclTqklcOsMJjtta4WMLeV5xVQSCcTFgQJOZWYFQixBM/HMdFaYBiHEVA/BxMCEqfVUd6mlUI8+jtzNai8RfOXpylb2/fr+FCrPMUBPDoeYgMJJqw/vdJFy1OGJx2HAFnCvt8QqzQwDTog+rHyaGo6JpeNgGH9ujf8Mx8zr/Bz3G4I9tg==">
+</div><script src="/js/dnn.js?cdv=109" type="text/javascript"></script><script src="/js/dnn.modalpopup.js?cdv=109" type="text/javascript"></script><script src="/js/dnn.servicesframework.js?cdv=109" type="text/javascript"></script><script src="/js/dnncore.js?cdv=109" type="text/javascript"></script><script src="/Resources/Search/SearchSkinObjectPreview.js?cdv=109" type="text/javascript"></script><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
+//]]>
+</script>
+
+        
+        
+        
+
+ 
+
+
+
+<script type="application/ld+json">
+{  
+  "@context": "http://schema.org",
+  "@type":"VideoGame",
+  "name":[
+    {
+      "@language":"en",
+      "@value":"Holodance"
+    }
+  ],
+  "description":[
+    {
+      "@language":"en",
+      "@value":"Get your workout with any osu!-beatmap in pure rhythm game environments, or immerse yourself - guided by dragons - in the mindset that will save our lovely little planet ... in the only room-scale Virtual Reality rhythm game that precisely knows each note of every song in the game!"
+    }
+  ],
+  "genre":[
+    "Music game"
+  ],
+  "url":"http://holodance-vr.com",
+  "image":"http://holodance-press.com/holodance/downloads/poster.jpg",
+  "screenshot":"http://holodance-press.com/holodance/downloads/backgroundart.jpg",
+  "sameAs": [
+    "https://en.wikipedia.org/wiki/Holodance",
+    "https://www.youtube.com/channel/UCrHWHZWdLp40OWG5xH7v3iA"
+  ],
+  "trailer":{
+    "@type":"VideoObject",
+    "url":"https://www.youtube.com/watch?v=hE90cWzGK0A",
+    "inLanguage":"en",
+    "name":"Holodance V0.7.2 Gameplay Teaser (Long Version)",
+    "description":"Holodance gameplay with the osu! beatmap support.",
+    "thumbnailUrl":"https://i.ytimg.com/vi/hE90cWzGK0A/maxresdefault.jpg",
+    "uploadDate":"2016-12-27"
+  },
+  "trailer":{
+    "@type":"VideoObject",
+    "url":"https://www.youtube.com/watch?v=qE-1lkcYW3E",
+    "inLanguage":"en",
+    "name":"Holodance V0.8.0 Alpha 2: Clubbing Environment, Muzzy - Draining Atlantic",
+    "description":"This video shows the updated clubbing environment of Holodance, while I'm playing the song Muzzy - Draining Atlantic. The osu! beatmap for this song is available here: https://osu.ppy.sh/s/479671",
+    "thumbnailUrl":"https://i.ytimg.com/vi/qE-1lkcYW3E/maxresdefault.jpg",
+    "uploadDate":"2017-03-04"
+  },
+  "applicationCategory": "http://schema.org/GameApplication",
+  "operatingSystem":"Windows",
+  "aggregateRating": {
+      "@type": "AggregateRating",
+      "worstRating": "0",
+      "bestRating": "100",
+      "ratingValue": "95",
+      "ratingCount": "64"
+  },
+  "offers": {
+      "@type": "Offer",
+      "price": "14.99",
+      "priceCurrency": "USD"
+  },
+  "exampleOfWork":[
+    {
+      "@type":"VideoGame",
+      "gamePlatform":[
+        "https://en.wikipedia.org/wiki/Microsoft_Windows",
+        "https://en.wikipedia.org/wiki/HTC_Vive",
+        "https://en.wikipedia.org/wiki/Oculus_Rift"
+      ],
+      "applicationCategory": "http://schema.org/GameApplication",
+      "operatingSystem":"Windows",
+      "aggregateRating": {
+          "@type": "AggregateRating",
+          "worstRating": "0",
+          "bestRating": "100",
+          "ratingValue": "95",
+          "ratingCount": "64"
+      },
+      "offers": {
+          "@type": "Offer",
+          "price": "14.99",
+          "priceCurrency": "USD"
+      },
+      "releasedEvent":{
+        "@type":"PublicationEvent",
+        "startDate":"2016-04-05",
+        "location":{
+          "@type":"Place",
+          "name":"WW"
+        }
+      }
+    }
+  ]
+}
+</script>
+
+<!--[if lt IE 9]>
+
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+<![endif]-->
+
+<div class="body_bg">  <ul id="14eb1c4754" class="Page_box_bg">
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Bonus-02-Clubbing_HD.jpg&quot;); opacity: 1; display: block;" class="selected"></li>
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Bonus-01-SciFi_HD.jpg&quot;); opacity: 0;"></li>
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Level-11_HD.jpg&quot;); opacity: 0;"></li>
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Level-05_HD.jpg&quot;); opacity: 0;"></li>
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Level-03_HD.jpg&quot;); opacity: 0;"></li>
+<li style="background-image: url(&quot;/Portals/3/xPlugin/uploads/2017/3/18/Screenshot_Level-01_HD.jpg&quot;); opacity: 0;"></li>
+<div class="pic_tab_arrow"><a href="javascript:;" class="last_page">&lt;</a><a href="javascript:;" class="next_page">&gt;</a></div></ul>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $("#14eb1c4754").phototabs({
+            switchtime: 5000,
+            animationtime: 1000,
+            startpic: 0,
+            autoPaly: true,
+            showArrow: true
+        });
+    });
+</script>
+
+    <div id="dnn_wrapper">
+    <div class="wrapper">
+      <header class="visible-xs mobile_main  ">
+        <div class="head_mid dnn_layout">
+          
+          <div class="clearfix mobilep header_element">
+          	<div class="dnn_logo  ">
+            <a id="dnn_dnnLOGO3_hypLogo" title="Holodance" href="http://holodance-vr.com/"><img id="dnn_dnnLOGO3_imgLogo" src="/Portals/3/img/HolodanceLogo_500x250.png" alt="Holodance" style="border-width:0px;"></a>
+          </div>
+          <div class="search_ps  ">
+              <div class="icon search_icon"><span class=" glyphicons glyph-search"></span></div>
+              <div class="element_box searchBox" id="search">
+                <span id="dnn_dnnSEARCH2_ClassicSearch">
+    
+    
+    <span class="searchInputContainer" data-moreresults="See More Results" data-noresult="No Results Found">
+        <input name="dnn$dnnSEARCH2$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSEARCH2_txtSearch" class="NormalTextBox" autocomplete="off" placeholder="Search...">
+        <a class="dnnSearchBoxClearText"></a>
+    </span>
+    <a id="dnn_dnnSEARCH2_cmdSearch" class="search" href="javascript:__doPostBack('dnn$dnnSEARCH2$cmdSearch','')"> </a>
+</span>
+
+
+<script type="text/javascript">
+    $(function() {
+        if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
+            var searchSkinObject = new dnn.searchSkinObject({
+                delayTriggerAutoSearch : 400,
+                minCharRequiredTriggerAutoSearch : 2,
+                searchType: 'S',
+                enableWildSearch: true,
+                cultureCode: 'en-US',
+                portalId: -1
+                }
+            );
+            searchSkinObject.init();
+            
+            
+            // attach classic search
+            var siteBtn = $('#dnn_dnnSEARCH2_SiteRadioButton');
+            var webBtn = $('#dnn_dnnSEARCH2_WebRadioButton');
+            var clickHandler = function() {
+                if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
+                else searchSkinObject.settings.searchType = 'W';
+            };
+            siteBtn.on('change', clickHandler);
+            webBtn.on('change', clickHandler);
+            
+            
+        }
+    });
+</script>
+
+              </div>
+            </div>
+            <div class="headp  ">
+              <div class="icon login_icon"><span class=" glyphicons glyph-user"></span></div>
+              <div class="element_box login">
+              	<div class="languageBox  ">
+                      <div class="language-object">
+
+
+</div>
+                    </div>
+                
+<div id="dnn_dnnUser2_registerGroup" class="registerGroup">
+    <ul class="buttonGroup">
+        
+        
+    	<li class="userDisplayName"><a id="dnn_dnnUser2_enhancedRegisterLink" title="Register" rel="nofollow" onclick="return dnnModal.show('http://holodance-vr.com/Register?returnurl=http%253a%252f%252fholodance-vr.com%252f&amp;popUp=true',/*showReturn*/true,600,950,true,'')" href="http://holodance-vr.com/Register?returnurl=http%3a%2f%2fholodance-vr.com%2f">Register</a></li>
+                                               
+    </ul>
+</div>
+                <span class="sep">|</span>
+                
+<div id="dnn_dnnLogin2_loginGroup" class="loginGroup">
+    <a id="dnn_dnnLogin2_enhancedLoginLink" title="Login" class="LoginLink" rel="nofollow" onclick="return dnnModal.show('http://holodance-vr.com/Login?returnurl=/Privacy&amp;popUp=true',/*showReturn*/true,300,650,true,'')" href="http://holodance-vr.com/Login?returnurl=%2fPrivacy">Login</a>
+</div>
+
+              </div>
+            </div>
+            <div class="mobilep_top ">
+              <div class="icon mobile_icon"><span class="glyphicons glyph-list"></span></div>
+              <div id="mobile_menu" class="element_box">
+                
+<div class="menu_main">
+  <div id="multi_menu6d8466dfd0" class="multi_menu">
+<ul id="gomenu6d8466dfd0" class="dropdown "><li class="current Item-1 "><a href="http://holodance-vr.com/" class="menuitem active" title="Holodance - a spatial, rhythmic, audio-visual experience of pure joy!"><span>Holodance</span></a></li><li class=" Item-2 "><a href="http://holodance-vr.com/news" class="menuitem " title="News"><span>News</span></a></li><li class=" Item-3 "><a href="http://holodance-vr.com/discussion" class="menuitem " title="Discussion"><span>Discussion</span></a></li><li class=" Item-4 "><a href="http://holodance-vr.com/Impressum" class="menuitem " title="Impressum"><span>Impressum</span></a></li></ul>
+   </div>
+</div>
+
+
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#multi_menu6d8466dfd0").accordionpromulti({
+            accordion: true,
+            speed: 300,
+            closedSign: '+',
+            openedSign: '-'
+        });
+    }); 
+</script>
+
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </header>
+      
+      
+      <div class="nav_main">
+      	<div class="nav_mainshadow">
+            
+            
+            <!--header3-->
+      <header class="hidden-xs headermain roll_menu">
+      	<div class="header3">
+        <div class="head_top  ">
+          <div class="head_mid clearfix dnn_layout">
+            <div id="dnn_HeadPane" class="HeadPane   DNNEmptyPane"></div>
+            <div class="languageBox  ">
+              <div class="language-object">
+
+
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="head_nav  ">
+          <div class="head_mid clearfix dnn_layout">
+            <div class="dnn_logo   ">
+              <a id="dnn_dnnLOGO2_hypLogo" title="Holodance" href="http://holodance-vr.com/"><img id="dnn_dnnLOGO2_imgLogo" src="/Portals/3/img/HolodanceLogo_500x250.png" alt="Holodance" style="border-width:0px;"></a>
+            </div>
+            <div class="dnn_menu ">
+              <div id="dnngo_megamenu">
+                
+    <div class="dnngo_gomenu" id="dnngo_megamenud98ba5bbc8">
+      
+         <ul class="primary_structure">
+ <li class=" current">
+<a href="http://holodance-vr.com/" title="Holodance - a spatial, rhythmic, audio-visual experience of pure joy!"><span>Holodance</span></a>
+</li>
+ <li class=" ">
+<a href="http://holodance-vr.com/news" title="News"><span>News</span></a>
+</li>
+ <li class=" ">
+<a href="http://holodance-vr.com/discussion" title="Discussion"><span>Discussion</span></a>
+</li>
+ <li class=" ">
+<a href="http://holodance-vr.com/Impressum" title="Impressum"><span>Impressum</span></a>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $("#dnngo_megamenud98ba5bbc8").dnngomegamenu({
+            slide_speed: 200,
+            delay_disappear: 500,
+            popUp: "vertical"//level
+        });
+    });
+
+
+	jQuery(document).ready(function () {
+		jQuery("#dnngo_megamenud98ba5bbc8").has("ul").find(".dir > a").attr("aria-haspopup", "true");
+	}); 
+
+</script>
+              </div>
+              <div class="searchandlogin">
+                <div class="search_ps header_element  ">
+                  <div class="icon search_icon"><span class=" glyphicons glyph-search"></span></div>
+                  <div class="element_box searchBox" id="search">
+                    <span id="dnn_dnnSEARCH1_ClassicSearch">
+    
+    
+    <span class="searchInputContainer" data-moreresults="See More Results" data-noresult="No Results Found">
+        <input name="dnn$dnnSEARCH1$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSEARCH1_txtSearch" class="NormalTextBox" autocomplete="off" placeholder="Search...">
+        <a class="dnnSearchBoxClearText"></a>
+    </span>
+    <a id="dnn_dnnSEARCH1_cmdSearch" class="search" href="javascript:__doPostBack('dnn$dnnSEARCH1$cmdSearch','')"> </a>
+</span>
+
+
+<script type="text/javascript">
+    $(function() {
+        if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
+            var searchSkinObject = new dnn.searchSkinObject({
+                delayTriggerAutoSearch : 400,
+                minCharRequiredTriggerAutoSearch : 2,
+                searchType: 'S',
+                enableWildSearch: true,
+                cultureCode: 'en-US',
+                portalId: -1
+                }
+            );
+            searchSkinObject.init();
+            
+            
+            // attach classic search
+            var siteBtn = $('#dnn_dnnSEARCH1_SiteRadioButton');
+            var webBtn = $('#dnn_dnnSEARCH1_WebRadioButton');
+            var clickHandler = function() {
+                if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
+                else searchSkinObject.settings.searchType = 'W';
+            };
+            siteBtn.on('change', clickHandler);
+            webBtn.on('change', clickHandler);
+            
+            
+        }
+    });
+</script>
+
+                  </div>
+                </div>
+                <div class="headp header_element  ">
+                  <div class="icon login_icon"><span class=" glyphicons glyph-user"></span></div>
+                  <div class="element_box login">
+                    
+<div id="dnn_dnnUser_registerGroup" class="registerGroup">
+    <ul class="buttonGroup">
+        
+        
+    	<li class="userDisplayName"><a id="dnn_dnnUser_enhancedRegisterLink" title="Register" rel="nofollow" onclick="return dnnModal.show('http://holodance-vr.com/Register?returnurl=http%253a%252f%252fholodance-vr.com%252f&amp;popUp=true',/*showReturn*/true,600,950,true,'')" href="http://holodance-vr.com/Register?returnurl=http%3a%2f%2fholodance-vr.com%2f">Register</a></li>
+                                               
+    </ul>
+</div>
+                    <span class="sep">|</span>
+                    
+<div id="dnn_dnnLogin_loginGroup" class="loginGroup">
+    <a id="dnn_dnnLogin_enhancedLoginLink" title="Login" class="LoginLink" rel="nofollow" onclick="return dnnModal.show('http://holodance-vr.com/Login?returnurl=/Privacy&amp;popUp=true',/*showReturn*/true,300,650,true,'')" href="http://holodance-vr.com/Login?returnurl=%2fPrivacy">Login</a>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </header>
+      <!-- header3 End --> 
+            
+            
+            
+      
+            
+      
+      
+		      
+     
+              
+      
+            
+            <!--Breadcrumb5-->
+      
+      <section id="dnn_bread" class=" ">
+          <div class="dnn_layout bread_mid clearfix">
+            <div class="breadcrumbicon_left">
+              <div class="bread_current">Holodance</div>
+            </div>
+            <div id="dnn_breadcrumb_Pane" class="breadcrumb_Pane DNNEmptyPane"></div>
+          </div>
+      </section>
+      
+      
+       <!--Breadcrumb5 End-->
+            
+             
+      </div>
+      	</div>
+        
+        
+        <div class="homecontent_bg">
+      
+      <section id="dnn_content">
+        <div id="dnn_Full_Screen_PaneA" class="Full_Screen_PaneA DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div id="dnn_TopPane" class="TopPane DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneB" class="Full_Screen_PaneB DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div id="dnn_RowOne_Grid3_Pane" class="RowOne_Grid3_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-9">
+                  <div id="dnn_RowOne_Grid9_Pane" class="RowOne_Grid9_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div id="dnn_RowTwo_Grid4_Pane" class="RowTwo_Grid4_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-8">
+                  <div id="dnn_RowTwo_Grid8_Pane" class="RowTwo_Grid8_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <div id="dnn_RowThree_Grid5_Pane" class="RowThree_Grid5_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-7">
+                  <div id="dnn_RowThree_Grid7_Pane" class="RowThree_Grid7_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div id="dnn_RowFour_Grid6_Pane1" class="RowFour_Grid6_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-6">
+                  <div id="dnn_RowFour_Grid6_Pane2" class="RowFour_Grid6_Pane2 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-7">
+                  <div id="dnn_RowFive_Grid7_Pane" class="RowFive_Grid7_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-5">
+                  <div id="dnn_RowFive_Grid5_Pane" class="RowFive_Grid5_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <div id="dnn_RowSix_Grid8_Pane" class="RowSix_Grid8_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowSix_Grid4_Pane" class="RowSix_Grid4_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-9">
+                  <div id="dnn_RowSeven_Grid9_Pane" class="RowSeven_Grid9_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div id="dnn_RowSeven_Grid3_Pane" class="RowSeven_Grid3_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneC" class="Full_Screen_PaneC DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div id="dnn_RowEight_Grid4_Pane1" class="RowEight_Grid4_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowEight_Grid4_Pane2" class="RowEight_Grid4_Pane2 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowEight_Grid4_Pane3" class="RowEight_Grid4_Pane3 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div id="dnn_RowNine_Grid3_Pane1" class="RowNine_Grid3_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-6">
+                  <div id="dnn_RowNine_Grid6_Pane" class="RowNine_Grid6_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div id="dnn_RowNine_Grid3_Pane2" class="RowNine_Grid3_Pane2 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RownTen_Grid3_Pane1" class="RownTen_Grid3_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowTen_Grid3_Pane2" class="RowTen_Grid3_Pane2 DNNEmptyPane"></div>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowTen_Grid3_Pane3" class="RowTen_Grid3_Pane3 DNNEmptyPane"></div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowTen_Grid3_Pane4" class="RowTen_Grid3_Pane4 DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneD" class="Full_Screen_PaneD DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div id="dnn_ContentPane" class="ContentPane"><div class="DnnModule DnnModule- DnnModule--1">
+
+<div class="Container-20064-H1"> 
+
+<!--Container Title-->
+    <h1>
+        <span id="dnn_ctr_dnnTITLEH1_titleLabel" class="titleH1">Privacy Statement</span>
+
+
+
+    </h1>
+<!--Container Title End-->
+
+<!--Container Content-->
+    <div class="contentmain1">
+    
+    <div id="dnn_ctr_ContentPane" class="contentpane"><div id="dnn_ctr_ModuleContent" class="DNNModuleContent ModC">
+	
+<div class="dnnPrivacy dnnClear"><span id="dnn_ctr_Privacy_lblPrivacy"><div align="left">
+        <p>Holodance is committed to protecting your privacy and developing technology
+        that gives you the most powerful and safe online experience. This Statement of Privacy
+        applies to the Holodance Web site and governs data collection and usage.
+        By using the Holodance website, you consent to the data practices described
+        in this statement.</p>
+        <p><span class="SubHead">Collection of your Personal Information</span></p>
+        <p>Holodance collects personally identifiable information, such as your e-mail
+        address, name, home or work address or telephone number. Holodance also
+        collects anonymous demographic information, which is not unique to you, such as
+        your ZIP code, age, gender, preferences, interests and favorites.</p>
+        <p>There is also information about your computer hardware and software that is automatically
+        collected by Holodance. This information can include: your IP address,
+        browser type, domain names, access times and referring Web site addresses. This
+        information is used by Holodance for the operation of the service, to
+        maintain quality of the service, and to provide general statistics regarding use
+        of the Holodance Web site.</p>
+        <p>Please keep in mind that if you directly disclose personally identifiable information
+        or personally sensitive data through Holodance public message boards,
+        this information may be collected and used by others. Note: Holodance
+        does not read any of your private online communications.</p>
+        <p>Holodance encourages you to review the privacy statements of Web sites
+        you choose to link to from Holodance so that you can understand how those
+        Web sites collect, use and share your information. Holodance is not responsible
+        for the privacy statements or other content on Web sites outside of the Holodance
+        and Holodance family of Web sites.</p>
+        <p><span class="SubHead">Use of your Personal Information</span></p>
+        <p>Holodance collects and uses your personal information to operate the Holodance
+        Web site and deliver the services you have requested. Holodance also uses
+        your personally identifiable information to inform you of other products or services
+        available from Holodance and its affiliates. Holodance may also
+        contact you via surveys to conduct research about your opinion of current services
+        or of potential new services that may be offered.</p>
+        <p>Holodance does not sell, rent or lease its customer lists to third parties.
+        Holodance may, from time to time, contact you on behalf of external business
+        partners about a particular offering that may be of interest to you. In those cases,
+        your unique personally identifiable information (e-mail, name, address, telephone
+        number) is not transferred to the third party. In addition, Holodance
+        may share data with trusted partners to help us perform statistical analysis, send
+        you email or postal mail, provide customer support, or arrange for deliveries. All
+        such third parties are prohibited from using your personal information except to
+        provide these services to Holodance, and they are required to maintain
+        the confidentiality of your information.</p>
+        <p>Holodance does not use or disclose sensitive personal information, such
+        as race, religion, or political affiliations, without your explicit consent.</p>
+        <p>Holodance keeps track of the Web sites and pages our customers visit within
+        Holodance, in order to determine what Holodance services are
+        the most popular. This data is used to deliver customized content and advertising
+        within Holodance to customers whose behavior indicates that they are interested
+        in a particular subject area.</p>
+        <p>Holodance Web sites will disclose your personal information, without notice,
+        only if required to do so by law or in the good faith belief that such action is
+        necessary to: (a) conform to the edicts of the law or comply with legal process
+        served on Holodance or the site; (b) protect and defend the rights or
+        property of Holodance; and, (c) act under exigent circumstances to protect
+        the personal safety of users of Holodance, or the public.</p>
+        <p><span class="SubHead">Use of Cookies</span></p>
+        <p>The Holodance Web site use "cookies" to help you personalize your online
+        experience. A cookie is a text file that is placed on your hard disk by a Web page
+        server. Cookies cannot be used to run programs or deliver viruses to your computer.
+        Cookies are uniquely assigned to you, and can only be read by a web server in the
+        domain that issued the cookie to you.</p>
+        <p>One of the primary purposes of cookies is to provide a convenience feature to save
+        you time. The purpose of a cookie is to tell the Web server that you have returned
+        to a specific page. For example, if you personalize Holodance pages, or
+        register with Holodance site or services, a cookie helps Holodance
+        to recall your specific information on subsequent visits. This simplifies the process
+        of recording your personal information, such as billing addresses, shipping addresses,
+        and so on. When you return to the same Holodance Web site, the information
+        you previously provided can be retrieved, so you can easily use the Holodance
+        features that you customized.</p>
+        <p>You have the ability to accept or decline cookies. Most Web browsers automatically
+        accept cookies, but you can usually modify your browser setting to decline cookies
+        if you prefer. If you choose to decline cookies, you may not be able to fully experience
+        the interactive features of the Holodance services or Web sites you visit.</p>
+        <p><span class="SubHead">Security of your Personal Information</span></p>
+        <p>Holodance secures your personal information from unauthorized access,
+        use or disclosure. Holodance secures the personally identifiable information
+        you provide on computer servers in a controlled, secure environment, protected from
+        unauthorized access, use or disclosure. When personal information (such as a credit
+        card number) is transmitted to other Web sites, it is protected through the use
+        of encryption, such as the Secure Socket Layer (SSL) protocol.</p>
+        <p><span class="SubHead">Changes to this Statement</span></p>
+        <p>Holodance will occasionally update this Statement of Privacy to reflect
+company and customer feedback. Holodance encourages you to periodically 
+        review this Statement to be informed of how Holodance is protecting your
+        information.</p>
+        <p><span class="SubHead">Contact Information</span></p>
+        <p>Holodance welcomes your comments regarding this Statement of Privacy.
+        If you believe that Holodance has not adhered to this Statement, please
+        contact Holodance at <a href="mailto:jashan@narayana-games.net">jashan@narayana-games.net</a>.
+        We will use commercially reasonable efforts to promptly determine and remedy the
+        problem.</p>
+    </div></span></div>
+</div></div>
+</div>
+<!--Container Content End-->
+
+<!--Container Buttons-->
+    <div class="c_footer">
+        
+        
+        
+        
+    </div>
+<!--Container Buttons End--> 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneE" class="Full_Screen_PaneE DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RownEleven_Grid3_Pane1" class="RownEleven_Grid3_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowEleven_Grid3_Pane2" class="RowEleven_Grid3_Pane2 DNNEmptyPane"></div>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowEleven_Grid3_Pane3" class="RowEleven_Grid3_Pane3 DNNEmptyPane"></div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div id="dnn_RowEleven_Grid3_Pane4" class="RowEleven_Grid3_Pane4 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div id="dnn_RowTwelve_Grid3_Pane1" class="RowTwelve_Grid3_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-6">
+                  <div id="dnn_RowTwelve_Grid6_Pane" class="RowTwelve_Grid6_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div id="dnn_RowTwelve_Grid3_Pane2" class="RowTwelve_Grid3_Pane2 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div id="dnn_RowThirteen_Grid4_Pane1" class="RowThirteen_Grid4_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowThirteen_Grid4_Pane2" class="RowThirteen_Grid4_Pane2 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowThirteen_Grid4_Pane3" class="RowThirteen_Grid4_Pane3 DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneF" class="Full_Screen_PaneF DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-9">
+                  <div id="dnn_RowFourteen_Grid9_Pane" class="RowFourteen_Grid9_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-3">
+                  <div id="dnn_RowFourteen_Grid3_Pane" class="RowFourteen_Grid3_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <div id="dnn_RowFifteen_Grid8_Pane" class="RowFifteen_Grid8_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-4">
+                  <div id="dnn_RowFifteen_Grid4_Pane" class="RowFifteen_Grid4_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-7">
+                  <div id="dnn_RowSixteen_Grid7_Pane" class="RowSixteen_Grid7_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-5">
+                  <div id="dnn_RowSixteen_Grid5_Pane" class="RowSixteen_Grid5_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div id="dnn_RowSeventeen_Grid6_Pane1" class="RowSeventeen_Grid6_Pane1 DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-6">
+                  <div id="dnn_RowSeventeen_Grid6_Pane2" class="RowSeventeen_Grid6_Pane2 DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5">
+                  <div id="dnn_RowEighteen_Grid5_Pane" class="RowEighteen_Grid5_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-7">
+                  <div id="dnn_RowEighteen_Grid7_Pane" class="RowEighteen_Grid7_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div id="dnn_RowNineteen_Grid4_Pane" class="RowNineteen_Grid4_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-8">
+                  <div id="dnn_RowNineteen_Grid8_Pane" class="RowNineteen_Grid8_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div id="dnn_RowTwenty_Grid3_Pane" class="RowTwenty_Grid3_Pane DNNEmptyPane"></div>
+                </div>
+                <div class="col-sm-9">
+                  <div id="dnn_RowTwenty_Grid9_Pane" class="RowTwenty_Grid9_Pane DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneG" class="Full_Screen_PaneG DNNEmptyPane"></div>
+        <div class="dnn_layout">
+          <div class="content_mid clearfix">
+            <div class="pane_layout">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div id="dnn_BottomPane" class="BottomPane DNNEmptyPane"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dnn_Full_Screen_PaneH" class="Full_Screen_PaneH DNNEmptyPane"></div>
+      </section>
+      
+      
+	  <section id="dnn_lightgreybgp">
+        <div class="dnn_layout content_mid">
+          <div id="dnn_LightGreyBGPane" class="LightGreyBGPane DNNEmptyPane"></div>
+        </div>
+      </section>
+      <section id="dnn_lightgreybgpB">
+        <div id="dnn_LightGreyBGPaneB" class="LightGreyBGPaneB DNNEmptyPane"></div>
+      </section>
+      <section id="dnn_botbgp">
+          <div class="dnn_layout bottom_mid">
+            <section class="row">
+              <div class="col-sm-6">
+                <div id="dnn_BotBGPaneA" class="BotBGPaneA DNNEmptyPane"></div>
+              </div>
+              <div class="col-sm-6">
+                <div id="dnn_BotBGPaneB" class="BotBGPaneB DNNEmptyPane"></div>
+              </div>
+            </section>
+          </div>
+      </section>
+      
+      </div>
+
+      <section id="dnn_bottom" class=" ">
+        <div class="clearfix dnn_layout bottom_mid lightgrey_title bottom_colors">
+          <div class="row">
+						<div class="col-sm-12">
+							<div id="dnn_FooterPaneJ" class="FooterPaneJ   DNNEmptyPane"></div>
+						</div>
+					</div>
+                <div class="row">
+						<div class="col-sm-8">
+							<div id="dnn_FooterPaneH" class="FooterPaneH   DNNEmptyPane"></div>
+						</div>
+						<div class="col-sm-4">
+							<div id="dnn_FooterPaneI" class="FooterPaneI   DNNEmptyPane"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div id="dnn_FooterPaneA" class="FooterPaneA   DNNEmptyPane"></div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div id="dnn_FooterPaneB" class="FooterPaneB   DNNEmptyPane"></div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div id="dnn_FooterPaneC" class="FooterPaneC   DNNEmptyPane"></div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div id="dnn_FooterPaneD" class="FooterPaneD   DNNEmptyPane"></div>
+						</div>
+					</div>	
+                    <div class="row">
+						<div class="col-sm-4">
+							<div id="dnn_FooterPaneE" class="FooterPaneE   DNNEmptyPane"></div>
+						</div>
+						<div class="col-sm-4">
+							<div id="dnn_FooterPaneF" class="FooterPaneF   DNNEmptyPane"></div>
+						</div>
+						<div class="col-sm-4">
+							<div id="dnn_FooterPaneG" class="FooterPaneG   DNNEmptyPane"></div>
+						</div>
+					</div>	
+        </div>
+      </section>
+      <footer>
+        <div class="clearfix dnn_layout footer_mid  ">
+          <div class="copyright_style">
+                    <span id="dnn_dnnCOPYRIGHT_lblCopyright" class="footer  ">Copyright 2023 by narayana games UG</span>
+
+                    <span class="sep  ">|</span>
+                    <a id="dnn_dnnPRIVACY_hypPrivacy" class="terms  " rel="nofollow" href="http://holodance-vr.com/Privacy">Privacy Statement</a>
+                    <span class="sep    ">|</span>
+                    <a id="dnn_dnnTERMS_hypTerms" class="terms  " rel="nofollow" href="http://holodance-vr.com/Terms">Terms Of Use</a>
+                    
+                    </div>
+          <div id="dnn_FootPane" class="FootPane DNNEmptyPane"></div>
+        </div>
+        <div class="to_topmain">
+          <div id="to_top" class=" "></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="/Portals/_default/Skins/20064-UnlimitedColorsPack-046/scripts/script.js"></script> 
+<script type="text/javascript" src="/Portals/_default/Skins/20064-UnlimitedColorsPack-046/scripts/custom.js"></script> 
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.ramtiga.net/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 18]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.ramtiga.net/piwik.php?idsite=18" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+
+        <input name="ScrollTop" type="hidden" id="ScrollTop">
+        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/`,`sf_tabId`:`156`}">
+        <input name="__RequestVerificationToken" type="hidden" value="SBXsydKX0pb9CQf1HqizBc6AFeFYXke1rEWtHWf---pN_bWElmcc2BaOsVUKj-g7imyAsGj9fF7PwpycnLExkGROkHQQTIy8iG2MeuXvRRFfY7GJpWThC8oorO01">
+    
+<script type="text/javascript" src="/Resources/Shared/scripts/initWidgets.js"></script></form>
+    
+    
+
+</body></html>

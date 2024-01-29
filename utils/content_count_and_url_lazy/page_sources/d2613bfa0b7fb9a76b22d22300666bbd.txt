@@ -1,0 +1,358 @@
+<html lang="en"><head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-165720483-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+            dataLayer.push(arguments);
+        };
+    </script>
+    <meta charset="utf-8">
+    <meta name="description" content="Extended reality software development company. Provides high-quality extended reality content to the masses with cutting edge technology, cross platform support and high performance. Currently developing the game Terragon: Symbol Of Magic">
+    <meta name="keywords" content="Terragon, Terragon: Symbol Of Magic, Symbol Of Magic, Symbol, Magic, virtualreality, vr, virtual reality, game, development, studio, dev, fun, games, studio, xr, extended reality, reality shift studios, reality shift, reality, shift, studios, indie, indiegame, indie game, indie developer, indiegamewatch, indiegames, indiegameswatch">
+    <meta name="author" content="Sagi Hammer">
+
+    <meta name="twitter:card" content="player">
+    <!-- <meta name="twitter:card" content="summary_large_image" /> -->
+    <meta name="twitter:site" content="@realityshift5">
+    <meta name="twitter:creator" content="@realityshift5">
+    <meta property="og:url" content="https://realityshiftstudios.com/">
+    <meta property="og:title" content="Terragon: Symbol Of Magic">
+    <meta property="og:description" content="Extended reality software development company. Developers of the game Terragon: Symbol Of Magic.">
+    <meta property="og:image" content="https://realityshiftstudios.com/Terragon/Logo.png">
+    <meta property="twitter:image:alt" content="Terragon: Symbol Of Magic">
+
+    <meta property="twitter:player" content="https://www.youtube.com/watch?v=4UeTrdWgBgc">
+    <meta property="twitter:player:width" content="560">
+    <meta property="twitter:player:height" content="315">
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="/.manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Reality Shift Studios</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: Roboto-Regular;
+            src: url(./Roboto-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: roboto-light;
+            src: url(./roboto-light.ttf);
+        }
+
+        @font-face {
+            font-family: Roboto-Thin;
+            src: url(./Roboto-Thin.ttf);
+        }
+        @font-face {
+        font-family: Montserrat-Regular;
+        src: url(./Fonts/Montserrat-Regular.ttf);
+      }
+        body {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: #ddd;
+            font-family: Montserrat-Regular;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        header {
+            margin: 10px 50px 50px;
+            text-align: center;
+        }
+
+        header>img {
+            width: 100px;
+        }
+
+        header>.terragon_title {
+            background: -webkit-linear-gradient(-90deg, rgba(99, 39, 116, 1) 0%, rgba(196, 51, 100, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: rgb(99, 39, 116);
+            font-size: 5vmin;
+            font-family: Montserrat-Regular;
+            padding: 10px 0;
+        }
+
+        .terragon_img>img {
+            width: 500px;
+        }
+
+        .Description {
+            font-size: 1.5vmax;
+            padding: 25px 0 5px 0;
+            width: 95vmin;
+            color: grey;
+            max-width: 1500px;
+        }
+
+        .Names {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main {
+            max-width: 800px;
+        }
+
+        main h1 {
+            font-size: 2em;
+            text-decoration: underline;
+            padding-bottom: 50px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            header>.terragon_title {
+                font-size: 55px;
+            }
+
+            .Description {
+                font-size: 29px;
+            }
+
+            .end_main {
+                font-size: 15px;
+            }
+        }
+    </style>
+<style></style></head>
+
+<body><div class="cc-revoke cc-bottom cc-left cc-animate cc-color-override--1762072787" style="display: none;">Cookie Policy</div><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-floating cc-type-opt-in cc-theme-edgeless cc-bottom cc-left cc-color-override--1762072787 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.cookiesandyou.com" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span><div class="cc-compliance cc-highlight"><a aria-label="deny cookies" role="button" tabindex="0" class="cc-btn cc-deny">Decline</a><a aria-label="allow cookies" role="button" tabindex="0" class="cc-btn cc-allow">Allow cookies</a></div><!--googleon: all--></div>
+    <header>
+        <img src="./logo.png">
+        <div class="terragon_title">
+            Terragon: Symbol of Magic
+        </div>
+    </header>
+    <main>
+        <h1>Privacy Policy</h1>
+        <p>
+            It is hereby confirmed that Terragon: Symbol Of Magic (the “Software”) does not collect any User data
+            or personal information. As such no personal information or other User data is being
+            stored, processed or transferred by Reality Shift LTD. or its suppliers as a result of
+            the installation or use of the Software.
+        </p>
+    </main>
+
+    <footer>
+        © All rights reserved ©
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#edeff5",
+                    "text": "#838391"
+                },
+                "button": {
+                    "background": "#4b81e8"
+                }
+            },
+            "theme": "edgeless",
+            "position": "bottom-left",
+            "type": "opt-in",
+            onInitialise: function (status) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type == 'opt-in' && didConsent) {
+                    window.gtag('js', new Date());
+
+                    window.gtag('config', 'UA-165720483-1');
+                }
+                if (type == 'opt-out' && !didConsent) {
+                    // disable cookies
+                }
+            },
+            onStatusChange: function (status, chosenBefore) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type == 'opt-in' && didConsent) {
+                    window.gtag('js', new Date());
+
+                    window.gtag('config', 'UA-165720483-1');
+                } else if (status == "allow") {
+                    window.gtag('js', new Date());
+
+                    window.gtag('config', 'UA-165720483-1');
+                }
+                if (type == 'opt-out' && !didConsent) {
+                    // disable cookies
+                }
+            },
+            onRevokeChoice: function () {
+                var type = this.options.type;
+                if (type == 'opt-in') {
+                    // disable cookies
+                }
+                if (type == 'opt-out') {
+                    window.gtag('js', new Date());
+
+                    window.gtag('config', 'UA-165720483-1');
+                }
+            },
+        });
+    </script>
+
+
+</body></html>

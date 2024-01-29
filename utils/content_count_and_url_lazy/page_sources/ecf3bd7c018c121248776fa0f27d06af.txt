@@ -1,0 +1,353 @@
+<html lang="fr"><head>
+        <meta http-equiv="Content-Type" content="text/HTML; charset=utf-8">
+        <meta http-equiv="Content-Language" content="fr">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="Introversion Software,Games,Uplink,Darwinia,DEFCON,Multiwinia,Prison Architect,Video Games,Strategy Games,Indie Games,Simulation Games,Scanner Sombre,Scanner Somber,lazer,laser,scanner,laser game,laser game,scanning game,cave game,exploration game,ether one,dear esther,everybody’s gone to the rapture,A light in Chorus,Unfinished Swan,Proteus">
+        <title>Scanner Sombre</title>
+        <!--bootstrap -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!--fontawesome -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!--linearicon -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <!--google font -->
+        <link href="https://fonts.googleapis.com/css?family=Questrial|Titillium+Web:300,400,600,700" rel="stylesheet">
+        <!--css -->
+        <link rel="stylesheet" href="//cdn.introversion.co.uk/scannersombre/css/style.min.css">
+
+        <script type="text/javascript" async="" src="https://cdn.siftscience.com/s.js"></script><script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/7ee36b0e/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="//www.youtube.com/iframe_api"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-KVSQ86"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+          if (/Firefox/.test(navigator.userAgent)) {
+             var link = document.createElement( "link" );
+             link.href = 'css/moz.css';
+             link.type = "text/css";
+             link.rel = "stylesheet";
+             link.media = "screen,print";
+             document.getElementsByTagName( "head" )[0].appendChild( link );
+          }
+        </script>
+
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-7410531-11', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <style>
+            .configuration a:hover {
+                color: #0f0;
+            }
+        </style>
+
+
+    </head>
+    <body class="small-screen">
+        <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KVSQ86"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KVSQ86');</script>
+        <!-- End Google Tag Manager -->
+
+        <!--loader-->
+        <div class="loader">
+            <canvas id="canvas" width="1036" height="668"></canvas>
+            <h3 id="progress">40<sup>%</sup></h3>
+        </div>
+        <a href="#S2" class="arrow-link hide hidden-xs">
+            <div class="arrow arrow-1"></div>
+            <div class="arrow arrow-2"></div>
+        </a>
+        <div id="fow" class="hidden-md hidden-sm hidden-xs"></div>
+        <!--header -->
+        <header class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <nav class="col-sm-4 hidden-xs nav-left">
+                            <ul>
+                                <li><a href="#S3" class="sizzle">Watch</a></li>
+                                <li><a href="footer" class="sizzle">Buy Now</a></li>
+                            </ul>
+                        </nav>
+                        <div class="col-sm-4 col-xs-12 logo">
+                            <div id="hbMenu" class="visible-xs">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <a href="#S1"><img src="//cdn.introversion.co.uk/scannersombre/img/logo.png" alt="logo scanner sombre"></a>
+
+                        </div>
+                        <nav class="col-sm-4 hidden-xs nav-right">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" class="open-share-dd sizzle"><i class="fa fa-share-alt"></i> share</a>
+                                    <ul class="share-dd">
+                                        <li><a href="https://www.facebook.com/sharer.php?u=http://www.introversion.co.uk/scannersombre/" class="close-share-dd"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                        <li><a href="https://twitter.com/share?url=http://www.introversion.co.uk/scannersombre/" class="close-share-dd"><i class="fa fa-twitter"></i>Twitter</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0)" class="sizzle audio"><i class="fa fa-volume-off"></i> <span></span></a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--mobile menu-->
+        <div id="mobileMenu">
+            <ul>
+                <li><a href="javascript:void(0)" class="audio"><i class="fa fa-volume-off"></i>Volume: <span></span></a></li>
+                <li><a href="https://www.facebook.com/introversionsoftware/"><i class="fa fa-facebook"></i>Facebook</a></li>
+                <li><a href="https://twitter.com/IVSoftware"><i class="fa fa-twitter"></i>Twitter</a></li>
+                <li><a href="https://www.instagram.com/ivsoftware/"><i class="fa fa-instagram"></i>Instagram</a></li>
+            </ul>
+        </div>
+
+        <!--section1 -->
+        <section id="S1" class="container-fluid">
+            <div class="row">
+                <ul id="sceneS1" class="scene" style="position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <li class="layer" data-depth="0.00" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.25" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.50" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.75" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="1.00" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.50" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                        <div class="container content">
+                            <div class="row">
+                                <div class="col-xs-12 title">
+                                    <h1 class="animate"><span class="blur" style="animation-duration: 2.2062s;">S</span><span style="animation-duration: 1.56195s;">e</span><span style="animation-duration: 2.12695s;">n</span><span class="blur" style="animation-duration: 3.07685s;">s</span><span style="animation-duration: 3.01289s;">e</span><span style="animation-duration: 1.21045s;"> </span><span class="blur" style="animation-duration: 2.07432s;">t</span><span style="animation-duration: 3.16677s;">h</span><span style="animation-duration: 1.73648s;">e</span><span class="blur" style="animation-duration: 1.97059s;"> </span><span style="animation-duration: 2.68639s;">d</span><span style="animation-duration: 2.75405s;">a</span><span class="blur" style="animation-duration: 1.47308s;">r</span><span style="animation-duration: 1.45268s;">k</span><span style="animation-duration: 3.13111s;">n</span><span class="blur" style="animation-duration: 1.0449s;">e</span><span style="animation-duration: 3.46039s;">s</span><span style="animation-duration: 1.49275s;">s</span></h1>
+                                </div>
+                                <!--div class="col-xs-12 scroll">
+                                    <a href="#S2" class="sizzle">scroll</a>
+                                </div-->
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!--section2 -->
+        <section id="S2" class="container-fluid">
+            <div class="row">
+                <ul id="sceneS2" class="scene" style="position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <li class="layer" data-depth="0.00" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.25" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.50" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.75" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="1.00" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.50" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                        <div class="container content">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h2 class="animate"><span class="blur" style="animation-duration: 2.78368s;">E</span><span style="animation-duration: 1.88893s;">x</span><span style="animation-duration: 3.2206s;">p</span><span class="blur" style="animation-duration: 1.0402s;">l</span><span style="animation-duration: 3.34388s;">o</span><span style="animation-duration: 3.47682s;">r</span><span class="blur" style="animation-duration: 3.26877s;">e</span><span style="animation-duration: 1.96271s;"> </span><span style="animation-duration: 1.94214s;">t</span><span class="blur" style="animation-duration: 1.09021s;">h</span><span style="animation-duration: 2.87337s;">e</span><span style="animation-duration: 2.07714s;"> </span><span class="blur" style="animation-duration: 2.00484s;">d</span><span style="animation-duration: 1.2025s;">a</span><span style="animation-duration: 3.19238s;">r</span><span class="blur" style="animation-duration: 3.30492s;">k</span><span style="animation-duration: 3.39879s;"> </span><span style="animation-duration: 1.29739s;">t</span><span class="blur" style="animation-duration: 2.32751s;">h</span><span style="animation-duration: 1.28935s;">r</span><span style="animation-duration: 2.6577s;">o</span><span class="blur" style="animation-duration: 1.67205s;">u</span><span style="animation-duration: 1.22338s;">g</span><span style="animation-duration: 1.01283s;">h</span><span class="blur" style="animation-duration: 1.77264s;"> </span><span style="animation-duration: 1.31121s;">l</span><span style="animation-duration: 3.2675s;">i</span><span class="blur" style="animation-duration: 2.26427s;">g</span><span style="animation-duration: 3.04269s;">h</span><span style="animation-duration: 1.63324s;">t</span></h2>
+                                    <p>Regaining consciousness you smell the damp. Opening your eyes you see the stone walls of the chamber flickering by the light of the fire; you stumble to your feet and kick a helmet clattering across the floor.  Slowly the ache in your head begins to subside and you notice the beginnings of a passage.  After a few steps the darkness consumes you.  Returning to the safely of the fire you see a LIDAR scanner on the floor - a trigger press results in a faint glow coming from inside the helmet.  You put the helmet on, adjust the beam-width and proceed into the abyss…</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <!--section3 -->
+        <section id="S3" class="container-fluid">
+            <div class="row">
+                <ul id="sceneS3" class="scene" style="position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <li class="layer" data-depth="0.00" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.25" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.50" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.75" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="1.00" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.50" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                        <div class="container content">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="javascript:void(0)" class="button open-trailer sizzle">
+                                        <img src="//cdn.introversion.co.uk/scannersombre/img/icon-play.png" alt="button watch the trailer">
+                                    </a>
+                                    <h3>watch the trailer</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--modal video -->
+        <section id="trailer" class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="javascript:void(0)" class="close-trailer sizzle" onclick="stopVideo();">close<i class="lnr lnr-cross"></i></a>
+                                <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Scanner Sombre Launch Trailer" width="640" height="390" src="https://www.youtube.com/embed/8NFlo9FEfaY?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.introversion.co.uk&amp;widgetid=1"></iframe>
+                                <script>
+                                  var tag = document.createElement('script');
+
+                                  tag.src = "//www.youtube.com/iframe_api";
+                                  var firstScriptTag = document.getElementsByTagName('script')[0];
+                                  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+                                  var player;
+                                  function onYouTubeIframeAPIReady() {
+                                    player = new YT.Player('player', {
+                                      height: '390',
+                                      width: '640',
+                                      videoId: '8NFlo9FEfaY',
+                                    });
+                                  }
+
+                                  function stopVideo() {
+                                    player.stopVideo();
+                                  }
+                                </script>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <!--footer -->
+        <footer class="container-fluid">
+            <div class="row">
+                <ul id="sceneF" class="scene" style="position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                    <li class="layer" data-depth="0.00" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.25" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.50" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.75" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="1.00" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.50" style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                        <div class="container content">
+                            <div class="row">
+                                <div class="col-xs-12">
+
+<!-- Mailchimp signup -->
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+var signupForm = null;
+function LearnMore()
+{
+    if (!signupForm)
+    {
+        require(["mojo/signup-forms/Loader"], function(L) {
+            signupForm = L;
+        });
+    }
+    document.cookie = "MCEvilPopupClosed=; Path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    signupForm.start({"baseUrl":"mc.us5.list-manage.com","uuid":"92bdc42550e7f2323d1a4bde9","lid":"3894cedc1c"});
+}
+</script>
+
+<a style="cursor:pointer" href="https://transactions.sendowl.com/packages/42088/D629B4AC/add_to_cart" rel="nofollow"><h2 class="animate sizzle"><span class="blur" style="animation-duration: 3.33426s;">B</span><span style="animation-duration: 2.00582s;">u</span><span style="animation-duration: 2.86223s;">y</span><span class="blur" style="animation-duration: 3.34399s;"> </span><span style="animation-duration: 2.72752s;">N</span><span style="animation-duration: 2.55709s;">o</span><span class="blur" style="animation-duration: 2.56387s;">w</span></h2></a>
+
+<!-- Pre-release -->
+<!--
+<a onclick="LearnMore()" style="cursor:pointer"><h2 class="animate sizzle">Learn More</h2></a>
+                                    <p class="configuration">
+                                        <a class="sizzle" style="cursor:pointer" onclick="LearnMore()">
+                                            Scanner Sombre is due to launch on 26 April 2017. Subscribe to our mailing list to keep up to date
+                                        </a>
+                                    </p>
+-->
+
+<!-- Release -->
+<p>
+                                    <a href="http://store.steampowered.com/app/475190/" class="button sizzle"><img src="//cdn.introversion.co.uk/scannersombre/img/steam-logo.png" alt="Steam logo"></a>
+</p>
+<p>
+    </p><div class="button sizzle">
+        <a style="display: block; width:146px; height: 55px;" href="https://transactions.sendowl.com/packages/42088/D629B4AC/add_to_cart" rel="nofollow">
+            <span style="display: inline-block; line-height: 55px; vertical-align: middle;">DRM FREE</span>
+        </a>
+    </div>
+<p></p>
+
+<!--
+                                    <p class="configuration">Min spec: Windows XP, OS X 10.6, Ubuntu 12.04 or later Intel Core2 Duo 2.4 GHz or higher / AMD 3 GHz or higher, 4 GB RAM, Nvidia 8600 / Radeon equivalent (2009 era)</p>
+-->
+
+<!--
+                                    <q>"one of the best games of the year."<cite>RPS 2016</cite></q>
+                                    <ul class="logo-list">
+                                        <li><img src="//cdn.introversion.co.uk/scannersombre/img/footer-logo1.png" alt="Game of the Year" /></li>
+                                        <li><img src="//cdn.introversion.co.uk/scannersombre/img/footer-logo2.png" alt="The Game Awards 2015" /></li>
+                                        <li><img src="//cdn.introversion.co.uk/scannersombre/img/footer-logo3.png" alt="Indie Prize Europe 2015" /></li>
+                                    </ul>
+-->
+                                    <ul class="social-list">
+                                        <li class="circle">
+                                            <a href="https://www.youtube.com/user/IVSoftware" class="sizzle"><i class="fa fa-youtube-play"></i></a>
+                                        </li>
+                                        <li class="circle">
+                                            <a href="https://twitter.com/IVSoftware" class="sizzle"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li class="circle">
+                                            <a href="https://www.facebook.com/introversionsoftware/" class="sizzle"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.introversion.co.uk/introversion/"><img src="//cdn.introversion.co.uk/scannersombre/img/introversion-logo.png" alt=""></a>
+                                        </li>
+                                        <li class="circle">
+                                            <a href="https://www.twitch.tv/introversionsoftware" class="sizzle"><i class="fa fa-twitch"></i></a>
+                                        </li>
+                                        <li class="circle">
+                                            <a href="https://www.instagram.com/ivsoftware/" class="sizzle"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li class="circle">
+                                            <a href="http://introversion.us5.list-manage.com/subscribe?u=92bdc42550e7f2323d1a4bde9&amp;id=5821980e51" class="sizzle"><i class="fa fa-envelope-o"></i></a>
+                                        </li>
+                                    </ul>
+                                    <p class="legacy">Copyright © 2017 Scanner Sombre is a trademark of <a href="http://www.introversion.co.uk/">Introversion Software Ltd</a> | <a href="http://www.introversion.co.uk/introversion/legal/">terms and conditions</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer><script type="text/javascript" id="">var _sift=window._sift=window._sift||[];_sift.push(["_setAccount","31e7062fd7"]);_sift.push(["_trackPageview"]);(function(){function a(){var b=document.createElement("script");b.type="text/javascript";b.async=!0;b.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.siftscience.com/s.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,!1)})();</script>
+        <!--jquery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <!--parallax -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js"></script>
+        <!--visible -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script>
+        <!-- youtube API -->
+        <script type="text/javascript" src="https://www.youtube.com/player_api"></script>
+        <!--js -->
+        <script src="//cdn.introversion.co.uk/scannersombre/js/main.min,2.js"></script>
+        <!-- SendOwl -->&gt;
+        <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            window.sendOwl.captureLinks();
+        });
+        </script>
+
+    
+
+</body></html>

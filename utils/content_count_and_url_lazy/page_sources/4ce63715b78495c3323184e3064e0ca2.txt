@@ -1,0 +1,138 @@
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Dream Channel XR - World</title>
+    <style>
+      html {
+        box-sizing: border-box;
+		width: 100%;
+        height: 100%;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+		padding: 0;
+		height: inherit;
+        background: #444444;
+      }
+      #unityContainer {
+        width: 100%;
+        height: inherit;
+      }
+      canvas {
+        width: 100%;
+        height: inherit;
+		background: #000000;
+        display: block;
+      }
+      /* try to handle mobile dialog */
+      canvas + * {
+        z-index: 2;
+      }
+      .logo {
+          display: block;
+          max-width: 100vw;
+          max-height: 70vh;
+      }
+
+      .progress {
+          margin: 1.5em;
+          border: 1px solid white;
+          width: 50vw;
+          display: none;
+      }
+      .progress .full {
+          margin: 2px;
+          background: white;
+          height: 1em;
+          transform-origin: top left;
+      }
+
+      #loader {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .spinner,
+      .spinner:after {
+        border-radius: 50%;
+        width: 5em;
+        height: 5em;
+      }
+      .spinner {
+        margin: 10px;
+        font-size: 10px;
+        position: relative;
+        text-indent: -9999em;
+        border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+        border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+        border-left: 1.1em solid #ffffff;
+        transform: translateZ(0);
+        animation: spinner-spin 1.1s infinite linear;
+      }
+      @keyframes spinner-spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+  <script src="Build/UnityLoader.js"></script>
+	<script>
+	
+
+	//This will take place prior to anything else in order to decide whether this is a browser / mobile based platform
+    var uagent = navigator.userAgent;
+
+    if((uagent.match(/iPad/i)) || (uagent.match(/iPhone/i)) || (uagent.match(/Android/i))){
+        
+		console.log("Mobile platform detected");
+		window.location.href = 'https://dreamchannel.io';
+		
+    }else{
+        
+		console.log("Browser based platform detected");
+        
+		// Window name is required for window switching / focus scripts to be able to do there thing. eg. dc_social_network or dc_central_world
+		// Important change added by RC
+		var windowName = "dc_central_world";
+		window.name = windowName;
+		
+		var windowObjectReference = null; // global variable
+		
+		var unityInstance = UnityLoader.instantiate("unityContainer", "Build/export.json", {onProgress: UnityProgress});
+		function UnityProgress(unityInstance, progress) {
+			if (!unityInstance.Module) {
+				return;
+			}
+		const loader = document.querySelector("#loader");
+		if (!unityInstance.progress) {
+			const progress = document.querySelector("#loader .progress");
+			progress.style.display = "block";
+			unityInstance.progress = progress.querySelector(".full");
+			loader.querySelector(".spinner").style.display = "none";
+		}
+		unityInstance.progress.style.transform = `scaleX(${progress})`;
+		if (progress === 1 && !unityInstance.removeTimeout) {
+		  unityInstance.removeTimeout = setTimeout(function() {
+			  loader.style.display = "none";
+		  }, 2000);
+		}
+    }
+  }
+  </script>
+	<script src="wp-bundle.js"></script></head></html>

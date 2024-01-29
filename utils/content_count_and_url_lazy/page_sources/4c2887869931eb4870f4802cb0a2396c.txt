@@ -1,0 +1,233 @@
+<html lang="zh-CN" xml:lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta name="description" content="“piapro.net”是一个综合性门户网站，提供以“初音未来”为首的Piapro Characters的综合信息。">
+<meta name="keywords" content="vocaloid, 初音未来, 镜音铃, 镜音连, 巡音流歌, MEIKO, KAITO">
+<title>piapro.net</title>
+<link rel="alternate" hreflang="ja" href="https://piapro.net/?lang=ja">
+<link rel="alternate" hreflang="en" href="https://piapro.net/intl/en.html">
+<link rel="alternate" hreflang="zh-hk" href="https://piapro.net/intl/zh-tw.html">
+<link rel="alternate" hreflang="zh-tw" href="https://piapro.net/intl/zh-tw.html">
+<link rel="alternate" hreflang="zh-cn" href="https://piapro.net/intl/zh-cn.html">
+<link rel="alternate" hreflang="zh" href="https://piapro.net/intl/zh-cn.html">
+
+<!-- Google Tag Manager -->
+<script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-996GH0FPNG&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WDQDLXR"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WDQDLXR');</script>
+<!-- End Google Tag Manager -->
+
+<link href="css/standard.css" rel="stylesheet">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="css/mobile.css">
+
+<style>
+body { font-family: "stxihei","microsoft yahei",arial,"helvetica neue",sans-serif;}
+</style>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/jquery.tile.js"></script>
+<script type="text/javascript">
+$(function(){
+  $(".fix_height").tile();
+});
+</script>
+
+<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+<script>
+
+  // Masonry corner stamp modifications
+  $.Mason.prototype.resize = function() {
+    this._getColumns();
+    this._reLayout();
+  };
+
+  $.Mason.prototype._reLayout = function( callback ) {
+    var freeCols = this.cols;
+    if ( this.options.cornerStampSelector ) {
+      var $cornerStamp = this.element.find( this.options.cornerStampSelector ),
+          cornerStampX = $cornerStamp.offset().left -
+            ( this.element.offset().left + this.offset.x + parseInt($cornerStamp.css('marginLeft')) );
+      freeCols = Math.floor( cornerStampX / this.columnWidth );
+    }
+    // reset columns
+    var i = this.cols;
+    this.colYs = [];
+    while (i--) {
+      this.colYs.push( this.offset.y );
+    }
+
+    for ( i = freeCols; i < this.cols; i++ ) {
+      this.colYs[i] = this.offset.y + $cornerStamp.outerHeight(true);
+    }
+
+    // apply layout logic to all bricks
+    this.layout( this.$bricks, callback );
+  };
+
+	$(function(){
+    var $container = $('#itemcont');
+    $container.imagesLoaded( function(){
+      $container.masonry({
+        itemSelector : '.item',
+				isFitWidth : true ,
+				cornerStampSelector: '.corner-stamp'
+      });
+    });
+  });
+
+</script>
+<!--[if lt IE 9]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script>
+$(document).ready(function() {
+    $('a[href^="#"]').click(function(event) {
+
+        var id = $(this).attr("href");
+        var offset = 60;
+        var target = $(id).offset().top - offset;
+        $('html, body').animate({scrollTop:target}, 500);
+        event.preventDefault();
+        return false;
+    });
+});
+</script>
+<script type="text/javascript">
+$(function(){
+$('a[href=#]').click(function(e){
+e.preventDefault(); })
+});
+
+$(function() {
+	var topBtn = $('#pagetop');
+	topBtn.hide();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 400) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+
+    topBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+    });
+});
+</script>
+
+
+<!--font awesome-->
+<link rel="stylesheet" href="js/fontawesome/css/font-awesome.css">
+
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDQDLXR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<div id="header" class="clearfix">
+		<div id="site_id"><a href="zh-cn.html"></a></div>
+		<div class="header_sub">
+			Official Hatsune Miku and Piapro Characters Website run by Crypton Future Media, INC.
+		</div>
+		<div id="lang"><a href="ja.html">日语</a><span class="break">|</span><a href="en.html">英语</a><span class="break">|</span><span>中文简体</span><span class="break">|</span><a href="zh-tw.html">中文繁体</a></div>
+	</div>
+
+	<div id="whole">
+		<!-- Start1031 ======================== -->
+		<div id="temp_header">
+			<div style="width:970px; position:relative; margin:0 auto;">
+				<div style="position:absolute; right:-270px; bottom:0; width:798px; height:100%; z-index:1;"><img src="images/p1031_bg_chara2.png" width="798" height="406" alt=""></div>
+				<h2 id="temp_title">Piapro Characters 官方网页</h2>
+				<p style="color:#ccc; margin-top:20px; line-height:1.5; position:relative; z-index:1;">“piapro.net”是一个综合性门户网站，提供以“初音未来”为首的Piapro Characters的综合信息。</p>
+				<ul class="p1031_btns">
+					<li class="btn_chara cn"><a href="zh-cn_character.html"></a></li>
+					<li class="btn_event cn"><a href="zh-cn_event.html"></a></li>
+				</ul>
+			</div>
+			</div>
+		<!-- End1031======================== -->
+
+		<p class="lead" style="margin-top:68px;">与初音未来相关的各种消息和网络内容发布频道汇集在此！<br>在 Crypton Future Media带来的各种网站中切身感受一下这遍及世界的CGM文化吧！</p>
+		<div style="text-align:center; text-align:center; width:728px; margin:0 auto 25px;"><a href="https://mikuexpo.com/" target="_blank"><img src="images/bnr_mikuexpo.jpg" width="728" height="90" alt="mikuexpo"></a></div>
+		<div id="main" style="margin-top:0;">
+
+			<div id="wrap" class="clearfix">
+
+				<div id="itemcont" class="clearfix masonry" style="position: relative; height: 333px; width: 508px;">
+
+					<div id="sidebox">
+
+						<div class="for_creator">
+							<p class="site_name"><a href="en_for_creators.html"><i class="icon-group"></i>&nbsp;For Creators</a></p>
+							<p class="site_desc">If you are creator, please read our character guideline.</p>
+						</div>
+
+						<div class="subbox" style="text-align:center; padding-bottom:20px;">
+							<p class="site_desc" style="padding-bottom:0;">官方微博发布初音未来新鲜情报！</p>
+
+							<div class="sns_ico sns_weibo" style="margin-top:0; margin-bottom:0;"></div>
+							<p class="site_name" style="margin-top:0;"><a href="https://weibo.com/u/2462905490" target="_blank">官方微博- 初音未来CryptonFutureMedia</a></p>
+						</div>
+					</div>
+
+					<div class="item fix_height masonry-brick" style="height: 319px; position: absolute; top: 0px; left: 0px;">
+						<a href="https://karent.jp/" target="_blank" class="site_thum site_karent"></a>
+						<p class="site_name"><a href="https://karent.jp/" target="_blank">KARENT</a></p>
+						<p class="site_desc">世界最大规模的电子歌手音乐网络发布平台KARENT。3,500首以上的歌曲大汇集，每周持续更新中！喜欢的歌曲可以在中国联通和中国电信等处购买！</p>
+					</div>
+
+					<div class="item fix_height masonry-brick" style="height: 319px; position: absolute; top: 0px; left: 254px;">
+						<a href="https://space.bilibili.com/399918500" target="_blank" class="site_thum site_bilibili"></a>
+						<p class="site_name"><a href="https://space.bilibili.com/399918500" target="_blank">bilibili官方账号- 初音未来_Crypton</a></p>
+						<p class="site_desc">介绍官方视频、作者的视频以及与伙伴企业合作制作的视频。</p>
+					</div>
+
+				</div>
+
+			</div>
+
+			</div>
+			<div style="text-align:center; text-align:center; width:750px; margin:0 auto 0;"><a href="https://sonicwire.com/product/vocaloid/special/mikuv4c" target="_blank"><img src="images/bnr_mikuv4c.jpg" width="750" height="150" alt=""></a></div>
+	</div>
+
+	<!-- Back to top page  -->
+<p id="pagetop" style="display: none;"><a href="#whole"><i class="icon-arrow-up"></i></a></p>
+
+<!-- footer -->
+<div id="footerbox">
+	<div class="footerwidth">
+		<h1>ABOUT US</h1>
+		<div class="clearfix">
+			<div class="footercont">
+				<h2>关于“piapro.net”</h2>
+				<p>本网站是Piapro Characters的综合性信息门户网站，由<a href="http://www.crypton.net" target="_blank">CRYPTON FUTURE MEDIA公司</a>运营。“Piapro”是“Peer Production”的简称，意思是“拥有各式各样知识与特长的朋友们共同分享和创造信息”。</p>
+			</div>
+			<div class="footercont">
+				<h2>Piapro Characters是什么？</h2>
+				<p>Piapro Characters是“初音未来”、“镜音铃”、“镜音连”、“MEIKO”、“KAITO”的总称。他们是CRYPTON FUTURE MEDIA公司开发的电子歌手软件的角色们。</p>
+			</div>
+			<div class="footercont">
+				<h2>咨询方式</h2>
+				<p>请进入以下网页，选择您需求的项目，进行咨询。</p>
+				<p><a href="https://www.crypton.co.jp/mp/pages/aboutus/aboutus_en.jsp" target="_blank">进入企业网站咨询页面 <i class="icon-chevron-right"></i></a></p>
+			</div>
+		</div>
+	</div>
+	<p id="footercopy">©&nbsp;Crypton Future Media, INC. www.piapro.net</p>
+</div>
+
+
+
+</body></html>

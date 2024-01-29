@@ -1,0 +1,159 @@
+<html class="no-js" lang="en" dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunball | Based on a true story.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="lb/lightbox.css" rel="stylesheet">
+    <script src="lb/lightbox.js"></script>
+    <script type="text/javascript">
+      function SwapDivsWithClick(div1,div2)
+      {
+         d1 = document.getElementById(div1);
+         d2 = document.getElementById(div2);
+         if( d2.style.display == "none" )
+         {
+            d1.style.display = "none";
+            d2.style.display = "block";
+         }
+         else
+         {
+            d1.style.display = "block";
+            d2.style.display = "none";
+         }
+      }
+    </script>
+<!-- 
+Made with love by:
+              _                          
+ _ __ ___  __| |___ _ __   __ _  ___ ___ 
+| '__/ _ \/ _` / __| '_ \ / _` |/ __/ _ \
+| | |  __/ (_| \__ \ |_) | (_| | (_|  __/
+|_|  \___|\__,_|___/ .__/ \__,_|\___\___|
+                   |_|      redspace.com
+
+-->
+  </head>
+  <body>
+
+<!--initial header-->
+<div id="showme" style="display: block;">
+  <div class="row headerrow gofull">
+    <div class="large-12 columns">
+      <img src="img/gb-header-logo.png">   
+      <div class="row" style="text-align: center;">
+        <div class="large-6 small-centered columns">
+        <a href="javascript:SwapDivsWithClick('showme','hideme')" class="playbtn"></a>
+        <a href="http://store.steampowered.com/app/632240/Gunball/" class="steambtn" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--embed youtubeeeeeeee-->
+<div id="hideme" style="display: none;">
+  <div class="row headerrow gofull">
+    <div class="large-12 columns">
+      <div class="modulebg"> <!-- onclick="javascript:SwapDivsWithClick('hideme','showme')"> -->
+      <iframe src="https://www.youtube.com/embed/Hwd1SbzNOms" frameborder="0" class="youtubecontroller" allowfullscreen=""></iframe><br>
+      <a href="javascript:SwapDivsWithClick('hideme','showme')"><div class="closeupyoutube"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Close</div></a> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end header gunk -->
+
+<div class="contentrow gofull">
+
+<!--testimonials-->
+
+          <div class="row breathingroom testimonial-buffer">
+              <div class="medium-6 columns">
+                  <div class="testimonial-contain">
+                  <p class="testimonial-title"><b>Your job is simple:</b> get those balls through the rings in order to get the highest score possible. Oh...and one more thing - you’ve got to shoot to win! This ain’t basketball or dodgeball. This is Gunball, baby! You won’t score any points unless you shoot that ball through a ring. So grab a ball and pull that trigger!
+                  </p>
+
+                  <p class="testimonial-body">Gunball is easy to pick up and play, making it the perfect first-time game for players new to VR. However even seasoned VR pros will find Gunball is deep and intense, so players can immerse themselves in the experience and pull off insane trick shots on the way to racking up the highest scores in the world! Can you get to the top of the global leaderboard? Compete against friends and other Gunballers around the world to achieve top ranks on the Steam leaderboards!</p>
+                  </div>
+              </div>
+
+
+              <div class="medium-6 columns testimonial">
+                <div class="testimonial-contain">
+                <p>"A fun and addictive VR game for all ages."<br><span class="quotename">VR Games For</span></p>
+                </div>
+                <div class="testimonial-contain">
+                <p>“An innovative little title.”<br><span class="quotename">VR Focus</span></p>
+                </div>
+              </div>
+
+          </div>
+<!--screenshots-->
+          <div class="row breathingroom">
+                <div class="small-3 columns screenshots">
+                  <p><a href="screenshots/ss-1.jpg" data-lightbox="screenshots"><img src="screenshots/ss-1-thumb.jpg"></a></p>
+                  <p><a href="screenshots/ss-2.jpg" data-lightbox="screenshots"><img src="screenshots/ss-2-thumb.jpg"></a></p>
+                </div>
+                <div class="small-3 columns screenshots">
+                  <p><a href="screenshots/ss-3.jpg" data-lightbox="screenshots"><img src="screenshots/ss-3-thumb.jpg"></a></p>
+                  <p><a href="screenshots/ss-4.jpg" data-lightbox="screenshots"><img src="screenshots/ss-4-thumb.jpg"></a></p>
+                </div>
+                <div class="small-3 columns screenshots">
+                  <p><a href="screenshots/ss-5.jpg" data-lightbox="screenshots"><img src="screenshots/ss-5-thumb.jpg"></a></p>
+                  <p><a href="screenshots/ss-6.jpg" data-lightbox="screenshots"><img src="screenshots/ss-6-thumb.jpg"></a></p>
+                </div>
+                <div class="small-3 columns screenshots">
+                  <p><a href="screenshots/ss-7.jpg" data-lightbox="screenshots"><img src="screenshots/ss-7-thumb.jpg"></a></p>
+                  <p><a href="screenshots/ss-8.jpg" data-lightbox="screenshots"><img src="screenshots/ss-8-thumb.jpg"></a></p>
+                </div>
+          </div>
+<!--blog area-->
+          <div class="row breathingroom">
+            <div class="medium-3 columns">
+              <div class="lowerrow"><a href="https://www.gunballgame.com/blog" target="_blank"><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;&nbsp;Development Blog</a></div>
+              </div>
+              <div class="medium-3 columns">
+              <div class="lowerrow"><a href="https://www.gunballgame.com/press"><i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;&nbsp;Press Kit</a></div>
+              </div>
+              <div class="large-6 columns">
+
+                  <a href="https://twitter.com/gunballgame?lang=en" class="sociallinks twitterlink" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;Twitter</a>
+
+                  <a href="https://www.instagram.com/gunballgame/" class="sociallinks instagramlink" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;Instagram</a>
+
+                  <a href="https://www.facebook.com/gunballgame" class="sociallinks facebooklink" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a>
+
+              </div>
+
+
+              </div>
+
+
+ <!-- footer -->
+            <div class="gofull footerrow">
+ <!-- footer layout -->
+                <div class="row">
+                  
+                  <div class="small-8 columns">
+                    <div class="footeritem"><img src="img/logos-redspace.png"></div>
+                    <div class="footeritem" style="width: 70%;">
+                    Gunnball league, REDSpace and their respective logos are trademarks of REDSpace Inc. ©2017 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries. All other trademarks are property of their respective owners.<br><br>
+                    Gunball League © 2017 REDSpace inc. All rights reserved.
+                    </div>
+                  </div>
+                  <div class="small-4 columns">
+                    <img src="img/logos-steam.png" class="steamlogo">
+                  </div>
+                  
+                </div>
+ <!-- end footer layout -->
+              </div>
+            </div>
+  
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>

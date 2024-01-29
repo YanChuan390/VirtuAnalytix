@@ -1,0 +1,1637 @@
+<html class="js modal-open" lang="en" dir="ltr"><head>
+  <script type="text/javascript" async="" src="//cdn.shopify.com/proxy/387a16a2265a85d98f2ff6138cc9f9c6e964bbb985858c1e0c10221a9805c348/static.cdn.printful.com/static/js/external/shopify-product-customizer.js?v=0.28&amp;shop=zenithmmo.myshopify.com&amp;sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA"></script><script type="text/javascript" async="" src="https://cdn.shopify.com/shopifycloud/privacy-banner/storefront-banner.js?shop=zenithmmo.myshopify.com"></script><script type="text/javascript" async="" src="https://shopifyorderlimits.s3.amazonaws.com/limits/load.js?shop=zenithmmo.myshopify.com"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-945MGEL3M5&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/7ee36b0e/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="https://www.youtube.com/iframe_api" id="youtube-sdk"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//zenithmmo.com/cdn/s/trekkie.storefront.260e6e85595ac79af303e85f742d0e3b752c77d7.min.js"></script><script type="application/vnd.locksmith+json" data-locksmith="">{"version":"v2254","locked":false,"initialized":true,"scope":"index","access_granted":true,"access_denied":false,"requires_customer":false,"manual_lock":false,"remote_lock":false,"has_timeout":false,"remote_rendered":null,"hide_resource":false,"hide_links_to_resource":false,"transparent":true,"locks":{"all":[],"opened":[]},"keys":[],"keys_signature":"3fedd4e8c3fb6bb3af842ee813ea69ca137748f00a7c2c5357108c7882e0085a","state":{"template":"index","theme":120493179065,"product":null,"collection":null,"page":null,"blog":null,"article":null,"app":null},"now":1694327874,"path":"\/","locale_root_url":"\/","canonical_url":"https:\/\/zenithmmo.com\/","customer_id":null,"customer_id_signature":"3fedd4e8c3fb6bb3af842ee813ea69ca137748f00a7c2c5357108c7882e0085a","cart":null}</script><script data-locksmith="">!function(){var require=undefined,reqwest=function(){function succeed(e){var t=protocolRe.exec(e.url);return t=t&&t[1]||context.location.protocol,httpsRe.test(t)?twoHundo.test(e.request.status):!!e.request.response}function handleReadyState(e,t,n){return function(){return e._aborted?n(e.request):e._timedOut?n(e.request,"Request is aborted: timeout"):void(e.request&&4==e.request[readyState]&&(e.request.onreadystatechange=noop,succeed(e)?t(e.request):n(e.request)))}}function setHeaders(e,t){var n,s=t.headers||{};s.Accept=s.Accept||defaultHeaders.accept[t.type]||defaultHeaders.accept["*"];var r="undefined"!=typeof FormData&&t.data instanceof FormData;for(n in!t.crossOrigin&&!s[requestedWith]&&(s[requestedWith]=defaultHeaders.requestedWith),!s[contentType]&&!r&&(s[contentType]=t.contentType||defaultHeaders.contentType),s)s.hasOwnProperty(n)&&"setRequestHeader"in e&&e.setRequestHeader(n,s[n])}function setCredentials(e,t){"undefined"!=typeof t.withCredentials&&"undefined"!=typeof e.withCredentials&&(e.withCredentials=!!t.withCredentials)}function generalCallback(e){lastValue=e}function urlappend(e,t){return e+(/[?]/.test(e)?"&":"?")+t}function handleJsonp(e,t,n,s){var r=uniqid++,a=e.jsonpCallback||"callback",o=e.jsonpCallbackName||reqwest.getcallbackPrefix(r),i=new RegExp("((^|[?]|&)"+a+")=([^&]+)"),l=s.match(i),c=doc.createElement("script"),u=0,d=-1!==navigator.userAgent.indexOf("MSIE 10.0");return l?"?"===l[3]?s=s.replace(i,"$1="+o):o=l[3]:s=urlappend(s,a+"="+o),context[o]=generalCallback,c.type="text/javascript",c.src=s,c.async=!0,"undefined"!=typeof c.onreadystatechange&&!d&&(c.htmlFor=c.id="_reqwest_"+r),c.onload=c.onreadystatechange=function(){if(c[readyState]&&"complete"!==c[readyState]&&"loaded"!==c[readyState]||u)return!1;c.onload=c.onreadystatechange=null,c.onclick&&c.onclick(),t(lastValue),lastValue=undefined,head.removeChild(c),u=1},head.appendChild(c),{abort:function(){c.onload=c.onreadystatechange=null,n({},"Request is aborted: timeout",{}),lastValue=undefined,head.removeChild(c),u=1}}}function getRequest(e,t){var n,s=this.o,r=(s.method||"GET").toUpperCase(),a="string"==typeof s?s:s.url,o=!1!==s.processData&&s.data&&"string"!=typeof s.data?reqwest.toQueryString(s.data):s.data||null,i=!1;return("jsonp"==s.type||"GET"==r)&&o&&(a=urlappend(a,o),o=null),"jsonp"==s.type?handleJsonp(s,e,t,a):((n=s.xhr&&s.xhr(s)||xhr(s)).open(r,a,!1!==s.async),setHeaders(n,s),setCredentials(n,s),context[xDomainRequest]&&n instanceof context[xDomainRequest]?(n.onload=e,n.onerror=t,n.onprogress=function(){},i=!0):n.onreadystatechange=handleReadyState(this,e,t),s.before&&s.before(n),i?setTimeout(function(){n.send(o)},200):n.send(o),n)}function Reqwest(e,t){this.o=e,this.fn=t,init.apply(this,arguments)}function setType(e){return null===e?undefined:e.match("json")?"json":e.match("javascript")?"js":e.match("text")?"html":e.match("xml")?"xml":void 0}function init(o,fn){function complete(e){for(o.timeout&&clearTimeout(self.timeout),self.timeout=null;0<self._completeHandlers.length;)self._completeHandlers.shift()(e)}function success(resp){var type=o.type||resp&&setType(resp.getResponseHeader("Content-Type"));resp="jsonp"!==type?self.request:resp;var filteredResponse=globalSetupOptions.dataFilter(resp.responseText,type),r=filteredResponse;try{resp.responseText=r}catch(e){}if(r)switch(type){case"json":try{resp=context.JSON?context.JSON.parse(r):eval("("+r+")")}catch(err){return error(resp,"Could not parse JSON in response",err)}break;case"js":resp=eval(r);break;case"html":resp=r;break;case"xml":resp=resp.responseXML&&resp.responseXML.parseError&&resp.responseXML.parseError.errorCode&&resp.responseXML.parseError.reason?null:resp.responseXML}for(self._responseArgs.resp=resp,self._fulfilled=!0,fn(resp),self._successHandler(resp);0<self._fulfillmentHandlers.length;)resp=self._fulfillmentHandlers.shift()(resp);complete(resp)}function timedOut(){self._timedOut=!0,self.request.abort()}function error(e,t,n){for(e=self.request,self._responseArgs.resp=e,self._responseArgs.msg=t,self._responseArgs.t=n,self._erred=!0;0<self._errorHandlers.length;)self._errorHandlers.shift()(e,t,n);complete(e)}this.url="string"==typeof o?o:o.url,this.timeout=null,this._fulfilled=!1,this._successHandler=function(){},this._fulfillmentHandlers=[],this._errorHandlers=[],this._completeHandlers=[],this._erred=!1,this._responseArgs={};var self=this;fn=fn||function(){},o.timeout&&(this.timeout=setTimeout(function(){timedOut()},o.timeout)),o.success&&(this._successHandler=function(){o.success.apply(o,arguments)}),o.error&&this._errorHandlers.push(function(){o.error.apply(o,arguments)}),o.complete&&this._completeHandlers.push(function(){o.complete.apply(o,arguments)}),this.request=getRequest.call(this,success,error)}function reqwest(e,t){return new Reqwest(e,t)}function normalize(e){return e?e.replace(/\r?\n/g,"\r\n"):""}function serial(e,t){var n,s,r,a,o=e.name,i=e.tagName.toLowerCase(),l=function(e){e&&!e.disabled&&t(o,normalize(e.attributes.value&&e.attributes.value.specified?e.value:e.text))};if(!e.disabled&&o)switch(i){case"input":/reset|button|image|file/i.test(e.type)||(n=/checkbox/i.test(e.type),s=/radio/i.test(e.type),r=e.value,(!n&&!s||e.checked)&&t(o,normalize(n&&""===r?"on":r)));break;case"textarea":t(o,normalize(e.value));break;case"select":if("select-one"===e.type.toLowerCase())l(0<=e.selectedIndex?e.options[e.selectedIndex]:null);else for(a=0;e.length&&a<e.length;a++)e.options[a].selected&&l(e.options[a])}}function eachFormElement(){var e,t,a=this,n=function(e,t){var n,s,r;for(n=0;n<t.length;n++)for(r=e[byTag](t[n]),s=0;s<r.length;s++)serial(r[s],a)};for(t=0;t<arguments.length;t++)e=arguments[t],/input|select|textarea/i.test(e.tagName)&&serial(e,a),n(e,["input","select","textarea"])}function serializeQueryString(){return reqwest.toQueryString(reqwest.serializeArray.apply(null,arguments))}function serializeHash(){var n={};return eachFormElement.apply(function(e,t){e in n?(n[e]&&!isArray(n[e])&&(n[e]=[n[e]]),n[e].push(t)):n[e]=t},arguments),n}function buildParams(e,t,n,s){var r,a,o,i=/\[\]$/;if(isArray(t))for(a=0;t&&a<t.length;a++)o=t[a],n||i.test(e)?s(e,o):buildParams(e+"["+("object"==typeof o?a:"")+"]",o,n,s);else if(t&&"[object Object]"===t.toString())for(r in t)buildParams(e+"["+r+"]",t[r],n,s);else s(e,t)}var context=this,XHR2;if("window"in context)var doc=document,byTag="getElementsByTagName",head=doc[byTag]("head")[0];else try{XHR2=require("xhr2")}catch(ex){throw new Error("Peer dependency `xhr2` required! Please npm install xhr2")}var httpsRe=/^http/,protocolRe=/(^\w+):\/\//,twoHundo=/^(20\d|1223)$/,readyState="readyState",contentType="Content-Type",requestedWith="X-Requested-With",uniqid=0,callbackPrefix="reqwest_"+ +new Date,lastValue,xmlHttpRequest="XMLHttpRequest",xDomainRequest="XDomainRequest",noop=function(){},isArray="function"==typeof Array.isArray?Array.isArray:function(e){return e instanceof Array},defaultHeaders={contentType:"application/x-www-form-urlencoded",requestedWith:xmlHttpRequest,accept:{"*":"text/javascript, text/html, application/xml, text/xml, */*",xml:"application/xml, text/xml",html:"text/html",text:"text/plain",json:"application/json, text/javascript",js:"application/javascript, text/javascript"}},xhr=function(e){if(!0!==e.crossOrigin)return context[xmlHttpRequest]?new XMLHttpRequest:XHR2?new XHR2:new ActiveXObject("Microsoft.XMLHTTP");var t=context[xmlHttpRequest]?new XMLHttpRequest:null;if(t&&"withCredentials"in t)return t;if(context[xDomainRequest])return new XDomainRequest;throw new Error("Browser does not support cross-origin requests")},globalSetupOptions={dataFilter:function(e){return e}};return Reqwest.prototype={abort:function(){this._aborted=!0,this.request.abort()},retry:function(){init.call(this,this.o,this.fn)},then:function(e,t){return e=e||function(){},t=t||function(){},this._fulfilled?this._responseArgs.resp=e(this._responseArgs.resp):this._erred?t(this._responseArgs.resp,this._responseArgs.msg,this._responseArgs.t):(this._fulfillmentHandlers.push(e),this._errorHandlers.push(t)),this},always:function(e){return this._fulfilled||this._erred?e(this._responseArgs.resp):this._completeHandlers.push(e),this},fail:function(e){return this._erred?e(this._responseArgs.resp,this._responseArgs.msg,this._responseArgs.t):this._errorHandlers.push(e),this},"catch":function(e){return this.fail(e)}},reqwest.serializeArray=function(){var n=[];return eachFormElement.apply(function(e,t){n.push({name:e,value:t})},arguments),n},reqwest.serialize=function(){if(0===arguments.length)return"";var e,t=Array.prototype.slice.call(arguments,0);return(e=t.pop())&&e.nodeType&&t.push(e)&&(e=null),e&&(e=e.type),("map"==e?serializeHash:"array"==e?reqwest.serializeArray:serializeQueryString).apply(null,t)},reqwest.toQueryString=function(e,t){var n,s,r=t||!1,a=[],o=encodeURIComponent,i=function(e,t){t="function"==typeof t?t():null==t?"":t,a[a.length]=o(e)+"="+o(t)};if(isArray(e))for(s=0;e&&s<e.length;s++)i(e[s].name,e[s].value);else for(n in e)e.hasOwnProperty(n)&&buildParams(n,e[n],r,i);return a.join("&").replace(/%20/g,"+")},reqwest.getcallbackPrefix=function(){return callbackPrefix},reqwest.compat=function(e,t){return e&&(e.type&&(e.method=e.type)&&delete e.type,e.dataType&&(e.type=e.dataType),e.jsonpCallback&&(e.jsonpCallbackName=e.jsonpCallback)&&delete e.jsonpCallback,e.jsonp&&(e.jsonpCallback=e.jsonp)),new Reqwest(e,t)},reqwest.ajaxSetup=function(e){for(var t in e=e||{})globalSetupOptions[t]=e[t]},reqwest}();
+/*!
+  * Reqwest! A general purpose XHR connection manager
+  * license MIT (c) Dustin Diaz 2015
+  * https://github.com/ded/reqwest
+  */!function(){var o=window.Locksmith={},e=document.querySelector('script[type="application/vnd.locksmith+json"]'),n=e&&e.innerHTML;if(o.state={},o.util={},o.loading=!1,n)try{o.state=JSON.parse(n)}catch(u){}if(document.addEventListener&&document.querySelector){var s,r,a,t=[76,79,67,75,83,77,73,84,72,49,49],i=function(){r=t.slice(0)},l="style",c=function(e){e&&27!==e.keyCode&&"click"!==e.type||(document.removeEventListener("keydown",c),document.removeEventListener("click",c),s&&document.body.removeChild(s),s=null)};i(),document.addEventListener("keyup",function(e){if(e.keyCode===r[0]){if(clearTimeout(a),r.shift(),0<r.length)return void(a=setTimeout(i,1e3));i(),c(),(s=document.createElement("div"))[l].width="50%",s[l].maxWidth="1000px",s[l].height="85%",s[l].border="1px rgba(0, 0, 0, 0.2) solid",s[l].background="rgba(255, 255, 255, 0.99)",s[l].borderRadius="4px",s[l].position="fixed",s[l].top="50%",s[l].left="50%",s[l].transform="translateY(-50%) translateX(-50%)",s[l].boxShadow="0 2px 5px rgba(0, 0, 0, 0.3), 0 0 100vh 100vw rgba(0, 0, 0, 0.5)",s[l].zIndex="2147483645";var t=document.createElement("textarea");t.value=JSON.stringify(JSON.parse(n),null,2),t[l].border="none",t[l].display="block",t[l].boxSizing="border-box",t[l].width="100%",t[l].height="100%",t[l].background="transparent",t[l].padding="22px",t[l].fontFamily="monospace",t[l].fontSize="14px",t[l].color="#333",t[l].resize="none",t[l].outline="none",t.readOnly=!0,s.appendChild(t),document.body.appendChild(s),t.addEventListener("click",function(e){e.stopImmediatePropagation()}),t.select(),document.addEventListener("keydown",c),document.addEventListener("click",c)}})}o.isEmbedded=-1!==window.location.search.indexOf("_ab=0&_fd=0&_sc=1"),o.path=o.state.path||window.location.pathname,o.basePath=o.state.locale_root_url.concat("/apps/locksmith").replace(/^\/\//,"/"),o.reloading=!1,o.util.console=window.console||{log:function(){},error:function(){}},o.util.makeUrl=function(e,t){var n,s=o.basePath+e,r=[],a=o.cache();for(n in a)r.push(n+"="+encodeURIComponent(a[n]));for(n in t)r.push(n+"="+encodeURIComponent(t[n]));return o.state.customer_id&&(r.push("customer_id="+encodeURIComponent(o.state.customer_id)),r.push("customer_id_signature="+encodeURIComponent(o.state.customer_id_signature))),s+=(-1===s.indexOf("?")?"?":"&")+r.join("&")},o._initializeCallbacks=[],o.on=function(e,t){if("initialize"!==e)throw'Locksmith.on() currently only supports the "initialize" event';o._initializeCallbacks.push(t)},o.initializeSession=function(e){if(!o.isEmbedded){var t=!1,n=!0,s=!0;(e=e||{}).silent&&(s=n=!(t=!0)),o.ping({silent:t,spinner:n,reload:s,callback:function(){o._initializeCallbacks.forEach(function(e){e()})}})}},o.cache=function(e){var t={};try{var n=function r(e){return(document.cookie.match("(^|; )"+e+"=([^;]*)")||0)[2]};t=JSON.parse(decodeURIComponent(n("locksmith-params")||"{}"))}catch(u){}if(e){for(var s in e)t[s]=e[s];document.cookie="locksmith-params=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/",document.cookie="locksmith-params="+encodeURIComponent(JSON.stringify(t))+"; path=/"}return t},o.cache.cart=o.state.cart,o.cache.cartLastSaved=null,o.params=o.cache(),o.util.reload=function(){o.reloading=!0;try{window.location.href=window.location.href.replace(/#.*/,"")}catch(u){o.util.console.error("Preferred reload method failed",u),window.location.reload()}},o.cache.saveCart=function(e){if(!o.cache.cart||o.cache.cart===o.cache.cartLastSaved)return e?e():null;var t=o.cache.cartLastSaved;o.cache.cartLastSaved=o.cache.cart,reqwest({url:"/cart/update.json",method:"post",type:"json",data:{attributes:{locksmith:o.cache.cart}},complete:e,error:function(e){if(o.cache.cartLastSaved=t,!o.reloading)throw e}})},o.util.spinnerHTML='<style>body{background:#FFF}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}#loading{display:flex;width:100%;height:50vh;color:#777;align-items:center;justify-content:center}#loading .spinner{display:block;animation:spin 600ms linear infinite;position:relative;width:50px;height:50px}#loading .spinner-ring{stroke:currentColor;stroke-dasharray:100%;stroke-width:2px;stroke-linecap:round;fill:none}</style><div id="loading"><div class="spinner"><svg width="100%" height="100%"><svg preserveAspectRatio="xMinYMin"><circle class="spinner-ring" cx="50%" cy="50%" r="45%"></circle></svg></svg></div></div>',o.util.clobberBody=function(e){document.body.innerHTML=e},o.util.clobberDocument=function(e){e.responseText&&(e=e.responseText),document.documentElement&&document.removeChild(document.documentElement);var t=document.open("text/html","replace");t.writeln(e),t.close(),setTimeout(function(){var e=t.querySelector("[autofocus]");e&&e.focus()},100)},o.util.serializeForm=function(e){if(e&&"FORM"===e.nodeName){var t,n,s={};for(t=e.elements.length-1;0<=t;t-=1)if(""!==e.elements[t].name)switch(e.elements[t].nodeName){case"INPUT":switch(e.elements[t].type){default:case"text":case"hidden":case"password":case"button":case"reset":case"submit":s[e.elements[t].name]=e.elements[t].value;break;case"checkbox":case"radio":e.elements[t].checked&&(s[e.elements[t].name]=e.elements[t].value);break;case"file":}break;case"TEXTAREA":s[e.elements[t].name]=e.elements[t].value;break;case"SELECT":switch(e.elements[t].type){case"select-one":s[e.elements[t].name]=e.elements[t].value;break;case"select-multiple":for(n=e.elements[t].options.length-1;0<=n;n-=1)e.elements[t].options[n].selected&&(s[e.elements[t].name]=e.elements[t].options[n].value)}break;case"BUTTON":switch(e.elements[t].type){case"reset":case"submit":case"button":s[e.elements[t].name]=e.elements[t].value}}return s}},o.util.on=function(e,a,o,t){t=t||document;var i="locksmith-"+e+a,n=function(e){var t=e.target,n=e.target.parentElement,s=t.className.baseVal||t.className||"",r=n.className.baseVal||n.className||"";("string"==typeof s&&-1!==s.split(/\s+/).indexOf(a)||"string"==typeof r&&-1!==r.split(/\s+/).indexOf(a))&&!e[i]&&(e[i]=!0,o(e))};t.attachEvent?t.attachEvent(e,n):t.addEventListener(e,n,!1)},o.util.enableActions=function(e){o.util.on("click","locksmith-action",function(e){e.preventDefault();var t=e.target;t.dataset.confirmWith&&!confirm(t.dataset.confirmWith)||(t.disabled=!0,t.innerText=t.dataset.disableWith,o.post("/action",t.dataset.locksmithParams,{spinner:!1,type:"text",success:function(e){(e=JSON.parse(e.responseText)).message&&alert(e.message),o.util.reload()}}))},e)},o.util.inject=function(e,t){var n=["data","locksmith","append"];if(-1!==t.indexOf(n.join("-"))){var s=document.createElement("div");s.innerHTML=t,e.appendChild(s)}else e.innerHTML=t;var r,a,o=e.querySelectorAll("script");for(a=0;a<o.length;++a){r=o[a];var i=document.createElement("script");if(r.type&&(i.type=r.type),r.src)i.src=r.src;else{var l=document.createTextNode(r.innerHTML);i.appendChild(l)}e.appendChild(i)}var c=e.querySelector("[autofocus]");c&&c.focus()},o.post=function(e,t,n){!1!==(n=n||{}).spinner&&o.util.clobberBody(o.util.spinnerHTML);var s={};n.container===document?(s.layout=1,n.success=function(e){document.getElementById(n.container);o.util.clobberDocument(e)}):n.container&&(s.layout=0,n.success=function(e){var t=document.getElementById(n.container);o.util.inject(t,e),t.id===t.firstChild.id&&t.parentElement.replaceChild(t.firstChild,t)}),o.loading=!0;var r=o.util.makeUrl(e,s);reqwest({url:r,method:"post",type:n.type||"html",data:t,complete:function(){o.loading=!1},error:function(e){if(!o.reloading)if("dashboard.weglot.com"!==window.location.host){if(!n.silent)throw alert("Something went wrong! Please refresh and try again."),e;console.error(e)}else console.error(e)},success:n.success||o.util.clobberDocument})},o.postResource=function(e,t){e.path=o.path,e.search=window.location.search,e.state=o.state,e.passcode&&(e.passcode=e.passcode.trim()),e.email&&(e.email=e.email.trim()),e.state.cart=o.cache.cart,e.locksmith_json=o.jsonTag,e.locksmith_json_signature=o.jsonTagSignature,o.post("/resource",e,t)},o.ping=function(e){if(!o.isEmbedded){e=e||{};var t=function(){e.reload?o.util.reload():"function"==typeof e.callback&&e.callback()};o.post("/ping",{path:o.path,search:window.location.search,state:o.state},{spinner:!!e.spinner,silent:"undefined"==typeof e.silent||e.silent,type:"text",success:function(e){(e=JSON.parse(e.responseText)).messages&&0<e.messages.length&&o.showMessages(e.messages),e.cart&&o.cache.cart!==e.cart?(o.cache.cart=e.cart,o.cache.saveCart(function(){t(),e.cart&&e.cart.match(/^.+:/)&&o.util.reload()})):t()}})}},o.timeoutMonitor=function(){var e=o.cache.cart;o.ping({callback:function(){e!==o.cache.cart||setTimeout(function(){o.timeoutMonitor()},6e4)}})},o.showMessages=function(e){var t=document.createElement("div");t.style.position="fixed",t.style.left=0,t.style.right=0,t.style.bottom="-50px",t.style.opacity=0,t.style.background="#191919",t.style.color="#ddd",t.style.transition="bottom 0.2s, opacity 0.2s",t.style.zIndex=999999,t.innerHTML="        <style>          .locksmith-ab .locksmith-b { display: none; }          .locksmith-ab.toggled .locksmith-b { display: flex; }          .locksmith-ab.toggled .locksmith-a { display: none; }          .locksmith-flex { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 10px 20px; }          .locksmith-message + .locksmith-message { border-top: 1px #555 solid; }          .locksmith-message a { color: inherit; font-weight: bold; }          .locksmith-message a:hover { color: inherit; opacity: 0.8; }          a.locksmith-ab-toggle { font-weight: inherit; text-decoration: underline; }          .locksmith-text { flex-grow: 1; }          .locksmith-cta { flex-grow: 0; text-align: right; }          .locksmith-cta button { transform: scale(0.8); transform-origin: left; }          .locksmith-cta > * { display: block; }          .locksmith-cta > * + * { margin-top: 10px; }          .locksmith-message a.locksmith-close { flex-grow: 0; text-decoration: none; margin-left: 15px; font-size: 30px; font-family: monospace; display: block; padding: 2px 10px; }                    @media screen and (max-width: 600px) {            .locksmith-wide-only { display: none !important; }            .locksmith-flex { padding: 0 15px; }            .locksmith-flex > * { margin-top: 5px; margin-bottom: 5px; }            .locksmith-cta { text-align: left; }          }                    @media screen and (min-width: 601px) {            .locksmith-narrow-only { display: none !important; }          }        </style>      "+e.map(function(e){return'<div class="locksmith-message">'+e+"</div>"}).join(""),document.body.appendChild(t),document.body.style.position="relative",document.body.parentElement.style.paddingBottom=t.offsetHeight+"px",setTimeout(function(){t.style.bottom=0,t.style.opacity=1},50),o.util.on("click","locksmith-ab-toggle",function(e){e.preventDefault();for(var t=e.target.parentElement;-1===t.className.split(" ").indexOf("locksmith-ab");)t=t.parentElement;-1!==t.className.split(" ").indexOf("toggled")?t.className=t.className.replace("toggled",""):t.className=t.className+" toggled"}),o.util.enableActions(t)}}()}();</script>
+      <script data-locksmith="">Locksmith.cache.cart=null</script>
+
+  <script data-locksmith="">Locksmith.jsonTag="\u003cscript type=\"application\/vnd.locksmith+json\" data-locksmith\u003e{\"version\":\"v2254\",\"locked\":false,\"initialized\":true,\"scope\":\"index\",\"access_granted\":true,\"access_denied\":false,\"requires_customer\":false,\"manual_lock\":false,\"remote_lock\":false,\"has_timeout\":false,\"remote_rendered\":null,\"hide_resource\":false,\"hide_links_to_resource\":false,\"transparent\":true,\"locks\":{\"all\":[],\"opened\":[]},\"keys\":[],\"keys_signature\":\"3fedd4e8c3fb6bb3af842ee813ea69ca137748f00a7c2c5357108c7882e0085a\",\"state\":{\"template\":\"index\",\"theme\":120493179065,\"product\":null,\"collection\":null,\"page\":null,\"blog\":null,\"article\":null,\"app\":null},\"now\":1694327874,\"path\":\"\\\/\",\"locale_root_url\":\"\\\/\",\"canonical_url\":\"https:\\\/\\\/zenithmmo.com\\\/\",\"customer_id\":null,\"customer_id_signature\":\"3fedd4e8c3fb6bb3af842ee813ea69ca137748f00a7c2c5357108c7882e0085a\",\"cart\":null}\u003c\/script\u003e";Locksmith.jsonTagSignature="9065caf1a2f76d2fa262c09577e391426406f8c522133e1dc99053bce495a1c3"</script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#4ebf7d">
+  <link rel="canonical" href="https://zenithmmo.com/">
+  <link rel="preconnect" href="https://cdn.shopify.com">
+  <link rel="preconnect" href="https://fonts.shopifycdn.com">
+  <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+  <link rel="dns-prefetch" href="https://maps.googleapis.com">
+  <link rel="dns-prefetch" href="https://maps.gstatic.com">
+  <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=mwxzsh25lvmszoj8a71yxg" async="true"></script><link rel="shortcut icon" href="//zenithmmo.com/cdn/shop/files/Favicon_3_32x32.jpg?v=1614743174" type="image/png"><title>Zenith: The Last City - Anime VR MMORPG
+</title>
+<meta name="description" content="A thrilling anime and JRPG inspired VR MMO available on Oculus Quest, Quest 2, Rift, Playstation VR, and SteamVR.">
+<meta property="og:site_name" content="Zenith: The Last City">
+  <meta property="og:url" content="https://zenithmmo.com/"><meta property="og:title" content="Zenith: The Last City - Anime VR MMORPG">
+<meta property="og:type" content="website">
+<meta property="og:description" content="A thrilling anime and JRPG inspired VR MMO available on Oculus Quest, Quest 2, Rift, Playstation VR, and SteamVR.">
+
+  
+  <meta name="twitter:site" content="@ZenithMMO">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Zenith: The Last City - Anime VR MMORPG">
+<meta name="twitter:description" content="A thrilling anime and JRPG inspired VR MMO available on Oculus Quest, Quest 2, Rift, Playstation VR, and SteamVR.">
+<script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+    window.theme = window.theme || {};
+    theme.routes = {
+      home: "/",
+      cart: "/cart",
+      cartAdd: "/cart/add.js",
+      cartChange: "/cart/change"
+    };
+    theme.strings = {
+      soldOut: "Sold Out",
+      unavailable: "Unavailable",
+      stockLabel: "[count] in stock",
+      willNotShipUntil: "Will not ship until [date]",
+      willBeInStockAfter: "Will be in stock after [date]",
+      waitingForStock: "Inventory on the way",
+      cartSavings: "You're saving [savings]",
+      cartEmpty: "Your cart is currently empty.",
+      cartTermsConfirmation: "You must agree with the terms and conditions of sales to check out"
+    };
+    theme.settings = {
+      dynamicVariantsEnable: true,
+      dynamicVariantType: "button",
+      cartType: "drawer",
+      moneyFormat: "${{amount}}",
+      predictiveSearch: false,
+      predictiveSearchType: "product,article,page,collection",
+      inventoryThreshold: 4,
+      quickView: false,
+      themeName: 'Motion',
+      themeVersion: "6.2.2"
+    };
+  </script>
+
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/53591081145/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="91e5a54b5ef61ff994b3012e33046ebd">
+<meta id="in-context-paypal-metadata" data-shop-id="53591081145" data-venmo-supported="true" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":53591081145,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/53591081145","merchantName":"Zenith: The Last City","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover","elo","jcb"],"total":{"type":"pending","label":"Zenith: The Last City","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"91e5a54b5ef61ff994b3012e33046ebd","betas":["rich-media-storefront-analytics"],"domain":"zenithmmo.com","predictiveSearch":true,"shopId":53591081145,"smart_payment_buttons_url":"https:\/\/zenithmmo.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/zenithmmo.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en","optimusEnabled":false,"optimusHidden":false,"betterDynamicCheckoutRecommendation":false}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "zenithmmo.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.country = "US";
+Shopify.theme = {"name":"Zenith MMO v1.1a (HDR - Trust Badges - 030421)","id":120493179065,"theme_store_id":847,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "zenithmmo.com/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>window.ShopifyPay = window.ShopifyPay || {};
+window.ShopifyPay.apiHost = "shop.app\/pay";</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"pay-button":["modules/client.pay-button_b998d816.en.esm.js","modules/chunk.common_80184483.esm.js"],"init-abg-demo":["modules/client.init-abg-demo_b0e8c60a.en.esm.js","modules/chunk.common_80184483.esm.js"],"init-shop-email-lookup-coordinator":["modules/client.init-shop-email-lookup-coordinator_fd737baa.en.esm.js","modules/chunk.common_80184483.esm.js"],"installments-prequal":["modules/client.installments-prequal_e6ae01f0.en.esm.js","modules/chunk.common_80184483.esm.js"],"init-customer-accounts":["modules/client.init-customer-accounts_13fcbd23.en.esm.js","modules/chunk.common_80184483.esm.js"],"init-shop-for-new-customer-accounts":["modules/client.init-shop-for-new-customer-accounts_384b28fe.en.esm.js","modules/chunk.common_80184483.esm.js"],"init-customer-accounts-sign-up":["modules/client.init-customer-accounts-sign-up_f6db8176.en.esm.js","modules/chunk.common_80184483.esm.js"],"login-button":["modules/client.login-button_e6dae067.en.esm.js","modules/chunk.common_80184483.esm.js"],"payment-terms":["modules/client.payment-terms_a2bd40d7.en.esm.js","modules/chunk.common_80184483.esm.js"],"discount-app":["modules/client.discount-app_4ea63d76.en.esm.js","modules/chunk.common_80184483.esm.js"]};
+</script>
+<script>(function() {
+  function asyncLoad() {
+    var urls = ["https:\/\/shopifyorderlimits.s3.amazonaws.com\/limits\/load.js?shop=zenithmmo.myshopify.com","https:\/\/cdn.shopify.com\/shopifycloud\/privacy-banner\/storefront-banner.js?shop=zenithmmo.myshopify.com","\/\/cdn.shopify.com\/proxy\/387a16a2265a85d98f2ff6138cc9f9c6e964bbb985858c1e0c10221a9805c348\/static.cdn.printful.com\/static\/js\/external\/shopify-product-customizer.js?v=0.28\u0026shop=zenithmmo.myshopify.com\u0026sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":53591081145,"offset":-14400,"reqid":"20812c1a-ebf7-4a2c-af2f-430733ff14c2","pageurl":"zenithmmo.com\/","u":"80225e2a19ec","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
+<script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//zenithmmo.com/cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" defer="defer" src="//zenithmmo.com/cdn/shopifycloud/shopify/assets/shopify_pay/storefront-c31d2fa4962d2ef90b673e945ee33f4f87302b97d0882cd8e83a629b84b30dab.js?v=20220906"></script>
+<script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="//zenithmmo.com/cdn/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 240px;
+  }
+}
+</style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+  <script src="//zenithmmo.com/cdn/shop/t/6/assets/vendor-scripts-v10.js" defer="defer"></script><script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="//zenithmmo.com/cdn/shop/t/6/assets/theme.min.js?v=39937041927084244741638588510" defer="defer"></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"><style data-shopify="">@font-face {
+  font-family: "ITC Avant Garde Gothic";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//zenithmmo.com/cdn/fonts/itc_avant_garde_gothic/itcavantgardegothic_n7.e4cdcda7001c6328cfe571734c25261390a886d4.woff2?h1=emVuaXRobW1vLmNvbQ&h2=emVuaXRobW1vLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=681e5e6ed8df167412a5315e6980507bd37c2ad7b46a1b492c3e631ce1e961d7") format("woff2"),
+       url("//zenithmmo.com/cdn/fonts/itc_avant_garde_gothic/itcavantgardegothic_n7.92961a6809350e21152cba06e9fa88f81a23d481.woff?h1=emVuaXRobW1vLmNvbQ&h2=emVuaXRobW1vLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=e4e75365c7d3ae1d70accaaa094aa7a0344bd0c88d575cdf773567efbd5c887d") format("woff");
+}
+
+  @font-face {
+  font-family: Futura;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//zenithmmo.com/cdn/fonts/futura/futura_n4.df36ce3d9db534a4d7947f4aa825495ed740e410.woff2?h1=emVuaXRobW1vLmNvbQ&h2=emVuaXRobW1vLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=dd94666806a159bc8757b8260ef38ee128485a3194d40e85afd2d5ee8165007a") format("woff2"),
+       url("//zenithmmo.com/cdn/fonts/futura/futura_n4.6bce24beb4ba1ff4ddeb20f7cd6e2fa513a3d6ec.woff?h1=emVuaXRobW1vLmNvbQ&h2=emVuaXRobW1vLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=5bc9cdd9a14946ea1eb9f5f8084b6a36969c5336804b0114683fd44eb5188678") format("woff");
+}
+
+
+  @font-face {
+  font-family: Futura;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("//zenithmmo.com/cdn/fonts/futura/futura_n6.bbe2e25d5b96d13ff36b242171a3d07cf5a60170.woff2?h1=emVuaXRobW1vLmNvbQ&h2=emVuaXRobW1vLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=ccdcf09e11ff03f0fb0d9a45a59a0228f757d9ff8c7be8e669847dfb8ccda8df") format("woff2"),
+       url("//zenithmmo.com/cdn/fonts/futura/futura_n6.66fa8f5c3c4b2c7c04809ecefe751450fa59d995.woff?h1=emVuaXRobW1vLmNvbQ&h2=emVuaXRobW1vLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=8b9b1462e4a5c9aaf7731dfc3731c3f0e9c8e2ce0bebcb48b4bcc6b98578a4c1") format("woff");
+}
+
+  @font-face {
+  font-family: Futura;
+  font-weight: 400;
+  font-style: oblique;
+  font-display: swap;
+  src: url("//zenithmmo.com/cdn/fonts/futura/futura_o4.9747e2e6ed2f11b894984527c927b42234e48815.woff2?h1=emVuaXRobW1vLmNvbQ&h2=emVuaXRobW1vLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=f86fa80abcd24dddaa4e5faf2932c0408974fa3f19fdcba9e43c38291a8a7b7d") format("woff2"),
+       url("//zenithmmo.com/cdn/fonts/futura/futura_o4.d5edc6b1d9a050bbe0beb9093d73b883bf18c6c1.woff?h1=emVuaXRobW1vLmNvbQ&h2=emVuaXRobW1vLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=18d76ff90a195b714464a61b37df359030e4f9bea4a22f666e1876546465e33a") format("woff");
+}
+
+  @font-face {
+  font-family: Futura;
+  font-weight: 600;
+  font-style: oblique;
+  font-display: swap;
+  src: url("//zenithmmo.com/cdn/fonts/futura/futura_o6.2978dbd38bd9b3e8b72ee3299cd940da2900eb72.woff2?h1=emVuaXRobW1vLmNvbQ&h2=emVuaXRobW1vLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=3718b2b75a3b71ba3363c866865fe16ea8e0129c026bb7264aa9ca0bc397e4fa") format("woff2"),
+       url("//zenithmmo.com/cdn/fonts/futura/futura_o6.bbc5bc6e7a675b3182e4866da9f9643bb3821261.woff?h1=emVuaXRobW1vLmNvbQ&h2=emVuaXRobW1vLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=1bed95ff446defb3bd7378b335008f66a6917d420dfe878f7aca2617a421e316") format("woff");
+}
+
+</style><link href="//zenithmmo.com/cdn/shop/t/6/assets/theme.css?v=56993122999704362361615257980" rel="stylesheet" type="text/css" media="all">
+  <link href="//zenithmmo.com/cdn/shop/t/6/assets/theme-zenith.css?v=104101492900677397211614913091" rel="stylesheet" type="text/css" media="all"> <style data-shopify="">:root {
+    --typeHeaderPrimary: "ITC Avant Garde Gothic";
+    --typeHeaderFallback: sans-serif;
+    --typeHeaderSize: 35px;
+    --typeHeaderWeight: 700;
+    --typeHeaderLineHeight: 1.2;
+    --typeHeaderSpacing: 0.0em;
+
+    --typeBasePrimary:Futura;
+    --typeBaseFallback:sans-serif;
+    --typeBaseSize: 17px;
+    --typeBaseWeight: 400;
+    --typeBaseLineHeight: 1.6;
+    --typeBaseSpacing: 0.025em;
+
+    --iconWeight: 3px;
+    --iconLinecaps: miter;
+  }
+
+  
+.collection-hero__content:before,
+  .hero__image-wrapper:before,
+  .hero__media:before {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 40%, rgba(0, 0, 0, 0.62) 100%);
+  }
+
+  .skrim__item-content .skrim__overlay:after {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 30%, rgba(0, 0, 0, 0.62) 100%);
+  }
+
+  .placeholder-content {
+    background-image: linear-gradient(100deg, #ffffff 40%, #f7f7f7 63%, #ffffff 79%);
+  }</style><link href="//zenithmmo.com/cdn/shop/t/6/assets/crowdfunder.scss.css?v=142021748810428705011614913086" rel="stylesheet" type="text/css" media="all">
+
+
+
+<script src="https://shopifyorderlimits.s3.amazonaws.com/limits/zenithmmo.myshopify.com?v=89c&amp;r=20220318231011&amp;shop=zenithmmo.myshopify.com"></script><style type="text/css" minmaxify="">.minmaxify-p-bg { top: 0; left: 0; width: 100%; height: 100%; z-index: 1999999998; overflow: hidden; position: fixed; background: rgb(11, 11, 11, 0.8); opacity: 0.2; } .minmaxify-p-bg.active { transition: opacity 0.15s ease-out; opacity: 1; display: table; } 
+.minmaxify-p-wrap { top: 0; left: 0; width: 100%; height: 100%; display: table; z-index: 1999999999; position: fixed; outline: none !important; -webkit-backface-visibility: hidden; pointer-events: none; }
+.minmaxify-p-wrap > div { display: table-cell; vertical-align: middle; }
+.minmaxify-p { opacity: .5; color: black; background-color: white; padding: 18px; max-width: 500px; margin: 18px auto; width: calc(100% - 36px); pointer-events: auto; border: solid white 1px; } .minmaxify-p.active { opacity: 1; transition: all 0.25s ease-in; border-width: 0px; }
+.minmaxify-ok { display: inline-block; padding: 8px 20px; margin: 0; line-height: 1.42; text-decoration: none; text-align: center; vertical-align: middle; white-space: nowrap; border: 1px solid transparent; border-radius: 2px; font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif; font-weight: 400;font-size: 14px;text-transform: uppercase;transition:background-color 0.2s ease-out;background-color: #528ec1; color: white; min-width: unset; }
+.minmaxify-ok:after { content: "OK"; }
+.minmaxify-close { font-style: normal; font-size: 28px; font-family: Arial, Baskerville, monospace; overflow: visible; background: transparent; border: 0; -webkit-appearance: none; display: block; outline: none; padding: 0 0 0 10px; box-shadow: none; margin-top: -10px; opacity: .65; }
+.minmaxify-p button { user-select: none; -webkit-user-select: none; cursor: pointer; float:right; width: unset; }
+.minmaxify-close:hover, .minmaxify-close:focus { opacity: 1; }
+.minmaxify-p ul { padding-left: 2rem; margin-bottom: 2rem; }</style>
+
+
+
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 53591081145,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script id="web-pixels-manager-setup">(function e(e,n,a,o,t,r,i){function s(e,n){if(document.head){var a=document.createElement("link");e.match(/spin\.dev\/?/)&&(e+="?fast_storefront_renderer=1"),a.rel="preload",a.href=e,n&&(a.as=n);try{document.head.appendChild(a)}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Could not append prefetch link tag to DOM.")}}}var l=i||[],d=null!==e;d&&(window.Shopify=window.Shopify||{},window.Shopify.analytics=window.Shopify.analytics||{},window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=function(e,n,a){window.Shopify.analytics.replayQueue.push([e,n,a])});var c=function(){var e="legacy",n="unknown",a=null,o=navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/i),t=navigator.userAgent.match(/(Edg)\/(\d+)/i),r=navigator.userAgent.match(/(Version)\/(\d+)(.+)(Safari)\/(\d+)/i);r?(n="safari",a=parseInt(r[2],10)):t?(n="edge",a=parseInt(t[2],10)):o&&(n=o[1].toLocaleLowerCase(),a=parseInt(o[2],10));var i={chrome:60,firefox:55,safari:11,edge:80}[n];return void 0!==i&&null!==a&&i<=a&&(e="modern"),e}(),p=c.substring(0,1),f=o.substring(0,1);if(d)try{self.performance.mark("wpm:start")}catch(e){}if(d){var u=self.location.origin,w=(e.webPixelsConfigList||[]).filter((function(e){return"app"===e.type.toLowerCase()}));for(let e=0;e<w.length;e++){s([u,"/wpm@",r,"/web-pixel-",w[e].id,"@",w[e].scriptVersion,"/sandbox/worker.",c,".js"].join(""),"script")}}var h,y,m,g,v,b,_,S,x=[a,"/wpm","/",f,r,p,".js"].join("");h={src:x,async:!0,onload:function(){if(e){var a=window.webPixelsManager.init(e);n(a),window.Shopify.analytics.replayQueue.forEach((function(e){a.publishCustomEvent(e[0],e[1],e[2])})),window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=a.publishCustomEvent,l.indexOf("web_pixels_visitor_api")>-1&&(window.Shopify.analytics.visitor=a.visitor)}},onerror:function(){var n=(e.storefrontBaseUrl?e.storefrontBaseUrl.replace(/\/$/,""):self.location.origin)+"/.well-known/shopify/monorail/unstable/produce_batch",a=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:x+" has failed to load"},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(n,a))return!0}catch(e){}const o=new XMLHttpRequest;try{return o.open("POST",n,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(a),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}},y=document.createElement("script"),m=h.src,g=h.async||!0,v=h.onload,b=h.onerror,_=document.head,S=document.body,y.async=g,y.src=m,v&&y.addEventListener("load",v),b&&y.addEventListener("error",b),_?_.appendChild(y):S?S.appendChild(y):console.error("Did not find a head or body element to append the script")})({shopId: 53591081145,storefrontBaseUrl: "https://zenithmmo.com",cdnBaseUrl: "https://zenithmmo.com/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"APP"},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"CUSTOM"}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://zenithmmo.com/cdn","browser","0.0.354","1f402832w5a42f512p4c77d00dm4ddfef98",["web_pixels_async_pixel_refactor"]);</script><link rel="preload" href="https://zenithmmo.com/wpm@1f402832w5a42f512p4c77d00dm4ddfef98/web-pixel-shopify-app-pixel@0559/sandbox/worker.modern.js" as="script"><script async="" src="https://zenithmmo.com/cdn/wpm/b1f402832w5a42f512p4c77d00dm4ddfef98m.js"></script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+window.ShopifyAnalytics.meta.currency = 'USD';
+var meta = {"page":{"pageType":"home"}};
+for (var attr in meta) {
+  window.ShopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
+
+
+(function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.onerror = function(e) {
+        var scriptFallback = document.createElement('script');
+        scriptFallback.type = 'text/javascript';
+        scriptFallback.onerror = function(error) {
+                var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 53591081145,
+      theme_id: 120493179065,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//zenithmmo.com/cdn/s/trekkie.storefront.260e6e85595ac79af303e85f742d0e3b752c77d7.min.js"});
+
+        };
+        scriptFallback.async = true;
+        scriptFallback.src = '//zenithmmo.com/cdn/s/trekkie.storefront.260e6e85595ac79af303e85f742d0e3b752c77d7.min.js';
+        first.parentNode.insertBefore(scriptFallback, first);
+      };
+      script.async = true;
+      script.src = '//zenithmmo.com/cdn/s/trekkie.storefront.260e6e85595ac79af303e85f742d0e3b752c77d7.min.js';
+      first.parentNode.insertBefore(script, first);
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":53591081145,"isMerchantRequest":null,"themeId":120493179065,"themeCityHash":"154126075104967821","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Google Analytics":{"trackingId":"UA-140816967-4","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+        ga('require', 'linker');
+      function addListener(element, type, callback) {
+        if (element.addEventListener) {
+          element.addEventListener(type, callback);
+        }
+        else if (element.attachEvent) {
+          element.attachEvent('on' + type, callback);
+        }
+      }
+      function decorate(event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement;
+        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
+          ga(function (tracker) {
+            var linkerParam = tracker.get('linkerParam');
+            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+          });
+        }
+      }
+      addListener(window, 'load', function(){
+        for (var i=0; i < document.forms.length; i++) {
+          var action = document.forms[i].getAttribute('action');
+          if(action && action.indexOf('/cart') >= 0) {
+            addListener(document.forms[i], 'submit', decorate);
+          }
+        }
+        for (var i=0; i < document.links.length; i++) {
+          var href = document.links[i].getAttribute('href');
+          if(href && href.indexOf('/checkout') >= 0) {
+            addListener(document.links[i], 'click', decorate);
+          }
+        }
+      });
+    
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"home"});
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+
+        var eventsListenerScript = document.createElement('script');
+        eventsListenerScript.async = true;
+        eventsListenerScript.src = "//zenithmmo.com/cdn/shopifycloud/shopify/assets/shop_events_listener-65cd0ba3fcd81a1df33f2510ec5bcf8c0e0958653b50e3965ec972dd638ee13f.js";
+        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+})();</script><script async="" src="//zenithmmo.com/cdn/shopifycloud/shopify/assets/shop_events_listener-65cd0ba3fcd81a1df33f2510ec5bcf8c0e0958653b50e3965ec972dd638ee13f.js"></script>
+<script class="boomerang">
+(function () {
+  if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
+    return;
+  }
+  window.BOOMR = window.BOOMR || {};
+  window.BOOMR.snippetStart = new Date().getTime();
+  window.BOOMR.snippetExecuted = true;
+  window.BOOMR.snippetVersion = 12;
+  window.BOOMR.application = "storefront-renderer";
+  window.BOOMR.themeName = "Motion";
+  window.BOOMR.themeVersion = "6.2.2";
+  window.BOOMR.shopId = 53591081145;
+  window.BOOMR.themeId = 120493179065;
+  window.BOOMR.renderRegion = "gcp-us-central1";
+  window.BOOMR.url =
+    "https://zenithmmo.com/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
+  var where = document.currentScript || document.getElementsByTagName("script")[0];
+  var parentNode = where.parentNode;
+  var promoted = false;
+  var LOADER_TIMEOUT = 3000;
+  function promote() {
+    if (promoted) {
+      return;
+    }
+    var script = document.createElement("script");
+    script.id = "boomr-scr-as";
+    script.src = window.BOOMR.url;
+    script.async = true;
+    parentNode.appendChild(script);
+    promoted = true;
+  }
+  function iframeLoader(wasFallback) {
+    promoted = true;
+    var dom, bootstrap, iframe, iframeStyle;
+    var doc = document;
+    var win = window;
+    window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
+    bootstrap = function(parent, scriptId) {
+      var script = doc.createElement("script");
+      script.id = scriptId || "boomr-if-as";
+      script.src = window.BOOMR.url;
+      BOOMR_lstart = new Date().getTime();
+      parent = parent || doc.body;
+      parent.appendChild(script);
+    };
+    if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
+      window.BOOMR.snippetMethod = "s";
+      bootstrap(parentNode, "boomr-async");
+      return;
+    }
+    iframe = document.createElement("IFRAME");
+    iframe.src = "about:blank";
+    iframe.title = "";
+    iframe.role = "presentation";
+    iframe.loading = "eager";
+    iframeStyle = (iframe.frameElement || iframe).style;
+    iframeStyle.width = 0;
+    iframeStyle.height = 0;
+    iframeStyle.border = 0;
+    iframeStyle.display = "none";
+    parentNode.appendChild(iframe);
+    try {
+      win = iframe.contentWindow;
+      doc = win.document.open();
+    } catch (e) {
+      dom = document.domain;
+      iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+      win = iframe.contentWindow;
+      doc = win.document.open();
+    }
+    if (dom) {
+      doc._boomrl = function() {
+        this.domain = dom;
+        bootstrap();
+      };
+      doc.write("<body onload='document._boomrl();'>");
+    } else {
+      win._boomrl = function() {
+        bootstrap();
+      };
+      if (win.addEventListener) {
+        win.addEventListener("load", win._boomrl, false);
+      } else if (win.attachEvent) {
+        win.attachEvent("onload", win._boomrl);
+      }
+    }
+    doc.close();
+  }
+  var link = document.createElement("link");
+  if (link.relList &&
+    typeof link.relList.supports === "function" &&
+    link.relList.supports("preload") &&
+    ("as" in link)) {
+    window.BOOMR.snippetMethod = "p";
+    link.href = window.BOOMR.url;
+    link.rel = "preload";
+    link.as = "script";
+    link.addEventListener("load", promote);
+    link.addEventListener("error", function() {
+      iframeLoader(true);
+    });
+    setTimeout(function() {
+      if (!promoted) {
+        iframeLoader(true);
+      }
+    }, LOADER_TIMEOUT);
+    BOOMR_lstart = new Date().getTime();
+    parentNode.appendChild(link);
+  } else {
+    iframeLoader(false);
+  }
+  function boomerangSaveLoadTime(e) {
+    window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
+  }
+  if (window.addEventListener) {
+    window.addEventListener("load", boomerangSaveLoadTime, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onload", boomerangSaveLoadTime);
+  }
+  if (document.addEventListener) {
+    document.addEventListener("onBoomerangLoaded", function(e) {
+      e.detail.BOOMR.init({
+        ResourceTiming: {
+          enabled: true,
+          trackedResourceTypes: ["script", "img", "css"]
+        },
+      });
+      e.detail.BOOMR.t_end = new Date().getTime();
+    });
+  } else if (document.attachEvent) {
+    document.attachEvent("onpropertychange", function(e) {
+      if (!e) e=event;
+      if (e.propertyName === "onBoomerangLoaded") {
+        e.detail.BOOMR.init({
+          ResourceTiming: {
+            enabled: true,
+            trackedResourceTypes: ["script", "img", "css"]
+          },
+        });
+        e.detail.BOOMR.t_end = new Date().getTime();
+      }
+    });
+  }
+})();</script><link href="https://zenithmmo.com/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js" rel="preload" as="script">
+<script type="module" defer="" src="https://zenithmmo.com/cdn/shopifycloud/media-analytics/v0.1/analytics.js"></script><script id="boomr-scr-as" src="https://zenithmmo.com/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js" async=""></script></head>
+
+<body class="template-index page- loaded modal-open" data-transitions="true" data-type_header_capitalize="false" data-type_base_accent_transform="true" data-type_header_accent_transform="true" data-animate_sections="true" data-animate_underlines="true" data-animate_buttons="true" data-animate_images="true" data-animate_page_transition_style="page-slow-fade" data-type_header_text_alignment="true" data-animate_images_style="zoom-fade" data-aos-easing="ease-out-quad" data-aos-duration="400" data-aos-delay="0">
+
+  
+    <script type="text/javascript">window.setTimeout(function() { document.body.className += " loaded"; }, 25);</script>
+  
+
+  <a class="in-page-link visually-hidden skip-link js-no-transition" href="#MainContent">Skip to content</a>
+
+  <div id="PageContainer" class="page-container">
+    <div class="transition-body"><div id="shopify-section-header" class="shopify-section"><div id="NavDrawer" class="drawer drawer--right">
+  <div class="drawer__contents">
+    <div class="drawer__fixed-header">
+      <div class="drawer__header appear-animation appear-delay-2">
+        <div class="drawer__title"></div>
+        <div class="drawer__close">
+          <button type="button" class="drawer__close-button js-drawer-close">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+            <span class="icon__fallback-text">Close menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer__scrollable">
+      <ul class="mobile-nav" role="navigation" aria-label="Primary"><li class="mobile-nav__item appear-animation appear-delay-3"><a href="/blogs/news" class="mobile-nav__link">News and Blog</a></li><li class="mobile-nav__item appear-animation appear-delay-4"><a href="/pages/gameplay" class="mobile-nav__link">Gameplay</a></li><li class="mobile-nav__item appear-animation appear-delay-5"><a href="/pages/world" class="mobile-nav__link">World</a></li><li class="mobile-nav__item appear-animation appear-delay-6"><a href="/pages/team" class="mobile-nav__link">Team</a></li><li class="mobile-nav__item appear-animation appear-delay-7"><a href="https://jobs.lever.co/ramenvr" class="mobile-nav__link">Jobs</a></li><li class="mobile-nav__item appear-animation appear-delay-8"><a href="https://skywave.zenithmmo.com/" class="mobile-nav__link">Login</a></li><li class="mobile-nav__spacer"></li>
+      </ul>
+
+      <ul class="mobile-nav__social"><li class="appear-animation appear-delay-9">
+            <a target="_blank" rel="noopener" href="https://www.facebook.com/ZenithMMO/" title="Zenith: The Last City on Facebook" class="js-no-transition">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 32 32"><path fill="#444" d="M18.56 31.36V17.28h4.48l.64-5.12h-5.12v-3.2c0-1.28.64-2.56 2.56-2.56h2.56V1.28H19.2c-3.84 0-7.04 2.56-7.04 7.04v3.84H7.68v5.12h4.48v14.08h6.4z"></path></svg>
+              <span class="icon__fallback-text">Facebook</span>
+            </a>
+          </li><li class="appear-animation appear-delay-10">
+            <a target="_blank" rel="noopener" href="https://twitter.com/ZenithMMO" title="Zenith: The Last City on Twitter" class="js-no-transition">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-twitter" viewBox="0 0 32 32"><path fill="#444" d="M31.281 6.733q-1.304 1.924-3.13 3.26 0 .13.033.408t.033.408q0 2.543-.75 5.086t-2.282 4.858-3.635 4.108-5.053 2.869-6.341 1.076q-5.282 0-9.65-2.836.913.065 1.5.065 4.401 0 7.857-2.673-2.054-.033-3.668-1.255t-2.266-3.146q.554.13 1.206.13.88 0 1.663-.261-2.184-.456-3.619-2.184t-1.435-3.977v-.065q1.239.652 2.836.717-1.271-.848-2.021-2.233t-.75-2.983q0-1.63.815-3.195 2.38 2.967 5.754 4.678t7.319 1.907q-.228-.815-.228-1.434 0-2.608 1.858-4.45t4.532-1.842q1.304 0 2.51.522t2.054 1.467q2.152-.424 4.01-1.532-.685 2.217-2.771 3.488 1.989-.261 3.619-.978z"></path></svg>
+              <span class="icon__fallback-text">Twitter</span>
+            </a>
+          </li><li class="appear-animation appear-delay-11">
+            <a target="_blank" rel="noopener" href="https://www.instagram.com/zenithmmo/" title="Zenith: The Last City on Instagram" class="js-no-transition">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 32 32"><path fill="#444" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"></path><path fill="#444" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"></path></svg>
+              <span class="icon__fallback-text">Instagram</span>
+            </a>
+          </li><li class="appear-animation appear-delay-12">
+            <a target="_blank" rel="noopener" href="https://www.tiktok.com/@zenithmmo" title="Zenith: The Last City on TikTok" class="js-no-transition">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tiktok" viewBox="0 0 2859 3333"><path d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"></path></svg>
+              <span class="icon__fallback-text">TikTok</span>
+            </a>
+          </li><li class="appear-animation appear-delay-13">
+            <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCqWEDiJYe_-iL2fs3GiVSKA" title="Zenith: The Last City on YouTube" class="js-no-transition">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 21 20"><path fill="#444" d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"></path></svg>
+              <span class="icon__fallback-text">YouTube</span>
+            </a>
+          </li></ul>
+    </div>
+  </div>
+</div>
+
+  <div id="CartDrawer" class="drawer drawer--right">
+    <form action="/cart" method="post" novalidate="" class="drawer__contents">
+      <div class="drawer__fixed-header">
+        <div class="drawer__header appear-animation appear-delay-2">
+          <div class="drawer__title">Cart</div>
+          <div class="drawer__close">
+            <button type="button" class="drawer__close-button js-drawer-close">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+              <span class="icon__fallback-text">Close cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="CartContainer" class="drawer__inner"><div class="drawer__scrollable"><p class="appear-animation appear-delay-3">Your cart is currently empty.</p></div></div>
+    </form>
+  </div>
+
+<style data-shopify="">.site-nav__link,
+  .site-nav__dropdown-link {
+    font-size: 16px;
+  }.site-header {
+      border-bottom: 1px solid;
+      border-bottom-color: #e8e8e1;
+    }</style><div data-section-id="header" data-section-type="header-section">
+  <div class="header-wrapper header-wrapper--overlay is-light"><div class="site-header-sticky" style="height: 57px;"><header class="site-header" data-sticky="true" data-overlay="true" style="background-color: rgb(0, 0, 0,1);">
+      <div class="page-width">
+        <div class="header-layout header-layout--left-center" data-logo-align="left"><div class="header-item header-item--logo"><style data-shopify="">.header-item--logo,
+    .header-layout--left-center .header-item--logo,
+    .header-layout--left-center .header-item--icons {
+      -webkit-box-flex: 0 1 100px;
+      -ms-flex: 0 1 100px;
+      flex: 0 1 100px;
+    }
+
+    @media only screen and (min-width: 769px) {
+      .header-item--logo,
+      .header-layout--left-center .header-item--logo,
+      .header-layout--left-center .header-item--icons {
+        -webkit-box-flex: 0 0 100px;
+        -ms-flex: 0 0 100px;
+        flex: 0 0 100px;
+      }
+    }
+
+    .site-header__logo a {
+      max-width: 100px;
+    }
+    .is-light .site-header__logo .logo--inverted {
+      max-width: 100px;
+    }
+    @media only screen and (min-width: 769px) {
+      .site-header__logo a {
+        max-width: 100px;
+      }
+
+      .is-light .site-header__logo .logo--inverted {
+        max-width: 100px;
+      }
+    }</style><h1 class="site-header__logo" itemscope="" itemtype="http://schema.org/Organization">
+        <span class="visually-hidden">Zenith: The Last City</span>
+      <a href="/" itemprop="url" class="site-header__logo-link logo--has-inverted">
+        <img class="small--hide" src="//zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x.png?v=1614744627" srcset="//zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x.png?v=1614744627 1x, //zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x@2x.png?v=1614744627 2x" alt="Zenith: The Last City" itemprop="logo">
+        <img class="medium-up--hide" src="//zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x.png?v=1614744627" srcset="//zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x.png?v=1614744627 1x, //zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x@2x.png?v=1614744627 2x" alt="Zenith: The Last City">
+      </a><a href="/" itemprop="url" class="site-header__logo-link logo--inverted">
+          <img class="small--hide" src="//zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x.png?v=1614744627" srcset="//zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x.png?v=1614744627 1x, //zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x@2x.png?v=1614744627 2x" alt="Zenith: The Last City" itemprop="logo">
+          <img class="medium-up--hide" src="//zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x.png?v=1614744627" srcset="//zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x.png?v=1614744627 1x, //zenithmmo.com/cdn/shop/files/Zenith_Logo_white_transparent_bg_100x@2x.png?v=1614744627 2x" alt="Zenith: The Last City">
+        </a></h1></div><div class="header-item header-item--navigation text-center"><ul class="site-nav site-navigation medium-down--hide" role="navigation" aria-label="Primary"><li class="site-nav__item site-nav__expanded-item">
+
+      <a href="/blogs/news" class="site-nav__link">
+        News and Blog
+</a></li><li class="site-nav__item site-nav__expanded-item">
+
+      <a href="/pages/gameplay" class="site-nav__link">
+        Gameplay
+</a></li><li class="site-nav__item site-nav__expanded-item">
+
+      <a href="/pages/world" class="site-nav__link">
+        World
+</a></li><li class="site-nav__item site-nav__expanded-item">
+
+      <a href="/pages/team" class="site-nav__link">
+        Team
+</a></li><li class="site-nav__item site-nav__expanded-item">
+
+      <a href="https://jobs.lever.co/ramenvr" class="site-nav__link">
+        Jobs
+</a></li><li class="site-nav__item site-nav__expanded-item">
+
+      <a href="https://skywave.zenithmmo.com/" class="site-nav__link">
+        Login
+</a></li></ul>
+</div><div class="header-item header-item--icons"><div class="site-nav site-nav--icons">
+
+  <div class="site-nav__icons">
+
+  
+      
+  
+    
+      <style>
+        .main-nav-cta {
+        
+          background-color: #4ebf7d !important;
+        
+        
+          color: #ffffff !important;
+        
+        }
+        
+          .main-nav-cta:hover {
+            background-color: #65c6bc !important;
+          }
+        
+      </style>
+
+      <a href="https://zenithmmo.happyfox.com/new" class="main-nav-cta ">Support</a>
+      
+  
+
+    
+
+    
+      <a href="/search" class="site-nav__link site-nav__link--icon js-search-header js-no-transition">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path></svg>
+        <span class="icon__fallback-text">Search</span>
+      </a>
+    
+
+    
+      <button type="button" class="site-nav__link site-nav__link--icon js-drawer-open-nav large-up--hide" aria-controls="NavDrawer" aria-expanded="false">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path d="M7 15h51M7 32h43M7 49h51"></path></svg>
+        <span class="icon__fallback-text">Site navigation</span>
+      </button>
+    
+
+    
+      
+    
+      
+        
+      
+    
+
+  </div>
+</div>
+</div>
+        
+        </div></div>
+      <div class="site-header__search-container">
+        <div class="site-header__search">
+          <div class="page-width">
+            <form action="/search" method="get" id="HeaderSearchForm" class="site-header__search-form" role="search">
+              <input type="hidden" name="type" value="product,article,page,collection">
+              <button type="submit" class="text-link site-header__search-btn">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path></svg>
+                <span class="icon__fallback-text">Search</span>
+              </button>
+              <input type="search" name="q" value="" placeholder="Search our store" class="site-header__search-input" aria-label="Search our store">
+            </form>
+            <button type="button" class="js-search-header-close text-link site-header__search-btn">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+              <span class="icon__fallback-text">"Close (esc)"</span>
+            </button>
+          </div>
+        </div></div>
+    </header></div>
+  </div>
+</div><style data-shopify="">/* Offset first hero's text to make room for overlaid navigation */
+    .shopify-section:first-child .hero__text-content.vertical-center {
+      padding-top: 110px;
+    }
+    @media screen and (max-width: 768px) {
+      .shopify-section:first-child .hero__text-content.vertical-center {
+        padding-top: 70px;
+      }
+    }</style>
+</div><main class="main-content" id="MainContent">
+        
+
+<!-- BEGIN content_for_index --><div id="shopify-section-1499790529450" class="shopify-section index-section--hero"><style data-shopify="">.hero--1499790529450 .hero__title {
+  font-size: 40.0px;
+}
+@media only screen and (min-width: 769px) {
+  .hero--1499790529450 .hero__title {
+    font-size: 80px;
+  }
+}</style><div data-section-id="1499790529450" data-section-type="video-section" data-mobile-natural="false" class="video-parent-section hero hero--1499790529450 aos-init aos-animate loaded" data-aos="hero__animation" style="height: 85vh;">
+
+  <div class="hero__media hero__media--1499790529450"><iframe id="YouTubeVideo-1499790529450" data-video-id="2eS6ikGeHRM" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="shiploop" width="1280" height="720" src="https://www.youtube.com/embed/2eS6ikGeHRM?autohide=0&amp;branding=0&amp;cc_load_policy=0&amp;controls=0&amp;fs=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;quality=hd720&amp;rel=0&amp;showinfo=0&amp;wmode=opaque&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fzenithmmo.com&amp;widgetid=1" tabindex="-1"></iframe></div>
+
+  <div class="hero__text-wrap">
+    <div class="page-width">
+      <div class="hero__text-content vertical-bottom horizontal-center"><div class="hero__link">
+              <div class="animation-cropper">
+                <div class="animation-contents">
+                  <a href="https://youtu.be/KvDS40uS6H0" class="btn btn--inverse btn--no-animate js-no-transition"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" viewBox="18.24 17.35 24.52 28.3"><path fill="#323232" d="M22.1 19.151v25.5l20.4-13.489-20.4-12.011z"></path></svg>Watch Trailer
+                  </a>
+                  
+                    
+                      <a href="https://play.zenithmmo.com/zenith/" class="btn">
+                    
+                    Get Zenith
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+
+            
+              <div class="hero__badges aos-init aos-animate" data-aos="hero__animation">
+              
+                <div class="badge">
+                  
+                    <img src="//zenithmmo.com/cdn/shop/files/steamvr-logo_400x.png?v=1613621141" class="badge_image grayscale invert">
+                  
+                </div>
+              
+                <div class="badge">
+                  
+                    <img src="//zenithmmo.com/cdn/shop/files/oculus-logo_400x.png?v=1613619192" class="badge_image grayscale invert">
+                  
+                </div>
+              
+                <div class="badge">
+                  
+                    <img src="//zenithmmo.com/cdn/shop/files/playstation-vr-logo_400x.png?v=1613619192" class="badge_image grayscale invert">
+                  
+                </div>
+              
+              </div>
+            
+</div>
+    </div>
+  </div>
+
+</div>
+
+
+</div><div id="shopify-section-161274208317fdcadf" class="shopify-section index-section--flush"><style data-shopify="">@media screen and (max-width: 768px) {
+      .background-media-text--161274208317fdcadf {
+        background-image: url(//zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1x1.jpg?v=1613866584);
+      }
+    }</style><div data-section-id="161274208317fdcadf" data-section-type="background-image" class="background-media-text background-media-text--161274208317fdcadf background-media-text--750 loaded aos-init aos-animate" data-aos="background-media-text__animation" data-parallax="true">
+
+  <div class="background-media-text__container"><div class="parallax-container"><style data-shopify="">.background-media-text--161274208317fdcadf .background-media-text__image {
+              background-position: center;
+            }</style><div class="parallax-image background-media-text__image lazyloaded" data-bgset="
+  
+  //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_180x.jpg?v=1613866584 180w 95h,
+  //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_360x.jpg?v=1613866584 360w 190h,
+  //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_540x.jpg?v=1613866584 540w 285h,
+  //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_720x.jpg?v=1613866584 720w 380h,
+  //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_900x.jpg?v=1613866584 900w 475h,
+  //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1080x.jpg?v=1613866584 1080w 570h,
+  //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1296x.jpg?v=1613866584 1296w 684h,
+  //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1512x.jpg?v=1613866584 1512w 798h,
+  //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1728x.jpg?v=1613866584 1728w 912h
+
+" style="background-image: url(&quot;https://zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1728x.jpg?v=1613866584&quot;);"><picture style="display: none;"><source data-srcset=" //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_180x.jpg?v=1613866584 180w 95h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_360x.jpg?v=1613866584 360w 190h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_540x.jpg?v=1613866584 540w 285h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_720x.jpg?v=1613866584 720w 380h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_900x.jpg?v=1613866584 900w 475h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1080x.jpg?v=1613866584 1080w 570h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1296x.jpg?v=1613866584 1296w 684h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1512x.jpg?v=1613866584 1512w 798h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1728x.jpg?v=1613866584 1728w 912h " sizes="2273.684210526316px" srcset=" //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_180x.jpg?v=1613866584 180w 95h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_360x.jpg?v=1613866584 360w 190h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_540x.jpg?v=1613866584 540w 285h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_720x.jpg?v=1613866584 720w 380h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_900x.jpg?v=1613866584 900w 475h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1080x.jpg?v=1613866584 1080w 570h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1296x.jpg?v=1613866584 1296w 684h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1512x.jpg?v=1613866584 1512w 798h, //zenithmmo.com/cdn/shop/files/Website_Parallax_Background_v1_1728x.jpg?v=1613866584 1728w 912h "><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="2273.684210526316px"></picture></div></div></div><div class="background-media-text__inner in-frame-slider-container">
+      <div class="background-media-text__aligner">
+        <div class="animation-cropper">
+          <div class="animation-contents">
+            
+            <style>
+                .borders-only { 
+                    border-top: 2px solid #6d6d6c;
+                    border-bottom: 2px solid #6d6d6c;
+                }
+            </style>
+            
+            <div class="background-media-text__text larger-text borders-only" style="
+                    
+                        
+                        
+                        
+                        
+                        background-color: rgb(255, 255, 255,0);
+                    
+                "><p class="subtitle" style="color: #000000;"></p><h2 class="h3" style="color: #ffffff;">WELCOME TO ZENITH</h2><div class="rte background-media-text__subtext" style="color: #cfcfcf;"><p>A thrilling anime and JRPG inspired VR MMO available on Oculus Quest 2, Rift, Playstation VR2, and SteamVR.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <style>
+        .in-frame-slider .slider-image { 
+            height: 400px;
+            width: 560px;
+        }
+        
+    </style>
+
+    <div class="slick-slider-wrapper">
+        <div class="in-frame-slider slick-initialized slick-slider"><button data-id="prevArrowTemplate" class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"></path></svg>
+      <span class="icon__fallback-text">Previous</span>
+    </button>
+            
+                
+
+                <div aria-live="polite" class="slick-list" style="padding: 0px 10px;"><div class="slick-track" style="opacity: 1; width: 6102px; transform: translate3d(-1017px, 0px, 0px);"><div class="slider-image slick-slide slick-cloned" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/Steam_Screenshot_Forest1_1000x.png?v=1619379765&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/Steam_Screenshot_Forest1_2000x.png?v=1619379765" data-slick-index="-4" id="" aria-hidden="true" tabindex="-1"></div><div class="slider-image slick-slide slick-cloned" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/zenith_screenshot2_1000x.jpg?v=1681169008&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/zenith_screenshot2_2000x.jpg?v=1681169008" data-slick-index="-3" id="" aria-hidden="true" tabindex="-1"></div><div class="slider-image slick-slide slick-cloned" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/pet-screenshot-1_1000x.png?v=1681169013&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/pet-screenshot-1_2000x.png?v=1681169013" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1"></div><div class="slider-image slick-slide slick-cloned slick-active" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/zenith_screenshot6_1000x.jpg?v=1681169011&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/zenith_screenshot6_2000x.jpg?v=1681169011" data-slick-index="-1" id="" aria-hidden="false" tabindex="-1"></div><div class="slider-image slick-slide slick-current slick-active slick-center" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/3_Environment_Athenaeum2_1000x.png?v=1668530343&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/3_Environment_Athenaeum2_2000x.png?v=1668530343" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option"></div><div class="slider-image slick-slide slick-active" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/zenith_screenshot5_1000x.png?v=1681169015&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/zenith_screenshot5_2000x.png?v=1681169015" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option"></div><div class="slider-image slick-slide" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/ss_beachglide_1000x.png?v=1614110200&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/ss_beachglide_2000x.png?v=1614110200" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option"></div><div class="slider-image slick-slide" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/ss_city_1000x.png?v=1614110196&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/ss_city_2000x.png?v=1614110196" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option"></div><div class="slider-image slick-slide" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/zenith_screenshot1_1000x.jpg?v=1681169012&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/zenith_screenshot1_2000x.jpg?v=1681169012" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option"></div><div class="slider-image slick-slide" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/ss_lab_1000x.png?v=1614110194&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/ss_lab_2000x.png?v=1614110194" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option"></div><div class="slider-image slick-slide" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/Steam_Screenshot_Forest1_1000x.png?v=1619379765&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/Steam_Screenshot_Forest1_2000x.png?v=1619379765" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option"></div><div class="slider-image slick-slide" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/zenith_screenshot2_1000x.jpg?v=1681169008&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/zenith_screenshot2_2000x.jpg?v=1681169008" data-slick-index="7" aria-hidden="true" tabindex="-1" role="option"></div><div class="slider-image slick-slide" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/pet-screenshot-1_1000x.png?v=1681169013&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/pet-screenshot-1_2000x.png?v=1681169013" data-slick-index="8" aria-hidden="true" tabindex="-1" role="option"></div><div class="slider-image slick-slide" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/zenith_screenshot6_1000x.jpg?v=1681169011&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/zenith_screenshot6_2000x.jpg?v=1681169011" data-slick-index="9" aria-hidden="true" tabindex="-1" role="option"></div><div class="slider-image slick-slide slick-cloned slick-center" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/3_Environment_Athenaeum2_1000x.png?v=1668530343&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/3_Environment_Athenaeum2_2000x.png?v=1668530343" data-slick-index="10" id="" aria-hidden="true" tabindex="-1"></div><div class="slider-image slick-slide slick-cloned" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/zenith_screenshot5_1000x.png?v=1681169015&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/zenith_screenshot5_2000x.png?v=1681169015" data-slick-index="11" id="" aria-hidden="true" tabindex="-1"></div><div class="slider-image slick-slide slick-cloned" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/ss_beachglide_1000x.png?v=1614110200&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/ss_beachglide_2000x.png?v=1614110200" data-slick-index="12" id="" aria-hidden="true" tabindex="-1"></div><div class="slider-image slick-slide slick-cloned" style="background: url(&quot;//zenithmmo.com/cdn/shop/files/ss_city_1000x.png?v=1614110196&quot;) center center no-repeat; width: 339px;" data-image="//zenithmmo.com/cdn/shop/files/ss_city_2000x.png?v=1614110196" data-slick-index="13" id="" aria-hidden="true" tabindex="-1"></div></div></div>
+            
+                
+
+                
+            
+                
+
+                
+            
+                
+
+                
+            
+                
+
+                
+            
+                
+
+                
+            
+                
+
+                
+            
+                
+
+                
+            
+                
+
+                
+            
+                
+
+                
+            
+        <button data-id="nextArrowTemplate" class="slick-next slick-arrow" aria-label="Next" type="button" style="">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"></path></svg>
+      <span class="icon__fallback-text">Next</span>
+    </button></div>
+    </div>
+</div>
+
+<div class="background-media-text__spacer background-media-text--750"></div>
+
+
+<div class="slider-popup">
+    <div class="overlay"></div>
+    <span class="close closeDialog">+</span>
+    <div class="popup-window">
+        <div class="enlarged-image"></div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    
+
+      $('.in-frame-slider').slick({
+        centerMode: true,
+        centerPadding: '10px',
+        slidesToShow: 3,
+        draggable: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    
+
+    
+    $('.slick-slider-wrapper .slider-image').click(function(){
+        var Image = $(this).data('image');
+        $('.slider-popup').fadeIn(500);
+        $('.slider-popup .popup-window .enlarged-image')
+            .empty()
+            .append('<img src="' + Image + '" class=" lazyload full-size-image"/>');
+    });
+    $('.slider-popup .closeDialog, .slider-popup .overlay').click(function(){
+        $('.slider-popup').fadeOut(500);
+    });
+    
+
+  });
+</script>
+
+
+</div><div id="shopify-section-1612656403891e4958" class="shopify-section index-section"><div class="page-width three-column-value-props"><div class="section-header text-center">
+      <h2>Gameplay</h2>
+    </div>
+  
+
+  <div class="grid grid--uniform grid--flush-bottom"><div class="grid__item medium-up--one-third text-center aos-init" data-aos="row-of-3"><div style="margin: 0 auto; max-width: 650px;">
+            
+              
+                  <div class="media-container video-background"><video id="Mp4Video-1612656403891e4958-0" src="https://cdn.shopify.com/s/files/1/0535/9108/1145/files/Bonsai_1.mp4?v=1614731400" loop="" muted="" playsinline="" autoplay=""></video></div>
+              
+            
+          </div>
+        
+<h3>Open World VR MMO</h3>
+        
+        
+          <div class="rte-setting text-spacing"><p>The world of Zenith is a lush fantasy world dripping with detail. And through VR, you’ll feel like you’re <em>actually there.</em></p></div>
+        
+        
+      </div><div class="grid__item medium-up--one-third text-center aos-init" data-aos="row-of-3"><div style="margin: 0 auto; max-width: 650px;">
+            
+              
+                  <div class="media-container video-background"><video id="Mp4Video-1612656403891e4958-1" src="https://cdn.shopify.com/s/files/1/0535/9108/1145/files/Combat_1_1.mp4?v=1614731630" loop="" muted="" playsinline="" autoplay=""></video></div>
+              
+            
+          </div>
+        
+<h3>Action RPG Combat</h3>
+        
+        
+          <div class="rte-setting text-spacing"><p>Adrenaline pumping action adventure gameplay you can feel with every swing of your blade, and every lightning bolt you call.</p></div>
+        
+        
+      </div><div class="grid__item medium-up--one-third text-center aos-init" data-aos="row-of-3"><div style="margin: 0 auto; max-width: 650px;">
+            
+              
+                  <div class="media-container video-background"><video id="Mp4Video-1612656403891e4958-2" src="https://cdn.shopify.com/s/files/1/0535/9108/1145/files/CityClimb.mp4?v=1614731591" loop="" muted="" playsinline="" autoplay=""></video></div>
+              
+            
+          </div>
+        
+<h3>Climb and Fly Anywhere</h3>
+        
+        
+          <div class="rte-setting text-spacing"><p>Climb up any surface, glide to any destination. The world is yours to explore in Zenith.</p></div>
+        
+        
+      </div></div>
+</div>
+</div><div id="shopify-section-1614913187297d45ec" class="shopify-section index-section"><style data-shopify="">.logo-bar--1614913187297d45ec {
+  opacity: 1.0;
+}</style><div class="section--divider"><div class="page-width aos-init" data-aos="logo__animation"><div class="section-header">
+      <h2 class="section-header__title">Zenith In The News</h2>
+    </div>
+  
+
+  
+    <div class="logo-bar logo-bar--1614913187297d45ec"><div class="logo-bar__item">
+          
+            <a href="https://www.theverge.com/2021/3/3/22311254/sony-psvr-showcase-vr-games-doom-3-i-expect-you-to-die-ps4-ps5" class="logo-bar__link">
+          
+          
+<img class="logo-bar__image lazyload" data-src="//zenithmmo.com/cdn/shop/files/Verge3.0_Logomark_Color_1_{width}x.png?v=1614931251" data-widths="[180, 360, 540, 720]" data-aspectratio="1.188118811881188" data-sizes="auto" alt="">
+          
+          
+            </a>
+          
+        </div><div class="logo-bar__item">
+          
+            <a href="https://www.ign.com/articles/everything-announced-for-psvr-today-march-2021" class="logo-bar__link">
+          
+          
+<img class="logo-bar__image lazyload" data-src="//zenithmmo.com/cdn/shop/files/IGN_LOGO_{width}x.jpg?v=1614931300" data-widths="[180, 360, 540, 720]" data-aspectratio="1.9138755980861244" data-sizes="auto" alt="">
+          
+          
+            </a>
+          
+        </div><div class="logo-bar__item">
+          
+            <a href="https://uploadvr.com/new-zenith-vr-mmo-screenshots-fantasy-world/" class="logo-bar__link">
+          
+          
+<img class="logo-bar__image lazyload" data-src="//zenithmmo.com/cdn/shop/files/1519877035912_{width}x.png?v=1614932228" data-widths="[180, 360, 540, 720]" data-aspectratio="1.0" data-sizes="auto" alt="">
+          
+          
+            </a>
+          
+        </div><div class="logo-bar__item">
+          
+            <a href="https://techcrunch.com/2019/08/19/ycs-latest-vr-bet-is-building-a-cyberpunk-anime-mmo/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAJTkSGcxxRzQGOabzqSFwalqSumuPYeZVKrGkfsAtziAA7XSTLaPb6_4CFgT677NsUEFa4Ga3WYoMFnNrESrEJ446152ZAYms2KI0v_f4lCRlpDcoHZ7gcMExzokSNUAqAKvqK7-U0oN28ly_86el2AXYxTUXrfine_WXQ7gh5oU" class="logo-bar__link">
+          
+          
+<img class="logo-bar__image lazyload" data-src="//zenithmmo.com/cdn/shop/files/TechCrunch-Logo-2_{width}x.png?v=1614931643" data-widths="[180, 360, 540, 720]" data-aspectratio="2.0" data-sizes="auto" alt="">
+          
+          
+            </a>
+          
+        </div><div class="logo-bar__item">
+          
+            <a href="https://www.kotaku.com.au/2022/02/six-hours-with-zenith-the-latest-mmo-hit-on-steam/" class="logo-bar__link">
+          
+          
+<img class="logo-bar__image lazyload" data-src="//zenithmmo.com/cdn/shop/files/download_5_{width}x.png?v=1614931768" data-widths="[180, 360, 540, 720]" data-aspectratio="4.644230769230769" data-sizes="auto" alt="">
+          
+          
+            </a>
+          
+        </div><div class="logo-bar__item">
+          
+            <a href="https://www.eurogamer.net/articles/2021-03-03-heres-everything-announced-during-sonys-playstation-vr-spotlight-event" class="logo-bar__link">
+          
+          
+<img class="logo-bar__image lazyload" data-src="//zenithmmo.com/cdn/shop/files/logo_{width}x.png?v=1614931933" data-widths="[180, 360, 540, 720]" data-aspectratio="6.141304347826087" data-sizes="auto" alt="">
+          
+          
+            </a>
+          
+        </div><div class="logo-bar__item">
+          
+            <a href="https://www.roadtovr.com/kickstarter-backed-vrmmo-zenith-the-last-city-gets-new-trailer/" class="logo-bar__link">
+          
+          
+<img class="logo-bar__image lazyload" data-src="//zenithmmo.com/cdn/shop/files/road-to-vr-logo-lighter_{width}x.png?v=1614932079" data-widths="[180, 360, 540, 720]" data-aspectratio="3.022222222222222" data-sizes="auto" alt="">
+          
+          
+            </a>
+          
+        </div><div class="logo-bar__item">
+          
+            <a href="https://www.forbes.com/sites/charlessingletary/2019/06/21/zenith-is-an-mmorpg-in-development-for-vr-with-rhythm-based-combat-inspired-by-beat-saber/?sh=26486f96ba07" class="logo-bar__link">
+          
+          
+<img class="logo-bar__image lazyload" data-src="//zenithmmo.com/cdn/shop/files/0828_forbes-logo_650x455_d7458373-76ee-4bec-989a-09d269a86ec2_{width}x.jpg?v=1614932183" data-widths="[180, 360, 540, 720]" data-aspectratio="1.4285714285714286" data-sizes="auto" alt="">
+          
+          
+            </a>
+          
+        </div></div>
+  
+</div></div>
+</div><div id="shopify-section-161265648868a56e7c" class="shopify-section index-section"><div class="page-width"><header class="section-header">
+      <h2 class="section-header__title">
+        Blog and Updates
+<a href="/blogs/news" class="section-header__link">View all</a></h2>
+    </header><div class="grid grid--uniform"><div class="grid__item medium-up--one-third aos-init" data-aos="row-of-3"><a href="/blogs/news/the-citadel-update" class="article__grid-image" aria-label="The Citadel Update">
+              <div class="image-wrap" style="height: 0; padding-bottom: 56.25%;"><img class="lazyload" data-src="//zenithmmo.com/cdn/shop/articles/Patch_Notes_Banner_1-3-3_1920x1080_e86c6c79-8c78-4b48-94aa-08560a2e714e_{width}x.png?v=1692978662" data-widths="[180, 360, 540, 720, 900, 1080]" data-aspectratio="1.7777777777777777" data-sizes="auto" alt="The Citadel Update">
+                <noscript>
+                  <img class="lazyloaded" src="//zenithmmo.com/cdn/shop/articles/Patch_Notes_Banner_1-3-3_1920x1080_e86c6c79-8c78-4b48-94aa-08560a2e714e_400x.png?v=1692978662" alt="The Citadel Update">
+                </noscript>
+              </div>
+            </a><div class="article__grid-meta"><div class="article__date"><time datetime="2023-08-25T21:09:09Z">Aug 25, 2023</time>
+</div><a href="/blogs/news/the-citadel-update" class="article__title">The Citadel Update</a></div>
+        </div><div class="grid__item medium-up--one-third aos-init" data-aos="row-of-3"><a href="/blogs/news/zenith-godstone-revamp" class="article__grid-image" aria-label="Zenith Godstone Revamp">
+              <div class="image-wrap" style="height: 0; padding-bottom: 53.34040296924708%;"><img class="lazyload" data-src="//zenithmmo.com/cdn/shop/articles/Screenshot_2023-08-01_121715_{width}x.png?v=1690910297" data-widths="[180, 360, 540, 720, 900, 1080]" data-aspectratio="1.874751491053678" data-sizes="auto" alt="Zenith Godstone Revamp">
+                <noscript>
+                  <img class="lazyloaded" src="//zenithmmo.com/cdn/shop/articles/Screenshot_2023-08-01_121715_400x.png?v=1690910297" alt="Zenith Godstone Revamp">
+                </noscript>
+              </div>
+            </a><div class="article__grid-meta"><div class="article__date"><time datetime="2023-08-01T17:18:25Z">Aug 01, 2023</time>
+</div><a href="/blogs/news/zenith-godstone-revamp" class="article__title">Zenith Godstone Revamp</a></div>
+        </div><div class="grid__item medium-up--one-third aos-init" data-aos="row-of-3"><a href="/blogs/news/rings-ruins-update" class="article__grid-image" aria-label="Rings &amp; Ruins Update">
+              <div class="image-wrap" style="height: 0; padding-bottom: 56.25%;"><img class="lazyload" data-src="//zenithmmo.com/cdn/shop/articles/Patch_Notes_Banner_R_R_1_{width}x.png?v=1689112099" data-widths="[180, 360, 540, 720, 900, 1080]" data-aspectratio="1.7777777777777777" data-sizes="auto" alt="Rings &amp; Ruins Update">
+                <noscript>
+                  <img class="lazyloaded" src="//zenithmmo.com/cdn/shop/articles/Patch_Notes_Banner_R_R_1_400x.png?v=1689112099" alt="Rings &amp; Ruins Update">
+                </noscript>
+              </div>
+            </a><div class="article__grid-meta"><div class="article__date"><time datetime="2023-07-11T22:04:15Z">Jul 11, 2023</time>
+</div><a href="/blogs/news/rings-ruins-update" class="article__title">Rings &amp; Ruins Update</a></div>
+        </div></div></div>
+</div><div id="shopify-section-16126576323c344c84" class="shopify-section"><div class="section-opt-in" style="background: #ffffff; min-height: 55vh;">    
+    
+        <div class="column graphic">
+        
+<video id="Mp4Video-" src="https://cdn.shopify.com/s/files/1/0535/9108/1145/files/Pandowl_Idle_White.mp4?v=1614112414" loop="" muted="" playsinline="" autoplay=""></video>
+        </div>
+        <div class="column content">
+            <h2>Signup for Updates</h2>
+            
+                <div id="mc_embed_signup">
+<form action="https://zenithmmo.us20.list-manage.com/subscribe/post?u=a19049f4280a67630ca767037&amp;id=6766c6de90" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+	
+<div class="mc-field-group">
+	<input type="email" value="" name="EMAIL" placeholder="Email Address" onfocus="placeholder=''" onblur="placeholder='Email Address'" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a19049f4280a67630ca767037_af2e5f3562" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+            
+
+            
+                <h3>Join our Community</h3>
+            
+            
+                <div class="secondary_content"></div>
+            
+            
+                <a class="btn" href="https://discord.gg/zenith" target="_secondaryCTA">Discord</a>
+            
+          
+        </div>
+
+</div>
+
+</div><!-- END content_for_index -->
+<script data-locksmith="">
+    var load = function () {
+
+          Locksmith.ping();
+
+
+      Locksmith.util.on('submit', 'locksmith-resource-form', function (event) {
+        event.preventDefault();
+        var data = Locksmith.util.serializeForm(event.target);
+        Locksmith.postResource(data, { spinner: false, container: 'locksmith-content' });
+      });
+
+      Locksmith.util.on('click', 'locksmith-manual-trigger', function (event) {
+        event.preventDefault();
+        Locksmith.postResource({}, { spinner: true, container: document });
+      });
+
+      Locksmith.submitPasscode = function (passcode) {
+        Locksmith.postResource(
+          { passcode: passcode },
+          { spinner: false, container: 'locksmith-content' }
+        );
+      };
+    };
+
+    if (typeof Locksmith !== 'undefined') {
+      load();
+    } else {
+      window.addEventListener('load', load);
+    }
+  </script>
+      </main><div id="shopify-section-footer-promotions" class="shopify-section index-section--footer">
+</div><div id="shopify-section-footer" class="shopify-section"><footer class="site-footer" data-section-id="footer" data-section-type="footer-section">
+  <div class="page-width">
+
+    <div class="grid"><style data-shopify="">@media only screen and (min-width: 769px) {
+          .footer__item--2577c253-432d-4ee0-9a11-dca3ddef5884 {
+            width: 42%;
+          }
+        }</style><div class="grid__item footer__item--2577c253-432d-4ee0-9a11-dca3ddef5884">
+  <p class="footer__title small--hide"></p>
+  <button type="button" class="footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide" aria-controls="Footer-2577c253-432d-4ee0-9a11-dca3ddef5884" aria-expanded="false">
+    
+<span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
+  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"></path></svg>
+</span>
+</button>
+
+<div id="Footer-2577c253-432d-4ee0-9a11-dca3ddef5884" class="collapsible-content collapsible-content--small">
+  <div class="collapsible-content__inner">
+    <div class="footer__collapsible">
+      <p> </p>
+    </div>
+  </div>
+</div>
+</div><style data-shopify="">@media only screen and (min-width: 769px) {
+          .footer__item--c431b9b5-cd8b-4223-960a-333c1f94ee8a {
+            width: 30%;
+          }
+        }</style><div class="grid__item small--hide footer__item--c431b9b5-cd8b-4223-960a-333c1f94ee8a"><div class="footer__logo-social"><ul class="no-bullets footer__social"><li>
+        <a target="_blank" rel="noopener" href="https://www.facebook.com/ZenithMMO/" title="Zenith: The Last City on Facebook" class="js-no-transition">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 32 32"><path fill="#444" d="M18.56 31.36V17.28h4.48l.64-5.12h-5.12v-3.2c0-1.28.64-2.56 2.56-2.56h2.56V1.28H19.2c-3.84 0-7.04 2.56-7.04 7.04v3.84H7.68v5.12h4.48v14.08h6.4z"></path></svg>
+          <span class="icon__fallback-text">Facebook</span>
+        </a>
+      </li><li>
+        <a target="_blank" rel="noopener" href="https://twitter.com/ZenithMMO" title="Zenith: The Last City on Twitter" class="js-no-transition">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-twitter" viewBox="0 0 32 32"><path fill="#444" d="M31.281 6.733q-1.304 1.924-3.13 3.26 0 .13.033.408t.033.408q0 2.543-.75 5.086t-2.282 4.858-3.635 4.108-5.053 2.869-6.341 1.076q-5.282 0-9.65-2.836.913.065 1.5.065 4.401 0 7.857-2.673-2.054-.033-3.668-1.255t-2.266-3.146q.554.13 1.206.13.88 0 1.663-.261-2.184-.456-3.619-2.184t-1.435-3.977v-.065q1.239.652 2.836.717-1.271-.848-2.021-2.233t-.75-2.983q0-1.63.815-3.195 2.38 2.967 5.754 4.678t7.319 1.907q-.228-.815-.228-1.434 0-2.608 1.858-4.45t4.532-1.842q1.304 0 2.51.522t2.054 1.467q2.152-.424 4.01-1.532-.685 2.217-2.771 3.488 1.989-.261 3.619-.978z"></path></svg>
+          <span class="icon__fallback-text">Twitter</span>
+        </a>
+      </li><li>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/zenithmmo/" title="Zenith: The Last City on Instagram" class="js-no-transition">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 32 32"><path fill="#444" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"></path><path fill="#444" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"></path></svg>
+          <span class="icon__fallback-text">Instagram</span>
+        </a>
+      </li><li>
+        <a target="_blank" rel="noopener" href="https://www.tiktok.com/@zenithmmo" title="Zenith: The Last City on TikTok" class="js-no-transition">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tiktok" viewBox="0 0 2859 3333"><path d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"></path></svg>
+          <span class="icon__fallback-text">TikTok</span>
+        </a>
+      </li><li>
+        <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCqWEDiJYe_-iL2fs3GiVSKA" title="Zenith: The Last City on YouTube" class="js-no-transition">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 21 20"><path fill="#444" d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"></path></svg>
+          <span class="icon__fallback-text">YouTube</span>
+        </a>
+      </li></ul>
+
+</div>
+
+<p class="footer__powered_by small--hide"><a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore" class="js-no-transition"> </a></p>
+
+</div><div class="grid__item medium-up--hide"><div class="footer__logo-social"><ul class="no-bullets footer__social"><li>
+        <a target="_blank" rel="noopener" href="https://www.facebook.com/ZenithMMO/" title="Zenith: The Last City on Facebook" class="js-no-transition">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 32 32"><path fill="#444" d="M18.56 31.36V17.28h4.48l.64-5.12h-5.12v-3.2c0-1.28.64-2.56 2.56-2.56h2.56V1.28H19.2c-3.84 0-7.04 2.56-7.04 7.04v3.84H7.68v5.12h4.48v14.08h6.4z"></path></svg>
+          <span class="icon__fallback-text">Facebook</span>
+        </a>
+      </li><li>
+        <a target="_blank" rel="noopener" href="https://twitter.com/ZenithMMO" title="Zenith: The Last City on Twitter" class="js-no-transition">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-twitter" viewBox="0 0 32 32"><path fill="#444" d="M31.281 6.733q-1.304 1.924-3.13 3.26 0 .13.033.408t.033.408q0 2.543-.75 5.086t-2.282 4.858-3.635 4.108-5.053 2.869-6.341 1.076q-5.282 0-9.65-2.836.913.065 1.5.065 4.401 0 7.857-2.673-2.054-.033-3.668-1.255t-2.266-3.146q.554.13 1.206.13.88 0 1.663-.261-2.184-.456-3.619-2.184t-1.435-3.977v-.065q1.239.652 2.836.717-1.271-.848-2.021-2.233t-.75-2.983q0-1.63.815-3.195 2.38 2.967 5.754 4.678t7.319 1.907q-.228-.815-.228-1.434 0-2.608 1.858-4.45t4.532-1.842q1.304 0 2.51.522t2.054 1.467q2.152-.424 4.01-1.532-.685 2.217-2.771 3.488 1.989-.261 3.619-.978z"></path></svg>
+          <span class="icon__fallback-text">Twitter</span>
+        </a>
+      </li><li>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/zenithmmo/" title="Zenith: The Last City on Instagram" class="js-no-transition">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 32 32"><path fill="#444" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"></path><path fill="#444" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"></path></svg>
+          <span class="icon__fallback-text">Instagram</span>
+        </a>
+      </li><li>
+        <a target="_blank" rel="noopener" href="https://www.tiktok.com/@zenithmmo" title="Zenith: The Last City on TikTok" class="js-no-transition">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tiktok" viewBox="0 0 2859 3333"><path d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"></path></svg>
+          <span class="icon__fallback-text">TikTok</span>
+        </a>
+      </li><li>
+        <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCqWEDiJYe_-iL2fs3GiVSKA" title="Zenith: The Last City on YouTube" class="js-no-transition">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-youtube" viewBox="0 0 21 20"><path fill="#444" d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"></path></svg>
+          <span class="icon__fallback-text">YouTube</span>
+        </a>
+      </li></ul>
+
+</div>
+
+<p class="footer__powered_by"><a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore" class="js-no-transition"> </a></p>
+
+</div></div>
+
+    <div class="site-footer__bottom"><div class="footer__copyright site-footer__bottom-block text-center">
+          © 2023 Zenith: The Last City
+| TribeVR Inc. DBA Ramen VR | All Rights Reserved. | <a href="https://skywave.zenithmmo.com/privacypolicy" target="_blank" class="js-no-transition">Privacy Policy</a> | <a href="http://presskit.zenithmmo.com/" target="_blank" class="js-no-transition">Press Kit</a></div></div>
+
+  </div>
+</footer>
+
+
+</div></div>
+  </div>
+
+  <div id="shopify-section-newsletter-popup" class="shopify-section index-section--hidden"><div id="NewsletterPopup-newsletter-popup" class="modal modal--square modal--mobile-friendly modal--is-active" data-section-id="newsletter-popup" data-section-type="newsletter-popup" data-delay-days="2" data-delay-seconds="5" data-test-mode="false" tabindex="-1">
+  <div class="modal__inner">
+    <div class="modal__centered medium-up--text-center">
+      <div class="modal__centered-content">
+
+        <div class="newsletter"><h2 class="h1">Subscribe To Get Important Zenith News and Updates!</h2><div class="image-wrap small--hide" style="height: 0; padding-bottom: 56.25%;"><img class="lazypreload lazyautosizes lazyloaded" role="presentation" data-widths="[540, 720, 900, 1080]" data-aspectratio="1.7777777777777777" data-sizes="auto" alt="Epic loot and progression in Zenith: The Last City, a gorgeous zone within Zenith, a VR MMORPG that features thrilling action-adventure gameplay for Oculus Quest, Oculus Rift,  PS VR, Steam" data-srcset="//zenithmmo.com/cdn/shop/files/ss_chest_540x.png?v=1614110197 540w, //zenithmmo.com/cdn/shop/files/ss_chest_720x.png?v=1614110197 720w, //zenithmmo.com/cdn/shop/files/ss_chest_900x.png?v=1614110197 900w, //zenithmmo.com/cdn/shop/files/ss_chest_1080x.png?v=1614110197 1080w" sizes="520px" srcset="//zenithmmo.com/cdn/shop/files/ss_chest_540x.png?v=1614110197 540w, //zenithmmo.com/cdn/shop/files/ss_chest_720x.png?v=1614110197 720w, //zenithmmo.com/cdn/shop/files/ss_chest_900x.png?v=1614110197 900w, //zenithmmo.com/cdn/shop/files/ss_chest_1080x.png?v=1614110197 1080w">
+            </div><div class="popup-cta"><form action="https://zenithmmo.us20.list-manage.com/subscribe/post?u=a19049f4280a67630ca767037&amp;id=6766c6de90" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+
+  <div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div> 
+
+  <label for="Email-newsletter-popup" class="hidden-label">Enter your email</label>
+  <input type="hidden" name="contact[tags]" value="prospect,newsletter">
+  <input type="hidden" name="contact[context]" value="popup">
+  <div class="input-group newsletter__input-group">
+    <input type="email" value="" placeholder="Enter your email" name="EMAIL" id="mce-EMAIL" class="input-group-field newsletter__input required email" autocorrect="off" autocapitalize="off">
+    <span class="input-group-btn">
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a19049f4280a67630ca767037_af2e5f3562" tabindex="-1" value=""></div>
+      <button type="submit" class="button btn" name="subscribe" id="mc-embedded-subscribe">
+        <span class="form__submit--large">Subscribe</span>
+        <span class="form__submit--small">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-right" viewBox="0 0 50 15"><path d="M0 9.63V5.38h35V0l15 7.5L35 15V9.63z"></path></svg>
+        </span>
+      </button>
+    </span>
+  </div>
+</form></div><button type="button" class="text-close js-modal-close">No thanks</button>
+        </div>
+      </div>
+
+      <button type="button" class="modal__close js-modal-close text-link">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+        <span class="icon__fallback-text">"Close (esc)"</span>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+<script id="CartTemplate" type="text/template">
+
+  <div class="drawer__scrollable">
+    {{#items}}
+    <div class="ajaxcart__product appear-animation appear-delay-{{animationRow}}">
+      <div class="ajaxcart__row">
+        <div class="grid">
+          <div class="grid__item one-third">
+            <a href="{{url}}" class="ajaxcart__product-image"><img src="{{img}}" alt="{{name}}"></a>
+          </div>
+          <div class="grid__item two-thirds">
+            <div class="ajaxcart__product-name--wrapper">
+              <a href="{{url}}" class="ajaxcart__product-name">{{{name}}}</a>
+              {{#if variation}}
+                <div class="ajaxcart__product-meta">{{variation}}</div>
+              {{/if}}
+              {{#if selling_plan_name}}
+                <div class="ajaxcart__product-meta">{{selling_plan_name}}</div>
+              {{/if}}
+              {{#properties}}
+                {{#each this}}
+                  {{#if this}}
+                    <span class="ajaxcart__product-meta">{{@key}}: {{this}}</span>
+                  {{/if}}
+                {{/each}}
+              {{/properties}}
+            </div>
+
+            <div class="grid grid--full display-table">
+              <div class="grid__item display-table-cell one-half">
+                <label for="updates_{{key}}" class="visually-hidden">Quantity</label>
+                <div class="js-qty__wrapper">
+                  <input type="text" id="updates_{{key}}"
+                    class="js-qty__num"
+                    value="{{itemQty}}"
+                    data-id="{{key}}"
+                    min="0"
+                    aria-label="quantity"
+                    pattern="[0-9]*"
+                    name="updates[]">
+                  <button type="button"
+                    class="js-qty__adjust js-qty__adjust--minus"
+                    aria-label="Reduce item quantity by one">
+                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 20 20"><path fill="#444" d="M17.543 11.029H2.1A1.032 1.032 0 0 1 1.071 10c0-.566.463-1.029 1.029-1.029h15.443c.566 0 1.029.463 1.029 1.029 0 .566-.463 1.029-1.029 1.029z"/></svg>
+                      <span class="icon__fallback-text" aria-hidden="true">&minus;</span>
+                  </button>
+                  <button type="button"
+                    class="js-qty__adjust js-qty__adjust--plus"
+                    aria-label="Increase item quantity by one">
+                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 20 20"><path fill="#444" d="M17.409 8.929h-6.695V2.258c0-.566-.506-1.029-1.071-1.029s-1.071.463-1.071 1.029v6.671H1.967C1.401 8.929.938 9.435.938 10s.463 1.071 1.029 1.071h6.605V17.7c0 .566.506 1.029 1.071 1.029s1.071-.463 1.071-1.029v-6.629h6.695c.566 0 1.029-.506 1.029-1.071s-.463-1.071-1.029-1.071z"/></svg>
+                      <span class="icon__fallback-text" aria-hidden="true">+</span>
+                  </button>
+                </div>
+              </div>
+              <div class="grid__item display-table-cell one-half text-right">
+                {{#if discountsApplied}}
+                  <small class="cart__price--strikethrough">{{{price}}}</small>
+                  <span class="ajaxcart__price">
+                    {{{discountedPrice}}}
+                  </span>
+                {{else}}
+                  <span class="ajaxcart__price">
+                    {{{price}}}
+                  </span>
+                {{/if}}
+              </div>
+            </div>
+
+            <div class="grid grid--full">
+              {{#if discountsApplied}}
+                <div class="grid__item text-right">
+                  {{#each discounts}}
+                    <small class="ajaxcart__discount cart__discount">
+                      {{this.discount_application.title}} (-{{{this.formattedAmount}}})
+                    </small>
+                  {{/each}}
+                </div>
+              {{/if}}
+
+              {{#if unitBase}}
+                <div class="grid__item text-right">
+                  <div class="product__unit-price">
+                    {{{ unitPrice }}}/{{{ unitBase }}}
+                  </div>
+                </div>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/items}}
+
+    
+  </div>
+  <div class="drawer__footer appear-animation appear-delay-{{lastAnimationRow}}">
+    {{#if cartDiscounts }}
+      <div class="grid grid--full">
+        <div class="grid__item one-half">
+          <p class="ajaxcart__subtotal">Discounts</p>
+        </div>
+        <div class="grid__item one-half text-right">
+          {{#each cartDiscounts}}
+            <p class="ajaxcart__price cart__discount">
+              {{this.title}} (-{{{this.formattedAmount}}})
+            </p>
+          {{/each}}
+        </div>
+      </div>
+    {{/if}}
+    <div class="grid grid--full">
+      <div class="grid__item one-half">
+        <p class="ajaxcart__subtotal">Subtotal</p>
+      </div>
+      <div class="grid__item one-half text-right">
+        <p class="ajaxcart__price">{{{totalPrice}}}</p>
+      </div>
+    </div>
+    {{#if totalCartDiscount}}
+      <p class="ajaxcart__savings text-center">{{{totalCartDiscount}}}</p>
+    {{/if}}
+    <p class="ajaxcart__note">
+      Shipping, taxes, and discount codes calculated at checkout.
+    </p>
+    
+    
+      
+    
+    <button type="submit" class="btn btn--full cart__checkout" name="checkout">
+      Check out
+    </button>
+  </div>
+
+</script>
+
+  <div class="hide">
+    <button data-id="prevArrowTemplate" class="slick-prev" aria-label="Previous" type="button">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"></path></svg>
+      <span class="icon__fallback-text">Previous</span>
+    </button>
+    <button data-id="nextArrowTemplate" class="slick-next" aria-label="Next" type="button">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"></path></svg>
+      <span class="icon__fallback-text">Next</span>
+    </button>
+  </div><div id="VideoModal" class="modal modal--solid">
+  <div class="modal__inner">
+    <div class="modal__centered page-width text-center">
+      <div class="modal__centered-content">
+        <div class="video-wrapper video-wrapper--modal">
+          <div id="VideoHolder"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="modal__close js-modal-close text-link">
+    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+    <span class="icon__fallback-text">"Close (esc)"</span>
+  </button>
+</div>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+
+    <div class="pswp__ui pswp__ui--hidden">
+      <button class="btn btn--no-animate btn--body btn--circle pswp__button pswp__button--arrow--left" title="Previous">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0z"></path></svg>
+      </button>
+
+      <button class="btn btn--no-animate btn--body btn--circle btn--large pswp__button pswp__button--close" title="Close (esc)">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+      </button>
+
+      <button class="btn btn--no-animate btn--body btn--circle pswp__button pswp__button--arrow--right" title="Next">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98z"></path></svg>
+      </button>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    
+  });
+</script>
+<!-- PF EDT START -->
+<script type="text/javascript"></script>
+<!-- PF EDT END -->
+
+
+<iframe id="bugherd_embed_communication_frame" name="embedCommunication" sandbox="allow-scripts allow-popups allow-same-origin allow-popups-to-escape-sandbox" src="https://sidebar.bugherd.com/sidebar/embed_html?apikey=mwxzsh25lvmszoj8a71yxg" style="display: none; border: none; position: fixed; z-index: 2147483647; right: 0px; height: calc((100% - 154px) * 0.9);"></iframe><div id="WebPixelsManagerSandboxContainer"><iframe src="https://zenithmmo.com/wpm@1f402832w5a42f512p4c77d00dm4ddfef98/web-pixel-shopify-custom-pixel@0559/sandbox/modern/" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-1f402832w5a42f512p4c77d00dm4ddfef98" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-1f402832w5a42f512p4c77d00dm4ddfef98" sandbox="allow-scripts allow-forms" tabindex="-1" aria-hidden="true" style="display:none; height:0; width:0; visibility: hidden;"></iframe></div></body></html>

@@ -1,0 +1,142 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>HNZK</title>
+
+    <!-- update the version number as needed -->
+    <script defer="" src="/__/firebase/7.6.0/firebase-app.js"></script>
+
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer="" src="/__/firebase/init.js"></script>
+  </head>
+  <body>
+    <div>
+      <img src="imgs/10_3_Hero.png" alt="" id="title-img">
+      <!-- <img src="imgs/7_10_Portrait.png" alt="" class="title-img"> -->
+    </div>
+
+    <div class="description">
+      <h1>How to Play</h1>
+
+      <div class="links">
+        <div>
+          <a href="https://www.youtube.com/channel/UCap4C4u9vLAEFPJzxSae75A">Gameplay Videos</a>
+          •
+          <a href="./privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="tut-step">
+        <h2>Movement</h2>
+        <img src="imgs/teleportOrb.jpg" class="tut-img">
+        <p>
+          One of your hands is used to create teleport orbs. Pull the trigger in
+          your teleport hand to create an orb. Throw the orb and you will
+          teleport to where it lands. Changing which hand is used for
+          teleporting can be done quickly in the inventory.
+        </p>
+      </div>
+
+      <div class="tut-step">
+        <h2>Inventory</h2>
+        <img src="imgs/inventory_screenshot.png" class="tut-img">
+        <p>
+          Push and hold the thumbstick button to open your inventory. Point the
+          thumbstick at the item you wish to equip. Release the thumbstick
+          button and you will equip the selected item. The inventory has 4 item
+          slots with the bottom slot always reserved for teleport orbs.
+        </p>
+      </div>
+
+      <div class="tut-step">
+        <h2>Health</h2>
+        <img src="imgs/handHealth.jpg" class="tut-img">
+        <p>
+          Your health is displayed on your hands. Losing all health forces you
+          to restart the level.
+        </p>
+      </div>
+
+      <div class="tut-step">
+        <h2>Healing</h2>
+        <img src="imgs/heart.jpg" class="tut-img">
+        <p>
+          Using a heart item will restore health. Hearts display their remaining
+          uses.
+        </p>
+      </div>
+
+      <div class="tut-step">
+        <h2>Weapons</h2>
+        <img src="imgs/weapon.jpg" class="tut-img">
+        <p>
+          Weapons are scattered throughout each level. They can be picked up and
+          stored in your inventory. Each weapon has a unique way of firing and
+          reloading. Weapon types include automatic fire, sniper rifles,
+          grenades, rocket launchers and more.
+        </p>
+      </div>
+
+      <div class="tut-step">
+        <h2>Ammo</h2>
+        <img src="imgs/ammo.jpg" class="tut-img">
+        <p>
+          Weapons display their remaining ammo. They are reloaded by using your
+          controller's reload button.
+        </p>
+      </div>
+
+      <div class="tut-step">
+        <h2>Enemies</h2>
+        <img src="imgs/sniper.jpg" class="tut-img">
+        <p>
+          You will encounter a variety of enemies on your adventure. Use your
+          weapons to defeat them before they defeat you.
+        </p>
+      </div>
+
+      <div class="tut-step">
+        <h2>Bosses</h2>
+        <img src="imgs/sorcerer_screenshot.png" class="tut-img">
+        <p>
+          Some levels are boss battles in which you fight a very powerful enemy.
+          These enemies are often too powerful to be defeated by only shooting
+          them. Instead, each boss has a hidden way of damaging them. Bosses
+          display their remaining health in the surrounding environment.
+        </p>
+      </div>
+
+      <div class="tut-step">
+        <h2>Completing a Level</h2>
+        <img src="imgs/voidTeleporter.jpg" class="tut-img">
+        <p>
+          At the end of each level is a void teleporter. Throw a teleport orb
+          into this teleporter to complete the level.
+        </p>
+      </div>
+
+      <div class="tut-step">
+        <h2>Home</h2>
+        <img src="imgs/home.jpg" class="tut-img">
+        <p>
+          Completing or leaving a level returns you to your home world. This
+          world contains teleporters to the void and tutorial.
+        </p>
+      </div>
+
+      <div class="tut-step">
+        <h2>Void</h2>
+        <img src="imgs/void.jpg" class="tut-img">
+        <p>
+          The void is where you can teleport between levels. To enter a level,
+          throw a teleport orb into the level's door.
+        </p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  
+
+</body></html>

@@ -1,0 +1,267 @@
+<html lang="en" class="csstransforms csstransforms3d csstransitions"><head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/touchTouch.css">
+    <link rel="stylesheet" href="/css/animation.css">
+
+    
+	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-JJ42DHBV30&amp;cx=c&amp;_slc=1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="/js/jquery.js"></script>
+    <script src="/js/touchTouch.jquery.js"></script>
+    <script src="/js/jquery-migrate-1.1.1.js"></script>
+    <script src="/js/superfish.js"></script>
+    <script src="/js/jquery.mobilemenu.js"></script>
+    <script src="/js/jquery.easing.1.3.js"></script>
+    <script src="/js/jquery.ui.totop.js"></script>
+    <script src="/js/jquery.equalheights.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>	
+    
+ 
+     <script>
+        $(window).load(function() {  
+            // Initialize the gallery
+            $('.thumb').touchTouch();
+        });
+      </script>      
+<script>
+    
+    $(window).load(function() {  
+    var $container = $('#container');
+    //Run to initialise column sizes
+    updateSize();
+
+    //Load masonry when images all loaded
+    $container.imagesLoaded( function(){
+
+        $container.isotope({
+            // options
+            itemSelector : '.element',	
+            layoutMode : 'masonry',
+            transformsEnabled: false,
+            columnWidth: function( containerWidth ) {
+                containerWidth = $browserWidth;
+                return Math.floor(containerWidth / $cols);
+              }
+        });
+    });
+    
+    	// update columnWidth on window resize
+    $(window).smartresize(function(){  
+        updateSize();
+        $container.isotope( 'reLayout' );
+    });
+	
+    //Set item size
+    function updateSize() {
+        $browserWidth = $container.width();
+        $cols = 3;
+
+        if ($browserWidth >= 1200) {
+            $cols = 3;
+        }
+        else if ($browserWidth >= 800 && $browserWidth < 1200) {
+            $cols = 3;
+        }
+        else if ($browserWidth >= 540 && $browserWidth < 800) {
+            $cols = 2;
+        }
+        else if ($browserWidth >= 320 && $browserWidth < 540) {
+            $cols = 1;
+        }
+        else if ($browserWidth < 540) {
+            $cols = 1;
+        }
+        //console.log("Browser width is:" + $browserWidth);
+        //console.log("Cols is:" + $cols);
+
+        // $gutterTotal = $cols * 20;
+		$browserWidth = $browserWidth; // - $gutterTotal;
+        $itemWidth = $browserWidth / $cols;
+        $itemWidth = Math.floor($itemWidth);
+
+        $(".element").each(function(index){
+            $(this).css({"width":$itemWidth+"px"});             
+        });
+			
+
+    
+	  var $optionSets = $('#options .option-set'),
+	      $optionLinks = $optionSets.find('a');
+
+	  $optionLinks.click(function(){
+	    var $this = $(this);
+	    // don't proceed if already selected
+	    if ( $this.hasClass('selected') ) {
+	      return false;
+	    }
+	    var $optionSet = $this.parents('.option-set');
+	    $optionSet.find('.selected').removeClass('selected');
+	    $this.addClass('selected');
+
+	    // make option object dynamically, i.e. { filter: '.my-filter-class' }
+	    var options = {},
+	        key = $optionSet.attr('data-option-key'),
+	        value = $this.attr('data-option-value');
+	    // parse 'false' as false boolean
+	    value = value === 'false' ? false : value;
+	    options[ key ] = value;
+	    if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+	      // changes in layout modes need extra logic
+	      changeLayoutMode( $this, options )
+	    } else {
+	      // otherwise, apply new options
+	      $container.isotope( options );
+	    }
+	    
+	    return false;
+	  });		
+
+    };
+    
+    });
+	
+	function setContent(pageId)
+	{
+	$('header').addClass('pages');
+	$('#pageIndex').removeClass('active');
+	$('#' + pageId).addClass('active');
+	
+	$('#brandTag').removeClass('brand_');
+	$('#brandTag').addClass('brand_2');
+	
+	}
+    
+  </script>
+	<!--[if lt IE 8]>
+  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+ 	<![endif]-->
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <script src="assets/js/html5shiv.js"></script>
+  <![endif]-->
+  
+  
+<!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12547157-1', 'auto');
+  ga('send', 'pageview');
+
+</script>-->
+</head>
+
+<body>
+<!--==============================header=================================-->
+<header class="pages">
+    <div class="container">
+        <h1 id="brandTag" class="brand_2"><a href="/"><img alt="Delivery Services" src="/img/logo.png"></a></h1>
+        <div class="navbar navbar_ clearfix extra">
+          <div class="nav-collapse nav-collapse_  collapse">
+            <ul class="nav sf-menu sf-js-enabled">
+              <li id="pageIndex" class="active"><a href="/">About us</a><img class="arrow1" src="/img/arrow1.png" alt=""></li>
+              <li id="pageProjects"><a href="/Pages/projects.php">Projects</a><img class="arrow1" src="/img/arrow1.png" alt=""></li>
+              <li id="pageLinks"><a href="/Pages/links.php">Links</a><img class="arrow1" src="/img/arrow1.png" alt=""></li>
+              <li><a href="http://blog.suchworks.com">Blog</a><img class="arrow1" src="/img/arrow1.png" alt=""></li>
+              <li id="pageContact" class="last"><a href="/Pages/contact.php">Contact</a><img class="arrow1" src="/img/arrow1.png" alt=""></li>
+            </ul>
+          </div>
+        </div>   
+    </div>
+
+</header> 
+<script>
+setContent('pageIndex');
+</script>
+<!--==============================content=================================-->
+<div id="content">
+    <div class="gradient1">
+        <!--==============================row10=================================-->
+        <div class="row_10">
+        <div class="shadow1"></div>
+            <div class="container">
+                <div class="row policy">
+                  <article class="span4">
+                  <p>&nbsp;</p>
+                  </article>
+                  <article class="span8">
+                    <h2>Internet Privacy and Cookies Policy</h2>
+                    <p>Internet Privacy and Cookies Policy</p>
+                    <p>At Suchworks we are committed to safeguarding and preserving the privacy of our visitors. This Privacy Policy document (the "Policy") has been provided by the legal resource DIY Legals and reviewed and approved by their solicitors.</p>
+                    <p>This Policy explains what happens to any personal data that you provide to us, or that we collect from you whilst you visit our site and how we use cookies on this website.<br>
+                      We do update this Policy from time to time so please do review this Policy regularly.</p>
+                    <p>Information That We Collect</p>
+                    <p>In running and maintaining our website we may collect and process the following data about </p>
+                    <p>you:</p>
+                    <p>* Information about your use of our site including details of your visits such as pages viewed and the resources that you access. Such information includes traffic data, location data and other communication data.</p>
+                    <p>* Information provided voluntarily by you. For example, when you register for information or make a purchase.</p>
+                    <p>* Information that you provide when you communicate with us by any means.</p>
+                    <p>Use of Cookies</p>
+                    <p>Cookies provide information regarding the computer used by a visitor. We may use cookies where appropriate to gather information about your computer in order to assist us in improving our website.</p>
+                    <p>We may gather information about your general internet use by using the cookie. Where used, these cookies are downloaded to your computer and stored on the computer’s hard drive. </p>
+                    <p>Such information will not identify you personally; it is statistical data which does not identify any personal details whatsoever.</p>
+                    <p>Our advertisers may also use cookies, over which we have no control. Such cookies (if used) would be downloaded once you click on advertisements on our website.</p>
+                    <p>You can adjust the settings on your computer to decline any cookies if you wish. This can be done within the “settings” section of your computer. For more information please read the advice at AboutCookies.org.</p>
+                    <p>Use of Your Information</p>
+                    <p>We use the information that we collect from you to provide our services to you. In addition to this we may use the information for one or more of the following purposes:</p>
+                    <p>* To provide information to you that you request from us relating to our products or services.</p>
+                    <p>* To provide information to you relating to other products that may be of interest to you. </p>
+                    <p>Such additional information will only be provided where you have consented to receive such information.</p>
+                    <p>* To inform you of any changes to our website, services or goods and products.</p>
+                    <p>If you have previously purchased goods or services from us we may provide to you details of similar goods or services, or other goods and services, that you may be interested in.</p>
+                    <p>We never give your details to third parties to use your data to enable them to provide you with information regarding unrelated goods or services.</p>
+                    <p>Storing Your Personal Data</p>
+                    <p>In operating our website it may become necessary to transfer data that we collect from you to locations outside of the European Union for processing and storing. By providing your personal data to us, you agree to this transfer, storing and processing. We do our utmost to ensure that all reasonable steps are taken to make sure that your data is stored securely.</p>
+                    <p>Unfortunately the sending of information via the internet is not totally secure and on occasion such information can be intercepted. We cannot guarantee the security of data that you choose to send us electronically, sending such information is entirely at your own risk.</p>
+                    <p>Disclosing Your Information</p>
+                    <p>We will not disclose your personal information to any other party other than in accordance with </p>
+                    <p>this Privacy Policy and in the circumstances detailed below:</p>
+                    <p>* In the event that we sell any or all of our business to the buyer.</p>
+                    <p>* Where we are legally required by law to disclose your personal information.</p>
+                    <p>* To further fraud protection and reduce the risk of fraud.</p>
+                    <p>Third Party Links</p>
+                    <p> On occasion we include links to third parties on this website. Where we provide a link it does not mean that we endorse or approve that site’s policy towards visitor privacy. You should review their privacy policy before sending them any personal data.</p>
+                    <p>Access to Information</p>
+                    <p>In accordance with the Data Protection Act 1998 you have the right to access any information that we hold relating to you. Please note that we reserve the right to charge a fee of £10 to cover costs incurred by us in providing you with the information.</p>
+                    <p>Contacting Us</p>
+                    <p>Please do not hesitate to contact us regarding any matter relating to this Privacy and Cookies Policy via email at info@suchworks.com</p>
+                    <h3>&nbsp;</h3>
+                  </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==============================footer=================================-->
+<footer>
+    <div class="container clearfix">
+        <div class="row">
+            <div class="span12">
+                <div class="privacy">Suchworks © 2016 <img src="/img/line1.jpg" alt=""><a class="txt-1" href="/pages/privacy.php"> Privacy policy</a>&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/bootstrap.js"></script><meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12547157-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<a href="#" id="toTop" style="right: 50%; margin-right: -51px; display: none;"><span id="toTopHover"></span></a></body></html>

@@ -1,0 +1,1239 @@
+<html lang="ja" style="overflow: hidden;"><head>
+<!--StaticCode-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, minimum-scale=0.5 , maximum-scale=2">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="imagetoolbar" content="no">
+
+<meta name="rating" content="general">
+<meta name="author" content="My Dearest">
+<meta name="copyright" content="(C)MyDearest, Inc. All Rights Reserved.">
+
+<link rel="icon" type="image/png" href="https://altdeus.com/favicon.png">
+<link rel="apple-touch-icon" type="image/png" href="https://altdeus.com/apple-touch-icon.png">
+<!--/StaticCode-->
+
+
+
+<!--BasicSetting-->
+<title>ALTDEUS: Beyond Chronos</title>
+<meta name="description" content="VR Adventure, " altdeus:="" beyond="" chronos"="" official="" web="" site."="">
+<meta name="keywords" content="ALTDEUS,ALTDEUS: Beyond Chronos,TOKYO CHRONOS,CHRONOS">
+<!--/BasicSetting-->
+
+
+
+<!--OGP-->
+<meta property="og:site_name" content="ALTDEUS: Beyond Chronos">
+<meta property="og:title" content="ALTDEUS: Beyond Chronos">
+<meta property="og:description" content="VR Adventure, " altdeus:="" beyond="" chronos"="" official="" web="" site."="">
+<meta property="og:image" content="https://altdeus.com/ogp/ogp.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://altdeus.com/en/">
+<!--/OGP-->
+
+
+<!--TwitterCardOGP-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ALTDEUS: Beyond Chronos">
+<meta name="twitter:description" content="VR Adventure, " altdeus:="" beyond="" chronos"="" official="" web="" site."="">
+<!--/TwitterCardOGP-->
+
+
+
+<!--style-->
+<link rel="stylesheet" type="text/css" media="screen and (min-width:769px)" href="https://altdeus.com/en/assets/css/basic.css?20210705_01"><!--PC＆Tablet-->
+<link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="https://altdeus.com/en/assets/css/mobile.css?2021705_01"><!--Mobile-->
+<!--/style-->
+
+
+
+<!--fonts-->
+
+	<!--フォントプラス-->
+	<script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-VLLTGEJ08Z&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KCRZRXH"></script><script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?qJRtJoIK9pM%3D&amp;box=fCN~ckWJASU%3D&amp;aa=1&amp;ab=2" charset="utf-8"></script><style id="fpbf_ac93d8111_css">@font-face { font-family: 'fpbf_ac93d8111'; font-display: swap; src: url('https://s3-ap-northeast-1.amazonaws.com/fp-bf/3d4c80e6') format('woff'); }</style>
+	<script>
+	try {
+		FONTPLUS.async();
+	} catch(err) {
+		console.log('fontplus unloaded',err);
+	}
+	</script>
+	<!--/フォントプラス-->
+
+	<!--GoogleFONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Teko:300,400&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
+	<!--/GoogleFONTS-->
+
+<!--/fonts-->
+
+
+
+<!--Scripts-->
+
+
+	<!--CDN_Resource-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!--/CDN_Resource-->
+
+
+	<!--Plugins-->
+
+		<!--MagnificPopup-->
+		<link rel="stylesheet" type="text/css" href="https://altdeus.com/en/assets/js/magnific-popup/magnific-popup.css">
+		<script type="text/javascript" src="https://altdeus.com/en/assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<!--/MagnificPopup-->
+
+		<!--Slick-->
+		<script type="text/javascript" src="https://altdeus.com/en/assets/js/slick/slick.custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://altdeus.com/en/assets/js/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="https://altdeus.com/en/assets/js/slick/slick-theme.css">
+		<!--/Slick-->
+
+		<!--Waypoints-->
+		<script type="text/javascript" src="https://altdeus.com/en/assets/js/jquery.waypoints.min.js"></script>
+		<!--/Waypoints-->
+
+		<!--jQueryEasing-->
+		<script type="text/javascript" src="https://altdeus.com/en/assets/js/jquery.easing.1.3.js"></script>
+		<!--/jQueryEasing-->
+
+		<!--howler.js-->
+		<script type="text/javascript" src="https://altdeus.com/en/assets/js/howler/howler.min.js"></script>
+		<!--/howler.js-->
+
+		<!--purl.js-->
+		<script type="text/javascript" src="https://altdeus.com/en/assets/js/purl.js"></script>
+		<!--/purl.js-->
+
+	<!--/Plugins-->
+
+
+	<!--mainjs-->
+	<script type="text/javascript" src="https://altdeus.com/en/assets/js/main.js?20201914_01"></script>
+	<!--/mainjs-->
+
+
+<!--/Scripts-->
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCRZRXH');</script>
+<!-- End Google Tag Manager -->
+
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><style id="fontplus_css_0">@font-face { font-family: 'FOT-UD角ゴ_スモール Pr6 DB'; font-weight: bold; src: url('https://webfont.fontplus.jp/accessor/reqf/con=fp_196b4b005f3020a297a8f4c1aab6d000&cha=UTF-8&dmode=&aa=1&ab=2&l=aHR0cHMlM0ElMkYlMkZhbHRkZXVzLmNvbSUyRmVuJTJG&chws=&fa=Rk9ULVVE6KeS44K0X-OCueODouODvOODqyBQcjYgREI&lst=0&lsc=0&s=ISIjJCUmKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4_QUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVpbXV9hYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fcKgwqnCrsWN4oCc4oCd4oCm44CA44CB44CK44CL44K744OV44Oq77ya&ivs=0'); }
+@font-face { font-family: 'FuturaLTPro-Medium'; font-weight: bold; src: url('https://webfont.fontplus.jp/accessor/reqf/con=fp_196b4b005f3020a297a8f4c1aab6d000&cha=UTF-8&dmode=&aa=1&ab=2&l=aHR0cHMlM0ElMkYlMkZhbHRkZXVzLmNvbSUyRmVuJTJG&chws=&fa=RnV0dXJhTFRQcm8tTWVkaXVt&lst=0&lsc=0&s=LC0uLzpBQkNERUZHSElKS0xNTk9QUlNUVVZXWWFiY2RlZmdoaWtsbW5vcHJzdHV2d3nCqeOAgO-8mg&ivs=0'); }
+@font-face { font-family: 'FOT-UD角ゴ_スモール Pr6 B'; font-weight: bold; src: url('https://webfont.fontplus.jp/accessor/reqf/con=fp_196b4b005f3020a297a8f4c1aab6d000&cha=UTF-8&dmode=&aa=1&ab=2&l=aHR0cHMlM0ElMkYlMkZhbHRkZXVzLmNvbSUyRmVuJTJG&chws=&fa=Rk9ULVVE6KeS44K0X-OCueODouODvOODqyBQcjYgQg&lst=0&lsc=0&s=IUJOT1BRUlNVVldZYWNlZmlsbW5vc3R1ecKu&ivs=0'); }
+</style></head>
+<body id="top" style="overflow: hidden;">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCRZRXH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<div id="grandwrapper">
+
+
+
+
+
+
+		<!--LOADING-->
+		<section id="loading" class="active remove">
+
+
+
+			<div>
+
+				<p>NOW LOADING</p>
+
+			</div>
+
+
+
+		</section>
+		<!--/LOADING-->
+
+
+
+
+
+
+<!--OPTOUT-->
+		<section id="optout" class="view">
+
+
+
+			<div>
+
+				<p>This website uses cookies. We use cookies on our website to store your browsing behavior on this device. By using our site, you accept the terms of our <a href="https://mydearestvr.com/en/cookiepolicy/" target="_blank">Cookie Policy</a></p>
+
+				<ul class="optoutsend">
+					<li class="agree">Accept</li>
+					<li class="disagree">Decline</li>
+				</ul>
+
+			</div>
+
+
+
+		</section>
+		<!--/OPTOUT-->
+
+
+
+
+
+
+
+		<!--FIRSTVIEW-->
+		<section id="kv" class="jwp_target">
+
+
+
+			<h3 class="platform">oculus</h3>
+			<h3 class="develop">MyDearest</h3>
+
+
+			<h2>VR Adventure</h2>
+
+
+			<h1>ALTDEUS: Beyond Chronos</h1>
+
+
+			<h4>Develop:MyDearest　/　CharacterDesign:LAM　/　Sound：Yosuke Kori　/　MechaDesign：I-IV　/　Director：Haruki Kashiwakura</h4>
+
+
+			<p class="buynow"><a href="https://www.oculus.com/experiences/quest/2977398372335251/?utm_source=OfficialSiteEn&amp;utm_campaign=default&amp;utm_channel=otherIndexFastBanner" target="_blank">ALTDEUS:Beyond Chronos CHECK OUT THE OCULUS STORE</a></p>
+
+
+			<p class="reviewscore"></p>
+
+
+			<p class="onsale">2020.12.4 ON SALE</p>
+
+
+			<div class="visual">
+				<span class="chara"></span>
+				<span class="background"></span>
+			</div>
+
+
+
+		</section>
+		<!--/FIRSTVIEW-->
+
+
+
+
+
+
+		<!--BANNER_top-->
+		<section id="bannerbox_top" class="jwp_target">
+
+			<ul>
+				<li><a href="https://store.playstation.com/en_US/product/UP5181-CUSA26563_00-7800336833895709" target="_blank"><img src="https://altdeus.com/en/assets/images/banner_abc_psvr_en.png"></a></li><li><a href="https://store.steampowered.com/app/1502080/ALTDEUS_Beyond_Chronos/" target="_blank"><img src="https://altdeus.com/en/assets/images/banner_abc_pcvr_en.png"></a></li>
+			</ul>
+
+		</section>
+		<!--/BANNER_top-->
+
+
+
+
+
+
+<!--GNAVI-->
+		<section id="gnavi">
+
+
+
+			<div class="toggle sp">
+				<p class="menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</p>
+			</div>
+
+
+
+			<nav>
+
+
+				<h1>ALTDEUS: Beyond Chronos</h1>
+
+
+				<ul>
+					<li class="top"><a href="https://altdeus.com/en/index.html"><em>INDEX</em></a></li>
+					<li class="info"><a href="https://altdeus.com/en/gameinfo/story.html"><em>INTRODUCTION</em></a></li>
+					<li class="chara"><a href="https://altdeus.com/en/character/index.html"><em>CHARACTER</em></a></li>
+					<li class="staff"><a href="https://altdeus.com/en/staffcast/cast.html"><em>STAFF&amp;CAST</em></a></li>
+					<li class="news"><a href="https://altdeus.com/en/news/index.html"><em>NEWS</em></a></li>
+					<li class="special"><a href="https://altdeus.com/en/special/index.html"><em>SPECIAL</em></a></li>
+				</ul>
+
+
+				<h3 class="platform">oculus</h3>
+				<h3 class="develop">MyDearest</h3>
+
+
+			</nav>
+
+
+
+		</section>
+		<!--/GNAVI-->
+
+
+
+
+
+
+
+		<!--PICKUP-->
+		<section id="pickup">
+
+
+
+			<ul class="slick_ui"></ul>
+
+
+
+			<ul class="slick_body slick-initialized slick-slider"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 332px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 322px;"><div><li style="width: 100%; display: inline-block;">
+					<a href="https://altdeus.com/en/news/20200722_193.html" tabindex="0">
+						
+							<img src="https://altdeus.com/en/entryimages/news_cover_topics.png">
+						
+						<div>
+							<h3>topics</h3>
+							<p>
+								
+								
+									Official Website is now open!
+								
+							</p>
+						</div>
+					</a>
+				</li></div></div></div></div></ul>
+
+
+
+		</section>
+		<!--/PICKUP-->
+
+
+
+
+
+
+		<!--ABOUT-->
+		<section id="about">
+
+
+
+			<div class="about_1 jwp_target">
+
+				<h3>Launch into the future.</h3>
+
+				<div class="read">
+					<p> Enter the latest installment in the Chronos Series.<br>
+						Become Lieutenant Chloe, pilot of the massive battle robot Makhia as you face off against the Meteoras, colossal enemies of humanity in a story that takes place 200 years in the future.</p>
+					<p> Make choices and decisions with the guidance of the Decision Support System.<br>
+						Pilot the 400-meter-tall Makhia in blood-pumping action sequences.<br>
+						Be amazed by the concerts of an electronic idol.</p>
+					<p> The future awaits beyond your screen.</p>
+				</div>
+
+				<figure><img src="assets/images/about_ss_01.png"></figure>
+
+			</div>
+
+
+
+			<div class="about_2 jwp_target">
+
+				<h3> "Life is a series of choices and decisions."</h3>
+
+				<div class="read">
+					<p>You will become the protagonist, Chloe, and experience the world 200 years in the future.<br> In a society of highly advanced virtual and augmented reality technologies, humans have been liberated from the stress of making choices.</p>
+					<p>That does not mean, however, that they are completely free from making the choices themselves. Your choices and decisions have immense influence. They will drastically change the direction the story takes.</p>
+					<p>This is the beginning of the story you tell.</p>
+				</div>
+
+				<figure><img src="assets/images/about_ss_02.png"></figure>
+
+			</div>
+
+
+
+			<div class="video-box"><video src="assets/movie/index_background_movie.mp4" autoplay="" playsinline="" muted="" loop=""></video></div>
+
+
+
+		</section>
+		<!--/ABOUT-->
+
+
+
+
+
+
+		<!--MOVIE-->
+		<section id="movie" class="jwp_target">
+
+
+
+			<h2><span>ALTDEUS: Beyond Chronos</span>PROMOTION MOVIE</h2>
+
+
+			<p><a href="https://www.youtube.com/watch?v=OS9n8NilROU" target="_blank">PROMOTION MOVIE</a></p>
+
+
+
+		</section>
+		<!--/MOVIE-->
+
+
+
+
+
+
+		<!--STORY-->
+		<section id="introduction">
+
+
+
+			<h2 class="jwp_target">STORY</h2>
+
+
+			<div class="cover jwp_target">
+
+				<p>This isn't a dream.</p>
+
+				<div class="parallax_mask"></div>
+				<div class="parallax_bg"></div>
+
+			</div>
+
+
+			<div class="box_story">
+
+
+				<p class="jwp_target"> The year 2080. <br>With the invasion of the <strong>Meteoras</strong>, <br>alien beings of immense size and strength, <br>humanity sought safety and salvation deep underground, <br>establishing <strong>Augmented Tokyo</strong>. <br>This 2km radius underground city became humanity's last bastion.</p>
+				<p class="jwp_target">2280. Chloe, <br>member of the Anti-Meteora military organization <strong>Prometheus</strong>, <br>defends the city in her Makhia, a massive battle robot. <br>Though her foes are formidable, she survives with the help of her companions.</p>
+				<p class="jwp_target"> Prometheus fights to protect the city from the <strong>Meteoras</strong> and retake the surface one day. <br>However, that is not why Chloe pulls the trigger.</p>
+
+
+				<figure><img src="assets/images/introduction_arrow.png"></figure>
+
+
+				<p class="jwp_target"> No. Everything she does, she does for her fallen friend. Her dearest friend. <strong>Coco</strong>.<br>The blue flame of vengeance that burns within her is never extinguished. <br>It sears Chloe's heart as she thinks of the choices she faced and decision she made, back in that moment.</p>
+						<p class="jwp_target"> And then, the gears of fate begin to turn at a screeching pace.</p>
+						<p class="jwp_target">A <strong>Meteora</strong> with Coco's form attacks.<br>
+							This is Chloe's <strong>reality</strong>.</p>
+
+
+			</div>
+
+
+
+		</section>
+		<!--/STORY-->
+
+
+
+
+
+		<p class="sphere"></p>
+
+
+
+
+
+
+		<!--CHARACTER-->
+		<section id="character" class="jwp_target">
+
+
+
+			<h2 class="jwp_target">CHARACTER</h2>
+
+
+			<div class="circle">
+
+
+				<div class="box_chara">
+
+					<!--クロエ-->
+					<div class="chloe active">
+						<h3>Chloe</h3>
+						<h4><span>VA: </span>Akari Kito</h4>
+						<p>The protagonist of the story and a stand-in for the player. This Designed Human was created by Professor Julie to face off against the Meteoras, invaders of the surface. Lacking in emotions since a young age, she had no goals in life other than fighting her alien foes--at least, until she met the blind girl Coco. Coco taught her what it meant to have human emotions, allowing Chloe to grow. Her peaceful days off the battlefield were shattered, however, when a Meteora devoured this newfound friend.<br>Chloe has fallen back onto her own goal, destroying the Meteoras, now with new motivation: Revenge.</p>
+						<figure><img src="assets/images/character_cdfull_chloe.png"></figure>
+					</div>
+					<!--/クロエ-->
+
+					<!--コーコ-->
+					<div class="coco">
+						<h3>Coco Coconoe</h3>
+						<h4><span>VA: </span>Kaya Okuno</h4>
+						<p>The daughter of councilors of the underground city. A mysterious, blind, wheelchair-bound girl who suffered an enigmatic death two years ago when she was eaten by a Meteora.<br>She taught Chloe how to open her heart and treated her like a friend. She also loved near-forgotten traditions and artifacts of the old world like singing and paper books.<br>The sunroom that Chloe looks after is filled with her memories.</p>
+						<figure><img src="assets/images/character_cdfull_coco.png"></figure>
+					</div>
+					<!--/コーコ-->
+
+
+					<!--ノア-->
+					<div class="noa">
+						<h3>Noa</h3>
+						<h4><span>VA: </span>Yumiri Hanamori</h4>
+						<p> An AARC (Artificial Augmented Reality Crystal) made in Coco's image after her death.<br> A pop star, she shines as a symbol of hope in the entertainment-bereft underground.<br> During battle, Noa provides control support for Chloe's battle robot, the Alto Makhia.<br> Although she looks like Coco, Noa has a completely different personality, leading Chloe to call her a fake and avoid her.</p>
+						<figure><img src="assets/images/character_cdfull_noa.png"></figure>
+					</div>
+					<!--/ノア-->
+
+
+					<!--アニマ-->
+					<div class="anima">
+						<h3>Anima</h3>
+						<h4><span> VA: </span>Yui Ishikawa</h4>
+						<p> A unique Meteora that took on a human form after eating Coco. The name "Anima," meaning "soul," was given by Aoba. <br>Anima is unusually aggressive towards Chloe, yet has eyes very reminiscent of Coco. Anima also opens up to Chloe from time to time, and shows great interest in the things Coco liked. This mysterious Meteora confuses Chloe to no end.</p>
+						<figure><img src="assets/images/character_cdfull_anima.png"></figure>
+					</div>
+					<!--/アニマ-->
+
+				</div>
+
+				<ul class="ui">
+					<li class="chloe active">
+						<div>
+							<div>
+								<h5>Chloe</h5>
+								<p>VA: Akari Kito</p>
+							</div>
+						</div>
+					</li>
+					<li class="coco">
+						<div>
+							<div>
+								<h5>Coco</h5>
+								<p>VA: Kaya Okuno</p>
+							</div>
+						</div>
+					</li>
+					<li class="noa">
+						<div>
+							<div>
+								<h5>Noa</h5>
+								<p>VA: Yumiri Hanamori</p>
+							</div>
+						</div>
+					</li>
+					<li class="anima">
+						<div>
+							<div>
+								<h5>Anima</h5>
+								<p>VA: Yui Ishikawa</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+
+			</div>
+
+
+
+		</section>
+		<!--/CHARACTER-->
+
+
+
+
+
+
+		<!--PRODUCT-->
+		<section id="product">
+
+
+
+			<h2 class="jwp_target">PRODUCT</h2>
+
+			<div class="coverart jwp_target">
+				<figure class="pc"><img src="assets/images/product_kv.png"></figure>
+				<figure class="sp"><img src="assets/images/sp_product_kv.png"></figure>
+			</div>
+
+			<ul class="stafflist">
+
+				<li>
+					<em class="ef_liner">Director</em>
+					<h4 class="ef_liner">Haruki Kashiwakura</h4>
+					<p class="ef_liner">Director of "TOKYO CHRONOS",Motion Director of "Expelled from Paradise"</p>
+				</li>
+
+				<li class="ef_liner">
+					<em class="ef_liner">Character Design</em>
+					<h4 class="ef_liner">LAM</h4>
+					<p class="ef_liner">Character Design of "TOKYO CHRONOS"</p>
+				</li>
+
+				<li class="ef_liner">
+					<em class="ef_liner">Scenario Writer</em>
+					<h4 class="ef_liner">Kyohei Oyama / Kamitsuki Rainy / Yuya Takashima / Seiji Kagami</h4>
+					<p class="ef_liner">Kyohei Oyama | Writer of "TOKYO CHRONOS"</p>
+					<p class="ef_liner">Kamitsuki Rainy: Writer of "Soredemo Inoheiki ha Rabukome ga Shitai"</p>
+					<p class="ef_liner">Yuya Takashima: Story Setting Investigator of "Mobile Suit Gundam IV: The Origin"</p>
+					<p class="ef_liner">Seiji Kagami | Writer of "Shiro no Dansho"</p>
+				</li>
+
+				<li class="ef_liner">
+					<em class="ef_liner">Mechanic Design</em>
+					<h4 class="ef_liner">I-IV</h4>
+					<p class="ef_liner">Mechanic Design of "ALDNOAH.ZERO"</p>
+				</li>
+
+			</ul>
+
+
+
+			<div class="castlist">
+
+				<div class="ef_liner">
+					<figure><img src="assets/images/product_cast.png"></figure>
+				</div>
+
+				<h3 class="ef_liner">CAST</h3>
+
+				<dl class="ef_liner">
+					<dt>Chloe</dt>
+					<dd>Chelsey Moore (<span>English</span>)</dd>
+					<dd>Akari Kito (<span>Japanese</span>)</dd>
+					<dt>Coco Coconoe</dt>
+					<dd>Danii Meger (<span>English</span>)</dd>
+					<dd>Kaya Okuno (<span>Japanese</span>)</dd>
+					<dt>Noa</dt>
+					<dd>Grace Chan (<span>English</span>)</dd>
+					<dd>Yumiri Hanamori (<span>Japanese</span>)</dd>
+					<dt>Anima</dt>
+					<dd>Yui Ishikawa (<span>English/Japanese</span>)</dd>
+					<dt>Yamato Amanagi</dt>
+					<dd>Jesse Inocalla (<span>English</span>)</dd>
+					<dd>Yusuke Kobayashi (<span>Japanese</span>)</dd>
+					<dt>Aoba Iwaza</dt>
+					<dd>Adam Fedyk (<span>English</span>)</dd>
+					<dd>Yoshihiko Aramaki (<span>Japanese</span>)</dd>
+					<dt>Julie</dt>
+					<dd>Asia Mattu (<span>English</span>)</dd>
+					<dd>Yu Serizawa (<span>Japanese</span>)</dd>
+					<dt>Deiter</dt>
+					<dd>Chris Garnier (<span>English</span>)</dd>
+					<dd>Show Hayami (<span>Japanese</span>)</dd>
+				</dl>
+
+			</div>
+
+
+
+			<div class="soundlist">
+
+				<ul>
+
+					<li>
+						<figure><img src="assets/images/artist_photo_yosukekori.png"></figure>
+						<h4>Yosuke Kori</h4>
+						<p>《Sound Composer / <br>Insert songs - Lyrics and Music》</p>
+						<p>"TOKYO CHRONOS"Sound Composer</p>
+						<p>ASCA"Kobo"Lyrics and Music</p>
+						<p>R!N"fragment"Music</p>
+						<p>Wolpis Kater"REVE"Music</p>
+					</li>
+
+					<li>
+						<figure><img src="assets/images/artist_photo_monaca.png"></figure>
+						<h4>Kuniyuki Takahashi <br>(<span>MONACA</span>)</h4>
+						<p>《Sound Composer》</p>
+						<p>"Woodpecker Detective's Office"Sound Composer</p>
+						<p>"My Youth Romantic Comedy Is Wrong as I Expected, Kan"Sound Composer</p>
+						<p>"Wake Up, Girls! New chapter"Sound Composer</p>
+					</li>
+
+					<li>
+						<figure><img src="assets/images/artist_photo_kz.png"></figure>
+						<h4>kz(<span>livetune</span>)</h4>
+						<p>《Insert songs - Music and  Arrange》</p>
+						<p>Kz is a music producer who has worked on many hits for anime theme songs and game soundtracks in Japan. In addition to livetune that he mainly uses as a musician, he uses different names to work with world-famous EDM musicians such as ZEDD and Afrojack. He also has experience working on remixes for many dance music. He works on incidental music for TV anime series in recent years.</p>
+					</li>
+
+					<li>
+						<figure><img src="assets/images/artist_photo_rin.png"></figure>
+						<h4>R!N/Gemie</h4>
+						<p>《Singer / Lyric translation》</p>
+						<p>《Insert songs"Sunlight" and more…》</p>
+						<p>"Attack on Titan: Season Two"Insert songs</p>
+						<p>"PROMARE"Insert songs</p>
+					</li>
+
+					<li>
+						<figure><img src="assets/images/artist_photo_asca.png"></figure>
+						<h4>ASCA</h4>
+						<p>《Singer》</p>
+						<p>ASCA was born in Aichi prefecture on September 5, 1996.She made her major debut with her first single “KOE”. The title track was used as the second ending theme to the anime television series Fate/Apocrypha. In 2019, she sang “RESISTER” for the second opening theme of anime Sword Art Online: Alicization. After that, she released her 5th single “RUST/Hibari/Kōbō”. Her first album “Hyakkaryōran” includes these songs and has been a long seller.</p>
+					</li>
+
+					<li>
+						<figure><img src="assets/images/artist_photo_setsuko.png"></figure>
+						<h4>Setsuko</h4>
+						<p>《Singer》</p>
+						<p>Setsuko is a singer and songwriter. She is an up and coming vocalist who emotionally sings songs about painful emotions. She has started her singing career when she posted cover songs on a Japanese video-sharing service in 2018. In December 2019, she formed a musical group “Kuhaku Gokko” with koyori and Tsubasa Harihara. In October 2020, the group released its 1st  EP “A little bit”.</p>
+					</li>
+
+					<li>
+						<figure><img src="assets/images/artist_photo_yuni.png"></figure>
+						<h4>YuNi</h4>
+						<p>《Singer》</p>
+						<p>YuNi started her activity on YouTube in June 2018. She has posted unique videos of cover songs. She launched her own music label “yunion.wave” and released her original song “Toumei Seisai” in October 2019. The song ranked 3rd on the all-genres chart as well as 1st on the electronic chart on iTunes in Japan. Her album “clear / CoLoR” was released in April 2019 and reached 4th and 5th on the all-genres chart as well as 1st and 2nd on the electronic chart in Japan. It also became 8th on the Oricon Daily Ranking, well-known music charts in Japan. She has been very serious about her singing activities and sung various genres from old Japanese songs, anisong to foreign music with her pure and clear voice and pioneered the virtual singer scenes.She announced to belong to a famous Japanese record label “TOY'S FACTORY” on August 14, 2020. </p>
+					</li>
+
+					<li>
+						<figure><img src="assets/images/artist_photo_wolpis.png"></figure>
+						<h4>Wolpis Carter</h4>
+						<p>《Singer》</p>
+						<p>Wolpis Carter is a male singer. He has a synonym “A boy who wants to hit high notes” and keeps attracting listeners with his high-pitched sound.He is also CEO of Wolpis Inc, which is committed to high-pitched tones.Since his first post in 2012, he has put many videos of cover songs as well as music videos of his original songs on YouTube and Niconico. His singing video of the cover song “kiminoyozora shoukaihan (Orangestar)” has reached over 15 million views. The music video of his original song “Deichuunisaku” has surpassed 28 million views.He released his first album “Wolpis Sha No Teikyou De Ookuri Shimasu” in 2016. After that, he has released several albums and performed many sold-out solo concerts. He released his 4th full-album “The Tree of Forty Fruits” in March 2020.</p>
+					</li>
+
+				</ul>
+
+			</div>
+
+
+
+			<div class="specandprice">
+
+				<h3>PRICE/SPEC</h3>
+
+				<div class="pricebox">
+					<ul>
+						<li>
+							<p class="saletag">LIMITED <span>SALE!</span></p>
+							<div>
+								<h4>OculusQuest</h4>
+								<p>
+									<em>$<span>39,99</span></em>
+								</p>
+								<a href="https://www.oculus.com/experiences/quest/2977398372335251/?utm_source=OfficialSiteEn&amp;utm_campaign=default&amp;utm_channel=LP_productBlock" target="_blank">BUY NOW!</a>
+							</div>
+							<div class="caption">
+								<p>Oculus Quest、Oculus Quest2</p>
+							</div>
+						</li>
+						<li>
+							<p class="saletag">LIMITED <span>SALE!</span></p>
+							<div>
+								<h4>OculusRift</h4>
+								<p>
+									<em>$<span>39,99</span></em>
+								</p>
+								<a href="https://www.oculus.com/experiences/rift/2741208932631148/?utm_source=OfficialSiteEn&amp;utm_campaign=default&amp;utm_channel=LP_productBlock" target="_blank">BUY NOW!</a>
+							</div>
+							<div class="caption">
+								<p>Oculus Rfit、Oculus Rift S</p>
+							</div>
+						</li>
+						<li>
+							<p class="saletag">LIMITED <span>SALE!</span></p>
+							<div>
+								<h4>Steam VR</h4>
+								<p>
+									<em>$<span>29.99</span></em>
+								</p>
+								<a href="https://store.steampowered.com/app/1502080/ALTDEUS_Beyond_Chronos/" target="_blank">BUY NOW!</a>
+							</div>
+							<div class="caption">
+								<p>Device(s): Oculus Rift S, Oculus Rift, Vive Pro, Vive,&nbsp;Valve Index</p>
+							</div>
+						</li>
+						<li>
+							<p class="saletag">LIMITED <span>SALE!</span></p>
+							<div>
+								<h4>PlayStation®VR</h4>
+								<p>
+									<em>$<span>29.99</span></em>
+								</p>
+								<a href="https://store.playstation.com/en_US/product/UP5181-CUSA26563_00-7800336833895709" target="_blank">BUY NOW!</a>
+							</div>
+							<div class="caption">
+								<p>Device(s): PlayStation®VR</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="spec">
+					<li class="ef_liner">
+						<div>
+							<h4>Title</h4>
+							<div>
+								<p>ALTDEUS: Beyond Chronos</p>
+							</div>
+						</div>
+					</li>
+					<li class="ef_liner">
+						<div>
+							<h4>Platform</h4>
+							<div>
+								<p>Oculus / PlayStation®VR / SteamVR</p>
+							</div>
+						</div>
+					</li>
+					<li class="ef_liner">
+						<div>
+							<h4>Language</h4>
+							<div>
+								<p>English / Japanese / Chinese / Deutsch / Francais (English Voice-over)</p>
+							</div>
+						</div>
+					</li>
+					<li class="ef_liner">
+						<div>
+							<h4>Voice</h4>
+							<div>
+								<p>English / Japanese</p>
+							</div>
+						</div>
+					</li>
+					<li class="ef_liner">
+						<div>
+							<h4>Developer</h4>
+							<div>
+								<p>MyDearest Inc.</p>
+							</div>
+						</div>
+					</li>
+					<li class="ef_liner">
+						<div>
+							<h4>Genre</h4>
+							<div>
+								<p>VR Adventure</p>
+							</div>
+						</div>
+					</li>
+					<li class="ef_liner">
+						<div>
+							<h4>Player</h4>
+							<div>
+								<p>Single</p>
+							</div>
+						</div>
+					</li>
+					<li class="ef_liner">
+						<div>
+							<h4>Release Date</h4>
+							<div>
+								<p>Oculus: December 3, 2020<br>PlayStation®VR: Available Apr 14, 2021<br>Steam: Available Feb 18, 2021</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+
+
+
+			<div class="brand">
+
+				<h3 class="ef_liner">Let's Plays/Fan Content"</h3>
+
+				<p class="ef_liner">"We promote Let's Play and fan-made content of ALTDEUS: Beyond Chronos on video sites and social media services. We also have a fan kit of assets in circulation to help with Let's Plays and fan-made content, as well.</p>
+
+			</div>
+
+
+
+		</section>
+		<!--/PRODUCT-->
+
+
+
+
+
+
+<!--FOOTER-->
+		<footer>
+
+
+
+			<!--SHARE-->
+			<section class="share">
+
+
+				<h3>SHARE</h3>
+
+
+				<ul>
+					<li class="twitter"><a href="https://twitter.com/share?url=https://altdeus.com/en/&amp;text=VR Adventure, " altdeus:="" beyond="" chronos"="" official="" web="" site.&related="chronos_ser&amp;hashtags=ALTDEUS&quot;" target="_blank">Twitter</a></li>
+					<li class="line"><a href="http://line.me/R/msg/text/?https://altdeus.com/en/" target="_blank">LINE</a></li>
+					<li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://altdeus.com/en/" target="_blank">Facebook</a></li>
+				</ul>
+
+
+			</section>
+			<!--/SHARE-->
+
+
+
+			<!--BANNER_footer-->
+			<section id="bannerbox_footer">
+
+				<ul>
+					<li><a href="https://dyschroniaca.com/en/" target="_blank"><img src="https://altdeus.com/en/entryimages/banner_dyschronia.png"></a></li><li><a href="https://www.oculus.com/experiences/quest/2977398372335251/?utm_source=OfficialSiteEn&amp;utm_campaign=default&amp;utm_channel=otherModuleBanner" target="_blank"><img src="https://altdeus.com/en/assets/images/banner_abc_quest_en.png"></a></li><li><a href="https://www.oculus.com/experiences/rift/2741208932631148/?utm_source=OfficialSiteEn&amp;utm_campaign=default&amp;utm_channel=otherModuleBanner" target="_blank"><img src="https://altdeus.com/en/assets/images/banner_abc_rift_en.png"></a></li><li><a href="https://store.playstation.com/en_US/product/UP5181-CUSA26563_00-7800336833895709" target="_blank"><img src="https://altdeus.com/en/assets/images/banner_abc_psvr_en.png"></a></li><li><a href="https://store.steampowered.com/app/1502080/ALTDEUS_Beyond_Chronos/" target="_blank"><img src="https://altdeus.com/en/assets/images/banner_abc_pcvr_en.png"></a></li><li><a href="https://twitter.com/chronos_ser" target="_blank"><img src="https://altdeus.com/en/assets/images/banner_abc_twitter_en.png"></a></li><li><a href="https://www.youtube.com/channel/UCzYfmRE2d6uWI3WorYAbXTw" target="_blank"><img src="https://altdeus.com/en/assets/images/banner_abc_youtube_en.png"></a></li>
+				</ul>
+
+			</section>
+			<!--/BANNER_footer-->
+
+
+
+			<!--LINK-->
+			<section class="deeplink">
+
+
+				<ul>
+					<li><a href="https://altdeus.com/en/index.html">INDEX</a></li>
+					<li><a href="https://altdeus.com/en/gameinfo/gamesystem.html">GAMEINFO</a></li>
+					<li><a href="https://altdeus.com/en/character/index.html">CHARACTER</a></li>
+					<li><a href="https://altdeus.com/en/staffcast/cast.html">STAFF&amp;CAST</a></li>
+					<li><a href="https://altdeus.com/en/news/index.html">NEWS</a></li>
+					<li><a href="https://altdeus.com/en/special/index.html">SPECIAL</a></li>
+					<li><a href="https://altdeus.com/en/license/index.html">LICENCE</a></li>
+				</ul>
+
+
+			</section>
+			<!--/LINK-->
+
+
+
+			<!--LANGUAGE-->
+			<section class="lang">
+
+
+				<h2>ALTDEUS: Beyond Chronos</h2>
+
+
+				<ul>
+					<li class="jp"><a href="https://altdeus.com/">JAPANESE</a></li>
+					<li class="en"><a href="https://altdeus.com/en/" class="active">ENGLISH</a></li>
+				</ul>
+
+
+			</section>
+			<!--/LANGUAGE-->
+
+
+
+			<p>©Facebook Corporation. Oculus logo are trademarks and/or registered trademarks of Facebook Corporation in the U.S. and/or other countries.</p>
+
+
+
+			<!--LICENCE-->
+			<small>©MyDearest, Inc. All Rights Reserved.</small>
+			<!--/LICENCE-->
+
+
+
+		</footer>
+		<!--/FOOTER-->
+
+
+
+
+
+
+
+	</div>
+
+<!--compornent_toast-->
+
+    <dl class="compornent_toast_banner">
+        <dt>
+            <a href="https://discord.com/invite/QWJpgNRs4n/?abc_6"><div class="chara_icon vis_6"></div></a>
+        </dt>
+        <dd>
+            <div class="compornent_toast_close">close</div>
+            <a href="https://discord.com/invite/QWJpgNRs4n/?abc_6">
+                <figure><img src="assets/images/compornent_toast/discord.png"></figure>
+                <div id="charatext">
+                    <p>Join the Chronos Haven Discord Server! </p>
+                    <div class="clicktext"></div>
+                </div>
+            </a>
+        </dd>
+    </dl>
+
+	<style>
+		.compornent_toast_banner {
+		position: fixed;
+		bottom: -230px;
+		width: 100%;
+		z-index: 300;
+		transition-duration: 300ms;
+		transition-property: all;
+		transition-timing-function: cubic-bezier(0.42, 0, 0, 0.99);
+		transition-delay: 0ms;
+		transform-origin: bottom;
+		}
+		.compornent_toast_banner.active {
+		bottom: 10px;
+		}
+		.compornent_toast_banner dt {
+		position: absolute;
+		right: 40px;
+		bottom: 0;
+		}
+		.compornent_toast_banner dt .chara_icon {
+		width: 65px;
+		height: 65px;
+		background-color: #fff;
+		background-position: center center;
+		background-size: 100% auto;
+		border-radius: 40px;
+		border: solid 2px #000;
+		}
+		.compornent_toast_banner dt .chara_icon.vis_1 {
+		background-image: url(assets/images/compornent_toast/chara_1.png);
+		}
+		.compornent_toast_banner dt .chara_icon.vis_2 {
+		background-image: url(assets/images/compornent_toast/chara_2.png);
+		}
+		.compornent_toast_banner dt .chara_icon.vis_3 {
+		background-image: url(assets/images/compornent_toast/chara_3.png);
+		}
+		.compornent_toast_banner dt .chara_icon.vis_4 {
+		background-image: url(assets/images/compornent_toast/chara_4.png);
+		}
+		.compornent_toast_banner dt .chara_icon.vis_5 {
+		background-image: url(assets/images/compornent_toast/chara_5.png);
+		}
+		.compornent_toast_banner dt .chara_icon.vis_6 {
+		background-image: url(assets/images/compornent_toast/chara_6.png);
+		}
+		.compornent_toast_banner dt .chara_icon.vis_7 {
+		background-image: url(assets/images/compornent_toast/chara_7.png);
+		}
+		.compornent_toast_banner dt .chara_icon.vis_8 {
+		background-image: url(assets/images/compornent_toast/chara_8.png);
+		}
+		.compornent_toast_banner dd {
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		position: absolute;
+		right: 20px;
+		bottom: 80px;
+		width: 250px;
+		height: 70px;
+		background-color: #fff;
+		filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.1));
+		}
+		.compornent_toast_banner dd .compornent_toast_close {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: 24px;
+		height: 24px;
+		background-color: #fff;
+		text-indent: -9999px;
+		cursor: pointer;
+		}
+		.compornent_toast_banner dd .compornent_toast_close:after {
+		content: "";
+		position: absolute;
+		right: 4px;
+		top: 4px;
+		width: 12px;
+		height: 12px;
+		background-image: url(assets/images/compornent_toast/close_bg.png);
+		background-size: 40% auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border: solid 1px #000;
+		}
+		.compornent_toast_banner dd:after {
+		content: "";
+		position: absolute;
+		bottom: -10px;
+		left: 170px;
+		display: block;
+		width: 10px;
+		height: 10px;
+		background-image: url(assets/images/compornent_toast/fukidashi_bg.png);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		}
+		.compornent_toast_banner dd a {
+		box-sizing: border-box;
+		display: flex;
+		width: 100%;
+		color: #000;
+		text-decoration: none;
+		}
+		.compornent_toast_banner dd #charatext {
+		width: 180px;
+		}
+		.compornent_toast_banner dd p {
+		display: block;
+		margin: 0;
+		font-size: 12px;
+		line-height: 1.4em;
+		letter-spacing: 0.05em;
+		}
+		.compornent_toast_banner dd .clicktext {
+		padding-right: 22px;
+		color: #000;
+		font-size: 10px;
+		line-height: 1.4em;
+		text-align: right;
+		font-weight: bold;
+		background-position: right center;
+		background-repeat: no-repeat;
+		background-size: auto 8px;
+		}
+		.compornent_toast_banner dd .clicktext.chara_1 {
+		background-image: url(assets/images/compornent_toast/arrow_1.png);
+		}
+		.compornent_toast_banner dd .clicktext.chara_2 {
+		background-image: url(assets/images/compornent_toast/arrow_2.png);
+		}
+		.compornent_toast_banner dd .clicktext.chara_3 {
+		background-image: url(assets/images/compornent_toast/arrow_3.png);
+		}
+		.compornent_toast_banner dd .clicktext.chara_4 {
+		background-image: url(assets/images/compornent_toast/arrow_4.png);
+		}
+		.compornent_toast_banner dd .clicktext.chara_5 {
+		background-image: url(assets/images/compornent_toast/arrow_5.png);
+		}
+		.compornent_toast_banner dd .clicktext.chara_6 {
+		background-image: url(assets/images/compornent_toast/arrow_6.png);
+		}
+		.compornent_toast_banner dd .clicktext.chara_7 {
+		background-image: url(assets/images/compornent_toast/arrow_7.png);
+		}
+		.compornent_toast_banner dd .clicktext.chara_8 {
+		background-image: url(assets/images/compornent_toast/arrow_8.png);
+		}
+		.compornent_toast_banner dd figure {
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0 14px 0 14px;
+		width: 70px;
+		}
+		.compornent_toast_banner dd figure img {
+		width: 100%;
+		height: auto;
+		}
+	</style>
+
+	<script>
+		$(window).ready(function () {
+			let lastclose;
+			let limen = 86400000;
+			let now;
+			let wpobject;
+
+			function fnc_viewtoast() {
+				wpobject = new Waypoint({
+					element: $('body'),
+					handler: function(direction) {
+						if(direction === "down"){
+							$('.compornent_toast_banner').addClass('active');
+						} else {
+							$('.compornent_toast_banner').removeClass('active');
+						}
+					},offset: '-720px'
+				});
+			}
+
+			function fnc_saveload() {
+				now = (new Date()).getTime();
+				lastclose = {
+					"closetime":now,
+					"closeflag":false
+				}
+				let closedata = JSON.parse(localStorage.getItem('agitbnrclose'));
+				if(closedata==null){
+					localStorage.setItem('agitbnrclose',JSON.stringify(lastclose));
+				} else {
+					lastclose = closedata;
+				}
+
+				let check= (now > (lastclose.closetime + limen));
+
+				if(!lastclose.closeflag){
+					fnc_viewtoast();
+				} else if (check){
+					fnc_viewtoast();
+					localStorage.removeItem('agitbnrclose');
+				} else {
+
+				}
+			}
+			fnc_saveload();
+
+			$('.compornent_toast_close').on('touchstart click', function(event){
+				$(this).off();
+				$('.compornent_toast_banner').removeClass('active');
+				lastclose.closeflag = true;
+				lastclose.closetime = now;
+				localStorage.setItem('agitbnrclose',JSON.stringify(lastclose));
+				wpobject.destroy();
+			})
+
+			let charadata;
+			$.ajax({
+				url: 'https://altdeus.com/en/assets/json/compornent_toast.json',
+				type: 'GET',
+				dataType: "json",
+			}).done(function (data){
+				charadata= data[0];
+				fnc_appendtoast();
+			}).fail(function (data){
+			});
+
+			function fnc_appendtoast() {
+				let roll = Math.floor(Math.random() * (Object.keys(charadata).length + 1 - 1)) + 1;
+				let count = 0;
+
+				for (let key in charadata) {
+					count++;
+					if(count==roll){
+						$('.compornent_toast_banner a').attr('href', ('https://discord.com/invite/QWJpgNRs4n/?abc_' + charadata[key].no));
+						$('.compornent_toast_banner .chara_icon').addClass('vis_'+charadata[key].no);
+						$('.compornent_toast_banner dd p').text((charadata[key].セリフ));
+						gtag('event', 'click', {'event_category': 'compornent_toast', 'event_label': key});
+					}
+				}
+			}
+		});
+	</script>
+	<!--compornent_toast-->
+
+
+<span id="_cmp_elm_1_1" style="font-size: 300px; visibility: hidden; position: absolute; white-space: nowrap; line-height: normal; top: -100%; left: -100%;"><span style="font-family: fpbf_ac93d8111 !important;">,-</span><span style="font-family: &quot;MS PGothic&quot; !important;">,-</span><span style="font-family: Arial !important;">,-</span></span><span id="_cmp_elm_1_0" chkcmp="300px 'FuturaLTPro-Medium'" style="font-size: 300px; visibility: hidden; position: absolute; white-space: nowrap; line-height: normal; top: -100%; left: -100%;"><span style="font-family: FuturaLTPro-Medium, fpbf_ac93d8111 !important;">,-</span><span style="font-family: FuturaLTPro-Medium, &quot;MS PGothic&quot; !important;">,-</span><span style="font-family: FuturaLTPro-Medium, Arial !important;">,-</span></span></body></html>

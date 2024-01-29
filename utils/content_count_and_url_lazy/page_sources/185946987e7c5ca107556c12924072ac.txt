@@ -1,0 +1,91 @@
+<html><head>
+	    <title>Home Improvisation</title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#imagePreview").click(function(){
+					$("#imagePreview").addClass("hidden");
+				});
+				$("#screenshots img").click(function(){
+					$("#imagePreview img")[0].src = this.src;
+					$("#imagePreview").removeClass("hidden");
+				});
+			});
+
+		</script>
+	</head>
+	<body>
+		<section id="background">
+			<video id="backgroundvid" autoplay="" loop="">
+				<source src="img/hi_sizzle.mp4" type="video/mp4">
+			</video>
+		</section>
+
+		<section id="imagePreview" class="imagePreview hidden">
+			<img src="img/screenshots/houseframe.png">
+		</section>
+		<main>
+			<section id="socialMedia" class="socialMedia">
+				<a href="http://www.facebook.com/HomeImprovisation" class="facebook" target="_blank"><img src="img/facebook.png"></a>				
+				<a href="http://www.twitter.com/HomeImprovGame" class="twitter" target="_blank"><img src="img/twitter.png"></a>
+				<a href="mailto:thestorkburntdown@gmail.com" class="email" target="_blank"><img src="img/email.png"></a>
+			</section>
+
+			<section id="logo" class="logo expanding">
+				<img src="img/gameLogo.png">
+				<section id="trailer" class="trailer">
+					<iframe width="480" height="260" src="https://www.youtube.com/embed/BWurQYLH0YU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="" style="display: inline-block; max-width: 100%;">
+						
+					</iframe>
+				</section>
+			</section>
+
+			<section id="purchaseLinks" class="purchaseLinks expanding">
+				<h1>Buy Home Improvisation</h1>
+				<iframe src="https://itch.io/embed/17884?dark=true" width="552" height="167" scrolling="no" frameborder="0"></iframe>
+				<iframe src="http://store.steampowered.com/widget/357670/" scrolling="no" frameborder="0" width="550" height="180"></iframe>				
+			</section>
+
+			<section id="description" class="description expanding">
+				<h1>Furniture-Building Sandbox</h1>
+				<p>The viral sensation that cracked up the internet is back with a vengeance!</p>
+				<p><strong style="font-size: 1.1em; font-family: League; color: white;">Home Improvisation</strong> is a furniture-building simulator that lets you decorate an entire house. The only catch: none of the furniture comes with instructions! Discover the intended design or make your own creative masterpiece.</p>
+				<h2>Furniture is more fun with friends!</h2>
+				<p>Work together <strong>locally</strong> and <strong>online</strong> to build unique (and terrifying) creations. With a huge new catalog of furniture and a whole house to decorate, the possibilities are limitless!</p>
+				<h2>Build in <em>Virtual Reality</em></h2>
+				<p>Use your <strong>HTC Vive</strong> to build furniture! You can even play with friends at the same time, <strong>locally and online</strong>!</p> 
+				<h2>Decorate an entire house!</h2>
+				<p>With more than <strong>30 pieces of furniture</strong> and <strong>6 unique rooms</strong>, you can make your house into an artistic masterpiece.				
+			</p></section>
+
+			<section id="awards" class="awards expanding">
+				<h1 class="mobileOnly">Awards</h1><br>
+				<img src="img/indiecadeaward.png">
+				<img src="img/sxswaward.png">
+				<img src="img/ggjaward.png">
+				<img src="img/indiebitsaward.png">
+				<img src="img/fantasticarcadeaward.png">
+			</section>
+
+			<section id="screenshots" class="screenshots expanding">
+				<h1 class="mobileOnly">Screenshots</h1><br>
+				<img src="press/images/ss_1.png">
+				<img src="press/images/trailer_2.png">
+				<img src="press/images/trailer_3.png">
+				<img src="press/images/trailer_5.png">
+				<img src="press/images/trailer_12.png">
+				<img src="press/images/trailer_13.png">
+				<img src="press/images/trailer_17.png">
+				<img src="img/screenshots/ss_2.png">
+			</section>
+
+			<footer>
+				©<script type="text/javascript">document.write(new Date().getFullYear());</script>2023 <a href="http://www.thestorkburntdown.com/">The Stork Burnt Down</a> &nbsp; <a href="http://www.homeimprovisation.com/press">Press</a>
+			</footer>
+		</main>
+	
+</body></html>

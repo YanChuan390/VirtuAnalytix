@@ -1,0 +1,200 @@
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css">
+	<!-- <img src="houseCoverArt02.1_fromASP_final_00001.png" border="10">  -->
+	<title>IshiBloom</title> <!-- <title>51:22:51</title> -->
+	<style>
+		body{
+		background: black;
+		color: '#B026FF';
+		}
+	</style>
+
+	<script>
+		function allowDrop(ev){
+			ev.preventDefault();
+		}
+
+		function drag(ev){
+			ev.dataTransfer.setData("text",ev.target.id);
+			}
+
+		function drop(ev){
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+	</script>
+
+	<!-- MOBILE PAUSE 101022--
+	<center>
+		<audio controls autoplay loop>
+			<source src="_ambience_loop05.ogg" type="audio/ogg">
+		</audio>
+
+		<audio>
+			<source src="_bcomplete01.ogg" type="audio/ogg" id="sfx01">
+			<source src="_bcomplete09.ogg" type="audio/ogg" id="sfx02">
+		</audio>
+	</center>
+	-->
+
+</head>
+<body> 
+	<meta name="viewport" content="width=device-width"> <!-- VSC 111222  -->
+
+
+	<canvas id="TEST" width="1036" height="668" style="position: absolute; top: 0px; left: 0px;"></canvas> 
+	<canvas id="TEST2"></canvas> 
+
+	<!--screen.orientation.lock();-->
+
+	<center>
+
+	<meta name="TEST" content="width=device-width, initial-scale=1.0">
+	<meta name="canvas" content="width=device-width, initial-scale=1.0">
+
+	<script src="./index3.js"></script>
+
+	<div class="canvas-container">
+	<canvas id="TEST" width="window.innerWidth" height="window.innerHeight"></canvas>
+	
+	<!-- <center> -->
+
+	<div class="neonText">
+		<span class="dot" draggable="false" id="fct01"></span>
+		<span class="dot" draggable="false" id="fct02"></span>
+		<span class="dot" draggable="false" id="fct03"></span>
+
+		<span class="dot" draggable="false" id="fct04"></span>
+		<span class="dot" draggable="false" id="fct05"></span>
+		<span class="dot" draggable="false" id="fct06"></span>
+
+		<span class="dot" draggable="false" id="fct07"></span>
+		<span class="dot" draggable="false" id="fct08"></span> 
+		<span class="dot" draggable="false" id="fct09"></span>
+	</div>
+
+	<div>
+		<br>
+		<br>
+		<br>
+
+		<!-- MOBILE PAUSE 101022
+
+		<br>
+		<br>
+		<br>
+
+		-->
+
+		<br>
+		<br>
+		<br>
+
+		<span class="dotSolve" id="slv01"></span>
+		<span class="dotSolve" id="slv02"></span>
+		<span class="dotSolve" id="slv03"></span>
+
+		<span class="dotSolve" id="slv04"></span>
+		<span class="dotSolve" id="slv05"></span>
+		<span class="dotSolve" id="slv06"></span>
+
+		<span class="dotSolve" id="slv07"></span>
+		<span class="dotSolve" id="slv08"></span> 
+		<span class="dotSolve" id="slv09"></span> 
+	</div>
+
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+	<div> 
+		<a href="https://www.google.com/" rel="noopener noreferrer" id="example" disabled=""></a>
+
+		<a href="https://youtu.be/hV6mQy23Ucg" rel="noopener noreferrer" id="youtube_trail01" disabled=""></a>
+		
+		<!--
+		<video width=window.innerWidth height=window.innerHeight id="trailer01" controls>
+			<source src="Trailer_4.2.3_fromV4.1b20001-2809_BestPotential.mp4" type="video/mp4">
+		</video>
+		-->
+
+		<!--
+		<a href="Trailer_4.2.3_fromV4.1b20001-2809_BestPotential.mp4" id="trailer01" disabled></a>
+		<a target="_blank" rel="noopener noreferrer" href="trailerTeaser.html" id="trailer01" disabled></a>
+		-->
+
+		<a href="trailerTeaser.html" rel="noopener noreferrer" id="trailer01" disabled=""></a>
+		<a href="trailerGameplay.html" rel="noopener noreferrer" id="trailer02" disabled=""></a>
+
+		<a href="eula.html" rel="noopener noreferrer" id="eula01" disabled=""></a>
+
+		<a href="privacyPolicy.html" rel="noopener noreferrer" id="privacy01" disabled=""></a>
+		<a href="privacyContent.html" rel="noopener noreferrer" id="privacy02" disabled=""></a>
+
+		<a href="credits.html" rel="noopener noreferrer" id="credits01" disabled=""></a>
+
+		<a href="tbd.html" rel="noopener noreferrer" id="tbd01" disabled=""></a>
+
+		<a href="https://store.steampowered.com/app/2167190/512251/" rel="noopener noreferrer" id="steam01" disabled=""></a>
+		<!--<iframe src="https://store.steampowered.com/widget/2167190/" frameborder="0" width="646" height="190"></iframe>-->
+
+		<!--<a href="https://plato.stanford.edu/entries/qm-manyworlds/" target="_blank" id="mwi" disabled></a>-->
+		<a href="https://plato.stanford.edu/entries/qm-manyworlds/" rel="noopener noreferrer" id="mlt01" disabled=""></a>
+		<a href="https://plato.stanford.edu/entries/qm-copenhagen/" rel="noopener noreferrer" id="mlt02" disabled=""></a>
+		<a href="https://www.scientificamerican.com/article/was-our-universe-created-in-a-laboratory/" rel="noopener noreferrer" id="mlt03" disabled=""></a>
+		<a href="https://www.vice.com/en/article/z3vq8x/scientists-think-the-multiverse-might-be-the-key-to-explaining-dark-matter" rel="noopener noreferrer" id="mlt04" disabled=""></a>
+		<a href="https://www.sciencefocus.com/news/black-holes-and-the-multiverse-could-account-for-all-dark-matter-astronomers-claim/" rel="noopener noreferrer" id="mlt05" disabled=""></a>
+		<a href="https://plato.stanford.edu/entries/qt-consciousness/" rel="noopener noreferrer" id="mlt06" disabled=""></a>
+		<a href="https://www.nature.com/articles/d41586-019-02602-8" rel="noopener noreferrer" id="mlt07" disabled=""></a>
+		<a href="https://www.discovermagazine.com/the-sciences/are-many-worlds-and-the-multiverse-the-same-idea" rel="noopener noreferrer" id="mlt08" disabled=""></a>
+		<a href="https://plus.maths.org/content/it-many-worlds" rel="noopener noreferrer" id="mlt09" disabled=""></a>
+
+		<a href="https://plato.stanford.edu/entries/qm-decoherence/" rel="noopener noreferrer" id="qmc01" disabled=""></a>
+		<a href="https://blogs.scientificamerican.com/observations/decoherence-is-a-problem-for-quantum-computing-but/" rel="noopener noreferrer" id="qmc02" disabled=""></a>
+		<a href="https://www.washingtonpost.com/science/2019/10/23/google-scientists-say-theyve-achieved-quantum-supremacy/" rel="noopener noreferrer" id="qmc03" disabled=""></a>
+		<a href="https://www.sciencefocus.com/space/the-six-numbers-that-define-the-entire-universe/" rel="noopener noreferrer" id="qmc04" disabled=""></a>
+		<a href="https://cen.acs.org/articles/84/i44/Dark-Matter-Chemists.html" rel="noopener noreferrer" id="qmc05" disabled=""></a>
+		<a href="https://arxiv.org/abs/2106.13245" rel="noopener noreferrer" id="qmc06" disabled=""></a>
+		<a href="https://brilliant.org/wiki/dark-matter/" rel="noopener noreferrer" id="qmc07" disabled=""></a>
+		<a href="https://plato.stanford.edu/entries/determinism-causal/" rel="noopener noreferrer" id="qmc08" disabled=""></a>
+		<a href="https://scitechdaily.com/mathematical-model-may-explain-what-dark-matter-consists-of/" rel="noopener noreferrer" id="qmc09" disabled=""></a>
+
+		<a href="https://www.smithsonianmag.com/science-nature/string-theory-about-unravel-180953637/" rel="noopener noreferrer" id="str01" disabled=""></a>
+		<a href="https://www.livescience.com/63204-string-theory-multiverse.html" rel="noopener noreferrer" id="str02" disabled=""></a>
+		<a href="https://arxiv.org/abs/1907.05475" rel="noopener noreferrer" id="str03" disabled=""></a>
+		<a href="https://www.quantamagazine.org/dark-energy-may-be-incompatible-with-string-theory-20180809/" rel="noopener noreferrer" id="str04" disabled=""></a>
+		<a href="https://arxiv.org/abs/2010.03573" rel="noopener noreferrer" id="str05" disabled=""></a>
+		<a href="https://arxiv.org/abs/0805.2935" rel="noopener noreferrer" id="str06" disabled=""></a>
+		<a href="https://www.osti.gov/biblio/6912620-derivation-wheeler-dewitt-equation-heterotic-superstring-theory" rel="noopener noreferrer" id="str07" disabled=""></a>
+		<a href="https://arxiv.org/abs/1801.01351" rel="noopener noreferrer" id="str08" disabled=""></a>
+		<a href="https://www.sciencedirect.com/science/article/pii/S0550321316000675" rel="noopener noreferrer" id="str09" disabled=""></a>
+
+		<a href="https://www.nasa.gov/image-feature/goddard/2022/nasa-s-webb-delivers-deepest-infrared-image-of-universe-yet" rel="noopener noreferrer" id="spc01" disabled=""></a>
+		<a href="https://science.nasa.gov/science-news/science-at-nasa/2011/04may_epic" rel="noopener noreferrer" id="spc02" disabled=""></a>
+		<a href="https://ui.adsabs.harvard.edu/abs/2018PhRvL.121y1301B/abstract" rel="noopener noreferrer" id="spc03" disabled=""></a>
+		<a href="https://www.sciencefocus.com/space/why-does-the-universe-exist/" rel="noopener noreferrer" id="spc04" disabled=""></a>
+		<a href="https://chandra.harvard.edu/xray_astro/chemistry.html" rel="noopener noreferrer" id="spc05" disabled=""></a>
+		<a href="https://pubs.acs.org/doi/full/10.1021/acsearthspacechem.1c00265" rel="noopener noreferrer" id="spc06" disabled=""></a>
+		<a href="https://www.livescience.com/oldest-quasars-in-universe-formation" rel="noopener noreferrer" id="spc07" disabled=""></a>
+		<a href="https://www.space.com/space-roar-loudest-sound-in-the-universe.html" rel="noopener noreferrer" id="spc08" disabled=""></a>
+		<a href="https://physicsworld.com/a/fifth-force-could-explain-puzzling-orbits-of-dwarf-galaxies/" rel="noopener noreferrer" id="spc09" disabled=""></a>
+
+		<a href="https://www.jstor.org/stable/2564553" rel="noopener noreferrer" id="lgc01" disabled=""></a>
+		<a href="https://www.quantamagazine.org/secret-link-uncovered-between-pure-math-and-physics-20171201/" rel="noopener noreferrer" id="lgc02" disabled=""></a>
+		<a href="https://www.quantamagazine.org/new-math-proves-that-a-special-kind-of-space-time-is-unstable-20200511/" rel="noopener noreferrer" id="lgc03" disabled=""></a>
+		<a href="https://www.sciencedirect.com/science/article/pii/S157106611400053X" rel="noopener noreferrer" id="lgc04" disabled=""></a>
+		<a href="https://plato.stanford.edu/entries/logic-ai/" rel="noopener noreferrer" id="lgc05" disabled=""></a>
+		<a href="https://plato.stanford.edu/entries/peirce-semiotics/" rel="noopener noreferrer" id="lgc06" disabled=""></a>
+		<a href="https://plato.stanford.edu/entries/peirce-logic/" rel="noopener noreferrer" id="lgc07" disabled=""></a>
+		<a href="https://www.quantamagazine.org/why-the-many-worlds-interpretation-of-quantum-mechanics-has-many-problems-20181018/" rel="noopener noreferrer" id="lgc08" disabled=""></a>
+		<a href="https://www.livescience.com/why-people-believe-conspiracy-theories" rel="noopener noreferrer" id="lgc09" disabled=""></a>
+
+	</div>
+
+	</div></center>
+
+
+
+</body></html>

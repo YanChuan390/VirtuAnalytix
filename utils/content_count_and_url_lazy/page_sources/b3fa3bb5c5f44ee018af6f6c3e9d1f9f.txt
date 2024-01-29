@@ -1,0 +1,901 @@
+<html lang="en" class="is-desktop"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Gravity Lab | Solve Physics Puzzles on the Moon</title>
+
+ 
+
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/bower_components/fontawesome/css/font-awesome.min.css">
+
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="assets/bower_components/ionicons/css/ionicons.min.css">
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/bower_components/flickity/dist/flickity.min.css">
+
+    <!-- Photoswipe -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/default-skin/default-skin.css">
+
+    <!-- Seiyria Bootstrap Slider -->
+    <link rel="stylesheet" href="assets/bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css">
+
+    <!-- Summernote -->
+    <link rel="stylesheet" href="assets/bower_components/summernote/dist/summernote.css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/prism/themes/prism-tomorrow.css">
+
+    <!-- GoodGames -->
+    <link rel="stylesheet" href="assets/css/goodgames.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+    <header class="nk-header nk-header-opaque">
+
+
+
+    
+
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-fixed">
+            <div class="container">
+                <div class="nk-nav-table">
+
+                    <a href="index.php" class="nk-nav-logo">
+                        <img src="assets/images/logo.png" alt="GravLab" width="199">
+                    </a>
+
+                    <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
+
+                      
+						
+						
+						  <li>
+                            <a href="included.php">
+              High-Scores
+                
+            </a>
+                           
+                        </li>
+						
+						
+						  <li>
+                            <a href="testscenarios.php">
+                UGC
+                
+            </a>
+                           
+                        </li>
+						
+						
+                       <!--  <li >
+                            <a href="http://steamcommunity.com/workshop/browse/?appid=408340&browsesort=trend&section=readytouseitems" target ="_blank">
+               Steam Workshop
+                
+            </a>
+                           
+                        </li>-->
+                       
+                       
+						
+						<li class=" nk-drop-item">
+                            <a href="https://trello.com/b/mjPiVOSj/gravity-lab-bugs-roadmap" target="_blank">
+               Bugs &amp; Roadmap
+                
+            </a>
+                           
+                        </li>
+						
+						<li class=" nk-drop-item">
+                            <a href="https://discord.gg/saAkmkc" target="_blank">
+               Discord
+                
+            </a>
+                           
+                        </li>
+						
+						  <li class=" nk-drop-item">
+                            <a href="http://www.Mark-Schramm.com" target="_blank">
+               Mark Schramm
+                
+            </a>
+                           
+                        </li>
+                      
+                    </ul>
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+
+                        <li class="single-icon hidden-lg-up">
+                            <a href="#" class="no-link-effect" data-nav-toggle="#nk-nav-mobile">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav><div style="display: block; height: 129px;"></div>
+        <!-- END: Navbar -->
+
+    </header>
+
+
+
+ 
+    <div id="nk-nav-mobile" class="nk-navbar nk-navbar-side nk-navbar-right-side nk-navbar-overlay-content hidden-lg-up">
+        <div class="nano has-scrollbar">
+            <div class="nano-content" tabindex="0" style="right: -17px;">
+                <a href="index.html" class="nk-nav-logo">
+                    <img src="assets/images/logo.png" alt="" width="120">
+                </a>
+                <div class="nk-navbar-mobile-content">
+                    <ul class="nk-nav"><li>
+                            <a href="included.php">
+              High-Scores
+                
+            </a>
+                           
+                        </li>
+						
+						
+						  <li>
+                            <a href="testscenarios.php">
+                UGC
+                
+            </a>
+                           
+                        </li>
+						
+						
+                       <!--  <li >
+                            <a href="http://steamcommunity.com/workshop/browse/?appid=408340&browsesort=trend&section=readytouseitems" target ="_blank">
+               Steam Workshop
+                
+            </a>
+                           
+                        </li>-->
+                       
+                       
+						
+						<li class=" nk-drop-item">
+                            <a href="https://trello.com/b/mjPiVOSj/gravity-lab-bugs-roadmap" target="_blank">
+               Bugs &amp; Roadmap
+                
+            </a>
+                           
+                        </li>
+						
+						<li class=" nk-drop-item">
+                            <a href="https://discord.gg/saAkmkc" target="_blank">
+               Discord
+                
+            </a>
+                           
+                        </li>
+						
+						  <li class=" nk-drop-item">
+                            <a href="http://www.Mark-Schramm.com" target="_blank">
+               Mark Schramm
+                
+            </a>
+                           
+                        </li></ul>
+                </div>
+            </div>
+        <div class="nano-pane" style="display: none;"><div class="nano-slider" style="height: 20px; transform: translate(0px, 0px);"></div></div></div>
+    </div>    <!-- END: Navbar Mobile -->
+
+
+
+    <div class="nk-main">
+
+        <div class="nk-gap-2"></div>
+
+
+
+        <div class="container">
+  <div>
+				<iframe width="1100" height="675" src="https://www.youtube.com/embed/G9KNB6YbYM0?autoplay=1" frameborder="0" allowfullscreen=""></iframe>
+                  
+                  
+
+                </div>
+          
+
+            <!-- START: Categories -->
+            <div class="nk-gap-2"></div>
+			<div style=" text-align: center">
+			  <h3 class="nk-news-box-item-title">A Game by <a href="http://www.Mark-Schramm.com" target="_blank">Mark Schramm</a></h3>
+			  </div>
+			     <div class="nk-gap-2"></div>
+            <div class="row vertical-gap multi-columns-row" style=" text-align: center">
+                 <div class="col-lg-6">
+                    <div class="nk-feature-1">
+                        <div class="nk-feature-icon">
+                          <a target="_blank" href="https://www.oculus.com/experiences/rift/2004328649624954/">  <img src="assets/images/icon-mouse.png" alt=""></a>
+                        </div>
+                        <div class="nk-feature-cont">
+                            <h3 class="nk-feature-title"><a target="_blank" href="https://www.oculus.com/experiences/rift/2004328649624954/">Gravity Lab on Oculus Home</a></h3>
+                            <h4 class="nk-feature-title text-main-1"><a target="_blank" href="https://www.oculus.com/experiences/rift/2004328649624954/">Oculus Quest / Quest 2</a></h4>
+                        </div>
+                    </div>
+                </div>
+				 <div class="col-lg-6">
+                    <div class="nk-feature-1">
+                        <div class="nk-feature-icon">
+                          <a target="_blank" href="https://www.oculus.com/experiences/rift/1116533615035202/">  <img src="assets/images/icon-mouse.png" alt=""></a>
+                        </div>
+                        <div class="nk-feature-cont">
+                            <h3 class="nk-feature-title"><a target="_blank" href="https://www.oculus.com/experiences/rift/1116533615035202/">Gravity Lab on Oculus Home</a></h3>
+                            <h4 class="nk-feature-title text-main-1"><a target="_blank" href="https://www.oculus.com/experiences/rift/1116533615035202/">Oculus Rift / Rift S</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="nk-feature-1">
+                        <div class="nk-feature-icon">
+                            <a target="_blank" href="http://store.steampowered.com/app/408340/"><img src="assets/images/icon-gamepad.png" alt=""></a>
+                        </div>
+                        <div class="nk-feature-cont">
+                            <h3 class="nk-feature-title"><a target="_blank" href="http://store.steampowered.com/app/408340/">Gravity Lab on Steam</a></h3>
+                            <h4 class="nk-feature-title text-main-1"><a target="_blank" href="http://store.steampowered.com/app/408340/">SteamVR compatible Headsets</a></h4>
+                        </div>
+                    </div>
+                </div>
+				   <div class="col-lg-6">
+                    <div class="nk-feature-1">
+                        <div class="nk-feature-icon">
+                            <a target="_blank" href="https://www.microsoft.com/en-us/store/p/gravity-lab-gravitational-testing-facility-observations/9ncssc8tz48l"><img src="assets/images/icon-wmr.png" alt=""></a>
+                        </div>
+                        <div class="nk-feature-cont">
+                            <h3 class="nk-feature-title"><a target="_blank" href="https://www.microsoft.com/en-us/store/p/gravity-lab-gravitational-testing-facility-observations/9ncssc8tz48l">Gravity Lab on Windows Store</a></h3>
+                            <h4 class="nk-feature-title text-main-1"><a target="_blank" href="https://www.microsoft.com/en-us/store/p/gravity-lab-gravitational-testing-facility-observations/9ncssc8tz48l">Windows Mixed Reality Headsets</a></h4>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+			
+			
+			   <div class="nk-gap-4"></div> 
+		 
+		   <h3 class="nk-decorated-h-2">
+                <span>
+                  Reviews &amp; Featured Videos</span>
+            </h3>
+			
+			  <div class="row vertical-gap multi-columns-row" style=" text-align: center">
+                <div class="col-lg-6">
+                 <div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/fX6tZj5Ti4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+                </div>
+                <div class="col-lg-6">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/RzNUwaS9FUY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+             
+            </div>
+			
+			
+			
+			
+			
+			<!-- START: Blockquote -->
+			   <div class="row vertical-gap multi-columns-row" style=" text-align: center">
+                <div class="col-lg-6">
+                 <a href="http://www.roadtovr.com/gravlab-early-access-oculus-rift-touch-review/" target="_blank">  <blockquote class="nk-blockquote">
+    <div class="nk-blockquote-icon"><img src="assets/images/road-to-vr-logo-lighter-retina.png" width="100"></div>
+    <div class="nk-blockquote-content">
+        "Gravity Lab, despite its Early Access status, might well be the surprise star of the Oculus Touch launch lineup. [...]<br>I have lost hours to Gravity Lab.  The VR immersion is almost secondary to the mental immersion in eking out the best solutions to the problems."</div>
+    <div class="nk-blockquote-author"><span>Road To VR - Early Access Review </span></div>
+</blockquote></a>
+                </div>
+                <div class="col-lg-6">
+				 <div class="nk-gap-2"></div> 
+                   <blockquote class="nk-blockquote">
+    <div class="nk-blockquote-icon"><span>"</span></div>
+    <div class="nk-blockquote-content">
+        GravLab is everything you could want in a VR experience, and then some. For folks ages 18-80, this should be the GOTO demo to show off how amazing VR can be!</div>
+    <div class="nk-blockquote-author"><span>Reverend Kyle - VR Personality </span></div>
+</blockquote>
+                </div>
+             
+            </div>
+			
+			
+			 <div class="nk-gap-4"></div>
+			  <h3 class="nk-decorated-h-2">
+                <span>
+                 Support</span>
+            </h3>
+			<div class="row vertical-gap multi-columns-row" style=" text-align: center">
+				<div class="col-lg-4">
+                    <div class="nk-feature-1">
+                        
+                        
+                            <h3 class="nk-feature-title"><a target="_blank" href="https://discord.gg/saAkmkc">Discord</a></h3>
+                         
+                        
+                    </div>
+                </div>
+				
+				<div class="col-lg-4">
+                    <div class="nk-feature-1">
+                       
+                      
+                            <h3 class="nk-feature-title"><a target="_blank" href="https://trello.com/b/mjPiVOSj/gravity-lab-bugs-roadmap">Bug Reports &amp; Roadmap</a></h3>
+                         
+                       
+                    </div>
+                </div>
+				
+					<div class="col-lg-4">
+                    <div class="nk-feature-1">
+                       
+                      
+                            <h3 class="nk-feature-title"><a href="mailto:mail@mark-schramm.com">Email</a></h3>
+                         
+                       
+                    </div>
+                </div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			  <div class="nk-gap-4"></div> 
+			 <h3 class="nk-decorated-h-2">
+                <span>
+                  Playthroughs</span>
+            </h3>
+			
+			  <div class="row vertical-gap multi-columns-row" style=" text-align: center">
+                <div class="col-lg-6">
+                 <div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/7AWzbpi1440" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                </div>
+                <div class="col-lg-6">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/vjQTCNS8Lhg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> </div>
+             
+            </div>
+			
+			
+
+<!-- END: Blockquote -->
+			
+			
+            <!-- END: Categories -->
+			
+			   <div class="nk-gap-2"></div>
+            <h3 class="nk-decorated-h-2">
+                <span>
+                   <span class="text-main-1">Gravity</span> at your Fingertips!</span>
+            </h3>
+			   <p class="text-white">
+                        <strong>The Gravitational Testing Facility &amp; Observations</strong> would like to introduce our new range of gravity modifying appliances.<br><br>
+						 
+
+No matter how fast or how heavy your objects are, we can move them! Save money and time by replacing your entire human workforce with automated appliances from Gravity Lab! <br><br>
+
+Currently awaiting regulatory approval, we invite you to test your skills in our simulated VR experience! <br><br>
+
+Please be aware that strong gravitational forces can cause severe brain damage! Never look directly at the emitted particles! While we tried our best to avoid the creation of micro wormholes, please never try to stack gravitational objects. All damages to the time and space continuum and involved repair cost will be passed on to you! <br><br>
+
+Our VR experiences requires tracked hand controllers, so please bring your own HTC Vive or Oculus Touch hardware!
+						
+						</p>
+						
+						
+			   
+         
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- <div class="nk-gap-2"></div>
+            <h3 class="nk-decorated-h-2">
+                <span>
+                   Latest <span class="text-main-1">User Generated</span> Test Scenerios </span>
+            </h3>
+
+
+            <div class="nk-gap-2"></div>
+            <div class="nk-blog-grid">
+                <div class="row multi-columns-row">
+
+
+                  
+
+				                 
+
+
+               
+
+
+                
+
+                </div>
+				  <div class="nk-gap-2"></div>
+				<a href="testscenarios.php" class="nk-btn nk-btn-x4 nk-btn-rounded nk-btn-color-white">View All User Generated Test Scenerios</a>
+            </div>
+			
+			
+			-->
+			
+			
+			   <div class="nk-gap-4"></div>
+           
+
+
+  <h3 class="nk-decorated-h-2">
+                <span>
+                  Testing Facility Status:<span class="text-main-1"> Nominal</span>  </span>
+            </h3>
+			   <div class="nk-gap-2"></div>
+			<div style="	  -webkit-transform: scaleY(2) ;
+    -ms-transform: scale(1.3) ;
+    transform: scale(1.3) ;">
+<div class="nk-countdown nk-countdown-center">
+
+<div class="nk-hexagon">
+                <div class="nk-hexagon-inner"></div>
+                <span>366473</span>
+                Tests<br>Solved<br>&nbsp;
+            </div>
+			   <div class="nk-hexagon">
+                <div class="nk-hexagon-inner"></div>
+                <span style="font-size: 0.6rem; line-height: 2;color:#FFBF00;">Boberjar</span>
+                Tester of<br>the Month<br>&nbsp;
+            </div>
+            <div class="nk-hexagon">
+                <div class="nk-hexagon-inner"></div>
+                <span>26087</span>
+                Human<br>Testers<br>&nbsp;
+            </div>
+         
+			
+					</div>
+
+			
+	</div>
+	
+	
+	<!--   <div class="nk-gap-2"></div>
+             <div class="nk-gap-2"></div>
+	 <div class="row vertical-gap multi-columns-row" style=" text-align: center">
+                 <div class="col-lg-6">
+                    <h3 class="nk-decorated-h-2">
+                <span>
+                   <span class="text-main-1">VR</span> Devices</span>
+            </h3>
+			   <p class="text-white">
+                        <br>
+                  Rift / Rift S / Quest / Index / Vive / WMR<br><br>&nbsp;
+						</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="nk-decorated-h-2">
+                <span>
+                   <span class="text-main-1">Store</span> Platforms</span>
+            </h3>
+			   <p class="text-white">
+                         <br>
+                 Oculus Home / Steam / Windows Store / Viveport<br><br>&nbsp;
+						</p>
+                </div>
+				  
+             
+            </div>
+	
+	
+	
+	-->
+	
+	
+	
+	
+	
+              
+      
+			
+	      
+			
+			
+			
+			
+						
+
+            <!-- START: Latest News -->
+            <div class="nk-gap-4"></div>
+            <h3 class="nk-decorated-h-2">
+                <span>
+                    Our Range of <span class="text-main-1">Gravity Appliances</span></span>
+            </h3>
+            <div class="nk-gap"></div>
+			
+			   <div class="row vertical-gap multi-columns-row" style=" text-align: center">
+                <div class="col-lg-4">
+                 <div class="nk-feature-2">
+    <div class="nk-feature-icon">
+       <img src="assets/images/board.png">
+    </div>
+    <div class="nk-feature-cont text-xs-center">
+        <h3 class="nk-feature-title"><span class="text-main-1">Gravity</span> Board</h3>
+        <div class="nk-gap-1"></div>
+        The Gravity Board is based on our tried–and–true gravity acceleration technology and pushes your objects up slight inclines.
+    </div>
+</div>
+                </div>
+                <div class="col-lg-4">
+                   <div class="nk-feature-2">
+    <div class="nk-feature-icon">
+         <img src="assets/images/tube.png">
+    </div>
+    <div class="nk-feature-cont text-xs-center">
+        <h3 class="nk-feature-title"><span class="text-main-1">Acceleration</span> Tube</h3>
+        <div class="nk-gap-1"></div>
+        Our linear Acceleration Tube is a powerful tool if you need to shoot objects across large distances.
+    </div>
+</div>
+                </div>
+              <div class="col-lg-4">
+                   <div class="nk-feature-2">
+    <div class="nk-feature-icon">
+         <img src="assets/images/modifier.png">
+    </div>
+    <div class="nk-feature-cont text-xs-center">
+        <h3 class="nk-feature-title"><span class="text-main-1">Modifier</span></h3>
+        <div class="nk-gap-1"></div>
+       The modifier can change the gravity on a single item. Invert, increase or even turn off the gravity.
+    </div>
+</div>
+                </div>
+				
+				 <div class="col-lg-4">
+                   <div class="nk-feature-2">
+    <div class="nk-feature-icon">
+         <img src="assets/images/sensor.png">
+    </div>
+    <div class="nk-feature-cont text-xs-center">
+        <h3 class="nk-feature-title"><span class="text-main-1">Sensor</span> Ring</h3>
+        <div class="nk-gap-1"></div>
+       The Sensor Ring will send out electrical signals (3 available channels) whenever an object passes through them.
+    </div>
+</div>
+                </div>
+				
+				 <div class="col-lg-4">
+                   <div class="nk-feature-2">
+    <div class="nk-feature-icon">
+       <img src="assets/images/manager.png">
+    </div>
+    <div class="nk-feature-cont text-xs-center">
+        <h3 class="nk-feature-title"><span class="text-main-1">Signal</span> Manager</h3>
+        <div class="nk-gap-1"></div>
+        The Signal Manager is the central hub that manages all the signals in it's proximity. Every cirvuit needs one and so will you!
+    </div>
+</div>
+                </div>
+				
+				 <div class="col-lg-4">
+                   <div class="nk-feature-2">
+    <div class="nk-feature-icon">
+        <img src="assets/images/gate.png">
+    </div>
+    <div class="nk-feature-cont text-xs-center">
+        <h3 class="nk-feature-title"><span class="text-main-1">Laser</span> Gate</h3>
+        <div class="nk-gap-1"></div>
+        The Laser Gate can dynamically stop every object in it's path. Apply a signal and it will open.
+    </div>
+</div>
+                </div>
+				
+				 <div class="col-lg-4">
+                   <div class="nk-feature-2">
+    <div class="nk-feature-icon">
+        <img src="assets/images/weight.png">
+    </div>
+    <div class="nk-feature-cont text-xs-center">
+        <h3 class="nk-feature-title"><span class="text-main-1">Weight</span> Scale</h3>
+        <div class="nk-gap-1"></div>
+        Our patended weight scale uses state-of-the-art technology to meassure the mass of an object and sends out signals.
+    </div>
+</div>
+                </div>
+				
+				 <div class="col-lg-4">
+                   <div class="nk-feature-2">
+    <div class="nk-feature-icon">
+       <img src="assets/images/ratio.png">
+    </div>
+    <div class="nk-feature-cont text-xs-center">
+        <h3 class="nk-feature-title"><span class="text-main-1">Ratio</span> Sensor</h3>
+        <div class="nk-gap-1"></div>
+       The ratio sensor will send out signals when a certain item ratio has been reached. A must for every complex circuit.
+    </div>
+</div>
+                </div>
+				
+				 <div class="col-lg-4">
+                   <div class="nk-feature-2">
+    <div class="nk-feature-icon">
+       <img src="assets/images/pump.png">
+    </div>
+    <div class="nk-feature-cont text-xs-center">
+        <h3 class="nk-feature-title"><span class="text-main-1">Gravity</span> Pump</h3>
+        <div class="nk-gap-1"></div>
+        Our Gravity Pump is the strongest gravitational pump on the market. Apply a signal and suck every item out of it's path.
+    </div>
+</div>
+                </div>
+            </div>
+			
+			  
+            <!-- END: Latest News -->
+
+          
+            </div>
+        </div>
+
+        <div class="nk-gap-4"></div>
+
+
+       <!-- START: Footer -->
+        <footer class="nk-footer">
+
+            <div class="container">
+                <div class="nk-gap-3"></div>
+				
+				
+				
+                <div class="row vertical-gap">
+                    <div class="col-md-6">
+					
+					 <h4 class="nk-widget-title">
+                        <span>
+                            <span class="text-main-1">Email</span> Newsletter</span>
+                    </h4>
+					
+                      <form action="//vr-bits.us8.list-manage.com/subscribe/post?u=9416a3478bcf939a84d07bf6f&amp;id=b9722be0d8" method="post" class="nk-mchimp nk-form nk-form-style-1 validate" target="_blank" novalidate="novalidate">
+                        <div class="input-group">
+                            <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email *" aria-required="true">
+                            <span class="nk-input-group-btn">
+                                <button class="nk-btn nk-btn-color-white">Subscribe</button>
+                            </span>
+                        </div>
+                        <small>We'll never share your email with anyone else.</small>
+                        <div class="nk-form-response-success"></div>
+                        <div class="nk-form-response-error"></div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_d433160c0c43dcf8ecd52402f_7eafafe8f0" tabindex="-1" value="">
+                        </div>
+                    </form>
+
+                    </div>
+                    <div class="col-md-6">
+                       
+                        <div class="nk-widget">
+                            <h4 class="nk-widget-title">
+                                <span class="text-main-1">Overseer's</span> Twitter Account</h4>
+                            <div class="nk-widget-content">
+                                <div class="nk-twitter-list" data-twitter-count="1">Failed to fetch data</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-gap-3"></div>
+				 <div class="row vertical-gap multi-columns-row" style=" text-align: center">
+                <div class="col-lg-6">
+                    <div class="nk-feature-1">
+                        <div class="nk-feature-icon">
+                          <a target="_blank" href="https://www.oculus.com/experiences/rift/1116533615035202/">  <img src="assets/images/icon-mouse.png" alt=""></a>
+                        </div>
+                        <div class="nk-feature-cont">
+                            <h3 class="nk-feature-title"><a target="_blank" href="https://www.oculus.com/experiences/rift/1116533615035202/">Gravity Lab on Oculus Home</a></h3>
+                            <h4 class="nk-feature-title text-main-1"><a target="_blank" href="https://www.oculus.com/experiences/rift/1116533615035202/">for Oculus Touch</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="nk-feature-1">
+                        <div class="nk-feature-icon">
+                            <a target="_blank" href="http://store.steampowered.com/app/408340/"><img src="assets/images/icon-gamepad.png" alt=""></a>
+                        </div>
+                        <div class="nk-feature-cont">
+                            <h3 class="nk-feature-title"><a target="_blank" href="http://store.steampowered.com/app/408340/">Gravity Lab on Steam</a></h3>
+                            <h4 class="nk-feature-title text-main-1"><a target="_blank" href="http://store.steampowered.com/app/408340/">For HTC Vive &amp; Oculus Touch</a></h4>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+			  <div class="nk-gap-3"></div>
+            </div>
+
+            <div class="nk-copyright">
+                <div class="container">
+                    <div class="nk-copyright-left">
+                        Copyright © 2047 | Gravitional Testing Facility &amp; Observations, <a href="http://mark-schramm.com" target="_blank">Mark Schramm</a>
+                    </div>
+                    <div class="nk-copyright-right">
+                        <ul class="nk-social-links-2">
+                          
+                            <li>
+                                <a class="nk-social-steam" target="_blank" href="http://store.steampowered.com/app/408340/">
+                                    <span class="fa fa-steam"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nk-social-facebook" target="_blank" href="https://www.facebook.com/gravlabgame">
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+                            </li>
+                         
+                            <li>
+                                <a class="nk-social-twitter" target="_blank" href="https://twitter.com/GravLabGame">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                           
+
+                            <!-- Additional Social Buttons
+                        <li><a class="nk-social-behance" href="#"><span class="fa fa-behance"></span></a></li>
+                        <li><a class="nk-social-bitbucket" href="#"><span class="fa fa-bitbucket"></span></a></li>
+                        <li><a class="nk-social-dropbox" href="#"><span class="fa fa-dropbox"></span></a></li>
+                        <li><a class="nk-social-dribbble" href="#"><span class="fa fa-dribbble"></span></a></li>
+                        <li><a class="nk-social-deviantart" href="#"><span class="fa fa-deviantart"></span></a></li>
+                        <li><a class="nk-social-flickr" href="#"><span class="fa fa-flickr"></span></a></li>
+                        <li><a class="nk-social-foursquare" href="#"><span class="fa fa-foursquare"></span></a></li>
+                        <li><a class="nk-social-github" href="#"><span class="fa fa-github"></span></a></li>
+                        <li><a class="nk-social-instagram" href="#"><span class="fa fa-instagram"></span></a></li>
+                        <li><a class="nk-social-linkedin" href="#"><span class="fa fa-linkedin"></span></a></li>
+                        <li><a class="nk-social-medium" href="#"><span class="fa fa-medium"></span></a></li>
+                        <li><a class="nk-social-odnoklassniki" href="#"><span class="fa fa-odnoklassniki"></span></a></li>
+                        <li><a class="nk-social-paypal" href="#"><span class="fa fa-paypal"></span></a></li>
+                        <li><a class="nk-social-reddit" href="#"><span class="fa fa-reddit"></span></a></li>
+                        <li><a class="nk-social-skype" href="#"><span class="fa fa-skype"></span></a></li>
+                        <li><a class="nk-social-soundcloud" href="#"><span class="fa fa-soundcloud"></span></a></li>
+                        <li><a class="nk-social-slack" href="#"><span class="fa fa-slack"></span></a></li>
+                        <li><a class="nk-social-tumblr" href="#"><span class="fa fa-tumblr"></span></a></li>
+                        <li><a class="nk-social-vimeo" href="#"><span class="fa fa-vimeo"></span></a></li>
+                        <li><a class="nk-social-vk" href="#"><span class="fa fa-vk"></span></a></li>
+                        <li><a class="nk-social-wordpress" href="#"><span class="fa fa-wordpress"></span></a></li>
+                        <li><a class="nk-social-youtube" href="#"><span class="fa fa-youtube-play"></span></a></li>
+                    -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END: Footer -->
+
+
+    
+
+
+
+
+    <!-- START: Page Background -->
+
+    <img class="nk-page-background-top" src="assets/images/bg-top.jpg" alt="">
+    <img class="nk-page-background-bottom" src="assets/images/bg-bottom.jpg" alt="">
+
+    <!-- END: Page Background -->
+
+
+
+
+   
+
+
+   
+
+
+    <!-- START: Scripts -->
+
+    <!-- GSAP -->
+    <script src="assets/bower_components/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="assets/bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Sticky Kit -->
+    <script src="assets/bower_components/sticky-kit/dist/sticky-kit.min.js"></script>
+
+    <!-- Jarallax -->
+    <script src="assets/bower_components/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/bower_components/jarallax/dist/jarallax-video.min.js"></script>
+
+    <!-- Flickity -->
+    <script src="assets/bower_components/flickity/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Photoswipe -->
+    <script src="assets/bower_components/photoswipe/dist/photoswipe.min.js"></script>
+    <script src="assets/bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+    <!-- Jquery Form -->
+    <script src="assets/bower_components/jquery-form/jquery.form.js"></script>
+
+    <!-- Jquery Validation -->
+    <script src="assets/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+
+
+
+    <!-- Hammer.js -->
+    <script src="assets/bower_components/hammer.js/hammer.min.js"></script>
+
+    <!-- NanoSroller -->
+    <script src="assets/bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
+
+    <!-- SoundManager2 -->
+    <script src="assets/bower_components/SoundManager2/script/soundmanager2-nodebug-jsmin.js"></script>
+
+    <!-- Seiyria Bootstrap Slider -->
+    <script src="assets/bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+
+    <!-- Summernote -->
+    <script src="assets/bower_components/summernote/dist/summernote.min.js"></script>
+
+    <!-- nK Share -->
+    <script src="assets/plugins/nk-share/nk-share.js"></script>
+
+    <!-- Prism -->
+    <script src="assets/bower_components/prism/prism.js"></script>
+
+    <!-- GoodGames -->
+    <script src="assets/js/goodgames.min.js"></script>
+    <script src="assets/js/goodgames-init.js"></script><div class="nk-navbar-overlay"></div>
+    <!-- END: Scripts -->
+
+
+
+
+
+ </body></html>

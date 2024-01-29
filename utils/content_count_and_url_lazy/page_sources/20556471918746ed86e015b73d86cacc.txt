@@ -1,0 +1,368 @@
+<html lang="ko"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240, user-scalable=no"><!-- 20190426 추가 -->
+	<meta name="keyword" content="smilegate entertainment, smilegate, vr, rogan, thief, castle">
+	<meta name="description" content="The official website of ROGAN : The Thief in the Castle">
+	<!-- og tag 정책 (facebook, kakaotalk) -->
+	<meta property="og:url" content="rogan.smilegateentertainment.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="ROGAN : The Thief in the Castle">
+	<meta property="og:description" content="The official website of ROGAN : The Thief in the Castle">
+	<meta property="og:image" content="../images/img_share_400.jpg">
+	<!--// og tag 정책 (facebook, kakaotalk) -->
+	<!-- twitter tag 정책 -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="ROGAN : The Thief in the Castle">
+	<meta name="twitter:description" content="The official website of ROGAN : The Thief in the Castle">
+	<meta name="twitter:image" content="../images/img_share_1204.jpg">
+	<!--// twitter tag 정책 -->
+	<title>ROGAN : The Thief in the Castle</title>
+	<link rel="apple-touch-icon" href="../images/icon.png">
+	<link rel="shortcut icon" href="../images/icon_72.png">
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script>
+		//slide popup data - 20190603 수정
+		var slideData = [
+			'<iframe src="https://www.youtube.com/embed/2X-dCLO5MKo?autoplay=1&rel=0&amp;controls=1&amp;showinfo=0&amp;cc_load_policy=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>',	//20190604 수정
+			'<iframe src="https://www.youtube.com/embed/M6IoCKMR16o?autoplay=1&rel=0&amp;controls=1&amp;showinfo=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
+			'<img src="../images/wallpaper_01.jpg" alt="image" />',
+			'<img src="../images/wallpaper_02.jpg" alt="image" />',
+			'<img src="../images/wallpaper_03.jpg" alt="image" />',
+			'<img src="../images/wallpaper_04.jpg" alt="image" />',
+			'<img src="../images/wallpaper_05.jpg" alt="image" />',
+			'<img src="../images/wallpaper_06.jpg" alt="image" />',
+			'<img src="../images/wallpaper_07.jpg" alt="image" />',
+			'<img src="../images/wallpaper_08.jpg" alt="image" />',
+			'<img src="../images/wallpaper_09.jpg" alt="image" />'
+		];
+	</script>
+	<script type="text/javascript" src="../js/ui.js"></script>
+	<!-- 국문 font cdn -->
+	<link rel="stylesheet" href="http://static-rogan.smilegateentertainment.com/assets/font/NanumSquare/NanumSquare.css">
+	<link rel="stylesheet" href="http://static-rogan.smilegateentertainment.com/assets/font/NanumMyeongjo/NanumMyeongjo.css">
+	<!--// 국문 font cdn -->
+</head>
+<body>
+<!-- 20190513 추가 -->
+<div class="mobile-msg">
+	<p>ROGAN 페이지는 <br>PC환경에 최적화되어 있습니다.</p>
+	<button type="button" class="btn-close">Close</button>
+</div>
+
+<div id="wrapper">
+	<!-- header -->
+	<header id="header">
+		<div class="inner">
+			<a href="/" class="bi bi-sge">Smilegate Entertainment</a>
+			<a href="#wrapper" class="bi bi-rogan">ROGAN</a>
+			<nav class="lnb-wrap">
+				<ul class="lnb">
+					<li class="m1"><a href="#section01"><em>Media</em></a></li>
+					<li class="m2"><a href="#section02"><em>Story</em></a></li>
+					<li class="m3"><a href="#section03"><em>Character</em></a></li>
+					<li class="m4"><a href="#section04"><em>Contact</em></a></li>
+				</ul>
+			</nav>
+			<div class="util-area">
+				<button type="button" class="btn-soundCtrl off" data-sound="false"><em class="ico ico-sound">BGM Sound</em></button>
+				<div class="lang-box">
+					<button type="button" class="selected-lang"><em>Korean</em></button><!-- 20190502 수정 -->
+					<ul class="lang-list" id="select-lang-list">
+						<li><button type="button" data-lang="ko"><em>Korean</em></button></li><!-- 20190502 수정 -->
+						<li><button type="button" data-lang="en"><em>English</em></button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- sound -->
+		<audio autoplay="" loop="" id="mainAudio">
+			<source src="../images/ProjectRogan_BGM02_a_Prophecy_or_a_Prediction.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		<!--// sound -->
+	</header>
+	<!--// header -->
+
+	<!-- aside -->
+	<!-- [D] : 발매 이후 노출 - 20190620 수정 -->
+	<aside class="aside">
+		<p>구입 안내</p><!-- 20190502 추가 -->
+		<ul>
+			<li><a href="https://store.steampowered.com/app/966560/ROGAN_The_Thief_in_the_Castle/" target="_blank">Steam VR</a></li>
+			<li><a href="https://www.oculus.com/experiences/rift/1668330116583564/" target="_blank">Oculus</a></li>
+			<li><a href="https://www.viveport.com/apps/becfd9c4-4bfd-45c8-acb1-c12553968ac2" target="_blank">Vive</a></li><!-- 20190705 수정 -->
+		</ul>
+	</aside>
+
+	<!-- // aside -->
+
+	<!-- container -->
+	<div id="container">
+		<!-- video -->
+		<div class="video-wrap">
+			<div class="video-cover">
+				<video id="top_video" poster="../images/bg_vod_default.jpg" autoplay="" loop="" muted="muted" volume="0" playsinline="" webkit-playsinline="">
+					<source src="../images/rogan_video_1.6.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="inner">
+				<div class="txt">
+					<h1>ROGAN : The Thief in the Castle</h1>
+					<!-- [D] : 2차 트레일러 영상 공개 시 버튼 노출  - 20190603 oepn -->
+					<button type="button" class="btn-movie" onclick="popupYoutube('.popup-youtube','2X-dCLO5MKo','cc_load_policy=1');audioStop();mainVideoStop();"><em>빅토리아의 이야기</em></button><!-- 20190604 수정 -->
+				</div>
+				<span class="scroll-guide"></span>
+			</div>
+			<span class="visual-left"></span>
+			<span class="visual-right"></span>
+		</div>
+		<!-- // video -->
+
+		<!-- section01  -->
+		<section id="section01" class="section01">
+			<div class="inner">
+				<h2>MEDIA</h2>
+				<div class="media-list">
+					<ul>
+						<!-- s: 20190603 수정 -->
+						<li data-num="1" data-type="video" style="display: list-item;">
+							<div class="frame">
+								<div class="img"><img src="../images/thumb_01.jpg" alt="image"></div>
+								<button type="button" class="btn-slide" onclick="audioStop();mainVideoStop();"><em>1st Trailer</em></button>
+							</div>
+						</li>
+						<li data-num="2" data-type="video" style="display: inline-block;">
+							<div class="frame">
+								<img src="../images/thumb_02.jpg" alt="image">
+								<button type="button" class="btn-slide" onclick="audioStop();mainVideoStop();"><em>2nd Trailer</em></button>
+							</div>
+						</li>
+						<li data-num="3" style="display: inline-block;">
+							<div class="frame">
+								<img src="../images/wallpaper_01.jpg" alt="image">
+								<button type="button" class="btn-slide"><em>Wallpaper 01</em></button>
+							</div>
+						</li>
+						<li data-num="4" style="display: inline-block;">
+							<div class="frame">
+								<img src="../images/wallpaper_02.jpg" alt="image">
+								<button type="button" class="btn-slide"><em>Wallpaper 02</em></button>
+							</div>
+						</li>
+						<li data-num="5" style="display: inline-block;">
+							<div class="frame">
+								<img src="../images/wallpaper_03.jpg" alt="image">
+								<button type="button" class="btn-slide"><em>Wallpaper 03</em></button>
+							</div>
+						</li>
+						<li data-num="6" style="display: inline-block;">
+							<div class="frame">
+								<img src="../images/wallpaper_04.jpg" alt="image">
+								<button type="button" class="btn-slide"><em>Wallpaper 04</em></button>
+							</div>
+						</li>
+						<li data-num="7" style="display: none;">
+							<div class="frame">
+								<img src="../images/wallpaper_05.jpg" alt="image">
+								<button type="button" class="btn-slide"><em>Wallpaper 05</em></button>
+							</div>
+						</li>
+						<li data-num="8" style="display: none;">
+							<div class="frame">
+								<img src="../images/wallpaper_06.jpg" alt="image">
+								<button type="button" class="btn-slide"><em>Wallpaper 06</em></button>
+							</div>
+						</li>
+						<li data-num="9" style="display: none;">
+							<div class="frame">
+								<img src="../images/wallpaper_07.jpg" alt="image">
+								<button type="button" class="btn-slide"><em>Wallpaper 07</em></button>
+							</div>
+						</li>
+						<li data-num="10" style="display: none;">
+							<div class="frame">
+								<img src="../images/wallpaper_08.jpg" alt="image">
+								<button type="button" class="btn-slide"><em>Wallpaper 08</em></button>
+							</div>
+						</li>
+						<li data-num="11" style="display: none;">
+							<div class="frame">
+								<img src="../images/wallpaper_09.jpg" alt="image">
+								<button type="button" class="btn-slide"><em>Wallpaper 09</em></button>
+							</div>
+						</li>
+						<!-- e: 20190603 수정 -->
+					</ul>
+				</div>
+				<!-- [D] : 2차 월페이퍼 공개 시 버튼 노출 - 20190603 oepn -->
+				<div class="media-paging">
+					<button type="button" class="btn-page active">page 1</button>
+					<button type="button" class="btn-page">page 2</button>
+				</div>
+			</div>
+		</section>
+		<!-- //section01 -->
+
+		<!-- section02  -->
+		<section id="section02" class="section02">
+			<div class="inner">
+				<h2>Story</h2>
+				<h3>하나의 살인,<br> 두 개의 사인(<i>死因</i>),<br> 세 명의 용의자</h3><!-- 20190502 수정 및 <i> 태그 추가 -->
+				<p>
+					캐슬 블랙스톤은 왕국의 변방에 위치한 전투 성입니다.<br>
+					블랙스톤의 영주 콘라드는 한 때 용맹한 기사였으나, <em>현재는 나이먹어 병들고 약해졌습니다.<span><i></i></span></em><br>
+					<br>
+					어느 날 밤, 콘라드가 자신의 집무실에서 죽음을 맞이합니다. 아마도 살해당한 것으로 보입니다. <br>
+					범인으로 콘라드의 오른팔이었던 기사 빅토리아가 지목됩니다.<br>
+					빅토리아가 <em>피투성이로 사건 현장에서 뛰어 나오는 걸 본 사람이 있었기 때문입니다.<span><i></i></span></em><br>
+					<br>
+					하지만 빅토리아는 도주합니다. 캐슬 블랙스톤에는 비상이 걸립니다.<br>
+					<em>영주의 수호 기사가 영주를 죽이고 도주<span><i></i></span></em>하고 있으니까요.<br>
+					<br>
+					마침, <em>이 성에 물건을 훔치러 들어온 도둑이 있었습니다. 그의 이름은<span><i></i></span></em> 로건입니다.<br>
+					빅토리아는 도주 중에 로건과 마주칩니다. 순간 빅토리아는 이 우연히 만난 도둑이 자신을 도와줄 수 있는 <em>유일한 사람이라는 것을 깨닫습니다.<span><i></i></span></em><br>
+					<br>
+					로건은 빅토리아를 믿고, <em>그녀를 도와 진범이 남긴 증거들을<span><i></i></span></em> 찾기 위해 블랙스톤 이곳 저곳을 잠입합니다.<br>
+					로건은 빅토리아를 도와 그녀의 누명을 벗길 수 있을까요?<br>
+					영주 콘라드를 살해한 진범은 누구일까요?<br><!-- 20190502 수정 -->
+					<br>
+					<em>마지막 순간, 예상치 못했던 결말이 플레이어를 기다립니다.<span><i></i></span></em>
+				</p>
+				<button type="button" class="btn-clue" onclick="javascript:;"><em>단서를 찾고자 할 때에는,</em>‘도둑의 눈’ 사용</button>
+				<span class="visual-clue"></span>
+				<span class="visual-hand"></span>
+			</div>
+		</section>
+		<!-- //section02 -->
+
+		<!-- section03  -->
+		<section id="section03" class="section03">
+			<div class="inner">
+				<h2>Character</h2>
+				<div class="slide-area">
+					<ul class="slide-character">
+						<li class="active">
+							<div class="txt-cha">
+								<h3>빅토리아 <sub>누명을 쓴 기사</sub></h3>
+								<q>거래를 하지, 도둑. 내 누명을 벗겨준다면, 나도 네 죄를 묻지 않겠다.</q><!-- 20190426 sup에서 q로 태그 수정 -->
+								<p>블랙스톤의 기사대장. 본래 영주 콘라드의 종자였으나 여러 전공을 세우고 기사가 되었다.<br>
+									콘라드의 오른팔이자 심복이었지만, 콘라드가 죽자 영주 살해범으로 몰린다.<br>
+									모두가 자신을 범인이라고 믿을 수 밖에 없는 상황, 우연히 성에 침입한 도둑 로건에게 도움을 요청한다.
+								</p>
+							</div>
+							<div class="img-cha"><img src="../images/slide_img_01.png" alt="빅토리아"></div>
+						</li>
+						<li>
+							<div class="txt-cha">
+								<h3>에바 <sub>권력을 노리는 남작 부인</sub></h3><!-- 20190509 수정 -->
+								<q>나는… 잊지 않았어요. 그 치욕을. 그 고통을. 이 상처를</q>
+								<p>콘라드의 동생. 아름다운 얼굴을 가지고 있었으나, 5년 전 '그 사건' 이후 얼굴에 큰 상처를 입고<br>
+									상처를 가리기 위해 부분 가면을 쓴다. 상처를 입은 후 성격도 크게 바뀌었다.<br>
+									콘라드 사후, 빅토리아를 영주 시해범으로 지목하고 그녀를 색출해 내기 위해 군대를 동원한다.
+								</p>
+							</div>
+							<div class="img-cha"><img src="../images/slide_img_02.png" alt="에바"></div>
+						</li>
+						<li>
+							<div class="txt-cha">
+								<h3>콘라드 <sub>쇠락한 영주</sub></h3>
+								<q>계획대로 실행해라, 빅토리아. 내 아들을 지켜다오!</q>
+								<p>한 때 용맹한 기사였고, 왕국의 북쪽을 지키는 변경백이었으나, 이제 나이 먹고 병들어 쇠약해졌다.<br>
+									늦게 얻은 아들에게 영주의 지위를 물려주고자 하지만, 자신의 자리를 노리는 에바 남작 부인 때문에<br>
+									쉽지 않아 보인다. 어느 날, 자신의 집무실에서 살해당한 채 발견되는데…
+								</p>
+							</div>
+							<div class="img-cha"><img src="../images/slide_img_03.png" alt="콘라드"></div>
+						</li>
+						<li>
+							<div class="txt-cha">
+								<h3>보리스 <sub>의심하는 치안관</sub></h3>
+								<q>죄가 없다고? 네가 피묻은 검을 휘두르는 모습을 모두가 목격했어!</q>
+								<p>새로 변경에 임명된 치안관. 도착한지 며칠 되지 않아 주변 상황에 어둡다.<br>
+									노련하지는 않지만 날카로운 성품으로, 정황상 명백해 보이는 사건임에도 의심을 거듭한다.
+								</p>
+							</div>
+							<div class="img-cha"><img src="../images/slide_img_04.png" alt="브리스"></div>
+						</li>
+						<li>
+							<div class="txt-cha">
+								<h3>칼 <sub>기회를 노리는 배신자</sub></h3>
+								<q>영주님의 시대는 끝났어. 지금은 남작 부인을 따라야 해.</q><!-- 20190509 수정 -->
+								<p>빅토리아의 수하였으나, 빅토리아가 실각할 것을 깨닫고 에바에게 충성을 맹세한다.<br>
+									빅토리아를 직접 체포해 공을 세우려고 하지만 실패한다.
+								</p>
+							</div>
+							<div class="img-cha"><img src="../images/slide_img_05.png" alt="칼"></div>
+						</li>
+						<li>
+							<div class="txt-cha">
+								<h3>소영주 <sub>위태로운 후계자</sub></h3>
+								<q>이 비밀문의 존재는 비밀이지만, 빅토리아에겐 말해줄게.</q>
+								<p>콘라드가 늦게 얻은 아들. 아버지를 닮지 않았는지, 유약하고 조용한 성격이다.<br>
+									빅토리아를 무척이나 따랐고, 그녀를 통해 세상을 공부해가는 중이다.
+								</p>
+							</div>
+							<div class="img-cha"><img src="../images/slide_img_06.png" alt="소영주"></div>
+						</li>
+					</ul>
+					<nav class="slide-nav">
+						<button class="active">빅토리아 보기</button>
+						<button>에바 보기</button>
+						<button>콘라드 보기</button>
+						<button>보리스 보기</button>
+						<button>칼 보기</button>
+						<button>소영주 보기</button>
+					</nav>
+				</div>
+			</div>
+		</section>
+		<!-- //section03 -->
+
+		<!-- section04  -->
+		<section id="section04" class="section04">
+			<div class="inner">
+				<div class="txt">
+					<h2>문의하기</h2>
+					<p>로건에게 궁금하거나, 제안하고 싶은 내용을 보내주세요.</p>
+					<div class="e-mail">
+						<h3>문의 메일을 보내주세요.</h3>
+						<p class="txt-address"><em>ROGANVR@smilegate.com</em></p>
+						<p class="txt-caution">구매 및 환불 관련 문의는 마켓 서포트 채널을 통하여 확인 부탁 드립니다.</p>
+					</div>
+					<span class="next-txt"><i></i><i></i><i></i></span>
+				</div>
+			</div>
+		</section>
+		<!-- //section04 -->
+	</div>
+	<!--// container -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="inner">
+			<span class="bi bi-sge">Smilegate Entertainment</span>
+			<span class="bi bi-rogan">ROGAN</span>
+			<span class="copyright"><em>© 2018. Smilegate Entertainment, Inc.</em> All Rights Reserved.</span>
+		</div>
+	</footer>
+	<!--// footer -->
+</div>
+
+<!-- popup-youtube -->
+<div class="popup popup-youtube" tabindex="0">
+	<div class="frame"></div>
+	<button type="button" class="btn-close" onclick="popupClose('.popup-youtube');audioPlay();mainVideoPlay()">Close</button>
+</div>
+<div class="popup popup-slide" tabindex="0">
+	<div class="frame"></div>
+	<p class="count"></p>
+	<button type="button" class="btn-close" onclick="popupClose('.popup-slide');audioPlay();mainVideoPlay()">Close</button>
+	<button type="button" class="btn-prev">prev</button>
+	<button type="button" class="btn-next">next</button>
+</div>
+<!--// popup-youtube -->
+
+
+</body></html>

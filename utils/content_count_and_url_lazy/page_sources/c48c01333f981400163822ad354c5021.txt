@@ -1,0 +1,503 @@
+<html lang="de-DE" style="" class=" no-applicationcache geolocation history postmessage svg websockets localstorage sessionstorage websqldatabase webworkers hashchange audio canvas canvastext video webgl cssgradients multiplebgs opacity rgba inlinesvg hsla supports svgclippaths smil mediaqueries no-touchevents fontface generatedcontent textshadow indexeddb indexeddb-deletedatabase matchmedia cssanimations backgroundsize borderimage borderradius boxshadow csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox cssreflections csstransforms csstransforms3d csstransitions"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>tipagames.com – VR development for games and more</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="tipagames.com » Feed" href="https://tipagames.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="tipagames.com » Kommentar-Feed" href="https://tipagames.com/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/tipagames.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.9"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://tipagames.com/wp-includes/js/wp-emoji-release.min.js?ver=5.7.9" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="elementor-frontend-css" href="https://tipagames.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=2.9.9" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-13-css" href="https://tipagames.com/wp-content/uploads/elementor/css/post-13.css?ver=1622966543" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-40-css" href="https://tipagames.com/wp-content/uploads/elementor/css/post-40.css?ver=1650960689" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://tipagames.com/wp-includes/css/dist/block-library/style.min.css?ver=5.7.9" type="text/css" media="all">
+<link rel="stylesheet" id="ditty-news-ticker-font-css" href="https://tipagames.com/wp-content/plugins/ditty-news-ticker/inc/static/libs/fontastic/styles.css?ver=2.3.8" type="text/css" media="all">
+<link rel="stylesheet" id="ditty-news-ticker-css" href="https://tipagames.com/wp-content/plugins/ditty-news-ticker/inc/static/css/style.css?ver=1622884302" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://tipagames.com/wp-content/themes/fusion-base/css/bootstrap.min.css?ver=3.3.7" type="text/css" media="all">
+<link rel="stylesheet" id="fsn_base_styles-css" href="https://tipagames.com/wp-content/themes/fusion-base/style.css?ver=5.7.9" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-framework-css-frontend-css" href="https://tipagames.com/wp-content/plugins/elementskit-lite/libs/framework/assets/css/frontend-style.min.css?ver=1.5.4" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="https://tipagames.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.6.2" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-animations-css" href="https://tipagames.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=2.9.9" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-css-widgetarea-control-editor-css" href="https://tipagames.com/wp-content/plugins/elementskit-lite/modules/controls/assets/css/widgetarea-editor.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="https://tipagames.com/wp-content/uploads/elementor/css/global.css?ver=1590919149" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-9-css" href="https://tipagames.com/wp-content/uploads/elementor/css/post-9.css?ver=1590947232" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-48-css" href="https://tipagames.com/wp-content/uploads/elementor/css/post-48.css?ver=1653924699" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-vendors-css" href="https://tipagames.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/vendors.css?ver=1.5.4" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-style-css" href="https://tipagames.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/style.css?ver=1.5.4" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-responsive-css" href="https://tipagames.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=1.5.4" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://tipagames.com/wp-content/uploads/omgf/google-fonts-1/google-fonts-1.css?ver=1663224785" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://tipagames.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.12.0" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="https://tipagames.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.12.0" type="text/css" media="all">
+<script type="text/javascript" src="https://tipagames.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/themes/fusion-base/js/vendor/modernizr-3.3.1-respond-1.4.2.min.js?ver=3.3.1" id="modernizr-js"></script>
+<link rel="https://api.w.org/" href="https://tipagames.com/wp-json/"><link rel="alternate" type="application/json" href="https://tipagames.com/wp-json/wp/v2/pages/48"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tipagames.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://tipagames.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.7.9">
+<link rel="canonical" href="https://tipagames.com/">
+<link rel="shortlink" href="https://tipagames.com/">
+<link rel="alternate" type="application/json+oembed" href="https://tipagames.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftipagames.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://tipagames.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftipagames.com%2F&amp;format=xml">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://tipagames.com/wp-content/uploads/2020/06/TIPA_Logo4-150x150.ico" sizes="32x32">
+<link rel="icon" href="https://tipagames.com/wp-content/uploads/2020/06/TIPA_Logo4.ico" sizes="192x192">
+<link rel="apple-touch-icon" href="https://tipagames.com/wp-content/uploads/2020/06/TIPA_Logo4.ico">
+<meta name="msapplication-TileImage" content="https://tipagames.com/wp-content/uploads/2020/06/TIPA_Logo4.ico">
+</head>
+<body class="home page-template-default page page-id-48 elementor-default elementor-kit-9 elementor-page elementor-page-48" data-elementor-device-mode="desktop">
+<div class="ekit-template-content-markup ekit-template-content-header ekit-template-content-theme-support">
+<style>.elementor-13 .elementor-element.elementor-element-cf7dd37:not(.elementor-motion-effects-element-type-background), .elementor-13 .elementor-element.elementor-element-cf7dd37 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#6EC1E4;background-image:url("http://tipagames.com/wp-content/uploads/2020/05/Hintergund2.png");background-size:auto;}.elementor-13 .elementor-element.elementor-element-cf7dd37{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-13 .elementor-element.elementor-element-cf7dd37 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-13 .elementor-element.elementor-element-6c3ff23{text-align:left;width:100%;max-width:100%;}.elementor-13 .elementor-element.elementor-element-68d5faf.elementor-column > .elementor-column-wrap > .elementor-widget-wrap{justify-content:flex-start;}.elementor-13 .elementor-element.elementor-element-7b5da37{text-align:right;}.elementor-13 .elementor-element.elementor-element-7b5da37 .elementor-image img{box-shadow:0px 0px 18px 16px #FFFFFF;}.elementor-13 .elementor-element.elementor-element-9c799db .elementor-button{background-color:#355A86;box-shadow:0px 0px 10px 0px #FFFFFF;}.elementor-13 .elementor-element.elementor-element-c0d8cab .elementor-button{background-color:#355A86;box-shadow:0px 0px 10px 0px #FFFFFF;}.elementor-13 .elementor-element.elementor-element-8cd6031 .elementor-button .elementor-align-icon-right{margin-left:19px;}.elementor-13 .elementor-element.elementor-element-8cd6031 .elementor-button .elementor-align-icon-left{margin-right:19px;}.elementor-13 .elementor-element.elementor-element-8cd6031 .elementor-button{background-color:#355A86;box-shadow:0px 0px 10px 0px #FFFFFF;}.elementor-13 .elementor-element.elementor-element-bc94bea .elementor-button .elementor-align-icon-right{margin-left:19px;}.elementor-13 .elementor-element.elementor-element-bc94bea .elementor-button .elementor-align-icon-left{margin-right:19px;}.elementor-13 .elementor-element.elementor-element-bc94bea .elementor-button{background-color:#384556;box-shadow:0px 0px 10px 0px #FFFFFF;}.elementor-13 .elementor-element.elementor-element-8e48dd0 .elementor-button .elementor-align-icon-right{margin-left:14px;}.elementor-13 .elementor-element.elementor-element-8e48dd0 .elementor-button .elementor-align-icon-left{margin-right:14px;}.elementor-13 .elementor-element.elementor-element-8e48dd0 .elementor-button{background-color:#384556;box-shadow:0px 0px 10px 0px #FFFFFF;}</style>		<div data-elementor-type="wp-post" data-elementor-id="13" class="elementor elementor-13" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-cf7dd37 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="cf7dd37" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-f760c20 elementor-column elementor-col-50 elementor-top-column" data-id="f760c20" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-6c3ff23 elementor-widget__width-inherit elementor-widget elementor-widget-image" data-id="6c3ff23" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="960" height="540" src="https://tipagames.com/wp-content/uploads/2020/05/locbild3.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://tipagames.com/wp-content/uploads/2020/05/locbild3.png 960w, https://tipagames.com/wp-content/uploads/2020/05/locbild3-300x169.png 300w, https://tipagames.com/wp-content/uploads/2020/05/locbild3-768x432.png 768w" sizes="(max-width: 960px) 100vw, 960px">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-68d5faf elementor-column elementor-col-50 elementor-top-column" data-id="68d5faf" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-7b5da37 elementor-widget elementor-widget-image" data-id="7b5da37" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+											<a href="https://tipagames.com/">
+							<img src="https://tipagames.com/wp-content/uploads/elementor/thumbs/Logotipa-oqbr3q843gg3xjcx89ythx8pukq3pkxsjrotj4r8q0.png" title="Logotipa" alt="Logotipa">								</a>
+											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-9c799db elementor-widget elementor-widget-button" data-id="9c799db" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://tipagames.com/projects_de/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="far fa-building"></i>			</span>
+						<span class="elementor-button-text">projects</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c0d8cab elementor-align-left elementor-widget elementor-widget-button animated fadeInLeft" data-id="c0d8cab" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://tipagames.com/youtube/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="far fa-caret-square-right"></i>			</span>
+						<span class="elementor-button-text">youtube</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8cd6031 elementor-align-left elementor-widget elementor-widget-button animated fadeInLeft" data-id="8cd6031" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://tipagames.com/home/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="far fa-heart"></i>			</span>
+						<span class="elementor-button-text">home</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-bc94bea elementor-align-right elementor-widget elementor-widget-button animated fadeInDown" data-id="bc94bea" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://tipagames.com/home/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="far fa-file-word"></i>			</span>
+						<span class="elementor-button-text">english</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8e48dd0 elementor-align-right elementor-widget elementor-widget-button animated fadeInDown" data-id="8e48dd0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://tipagames.com/home_de/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="far fa-file-word"></i>			</span>
+						<span class="elementor-button-text">deutsch</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		</div>
+					
+<article id="post-48" class="post-48 page type-page status-publish hentry">
+			<div data-elementor-type="wp-page" data-elementor-id="48" class="elementor elementor-48" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-f0a4479 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="f0a4479" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-c2f82e2 elementor-column elementor-col-100 elementor-top-column" data-id="c2f82e2" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-87ca532 elementor-widget elementor-widget-spacer" data-id="87ca532" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b93f1d0 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b93f1d0" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-bddc697 elementor-column elementor-col-50 elementor-top-column" data-id="bddc697" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-feff76b elementor-widget__width-inherit elementor-widget elementor-widget-image" data-id="feff76b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="331" src="https://tipagames.com/wp-content/uploads/2020/05/Libhero1b-1024x331.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://tipagames.com/wp-content/uploads/2020/05/Libhero1b-1024x331.png 1024w, https://tipagames.com/wp-content/uploads/2020/05/Libhero1b-300x97.png 300w, https://tipagames.com/wp-content/uploads/2020/05/Libhero1b-768x248.png 768w, https://tipagames.com/wp-content/uploads/2020/05/Libhero1b-1536x496.png 1536w, https://tipagames.com/wp-content/uploads/2020/05/Libhero1b.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px">											</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-7f0545f elementor-column elementor-col-50 elementor-top-column" data-id="7f0545f" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-221dfaf elementor-widget elementor-widget-text-editor" data-id="221dfaf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h2 class="tw-ta-container hide-focus-ring tw-nfl" style="text-align: center;" tabindex="0"><span lang="en">Driven by the fun and possibilities of VR, we have been programming VR games since 2016. </span></h2><h4 class="tw-data-text tw-text-large XcVN5d tw-ta" dir="ltr" style="text-align: center;" data-placeholder="Übersetzung"><span lang="en">In the meantime, more has become of it. </span></h4><h4 class="tw-data-text tw-text-large XcVN5d tw-ta" dir="ltr" style="text-align: center;" data-placeholder="Übersetzung"><span lang="en">After the release of two VR games on Steam, we are increasingly devoting more uses to virtual reality.</span></h4></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-2675664 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="2675664" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-d0e4937 elementor-column elementor-col-100 elementor-top-column" data-id="d0e4937" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-f4fc44c elementor-widget elementor-widget-spacer" data-id="f4fc44c" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c50fd4b elementor-widget elementor-widget-spacer" data-id="c50fd4b" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-533d7f1 elementor-widget elementor-widget-text-editor" data-id="533d7f1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><div id="mtphr-dnt-121" class="mtphr-dnt mtphr-dnt-121 mtphr-dnt-default mtphr-dnt-scroll mtphr-dnt-scroll-left"><div class="mtphr-dnt-wrapper mtphr-dnt-clearfix"><div class="mtphr-dnt-tick-container"><div class="mtphr-dnt-tick-contents" style="height: 20px;"><div class="mtphr-dnt-tick mtphr-dnt-default-tick mtphr-dnt-clearfix " style="transform: translateX(473.2px); opacity: 1;">Here are some screenshots from the VR games published so far and planned projects
+
+</div></div></div></div></div></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-b5a3519 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="b5a3519" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-9372e27 elementor-column elementor-col-100 elementor-top-column" data-id="9372e27" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-b2113de elementor-widget elementor-widget-spacer" data-id="b2113de" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-eb8c883 elementor-arrows-position-outside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="eb8c883" data-element_type="widget" data-settings="{&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;direction&quot;:&quot;ltr&quot;}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper-container swiper-container-initialized swiper-container-horizontal" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-939px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Screenshot-29-03-2018-18.24.34-300x270.png" alt="Screenshot 29-03-2018 18.24.34"></figure></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Screenshot-30-03-2018-16.21.09-300x169.png" alt="Screenshot 30-03-2018 16.21.09"></figure></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="9" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/erste-Landschaft-300x169.png" alt="erste Landschaft"></figure></div>
+				<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Bild3-300x169.png" alt="Bild3"></figure></div><div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/locRaum9-300x169.png" alt="locRaum9"></figure></div><div class="swiper-slide" data-swiper-slide-index="2" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Ofen4-300x169.png" alt="Ofen4"></figure></div><div class="swiper-slide" data-swiper-slide-index="3" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Staffelei6-300x174.png" alt="Staffelei6"></figure></div><div class="swiper-slide" data-swiper-slide-index="4" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/05/locbild6-300x169.png" alt="locbild6"></figure></div><div class="swiper-slide" data-swiper-slide-index="5" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Schnemann-Kanone-300x169.png" alt="Schnemann Kanone"></figure></div><div class="swiper-slide" data-swiper-slide-index="6" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Screenshot-29-03-2018-18.19.15-300x270.png" alt="Screenshot 29-03-2018 18.19.15"></figure></div><div class="swiper-slide" data-swiper-slide-index="7" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Screenshot-29-03-2018-18.24.34-300x270.png" alt="Screenshot 29-03-2018 18.24.34"></figure></div><div class="swiper-slide" data-swiper-slide-index="8" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Screenshot-30-03-2018-16.21.09-300x169.png" alt="Screenshot 30-03-2018 16.21.09"></figure></div><div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="9" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/erste-Landschaft-300x169.png" alt="erste Landschaft"></figure></div>			<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Bild3-300x169.png" alt="Bild3"></figure></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/locRaum9-300x169.png" alt="locRaum9"></figure></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 313px;"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://tipagames.com/wp-content/uploads/2020/06/Ofen4-300x169.png" alt="Ofen4"></figure></div></div>
+												<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 10"></span></div>
+													<div class="elementor-swiper-button elementor-swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
+						<i class="eicon-chevron-left" aria-hidden="true"></i>
+						<span class="elementor-screen-only">Zurück</span>
+					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" tabindex="0" role="button" aria-label="Next slide">
+						<i class="eicon-chevron-right" aria-hidden="true"></i>
+						<span class="elementor-screen-only">Weiter</span>
+					</div>
+									<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d874da8 elementor-widget elementor-widget-spacer" data-id="d874da8" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-0892b09 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="0892b09" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-05d0c25 elementor-column elementor-col-100 elementor-top-column" data-id="05d0c25" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<section class="elementor-element elementor-element-ae26311 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="ae26311" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-73c104b elementor-column elementor-col-50 elementor-inner-column" data-id="73c104b" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-db297de elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="db297de" data-element_type="widget" data-settings="{&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+					<video class="elementor-video" src="https://tipagames.com/wp-content/uploads/2022/05/Cafeteria_Sim2.ogv" autoplay="" loop="" controls="" playsinline="" controlslist="nodownload"></video>
+				</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-58e841a elementor-column elementor-col-50 elementor-inner-column" data-id="58e841a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-9e968f1 elementor-widget elementor-widget-text-editor" data-id="9e968f1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h2 class="tw-ta-container hide-focus-ring tw-nfl" style="text-align: center;" tabindex="0"><span lang="en">Driven by KI</span></h2><h4 id="tw-target-text" class="tw-data-text tw-text-large tw-ta" dir="ltr" data-placeholder="Übersetzung"><span class="Y2IQFc" lang="en">In order to create a real gaming experience, we started experimenting with AI early on. Here you can see a project to optimize walking routes in a cafeteria.</span></h4><p>&nbsp;</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="elementor-element elementor-element-1bf2b61 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="1bf2b61" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-83f0546 elementor-column elementor-col-100 elementor-top-column" data-id="83f0546" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-570923f elementor-widget elementor-widget-spacer" data-id="570923f" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+			</article>						
+						
+		<div class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
+<style>.elementor-40 .elementor-element.elementor-element-52bd5d5 > .elementor-container{min-height:98px;}.elementor-40 .elementor-element.elementor-element-52bd5d5 > .elementor-container:after{content:"";min-height:inherit;}.elementor-40 .elementor-element.elementor-element-52bd5d5 > .elementor-container > .elementor-row > .elementor-column > .elementor-column-wrap > .elementor-widget-wrap{align-content:center;align-items:center;}.elementor-40 .elementor-element.elementor-element-52bd5d5 .elementor-background-slideshow__slide__image{background-size:auto;}.elementor-40 .elementor-element.elementor-element-52bd5d5{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-40 .elementor-element.elementor-element-52bd5d5 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-40 .elementor-element.elementor-element-0ea371e.elementor-column > .elementor-column-wrap > .elementor-widget-wrap{justify-content:flex-start;}.elementor-40 .elementor-element.elementor-element-2fec3b5 .elementor-text-editor{text-align:center;}.elementor-40 .elementor-element.elementor-element-2fec3b5{color:#000000;font-size:23px;}.elementor-40 .elementor-element.elementor-element-9ea4243 .elementor-button{background-color:#63696C;box-shadow:0px 0px 10px 5px rgba(0,0,0,0.5);}.elementor-40 .elementor-element.elementor-element-f969b29 .elementor-button{background-color:#63696C;box-shadow:0px 0px 10px 5px rgba(0,0,0,0.5);}@media(max-width:767px){.elementor-40 .elementor-element.elementor-element-52bd5d5 > .elementor-container{min-height:0px;}.elementor-40 .elementor-element.elementor-element-52bd5d5 > .elementor-container:after{content:"";min-height:inherit;}.elementor-40 .elementor-element.elementor-element-2fec3b5 .elementor-text-editor{text-align:center;}}</style>		<div data-elementor-type="wp-post" data-elementor-id="40" class="elementor elementor-40" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-52bd5d5 elementor-section-full_width elementor-section-height-min-height elementor-section-content-middle elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-id="52bd5d5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:43,&quot;url&quot;:&quot;http:\/\/tipagames.com\/wp-content\/uploads\/2020\/05\/Hintergrund3.jpg&quot;}],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}"><div class="elementor-background-slideshow swiper-container" dir="rtl"><div class="swiper-wrapper"><div class="elementor-background-slideshow__slide swiper-slide"><div class="elementor-background-slideshow__slide__image" style="background-image: url(&quot;http://tipagames.com/wp-content/uploads/2020/05/Hintergrund3.jpg&quot;);"></div></div></div></div>
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-0ea371e elementor-column elementor-col-33 elementor-top-column" data-id="0ea371e" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-2fec3b5 elementor-widget elementor-widget-text-editor" data-id="2fec3b5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>&nbsp;<span class="st">©</span> made by tipagames.com&nbsp;&nbsp; 2016- 2022</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-93e9358 elementor-column elementor-col-33 elementor-top-column" data-id="93e9358" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-9ea4243 elementor-align-center elementor-widget elementor-widget-button" data-id="9ea4243" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://tipagames.com/impressum/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="far fa-folder"></i>			</span>
+						<span class="elementor-button-text">Impressum</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="elementor-element elementor-element-f6f71fb elementor-column elementor-col-33 elementor-top-column" data-id="f6f71fb" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-f969b29 elementor-align-center elementor-widget elementor-widget-button" data-id="f969b29" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://tipagames.com/datenschutz/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="far fa-folder"></i>			</span>
+						<span class="elementor-button-text">Datenschutz</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		</div>
+<script type="text/javascript" id="mail-chimp-script-js-extra">
+/* <![CDATA[ */
+var ekit_site_url = {"siteurl":"https:\/\/tipagames.com"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementskit-lite/widgets/mail-chimp/assets/js/mail-chimp.js?ver=1.0" id="mail-chimp-script-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/ditty-news-ticker/inc/static/js/swiped-events.min.js?ver=1.1.4" id="swiped-events-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.12.1" id="jquery-effects-core-js"></script>
+<script type="text/javascript" id="ditty-news-ticker-js-extra">
+/* <![CDATA[ */
+var mtphr_dnt_vars = {"is_rtl":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/ditty-news-ticker/inc/static/js/ditty-news-ticker.min.js?ver=1622884302" id="ditty-news-ticker-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/themes/fusion-base/js/vendor/bootstrap.min.js?ver=3.3.7" id="bootstrap-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-includes/js/comment-reply.min.js?ver=5.7.9" id="comment-reply-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=1.5.4" id="elementskit-framework-js-frontend-js"></script>
+<script type="text/javascript" id="elementskit-framework-js-frontend-js-after">
+        //console.log(window.elementskit);
+
+		var elementskit = {
+            resturl: 'https://tipagames.com/wp-json/elementskit/v1/',
+        }
+
+        //console.log(window.elementskit);
+		
+</script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/nav-menu.js?ver=5.7.9" id="ekit-nav-menu-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/ui-slim.min.js?ver=5.7.9" id="ekit-slim-ui-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-includes/js/wp-embed.min.js?ver=5.7.9" id="wp-embed-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=2.9.9" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.7.6" id="elementor-dialog-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6" id="swiper-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=2.9.9" id="share-link-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Auf Facebook teilen","shareOnTwitter":"Auf Twitter teilen","pinIt":"Anheften","downloadImage":"Bild downloaden"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.9.9","urls":{"assets":"https:\/\/tipagames.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes","elementor_lightbox_enable_counter":"yes","elementor_lightbox_enable_fullscreen":"yes","elementor_lightbox_enable_zoom":"yes","elementor_lightbox_enable_share":"yes","elementor_lightbox_title_src":"title","elementor_lightbox_description_src":"description"},"editorPreferences":[]},"post":{"id":48,"title":"tipagames.com%20%E2%80%93%20VR%20development%20for%20games%20and%20more","excerpt":"","featuredImage":false}};
+</script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=2.9.9" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=1.5.4" id="elementskit-elementor-js"></script>
+<script type="text/javascript" src="https://tipagames.com/wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editor.js?ver=1.5.4" id="elementskit-js-widgetarea-control-editor-js"></script>
+		<script>
+			jQuery( document ).ready( function($) {
+							$( '#mtphr-dnt-121' ).ditty_news_ticker({
+					id : '121',
+					type : 'scroll',
+					scroll_direction : 'left',
+					scroll_speed : 10,
+					scroll_pause : 0,
+					scroll_spacing : 40,
+					scroll_init : 0,
+					scroll_init_delay : 2,
+					rotate_type : 'fade',
+					auto_rotate : 1,
+					rotate_delay : 7,
+					rotate_pause : 0,
+					rotate_speed : 10,
+					rotate_ease : 'easeInOutQuint',
+					nav_reverse : 0,
+					disable_touchswipe : 0,
+					offset : 20,
+					after_load : function( $ticker ) {
+											},
+					before_change : function( $ticker ) {
+											},
+					after_change : function( $ticker ) {
+											}
+				});
+			 			});
+		</script>
+		
+
+
+    
+</body></html>

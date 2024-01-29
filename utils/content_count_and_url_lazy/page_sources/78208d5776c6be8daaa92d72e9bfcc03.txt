@@ -1,0 +1,726 @@
+<html lang="ja"><head>
+
+
+
+<!--StaticCode-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, minimum-scale=0.5 , maximum-scale=2">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="imagetoolbar" content="no">
+
+<meta name="rating" content="general">
+<meta name="author" content="MyDearest">
+<meta name="copyright" content="(C)2018-2019 MyDearest Inc. All Rights Reserved.">
+
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+<!--/StaticCode-->
+
+
+
+<!--BasicSetting-->
+<title>TOKYO CHRONOS -VR Mystery Visual Novel-</title>
+<meta name="description" content="「-- I am dead. Who killed me?」Experience in VR a mystery full of suspence woven by 8 childhood friends.">
+<meta name="keywords" content="TOKYO CHRONOS,VR,Mystery Visual Novel,Haruki Kashiwakura,Kou Segawa,Kazuma Miki,LAM">
+<!--/BasicSetting-->
+
+
+
+<!--OGP-->
+<meta property="og:site_name" content="TOKYO CHRONOS -VR Mystery Visual Novel-">
+<meta property="og:title" content="">
+<meta property="og:description" content="「-- I am dead. Who killed me?」Experience in VR a mystery full of suspence woven by 8 childhood friends.">
+<meta property="og:image" content="https://tokyochronos.com/en/assets/images/common/ogp_top.png?share">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tokyochronos.com/en/?share">
+<!--/OGP-->
+
+
+
+<!--TwitterCardOGP-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TOKYO CHRONOS -VR Mystery Visual Novel-">
+<meta name="twitter:description" content="「-- I am dead. Who killed me?」Experience in VR a mystery full of suspence woven by 8 childhood friends.">
+<!--/TwitterCardOGP-->
+
+
+
+<!--style-->
+<link rel="stylesheet" type="text/css" media="screen and (min-width:769px)" href="assets/css/base_pc.css?cache=20190725"><!--pcCSS-->
+<link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="assets/css/base_sp.css?cache=20190725"><!--spCSS-->
+<!--/style-->
+
+
+
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<script src="https://connect.facebook.net/signals/config/380771362562064?v=2.9.125&amp;r=stable&amp;domain=tokyochronos.com" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="true" type="text/javascript" src="https://static.ads-twitter.com/uwt.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-C84CRL03FX&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W2LZBLQ"></script><script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?qJRtJoIK9pM%3D&amp;box=fCN~ckWJASU%3D&amp;aa=1&amp;ab=2" charset="utf-8"></script><style id="fpbf_ac93d8111_css">@font-face { font-family: 'fpbf_ac93d8111'; font-display: swap; src: url('https://s3-ap-northeast-1.amazonaws.com/fp-bf/3d4c80e6') format('woff'); }</style>
+<!--/fonts-->
+
+
+
+<!--Scripts-->
+
+
+	<!--CDN_Resource-->
+	<!--/CDN_Resource-->
+
+
+	<!--Plugins-->
+
+		<!--jQUery-->
+		<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+		<!--/jQUery-->
+
+		<!--MagnificPopup-->
+		<link rel="stylesheet" type="text/css" href="assets/js/magnific-popup/magnific-popup.css">
+		<script type="text/javascript" src="assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<!--/MagnificPopup-->
+
+		<!--Slick-->
+		<script type="text/javascript" src="assets/js/slick/slick.custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css">
+		<!--/Slick-->
+
+		<!--Waypoints-->
+		<script type="text/javascript" src="assets/js/noframework.waypoints.min.js"></script>
+		<!--/Waypoints-->
+
+        <!--Waypoints-->
+		<script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+		<!--/Waypoints-->
+
+		<!--jQueryEasing-->
+		<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+		<!--/jQueryEasing-->
+
+		<!--purl.js-->
+		<script type="text/javascript" src="assets/js/purl.js"></script>
+		<!--/purl.js-->
+
+		<!--AddOptimize-->
+		<script type="text/javascript">
+		jQuery(function($){
+			$(document).ready(function() {
+				(function(){
+					var url = $.url();
+					var cp = encodeURIComponent(url.param('utm_campaign'));
+					if(cp === 'undefined'){
+						cp = 'default';
+					}
+					$('a').each(function(i,e){
+						var anker = $(this).attr('href');
+						if(anker.indexOf('utm_campaign') !== -1){
+							var rplaceurl = anker.replace('default',cp);
+							$(this).attr('href',rplaceurl);
+						}
+					})
+				})();
+			});
+		})
+		</script>
+		<!--/AddOptimize-->
+
+	<!--/Plugins-->
+
+
+	<!--mainjs-->
+	<script type="text/javascript" src="assets/js/chronos_main.js"></script>
+	<!--/mainjs-->
+
+
+	<!--SNS-->
+	<script type="text/javascript">
+	</script>
+	<!--SNS-->
+
+
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W2LZBLQ');</script>
+<!-- End Google Tag Manager -->
+
+
+<!--/Scripts-->
+
+
+
+<style id="fontplus_css_0">@font-face { font-family: 'FOT-アンチックセザンヌ Pro DB'; font-weight: bold; src: url('https://webfont.fontplus.jp/accessor/reqf/con=fp_e4997c78d3eeff85a8474391f8dfc001&cha=UTF-8&dmode=&aa=1&ab=2&l=aHR0cHMlM0ElMkYlMkZ0b2t5b2Nocm9ub3MuY29tJTJGZW4lMkY=&chws=&fa=Rk9ULeOCouODs-ODgeODg-OCr-OCu-OCtuODs-ODjCBQcm8gREI&lst=0&lsc=0&s=ISIjJCUoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj9BQkNERUZHSElKS0xNTk9QUVJTVFVWV1laW11fYWJjZGVmZ2hpamtsbW5vcHJzdHV2d3h5ent9wqnigJzigJ3igKbjgIzjgI3jgrvjg5Xjg6rvvIbvvZw&ivs=0'); }
+</style><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="true" type="text/javascript" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/736960932/?random=1694379197987&amp;cv=11&amp;fst=1694379197987&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He3960&amp;u_w=1536&amp;u_h=864&amp;url=https%3A%2F%2Ftokyochronos.com%2Fen%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=TOKYO%20CHRONOS%20-VR%20Mystery%20Visual%20Novel-&amp;auid=348487367.1694379198&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B116.0.5845.180%7CNot)A%253BBrand%3B24.0.0.0%7CGoogle%2520Chrome%3B116.0.5845.180&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"></script></head>
+<body id="top">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2LZBLQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<!--splash-->
+<div id="splash">
+	<div class="splash_wrapper">
+
+
+		<section id="splash_kv">
+
+			<div class="main">
+				<p class="kv"></p>
+				<h3>TOKYO CHRONOS</h3>
+			</div>
+
+			<p class="symbol">TOKYO</p>
+
+		</section>
+
+
+		<section id="buyinfo">
+
+			<ul>
+				<li class="oculus">
+					<p><a href="https://www.oculus.com/experiences/quest/2812851825399383/?utm_source=OfficialSiteEn&amp;utm_campaign=default&amp;utm_channel=otherIndexFastBanner" target="_blank">Oculus｜BUY NOW</a></p>
+				</li>
+				<li class="ps4">
+					<p><a href="https://store.playstation.com/en-us/product/UP0737-CUSA16619_00-TOKYOCHRONOSPATY">PlayStation© VR｜More Information</a></p>
+				</li>
+				<li class="steam">
+					<p><a href="https://store.steampowered.com/app/1031440/TOKYO_CHRONOS/" target="_blank">Steam VR｜BUY NOW</a></p>
+				</li>
+			</ul>
+
+		</section>
+
+
+		<section class="officialsite">
+
+			<p class="paty"></p>
+
+			<p><a href="#top">Official Web Site</a></p>
+
+		</section>
+
+
+		<!--license-->
+		<section id="license">
+
+			<ul class="license_logo">
+				<li class="psvr">PlayStation VR</li>
+				<li class="oculus">Oculus</li>
+				<li class="steam">Steam</li>
+			</ul>
+
+			<ul class="license_text">
+				<li>©2019 Sony Interactive Entertainment Inc. All Rights Reserved.</li>
+				<li>©Facebook Corporation. Oculus logo are trademarks and/or registered tradmarks of Facebook Corporation in the U.S. and/or other countries.</li>
+				<li>©Valve Corporation. Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</li>
+			</ul>
+
+			<small>©2018-2019 MyDearest Inc. All Rights Reserved.</small>
+
+		</section>
+		<!--/license-->
+
+
+	</div>
+</div>
+<!--/splash-->
+
+
+
+<!--loading-->
+<div id="loading" style="display: none;">
+
+	<p class="loadingtext" style="top: 396px; opacity: 0;">NOW LOADING…</p>
+
+	<noscript><style>#loading{display: none;}</style></noscript>
+
+</div>
+<!--/loading-->
+
+
+
+<!--grandwrapper-->
+<div class="grandwrapper">
+
+
+
+	<!--contentswrapper-->
+	<div class="contentswrapper">
+
+
+
+		<!--header-->
+		<header class="global">
+
+
+			<div class="toggle sp">
+				<h3 class="logo"></h3>
+				<p class="menu"><span></span><span></span><span></span></p>
+			</div>
+
+			<!--gnav-->
+			<nav class="gnav">
+
+				<ul class="gnav_ui">
+					<li class="nav_top"><a href="/en/">TOP</a></li>
+					<li class="nav_world active"><a href="world/index.html">WORLD</a></li>
+					<li class="nav_character"><a href="character/sakurai.html">CHARACTER</a></li>
+					<li class="nav_staffcast"><a href="staffcast/index.html">CAST＆STAFF</a></li>
+					<li class="nav_news"><a href="news/index.html">NEWS</a></li>
+					<li class="nav_special"><a href="special/index.html">SPECIAL</a></li>
+				</ul>
+
+			</nav>
+			<!--/gnav-->
+
+
+		</header>
+		<!--/header-->
+
+
+		<!--maincontents-->
+		<section id="maincontents">
+
+			<div class="top_fv">
+
+				<div class="top_fv_bgmark"></div>
+				<div class="top_fv_kv"></div>
+
+				<ul class="top_fv_rogolist">
+					<li class="top_fv_rogo_oculus"><a href="" target="_blank">oculus</a></li>
+					<li class="top_fv_rogo_steamvr"><a href="" target="_blank">STEAM VR</a></li>
+					<li class="top_fv_rogo_playstationvr"><a href="" target="_blank">PlayStation VR</a></li>
+				</ul>
+
+				<div class="top_fv_text">
+					<p class="top_fv_copy">I am dead. Who killed me?</p>
+					<div class="top_fv_rogo">TokyoChronos</div>
+					<div class="top_fv_data">2019.3.20 onSale</div>
+					<div class="top_fv_cf"><a href="">CF Rearched</a></div>
+				</div>
+
+			</div>
+
+
+
+
+			<div class="top_movie moviepopup">
+
+				<div class="top_movie_bg"></div>
+
+				<a href="https://www.youtube.com/watch?v=SzseCtHK3Jk" target="_blank" class="top_movie_thumb">PLAY</a>
+
+				<div class="top_movie_text">
+
+					<p class="top_movie_text_tailer">TRAILER</p>
+					<p class="top_movie_text_tailertitle"><span>“TOKYO CHRONOS”</span>THE 2nd. TRAILER</p>
+					<p class="top_movie_text_song">SONG</p>
+					<p class="top_movie_text_artist">Eir Aoi「UNLIMITED」</p>
+
+				</div>
+
+			</div>
+
+
+
+
+			<div class="top_banner">
+
+				<ul class="top_bannerlist">
+					<li class="top_banner_play"><a href="https://store.steampowered.com/app/1031440/TOKYO_CHRONOS/" target="_blank"><img src="assets/images/common/n_top_banner_play.png" alt="DEMO PLAY"></a></li>
+					<li class="top_banner_play"><a href="item/index.html"><img src="assets/images/common/n_top_banner_item.png" alt="ITEM INFORMATION"></a></li>
+					<li><a href="music/index.html"><img src="assets/images/common/n_top_banner_music.png"></a></li>
+				</ul>
+
+			</div>
+
+
+
+			<!--gnav-->
+			<nav class="index_gnav">
+
+				<ul>
+					<li><a href="/index.html">TOP</a></li>
+					<li><a href="world/index.html">WORLD</a></li>
+					<li><a href="character/sakurai.html">CHARACTER</a></li>
+					<li><a href="staffcast/index.html">CAST＆STAFF</a></li>
+					<li><a href="news/index.html">NEWS</a></li>
+					<li><a href="special/index.html">SPECIAL</a></li>
+				</ul>
+
+			</nav>
+			<!--/gnav-->
+
+
+
+		</section>
+		<!--/maincontents-->
+
+
+
+	</div>
+	<!--/contentswrapper-->
+
+
+
+</div>
+<!--/grandwrapper-->
+
+
+
+<!--footer-->
+<footer class="global">
+
+
+	<!--share-->
+	<section class="share">
+
+		<dl>
+			<dt>SHARE</dt>
+			<dd class="line"><a href="http://line.me/R/msg/text/?TOKYO CHORONOS https://tokyochronos.com/en/?share" target="_blank">LINE</a></dd>
+			<dd class="twitter"><a href="https://twitter.com/share?url=https://tokyochronos.com/en/?share&amp;text=「-- I am dead. Who killed me?」Experience in VR a mystery full of suspence woven by 8 childhood friends.&amp;related=tokyo_chronos&amp;hashtags=TokyoChronos" target="_blank">Twitter</a></dd>
+			<dd class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://tokyochronos.com/en/?share" target="_blank">Facebook</a></dd>
+		</dl>
+
+	</section>
+	<!--share-->
+
+
+	<!--copyright-->
+	<section class="copyright">
+
+		<h3 class="logo">TOKYO CHRONOS</h3>
+
+		<!--license-->
+		<div class="license">
+			<ul class="license_logo">
+				<li class="oculus">Oculus</li>
+				<li class="steam">Steam</li>
+			</ul>
+			<ul class="license_text">
+				<li>©Facebook Corporation. Oculus logo are trademarks and/or registered tradmarks of Facebook Corporation in the U.S. and/or other countries.</li>
+				<li>©Valve Corporation. Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</li>
+			</ul>
+			<small>©2018-2019 MyDearest Inc. All Rights Reserved.</small>
+		</div>
+		<!--/license-->
+
+		<!--Others-->
+		<div class="others">
+			<!--Language-->
+			<div class="language">
+				<dl>
+					<dt>LANGUAGE</dt>
+					<dd class="en"><a href="/en/">ENGLISH</a></dd>
+					<dd class="jp"><a href="/">JAPANESE</a></dd>
+				</dl>
+			</div>
+			<!--/Language-->
+		</div>
+		<!--/Others-->
+
+	</section>
+	<!--/copyright-->
+
+
+</footer>
+<!--/footer-->
+
+<!-- compornent_toast -->
+
+<dl class="compornent_toast_banner">
+	<dt>
+		<a href="https://discord.com/invite/QWJpgNRs4n/?tc_8"><div class="chara_icon vis_8"></div></a>
+	</dt>
+	<dd>
+		<div class="compornent_toast_close">close</div>
+		<a href="https://discord.com/invite/QWJpgNRs4n/?tc_8">
+			<figure><img src="assets/images/compornent_toast/discord.png"></figure>
+			<div id="charatext">
+				<p>Join the Chronos Haven Discord Server!</p>
+				<div class="clicktext"></div>
+			</div>
+		</a>
+	</dd>
+</dl>
+
+
+<style>
+	.compornent_toast_banner {
+	position: fixed;
+	bottom: -230px;
+	width: 100%;
+	z-index: 300;
+	transition-duration: 300ms;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.42, 0, 0, 0.99);
+	transition-delay: 0ms;
+	transform-origin: bottom;
+	}
+	.compornent_toast_banner.active {
+	bottom: 10px;
+	}
+	.compornent_toast_banner dt {
+	position: absolute;
+	right: 40px;
+	bottom: 0;
+	}
+	.compornent_toast_banner dt .chara_icon {
+	width: 65px;
+	height: 65px;
+	background-color: #fff;
+	background-position: center center;
+	background-size: 100% auto;
+	border-radius: 40px;
+	border: solid 2px #000;
+	}
+	.compornent_toast_banner dt .chara_icon.vis_1 {
+	background-image: url(assets/images/compornent_toast/chara_1.png);
+	}
+	.compornent_toast_banner dt .chara_icon.vis_2 {
+	background-image: url(assets/images/compornent_toast/chara_2.png);
+	}
+	.compornent_toast_banner dt .chara_icon.vis_3 {
+	background-image: url(assets/images/compornent_toast/chara_3.png);
+	}
+	.compornent_toast_banner dt .chara_icon.vis_4 {
+	background-image: url(assets/images/compornent_toast/chara_4.png);
+	}
+	.compornent_toast_banner dt .chara_icon.vis_5 {
+	background-image: url(assets/images/compornent_toast/chara_5.png);
+	}
+	.compornent_toast_banner dt .chara_icon.vis_6 {
+	background-image: url(assets/images/compornent_toast/chara_6.png);
+	}
+	.compornent_toast_banner dt .chara_icon.vis_7 {
+	background-image: url(assets/images/compornent_toast/chara_7.png);
+	}
+	.compornent_toast_banner dt .chara_icon.vis_8 {
+	background-image: url(assets/images/compornent_toast/chara_8.png);
+	}
+	.compornent_toast_banner dt .chara_icon.vis_9 {
+	background-image: url(assets/images/compornent_toast/chara_9.png);
+	}
+	.compornent_toast_banner dd {
+	box-sizing: border-box;
+	position: absolute;
+	right: 20px;
+	bottom: 80px;
+	width: 250px;
+	min-height: 80px;
+	background-color: #fff;
+	filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.1));
+	}
+	.compornent_toast_banner dd .compornent_toast_close {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	text-indent: -9999px;
+	cursor: pointer;
+	}
+	.compornent_toast_banner dd .compornent_toast_close:after {
+	content: "";
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	width: 10px;
+	height: 10px;
+	background-image: url(assets/images/compornent_toast/close_bg.png);
+	background-size: 40% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: solid 1px #000;
+	}
+	.compornent_toast_banner dd:after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 170px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-image: url(assets/images/compornent_toast/fukidashi_bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	}
+	.compornent_toast_banner dd a {
+	box-sizing: border-box;
+	display: flex;
+	padding: 12px 10px;
+	width: 100%;
+	min-height: 80px;
+	color: #000;
+	text-decoration: none;
+	}
+	.compornent_toast_banner dd #charatext {
+	display: flex;
+	width: 180px;
+	align-items: center;
+	flex-wrap: wrap;
+	}
+	.compornent_toast_banner dd p {
+	display: flex;
+	margin: 0 0 6px 0;
+	font-size: 12px;
+	line-height: 1.3em;
+	letter-spacing: 0.05em;
+	}
+	.compornent_toast_banner dd .clicktext {
+	margin-left: auto;
+	padding-right: 22px;
+	color: #000;
+	font-size: 10px;
+	line-height: 1.4em;
+	text-align: right;
+	font-weight: bold;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: auto 8px;
+	}
+	.compornent_toast_banner dd .clicktext.chara_1 {
+	background-image: url(assets/images/compornent_toast/arrow_1.png);
+	}
+	.compornent_toast_banner dd .clicktext.chara_2 {
+	background-image: url(assets/images/compornent_toast/arrow_2.png);
+	}
+	.compornent_toast_banner dd .clicktext.chara_3 {
+	background-image: url(assets/images/compornent_toast/arrow_3.png);
+	}
+	.compornent_toast_banner dd .clicktext.chara_4 {
+	background-image: url(assets/images/compornent_toast/arrow_4.png);
+	}
+	.compornent_toast_banner dd .clicktext.chara_5 {
+	background-image: url(assets/images/compornent_toast/arrow_5.png);
+	}
+	.compornent_toast_banner dd .clicktext.chara_6 {
+	background-image: url(assets/images/compornent_toast/arrow_6.png);
+	}
+	.compornent_toast_banner dd .clicktext.chara_7 {
+	background-image: url(assets/images/compornent_toast/arrow_7.png);
+	}
+	.compornent_toast_banner dd .clicktext.chara_8 {
+	background-image: url(assets/images/compornent_toast/arrow_8.png);
+	}
+	.compornent_toast_banner dd .clicktext.chara_9 {
+	background-image: url(assets/images/compornent_toast/arrow_9.png);
+	}
+	.compornent_toast_banner dd figure {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0 10px 0 0;
+	width: 70px;
+	}
+	.compornent_toast_banner dd figure img {
+	width: 100%;
+	height: auto;
+	}
+</style>
+
+
+<script>
+	$(window).ready(function () {
+		let lastclose;
+		let limen = 86400000;
+		let now;
+		let wpobject;
+
+		function fnc_viewtoast() {
+			wpobject = new Waypoint({
+				element: $('body'),
+				handler: function(direction) {
+					if(direction === "down"){
+						$('.compornent_toast_banner').addClass('active');
+					} else {
+						$('.compornent_toast_banner').removeClass('active');
+					}
+				},offset: '-200px'
+			});
+		}
+
+		function fnc_saveload() {
+			now = (new Date()).getTime();
+			lastclose = {
+				"closetime":now,
+				"closeflag":false
+			}
+			let closedata = JSON.parse(localStorage.getItem('agitbnrclose'));
+			if(closedata==null){
+				localStorage.setItem('agitbnrclose',JSON.stringify(lastclose));
+			} else {
+				lastclose = closedata;
+			}
+
+			let check= (now > (lastclose.closetime + limen));
+
+			if(!lastclose.closeflag){
+				fnc_viewtoast();
+			} else if (check){
+				fnc_viewtoast();
+				localStorage.removeItem('agitbnrclose');
+			} else {
+
+			}
+		}
+		fnc_saveload();
+
+
+		$('.compornent_toast_close').on('touchstart click', function(event){
+			$(this).off();
+			$('.compornent_toast_banner').removeClass('active');
+			lastclose.closeflag = true;
+			lastclose.closetime = now;
+			localStorage.setItem('agitbnrclose',JSON.stringify(lastclose));
+			wpobject.destroy();
+		})
+
+		let charadata;
+		$.ajax({
+			url: 'https://tokyochronos.com/en/assets/json/compornent_toast.json',
+			type: 'GET',
+			dataType: "json",
+		}).done(function (data){
+			charadata= data[0];
+			fnc_appendtoast();
+		}).fail(function (data){
+		});
+		
+		function fnc_appendtoast() {
+			let roll = Math.floor(Math.random() * (Object.keys(charadata).length + 1 - 1)) + 1;
+			let count = 0;
+			for (let key in charadata) {
+				count++;
+				if(count==roll){
+					$('.compornent_toast_banner a').attr('href', ('https://discord.com/invite/QWJpgNRs4n/?tc_' + charadata[key].no));
+					$('.compornent_toast_banner .chara_icon').addClass('vis_'+charadata[key].no);
+					$('.compornent_toast_banner dd p').text((charadata[key].セリフ));
+					gtag('event', 'click', {'event_category': 'compornent_toast', 'event_label': key});
+				}
+			}
+		}
+	});
+</script>
+<!-- compornent_toast -->
+
+
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","380771362562064");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=380771362562064&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","380771362562064");fbq("track","PageView");fbq("track","AddToCart");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=380771362562064&amp;ev=PageView&amp;noscript=1"></noscript>
+<img src="https://t.co/i/adsct?bci=3&amp;eci=2&amp;event_id=5a7f7f29-a610-4d5f-9eae-a338de3bea31&amp;events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=ef449d7c-0401-45ef-83d1-052213413324&amp;tw_document_href=https%3A%2F%2Ftokyochronos.com%2Fen%2F&amp;tw_iframe_status=0&amp;tw_order_quantity=0&amp;tw_sale_amount=0&amp;txn_id=o2js8&amp;type=javascript&amp;version=2.3.29" height="1" width="1" style="display: none;"><img src="https://analytics.twitter.com/i/adsct?bci=3&amp;eci=2&amp;event_id=5a7f7f29-a610-4d5f-9eae-a338de3bea31&amp;events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=ef449d7c-0401-45ef-83d1-052213413324&amp;tw_document_href=https%3A%2F%2Ftokyochronos.com%2Fen%2F&amp;tw_iframe_status=0&amp;tw_order_quantity=0&amp;tw_sale_amount=0&amp;txn_id=o2js8&amp;type=javascript&amp;version=2.3.29" height="1" width="1" style="display: none;"></body></html>

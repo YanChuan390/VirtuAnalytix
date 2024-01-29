@@ -1,0 +1,96 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CAD Design, 3D Modelling, Programming">
+    <meta name="description" content="UK Based Tech Development">
+    <title>Default Interactive - Virtual Escape: The Play Room</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/site.css">
+    
+</head>
+<body>
+    <header class="navbar">
+        <i id="js-menu" class="bi bi-list"></i>
+        <img class="navbar-logo" src="/assets/logo_main_nobg.png" alt="">
+        <div class="navbar-items">
+            <i id="js-menu-close" class="bi bi-x"></i>
+            <a class="nav-option" href="/">Home</a>
+            <a class="nav-option" href="/About">About</a>
+            <a class="nav-option" href="/Products">Products</a>
+            <a class="nav-option" href="/Services">Services</a>
+            <a class="nav-option" href="/Blog">Blog</a>
+            <a class="nav-option" href="/Contact">Contact</a>
+        </div>
+    </header>
+    
+<h1 class="page-title">Virtual Escape: The Play Room</h1>
+<div class="div-box">
+    <img class="product-img" src="/assets/images/games/veplayroom_banner.png" alt="virtual-escape-1">
+    <br>
+    <div class="about-div"><p>Virtual Escape: The Play Room is a 3D virtual reality game designed for the HTC Vive with support for the Oculus Rift. Here you interact with objects and find the layered clues to reach your ultimate goal. 
+ 
+ The game-play has you solving various puzzles, by interacting with the various objects in the room. Your goal is to escape. The atmospheric feel and interaction develops a deep connection with the characters that begs to be explored deeper. 
+ 
+ Finding the clues and completing the challenging puzzles on the way fulfills your achievement awards. 
+ 
+ With realistic graphics, a cast of talented voice actors and intuitive interaction, Virtual Escape: The Play Room is an experience you won’t want to miss.</p></div>
+    <br>
+    <iframe src="https://store.steampowered.com/widget/522710/" width="600" height="190" frameborder="0"></iframe>
+    <iframe src="https://www.youtube.com/embed/6Cnl0M87Jz0?controls=0" width="600" height="315" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; allowfullscreen" frameborder="0"></iframe>
+    <br>
+    <div class="li-wrapper">
+        <ul>
+                <li>Supports the HTC Vive and Oculus Rift.</li>
+                <li>Medium to small size room works fine, as you can teleport using the controllers.</li>
+                <li>Reach height minimum 1.8 meters.</li>
+        </ul>
+    </div>
+    </div>
+
+
+    <footer>
+        <div class="icon-container">
+            <a href="https://twitter.com/defaultinteract" target="_blank">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCRV6E2LuvguBaW82KT56HKA" target="_blank">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/default-interactive" target="_blank">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/defaultinteractive/?hl=en" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/defaultinteractive" target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </div>
+        <div style="margin: 5px;">
+            <a style="font-size: 20px; text-decoration: underline;" class="links" href="/Privacy">Privacy Policy</a>
+            <p style="font-size: 12px;"> Website Developed with Razor</p>
+        </div>
+    </footer>
+<script>
+    (() => {
+        const menu = document.querySelector('#js-menu');
+
+        setTimeout(() => {
+            if (menu.classList.contains('open')) {
+                menu.classList.remove('open');
+            }
+        }, 1000);
+
+        document.querySelector('#js-menu').addEventListener('click', () => {
+            document.querySelector('.navbar-items').classList.add('open');           
+        });
+        document.querySelector('#js-menu-close').addEventListener('click', () => {
+            document.querySelector('.navbar-items').classList.remove('open');
+        });
+    })()
+</script>
+
+
+
+</body></html>

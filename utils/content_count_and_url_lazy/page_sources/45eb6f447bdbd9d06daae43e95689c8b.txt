@@ -1,0 +1,310 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propagation VR : a zombie survival horror and wave shooting VR game</title>
+    <meta property="og:title" content="Propagation VR : a zombie survival horror and wave shooting VR game">
+    <meta property="og:image" content="/assets/og-image-propagation-vr.jpg">
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon">
+<!--    <link rel="stylesheet" type="text/css" href="css/styles.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <script async="" src="//matomo.wanadev.org/matomo.js"></script><script src="js/custom-javascript.min.js"></script>
+    <!-- Matomo -->
+    <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="//matomo.wanadev.org/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '6']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+<body>
+
+<!-- BACKGROUND VIDEO-->
+<div id="animationStep0" class="background-page">
+<!--    <div class="darker-overlay-video w-100 h-100"></div>-->
+<!--    <video loop muted autoplay src="assets/background-home.mp4"></video>-->
+</div>
+
+<!-- HEADER SECTION-->
+<section class="header-wrapper position-fixed d-flex flex-wrap w-100">
+    <div id="animationStep1" class="top-bar d-flex justify-content-between w-100 slide-to-right">
+        <div class="main-logo-wrapper">
+            <a href="./">
+                <div class="propagation-logo"><img width="100%" alt="Propagation VR logo" src="assets/logo-propagationvr.png"></div>
+                <div class="propagation-logo-white"><img width="100%" alt="Propagation VR logo white" src="assets/logo-propagationvr-white-x2.png"></div>
+            </a>
+        </div>
+        <div class="main-navigation-wrapper">
+            <div class="burger-wrapper d-flex align-items-center h-100 pr-4">
+                <a id="menuBurgerIcon" class="menu-interaction" href="#">
+                    <div class="burger-icon d-flex flex-wrap justify-content-end">
+                        <div class="burger-top-bar"></div>
+                        <div class="burger-middle-bar"></div>
+                        <div class="burger-bottom-bar ml-2"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="horizontal-line"></div>
+    </div>
+    <div id="animationStep2" class="left-bar d-none d-md-block load-animation slide-to-top">
+        <div class="d-flex justify-content-center h-100 align-content-end flex-wrap">
+            <div class="line-logo mb-3"></div>
+            <div class="w-100 d-flex justify-content-center">
+                <img alt="Propagation VR Logo Rouge" class="mb-4" width="45px" src="./assets/propagation_logo_rouge@2x.png">
+            </div>
+
+        </div>
+        <div class="vertical-line left-line"></div>
+    </div>
+    <div id="animationStep3" class="right-bar d-none d-md-block load-animation slide-to-bottom">
+        <div class="d-flex justify-content-center h-100 align-content-end flex-wrap">
+            <div class="rs-icons-wrapper d-flex flex-wrap justify-content-center text-small">
+                <div class="rs-icon pb-3">
+                    <!--                    //twitter-->
+                    <a class="p-3 no-und" href="https://twitter.com/PropagationVR" target="_blank" title="Go to Twitter page">
+                        <svg width="30" height="30" version="1.1" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="matrix(.083517 0 0 .083517 -23.565 -4.4477)">
+                                <path class="a" d="m599.43 164.85c0.21884 3.0821 0.21884 6.1641 0.21884 9.2294a200.69 200.69 0 0 1-202.1 202.1 200.7 200.7 0 0 1-109.02-31.915 146.93 146.93 0 0 0 17.145 0.8758 142.23 142.23 0 0 0 88.167-30.315 71.14 71.14 0 0 1-66.408-49.246 89.548 89.548 0 0 0 13.474 1.0947 75.115 75.115 0 0 0 18.695-2.4252 71.022 71.022 0 0 1-56.993-69.725v-0.87579a71.528 71.528 0 0 0 32.101 9.0104 71.123 71.123 0 0 1-21.996-94.988 201.87 201.87 0 0 0 146.44 74.323 80.167 80.167 0 0 1-1.6842-16.269 71.09 71.09 0 0 1 122.95-48.589 139.79 139.79 0 0 0 44.951-17.078 70.82 70.82 0 0 1-31.225 39.141 142.38 142.38 0 0 0 40.892-10.998 152.67 152.67 0 0 1-35.621 36.715z" fill="#fff" stroke-width="16.842"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <!--                linkedin-->
+                <div class="rs-icon pb-3">
+                    <a class="p-3 no-und" href="https://www.linkedin.com/showcase/28855903" target="_blank" title="Go to linkedin page">
+                        <svg width="30" height="30" version="1.1" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <path class="a" d="m7.0436 29.486h-6.0151v-19.368h6.0151zm-3.0119-22.01a3.4997 3.4997 0 1 1 3.4841-3.517 3.5118 3.5118 0 0 1-3.4841 3.517zm25.518 22.01h-5.9994v-9.4279c0-2.2463-0.04514-5.128-3.1247-5.128-3.1247 0-3.6056 2.4407-3.6056 4.9666v9.5894h-6.0099v-19.368h5.7686v2.6421h0.08332a6.3189 6.3189 0 0 1 5.6904-3.1247c6.0862 0 7.2059 4.0083 7.2059 9.2144v10.64z" fill="#fff" stroke-width="1.736"></path>
+                        </svg>
+                    </a>
+                </div>
+                <!--                facebook-->
+                <div class="rs-icon pb-3">
+                    <a class="p-3 no-und" href="https://www.facebook.com/WanadevStudio-340492510171086" target="_blank" title="Go to page">
+                        <svg width="30" height="30" version="1.1" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <path class="a" d="m21.178 16.903 0.81095-5.2852h-5.0684v-3.4308a2.6426 2.6426 0 0 1 2.9799-2.8558h2.3018v-4.5074a28.118 28.118 0 0 0-4.0897-0.34955c-4.1771 0-6.9071 2.5325-6.9071 7.115v4.0285h-4.6455v5.2852h4.6437v12.778h5.7151v-12.778z" fill="#fff" stroke-width="1.7477"></path>
+                        </svg>
+                    </a>
+                </div>
+                <!--                insta-->
+                <div class="rs-icon pb-3">
+                    <a class="p-3 no-und" href="https://www.instagram.com/wanadevstudio/" target="_blank" title="Go to Instagram page">
+                        <svg width="30" height="30" version="1.1" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="matrix(1.2112 0 0 1.2112 .43431 .4593)" fill="#fbffff">
+                                <path d="m12.004 5.838c-3.403 0-6.158 2.758-6.158 6.158 0 3.403 2.758 6.158 6.158 6.158 3.403 0 6.158-2.758 6.158-6.158 0-3.403-2.758-6.158-6.158-6.158zm0 10.155c-2.209 0-3.997-1.789-3.997-3.997s1.789-3.997 3.997-3.997 3.997 1.789 3.997 3.997c1e-3 2.208-1.788 3.997-3.997 3.997z"></path>
+                                <path d="m16.948 0.076c-2.208-0.103-7.677-0.098-9.887 0-1.942 0.091-3.655 0.56-5.036 1.941-2.308 2.308-2.013 5.418-2.013 9.979 0 4.668-0.26 7.706 2.013 9.979 2.317 2.316 5.472 2.013 9.979 2.013 4.624 0 6.22 3e-3 7.855-0.63 2.223-0.863 3.901-2.85 4.065-6.419 0.104-2.209 0.098-7.677 0-9.887-0.198-4.213-2.459-6.768-6.976-6.976zm3.495 20.372c-1.513 1.513-3.612 1.378-8.468 1.378-5 0-7.005 0.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453 0-5.525-0.567-9.504 4.978-9.788 1.274-0.045 1.649-0.06 4.856-0.06l0.045 0.03c5.329 0 9.51-0.558 9.761 4.986 0.057 1.265 0.07 1.645 0.07 4.847-1e-3 4.942 0.093 6.959-1.394 8.453z"></path>
+                                <circle cx="18.406" cy="5.595" r="1.439"></circle>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <!--                discord/-->
+                <div class="rs-icon pb-3">
+                    <a class="p-3 no-und" href="https://discord.gg/DKHk5rQ" target="_blank" title="Go to Discord page">
+                        <svg width="30" height="30" version="1.1" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="matrix(.63965 0 0 .63965 -.9708 -1.3719)" fill="#fff">
+                                <path d="m41.625 10.77c-3.9805-3.2031-10.277-3.7461-10.547-3.7656-0.41797-0.035156-0.81641 0.19922-0.98828 0.58594-0.015625 0.023437-0.15234 0.33984-0.30469 0.83203 2.6328 0.44531 5.8672 1.3398 8.793 3.1562 0.46875 0.28906 0.61328 0.90625 0.32422 1.375-0.19141 0.30859-0.51562 0.47656-0.85156 0.47656-0.17969 0-0.36328-0.05078-0.52734-0.15234-5.0312-3.1211-11.312-3.2773-12.523-3.2773-1.2109 0-7.4961 0.15625-12.523 3.2773-0.46875 0.29297-1.0859 0.14844-1.375-0.32031-0.29297-0.47266-0.14844-1.0859 0.32031-1.3789 2.9258-1.8125 6.1602-2.7109 8.793-3.1523-0.15234-0.49609-0.28906-0.80859-0.30078-0.83594-0.17578-0.38672-0.57031-0.62891-0.99219-0.58594-0.26953 0.019532-6.5664 0.5625-10.602 3.8086-2.1055 1.9492-6.3203 13.34-6.3203 23.188 0 0.17578 0.046875 0.34375 0.13281 0.49609 2.9062 5.1094 10.84 6.4453 12.648 6.5039h0.03125c0.32031 0 0.62109-0.15234 0.80859-0.41016l1.8281-2.5156c-4.9336-1.2734-7.4531-3.4375-7.5977-3.5664-0.41406-0.36328-0.45312-0.99609-0.085938-1.4102 0.36328-0.41406 0.99609-0.45312 1.4102-0.089843 0.058594 0.054687 4.6992 3.9922 13.824 3.9922 9.1406 0 13.781-3.9531 13.828-3.9922 0.41406-0.35938 1.043-0.32422 1.4102 0.09375 0.36328 0.41406 0.32422 1.043-0.08984 1.4062-0.14453 0.12891-2.6641 2.293-7.5977 3.5664l1.8281 2.5156c0.1875 0.25781 0.48828 0.41016 0.80859 0.41016h0.03125c1.8086-0.05859 9.7422-1.3945 12.648-6.5039 0.085937-0.15234 0.13281-0.32031 0.13281-0.49609 0-9.8477-4.2148-21.238-6.375-23.23zm-23.125 19.23c-1.9336 0-3.5-1.7891-3.5-4 0-2.2109 1.5664-4 3.5-4s3.5 1.7891 3.5 4c0 2.2109-1.5664 4-3.5 4zm13 0c-1.9336 0-3.5-1.7891-3.5-4 0-2.2109 1.5664-4 3.5-4s3.5 1.7891 3.5 4c0 2.2109-1.5664 4-3.5 4z" fill="#fff"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <!--     youtube-->
+                <div class="rs-icon pb-3">
+                    <a class="p-3 no-und" href="https://www.youtube.com/channel/UCJWqjp84ZMNQS--FHL6HtVg" target="_blank" title="Go to Youtube page">
+                        <svg width="30" height="30" version="1.1" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m14.957 5.1936s-9.2319 1.8e-6 -11.54 0.60756c-1.239 0.34001-2.2595 1.3605-2.5995 2.6237-0.60733 2.3078-0.60731 7.0941-0.60731 7.0941s-2.478e-5 4.8103 0.60731 7.0941c0.34023 1.2633 1.3362 2.2595 2.5997 2.5997 2.3321 0.63164 11.54 0.63161 11.54 0.63161s9.232-4e-6 11.54-0.60756c1.2635-0.34001 2.2595-1.3362 2.5997-2.5994 0.60734-2.3081 0.60731-7.0941 0.60731-7.0941s0.0243-4.8105-0.60756-7.1184c-0.34001-1.2635-1.3362-2.2595-2.5994-2.5997-2.3081-0.63164-11.54-0.63161-11.54-0.63161zm-2.9394 5.9036 7.6771 4.4217-7.6771 4.4217z" fill="#fff" stroke-width=".057606"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+                <a href="https://www.wanadevstudio.com/" target="_blank">
+                    <img alt="Wanadev Logo White" class="wanadev-logo mb-4" width="23px" src="./assets/wanadev_logo_white.png"></a>
+            </div>
+        </div>
+        <div class="vertical-line right-line"></div>
+    </div>
+
+</section>
+<div id="navigationHorizontal" class="navigation-hbar-wrapper h-100 w-100 d-none">
+    <div id="navigationHorizontalBackground" class="dark-opacity-background w-100 h-100"></div>
+    <div id="menuHBar" class="container-fluid navigation-hbar h-100">
+        <div class="row h-md-100 flex-column-reverse flex-md-row">
+            <a id="menuCloseIcon" class="close-wrapper d-flex align-items-center justify-content-center no-und" href="#">
+                <i class="icon-close menu-interaction"></i>
+            </a>
+            <div class="col-md-5 col-12 company-info-wrapper">
+                <div class="pt-2">
+                    <div class="d-none d-md-block"><img style="max-width:250px;width:100%;" alt="Propagation VR logo white" src="assets/logo-propagationvr-white-x2.png"></div>
+                    <div class="ml-md-5 pl-3 pl-lg-5 pt-2">
+                        <img class="d-none d-md-block" width="65px" alt="Icon zombie" src="assets/zombie_icon-x2.png">
+                        <p><b>Contact us</b></p>
+                        <p>contact@wanadevstudio.com <br> +33 (0)4 28 29 69 01</p>
+                        <p><a href="https://www.wanadevstudio.com">www.wanadevstudio.com</a></p>
+                        <div class="rs-icons-wrapper d-flex justify-content-center justify-content-md-start">
+                            <div class="rs-icon"><a class="p-3 no-und" href="https://discord.gg/DKHk5rQ" target="_blank">ds</a></div>
+                            <div class="rs-icon"><a class="p-3 no-und" href="https://www.facebook.com/WanadevStudio-340492510171086" target="_blank">fb</a></div>
+                            <div class="rs-icon"><a class="p-3 no-und" href="https://www.instagram.com/wanadevstudio/" target="_blank">is</a></div>
+                            <div class="rs-icon"><a class="p-3 no-und" href="https://twitter.com/PropagationVR" target="_blank">tw</a></div>
+                            <div class="rs-icon"><a class="p-3 no-und" href="https://www.linkedin.com/showcase/28855903" target="_blank">ln</a></div>
+                            <div class="rs-icon"><a class="p-3 no-und" href="https://www.youtube.com/channel/UCJWqjp84ZMNQS--FHL6HtVg" target="_blank">yt</a></div>
+                        </div>
+                        <p><b>Lyon, France</b></p>
+                        <p>31 rue Grenette. <br>
+                            69002 Lyon, France</p>
+                        <p class="pt-3"><b>Press kit</b></p>
+                        <div class="d-flex flex-column justify-content-center justify-content-md-start">
+                            <a class="align-self-center align-self-md-start" href="/data/propagation-vr_presskit.zip" download="">
+                                <button class="d-flex align-items-center btn-transparent mb-4 w-100">
+                                    <i class="mr-3 icon-download"></i>
+                                    Propagation VR
+                                </button>
+                            </a>
+                            <a class="align-self-center align-self-md-start mb-5" href="/data/pph_presskit.zip" download="">
+                                <button class="d-flex align-items-center btn-transparent w-100">
+                                    <i class="mr-3 icon-download"></i>
+                                    Propagation:Paradise Hotel
+                                </button>
+                            </a>
+                        </div>
+                        <a class="d-block w-100 mb-2" href="./end-user-license-agreement.html">
+                            End user license agreement
+                        </a>
+                        <a class="d-block w-100 mb-2" href="./privacy-policy.html">
+                            Privacy policy
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 col-12 d-flex mb-md-5">
+                <nav class="main-menu ml-md-4 w-100 mt-5 mt-md-0 pt-5 pt-md-0 d-flex align-items-end justify-content-center justify-content-md-start">
+                    <ul class="pl-0 pl-md-3">
+                        <li>
+                            <a class="no-und" href="./">
+                                <span class="nav-title">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="no-und" href="./paradise-hotel.html">
+                                <span class="nav-title">Propagation: Paradise Hotel</span>
+                                <span class="nav-subtitle">The upcoming VR Experience</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="no-und" href="./free-vr-original-experience.html">
+                                <span class="nav-title">Propagation VR</span>
+                                <span class="nav-subtitle">The free original experience</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="no-und" href="./lbvr-experiences.html">
+                                <span class="nav-title">LB VR EXPERIENCE</span>
+                                <span class="nav-subtitle">Propagation for professionals</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTENT SECTION -->
+<section class="home-wrapper">
+    <div class="home-panel">
+        <div class="home-panel__cover">
+            <img src="./assets/home_paradise-hotel.jpg" alt="">
+        </div>
+        <div class="home-panel__title">
+            <h2>Propagation: Paradise Hotel</h2>
+            <h5>The upcoming VR experience</h5>
+            <a href="./paradise-hotel.html" class="home-btn">
+                <span>Discover</span>
+                <img src="./assets/arrow_white.png" alt="arrow">
+            </a>
+
+        </div>
+        <a href="./paradise-hotel.html" class="home-panel__info">
+            <div class="home-panel__info-wrapper">
+                <h2 class="title">Propagation: Paradise Hotel</h2>
+                <h5 class="subtitle">The upcoming VR experience - may 4th</h5>
+                <p class="description">
+                    Planned to be on all major VR plateforms. Available on Steam and Quest on May 4th
+                </p>
+                <button class="home-btn">
+                    <span>Discover</span>
+                    <img src="./assets/arrow_white.png" alt="arrow">
+                </button>
+            </div>
+        </a>
+    </div>
+    <div class="home-panel">
+        <div class="home-panel__cover">
+            <img src="./assets/home_original.jpg" alt="">
+        </div>
+        <div class="home-panel__title">
+            <h2>Propagation VR</h2>
+            <h5>The free original experience</h5>
+            <a href="./free-vr-original-experience.html" class="home-btn">
+                <span>Discover</span>
+                <img src="./assets/arrow_white.png" alt="arrow">
+            </a>
+        </div>
+        <a href="./free-vr-original-experience.html" class="home-panel__info">
+            <div class="home-panel__info-wrapper">
+                <h2 class="title">Propagation VR</h2>
+                <h5 class="subtitle">The free original experience</h5>
+                <p class="description">
+                    Combining survival horror and wave shooting, Propagation VR is short VR experience that will get
+                    your adrenaline pumping as you try to survive a zombie apocalypse. Armed only with your guns and
+                    your fists, fight off terrifying zombies and other multi-species mutants. Will you get out alive ?
+                </p>
+                <button class="home-btn">
+                    <span>Discover</span>
+                    <img src="./assets/arrow_white.png" alt="arrow">
+                </button>
+            </div>
+        </a>
+    </div>
+    <div class="home-panel">
+        <div class="home-panel__cover">
+            <img src="./assets/home_lvbr.jpg" alt="">
+        </div>
+        <div class="home-panel__title">
+            <h2>LB VR EXPERIENCE</h2>
+            <h5>Propagation for professionals</h5>
+            <a href="./lbvr-experiences.html" class="home-btn">
+                <span>Discover</span>
+                <img src="./assets/arrow_white.png" alt="arrow">
+            </a>
+        </div>
+        <a href="./lbvr-experiences.html" class="home-panel__info">
+            <div class="home-panel__info-wrapper">
+                <h2 class="title">LB VR EXPERIENCE</h2>
+                <h5 class="subtitle">Propagation for professionals</h5>
+                <p class="description">
+                    Experience the apocalypse in multiplayer and in VR gaming venues! Between survival horror and
+                    arcade game, the Propagation saga exploits all the possibilities of virtual reality to bring a
+                    maximum of thrill and adrenaline through multiplayer and free roaming experiences !
+                </p>
+
+                <button class="home-btn">
+                    <span>Discover</span>
+                    <img src="./assets/arrow_white.png" alt="arrow">
+                </button>
+            </div>
+        </a>
+    </div>
+</section>
+
+
+
+</body></html>

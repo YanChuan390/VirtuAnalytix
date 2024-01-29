@@ -1,0 +1,2270 @@
+<html class=" supports-js supports-no-touch supports-csstransforms supports-csstransforms3d supports-fontface" lang="en" style=""><!--<![endif]--><head>
+  <div id="powrIframeLoader">­<style> .powrLoaded iframe { visibility: hidden; } </style></div><script type="text/javascript" integrity="sha384-uhLfRZptXuAOheWdBzdbLlI4IsiZKZDJU5F0tF0QADF4vMob3RWlNU4DJ9PZV2J4" crossorigin="anonymous" async="" src="https://cdn.amplitude.com/libs/analytics-browser-0.4.1-min.js.gz"></script><script type="text/javascript" async="" src="//www.powr.io/powr.js?powr-token=angelusshoepolish.myshopify.com&amp;external-type=shopify&amp;shop=angelusshoepolish.myshopify.com"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-FP4Q5CJX1W&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" async="" src="//angelusbrand.com/cdn/s/trekkie.storefront.260e6e85595ac79af303e85f742d0e3b752c77d7.min.js"></script><script type="application/vnd.locksmith+json" data-locksmith="">{"version":"v20","locked":false,"initialized":true,"scope":"index","access_granted":true,"access_denied":false,"requires_customer":false,"manual_lock":false,"remote_lock":false,"has_timeout":false,"remote_rendered":null,"hide_resource":false,"hide_links_to_resource":false,"transparent":true,"locks":{"all":[],"opened":[]},"keys":[],"keys_signature":"da368359b18597b50a82f9e6c099ec6092786c2d734cd9723003072b73610cf2","state":{"template":"index","theme":120403591210,"product":null,"collection":null,"page":null,"blog":null,"article":null,"app":null},"now":1694379524,"path":"\/","locale_root_url":"\/","canonical_url":"https:\/\/angelusbrand.com\/","customer_id":null,"customer_id_signature":"da368359b18597b50a82f9e6c099ec6092786c2d734cd9723003072b73610cf2","cart":null}</script><script data-locksmith="">!function(){var require=undefined,reqwest=function(){function succeed(e){var t=protocolRe.exec(e.url);return t=t&&t[1]||context.location.protocol,httpsRe.test(t)?twoHundo.test(e.request.status):!!e.request.response}function handleReadyState(e,t,n){return function(){return e._aborted?n(e.request):e._timedOut?n(e.request,"Request is aborted: timeout"):void(e.request&&4==e.request[readyState]&&(e.request.onreadystatechange=noop,succeed(e)?t(e.request):n(e.request)))}}function setHeaders(e,t){var n,s=t.headers||{};s.Accept=s.Accept||defaultHeaders.accept[t.type]||defaultHeaders.accept["*"];var r="undefined"!=typeof FormData&&t.data instanceof FormData;for(n in!t.crossOrigin&&!s[requestedWith]&&(s[requestedWith]=defaultHeaders.requestedWith),!s[contentType]&&!r&&(s[contentType]=t.contentType||defaultHeaders.contentType),s)s.hasOwnProperty(n)&&"setRequestHeader"in e&&e.setRequestHeader(n,s[n])}function setCredentials(e,t){"undefined"!=typeof t.withCredentials&&"undefined"!=typeof e.withCredentials&&(e.withCredentials=!!t.withCredentials)}function generalCallback(e){lastValue=e}function urlappend(e,t){return e+(/[?]/.test(e)?"&":"?")+t}function handleJsonp(e,t,n,s){var r=uniqid++,o=e.jsonpCallback||"callback",a=e.jsonpCallbackName||reqwest.getcallbackPrefix(r),i=new RegExp("((^|[?]|&)"+o+")=([^&]+)"),l=s.match(i),c=doc.createElement("script"),u=0,d=-1!==navigator.userAgent.indexOf("MSIE 10.0");return l?"?"===l[3]?s=s.replace(i,"$1="+a):a=l[3]:s=urlappend(s,o+"="+a),context[a]=generalCallback,c.type="text/javascript",c.src=s,c.async=!0,"undefined"!=typeof c.onreadystatechange&&!d&&(c.htmlFor=c.id="_reqwest_"+r),c.onload=c.onreadystatechange=function(){if(c[readyState]&&"complete"!==c[readyState]&&"loaded"!==c[readyState]||u)return!1;c.onload=c.onreadystatechange=null,c.onclick&&c.onclick(),t(lastValue),lastValue=undefined,head.removeChild(c),u=1},head.appendChild(c),{abort:function(){c.onload=c.onreadystatechange=null,n({},"Request is aborted: timeout",{}),lastValue=undefined,head.removeChild(c),u=1}}}function getRequest(e,t){var n,s=this.o,r=(s.method||"GET").toUpperCase(),o="string"==typeof s?s:s.url,a=!1!==s.processData&&s.data&&"string"!=typeof s.data?reqwest.toQueryString(s.data):s.data||null,i=!1;return("jsonp"==s.type||"GET"==r)&&a&&(o=urlappend(o,a),a=null),"jsonp"==s.type?handleJsonp(s,e,t,o):((n=s.xhr&&s.xhr(s)||xhr(s)).open(r,o,!1!==s.async),setHeaders(n,s),setCredentials(n,s),context[xDomainRequest]&&n instanceof context[xDomainRequest]?(n.onload=e,n.onerror=t,n.onprogress=function(){},i=!0):n.onreadystatechange=handleReadyState(this,e,t),s.before&&s.before(n),i?setTimeout(function(){n.send(a)},200):n.send(a),n)}function Reqwest(e,t){this.o=e,this.fn=t,init.apply(this,arguments)}function setType(e){return null===e?undefined:e.match("json")?"json":e.match("javascript")?"js":e.match("text")?"html":e.match("xml")?"xml":void 0}function init(o,fn){function complete(e){for(o.timeout&&clearTimeout(self.timeout),self.timeout=null;0<self._completeHandlers.length;)self._completeHandlers.shift()(e)}function success(resp){var type=o.type||resp&&setType(resp.getResponseHeader("Content-Type"));resp="jsonp"!==type?self.request:resp;var filteredResponse=globalSetupOptions.dataFilter(resp.responseText,type),r=filteredResponse;try{resp.responseText=r}catch(e){}if(r)switch(type){case"json":try{resp=context.JSON?context.JSON.parse(r):eval("("+r+")")}catch(err){return error(resp,"Could not parse JSON in response",err)}break;case"js":resp=eval(r);break;case"html":resp=r;break;case"xml":resp=resp.responseXML&&resp.responseXML.parseError&&resp.responseXML.parseError.errorCode&&resp.responseXML.parseError.reason?null:resp.responseXML}for(self._responseArgs.resp=resp,self._fulfilled=!0,fn(resp),self._successHandler(resp);0<self._fulfillmentHandlers.length;)resp=self._fulfillmentHandlers.shift()(resp);complete(resp)}function timedOut(){self._timedOut=!0,self.request.abort()}function error(e,t,n){for(e=self.request,self._responseArgs.resp=e,self._responseArgs.msg=t,self._responseArgs.t=n,self._erred=!0;0<self._errorHandlers.length;)self._errorHandlers.shift()(e,t,n);complete(e)}this.url="string"==typeof o?o:o.url,this.timeout=null,this._fulfilled=!1,this._successHandler=function(){},this._fulfillmentHandlers=[],this._errorHandlers=[],this._completeHandlers=[],this._erred=!1,this._responseArgs={};var self=this;fn=fn||function(){},o.timeout&&(this.timeout=setTimeout(function(){timedOut()},o.timeout)),o.success&&(this._successHandler=function(){o.success.apply(o,arguments)}),o.error&&this._errorHandlers.push(function(){o.error.apply(o,arguments)}),o.complete&&this._completeHandlers.push(function(){o.complete.apply(o,arguments)}),this.request=getRequest.call(this,success,error)}function reqwest(e,t){return new Reqwest(e,t)}function normalize(e){return e?e.replace(/\r?\n/g,"\r\n"):""}function serial(e,t){var n,s,r,o,a=e.name,i=e.tagName.toLowerCase(),l=function(e){e&&!e.disabled&&t(a,normalize(e.attributes.value&&e.attributes.value.specified?e.value:e.text))};if(!e.disabled&&a)switch(i){case"input":/reset|button|image|file/i.test(e.type)||(n=/checkbox/i.test(e.type),s=/radio/i.test(e.type),r=e.value,(!n&&!s||e.checked)&&t(a,normalize(n&&""===r?"on":r)));break;case"textarea":t(a,normalize(e.value));break;case"select":if("select-one"===e.type.toLowerCase())l(0<=e.selectedIndex?e.options[e.selectedIndex]:null);else for(o=0;e.length&&o<e.length;o++)e.options[o].selected&&l(e.options[o])}}function eachFormElement(){var e,t,o=this,n=function(e,t){var n,s,r;for(n=0;n<t.length;n++)for(r=e[byTag](t[n]),s=0;s<r.length;s++)serial(r[s],o)};for(t=0;t<arguments.length;t++)e=arguments[t],/input|select|textarea/i.test(e.tagName)&&serial(e,o),n(e,["input","select","textarea"])}function serializeQueryString(){return reqwest.toQueryString(reqwest.serializeArray.apply(null,arguments))}function serializeHash(){var n={};return eachFormElement.apply(function(e,t){e in n?(n[e]&&!isArray(n[e])&&(n[e]=[n[e]]),n[e].push(t)):n[e]=t},arguments),n}function buildParams(e,t,n,s){var r,o,a,i=/\[\]$/;if(isArray(t))for(o=0;t&&o<t.length;o++)a=t[o],n||i.test(e)?s(e,a):buildParams(e+"["+("object"==typeof a?o:"")+"]",a,n,s);else if(t&&"[object Object]"===t.toString())for(r in t)buildParams(e+"["+r+"]",t[r],n,s);else s(e,t)}var context=this,XHR2;if("window"in context)var doc=document,byTag="getElementsByTagName",head=doc[byTag]("head")[0];else try{XHR2=require("xhr2")}catch(ex){throw new Error("Peer dependency `xhr2` required! Please npm install xhr2")}var httpsRe=/^http/,protocolRe=/(^\w+):\/\//,twoHundo=/^(20\d|1223)$/,readyState="readyState",contentType="Content-Type",requestedWith="X-Requested-With",uniqid=0,callbackPrefix="reqwest_"+ +new Date,lastValue,xmlHttpRequest="XMLHttpRequest",xDomainRequest="XDomainRequest",noop=function(){},isArray="function"==typeof Array.isArray?Array.isArray:function(e){return e instanceof Array},defaultHeaders={contentType:"application/x-www-form-urlencoded",requestedWith:xmlHttpRequest,accept:{"*":"text/javascript, text/html, application/xml, text/xml, */*",xml:"application/xml, text/xml",html:"text/html",text:"text/plain",json:"application/json, text/javascript",js:"application/javascript, text/javascript"}},xhr=function(e){if(!0!==e.crossOrigin)return context[xmlHttpRequest]?new XMLHttpRequest:XHR2?new XHR2:new ActiveXObject("Microsoft.XMLHTTP");var t=context[xmlHttpRequest]?new XMLHttpRequest:null;if(t&&"withCredentials"in t)return t;if(context[xDomainRequest])return new XDomainRequest;throw new Error("Browser does not support cross-origin requests")},globalSetupOptions={dataFilter:function(e){return e}};return Reqwest.prototype={abort:function(){this._aborted=!0,this.request.abort()},retry:function(){init.call(this,this.o,this.fn)},then:function(e,t){return e=e||function(){},t=t||function(){},this._fulfilled?this._responseArgs.resp=e(this._responseArgs.resp):this._erred?t(this._responseArgs.resp,this._responseArgs.msg,this._responseArgs.t):(this._fulfillmentHandlers.push(e),this._errorHandlers.push(t)),this},always:function(e){return this._fulfilled||this._erred?e(this._responseArgs.resp):this._completeHandlers.push(e),this},fail:function(e){return this._erred?e(this._responseArgs.resp,this._responseArgs.msg,this._responseArgs.t):this._errorHandlers.push(e),this},"catch":function(e){return this.fail(e)}},reqwest.serializeArray=function(){var n=[];return eachFormElement.apply(function(e,t){n.push({name:e,value:t})},arguments),n},reqwest.serialize=function(){if(0===arguments.length)return"";var e,t=Array.prototype.slice.call(arguments,0);return(e=t.pop())&&e.nodeType&&t.push(e)&&(e=null),e&&(e=e.type),("map"==e?serializeHash:"array"==e?reqwest.serializeArray:serializeQueryString).apply(null,t)},reqwest.toQueryString=function(e,t){var n,s,r=t||!1,o=[],a=encodeURIComponent,i=function(e,t){t="function"==typeof t?t():null==t?"":t,o[o.length]=a(e)+"="+a(t)};if(isArray(e))for(s=0;e&&s<e.length;s++)i(e[s].name,e[s].value);else for(n in e)e.hasOwnProperty(n)&&buildParams(n,e[n],r,i);return o.join("&").replace(/%20/g,"+")},reqwest.getcallbackPrefix=function(){return callbackPrefix},reqwest.compat=function(e,t){return e&&(e.type&&(e.method=e.type)&&delete e.type,e.dataType&&(e.type=e.dataType),e.jsonpCallback&&(e.jsonpCallbackName=e.jsonpCallback)&&delete e.jsonpCallback,e.jsonp&&(e.jsonpCallback=e.jsonp)),new Reqwest(e,t)},reqwest.ajaxSetup=function(e){for(var t in e=e||{})globalSetupOptions[t]=e[t]},reqwest}();
+/*!
+  * Reqwest! A general purpose XHR connection manager
+  * license MIT (c) Dustin Diaz 2015
+  * https://github.com/ded/reqwest
+  */!function(){var a=window.Locksmith={},e=document.querySelector('script[type="application/vnd.locksmith+json"]'),n=e&&e.innerHTML;if(a.state={},a.util={},a.loading=!1,n)try{a.state=JSON.parse(n)}catch(u){}if(document.addEventListener&&document.querySelector){var s,r,o,t=[76,79,67,75,83,77,73,84,72,49,49],i=function(){r=t.slice(0)},l="style",c=function(e){e&&27!==e.keyCode&&"click"!==e.type||(document.removeEventListener("keydown",c),document.removeEventListener("click",c),s&&document.body.removeChild(s),s=null)};i(),document.addEventListener("keyup",function(e){if(e.keyCode===r[0]){if(clearTimeout(o),r.shift(),0<r.length)return void(o=setTimeout(i,1e3));i(),c(),(s=document.createElement("div"))[l].width="50%",s[l].maxWidth="1000px",s[l].height="85%",s[l].border="1px rgba(0, 0, 0, 0.2) solid",s[l].background="rgba(255, 255, 255, 0.99)",s[l].borderRadius="4px",s[l].position="fixed",s[l].top="50%",s[l].left="50%",s[l].transform="translateY(-50%) translateX(-50%)",s[l].boxShadow="0 2px 5px rgba(0, 0, 0, 0.3), 0 0 100vh 100vw rgba(0, 0, 0, 0.5)",s[l].zIndex="2147483645";var t=document.createElement("textarea");t.value=JSON.stringify(JSON.parse(n),null,2),t[l].border="none",t[l].display="block",t[l].boxSizing="border-box",t[l].width="100%",t[l].height="100%",t[l].background="transparent",t[l].padding="22px",t[l].fontFamily="monospace",t[l].fontSize="14px",t[l].color="#333",t[l].resize="none",t[l].outline="none",t.readOnly=!0,s.appendChild(t),document.body.appendChild(s),t.addEventListener("click",function(e){e.stopImmediatePropagation()}),t.select(),document.addEventListener("keydown",c),document.addEventListener("click",c)}})}a.isEmbedded=-1!==window.location.search.indexOf("_ab=0&_fd=0&_sc=1"),a.path=a.state.path||window.location.pathname,a.basePath=a.state.locale_root_url.concat("/apps/locksmith").replace(/^\/\//,"/"),a.reloading=!1,a.util.console=window.console||{log:function(){},error:function(){}},a.util.makeUrl=function(e,t){var n,s=a.basePath+e,r=[],o=a.cache();for(n in o)r.push(n+"="+encodeURIComponent(o[n]));for(n in t)r.push(n+"="+encodeURIComponent(t[n]));return a.state.customer_id&&(r.push("customer_id="+encodeURIComponent(a.state.customer_id)),r.push("customer_id_signature="+encodeURIComponent(a.state.customer_id_signature))),s+=(-1===s.indexOf("?")?"?":"&")+r.join("&")},a._initializeCallbacks=[],a.on=function(e,t){if("initialize"!==e)throw'Locksmith.on() currently only supports the "initialize" event';a._initializeCallbacks.push(t)},a.initializeSession=function(e){if(!a.isEmbedded){var t=!1,n=!0,s=!0;(e=e||{}).silent&&(s=n=!(t=!0)),a.ping({silent:t,spinner:n,reload:s,callback:function(){a._initializeCallbacks.forEach(function(e){e()})}})}},a.cache=function(e){var t={};try{var n=function r(e){return(document.cookie.match("(^|; )"+e+"=([^;]*)")||0)[2]};t=JSON.parse(decodeURIComponent(n("locksmith-params")||"{}"))}catch(u){}if(e){for(var s in e)t[s]=e[s];document.cookie="locksmith-params=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/",document.cookie="locksmith-params="+encodeURIComponent(JSON.stringify(t))+"; path=/"}return t},a.cache.cart=a.state.cart,a.cache.cartLastSaved=null,a.params=a.cache(),a.util.reload=function(){a.reloading=!0;try{window.location.href=window.location.href.replace(/#.*/,"")}catch(u){a.util.console.error("Preferred reload method failed",u),window.location.reload()}},a.cache.saveCart=function(e){if(!a.cache.cart||a.cache.cart===a.cache.cartLastSaved)return e?e():null;var t=a.cache.cartLastSaved;a.cache.cartLastSaved=a.cache.cart,reqwest({url:"/cart/update.json",method:"post",type:"json",data:{attributes:{locksmith:a.cache.cart}},complete:e,error:function(e){if(a.cache.cartLastSaved=t,!a.reloading)throw e}})},a.util.spinnerHTML='<style>body{background:#FFF}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}#loading{display:flex;width:100%;height:50vh;color:#777;align-items:center;justify-content:center}#loading .spinner{display:block;animation:spin 600ms linear infinite;position:relative;width:50px;height:50px}#loading .spinner-ring{stroke:currentColor;stroke-dasharray:100%;stroke-width:2px;stroke-linecap:round;fill:none}</style><div id="loading"><div class="spinner"><svg width="100%" height="100%"><svg preserveAspectRatio="xMinYMin"><circle class="spinner-ring" cx="50%" cy="50%" r="45%"></circle></svg></svg></div></div>',a.util.clobberBody=function(e){document.body.innerHTML=e},a.util.clobberDocument=function(e){e.responseText&&(e=e.responseText),document.documentElement&&document.removeChild(document.documentElement);var t=document.open("text/html","replace");t.writeln(e),t.close(),setTimeout(function(){var e=t.querySelector("[autofocus]");e&&e.focus()},100)},a.util.serializeForm=function(e){if(e&&"FORM"===e.nodeName){var t,n,s={};for(t=e.elements.length-1;0<=t;t-=1)if(""!==e.elements[t].name)switch(e.elements[t].nodeName){case"INPUT":switch(e.elements[t].type){default:case"text":case"hidden":case"password":case"button":case"reset":case"submit":s[e.elements[t].name]=e.elements[t].value;break;case"checkbox":case"radio":e.elements[t].checked&&(s[e.elements[t].name]=e.elements[t].value);break;case"file":}break;case"TEXTAREA":s[e.elements[t].name]=e.elements[t].value;break;case"SELECT":switch(e.elements[t].type){case"select-one":s[e.elements[t].name]=e.elements[t].value;break;case"select-multiple":for(n=e.elements[t].options.length-1;0<=n;n-=1)e.elements[t].options[n].selected&&(s[e.elements[t].name]=e.elements[t].options[n].value)}break;case"BUTTON":switch(e.elements[t].type){case"reset":case"submit":case"button":s[e.elements[t].name]=e.elements[t].value}}return s}},a.util.on=function(e,o,a,t){t=t||document;var i="locksmith-"+e+o,n=function(e){var t=e.target,n=e.target.parentElement,s=t.className.baseVal||t.className||"",r=n.className.baseVal||n.className||"";("string"==typeof s&&-1!==s.split(/\s+/).indexOf(o)||"string"==typeof r&&-1!==r.split(/\s+/).indexOf(o))&&!e[i]&&(e[i]=!0,a(e))};t.attachEvent?t.attachEvent(e,n):t.addEventListener(e,n,!1)},a.util.enableActions=function(e){a.util.on("click","locksmith-action",function(e){e.preventDefault();var t=e.target;t.dataset.confirmWith&&!confirm(t.dataset.confirmWith)||(t.disabled=!0,t.innerText=t.dataset.disableWith,a.post("/action",t.dataset.locksmithParams,{spinner:!1,type:"text",success:function(e){(e=JSON.parse(e.responseText)).message&&alert(e.message),a.util.reload()}}))},e)},a.util.inject=function(e,t){var n=["data","locksmith","append"];if(-1!==t.indexOf(n.join("-"))){var s=document.createElement("div");s.innerHTML=t,e.appendChild(s)}else e.innerHTML=t;var r,o,a=e.querySelectorAll("script");for(o=0;o<a.length;++o){r=a[o];var i=document.createElement("script");if(r.type&&(i.type=r.type),r.src)i.src=r.src;else{var l=document.createTextNode(r.innerHTML);i.appendChild(l)}e.appendChild(i)}var c=e.querySelector("[autofocus]");c&&c.focus()},a.post=function(e,t,n){!1!==(n=n||{}).spinner&&a.util.clobberBody(a.util.spinnerHTML);var s={};n.container===document?(s.layout=1,n.success=function(e){document.getElementById(n.container);a.util.clobberDocument(e)}):n.container&&(s.layout=0,n.success=function(e){var t=document.getElementById(n.container);a.util.inject(t,e),t.id===t.firstChild.id&&t.parentElement.replaceChild(t.firstChild,t)}),a.loading=!0;var r=a.util.makeUrl(e,s);reqwest({url:r,method:"post",type:n.type||"html",data:t,complete:function(){a.loading=!1},error:function(e){if(!a.reloading)if("dashboard.weglot.com"!==window.location.host){if(!n.silent)throw alert("Something went wrong! Please refresh and try again."),e;console.error(e)}else console.error(e)},success:n.success||a.util.clobberDocument})},a.postResource=function(e,t){e.path=a.path,e.search=window.location.search,e.state=a.state,e.passcode&&(e.passcode=e.passcode.trim()),e.email&&(e.email=e.email.trim()),e.state.cart=a.cache.cart,e.locksmith_json=a.jsonTag,e.locksmith_json_signature=a.jsonTagSignature,a.post("/resource",e,t)},a.ping=function(e){if(!a.isEmbedded){e=e||{};a.post("/ping",{path:a.path,search:window.location.search,state:a.state},{spinner:!!e.spinner,silent:"undefined"==typeof e.silent||e.silent,type:"text",success:function(e){(e=JSON.parse(e.responseText)).messages&&0<e.messages.length&&a.showMessages(e.messages)}})}},a.timeoutMonitor=function(){var e=a.cache.cart;a.ping({callback:function(){e!==a.cache.cart||setTimeout(function(){a.timeoutMonitor()},6e4)}})},a.showMessages=function(e){var t=document.createElement("div");t.style.position="fixed",t.style.left=0,t.style.right=0,t.style.bottom="-50px",t.style.opacity=0,t.style.background="#191919",t.style.color="#ddd",t.style.transition="bottom 0.2s, opacity 0.2s",t.style.zIndex=999999,t.innerHTML="        <style>          .locksmith-ab .locksmith-b { display: none; }          .locksmith-ab.toggled .locksmith-b { display: flex; }          .locksmith-ab.toggled .locksmith-a { display: none; }          .locksmith-flex { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 10px 20px; }          .locksmith-message + .locksmith-message { border-top: 1px #555 solid; }          .locksmith-message a { color: inherit; font-weight: bold; }          .locksmith-message a:hover { color: inherit; opacity: 0.8; }          a.locksmith-ab-toggle { font-weight: inherit; text-decoration: underline; }          .locksmith-text { flex-grow: 1; }          .locksmith-cta { flex-grow: 0; text-align: right; }          .locksmith-cta button { transform: scale(0.8); transform-origin: left; }          .locksmith-cta > * { display: block; }          .locksmith-cta > * + * { margin-top: 10px; }          .locksmith-message a.locksmith-close { flex-grow: 0; text-decoration: none; margin-left: 15px; font-size: 30px; font-family: monospace; display: block; padding: 2px 10px; }                    @media screen and (max-width: 600px) {            .locksmith-wide-only { display: none !important; }            .locksmith-flex { padding: 0 15px; }            .locksmith-flex > * { margin-top: 5px; margin-bottom: 5px; }            .locksmith-cta { text-align: left; }          }                    @media screen and (min-width: 601px) {            .locksmith-narrow-only { display: none !important; }          }        </style>      "+e.map(function(e){return'<div class="locksmith-message">'+e+"</div>"}).join(""),document.body.appendChild(t),document.body.style.position="relative",document.body.parentElement.style.paddingBottom=t.offsetHeight+"px",setTimeout(function(){t.style.bottom=0,t.style.opacity=1},50),a.util.on("click","locksmith-ab-toggle",function(e){e.preventDefault();for(var t=e.target.parentElement;-1===t.className.split(" ").indexOf("locksmith-ab");)t=t.parentElement;-1!==t.className.split(" ").indexOf("toggled")?t.className=t.className.replace("toggled",""):t.className=t.className+" toggled"}),a.util.enableActions(t)}}()}();</script>
+      <script data-locksmith="">Locksmith.cache.cart=null</script>
+
+  <script data-locksmith="">Locksmith.jsonTag="\u003cscript type=\"application\/vnd.locksmith+json\" data-locksmith\u003e{\"version\":\"v20\",\"locked\":false,\"initialized\":true,\"scope\":\"index\",\"access_granted\":true,\"access_denied\":false,\"requires_customer\":false,\"manual_lock\":false,\"remote_lock\":false,\"has_timeout\":false,\"remote_rendered\":null,\"hide_resource\":false,\"hide_links_to_resource\":false,\"transparent\":true,\"locks\":{\"all\":[],\"opened\":[]},\"keys\":[],\"keys_signature\":\"da368359b18597b50a82f9e6c099ec6092786c2d734cd9723003072b73610cf2\",\"state\":{\"template\":\"index\",\"theme\":120403591210,\"product\":null,\"collection\":null,\"page\":null,\"blog\":null,\"article\":null,\"app\":null},\"now\":1694379524,\"path\":\"\\\/\",\"locale_root_url\":\"\\\/\",\"canonical_url\":\"https:\\\/\\\/angelusbrand.com\\\/\",\"customer_id\":null,\"customer_id_signature\":\"da368359b18597b50a82f9e6c099ec6092786c2d734cd9723003072b73610cf2\",\"cart\":null}\u003c\/script\u003e";Locksmith.jsonTagSignature="983cea18abf73a4ae11dff5c9a7d81f62a2cafd1efc22ee4cd6021dfa71d4ac2"</script>
+  <!-- Loft Version 1.3.7 -->
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+
+  <!-- Title and description ================================================== -->
+  <title>
+    Angelus Shoe Polish
+  </title>
+
+  
+
+  <!-- Helpers ================================================== -->
+  <!-- /snippets/social-meta-tags.liquid -->
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Angelus Shoe Polish">
+<meta property="og:description" content="">
+
+<meta property="og:url" content="https://angelusbrand.com/">
+<meta property="og:site_name" content="Angelus Shoe Polish">
+
+
+
+  <meta name="twitter:site" content="@angelusbrand?lang=en">
+
+
+  <meta name="twitter:card" content="summary">
+
+
+<meta name="twitter:title" content="Angelus Shoe Polish">
+<meta name="twitter:description" content="">
+
+
+  <link rel="canonical" href="https://angelusbrand.com/">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="theme-color" content="#292929">  
+
+  <!-- Typography ================================================== -->
+  <link href="//fonts.googleapis.com/css?family=Playfair+Display+SC:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900" rel="stylesheet">   
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+  
+
+
+
+  <!-- Base CSS ================================================== -->
+  <link href="//angelusbrand.com/cdn/shop/t/16/assets/timber.scss.css?v=9128805340018309171655220113" rel="stylesheet" type="text/css" media="all">
+  <link href="//angelusbrand.com/cdn/shop/t/16/assets/theme.scss.css?v=122492016794237871281693952289" rel="stylesheet" type="text/css" media="all"> 
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+  <!--[if IE 9 ]>
+  <link href="//angelusbrand.com/cdn/shop/t/16/assets/theme-IE.scss.css?v=113078013651358477161629403476" rel="stylesheet" type="text/css" media="all" /> 
+  <![endif]-->
+
+  <!-- Extension CSS ================================================== -->
+  <link href="//angelusbrand.com/cdn/shop/t/16/assets/plugins.scss.css?v=113888334064248878121629403476" rel="stylesheet" type="text/css" media="all">
+
+  <!-- THEME JS INIT -->  
+ 
+  <script src="//angelusbrand.com/cdn/shop/t/16/assets/theme.js?v=34082064062888266771655220113" type="text/javascript"></script>
+ 
+  <!--[if IE 9]>
+  <script type="text/javascript">
+  !function(r){function e(r,e,n,t,o,u){for(var a=0,c=0,f=(r=String(r)).length,d="",i=0;c<f;){var h=r.charCodeAt(c);for(a=(a<<o)+(h=h<256?n[h]:-1),i+=o;i>=u;){var C=a>>(i-=u);d+=t.charAt(C),a^=C<<i}++c}return!e&&i>0&&(d+=t.charAt(a<<u-i)),d}for(var n="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",t="",o=[256],u=[256],a=0,c={encode:function(r){return r.replace(/[\u0080-\u07ff]/g,function(r){var e=r.charCodeAt(0);return String.fromCharCode(192|e>>6,128|63&e)}).replace(/[\u0800-\uffff]/g,function(r){var e=r.charCodeAt(0);return String.fromCharCode(224|e>>12,128|e>>6&63,128|63&e)})},decode:function(r){return r.replace(/[\u00e0-\u00ef][\u0080-\u00bf][\u0080-\u00bf]/g,function(r){var e=(15&r.charCodeAt(0))<<12|(63&r.charCodeAt(1))<<6|63&r.charCodeAt(2);return String.fromCharCode(e)}).replace(/[\u00c0-\u00df][\u0080-\u00bf]/g,function(r){var e=(31&r.charCodeAt(0))<<6|63&r.charCodeAt(1);return String.fromCharCode(e)})}};a<256;){var f=String.fromCharCode(a);t+=f,u[a]=a,o[a]=n.indexOf(f),++a}var d=r.base64=function(r,e,n){return e?d[r](e,n):r?null:this};d.btoa=d.encode=function(r,t){return r=!1===d.raw||d.utf8encode||t?c.encode(r):r,(r=e(r,!1,u,n,8,6))+"====".slice(r.length%4||4)},d.atob=d.decode=function(r,n){var u=(r=String(r).split("=")).length;do{r[--u]=e(r[u],!0,o,t,6,8)}while(u>0);return r=r.join(""),!1===d.raw||d.utf8decode||n?c.decode(r):r}}(jQuery);
+  var btoa = function (str) {return jQuery.base64.encode(str);};
+  </script>
+  <![endif]-->
+  <script>
+    theme.Currency.moneyFormat = '<span style='display:none'>${{amount}}</span>';
+  </script>
+
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/2657379/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="b665041da8b5705da7dc98a916069a14">
+<script>
+  (function() {
+    var scripts = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.latest.en.cc7d792fcad10aa5f421.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/809.latest.en.22b066f200008aec130a.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/810.latest.en.89cbc407b0fea47d8592.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.latest.en.4c0459bd88a293ab71f3.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/185.latest.en.e69c155457dd0e413990.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/733.latest.en.4279f201669aa2c99dd1.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/451.latest.en.39a2c3afaa54c8545105.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.en.d8edaad241248d7b33e5.js"];
+    var styles = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/185.latest.en.732f7b974901dd81c606.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.en.e05b480d590740181b2d.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/739.latest.en.869d896703321d964e3f.css"];
+
+    function prefetch(url, as, callback) {
+      var link = document.createElement('link');
+      if (link.relList.supports('prefetch')) {
+        link.rel = 'prefetch';
+        link.fetchPriority = 'low';
+        link.as = as;
+        link.href = url;
+        link.onload = link.onerror = callback;
+        document.head.appendChild(link);
+      } else {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.onloadend = callback;
+        xhr.send();
+      }
+    }
+
+    function prefetchAssets() {
+      var resources = [].concat(
+        scripts.map(function(url) { return [url, 'script']; }),
+        styles.map(function(url) { return [url, 'style']; })
+      );
+      var index = 0;
+      (function next() {
+        var res = resources[index++];
+        if (res) prefetch(res[0], res[1], next);
+      })();
+    }
+
+    addEventListener('load', prefetchAssets);
+   })();
+</script>
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":2657379,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/2657379","merchantName":"Angelus Shoe Polish","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover","elo","jcb"],"total":{"type":"pending","label":"Angelus Shoe Polish","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"b665041da8b5705da7dc98a916069a14","betas":["rich-media-storefront-analytics"],"domain":"angelusbrand.com","predictiveSearch":true,"shopId":2657379,"smart_payment_buttons_url":"https:\/\/angelusbrand.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/angelusbrand.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en","optimusEnabled":false,"optimusHidden":false,"betterDynamicCheckoutRecommendation":false}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "angelusshoepolish.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.country = "US";
+Shopify.theme = {"name":"New Angelus 8-19-21","id":120403591210,"theme_store_id":846,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "angelusbrand.com/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>window.ShopifyPay = window.ShopifyPay || {};
+window.ShopifyPay.apiHost = "shop.app\/pay";</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"pay-button":["modules/client.pay-button_b998d816.en.esm.js","modules/chunk.common_80184483.esm.js"],"init-abg-demo":["modules/client.init-abg-demo_b0e8c60a.en.esm.js","modules/chunk.common_80184483.esm.js"],"init-shop-email-lookup-coordinator":["modules/client.init-shop-email-lookup-coordinator_fd737baa.en.esm.js","modules/chunk.common_80184483.esm.js"],"installments-prequal":["modules/client.installments-prequal_e6ae01f0.en.esm.js","modules/chunk.common_80184483.esm.js"],"init-customer-accounts":["modules/client.init-customer-accounts_13fcbd23.en.esm.js","modules/chunk.common_80184483.esm.js"],"init-shop-for-new-customer-accounts":["modules/client.init-shop-for-new-customer-accounts_384b28fe.en.esm.js","modules/chunk.common_80184483.esm.js"],"init-customer-accounts-sign-up":["modules/client.init-customer-accounts-sign-up_f6db8176.en.esm.js","modules/chunk.common_80184483.esm.js"],"login-button":["modules/client.login-button_e6dae067.en.esm.js","modules/chunk.common_80184483.esm.js"],"payment-terms":["modules/client.payment-terms_a2bd40d7.en.esm.js","modules/chunk.common_80184483.esm.js"],"discount-app":["modules/client.discount-app_4ea63d76.en.esm.js","modules/chunk.common_80184483.esm.js"]};
+</script>
+<script>(function() {
+  function asyncLoad() {
+    var urls = ["\/\/www.powr.io\/powr.js?powr-token=angelusshoepolish.myshopify.com\u0026external-type=shopify\u0026shop=angelusshoepolish.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":2657379,"offset":-25200,"reqid":"4cdbaf71-c787-4fa0-a5bf-973f842fb8d8","pageurl":"angelusbrand.com\/","u":"ce80c34d71dd","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
+<script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//angelusbrand.com/cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" defer="defer" src="//angelusbrand.com/cdn/shopifycloud/shopify/assets/shopify_pay/storefront-c31d2fa4962d2ef90b673e945ee33f4f87302b97d0882cd8e83a629b84b30dab.js?v=20220906"></script>
+<script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="//angelusbrand.com/cdn/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 60px;
+  }
+}
+</style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+
+  <!-- Header hook for plugins ================================================== -->
+  <!-- /snippets/oldIE-js.liquid -->
+
+
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+<script src="//angelusbrand.com/cdn/shop/t/16/assets/respond.min.js?681" type="text/javascript"></script>
+<link href="//angelusbrand.com/cdn/shop/t/16/assets/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="//angelusbrand.com/search?q=fc652b7b03030d27b23aa3c7aa832345" id="respond-redirect" rel="respond-redirect" />
+<script src="//angelusbrand.com/search?q=fc652b7b03030d27b23aa3c7aa832345" type="text/javascript"></script>
+<![endif]-->
+
+
+
+  
+  
+
+
+
+
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 2657379,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script id="web-pixels-manager-setup">(function e(e,n,a,o,t,r,i){function s(e,n){if(document.head){var a=document.createElement("link");e.match(/spin\.dev\/?/)&&(e+="?fast_storefront_renderer=1"),a.rel="preload",a.href=e,n&&(a.as=n);try{document.head.appendChild(a)}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Could not append prefetch link tag to DOM.")}}}var l=i||[],d=null!==e;d&&(window.Shopify=window.Shopify||{},window.Shopify.analytics=window.Shopify.analytics||{},window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=function(e,n,a){window.Shopify.analytics.replayQueue.push([e,n,a])});var c=function(){var e="legacy",n="unknown",a=null,o=navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/i),t=navigator.userAgent.match(/(Edg)\/(\d+)/i),r=navigator.userAgent.match(/(Version)\/(\d+)(.+)(Safari)\/(\d+)/i);r?(n="safari",a=parseInt(r[2],10)):t?(n="edge",a=parseInt(t[2],10)):o&&(n=o[1].toLocaleLowerCase(),a=parseInt(o[2],10));var i={chrome:60,firefox:55,safari:11,edge:80}[n];return void 0!==i&&null!==a&&i<=a&&(e="modern"),e}(),p=c.substring(0,1),f=o.substring(0,1);if(d)try{self.performance.mark("wpm:start")}catch(e){}if(d){var u=self.location.origin,w=(e.webPixelsConfigList||[]).filter((function(e){return"app"===e.type.toLowerCase()}));for(let e=0;e<w.length;e++){s([u,"/wpm@",r,"/web-pixel-",w[e].id,"@",w[e].scriptVersion,"/sandbox/worker.",c,".js"].join(""),"script")}}var h,y,m,g,v,b,_,S,x=[a,"/wpm","/",f,r,p,".js"].join("");h={src:x,async:!0,onload:function(){if(e){var a=window.webPixelsManager.init(e);n(a),window.Shopify.analytics.replayQueue.forEach((function(e){a.publishCustomEvent(e[0],e[1],e[2])})),window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=a.publishCustomEvent,l.indexOf("web_pixels_visitor_api")>-1&&(window.Shopify.analytics.visitor=a.visitor)}},onerror:function(){var n=(e.storefrontBaseUrl?e.storefrontBaseUrl.replace(/\/$/,""):self.location.origin)+"/.well-known/shopify/monorail/unstable/produce_batch",a=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:x+" has failed to load"},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(n,a))return!0}catch(e){}const o=new XMLHttpRequest;try{return o.open("POST",n,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(a),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}},y=document.createElement("script"),m=h.src,g=h.async||!0,v=h.onload,b=h.onerror,_=document.head,S=document.body,y.async=g,y.src=m,v&&y.addEventListener("load",v),b&&y.addEventListener("error",b),_?_.appendChild(y):S?S.appendChild(y):console.error("Did not find a head or body element to append the script")})({shopId: 2657379,storefrontBaseUrl: "https://angelusbrand.com",cdnBaseUrl: "https://angelusbrand.com/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"APP"},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"CUSTOM"}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://angelusbrand.com/cdn","browser","0.0.354","1f402832w5a42f512p4c77d00dm4ddfef98",["web_pixels_async_pixel_refactor"]);</script><link rel="preload" href="https://angelusbrand.com/wpm@1f402832w5a42f512p4c77d00dm4ddfef98/web-pixel-shopify-app-pixel@0559/sandbox/worker.modern.js" as="script"><script async="" src="https://angelusbrand.com/cdn/wpm/b1f402832w5a42f512p4c77d00dm4ddfef98m.js"></script>  <script>window['GoogleAnalyticsObject'] = 'ga';
+window['ga'] = window['ga'] || function() {
+  (window['ga'].q = window['ga'].q || []).push(arguments);
+};
+window['ga'].l = 1 * new Date();</script>
+<script>var _gaUTrackerOptions = {'allowLinker': true};ga('create', 'UA-41380509-1', 'auto', _gaUTrackerOptions);ga('send', 'pageview');
+      (function(){
+        ga('require', 'linker');
+        function addListener(element, type, callback) {
+          if (element.addEventListener) {
+            element.addEventListener(type, callback);
+          }
+          else if (element.attachEvent) {
+            element.attachEvent('on' + type, callback);
+          }
+        }
+        function decorate(event) {
+          event = event || window.event;
+          var target = event.target || event.srcElement;
+          if (target && (target.action || target.href)) {
+            ga(function (tracker) {
+              var linkerParam = tracker.get('linkerParam');
+              document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+            });
+          }
+        }
+        addListener(window, 'load', function(){
+          for (var i=0; i<document.forms.length; i++) {
+            if(document.forms[i].action && document.forms[i].action.indexOf('/cart') >= 0) {
+              addListener(document.forms[i], 'submit', decorate);
+            }
+          }
+          for (var i=0; i<document.links.length; i++) {
+            if(document.links[i].href && document.links[i].href.indexOf('/checkout') >= 0) {
+              addListener(document.links[i], 'click', decorate);
+            }
+          }
+        })
+      }());
+    </script>
+<script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+window.ShopifyAnalytics.meta.currency = 'USD';
+var meta = {"page":{"pageType":"home"}};
+for (var attr in meta) {
+  window.ShopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.onerror = function(e) {
+        var scriptFallback = document.createElement('script');
+        scriptFallback.type = 'text/javascript';
+        scriptFallback.onerror = function(error) {
+                var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 2657379,
+      theme_id: 120403591210,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//angelusbrand.com/cdn/s/trekkie.storefront.260e6e85595ac79af303e85f742d0e3b752c77d7.min.js"});
+
+        };
+        scriptFallback.async = true;
+        scriptFallback.src = '//angelusbrand.com/cdn/s/trekkie.storefront.260e6e85595ac79af303e85f742d0e3b752c77d7.min.js';
+        first.parentNode.insertBefore(scriptFallback, first);
+      };
+      script.async = true;
+      script.src = '//angelusbrand.com/cdn/s/trekkie.storefront.260e6e85595ac79af303e85f742d0e3b752c77d7.min.js';
+      first.parentNode.insertBefore(script, first);
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":2657379,"isMerchantRequest":null,"themeId":120403591210,"themeCityHash":"14489387900645720446","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+  
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"home"});
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+
+        var eventsListenerScript = document.createElement('script');
+        eventsListenerScript.async = true;
+        eventsListenerScript.src = "//angelusbrand.com/cdn/shopifycloud/shopify/assets/shop_events_listener-65cd0ba3fcd81a1df33f2510ec5bcf8c0e0958653b50e3965ec972dd638ee13f.js";
+        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+})();</script><script async="" src="//angelusbrand.com/cdn/shopifycloud/shopify/assets/shop_events_listener-65cd0ba3fcd81a1df33f2510ec5bcf8c0e0958653b50e3965ec972dd638ee13f.js"></script>
+<script class="boomerang">
+(function () {
+  if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
+    return;
+  }
+  window.BOOMR = window.BOOMR || {};
+  window.BOOMR.snippetStart = new Date().getTime();
+  window.BOOMR.snippetExecuted = true;
+  window.BOOMR.snippetVersion = 12;
+  window.BOOMR.application = "storefront-renderer";
+  window.BOOMR.themeName = "Loft";
+  window.BOOMR.themeVersion = "1.3.8";
+  window.BOOMR.shopId = 2657379;
+  window.BOOMR.themeId = 120403591210;
+  window.BOOMR.renderRegion = "gcp-asia-southeast1";
+  window.BOOMR.url =
+    "https://angelusbrand.com/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
+  var where = document.currentScript || document.getElementsByTagName("script")[0];
+  var parentNode = where.parentNode;
+  var promoted = false;
+  var LOADER_TIMEOUT = 3000;
+  function promote() {
+    if (promoted) {
+      return;
+    }
+    var script = document.createElement("script");
+    script.id = "boomr-scr-as";
+    script.src = window.BOOMR.url;
+    script.async = true;
+    parentNode.appendChild(script);
+    promoted = true;
+  }
+  function iframeLoader(wasFallback) {
+    promoted = true;
+    var dom, bootstrap, iframe, iframeStyle;
+    var doc = document;
+    var win = window;
+    window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
+    bootstrap = function(parent, scriptId) {
+      var script = doc.createElement("script");
+      script.id = scriptId || "boomr-if-as";
+      script.src = window.BOOMR.url;
+      BOOMR_lstart = new Date().getTime();
+      parent = parent || doc.body;
+      parent.appendChild(script);
+    };
+    if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
+      window.BOOMR.snippetMethod = "s";
+      bootstrap(parentNode, "boomr-async");
+      return;
+    }
+    iframe = document.createElement("IFRAME");
+    iframe.src = "about:blank";
+    iframe.title = "";
+    iframe.role = "presentation";
+    iframe.loading = "eager";
+    iframeStyle = (iframe.frameElement || iframe).style;
+    iframeStyle.width = 0;
+    iframeStyle.height = 0;
+    iframeStyle.border = 0;
+    iframeStyle.display = "none";
+    parentNode.appendChild(iframe);
+    try {
+      win = iframe.contentWindow;
+      doc = win.document.open();
+    } catch (e) {
+      dom = document.domain;
+      iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+      win = iframe.contentWindow;
+      doc = win.document.open();
+    }
+    if (dom) {
+      doc._boomrl = function() {
+        this.domain = dom;
+        bootstrap();
+      };
+      doc.write("<body onload='document._boomrl();'>");
+    } else {
+      win._boomrl = function() {
+        bootstrap();
+      };
+      if (win.addEventListener) {
+        win.addEventListener("load", win._boomrl, false);
+      } else if (win.attachEvent) {
+        win.attachEvent("onload", win._boomrl);
+      }
+    }
+    doc.close();
+  }
+  var link = document.createElement("link");
+  if (link.relList &&
+    typeof link.relList.supports === "function" &&
+    link.relList.supports("preload") &&
+    ("as" in link)) {
+    window.BOOMR.snippetMethod = "p";
+    link.href = window.BOOMR.url;
+    link.rel = "preload";
+    link.as = "script";
+    link.addEventListener("load", promote);
+    link.addEventListener("error", function() {
+      iframeLoader(true);
+    });
+    setTimeout(function() {
+      if (!promoted) {
+        iframeLoader(true);
+      }
+    }, LOADER_TIMEOUT);
+    BOOMR_lstart = new Date().getTime();
+    parentNode.appendChild(link);
+  } else {
+    iframeLoader(false);
+  }
+  function boomerangSaveLoadTime(e) {
+    window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
+  }
+  if (window.addEventListener) {
+    window.addEventListener("load", boomerangSaveLoadTime, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onload", boomerangSaveLoadTime);
+  }
+  if (document.addEventListener) {
+    document.addEventListener("onBoomerangLoaded", function(e) {
+      e.detail.BOOMR.init({
+        ResourceTiming: {
+          enabled: true,
+          trackedResourceTypes: ["script", "img", "css"]
+        },
+      });
+      e.detail.BOOMR.t_end = new Date().getTime();
+    });
+  } else if (document.attachEvent) {
+    document.attachEvent("onpropertychange", function(e) {
+      if (!e) e=event;
+      if (e.propertyName === "onBoomerangLoaded") {
+        e.detail.BOOMR.init({
+          ResourceTiming: {
+            enabled: true,
+            trackedResourceTypes: ["script", "img", "css"]
+          },
+        });
+        e.detail.BOOMR.t_end = new Date().getTime();
+      }
+    });
+  }
+})();</script><link href="https://angelusbrand.com/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js" rel="preload" as="script">
+<script async="async" src="https://www.google-analytics.com/analytics.js"></script>
+<script id="boomr-scr-as" src="https://angelusbrand.com/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js" async=""></script><script id="instafeed-fetcher" src="https://api.instagram.com/v1/users/self/media/recent?access_token=293550901.3c4e68d.f71c67e3899c474e914443dc4e5f61f5&amp;count=8&amp;callback=instafeedCachecfb322bdc17b4655.parse"></script><link rel="prefetch" as="script" href="https://assets.gorgias.chat/build/static/js/915.5fa3e85a48bfc001.js"><link rel="prefetch" as="script" href="https://assets.gorgias.chat/build/static/js/gcmw.04e783d2db15b672.js"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.latest.en.cc7d792fcad10aa5f421.js"><style data-emotion="gorgias-chat-key" data-s=""></style><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/809.latest.en.22b066f200008aec130a.js"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/810.latest.en.89cbc407b0fea47d8592.js"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.latest.en.4c0459bd88a293ab71f3.js"></head>
+
+<body id="angelus-shoe-polish" class="template-index">
+<div id="shopify-section-announcement-bar" class="shopify-section"><style>
+  .announcement-bar {
+    background-color: #000000;
+    text-align: center;
+    text-decoration: none;
+    z-index:100;
+    
+  }
+  .announcement-bar__message {
+    font-size: large;
+    padding: 10px;
+    color: #ffffff;
+    
+  }
+  a:hover  {
+  text-decoration: underline;
+}
+  @media screen and (max-width: 768px) {
+ .announcement-bar {
+  display:block !important;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+ }
+}
+</style></div>
+  <div id="shopify-section-header" class="shopify-section section-header"><!-- /sections/header.liquid -->
+
+
+<style>
+
+.header-logo a.site-header__logo-image{
+  width:150px;
+  height:100%;
+}
+@media screen and (max-width:998px){
+.header-logo .site-header__logo a{
+  max-width:200px;
+}
+}
+
+
+.search-dropdown{
+min-height: initial !important;
+height: 150px;
+}
+
+.site-header{
+    align-items: initial;
+  align-content: inherit;
+    
+ min-height:70px;
+
+
+position:relative;
+
+}
+
+  
+.site-header .nav-section-ad{
+  padding:0;
+  display:block;
+}
+.nav-section-ad > div{
+  width:100%;
+  height:100%;
+}
+
+
+.site-nav__link{
+padding:10px 10px;
+}
+
+@media screen and (min-width:769px){ 
+ 
+.site-header.static-padding{
+  padding-top:0;
+}
+.promo-bar{
+  margin-bottom:5px;
+}
+
+}
+@media screen and (max-width:768px){
+ 
+
+}
+.site-nav > li {
+
+position:relative;
+
+}
+.dim,
+.dimSearch{
+background-color:rgba(255,255,255,0.0);
+}
+.promo-bar a {
+color: #fff;
+}
+</style>
+
+<div data-section-id="header" data-section-type="header">
+<div class="nav-bar">
+
+<header id="header" data-position="false" class="site-header animated fadeIn static-padding headroom headroom--top headroom--not-bottom">
+  
+     
+  <div class="center-nav">
+  <div class="header-logo ">
+    <h1 class="site-header__logo large--left" itemscope="" itemtype="http://schema.org/Organization">
+      
+      <a href="/" itemprop="url" class="site-header__logo-image">
+        
+        <img src="//angelusbrand.com/cdn/shop/files/AngelusLogo_150x150@2x.png?v=1613702161" srcset="//angelusbrand.com/cdn/shop/files/AngelusLogo_150x150@2x.png?v=1613702161 1x, //angelusbrand.com/cdn/shop/files/AngelusLogo_150x150@3x.png?v=1613702161 2x" alt="Angelus Shoe Polish" itemprop="logo">
+      </a>
+      
+    </h1>
+  </div>
+
+    
+    
+    
+    <div class="header-nav medium-down--hide">
+  <!-- begin site-nav -->
+  <nav aria-label="DesktopNavigation">
+  <ul class="site-nav single-menu multinav" id="AccessibleNav" role="menubar">
+            
+      
+
+
+      
+      <li role="menuitem">
+        <a href="/pages/where-to-buy" class="site-nav__link"><span class="hvr-underline-from-left-dark">Where to buy?</span></a>
+      </li>
+      
+      
+
+
+      
+      <li role="menuitem">
+        <a href="/pages/3-grid" class="site-nav__link"><span class="hvr-underline-from-left-dark">Full Catalog</span></a>
+      </li>
+      
+      
+
+
+      
+      <li role="menuitem">
+        <a href="/pages/retail-kits" class="site-nav__link"><span class="hvr-underline-from-left-dark">Retail Kits</span></a>
+      </li>
+      
+      
+
+
+      
+      <li role="menuitem">
+        <a href="https://www.youtube.com/user/AngelusBrand" class="site-nav__link"><span class="hvr-underline-from-left-dark">Videos</span></a>
+      </li>
+      
+      
+
+
+      
+      <li role="menuitem">
+        <a href="/pages/6-grid" class="site-nav__link"><span class="hvr-underline-from-left-dark">Angelus Paint</span></a>
+      </li>
+      
+      
+
+
+      
+      <li role="menuitem">
+        <a href="/pages/12-grid" class="site-nav__link"><span class="hvr-underline-from-left-dark">Angelus Dyes</span></a>
+      </li>
+      
+      
+
+
+      
+      <li role="menuitem">
+        <a href="/pages/14-grid" class="site-nav__link"><span class="hvr-underline-from-left-dark">Angelus Wax</span></a>
+      </li>
+      
+      
+
+
+      
+      <li role="menuitem">
+        <a href="/pages/15-grid" class="site-nav__link"><span class="hvr-underline-from-left-dark">Accessories</span></a>
+      </li>
+      
+      
+
+
+      
+      <li role="menuitem">
+        <a href="/pages/1-grid" class="site-nav__link"><span class="hvr-underline-from-left-dark">Private Pack</span></a>
+      </li>
+      
+      
+
+
+      
+      <li role="menuitem">
+        <a href="/pages/16-grid" class="site-nav__link"><span class="hvr-underline-from-left-dark">About Us</span></a>
+      </li>
+      
+      
+
+
+      
+      <li role="menuitem">
+        <a href="/pages/contact-us" class="site-nav__link"><span class="hvr-underline-from-left-dark">Contact Us</span></a>
+      </li>
+      
+      
+    </ul>
+  </nav>
+  <!-- //site-nav -->
+      
+      
+</div>
+<div class="large--text-right  medium-down--hide header-icons icon-wrapper">
+  
+  
+  </div>
+</div>
+</header></div>
+
+</div>
+
+<div class="dim"></div>
+<div id="NavDrawer" class="drawer drawer--bottom">
+<div class="drawer__header">
+<div class="drawer__close js-drawer-close">
+  <button type="button" class="icon-fallback-text">
+    <span class="icon icon-x" aria-hidden="true"></span>
+    <span class="fallback-text">Close menu</span>
+  </button>
+</div>
+</div>
+
+
+  
+  
+<!-- begin mobile-nav -->
+
+
+
+
+
+
+
+<nav aria-label="MobileNavigation" aria-haspopup="true">
+<!-- Parent links div -->
+<div id="main-menu-mnav" class="mobile-nav__link-group">
+  <div>
+    
+    <h3 class="mobile-linklist-title">Main Menu</h3>
+    <hr class="mobile-menu-hr">
+    
+  </div>
+  <ul role="menu">
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="/pages/where-to-buy" class="mobile-nav__link"><h3>Where to buy?</h3></a>
+    </li>
+    
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="/pages/3-grid" class="mobile-nav__link"><h3>Full Catalog</h3></a>
+    </li>
+    
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="/pages/retail-kits" class="mobile-nav__link"><h3>Retail Kits</h3></a>
+    </li>
+    
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="https://www.youtube.com/user/AngelusBrand" class="mobile-nav__link"><h3>Videos</h3></a>
+    </li>
+    
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="/pages/6-grid" class="mobile-nav__link"><h3>Angelus Paint</h3></a>
+    </li>
+    
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="/pages/12-grid" class="mobile-nav__link"><h3>Angelus Dyes</h3></a>
+    </li>
+    
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="/pages/14-grid" class="mobile-nav__link"><h3>Angelus Wax</h3></a>
+    </li>
+    
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="/pages/15-grid" class="mobile-nav__link"><h3>Accessories</h3></a>
+    </li>
+    
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="/pages/1-grid" class="mobile-nav__link"><h3>Private Pack</h3></a>
+    </li>
+    
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="/pages/16-grid" class="mobile-nav__link"><h3>About Us</h3></a>
+    </li>
+    
+    
+
+    
+    
+    
+    <li class="mobile-nav__item" role="menuitem">
+      <a href="/pages/contact-us" class="mobile-nav__link"><h3>Contact Us</h3></a>
+    </li>
+    
+    
+  </ul>
+</div>
+
+
+
+
+
+
+</nav>
+<div class="mobile__nav-social-media">
+
+
+<div class="mobile-account-link">
+  <a href="https://angelusbrand.com/customer_identity/redirect?locale=en" id="customer_login_link">Sign-In</a>
+</div>
+<div class="mobile-account-link">
+  <a href="/account/register" id="customer_register_link">Register</a>
+</div>
+
+
+
+
+<!-- Mobile Menu Footer Social Icons -->
+<div class="mobile-menu-footer large--hide medium-down--show">
+   <ul class="inline-list social-icons mobile-social">
+      
+      <li>
+         <a class="icon-fallback-text" href="https://twitter.com/angelusbrand?lang=en" title="Angelus Shoe Polish on Twitter">
+         <span class="icon icon-twitter" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Twitter</span>
+         </a>
+      </li>
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.facebook.com/Angelus-Shoe-Polish-232467686775055/" title="Angelus Shoe Polish on Facebook">
+         <span class="icon icon-facebook" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Facebook</span>
+         </a>
+      </li>
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.instagram.com/angelusshoepolish/" title="Angelus Shoe Polish on Instagram">
+         <span class="icon icon-instagram2" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Instagram</span>
+         </a>
+      </li>
+      
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.youtube.com/user/AngelusBrand" title="Angelus Shoe Polish on YouTube">
+         <span class="icon icon-youtube" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">YouTube</span>
+         </a>
+      </li>
+      
+      
+   </ul>
+</div>
+<!-- Desktop Footer Social Icons -->
+<div class="footer-social-icons medium-down--hide large--show" style="width: 30%; text-align: right;">
+   <ul class="inline-list social-icons">
+      
+      <li>
+         <a class="icon-fallback-text" href="https://twitter.com/angelusbrand?lang=en" title="Angelus Shoe Polish on Twitter">
+         <span class="icon icon-twitter" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Twitter</span>
+         </a>
+      </li>
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.facebook.com/Angelus-Shoe-Polish-232467686775055/" title="Angelus Shoe Polish on Facebook">
+         <span class="icon icon-facebook" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Facebook</span>
+         </a>
+      </li>
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.instagram.com/angelusshoepolish/" title="Angelus Shoe Polish on Instagram">
+         <span class="icon icon-instagram2" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Instagram</span>
+         </a>
+      </li>
+      
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.youtube.com/user/AngelusBrand" title="Angelus Shoe Polish on YouTube">
+         <span class="icon icon-youtube" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">YouTube</span>
+         </a>
+      </li>
+      
+      
+   </ul>
+   
+</div>
+
+<div class="large--hide medium-down--show mobile-copyright">
+  <hr class="footer-hr">
+  Designed by <a href="https://trailblazemedia.com" title="TrailblazeMedia.com">Trailblaze Media</a>.
+<a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Ecommerce Software by Shopify</a> <br>
+  © 2023 Angelus Shoe Polish.
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="large--hide medium-down--show sticky-footer">
+<div class="one-quarter mobile-hamburger">
+<div class="site-nav--mobile">
+  <button type="button" class="icon-fallback-text site-nav__link js-drawer-open-left" aria-controls="NavDrawer" aria-expanded="false">
+    <span class="icon icon-hamburger" aria-hidden="true"></span>
+    <span class="fallback-text">Menu</span>
+  </button>
+</div>
+</div>
+  
+  
+  
+  
+
+  
+  
+<div class="one-half mobile-logo">
+
+<a href="/" itemprop="WebPage" class="site-header__logo-image">
+  
+  <img src="//angelusbrand.com/cdn/shop/files/AngelusLogo_small.png?v=1613702161 1x" srcset="//angelusbrand.com/cdn/shop/files/AngelusLogo_150x150@2x.png?v=1613702161 1x, //angelusbrand.com/cdn/shop/files/AngelusLogo_150x150@2x.png?v=1613702161 2x" alt="Angelus Shoe Polish" itemprop="logo">
+</a>
+
+</div>
+  
+  
+  
+  
+<div class="one-quarter mobile-icon site-nav__link">
+
+<a class="cart-wrapper" href="/cart">
+  <div class="cart-item-count">0</div>
+  <svg color="#292929" stroke="#292929" width="30" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <metadata>image/svg+xml</metadata>
+    <g>
+      <title>background</title>
+      <rect fill="none" height="32" width="32" y="-1" x="-1"></rect>
+    </g>
+    <g>
+      <title>Layer 1</title>
+      <ellipse ry="14.193302" rx="14.193302" cy="15" cx="15" fill="none"></ellipse>
+      <g transform="matrix(0.010131382145231939,0,0,-0.010131382145231939,73.42602923783018,391.16238184995603) ">
+        <path fill="currentColor" d="m-5958.837181,36552.43527q0,-53 -37.5,-90.5q-37.5,-37.5 -90.5,-37.5q-53,0 -90.5,37.5q-37.5,37.5 -37.5,90.5q0,53 37.5,90.5q37.5,37.5 90.5,37.5q53,0 90.5,-37.5q37.5,-37.5 37.5,-90.5zm896,0q0,-53 -37.5,-90.5q-37.5,-37.5 -90.5,-37.5q-53,0 -90.5,37.5q-37.5,37.5 -37.5,90.5q0,53 37.5,90.5q37.5,37.5 90.5,37.5q53,0 90.5,-37.5q37.5,-37.5 37.5,-90.5zm128,1088l0,-512q0,-24 -16,-42.5q-16,-18.5 -41,-21.5l-1044,-122q1,-7 4.5,-21.5q3.5,-14.5 6,-26.5q2.5,-12 2.5,-22q0,-16 -24,-64l920,0q26,0 45,-19q19,-19 19,-45q0,-26 -19,-45q-19,-19 -45,-19l-1024,0q-26,0 -45,19q-19,19 -19,45q0,14 11,39.5q11,25.5 29.5,59.5q18.5,34 20.5,38l-177,823l-204,0q-26,0 -45,19q-19,19 -19,45q0,26 19,45q19,19 45,19l256,0q16,0 28.5,-6.5q12.5,-6.5 20,-15.5q7.5,-9 13,-24.5q5.5,-15.5 7.5,-26.5q2,-11 5.5,-29.5q3.5,-18.5 4.5,-25.5l1201,0q26,0 45,-19q19,-19 19,-45z"></path>
+      </g>
+      <defs>
+        <circle r="15" cy="15" cx="15"></circle>
+        <mask height="30" width="30" y="0" x="0" maskUnits="objectBoundingBox" maskContentUnits="userSpaceOnUse">
+          <use xlink:href="#svg_17"></use>
+        </mask>
+      </defs>
+    </g>
+  </svg>
+</a>
+</div>
+</div>
+</div>
+
+
+
+  <div id="PageContainer" class="is-moved-by-drawer">
+    <main class="wrapper main-content  " style="margin-top: initial;">
+      <!-- BEGIN content_for_index --><div id="shopify-section-1509116968822" class="shopify-section masonry-margin section-masonry"> <!-- Desktop Slideshow -->
+        
+
+      <style>
+        .slide1509116968822-0{
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 100%;
+        }
+        .block-ad-1509116968822-0{
+          background-color:;
+        }
+        .block-ad-1509116968822-0 a{
+        color:;
+        }
+        .collection-image-1509116968822-0 > a > img{
+          object-position:  ;
+        }
+        .collection-image-1509116968822-0-mobile{
+          background-position: ;
+        }
+
+        .slider-overlay-color-1509116968822-0{
+          background-color: #ffffff;
+          opacity: 0.0;
+          height: 100%;
+          width: inherit;
+          position: absolute;
+          z-index: 1;
+        }
+
+      </style>
+      
+
+      <style>
+        .slide1509116968822-1{
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position:  ;
+        }
+        .block-ad-1509116968822-1{
+          background-color:;
+        }
+        .block-ad-1509116968822-1 a{
+        color:;
+        }
+        .collection-image-1509116968822-1 > a > img{
+          object-position: 50% 50%;
+        }
+        .collection-image-1509116968822-1-mobile{
+          background-position:50% 50%;
+        }
+
+        .slider-overlay-color-1509116968822-1{
+          background-color: ;
+          opacity: 0.0;
+          height: 100%;
+          width: inherit;
+          position: absolute;
+          z-index: 1;
+        }
+
+      </style>
+      
+
+      <style>
+        .slide1509116968822-3{
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position:  ;
+        }
+        .block-ad-1509116968822-3{
+          background-color:;
+        }
+        .block-ad-1509116968822-3 a{
+        color:;
+        }
+        .collection-image-1509116968822-3 > a > img{
+          object-position: 50% 50%;
+        }
+        .collection-image-1509116968822-3-mobile{
+          background-position:50% 50%;
+        }
+
+        .slider-overlay-color-1509116968822-3{
+          background-color: ;
+          opacity: 0.0;
+          height: 100%;
+          width: inherit;
+          position: absolute;
+          z-index: 1;
+        }
+
+      </style>
+      
+
+      <style>
+        .slide1509116968822-4{
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position:  ;
+        }
+        .block-ad-1509116968822-4{
+          background-color:;
+        }
+        .block-ad-1509116968822-4 a{
+        color:;
+        }
+        .collection-image-1509116968822-4 > a > img{
+          object-position: 50% 50%;
+        }
+        .collection-image-1509116968822-4-mobile{
+          background-position:50% 50%;
+        }
+
+        .slider-overlay-color-1509116968822-4{
+          background-color: ;
+          opacity: 0.0;
+          height: 100%;
+          width: inherit;
+          position: absolute;
+          z-index: 1;
+        }
+
+      </style>
+      
+
+      <style>
+        .slide1509116968822-5{
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position:  ;
+        }
+        .block-ad-1509116968822-5{
+          background-color:;
+        }
+        .block-ad-1509116968822-5 a{
+        color:;
+        }
+        .collection-image-1509116968822-5 > a > img{
+          object-position: 50% 50%;
+        }
+        .collection-image-1509116968822-5-mobile{
+          background-position:50% 50%;
+        }
+
+        .slider-overlay-color-1509116968822-5{
+          background-color: ;
+          opacity: 0.0;
+          height: 100%;
+          width: inherit;
+          position: absolute;
+          z-index: 1;
+        }
+
+      </style>
+      
+
+      <style>
+        .slide1509116968822-6{
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position:  ;
+        }
+        .block-ad-1509116968822-6{
+          background-color:;
+        }
+        .block-ad-1509116968822-6 a{
+        color:;
+        }
+        .collection-image-1509116968822-6 > a > img{
+          object-position: 50% 50%;
+        }
+        .collection-image-1509116968822-6-mobile{
+          background-position:50% 50%;
+        }
+
+        .slider-overlay-color-1509116968822-6{
+          background-color: ;
+          opacity: 0.0;
+          height: 100%;
+          width: inherit;
+          position: absolute;
+          z-index: 1;
+        }
+
+      </style>
+      
+  <div class="grid--full animated fadeIn" data-section-id="1509116968822" data-section-type="masonry">
+  
+
+  
+
+       
+
+
+  <div class="grid__item large--one-whole  medium--one-whole small--one-whole  two-fifths-width sliderh" style="height:400px;">
+    <div class="slider-content-class card-shadow">
+      <div class="masonry-slider slick-initialized slick-slider" data-auto="enable" data-speed="8000">
+        
+        
+
+        
+<div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 938px; transform: translate3d(0px, 0px, 0px);"><div class="slide1509116968822-0 slide-full slick-slide slick-current slick-active" style="background-image: url(&quot;//angelusbrand.com/cdn/shop/files/IMG_1483_1920x.png?v=1613702162&quot;); width: 938px;" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00">
+          <div class="slider-overlay animated fadeIn">
+            
+            <h1 class="small-slide color-white">MADE IN U.S.A.</h1>
+            
+            
+            <div class="h5 hero-subtitle small-slide color-white"><p>Manufacturing leather care products since 1907.</p></div>
+            
+            
+
+          </div>
+          <div class="slider-overlay-color-1509116968822-0"></div>
+        </div></div></div>
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Collections -->
+  
+  <div class="grid__item  large--one-whole masonry-full collection-contains-5  medium--one-whole small--one-whole masonryh three-fifths-pad">
+    <div class="grid--full">
+      
+      
+
+      <div class="masonryh">
+
+        
+
+        
+        
+        
+        <style>
+          .masonry-section-1509116968822.content-class-m1 {
+            height: 50%;
+          }
+
+          .masonry-section-1509116968822.content-class-m2 {
+            height: 50%;
+          }
+          .masonry-section-1509116968822.content-class-m3 {
+            height: 50%;
+          }
+          .masonry-section-1509116968822.content-class-m4 {
+            width:50%;
+            height: 50%;
+            top:0;
+          }
+          .masonry-section-1509116968822.content-class-m5 {
+            width:50%;
+            height: 50%;
+            top:0;
+          }
+        </style>
+        
+
+
+        
+        
+        
+
+        
+        
+
+        
+        
+        
+
+
+
+        <div class="masonry-section-1509116968822 grid__item large--one-third  medium-down--hide noMansHide three-fifths-width    content-class-m1">
+          <div class="jim-card">
+            <div class="grid-pad  card card-shadow ">
+              <div class="block-content-5  masonry-collection-target collection-image-1509116968822-1 compat-object-fit" style="background-image: url(&quot;https://angelusbrand.com/cdn/shop/files/IMG_0167-2_1280x.png?v=1613702163&quot;);">
+                
+                <a href="/pages/6-grid" title="Browse our Acrylic Leather Paint collection">
+              
+                  
+                  <img src="//angelusbrand.com/cdn/shop/files/IMG_0167-2_1280x.png?v=1613702163" alt="Acrylic Leather Paint">
+              
+                </a>
+                
+              </div>
+              <div class="collection-in-grid block-content-5-copy">
+                
+                <h2 style="float: none; position: static;"><a href="/pages/6-grid" title="Browse our Acrylic Leather Paint collection">Acrylic Leather Paint</a></h2>
+                
+                
+
+                <div class="h3 collection-grid-desc" style="float: none; position: static;">                  
+                  
+                  <p>Flexible, non-cracking formula. Over 100 different colors available.</p>
+                                
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+        
+        
+        
+
+
+
+        <div class="masonry-section-1509116968822 grid__item large--one-third  medium-down--hide noMansHide three-fifths-width    content-class-m2">
+          <div class="jim-card">
+            <div class="grid-pad  card card-shadow ">
+              <div class="block-content-5  masonry-collection-target collection-image-1509116968822-3 compat-object-fit" style="background-image: url(&quot;https://angelusbrand.com/cdn/shop/files/IMG_8962_1280x.png?v=1613702163&quot;);">
+                
+                <a href="/pages/17-grid" title="Browse our Cleaners &amp; Conditioners collection">
+              
+                  
+                  <img src="//angelusbrand.com/cdn/shop/files/IMG_8962_1280x.png?v=1613702163" alt="Cleaners &amp; Conditioners">
+              
+                </a>
+                
+              </div>
+              <div class="collection-in-grid block-content-5-copy">
+                
+                <h2 style="float: none; position: static;"><a href="/pages/17-grid" title="Browse our Cleaners &amp; Conditioners collection">Cleaners &amp; Conditioners</a></h2>
+                
+                
+
+                <div class="h3 collection-grid-desc" style="float: none; position: static;">                  
+                  
+                  <p>Leather cleaners, conditioners, and protectants. Safe for most smooth and nappy leathers.</p>
+                                
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+        
+        
+        
+
+
+
+        <div class="masonry-section-1509116968822 grid__item large--one-third  medium-down--hide noMansHide three-fifths-width    content-class-m3">
+          <div class="jim-card">
+            <div class="grid-pad  card card-shadow ">
+              <div class="block-content-5  masonry-collection-target collection-image-1509116968822-4 compat-object-fit" style="background-image: url(&quot;https://angelusbrand.com/cdn/shop/files/IMG_8094_1280x.png?v=1613702163&quot;);">
+                
+                <a href="/pages/12-grid" title="Browse our Leather Dyes collection">
+              
+                  
+                  <img src="//angelusbrand.com/cdn/shop/files/IMG_8094_1280x.png?v=1613702163" alt="Leather Dyes">
+              
+                </a>
+                
+              </div>
+              <div class="collection-in-grid block-content-5-copy">
+                
+                <h2 style="float: none; position: static;"><a href="/pages/12-grid" title="Browse our Leather Dyes collection">Leather Dyes</a></h2>
+                
+                
+
+                <div class="h3 collection-grid-desc" style="float: none; position: static;">                  
+                  
+                  <p>Permanent dyes that penetrate into the leather. Will not crack, peel, or wash off.&nbsp;</p>
+                                
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+        
+        
+        
+
+
+
+        <div class="masonry-section-1509116968822 grid__item large--one-third  medium-down--hide noMansHide three-fifths-width    content-class-m4">
+          <div class="jim-card">
+            <div class="grid-pad  card card-shadow ">
+              <div class="block-content-5  masonry-collection-target collection-image-1509116968822-5 compat-object-fit" style="background-image: url(&quot;https://angelusbrand.com/cdn/shop/files/where-to-buy-3_1280x.png?v=1613702163&quot;);">
+                
+                <a href="/pages/where-to-buy" title="Browse our Where to buy? collection">
+              
+                  
+                  <img src="//angelusbrand.com/cdn/shop/files/where-to-buy-3_1280x.png?v=1613702163" alt="Where to buy?">
+              
+                </a>
+                
+              </div>
+              <div class="collection-in-grid block-content-5-copy">
+                
+                <h2 style="float: none; position: static;"><a href="/pages/where-to-buy" title="Browse our Where to buy? collection">Where to buy?</a></h2>
+                
+                
+
+                <div class="h3 collection-grid-desc" style="float: none; position: static;">                  
+                  
+                  <p>Find an authorized Angelus Retailer near you or view our list of online retailers.</p>
+                                
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+        
+        
+        
+
+
+
+        <div class="masonry-section-1509116968822 grid__item large--one-third  medium-down--hide noMansHide three-fifths-width    content-class-m5">
+          <div class="jim-card">
+            <div class="grid-pad  card card-shadow ">
+              <div class="block-content-5  masonry-collection-target collection-image-1509116968822-6 compat-object-fit" style="background-image: url(&quot;https://angelusbrand.com/cdn/shop/files/catalog_1280x.png?v=1613702163&quot;);">
+                
+                <a href="/pages/3-grid" title="Browse our Full Catalog collection">
+              
+                  
+                  <img src="//angelusbrand.com/cdn/shop/files/catalog_1280x.png?v=1613702163" alt="Full Catalog">
+              
+                </a>
+                
+              </div>
+              <div class="collection-in-grid block-content-5-copy">
+                
+                <h2 style="float: none; position: static;"><a href="/pages/3-grid" title="Browse our Full Catalog collection">Full Catalog</a></h2>
+                
+                
+
+                <div class="h3 collection-grid-desc" style="float: none; position: static;">                  
+                  
+                  <p>View the entire Angelus product catalog.</p>
+                                
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+      </div>
+    </div>
+  </div>
+  
+</div>
+<!-- Mobile Section -->
+<div class="grid--full animated fadeIn large--hide">
+
+  <!-- Mobile Hero -->    
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  <div class="grid__item large--hide medium--one-whole small--one-whole masonryh  three-fifths-pad">
+    <div class="grid--full">
+      <div class="masonryh">
+        
+        
+            
+        
+        
+        
+
+        <!-- Mobile Collections Grid -->
+        <div class="grid__item large--hide medium-down--one-whole text-left">
+          <div class=" card-shadow mobile-collection-cards ">
+          <a class="mobile-card-link" href="/pages/6-grid" title="Browse our Acrylic Leather Paint collection">
+          
+                  
+                  
+                    <img src="//angelusbrand.com/cdn/shop/files/IMG_0167-2_1280x.png?v=1613702163">
+                      
+          
+                  </a>
+                
+                <div class="mobile-collection-card-content">
+                  
+                  <h2><a href="/pages/6-grid" title="Browse our  collection">Acrylic Leather Paint</a></h2>
+                  
+                  <a href="/pages/6-grid" title="Browse our Acrylic Leather Paint collection">
+                    <div class="h3 collection-grid-desc" style="float: none; position: static;">
+                      
+                      <p>Flexible, non-cracking formula. Over 100 different colors available.</p>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            
+        
+        
+        
+
+        <!-- Mobile Collections Grid -->
+        <div class="grid__item large--hide medium-down--one-whole text-left">
+          <div class=" card-shadow mobile-collection-cards-reverse ">
+          <a class="mobile-card-link" href="/pages/17-grid" title="Browse our Cleaners &amp; Conditioners collection">
+          
+                  
+                  
+                    <img src="//angelusbrand.com/cdn/shop/files/IMG_8962_1280x.png?v=1613702163">
+                      
+          
+                  </a>
+                
+                <div class="mobile-collection-card-content">
+                  
+                  <h2><a href="/pages/17-grid" title="Browse our  collection">Cleaners &amp; Conditioners</a></h2>
+                  
+                  <a href="/pages/17-grid" title="Browse our Cleaners &amp; Conditioners collection">
+                    <div class="h3 collection-grid-desc" style="float: none; position: static;">
+                      
+                      <p>Leather cleaners, conditioners, and protectants. Safe for most smooth and nappy leathers.</p>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            
+        
+        
+        
+
+        <!-- Mobile Collections Grid -->
+        <div class="grid__item large--hide medium-down--one-whole text-left">
+          <div class=" card-shadow mobile-collection-cards ">
+          <a class="mobile-card-link" href="/pages/12-grid" title="Browse our Leather Dyes collection">
+          
+                  
+                  
+                    <img src="//angelusbrand.com/cdn/shop/files/IMG_8094_1280x.png?v=1613702163">
+                      
+          
+                  </a>
+                
+                <div class="mobile-collection-card-content">
+                  
+                  <h2><a href="/pages/12-grid" title="Browse our  collection">Leather Dyes</a></h2>
+                  
+                  <a href="/pages/12-grid" title="Browse our Leather Dyes collection">
+                    <div class="h3 collection-grid-desc" style="float: none; position: static;">
+                      
+                      <p>Permanent dyes that penetrate into the leather. Will not crack, peel, or wash off.&nbsp;</p>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            
+        
+        
+        
+
+        <!-- Mobile Collections Grid -->
+        <div class="grid__item large--hide medium-down--one-whole text-left">
+          <div class=" card-shadow mobile-collection-cards-reverse ">
+          <a class="mobile-card-link" href="/pages/where-to-buy" title="Browse our Where to buy? collection">
+          
+                  
+                  
+                    <img src="//angelusbrand.com/cdn/shop/files/where-to-buy-3_1280x.png?v=1613702163">
+                      
+          
+                  </a>
+                
+                <div class="mobile-collection-card-content">
+                  
+                  <h2><a href="/pages/where-to-buy" title="Browse our  collection">Where to buy?</a></h2>
+                  
+                  <a href="/pages/where-to-buy" title="Browse our Where to buy? collection">
+                    <div class="h3 collection-grid-desc" style="float: none; position: static;">
+                      
+                      <p>Find an authorized Angelus Retailer near you or view our list of online retailers.</p>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            
+        
+        
+        
+
+        <!-- Mobile Collections Grid -->
+        <div class="grid__item large--hide medium-down--one-whole text-left">
+          <div class=" card-shadow mobile-collection-cards  mobile-collection-last-card">
+          <a class="mobile-card-link" href="/pages/3-grid" title="Browse our Full Catalog collection">
+          
+                  
+                  
+                    <img src="//angelusbrand.com/cdn/shop/files/catalog_1280x.png?v=1613702163">
+                      
+          
+                  </a>
+                
+                <div class="mobile-collection-card-content">
+                  
+                  <h2><a href="/pages/3-grid" title="Browse our  collection">Full Catalog</a></h2>
+                  
+                  <a href="/pages/3-grid" title="Browse our Full Catalog collection">
+                    <div class="h3 collection-grid-desc" style="float: none; position: static;">
+                      
+                      <p>View the entire Angelus product catalog.</p>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    </div><div id="shopify-section-1518563577068" class="shopify-section">
+
+<!-- /sections/home-features.liquid -->
+<div class="grid--full home-promotion-block card-shadow feature-flex">
+  
+  
+    
+      
+      <div class="grid__item large--one-half medium-down--one-whole left-image feature-middle" style="background-image: url(//angelusbrand.com/cdn/shop/files/custom-armchair-giveaway-chadcantcolor-angelusdirect-thumbnail2.jpg?v=1613702163);"></div>
+      
+    
+  
+  <div class="grid__item large--one-half medium-down--one-whole right-text text-center">
+    <div class="feature-content home-reveal" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+      
+      <h1 class="black">Video Tutorials</h1>
+      
+      
+      <div class="h5"><p>Learn how to use Angelus products like the pros.</p></div>
+      
+      <a href="https://www.youtube.com/angelusbrand" class="btn">Watch Now</a>
+    </div>
+  </div>
+  
+</div>
+
+</div><div id="shopify-section-1503419021624" class="shopify-section">
+
+<!-- /sections/home-features.liquid -->
+<div class="grid--full home-promotion-block card-shadow feature-flex-right">
+  
+   <div class="grid__item large--one-half medium-down--one-whole right-text text-center">
+    <div class="feature-content home-reveal" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+      
+      <h1 class="black">Private Labeling</h1>
+      
+      
+      <div class="h5"><p>Expand your brand with a company you can trust.&nbsp;All products are manufactured in the United States with a professional crew with over 20 years of experience.</p></div>
+      
+      <a href="/pages/1-grid" class="btn">Learn More</a>
+    </div>
+  </div>
+  
+    
+  <div class="grid__item large--one-half medium-down--one-whole right-image feature-middle" style="background-image: url(//angelusbrand.com/cdn/shop/files/IMG_0820.JPG?v=1615924006);"></div>
+  
+  
+  
+  
+</div>
+
+</div><div id="shopify-section-1503419031783" class="shopify-section">
+
+<!-- /sections/home-features.liquid -->
+<div class="grid--full home-promotion-block card-shadow feature-flex">
+  
+  
+    
+      
+      <div class="grid__item large--one-half medium-down--one-whole left-image feature-top" style="background-image: url(//angelusbrand.com/cdn/shop/files/DoneScan_large_440c2015-f452-4487-bc10-694ef1b0ff08.jpg?v=1613702163);"></div>
+      
+    
+  
+  <div class="grid__item large--one-half medium-down--one-whole right-text text-center">
+    <div class="feature-content home-reveal" data-sr-id="3" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+      
+      <h1 class="black">About Us</h1>
+      
+      
+      <div class="h5"><p>Learn about the history of an 110+ year old American made company.</p></div>
+      
+      <a href="/pages/16-grid" class="btn">Learn more</a>
+    </div>
+  </div>
+  
+</div>
+
+</div><div id="shopify-section-1503419050912" class="shopify-section section-margin section-instagram"><!-- /sections/home-instagram.liquid -->
+
+<style>
+  
+  
+  .section-instagram .instagram--square.instagram-image-1503419050912:nth-child(-n+4),
+  .instagram-image-1503419050912 .instagram--square:nth-child(-n+4){
+    margin-bottom: 1.25%;
+  }
+  
+  
+
+  @media screen and (max-width:768px){
+    
+        
+            .section-instagram .instagram--square.instagram-image-1503419050912:nth-child(-n+4),
+            .instagram-image-1503419050912 .instagram--square:nth-child(-n+4){
+              margin-bottom: 15px;
+            }
+            .section-instagram .instagram--square.instagram-image-1503419050912:nth-child(n+7),
+            .instagram-image-1503419050912 .instagram--square:nth-child(n+7){
+              margin-bottom: 0;
+            }
+        
+    
+    }
+</style>
+
+<h2 class="mobile-header-space instagram-title text-center">Check Out Our Customers Work!</h2>
+
+
+
+<div class="homepage-instagram instagram-image-1503419050912" id="homepage-instagram-1503419050912" data-insta-token="293550901.3c4e68d.f71c67e3899c474e914443dc4e5f61f5" data-section-id="1503419050912" data-section-type="instafeed" data-amount="8" data-images="4">
+
+</div>
+
+
+
+</div><!-- END content_for_index -->
+<!-- /templates/index.liquid -->
+
+<script data-locksmith="">
+    var load = function () {
+
+          if (document.querySelectorAll('.locksmith-manual-trigger').length > 0) {
+            Locksmith.ping();
+          }
+
+
+      Locksmith.util.on('submit', 'locksmith-resource-form', function (event) {
+        event.preventDefault();
+        var data = Locksmith.util.serializeForm(event.target);
+        Locksmith.postResource(data, { spinner: false, container: 'locksmith-content' });
+      });
+
+      Locksmith.util.on('click', 'locksmith-manual-trigger', function (event) {
+        event.preventDefault();
+        Locksmith.postResource({}, { spinner: true, container: document });
+      });
+
+      Locksmith.submitPasscode = function (passcode) {
+        Locksmith.postResource(
+          { passcode: passcode },
+          { spinner: false, container: 'locksmith-content' }
+        );
+      };
+    };
+
+    if (typeof Locksmith !== 'undefined') {
+      load();
+    } else {
+      window.addEventListener('load', load);
+    }
+  </script>
+      
+    </main>
+  </div>
+
+  <div id="shopify-section-footer" class="shopify-section"><!-- /sections/footer.liquid -->
+<div data-section-id="footer" data-section-type="footer">
+<footer class="site-footer small--text-center medium-down--hide">
+  <div class="wrapper">
+    <div class="footer-content">
+      <!-- Logo -->
+      <div class="footer-logo" style="width: 30%;">
+        <div class="h1 site-header__logo large--left" itemscope="" itemtype="http://schema.org/Organization">
+          
+          <a href="/" itemprop="url" class="site-header__logo-image">
+            
+            <img src="//angelusbrand.com/cdn/shop/files/AngelusLogo_200x200@2x.png?v=1613702161" srcset="//angelusbrand.com/cdn/shop/files/AngelusLogo_200x200@2x.png?v=1613702161 1x, //angelusbrand.com/cdn/shop/files/AngelusLogo_200x200@2x.png?v=1613702161 2x" alt="Angelus Shoe Polish" itemprop="logo">
+          </a>
+          
+        </div>
+      </div>
+      <!-- Navigation -->
+      <ul class="site-nav in-footer" id="AccessibleNavFooter" style="text-align: center">
+        
+        
+
+        
+
+        <li>
+          <a href="/account/register" class="site-nav__link"><span class="hvr-underline-from-left">Create Account</span></a>
+        </li>
+        
+
+        
+
+        <li>
+          <a href="/account" class="site-nav__link"><span class="hvr-underline-from-left">Login/Account</span></a>
+        </li>
+        
+
+        
+
+        <li>
+          <a href="/pages/1-grid" class="site-nav__link"><span class="hvr-underline-from-left">Private Label Packaging</span></a>
+        </li>
+        
+
+        
+
+        <li>
+          <a href="/pages/16-grid" class="site-nav__link"><span class="hvr-underline-from-left">About Us</span></a>
+        </li>
+        
+      </ul>
+      <!-- Social Media -->
+      
+
+<!-- Mobile Menu Footer Social Icons -->
+<div class="mobile-menu-footer large--hide medium-down--show">
+   <ul class="inline-list social-icons mobile-social">
+      
+      <li>
+         <a class="icon-fallback-text" href="https://twitter.com/angelusbrand?lang=en" title="Angelus Shoe Polish on Twitter">
+         <span class="icon icon-twitter" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Twitter</span>
+         </a>
+      </li>
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.facebook.com/Angelus-Shoe-Polish-232467686775055/" title="Angelus Shoe Polish on Facebook">
+         <span class="icon icon-facebook" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Facebook</span>
+         </a>
+      </li>
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.instagram.com/angelusshoepolish/" title="Angelus Shoe Polish on Instagram">
+         <span class="icon icon-instagram2" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Instagram</span>
+         </a>
+      </li>
+      
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.youtube.com/user/AngelusBrand" title="Angelus Shoe Polish on YouTube">
+         <span class="icon icon-youtube" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">YouTube</span>
+         </a>
+      </li>
+      
+      
+   </ul>
+</div>
+<!-- Desktop Footer Social Icons -->
+<div class="footer-social-icons medium-down--hide large--show" style="width: 30%; text-align: right;">
+   <ul class="inline-list social-icons">
+      
+      <li>
+         <a class="icon-fallback-text" href="https://twitter.com/angelusbrand?lang=en" title="Angelus Shoe Polish on Twitter">
+         <span class="icon icon-twitter" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Twitter</span>
+         </a>
+      </li>
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.facebook.com/Angelus-Shoe-Polish-232467686775055/" title="Angelus Shoe Polish on Facebook">
+         <span class="icon icon-facebook" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Facebook</span>
+         </a>
+      </li>
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.instagram.com/angelusshoepolish/" title="Angelus Shoe Polish on Instagram">
+         <span class="icon icon-instagram2" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">Instagram</span>
+         </a>
+      </li>
+      
+      
+      
+      <li>
+         <a class="icon-fallback-text" href="https://www.youtube.com/user/AngelusBrand" title="Angelus Shoe Polish on YouTube">
+         <span class="icon icon-youtube" aria-hidden="true"></span>
+<span class="fallback-text"></span>
+
+
+
+
+
+         <span class="fallback-text">YouTube</span>
+         </a>
+      </li>
+      
+      
+   </ul>
+   
+</div>
+
+
+    </div>
+     
+  <br>
+  © 2023 Angelus Shoe Polish.
+</div>
+  </footer></div>
+
+</div>
+<!-- //site-footer -->
+
+
+
+
+  
+  <script>
+    
+    
+    theme.HashScrolling();
+    
+  </script>
+
+  <!-- NEWSLETTER MODAL BEGIN-->
+
+
+
+<script type="text/javascript">
+
+
+var cookieExpireSet = 7;
+
+
+var cookieModalDelay = 1000;
+
+
+var cookieExpires = 7;
+
+</script>
+
+
+
+<!--Gorgias Chat Widget Start-->
+<script id="gorgias-chat-widget-install-v3" src="https://config.gorgias.chat/bundle-loader/01GYCBQ660V8BXK01JTWKJ2KRE?source=shopify1click">
+</script>
+<script id="gorgias-chat-shopify-install">!function(_){_.SHOPIFY_PERMANENT_DOMAIN="angelusshoepolish.myshopify.com",_.SHOPIFY_CUSTOMER_ID="",_.SHOPIFY_CUSTOMER_EMAIL=""}(window||{});
+</script>
+<!--Gorgias Chat Widget End-->
+
+<script>
+var dict = {
+"introductionText": "How can we help?",
+"offlineIntroductionText": "We'll be back tomorrow",
+"actionPostbackError": "An error occurred while processing your action. Please try again.",
+"clickToRetry": "Message not delivered. Click to retry.",
+"conversationTimestampHeaderFormat": "MMMM D",
+"fetchHistory": "Load more",
+"fetchingHistory": "Retrieving history...",
+"invalidFileError": "Only images are supported. Choose a file with a supported extension (jpg, jpeg, png, gif, or bmp).",
+"messageError": "An error occurred while sending your message. Please try again.",
+"messageIndicatorTitlePlural": "({count}) New messages",
+"messageIndicatorTitleSingular": "({count}) New message",
+"messageRelativeTimeDay": "{value}d ago",
+"messageRelativeTimeHour": "{value}h ago",
+"messageRelativeTimeJustNow": "Just now",
+"messageRelativeTimeMinute": "{value}m ago",
+"messageTimestampFormat": "h:mm A",
+"messageSending": "Sending...",
+"messageDelivered": "Delivered",
+"tapToRetry": "Message not delivered. Tap to retry.",
+"unsupportedMessageType": "Unsupported message type.",
+"unsupportedActionType": "Unsupported action type.",
+"headerText": "Gorgias Team",
+"inputPlaceholder": "Type a message...",
+"emailCapturePlaceholder": "your@email.com",
+"emailCaptureInputLabel": "Get notified by email",
+"emailCaptureOnlineTriggerText": "Hang tight for the next available agent, or if you rather receive a reply by email:",
+"emailCaptureOnlineThanksText": "Thanks! We'll email you at {email} if you leave.",
+"emailCaptureOfflineTriggerText": "We're away, leave us your email and we'll respond shortly.",
+"emailCaptureOfflineThanksText": "Thanks {email}! We'll get back to you shortly.",
+"emailCaptureRequiredEmailPlaceholder": "Leave your email",
+"emailCaptureRequiredMessagePlaceholder": "Write your message",
+"backLabelBackInAMinute": "Back in 1 minute",
+"backLabelBackInMinutes": "Back in {value} minutes",
+"backLabelBackInAnHour": "Back in 1 hour",
+"backLabelBackInHours": "Back in {value} hours",
+"backLabelBackInDays": "Back in {value} days",
+"backLabelBackTomorrow": "Back tomorrow",
+"campaignClickToReply": "Click to reply",
+"poweredByGorgias": "Powered by Gorgias",
+"send": "Send"
+}
+
+var gorgiasChatInterval = window.setInterval(function() {
+if (window.GorgiasChat && GorgiasChat.hasOwnProperty("updateTexts")) {
+window.clearInterval(gorgiasChatInterval); // this line breaks out of the loop - make sure it's not deleted.
+window.GORGIAS_CHAT_TEXTS = dict
+GorgiasChat.updateTexts(dict)
+}
+}, 100);
+</script>
+
+
+<div id="WebPixelsManagerSandboxContainer"><iframe src="https://angelusbrand.com/wpm@1f402832w5a42f512p4c77d00dm4ddfef98/web-pixel-shopify-custom-pixel@0559/sandbox/modern/" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-1f402832w5a42f512p4c77d00dm4ddfef98" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-1f402832w5a42f512p4c77d00dm4ddfef98" sandbox="allow-scripts allow-forms" tabindex="-1" aria-hidden="true" style="display:none; height:0; width:0; visibility: hidden;"></iframe></div><script src="https://config.gorgias.chat/gorgias-chat-bundle.js?rev=06e1d185&amp;appKey=01GYCBQ660V8BXK01JTWKJ2KRE" id="gorgias-chat-bundle" data-ot-ignore=""></script><div id="gorgias-chat-container"><div class="gorgias-chat-key-safhmg"><iframe id="chat-window" title="Gorgias live chat window" class="gorgias-chat-key-16g1rws" srcdoc="<!DOCTYPE html><html lang=&quot;en-US&quot;><head></head><body><div id=&quot;mountHere&quot; class=&quot;frame-root&quot;></div></body></html>" style="right: 0px; bottom: 90px;"></iframe><iframe id="chat-button" title="Gorgias live chat messenger" class="gorgias-chat-key-1spa6uy" srcdoc="<!DOCTYPE html><html lang=&quot;en-US&quot;><head></head><body><div id=&quot;mountHere&quot; class=&quot;frame-root&quot;></div></body></html>" style="right: 20px; bottom: 20px; visibility: visible; width: 80px; height: 74px;"></iframe></div></div><script type="text/javascript">
+        !function(){"use strict";!function(e,t){var n=e.amplitude||{_q:[],_iq:{}};if(n.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var r=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,n){return function(r){e._q.push({name:t,args:Array.prototype.slice.call(n,0),resolve:r})}},o=function(e,t,n){e[t]=function(){if(n)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))}}},i=function(e){for(var t=0;t<g.length;t++)o(e,g[t],!1);for(var n=0;n<m.length;n++)o(e,m[n],!0)};n.invoked=!0;var a=t.createElement("script");a.type="text/javascript",a.integrity="sha384-uhLfRZptXuAOheWdBzdbLlI4IsiZKZDJU5F0tF0QADF4vMob3RWlNU4DJ9PZV2J4",a.crossOrigin="anonymous",a.async=!0,a.src="https://cdn.amplitude.com/libs/analytics-browser-0.4.1-min.js.gz",a.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c);for(var u=function(){return this._q=[],this},p=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],l=0;l<p.length;l++)r(u,p[l]);n.Identify=u;for(var d=function(){return this._q=[],this},f=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],v=0;v<f.length;v++)r(d,f[v]);n.Revenue=d;var g=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],m=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];i(n),n.createInstance=function(e){return n._iq[e]={_q:[]},i(n._iq[e]),n._iq[e]},e.amplitude=n}}(window,document)}();
+    </script></body></html>

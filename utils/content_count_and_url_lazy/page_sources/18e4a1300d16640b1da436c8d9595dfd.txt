@@ -1,0 +1,476 @@
+<html lang="en"><head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>DownhillVR | VR Mountain Biking Video Game</title>
+    <meta name="keywords" content="DownhillVR, Downhill VR, VR Video Game, Video Game, VR, Downhill, Virtual reality, Action Biking Game,
+          Biking Game, Extreme Downhill, Extreme Action Biking, Action Sports, Extreme Sports, Freeride biking game">
+    <meta name="description" content="Experience the ultimate thrill of extreme downhill racing in your living room with DownhillVR. Early Access release coming soon!">
+    <meta name="author" content="FiredBy s.r.o.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://downhillvr.com">
+    <meta property="og:title" content="DownhillVR | VR Mountain Biking Video Game">
+    <meta property="og:description" content="Experience the ultimate thrill of extreme downhill racing in your living room with DownhillVR. Early Access release coming soon!">
+    <meta property="og:image" content="https://downhillvr.com/images/og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://downhillvr.com">
+    <meta property="twitter:title" content="DownhillVR | VR Mountain Biking Game">
+    <meta property="twitter:description" content="Experience the ultimate thrill of extreme downhill racing in your living room with DownhillVR. Early Access release coming soon!">
+    <meta property="twitter:image" content="https://downhillvr.com/images/og.jpg">
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#222222">
+
+    <!-- STYLES -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <!-- Video Modal -->
+    <link href="css/modal-video.min.css" rel="stylesheet">
+    <!-- Animations -->
+    <link href="css/animations.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
+
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BJMT9PB9VG"></script><script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-BJMT9PB9VG');
+</script></head>
+<!-- Google tag (gtag.js) -->
+
+
+<body>
+<!-- Loading Screen -->
+<div id="loader-wrapper" class="loaded">
+    <h1 class="loader-logo">
+        <img src="./images/logo.svg" alt="DownhillVR" width="400px">
+    </h1>
+    <div id="progress" style="width: 100%;"></div>
+    <h3 class="loader-text">LOADING</h3>
+</div>
+<!-- Cookies Notification -->
+<div id="cookies">
+    <div class="cookies-bar open">
+        <div class="cookies-wrapper">
+            <p>This website uses cookies. Please see our <a href="privacy_policy.html">Privacy
+                Policy</a> for more information.</p>
+        </div>
+        <button class="button" id="cookies-close">X</button>
+    </div>
+</div>
+<!-- //// HEADER //// -->
+<header id="main-header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container">
+            <!-- Logo-->
+            <a href="./#">
+                <img src="./images/logo.svg" id="main-logo" class="navbar-brand" alt="DownhillVR" width="100px">
+            </a>
+            <!-- Dropdown Button -->
+            <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#learn-more">Learn more</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#media">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#purchase">Purchase</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social-media">Social media</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header><!-- Header End -->
+
+<!-- /// MAIN SECTION /// -->
+<section id="main-section">
+    <div class="row hero-unit">
+        <div class="hero-overlay"></div>
+        <video autoplay="" loop="" muted="" poster="./images/web/DownhillVR5.jpg" id="bgvid" class="img-fluid">
+            <source src="./images/Trailer01_WebVersion.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="hero-caption"><!-- Main Tagline -->
+                <img src="./images/logo_ea.svg" class="img-fluid headline" alt="DownhillVR Early Access" width="30%">
+
+                <a href="https://youtu.be/o-Aq0BfL6T8" target="_blank" class="button"><i class="fa fa-play-circle mr-1"></i> WATCH TRAILER</a>
+                <a href="https://store.steampowered.com/app/1576560" target="_blank" class="button">PURCHASE ON
+                    STEAM</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /// ABOUT SECTION /// -->
+<section id="about-section" class="full-width">
+    <a id="about"></a><!-- Nav anchor -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-md-12">
+                <h1 class="short-hr-left" style="text-transform: uppercase">Introducing DownhillVR</h1>
+                <p>
+                    DownhillVR is the ultimate virtual reality mountain biking video game that brings the thrill of
+                    extreme downhill racing right to your living room. Experience the rush of speeding down challenging
+                    tracks and catching air off jaw-dropping jumps, all while immersing yourself in stunning
+                    environments.
+                </p>
+                <p>
+                    With intuitive controls and a variety of gameplay modes, DownhillVR is perfect for both experienced
+                    gamers and those new to virtual reality.
+                </p>
+                <p>Get ready to experience the thrill of extreme downhill
+                    racing like never before.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--/// FEATURES SECTION ///-->
+<section id="features-section">
+    <div class="container-fluid">
+        <a id="features"></a><!-- Nav anchor -->
+        <div class="row features text-center">
+            <div class="col-md-4 feature-card card-active">
+                <h2 class="short-hr-center">PROGRESS</h2>
+                <p>Take on a variety of races and challenges as you progress through your mountain biking career. With
+                    each victory, you'll earn rewards and climb the ranks to become the ultimate DownhillVR
+                    champion.</p>
+            </div>
+            <div class="col-md-4 feature-card card-active">
+                <h2 class="short-hr-center">EXPLORE</h2>
+                <p>Race through stunning environments and handcrafted tracks that push the limits of what's possible in
+                    virtual reality. From gnarly downhill runs to technical cross-country trails, there's something for
+                    every kind of rider in DownhillVR.</p>
+            </div>
+            <div class="col-md-4 feature-card card-active">
+                <h2 class="short-hr-center">DOMINATE</h2>
+                <p>Compete against other players from around the world for the top spot on the leaderboard. With regular
+                    updates and events, there's always something new to play for.</p>
+            </div>
+        </div>
+        <div class="row features text-center" id="features-section-2nd">
+            <div class="col-md-4 feature-card card-active">
+                <h2 class="short-hr-center">MULTIPLAYER</h2>
+                <p>Race against players from around the world or challenge your friends in online multiplayer mode.
+                    Prove you're the best rider around or simply enjoy a friendly
+                    competition.</p>
+            </div>
+            <div class="col-md-4 feature-card card-active">
+                <h2 class="short-hr-center">CHALLENGE YOURSELF</h2>
+                <p>Test your skills with a variety of challenges that will push your mountain biking abilities to the
+                    limit. Can you conquer them all?</p>
+            </div>
+            <div class="col-md-4 feature-card card-active">
+                <h2 class="short-hr-center">HOT SEAT</h2>
+                <p>Even if you only have one VR headset, you can still race against your friends with our hot seat mode.
+                    Take turns competing against each other's avatars for endless hours of fun.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--/// LEARN MORE SECTION ///-->
+<section id="learn-more-section" class="full-width extra-features">
+    <a id="learn-more"></a><!-- Nav anchor -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-md-12">
+                <h2 class="hr-left" style="text-transform: uppercase">VIRTUAL REALITY DOWNHILL RACING</h2>
+                <p>Downhill mountain biking is a thrilling and high-stakes sport that requires skill, speed, and
+                    bravery. In DownhillVR, you'll get to experience all the excitement of downhill racing in
+                    the
+                    comfort of your own home. With immersive virtual reality gameplay and challenging tracks,
+                    you'll
+                    feel like you're really soaring down the mountain.
+                    Whether you're competing against the clock or other players, you'll be on the edge of your
+                    seat as you navigate tight turns and fly over jumps.
+                </p>
+                <p>
+                    Get ready to experience
+                    the thrill of downhill racing in DownhillVR!
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-xl-12 col-md-12">
+                <h2 class="short-hr-left" style="text-transform: uppercase">AMAZING ENVIRONMENTS AND HANDCRAFTED
+                    TRACKS</h2>
+                <p>Race through a variety of breathtaking environments, each with its own unique challenges and
+                    features. Our tracks are all handcrafted to provide a seamless and realistic experience, so
+                    you'll feel like you're really flying through the terrain. From dense forest to rocky
+                    mountainsides, there's something for every kind of rider. Each environment has its own look
+                    and feel, and our
+                    tracks are designed to push the limits of what's possible in virtual reality. Whether you're
+                    tackling a technical
+                    cross-country trail or flying down a steep downhill run, you'll feel fully immersed in the
+                    action.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-xl-12 col-md-12">
+                <h2 class="hr-left" style="text-transform: uppercase">CUSTOMIZE YOUR LOOK</h2>
+                <p>Create a personalized experience by
+                    customizing the appearance of your bike and rider. Choose from a variety of options for your
+                    rider's clothing and gear to create a look that fits your style, and customize your bike to
+                    stand out from the rest.
+                </p>
+                <p>
+                    Whether you prefer a minimalist or flashy look, our game offers a range of customization
+                    options for your bike and rider. Tweak everything from the bike's color scheme to the
+                    rider's clothing and protective gear to make it truly your own. With so many options to
+                    choose from, you can create a personalized and memorable gaming experience.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-xl-12 col-md-12">
+                <h2 class="short-hr-left" style="text-transform: uppercase">SteamVR Compatible</h2>
+                <p>
+                    DownhillVR is compatible with SteamVR, providing an immersive experience across a
+                    range of VR headsets like Valve Index, HTC Vive, Windows Mixed Reality and Oculus.
+                </p>
+                <p>
+                    The game also supports a variety of motion controllers, including the Valve Index Knuckles,
+                    HTC Vive Wands, Oculus Touch, and Windows Mixed Reality controllers. For those who prefer
+                    gamepads, DownhillVR supports popular options such as the
+                    Xbox controller.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /// MEDIA SECTION /// -->
+<section id="media-section" class="mt-4">
+    <a id="media"></a><!-- Nav Anchor -->
+
+    <div class="media-carousel slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+        <div class="slick-list draggable" style="padding: 0px 50px;"><div class="slick-track" style="opacity: 1; width: 4298px; transform: translate3d(-1228px, 0px, 0px);"><div class="item mx-1 slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR9.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR9_preview.jpg" data-src="./images/web/DownhillVR9_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR6.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR6_preview.jpg" data-src="./images/web/DownhillVR6_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR8.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR8_preview.jpg" data-src="./images/web/DownhillVR8_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR1.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR1_preview.jpg" data-src="./images/web/DownhillVR1_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR5.jpg" data-lightbox="studio_gallery" tabindex="0">
+                <img src="./images/web/DownhillVR5_preview.jpg" data-src="./images/web/DownhillVR5_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-current slick-active slick-center" data-slick-index="1" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR9.jpg" data-lightbox="studio_gallery" tabindex="0">
+                <img src="./images/web/DownhillVR9_preview.jpg" data-src="./images/web/DownhillVR9_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR6.jpg" data-lightbox="studio_gallery" tabindex="0">
+                <img src="./images/web/DownhillVR6_preview.jpg" data-src="./images/web/DownhillVR6_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide" data-slick-index="3" aria-hidden="true" tabindex="0" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR8.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR8_preview.jpg" data-src="./images/web/DownhillVR8_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control04" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR1.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR1_preview.jpg" data-src="./images/web/DownhillVR1_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR5.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR5_preview.jpg" data-src="./images/web/DownhillVR5_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR9.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR9_preview.jpg" data-src="./images/web/DownhillVR9_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR6.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR6_preview.jpg" data-src="./images/web/DownhillVR6_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR8.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR8_preview.jpg" data-src="./images/web/DownhillVR8_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div><div class="item mx-1 slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 299px;">
+            <a href="./images/gallery/DownhillVR1.jpg" data-lightbox="studio_gallery" tabindex="-1">
+                <img src="./images/web/DownhillVR1_preview.jpg" data-src="./images/web/DownhillVR1_preview.jpg" class="img-fluid b-lazy" alt="DownhillVR">
+            </a>
+        </div></div></div>
+        
+        
+        
+        
+    <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 2" tabindex="-1">1</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 2" tabindex="0" aria-selected="true">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 2" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 2" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide04" aria-label="5 of 2" tabindex="-1">5</button></li></ul></div>
+</section>
+
+<!-- /// PURCHASE SECTION /// -->
+<section id="purchase-section" class="full-width">
+    <a id="purchase"></a><!-- Nav Anchor -->
+    <div class="container">
+        <div class="row tiny-margin cta-card">
+            <div class="col-md-6">
+                <img src="./images/web/BoxArt_preview.jpg" height="500" class="game-box d-block mx-auto">
+            </div>
+            <div class="col-md-6">
+                <h1>BE PREPARED<br>TO RIDE</h1>
+                <p>Be ready to hit the trails and experience the thrill of mountain biking like never before
+                    with
+                    DownhillVR. Our action-packed virtual reality game brings the excitement of downhill
+                    mountain biking
+                    right to your headset.</p>
+                <p>
+                    Experience the adventure firsthand with DownhillVR Early Access, now available to purchase and play on Steam. Step out of the crowd and be among the first riders to etch their journey in this heart-stopping VR journey.
+                </p>
+                <a class="button" target="_blank" href="https://store.steampowered.com/app/1576560">PURCHASE ON STEAM</a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p>Disclaimer:
+                    Please note that during the development period of DownhillVR, not all content and
+                    features will be available in the early access releases, and some may be subject to
+                    change as
+                    we continue development. While we strive to provide a stable and enjoyable experience,
+                    please
+                    understand that the final product may differ in some ways.
+                </p>
+                <p>We appreciate your understanding and support as we work to create the best possible game.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /// SOCIALS SECTION /// -->
+<section id="social-media" class="full-width">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <img src="./images/logo.svg" class="img-fluid headline" alt="DownhillVR" style="margin-top: 2vh">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="row tiny-margin">
+                    <div class="col-md-12">
+                        <h1>STAY IN TOUCH</h1>
+                        <p>Stay up to date with all the latest news and updates on DownhillVR by following us on
+                            our
+                            social media accounts. We can't wait to see you in the game!</p>
+                    </div>
+                    <div class="social tiny-margin mx-auto">
+                        <div class="col-md-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row tiny-margin">
+            <div class="social-links mx-auto"> <!-- Social Media Icons -->
+                <a href="https://www.facebook.com/DownhillVR.game" target="_blank">
+                    <i class="fab fa-facebook-f fa-lg icon-social"></i>
+                </a>
+                <a href="https://twitter.com/DownhillVR" target="_blank">
+                    <i class="fab fa-twitter fa-lg icon-social"></i>
+                </a>
+                <a href="https://instagram.com/downhillvr.game" target="_blank">
+                    <i class="fab fa-instagram fa-lg icon-social"></i>
+                </a>
+                <a href="https://www.youtube.com/@DownhillVR" target="_blank">
+                    <i class="fab fa-youtube fa-lg icon-social"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /// FOOTER /// -->
+<div id="footer">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class="row brands">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <a href="//firedby.com">
+                            <img src="./images/firedby.svg" height="80px">
+                        </a>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="privacy_policy.html">Privacy &amp; Cookie Policy</a></li>
+                    <li><a href="./files/DownhillVR_Presskit.zip">Press kit</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p id="copyright">© FiredBy s.r.o <span id="year">2023</span> - <a href="//firedby.com">firedby.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- //// SCRIPTS //// -->
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/blazy.min.js"></script>
+<script src="js/jquery-modal-video.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/validator.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>

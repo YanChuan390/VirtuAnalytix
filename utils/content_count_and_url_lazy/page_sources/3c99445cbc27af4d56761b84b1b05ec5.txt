@@ -1,0 +1,340 @@
+<html><head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="ru">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Shadows of Kurgansk — хоррор с сюжетными кампаниями на более 20-ти часов игры">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index/follow">
+
+    <title> Shadows of Kurgansk </title>
+    <base href="https://shadowskurgansk.net/" local="false" host="shadowskurgansk.net">
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css?v=11e3a5r">
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-0MMHMGLLGN&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+        window.lang = 'ru';
+    </script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40910063-40', 'auto');
+  ga('send', 'pageview');
+
+</script><script src="https://shadowskurgansk.net/js/libs/smooth-scroll.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    /* SCROLLING */
+    if (smoothScroll) {
+        smoothScroll.init({ offset: 50 });
+
+        if (window.location.hash) {
+            var hash = smoothScroll.escapeCharacters(window.location.hash);
+            var toggle = document.querySelector('a[href*="' + hash + '"]');
+            var options = { speed: 1000 };
+            smoothScroll.animateScroll(hash, toggle, options);
+        }
+
+        var nextBtn = document.getElementById('nextBlock');
+
+        var blocks = document.querySelectorAll('.block.__scrollable');
+        var data = [];
+
+        for (var i = 0; i < blocks.length; i++) {
+            if (blocks[i].id)
+                data.push({ id: blocks[i].id, offset: blocks[i].offsetTop });
+        }
+
+
+        var prevBlock = null;
+        var nextBlock = blocks[0];
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                if (nextBlock) {
+                    smoothScroll.animateScroll('#' + nextBlock.id);
+                }
+            });
+        }
+
+        var footerTrigger = document.body.offsetHeight - window.innerHeight;
+
+        window.addEventListener('scroll', function() {
+
+            var offset = (window.pageYOffset || document.scrollTop) - (document.clientTop || 0);
+            if (!offset) offset = 0;
+            offset += 400;
+
+            var currentBlock = null;
+            for (var i = 0; i < data.length; i++) {
+                if (data[i].offset >= offset) {
+                    currentBlock = data[i - 1];
+                    nextBlock = data[i];
+                    break;
+                }
+
+                if (i === data.length - 1) {
+                    currentBlock = data[i];
+                    nextBlock = data[0];
+                }
+            }
+
+            if (currentBlock !== prevBlock) {
+                var links = document.querySelectorAll('.mmenu_list_item_link');
+                for (var i = 0; i < links.length; i++) {
+                    links[i].classList.remove('__active');
+                }
+                if (currentBlock) {
+                    var link = document.querySelector('a.mmenu_list_item_link[href="#' + currentBlock.id + '"]');
+                    link.classList.add('__active');
+                }
+                prevBlock = currentBlock;
+            }
+        });
+
+        /* LANG PICKER */
+        var langPicker = document.querySelector('.lang-picker');
+        var langPickerItem = document.querySelector('.lang-picker_item.__current');
+        if (langPickerItem) {
+            langPickerItem.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (langPicker) {
+                    langPicker.classList.toggle('__hidden');
+                }
+            });
+        }
+
+        /* SCREENSHOTS */
+        var screenshots = document.querySelector('.screenshots_list');
+        if (screenshots) {
+            var bigImage = document.querySelector('.screenshots_big_image');
+            screenshots.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (e.target && e.target.matches('a.screenshots_thumb img')) {
+                    e.stopPropagation();
+                    var link = e.target.parentElement;
+                    var imgPath = link.href;
+                    if (imgPath !== bigImage.src) {
+                        bigImage.src = imgPath;
+                        var current = document.querySelector('.screenshots_thumb.__current');
+                        if (current) current.classList.remove('__current');
+                        link.classList.toggle('__current');
+                    }
+                }
+            }, false);
+        }
+    }
+});
+
+</script>
+    <link rel="icon" href="/favicon_32x32.png" type="image/png" sizes="32x32">
+
+            <noscript><meta http-equiv="refresh" content="0; URL=/ru/noscript"></noscript>
+    
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=" Shadows of Kurgansk ">
+    <meta property="og:description" content="Shadows of Kurgansk — хоррор с сюжетными кампаниями на более 20-ти часов игры">
+    <meta property="og:url" content="https://shadowskurgansk.net/">
+    <meta property="og:image" content="https://shadowskurgansk.net/i/cover_1200x630.png">
+</head>    <body class="__ru">
+    <div class="block __main" style="overflow:hidden;">
+    <div class="tv">
+        <video loop="" autoplay="" muted="">
+            <source src="https://shadowskurgansk.net/i/trailer_720.mp4" type="video/mp4">
+            <source src="https://shadowskurgansk.net/i/trailer_720.ogv" type="video/ogg">
+            <source src="https://shadowskurgansk.net/i/trailer_720.webm" type="video/webm">
+        </video>
+    </div>
+    <div class="overlay">
+        <div class="mmenu">
+            <div class="container">
+                <div class="">
+                    <ul class="mmenu_list col-md-10 col-lg-10 col-sm-10 col-xs-10">
+                        <li class="mmenu_list_item">
+                            <a class="mmenu_list_item_link __active" data-scroll="" href="#game">Игра</a>
+                        </li>
+                        <li class="mmenu_list_item">
+                            <a class="mmenu_list_item_link" data-scroll="" href="#features">Особенности игры</a>
+                        </li>
+                        <li class="mmenu_list_item">
+                            <a class="mmenu_list_item_link" data-scroll="" href="#story">Сюжет</a>
+                        </li>
+                        <li class="mmenu_list_item">
+                            <a class="mmenu_list_item_link" data-scroll="" href="#screenshots">Скриншоты</a>
+                        </li>
+                        <li class="mmenu_list_item">
+                            <a class="mmenu_list_item_link" data-scroll="" href="#requirements">Системные требования</a>
+                        </li>
+                    </ul>
+                    <div class="mmenu_lang-picker lang-picker __hidden col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <a href="" class="lang-picker_item __current"><i class="f-icn __ru"></i><span class="hidden-xs">  Русский </span> <i class="lang-picker_triangle"></i></a>
+                        <ul class="lang-picker_list">
+                                                                                                                                                            <li class="lang-picker_list_item">
+                                        <a class="lang-picker_item" href="/en/"><i class="f-icn __en"></i> <span class="hidden-xs"> English </span></a>
+                                    </li>
+                                                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main_logo">
+                <img src="https://shadowskurgansk.net/i/logo.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block __game __scrollable" id="game">
+    <div class="block_header">
+        <div class="container">Об игре</div>
+    </div>
+    <div class="block_content container">
+        <div class="">
+            <div class="col-xs-6 col-sm-6 col-md-6 block_text">
+                 Когда-то поиски бесконечного источника энергии привели к&nbsp;катастрофе, и&nbsp;теперь земли вокруг Курганска заражены и&nbsp;прокляты, а&nbsp;местные жители потеряли рассудок. Игрок попал в&nbsp;эти гиблые места по&nbsp;ошибке и&nbsp;пытается найти дорогу назад, вот только сотни злобных монстров против. Хоррор Shadow of&nbsp;Kurgansk и&nbsp;его расширенная и&nbsp;дополненная VR-версия Return to&nbsp;Kurgansk <a href="https://store.steampowered.com/bundle/24852/The_Complete_Kurgansk_Bundle/" target="_blank" rel="noopener noreferrer">доступны в Steam</a>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <img class="block_image" src="https://shadowskurgansk.net/i/content_1.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block __features __scrollable" id="features">
+    <div class="block_header">
+        <div class="container">Особенности игры</div>
+    </div>
+    <div class="block_content container">
+        <ul class="block_text features-list">
+            <li class="features-list_item"><i class="icn __compass"></i> <span>Обширный мир для исследования: дремучие леса, пустынные острова, заброшенные поселения и секретные объекты</span></li>
+            <li class="features-list_item"><i class="icn __weapon"></i> <span>Десятки видов оружия: от каменных топоров до ружей и пистолетов</span></li>
+            <li class="features-list_item"><i class="icn __craft"></i> <span>Множество рецептов для крафта: создавай предметы из всего, что найдешь вокруг</span></li>
+            <li class="features-list_item"><i class="icn __enemies"></i> <span>Разнообразные враги: дикие животные, зомби, аномалии и другие опасности</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="block __story __scrollable" id="story">
+    <div class="block_header">
+        <div class="container">СЮЖЕТНЫЕ КАМПАНИИ - БОЛЕЕ 20 ЧАСОВ ИГРЫ</div>
+    </div>
+    <div class="block_content container">
+        <div class="">
+            <div class="col-xs-6 col-sm-6 col-md-6 block_text">
+                В игре доступны две продолжительные сюжетные кампании, каждая из которых приблизит игрока к разгадке причин случившейся катастрофы. Игроку предстоит обнаружить немногих выживших, попытаться найти с ними общий язык, и даже столкнуться с военными, что может оказаться опаснее, чем встретиться с десятком-другим мутантов. Придется взламывать кодовые замки и пробираться на засекреченные объекты, при этом внимательно следя за физическим и психическим здоровьем героя, чтобы выбраться живым из загадочной Зоны.
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <img class="block_image" src="https://shadowskurgansk.net/i/content_2.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block __screenshots __scrollable" id="screenshots">
+    <div class="block_header">
+        <div class="container">СКРИНШОТЫ</div>
+    </div>
+    <div class="block_content container">
+        <div class="screenshots">
+            <div class="screenshots_big">
+                <img class="screenshots_big_image" src="https://shadowskurgansk.net/i/screenshots/1_big.jpg">
+            </div>
+            <ul class="screenshots_list">
+                <li class="screenshots_list_item">
+                    <a class="screenshots_thumb __current" href="https://shadowskurgansk.net/i/screenshots/1_big.jpg"><img src="/i/screenshots/1_small.jpg"></a>
+                </li>
+                <li class="screenshots_list_item">
+                    <a class="screenshots_thumb" href="https://shadowskurgansk.net/i/screenshots/2_big.jpg"><img src="/i/screenshots/2_small.jpg"></a>
+                </li>
+                <li class="screenshots_list_item">
+                    <a class="screenshots_thumb" href="https://shadowskurgansk.net/i/screenshots/3_big.jpg"><img src="/i/screenshots/3_small.jpg"></a>
+                </li>
+                <li class="screenshots_list_item">
+                    <a class="screenshots_thumb" href="https://shadowskurgansk.net/i/screenshots/4_big.jpg"><img src="/i/screenshots/4_small.jpg"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="block __reqs __scrollable" id="requirements">
+    <div class="block_header">
+        <div class="container dark-text">
+            <div class="col-md-6 col-sm-6 col-xs-5">
+                &nbsp;
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-7">
+                СИСТЕМНЫЕ ТРЕБОВАНИЯ
+            </div>
+        </div>
+    </div>
+    <div class="block_content" style="padding-top:10px;">
+        <div class="col-md-6 col-sm-6 col-xs-5">
+            &nbsp;
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-7">
+            <div class="block_text dark-text light-stroke" style="font-size:19px; padding-top:15px;">
+                
+                <strong>Минимальные системные требования</strong><br>
+                Версия ОС: Windows 7<br>
+                Процессор:  Intel Dual-Core<br>
+                Оперативная память:   4 Gb<br>
+                Видеокарта:  Intel HD Graphics 3000<br>
+                Место на диске:   800 Mb<br>
+                <br>
+                <strong>Рекомендуемые системные требования</strong><br>
+                Версия ОС:  Windows 10<br>
+                Процессор:  Intel Quad Core Processor<br>
+                Оперативная память:   16 Gb<br>
+                Видеокарта:  NVIDIA GeForce GTX 660<br>
+                Место на диске:   800 Mb<br>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="col-md-12 footer_logos" style="text-align: center;">
+            <img src="https://shadowskurgansk.net/i/platforms1.png" alt="Platforms">
+        </div>
+        <div class="col-md-3 footer_logos hidden-xs hidden-sm">
+            <div class="footer_logos_logo">
+                <a href="https://gaijin.net/ru">
+                    <img src="https://shadowskurgansk.net/i/logo_gaijininc.png">
+                </a>
+            </div>
+            <div class="footer_logos_logo">
+                <span>
+                    <img src="https://shadowskurgansk.net/i/logo_yadon.png">
+                </span>
+            </div>
+        </div>
+        <div class="col-md-7 footer_content">
+            <ul class="footer-links">
+                <li class="footer-links_item"><a class="footer-links_item_link" href="https://gaijin.net/ru/privacypolicy/"> Политика конфиденциальности </a></li>
+                <li class="footer-links_item"><a class="footer-links_item_link" href="https://gaijin.net/ru/eula/" eulalink"=""> Пользовательское соглашение </a></li>
+                <li class="footer-links_item"><a class="footer-links_item_link" href="https://support.gaijin.net/hc/"> Поддержка </a></li>
+            </ul>
+            <div class="footer_copyright">
+                <p>© 2015–2023 by Gaijin Entertainment. All rights reserved.</p>
+                <p>Shadows of Kurgansk is a trademark of Gaijin Entertainment.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html>

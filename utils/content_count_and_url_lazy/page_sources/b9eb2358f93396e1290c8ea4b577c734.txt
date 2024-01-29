@@ -1,0 +1,27 @@
+<html><head><title>Privacy Policy</title>
+<link rel="icon" type="image/png" href="vemlogo.png">
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+
+<script>
+if (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+{     
+	//SSL REDIRECT YAPMASIN 
+} 
+
+else
+{      
+	if (location.protocol !== 'https:') {
+				location.replace('https:'+location.href.substring(location.protocol.length));
+			}
+	//SSL REDIRECT YAPSIN 
+}
+
+</script>
+
+<style> body{ padding:0px!important; margin:0px!important; } </style>
+
+</head><body><iframe src="https://app.termly.io/document/privacy-policy/dc56a7f3-5cec-45f8-9bc4-439b757ce391" style="border: 0; width: 100%; height: 100%">Your browser doesn't support iFrames.</iframe></body></html>

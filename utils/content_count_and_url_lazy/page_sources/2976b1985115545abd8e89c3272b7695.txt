@@ -1,0 +1,934 @@
+<html class="no-js fp-enabled" lang="en" style="overflow: hidden; height: 100%;"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- Page Title Here -->
+    <title>Furious Seas | PIRATE VR GAME</title>
+
+    <!-- Meta -->
+    <!-- Page Description Here -->
+    <meta name="description" content="VR STAR GAMES,  全球市场第一款海战类VR游戏, Furious Sea">
+    <meta name="keywords" content="Furious Seas, vr game, pirate battle">
+
+    <!-- Disable screen scaling-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <!-- Favicon icon -->
+    <!--<link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon.ico">-->
+    <link rel="icon" href="http://furiousseas.com/wp-content/uploads/2018/06/android-icon-96x96.png" sizes="32x32">
+    <link rel="icon" href="http://furiousseas.com/wp-content/uploads/2018/06/android-icon-96x96.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="http://furiousseas.com/wp-content/uploads/2018/06/android-icon-96x96.png">
+
+    <!-- Web fonts and Web Icons -->
+    <link rel="stylesheet" href="resources/fonts/opensans/stylesheet.css">
+    <link rel="stylesheet" href="resources/fonts/ionicons/ionicons.min.css">
+    <link rel="stylesheet" href="resources/fonts/fontawesome/font-awesome.min.css">
+
+    <!-- Vendor CSS style -->
+    <link rel="stylesheet" href="resources/css/pageloader.css">
+
+    <!-- Uncomment below to load individualy vendor CSS -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/js/vendor/swiper.min.css">
+    <link rel="stylesheet" href="resources/js/vendor/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="resources/js/vegas/vegas.min.css">
+
+    <!-- Main CSS files -->
+    <link rel="stylesheet" href="resources/css/main.css">
+</head>
+
+<body id="menu" class="body-page fp-viewing-home mc-old-browser" style="overflow: hidden; height: 100%;">
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZVKNZNZDF4&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87779793-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--[if lt IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Page Loader : just comment these lines to remove it -->
+<div class="page-loader p-hidden" id="page-loader">
+    <div>
+        <div class="icon ion-spin"></div>
+    </div>
+</div>
+
+<!-- BEGIN OF site header Menu -->
+<header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
+
+    <!-- Begin of menu icon toggler -->
+    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+        <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
+        <span class="menu-icon menu-icon-random">
+        <span class="bars">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </span>
+    </button>
+    <!-- End of menu icon toggler -->
+
+    <!-- Begin of logo/brand 
+    <a class="navbar-brand" href="#home">
+      <span class="logo">
+        <img class="light-logo" src="resources/img/logo-white.png" alt="Logo">
+      </span>
+    </a>-->
+    <!-- End of logo/brand -->
+
+    <!-- begin of menu wrapper -->
+    <div class="all-menu-wrapper" id="navbarMenu">
+        <!-- Begin of hamburger mainmenu menu -->
+        <nav class="navbar-mainmenu">
+            <ul class="navbar-nav mr-auto mr-auto-my">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html#home">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Item</a>
+                </li> -->
+            </ul>
+        </nav>
+        <!-- End of hamburger mainmenu menu -->
+
+        <!-- Begin of sidebar nav menu params class: text-only / icon-only-->
+        <nav class="navbar-sidebar ">
+            <ul class="navbar-nav" id="qmenu">
+                <li class="nav-item active" data-menuanchor="home">
+                    <a href="#home">
+                        <i class="icon ion-ios-home"></i>
+                        <span class="txt">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-menuanchor="game">
+                    <a href="#game">
+                        <i class="icon ion-cube"></i>
+                        <span class="txt">Game</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-menuanchor="about">
+                    <a href="#about">
+                        <i class="icon ion-star"></i>
+                        <span class="txt">About</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-menuanchor="awards">
+                    <a href="#awards">
+                        <i class="icon ion-clipboard"></i>
+                        <span class="txt">Awards</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-menuanchor="headsets">
+                    <a href="#headsets">
+                        <i class="icon ion-ios-settings"></i>
+                        <span class="txt">Headsets</span>
+                    </a>
+                </li>
+                <!--<li class="nav-item" data-menuanchor="pricelist">
+                    <a href="#pricelist">
+                        <i class="icon ion-cash"></i>
+                        <span class="txt">Pricing</span>
+                    </a>
+                </li>-->
+                <li class="nav-item" data-menuanchor="gallery">
+                    <a href="#gallery">
+                        <i class="icon ion-ios-photos"></i>
+                        <span class="txt">Gallery</span>
+                    </a>
+                </li>
+                
+                <li class="nav-item" data-menuanchor="subscribe">
+                    <a href="#subscribe">
+                        <i class="icon ion-compose"></i>
+                        <span class="txt">Subscribe</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-menuanchor="contact">
+                    <a href="#contact">
+                        <i class="icon ion-email"></i>
+                        <span class="txt">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End of sidebar nav menu -->
+    </div>
+    <!-- end of menu wrapper -->
+
+</header>
+<!-- END OF site header Menu-->
+
+<!-- BEGIN OF page cover -->
+<div class="page-cover">
+    <!--BEGIN OF Static video bg - uncomment below to use Video as Background-->
+    <div id="container" class="video-container d-none d-sm-block">
+    <video autoplay="" loop="" muted="" width="640" height="360" style="height: 668px; width: 1187px; margin-top: 0px; margin-left: -75.5px;">
+    <source src="http://res.cloudinary.com/vrstar/video/upload/video/header3.mp4" type="video/mp4">
+    </video>
+    </div>
+    <!--END OF Static video bg-->
+
+    <!--BEGIN OF Youtube video bg  - uncomment/comment below to use/or not Youtube Video as Background-
+    <div class='youtube-container video-container show-for-medium-up'>
+        <iframe frameborder="0" allowFullScreen src="http://res.cloudinary.com/vrstar/video/upload/video/header3.mp4" allow="autoplay" >
+        </iframe> 
+    </div>
+    <!--END OF Youtube video bg-->
+
+    <!-- Transluscent mask as filter -->
+    <div class="cover-bg-mask bg-color" data-bgcolor="rgba(29, 29, 29, 0.2)" style="background-color: rgba(29, 29, 29, 0.2);"></div>
+</div>
+<!--END OF page cover -->
+
+<!-- BEGIN OF page main content -->
+<main class="page-main page-fullpage main-anim fullpage-wrapper" id="mainpage" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);">
+
+    <!-- Begin of home section -->
+    <div class="section section-home fullscreen-md fp-auto-height-responsive main-home fp-section active fp-completely anim" data-section="home" data-anchor="home" style="height: 668px;">
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper center-vh dir-col anim">
+            <!-- content -->
+            <div class="section-content reduced text-center">
+                <div class="row">
+                    <!-- title -->
+                    <div class="section-title text-center">
+                        <h5 class="title-bg">Home</h5>
+                    </div>
+                    <div class="col-12 col-md-12 text-center">
+<img src="http://res.cloudinary.com/vrstar/image/upload/logo-fs.png" style="width:100%;"> 
+                        <!-- title and description -->
+                        <div class="title-desc">
+                        
+                                                      <!--<h2 class="display-4 display-title home-title anim-1">Portolex</h2> -->
+  <h4 class="anim-2 opacity-75">Experience the thrill of virtual reality pirate ship battles on the high seas.</h4>
+                        </div>
+
+                        <!-- Action button -->
+                        <div class="btns-action anim-3">
+                            <a class="btn btn-outline-white" href="https://store.steampowered.com/app/875760/Furious_Seas/" style=" background:#fbc02d; font-weight:bold;">
+                                <span class="text"><i class="fa fa-steam-square"></i> GET IT NOW</span> 
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Game</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of section wrapper -->
+    </div>
+    <!-- End of home section -->
+    
+    <!-- Begin of list two side 1 section -->
+    <div class="section section-twoside fp-auto-height-responsive  fp-section anim" data-section="game" data-anchor="game" style="height: 668px;">
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper twoside center-vh dir-col">
+
+            <!-- title -->
+            <div class="section-title text-center ">
+                <h5 class="title-bg">Game</h5>
+                <h2 class="display-4 display-title mb-32">EARLY ACCESS AVAILABLE NOW</h2>
+                <p>There’s still a lot to be done with development on Furious Seas, but we want you to have a chance to experience the excitement before we reach the finish line.</p>
+            </div>
+            
+
+            <!-- text or illustration order are manipulated via Bootstrap order-md-1, order-md-2 class -->
+            <!-- begin of item -->
+            <div class="item row justify-content-between">
+                <!-- img-frame-normal demo -->
+                <div class="col-12 col-sm-6 col-md-4 center-vh">
+                    <div class="section-content anim translateUp">
+                        <div class="images text-center">
+                            <div class="img-frame-normal">
+                                <div class="img-1 shadow">
+                                    <div>
+                                        <img class="img" src="resources/img/about_02.jpg" alt="Image">
+                                    </div>
+                                    <div class="legend text-left pos-abs">
+                                        <h5 class="text-center">Oclus</h5>
+                                        <!--<p class="small text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
+                                        <div class="btns-action text-center">
+                                            <a class="btn btn-outline-white" href="#">
+                                                <span class="text">Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- img-frame-normal demo -->
+                <div class="col-12 col-sm-6 col-md-4 center-vh">
+                    <div class="section-content anim">
+                        <div class="images text-center">
+                            <div class="img-frame-normal">
+                                <div class="img-1 shadow">
+                                    <div>
+                                        <img class="img" src="resources/img/about_04.jpg" alt="Image">
+                                    </div>
+                                    <div class="legend text-left pos-abs">
+                                        <h5 class="text-center">Steam</h5>
+                                        <!--<p class="small text-center">Lorem ipsum dolor sit amet, consectetur adipiscing  elit</p> -->
+                                        <div class="btns-action text-center">
+                                            <a class="btn btn-outline-white" href="https://store.steampowered.com/app/875760/Furious_Seas/">
+                                                <span class="text">Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- img-frame-normal demo -->
+                <div class="col-12 col-sm-6 col-md-4 center-vh">
+                    <div class="section-content anim translateDown">
+                        <div class="images text-center">
+                            <div class="img-frame-normal">
+                                <div class="img-1 shadow">
+                                    <div>
+                                        <img class="img" src="resources/img/about_03.jpg" alt="Image">
+                                    </div>
+                                    <div class="legend text-left pos-abs">
+                                        <h5 class="text-center">VIVS</h5>
+                                        <!--<p class="small text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
+                                        <div class="btns-action text-center">
+                                            <a class="btn btn-outline-white" href="https://www.viveport.com/apps/221f8138-d585-4364-aebf-415ac94d82a7/Furious_Seas/">
+                                                <span class="text">Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end of item -->
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">About</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of section wrapper -->
+    </div>
+    <!-- End of list two side 1 section -->
+
+
+    <!-- Begin of description section -->
+    <div class="section section-description fp-auto-height-responsive about-section fp-section anim" data-section="about" data-anchor="about" style="height: 668px;"><div class="fp-scrollable" style="height: 668px;"><div class="fp-scroller" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <!-- Begin of section wrapper -->
+
+        <div class="section-wrapper center-vh dir-col anim">
+            <!-- title 
+            <div class="section-title text-center">
+                <h5 class="title-bg">About</h5>
+                <h2 class="display-4 display-title anim-2 mb-32">About Us</h2>
+            </div>-->
+
+            <!-- content -->
+            <div class="section-content reduced center-vh dir-col">
+                <!-- about img -->
+                <div class="col-12 col-sm-12 center-vh">
+                    <div class="section-content anim translateUp">
+                        <div class="images text-center">
+                            <div class="img-frame-legend-alpha">
+                                <div>
+                                    <img class="img shadow" src="resources/img/s1.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8 col-sm-8 about-description shadow">
+                    <div class="section-content anim">
+                        <!-- description -->
+                        <h4 class="text-center">TAKE THE HELM OF A DEADLY PIRATE SHIP</h4>
+                        <p>And embark on a thrilling tale of revenge and destruction in VR. In Furious Seas, you will adventure out onto the high seas during a dangerous era, where ruthless pirates and fearsome enemy vessels await. Reach out and take control of your ship and your crew as you navigate through treacherous waters, bringing destruction upon any foes who dare cross your path. Reclaim what is yours and carve out your legend amidst the furious seas.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of content -->
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Awards</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of section wrapper -->
+    </div><div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style="position: absolute; z-index: 9999; width: 7px; bottom: 2px; top: 2px; right: 1px; overflow: hidden;"><div class="iScrollIndicator" style="box-sizing: border-box; position: absolute; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 3px; width: 100%; transition-duration: 0ms; display: block; height: 601px; transform: translate(0px, 0px) translateZ(0px); transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);"></div></div></div></div>
+    <!-- End of description section -->
+
+    <!-- Begin of list feature section -->
+    <div class="section section-list-feature fp-auto-height-responsive  fp-section anim" data-section="awards" data-anchor="awards" style="height: 668px;"><div class="fp-scrollable" style="height: 668px;"><div class="fp-scroller" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper twoside center-vh dir-col anim">
+            <!-- title -->
+            <div class="section-title text-center">
+                <h2 class="title-bg">Awards</h2>
+                <h2 class="display-4 display-title anim-2 mb-32">Awards</h2>
+            </div>
+
+            <!-- text or illustration order are manipulated via Bootstrap order-md-1, order-md-2 class -->
+            <!-- begin of item -->
+            <div class="item row justify-content-between fade-1">
+                <!-- begin of column content -->
+                <div class="col-12 col-md-12 col-lg-12">
+                    <!-- content -->
+                    <div class="section-content reduced">
+                        <!-- a media object -->
+                        <div class="media">
+                            <div class="media-body text-center">
+                                <img src="resources/img/GDC18_BestInPlay.png" style="width:100%">
+                                <h4>Best in play WINNER 2018 GDC</h4>
+                                <p>Join us on the high seas to see what all the excitement is about.</p>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+                <!-- end of column content -->
+
+            </div>
+            <!-- end of item -->
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Headsets</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of section wrapper -->
+    </div><div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style="position: absolute; z-index: 9999; width: 7px; bottom: 2px; top: 2px; right: 1px; overflow: hidden;"><div class="iScrollIndicator" style="box-sizing: border-box; position: absolute; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 3px; width: 100%; transition-duration: 0ms; display: block; height: 622px; transform: translate(0px, 0px) translateZ(0px); transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);"></div></div></div></div>
+    <!-- End of list feature section -->
+
+    <!-- Begin of description section -->
+    <div class="section section-description fp-auto-height-responsive  fp-section anim" data-section="headsets" data-anchor="headsets" style="height: 668px;">
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper center-vh dir-col anim">
+            <!-- title -->
+            <div class="section-title text-center">
+                <h5 class="title-bg">Headsets</h5>
+                <h2 class="display-4 display-title anim-2 mb-32">CLAIM YOUR TREASURE</h2>
+                <p>Furious Seas is available on the following storefronts and platforms for Early Access.</p>
+            </div>
+
+            <!-- content -->
+            <div class="section-content anim text-center">
+                <!-- text or illustration order are manipulated via Bootstrap order-md-1, order-md-2 class -->
+                <!-- begin of item -->
+                <div class="item row justify-content-between">
+                    <!-- img-frame-normal demo -->
+                    <div class="col-12 col-sm-6 col-md-4 center-vh">
+                        <div class="section-content anim translateUp">
+                            <div class="images text-center">
+                                <div class="img-avatar-alpha">
+                                    <div class="img-1 shadow">
+                                        <a href="item.html">
+                                            <img class="img" src="resources/img/Oculus_logo.png" alt="Image" style="box-shadow:none;">
+                                        </a>
+                                    </div>
+                                    <!--<div class="legend text-center pos-abs">
+                                        <div class="pull-left text-left">
+                                            <h5>David Miler</h5>
+                                            <p class="small">CEO / Founder</p>
+                                        </div>
+
+                                        <div class="icons pull-right text-right">
+                                            <a class="icon-btn" href="#">
+                                                <i class="icon ion-social-linkedin"></i>
+                                            </a>
+                                            <a class="icon-btn" href="#">
+                                                <i class="icon ion-social-facebook"></i>
+                                            </a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- img-frame-normal demo -->
+                    <div class="col-12 col-sm-6 col-md-4 center-vh">
+                        <div class="section-content anim">
+                            <div class="images text-center">
+                                <div class="img-avatar-alpha">
+                                    <div class="img-1 shadow">
+                                        <a href="https://store.steampowered.com/app/875760/Furious_Seas/">
+                                            <img class="img" src="resources/img/steam_vr_logo.png" alt="Image" style="box-shadow:none;">
+                                        </a>
+                                    </div>
+                                   <!-- <div class="legend text-center pos-abs">
+                                        <div class="pull-left text-left">
+                                            <h5>Sara Eniston</h5>
+                                            <p class="small">Designer</p>
+                                        </div>
+
+                                        <div class="icons pull-right text-right">
+                                            <a class="icon-btn" href="#">
+                                                <i class="icon ion-social-dribbble-outline"></i>
+                                            </a>
+                                            <a class="icon-btn" href="#">
+                                                <i class="icon ion-social-instagram-outline"></i>
+                                            </a>
+
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- img-frame-normal demo -->
+                    <div class="col-12 col-sm-6 col-md-4 center-vh">
+                        <div class="section-content anim translateDown">
+                            <div class="images text-center">
+                                <div class="img-avatar-alpha">
+                                    <div class="img-1 shadow">
+                                        <a href="https://www.viveport.com/apps/221f8138-d585-4364-aebf-415ac94d82a7/Furious_Seas/">
+                                            <img class="img" src="resources/img/vive_vr_logo.png" alt="Image" style="box-shadow:none;">
+                                        </a>
+                                    </div>
+                                    <!--<div class="legend text-center pos-abs">
+                                        <div class="pull-left text-left">
+                                            <h5>James Duncan</h5>
+                                            <p class="small">Web Developer</p>
+                                        </div>
+
+                                        <div class="icons pull-right text-right">
+                                            <a class="icon-btn" href="#">
+                                                <i class="icon ion-social-linkedin"></i>
+                                            </a>
+                                            <a class="icon-btn" href="#">
+                                                <i class="icon fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of item -->
+            </div>
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Gallery</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of section wrapper -->
+    </div>
+    <!-- End of description section -->
+
+    <!-- Begin of pricelist section -->
+    
+    <!-- End of pricelist section -->
+
+    <!-- Begin of slider section -->
+    <div class="section section-twoside fp-auto-height-responsive  fp-section anim" data-section="projects" data-anchor="projects" style="height: 668px;"><div class="fp-scrollable" style="height: 668px;"><div class="fp-scroller" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper twoside">
+            <!-- title -->
+            <div class="section-title text-center">
+                <h5 class="title-bg ">Gallery</h5>
+                <h2 class="display-4 display-title mb-32">Gallery</h2>
+            </div>
+
+
+            <!-- begin of carousel-swiper-beta -->
+            <div class="slider-wrapper carousel-swiper-beta carousel-smalls carousel-swiper-beta-demo">
+                <!-- slider -->
+                <div class="slider-container swiper-container swiper-container-horizontal" style="cursor: grab;">
+                    <ul class="item-list swiper-wrapper" style="transform: translate3d(-1600px, 0px, 0px); transition-duration: 0ms;"><li class="slide-item swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 800px;">
+                            <div class="item-wrapper">
+                                <div class="illustr">
+                                    <img src="resources/img/s5.png" alt="Image" class="img">
+                                </div>
+                                <!--<a class="legend" href="item.html#project_url">
+                                    <h2 class="display-4">Marketing</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </a> -->
+                            </div>
+                        </li>
+                        <!-- item -->
+                        <li class="slide-item swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 800px;">
+                            <div class="item-wrapper">
+                                <div class="illustr">
+                                    <img src="resources/img/s2.png" alt="Image" class="img">
+                                </div>
+                               <!-- <a class="legend" href="item.html#project_url">
+                                    <h2 class="display-4">Design</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </a> -->
+                            </div>
+                        </li>
+                        <!-- item -->
+                        <li class="slide-item swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 800px;">
+                            <div class="item-wrapper">
+                                <div class="illustr">
+                                    <img src="resources/img/s3.png" alt="Image" class="img">
+                                </div>
+                                <!--<a class="legend" href="item.html#project_url">
+                                    <h2 class="display-4">Development</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </a> -->
+                            </div>
+                        </li>
+                        <!-- item -->
+                        <li class="slide-item swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 800px;">
+                            <div class="item-wrapper">
+                                <div class="illustr">
+                                    <img src="resources/img/s4.png" alt="Image" class="img">
+                                </div>
+                                <!--<a class="legend" href="item.html#project_url">
+                                    <h2 class="display-4">SEO</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                                </a> -->
+                            </div>
+                        </li>
+                        <!-- item -->
+                        <li class="slide-item swiper-slide" data-swiper-slide-index="3" style="width: 800px;">
+                            <div class="item-wrapper">
+                                <div class="illustr">
+                                    <img src="resources/img/s5.png" alt="Image" class="img">
+                                </div>
+                                <!--<a class="legend" href="item.html#project_url">
+                                    <h2 class="display-4">Marketing</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </a> -->
+                            </div>
+                        </li>
+                    <li class="slide-item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 800px;">
+                            <div class="item-wrapper">
+                                <div class="illustr">
+                                    <img src="resources/img/s2.png" alt="Image" class="img">
+                                </div>
+                               <!-- <a class="legend" href="item.html#project_url">
+                                    <h2 class="display-4">Design</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </a> -->
+                            </div>
+                        </li></ul>
+                </div>
+                <!-- pagination -->
+                <div class="items-pagination bar swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+
+                <!-- navigation -->
+                <div class="items-button bottom fit items-button-prev">
+                    <a class="btn btn-transp-arrow btn-primary icon-left" href="">
+                        <span class="fa fa-long-arrow-left"></span>
+                    </a>
+                </div>
+                <div class="items-button bottom fit items-button-next">
+                    <a class="btn btn-transp-arrow btn-primary" href="">
+                        <span class="fa fa-long-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- end of carousel-swiper-beta -->
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Subscribe</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of section wrapper -->
+    </div><div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style="position: absolute; z-index: 9999; width: 7px; bottom: 2px; top: 2px; right: 1px; overflow: hidden;"><div class="iScrollIndicator" style="box-sizing: border-box; position: absolute; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 3px; width: 100%; transition-duration: 0ms; display: block; height: 607px; transform: translate(0px, 0px) translateZ(0px); transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);"></div></div></div></div>
+    <!-- End of slider section -->
+
+    
+
+    <!-- Begin of register/login/signin section -->
+    <div class="section section-register fp-auto-height-responsive  fp-section anim" data-section="subscribe" data-anchor="subscribe" style="height: 668px;">
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper center-vh dir-col">
+            <!-- title -->
+            <div class="section-title text-center">
+                <h5 class="title-bg">Subscribe</h5>
+            </div>
+
+            <!-- content -->
+            <div class="section-content reduced anim text-center">
+
+                <div class="row align-items-center justify-content-center">
+
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <!-- Registration form container-->
+                        <form class="send_email_form form-container form-container-transparent form-container-white" method="post" action="#" novalidate="novalidate">
+                            <div class="form-desc">
+                                <h2 class="display-4 display-title anim-2">Subscribe</h2>
+                                <p class="invite anim-3 opacity-75">Be the first to hear about the latest releases. Join the
+                                    our email list.</p>
+                            </div>
+                            <div class="form-input  anim-4">
+                                <div class="form-group form-success-gone">
+                                    <label for="reg-email">Email</label>
+                                    <input id="reg-email" name="email" class="form-control-line form-control-white" type="email" required="" placeholder="your@email.address" data-validation-type="email" aria-required="true">
+                                </div>
+                                <div class="form-group mb-0 text-center">
+                                    <div>
+                                        <p class="email-ok invisible form-text-feedback form-success-visible">Your email
+                                            has been registred, thank you.</p>
+                                    </div>
+                                    <input type="hidden" name="todo" value="subscribe">
+                                    <button id="submit-email" class="btn btn-outline-white form-success-gone" name="submit_email">Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arrows scroll down/up -->
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Contact Us</span>
+                </a>
+            </footer>
+        </div>
+        <!-- End of section wrapper -->
+    </div>
+    <!-- End of register/login/signin section -->
+
+    <!-- Begin of contact section -->
+    <div class="section section-contact fp-auto-height-responsive no-slide-arrows  fp-section anim" data-section="contact" data-anchor="contact" style="height: 668px;">
+
+        <!-- begin of information slide -->
+        <div class="fp-slides"><div class="fp-slidesContainer" style="width: 200%; transition: all 700ms ease 0s; transform: translate3d(0px, 0px, 0px);"><div class="slide fp-slide active" id="information" data-anchor="information" style="width: 50%;">
+            <!-- Begin of slide section wrapper -->
+            <div class="section-wrapper">
+                <!-- title -->
+                <div class="section-title text-center">
+                    <h5 class="title-bg">Contact</h5>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <!-- content -->
+                        <div class="section-content anim text-center">
+                            <!-- title and description -->
+                            <div class="title-desc">
+                                <div class="anim-2">
+                                    <h2 class="display-4 display-title">Contact</h2>
+                                     <p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</p>
+                                </div>
+                                <div class="address-container anim-2">
+
+                                    <div class="row">
+                                        <!--<div class="col-12 col-md-12 col-lg-4">
+                                            <h4><i class="icon ion-android-call"></i></h4>
+                                            <p>01 234 567 89</p>
+                                        </div> -->
+
+                                        <div class="col-12 col-md-12 col-lg-6">
+                                            <h4><i class="icon ion-email"></i> GENERAL INQUIRIES</h4>
+                                            <p>
+                                                info@furiousseas.com
+                                            </p>
+                                        </div>
+
+                                        <div class="col-12 col-md-12 col-lg-6">
+                                            <h4><i class="fa fa-bug"></i> BUG REPORTING</h4>
+                                            <p>
+                                               https://furiousseas.canny.io
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action button -->
+                            <div class="btns-action anim-4 mt-3">
+                                <a class="btn btn-outline-white" href="#contact/message">
+                                    <span class="txt">Send Message</span>
+                                    <i class="icon fa fa-long-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+
+                    </div>
+                </div>
+            </div>
+            <!-- End of slide section wrapper -->
+        </div><div class="slide fp-slide" id="message" data-anchor="message" style="width: 50%;">
+            <!-- Begin of slide section wrapper -->
+            <div class="section-wrapper center-vh dir-col">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <!-- content -->
+                        <div class="section-content anim text-center">
+                            <!-- title and description -->
+                            <div class="title-desc">
+                                <div>
+                                    <h2 class="display-4 display-title">Write Message</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <!-- content -->
+                        <div class="section-content anim text-left">
+                            <!-- title and description -->
+                            <div class="">
+                                <div class="form-container form-container-card">
+                                    <!-- Message form container -->
+                                    <form class="send_message_form message form" method="post" action="#" id="message_form" novalidate="novalidate">
+                                        <div class="form-group name">
+                                            <label for="mes-name">Name</label>
+                                            <input id="mes-name" name="name" type="text" placeholder="" class="form-control-line form-success-clean" required="" aria-required="true">
+                                        </div>
+                                        <div class="form-group email">
+                                            <label for="mes-email">Email</label>
+                                            <input id="mes-email" type="email" placeholder="" name="email" class="form-control-line form-success-clean" required="" aria-required="true">
+                                        </div>
+                                        <div class="form-group no-border">
+                                            <label for="mes-text">Message</label>
+                                            <textarea id="mes-text" name="message" class="form-control form-control-outline thick form-success-clean" required="" aria-required="true"></textarea>
+
+                                            <div>
+                                                <p class="message-ok invisible form-text-feedback form-success-visible">
+                                                    Your message has been sent, thank you.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="btns">
+                                        	<input type="hidden" name="todo" value="contact">
+                                            <button id="submit-message" onclick="submitMesage()" class="btn btn-outline-white btn-full email_b" name="submit_message">
+                                                <i class="icon ion-paper-airplane mr-2"></i>
+                                                <span class="txt">Send</span>
+                                                <span class="arrow-icon"></span>
+                                            </button>
+                                            <a class="btn btn-transparent btn-left-hover btn-border-none text-center" href="#contact/information">
+                                                <span class="txt"><i class="fa fa-long-arrow-left mr-2"></i> Back To Information</span>
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of slide section wrapper -->
+        </div></div></div><div class="fp-controlArrow fp-prev"></div><div class="fp-controlArrow fp-next"></div>
+        <!-- end of information slide -->
+
+        <!-- begin of message slide -->
+        
+        <!-- end of message slide -->
+
+    </div>
+    <!-- End of contact section -->
+</main>
+<!-- END OF page main content -->
+
+<!-- BEGIN OF page footer -->
+<footer id="site-footer" class="page-footer">
+    <!--&lt;!&ndash; Left content &ndash;&gt;-->
+    <!--<div class="footer-left">-->
+    <!--<p>PRODUCT BY-->
+    <!--<a href="http://lifeinsys.com">-->
+    <!--<span class="marked">LifeInSYS</span>-->
+    <!--</a>-->
+    <!--</p>-->
+    <!--</div>-->
+
+    <!-- Right content -->
+    <div class="footer-right">
+        <!--<p class="note">Created by
+            <a href="https://themeforest.net/user/lifeinsys/portfolio">
+                <span class="marked"> LifeInSYS</span>
+            </a>
+        </p> -->
+        <ul class="social">
+            <li>
+                <a href="https://www.facebook.com/FuriousSeas">
+                    <i class="icon fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/FuriousSeas">
+                    <i class="icon fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/furiousseas">
+                    <i class="icon fa fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC3CINYAqqK-g3vMy0zx7RZg">
+                    <i class="icon fa fa-youtube"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<!-- END OF site footer -->
+
+<!-- scripts -->
+<!-- All Javascript plugins goes here -->
+<script src="resources/js/vendor/jquery-1.12.4.min.js"></script>
+
+<!-- All vendor scripts -->
+<script src="resources/js/vendor/scrolloverflow.min.js"></script>
+<script src="resources/js/vendor/all.js"></script>
+<script src="resources/js/particlejs/particles.min.js"></script>
+
+<!-- Form script -->
+<script src="resources/js/form_script.js?t=13"></script>
+
+<!-- Javascript main files -->
+<script src="resources/js/main.js"></script>
+
+
+
+<div id="fp-nav" class="right" style="margin-top: -83.5px;"><ul><li><a href="#home" class="active"><span></span></a></li><li><a href="#game"><span></span></a></li><li><a href="#about"><span></span></a></li><li><a href="#awards"><span></span></a></li><li><a href="#headsets"><span></span></a></li><li><a href="#projects"><span></span></a></li><li><a href="#subscribe"><span></span></a></li><li><a href="#contact"><span></span></a></li></ul></div></body></html>

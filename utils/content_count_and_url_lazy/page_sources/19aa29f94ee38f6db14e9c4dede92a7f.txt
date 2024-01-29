@@ -1,0 +1,566 @@
+<html lang="en-US"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.quanero.com/xmlrpc.php">
+<title>Quanero – System Release</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Quanero » Feed" href="http://www.quanero.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Quanero » Comments Feed" href="http://www.quanero.com/comments/feed/">
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.0.5 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" async="" src="http://www.google-analytics.com/plugins/ua/linkid.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" data-cfasync="false">
+	var mi_track_user = true;
+	
+	var disableStr = 'ga-disable-UA-111198272-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-111198272-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('require', 'linkid', 'linkid.js');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you\'re not being tracked. ");
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+		})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.quanero.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://www.quanero.com/wp-includes/js/wp-emoji-release.min.js?ver=5.0.19" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="http://www.quanero.com/wp-includes/css/dist/block-library/style.min.css?ver=5.0.19" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="http://www.quanero.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.1" type="text/css" media="all">
+<link rel="stylesheet" id="cssblog-css" href="http://www.quanero.com/wp-content/plugins/wp-blog-and-widgets/css/styleblog.css?ver=1.3.1" type="text/css" media="all">
+<link rel="stylesheet" id="risewp-style-css" href="http://www.quanero.com/wp-content/themes/risewp/style.css?ver=5.0.19" type="text/css" media="all">
+<style id="risewp-style-inline-css" type="text/css">
+h1, h2, h3, h4, h5, h6, .page-entry-header .entry-title { font-family: Montserrat; }
+body, button, input, select, textarea, .main-navigation a { font-family: Montserrat; }
+
+</style>
+<link rel="stylesheet" id="risewp-headings-google-fonts-css" href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="risewp-body-google-fonts-css" href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="risewp-column-clear-css" href="http://www.quanero.com/wp-content/themes/risewp/css/mt-column-clear.css?ver=5.0.19" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="http://www.quanero.com/wp-content/themes/risewp/fonts/font-awesome.css?ver=5.0.19" type="text/css" media="all">
+<link rel="stylesheet" id="jpushmenu-css" href="http://www.quanero.com/wp-content/themes/risewp/css/jPushMenu.css?ver=5.0.19" type="text/css" media="all">
+<link rel="stylesheet" id="risewp-projects-css-css" href="http://www.quanero.com/wp-content/themes/risewp/css/risewp-projects.css?ver=5.0.19" type="text/css" media="all">
+<link rel="stylesheet" id="risewp-testimonials-css-css" href="http://www.quanero.com/wp-content/themes/risewp/css/risewp-testimonials.css?ver=5.0.19" type="text/css" media="all">
+<link rel="stylesheet" id="sccss_style-css" href="http://www.quanero.com?sccss=1&amp;ver=5.0.19" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"http:\/\/www.quanero.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.quanero.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.0.5"></script>
+<script type="text/javascript" src="http://www.quanero.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://www.quanero.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="https://api.w.org/" href="http://www.quanero.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.quanero.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.quanero.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.0.19">
+<link rel="canonical" href="http://www.quanero.com/">
+<link rel="shortlink" href="http://www.quanero.com/">
+<link rel="alternate" type="application/json+oembed" href="http://www.quanero.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.quanero.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://www.quanero.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.quanero.com%2F&amp;format=xml">
+	
+<!-- risewp customizer CSS -->  
+
+	<style>
+	
+		.site-header .main-navigation a { color: #ffffff; }
+
+		.site-header .main-navigation a:hover { color: #7360ff; }
+		
+		.site-header .main-navigation ul ul a { color: #4f6fff; } 
+		
+		.site-header .main-navigation ul ul a:hover { color: #A7A8A8; } 
+		
+		.site-header .main-navigation ul ul { background-color: #eaebeb; } 
+		
+		.cbp-spmenu ul ul a, .main-navigation a, .cbp-spmenu a  { font-size: 14px; } 
+		
+		button.toggle-menu { background-color: #ffffff; }
+		
+		button.toggle-menu { border-color: #ffffff; }
+		
+		button.toggle-menu { color: #2a2a2d; }
+		
+		button.toggle-menu:hover { background-color: #3d3d41; }
+		
+		button.toggle-menu:hover { border-color: #3d3d41; }
+		
+		button.toggle-menu:hover { color: #ffffff; } 
+		
+		.cbp-spmenu { background-color: #3d3d41; }  
+		
+		.cbp-spmenu a { color: #ffffff; }  
+		
+		.cbp-spmenu a:hover { color: #ffffff; }  
+		
+		.cbp-spmenu a:hover { background-color: #333333; }  
+		
+		#home-hero { background-color: #b6b9bd; } 
+		
+		.hero-title { color: #ffffff; } 
+		
+		.hero-excerpt { color: #ffffff; } 
+		
+		.hero-content a.button { color: #ffffff; } 
+		
+		.hero-content a.button { border-color: #ffffff; }
+		
+		.hero-content a.button:hover { border-color: #3d3d41; } 
+		
+		.hero-content a.button:hover { background-color: #3d3d41; }
+		
+		.hero-content a.button:hover { color: #ffffff; }  
+		
+		body, textarea, p { color: #ffffff; }
+		
+		h1, h2, h3, h4, h5, h6, .comment-form-comment { color: #e2e2e2; }
+		
+		a { color: #563be2; } 
+		
+		a:hover { color: #330fe2; }
+		
+		.entry-title { color: #ffffff; }
+		
+		.entry-header, .entry-header.parallax-window { background-color: #06060c; }
+		
+		body, p { font-size: 15px; } 
+		
+		.content-area article { background: #06060c; }   
+		
+		.content-area article { border-color: #06060c; }   
+		
+		.widget-area section { background-color: #191919; } 
+		
+		.widget-area section { border-color: #06060c; } 
+		
+		.home-section-1 { background: #f9f9f9; } 
+		
+		.home-section-1 h1, .home-section-1 h2, .home-section-1 h3, .home-section-1 h4, .home-section-1 h5, .home-section-1 h6 { color: #3d3d41; } 
+		
+		.home-section-1, .home-section-1 p { color: #656565; } 
+		
+		.home-section-1 a { color: #3d3d41; } 
+		
+		.home-section-1 a:hover { color: #999999; } 
+		
+		.home-section-1 button { border-color: #3d3d41; }   
+
+		.home-section-1 button { color: #2a2a2d; }   
+		
+		.home-section-1 button:hover { background: #3d3d41; } 
+	
+		.home-section-1 button:hover { border-color: #3d3d41; } 
+		
+		.home-section-1 button:hover { color: #ffffff; } 
+		 
+		.home-section-2 { background: #f1f5f7; } 
+		
+		.home-section-2 h1, .home-section-2 h2, .home-section-2 h3, .home-section-2 h4, .home-section-2 h5, .home-section-2 h6 { color: #3d3d41; }  
+		
+		.home-section-2, .home-section-2 p { color: #656565; } 
+		
+		.home-section-2 a { color: #3d3d41; } 
+	
+		.home-section-2 a:hover { color: #999999; } 
+		 
+		.home-section-2 button { border-color: #3d3d41; }   
+		 
+		.home-section-2 button { color: #2a2a2d; }   
+		 
+		.home-section-2 button:hover { background: #3d3d41; } 
+	
+		.home-section-2 button:hover { border-color: #3d3d41; } 
+		
+		.home-section-2 button:hover { color: #ffffff; } 
+		
+		.home-section-3 { background: #f9f9f9; } 
+		
+		.home-section-3 h1, .home-section-3 h2, .home-section-3 h3, .home-section-3 h4, .home-section-3 h5, .home-section-3 h6 { color: #3d3d41; } 
+		 
+		.home-section-3, .home-section-3 p { color: #656565; } 
+		
+		.home-section-3 a { color: #3d3d41; } 
+		
+		.home-section-3 a:hover { color: #999999; } 
+		
+		.home-section-3 button { border-color: #3d3d41; }   
+		
+		.home-section-3 button { color: #2a2a2d; }   
+		 
+		.home-section-3 button:hover { background: #3d3d41; } 
+		
+		.home-section-3 button:hover { border-color: #3d3d41; } 
+
+		.home-section-3 button:hover { color: #ffffff; } 
+		 
+		.home-section-4 { background: #f1f5f7; } 
+		
+		.home-section-4 h1, .home-section-4 h2, .home-section-4 h3, .home-section-4 h4, .home-section-4 h5, .home-section-4 h6 { color: #3d3d41; }  
+		
+		.home-section-4, .home-section-4 p { color: #656565; } 
+		
+		.home-section-4 a { color: #3d3d41; } 
+		
+		.home-section-4 a:hover { color: #999999; } 
+		
+		.home-section-4 button { border-color: #3d3d41; }
+		
+		.home-section-4 button { color: #2a2a2d; }   
+		 
+		.home-section-4 button:hover { background: #3d3d41; } 
+		
+		.home-section-4 button:hover { border-color: #3d3d41; } 
+		
+		.home-section-4 button:hover { color: #ffffff; } 
+		 
+		.site-footer { background: #151516; }
+		
+		.site-footer, .site-footer p { color: #030314; }
+		
+		.site-footer a { color: #3d3d41; } 
+		
+		.site-footer a:hover { color: #999999; } 
+		
+		.social-media-icons li .fa, #menu-social li a::before { color: #656565;  }
+		
+		.social-media-icons li .fa:hover, #menu-social li a:hover::before, #menu-social li a:focus::before { color: #999999; }
+		
+		.social-media-icons li .fa, #menu-social li a::before { font-size: 16px; }
+		 
+		button, input[type="button"], input[type="reset"], input[type="submit"] { border-color: #1cb58c; }   
+
+		button, input[type="button"], input[type="reset"], input[type="submit"] { color: #1cb58c; }
+		
+		button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { background: #1cb58c; } 
+
+		button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border-color: #1cb58c; }   
+		
+		button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { color: #ffffff; } 
+		
+		.comment-navigation .nav-previous a, .posts-navigation .nav-previous a, .post-navigation .nav-previous a, .comment-navigation .nav-next a, .posts-navigation .nav-next a, .post-navigation .nav-next a { background-color: #1cb58c; }
+		
+		.risewp-effect .risewp-mask { background-color: #2a2e39; }  
+		 
+		h2.risewp_item_title, .risewp-project-excerpt p { color: #ffffff; }   
+		 
+		.home-testimonial .testimonial p { background: #ffffff; }   
+		
+		.home-testimonial .testimonial p  { color: #656565; }
+		
+		.home-testimonial .testimonial h3 { color: #3d3d41; }
+
+				.home-testimonial .testimonial p  { font-style: italic; } 
+				
+		  
+	</style>
+ 
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #06060c; }
+</style>
+		<style type="text/css" id="wp-custom-css">
+			/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+		</style>
+	</head>
+
+<body class="home page-template-default page page-id-14 custom-background wp-custom-logo push-body"><div class="parallax-mirror" style="visibility: visible; z-index: -1; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 398px; width: 1019px;"><img class="parallax-slider" src="http://www.quanero.com/wp-content/uploads/2017/12/Groundtown_3.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -87px; left: 0px; height: 573px; width: 1019px; max-width: none;"></div>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header gradient" role="banner">
+    	<div class="grid grid-pad">
+        	<div class="col-1-1">
+            
+                <div class="site-branding">
+                    
+                	 
+                    
+                    	                	
+                    		<div class="site-logo site-title"> 
+                    			
+								<a href="http://www.quanero.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="200" height="42" src="http://www.quanero.com/wp-content/uploads/2017/11/Q2LogoWhite_00_DH-e1511807858371.png" class="custom-logo" alt="Quanero" itemprop="logo"></a>            				
+                   			</div><!-- site-logo -->
+                            
+            			                
+					 
+               	
+                </div><!-- .site-branding -->
+                
+                
+                
+        		                
+									
+                
+                
+                <div class="navigation-container push-right">
+                    <nav id="site-navigation" class="main-navigation" role="navigation">
+                        <button class="toggle-menu menu-right push-body jPushMenuBtn" aria-controls="primary-menu" aria-expanded="false">
+                        
+							 <i class="fa fa-bars"></i>                                
+                        </button> 
+                        <div class="menu-mainmenu-container"><ul id="primary-menu" class="menu nav-menu" aria-expanded="false"><li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item menu-item-196"><a href="http://www.quanero.com/">HOME</a></li>
+<li id="menu-item-195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195"><a href="http://www.quanero.com/concept/">CONCEPT</a></li>
+<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="http://www.quanero.com/blog/">BLOG</a></li>
+<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="http://www.quanero.com/team/">TEAM</a></li>
+<li id="menu-item-384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384"><a href="http://www.quanero.com/quanero-1/">QUANERO 1</a></li>
+<li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="http://www.quanero.com/contact/">CONTACT</a></li>
+</ul></div>                    </nav><!-- #site-navigation -->
+                </div>
+                
+          	</div>
+     	</div>
+	</header><!-- #masthead -->
+    
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+        <div class="menu-mainmenu-container"><ul id="primary-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item menu-item-196"><a href="http://www.quanero.com/">HOME</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195"><a href="http://www.quanero.com/concept/">CONCEPT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="http://www.quanero.com/blog/">BLOG</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="http://www.quanero.com/team/">TEAM</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384"><a href="http://www.quanero.com/quanero-1/">QUANERO 1</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="http://www.quanero.com/contact/">CONTACT</a></li>
+</ul></div>    </nav>                 
+                                
+                
+
+	<div id="content" class="site-content"> 
+
+	
+    <header class="entry-header parallax-window" data-parallax="scroll" data-image-src="http://www.quanero.com/wp-content/uploads/2017/12/Groundtown_3.jpg" data-z-index="-1">
+    	<div class="grid grid-pad">
+            <div class="col-1-1">
+				<h1 class="entry-title">HOME</h1>           	</div><!-- col -->
+      	</div><!-- grid --> 
+	</header><!-- .entry-header -->   
+    
+
+<section id="page-container" class="page-wrap"> 
+    <div class="grid grid-pad">
+        <div class="col-8-12">
+            <div id="primary" class="content-area shortcodes">
+                <main id="main" class="site-main" role="main">
+        
+                    
+<article id="post-14" class="post-14 page type-page status-publish has-post-thumbnail hentry">
+	<div class="entry-content">
+		<h2>QUANERO 2 – SYSTEM RELEASE</h2>
+<p><strong>Imagine</strong> you are a detective in the future, with the best surveillance system ever developed. You can reconstruct crime scenes in virtual reality, move freely and manipulate the time to carry out your investigations.</p>
+<p><img class="alignnone size-medium wp-image-422" src="http://www.quanero.com/wp-content/uploads/2018/02/release-button_Zeichenfläche-1-300x31.png" alt="" width="300" height="31" srcset="http://www.quanero.com/wp-content/uploads/2018/02/release-button_Zeichenfläche-1-300x31.png 300w, http://www.quanero.com/wp-content/uploads/2018/02/release-button_Zeichenfläche-1.png 607w" sizes="(max-width: 300px) 100vw, 300px"></p>
+<h4></h4>
+<h4><strong>NEWS</strong></h4>
+<p>Creating the World of Quanero</p>
+<p><img class="alignnone wp-image-454" src="http://www.quanero.com/wp-content/uploads/2018/03/Establischer_01-300x174.png" alt="" width="303" height="176" srcset="http://www.quanero.com/wp-content/uploads/2018/03/Establischer_01-300x174.png 300w, http://www.quanero.com/wp-content/uploads/2018/03/Establischer_01-768x446.png 768w, http://www.quanero.com/wp-content/uploads/2018/03/Establischer_01-1024x595.png 1024w" sizes="(max-width: 303px) 100vw, 303px">&nbsp;&nbsp;<img class="alignnone wp-image-455" src="http://www.quanero.com/wp-content/uploads/2018/03/Establischer_02-300x169.png" alt="" width="312" height="176" srcset="http://www.quanero.com/wp-content/uploads/2018/03/Establischer_02-300x169.png 300w, http://www.quanero.com/wp-content/uploads/2018/03/Establischer_02-768x432.png 768w, http://www.quanero.com/wp-content/uploads/2018/03/Establischer_02-1024x576.png 1024w" sizes="(max-width: 312px) 100vw, 312px"></p>
+<p>Find the essence of the level, turn ideas into reality and push some polygones to make it happen. That’s the short form of our enviroment design. A deeper insight gives our enviroment artist Dominik in our latest blog.</p>
+<p><strong><a href="http://www.quanero.com/blog-post/creating-the-world-of-quanero/">CLICK HERE</a></strong></p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+        
+                </main><!-- #main -->
+            </div><!-- #primary -->
+        </div><!-- col -->
+        
+    
+<div class="col-4-12">
+    <aside id="secondary" class="widget-area" role="complementary">
+        <section id="sp_blog_widget-3" class="widget SP_Blog_Widget">             <h4 class="widget-title">Recent Blog Post</h4>
+            <!--visual-columns-->
+                        <div class="recent-blog-items ">
+                <ul>
+                                <li class="blog_li">
+					
+											
+						<div class="blog_thumb_left">
+							<a class="li-link-thumb" href="http://www.quanero.com/blog-post/creating-the-world-of-quanero/"><img width="80" height="80" src="http://www.quanero.com/wp-content/uploads/2018/03/Establischer_02-150x150.png" class="attachment-80x80 size-80x80 wp-post-image" alt="" srcset="http://www.quanero.com/wp-content/uploads/2018/03/Establischer_02-150x150.png 150w, http://www.quanero.com/wp-content/uploads/2018/03/Establischer_02-400x400.png 400w" sizes="(max-width: 80px) 100vw, 80px"> </a> 
+						 </div>
+						 <div class="blog_thumb_right">
+							<a class="li-link-custom" href="http://www.quanero.com/blog-post/creating-the-world-of-quanero/" title="Creating the World of Quanero">Creating the World of Quanero</a>
+													<div class="widget-date-cat" style="margin-bottom:5px;">
+						March 30, 2018                                                						</div>
+												 </div>
+                    					</li>
+                                <li class="blog_li">
+					
+											
+						<div class="blog_thumb_left">
+							<a class="li-link-thumb" href="http://www.quanero.com/blog-post/tailor-made-costumes-of-bits-and-bytes/"><img width="80" height="80" src="http://www.quanero.com/wp-content/uploads/2017/11/charakter_02-150x150.jpg" class="attachment-80x80 size-80x80 wp-post-image" alt="" srcset="http://www.quanero.com/wp-content/uploads/2017/11/charakter_02-150x150.jpg 150w, http://www.quanero.com/wp-content/uploads/2017/11/charakter_02-400x400.jpg 400w" sizes="(max-width: 80px) 100vw, 80px"> </a> 
+						 </div>
+						 <div class="blog_thumb_right">
+							<a class="li-link-custom" href="http://www.quanero.com/blog-post/tailor-made-costumes-of-bits-and-bytes/" title="Tailor-made costumes of bits and bytes">Tailor-made costumes of bits and bytes</a>
+													<div class="widget-date-cat" style="margin-bottom:5px;">
+						February 2, 2018                                                						</div>
+												 </div>
+                    					</li>
+                                <li class="blog_li">
+					
+											
+						<div class="blog_thumb_left">
+							<a class="li-link-thumb" href="http://www.quanero.com/blog-post/real-actors-in-vr/"><img width="80" height="80" src="http://www.quanero.com/wp-content/uploads/2017/12/scan_01-150x150.jpg" class="attachment-80x80 size-80x80 wp-post-image" alt="" srcset="http://www.quanero.com/wp-content/uploads/2017/12/scan_01-150x150.jpg 150w, http://www.quanero.com/wp-content/uploads/2017/12/scan_01-400x400.jpg 400w" sizes="(max-width: 80px) 100vw, 80px"> </a> 
+						 </div>
+						 <div class="blog_thumb_right">
+							<a class="li-link-custom" href="http://www.quanero.com/blog-post/real-actors-in-vr/" title="Real Actors in VR">Real Actors in VR</a>
+													<div class="widget-date-cat" style="margin-bottom:5px;">
+						December 20, 2017                                                						</div>
+												 </div>
+                    					</li>
+                                <li class="blog_li">
+					
+											
+						<div class="blog_thumb_left">
+							<a class="li-link-thumb" href="http://www.quanero.com/blog-post/blog_01/"><img width="80" height="80" src="http://www.quanero.com/wp-content/uploads/2017/12/City_1-150x150.jpg" class="attachment-80x80 size-80x80 wp-post-image" alt="" srcset="http://www.quanero.com/wp-content/uploads/2017/12/City_1-150x150.jpg 150w, http://www.quanero.com/wp-content/uploads/2017/12/City_1-400x400.jpg 400w" sizes="(max-width: 80px) 100vw, 80px"> </a> 
+						 </div>
+						 <div class="blog_thumb_right">
+							<a class="li-link-custom" href="http://www.quanero.com/blog-post/blog_01/" title="Who we are and what we want.">Who we are and what we want.</a>
+													<div class="widget-date-cat" style="margin-bottom:5px;">
+						December 12, 2017                                                						</div>
+												 </div>
+                    					</li>
+            
+                </ul>
+            </div>
+</section><section id="text-7" class="widget widget_text">			<div class="textwidget"><p>This is a no-budget student project. Part of the equipment was provided to us by the University of Applied Sciences Salzburg, but we bear all the expenses for our actors. We are happy about every <strong>donation</strong> to cover our costs. The received money will be managed and forwarded to us by the Sergej Eisenstein Society in support of student projects.</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image"></form>
+</div>
+		</section><section id="text-9" class="widget widget_text">			<div class="textwidget"><p><strong>FOLLOW US</strong></p>
+<p><a href="https://www.facebook.com/QuaneroSystemRelease/"><img class="alignnone wp-image-368" src="http://www.quanero.com/wp-content/uploads/2017/12/facebook.png" alt="" width="11" height="24"></a><a href="https://www.reddit.com/user/Quanero2" target="_blank" rel="noopener">&nbsp;&nbsp; &nbsp;</a><a href="https://www.youtube.com/channel/UCMgnTjJQ7UpqfES99BYvetA" target="_blank" rel="noopener"><img class="alignnone wp-image-371" src="http://www.quanero.com/wp-content/uploads/2017/12/youtube.png" alt="" width="18" height="22"></a><a href="https://www.reddit.com/user/Quanero2" target="_blank" rel="noopener">&nbsp;&nbsp;</a>&nbsp;<a href="https://twitter.com/Quanero2" target="_blank" rel="noopener"><img class="alignnone wp-image-370" src="http://www.quanero.com/wp-content/uploads/2017/12/twitter-300x244.png" alt="" width="26" height="21"></a><a href="https://www.reddit.com/user/Quanero2" target="_blank" rel="noopener">&nbsp; &nbsp;<img class="alignnone wp-image-369" src="http://www.quanero.com/wp-content/uploads/2017/12/reddit-logo.png" alt="" width="29" height="25"></a></p>
+</div>
+		</section>    </aside><!-- #secondary -->
+</div>
+    
+    </div><!-- grid -->
+</section><!-- page-container --> 
+
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo"> 
+    
+    	 
+            <div class="grid grid-pad">
+                <div class="col-1-1">
+        			<p class="footer-text">Impressum · office@quanero.com · Sanel Ruznic · Wichtlhuberstrasse 10 · 5400 Hallein · Austria</p><!-- footer text -->
+                </div>
+           	</div>
+            
+    	<div class="grid grid-pad">
+            <div class="col-1-1">
+                <div class="site-info">
+                	
+					                    
+                    
+                                        
+                                        
+                                        
+                    
+                </div><!-- .site-info -->
+          	</div><!-- col -->
+       	</div><!-- grid -->
+        
+	</footer><!-- #colophon -->
+    
+</div><!-- #page -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/www.quanero.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.quanero.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1"></script>
+<script type="text/javascript" src="http://www.quanero.com/wp-content/themes/risewp/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="http://www.quanero.com/wp-content/themes/risewp/js/skip-link-focus-fix.js?ver=20130115"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://www.quanero.com/wp-content/themes/risewp/js/html5shiv.js?ver=5.0.19'></script>
+<![endif]-->
+<script type="text/javascript" src="http://www.quanero.com/wp-content/themes/risewp/js/jPushMenu.js?ver=5.0.19"></script>
+<script type="text/javascript" src="http://www.quanero.com/wp-content/themes/risewp/js/menu.script.js?ver=5.0.19"></script>
+<script type="text/javascript" src="http://www.quanero.com/wp-content/themes/risewp/js/parallax.js?ver=5.0.19"></script>
+<script type="text/javascript" src="http://www.quanero.com/wp-includes/js/wp-embed.min.js?ver=5.0.19"></script>
+
+
+
+</body></html>

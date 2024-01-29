@@ -1,0 +1,377 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><head>
+	       <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-F9FVFMZE6L&amp;cx=c&amp;_slc=1"></script><script async="" src="https://chimpstatic.com/mcjs-connected/js/users/d85b375ba46c9dad2a50b7c25/f0b1615195b4084d8a0e4c636.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-57258992-14', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+	
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>3dSen</title>
+        <meta name="description" content="3dSen - NES emulator that allows playing your favorite NES games in 3D &amp; VR">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/geod.png">
+        
+        <!-- Fonts -->
+
+
+
+
+        <!-- CSS -->
+	
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		
+		<link rel="stylesheet" href="css/ext.css">
+		<!-- Begin Mailchimp Signup Form -->
+		<link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+			/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+		</style>
+        
+
+        <!-- Js -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script><script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/wow.min.js"></script>
+		<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/d85b375ba46c9dad2a50b7c25/f0b1615195b4084d8a0e4c636.js");</script>
+        <script>
+         new WOW(
+            ).init();
+        </script>
+	
+ <!--        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-57258992-14', 'auto');
+          ga('send', 'pageview');
+
+        </script> -->
+
+    </head>
+    <body style="">
+
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 col-sm-3">
+                    <a href="#" class="logo">
+                        <img src="images/geod.png" height="48px" ;="" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <div class="menu">
+                        <nav class="navbar navbar-default" role="navigation">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#banner">Home</a></li>
+										<li><a href="#_trailer">Trailer</a></li>
+                                        <li><a href="#_ss">Screenshot</a></li>
+										<li><a href="#service">Review</a></li>
+                                        <li><a href="#subscribe">Subscribe</a></li>
+                                    </ul>
+                                  
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-3">
+                    <ul class="social-info">
+                        <li><a href="https://www.facebook.com/3dnes"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/tructv"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/tructre1980"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner" class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+        <div class="container wrapper">
+            <div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="block">
+                        <img class="app-img img-responsive" src="images/3dsen_338.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="col-md-7 col-md-offset-1 col-sm-6">
+                    <div class="block">
+                        <h2>
+                            Play NES Games In 3D
+                        </h2>
+                        <p>
+                            3dSen PC is a unique NES emulator that converts classic and homebrew NES games into full 3D experiences and let you play them in realtime.
+                        </p> 
+                        <ul class="download-btn">
+                            <li>
+                                <a href="https://geod.itch.io/3dsenpc" class="btn btn-default btn-itch"><i class="icon-itch"></i>Itch</a>
+                            </li>												
+						
+                            <li>
+                                <a href="https://store.steampowered.com/app/1147940/3dSen_PC/" class="btn btn-steam"> <i class="fa fa-steam"></i>Steam</a>
+                            </li>
+<!--                             <li>
+                                <a href="https://geod.itch.io/3dnes" class="btn btn-default btn-itch" ><i class="icon-itch"></i>Itch</a>
+                            </li>
+                            <li>
+                                <a href="presskit.html" class="btn btn-default btn-windows">Presskit</a>
+                            </li>
+ -->                        </ul>						
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container wrapper">
+            <div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="block">
+                        <img class="app-img img-responsive" src="images/3dsenvr_338.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="col-md-7 col-md-offset-1 col-sm-6">
+                    <div class="block">
+                        <h2>
+                            Play NES Games In 3D &amp; VR							
+                        </h2>
+                        <p>
+                            3dSenVR is a unique NES emulator that converts classic and homebrew NES games into full 3D experiences in realtime and let you play them in VR.
+                        </p> 
+                        <ul class="download-btn">
+                            <li>
+                                <a href="https://geod.itch.io/3dnes" class="btn btn-default btn-itch"><i class="icon-itch"></i>Itch</a>
+                            </li>						
+                            <li>
+                                <a href="https://store.steampowered.com/app/954280/3dSenVR/" class="btn btn-steam"> <i class="fa fa-steam"></i>Steam</a>
+                            </li>
+<!--							
+                            <li>
+                                <a href="https://www.viveport.com/apps/48e2cb9b-4499-4ad2-81dd-b89d241f1cbe/3dSenVR/" class="btn btn-default btn-viveport"> <i class="icon-viveport"></i>Viveport</a>
+                            </li>														
+                            <li>
+                                <a href="presskit.html" class="btn btn-default btn-windows">Presskit</a>
+                            </li> -->
+                        </ul>						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+        <div class="container wrapper">
+            <div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="block">
+                        <img class="app-img img-responsive" src="images/3dsenmk_338.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="col-md-7 col-md-offset-1 col-sm-6">
+                    <div class="block">
+                        <h2>
+                            3D Profile Maker						
+                        </h2>
+                        <p>
+                            A unique emulator/tool that is capable  to create 3d profiles of NES games and play them in realtime.
+                        </p> 
+                        <ul class="download-btn">
+                            <li>
+                                <a href="https://geod.itch.io/3dsen-maker" class="btn btn-default btn-itch"><i class="icon-itch"></i>Itch</a>
+                            </li>						
+                        </ul>						
+                    </div>
+                </div>
+            </div>
+        </div>
+    	
+    
+    <section id="utility-2" name="_trailer">
+        <div class="container wrapper">
+			<div>
+				<h2 class="title">Trailer</h2>
+			</div>		
+			<div align="center">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/jIJStWT6FuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			</div>
+			<div align="center">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/rxKYAiuOSbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			</div>
+		</div>
+    </section>
+
+    <section id="utility-2" name="_ss">
+        <div class="container wrapper">
+			<div>
+				<h2 class="title">Screenshot</h2>
+			</div>		
+			<div class="row top-buffer">		
+				<div class="col-md-4 col-sm-3 wow fadeInRight" data-wow-delay=".8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
+					<a target="_blank" href="assets/mm3.jpg" alt="">
+						<img class="img-responsive" src="images/mm3_thumb.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-3 wow fadeInRight" data-wow-delay=".8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
+					<a target="_blank" href="assets/mm2.jpg" alt="">
+						<img class="img-responsive" src="images/mm2_thumb.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-3 wow fadeInRight" data-wow-delay=".8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
+					<a target="_blank" href="assets/mm1.jpg" alt="">				
+						<img class="img-responsive" src="images/mm1_thumb.jpg" alt="">
+					</a>
+				</div>				
+			</div>	
+			<div class="row top-buffer">
+				<div class="col-md-4 col-sm-3 wow fadeInRight" data-wow-delay=".8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
+					<a target="_blank" href="assets/BK2.jpg" alt="">				
+						<img class="img-responsive" src="images/BK2_thumb.jpg" alt="">			
+					</a>
+				</div>				
+				<div class="col-md-4 col-sm-3 wow fadeInRight" data-wow-delay=".8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
+					<a target="_blank" href="assets/SBP.jpg" alt="">								
+						<img class="img-responsive" src="images/SBP_thumb.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-3 wow fadeInRight" data-wow-delay=".8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
+					<a target="_blank" href="assets/SBP1.jpg" alt="">								
+						<img class="img-responsive" src="images/SBP1_thumb.jpg" alt="">
+					</a>
+				</div>				
+			</div>
+		</div>
+    </section>
+
+    <section id="service">
+        <div class="container">
+				<h2 class="title">Review</h2>		
+                <div class="row">
+					<a href="https://kotaku.com/amazing-emulator-turns-2d-nes-games-into-fully-3d-world-1844225861">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="block wow fadeInRight" data-wow-delay="1s" style="visibility: hidden; animation-delay: 1s; animation-name: none;">
+                            <div class="icon">
+							   <i class="fa">
+									<img src="images/kotaku.jpg" class="img-fluid" alt="Responsive image">
+							   </i>
+                            </div>
+                            
+                            <h3>Kotaku</h3>
+                            <p>Amazing Emulator Turns 2D NES Games Into Fully 3D Worlds.</p>
+                        </div>
+                    </div>
+					</a>
+					
+					<a href="https://uploadvr.com/3dnesvr-lets-you-play-nes-games-like-super-mario-bros-in-vr/">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="block wow fadeInRight" data-wow-delay="1.3s" style="visibility: hidden; animation-delay: 1.3s; animation-name: none;">
+                            <div class="icon">
+							   <i class="fa">
+									<img src="images/uploadvr.png" class="img-fluid" alt="Responsive image">
+							   </i>
+                            </div>
+                            <h3>UploadVR</h3>
+                            <p>It seems like the next best thing to Nintendo’s lack of interest in VR.</p>
+                        </div>
+                    </div>
+					</a>
+					
+					<a href="https://arstechnica.com/gaming/2016/03/how-a-new-emulator-generates-3d-scenes-from-2d-nes-games/">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="block wow fadeInRight" data-wow-delay="1.6s" style="visibility: hidden; animation-delay: 1.6s; animation-name: none;">
+                            <div class="icon">
+								<i class="fa">
+									<img src="images/ars.png" class="img-fluid" alt="Responsive image">
+								</i>
+                            </div>
+                            <h3>Arstechnica</h3>
+                            <p>The world of NES emulation hasn't been all that exciting since the late '90s.</p>
+                        </div>
+                    </div>
+					</a>
+            </div>
+        </div>
+    </section>
+
+	
+	
+    <section id="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInDown" data-wow-delay=".8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
+                    <div class="block">
+                        <div class="title text-center">
+                            <h3>Keep updated with 3dSen project progress</h3>
+                        </div>
+                        
+						<!-- Begin Mailchimp Signup Form -->
+						<div id="mc_embed_signup">
+						<form action="https://gmail.us20.list-manage.com/subscribe/post?u=d85b375ba46c9dad2a50b7c25&amp;id=00bd141fbf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+							<div id="mc_embed_signup_scroll">
+							
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d85b375ba46c9dad2a50b7c25_00bd141fbf" tabindex="-1" value=""></div>
+							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							</div>
+						</form>
+						</div>
+
+						<!--End mc_embed_signup-->
+
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="wow fadeInUp" data-wow-delay=".8s" style="visibility: hidden; animation-delay: 0.8s; animation-name: none;">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                        <a class="footer-logo" href="#">
+                            <img class="img-responsive" src="images/geod.png" height="48px" alt="">
+                        </a>
+                    <p>Copyright © 2015 - 2019 Geod Studio. All rights reserved.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body></html>

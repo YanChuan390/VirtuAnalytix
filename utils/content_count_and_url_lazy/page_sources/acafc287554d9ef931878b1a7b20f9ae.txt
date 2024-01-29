@@ -1,0 +1,1393 @@
+<html><head><script>
+  var screenshotPaths = [
+  
+  ];
+
+  var frontCover = 0;
+  var lastScreenshotIndex = -1;
+
+  function randomiseCover()
+  {
+    if (screenshotPaths.length > 0)
+    {
+      var screenshotIndex;
+
+      do
+      {
+        screenshotIndex = Math.floor(Math.random() * screenshotPaths.length);
+      } while (screenshotPaths.length > 1 && screenshotIndex == lastScreenshotIndex);
+
+      document.getElementsByName("cover")[(frontCover + 1) % 2].style.backgroundImage = "url('" + screenshotPaths[screenshotIndex] + "')";
+      
+      setTimeout(function()
+      {
+        document.getElementsByName("cover")[(frontCover + 1) % 2].classList.toggle('transparent');
+        document.getElementsByName("cover")[frontCover % 2].classList.toggle('transparent');
+      }, lastScreenshotIndex == -1 ? 0 : 4500);
+
+      lastScreenshotIndex = screenshotIndex;
+
+      ++frontCover;
+    }
+  }
+
+  function scrollToTop()
+  {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  window.onload = function()
+  {
+    randomiseCover();
+
+    if (screenshotPaths.length > 1)
+    {
+      setInterval(randomiseCover, 10000);
+    }
+  };
+
+  window.onscroll = function()
+  {
+    if ((document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
+      && (document.body.clientWidth >= 800 || document.documentElement.clientWidth >= 800))
+    {
+      document.getElementById("scrollToTopButton").style.display = "block";
+    }
+    else
+    {
+      document.getElementById("scrollToTopButton").style.display = "none";
+    }
+  };
+</script>
+
+
+
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+  <title>Games - 2Bit Studios</title>
+  <meta name="description" content="Australian video game developers, making the tropics cool again.">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="//games/">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+</head>
+
+
+  <body><div name="cover" class="background" style="transform: scale(1.2);"></div>
+  <div name="cover" class="background transparent" style="transform: scale(1.2);"></div>
+
+  <div class="background" style="
+    background-image: url(/images/site/Dither.png); 
+    background-position: initial;
+	  background-repeat: initial;
+    background-size: initial;"></div>
+
+  <button onclick="scrollToTop()" id="scrollToTopButton" class="button-scroll" title="Return to Top">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    Back to Top
+  </button>
+
+  
+    <div class="filler">
+      <header class="header">
+  <div class="header-menu">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <a class="header-link header-home" href="/">
+    <img src="/images/site/Logo.png" alt="Logo" title="2Bit Home">
+  </a>
+
+  
+    
+      
+        <a class="header-link" href="/about/">About</a>
+      
+    
+  
+    
+      
+        <div class="header-link header-active">Games</div>
+      
+    
+  
+    
+  
+    
+  
+    
+      
+        <a class="header-link" href="/newsletter/">Newsletter</a>
+      
+    
+  
+    
+  
+
+  <div class="header-media">
+    <a class="header-link" href="mailto:contact@2bitstudios.com.au" target="_blank" title="2Bit via Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a class="header-link" href="https://youtube.com/channel/UC1eozaLXMc0lhirdmaSJC7Q" target="_blank" title="2Bit on Youtube">
+      <i class="fab fa-youtube"></i>
+    </a>
+
+    <a class="header-link" href="https://twitter.com/2bit_studios" target="_blank" title="2Bit on Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a class="header-link" href="https://facebook.com/2bitstudios" target="_blank" title="2Bit on Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a class="header-link" href="https://instagram.com/2bitstudios" target="_blank" title="2Bit on Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</header>
+
+
+      <div class="wrapper">
+        <article class="page">
+  <div>
+    <div class="pad">
+  <iframe class="video" src="https://www.youtube.com/embed/pOON0jdEAdM" style="height:315px" allowfullscreen="true"></iframe>
+</div>
+
+
+
+
+  
+    <div class="pad">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/planetation/">
+    <img src="/games/planetation/Planetation_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Featured
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Planetation</div>
+
+        <div class="capsule-popup-subtitle">Survival, Crafting, Online Co-Op</div>
+
+        <div class="capsule-popup-text">On the harmstead you sow crops by day, plough hordes of alien pests by night, and spelunk the “Very Dark” depths whenever you damn well please. This bloodthirsty alien planet doesn’t want you here, but you’re a robot in a tractormech so what do you care?
+
+</div>
+    </div>
+</a>
+
+    </div>
+  
+
+  
+  
+
+  
+    <div class="pad">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/tech-support-2077/">
+    <img src="/games/tech-support-2077/TechSupport2077_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Featured
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Tech Support 2077</div>
+
+        <div class="capsule-popup-subtitle">Virtual Reality, Debugging</div>
+
+        <div class="capsule-popup-text">Before Richard Stallman 2.0 disappeared from the Virtual Web, never to be seen again, he distributed a groundbreaking new manifesto called Raptor. It was said to be so open and free and beard-strokingly-good that so much as retweeting it could irreversibly destroy the concept of paid software forever. In response, the wealthy United Peace Corporation of tech giants created B.O.M.B. - the Big Ol’ Malware Bomb, a suite of bugs, viruses, worms, and overly-helpful paperclips that eventually wiped out all traces of Raptor.
+
+</div>
+    </div>
+</a>
+
+    </div>
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    <div class="pad">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/toys-of-war/">
+    <img src="/games/toys-of-war/ToysOfWar_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Featured
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Toys of War</div>
+
+        <div class="capsule-popup-subtitle">Action, Local Multiplayer</div>
+
+        <div class="capsule-popup-text">In an effort to turn the tide of war, the greatest military minds gather to develop their next great move. On a planning table in a deep underground bunker, miniatures come alive in the minds of the tacticians, battling again and again until the best strategy has been discovered.
+
+</div>
+    </div>
+</a>
+
+    </div>
+  
+
+  
+  
+
+  
+    <div class="pad">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/lolliprop/">
+    <img src="/games/lolliprop/LolliProp_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Featured
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">LolliProp</div>
+
+        <div class="capsule-popup-subtitle">Puzzle, Mobile</div>
+
+        <div class="capsule-popup-text">LolliProp is a physics driven puzzle game where you use pins to stop candy from falling into the “Chocodile” infested waters below.
+
+</div>
+    </div>
+</a>
+
+    </div>
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    <div class="pad">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/laser-space-monks/">
+    <img src="/games/laser-space-monks/LaserSpaceMonks_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Featured
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Laser Space Monks</div>
+
+        <div class="capsule-popup-subtitle">Action, Fighting</div>
+
+        <div class="capsule-popup-text">Laser Space Monks is a free competitive multiplayer game where two or more players take the role of Laser Space Monks and battle each other in a duel of the fates. Players can direct their laser sticks in order to attack in that direction or block attacks from that direction.
+
+</div>
+    </div>
+</a>
+
+    </div>
+  
+
+  
+  
+
+  
+  
+
+  
+    <div class="pad">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/regentz/">
+    <img src="/games/regentz/RegentZ_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Featured
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">RegentZ</div>
+
+        <div class="capsule-popup-subtitle">Satire, Action</div>
+
+        <div class="capsule-popup-text">No-one would dare intrude on a high class debutant’s ball, at least not without pants. That’s what Charlotte thought, but zombies have never been known for their propriety…
+
+</div>
+    </div>
+</a>
+
+    </div>
+  
+
+  
+  
+
+  
+  
+
+
+<div class="linkGrid">
+  
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/the-chasm/">
+    <img src="/games/the-chasm/TheChasm_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">The Chasm</div>
+
+        <div class="capsule-popup-subtitle">Spelunking, Atmospheric, Platformer</div>
+
+        <div class="capsule-popup-text">An exciting afternoon spelunking turns into a desperate descent when your partner free falls into the depths of the earth. Did he survive? Can you rescue him without losing yourself along the way? And what was that noise in the dark?
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/pickaxe-park/">
+    <img src="/games/pickaxe-park/PickaxePark_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Pickaxe Park</div>
+
+        <div class="capsule-popup-subtitle">Pokebattle, Breeding</div>
+
+        <div class="capsule-popup-text">Breed pickaxes, battle them against ores, and unlock secrets about their origins. Riveting.
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/who-wants-to-be-a-vampires-heir/">
+    <img src="/games/who-wants-to-be-a-vampires-heir/WhoWantsToBeAVampiresHeir_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class="fas fa-trophy"></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Who Wants to Be a Vampire's Heir?</div>
+
+        <div class="capsule-popup-subtitle">Quiz, Gameshow</div>
+
+        <div class="capsule-popup-text">Your quest to court the daughter of a vampire lord goes awry when he catches you red handed. Now you must play his game or end up as his dinner, the choice is yours. Pay for your missteps with your own blood, but be careful not to run out…
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/toga-throwdown/">
+    <img src="/games/toga-throwdown/TogaThrowdown_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Toga Throwdown</div>
+
+        <div class="capsule-popup-subtitle">Action, Brawler</div>
+
+        <div class="capsule-popup-text">You’ve been brought to Olympus to battle for the favour of the gods. Sacrifice their followers with your fists to win their favour, but be warned - their benevolence is a fickle thing indeed.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/dark-shepherd/">
+    <img src="/games/dark-shepherd/DarkShepherd_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Dark Shepherd</div>
+
+        <div class="capsule-popup-subtitle">Action, Spooky</div>
+
+        <div class="capsule-popup-text">The townsguard have stormed the local church which they have accused of harbouring vampires and have begun attacking the innocent civilians inside. You happen to be a vampire who has decided to aid the weak defenseless civilians and church that has offered your misunderstood kind so much. They may be weak and defenseless, but the blood running through their veins may just be what saves them…
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/snakes-in-the-sand/">
+    <img src="/games/snakes-in-the-sand/SnakesInTheSand_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Snakes in the Sand</div>
+
+        <div class="capsule-popup-subtitle">Platformer, Bowling</div>
+
+        <div class="capsule-popup-text">Go back in time to thwart an ancient evil hidden in the Egyptian pyramids.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/joe-chef/">
+    <img src="/games/joe-chef/JoeChef_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Joe Chef</div>
+
+        <div class="capsule-popup-subtitle">Cooking, Fighting</div>
+
+        <div class="capsule-popup-text">As part of a powerful warrior race of chefs who are so successful they have eaten themselves to the brink of starvation, you set out on an interstellar journey to find a new source of food to save your people. Fortunately you soon find a planet teeming with food, but it looks like it might put up a fight.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/top-ninja/">
+    <img src="/games/top-ninja/TopNinja_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Top Ninja</div>
+
+        <div class="capsule-popup-subtitle">Action, Multiplayer</div>
+
+        <div class="capsule-popup-text">Battle your friends in a life-or-death ninja arena. Use your ninjutsu to teleport in close for a kill, counter your enemies attacks, or defeat them from afar with shuriken.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/terminal-attraction/">
+    <img src="/games/terminal-attraction/TerminalAttraction_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class="fas fa-trophy"></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Terminal Attraction</div>
+
+        <div class="capsule-popup-subtitle">Dating Sim, Story Driven</div>
+
+        <div class="capsule-popup-text">You’re one of the best detectives around, newly moved to Voltimore City after a bad breakup. You’re not looking for love but it won’t be long until the sparks of romance start flying. Also there’s a murderer you should probably stop.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/ant-detective/">
+    <img src="/games/ant-detective/AntDetective_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class="fas fa-trophy"></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Ant Detective</div>
+
+        <div class="capsule-popup-subtitle">Third Person Shooter, Story Driven</div>
+
+        <div class="capsule-popup-text">Kowalski is fresh out of ant rehab and ready to tackle the colony’s dirty criminal underbelly. Journey with him into the twisted maze of the Anti-Royalist agenda as he searches for reason behind the death of a public servant, in a classic noir setting. Was it murder? Could it be something worse?
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/wubz/">
+    <img src="/games/wubz/Wubz_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Wubz</div>
+
+        <div class="capsule-popup-subtitle">Rythym</div>
+
+        <div class="capsule-popup-text">Grapple and swing your way though levels generated from songs either supplied in the game or from your own collection. Hang from the soundwave of the song and avoid enemies that appear based on the intensity of the song.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/bare-knuckle-gladiators/">
+    <img src="/games/bare-knuckle-gladiators/BareKnuckleGladiators_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Bare Knuckle Gladiators</div>
+
+        <div class="capsule-popup-subtitle">Action, Brawler</div>
+
+        <div class="capsule-popup-text">You are a gladiator, fight to be the best, fight to entertain. There is only one catch, all you have to fight with is your bare hands.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/fracture/">
+    <img src="/games/fracture/Fracture_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class="fas fa-trophy"></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Fracture</div>
+
+        <div class="capsule-popup-subtitle">Atmospheric, Story Driven</div>
+
+        <div class="capsule-popup-text">Enter the mind of a troubled individual to help them overcome memories of their pained past. These memories are not receptive to change however, so be prepared to convince them.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/blood-and-thunder/">
+    <img src="/games/blood-and-thunder/BloodAndThunder_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Blood and Thunder</div>
+
+        <div class="capsule-popup-subtitle">Action, Boss Battle</div>
+
+        <div class="capsule-popup-text">Grab a harpoon and get revenge on the whale that killed your crew.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/john-wizard/">
+    <img src="/games/john-wizard/JohnWizard_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">John Wizard</div>
+
+        <div class="capsule-popup-subtitle">Puzzle, Story Driven</div>
+
+        <div class="capsule-popup-text">They took his dog to Hell… And he’s coming for it!
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/boxing-quest/">
+    <img src="/games/boxing-quest/BoxingQuest_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Boxing Quest</div>
+
+        <div class="capsule-popup-subtitle">Action, Fighting</div>
+
+        <div class="capsule-popup-text">Boxing Quest is a fighting game “LITE” using two button controls.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/alpha-aphid/">
+    <img src="/games/alpha-aphid/AlphaAphid_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Alpha Aphid</div>
+
+        <div class="capsule-popup-subtitle">Puzzle, Platformer</div>
+
+        <div class="capsule-popup-text">Play as an aphid trying to make his way to the top of the tree. Only by collecting dew, growing stalks, evading enemy aphids, and outwitting the tree can you make it all the way!
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/the-earitable-giant/">
+    <img src="/games/the-earitable-giant/TheEaritableGiant_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">The Earitable Giant</div>
+
+        <div class="capsule-popup-subtitle">Puzzle, Atmospheric</div>
+
+        <div class="capsule-popup-text">You are from a village that rests on the shoulder of a giant. One day the village notices that the giant seems to be having unexplained problems with its ear. The village decides to send you, the elderly candlemaker, to investigate as you are the most familiar with wax caves. You must find whats within the giants ear to save your village.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/the-right-tool-for-the-job/">
+    <img src="/games/the-right-tool-for-the-job/TheRightToolForTheJob_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">The Right Tool For The Job</div>
+
+        <div class="capsule-popup-subtitle">Puzzle</div>
+
+        <div class="capsule-popup-text">The Right Tool For The Job is a puzzle game that asks players to complete every-day tasks with conventional weapons, in very unconventional ways.
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/consplay/">
+    <img src="/games/consplay/Consplay_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Consplay</div>
+
+        <div class="capsule-popup-subtitle">Strategy, Pop Culture</div>
+
+        <div class="capsule-popup-text">Send your gallant convention-goers into battle against other conventions! Make decisions that influence who you have to send into battle and try not to get overwhelmed!
+</div>
+    </div>
+</a>
+
+    
+  
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/a-vengeful-god/">
+    <img src="/games/a-vengeful-god/AVengefulGod_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">A Vengeful God</div>
+
+        <div class="capsule-popup-subtitle">God Game, Strategy</div>
+
+        <div class="capsule-popup-text">You play as a ‘vengeful god’ who must keep their followers in line with fear. Don’t let your followers become unfaithful and escape!
+
+</div>
+    </div>
+</a>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="capsule" href="/games/chromashift/">
+    <img src="/games/chromashift/Chromashift_Capsule.jpg">
+
+    <div class="capsule-tags">
+        
+            <i class=""></i>
+        
+
+         Jam
+    </div>
+
+    <div class="capsule-popup desktopOnly">
+        <div class="capsule-popup-title">Chromashift</div>
+
+        <div class="capsule-popup-subtitle">Action, Arcade</div>
+
+        <div class="capsule-popup-text">Destroy all Magenta cubes. Anything between you and them is fair game - as long as you can see them. Don’t stay on a colour for too long or you’ll get Chromasick and fall over dead.
+
+</div>
+    </div>
+</a>
+
+    
+  
+</div>
+
+  </div>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+  © 2018 - 2Bit Studios
+</footer>
+
+  
+
+</body></html>

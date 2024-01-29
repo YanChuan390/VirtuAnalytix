@@ -1,0 +1,618 @@
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths desktop portrait" lang="en" style=""><head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Vector36 | Physics Based Racer</title><script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/7ee36b0e/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="https://www.youtube.com/player_api?v=2.7.1" id="YTAPI"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/YTPlayer.css">
+
+		<!-- color styles - uncomment your preferred -->
+		<link rel="stylesheet" type="text/css" href="css/skins/vblue.css" name="colors">
+		<link href="http://fonts.googleapis.com/css?family=Verdana:400,700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,200" rel="stylesheet" type="text/css">
+		<script src="js/vendor/modernizr.js"></script>
+	<meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/54/4/intl/zh_cn/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/54/4/intl/zh_cn/util.js"></script></head>
+
+	<body>
+
+
+		<!-- Preloader -->
+		<div class="mask" style="display: none;">
+			<div id="loader" class="rotating" style="display: none;"></div>
+		</div>
+		<!--/Preloader -->
+
+
+
+		<!-- start header -->
+		<header>
+			<div class="row">
+				<div class="medium-3 small-9 columns text-align-left">
+					<!-- start logo -->
+					<h1 class="logo"><a title="" href="index.html">Vector 36.com</a></h1>
+					<!-- end logo -->
+				</div>  
+				<div class="small-3 columns show-for-small-only text-right ">  
+					<div class="menu-toggle-button" data-menu-id="navigation"><i class="icon tyger-navicon"></i></div>
+				</div>
+				<div class="medium-9 small-12 columns medium-text-right">
+					<!-- Menu Structure -->
+					<ul class="menu-list" id="navigation">
+						<li><a data-scroll="" href="#about">Features</a></li>
+						<li><a data-scroll="" href="#media">Media</a></li>	
+                        <li><a data-scroll="" href="#feedback">Feedback</a></li>
+                        <li><a data-scroll="" href="#team">Devs</a></li>
+                        <li><a data-scroll="" href="presskit.html">Press Kit</a></li>
+						
+					</ul>
+				</div>  
+			</div>
+		</header>
+		<!-- end header -->
+
+		<!-- start site overlay -->
+		<div class="site-overlay"></div>
+		<!-- end site overlay -->
+
+		<!-- start video background section -->
+		<section id="video-container"><div class="mbYTP_wrapper" id="wrapper_mbYTP_bgndVideo" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;"><iframe id="mbYTP_bgndVideo" class="playerBox" style="position: absolute; z-index: 0; width: 1257px; height: 907.24px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -128.12px; margin-left: -119px;" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/xEBUlz5H2m0?autoplay=0&amp;modestbranding=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=mbYTP_bgndVideo&amp;origin=http%3A%2F%2Fvector36.com&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;widgetid=1"></iframe><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div>	
+			<div class="overlay"></div>
+			<div class="slider-caption slider-caption-center">
+						<h2 data-caption-animate="fadeInUp" class="fadeInUp animated undefined visible"><span class="color">Design</span> and Conquer<span class="color">.</span></h2>
+						<p data-caption-delay="200" data-caption-animate="fadeInUp" class="fadeInUp animated undefined visible">This is your machine.  This is your race.
+						</p>
+				<a data-scroll="" title="" class="arrow inner-link" href="#about"><i class="icon tyger-arrow-circle-down-line"></i></a>
+						<!--<a data-caption-animate="fadeInUp" data-caption-delay="700" class="inner-link slider-link" href="#about"   ><span>More About Us</span></a>-->	
+					</div>
+
+			<!-- video from youtube, change here your url -->            
+			<div id="bgndVideo" class="player mb_YTVPlayer isMuted" data-poster="img/poster_img1.jpg" data-property="{videoURL:'xEBUlz5H2m0',containment:'#video-container', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, addRaster:false, quality:'default'}" style="display: none; position: relative;">
+
+			</div>                       
+			<div id="bg-video-controls">                      
+				<a id="bg-video-volume" class="icon tyger-volume-down-1" href="#" title="Unmute">&nbsp;</a>                         
+				<a id="bg-video-play" class="icon tyger-pause-2" href="#" title="Pause">&nbsp;</a>
+			</div>
+			<!-- end video from youtube -->
+
+		</section>
+		<!-- end video background section -->
+
+		<!-- start #wrapper -->
+		<div id="wrapper">
+
+			<!-- start section about -->
+			<section id="about">
+				<div class="row">
+					<div class="medium-3 small-12  columns animated" data-animate-delay="0" data-animate="fadeInDown">
+						<div class="title-section">
+							<h3><strong>Features</strong></h3>
+						</div>
+					</div>
+					<div class="medium-9 columns animated" data-animate-delay="0" data-animate="fadeInUp">
+						<div class="section-desc">
+							<h4><strong>Vector 36 is Physics-Based Racer set on the terraformed surface of Mars. You pilot a Skimmer, a completely customizable, surface skimming vehicle. Piloting skill and engineering make the difference between winning and losing.</strong> </h4>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="medium-6 columns animated" data-animate-delay="0" data-animate="fadeInLeft">
+						<img src="img/placeholder.jpg" alt="">
+					</div>
+					<div class="medium-6 columns animated" data-animate-delay="0" data-animate="fadeInRight">
+
+						<!-- start accordion -->
+						<ul class="accordion" data-accordion="myAccordionGroup">
+							<li class="accordion-navigation">
+								<a href="#panel1c">Physics Based</a>
+								<div id="panel1c" class="content">
+									<p>Each part of your Skimmer is bound by the laws of physics. Moving internal components will shift the center of gravity, adjusting angles of thrusters will affect it's flight characteristics.  You are responsible for how your Skimmer performs.</p>
+								</div>
+							</li>
+							<li class="accordion-navigation">
+								<a href="#panel2c">Constructable</a>
+								<div id="panel2c" class="content">
+									<p>Choose from a wide selection of parts, accessories, passive weapons, or support gear to adjust your Skimmer to its task.  Whether it's a quick sprint at full boost, an endurance race with hardened parts, or a hill climb where lift is more important than thrust; evolve or get left behind.</p>
+								</div>
+							</li>
+							<li class="accordion-navigation">
+								<a href="#panel3c">Easy to Expand</a>
+								<div id="panel3c" class="content">
+									<p>Witness new Skimmers, tracks, obstacles, bots, parts, weapons, opponents, planets.  Vector 36 will be growing over time.</p>
+								</div>
+							</li>
+                            <li class="accordion-navigation">
+								<a href="#panel4c">Latest Graphic Tech</a>
+								<div id="panel4c" class="content">
+									<p>Developed using the latest game technology.  Unity drives the game,  realtime GI fills the scene with dynamic daylight, physically based shaders make the metal shine, full screen motion blur propels the player.</p>
+								</div>
+							</li>
+							<li class="accordion-navigation">
+								<a href="#panel5c">VR Ready</a>
+								<div id="panel5c" class="content">
+									<p>Full Oculus Rift support will be followed by Steam VR.  VR controllers will mimic in-cockpit hands and controls.</p>
+								</div>
+							</li>
+
+
+						</ul>
+						<!-- end accordion -->
+
+					</div>
+				</div>
+		  </section>
+			<!-- end section about -->
+			<!-- start works/portfolio section -->
+			<section id="media">
+				<section class="dark">
+                <div class="row">
+					<div class="medium-3 small-12  columns animated" data-animate-delay="0" data-animate="fadeInDown">
+						<div class="title-section">
+							<h3>Media</h3>
+						</div>
+					</div>
+					<div class="medium-9 columns animated" data-animate-delay="0" data-animate="fadeInUp">
+						<div class="section-desc">
+							<h4 class="white">Check out the latest screenshots</h4>
+							<p> </p>
+						</div>
+					</div>
+					<div class="medium-6 columns medium-centered">
+
+						<!-- start portfolio filters -->
+						<div id="filters-container" class="cbp-l-filters-alignCenter">
+							<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+								ALL MEDIA <div class="cbp-filter-counter">12</div>
+							</div>
+							<div data-filter=".race" class="cbp-filter-item">
+								RACE <div class="cbp-filter-counter">5</div>
+							</div>
+							<div data-filter=".mod" class="cbp-filter-item">
+								MODIFY <div class="cbp-filter-counter">5</div>
+							</div>
+							<div data-filter=".other" class="cbp-filter-item">
+								OTHER <div class="cbp-filter-counter">2</div>
+							</div>
+						</div>
+						<!-- end portfolio filters -->
+						
+					</div>
+				</div>
+				
+				<!-- start portfolio -->
+				<div id="grid-container" class="cbp-l-grid-fullWidth cbp cbp-chrome cbp-caption-zoom cbp-animation-fadeOutTop cbp-cols-3 cbp-ready" style="height: 1215px;"><div class="cbp-wrapper" style="opacity: 1;">
+
+					<!-- start item -->
+					<div class="cbp-item race" style="width: 339px; transform: translate3d(0px, 0px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss1.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">Morning Race</div>
+											<a href="img/works/ss1.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item other" style="width: 339px; transform: translate3d(340px, 0px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss12.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">Taenarius</div>
+											<a href="img/works/ss12.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item mod" style="width: 339px; transform: translate3d(680px, 0px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss6.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">Man / Machine</div>
+											<a href="img/works/ss6.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item other" style="width: 339px; transform: translate3d(0px, 304px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss10.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">Pilot</div>
+											<a href="img/works/ss10.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item race" style="width: 339px; transform: translate3d(340px, 304px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss2.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">Morning Race</div>
+											<a href="img/works/ss2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item race" style="width: 339px; transform: translate3d(680px, 304px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss3.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">Night Hairpin</div>
+											<a href="img/works/ss3.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item race" style="width: 339px; transform: translate3d(0px, 608px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss4.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">Aganippe Fossae</div>
+											<a href="img/works/ss4.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item race" style="width: 339px; transform: translate3d(340px, 608px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss5.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">Hopper Cockpit</div>
+											<a href="img/works/ss5.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item mod" style="width: 339px; transform: translate3d(680px, 608px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss9.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">New Skimmers</div>
+											<a href="img/works/ss9.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item mod" style="width: 339px; transform: translate3d(0px, 912px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss7.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">New Parts</div>
+											<a href="img/works/ss7.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item mod" style="width: 339px; transform: translate3d(340px, 912px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss8.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">Custom Skimmers</div>
+											<a href="img/works/ss8.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+                    					<!-- start item -->
+					<div class="cbp-item mod" style="width: 339px; transform: translate3d(680px, 912px, 0px);"><div class="cbp-item-wrapper">
+						<div class="cbp-caption">
+							<div class="cbp-caption-defaultWrap">
+								<img src="img/works/small/ss11.jpg" alt="">
+							</div>
+							<div class="cbp-caption-activeWrap">
+								<div class="th-detail">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<div class="cbp-l-grid-projects-title">Nanowave Garage</div>
+											<a href="img/works/ss11.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Vector 36<br>Property of Red River Studio LLC.">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></div>
+					<!-- end item -->
+				</div></div>
+               
+				<!-- end portfolio -->
+
+			</section>
+			<!-- end works/portfolio section -->
+			<!-- start services section -->
+			<section id="feedback">
+				<div class="row">
+					<div class="medium-3 small-12  columns animated" data-animate-delay="0" data-animate="fadeInDown">
+						<div class="title-section">
+							<h3>Feedback</h3>
+							<i class="icon tyger-crown-king-streamline"></i>
+						</div>
+					</div>
+					<div class="medium-9 columns animated" data-animate-delay="0" data-animate="fadeInUp">
+						<div class="section-desc">
+							<h4><strong>Your input matters. Vector36 aims to be community driven.</strong></h4>
+							<p>At its core, Vector 36 is about making a game for the community to share, discuss, and compete with. Initially, some features will be in development.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<section class="parallax testimonial" data-stellar-background-ratio="0.5" style="background-position: 0% 1664.23px;">
+					  <div class="overlay"></div>
+					  <div class="row">
+					    <div class="medium-6 columns medium-centered text-center">
+					      <!-- start testimonial slider -->
+					      <div id="testimonial-slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+					        <!-- start testimonial item -->
+					        <div class="owl-wrapper-outer autoHeight" style="height: 238px;"><div class="owl-wrapper" style="width: 3960px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(-495px, 0px, 0px); transform-origin: 742.5px center; perspective-origin: 742.5px center;"><div class="owl-item" style="width: 495px;"><div class="subtitle white">
+					          <h2 class="white">YESSSSS</h2>
+					          <p>ABSOLUTELY BUYING</p>
+					          <cite>Alix1723</cite> </div></div><div class="owl-item" style="width: 495px;"><div class="subtitle white">
+					          <h2 class="white">WANT!!</h2>
+					          <p>Got halfway through the video, saw the building aspect and audibly emitted "Are you ******* serious?!"</p>
+					          <cite>Rancid_Bear_Meat</cite> </div></div><div class="owl-item" style="width: 495px;"><div class="subtitle white">
+					          <h2 class="white">The gran turismo of wipeout.</h2>
+					          <p>never though i would see something like this.</p>
+					          <cite>yoshi314</cite> 
+                              </div></div><div class="owl-item" style="width: 495px;"><div class="subtitle white">
+					          <h2 class="white">Ever get that moment when you say: </h2>
+					          <p>"Oh ****. That was going to be my next game."</p>
+					          <cite>TheMemoman</cite> 
+                              </div></div></div></div>
+					        <!-- end testimonial item -->
+					        <!-- start testimonial item -->
+					        
+					        <!-- end testimonial item -->
+					        <!-- start testimonial item -->
+					        
+					        
+					      <!-- end testimonial slider -->
+				        	</div>
+                        </div>
+				      </div>
+				  </section>
+					<div class="medium-12 columns">
+						<div id="services-container" class="cbp-l-grid-gallery cbp cbp-chrome cbp-caption-overlayBottomPush cbp-animation-rotateSides cbp-cols-3 cbp-ready" style="height: 200px;"><div class="cbp-wrapper cbp-wrapper-front">
+
+							<!-- start service -->
+							<div class="cbp-item service" style="width: 309px; transform: translate3d(0px, 0px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+								<i class="icon tyger-square-download-outline"></i><h5>Press Kit</h5>
+								<p>Helpful Information and Media</p>
+								<a class="link-btn cbp-singlePageInline" href="services/service1.html" data-hover="Read More"><span>Read More</span></a>
+							</div></div>
+							<!-- end service -->
+
+							<!-- start service -->
+							<div class="cbp-item service" style="width: 309px; transform: translate3d(339px, 0px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+								<i class="icon tyger-information-small-circle-outline"></i><h5>Road Map</h5>
+								<p>Future Plans</p>
+								<a class="link-btn cbp-singlePageInline" href="services/service2.html" data-hover="Read More"><span>Read More</span></a>
+							</div></div>
+							<!-- end service -->
+
+							<!-- start service -->
+							<div class="cbp-item service" style="width: 309px; transform: translate3d(678px, 0px, 0px); opacity: 1;"><div class="cbp-item-wrapper">
+								<i class="icon tyger-question-circle-outline"></i><h5>FAQ</h5>
+								<p>Frequently Asked Questions.</p>
+								<a class="link-btn cbp-singlePageInline" href="services/service3.html" data-hover="Read More"><span>Read More</span></a>
+							</div></div>
+							<!-- end service -->
+
+						</div><div class="cbp-wrapper" style="opacity: 0;">
+
+							<!-- start service -->
+							<div class="cbp-item service" style="width: 309px;"><div class="cbp-item-wrapper">
+								<i class="icon tyger-square-download-outline"></i><h5>Press Kit</h5>
+								<p>Helpful Information and Media</p>
+								<a class="link-btn cbp-singlePageInline" href="services/service1.html" data-hover="Read More"><span>Read More</span></a>
+							</div></div>
+							<!-- end service -->
+
+							<!-- start service -->
+							<div class="cbp-item service" style="width: 309px;"><div class="cbp-item-wrapper">
+								<i class="icon tyger-information-small-circle-outline"></i><h5>Road Map</h5>
+								<p>Future Plans</p>
+								<a class="link-btn cbp-singlePageInline" href="services/service2.html" data-hover="Read More"><span>Read More</span></a>
+							</div></div>
+							<!-- end service -->
+
+							<!-- start service -->
+							<div class="cbp-item service" style="width: 309px;"><div class="cbp-item-wrapper">
+								<i class="icon tyger-question-circle-outline"></i><h5>FAQ</h5>
+								<p>Frequently Asked Questions.</p>
+								<a class="link-btn cbp-singlePageInline" href="services/service3.html" data-hover="Read More"><span>Read More</span></a>
+							</div></div>
+							<!-- end service -->
+
+						</div></div>
+					</div>
+				</div>
+			</section>
+			<!-- end service section -->
+            <!-- start team section -->
+			
+            <section id="team" class="dark">
+				
+                <div class="row">
+					<div class="medium-3 small-12  columns animated" data-animate-delay="0" data-animate="fadeInDown">
+						<div class="title-section">
+							<h3><strong>Studio</strong></h3>
+						</div>
+					</div>
+					<div class="medium-9 columns animated" data-animate-delay="0" data-animate="fadeInUp">
+						<div class="section-desc">
+							<h4 class="white">Red River Studio</h4>
+							<p>Since 2007, Red River Studio has specialized in 3D graphics for engineering and energy infrastructure companies.  As of 2010, it has shifted gears to work on video games, because games are awesome.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">   
+					<div class="medium-12 columns">
+						<!-- start team slider -->
+						<div id="team-slider" class="cbp-l-grid-slider-team cbp-slider-edge cbp cbp-chrome cbp-mode-slider cbp-cols-3 cbp-ready" style="height: 524px;"><div class="cbp-wrapper-outer"><div class="cbp-wrapper" style="opacity: 1; width: 309px;">
+
+							<!-- start team member -->
+							<div class="cbp-item" style="width: 309px; transform: translate3d(0px, 0px, 0px);">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/team/placeholder.jpg" alt="">
+									</div>
+								</div>
+								<div class="cbp-l-grid-slider-team-wrap">
+									<div class="cbp-l-grid-slider-team-name">
+								  <h4 class="white">Ryan McKee</h4></div>
+								</div>
+								<div class="cbp-l-grid-slider-team-position">Director</div>
+								<div class="cbp-l-grid-slider-team-desc">
+									<p>Originally from the East Coast USA, he has a background in mechanical engineering, contracted for the US Navy, NASA, and started Red River Studio in 2007.  He moved to New Zealand in 2008 and has since been in Christchurch as a freelance 3D artist.  Ryan has been modding and developing indie games for many years, but Vector 36 is his first solo venture.</p>
+								</div>
+							</div>
+							<!-- end team member -->
+					  </div></div><div class="cbp-nav"><div class="cbp-nav-pagination"><div class="cbp-nav-pagination-item cbp-nav-pagination-active" data-slider-action="jumpTo"></div></div></div></div>
+						<!-- end team slider -->
+					</div>
+				</div>   
+			</section>
+			<!-- end team section -->
+
+
+
+
+		<!-- start footer -->
+			<footer>
+				<div class="row">
+					<div class="medium-12 text-center columns">
+						<h1 class="logo"><a title="" href="index.html">Vector 36</a></h1>
+						<div class="medium-4 columns medium-centered">
+							<ul class="medium-block-grid-3
+                             small-block-grid-5 social-links">
+								<li><a title="" href="https://www.facebook.com/Vector36"><i class="icon tyger-facebook"></i></a></li>
+                                <li><a title="" href="https://twitter.com/vector_36"><i class="icon tyger-twitter"></i></a></li>
+                                <li><a title="" href="https://www.youtube.com/watch?v=qBkXTNkx_gk"><i class="icon tyger-youtube-play"></i></a></li>
+							</ul>
+						</div>
+						<p class="white">2017 © Red River Studio LLC. All rights reserved.</p>
+					</div>
+				</div>
+			</footer>
+			<!-- end footer -->
+
+		</section></div>
+		<!-- end #wrapper -->
+
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script src="js/foundation/foundation.accordion.js"></script>
+		<script src="js/plugins.js"></script>
+		<script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="js/map.js"></script>
+		<script src="js/jquery.mb.ytplayer.js"></script>
+		<script src="js/custom.js"></script>
+
+		<!-- Start Style Switcher to remove --> 
+		<script src="js/styleswitcher.js"></script> 
+		<script src="js/jquery-cookie.js"></script> 
+		<!-- End Style Switcher -->
+
+		<script>
+			$(document).foundation();
+		</script>
+	
+
+</body></html>

@@ -1,0 +1,452 @@
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class=" js canvas canvastext geolocation crosswindowmessaging websqldatabase indexeddb hashchange historymanagement draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions  video audio localstorage sessionstorage webworkers no-applicationcache svg smil svgclippaths   fontface"><head>
+
+	<!-- added to allow Google Apps for Work verify the ownership of the previewlabs.com domain -->
+	<meta name="google-site-verification" content="n0rxcA4HTeipaxNjA1BLsb7CZa1dJOarI7GmUrhFCwg">
+
+  <meta charset="UTF-8">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- www.phpied.com/conditional-comments-block-downloads/ -->
+<!--[if IE]><![endif]-->
+
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+  Remove this if you use the .htaccess -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Does not currently validate. Known issue with the Boilerplate. -->
+  
+    <title>Buggy Blasters - HoloLens Prototype Download and Manual - PreviewLabs</title>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">  
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://previewlabs.com/wp-content/themes/previewlabs/style.css">
+     <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-5NC25VL0ET&amp;cx=c&amp;_slc=1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="https://previewlabs.com/wp-content/themes/previewlabs/js/modernizr-1.5.min.js"> </script><style>@font-face{font-family:testfont;src:url('data:font/ttf;base64,AAEAAAAMAIAAAwBAT1MvMliohmwAAADMAAAAVmNtYXCp5qrBAAABJAAAANhjdnQgACICiAAAAfwAAAAEZ2FzcP//AAMAAAIAAAAACGdseWYv5OZoAAACCAAAANxoZWFk69bnvwAAAuQAAAA2aGhlYQUJAt8AAAMcAAAAJGhtdHgGDgC4AAADQAAAABRsb2NhAIQAwgAAA1QAAAAMbWF4cABVANgAAANgAAAAIG5hbWUgXduAAAADgAAABPVwb3N03NkzmgAACHgAAAA4AAECBAEsAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAACAAMDAAAAAAAAgAACbwAAAAoAAAAAAAAAAFBmRWQAAAAgqS8DM/8zAFwDMwDNAAAABQAAAAAAAAAAAAMAAAADAAAAHAABAAAAAABGAAMAAQAAAK4ABAAqAAAABgAEAAEAAgAuqQD//wAAAC6pAP///9ZXAwAAAAAAAAACAAAABgBoAAAAAAAvAAEAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEACoAAAAGAAQAAQACAC6pAP//AAAALqkA////1lcDAAAAAAAAAAIAAAAiAogAAAAB//8AAgACACIAAAEyAqoAAwAHAC6xAQAvPLIHBADtMrEGBdw8sgMCAO0yALEDAC88sgUEAO0ysgcGAfw8sgECAO0yMxEhESczESMiARDuzMwCqv1WIgJmAAACAFUAAAIRAc0ADwAfAAATFRQWOwEyNj0BNCYrASIGARQGKwEiJj0BNDY7ATIWFX8aIvAiGhoi8CIaAZIoN/43KCg3/jcoAWD0JB4eJPQkHh7++EY2NkbVRjY2RgAAAAABAEH/+QCdAEEACQAANjQ2MzIWFAYjIkEeEA8fHw8QDxwWFhwWAAAAAQAAAAIAAIuYbWpfDzz1AAsEAAAAAADFn9IuAAAAAMWf0i797/8zA4gDMwAAAAgAAgAAAAAAAAABAAADM/8zAFwDx/3v/98DiAABAAAAAAAAAAAAAAAAAAAABQF2ACIAAAAAAVUAAAJmAFUA3QBBAAAAKgAqACoAWgBuAAEAAAAFAFAABwBUAAQAAgAAAAEAAQAAAEAALgADAAMAAAAQAMYAAQAAAAAAAACLAAAAAQAAAAAAAQAhAIsAAQAAAAAAAgAFAKwAAQAAAAAAAwBDALEAAQAAAAAABAAnAPQAAQAAAAAABQAKARsAAQAAAAAABgAmASUAAQAAAAAADgAaAUsAAwABBAkAAAEWAWUAAwABBAkAAQBCAnsAAwABBAkAAgAKAr0AAwABBAkAAwCGAscAAwABBAkABABOA00AAwABBAkABQAUA5sAAwABBAkABgBMA68AAwABBAkADgA0A/tDb3B5cmlnaHQgMjAwOSBieSBEYW5pZWwgSm9obnNvbi4gIFJlbGVhc2VkIHVuZGVyIHRoZSB0ZXJtcyBvZiB0aGUgT3BlbiBGb250IExpY2Vuc2UuIEtheWFoIExpIGdseXBocyBhcmUgcmVsZWFzZWQgdW5kZXIgdGhlIEdQTCB2ZXJzaW9uIDMuYmFlYzJhOTJiZmZlNTAzMiAtIHN1YnNldCBvZiBKdXJhTGlnaHRiYWVjMmE5MmJmZmU1MDMyIC0gc3Vic2V0IG9mIEZvbnRGb3JnZSAyLjAgOiBKdXJhIExpZ2h0IDogMjMtMS0yMDA5YmFlYzJhOTJiZmZlNTAzMiAtIHN1YnNldCBvZiBKdXJhIExpZ2h0VmVyc2lvbiAyIGJhZWMyYTkyYmZmZTUwMzIgLSBzdWJzZXQgb2YgSnVyYUxpZ2h0aHR0cDovL3NjcmlwdHMuc2lsLm9yZy9PRkwAQwBvAHAAeQByAGkAZwBoAHQAIAAyADAAMAA5ACAAYgB5ACAARABhAG4AaQBlAGwAIABKAG8AaABuAHMAbwBuAC4AIAAgAFIAZQBsAGUAYQBzAGUAZAAgAHUAbgBkAGUAcgAgAHQAaABlACAAdABlAHIAbQBzACAAbwBmACAAdABoAGUAIABPAHAAZQBuACAARgBvAG4AdAAgAEwAaQBjAGUAbgBzAGUALgAgAEsAYQB5AGEAaAAgAEwAaQAgAGcAbAB5AHAAaABzACAAYQByAGUAIAByAGUAbABlAGEAcwBlAGQAIAB1AG4AZABlAHIAIAB0AGgAZQAgAEcAUABMACAAdgBlAHIAcwBpAG8AbgAgADMALgBiAGEAZQBjADIAYQA5ADIAYgBmAGYAZQA1ADAAMwAyACAALQAgAHMAdQBiAHMAZQB0ACAAbwBmACAASgB1AHIAYQBMAGkAZwBoAHQAYgBhAGUAYwAyAGEAOQAyAGIAZgBmAGUANQAwADMAMgAgAC0AIABzAHUAYgBzAGUAdAAgAG8AZgAgAEYAbwBuAHQARgBvAHIAZwBlACAAMgAuADAAIAA6ACAASgB1AHIAYQAgAEwAaQBnAGgAdAAgADoAIAAyADMALQAxAC0AMgAwADAAOQBiAGEAZQBjADIAYQA5ADIAYgBmAGYAZQA1ADAAMwAyACAALQAgAHMAdQBiAHMAZQB0ACAAbwBmACAASgB1AHIAYQAgAEwAaQBnAGgAdABWAGUAcgBzAGkAbwBuACAAMgAgAGIAYQBlAGMAMgBhADkAMgBiAGYAZgBlADUAMAAzADIAIAAtACAAcwB1AGIAcwBlAHQAIABvAGYAIABKAHUAcgBhAEwAaQBnAGgAdABoAHQAdABwADoALwAvAHMAYwByAGkAcAB0AHMALgBzAGkAbAAuAG8AcgBnAC8ATwBGAEwAAAAAAgAAAAAAAP+BADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAQACAQIAEQt6ZXJva2F5YWhsaQ==')}</style>
+  
+<meta name="robots" content="max-image-preview:large">
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v7.9 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://previewlabs.com/buggyblasters/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Buggy Blasters - HoloLens Prototype Download and Manual - PreviewLabs">
+<meta property="og:description" content="Cronos Groep gave us carte blanche to create an interesting case for the Microsoft HoloLens, and the result, Buggy Blasters, the first online multiplayer HoloLens game prototype is finally available for download now!">
+<meta property="og:url" content="https://previewlabs.com/buggyblasters/">
+<meta property="og:site_name" content="PreviewLabs">
+<meta property="article:section" content="Augmented Reality">
+<meta property="article:published_time" content="2017-12-11T11:35:30+01:00">
+<meta property="article:modified_time" content="2021-05-04T21:14:33+02:00">
+<meta property="og:updated_time" content="2021-05-04T21:14:33+02:00">
+<meta property="og:image" content="https://previewlabs.com/wp-content/uploads/2017/12/buggyBlastersFeaturedImage.png">
+<meta property="og:image:secure_url" content="https://previewlabs.com/wp-content/uploads/2017/12/buggyBlastersFeaturedImage.png">
+<meta property="og:image:width" content="574">
+<meta property="og:image:height" content="371">
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="PreviewLabs » Buggy Blasters – HoloLens Prototype Download and Manual Comments Feed" href="https://previewlabs.com/buggyblasters/feed/">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/previewlabs.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.3"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="https://previewlabs.com/wp-includes/js/wp-emoji-release.min.js?ver=6.1.3" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="shadowbox-css-css" href="https://previewlabs.com/wp-content/uploads/shadowbox-js/src/shadowbox.css?ver=3.0.3" type="text/css" media="screen">
+<link rel="stylesheet" id="shadowbox-extras-css" href="https://previewlabs.com/wp-content/plugins/shadowbox-js/css/extras.css?ver=3.0.3.10" type="text/css" media="screen">
+<link rel="stylesheet" id="motionmill-ajax-css" href="https://previewlabs.com/wp-content/plugins/motionmill/plugins/motionmill-ajax/css/style.css?ver=6.1.3" type="text/css" media="all">
+<link rel="stylesheet" id="motionmill-css" href="https://previewlabs.com/wp-content/plugins/motionmill/css/style.css?ver=6.1.3" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://previewlabs.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1.3" type="text/css" media="all">
+<link rel="stylesheet" id="classic-theme-styles-css" href="https://previewlabs.com/wp-includes/css/classic-themes.min.css?ver=1" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="motionmill-theme-css" href="https://previewlabs.com/wp-content/themes/previewlabs/style.css?ver=1.0.0" type="text/css" media="all">
+<script type="text/javascript" src="https://previewlabs.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://previewlabs.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://previewlabs.com/wp-content/plugins/motionmill/js/plugins.js?ver=1.0.0" id="motionmill-plugins-js"></script>
+<script type="text/javascript" id="motionmill-js-extra">
+/* <![CDATA[ */
+var Motionmill = {"ajaxurl":"https:\/\/previewlabs.com\/wp-admin\/admin-ajax.php","ajaxEvent":"motionmill","lang":"en","body_class_javascript":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://previewlabs.com/wp-content/plugins/motionmill/js/scripts.js?ver=1.0.0" id="motionmill-js"></script>
+<script type="text/javascript" src="https://previewlabs.com/wp-content/plugins/motionmill/plugins/motionmill-general/js/scripts.js?ver=6.1.3" id="motionmill-general-js"></script>
+<script type="text/javascript" src="https://previewlabs.com/wp-content/plugins/wp-retina-2x/app/picturefill.min.js?ver=1670452958" id="wr2x-picturefill-js-js"></script>
+<link rel="https://api.w.org/" href="https://previewlabs.com/wp-json/"><link rel="alternate" type="application/json" href="https://previewlabs.com/wp-json/wp/v2/posts/4982"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://previewlabs.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://previewlabs.com/wp-includes/wlwmanifest.xml">
+<link rel="shortlink" href="https://previewlabs.com/?p=4982">
+<link rel="alternate" type="application/json+oembed" href="https://previewlabs.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpreviewlabs.com%2Fbuggyblasters%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://previewlabs.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpreviewlabs.com%2Fbuggyblasters%2F&amp;format=xml">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+			<script type="text/javascript">
+
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga( 'create', 'UA-19947743-1', 'auto' );
+				ga( 'send', 'pageview' );
+
+			</script>
+
+				<link rel="alternate" type="application/rss+xml" href="https://previewlabs.com/feed/" title="PreviewLabs latest posts">
+	<link rel="alternate" type="application/rss+xml" href="https://previewlabs.com/comments/feed/" title="PreviewLabs latest comments">
+	<link rel="pingback" href="https://previewlabs.com/xmlrpc.php">
+</head><fontface><span style="font: 99px testfont, _, arial, helvetica; position: absolute; visibility: hidden;" id="fonttest">........</span></fontface>
+
+<!--<body class="wordpress y2023 m09 d06 h17 single postid-4982 s-y2017 s-m12 s-d11 s-h13 s-category-3d s-category-augmented-reality s-category-buggy-blasters s-category-hololens s-category-prototypes windows chrome ch116-0">-->
+<body class="post-template-default single single-post postid-4982 single-format-standard js">
+<div class="mobile-only" style="position:fixed;top:0;width: 100%;z-index: 100;">
+<span class="mobile-only"><a id="mobile-top"></a><a href="#mobile-top" id="pull"><img src="https://previewlabs.com/wp-content/themes/previewlabs/images/icon-mobile.png">Menu</a></span>
+	        	<span class="mobile-only"><div id="mobile-menu" class="mobile-menu-header mobile-only"><ul id="menu-main-navigation" class="menu" style="display: none;"><li id="menu-item-2525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2525"><a href="http://previewlabs.com/">Home</a></li>
+<li id="menu-item-2651" class="projects menu-item menu-item-type-taxonomy menu-item-object-project-category menu-item-2651"><a href="https://previewlabs.com/project-category/featured/">Projects</a></li>
+<li id="menu-item-2647" class="testimonials menu-item menu-item-type-taxonomy menu-item-object-testimonial-category menu-item-2647"><a href="https://previewlabs.com/testimonial-category/featured/">Testimonials</a></li>
+<li id="menu-item-2531" class="blog menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2531"><a href="https://previewlabs.com/blog/">Blog</a></li>
+<li id="menu-item-5166" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5166"><a href="https://previewlabs.com/category/press/">Press</a></li>
+<li id="menu-item-2532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2532"><a href="https://previewlabs.com/contact/">Contact</a></li>
+</ul></div></span>	
+</div>
+<div id="wrapper" class="hfeed">
+
+	<header id="header">
+		<div class="blockContent">
+		<section id="masthead">
+			<hgroup>
+				<h1 id="blog-title"><a href="https://previewlabs.com/" title="PreviewLabs" rel="home"><img src="https://previewlabs.com/wp-content/themes/previewlabs/images/previewlabs_color.png" alt="PreviewLabs"><span>PreviewLabs</span></a></h1>
+				
+			</hgroup>
+
+			<div id="access" role="navigation">
+				<div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+				
+	        	<nav>
+				<div id="menu" class="menu-header"><ul id="menu-main-navigation-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2525"><a href="http://previewlabs.com/">Home</a></li>
+<li class="projects menu-item menu-item-type-taxonomy menu-item-object-project-category menu-item-2651"><a href="https://previewlabs.com/project-category/featured/">Projects</a></li>
+<li class="testimonials menu-item menu-item-type-taxonomy menu-item-object-testimonial-category menu-item-2647"><a href="https://previewlabs.com/testimonial-category/featured/">Testimonials</a></li>
+<li class="blog menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2531"><a href="https://previewlabs.com/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5166"><a href="https://previewlabs.com/category/press/">Press</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2532"><a href="https://previewlabs.com/contact/">Contact</a></li>
+</ul></div>				</nav>
+			</div><!-- #access -->
+		</section>
+		</div>
+	</header><!--  #header -->
+
+
+<div class="blockContent">
+
+	<div id="container">
+   		<div id="content">
+
+
+			<nav id="nav-above" class="navigation">
+				<div class="nav-previous"><a href="https://previewlabs.com/vr-vaping-intervention/" rel="prev"><span class="meta-nav">«</span> [Press Release] PreviewLabs, Inc. to Prototype Oculus-Funded Virtual Reality Vaping Intervention Game for Yale play4REAL</a></div>
+				<div class="nav-next"><a href="https://previewlabs.com/the-making-of-buggy-blasters/" rel="next">Buggy Blasters – The Making of a Multiplayer HoloLens Game Prototype <span class="meta-nav">»</span></a></div>
+			</nav>
+
+			<article id="post-4982" class="hentry p1 post publish category-3d category-augmented-reality category-buggy-blasters category-hololens category-prototypes untagged y2017 m12 d11 h13">
+				<h2 class="entry-title">Buggy Blasters – HoloLens Prototype Download and Manual</h2>
+				<div class="entry-meta">
+					<time class="published" datetime="2017-12-11" pubdate="">December 11, 2017</time>, written by <span class="author vcard"><a class="url fn n" href="https://previewlabs.com/author/kasper/" title="View all posts by Kasper Geeroms">Kasper Geeroms</a></span>
+				</div>
+				<div class="entry-content">
+					<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_logo_version2_black_1x.png" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" class="alignnone size-full wp-image-5002" src="https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_logo_version2_black_1x.png" alt="" width="878" height="292" srcset="https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_logo_version2_black_1x.png 878w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_logo_version2_black_1x-300x100.png 300w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_logo_version2_black_1x-400x133.png 400w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_logo_version2_black_1x-300x100@2x.png 600w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_logo_version2_black_1x-400x133@2x.png 800w" sizes="(max-width: 878px) 100vw, 878px"></a></p>
+<p>One of the prototypes we’ve been working on for a while now can finally be revealed!</p>
+<p>We developed the Buggy Blasters concept on request by our parent company <a href="https://cronos-groep.be/en/">Cronos Groep</a>, who gave us carte blanche to come up with an interesting case for the HoloLens.</p>
+<p>This is the premise of the prototype:</p>
+<ul>
+<li>In Buggy Blasters, players battle each other with remote-controlled buggies in the first online multiplayer game on HoloLens!</li>
+</ul>
+<ul>
+<li>Control your squad of buggies to capture the enemy flag, but be sure to retreat in time to heal. Use that one muscular Air tap trained finger or an Xbox One S controller, whichever you prefer.</li>
+</ul>
+<ul>
+<li>Employ crazy tactical skills, lightning speed and efficient buggy management to crush your opponent, who’ll give you that ‘sad Robocop’ look.</li>
+</ul>
+<ul>
+<li>No friends with HoloLenses? That’s all right, because there’s a sandbox-style single player mode to lazily drive around in and practice target shooting.</li>
+</ul>
+<h5><strong>Download</strong></h5>
+<p>&nbsp;<br>
+Buggy Blasters is available for download on the Microsoft Store. </p>
+<p><a class="button" href="https://www.microsoft.com/en-us/store/p/buggy-blasters/9p2h9srj1dmc?rtc=1">Get Buggy Blasters</a></p>
+<p>Alternatively, it can be downloaded and installed manually (download <a href="https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_iteration1_2017_12_10.zip">here</a>, and installation using <a href="https://docs.microsoft.com/en-us/hololens/hololens-install-apps">these instructions</a>).</p>
+<h5><strong>Using the Xbox One S Controller</strong></h5>
+<p>&nbsp;</p>
+<ol>
+<li>Make sure Buggy Blasters is not running. Shut down every instance of the app by removing all Buggy Blasters windows in the HoloLens main menu.</li>
+<li>Bring up the menu with your hand (bloom) and select (air tap) the Settings button. Place the Settings window, and select ‘Devices’</li>
+<li>Turn on the Xbox One S controller and press the Bluetooth pairing button (see below) until the Xbox logo on the controller starts blinking quickly.</li>
+<li>The controller will come up on the HoloLens’s devices list. Select ‘Pair’.</li>
+<li>Note that if you connected a paired controller to another device after playing, you will need to remove the controller from the HoloLens device list and re-pair it to use it again for Buggy Blasters.</li>
+</ol>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/xbox_one_s_bluetooth_pairing.png" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="wp-image-5009 size-medium aligncenter" src="https://previewlabs.com/wp-content/uploads/2017/10/xbox_one_s_bluetooth_pairing-300x169.png" alt="" width="300" height="169" srcset="https://previewlabs.com/wp-content/uploads/2017/10/xbox_one_s_bluetooth_pairing-300x169.png 300w, https://previewlabs.com/wp-content/uploads/2017/10/xbox_one_s_bluetooth_pairing-400x225.png 400w, https://previewlabs.com/wp-content/uploads/2017/10/xbox_one_s_bluetooth_pairing.png 755w, https://previewlabs.com/wp-content/uploads/2017/10/xbox_one_s_bluetooth_pairing-300x169@2x.png 600w" sizes="(max-width: 300px) 100vw, 300px"></a></p>
+<h5><strong>Single Player Mode</strong></h5>
+<p>In single player mode, you can destroy targets and play around with a buggy.</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/20170522_063725_HoloLens.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5044" src="https://previewlabs.com/wp-content/uploads/2017/10/20170522_063725_HoloLens.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/20170522_063725_HoloLens.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/20170522_063725_HoloLens-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/20170522_063725_HoloLens-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/20170522_063725_HoloLens-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/20170522_063725_HoloLens-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>Using the “Tune Settings” button, you can customize things such as the speed and size of your buggy, or the number of targets in the game.</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/20170522_023912_HoloLens.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5045" src="https://previewlabs.com/wp-content/uploads/2017/10/20170522_023912_HoloLens.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/20170522_023912_HoloLens.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/20170522_023912_HoloLens-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/20170522_023912_HoloLens-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/20170522_023912_HoloLens-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/20170522_023912_HoloLens-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/20171027_050445_HoloLens.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5047" src="https://previewlabs.com/wp-content/uploads/2017/10/20171027_050445_HoloLens.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/20171027_050445_HoloLens.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/20171027_050445_HoloLens-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/20171027_050445_HoloLens-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/20171027_050445_HoloLens-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/20171027_050445_HoloLens-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>Use [air tap] to move the buggy to your gaze cursor (the small white circle).</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/20170714_083142_HoloLens-1.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5049" src="https://previewlabs.com/wp-content/uploads/2017/10/20170714_083142_HoloLens-1.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/20170714_083142_HoloLens-1.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/20170714_083142_HoloLens-1-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/20170714_083142_HoloLens-1-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/20170714_083142_HoloLens-1-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/20170714_083142_HoloLens-1-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>Alternatively, use the Xbox One S controller to move it!</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/singleplayer_3.png" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="aligncenter wp-image-5016 size-full" src="https://previewlabs.com/wp-content/uploads/2017/10/singleplayer_3.png" alt="" width="976" height="546" srcset="https://previewlabs.com/wp-content/uploads/2017/10/singleplayer_3.png 976w, https://previewlabs.com/wp-content/uploads/2017/10/singleplayer_3-300x168.png 300w, https://previewlabs.com/wp-content/uploads/2017/10/singleplayer_3-400x224.png 400w, https://previewlabs.com/wp-content/uploads/2017/10/singleplayer_3-300x168@2x.png 600w, https://previewlabs.com/wp-content/uploads/2017/10/singleplayer_3-400x224@2x.png 800w" sizes="(max-width: 976px) 100vw, 976px"></a></p>
+<p>You can target practice in single player! Look at a cone and [air tap] to make the buggy shoot it. If the cone is hit, it will reappear elsewhere. The simply won’t be defeated!</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot05.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5050" src="https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot05.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot05.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot05-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot05-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot05-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot05-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>Using an Xbox One S controller, you can shoot where your gaze is by pressing the A button.</p>
+<h5><strong>Multiplayer Mode</strong></h5>
+<p>In multiplayer, you can play a capture the flag-style battle online against a friend.</p>
+<p>Capture the enemy flag and bring it back to your base to score!</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/20171005_093204_HoloLens-copy.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5052" src="https://previewlabs.com/wp-content/uploads/2017/10/20171005_093204_HoloLens-copy.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/20171005_093204_HoloLens-copy.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_093204_HoloLens-copy-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_093204_HoloLens-copy-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_093204_HoloLens-copy-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_093204_HoloLens-copy-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>For every flag scored, the enemy base’s HP decreases. Meanwhile, you need to defend your own flag as well.</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/20171005_093558_HoloLens-copy.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5053" src="https://previewlabs.com/wp-content/uploads/2017/10/20171005_093558_HoloLens-copy.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/20171005_093558_HoloLens-copy.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_093558_HoloLens-copy-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_093558_HoloLens-copy-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_093558_HoloLens-copy-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_093558_HoloLens-copy-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>Don’t feel like tapping? You can also control your buggies with an Xbox S controller.</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/20171005_094509_HoloLens-copy.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5054" src="https://previewlabs.com/wp-content/uploads/2017/10/20171005_094509_HoloLens-copy.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/20171005_094509_HoloLens-copy.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_094509_HoloLens-copy-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_094509_HoloLens-copy-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_094509_HoloLens-copy-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_094509_HoloLens-copy-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>Shoot where your gaze is by pressing the A button!</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/20171005_094847_HoloLens-copy.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5055" src="https://previewlabs.com/wp-content/uploads/2017/10/20171005_094847_HoloLens-copy.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/20171005_094847_HoloLens-copy.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_094847_HoloLens-copy-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_094847_HoloLens-copy-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_094847_HoloLens-copy-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_094847_HoloLens-copy-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>The controller can also be used to quickly switch between buggies.</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/multiplayer_4.png" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5023" src="https://previewlabs.com/wp-content/uploads/2017/10/multiplayer_4.png" alt="" width="976" height="546" srcset="https://previewlabs.com/wp-content/uploads/2017/10/multiplayer_4.png 976w, https://previewlabs.com/wp-content/uploads/2017/10/multiplayer_4-300x168.png 300w, https://previewlabs.com/wp-content/uploads/2017/10/multiplayer_4-400x224.png 400w, https://previewlabs.com/wp-content/uploads/2017/10/multiplayer_4-300x168@2x.png 600w, https://previewlabs.com/wp-content/uploads/2017/10/multiplayer_4-400x224@2x.png 800w" sizes="(max-width: 976px) 100vw, 976px"></a></p>
+<p>A buggy carrying the flag cannot shoot. If it’s destroyed, it will drop the flag.</p>
+<p>Drive over a dropped enemy flag to pick it up!</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5056" src="https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>Drive over your own flag to send it back to its original location.</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/20171005_095206_HoloLens.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5057" src="https://previewlabs.com/wp-content/uploads/2017/10/20171005_095206_HoloLens.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/20171005_095206_HoloLens.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_095206_HoloLens-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_095206_HoloLens-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_095206_HoloLens-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/20171005_095206_HoloLens-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>If a buggy is destroyed, it will take a while for it to respawn.</p>
+<p>You can heal a buggy by driving it onto your base.</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/file.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5059" src="https://previewlabs.com/wp-content/uploads/2017/10/file.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/file.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/file-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/file-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/file-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/file-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>If the HP of the enemy base is fully depleted, you win.</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens3.jpg" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5061" src="https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens3.jpg" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens3.jpg 914w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens3-300x175.jpg 300w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens3-400x234.jpg 400w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens3-300x175@2x.jpg 600w, https://previewlabs.com/wp-content/uploads/2017/10/buggyBlasters_helpScreens3-400x234@2x.jpg 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>You can play this game at any Wifi-enabled location with at least an open space of 2m x 2m (6.5 ft x 6.5 ft).</p>
+<p><a href="https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot03-copy.png" rel="shadowbox[sbpost-4982];player=img;"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-5066" src="https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot03-copy.png" alt="" width="914" height="534" srcset="https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot03-copy.png 914w, https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot03-copy-300x175.png 300w, https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot03-copy-400x234.png 400w, https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot03-copy-300x175@2x.png 600w, https://previewlabs.com/wp-content/uploads/2017/10/2017_05_18_buggyBlasters_screenshot03-copy-400x234@2x.png 800w" sizes="(max-width: 914px) 100vw, 914px"></a></p>
+<p>Good luck!</p>
+<h5><strong>Privacy Policy</strong></h5>
+<p><a name="privacypolicy"><br>
+&nbsp;</a></p><a name="privacypolicy">
+</a><p><a name="privacypolicy"><em></em></a><em>This application does not collect or transmit any user’s personal information, with the exception of technical information included in the network communication for the online multiplayer feature (such as your IP address). No personal information is used, stored, secured or disclosed by services this application works with. If you would like to report any violations of this policy, please contact us using the contact form at http://www.previewlabs.com/contact</em></p>
+									</div>
+				<footer class="entry-meta">
+					<!--										<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="https://previewlabs.com/buggyblasters/trackback/" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.					-->
+					<p>
+										<span class="cat-links">Also posted in <a href="https://previewlabs.com/category/3d/" rel="category tag">3D</a>, <a href="https://previewlabs.com/category/technology/augmented-reality/" rel="category tag">Augmented Reality</a>, <a href="https://previewlabs.com/category/prototypes/buggy-blasters/" rel="category tag">Buggy Blasters</a>, <a href="https://previewlabs.com/category/technology/augmented-reality/hololens/" rel="category tag">HoloLens</a>, <a href="https://previewlabs.com/category/prototypes/" rel="category tag">Prototypes</a></span>
+										</p>
+
+					<!-- Go to www.addthis.com/dashboard to customize your tools -->
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54f865d2782c9ed7" async="async"></script>
+					<!-- Go to www.addthis.com/dashboard to customize your tools -->
+					
+					<div class="addthis_sharing_toolbox">
+						<strong>Share this on:</strong>
+					</div>
+
+
+				</footer>
+			</article><!-- .post -->
+
+			<nav id="nav-below" class="navigation">
+				<div class="nav-previous"><a href="https://previewlabs.com/vr-vaping-intervention/" rel="prev"><span class="meta-nav">«</span> [Press Release] PreviewLabs, Inc. to Prototype Oculus-Funded Virtual Reality Vaping Intervention Game for Yale play4REAL</a></div>
+				<div class="nav-next"><a href="https://previewlabs.com/the-making-of-buggy-blasters/" rel="next">Buggy Blasters – The Making of a Multiplayer HoloLens Game Prototype <span class="meta-nav">»</span></a></div>
+			</nav>
+
+
+<div id="comments" class="comments-area">
+
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/buggyblasters/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://previewlabs.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post comment"> <input type="hidden" name="comment_post_ID" value="4982" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d1d79bd161"></p><p style="display: none !important;"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="1694013651052"><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+		
+</div><!-- .comments-area -->
+
+		</div><!-- #content -->
+	</div><!-- #container -->
+        	<aside id="primary" class="sidebar">
+		<ul class="xoxo">
+						
+					</ul>
+	</aside><!-- #primary .sidebar -->
+</div>
+<div class="blockContent no-margin-blockContent">
+	<aside id="secondary" class="sidebar">
+		<ul class="xoxo">
+
+			<li id="tag_cloud-2" class="widget widget_tag_cloud">
+				<h3 class="widgettitle"> </h3>
+<div class="tagcloud"><a href="https://previewlabs.com/category/2d/" class="tag-cloud-link tag-link-2 tag-link-position-1" style="font-size: 17.130434782609pt;" aria-label="2D (15 items)">2D</a>
+<a href="https://previewlabs.com/category/3d/" class="tag-cloud-link tag-link-3 tag-link-position-2" style="font-size: 19.159420289855pt;" aria-label="3D (24 items)">3D</a>
+<a href="https://previewlabs.com/category/technology/augmented-reality/" class="tag-cloud-link tag-link-108 tag-link-position-3" style="font-size: 16.927536231884pt;" aria-label="Augmented Reality (14 items)">Augmented Reality</a>
+<a href="https://previewlabs.com/category/prototypes/boulderbridge/" class="tag-cloud-link tag-link-72 tag-link-position-4" style="font-size: 9.8260869565217pt;" aria-label="BoulderBridge (2 items)">BoulderBridge</a>
+<a href="https://previewlabs.com/category/prototypes/buggy-blasters/" class="tag-cloud-link tag-link-843 tag-link-position-5" style="font-size: 11.04347826087pt;" aria-label="Buggy Blasters (3 items)">Buggy Blasters</a>
+<a href="https://previewlabs.com/category/prototypes/color-collider/" class="tag-cloud-link tag-link-73 tag-link-position-6" style="font-size: 12.057971014493pt;" aria-label="Color Collider (4 items)">Color Collider</a>
+<a href="https://previewlabs.com/category/conferences/" class="tag-cloud-link tag-link-96 tag-link-position-7" style="font-size: 18.753623188406pt;" aria-label="Conferences (22 items)">Conferences</a>
+<a href="https://previewlabs.com/category/prototypes/distracted-driving-game/" class="tag-cloud-link tag-link-2738 tag-link-position-8" style="font-size: 9.8260869565217pt;" aria-label="Distracted Driving Game (2 items)">Distracted Driving Game</a>
+<a href="https://previewlabs.com/category/prototypes/famine-ties/" class="tag-cloud-link tag-link-2737 tag-link-position-9" style="font-size: 9.8260869565217pt;" aria-label="Famine Ties (2 items)">Famine Ties</a>
+<a href="https://previewlabs.com/category/prototypes/forklift-operator/" class="tag-cloud-link tag-link-2553 tag-link-position-10" style="font-size: 11.04347826087pt;" aria-label="Forklift Operator (3 items)">Forklift Operator</a>
+<a href="https://previewlabs.com/category/game-design/" class="tag-cloud-link tag-link-7 tag-link-position-11" style="font-size: 18.347826086957pt;" aria-label="Game Design (20 items)">Game Design</a>
+<a href="https://previewlabs.com/category/game-jams/" class="tag-cloud-link tag-link-99 tag-link-position-12" style="font-size: 12.869565217391pt;" aria-label="Game Jams (5 items)">Game Jams</a>
+<a href="https://previewlabs.com/category/business/" class="tag-cloud-link tag-link-5 tag-link-position-13" style="font-size: 17.434782608696pt;" aria-label="Games Industry (16 items)">Games Industry</a>
+<a href="https://previewlabs.com/category/technology/augmented-reality/hololens/" class="tag-cloud-link tag-link-2651 tag-link-position-14" style="font-size: 12.057971014493pt;" aria-label="HoloLens (4 items)">HoloLens</a>
+<a href="https://previewlabs.com/category/prototypes/incarnate/" class="tag-cloud-link tag-link-68 tag-link-position-15" style="font-size: 11.04347826087pt;" aria-label="Incarnate (3 items)">Incarnate</a>
+<a href="https://previewlabs.com/category/internships/" class="tag-cloud-link tag-link-10 tag-link-position-16" style="font-size: 16.623188405797pt;" aria-label="Internships (13 items)">Internships</a>
+<a href="https://previewlabs.com/category/interview/" class="tag-cloud-link tag-link-100 tag-link-position-17" style="font-size: 15.507246376812pt;" aria-label="Interviews (10 items)">Interviews</a>
+<a href="https://previewlabs.com/category/prototypes/smokescreen-vr/" class="tag-cloud-link tag-link-1311 tag-link-position-18" style="font-size: 14.594202898551pt;" aria-label="Invite Only VR (8 items)">Invite Only VR</a>
+<a href="https://previewlabs.com/category/jobs/" class="tag-cloud-link tag-link-11 tag-link-position-19" style="font-size: 16.217391304348pt;" aria-label="Jobs (12 items)">Jobs</a>
+<a href="https://previewlabs.com/category/prototypes/journey-for-elysium/" class="tag-cloud-link tag-link-2552 tag-link-position-20" style="font-size: 12.057971014493pt;" aria-label="Journey for Elysium (4 items)">Journey for Elysium</a>
+<a href="https://previewlabs.com/category/marketing/" class="tag-cloud-link tag-link-12 tag-link-position-21" style="font-size: 12.869565217391pt;" aria-label="Marketing (5 items)">Marketing</a>
+<a href="https://previewlabs.com/category/mobile/" class="tag-cloud-link tag-link-2441 tag-link-position-22" style="font-size: 17.942028985507pt;" aria-label="Mobile (18 items)">Mobile</a>
+<a href="https://previewlabs.com/category/prototypes/momba/" class="tag-cloud-link tag-link-430 tag-link-position-23" style="font-size: 9.8260869565217pt;" aria-label="MoMba (2 items)">MoMba</a>
+<a href="https://previewlabs.com/category/prototypes/panic/" class="tag-cloud-link tag-link-71 tag-link-position-24" style="font-size: 9.8260869565217pt;" aria-label="Panic! (2 items)">Panic!</a>
+<a href="https://previewlabs.com/category/physics/" class="tag-cloud-link tag-link-2554 tag-link-position-25" style="font-size: 14.594202898551pt;" aria-label="Physics (8 items)">Physics</a>
+<a href="https://previewlabs.com/category/pitching/" class="tag-cloud-link tag-link-13 tag-link-position-26" style="font-size: 12.057971014493pt;" aria-label="Pitching (4 items)">Pitching</a>
+<a href="https://previewlabs.com/category/press/" class="tag-cloud-link tag-link-14 tag-link-position-27" style="font-size: 16.927536231884pt;" aria-label="Press (14 items)">Press</a>
+<a href="https://previewlabs.com/category/previewlabs/" class="tag-cloud-link tag-link-97 tag-link-position-28" style="font-size: 18.347826086957pt;" aria-label="PreviewLabs (20 items)">PreviewLabs</a>
+<a href="https://previewlabs.com/category/production/" class="tag-cloud-link tag-link-98 tag-link-position-29" style="font-size: 8pt;" aria-label="Production (1 item)">Production</a>
+<a href="https://previewlabs.com/category/programming/" class="tag-cloud-link tag-link-15 tag-link-position-30" style="font-size: 17.130434782609pt;" aria-label="Programming (15 items)">Programming</a>
+<a href="https://previewlabs.com/category/prototypes/" class="tag-cloud-link tag-link-16 tag-link-position-31" style="font-size: 22pt;" aria-label="Prototypes (47 items)">Prototypes</a>
+<a href="https://previewlabs.com/category/research/" class="tag-cloud-link tag-link-17 tag-link-position-32" style="font-size: 17.942028985507pt;" aria-label="Research (18 items)">Research</a>
+<a href="https://previewlabs.com/category/serious-and-applied-games/" class="tag-cloud-link tag-link-18 tag-link-position-33" style="font-size: 20.478260869565pt;" aria-label="Serious and Applied Games (33 items)">Serious and Applied Games</a>
+<a href="https://previewlabs.com/category/prototypes/shapes-and-rhythm/" class="tag-cloud-link tag-link-114 tag-link-position-34" style="font-size: 11.04347826087pt;" aria-label="Shapes and Rhythm (3 items)">Shapes and Rhythm</a>
+<a href="https://previewlabs.com/category/prototypes/siegebreaker/" class="tag-cloud-link tag-link-70 tag-link-position-35" style="font-size: 12.057971014493pt;" aria-label="Siegebreaker (4 items)">Siegebreaker</a>
+<a href="https://previewlabs.com/category/previewlabs/team/" class="tag-cloud-link tag-link-2736 tag-link-position-36" style="font-size: 9.8260869565217pt;" aria-label="Team (2 items)">Team</a>
+<a href="https://previewlabs.com/category/technology/" class="tag-cloud-link tag-link-19 tag-link-position-37" style="font-size: 20.782608695652pt;" aria-label="Technology (35 items)">Technology</a>
+<a href="https://previewlabs.com/category/uncategorized/" class="tag-cloud-link tag-link-1 tag-link-position-38" style="font-size: 8pt;" aria-label="Uncategorized (1 item)">Uncategorized</a>
+<a href="https://previewlabs.com/category/unity3d/" class="tag-cloud-link tag-link-20 tag-link-position-39" style="font-size: 18.95652173913pt;" aria-label="Unity3D (23 items)">Unity3D</a>
+<a href="https://previewlabs.com/category/technology/virtual-reality/" class="tag-cloud-link tag-link-113 tag-link-position-40" style="font-size: 19.260869565217pt;" aria-label="Virtual Reality (25 items)">Virtual Reality</a>
+<a href="https://previewlabs.com/category/prototypes/we-move/" class="tag-cloud-link tag-link-115 tag-link-position-41" style="font-size: 12.057971014493pt;" aria-label="wE-Move (4 items)">wE-Move</a>
+<a href="https://previewlabs.com/category/prototypes/yikes/" class="tag-cloud-link tag-link-69 tag-link-position-42" style="font-size: 14.086956521739pt;" aria-label="YIKES (7 items)">YIKES</a></div>
+
+			</li>
+
+			<li id="recent-comments-2" class="widget widget_recent_comments">
+				<h3 class="widgettitle">Recent comments</h3>
+<ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Bernard</span> on <a href="https://previewlabs.com/creative-project-manager/#comment-222273">Who will be our Next Creative Project Manager?</a></li><li class="recentcomments"><span class="comment-author-link">Bernard</span> on <a href="https://previewlabs.com/forklift-physics/#comment-220616">Under the Hood of Forklift Physics</a></li><li class="recentcomments"><span class="comment-author-link">Mark Harris A. Bagon</span> on <a href="https://previewlabs.com/forklift-physics/#comment-220244">Under the Hood of Forklift Physics</a></li><li class="recentcomments"><span class="comment-author-link">Bernard</span> on <a href="https://previewlabs.com/vr-patient-distraction/#comment-219479">4 VR Prototypes For Patient Distraction</a></li><li class="recentcomments"><span class="comment-author-link">Bernard</span> on <a href="https://previewlabs.com/patronus-vret/#comment-219477">PATRONUS: Prototype Treats Anxiety with Virtual Reality Exposure Therapy</a></li></ul>
+			</li>
+		</ul>
+	</aside><!-- #secondary .sidebar -->
+</div><!-- .blockContent -->
+
+<div class="clear"></div>
+<aside id="tertiary" class="footerbar">
+	<div class="blockContent">
+		<ul class="xoxo">
+			
+			
+			<li id="nav_menu-2" class="widget widget_nav_menu"><div class="menu-main-navigation-container"><ul id="menu-main-navigation-2" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2525"><a href="http://previewlabs.com/">Home</a></li>
+<li class="projects menu-item menu-item-type-taxonomy menu-item-object-project-category menu-item-2651"><a href="https://previewlabs.com/project-category/featured/">Projects</a></li>
+<li class="testimonials menu-item menu-item-type-taxonomy menu-item-object-testimonial-category menu-item-2647"><a href="https://previewlabs.com/testimonial-category/featured/">Testimonials</a></li>
+<li class="blog menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2531"><a href="https://previewlabs.com/blog/">Blog</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5166"><a href="https://previewlabs.com/category/press/">Press</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2532"><a href="https://previewlabs.com/contact/">Contact</a></li>
+</ul></div>
+			</li>
+
+			<li id="text-2" class="widget widget_text">			<div class="textwidget"><div class="no-mobile">
+<p class="alignright" style="margin-bottom:0;"><a href="/subscribe-to-our-newsletter/" class="button">Subscribe to our newsletter</a></p>
+</div>
+<div class="mobile-only">
+<p class="aligncenter" style="margin-bottom:0;"><a href="/subscribe-to-our-newsletter/" class="button">Subscribe to our newsletter</a></p>
+</div></div>
+		
+			</li>
+		</ul>
+	</div><!-- .blockContent -->
+	</aside><!-- #secondary .sidebar -->	<footer id="footer">
+		<div class="blockContent">
+		<span id="copyright">© 2009 - 2023 PreviewLabs <!--|   --></span>
+		<!--<span id="generator-link"><a href="http://motionmill.com" title="Motionmill webdesign, seo &amp; internet services" rel="generator"><img src="https://previewlabs.com/wp-content/themes/previewlabs/images/poweredby.png" alt="Motionmill webdesign, seo &amp; internet services" /></a></span>-->
+		</div>
+	</footer><!-- #footer -->
+
+</div><!-- #wrapper .hfeed -->
+ <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+ <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript">!window.jQuery && document.write('<script src="https://previewlabs.com/wp-content/themes/previewlabs/js/jquery-1.6.1.min.js"><\/script>')</script>
+
+
+   <script type="text/javascript" src="https://previewlabs.com/wp-content/themes/previewlabs/js/plugins.js"></script>
+   <script type="text/javascript" src="https://previewlabs.com/wp-content/themes/previewlabs/js/script.js"></script>-->
+
+
+  <!--[if lt IE 7 ]>
+     <script type="text/javascript" src="https://previewlabs.com/wp-content/themes/previewlabs/js/dd_belatedpng.js"></script>
+     <script>
+      /* EXAMPLE */
+      DD_belatedPNG.fix('img');
+      
+      /* string argument can be any CSS selector */
+      /* .png_bg example is unnecessary */
+      /* change it to what suits you! */
+     </script>
+  <![endif]-->
+
+
+<script type="text/javascript" src="https://previewlabs.com/wp-content/uploads/shadowbox-js/3a7c52941f850f8b72a84d4c66a78565.js?ver=3.0.3" id="shadowbox-js"></script>
+<script type="text/javascript" src="https://previewlabs.com/wp-content/plugins/motionmill/plugins/motionmill-ajax/js/scripts.js?ver=1.0.0" id="motionmill-ajax-js"></script>
+<script type="text/javascript" src="https://previewlabs.com/wp-content/themes/previewlabs/js/plugins.js?ver=1.0.0" id="motionmill-theme-plugins-js"></script>
+<script type="text/javascript" src="https://previewlabs.com/wp-content/themes/previewlabs/js/script.js?ver=1.0.0" id="motionmill-theme-js"></script>
+<script defer="" type="text/javascript" src="https://previewlabs.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1670452899" id="akismet-frontend-js"></script>
+
+<!-- Begin Shadowbox JS v3.0.3.10 -->
+<!-- Selected Players: html, iframe, img, qt, swf, wmp -->
+<script type="text/javascript">
+/* <![CDATA[ */
+	var shadowbox_conf = {
+		animate: true,
+		animateFade: true,
+		animSequence: "sync",
+		modal: false,
+		showOverlay: true,
+		overlayColor: "#000",
+		overlayOpacity: "0.8",
+		flashBgColor: "#000000",
+		autoplayMovies: true,
+		showMovieControls: true,
+		slideshowDelay: 0,
+		resizeDuration: "0.35",
+		fadeDuration: "0.35",
+		displayNav: true,
+		continuous: false,
+		displayCounter: true,
+		counterType: "default",
+		counterLimit: "10",
+		viewportPadding: "20",
+		handleOversize: "resize",
+		handleUnsupported: "link",
+		autoDimensions: false,
+		initialHeight: "160",
+		initialWidth: "320",
+		enableKeys: true,
+		skipSetup: false,
+		useSizzle: false,
+		flashParams: {bgcolor:"#000000", allowFullScreen:true},
+		flashVars: {},
+		flashVersion: "9.0.0"
+	};
+	Shadowbox.init(shadowbox_conf);
+/* ]]> */
+</script>
+<!-- End Shadowbox JS -->
+
+
+
+<div id="sb-container"><div id="sb-overlay"></div><div id="sb-wrapper"><div id="sb-title"><div id="sb-title-inner"></div></div><div id="sb-wrapper-inner"><div id="sb-body"><div id="sb-body-inner"></div><div id="sb-loading"><div id="sb-loading-inner"><span>loading</span></div></div></div></div><div id="sb-info"><div id="sb-info-inner"><div id="sb-counter"></div><div id="sb-nav"><a id="sb-nav-close" title="Close" onclick="Shadowbox.close()"></a><a id="sb-nav-next" title="Next" onclick="Shadowbox.next()"></a><a id="sb-nav-play" title="Play" onclick="Shadowbox.play()"></a><a id="sb-nav-pause" title="Pause" onclick="Shadowbox.pause()"></a><a id="sb-nav-previous" title="Previous" onclick="Shadowbox.previous()"></a></div></div></div></div></div></body></html>

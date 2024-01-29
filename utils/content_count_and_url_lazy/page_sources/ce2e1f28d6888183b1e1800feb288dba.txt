@@ -1,0 +1,286 @@
+<html><head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="The Next Generation of Battle - Use tactics and teamwork in a new kind of immersive warfare. Online. In VR.">
+		<meta name="keywords" content="zero killed, zero, killed, vr, virtual reality, virtual, reality, vive, htc vive, rift, oculus, oculus rift, psvr, playstation vr, playstation 4, playstation, ps4, oculus touch, why are you reading tags, online, shooter, csgo, cs, rs6, rainbow six, rainbow, six, fps, first person shooter, first, person, shooter">
+
+		<meta property="og:title" content="Zero Killed">
+		<meta property="og:url" content="http://playzerokilled.com/">
+		<meta property="og:image" content="http://playzerokilled.com/img/ogimg.png">
+		<meta property="og:description" content="The Next Generation of Battle - Use tactics and teamwork in a new kind of immersive warfare. Online. In VR.">
+
+		<link rel="icon" href="img/favi.png">
+
+		<title>Zero Killed</title>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/style.css">
+
+		<!--Start Cookie Script-->
+		<script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-0NF34S6362&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" charset="UTF-8" src="//chs03.cookie-script.com/s/79e80d007d1aa95de9135b3d4dfea2dd.js"></script>
+		<!--End Cookie Script-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122977313-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'UA-122977313-2', { anonymize_ip: true });
+		</script>
+		<script>
+			function pad(num, size) {
+				var s = num + '';
+				while (s.length < size) s = '0' + s;
+				return s;
+			}
+
+			function updateTimer() {
+				var countDownDate = new Date(Date.UTC(2020, 8, 4, 8));
+				// Get todays date and time
+				var now = new Date().getTime();
+
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
+
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				var padDays = pad(days, 2);
+				var padHours = pad(hours, 2);
+				var padMinutes = pad(minutes, 2);
+				var padSeconds = pad(seconds, 2);
+
+				document.getElementById('days').getElementsByTagName('span')[0].innerHTML = padDays.split(
+					''
+				)[0];
+				document.getElementById('days').getElementsByTagName('span')[1].innerHTML = padDays.split(
+					''
+				)[1];
+
+				document.getElementById('hours').getElementsByTagName('span')[0].innerHTML = padHours.split(
+					''
+				)[0];
+				document.getElementById('hours').getElementsByTagName('span')[1].innerHTML = padHours.split(
+					''
+				)[1];
+
+				document
+					.getElementById('minutes')
+					.getElementsByTagName('span')[0].innerHTML = padMinutes.split('')[0];
+				document
+					.getElementById('minutes')
+					.getElementsByTagName('span')[1].innerHTML = padMinutes.split('')[1];
+
+				document
+					.getElementById('seconds')
+					.getElementsByTagName('span')[0].innerHTML = padSeconds.split('')[0];
+				document
+					.getElementById('seconds')
+					.getElementsByTagName('span')[1].innerHTML = padSeconds.split('')[1];
+
+				if (days < 0) document.getElementById('days').innerHTML = '00';
+				if (hours < 0) document.getElementById('hours').innerHTML = '00';
+				if (minutes < 0) document.getElementById('minutes').innerHTML = '00';
+				if (seconds < 0) document.getElementById('seconds').innerHTML = '00';
+
+				// If the count down is finished, write some text
+				if (distance < 0) {
+					document.getElementById('days').innerHTML = '00';
+					document.getElementById('hours').innerHTML = '00';
+					document.getElementById('minutes').innerHTML = '00';
+					document.getElementById('seconds').innerHTML = '00';
+
+					$('#hidetimer').removeClass('hidden');
+					clearInterval(x);
+				}
+			}
+
+			var forceRedraw = function (element) {
+				if (!element) {
+					return;
+				}
+
+				var n = document.createTextNode(' ');
+				var disp = element.style.display; // don't worry about previous display style
+
+				element.appendChild(n);
+				element.style.display = 'none';
+
+				setTimeout(function () {
+					element.style.display = disp;
+					n.parentNode.removeChild(n);
+				}, 20); // you can play with this timeout to make it as short as possible
+			};
+
+			$(document).ready(function () {
+				// Set the date we're counting down to
+				updateTimer();
+
+				// Update the count down every 1 second
+				var x = setInterval(function () {
+					updateTimer();
+				}, 1000);
+			});
+		</script>
+	</head>
+	<body>
+		<div class="hero">
+			<div class="logo_wrap">
+				<div class="thirdheight"></div>
+				<div class="thirdheight">
+					<img src="img/logo_zk.png" class="logo" alt="Zero Killed">
+				</div>
+				<div class="thirdheight">
+					<p class="whitetext comunicat">AVAILABLE NOW</p>
+				</div>
+				<div class="thirdheight bottom">
+					<div id="hidetimer" style="text-align: center;">
+						<br>
+						<div class="row">
+							<div class="logos">
+								<div class="facebook">
+									<a href="http://facebook.com/zerokilledgame" target="_blank"><img src="img/fb_icon.png"></a>
+								</div>
+								<div class="twitter last">
+									<a href="https://twitter.com/zerokilledgame" target="_blank"><img src="img/tt_icon.png"></a>
+								</div>
+								<div class="hashtag whitetext">
+									<a href="https://www.instagram.com/zerokilledgame/" target="_blank"><span>#EVERYTHING0K</span></a>
+								</div>
+							</div>
+							<div class="buttons">
+								<a href="https://store.steampowered.com/app/645930/Zero_Killed/" target="_blank"><img src="img/steam_bt.png" class="button" alt="Buy on Steam"></a>
+								<a href="https://www.oculus.com/experiences/rift/2041530245867392/" target="_blank"><img src="img/oculus_bt.png" class="button" alt="Buy on Oculus"></a>
+							</div>
+							<div class="ignibit">
+								<a href="https://www.ignibit.com/"><img src="img/ignibit_logo.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bar dark ultradark">
+			<div class="yt_full">
+				<iframe src="https://www.youtube.com/embed/r8dhUPqq-2Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+			</div>
+		</div>
+
+		<div class="contentbar dark left transparent" style="background-image: url('img/gunheld.png'); background-position: 95% 14%;">
+			<div class="content">
+				<h1>The Next Generation of Battle</h1>
+				<br>
+				<p>
+					Use tactics and teamwork in a new kind of immersive warfare.<br>Online.&nbsp;&nbsp;In
+					VR.
+				</p>
+			</div>
+		</div>
+
+		<div class="contentbar light" style="
+				background-image: url('img/point_right.png');
+				background-position: 8% 100%;
+				background-size: 38em;
+			">
+			<div class="content">
+				<h1>Choose your Zero</h1>
+				<br>
+				<p>
+					Choose one of 10 characters and use their<br>unique skills and gadgets to your
+					advantage.
+				</p>
+			</div>
+		</div>
+
+		<div class="contentbar dark left transparent" style="
+				background-image: url('img/belts.png');
+				background-position: 95% 50%;
+				background-size: 35em;
+			">
+			<div class="content">
+				<h1>Get an edge</h1>
+				<br>
+				<p>Using plethora of grenades, explosives<br>and other equipment.</p>
+			</div>
+		</div>
+
+		<div class="contentbar light" style="
+				background-image: url('img/oculusvive.png');
+				background-position: 10% 75%;
+				background-size: 25em;
+			">
+			<div class="content">
+				<h1>On Oculus Rift and HTC Vive</h1>
+				<br>
+				<p>Go to war in the comfort of your home.<br></p>
+			</div>
+		</div>
+
+		<div class="contentbar dark left transparent" style="
+				background-image: url('img/0k_icon.png');
+				background-position: 78% 85%;
+				background-size: 10em;
+			">
+			<div class="content">
+				<h1>AVAILABLE NOW</h1>
+				<br>
+				<p>
+					<a href="https://store.steampowered.com/app/645930/Zero_Killed/" target="_blank"><img src="img/steam_bt.png" class="button_small" alt="Buy on Steam"></a>
+					<a href="https://www.oculus.com/experiences/rift/2041530245867392/" target="_blank"><img src="img/oculus_bt.png" class="button_small" alt="Buy on Oculus"></a>
+
+					<a href="https://discord.gg/SEHC8Uv" target="_blank"><img src="img/DISCORD_bt.png" class="button_small" alt="Wishlist on Steam"></a>
+				</p>
+			</div>
+		</div>
+
+		<div class="bar dark">
+			<div class="content autoheight">
+				<div class="footer">
+					<div class="third">
+						<ul class="social">
+							<li>
+								<i class="fas fa-circle"></i>&nbsp;<a href="https://www.oculus.com/experiences/rift/2041530245867392/" target="_blank">Oculus</a>
+							</li>
+							<li>
+								<i class="fab fa-steam"></i>&nbsp;<a href="https://store.steampowered.com/app/645930/Zero_Killed/" target="_blank">Steam</a>
+							</li>
+							<!-- <li><a href="http://facebook.com/zerokilledgame" target="_blank">Youtube</a></li> -->
+							<li>
+								<i class="fab fa-facebook-square"></i>&nbsp;<a href="http://facebook.com/zerokilledgame" target="_blank">Facebook</a>
+							</li>
+							<li>
+								<i class="fab fa-twitter"></i>&nbsp;<a href="https://twitter.com/zerokilledgame" target="_blank">Twitter</a>
+							</li>
+							<li>
+								<i class="fab fa-discord"></i>&nbsp;<a href="https://discord.gg/SEHC8Uv" target="_blank">Discord</a>
+							</li>
+							<li>
+								<i class="fas fa-user-secret"></i>&nbsp;<a href="privacy" target="_blank">Privacy Policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="third">
+						Zero Killed ©2020 Ignibit S.A. Zero Killed and the Zero Killed logo are trademarks
+						and/or registered trademarks of Ignibit S.A. in the U.S. and/or other countries.
+					</div>
+					<div class="third">
+						Steam ©2017 Valve Corporation. Steam and the Steam logo are trademarks and/or registered
+						trademarks of Valve Corporation in the U.S. and/or other countries.
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+</body></html>

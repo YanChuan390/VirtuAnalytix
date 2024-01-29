@@ -1,0 +1,175 @@
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="apple-itunes-app" content="app-id=1438492758">
+    <meta name="google-play-app" content="app-id=com.Adver2Play.Scriptum">
+    
+    <title>Scriptum - A2P</title>
+    <meta name="msapplication-TileColor" content="#DBB30F">
+    <link rel="icon" href="images/icon.png" sizes="32x32">
+    <!--  Android 5 Chrome Color-->
+    <!-- <meta name="theme-color" content="#EE6E73"> -->
+    <!-- CSS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <link rel="stylesheet" href="css/jquery.smartbanner.css" type="text/css" media="screen">
+
+
+</head>
+<body class="parallax-demo">
+<header>
+    <nav class="pushpin menu" role="navigation" style="background-color: transparent; position: absolute; z-index: 1000;  height: 0 !important;">
+        <div class="nav-wrapper" style="position:absolute; width: 100%;">
+            <div style="overflow-x: hidden; position:absolute; width: 100%;">
+                <img class="" style="width:100vw; position:relative;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);" id="header" src="images/scriptum_header.png">
+                <!--    <a href="VR.html"><img id="logo-container" href="#" class="brand-logo" src="images/Adver2Play_logo.svg"
+                                              style="height: 100%; padding: 0.6%"></a>-->
+                <p id="slogan" class="lang border-text" key="slogan" style="font-size: 1.7em;width: 100%; margin: 0; text-align: center; bottom:15%; z-index: 900; position: absolute;">Scriptum AR Escape Room is the first Augmented Reality Escape Room in the world.</p>
+
+            </div>
+
+            <ul class="right hide-on-med-and-down" style="width: 10%; margin-right: 10%;     z-index: 1000000;">
+                <li style=" z-index: 1000000;">
+                    <div class="select-wrapper"><input class="select-dropdown dropdown-trigger" type="text" readonly="true" data-target="select-options-856ce499-ad5d-23df-d7f7-85a76c0a4db5"><ul id="select-options-856ce499-ad5d-23df-d7f7-85a76c0a4db5" class="dropdown-content select-dropdown" tabindex="0"><li id="select-options-856ce499-ad5d-23df-d7f7-85a76c0a4db50" tabindex="0" class="selected"><span>English</span></li><li id="select-options-856ce499-ad5d-23df-d7f7-85a76c0a4db51" tabindex="0"><span>Castellano</span></li></ul><svg class="caret" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><select id="idioma" style="width: 50%;   z-index: 1000000;" tabindex="-1">
+                        <option>English</option>
+                        <option>Castellano</option>
+                    </select></div>
+                </li>
+            </ul>
+            <ul id="nav-mobile" class="sidenav" style="background: darkslategray;  width: 50vw !important;     z-index: 10000;">
+                <li><a class="mobileLang white-text" id="es" href="#">Castellano</a></li>
+                <li><a class="mobileLang white-text" id="en" href="#">English</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i style="line-height: 10vw !important" class="material-icons white-text">menu</i></a>
+
+
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!--  Parallax Section  -->
+    <div class="parallax-container center-align" style="height: auto;">
+
+        <div class="parallax"><img id="parallax1" src="images/xmas.png" style="transform: translate3d(-50%, 579.038px, 0px); opacity: 1;"></div>
+
+        <div id="portalsContainer" style="margin-top: 10%">
+            <a href="#content" onclick="setSlide(0);"><img class="logo" id="imgScriptum" src="images/portal_classic.png"></a>
+            <a style="position:relative;" href="#content" onclick="setSlide(2);">
+                <img class="logo" id="imgScriptum2" style="margin-left: 10px; margin-right: 10px;" src="images/portal_future.png">
+                <img class="nubes" style="width:50vw; z-index: 1; position: absolute; bottom:0; transform: translate(-50%, 60%);" id="clouds" src="images/nubes.png">
+
+            </a>
+            <a href="#content" onclick="setSlide(3);"><img class="logo" id="imgScriptum4" src="images/portal_horror.png"></a>
+            <a href="#content" onclick="setSlide(1);"><img class="logo" id="imgScriptum3" src="images/portal_christmas.png"></a>
+        </div>
+
+        <div id="content" class="section valign-wrapper" style="margin-top:10%; padding: 0 0 0 0; height:25vw;">
+            <div style="position: relative">
+
+                <a id="next" class="btn-floating btn-large waves-effect waves-light " style="background-color:transparent; position: absolute; left: 90vw;" onclick="next();"><img style="height: 100%; width:100%;" src="images/round-button.svg"></a>
+                <a id="previous" class="btn-floating btn-large waves-effect waves-light " style="background-color:transparent;; position: absolute; left: 5vw;" onclick="previous();"><img style="height: 100%; width:100%; transform: rotate(180deg);" src="images/round-button.svg"></a>
+
+            </div>
+
+            <div class="carousel center" style="height:100%; background:transparent; overflow: visible">
+                <div class="carousel-fixed-item center" style="height: 100%; bottom: 0 !important; position: relative;">
+
+                </div>
+                <div class="carousel-item white-text active" href="#one!" style="z-index: 0; opacity: 1; visibility: visible; transform: translateX(95px) translateY(0px) translateX(0px) translateX(0px) translateZ(0px);">
+                    <img class="image-carousel" style="height: 100%;" src="images/classic_horizontal.png">
+                    <div class="description-carousel ui-resizable" id="resizable">
+                        <div class="very-specific-design" style="transform: scale(0.623428);">
+                            <h2 class="header lang" key="mainTitle">Scriptum Classic</h2>
+                            <p class="white-text text-darken-3 lighten-3 lang" key="info1">Immerse yourself into this new Scriptum AR Escape Room Adventure. Do you have the skills and reasoning required to escape before the time runs out? Put your reasoning and logic skills to the test and complete this puzzle left by a Best-Seller Author.</p>
+
+                            <p class="white-text text-darken-3 lighten-3 lang" key="info2">Download and play Scriptum AR Escape Room for free on Google Play and Apple Store.</p>
+                        </div>
+
+
+                    <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+                </div>
+                <div class="carousel-item white-text" href="#two!" style="transform: translateX(95px) translateY(0px) translateX(829px) translateZ(-200px); z-index: -1; opacity: 0.5; visibility: visible;">
+                    <img class="image-carousel" style="height: 100%;" src="images/xmas_horizontal.png">
+                    <div class="description-carousel">
+                        <div class="very-specific-design" style="transform: scale(0.623428);">
+                            <h2 class="header lang" key="mainTitle2">Scriptum Christmas</h2>
+                            <p class="white-text text-darken-3 lighten-3 lang" key="info12">Your Christmas eve excitement is off the charts to the point of walking thru a portal to Santa’s toy factory. The elves have discovered you and you’ve been locked into a secret room.</p>
+
+                            <p class="white-text text-darken-3 lighten-3 lang" key="info22">Explore your surroundings and find a way out before Santa discovers you and leaves you with no presents for being naughty.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="carousel-item white-text" href="#three!" style="transform: translateX(95px) translateY(0px) translateX(-1658px) translateZ(-400px); z-index: -2; opacity: 0; visibility: visible;">
+                    <img class="image-carousel" style="height: 100%;" src="images/future_horizontal.png">
+                    <div class="description-carousel">
+                        <div class="very-specific-design" style="transform: scale(0.623428);">
+                            <h2 class="header lang" key="mainTitle3">Scriptum Future</h2>
+                            <p class="white-text text-darken-3 lighten-3 lang" key="info13">Earth has become a hostile environment . How come you time travel to that era? You better get going and escape back to the present.</p>
+
+                            <p class="white-text text-darken-3 lighten-3 lang" key="info23">Disable the security protocols using futuristic technology to escape alive from this dystopian world.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item white-text" href="#four!" style="transform: translateX(95px) translateY(0px) translateX(-829px) translateZ(-200px); z-index: -1; opacity: 0.5; visibility: visible;">
+                    <img class="image-carousel" style="height: 100%;" src="images/horror_horizontal.png">
+                    <div class="description-carousel">
+                        <div class="very-specific-design" style="transform: scale(0.623428);">
+                            <h2 class="header lang" key="mainTitle4">Scriptum Horror</h2>
+                            <p class="white-text text-darken-3 lighten-3 lang" key="info14">When science and dementia meet the moral boundaries blur in a bright mind.</p>
+
+                            <p class="white-text text-darken-3 lighten-3 lang" key="info24">Use your last breaths to escape from the clutches of Dr Sheripov and bring to light all his creepy investigations he carries out in his asylum.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin:5% 0% 5% 0%;;" class="center">
+            <div style=" position: relative;">
+                <a id="googleLink" href="https://play.google.com/store/apps/details?id=com.Adver2Play.Scriptum&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img id="google" style="height: 8em; margin-right: 10px;" alt="Disponible en Google Play" src="images/en_badge_web_generic.png"></a>
+                <a id="appleLink" href="https://itunes.apple.com/es/app/scriptum/id1438492758?mt=8"><img id="apple" style="height: 8em;margin-left: 10px; " alt="Consiguelo en el App Store" src="images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"></a>
+            </div>
+            <div style="width: 100%">
+                <p id="languages" class="lang border-text" key="languages" style="font-size: 2em;">Available in 17 languages</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section" style="background-color: #06101B">
+        <div class="row container">
+            <div class="col s12 m12 center">
+                <img id="tituloScriptum" src="images/titulo_scriptum_letras.png" style="width: 50%; margin: -5% 0 -5% 0">
+                <div class="videoWrapper">
+
+                    <iframe style="border-width:0px !important" src="https://www.youtube.com/embed/d6Iu9nh7Cso" allowfullscreen="">
+                    </iframe>
+                </div>
+                <img id="developed" src="images/developed_byA2P.svg" style="width: 20%">
+
+            </div>
+
+        </div>
+    </div>
+    
+    <!--  Scripts-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery.smartbanner.js"></script>
+    <script src="js/init.js"></script>
+    
+
+</main>
+
+<div class="sidenav-overlay"></div><div class="drag-target"></div></body></html>

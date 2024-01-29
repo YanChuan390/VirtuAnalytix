@@ -1,0 +1,736 @@
+<html><head>
+<meta charset="UTF-8">
+<title>FIRE ESCAPE</title>
+<link href="css/style.css?v=1.6" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i,900" rel="stylesheet"> 
+
+<link href="css/cssFE/style.css" rel="stylesheet" type="text/css">
+    
+<link href="css/cssFE/general.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/cssFE/styleFE.css">    
+    
+    
+<link rel="stylesheet" href="../css/header.css">    
+    
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="https://connect.facebook.net/es_LA/sdk.js?hash=1d4581f0261809ac0d02e920643211df" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="//connect.facebook.net/es_LA/sdk.js#xfbml=1&amp;version=v2.9"></script><script src="https://www.w3schools.com/lib/w3.js"></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+
+  
+ 
+<body>
+
+    <!--  --> <header class="w3-container w3-theme w3-padding headerFE"> 
+       
+  
+    
+    
+    <!-- Header -->
+    <section id="inkheaderFE">
+        <div class="header">
+            <a href="https://inkstories.com/"><img class="logoHero" src="../imgs/logo1.png"></a>
+            
+            <nav id="navDesktop">
+                <a href="../about.html">About</a>
+               <a href="../index.html#projects">Our Titles</a>
+            <a href="../index.html#collaborations">Collaborations</a>
+            <a href="../contact.html">Contact</a>
+            </nav>
+        </div>   
+        
+        
+        
+        <div class="topnav">
+  <a></a>
+  <div id="myLinks">
+            <a href="../about.html">About</a>
+            <a href="../index.html#projects">Our Titles</a>
+            <a href="../index.html#collaborations">Collaborations</a>
+            <a href="mailto:info@inkstories.com" target="_blank">Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <img src="../imgs/bars-solid-white.png">
+  </a>
+</div>
+    </section>
+    
+    
+    <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+    
+    <script>$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});</script>
+<!-- End of Header -->
+     </header>
+   
+    
+    <section id="firstFE">
+       
+       <!-- <div class="contCol">
+          <div class="col1">
+              <br/>
+              <img class="laurelsHeroVert" src=../imgs/laurels/tribeca.png>
+              <img class="laurelsHeroVert" src=../imgs/laurels/nyff.png>
+            <img class="laurelsHeroVert" src=../imgs/laurels/indiecade.png>
+            <img class="laurelsHeroVert" src=../imgs/laurels/viff.png>
+            <img class="laurelsHeroVert" src=../imgs/laurels/montreal.png>
+            
+            </div>
+          <div class="col2"></div>
+          <div class="col3"></div>
+        </div>-->
+        
+       
+    </section>  <!--<a class="linkDaydream" href="http://bit.ly/FireEscapeDaydream"><img src="../imgs/daydream.png" alt="logo Daydream"/></a>  
+    -->
+    
+    
+    <div class="contStores">
+       <!-- <a class="linkDaydream" href="http://bit.ly/FireEscapeDaydream"><img src="../imgs/daydream.png" alt="logo Daydream"/></a>-->
+       <!-- <a class="linkDaydream" href="https://store.steampowered.com/app/1224480/Fire_Escape" target="_blank"><img src="../imgs/STEAM-comingsoon.png" alt="logo Steam Coming Soon"/></a>-->
+        
+    </div>
+    
+    
+<div class="contDetails">
+    <br>
+   <div class="w3-center">
+		<div class="w3-row">
+					<div class="w3-half w3-container">
+                       <div class="reviews">                        
+                       	<h3>"A COMPLEX, ENGAGING INTERACTIVE THRILLER"</h3>                            
+                      	<p>UploadVR</p>                    
+                        </div>
+                  </div>
+
+                  <div class="w3-half w3-container">
+                       <div class="reviews">                        
+                       	<h3>"PEEKING INTO THE LIVES OF OTHERS IS EFFECTIVE, HYPNOTIZING, AND STRANGE"</h3>
+                      	<p>CNET</p>                    
+                        </div>
+                  </div>
+		</div>
+    </div>
+		<br>
+        <br>  
+    
+    
+ <div class="videoN">
+    <!-- <iframe  src="https://www.youtube.com/embed/pZfBaTbtfkY" frameborder="0" allowfullscreen></iframe>-->
+    
+    <!-- <iframe src="https://www.youtube.com/embed/giwuHAobGlc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+     -->
+     <iframe src="https://www.youtube.com/embed/mKFv1-cquRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+     
+       
+       
+          
+    <div class="contBtnTrailer">
+        <div class="left"> 
+            <img src="imgs/vr_pc.png">
+        </div>   
+        <div class="right">
+           <a class="btnPlaySteam" href="https://store.steampowered.com/app/1224480/Fire_Escape/" target="_blank">PLAY IT ON STEAM</a>
+        </div>
+       
+     </div><div class="clear"></div>
+     <br>  <br> 
+     
+</div>
+
+   
+       
+       
+       
+        <div class="w3-center">
+                                
+              <h5 style="color:#00ffff; font-style: italic; font-weight:semi-bold, bolder;">*25% of all proceeds will be donated to COVID-19 relief efforts.</h5>
+                             
+         <br> 
+      </div>
+       
+       
+       
+            <!--dos columnas-->
+       
+       
+       <div class="contDosCol">
+        <div class="DosColCuarenta">    
+			<p style="color: #00ffff; font-weight: bold;">
+           	<span class="">WHEN THE CLOCK STRIKES EIGHT,<br>A THRILLER BEGINS TO UNFOLD<br> </span><span style="font-size: 1.8em;">IN REAL TIME</span>
+          </p>
+        </div>
+        
+       <div class="DosColSesenta">   
+         <p>Inspired by Hitchcock's anxiety driven storytelling, from the moment Fire Escape's action begins, you will have free range to seamlessly select apartments, and hear the intimate conversation of your neighbors across the alleyway. When a murder occurs in the gentrifying building, you must peer into the lives of the diverse tenants of the building, while making difficult narrative choices to discover the hidden secrets that will unwrap the mistery.</p>
+       </div>
+   
+  </div> 
+    
+        <div class="clear"><br></div>
+       
+       
+       
+       <!--quote centered-->
+       
+           
+             <div class="w3-center">
+          <div class="reviews">                        
+              <h2>"I'M HOOKED"</h2>
+              <p>Under The Radar</p>                    
+          </div><br> 
+      </div>
+       
+       
+           <!--screenshoots     -->
+    
+    
+    
+    
+    
+     <div class="parallax">
+   
+             
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+ 
+</div>
+ <div class="w3-center"> 
+      
+        <div class="screenshots">
+          <div class="w3-row">
+              <div class="w3-third"><img id="screen1" src="imgs/ss/FE_VIVE_2.png"></div>
+              <div class="w3-third"><img id="screen2" src="imgs/ss/FE_VIVE_3.png"></div>
+             <div class="w3-third"><img id="screen3" src="imgs/ss/FE_VIVE_4.png"></div>
+             <div class="w3-third"><img id="screen4" src="imgs/ss/FE_VIVE_6.png"></div>
+              <div class="w3-third"><img id="screen5" src="imgs/ss/FE_VIVE_8.png"></div>
+             <div class="w3-third"><img id="screen6" src="imgs/ss/FE_VIVE_9.png"></div>
+          </div>     
+        </div> 
+        
+	</div>
+
+</div>
+    
+    
+    
+      
+       
+  </div>    
+         
+    <div id="popup1" class="modal-box" style="top: 311.5px; left: 0px;">
+ 
+  <br>
+ <br>
+  
+</div>
+       
+
+<div class="contLaurelsMin">   
+    <div class="rowLaurel">
+          <div class="columnLaurel">
+            <img src="imgs/laurels/imga.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/gold.png" style="width:100%">
+          </div>
+          <div class="columnLaurel">
+            <img src="imgs/laurels/vrExp.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/monolith.png" style="width:100%">
+          </div>
+                  <div class="columnLaurel">
+            <img src="imgs/laurels/indiecade.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/NYV.png" style="width:100%">
+          </div>
+         <div class="columnLaurel">
+            <img src="imgs/laurels/viff.png" style="width:100%">
+          </div>
+          <div class="columnLaurel">
+            <img src="imgs/laurels/tribeca.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/NYFF.png" style="width:100%">
+          </div>
+        
+        <div class="columnLaurel">
+            <img src="imgs/laurels/overlook.png" style="width:100%">
+          </div>
+                  <div class="columnLaurel">
+            <img src="imgs/laurels/denver.png" style="width:100%">
+          </div>
+  <div class="columnLaurel">
+            <img src="imgs/laurels/sandbox.png" style="width:100%">
+          </div>    
+        <div class="columnLaurel">
+            <img src="imgs/laurels/montreal.png" style="width:100%;margin:-20px 50% 0;">
+          </div>
+          
+    </div>
+     
+</div>        
+<div class="contLaurelsMed">   
+    <div class="rowLaurel">
+          <div class="columnLaurel">
+            <img src="imgs/laurels/imga.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/gold.png" style="width:100%">
+          </div>
+          <div class="columnLaurel">
+             <img src="imgs/laurels/montreal.png" style="width:100%"> 
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/monolith.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/indiecade.png" style="width:100%">
+          </div>
+        
+    </div>        
+
+    <div class="rowLaurel">        
+        <div class="columnLaurel">
+            <img src="imgs/laurels/NYV.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/viff.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/NYFF.png" style="width:100%">
+          </div>
+          <div class="columnLaurel">
+            <img src="imgs/laurels/tribeca.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/overlook.png" style="width:100%">
+          </div>
+    </div>
+    <div class="rowLaurelThree">     
+                  <div class="columnLaurel">
+            <img src="imgs/laurels/denver.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+          <img src="imgs/laurels/vrExp.png" style="width:100%">
+          </div>
+            <div class="columnLaurel">
+            <img src="imgs/laurels/sandbox.png" style="width:100%">
+          </div>    
+    </div>
+     <br><br><br>
+</div>   
+    
+    
+    
+<div class="contLaurelsMax">   
+    <div class="rowLaurel">
+          <div class="columnLaurel">
+            <img src="imgs/laurels/imga.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/gold.png" style="width:100%">
+          </div>
+          <div class="columnLaurel">
+            <img src="imgs/laurels/vrExp.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/monolith.png" style="width:100%">
+          </div>
+                  <div class="columnLaurel">
+            <img src="imgs/laurels/indiecade.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/NYV.png" style="width:100%">
+          </div>
+                <div class="columnLaurel">
+            <img src="imgs/laurels/viff.png" style="width:100%">
+          </div>
+    </div>        
+
+    <div class="rowLaurelTwo">        
+        <div class="columnLaurel">
+            <img src="imgs/laurels/NYFF.png" style="width:100%">
+          </div>
+          <div class="columnLaurel">
+            <img src="imgs/laurels/tribeca.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/overlook.png" style="width:100%">
+          </div>
+                  <div class="columnLaurel">
+            <img src="imgs/laurels/denver.png" style="width:100%">
+          </div>
+        <div class="columnLaurel">
+            <img src="imgs/laurels/montreal.png" style="width:100%">
+          </div>
+            <div class="columnLaurel">
+            <img src="imgs/laurels/sandbox.png" style="width:100%">
+          </div>    
+    </div>
+      <br> <br> <br><br>
+</div>       
+     <br> <br> <br> <br> <br> <br>
+ 
+        <!-- <div class="contLaurelsFE">
+                <div class="oneFE"> <img src="../imgs/laurelsFE/1_tribeca.png"/></div>
+                <div class="twoFE"><img src="../imgs/laurelsFE/2_NYFF.png"/></div>
+                <div class="threeFE"><img src="../imgs/laurelsFE/3_Indie.png"/></div>
+                <div class="fourFE"><img src="../imgs/laurelsFE/4_VIFF.png"/></div>
+                <div class="fiveFE"><img src="../imgs/laurelsFE/5_gold.png"/></div>
+                <div class="sixFE"><img src="../imgs/laurelsFE/6_montreal.png"/></div>
+                <div class="sevenFE"><img src="../imgs/laurelsFE/7_denver.png"/></div>
+                <div class="eightFE"><img src="../imgs/laurelsFE/8_NCM.png"/></div>
+                <div class="oneFE"> <img src="../imgs/laurelsFE/1_tribeca.png"/></div>
+                <div class="twoFE"><img src="../imgs/laurelsFE/2_NYFF.png"/></div>
+                <div class="threeFE"><img src="../imgs/laurelsFE/3_Indie.png"/></div>
+                <div class="fourFE"><img src="../imgs/laurelsFE/4_VIFF.png"/></div>
+                <div class="fiveFE"><img src="../imgs/laurelsFE/5_gold.png"/></div>
+             
+             </div> -->   
+    
+    
+    
+    <div class="contPlayable">
+    
+        <img src="imgs/vr_pc.png">
+
+        <p>PLAYABLE ON <b>PC</b> AND <b>STEAM-VR</b>    COMPATIBLE HARDWARE, INCLUDING:</p>
+        <div class="hardware">
+            <img src="imgs/hw_valve.png">
+            <img src="imgs/hw_vive.png">
+            <img src="imgs/hw_oculus.png">
+        </div>
+    
+    </div>
+    
+<section id="bottomSection">
+
+  
+         <div class="logoCredits">
+           <br><br><br>
+            <a href="privacypolicy.html">Privacy Policy</a>
+           <p>© inkstories 2023<br></p><br>
+           
+          <a href="https://inkstories.com/"> <img src="imgs/logo.png"></a><br><br><br>
+         </div>
+    
+   
+
+ </section>     
+
+    
+	<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Footer -->
+
+
+  
+ <!-- <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  -->
+
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+slideIndex = slideIndex + n;
+showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+
+
+
+
+<script>
+w3IncludeHTML();
+</script>
+
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script>
+$(function(){
+
+var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+
+	$('a[data-modal-id]').click(function(e) {
+		e.preventDefault();
+    $("body").append(appendthis);
+    $(".modal-overlay").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+		var modalBox = $(this).attr('data-modal-id');
+		$('#'+modalBox).fadeIn($(this).data());
+	});  
+  
+  
+$(".js-modal-close, .modal-overlay").click(function() {
+    $(".modal-box, .modal-overlay").fadeOut(500, function() {
+        $(".modal-overlay").remove();
+    });
+ 
+});
+ 
+$(window).resize(function() {
+    $(".modal-box").css({
+        top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
+        left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+    });
+});
+ 
+$(window).resize();
+ 
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('screen1');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('screen2');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('screen3');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+          
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('screen4');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+          
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('screen5');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+          
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('screen6');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>    
+    
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh'},{'server':'p3plcpnl1030'},{'dcenter':'p3'},{'cp_id':'3588222'},{'cp_cache':''},{'cp_cl':'6'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src="https://img1.wsimg.com/traffic-assets/js/tccl.min.js"></script>
+</body></html>

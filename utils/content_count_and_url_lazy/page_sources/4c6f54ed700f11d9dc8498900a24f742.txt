@@ -1,0 +1,729 @@
+<html lang="en"><head><meta charset="utf-8"><title>Turtle Rock Studios</title><base href="/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="https://fonts.googleapis.com/icon?family=Oswald|Roboto|Material+Icons" rel="stylesheet"><meta property="og:locale" content="en_US"><meta property="og:title" content="Turtle Rock Studios"><meta property="og:description" content="A multi-project, award-winning independent developer located in the heart of Orange County, CA. We thrive in an open, collaborative environment which is led to this day by co-founders Chris Ashton and Phil Robb."><meta property="og:image" content="https://turtlerockstudios.com/assets/trs_logo.jpg"><link href="styles.fcb7c9054dd64fd5cccb.bundle.css" rel="stylesheet"><style>[flex-row]{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}[flex-col]{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}[flex]{-webkit-box-flex:1;-ms-flex:1;flex:1}.mat-button{border-radius:0!important;font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:2px;background:rgba(255,255,255,.2)}h1,h2,h3,h4,h5,h6{letter-spacing:3px;font-weight:700;font-family:Oswald,Impact,sans-serif;text-transform:uppercase}h2{font-size:2rem}body{display:-webkit-box;display:-ms-flexbox;display:flex}trs-app{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-height:100%;width:100%}trs-app>:not(trs-navbar):not(trs-footer):not(trs-secret):not(router-outlet){-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto}a:not(.mat-button){text-decoration:none;color:#b71c1c}a:not(.mat-button):active,a:not(.mat-button):focus,a:not(.mat-button):hover{color:#de2828}img{display:block;width:100%}.mat-menu-content{background:#0c0c0c}.mat-menu-content a{color:rgba(230,229,229,.8)}.mat-menu-content a:active,.mat-menu-content a:focus,.mat-menu-content a:hover{color:rgba(255,255,255,.8)}.mat-input-placeholder{color:rgba(153,153,153,.8)}.mat-input-underline{background-color:rgba(255,255,255,.1)}.mat-divider{border-top:1px solid rgba(255,255,255,.12)}.mat-dialog-container{background:#111;color:rgba(255,255,255,.8)}.blurb{text-align:center;font-size:1.4rem;padding:1rem}@media (min-width:768px){.blurb{font-size:2rem;padding:2rem}}.blurb p{margin-bottom:1rem}</style><style>[_nghost-c1]{display:block;position:relative}.transparent[_nghost-c1]   .nav[_ngcontent-c1]{background:rgba(0,0,0,.4)}.transparent[_nghost-c1]   .padding[_ngcontent-c1]{padding-top:0}[_nghost-c1]   img[_ngcontent-c1]{display:none}[_nghost-c1]   img.sm[_ngcontent-c1]{display:block}[_nghost-c1]   .mat-button[_ngcontent-c1]{background:0 0}[_nghost-c1]   .mat-button.active[_ngcontent-c1], [_nghost-c1]   .mat-button[_ngcontent-c1]:active, [_nghost-c1]   .mat-button[_ngcontent-c1]:hover{background:rgba(255,255,255,.2)}[_nghost-c1]   .padding[_ngcontent-c1]{padding-top:57px}@media (min-width:768px){[_nghost-c1]   img[_ngcontent-c1]{display:block}[_nghost-c1]   img.sm[_ngcontent-c1]{display:none}[_nghost-c1]   .padding[_ngcontent-c1]{padding-top:100px}}[_nghost-c1]   .nav[_ngcontent-c1]{display:-webkit-box;display:-ms-flexbox;display:flex;position:fixed;top:0;left:0;width:100%;height:57px;z-index:1000;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:8px;background:#000}[_nghost-c1]   .nav.fixed[_ngcontent-c1]{position:fixed;top:0;left:0;width:100%;z-index:1000;min-height:40px;max-height:40px}[_nghost-c1]   .nav[_ngcontent-c1]   .nav-item[_ngcontent-c1]{display:none}@media (min-width:768px){[_nghost-c1]   .nav[_ngcontent-c1]{height:100px;padding:16px}[_nghost-c1]   .nav[_ngcontent-c1]   .nav-item[_ngcontent-c1]{display:block}[_nghost-c1]   .nav[_ngcontent-c1]   .trs-hamburger[_ngcontent-c1]{display:none}[_nghost-c1]   .sidebar[_ngcontent-c1]{display:none}}[_nghost-c1]   .sidebar[_ngcontent-c1]{position:fixed;z-index:1001;top:0;right:0;width:100%;height:100%;pointer-events:none}[_nghost-c1]   .sidebar[_ngcontent-c1]   .sidebar-nav[_ngcontent-c1]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;height:100%;padding:1rem 0;background:#000;-webkit-transform:translateX(100%);transform:translateX(100%);-webkit-transition:-webkit-transform 250ms;transition:transform 250ms;transition:transform 250ms,-webkit-transform 250ms;pointer-events:auto}[_nghost-c1]   .sidebar[_ngcontent-c1]   .sidebar-nav[_ngcontent-c1] > div[_ngcontent-c1]{max-width:100%}[_nghost-c1]   .sidebar.opened[_ngcontent-c1]   .sidebar-nav[_ngcontent-c1]{-webkit-transform:translateX(0);transform:translateX(0)}[_nghost-c1]   .sidebar[_ngcontent-c1]   .mat-button[_ngcontent-c1]{padding:.6rem 3rem;width:100%}[_nghost-c1]   .sidebar[_ngcontent-c1]   .mat-icon-button[_ngcontent-c1]{color:rgba(102,102,102,.8)}</style><style>[_nghost-c2]{display:block;background:#070707;font-size:12px;color:#666}[_nghost-c2]   a[_ngcontent-c2]{color:#999}[_nghost-c2]   a[_ngcontent-c2]:hover{color:#b3b2b2}[_nghost-c2]   br[_ngcontent-c2]{display:inline}[_nghost-c2]   .privacy-policy-banner[_ngcontent-c2]{background-color:#b71c1c;color:rgba(255,255,255,.8);padding:5px;font-size:14px}[_nghost-c2]   .privacy-policy-banner[_ngcontent-c2]   a[_ngcontent-c2]{text-decoration:underline}[_nghost-c2]   .footer-text-and-links[_ngcontent-c2]{padding:4px 10px}@media (min-width:768px){[_nghost-c2]   br[_ngcontent-c2]{display:none}}</style><style>[_nghost-c3]   video[_ngcontent-c3]{display:none}@media (min-width:1280px){[_nghost-c3]   video[_ngcontent-c3]{display:block;position:fixed;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;z-index:5000;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}}</style><style>.mat-button,.mat-fab,.mat-icon-button,.mat-mini-fab,.mat-raised-button{box-sizing:border-box;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:0;border:none;-webkit-tap-highlight-color:transparent;display:inline-block;white-space:nowrap;text-decoration:none;vertical-align:baseline;text-align:center;margin:0;min-width:88px;line-height:36px;padding:0 16px;border-radius:2px}[disabled].mat-button,[disabled].mat-fab,[disabled].mat-icon-button,[disabled].mat-mini-fab,[disabled].mat-raised-button{cursor:default}.cdk-keyboard-focused.mat-button .mat-button-focus-overlay,.cdk-keyboard-focused.mat-fab .mat-button-focus-overlay,.cdk-keyboard-focused.mat-icon-button .mat-button-focus-overlay,.cdk-keyboard-focused.mat-mini-fab .mat-button-focus-overlay,.cdk-keyboard-focused.mat-raised-button .mat-button-focus-overlay{opacity:1}.mat-button::-moz-focus-inner,.mat-fab::-moz-focus-inner,.mat-icon-button::-moz-focus-inner,.mat-mini-fab::-moz-focus-inner,.mat-raised-button::-moz-focus-inner{border:0}.mat-fab,.mat-mini-fab,.mat-raised-button{box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);transform:translate3d(0,0,0);transition:background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1)}.mat-fab:not([disabled]):active,.mat-mini-fab:not([disabled]):active,.mat-raised-button:not([disabled]):active{box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}[disabled].mat-fab,[disabled].mat-mini-fab,[disabled].mat-raised-button{box-shadow:none}.mat-button .mat-button-focus-overlay,.mat-icon-button .mat-button-focus-overlay{transition:none;opacity:0}.mat-button:hover .mat-button-focus-overlay{opacity:1}.mat-fab{box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);min-width:0;border-radius:50%;width:56px;height:56px;padding:0;flex-shrink:0}.mat-fab:not([disabled]):active{box-shadow:0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12)}.mat-fab .mat-icon,.mat-fab i{padding:16px 0;line-height:24px}.mat-mini-fab{box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);min-width:0;border-radius:50%;width:40px;height:40px;padding:0;flex-shrink:0}.mat-mini-fab:not([disabled]):active{box-shadow:0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12)}.mat-mini-fab .mat-icon,.mat-mini-fab i{padding:8px 0;line-height:24px}.mat-icon-button{padding:0;min-width:0;width:40px;height:40px;flex-shrink:0;line-height:40px;border-radius:50%}.mat-icon-button .mat-icon,.mat-icon-button i{line-height:24px}.mat-button,.mat-icon-button,.mat-raised-button{color:currentColor}.mat-button .mat-button-wrapper>*,.mat-icon-button .mat-button-wrapper>*,.mat-raised-button .mat-button-wrapper>*{vertical-align:middle}.mat-button-focus-overlay,.mat-button-ripple{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none}.mat-button-focus-overlay{background-color:rgba(0,0,0,.12);border-radius:inherit;opacity:0;transition:opacity .2s cubic-bezier(.35,0,.25,1),background-color .2s cubic-bezier(.35,0,.25,1)}@media screen and (-ms-high-contrast:active){.mat-button-focus-overlay{background-color:rgba(255,255,255,.5)}}.mat-button-ripple-round{border-radius:50%;z-index:1}@media screen and (-ms-high-contrast:active){.mat-button,.mat-fab,.mat-icon-button,.mat-mini-fab,.mat-raised-button{outline:solid 1px}}</style><style>.mat-menu-panel{box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);min-width:112px;max-width:280px;overflow:auto;-webkit-overflow-scrolling:touch;max-height:calc(100vh - 48px)}.mat-menu-panel.mat-menu-after.mat-menu-below{transform-origin:left top}.mat-menu-panel.mat-menu-after.mat-menu-above{transform-origin:left bottom}.mat-menu-panel.mat-menu-before.mat-menu-below{transform-origin:right top}.mat-menu-panel.mat-menu-before.mat-menu-above{transform-origin:right bottom}[dir=rtl] .mat-menu-panel.mat-menu-after.mat-menu-below{transform-origin:right top}[dir=rtl] .mat-menu-panel.mat-menu-after.mat-menu-above{transform-origin:right bottom}[dir=rtl] .mat-menu-panel.mat-menu-before.mat-menu-below{transform-origin:left top}[dir=rtl] .mat-menu-panel.mat-menu-before.mat-menu-above{transform-origin:left bottom}@media screen and (-ms-high-contrast:active){.mat-menu-panel{outline:solid 1px}}.mat-menu-content{padding-top:8px;padding-bottom:8px}.mat-menu-item{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;outline:0;border:none;-webkit-tap-highlight-color:transparent;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;line-height:48px;height:48px;padding:0 16px;text-align:left;text-decoration:none;position:relative}.mat-menu-item[disabled]{cursor:default}[dir=rtl] .mat-menu-item{text-align:right}.mat-menu-item .mat-icon{margin-right:16px}[dir=rtl] .mat-menu-item .mat-icon{margin-left:16px;margin-right:0}button.mat-menu-item{width:100%}.mat-menu-ripple{position:absolute;top:0;left:0;bottom:0;right:0}</style><style>.mat-icon{background-repeat:no-repeat;display:inline-block;fill:currentColor;height:24px;width:24px}</style><script type="text/javascript" charset="utf-8" async="" src="5.39255e4c45841002945a.chunk.js"></script><style>@import url('https://themes.googleusercontent.com/fonts/css?kit=wAPX1HepqA24RkYW1AuHYA');
+
+    ol[_ngcontent-c8] {
+      margin: 0;
+      padding: 0
+    }
+
+    table[_ngcontent-c8]   td[_ngcontent-c8], table[_ngcontent-c8]   th[_ngcontent-c8] {
+      padding: 0
+    }
+
+    .c4[_ngcontent-c8] {
+
+      margin-left: 36pt;
+      padding-top: 0pt;
+      padding-left: 0pt;
+      padding-bottom: 0pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    .c12[_ngcontent-c8] {
+      background-color: #0c0c0c;
+      margin-left: 58.5pt;
+      padding-top: 0pt;
+      padding-left: 0pt;
+      padding-bottom: 0pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    .c13[_ngcontent-c8] {
+      background-color: #0c0c0c;
+      padding-top: 14pt;
+      padding-bottom: 0pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    .c18[_ngcontent-c8] {
+      margin-left: 36pt;
+      padding-top: 0pt;
+      padding-bottom: 0pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    .c1[_ngcontent-c8] {
+      background-color: #0c0c0c;
+      padding-top: 10pt;
+      padding-bottom: 10pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    .c14[_ngcontent-c8] {
+      -webkit-text-decoration-skip: none;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: underline;
+      vertical-align: baseline;
+      text-decoration-skip-ink: none;
+      font-style: normal
+    }
+
+    .c25[_ngcontent-c8] {
+      padding-top: 0pt;
+      padding-bottom: 0pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    .c23[_ngcontent-c8] {
+      padding-top: 0pt;
+      padding-bottom: 0pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: center
+    }
+
+    .c7[_ngcontent-c8] {
+      padding-top: 0pt;
+      padding-bottom: 0pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: justify
+    }
+
+    .c28[_ngcontent-c8] {
+      padding-top: 14pt;
+      padding-bottom: 14pt;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: center
+    }
+
+    .c2[_ngcontent-c8] {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      vertical-align: baseline;
+      font-style: normal
+    }
+
+    .c15[_ngcontent-c8] {
+      -webkit-text-decoration-skip: none;
+      color: #0000ff;
+      text-decoration: underline;
+      text-decoration-skip-ink: none
+    }
+
+    .c5[_ngcontent-c8] {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      vertical-align: baseline;
+      font-style: normal
+    }
+
+    .c8[_ngcontent-c8] {
+      -webkit-text-decoration-skip: none;
+      color: #b71c1c;
+      text-decoration: underline;
+      text-decoration-skip-ink: none
+    }
+
+    .c29[_ngcontent-c8] {
+      font-weight: 400;
+      font-size: 8pt;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .c0[_ngcontent-c8] {
+      font-size: 13.5pt;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400
+    }
+
+    .c27[_ngcontent-c8] {
+      font-weight: 700;
+      font-size: 24pt;
+      font-family: 'Oswald', 'Impact', sans-serif;
+    }
+
+    .c21[_ngcontent-c8] {
+      font-weight: 700;
+      font-size: 13.5pt;
+      font-family: 'Oswald', 'Impact', sans-serif;
+    }
+
+    .c24[_ngcontent-c8] {
+      font-weight: 400;
+      font-size: 12pt;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .c17[_ngcontent-c8] {
+      text-decoration: none;
+      vertical-align: baseline;
+      font-style: italic
+    }
+
+    .c31[_ngcontent-c8] {
+      font-weight: 400;
+      font-size: 11pt;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .c6[_ngcontent-c8] {
+      font-weight: 700;
+      font-size: 13.5pt;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .c30[_ngcontent-c8] {
+      max-width: 100%;
+      padding: 72pt 72pt 72pt 72pt
+    }
+
+    .c20[_ngcontent-c8] {
+      margin-left: 36pt;
+      padding-left: 0pt
+    }
+
+    .c3[_ngcontent-c8] {
+      padding: 0;
+      margin: 0
+    }
+
+    .c9[_ngcontent-c8] {
+      text-decoration: inherit
+    }
+
+    .c11[_ngcontent-c8] {
+      color: rgba(255, 255, 255, 0.8)
+    }
+
+    .c16[_ngcontent-c8] {
+      color: rgba(255, 255, 255, 0.8)
+    }
+
+    .c10[_ngcontent-c8] {
+      height: 12pt
+    }
+
+    .c26[_ngcontent-c8] {
+      text-indent: -18pt
+    }
+
+    .c22[_ngcontent-c8] {
+      margin-left: 36pt
+    }
+
+    .c19[_ngcontent-c8] {
+      background-color: #0c0c0c
+    }
+
+    .title[_ngcontent-c8] {
+      padding-top: 24pt;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      font-size: 36pt;
+      padding-bottom: 6pt;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.0;
+      page-break-after: avoid;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    .subtitle[_ngcontent-c8] {
+      padding-top: 18pt;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 24pt;
+      padding-bottom: 4pt;
+      font-family: "Georgia";
+      line-height: 1.0;
+      page-break-after: avoid;
+      font-style: italic;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    li[_ngcontent-c8] {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12pt;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    p[_ngcontent-c8] {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12pt;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h1[_ngcontent-c8] {
+      padding-top: 0pt;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      font-size: 24pt;
+      padding-bottom: 0pt;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    h2[_ngcontent-c8] {
+      padding-top: 18pt;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      font-size: 18pt;
+      padding-bottom: 4pt;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.0;
+      page-break-after: avoid;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    h3[_ngcontent-c8] {
+      padding-top: 14pt;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      font-size: 14pt;
+      padding-bottom: 4pt;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.0;
+      page-break-after: avoid;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    h4[_ngcontent-c8] {
+      padding-top: 0pt;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      font-size: 12pt;
+      padding-bottom: 0pt;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.0;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    h5[_ngcontent-c8] {
+      padding-top: 11pt;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      font-size: 11pt;
+      padding-bottom: 2pt;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.0;
+      page-break-after: avoid;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }
+
+    h6[_ngcontent-c8] {
+      padding-top: 10pt;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 700;
+      font-size: 10pt;
+      padding-bottom: 2pt;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.0;
+      page-break-after: avoid;
+      orphans: 2;
+      widows: 2;
+      text-align: left
+    }</style><style>[_nghost-c8]{padding:.5rem}[_nghost-c8]   h4[_ngcontent-c8]{margin:1rem}[_nghost-c8]   p[_ngcontent-c8]{margin-bottom:1rem}[_nghost-c8]   .center[_ngcontent-c8]{text-align:center}[_nghost-c8]   .b[_ngcontent-c8]{font-weight:600}[_nghost-c8]   .u[_ngcontent-c8]{text-decoration:underline}[_nghost-c8]   .i[_ngcontent-c8]{font-style:italic}[_nghost-c8]   ul[_ngcontent-c8]{margin-bottom:1rem}[_nghost-c8]   ul[_ngcontent-c8]   li[_ngcontent-c8]{margin-left:30px;padding-left:0}</style></head><body><trs-app ng-version="4.4.7"><trs-navbar _nghost-c1=""><div _ngcontent-c1="" class="nav">
+  <a _ngcontent-c1="" class="home" routerlink="/" href="/">
+    <img _ngcontent-c1="" alt="turtle rock studios" src="/assets/trs_logo.png">
+    <img _ngcontent-c1="" alt="turtle rock studios" class="sm" src="/assets/trs_logo_sm.png">
+  </a>
+  <span _ngcontent-c1="" flex=""></span>
+  <!----><a _ngcontent-c1="" class="nav-item mat-button" md-button="" routerlinkactive="active" href="/studio" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">Studio</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a><a _ngcontent-c1="" class="nav-item mat-button" md-button="" routerlinkactive="active" href="/games" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">Games</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a><a _ngcontent-c1="" class="nav-item mat-button" md-button="" routerlinkactive="active" href="/vr" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">VR</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a><a _ngcontent-c1="" class="nav-item mat-button" md-button="" routerlinkactive="active" href="/careers" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">Careers</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a><a _ngcontent-c1="" class="nav-item mat-button" md-button="" routerlinkactive="active" href="/community" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">Community</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a><a _ngcontent-c1="" class="nav-item mat-button" md-button="" routerlinkactive="active" href="/news" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">News</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a>
+  <button _ngcontent-c1="" aria-haspopup="true" class="nav-item mat-button" md-button=""><span class="mat-button-wrapper">Social</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></button>
+  <md-menu _ngcontent-c1="" class="ng-tns-c6-0"><!----></md-menu>
+  <button _ngcontent-c1="" class="trs-hamburger mat-icon-button" md-icon-button=""><span class="mat-button-wrapper">
+    <md-icon _ngcontent-c1="" class="mat-icon material-icons" role="img" aria-hidden="true">menu</md-icon>
+  </span><div class="mat-button-ripple mat-ripple mat-button-ripple-round" md-ripple=""></div><div class="mat-button-focus-overlay"></div></button>
+  <a _ngcontent-c1="" class="nav-item mat-button" href="https://store.turtlerockstudios.com" md-button="" routerlinkactive="active" target="_BLANK" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">STORE</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a>
+</div>
+<div _ngcontent-c1="" class="padding"></div>
+<div _ngcontent-c1="" class="sidebar">
+  <div _ngcontent-c1="" class="sidebar-nav">
+    <button _ngcontent-c1="" class="mat-icon-button" md-icon-button=""><span class="mat-button-wrapper">
+      <md-icon _ngcontent-c1="" class="mat-icon material-icons" role="img" aria-hidden="true">close</md-icon>
+    </span><div class="mat-button-ripple mat-ripple mat-button-ripple-round" md-ripple=""></div><div class="mat-button-focus-overlay"></div></button>
+    <div _ngcontent-c1="">
+      <!----><a _ngcontent-c1="" class="mat-button" md-button="" routerlinkactive="active" href="/studio" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">Studio</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a><a _ngcontent-c1="" class="mat-button" md-button="" routerlinkactive="active" href="/games" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">Games</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a><a _ngcontent-c1="" class="mat-button" md-button="" routerlinkactive="active" href="/vr" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">VR</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a><a _ngcontent-c1="" class="mat-button" md-button="" routerlinkactive="active" href="/careers" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">Careers</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a><a _ngcontent-c1="" class="mat-button" md-button="" routerlinkactive="active" href="/community" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">Community</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a><a _ngcontent-c1="" class="mat-button" md-button="" routerlinkactive="active" href="/news" aria-disabled="false" tabindex="0"><span class="mat-button-wrapper">News</span><div class="mat-button-ripple mat-ripple" md-ripple=""></div><div class="mat-button-focus-overlay"></div></a>
+    </div>
+  </div>
+</div>
+</trs-navbar>
+<div>
+    <router-outlet></router-outlet><trs-privacy-policy _nghost-c8=""><html _ngcontent-c8="">
+
+<head _ngcontent-c8="">
+  <meta _ngcontent-c8="" content="text/html; charset=UTF-8" http-equiv="content-type">
+  
+</head>
+
+<body _ngcontent-c8="">
+  <div _ngcontent-c8="" class="c19 c30">
+    <p _ngcontent-c8="" class="c19 c23"><span _ngcontent-c8="" class="c5 c27">PRIVACY POLICY</span></p>
+    <p _ngcontent-c8="" class="c28 c19"><span _ngcontent-c8="" class="c5 c21">TURTLE ROCK STUDIOS, INC. PRIVACY POLICY</span></p>
+    <p _ngcontent-c8="" class="c19 c28"><span _ngcontent-c8="" class="c0 c17 c16">Effective April 11, 2022</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">INTRODUCTION</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">This Privacy Policy describes how Turtle Rock Studios, Inc. ("TRS," "we," "us" or "our") collects, uses, and shares
+    information about you and applies to your use of any online service location that posts a link to this Privacy Policy
+    and all features, content, and other services that we own, control and make available through such online service
+    location (collectively, the "Services"). It also details the rights and choices you have regarding the use and
+    disclosure of information about you collected through the Services.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0">By using the Services, you agree to our&nbsp;</span><span _ngcontent-c8="" class="c8 c0"><a _ngcontent-c8="" class="c9" href="/terms-of-use">Terms
+          of Use</a></span><span _ngcontent-c8="" class="c5 c0"> and consent to TRS’s collection, use, storage, deletion, transfer to the United States, and disclosure of information
+          relating to you as set forth in this Privacy Policy. This Privacy Policy is effective as of the date set forth above and
+          is only applicable to the Services and not to any other websites or online service locations that you may be able to
+          access from the Services which may have their own data collection and use practices and policies.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">TYPES OF INFORMATION WE COLLECT</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Information You Provide</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">We and our Service Providers (defined below) collect information you provide directly via the Services. For example, we
+    collect information when you play our games, apply for a job, or otherwise communicate with us through the Services.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">The information we collect may include “personal information" which is information that can be used to identify you
+    personally (whether alone or in combination).</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">You may choose to voluntarily submit certain other information to us through the Services, but you are solely
+    responsible for your own information in instances where we have not requested that you submit such information to us..</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Personal information once "de-identified," “anonymized,” or “aggregated” is not subject to this Privacy Policy and we
+    and our Service Providers may use it for any purpose except as prohibited by applicable law.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Information We Collect Automatically</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">In addition to any information that you choose to submit to us via the Services, we and our Service Providers may use a
+    variety of technologies that automatically store or collect certain information whenever you visit or interact with the
+    Services. This information may include IP address, browser type, operating system, domain names, access times, and other
+    information about your use of the Services.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">The types of tracking technologies used to collect this information
+        include:</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0 c17 c16">Log Files</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Log files are files that record events that occur in connection with your use of
+        the Services.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0 c17 c16">Cookies</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Cookies are small bits of electronic information that a website sends to a visitor’s browser and are stored on the
+    visitor’s device. Like many websites, we employ cookies in certain areas of the Services to allow us to provide
+    information to make your online experience more convenient and to enhance your experience with the Services. For
+    example, cookies provide information so that the Services will remember who you are on subsequent visits, speeding up or
+    enhancing your experience of the Services by, for instance, tailoring content to you. A user may configure their web
+    browsers to accept or reject or delete the cookies, or notify the user when a cookie is being set, as further discussed
+    in "Your Rights and Choices" below.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0 c17 c16">Web Beacons</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">We may employ web beacons (otherwise known as clear gifs or pixels), which are tiny graphics with a unique identifier,
+    similar in function to cookies. In contrast to cookies, which are stored on a user’s device, web beacons are embedded
+    invisibly on web pages and are about the size of the period at the end of this sentence.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">For further information on tracking technologies and your choices regarding them, please see "Analytics and Tracking
+    Technologies" and "Your Rights and Choices" below.
+</span>
+    </p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Information from Other Sources</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">We may obtain information about you from other sources and combine such information with information we have collected
+    about you. To the extent we combine such third party sourced information with information we have collected about you on
+    the Services, we will treat the combined information as personal information under this Privacy Policy.</span>
+    </p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">HOW WE USE YOUR INFORMATION</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">We use your information in accordance with the practices described in this Privacy Policy, including:</span></p>
+    <ul _ngcontent-c8="" class="c3 lst-kix_list_26-0 start">
+      <li _ngcontent-c8="" class="c12"><span _ngcontent-c8="" class="c5 c0">to manage our Services;</span></li>
+      <li _ngcontent-c8="" class="c12"><span _ngcontent-c8="" class="c5 c0">to inform you of changes to the Services and/or any of the Services’ policies;</span></li>
+      <li _ngcontent-c8="" class="c12"><span _ngcontent-c8="" class="c5 c0">to prevent and address fraud, breach of policies or terms, and threats or harm;
+</span>
+      </li>
+      <li _ngcontent-c8="" class="c12"><span _ngcontent-c8="" class="c5 c0">to monitor and analyse trends, usage, and activities;</span></li>
+      <li _ngcontent-c8="" class="c12"><span _ngcontent-c8="" class="c5 c0">to improve the Services or create new service offerings or to customize your experience on the Services;</span></li>
+      <li _ngcontent-c8="" class="c12"><span _ngcontent-c8="" class="c5 c0">for internal business purposes; and</span></li>
+      <li _ngcontent-c8="" class="c12"><span _ngcontent-c8="" class="c5 c0">for purposes disclosed at the time you provide your information or as otherwise set forth in or as permitted by this
+      Privacy Policy.
+</span></li>
+    </ul>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Use of Information for Recruitment Purposes: Where you have provided us with information as part of an online
+    application for employment or internship, we may use that information in order to allow us to make an informed decision
+    about whether to proceed with your application. We may, as part of this recruitment process, collect information about
+    your education, employment history and similar matters. Where this information is considered to be sensitive, you
+    expressly consent to our processing of this information for recruitment purposes by submitting it to us.</span></p>
+
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">HOW WE SHARE YOUR PERSONAL INFORMATION</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">We share information about you in accordance with the practices described in this Privacy Policy, including under the
+    following circumstances:</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Service Providers. We share your information with our agents, vendors, consultants, and other service providers that we
+    engage to act on our behalf ("Service Providers") for the purpose of processing information on our and your behalf,
+    operating or hosting the Services, or providing services related to the online components of our games. These Service
+    Providers are prohibited from using your information other than to provide this assistance (although we may permit them
+    to use information that does not identify you for other purposes) and are required to maintain appropriate
+    confidentiality and security measures.
+</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Partners. We share your information with our publishing partners and their affiliates in connection with the online
+    components of our apps and games. Where we act as a service provider for a publishing partner with respect to an app or
+    game that posts the publishing partner’s privacy policy, the publishing partner’s data practices will apply for that app
+    or game, and you should review their privacy policy.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Protection of Rights. We must disclose your information in response to lawful requests by public authorities, including
+    to meet national security or law enforcement requirements. We may also share your information if we have a good faith
+    belief that (i) access, use, preservation or disclosure of such information is reasonably necessary to satisfy any
+    applicable law, regulation, legal process, such as a court order or subpoena, or a request by law enforcement or
+    governmental authorities, (ii) such action is necessary to detect, prevent, or otherwise address fraud, security or
+    technical issues associated with the Services or violations of our Terms of Use, or (iii) such action is appropriate to
+    protect the rights, property or safety of us, our employees, partners, or users of the Services or others.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Asset transfers. If we become involved in a merger, acquisition, bankruptcy or other transaction involving the sale of
+    some or all of TRS’s assets or a line of business, your information could be included in the discussions and transferred
+    assets.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Internal Business Purposes. We may share your information with our affiliates for internal business purposes.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Consent and Pursuant to this Privacy Policy. We may share your information with third parties with your consent or for
+    any purposes consistent with our statements under this Privacy Policy or as permitted by applicable law.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Without limiting the foregoing, in our sole discretion, we may share aggregated information which does not identify you
+    or de-identified information about you with third parties or affiliates for any purpose.</span></p>
+
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">ADDITIONAL INFORMATION YOU SHOULD KNOW ABOUT THIRD PARTIES</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">This Privacy Policy does not cover the information practices of third parties. When you click on a third party logo or
+    URL displayed on our Services which links you to a third party service, our Privacy Policy no longer applies and you
+    must read the privacy policy of the third party service to see how your information will be handled on their service. If
+    you cannot find their privacy policy, then you should contact the respective webmasters of those websites to obtain
+    information regarding their information collection, use and disclosure policies. We are not responsible for their
+    collection and use of your information.</span></p>
+
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">SOCIAL MEDIA FEATURES</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Our Services may link to or interface with Facebook, Twitter, and other social media platforms. Any information you
+    provide to us when you engage with our content (such as through our brand page) is treated in accordance with this
+    Privacy Policy. Also, if you publicly reference our Services on social media (e.g., by using a hashtag associated with
+    us in a tweet or post), we may use your reference on or in connection with our Services. You should review the
+    applicable social media platform’s privacy policy before using such platform as they may independent collect and solicit
+    information from you.
+</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c6 c14">ANALYTICS AND TRACKING TECHNOLOGIES</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">We may use analytics services, such as Google Analytics, to help us understand how users access and use the Services. As
+    part of this process, we may incorporate tracking technologies into our own Services (including our website) as well as
+    into our ads displayed on other websites and services.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">For further information on tracking technologies and your choices regarding them, please see "Information We Collect
+    Automatically" above and "Your Rights and Choices" below.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">YOUR RIGHTS AND CHOICES</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Tracking Technologies Generally</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Regular cookies may generally be disabled or removed by tools available as part of most commercial browsers, and in some
+    instances blocked in the future by selecting certain settings. Browsers offer different functionalities and options so
+    you may need to set them separately.
+</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Please be aware that if you disable or remove these technologies some parts of the Services may not work and that when
+    you revisit the Services your ability to limit browser-based tracking technologies is subject to your browser settings
+    and limitations.
+</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0">Your browser settings may allow you to automatically transmit a "Do Not Track" signal to online services you visit.
+    Note, however, there is no industry consensus as to what website and app operators should do with regard to these
+    signals. Accordingly,&nbsp;unless and until the law is interpreted to require us to do so, &nbsp;we do not monitor or take any
+    action with respect to these "Do Not Track" signals or other mechanisms. For more information on "Do Not Track," visit&nbsp;</span><span _ngcontent-c8="" class="c8 c0"><a _ngcontent-c8="" class="c9" href="https://www.google.com/url?q=http://www.allaboutdnt.com/&amp;sa=D&amp;ust=1602787509271000&amp;usg=AOvVaw1OxtniTAoryJ_kBNzspwCv">http://www.allaboutdnt.com</a></span><span _ngcontent-c8="" class="c5 c0">.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Analytics and Tracking Technologies</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0">If we use Google Analytics, you may exercise choices regarding the use of cookies from Google Analytics by going to&nbsp;</span><span _ngcontent-c8="" class="c8 c0"><a _ngcontent-c8="" class="c9" href="https://www.google.com/url?q=https://tools.google.com/dlpage/gaoptout&amp;sa=D&amp;ust=1602787509271000&amp;usg=AOvVaw0kJo1NxUWsO4PBgi81S9hd">https://tools.google.com/dlpage/gaoptout</a></span><span _ngcontent-c8="" class="c5 c0"> or downloading the Google Analytics Opt-out Browser Add-on.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Your California Privacy Rights</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">California residents have additional rights as set out in the "Additional Disclosures for California Residents" section
+    below.
+</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c6">Your Nevada Privacy Rights</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0 c11">Nevada law (NRS 603A.340) requires each business to establish a designated request address where Nevada consumers may
+    submit requests directing the business not to sell certain kinds of personal information that the business has collected
+    or will collect about the consumer. A sale under Nevada law is the exchange of personal information for monetary
+    consideration by the business to a third party for the third party to license or sell the personal information to other
+    third parties. &nbsp;We do not engage in the sale of your personal information. However, if you are a Nevada consumer and
+    wish to submit a request relating to our compliance with Nevada law, please contact us as at&nbsp;</span><span _ngcontent-c8="" class="c8 c0"><a _ngcontent-c8="" class="c9" href="mailto:privacy@turtlerockstudios.com">privacy@turtlerockstudios.com</a></span><span _ngcontent-c8="" class="c5 c0">.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Your European Privacy Rights</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Data subjects in Europe have additional rights as set out in the "Additional Disclosures for Data Subjects in Europe"
+    section below.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">INTERNATIONAL TRANSFER</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">The Services are operated in the United States. Please be aware that information we collect will be transferred to, and
+    processed, stored and used in the United States and other jurisdictions. The data protection laws in the United States
+    and other jurisdictions may differ from those of the country in which you are located, and your information may be
+    subject to access requests from governments, courts, or law enforcement in the United States and other jurisdictions
+    according to applicable law. By using the Services or providing us with any information, you consent to the transfer to,
+    and processing, usage, sharing and storage of your information in the United States and other jurisdictions as set forth
+    in this Privacy Policy.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">CHILDREN'S PRIVACY</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0">We are a general audience service and we do not knowingly collect any personal information from children under the age
+    of 13 as defined by the U.S. Children’s Privacy Protection Act ("COPPA"). If you are a child under 13 years of age, you
+    are not permitted to use the Services and should not send any information about yourself to us through the Services. We
+    take children’s privacy seriously and encourage parents to play an active role in their children’s online experience at
+    all times. If you have any concerns about your child’s personal information, please contact us at&nbsp;</span><span _ngcontent-c8="" class="c8 c0"><a _ngcontent-c8="" class="c9" href="mailto:privacy@turtlerockstudios.com">privacy@turtlerockstudios.com</a></span><span _ngcontent-c8="" class="c5 c0">.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">WHAT SECURITY MEASURES DO WE TAKE TO SAFEGUARD YOUR PERSONAL INFORMATION?</span>
+    </p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">The information that you provide to us is stored on servers that are located in secured facilities and protected by
+    protocols and procedures designed to ensure the security of such information. However, no server, computer or
+    communications network or system, or data transmission over the Internet can be guaranteed to be 100% secure. As a
+    result, while we strive to protect user information, we cannot ensure or warrant the security of any information you
+    transmit to us or through the Services and you acknowledge and agree that you provide such information and engage in
+    such transmissions at your own risk.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">NOTIFICATION OF CHANGES</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">This Privacy Policy may change from time to time and we will post all changes on the Services. You understand and agree
+    that you will be deemed to have accepted the updated Privacy Policy if you use the Services after the updated Privacy
+    Policy is posted on the Services. To the extent any provision of this Privacy Policy is found by a competent tribunal to
+    be invalid or unenforceable, such provision shall be severed to the extent necessary for the remainder to be valid and
+    enforceable.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">QUESTIONS? CONTACT US</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0">If you have any questions about our privacy practices or this Privacy Policy, or experience any difficulties accessing
+    the information here, please contact us </span><span _ngcontent-c8="" class="c8 c0"><a _ngcontent-c8="" class="c9" href="/contact-us">https://www.turtlerockstudios.com/contact-us</a></span><span _ngcontent-c8="" class="c8 c0">,</span><span _ngcontent-c8="" class="c0">&nbsp;</span><span _ngcontent-c8="" class="c0 c15"><a _ngcontent-c8="" class="c9" href="mailto:privacy@turtlerockstudios.com">privacy@turtlerockstudios.com</a></span><span _ngcontent-c8="" class="c5 c0">, or
+        Turtle Rock Studios, Inc., 25422 Trabuco Road #105-491, Lake Forest, CA 92630; Attn: Legal Department.</span>
+    </p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">ADDITIONAL DISCLOSURES FOR CALIFORNIA RESIDENTS</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">These additional disclosures apply only to California residents. The California Consumer Privacy Act of 2018 (“CCPA”)
+    provides additional rights to know and delete and requires businesses collecting or disclosing personal information to
+    provide notices and means to exercise your rights. &nbsp;</span></p>
+    <p _ngcontent-c8="" class="c25"><span _ngcontent-c8="" class="c6">Notice of Collection</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7"><span _ngcontent-c8="" class="c5 c0">In the past 12 months, we have collected the following categories of personal information, as described in the CCPA:</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <ul _ngcontent-c8="" class="c3 lst-kix_list_30-0 start">
+      <li _ngcontent-c8="" class="c4"><span _ngcontent-c8="" class="c2 c6">Identifiers</span><span _ngcontent-c8="" class="c2 c0">, including online identifiers (such as IP address). &nbsp;</span></li>
+    </ul>
+    <p _ngcontent-c8="" class="c18 c10 c19"><span _ngcontent-c8="" class="c2 c0"></span></p>
+    <ul _ngcontent-c8="" class="c3 lst-kix_list_30-0">
+      <li _ngcontent-c8="" class="c4"><span _ngcontent-c8="" class="c2 c6">Commercial or transactions information</span><span _ngcontent-c8="" class="c2 c0">, including records of products or services purchased, obtained, or considered.</span></li>
+    </ul>
+    <p _ngcontent-c8="" class="c18 c10 c26"><span _ngcontent-c8="" class="c0 c2"></span></p>
+    <ul _ngcontent-c8="" class="c3 lst-kix_list_30-0">
+      <li _ngcontent-c8="" class="c4"><span _ngcontent-c8="" class="c2 c6">Internet activity</span><span _ngcontent-c8="" class="c2 c0">, including browsing history, search history, and interactions with our games, website, or content.</span></li>
+    </ul>
+    <p _ngcontent-c8="" class="c18 c10 c26"><span _ngcontent-c8="" class="c2 c0"></span></p>
+    <ul _ngcontent-c8="" class="c3 lst-kix_list_30-0">
+      <li _ngcontent-c8="" class="c4"><span _ngcontent-c8="" class="c2 c6">Employment and education information</span><span _ngcontent-c8="" class="c2 c0">.</span></li>
+    </ul>
+    <p _ngcontent-c8="" class="c18 c10 c26 c19"><span _ngcontent-c8="" class="c2 c0"></span></p>
+    <ul _ngcontent-c8="" class="c3 lst-kix_list_30-0">
+      <li _ngcontent-c8="" class="c4"><span _ngcontent-c8="" class="c2 c6">Inferences </span><span _ngcontent-c8="" class="c2 c0">drawn from the above information about your predicted characteristics and preferences.
+</span></li>
+    </ul>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7"><span _ngcontent-c8="" class="c5 c0">For further details on information we collect, including the sources from which we receive information, review the
+    “Types of Information We Collect” section above. We collect and use these categories of personal information for the
+    business purposes described in the “How We Use Your Information” section above.</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7"><span _ngcontent-c8="" class="c5 c0">We do not sell information as the term “sell” is traditionally understood.</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7 c19"><span _ngcontent-c8="" class="c2 c6">Right to Know and Delete</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7"><span _ngcontent-c8="" class="c5 c0">You have the right to know certain details about our data practices in the past 12 months. In particular, you may
+    request the following from us:</span></p>
+    <p _ngcontent-c8="" class="c7 c10 c22"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <ul _ngcontent-c8="" class="c3 lst-kix_list_28-0 start">
+      <li _ngcontent-c8="" class="c7 c20"><span _ngcontent-c8="" class="c5 c0">The categories of personal information we have collected about you;
+          &nbsp;</span></li>
+      <li _ngcontent-c8="" class="c7 c20"><span _ngcontent-c8="" class="c5 c0">The categories of sources from which the personal information was
+          collected; </span></li>
+      <li _ngcontent-c8="" class="c7 c20"><span _ngcontent-c8="" class="c5 c0">The categories of personal information about you we disclosed for a
+          business purpose or sold; </span></li>
+      <li _ngcontent-c8="" class="c7 c20"><span _ngcontent-c8="" class="c5 c0">The categories of third parties to whom the personal information was disclosed for a business purpose or sold;</span></li>
+      <li _ngcontent-c8="" class="c7 c20"><span _ngcontent-c8="" class="c5 c0">The business or commercial purpose for collecting or selling the personal information; and</span></li>
+      <li _ngcontent-c8="" class="c7 c20"><span _ngcontent-c8="" class="c5 c0">The specific pieces of personal information we have collected about
+          you.</span></li>
+    </ul>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7"><span _ngcontent-c8="" class="c5 c0">In addition, you have the right to delete the personal information we have collected from you.</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7"><span _ngcontent-c8="" class="c0">To exercise your right to know, please send an email to:&nbsp;</span><span _ngcontent-c8="" class="c8 c0"><a _ngcontent-c8="" class="c9" href="mailto:privacy@turtlerockstudios.com">privacy@turtlerockstudios.com</a></span><span _ngcontent-c8="" class="c0">.
+      </span><span _ngcontent-c8="" class="c0 c16">In the request, please specify whether you are seeking the categories of information we collect or the specific pieces
+      of personal information.&nbsp;To delete your account, please send an email to:&nbsp;</span><span _ngcontent-c8="" class="c8 c0"><a _ngcontent-c8="" class="c9" href="mailto:delete-account@turtlerockstudios.com">delete-account@turtlerockstudios.com</a></span><span _ngcontent-c8="" class="c0 c16">. We will confirm receipt of your request within 10 days.&nbsp;We may require specific information from you to help us verify
+        your identity and process your request. If we are unable to verify your identity, we may deny your requests to know or
+        delete.</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7"><span _ngcontent-c8="" class="c5 c0">We acknowledge that you may have rights under the CCPA in connection with the personal information we process on behalf
+    of our publishing partners. If personal information about you has been processed by us as a service provider on behalf
+    of a publishing partner and you wish to exercise any rights you have with such personal information, please inquire with
+    the publishing partner directly. If you wish to make your request directly to us, please provide the name of the
+    publishing partner on whose behalf we processed your personal information. We will refer your request to that publishing
+    partner, and will support them to the extent required by applicable law in responding to your request.</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7 c19"><span _ngcontent-c8="" class="c2 c6">Authorized Agent</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7"><span _ngcontent-c8="" class="c5 c0">You can designate an authorized agent to submit requests on your behalf. However, we will require written proof of the
+    agent’s permission to do so and verify your identity directly.
+      </span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7 c19"><span _ngcontent-c8="" class="c2 c6">Right to Non-Discrimination</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7"><span _ngcontent-c8="" class="c5 c0">You have the right not to receive discriminatory treatment by us because of your choice to exercise any your rights.</span></p>
+    <p _ngcontent-c8="" class="c7 c10"><span _ngcontent-c8="" class="c5 c0"></span></p>
+    <p _ngcontent-c8="" class="c7 c19"><span _ngcontent-c8="" class="c5 c6">Shine the Light</span></p>
+    <p _ngcontent-c8="" class="c7 c10 c19"><span _ngcontent-c8="" class="c5 c6"></span></p>
+    <p _ngcontent-c8="" class="c7 c19"><span _ngcontent-c8="" class="c0">Customers who are residents of California may request (i) a list of the categories of personal information disclosed by
+    us to third parties during the immediately preceding calendar year for those third parties’ own direct marketing
+    purposes; and (ii) a list of the categories of third parties to whom we disclosed such information. To exercise a
+    request, please write us at the email or postal address set out in “Questions? Contact Us” above and specify that you
+    are making a “California Shine the Light Request.” We may require additional information from you to allow us to verify
+    your identity and are only required to respond to requests once during any calendar year.&nbsp;</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c14 c6">ADDITIONAL DISCLOSURES FOR DATA SUBJECTS IN EUROPE</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Roles</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Data protection laws in Europe distinguish between organizations that process personal data for their own purposes
+    (known as “controllers”) and organizations that process personal data on behalf of other organizations (known as
+    “processors”). We act as a controller with respect to personal data collected as you interact with our Services. In some
+    instances, we acts a processor on behalf of a publishing partner, which is the controller. Any questions that you have
+    relating to the processing of personal data by us as a processor should be directed to the relevant publishing partner.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Lawful Basis for Processing</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Data protection laws in Europe require a “lawful basis” for processing personal data. Our lawful bases include where:
+    (a) you have given consent to the processing for one or more specific purposes, either to us or to our service providers
+    or partners; (b) processing is necessary for the performance of a contract with you; (c) processing is necessary for
+    compliance with a legal obligation; or (d) processing is necessary for the purposes of the legitimate interests pursued
+    by us or a third party, and your interests and fundamental rights and freedoms do not override those interests. Where
+    applicable, we will transfer your personal data to third countries subject to appropriate or suitable safeguards, such
+    as standard contractual clauses discussed below.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Your Data Subjects Rights</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">You have the right to access, rectify, or erase any personal data we have collected about you. You also have the right
+    to data portability and the right to restrict or object to our processing of personal data we have collected about you.
+    You may withdraw your consent at any time for any data processing we do based on consent you have provided to us.</span>
+    </p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">To exercise any of these rights, please contact us as set out in the “Questions? Contact Us” section above and specify
+    which right you are seeking to exercise. We will respond to your request within 30 days. We may require specific
+    information from you to help us confirm your identity and process your request. If personal data about you has been
+    processed by us as a processor on behalf of a publishing partner and you wish to exercise any rights you have with such
+    personal data, please inquire with our publishing partner directly. If you wish to make your request directly to us,
+    please provide the name of our publishing partner on whose behalf we processed your personal data. We will refer your
+    request to that publishing partner, and will support them to the extent required by applicable law in responding to your
+    request.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">Please note that we retain information as necessary to fulfil the purposes for which it was collected, and may continue
+    to retain and use information even after a data subject request for purposes of our legitimate interests, including as
+    necessary to comply with our legal obligations, resolve disputes, prevent fraud, and enforce our agreements.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">If you have any issues with our compliance, please contact us. You also have the right to lodge a complaint with the
+    data protection regulator in your jurisdiction.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c6">Privacy Shield</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">TRS complies with the EU-US Privacy Shield Framework and the Swiss-U.S. Privacy Shield Framework as set forth by the
+    U.S. Department of Commerce regarding the collection, use, and retention of personal data from the United Kingdom, the
+    European Union, and Switzerland to the United States. TRS has certified that it adheres to the Privacy Shield Principles
+    of notice, choice, accountability for onward transfer, security, data integrity and purpose limitation, access, and
+    recourse, enforcement and liability. In response to the invalidation of Privacy Shield, we will continue to provide
+    appropriate safeguards, including through standard contractual clauses.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c5 c0">In accordance with our obligations under Privacy Shield, and subject to the investigatory and enforcement powers of the
+    U.S. Federal Trade Commission, we hereby affirm our commitment to subject to the Privacy Shield Principles all personal
+    data transferred from the United Kingdom, the European Union and Switzerland in reliance on Privacy Shield. This means
+    that, in addition to our other obligations under the Privacy Shield Principles, we shall be liable to you for any third
+    party agent to which we transfer your personal data in reliance on Privacy Shield and that processes such personal data
+    in a manner that violates the Privacy Shield Principles, unless we can demonstrate that we are not responsible for the
+    resulting damages.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0">In the event that you have any inquiry, dispute, or claim arising out of or relating to our compliance with Privacy
+    Shield, please send an email to&nbsp; </span><span _ngcontent-c8="" class="c15 c0"><a _ngcontent-c8="" class="c9" href="mailto:privacy@turtlerockstudios.com">privacy@turtlerockstudios.com</a></span><span _ngcontent-c8="" class="c0"> or write to Turtle Rock Studios, Inc., 25422 Trabuco Road #105-491, Lake Forest, CA 92630; Attn: Legal Department. If we
+          are unable to resolve your complaint directly, you may submit your complaint at no cost to you to JAMS at </span><span _ngcontent-c8="" class="c8 c0"><a _ngcontent-c8="" class="c9" href="https://www.jamsadr.com/eu-us-privacy-shield">https://www.jamsadr.com/eu-us-privacy-shield</a></span><span _ngcontent-c8="" class="c5 c0">. In the event there are residual complaints that have not been resolved by JAMS, or any other means, you may seek a
+        non-monetary remedy through binding arbitration to be provided to you in accordance with the Privacy Shield Principles.</span></p>
+    <p _ngcontent-c8="" class="c1"><span _ngcontent-c8="" class="c0">To learn more about the Privacy Shield Framework, and to view TRS’s certification, please visit&nbsp;</span><span _ngcontent-c8="" class="c0 c8"><a _ngcontent-c8="" class="c9" href="https://www.google.com/url?q=https://www.privacyshield.gov/&amp;sa=D&amp;ust=1602787509281000&amp;usg=AOvVaw019UpGJaHZNWFujblMk_dt">https://www.privacyshield.gov/</a></span><span _ngcontent-c8="" class="c5 c0">.</span></p>
+  </div>
+</body>
+</html></trs-privacy-policy>
+</div>
+<trs-footer _nghost-c2="">
+<div _ngcontent-c2="" class="footer-text-and-links">
+    Copyright © 2023 Turtle Rock Studios. All Rights Reserved.
+    <br _ngcontent-c2="">
+    <a _ngcontent-c2="" routerlink="/privacy-policy" href="/privacy-policy">Privacy Policy</a> | <a _ngcontent-c2="" routerlink="/terms-of-use" href="/terms-of-use">Terms of Use</a> | <a _ngcontent-c2="" routerlink="/corporate-ownership" href="/corporate-ownership">Corporate Ownership</a>
+</div>
+</trs-footer>
+<trs-secret _nghost-c3=""><!---->
+</trs-secret>
+</trs-app><script type="text/javascript" src="inline.d51d1e53b179ba2a9d49.bundle.js"></script><script type="text/javascript" src="polyfills.29f06ab789839165ccd2.bundle.js"></script><script type="text/javascript" src="vendor.c54325f48c91b1d9068a.bundle.js"></script><script type="text/javascript" src="main.8dcb59e87a5132edf4f3.bundle.js"></script></body></html>

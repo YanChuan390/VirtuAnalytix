@@ -1,0 +1,409 @@
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Pinta Studios 平塔工作室</title>
+<!-- removing_gon has activated 100%, so we add not_removing_gon rollout for specific user -->
+<script src="/dollars/v1/sites/site-28373-5897-1358/pages/06a110de-bfb3-4a13-ac22-85104e23aaf4/show.js" type="text/javascript"></script>
+<script>
+  function setCookieItem(key, value, options) {
+    if (typeof options.expires === 'number') {
+      var days = options.expires, t = options.expires = new Date();
+      t.setTime(+t + days * 864e+5);
+    }
+    return (document.cookie = [
+      encodeURIComponent(key), '=', encodeURIComponent(String(value)),
+      options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+      options.path    ? '; path=' + options.path : '',
+      options.domain  ? '; domain=' + options.domain : '',
+      options.secure  ? '; secure' : ''
+    ].join(''));
+  }
+  function getQueryParam(url, param) {
+    // Expects a raw URL
+    var newParam = param.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
+    var regexS = '[\\?&]' + newParam + '=([^&#]*)';
+    var regex = new RegExp(regexS);
+    var results = regex.exec(url);
+    if (results === null || results && typeof results[1] !== 'string' && results[1].length) {
+      return '';
+    } else {
+      var result = results[1];
+      try {
+        result = decodeURIComponent(result);
+      } catch (err) {
+        console.error('Skipping decoding for malformed query param: ' + result);
+      }
+      return result.replace(/\+/g, ' ');
+    }
+  }
+  function utmNamesMapping(utmName) {
+    var expandedUtmName = '';
+    switch (utmName) {
+      case 'gclid':
+      case 'utm_gclid_current':
+        expandedUtmName = 'utm_gclid';
+        break;
+      default:
+        expandedUtmName = utmName;
+    }
+    return expandedUtmName;
+  }
+  function getTrackDomain() {
+    var trackDomain = '';
+    var host = $S && $S.global_conf && $S.global_conf.host_suffix ||
+      $S && $S.globalConf && $S.globalConf.host_suffix || '';
+    if ($S && $S.live_site || $S && $S.liveBlog) {
+      trackDomain = document.domain;
+    } else if (host) {
+      trackDomain = "." + host;
+    } else {
+      trackDomain = location.href && location.href.includes('strikingly') ? '.strikingly.com' : '.sxl.cn';
+    }
+    return trackDomain;
+  }
+  function recordUniqUtmCookies(originUrl) {
+    var campaign_keywords = 'utm_source gclid utm_medium utm_campaign utm_content utm_term'.split(' '),
+        kw = '',
+        uniq_utm_config = {};
+    var index;
+    var siteUrl = originUrl || document.URL;
+    for (index = 0; index < campaign_keywords.length; ++index) {
+      kw = getQueryParam(siteUrl, campaign_keywords[index]);
+      var utm_name = utmNamesMapping(campaign_keywords[index]);
+      if (kw.length !== 0) {
+        uniq_utm_config[utm_name] = kw;
+      }
+    }
+    var isUtmCookieExisted = document.cookie && document.cookie.includes('__uniq_utm_config=');
+    if (!isUtmCookieExisted) {
+      uniq_utm_config['utm_timestamp'] = new Date().getTime();
+      uniq_utm_config['utm_referrer'] = document.referrer;
+      var gclidValue = getQueryParam(siteUrl, 'gclid');
+      var gbraidValue = getQueryParam(siteUrl, 'gbraid');
+      var wbraidValue = getQueryParam(siteUrl, 'wbraid');
+      var ttclidValue = getQueryParam(siteUrl, 'ttclid');
+      var fbclidValue = getQueryParam(siteUrl, 'fbclid');
+      var msclkidValue = getQueryParam(siteUrl, 'msclkid');
+      if (gclidValue) {
+        uniq_utm_config['utm_gclid'] = gclidValue;
+      }
+      if (gbraidValue) {
+        uniq_utm_config['utm_gbraid'] = gbraidValue;
+      }
+      if (wbraidValue) {
+        uniq_utm_config['utm_wbraid'] = wbraidValue;
+      }
+      if (ttclidValue) {
+        uniq_utm_config['utm_ttclid'] = ttclidValue;
+      }
+      if (fbclidValue) {
+        uniq_utm_config['utm_fbclid'] = fbclidValue;
+      }
+      if (msclkidValue) {
+        uniq_utm_config['utm_msclkid'] = msclkidValue;
+      }
+      var cookieDomain = getTrackDomain();
+      var cookieConfig = {
+        expires: 120,
+        path: '/',
+        domain: cookieDomain
+      }
+      if (window.$ && window.$.cookie) {
+        window.$.cookie('__uniq_utm_config', JSON.stringify(uniq_utm_config), cookieConfig);
+      } else {
+        setCookieItem('__uniq_utm_config', JSON.stringify(uniq_utm_config), cookieConfig);
+      }
+    }
+  }
+  function recordBaiDuAnalyticsCookies() {
+    var siteUrl = document.URL;
+    var baiduVid = getQueryParam(siteUrl, 'bd_vid');
+    if (baiduVid) {
+      var analyticsDomain = getTrackDomain();
+      setCookieItem('__bd_analytics_config', JSON.stringify({
+        bd_vid: baiduVid,
+        logid_url: siteUrl
+      }), {
+        expires: 120,
+        path: '/',
+        domain: analyticsDomain
+      });
+    }
+  }
+  function recordFacebookAnalyticsCookies() {
+    var siteUrl = document.URL;
+    var fbclid = getQueryParam(siteUrl, 'fbclid');
+    if (fbclid) {
+      var trackDomain = getTrackDomain();
+      setCookieItem('__fe_fbclid', fbclid, {
+        expires: 90,
+        path: '/',
+        domain: trackDomain
+      });
+    }
+  }
+  
+  const isShowCookieNotification = $S?.stores?.pageData?.showCookieNotification
+  || $S?.blogPostData?.pageData?.showCookieNotification
+  
+  // record unique utm cookies
+  try {
+    if(!isShowCookieNotification) {
+      recordUniqUtmCookies();
+    }
+  } catch (error) {
+    console.error(error);
+  }
+  // record Bai Du analytics cookies for sxl
+  try {
+    if(!isShowCookieNotification) {
+      recordBaiDuAnalyticsCookies();
+    }
+  } catch (error) {
+    console.error(error);
+  }
+  // record Fackbook analytics cookies
+  try {
+    if(!isShowCookieNotification) {
+      recordFacebookAnalyticsCookies();
+    }
+  } catch (error) {
+    console.error(error);
+  }
+</script>
+
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport" name="viewport">
+<meta content="#ffffff" name="theme-color">
+<style>
+  html,body{margin:0;padding:0}h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,input,textarea,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit}table{border-collapse:collapse;border-spacing:0}ol,ul{list-style:none}q:before,q:after,blockquote:before,blockquote:after{content:""}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0;-ms-interpolation-mode:bicubic}nav,section,aside,article,figure,header,footer,hgroup{display:block;clear:both}a{text-decoration:none}nav ul,footer ul{list-style-type:none}html{font-size:14px;line-height:1}input::-webkit-input-placeholder{color:#c0c4c8}
+</style>
+
+<link rel="preconnect" media="screen" href="https://static-fonts-css.sxlcdn.com" crossorigin="true">
+<link rel="preload" media="screen" href="https://static-fonts-css.sxlcdn.com/css?family=Varela+Round:regular&amp;subset=latin,latin-ext&amp;display=swap" as="font">
+<link rel="stylesheet" media="all" href="https://static-fonts-css.sxlcdn.com/css?family=Varela+Round:regular&amp;subset=latin,latin-ext&amp;display=swap" as="style" onload="this.media='all'">
+<link rel="preload stylesheet" media="screen" href="https://static-assets.sxlcdn.com/themes/fresh/main_v4.83e12a1a1cbcc318507b.bundle.css" as="style" type="text/css" onload="if(media!=='screen')media='screen'">
+<link defer="true" href="https://user-assets.sxlcdn.com/images/28373/FuhsQ_RByjjGcNns-lsVR8FIgYTx.png?imageMogr2/strip/auto-orient/thumbnail/64x64>/format/png" rel="shortcut icon" type="image/x-icon">
+<meta content="Pinta Studios 平塔工作室" property="og:title">
+<meta content="http://www.pintastudios.com/" property="og:url">
+<meta content="https://user-assets.sxlcdn.com/images/28373/FuhsQ_RByjjGcNns-lsVR8FIgYTx.png?imageMogr2/strip/auto-orient/thumbnail/1200x630>/format/png" property="og:image">
+<meta content="Pinta Studios 平塔工作室" property="og:site_name">
+<meta content="Pinta Studios
+平塔工作室
+平塔工作室官方网站" property="og:description">
+<meta content="Pinta Studios 平塔工作室" itemprop="name">
+<meta content="Pinta Studios
+平塔工作室
+平塔工作室官方网站" itemprop="description">
+<meta content="https://user-assets.sxlcdn.com/images/28373/FuhsQ_RByjjGcNns-lsVR8FIgYTx.png?imageMogr2/strip/auto-orient/thumbnail/1200x630>/format/png" itemprop="image">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Pinta Studios 平塔工作室" name="twitter:title">
+<meta content="Pinta Studios
+平塔工作室
+平塔工作室官方网站" name="twitter:description">
+<meta content="https://user-assets.sxlcdn.com/images/28373/FuhsQ_RByjjGcNns-lsVR8FIgYTx.png?imageMogr2/strip/auto-orient/thumbnail/1200x630>/format/png" name="twitter:image">
+<meta content="Pinta Studios
+平塔工作室
+平塔工作室官方网站" name="description">
+<meta content="PintaStudios,pinta,平塔,平塔工作室,威尼斯" name="keywords">
+
+<meta name="support-helper" content="{&quot;permalink&quot;:&quot;site-28373-5897-1358&quot;,&quot;id&quot;:11437665}">
+<link rel="canonical" href="http://www.pintastudios.com/">
+<script>
+  if (!window.utils) window.utils = {}
+  window.utils.getCookieByName = (name) => {
+    const cookies = document.cookie.split(';')
+    for (const cookie of cookies) {
+      const [key, value] = cookie.trim().split('=')
+      if (key === name) {
+        return decodeURIComponent(value)
+      }
+    }
+    return ''
+  }
+</script>
+<script>
+var _strk = _strk || []
+_strk.push = function(arg1, arg2){
+  var _arrayPush = Array.prototype.push.bind(this)
+  if (typeof arg1 === 'string' && typeof arg2 === 'function') {
+    // Support _strk.push(event, fn) for better UX
+    _arrayPush([arg1, arg2])
+  } else {
+    _arrayPush.apply(this, arguments)
+  }
+}
+window.runAfterDomBinding = {
+  add: function(name, fn) {
+    _strk.push(['Page.didMount', fn])
+  }
+}
+</script>
+
+
+<!-- CUSTOM_CODE_START -->
+<!-- CUSTOM_CODE_END -->
+
+<meta name="asset-url" content="https://static-assets.sxlcdn.com">
+<script>
+  (function() {
+    window.$B || (window.$B = {});
+  
+    window.utils || (window.utils = {});
+  
+    window.utils.getCookieValue = function(name) {
+      var cookie, cookies, key, value, _i, _len, _ref;
+      cookies = document.cookie.split(';');
+      for (_i = 0, _len = cookies.length; _i < _len; _i++) {
+        cookie = cookies[_i];
+        _ref = cookie.trim().split('='), key = _ref[0], value = _ref[1];
+        if (key === name) {
+          return decodeURIComponent(value);
+        }
+      }
+      return '';
+    };
+  
+  }).call(this);
+</script>
+<script src="https://static-assets.sxlcdn.com/detectIE-c385c24313ef0e9e4e7a1e131bf5e59f0fbd468f9f9ef44fd6739ae84ef0c0a4.js" async="async"></script>
+
+</head>
+<body class="show  locale-zh-CN" id="user_sites" theme_name="fresh">
+<div class="product-sxl" data-id="11437665" id="s-page-container">
+<div data-hypernova-key="SiteBootstrapper" data-hypernova-id="c73bdf18-5a27-40fd-be18-50a9637ee4ba" data-hypernova-emotion-id=""><script>window.ssrIsLoaded=true</script><div id="s-page-client-container"><div><div id="s-content" class="s-variation-default s-custom-colors s-animation-image_link_hover-zoom_in s-font-heading-hei s-font-title-hei s-font-body-hei s-font-button-hei s-font-weight-heading-default s-font-weight-title-default s-font-weight-body-default s-font-weight-button-default s-entrance-mask" lang="zh-CN"><div class="social-thumbnail"><div style="display:none"><img src="https://user-assets.sxlcdn.com/images/28373/FuhsQ_RByjjGcNns-lsVR8FIgYTx.png?imageMogr2/strip/auto-orient/thumbnail/1200x630>/format/png" width="300" height="300" alt="thumbnail image"></div></div><div><style id="color-style-tag">.s-custom-colors .s-subtitle{color:#cca776;}.s-custom-colors .s-subtitle .s-text .s-component-content a{color:#cca776;}.s-custom-colors .s-item-subtitle{color:#cca776;}.s-custom-colors .s-item-subtitle .s-text .s-component-content a{color:#cca776;}.s-custom-colors .s-subtitle .s-text .s-component-content a{
+      border-bottom: 1px solid rgba(204,167,118,0.7);
+    }.s-custom-colors .s-item-subtitle .s-text .s-component-content a{
+      border-bottom: 1px solid rgba(204,167,118,0.7);
+    }.s-custom-colors .s-common-button{
+      color: white;
+      background: #cca776;
+      background-color: #cca776;
+      background-repeat: repeat-x;
+      background-image: linear-gradient(to right, #e0b781, #cca776);
+    }.s-custom-colors .s-common-button:hover{
+      color: white;
+      background: #ffd093;
+    }.s-custom-colors .s-mobile-actions .s-mobile-actions-item.one-item{background:#cca776;}.s-custom-colors .s-mobile-actions .s-mobile-actions-item.selected:not(.one-item){color:#cca776;}.s-custom-colors .navbar-drawer-bar .navbar,.s-custom-colors .navbar-drawer-bar .mobile{background:#cca776;}.s-custom-colors .s-bg-overlay:before{background:rgba(0,0,0,0.35);}.s-custom-colors .s-component.s-social-media ul.s-social-media-buttons .s-social-icon{background:rgba(204,167,118,0.5);}.s-custom-colors .s-blog-wrapper .s-blog-col-placeholder .s-blog-details .s-blog-info{color:#cca776}.s-custom-colors .s-ecommerce-row-view-product .s-ecommerce-row-view-product-pricing,.s-custom-colors .s-ecommerce-card-view-card-price{color:#cca776}.s-custom-colors .fixed-login-container .login-container{background: #cca776;}.s-custom-colors .s-ecommerce-row-view-product .s-ecommerce-row-view-product-thumbnail-list ul li.current{border: 2px solid #cca776}.s-custom-colors .s-ecommerce-card-view-wrapper .s-ecommerce-card-view-card .s-ecommerce-card-view-card-stock-warning{background: #cca776;}.s-custom-colors .s-ecommerce-shopping-cart-wrapper .s-ecommerce-shopping-cart{background: #cca776;}.s-custom-colors .s-ecommerce-shopping-cart-wrapper .s-ecommerce-shopping-cart.hovered{background: #cca776;}.s-custom-colors .s-ecommerce-shopping-cart-wrapper .s-ecommerce-shopping-cart-mobile{
+        background: #cccccc;
+        border-top: 1px solid #a3a3a3;}.s-custom-colors .s-ecommerce-shopping-cart-wrapper .s-ecommerce-shopping-cart-mobile .check-btn{background: #cca776;}.s-custom-colors .s-ecommerce-animation-item{
+        border: 2px solid #cca776;
+        color: #cca776;}.s-custom-colors .s-ecommerce-row-view-product .mobile-select .price-label{color: #cca776}.s-custom-colors .s-ecommerce-row-view-product .mobile-select .variation-item.selected{border: 1px solid #cca776; background: #cca776;}.s-custom-colors .s-ecommerce-row-view-product .mobile-select .add-btn{background: #cca776;}.s-custom-colors .s-ecommerce-row-view-product .slider-wrapper .slider-dot-wrapper .slider-dot{border: 1px solid #cca776}.s-custom-colors .s-ecommerce-row-view-product .slider-wrapper .slider-dot-wrapper .slider-dot.selected{background: #cca776}.s-custom-colors .s-section .s-category-bar .category-list .category-link-item.selected{color: #cca776;}.s-custom-colors .s-section .s-category-bar .category-list .category-link-item.selected:after{background: #cca776}.s-custom-colors .s-section .s-category-bar .category-list .category-link-item-wrapper:hover .category-link-item:not(.no-hover){color: #cca776;}.s-custom-colors .s-ecommerce-card-view-wrapper .s-ecommerce-card-view-cards .s-ecommerce-card-view-card .s-ecommerce-card-view-card-price{color: #cca776;}.s-custom-colors .s-ecommerce .s-ecommerce-row-view-product .s-ecommerce-row-view-product-detail-panel .s-ecommerce-row-view-product-pricing{color: #cca776;}.s-custom-colors .s-ecommerce .s-ecommerce-products-wrapper .s-ecommerce-card-view-wrapper .s-ecommerce-card-view-detail .s-ecommerce-card-view-detail-header .next-product-btn{color: #cca776;}.s-custom-colors .s-ecommerce .s-ecommerce-products-wrapper .s-ecommerce-card-view-wrapper .s-ecommerce-card-view-detail .s-ecommerce-card-view-detail-header .prev-product-btn{color: #cca776;}.s-custom-colors .s-ecommerce .s-ecommerce-products-wrapper .s-ecommerce-card-view-wrapper .s-ecommerce-card-view-detail .s-ecommerce-card-view-detail-header .back-btn{color: #cca776;}.s-custom-colors .s-ecommerce .s-ecommerce-products-wrapper .s-ecommerce-card-view-wrapper .s-ecommerce-card-view-detail .s-ecommerce-card-view-detail-header .next-product-btn:hover{color: #d6b891;}.s-custom-colors .s-ecommerce .s-ecommerce-products-wrapper .s-ecommerce-card-view-wrapper .s-ecommerce-card-view-detail .s-ecommerce-card-view-detail-header .prev-product-btn:hover{color: #d6b891;}.s-custom-colors .s-ecommerce .s-ecommerce-products-wrapper .s-ecommerce-card-view-wrapper .s-ecommerce-card-view-detail .s-ecommerce-card-view-detail-header .back-btn:hover{color: #d6b891;}.s-custom-colors .s-donation-section .s-component.s-donation .s-donation-progress .progress-bar .progress{background: #cca776}.s-custom-colors .s-donation-section .s-component.s-donation .s-donation-progress .progress-bar .indicator:before{background: #cca776}.s-custom-colors .s-donation-section .s-component.s-donation .s-donation-progress .progress-bar .indicator:after{border-top-color: #cca776}.s-custom-colors .s-theme-color-1{color: #cca776}.s-custom-colors .s-bg-theme-color-1{background-color: #cca776}.s-custom-colors .s-bg-theme-color-fade-1{background-color: rgba(204,167,118,0.07)}.s-custom-colors .s-bg-theme-color-fade-2{background-color: rgba(204,167,118,0.2)}.s-custom-colors .s-border-theme-color-1{border-color: #cca776}.s-custom-colors .s-button-theme-style{background-color: rgba(204,167,118,0.2); color: #cca776}.s-custom-colors .s-button-theme-style-shadow{background-color: rgba(204,167,118,0.2); box-shadow: 0px 3px 0 rgba(204,167,118,0.2); color: #cca776}.s-custom-colors .s-button-theme-style-border{background-color: rgba(204,167,118,0.2); border: 2px solid rgba(204,167,118,0.2); color1: #cca776}.s-custom-colors .s-button-theme-style-important{background-color: rgba(204,167,118,0.2) !important; color: #cca776 !important}
+.s-custom-colors #header-container .header .nav ul a {
+
+}
+
+.s-custom-colors #header-container .header .nav ul a.selected,
+.s-custom-colors #header-container .header .nav ul a:hover {
+  color: #cca776;
+}
+.s-custom-colors .s-section.s-contact-section:not(.s-bg-white),
+.s-custom-colors .s-section.s-text-section:not(.s-bg-white),
+.s-custom-colors .s-section.s-media-section:not(.s-bg-white),
+.s-custom-colors .s-section.s-signup-section:not(.s-bg-white) {
+  background-color: #e5e5e5;
+}
+.s-custom-colors .s-section.s-bg-white, .s-custom-colors .s-component.s-background .s-component-editor .stock-images li.s-bg-white {
+  background-color: white;
+}
+.s-custom-colors .s-section.s-bg-gray, .s-custom-colors .s-component.s-background .s-component-editor .stock-images li.s-bg-gray {
+  background-color: #e5e5e5;
+}
+
+.s-custom-colors .s-title,
+.s-custom-colors .s-item-title {
+  color: #000000;
+}
+.s-custom-colors .s-section:not(.s-bg-image):not(.s-bg-video) .s-title-group .has-line .s-title:before,
+.s-custom-colors .s-section:not(.s-bg-image):not(.s-bg-video) .s-title-group .has-line .s-title:after,
+.s-custom-colors .s-section:not(.s-bg-image):not(.s-bg-video) .s-title-group .has-fresh-line .s-component-content:before,
+.s-custom-colors .s-section:not(.s-bg-image):not(.s-bg-video) .s-title-group .has-fresh-line .s-component-content:after {
+  background-color: #000000;
+}
+.s-custom-colors .s-text-color-custom1{ color: #cca776; }
+.s-custom-colors .s-text-color-custom2{ color: #000000; }
+</style><style id="font-style-tag">
+    #s-content.s-font-body-hei .s-font-body {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", serif;
+    }
+    #s-content.s-font-body-hei .s-font-body:lang(ja) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic", serif
+    }
+    #s-content.s-font-body-hei .s-font-body:lang(zh-cn),
+    #s-content.s-font-body-hei .s-font-body:lang(sxl),
+    #s-content.s-font-body-hei .s-font-body:lang(zh) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", Cardo, STSong, "Songti SC", SimSun, "PingFang SC", "Microsoft YaHei", 微软雅黑, STXihei, 华文细黑, serif
+    }
+    #s-content.s-font-body-hei .s-font-body:lang(zh-tw) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", 'PingFang TC','Microsoft JhengHei',"微軟正黑體",STXihei, serif;
+    }
+  
+    #s-content.s-font-title-hei .s-font-title {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", serif;
+    }
+    #s-content.s-font-title-hei .s-font-title:lang(ja) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic", serif
+    }
+    #s-content.s-font-title-hei .s-font-title:lang(zh-cn),
+    #s-content.s-font-title-hei .s-font-title:lang(sxl),
+    #s-content.s-font-title-hei .s-font-title:lang(zh) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", Cardo, STSong, "Songti SC", SimSun, "PingFang SC", "Microsoft YaHei", 微软雅黑, STXihei, 华文细黑, serif
+    }
+    #s-content.s-font-title-hei .s-font-title:lang(zh-tw) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", 'PingFang TC','Microsoft JhengHei',"微軟正黑體",STXihei, serif;
+    }
+  
+    #s-content.s-font-heading-hei .s-font-heading {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", serif;
+    }
+    #s-content.s-font-heading-hei .s-font-heading:lang(ja) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic", serif
+    }
+    #s-content.s-font-heading-hei .s-font-heading:lang(zh-cn),
+    #s-content.s-font-heading-hei .s-font-heading:lang(sxl),
+    #s-content.s-font-heading-hei .s-font-heading:lang(zh) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", Cardo, STSong, "Songti SC", SimSun, "PingFang SC", "Microsoft YaHei", 微软雅黑, STXihei, 华文细黑, serif
+    }
+    #s-content.s-font-heading-hei .s-font-heading:lang(zh-tw) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", 'PingFang TC','Microsoft JhengHei',"微軟正黑體",STXihei, serif;
+    }
+  
+    #s-content.s-font-button-hei .s-font-button {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", serif;
+    }
+    #s-content.s-font-button-hei .s-font-button:lang(ja) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic", serif
+    }
+    #s-content.s-font-button-hei .s-font-button:lang(zh-cn),
+    #s-content.s-font-button-hei .s-font-button:lang(sxl),
+    #s-content.s-font-button-hei .s-font-button:lang(zh) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", Cardo, STSong, "Songti SC", SimSun, "PingFang SC", "Microsoft YaHei", 微软雅黑, STXihei, 华文细黑, serif
+    }
+    #s-content.s-font-button-hei .s-font-button:lang(zh-tw) {
+      font-family: "Open Sans", "open_sans", "Lucida Grande", "Verdana", "Pingfang SC", "Pingfang TC", "Hiragino Sans GB", "Microsoft YaHei", 'PingFang TC','Microsoft JhengHei',"微軟正黑體",STXihei, serif;
+    }
+  </style></div><div class="s-navbar-section"><div id="header-container" class="navigator"><div class="container wide-container"><div class="sixteen columns header center"><div id="logo" class="logo ib"><div class="s-component s-image"><div><div class="s-component-content"><div class="s-img-wrapper"><a href="http://www.pintastudios.com/" aria-label="image link"><img src="//user-assets.sxlcdn.com/images/28373/FkP3nkaPQhI2NPA-P6POKtS5W9bH.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440>/quality/90!/interlace/1/format/jpeg" alt="broken image" title="" class="crop-default" data-description="" data-image-link="http://www.pintastudios.com/"></a></div></div></div></div></div><div class="nav no-power"><ul class="s-nav"><span><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="/projects"><span class="s-font-body">影视作品 PROJECTS</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="/games"><span class="s-font-body">游戏作品 Games</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="/about-us"><span class="s-font-body">工作室 ABOUT US</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="/team"><span class="s-font-body">团队 TEAM</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="/join-us"><span class="s-font-body">加入我们 JOIN US</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="/contact"><span class="s-font-body">联系 CONTACT</span></a></li><li class="menu-dropdown"><a class="s-nav-item" target="_self" href="/shop"><span class="s-font-body">商城 SHOP</span></a></li></span><span></span></ul><div id="navbarPopover"></div></div></div></div></div><div id="header-spacer"></div></div><div class="page-wrapper"><div id="prerendered-inline-theme-html"></div><ul style="display:block" class="slides s-page-1 "><li class="slide s-section-1 s-first-visible-section " id="section-f_dd497613-52c6-474c-8c1a-4f7498a84f1a"><div class="waypoint"></div><div class="section-anchor"></div><style data-emotion="css 67msjk">@media screen and (min-width:728px){.css-67msjk .right .s-title-group,.css-67msjk .left .s-title-group,.css-67msjk .right .cta-button-wrapper,.css-67msjk .left .cta-button-wrapper{text-align:left;}.css-67msjk .right .cta-button-wrapper.center-align,.css-67msjk .left .cta-button-wrapper.center-align{text-align:center;}.css-67msjk .right .cta-button-wrapper.left-align,.css-67msjk .left .cta-button-wrapper.left-align{text-align:left;}.css-67msjk .right .cta-button-wrapper.right-align,.css-67msjk .left .cta-button-wrapper.right-align{text-align:right;}}@media screen and (max-width:727px){.css-67msjk .s-component.s-media{max-width:80%;margin:0 auto;margin-bottom:15px;}}.css-67msjk .noImage{text-align:center;}.css-67msjk .noImage .s-title{text-align:center;}.css-67msjk .slider-container .slide-selectors{-webkit-transition:opacity 0.4s;transition:opacity 0.4s;}.css-67msjk .slider-container .prev-button,.css-67msjk .slider-container .next-button{-webkit-transition:padding 0.6s ease-in-out,background 0.2s,opacity 0.2s;transition:padding 0.6s ease-in-out,background 0.2s,opacity 0.2s;}.css-67msjk .slider-container.loading .slider .item{display:none;}.css-67msjk .slider-container.loading .slider .item:first-of-type{display:block;padding-top:80px;padding-bottom:80px;}.css-67msjk .slider-container.loading .slide-selectors,.css-67msjk .slider-container.loading .prev-button,.css-67msjk .slider-container.loading .next-button{opacity:0;}</style><div class="css-67msjk css-xhe5lr0"><div class="s-section s-slider-section s-banner-section"><div class="s-component s-slider ">
+  <!-- -->
+  <div class="s-component-content"><div class="slider-container"><div data-auto-play="12000" class="iosslider dark-overlays"><div class="slider">
+          <div class="slick-slider transition-fade"><div class="slick-list"><div class="slick-track"><div data-index="0" class="slick-slide slick-active" tabindex="-1" style="outline:none;position:relative;left:0;opacity:1;transition:opacity 750ms ease;-webkit-transition:opacity 750ms ease"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text item noForeground background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:0 0;background-image:url(//user-assets.sxlcdn.com/images/28373/FgVtbLdrHNVhk9cSjivgpN0juS2x.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/FgVtbLdrHNVhk9cSjivgpN0juS2x.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;0 0&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><img src="//user-assets.sxlcdn.com/images/28373/FgVtbLdrHNVhk9cSjivgpN0juS2x.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" alt="background image" style="width:100%;height:100%;opacity:0"><div style="position:absolute;width:100%;height:100%"><div class="inner"></div></div></div></div><div data-index="1" class="slick-slide" tabindex="-1" style="outline:none;position:relative;left:0;opacity:0;transition:opacity 750ms ease;-webkit-transition:opacity 750ms ease"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text item noForeground background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:0 0;background-image:url(//user-assets.sxlcdn.com/images/28373/ljRwDZWQAyXVWFJUozo0-cfBeh9j.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/ljRwDZWQAyXVWFJUozo0-cfBeh9j.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;0 0&quot;}"><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><img src="//user-assets.sxlcdn.com/images/28373/ljRwDZWQAyXVWFJUozo0-cfBeh9j.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" alt="background image" style="width:100%;height:100%;opacity:0"><div style="position:absolute;width:100%;height:100%"><div class="inner"></div></div></div></div><div data-index="2" class="slick-slide" tabindex="-1" style="outline:none;position:relative;left:0;opacity:0;transition:opacity 750ms ease;-webkit-transition:opacity 750ms ease"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text item noForeground background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:0 0;background-image:url(//user-assets.sxlcdn.com/images/28373/FpA9Pj1PQl_QVaIuuhWvSU62mvd_.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/FpA9Pj1PQl_QVaIuuhWvSU62mvd_.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;0 0&quot;}"><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><img src="//user-assets.sxlcdn.com/images/28373/FpA9Pj1PQl_QVaIuuhWvSU62mvd_.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" alt="background image" style="width:100%;height:100%;opacity:0"><div style="position:absolute;width:100%;height:100%"><div class="inner"></div></div></div></div><div data-index="3" class="slick-slide" tabindex="-1" style="outline:none;position:relative;left:0;opacity:0;transition:opacity 750ms ease;-webkit-transition:opacity 750ms ease"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text item noForeground background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:0 0;background-image:url(//user-assets.sxlcdn.com/images/28373/FvFx_EV6jSnCc6S6QcDfYNNU1wA6.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/FvFx_EV6jSnCc6S6QcDfYNNU1wA6.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;0 0&quot;}"><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><img src="//user-assets.sxlcdn.com/images/28373/FvFx_EV6jSnCc6S6QcDfYNNU1wA6.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" alt="background image" style="width:100%;height:100%;opacity:0"><div style="position:absolute;width:100%;height:100%"><div class="inner"></div></div></div></div><div data-index="4" class="slick-slide" tabindex="-1" style="outline:none;position:relative;left:0;opacity:0;transition:opacity 750ms ease;-webkit-transition:opacity 750ms ease"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text item noForeground background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:0 0;background-image:url(//user-assets.sxlcdn.com/images/28373/FqEytCRbh9j0dVmTGDvH_ZK4XQ65.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/FqEytCRbh9j0dVmTGDvH_ZK4XQ65.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;0 0&quot;}"><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><img src="//user-assets.sxlcdn.com/images/28373/FqEytCRbh9j0dVmTGDvH_ZK4XQ65.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" alt="background image" style="width:100%;height:100%;opacity:0"><div style="position:absolute;width:100%;height:100%"><div class="inner"></div></div></div></div></div></div></div>
+        </div><div class="center slide-selectors"><div class="slide-selectors-inner"><div class="content repeatable-component"><div class="selector-wrapper"><div class="selector selected"></div></div><div class="selector-wrapper"><div class="selector"></div></div><div class="selector-wrapper"><div class="selector"></div></div><div class="selector-wrapper"><div class="selector"></div></div><div class="selector-wrapper"><div class="selector"></div></div><div class="clearfix"></div></div></div></div><div><div class="prev-button has-upper-button"><div class="arrow"></div></div></div><div class="next-button"><div class="arrow"></div></div></div></div></div></div></div></div></li><li class="slide s-section-2 " id="section-f_adc3dff1-bb15-421a-8668-997906d51ac7"><div class="waypoint"></div><div class="section-anchor"></div><div>
+  <div class="lazyload  s-bg-white s-new-media-section s-section s-media-section      background-image" data-react-style="{}"><div class="container"><div class="columns sixteen"></div>
+    <div class="s-mh s-layout-normal s-repeatable"><div class="s-section-item-wrapper"><div data-sorting-index="0" class=" s-repeatable-item"><div class="clearfix"><div><div class="s-item-media-wrapper s-mhi "><div class="s-item-media-group"><div class="s-component s-media "><div><div class="s-component-content"><div class="s-img-wrapper"><img src="//user-assets.sxlcdn.com/images/28373/FtvTBv8utJWf2wuXOPGt0gtNlkTg.png?imageMogr2/strip/auto-orient/thumbnail/1200x9000>/quality/90!/format/png" alt="broken image" title="" class="crop-default" data-description="" data-image-link="javascript:void(0);"></div></div></div></div></div></div></div></div></div></div></div>
+  </div></div>
+</div></li><li class="slide s-section-3 " id="section-f_b55dbe77-7435-40fe-9292-e51d413fe81b"><div class="waypoint"></div><div class="section-anchor"></div><div class="s-section s-grid-section  _wide  s-grid-section__desktop-view-on-tablet   " style="padding-top:0"><div style="width:100%"><div class="s-grid-section-content _cell-spacing-small _grid"><div><div class="s-grid-section-repeatable-container "><div class="s-mh s-repeatable"><div style="margin:0;padding:5px" class="s-section-item-wrapper"><div data-sorting-index="0" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/FiqkqgwdbJco4wMhiXscj9GPiFHI.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/FiqkqgwdbJco4wMhiXscj9GPiFHI.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p style="font-size: 80%;"><strong>烈山氏（电影）</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>Lie Shan</p></div></div></div></div></div></div></div></div></div><div data-sorting-index="1" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><a href="http://www.pintastudios.com/the-dream-collector" target="_blank"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/lrBdpTaRWbl1QbSBHtycXcL0xowr.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/lrBdpTaRWbl1QbSBHtycXcL0xowr.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p style="font-size: 80%;"><strong>拾梦⽼⼈</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>The Dream Collector</p></div></div></div></div></div></div></div></a></div></div><div data-sorting-index="2" class="s-grid-section-cell  _3-columns  _top-right-cell s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><a href="http://www.pintastudios.com/shennong-taste-of-illusion" target="_blank"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/FvFx_EV6jSnCc6S6QcDfYNNU1wA6.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpg)" data-bg="//user-assets.sxlcdn.com/images/28373/FvFx_EV6jSnCc6S6QcDfYNNU1wA6.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p style="font-size: 80%;"><strong>烈山氏</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>Shennong : Taste of Illusion</p></div></div></div></div></div></div></div></a></div></div><div data-sorting-index="3" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><a href="http://www.pintastudios.com/ello" target="_blank"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/ljcdxXUAExUCgIuIDQous1htmL7M.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/ljcdxXUAExUCgIuIDQous1htmL7M.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p style="font-size: 80%;"><strong>Ello</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""></div></div></div></div></div></div></a></div></div><div data-sorting-index="4" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><a href="http://www.pintastudios.com/joy-and-koi" target="_blank"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/FovzSPyeP7h1fXKkp-GV4iolyTE1.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpg)" data-bg="//user-assets.sxlcdn.com/images/28373/FovzSPyeP7h1fXKkp-GV4iolyTE1.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p style="font-size: 80%;"><strong>Joy与锦鲤</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>Joy and Koi</p></div></div></div></div></div></div></div></a></div></div><div data-sorting-index="5" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/FkOaA4Ic086AXLK5xjF4G9S5vXQQ.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpg)" data-bg="//user-assets.sxlcdn.com/images/28373/FkOaA4Ic086AXLK5xjF4G9S5vXQQ.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p style="font-size: 80%;"><strong>奇奇岛</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>Qiqi Island</p></div></div></div></div></div></div></div></div></div><div data-sorting-index="6" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><a href="http://www.pintastudios.com/hulu-brothers" target="_blank"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/Fsr1DAZ41QholmKKlz3I-ONrAwYt.png?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/format/png)" data-bg="//user-assets.sxlcdn.com/images/28373/Fsr1DAZ41QholmKKlz3I-ONrAwYt.png?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/format/png" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p style="font-size: 80%;"><strong>京东超市618:葫芦娃番外篇</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><div>JD Supermarket 618 : Hulu Brothers</div></div></div></div></div></div></div></div></a></div></div><div data-sorting-index="7" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><a href="http://www.pintastudios.com/dianshiji" target="_blank"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/FoFvrKd9LJ9ktKpIHG2VH1brRegL.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/FoFvrKd9LJ9ktKpIHG2VH1brRegL.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p style="font-size: 80%;"><strong>电视鸡</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>虚拟偶像</p></div></div></div></div></div></div></div></a></div></div><div data-sorting-index="8" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><a href="http://www.pintastudios.com/crl-final" target="_blank"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/lgFfsr1FlUaNv43w_NrD9bzsLqYD.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/lgFfsr1FlUaNv43w_NrD9bzsLqYD.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p style="font-size: 80%;"><strong>2020皇室战争总决赛</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><div>2020 CRL World Finals</div></div></div></div></div></div></div></div></a></div></div><div data-sorting-index="9" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><a href="http://www.pintastudios.com/yu-yuan" target="_blank"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/lgfL_kAlgLSV3-ZTpYznX_vKfuUi.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/lgfL_kAlgLSV3-ZTpYznX_vKfuUi.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p><strong>豫园奇妙夜</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>Yu Garden</p></div></div></div></div></div></div></div></a></div></div><div data-sorting-index="10" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><a href="http://www.pintastudios.com/lang" target="_blank"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/lnBf8Rjpw9vxsKkD66U3Ynf9sZRY.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/lnBf8Rjpw9vxsKkD66U3Ynf9sZRY.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p><strong>中国郎·山谷光影秀</strong></p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>沉浸式光影秀</p></div></div></div></div></div></div></div></a></div></div><div data-sorting-index="11" class="s-grid-section-cell  _3-columns   s-repeatable-item" style="padding:5px;min-height:350px"><div class="s-grid-section-cell-content"><a href="http://www.pintastudios.com/yonghui" target="_blank"><div class="lazyload  s-bg-image s-bg-blurred s-bg-light-text s-bg-overlay background-image" style="background-repeat:no-repeat;background-size:cover;background-color:transparent;background-position:50% 50%;background-image:url(//user-assets.sxlcdn.com/images/28373/FqR_FgoNCMeR4HdhWIbKh-40y3Et.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg)" data-bg="//user-assets.sxlcdn.com/images/28373/FqR_FgoNCMeR4HdhWIbKh-40y3Et.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x1500>/quality/90!/interlace/1/format/jpeg" data-react-style="{&quot;backgroundRepeat&quot;:&quot;no-repeat&quot;,&quot;backgroundSize&quot;:&quot;cover&quot;,&quot;backgroundColor&quot;:&quot;transparent&quot;,&quot;backgroundPosition&quot;:&quot;50% 50%&quot;}"><style data-emotion="css 1tnf9eu">.css-1tnf9eu{position:absolute;top:0;left:0;width:100%;height:100%;line-height:1;-webkit-backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:all ease-in 0.2s;transition:all ease-in 0.2s;}.css-1tnf9eu.loaded{-webkit-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);visibility:hidden;}</style><div class="blurred-layer css-1tnf9eu css-fa8fyi0"></div><div class="s-grid-section-item-text-group-wrapper"><div class="s-item-text-group "><div class="s-item-title"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-heading" style="white-space:pre-wrap"><h3><p>未来无限·永辉超市20周年</p></h3></div></div></div></div><div class="s-item-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p>Ifinity Dreams</p></div></div></div></div></div></div></div></a></div></div></div></div></div></div></div></div></div><div class="waypoint"></div></li></ul><div id="prerendered-inline-theme-html"></div></div><div id="strikingly-tooltip-container"></div><div id="s-footer-section-container"><div class="lazyload  s-bg-white s-footer-section s-section    background-image" data-react-style="{}"><div class="container s-layout-vertical"><div class="columns sixteen "><div><div class="waypoint"></div></div><div class="s-footer-text"><div class="s-component s-text"><div class=""><div class="s-component-content s-font-body" style="white-space:pre-wrap"><p style="font-size: 80%;">平塔工作室(Pinta Studios) © 2016-2022</p></div></div></div></div><div class=" s-component s-regulation-info"><div class="s-component-editor-wrapper"></div><div class="s-regulation-inner"><div class="s-regulation-psb s-regulation-item text"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502037931" target="_blank"><img class="psb-icon" src="https://static-assets.sxlcdn.com/images/landing-sxl/gongan-beian.png">京公网安备11010502037931号</a></div><span class="slash ">|</span><div class="s-regulation-icp s-regulation-item text"><a href="https://beian.miit.gov.cn/" target="_blank">京ICP备16037105号-1</a></div></div></div></div></div></div></div><div class="s-footer-logo-wrapper" style="width:100%"></div><div id="ecommerce-drawer" class="s-category-drawer-wrapper"></div><div id="blog-category-drawer" class="s-category-drawer-wrapper"></div><div class="s-floated-components"><div><div class="ecommerce-buy-dialog s-edit-modal extend" id="ecommerce-buy-dialog"><div class="s-async-wrapper s-component"><div class="s-loading"></div></div></div></div><div><div id="s-ecommerce-shopping-cart-wrapper" class="s-ecommerce-shopping-cart-wrapper no-cart"></div><div id="fixedContainer"><div id="fixedLoginContainer" class="fixed-login-container"></div><div id="fixedMultiLangSwitcher" class="fixed-multi-lang-container"></div></div></div><div id="s-new-mobile-actions-wrapper" class=""><ul class="s-mobile-actions clearfix s-font-body"></ul></div></div><div class="social-thumbnail"><div id="lw-share-data" style="display:none"><div class="lws-title">Pinta Studios 平塔工作室</div><div class="lws-description">Pinta Studios
+平塔工作室
+平塔工作室官方网站</div><div class="lws-image">https://user-assets.sxlcdn.com/images/28373/FuhsQ_RByjjGcNns-lsVR8FIgYTx.png?imageMogr2/strip/auto-orient/thumbnail/1200x630&gt;/format/png</div></div></div><script class="script-loader">(function(){var initScrollData = function(){window.cachedScrollData=null,window.ssrScrollListener=function(){window.cachedScrollData={top:window.scrollY,left:0}},window.addEventListener("scroll",window.ssrScrollListener)}; initScrollData();})()</script></div></div></div></div>
+</div>
+<div id="fb-root"></div>
+<div id="app-script-root"></div>
+<div id="app-view-root"></div>
+<div class="s-cookie-notification-bar" style="position: fixed; bottom: -1000px !important;">
+<div class="cookie-notification-title">Cookie的使用</div>
+<span class="cookie-notification-text">我们使用cookies来确保流畅的浏览体验。若继续，我们认为你接受使用cookies。</span>
+<div>
+<button>确认</button>
+</div>
+<a href="./pages/cookie-policy" target="_blank">了解更多</a>
+</div>
+<script src="//ajax.sxlcdn.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer="defer"></script>
+<!-- *! lazysizes - v5.3.2 */ -->
+<script>
+!function(e){var t=function(u,D,f){"use strict";var k,H;if(function(){var e;var t={lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",fastLoadedClass:"ls-is-cached",iframeLoadMode:0,srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:true,expFactor:1.5,hFac:.8,loadMode:2,loadHidden:true,ricTimeout:0,throttleDelay:125};H=u.lazySizesConfig||u.lazysizesConfig||{};for(e in t){if(!(e in H)){H[e]=t[e]}}}(),!D||!D.getElementsByClassName){return{init:function(){},cfg:H,noSupport:true}}var O=D.documentElement,i=u.HTMLPictureElement,P="addEventListener",$="getAttribute",q=u[P].bind(u),I=u.setTimeout,U=u.requestAnimationFrame||I,o=u.requestIdleCallback,j=/^picture$/i,r=["load","error","lazyincluded","_lazyloaded"],a={},G=Array.prototype.forEach,J=function(e,t){if(!a[t]){a[t]=new RegExp("(\\s|^)"+t+"(\\s|$)")}return a[t].test(e[$]("class")||"")&&a[t]},K=function(e,t){if(!J(e,t)){e.setAttribute("class",(e[$]("class")||"").trim()+" "+t)}},Q=function(e,t){var a;if(a=J(e,t)){e.setAttribute("class",(e[$]("class")||"").replace(a," "))}},V=function(t,a,e){var i=e?P:"removeEventListener";if(e){V(t,a)}r.forEach(function(e){t[i](e,a)})},X=function(e,t,a,i,r){var n=D.createEvent("Event");if(!a){a={}}a.instance=k;n.initEvent(t,!i,!r);n.detail=a;e.dispatchEvent(n);return n},Y=function(e,t){var a;if(!i&&(a=u.picturefill||H.pf)){if(t&&t.src&&!e[$]("srcset")){e.setAttribute("srcset",t.src)}a({reevaluate:true,elements:[e]})}else if(t&&t.src){e.src=t.src}},Z=function(e,t){return(getComputedStyle(e,null)||{})[t]},s=function(e,t,a){a=a||e.offsetWidth;while(a<H.minSize&&t&&!e._lazysizesWidth){a=t.offsetWidth;t=t.parentNode}return a},ee=function(){var a,i;var t=[];var r=[];var n=t;var s=function(){var e=n;n=t.length?r:t;a=true;i=false;while(e.length){e.shift()()}a=false};var e=function(e,t){if(a&&!t){e.apply(this,arguments)}else{n.push(e);if(!i){i=true;(D.hidden?I:U)(s)}}};e._lsFlush=s;return e}(),te=function(a,e){return e?function(){ee(a)}:function(){var e=this;var t=arguments;ee(function(){a.apply(e,t)})}},ae=function(e){var a;var i=0;var r=H.throttleDelay;var n=H.ricTimeout;var t=function(){a=false;i=f.now();e()};var s=o&&n>49?function(){o(t,{timeout:n});if(n!==H.ricTimeout){n=H.ricTimeout}}:te(function(){I(t)},true);return function(e){var t;if(e=e===true){n=33}if(a){return}a=true;t=r-(f.now()-i);if(t<0){t=0}if(e||t<9){s()}else{I(s,t)}}},ie=function(e){var t,a;var i=99;var r=function(){t=null;e()};var n=function(){var e=f.now()-a;if(e<i){I(n,i-e)}else{(o||r)(r)}};return function(){a=f.now();if(!t){t=I(n,i)}}},e=function(){var v,m,c,h,e;var y,z,g,p,C,b,A;var n=/^img$/i;var d=/^iframe$/i;var E="onscroll"in u&&!/(gle|ing)bot/.test(navigator.userAgent);var _=0;var w=0;var M=0;var N=-1;var L=function(e){M--;if(!e||M<0||!e.target){M=0}};var x=function(e){if(A==null){A=Z(D.body,"visibility")=="hidden"}return A||!(Z(e.parentNode,"visibility")=="hidden"&&Z(e,"visibility")=="hidden")};var W=function(e,t){var a;var i=e;var r=x(e);g-=t;b+=t;p-=t;C+=t;while(r&&(i=i.offsetParent)&&i</script></body></html>

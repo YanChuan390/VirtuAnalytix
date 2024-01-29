@@ -1,0 +1,792 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title> 隐私政策</title>
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/cicms/includes/site/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/cicms/includes/site/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/cicms/includes/site/assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/cicms/includes/site/assets/img/favicons/site.webmanifest">
+<link rel="mask-icon" href="/cicms/includes/site/assets/img/favicons/safari-pinned-tab.svg" color="#e95922">
+<link rel="shortcut icon" href="/cicms/includes/site/assets/img/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-config" content="/cicms/includes/site/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Stylesheets -->
+<link href="/cicms/includes/site/assets/css/fontawesome.min.css" rel="stylesheet">
+<link href="/cicms/includes/site/assets/css/cisuite.css?v=3" rel="stylesheet">
+<link href="/cicms/includes/site/assets/css/app.css?v=3" rel="stylesheet">
+
+<style>
+    .main-wrapper {
+        min-height: 80vh;
+    }
+</style>
+</head>
+
+<body>
+    <script type="text/javascript" src="/cicms/admin/assets/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/cicms/admin/assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/cicms/admin/assets/js/lodash.min.js"></script>
+<script type="text/javascript" src="/cicms/includes/site/assets/js/luxon.min.js"></script>
+<script type="text/javascript" src="/cicms/includes/site/assets/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/cicms/includes/site/assets/js/cisuite.js"></script>
+<script type="text/javascript" src="/cicms/includes/site/assets/js/helper.js?v=1"></script>
+
+    <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top my-3">
+    <div class="container">
+        <div class="navbar-wrapper d-flex align-items-center justify-content-between rounded-4 bg-white shadow-sm" style="flex-wrap: inherit;">
+            <!-- Logo -->
+            <a class="navbar-brand my-2" href="/">
+                <img src="/cicms/includes/site/assets/img/logo_banner_top.png" alt="Logo" style="height: 42px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarCollapse" aria-controls="mainNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Right Side Of Navbar -->
+            <div class="collapse navbar-collapse" id="mainNavbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    
+                        <li class="nav-item position-relative">
+                            <a class="nav-link position-relative h4 mb-0 fw-semibold active" href="/home" role="button" aria-expanded="false" style="padding-top: 22px;padding-bottom: 22px;">
+                                <span>
+                                    Home
+                                </span>
+                            </a>
+
+                            
+                        </li>
+                    
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle position-relative h4 mb-0 fw-semibold" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-top: 22px;padding-bottom: 22px;">
+                                <span>
+                                    About
+                                </span>
+                            </a>
+
+                            <ul class="dropdown-menu text-left text-lg-center">
+                                
+                                    <li>
+                                        <a class="dropdown-item h5 mb-0 fw-semibold" href="/our-company">
+                                            <span>
+                                                Our Company
+                                            </span>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="dropdown-item h5 mb-0 fw-semibold" href="/our-success">
+                                            <span>
+                                                Our Success
+                                            </span>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="dropdown-item h5 mb-0 fw-semibold" href="/The-Liquid-Group">
+                                            <span>
+                                                The Liquid Group
+                                            </span>
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle position-relative h4 mb-0 fw-semibold" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-top: 22px;padding-bottom: 22px;">
+                                <span>
+                                    Games
+                                </span>
+                            </a>
+
+                            <ul class="dropdown-menu text-left text-lg-center">
+                                
+                                    <li>
+                                        <a class="dropdown-item h5 mb-0 fw-semibold" href="/mobile-games">
+                                            <span>
+                                                Mobile
+                                            </span>
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a class="dropdown-item h5 mb-0 fw-semibold" href="/vr-pc-games">
+                                            <span>
+                                                VR &amp; PC
+                                            </span>
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="nav-item position-relative">
+                            <a class="nav-link position-relative h4 mb-0 fw-semibold" href="/careers" role="button" aria-expanded="false" style="padding-top: 22px;padding-bottom: 22px;">
+                                <span>
+                                    Careers
+                                </span>
+                            </a>
+
+                            
+                        </li>
+                    
+                        <li class="nav-item position-relative">
+                            <a class="nav-link position-relative h4 mb-0 fw-semibold" href="/connect" role="button" aria-expanded="false" style="padding-top: 22px;padding-bottom: 22px;">
+                                <span>
+                                    Connect
+                                </span>
+                            </a>
+
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<style>
+    .dropdown-menu {
+        width: 200px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .dropdown > .dropdown-toggle:after {
+        content: "";
+        display: none;
+        position: absolute;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-wrapper {
+            margin-left: -40px;
+            margin-right: -40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            width: calc(100% + 80px);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown > .dropdown-toggle {
+            padding-bottom: 12px;
+        }
+
+        .dropdown > .dropdown-toggle:after {
+            left: 50%;
+            bottom: -1px;
+            transform: translate(-50%, 0);
+            border: 10px solid transparent;
+            border-bottom: 10px solid #292929;
+        }
+
+        .dropdown:hover .dropdown-toggle:after {
+            display: inline-block;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .navbar-wrapper {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100%;
+        }
+
+        .dropdown-menu {
+            /*display: block;*/
+            width: 100%;
+        }
+
+        .dropdown > .dropdown-toggle {
+            padding-bottom: 12px;
+        }
+
+        .dropdown > .dropdown-toggle:after {
+            right: 0;
+            display: block;
+        }
+
+        .dropdown > .dropdown-toggle:after {
+            top: 28px;
+            border: 10px solid transparent;
+            border-top: 10px solid #292929;
+        }
+
+        .dropdown > .dropdown-toggle.show:after {
+            top: 18px;
+            border: 10px solid transparent;
+            border-bottom: 10px solid #292929;
+        }
+    }
+</style>
+
+<script>
+    $(function () {
+        $('.dropdown-menu').each(function () {
+            var $dropdownMenu = $(this);
+            var $dropdownMenuItems = $dropdownMenu.find('li');
+
+            if ($dropdownMenuItems.length === 0) {
+                $dropdownMenu.parent().removeClass('dropdown');
+                $dropdownMenu.parent().find('.dropdown-toggle').removeAttr('data-bs-toggle').removeClass('dropdown-toggle');
+                $dropdownMenu.remove();
+            } else {
+                $dropdownMenu.parent().find('.dropdown-toggle').attr('href', 'javascript:void(0);');
+            }
+        });
+
+        // make navbar item active based on url without http, domain and query string
+        var activePage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/'));
+
+        $('.navbar-nav li a').each(function () {
+            var linkPage = $(this).attr('href');
+
+            if (activePage === linkPage || (activePage === "/" && linkPage === "/home")) {
+                $(this).addClass('active');
+
+                if ($(this).hasClass('dropdown-item')) {
+                    $(this).closest('.nav-item').find('.dropdown-toggle').addClass('active');
+                }
+            }
+        });
+    });
+</script>
+
+    <div class="main-wrapper" style="padding-top: 94px;">
+        <style>
+	.banner-image {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 75vh !important;
+	}
+
+	.banner-image-top {
+		max-height: 50vh !important;
+	}
+
+	@media (max-width: 991px) {
+		.banner-image {
+			min-height: 450px !important;
+		}
+
+		.banner-image-heading {
+			padding-top: 94px;
+		}
+
+		.banner-image-top {
+			max-height: 200px !important;
+		}
+	}
+</style>
+
+<section class="position-relative d-none" style="background-color: rgba(169, 184, 192, 0.5);">
+	<div class="banner-image" style="background-image:url('/resize_image.php?image=&amp;max_width=2500');"></div>
+
+	<div class="position-absolute top-0 start-0 bottom-0 w-100 h-100 " style="background-color: rgba(0, 0, 0, 0.5);"></div>
+
+	<div class="position-absolute top-0 start-0 bottom-0 w-100 h-100">
+		<div class="container h-100">
+			<div class="row align-items-center h-100">
+				<div class="col-12 col-md-6">
+					<h1 class="fw-bold banner-image-heading text-white mb-3">
+						
+					</h1>
+
+					<p class="text-white mb-0">
+						
+					</p>
+				</div>
+				<div class="col-12 col-md-6 text-center d-lg-none">
+					<img src="/resize_image.php?image=&amp;max_width=800&amp;max_height=500" alt="" class="banner-image-top mw-100">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$(document).ready(function() {
+		// check if banner image is visible
+		if (!$('.banner-image').is(':visible')) {
+			// add class to body
+			$('.main-wrapper').css('padding-top', '94px');
+		}
+	});
+</script>
+
+        <section class="py-5 ">
+	
+		<div class="container my-3">
+			<h2 class="fw-semibold mb-4">
+				 隐私政策
+			</h2>
+
+			<div class="row">
+				<div class="d-md-none col-sm-1"></div>
+
+				<div class="col-md-12 col-sm-10 text-left">
+					<div class="displayimage imageStyle0">
+						<div class="popup-container-trigger">
+							<img src="resize_image.php?image=&amp;max_width=&amp;max_height=1000" alt="">
+						</div>
+						<div class="image_caption">
+							<h5 class="fw-semibold" style="text-align: center;">
+								
+							</h5>
+						</div>
+					</div>
+
+					<div class="text-container">
+						<h1 class="screen-reader-text hide-if-no-js"><strong style="font-family: Lato; font-size: 14px;">我们对待隐私的方式</strong></h1>
+<div id="editor" class="block-editor__container hide-if-no-js">
+<div class="components-drop-zone__provider">
+<div class="components-navigate-regions">
+<div class="edit-post-layout is-mode-visual is-sidebar-opened has-metaboxes interface-interface-skeleton">
+<div class="interface-interface-skeleton__editor">
+<div class="interface-interface-skeleton__body">
+<div class="interface-interface-skeleton__content" tabindex="-1">
+<div class="edit-post-visual-editor editor-styles-wrapper" tabindex="-1">
+<div class="block-editor__typewriter">
+<div class="block-editor-writing-flow">
+<div class="block-editor-block-list__layout is-root-container" spellcheck="true">
+<p id="block-b9e0192a-1f00-4875-8c37-410b6e0c1f1d" class="block-editor-rich-text__editable block-editor-block-list__block wp-block is-hovered rich-text" tabindex="0" data-block="b9e0192a-1f00-4875-8c37-410b6e0c1f1d" data-type="core/paragraph" data-title="Paragraph">Spunge Games及其所有相关实体认为您的隐私非常重要。作为一家澳大利亚公司，我们 严格遵守澳大利亚隐私法和通用数据保护条例（GDPR）。</p>
+<p id="block-eadf5192-842a-47d8-aae7-f3f4636eb071" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="eadf5192-842a-47d8-aae7-f3f4636eb071" data-type="core/paragraph" data-title="Paragraph">本政策概述了我们将通过由我们提供的各种网站、游戏和应用程序（“产品和服务”）向您收集的个人身份信息和其他数据的类型，以及我们可能如何使用或向第三方披露这些信息和数据。</p>
+<p id="block-7ee6e56e-5bb7-4ec4-be53-74a7e8906d21" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="7ee6e56e-5bb7-4ec4-be53-74a7e8906d21" data-type="core/paragraph" data-title="Paragraph">使用任何Spunge Games服务，即表示您同意按照本隐私政策收集和使用您的个人信息。如果您不同意本隐私政策的条款，请不要向我们提供任何信息，也不要使用服务。</p>
+<p id="block-f8a96b1d-5548-4c99-9428-93980e527dea" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="f8a96b1d-5548-4c99-9428-93980e527dea" data-type="core/paragraph" data-title="Paragraph"><strong>信息收集</strong></p>
+<p id="block-909aa224-445e-45b0-90c8-30ac52730242" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="909aa224-445e-45b0-90c8-30ac52730242" data-type="core/paragraph" data-title="Paragraph">在您使用我们的产品和服务时，我们可能收集两类信息。</p>
+<ul id="block-e7e81192-4859-4f58-b776-ae4da54c2dd1" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="e7e81192-4859-4f58-b776-ae4da54c2dd1" data-type="core/list" data-title="List">
+<li>“个人信息”是可以具体关联到您个人的信息，如您的全名、居住地址、电子邮件地址、电话号码、照片、位置、信用卡信息和用户名– Spunge Games不会存 储这些信息，除非这些信息是出于列入我们营销邮件列表的明确目的而提供的。</li>
+<li>非个人“使用数据”与您使用我们的产品和服务相关联的计算机或设备关于您如何使用和/或与我们的产品和服务互动的匿名数据 – 所有通过我们的手机游戏直 接收集的数据都属于这一类。</li>
+</ul>
+<p id="block-5a63e1fd-e0b0-479a-a96b-01610cc343ef" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="5a63e1fd-e0b0-479a-a96b-01610cc343ef" data-type="core/paragraph" data-title="Paragraph">当您：下载我们的游戏；参加我们的比赛；参与我 们的特殊活动（例如重点测试日）；与我们的社交媒体互动，例如Facebook和Twitter；在我们的网站上输入信息；购买我们的商品；订阅我们的时事通讯或其他信息源；进行应用内购买；请求技术支持，进行表扬或投诉，或以其他方式联系我们或以其他方式提供您的信息时，我们都会接收并存储您提供给我们的任何信息。</p>
+<p id="block-be4a6694-2aa0-4506-ae66-7113acdb8596" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="be4a6694-2aa0-4506-ae66-7113acdb8596" data-type="core/paragraph" data-title="Paragraph">当您与我们的产品或服务互动时，我们还会接收并存储某些类型的信息，包括：</p>
+<ul id="block-07d8e4cd-a09b-40e5-b3df-718ada6fe2b4" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="07d8e4cd-a09b-40e5-b3df-718ada6fe2b4" data-type="core/list" data-title="List">
+<li>有关您如何使用我们的产品和服务的信息。我们使用这些信息不断改进我们的产品及其功能以及我们的服务。当您通过社交媒体登录到我们的游戏时，我们会使用该供应商提供的信息，以便您可以在多个设备上享受同一款游戏，继续您中断的进程，并与您的好友互动。</li>
+<li>有关您用于访问我们产品和服务的设备的信息，如型号、操作系统、屏幕分辨率、网络浏览器、IP地址、媒体访问控制（MAC）地址、广告标识符、语言和其他技术信息，例如cookie和随机生成的唯一标识符。</li>
+<li>您的位置，以便我们知道使用何种语言，以便我们能够提供适用于您所在位置的相关游戏/功能/促销/广告；以及</li>
+<li>如果您“告诉好友”、“通过电子邮件发送本页”或使用其他类似功能，我们将收集信息为您执行此功能。</li>
+</ul>
+<p id="block-2bc75d6e-8df2-4bef-bdf0-3a37eef2299b" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="2bc75d6e-8df2-4bef-bdf0-3a37eef2299b" data-type="core/paragraph" data-title="Paragraph"><strong>第三方</strong></p>
+<p id="block-0ca27ca9-3833-4712-be7b-530538394244" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="0ca27ca9-3833-4712-be7b-530538394244" data-type="core/paragraph" data-title="Paragraph">请注意，您访问和使用我们的产品和服务可能受某些第三方条款和条件的约束，我们不对任何此类第三方使用您的个人数据承担责任。某些产品和服务可能会使用第三方服务提供游戏控制台ID、社交网络ID，或游戏网络账户的身份验证。与此类使用相关，某些可识别个人身份的用户和/或会员数据可能会自动传输给我们或从我们这里传输出去。有时我们会从第三方收集有关您的信息，例如Apple、Facebook、或Google,Inc.。我们收集这些信息是为了向您提供您所要求的服务。我们收集这些信息：</p>
+<ul id="block-3c1d599a-1917-42f9-a50d-cda03a03e2f8" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="3c1d599a-1917-42f9-a50d-cda03a03e2f8" data-type="core/list" data-title="List">
+<li>当您通过App Store、Google Play Store或其他商店购买我们的产品和服务时。</li>
+<li>当您通过社交媒体账户（例如Facebook或当您使用Game Centre等应用内功能时）登录我们的产品或服务时。</li>
+</ul>
+<p id="block-795c1a35-9e67-4b13-908d-a4ba6c03b123" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="795c1a35-9e67-4b13-908d-a4ba6c03b123" data-type="core/paragraph" data-title="Paragraph"><strong>信息使用</strong></p>
+<p id="block-c4661c09-ec74-42c7-9689-c6314626e583" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="c4661c09-ec74-42c7-9689-c6314626e583" data-type="core/paragraph" data-title="Paragraph">我们将使用您的个人信息向您提供您要求的任何商品、服务或功能，或回复您提出的任何问题。我们还可能使用您的个人信息与您联系，以推广我们的网站/应用程序、竞赛和我们可能提供的任何特价活动。如果我们向您发送广告或营销资料，我们将为您提供在未来选择不接收此类资料的选项。您也可以根据本隐私政策中提供的说明，随时选择不接收此类资料。</p>
+<p id="block-0469bf59-d332-4efc-8bd9-458412ff8b1f" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="0469bf59-d332-4efc-8bd9-458412ff8b1f" data-type="core/paragraph" data-title="Paragraph">使用数据可能会被我们用于管理、分析、研究、优化、安全等目的。具体而言，我们可能会使用您的使用数据来帮助我们更多地了解您的游戏活动、个性化您的邮箱内容、编制统计数据、回复客户服务咨询、提供安全保障，以及以其他方式增强您的游戏体验。</p>
+<p id="block-786e9546-2b53-4a3a-8960-c00b7162d5c1" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="786e9546-2b53-4a3a-8960-c00b7162d5c1" data-type="core/paragraph" data-title="Paragraph">使用数据也可能用于帮助我们向您提供更符合您兴趣的广告。地理位置信息将用于确定您所在的司法管辖区，以便我们确定适用于您的法律。我们可能会使用您的设备ID，以便向您发送推送通知（如果您选择允许该功能），并跟踪您对我们网站/应用程序的使用情况，以便我们更好地了解您的偏好和倾向，这将有助于我们能最好地个性化您的体验，并为您提供为您量身定制的游戏内优惠和通知。</p>
+<p id="block-1a08a6af-f785-481d-a806-16ffb40487c8" class="block-editor-rich-text__editable block-editor-block-list__block wp-block is-hovered rich-text" tabindex="0" data-block="1a08a6af-f785-481d-a806-16ffb40487c8" data-type="core/paragraph" data-title="Paragraph">我们可能会向第三方提供汇总或匿名信息，用于开发和投放定向广告目的。我们不会向广告商提供您的个人信息。</p>
+<p id="block-2263dbe8-1d0e-4f7d-8d5f-2dff8ae1ad01" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="2263dbe8-1d0e-4f7d-8d5f-2dff8ae1ad01" data-type="core/paragraph" data-title="Paragraph">我们可能会使用所掌握的有关您的信息来验证您是否遵守了我们的服务条款。</p>
+<p id="block-6f80181c-a669-45d6-86d6-20b08227b4e3" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="6f80181c-a669-45d6-86d6-20b08227b4e3" data-type="core/paragraph" data-title="Paragraph">服务安全维护</p>
+<ul id="block-4033373a-6e4e-441f-974a-70fcde0df6ce" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="4033373a-6e4e-441f-974a-70fcde0df6ce" data-type="core/list" data-title="List">
+<li>服务使用监控</li>
+<li>可疑活动的检测</li>
+<li>对作弊玩家采取行动</li>
+</ul>
+<p id="block-8108a7a1-b456-4eb7-8a91-909ec32c9363" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="8108a7a1-b456-4eb7-8a91-909ec32c9363" data-type="core/paragraph" data-title="Paragraph">广告个性化</p>
+<ul id="block-f33c36d6-7ed3-42dc-a664-84817e2cabc1" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="f33c36d6-7ed3-42dc-a664-84817e2cabc1" data-type="core/list" data-title="List">
+<li>根据您的在线行为改进呈现给您的广告</li>
+<li>分析广告效果及其相应的定制</li>
+</ul>
+<p id="block-3cbc01b5-e0e0-4cdd-a364-f19d1b7691f9" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="3cbc01b5-e0e0-4cdd-a364-f19d1b7691f9" data-type="core/paragraph" data-title="Paragraph">请注意，Spunge Games特别使用Smaato及其供应商提供的服务。Smaato是一项由Smaato, Inc. (US) 提供的广告服务。您可以访问&nbsp;<a href="https://www.smaato.com/privacy/">https://www.smaato.com/privacy/</a>&nbsp;查看Smaato的隐私政策。有关Smaato供应商的更多信息，请访问：&nbsp;<a href="https://advertisingconsent.eu/vendor-list/"><s>https://advertisingconsent.eu/vendor-list/</s></a>&nbsp;</p>
+<p id="block-c52155c9-a008-406a-8c4d-64d0086070bb" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="c52155c9-a008-406a-8c4d-64d0086070bb" data-type="core/paragraph" data-title="Paragraph"><strong>我们何时披露信息？</strong></p>
+<p id="block-95195cd8-00e7-4c47-aa98-e474740a8c39" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="95195cd8-00e7-4c47-aa98-e474740a8c39" data-type="core/paragraph" data-title="Paragraph">我们可能会在以下情况下披露我们持有的关于您的个人信息：</p>
+<ul id="block-0114705b-9f92-4b0f-8c41-b2c6421d6cdb" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="0114705b-9f92-4b0f-8c41-b2c6421d6cdb" data-type="core/list" data-title="List">
+<li>如法律或执法机构要求或授权我们披露。</li>
+<li>在向您提供我们的产品和服务的过程中，或通常在我们的业务行为中，向我们的业务合作伙伴披露。这可能包括向我们提供服务的组织，如支付处理机构或托管服务。</li>
+<li>避免、减轻或防止严重的紧急情况或犯罪的情况。如果我们在这些情况下使用或披露您的个人信息，我们将对此类使用或披露进行书面记录。</li>
+</ul>
+<p id="block-96d66838-6f57-435f-baa1-966d4de724fc" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="96d66838-6f57-435f-baa1-966d4de724fc" data-type="core/paragraph" data-title="Paragraph"><strong>儿童隐私</strong></p>
+<p id="block-9346d0f3-2690-4686-aa14-c1e017166029" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="9346d0f3-2690-4686-aa14-c1e017166029" data-type="core/paragraph" data-title="Paragraph">虽然儿童会游玩和/或访问我们的产品和服务，但我们不会在知情的情况下收集或使用13岁以下儿童的任何个人信息，并在此特别禁止任何13岁以下用户向我们提供任何个人信息。如果您是13岁以下儿童的家长，并且您认为您的孩子向我们提供了个人信息，请通过&nbsp;<a href="mailto:marketing@spungegames.com">marketing@spungegames.com</a>&nbsp;与我们联系，我们将从系统中删除这些信息。</p>
+<p id="block-e379db35-b31e-4b83-bf82-25da07926418" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="e379db35-b31e-4b83-bf82-25da07926418" data-type="core/paragraph" data-title="Paragraph">我们可能会收集与儿童游玩我们的产品和服务相关的设备或计算机相关联的设备ID或其他持久标识符。收集的数据将是匿名的，且不与任何个人信息绑定。</p>
+<p id="block-58ed5281-f532-4b9c-b21b-669b492be735" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="58ed5281-f532-4b9c-b21b-669b492be735" data-type="core/paragraph" data-title="Paragraph">如果您允许您的孩子使用我们的产品和服务，您应禁用您手机或设备上的应用程序内购买功 能，并积极监控您孩子的使用情况。</p>
+<p id="block-566028ed-e8a9-4950-8747-dec3a9fff9af" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="566028ed-e8a9-4950-8747-dec3a9fff9af" data-type="core/paragraph" data-title="Paragraph"><strong>直接营销</strong></p>
+<p id="block-919c9b7c-d1b4-426b-80e3-151763228070" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="919c9b7c-d1b4-426b-80e3-151763228070" data-type="core/paragraph" data-title="Paragraph">我们可能会使用您的信息向您介绍我们的产品和服务，并分享有关我们和我们正在推出的新游戏、我们正在举办的活动或我们销售的商品的新闻。如果您不想接收这些新闻或信息 ，您随时可以选择退出。</p>
+<p id="block-0efe1ab6-f124-411d-a130-bf57f15da2db" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="0efe1ab6-f124-411d-a130-bf57f15da2db" data-type="core/paragraph" data-title="Paragraph"><strong>应用内购买</strong></p>
+<p id="block-414aeb3e-d575-4e35-b43a-72941dedc997" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="414aeb3e-d575-4e35-b43a-72941dedc997" data-type="core/paragraph" data-title="Paragraph">您可以使用（真实货币或游戏内货币）购买我们的部分产品和服务提供的应用内购买或物品或额外功能。如果您不想进行应用内购买，请不要使用这些选项，并考虑在您的设备上禁用购买。</p>
+<p id="block-9717217f-8905-4c69-8a9c-0c335e2597dd" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="9717217f-8905-4c69-8a9c-0c335e2597dd" data-type="core/paragraph" data-title="Paragraph"><strong>选择退出</strong></p>
+<p id="block-8f1d30c1-38ad-49e6-abea-a1caea961464" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="8f1d30c1-38ad-49e6-abea-a1caea961464" data-type="core/paragraph" data-title="Paragraph">选择退出我们服务的方式：</p>
+<ul id="block-456aee9f-30c7-4b19-9bfb-75d91db0063b" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="456aee9f-30c7-4b19-9bfb-75d91db0063b" data-type="core/list" data-title="List">
+<li>通过电子邮件，会有一个退订链接</li>
+<li>通过Facebook，您可以在我们的页面选择“不喜欢”</li>
+<li>通过Twitter，您可以停止关注我们</li>
+</ul>
+<p id="block-6d028405-7076-4bd2-91f9-7156d64cdbcd" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="6d028405-7076-4bd2-91f9-7156d64cdbcd" data-type="core/paragraph" data-title="Paragraph"><strong>如需选择退出方面的帮助，请发送邮件至&nbsp;</strong><a href="mailto:marketing@spungegames.com"><strong>marketing@spungegames.com</strong></a><u> </u><strong>联系我们</strong></p>
+<p id="block-a7acc29b-49ba-4263-9766-cc7001188bc5" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="a7acc29b-49ba-4263-9766-cc7001188bc5" data-type="core/paragraph" data-title="Paragraph"><strong>删除个人信息的数据请求：</strong></p>
+<p id="block-ed02fd3e-8b7c-4539-acaf-b11d3a8145c8" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="ed02fd3e-8b7c-4539-acaf-b11d3a8145c8" data-type="core/paragraph" data-title="Paragraph">您有权要求删除通过我们的服务收集的您的个人信息。</p>
+<p id="block-7a857c3a-f151-4ceb-9de5-aa2da252f996" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="7a857c3a-f151-4ceb-9de5-aa2da252f996" data-type="core/paragraph" data-title="Paragraph">如果您想行使该权利，请将您的请求发送至&nbsp;<a href="mailto:marketing@spungegames.com">marketing@spungegames.com</a>&nbsp;（请注意，如果您的请求被发送到任何其他Spunge Games的邮箱，我们无法保证会收到并进一步处理）。我们的目标是在收到您的请求后在30天内回复您的请求。为了实现您的权利，我们需要确认您是原始账号所有者。您承认并同意出于这一目的，我们将要求您提供额外的个人信息，例如您需要提供照片和文件副本。为了避免欺诈，提供这些文件是必须的，并可确保您的账户安全不受可能的损害。</p>
+<p id="block-4f46493c-64ce-4cd0-9592-de0e3b2fda64" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="4f46493c-64ce-4cd0-9592-de0e3b2fda64" data-type="core/paragraph" data-title="Paragraph">请注意，删除您的个人数据后，相关信息也将被删除，例如您在游戏中的进度，包括您的 等级，购买的内容许可（包括真实货币购买）以及与该账户相关的任何游戏内内容。且无法进行恢复。通过要求删除您的个人数据，您承认并接受这一事实，并批准删除此相关信息。</p>
+<p id="block-e26bd2d4-18be-4498-a2b2-018f934d4a28" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="e26bd2d4-18be-4498-a2b2-018f934d4a28" data-type="core/paragraph" data-title="Paragraph">请注意，如果您撤回对处理的授权，您可能仍无法再访问Spunge Games的服务。</p>
+<p id="block-b914a6db-144c-4483-92f1-860ee2bfc104" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="b914a6db-144c-4483-92f1-860ee2bfc104" data-type="core/paragraph" data-title="Paragraph">请记住，所有关于删除个人数据的通信只能用英文进行。</p>
+<p id="block-bec811ac-9bc2-4ce5-bf07-1949317354a7" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="bec811ac-9bc2-4ce5-bf07-1949317354a7" data-type="core/paragraph" data-title="Paragraph"><strong>第三方服务</strong></p>
+<p id="block-d1c288ce-e2dc-49b9-abe8-b5c466834fb4" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="d1c288ce-e2dc-49b9-abe8-b5c466834fb4" data-type="core/paragraph" data-title="Paragraph">当您使用Spunge Games服务时，您可能还会使用第三方服务，例如Facebook、Twitter和Game Centre等。我们无法控制他们如何与您互动，在向这些第三方服务提供您的信息之前，您应确保您同意这些第三方服务提供的使用条款和隐私政策。</p>
+<p id="block-825ef37f-553b-4cb9-9b74-f104950a4a01" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="825ef37f-553b-4cb9-9b74-f104950a4a01" data-type="core/paragraph" data-title="Paragraph"><strong>通过使用我们的服务，您了解当第三方服务使用您提供给它们的信息时，我们不承担任何责任。</strong></p>
+<p id="block-1d09caf4-fbb2-4299-8147-60c015a53b96" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="1d09caf4-fbb2-4299-8147-60c015a53b96" data-type="core/paragraph" data-title="Paragraph">我们还与某些业务合作伙伴合作，如其他游戏开发商和广告合作伙伴，从您这里收集的信息可能会通过这些合作伙伴进行共享。</p>
+<p id="block-a9735e27-c5b4-4848-9c7b-7162e8d40ef7" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="a9735e27-c5b4-4848-9c7b-7162e8d40ef7" data-type="core/paragraph" data-title="Paragraph">我们的部分业务合作伙伴位于澳大利亚境外。以下是我们积极与之共享用户信息和网站使 用数据的部分业务合作伙伴的列表（此列表可能会有所更改）：</p>
+<ul id="block-01de918b-5871-48cb-9e4e-5f55f5d4b9f6" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="01de918b-5871-48cb-9e4e-5f55f5d4b9f6" data-type="core/list" data-title="List">
+<li>Apple (Search Ads)&nbsp;<a href="https://support.apple.com/en-us/HT202074">https://support.apple.com/en-us/HT202074</a></li>
+<li>AppLovin&nbsp;<a href="https://www.applovin.com/optout">https://www.applovin.com/optout</a></li>
+<li>Apps Flyer&nbsp;<a href="https://www.appsflyer.com/privacy-policy/">https://www.appsflyer.com/privacy-policy/</a></li>
+<li>AdColony&nbsp;<a href="https://www.adcolony.com/privacy-policy/">https://www.adcolony.com/privacy-policy/</a></li>
+<li>Chartboost&nbsp;<a href="https://chartboost.zendesk.com/hc/en-us/articles/200780269-Privacy-Policy"><s>https://chartboost.zendesk.com/hc/en-us/articles/200780269-Privacy-Policy</s></a></li>
+<li>Facebook&nbsp;<a href="https://www.facebook.com/help/325807937506242">https://www.facebook.com/help/325807937506242</a></li>
+<li>Firebase&nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a>/</li>
+<li>Fyber&nbsp;<a href="https://www.fyber.com/privacy-policy/" target="_blank" rel="noopener noreferrer">https://www.fyber.com/privacy-policy/</a></li>
+<li>Google (Adx)&nbsp;<a href="https://www.google.com/ads/preferences/html/mobile-about.html">https://www.google.com/ads/preferences/html/mobile-about.html</a>;</li>
+<li>Google (Ad Words)&nbsp;<a href="https://support.google.com/ads/answer/2662922?hl=en">https://support.google.com/ads/answer/2662922?hl=en</a>;</li>
+<li>Google (AdMob)&nbsp;<a href="https://www.google.com/ads/preferences/html/mobile-about.html">https://www.google.com/ads/preferences/html/mobile-about.html</a>;</li>
+<li>Instagram&nbsp;<a href="https://help.instagram.com/155833707900388">https://help.instagram.com/155833707900388</a></li>
+<li>Ironsource&nbsp;<a href="https://developers.ironsrc.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/">https://developers.ironsrc.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/</a></li>
+<li>Smaato and its partners&nbsp;<a href="https://www.smaato.com/privacy/" target="_blank" rel="noopener noreferrer">https://www.smaato.com/privacy/</a>&nbsp;<a href="https://www.smaato.com/partner-list/" target="_blank" rel="noopener noreferrer">https://www.smaato.com/partner-list/</a></li>
+<li>TapJoy&nbsp;<a href="https://dev.tapjoy.com/faq/tapjoy-privacy-policy/">https://dev.tapjoy.com/faq/tapjoy-privacy-policy/</a></li>
+<li>Unity&nbsp;<a href="https://unity3d.com/legal/privacy-policy">https://unity3d.com/legal/privacy-policy</a></li>
+<li>Vungle&nbsp;<a href="https://vungle.com/opt-out/">https://vungle.com/opt-out/</a></li>
+</ul>
+<p id="block-e3b5bfb6-4d3e-4ee4-a64d-0fd4d10d418a" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="e3b5bfb6-4d3e-4ee4-a64d-0fd4d10d418a" data-type="core/paragraph" data-title="Paragraph"><strong>广告ID</strong></p>
+<p id="block-1d8893d2-5b9f-4e86-b04b-4782f1564f2f" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="1d8893d2-5b9f-4e86-b04b-4782f1564f2f" data-type="core/paragraph" data-title="Paragraph">了解我们的玩家是创造粉丝想玩的有趣游戏的基础。广告ID是一个唯一的ID，它能让用户更好地控制游戏，并为开发者提供一个简单、标准的系统，让他们继续从应用中盈利，并确保客户与产品和服务的广告符合他们的兴趣。您可以随时通过移动设备上的设置重置自己的ID。收集您的广告ID可以帮助我们了解您的兴趣是什么，以及我们如何为您量身定制与之匹配的体验。</p>
+<p id="block-6aa1d834-28ec-4ac1-ad65-f3999f2a491c" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="6aa1d834-28ec-4ac1-ad65-f3999f2a491c" data-type="core/paragraph" data-title="Paragraph"><strong>存储与安全</strong></p>
+<p id="block-f6ffccd9-3621-4045-b6af-4cdc519cf251" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="f6ffccd9-3621-4045-b6af-4cdc519cf251" data-type="core/paragraph" data-title="Paragraph">我们遵循普遍接受的行业标准，并保持合理的保障措施，以努力确保我们所拥有的信息的安全性、完整性和隐私性。</p>
+<p id="block-a8ed77c8-0c92-430b-95a2-9a4bc6c81cb7" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="a8ed77c8-0c92-430b-95a2-9a4bc6c81cb7" data-type="core/paragraph" data-title="Paragraph"><strong>访问与更正</strong></p>
+<p id="block-1edea281-7fa8-4e0f-8090-6b9c5847120c" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="1edea281-7fa8-4e0f-8090-6b9c5847120c" data-type="core/paragraph" data-title="Paragraph">您可以随时发送书面要求至<a href="mailto:marketing@spungegames.com">marketing@spungegames.com</a></p>
+<p id="block-304d86f2-a765-4f2c-a06b-5d044c75e927" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="304d86f2-a765-4f2c-a06b-5d044c75e927" data-type="core/paragraph" data-title="Paragraph">向我们的隐私官申请访问个人信息<br data-rich-text-line-break="true">如果需要大量的时间来定位您的信息或以适当的形式收集或提供信息，我们可能会收取少量的访问费用。如果有合理的理由，我们可能会拒绝您的访问。如果您的信息发生变化，请告知我们，以便我们更新记录。如果您希望我们取消您的记录，也请告知我们。一旦失效，您的数据将无法访问。然而，由于系统备份会到各种类型的数据存储介质，您的数据可能在某些情况下仍保留在这些类型的数据存储介质上。在某些情况下，我们可能会拒绝将您的记录失效。</p>
+<p id="block-38033f5f-af5d-4665-8e17-17be841198ed" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="38033f5f-af5d-4665-8e17-17be841198ed" data-type="core/paragraph" data-title="Paragraph"><strong>投诉联系人</strong></p>
+<p id="block-a86757e9-0dfd-4909-982f-b93b9197b4b1" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="a86757e9-0dfd-4909-982f-b93b9197b4b1" data-type="core/paragraph" data-title="Paragraph">如果您对您的隐私有任何担忧或投诉，请通过以下方式联系我们：</p>
+<p id="block-a65b1df3-7c47-4c83-87eb-b1c8a38d57f6" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="a65b1df3-7c47-4c83-87eb-b1c8a38d57f6" data-type="core/paragraph" data-title="Paragraph">通过邮件向我们的隐私官发送书面请求：<br data-rich-text-line-break="true"><a href="mailto:marketing@spungegames.com">marketing@spungegames.com</a></p>
+<p id="block-6cc8e0da-4b51-44e0-87ec-7d3192d78bb0" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="6cc8e0da-4b51-44e0-87ec-7d3192d78bb0" data-type="core/paragraph" data-title="Paragraph">我们将在收到您的投诉后的合理时间内回复您的投诉，前提是您提供退货的联系方式。</p>
+<p id="block-a32409f0-9531-4a73-89dc-deab27d9b75d" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="a32409f0-9531-4a73-89dc-deab27d9b75d" data-type="core/paragraph" data-title="Paragraph"><strong>本政策的更新</strong></p>
+<p id="block-73f40a22-015d-4e0d-84a8-181fd1edfcb9" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="73f40a22-015d-4e0d-84a8-181fd1edfcb9" data-type="core/paragraph" data-title="Paragraph">我们会不定时更新本隐私政策。这些更新，将于发布之日起在我们的网站&nbsp;<a href="http://www.spungegames.com/">www.spungegames.com</a> 上生效。请定期查看更新。</p>
+<p id="block-261a11ae-be47-4ff7-881a-13c6f238b422" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="261a11ae-be47-4ff7-881a-13c6f238b422" data-type="core/paragraph" data-title="Paragraph"><strong>定义</strong></p>
+<ul id="block-49a8e7d9-0e59-4925-b804-69c6ceda033c" class="block-editor-rich-text__editable block-editor-block-list__block wp-block rich-text" tabindex="0" data-block="49a8e7d9-0e59-4925-b804-69c6ceda033c" data-type="core/list" data-title="List">
+<li><strong>Spunge Games (“我们”)</strong>&nbsp;– 其受让人、被许可人、所有权继承者和子公司。</li>
+<li><strong>产品和服务</strong>&nbsp;– 我们提供的产品和服务，包括我们的游戏、网站和相关服务。</li>
+<li><strong>Game Centre</strong>&nbsp;– 一个中央游戏中心，保留与用户公开共享的游戏玩法统计信息。这包括高分、全球排行榜、好友列表和游戏内成就。</li>
+<li><strong>商店</strong>&nbsp;– 用于销售的在线商业存在。我们与Apple App Store和Google Play商店合作 ，作为他们的主要销售商店，但我们的游戏也可以在Amazon App Store和 Windows Phone Store等平台上购买。</li>
+<li><strong>分析</strong>&nbsp;– 对未知数据进行解释和插值，以预测和隔离与游戏体验和应用使用相关的趋势。</li>
+<li><strong>应用内购买</strong>&nbsp;– 允许用真实货币兑换虚拟商品或游戏内货币的游戏内系统。</li>
+<li><strong>第三方服务</strong>&nbsp;– 由不属于我们所有或控制的提供商提供的服务。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+						<div class="store-buttons row d-block d-md-flex align-items-end text-center g-3 d-none" style="margin-top: 2rem;">
+							<div class="col d-none">
+								<a href="" class="d-inline-block text-decoration-none mw-100" target="_blank">
+									<img src="/resize_image.php?image=&amp;max_width=200&amp;max_height=200" alt="Store Button Image" class="d-block mw-100" style="max-height: 60px;">
+								</a>
+							</div>
+							<div class="col d-none">
+								<a href="" class="d-inline-block text-decoration-none mw-100" target="_blank">
+									<img src="/resize_image.php?image=&amp;max_width=200&amp;max_height=200" alt="Store Button Image" class="d-block mw-100" style="max-height: 60px;">
+								</a>
+							</div>
+							<div class="col d-none">
+								<a href="" class="d-inline-block text-decoration-none mw-100" target="_blank">
+									<img src="/resize_image.php?image=&amp;max_width=200&amp;max_height=200" alt="Store Button Image" class="d-block mw-100" style="max-height: 60px;">
+								</a>
+							</div>
+							<div class="col d-none">
+								<a href="" class="d-inline-block text-decoration-none mw-100" target="_blank">
+									<img src="/resize_image.php?image=&amp;max_width=200&amp;max_height=200" alt="Store Button Image" class="d-block mw-100" style="max-height: 60px;">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="d-none popup-container-image">
+						
+					</div>
+					<div class="popup-container d-none" data-popuptype="" data-value="
+						">
+						<div class="popup-container-content"></div>
+					</div>
+				</div>
+
+				<div class="d-md-none col-sm-1"></div>
+			</div>
+		</div>
+	
+</section>
+
+
+<script>
+	$(document).ready(function() {
+		// loop through ".store-buttons a", remove "d-none" on .col if link is not empty
+		$(".store-buttons a").each(function() {
+			var link = ($(this).attr("href") || '').trim();
+
+			if (link.length > 0) {
+				$(this).closest('.col').removeClass("d-none");
+			}
+		});
+	});
+</script>
+    </div>
+
+    <div class="py-5 d-none" style="background-color: rgba(169, 184, 192, 0.5);">
+    <div class="container my-3">
+        <h2 class="fw-semibold text-center" style="margin-bottom: 2.5rem;">
+            Interested in working together?
+        </h2>
+        <div class="text-center">
+            <a href="/connect" class="btn btn-dark fw-bold rounded-4">
+                Get in touch
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white py-5" style="min-height: 200px;">
+    <div class="container mt-3">
+        <div class="row g-3 text-center text-lg-start">
+            <div class="col-12 col-lg-3">
+                <a href="/">
+                    <img src="/cicms/includes/site/assets/img/logo_banner_bottom.png" alt="Logo" style="height: 52px;max-width: 100%;">
+                </a>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <ul class="list-group list-group-flush">
+                    
+                        <li class="list-group-item border-0 p-0 mb-2">
+                            <a class="footer-dropdown-toggle footer-link h6 fw-semibold mb-0" href="/home">
+                                <span>
+                                    Home
+                                </span>
+                            </a>
+
+                            <ul class="d-none footer-dropdown-menu list-group">
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="list-group-item border-0 p-0 mb-2">
+                            <a class="footer-dropdown-toggle footer-link h6 fw-semibold mb-0" href="javascript:void(0);">
+                                <span>
+                                    About
+                                </span>
+                            </a>
+
+                            <ul class="d-none footer-dropdown-menu list-group">
+                                
+                                    <li class="border-0 p-0 ms-3 mb-0">
+                                        <a class="footer-link h6 fw-semibold mb-0" href="/our-company">
+                                                <span>
+                                                    Our Company
+                                                </span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="border-0 p-0 ms-3 mb-0">
+                                        <a class="footer-link h6 fw-semibold mb-0" href="/our-success">
+                                                <span>
+                                                    Our Success
+                                                </span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="border-0 p-0 ms-3 mb-0">
+                                        <a class="footer-link h6 fw-semibold mb-0" href="/The-Liquid-Group">
+                                                <span>
+                                                    The Liquid Group
+                                                </span>
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="list-group-item border-0 p-0 mb-2">
+                            <a class="footer-dropdown-toggle footer-link h6 fw-semibold mb-0" href="javascript:void(0);">
+                                <span>
+                                    Games
+                                </span>
+                            </a>
+
+                            <ul class="d-none footer-dropdown-menu list-group">
+                                
+                                    <li class="border-0 p-0 ms-3 mb-0">
+                                        <a class="footer-link h6 fw-semibold mb-0" href="/mobile-games">
+                                                <span>
+                                                    Mobile
+                                                </span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="border-0 p-0 ms-3 mb-0">
+                                        <a class="footer-link h6 fw-semibold mb-0" href="/vr-pc-games">
+                                                <span>
+                                                    VR &amp; PC
+                                                </span>
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="list-group-item border-0 p-0 mb-2">
+                            <a class="footer-dropdown-toggle footer-link h6 fw-semibold mb-0" href="/careers">
+                                <span>
+                                    Careers
+                                </span>
+                            </a>
+
+                            <ul class="d-none footer-dropdown-menu list-group">
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="list-group-item border-0 p-0 mb-2">
+                            <a class="footer-dropdown-toggle footer-link h6 fw-semibold mb-0" href="/connect">
+                                <span>
+                                    Connect
+                                </span>
+                            </a>
+
+                            <ul class="d-none footer-dropdown-menu list-group">
+                                
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <ul class="list-group list-group-flush">
+                    
+                        <li class="list-group-item border-0 p-0 mb-2">
+                            <a class="footer-link h6 fw-semibold mb-0" href="/mobile-games">
+                                <span>
+                                    Mobile
+                                </span>
+                            </a>
+                        </li>
+                    
+                        <li class="list-group-item border-0 p-0 mb-2">
+                            <a class="footer-link h6 fw-semibold mb-0" href="/vr-pc-games">
+                                <span>
+                                    VR &amp; PC
+                                </span>
+                            </a>
+                        </li>
+                    
+                        <li class="list-group-item border-0 p-0 mb-2">
+                            <a class="footer-link h6 fw-semibold mb-0" href="">
+                                <span>
+                                    &nbsp;
+                                </span>
+                            </a>
+                        </li>
+                    
+                        <li class="list-group-item border-0 p-0 mb-2">
+                            <a class="footer-link h6 fw-semibold mb-0" href="">
+                                <span>
+                                     
+                                </span>
+                            </a>
+                        </li>
+                    
+                        <li class="list-group-item border-0 p-0 mb-2">
+                            <a class="footer-link h6 fw-semibold mb-0" href="/privacy-policy">
+                                <span>
+                                    Privacy Policy
+                                </span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="mb-5">
+                    <p class="mb-0">1/324 Wickham St.</p>
+<p class="mb-0">Fortitude Valley</p>
+<p class="mb-0">QLD 4006</p>
+<p class="mb-0">Australia</p>
+                </div>
+
+                <div class="text-center text-lg-start">
+                    <div class="d-inline-block">
+                        
+                            <a class="btn btn-primary fw-semibold text-white d-flex align-items-center justify-content-center rounded-circle p-2 float-start me-2 mb-3" target="_blank" href="https://www.facebook.com/failybrakes/" title="Facebook" style="width: 32px;height: 32px;">
+                                <i class=" fa-brands fa-facebook-f" style="font-size: 18px;"></i>
+                            </a>
+                        
+                            <a class="btn btn-primary fw-semibold text-white d-flex align-items-center justify-content-center rounded-circle p-2 float-start me-2 mb-3" target="_blank" href="https://twitter.com/spungegames" title="Twitter" style="width: 32px;height: 32px;">
+                                <i class=" fa-brands fa-twitter" style="font-size: 18px;"></i>
+                            </a>
+                        
+                            <a class="btn btn-primary fw-semibold text-white d-flex align-items-center justify-content-center rounded-circle p-2 float-start me-2 mb-3" target="_blank" href="https://au.linkedin.com/company/spunge-games-pty-ltd" title="LinkedIn" style="width: 32px;height: 32px;">
+                                <i class=" fa-brands fa-linkedin-in" style="font-size: 18px;"></i>
+                            </a>
+                        
+                            <a class="btn btn-primary fw-semibold text-white d-flex align-items-center justify-content-center rounded-circle p-2 float-start me-2 mb-3" target="_blank" href="https://www.youtube.com/channel/UC1Vxw-jQxElAg8Pd2orp-sQ" title="Youtube" style="width: 32px;height: 32px;">
+                                <i class=" fa-brands fa-youtube" style="font-size: 18px;"></i>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.footer-dropdown-menu').each(function () {
+            var $dropdownMenu = $(this);
+            var $dropdownMenuItems = $dropdownMenu.find('li');
+
+            if ($dropdownMenuItems.length > 0) {
+                $dropdownMenu.parent().find('.footer-dropdown-toggle').attr('href', 'javascript:void(0);');
+            }
+        });
+
+        $('.footer-dropdown-toggle').on('click', function (e) {
+            var $self = $(this);
+
+            if ($self.attr('href') === 'javascript:void(0);') {
+                e.preventDefault();
+
+                var $dropdownMenu = $self.parent().find('.footer-dropdown-menu');
+
+                if ($dropdownMenu.hasClass('d-none')) {
+                    $('.footer-dropdown-menu').addClass('d-none');
+                    $dropdownMenu.removeClass('d-none');
+                } else {
+                    $('.footer-dropdown-menu').addClass('d-none');
+                    $dropdownMenu.addClass('d-none');
+                }
+            }
+        });
+    });
+</script>
+
+
+
+</body></html>

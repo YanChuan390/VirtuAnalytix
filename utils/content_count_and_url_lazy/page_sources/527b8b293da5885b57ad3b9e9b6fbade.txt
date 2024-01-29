@@ -1,0 +1,264 @@
+<html><head>
+	<title>Game Dev Project</title>
+	<!-- Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script>
+		// Make sure Jquery Loaded by CDN
+		// If not load local jquery file
+		if (typeof jQuery == 'undefined') {
+	    	var script = document.createElement('script');
+	    	script.type = "text/javascript";
+	   		script.src = "assets/js/jquery2.2.0.min.js";
+	    	document.getElementsByTagName('head')[0].appendChild(script);
+		}
+	</script>
+	<script src="assets/js/slider.js"></script>
+	<script src="assets/js/lightbox.js"></script>
+	<script src="assets/js/mustache.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="container" style="padding-left:0px;">
+			<img src="resources/IEDLogoWhite.png" style="width:45px;">
+			<h1>I<span>ncendiary</span> E<span>ntertainment</span> D<span>ivision</span></h1>
+			<ul class="nav">
+				<!--<li><a class="page" href="#">Home</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>-->
+			</ul>
+		</div><!-- end .container -->
+	</header>
+
+	<div class="slider"><div class="slider_stage"><div class="slider_nav"><div class=""></div><div class="selected"></div><div class=""></div></div><div class="slider_container_1" style="opacity: 1;"><div class="slider_panel" style="background-image: url(resources/RuneCaster/images/RuneCasterLogo_banner.png); background-position: center center; background-repeat: no-repeat; background-size: cover;"><div class="panel_caption">
+				<h3></h3>
+				<p></p>
+			</div></div></div></div></div><!-- end .slider -->
+
+	<div class="banner">
+		<div class="container">
+			<h2>"Empowering Education through Experience"</h2>
+		</div><!-- end .container -->
+	</div><!-- end .banner -->
+
+	<div class="cards cf">
+		<div class="container">
+			<article id="article1">
+				<img src="resources/ZEscape/images/zEscape_Banner.png">
+				<span class="card-overlay">
+					<h3>Z Escape</h3>
+					<p>A 2.5D platformer/Shooter</p>
+				</span>
+			</article>
+			<article id="article2">
+				<img src="resources/RuneCaster/images/RuneCasterLogo_grey.png">
+				<span class="card-overlay">
+					<h3>RuneCaster</h3>
+					<p>A Virtual Reality Fantasy/Puzzle/Exploration game for the HTC Vive </p>
+				</span>
+			</article>
+			<article id="article3">
+				<img src="resources/Rats/images/RATSLogo.png">
+				<span class="card-overlay">
+					<h3>RATS</h3>
+					<p>A fast-paced 3D twin stick shooter</p>
+				</span>
+			</article>
+			<article id="article4">
+				<img src="resources/IEDLogo.png">
+				<span class="card-overlay">
+					<h3>Coming Soon!</h3>
+					<p>Check back for a new exciting game here</p>
+				</span>
+			</article>
+			<article id="article5">
+				<img src="resources/IEDLogo.png">
+				<span class="card-overlay">
+					<h3>Coming Soon!</h3>
+					<p>Check back for a new exciting game here</p>
+				</span>
+			</article>
+			<article id="article6">
+				<img src="resources/IEDLogo.png">
+				<span class="card-overlay">
+					<h3>Coming Soon!</h3>
+					<p>Check back for a new exciting game here</p>
+				</span>
+			</article>	
+			
+		</div><!-- end .container -->
+	</div><!-- end .cards -->
+
+	<div id="lightbox" class="Game1">
+		<div class="container">
+			<span id="closeme" class="close1">x</span>
+			<div class="board">
+				<div class="content">
+					<h2>Z Escape</h2>
+					<video controls="" poster="resources/ZEscape/images/zEscape_Banner.png">
+					<source src="resources/ZEscape/videos/Z Escape - Z Escape Gameplay Trailer.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video> 
+<p><u><strong>Downloads</strong></u></p>
+					<a href="https://play.google.com/apps/testing/com.IEDStudios.ZEscape" target="_blank"><img style="width:150px;" src="resources/GOGP.png"></a>
+					<br>
+					 or 
+					<a href="resources/ZEscape/downloads/ZEscapeFinal072716.zip" target="_blank">PC Version </a>
+					<br><br>
+					<p><u><strong>Summary</strong></u></p>
+					<p>Z Escape is a 2.5D platformer/Shooter where the player has to outmaneuver and shoot zombies while collecting Key items to unlock safe zone in order to progress to the next levels. Every 4 Levels the player is forced to fight big zombie bosses which he can鈥檛 run away from and has to use the environment and weapons to defeat them.<br><br></p>
+					<p><u><strong>Features</strong></u></p>
+					<ul>
+					<li>7 unique single player campaign levels</li>
+					<li>4 Endurance levels</li>
+					<li>An arsenal of weapons to pickup in the field</li>
+					<li>Skins for your character</li>
+					<li>Lots of zombies to kill.</li>
+					</ul>
+				</div>
+			</div><!-- end .board -->
+		</div><!-- end .container -->
+	</div><!-- end #lightbox -->
+	
+	<div id="lightbox" class="Game2">
+		<div class="container">
+			<span id="closeme" class="close2">x</span>
+			<div class="board">
+				<div class="content">
+					<h2>RuneCaster</h2>
+					<video controls="" poster="resources/RuneCaster/images/RuneCasterLogo.png">
+					<source src="resources/RuneCaster/videos/Runecaster - Beta Gameplay Trailer.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video> 
+					<p><u><strong>Summary</strong></u></p>
+					<p>RuneCaster is a Virtual Reality Fantasy/Puzzle/Exploration game for the HTC Vive where you assume the role of a RuneCaster. Spanning five uniquely immersive levels, you must use your spellbook and wand to cast spells by drawing runes in the air, solve puzzles, reach new areas and defeat enemies.<br><br></p>
+					<p><u><strong>Features</strong></u></p>
+					<ul>
+					<li>RuneCasting: Using the wand in your right hand, you must draw runes in the air to cast a variety of spells including Illuminate, Flame Blast and several more.</li>
+					<li>Interaction: Using your Vive controllers, you may interact with the environment by casting spells or by grabbing objects and creatures.</li>
+					<li>Movement: RuneCaster has three different ways to move: teleportation, for enclosed roomscale manuevering. Joypad, For moving through a larger scale world. Finally we have the Skateboard, which is best used to travel in large open spaces. having multiple forms of movement allows you to explore the world the way you want to explore.</li>
+					<li>Levels: RuneCaster contains many different ways to play across five diverse levels. Each of these levels is very unique both in theming and gameplay and will challenge you to use your full array of spells to succeed. The extreme difference in theme/style from level to level is meant to reinforce the idea that you are traveling to completely different worlds and allows the player to experience a variety of enviroments.</li>
+					</ul>
+					<div class="image-gallery">
+					<a href="resources/RuneCaster/images/Candle.png" target="_blank"><img src="resources/RuneCaster/images/Candle.png"></a>
+					<a href="resources/RuneCaster/images/cannon.png" target="_blank"><img src="resources/RuneCaster/images/cannon.png"></a>
+					<a href="resources/RuneCaster/images/fall.png" target="_blank"><img src="resources/RuneCaster/images/fall.png"></a>
+					<a href="resources/RuneCaster/images/fireworks.png" target="_blank"><img src="resources/RuneCaster/images/fireworks.png"></a>
+					<a href="resources/RuneCaster/images/minion 2.png" target="_blank"><img src="resources/RuneCaster/images/minion 2.png"></a>
+					<a href="resources/RuneCaster/images/phoenix before.png" target="_blank"><img src="resources/RuneCaster/images/phoenix before.png"></a>
+					<a href="resources/RuneCaster/images/rune hand.png" target="_blank"><img src="resources/RuneCaster/images/rune hand.png"></a>
+					<a href="resources/RuneCaster/images/winter-enemy.png" target="_blank"><img src="resources/RuneCaster/images/winter-enemy.png"></a>
+					</div>
+				</div>
+			</div><!-- end .board -->
+		</div><!-- end .container -->
+	</div><!-- end #lightbox -->
+
+	<div id="lightbox" class="Game3">
+		<div class="container">
+			<span id="closeme" class="close3">x</span>
+			<div class="board">
+				<div class="content">
+					<h2>RATS</h2>
+					<video controls="" poster="resources/Rats/images/RATSLogo.png">
+					<source src="resources/Rats/videos/rats_trailer_final.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<p><u><strong>Summary</strong></u></p>
+					<p>R.A.T.S is a fast-paced 3D twin stick shooter where the battlefield is anything but stable! The player controls a ship on the surface of a star about to go Supernova. The player must maintain the Star Stabilization field while enemies try to destroy it.<br><br></p>
+					<p><u><strong>Features</strong></u></p>
+					<ul>
+					<li>30 Exciting levels</li>
+					<li>3 unique upgradable weapons</li>
+					<li>7 challenging enemy types</li>
+					<li>Full Controller Support</li>
+					<li>Dynamic soundtrack with beat detection</li>
+					<li>3 stunning level shapes</li>
+					<li>Stunning Visual Effects</li>
+					</ul>
+					<div class="image-gallery">
+					
+					<a href="resources/Rats/images/april2016gess1.PNG" target="_blank"><img src="resources/Rats/images/april2016gess1.PNG"></a>
+					<a href="resources/Rats/images/april2016gess2.PNG" target="_blank"><img src="resources/Rats/images/april2016gess2.PNG"></a>
+					<a href="resources/Rats/images/april2016gess3.PNG" target="_blank"><img src="resources/Rats/images/april2016gess3.PNG"></a>
+					<a href="resources/Rats/images/april2016gess4.PNG" target="_blank"><img src="resources/Rats/images/april2016gess4.PNG"></a>
+					<a href="resources/Rats/images/april2016gess5.PNG" target="_blank"><img src="resources/Rats/images/april2016gess5.PNG"></a>
+					<a href="resources/Rats/images/april2016gess6.PNG" target="_blank"><img src="resources/Rats/images/april2016gess6.PNG"></a>
+					<a href="resources/Rats/images/april2016gess7.PNG" target="_blank"><img src="resources/Rats/images/april2016gess7.PNG"></a>
+					<a href="resources/Rats/images/april2016gess8.PNG" target="_blank"><img src="resources/Rats/images/april2016gess8.PNG"></a>
+					<a href="resources/Rats/images/april2016gess9.PNG" target="_blank"><img src="resources/Rats/images/april2016gess9.PNG"></a>
+					</div>
+				</div>
+			</div><!-- end .board -->
+		</div><!-- end .container -->
+	</div><!-- end #lightbox -->
+
+	<div id="lightbox" class="Game4">
+		<div class="container">
+			<span id="closeme" class="close4" "="">x</span>
+			<div class="board">
+				<div class="content">
+					<h2>Coming Soon!</h2>
+					<img src="resources/ProjectZ/ComicGuyConcept.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div><!-- end .board -->
+		</div><!-- end .container -->
+	</div><!-- end #lightbox -->
+
+	<div id="lightbox" class="Game5">
+		<div class="container">
+			<span id="closeme" class="close5">x</span>
+			<div class="board">
+				<div class="content">
+					<h2>Coming Soon!!</h2>
+					<img src="resources/ProjectZ/ComicGuyConcept.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div><!-- end .board -->
+		</div><!-- end .container -->
+	</div><!-- end #lightbox -->
+
+	<div id="lightbox" class="Game6">
+		<div class="container">
+			<span id="closeme" class="close6">x</span>
+			<div class="board">
+				<div class="content">
+					<h2>Coming Soon!!!</h2>
+					<img src="resources/ProjectZ/ComicGuyConcept.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div><!-- end .board -->
+		</div><!-- end .container -->
+	</div><!-- end #lightbox -->
+	
+	<footer>
+	<!-- Start About-->
+			<div class="about-us">
+			<h2>About Incendiary Entertainment Division (IED)</h2>
+			<p>At Incendiary Entertainment Division (IED), we grow tired of seeing gaming students not receive the exposure they deserve. These students require more than education to prepare them for the gaming industry. They require experience.</p>
+			<p>At IED, we want to give students the ability to show the world their creative works, while guiding them through the publishing process. We aim to become a leading publisher of student game projects.</p>
+			</div>
+		<!-- End About -->
+		<p>Incendiary Entertainment Division<br>Copyright 2016<br>Developed By Matthew Greenberg,<br>Katie Grinberg</p>
+	</footer>
+
+</body></html>

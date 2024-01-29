@@ -1,0 +1,718 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bizango Blast</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="3D Physics Cannon Puzzle Game">
+    <meta name="keywords" content="angry, birds, angry birds, angrybirds, crush, castle, crush the castle, bizango, bazinga, bizanga, bizango blast, bizangob, blast, 3d, physics, unreal, unreal engine, 3d physics, physics puzzle, puzzle game, video game, pc game, steam, fun, cannon ">
+    <meta name="copyright" content="Copyright 2011-2018 Olivier Archer">
+<link href="css/bizango.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header" id="header">
+  <a class="logo" href="#home">Bizango Blast</a>
+  <div class="header-right" id="menu">
+    <a href="#about" onclick="mobileMenu()" class="menuitem">About</a>
+    <a href="#trailer" onclick="mobileMenu()" class="menuitem">Trailer</a>
+    <a href="#screenshots" onclick="mobileMenu()" class="menuitem">Screen Shots</a>
+    <a href="#features" onclick="mobileMenu()" class="menuitem">Features</a>
+    <a href="#HowToPlay" onclick="mobileMenu()" class="menuitem">How to Play</a>
+    <a href="#targets" onclick="mobileMenu()" class="menuitem">Bad Guys</a>
+    <a href="#contact" onclick="mobileMenu()" class="menuitem">Contact</a>
+  </div>
+  <a onclick="mobileMenu()" class="menu">Menu</a>
+</div>
+
+<script>
+
+function mobileMenu() {
+  var x = document.getElementById("menu");
+  var y = document.getElementById("header");
+  if (x.className === "header-right") {
+      x.className = "header-righter";
+      document.getElementById("header").style.backgroundColor = "white";
+      //y.style.paddingBottom = "100%";
+  } else {
+      x.className = "header-right";
+      document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0)";
+      //y.style.paddingBottom = "0%";
+  }
+}
+
+function MenuBG() {
+    
+    var scrollpercent = document.body.scrollTop;
+    
+     //console.log(scrollpercent);
+    
+    if(scrollpercent > 600){
+        document.getElementById("header").style.backgroundColor = "gold";
+        //console.log(scrollpercent+"see through");
+    } else {
+        document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0)";
+        //console.log(scrollpercent+"gold");
+        
+    }
+    
+    
+     //console.log(scrollpercent);
+    //var scrollpercent = document.body.scrollTop;
+    
+   
+}
+
+window.onscroll = MenuBG;
+
+</script>
+<video autoplay="" muted="" loop="" playsinline="" class="bgimg" id="home">
+  <source src="BizangoBG.mp4" type="video/mp4" alt="intro">
+</video>
+
+<div>
+    <div class="caption">
+      <a href="https://store.steampowered.com/app/983520/Bizango_Blast/" style="text-decoration:none"><span class="border">Click here to buy!<br>
+                        &nbsp; Now on Steam!</span></a>
+    </div>
+</div>
+  <div align="center" id="about" class="about2">
+   <h2>About</h2>
+    <div class="aboutgrid" align="center">
+        
+        <img src="bg.jpg" class="about" alt="screenshot" id="ssa">
+        
+            <div class="abouttext">
+                You've played and love those other physics games and now you're over those darn birds and want something with a new perspective?
+            </div>
+            
+            <div class="abouttext2">
+                The Staries are being invaded and need your help! <br>
+                Use the Bizango Cannon to blast the bad guys and their structures in a new dimension of challenge and excitement! <br>
+            </div>
+            
+            <img src="images/BizangoInvestigateweb.jpg" class="about" alt="screenshot" id="ssa">
+            
+            <div class="abouttext3">
+                Stop the invasion from a mysterious enemy and save the eggs. The bad guys are stealing your magic and taking your future by capturing the eggs, it is time to defend your world! <br>
+            </div>
+            
+            <img src="images/AllEggsWeb.png" class="about2" alt="screenshot" id="ssa">
+            
+            <div class="abouttext4">
+                Be careful because the bad guys have brought the Staries' eggs to the battlefield! You'll need to aim well to do maximum damage but careful enough so you don't hurt the eggs. <br>
+                The Staries are counting on you! <br>
+            </div>
+    </div>
+</div>
+  
+ <script>
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+
+    function labnolThumb(id) {
+        //var thumb = '<img src="https://i.ytimg.com/vi/ID/maxresdefault.jpg">',
+        var thumb = '<img src="/maxresdefault.jpg" alt="trailer">',
+            //play = '<div class="play"></div>';
+            play = '<img src="/play.png" class="play" alt="play">';
+        return thumb.replace("ID", id) + play;
+    }
+
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1&rel=0&autoplay=1&controls=2&autohide=1&wmode=opaque&enablejsapi=1&showinfo=0&modestbranding=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+
+</script>
+<div>&nbsp;</div>
+<div align="center" id="trailer">
+<h2>Watch the trailer!</h2>
+</div>
+<div class="youtube-player" data-id="z4GsuURXels"><div data-id="z4GsuURXels"><img src="/maxresdefault.jpg" alt="trailer"><img src="/play.png" class="play" alt="play"></div></div>
+
+
+
+<script>
+    
+function SShots(element) {
+    
+    //var x = document.getElementsByClassName("SShots");
+    var x = document.getElementById("SShots");
+    var y = document.getElementById("Close");
+    var z = document.getElementById("ssbig");
+    
+    if (element != null){
+        
+        
+        
+    z.src = element.src.replace('t.jpg','.jpg');
+    
+    console.log(element.src.replace('t.jpg','.jpg'))
+    
+    }
+
+        
+    if (x.style.display === 'inline-block') {
+          
+        x.style.display = 'none';
+        y.style.display = 'none';
+        
+    } else {
+        
+        x.style.display = 'inline-block';
+        y.style.display = 'inline-block';
+        
+    }
+}
+  
+</script>
+
+<div align="center" class="screenshots" id="screenshots">
+    
+    <h2>Screen Shots</h2>
+    
+    <div class="screenshotgrid" id="shots">
+        <img src="images/bizangoblast01t.jpg" class="screenshot" alt="screenshot1" id="ss1" onclick="SShots(this)">
+        <img src="images/bizangoblast02t.jpg" class="screenshot" alt="screenshot2" id="ss2" onclick="SShots(this)">
+        <img src="images/bizangoblast03t.jpg" class="screenshot" alt="screenshot3" id="ss3" onclick="SShots(this)">
+        <img src="images/bizangoblast04t.jpg" class="screenshot" alt="screenshot4" id="ss4" onclick="SShots(this)">
+        <img src="images/bizangoblast05t.jpg" class="screenshot" alt="screenshot5" id="ss5" onclick="SShots(this)">
+        <img src="images/bizangoblast06t.jpg" class="screenshot" alt="screenshot6" id="ss6" onclick="SShots(this)">
+        <img src="images/bizangoblast07t.jpg" class="screenshot" alt="screenshot7" id="ss7" onclick="SShots(this)">
+        <img src="images/bizangoblast08t.jpg" class="screenshot" alt="screenshot8" id="ss8" onclick="SShots(this)">
+    </div>
+</div>
+
+<style>
+
+.SShots {
+    display: none;
+    z-index: 4;
+    width:90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    padding: .5%;
+    text-align: center;
+    background: rgba(0,0,0,.85);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2), 0 12px 80px 0 rgba(0, 0, 0, 0.19);
+    z-index: 7;
+    transition: .4s all;
+}
+
+#Close {
+    display: none;
+    margin: 0px;
+    
+    z-index: 2;
+    width: 101%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    cursor: pointer;
+    z-index: 6;
+    transition: .4s all;
+}
+
+.screenshotbig {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+</style>
+
+<div id="Close" class="SShots" onclick="SShots()" align="center">
+</div>
+<div id="SShots" class="SShots" align="center">
+    <img src="bg.jpg" class="screenshotbig" alt="screenshotbig" id="ssbig" onclick="SShots()">
+</div><div align="center" class="features2" id="features">
+        <h2>Features</h2>
+
+
+<div class="featuresgrid">
+    <div class="features" onclick=""><h3><span class="heart">♥</span> 
+        <span class="featuretext">50 Challenging levels</span></h3>
+    </div>
+    <div class="features" onclick=""><h3>
+        <span class="featuretext">5 Beautiful worlds to play in</span>
+        <span class="heart">♥</span> </h3>
+    </div>
+    <div class="features" onclick=""><h3><span class="heart">♥</span> 
+        <span class="featuretext">3 Powers to master</span></h3>
+    </div>
+    <div class="features" onclick=""><h3> 
+        <span class="featuretext">22 Unlockable Achievements</span>
+        <span class="heart">♥</span></h3>
+    </div>
+    <div class="features" onclick=""><h3><span class="heart">♥</span> 
+        <span class="featuretext">3D Physics Action!</span></h3>
+    </div>
+    <div class="features" onclick=""><h3> 
+        <span class="featuretext">A bright Cartoony style</span>
+        <span class="heart">♥</span></h3>
+    </div>
+        <div class="features" onclick=""><h3><span class="heart">♥</span> 
+        <span class="featuretext">Easy to play but hard to Master!</span></h3>
+    </div>
+        <div class="features" onclick=""><h3> 
+        <span class="featuretext">3 Control options</span>
+        <span class="heart">♥</span></h3>
+    </div>
+        <div class="features" onclick=""><h3><span class="heart">♥</span> 
+        <span class="featuretext">Powered by the Unreal Engine 4</span></h3>
+    </div>
+        <div class="features" onclick=""><h3> 
+        <span class="featuretext">+ Much More! </span><span class="heart">♥</span></h3>
+    </div>
+</div>
+</div>
+<style>
+
+.xbox {
+    font-family: 'Bubblegum Sans';
+    border-radius: 50px;
+    color: white;
+    padding-right:3%;
+    padding-left:3%;
+    padding-top:1%;
+    padding-bottom:1%;
+    text-shadow: 2px 2px 8px rgba(0,0,0,.15);
+    transition: .4s all;
+}
+    
+.xbox:hover {
+    padding-right:4%;
+    padding-left:4%;
+    padding-top:2%;
+    padding-bottom:2%;
+}    
+
+@media screen and (max-width: 1370px) {
+
+.xbox {
+
+    padding-right:2%;
+    padding-left:2%;
+}
+    
+.xbox:hover {
+    padding-right:3%;
+    padding-left:3%;
+    padding-top:1%;
+    padding-bottom:1%;
+} 
+    
+    
+}
+    
+.A {
+    border: 2px solid lightgreen;
+    background: green;
+}
+    
+.B {
+    border: 2px solid pink;
+    background: red;
+}
+    
+.Y {
+    border: 2px solid yellow;
+    background: gold;
+}
+    
+.X {
+    border: 2px solid lightblue;
+    background: blue;
+}
+    
+.K {
+    border: 2px solid gainsboro;
+    background: lavender;
+    color: black;
+}
+    
+.S {
+    border: 2px solid grey;
+    background: black;
+}  
+    
+.dpad {
+    font-size: 3vw;
+}  
+    
+.htpimg {
+    width:30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    transition: .4s all;
+    box-shadow: 0px 5px 25px 5px rgba(0,0,0,.05);
+}
+
+@media screen and (max-width: 1370px) {
+    .htpimg {
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    
+    
+}
+    
+.htpimg:hover {
+    width:45%;
+    box-shadow: 0px 5px 25px 5px rgba(0,0,0,.1);
+}
+
+@media screen and (max-width: 1370px) {
+    .htpimg:hover {
+        width: 85%;
+    }
+    
+}
+    
+.Power {
+    width: 25%;
+    padding-bottom: 5%;
+    transition: .4s all;
+}
+
+@media screen and (max-width: 1370px) {
+    .Power {
+        width: 50%;
+    }
+    
+}
+    
+.Power:hover, .Power:active {
+    width: 30%;
+}
+
+@media screen and (max-width: 1370px) {
+    .Power:hover, .Power:active {
+        width: 55%;
+    }
+    
+}
+    
+    
+</style>
+
+<div align="center" class="htp2" id="HowToPlay">
+   <h2>How to Play</h2>
+
+    
+    <div class="htpgrid" id="htp">
+        <div class="htp">
+            <h3>Aiming</h3>
+            
+            <span class="htptext">
+                Use the Pyramids as sights to target the bad guys <br>
+                <img src="images/aiming.jpg" class="htpimg" alt="aiming"><br>
+                <b>Gamepad: </b><span class="xbox S"><b>✜</b></span> or Left JoyStick <br>
+                <b>Keyboard: </b><span class="xbox K">Space</span> or <span class="xbox K">Enter</span><br>
+                <b>Mouse: </b>Click and Drag<br>
+            </span>
+        </div>
+        <div class="htp">
+            <h3>Shooting</h3>
+        
+            <span class="htptext">
+                You only have Six shots so use them tactically <br>
+                <img src="images/shooting.jpg" class="htpimg" alt="Shooting"><br>
+                <b>Gamepad: </b><span class="xbox A">A</span> or Right Trigger<br>
+                <b>Keyboard: </b><span class="xbox K">W</span><span class="xbox K">A</span><span class="xbox K">S</span><span class="xbox K">D</span> or 
+                <br><span class="xbox K">▲</span><span class="xbox K">►</span><span class="xbox K">▼</span> <span class="xbox K">◄</span> <br>
+                <b>Mouse: </b>Click Fire Button<br>
+            </span>
+        </div>
+        <div class="htp">
+            <h3>Menu</h3>
+        
+            <span class="htptext">
+                Pause, Restart, Next level and the Main Menu <br>
+                <img src="images/menu.jpg" class="htpimg" alt="pause"><br>
+                <b>Gamepad: </b><span class="xbox S">►</span><br>
+                <b>Keyboard: </b><span class="xbox K">ESC</span><br>
+                <b>Mouse: </b>Click the Pause button<br>
+            </span>
+        </div>
+    </div>
+</div>        
+
+
+    <div class="htpgrid" id="htp">
+        <div class="htp">
+            <h3>Down Blast</h3>
+            
+            <span class="htptext">
+            Hold to Aim and Blast anything under the Cannon ball <br>
+            <img src="images/downblast.png" class="power" alt="downblast"><br>
+            
+                <b>Gamepad: </b><span class="xbox X">X</span> <br>
+                <b>Keyboard: </b><span class="xbox K">1</span> or <span class="xbox K">V</span><br>
+                <b>Mouse: </b>Click the Down Blast button<br>
+            </span>
+        </div>
+        <div class="htp">
+            <h3>Side Split</h3>
+            
+            <span class="htptext">
+            Hold to Aim and Blast 2 extra balls from the Side <br>
+            <img src="images/sideblast.png" class="power" alt="sideblast"><br>
+            
+                <b>Gamepad: </b><span class="xbox B">B</span> <br>
+                <b>Keyboard: </b><span class="xbox K">2</span> or <span class="xbox K">B</span><br>
+                <b>Mouse: </b>Click the Side Split button<br>
+            </span>
+        </div>
+        <div class="htp">
+            <h3>Explosion</h3>
+        
+            <span class="htptext">
+            Hold to Aim, release to let of a big Explosion <br>
+            <img src="images/explosion.png" class="power" alt="explosion"><br>
+            
+                <b>Gamepad: </b><span class="xbox Y">Y</span> <br>
+                <b>Keyboard: </b><span class="xbox K">3</span> or <span class="xbox K">N</span><br>
+                <b>Mouse: </b>Click the Explosion button<br>
+            </span>
+        </div>
+    </div>
+    <br>
+<div align="center" class="extras2" id="targets">
+   <h2>Bad Guys</h2>
+    <div class="extrasgrid">
+        <div class="extras"><h3>Urchin</h3>
+            <img src="images/urchinweb.png" class="htpimg ext" alt="urchin"><br>
+            <span class="extratext">Spiky little Creatures that seem to be stealing your egg amoung other things</span>
+        </div>
+        <div class="extras"><h3>Satalite</h3>
+            <img src="images/sateliteweb.png" class="htpimg ext" alt="Satelite"><br>
+            <span class="extratext">These weird things started appearing out of nowhere, they must be working with the Urchins</span>
+        </div>
+    </div>
+    <br>
+    <div class="extratext">Here are your targets, Aim for them and save the Eggs!</div>
+    <br>
+</div><style>
+::placeholder {
+    font-size: 2vw;
+    font-family: 'Bubblegum Sans';
+    opacity: 1; /* Firefox */
+}
+
+:focus::placeholder {
+    color:white;
+}
+
+.contactinput1{
+    text-align: justify;
+}
+
+.contactinput2{
+    display:inline-block;
+    text-align: justify;
+}
+
+input[type=text] {
+    width: 80%;
+    font-size:2vw;
+    padding: 20px 20px;
+    margin: 8px 0;
+    margin-left:10%;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    transition: .4s all;
+}
+
+input[type=text]:focus {
+    background-color: deepskyblue;
+    color:white;
+}
+
+textarea {
+    width: 80%;
+    font-size:2vw;
+    margin-left:10%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    transition: .4s all;
+}
+
+textarea:focus {
+    background-color: deepskyblue;
+    color:white;
+}
+
+input[type=submit] {
+    font-family: 'Bubblegum Sans';
+    background-color: deepskyblue;
+    font-size:2vw;
+    border: none;
+    color: white;
+    padding: 2% 4%;
+    text-decoration: none;
+    margin: 3% 2%;
+    cursor: pointer;
+    transition: .4s all;
+    border-radius: 15%;
+}
+
+input[type=submit]:hover {
+    background-color: gold;
+}
+
+.sup{
+    color:deepskyblue;
+    opacity: .6;
+}
+
+@media screen and (max-width: 500px) {
+
+    ::placeholder  {
+        font-size: 6vw;
+    }
+
+    input[type=text] {
+        font-size:6vw;
+    }
+
+    textarea {
+        font-size:6vw;
+    }
+
+    input[type=submit] {
+        font-size:8vw;
+        padding: 4% 8%;
+    }
+}
+</style>
+
+<div align="center" class="contact2" id="contact">
+   <h2>Contact</h2>
+   <br>
+   <h3 class="sup">Whats up?</h3>
+<br>
+<form method="post" action="mail.php">  
+    <div class="contactinput1">
+    <input type="text" class="contactinput2" name="name" placeholder="Name *" value=""> <br>
+    <input type="text" class="contactinput2" name="email" placeholder="E-Mail *" value=""> <br>
+    </div>
+    <div class="contactinput1">
+    <textarea name="comment" placeholder="Questions? Comments? Suggestions? *" rows="5" cols="40"></textarea>
+    </div>
+    <br><br>
+    <input type="checkbox" id="mailc1" name="Hmmmm" value="Umm" checked=""> I am a Robot
+    <input type="checkbox" id="mailc2" name="uhhuh" value="Yikes" checked=""> I send S P A M <br>
+  <br><br>
+    <span class="error">* required field.</span><br>
+  <input type="submit" name="submit" value="Send">  
+</form><style>
+
+.footer {
+    background-color: deepskyblue;
+    color: white;
+    width:100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.socialmedia {
+    transition: .4s all;
+    width: 6%;
+    filter: grayscale(12%);
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.socialmedia:hover {
+    filter: grayscale(0%);
+    width:7%;
+}
+
+.yt {
+    width:8%;
+}
+
+.yt:hover {
+    width:9%;
+}
+
+.copyright{
+    font-family: 'Bubblegum Sans';
+    padding-top:2%;
+}
+
+.buynow{
+    font-family: 'Bubblegum Sans';
+    color:white;
+    font-size:4vw;
+    padding-top:1%;
+    padding-bottom:4%;
+    display:none;
+}
+
+.symbol{
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .steam {
+        display:none;
+    }
+
+    .buynow  {
+        font-size: 8vw;
+        display:block;
+    }
+
+    .socialmedia {
+        width:10%;
+    }
+
+    .socialmedia:hover {
+        width:13%;
+    }
+
+}
+
+</style>
+
+<div class="footer" align="center">
+    <iframe class="steam" src="https://store.steampowered.com/widget/983520/" frameborder="0" width="646" height="190"></iframe>
+    <a href="https://store.steampowered.com/app/983520/Bizango_Blast/"><div class="buynow">Buy Now! <br> On Steam!</div></a>
+    <div>
+        <br>
+         <br>
+        <a href="https://www.facebook.com/BizangoBlast/" target="_blank"><img src="images/fb.png" class="socialmedia" alt="facebook"></a>
+        <a href="https://www.youtube.com/playlist?list=PL-Zz89LxHGBViCQYNIixvsZRrXDssYGyS" target="_blank"><img src="images/youtube.png" class="socialmedia yt" alt="youtube"></a>
+        <a href="https://twitter.com/sphoxiegame" target="_blank"><img src="images/twitter.png" class="socialmedia" alt="twitter"></a>
+    </div>
+    <div class="copyright"><span class="symbol">©</span> Bizango Blast  2011 - 2018 <br> Made in Lausanne, Switzerland</div>
+
+</div>
+
+
+
+</div></body></html>

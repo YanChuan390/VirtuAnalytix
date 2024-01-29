@@ -1,0 +1,1860 @@
+<html lang="en-US"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>Transform Hypnosis – The #1 Transformation Collection</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//www.google.com">
+<link rel="alternate" type="application/rss+xml" title="Transform Hypnosis » Feed" href="https://www.transformhypnosis.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Transform Hypnosis » Comments Feed" href="https://www.transformhypnosis.com/comments/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.19 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-T6S1J9SH0B" data-cfasync="false" data-wpfc-render="false" async=""></script>
+			<script data-cfasync="false" data-wpfc-render="false">
+				var mi_version = '8.19';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+										'ga-disable-G-T6S1J9SH0B',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+										__gtagTracker('config', 'G-T6S1J9SH0B', {"forceSSL":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.transformhypnosis.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="https://www.transformhypnosis.com/wp-includes/js/wp-emoji-release.min.js?ver=6.2.2" type="text/javascript" defer=""></script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="xpro-elementor-addons-widgets-css" href="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/assets/css/xpro-widgets.css?ver=1.3.8" media="all">
+<link rel="stylesheet" id="xpro-elementor-addons-responsive-css" href="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/assets/css/xpro-responsive.css?ver=1.3.8" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=5.15.3" media="all">
+<link rel="stylesheet" id="xpro-icons-css" href="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/assets/css/xpro-icons.min.css?ver=1.0.0" media="all">
+<link rel="stylesheet" id="xpro-elementor-addons-woo-css" href="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/assets/css/xpro-woo-widgets.css?ver=1.3.8" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://www.transformhypnosis.com/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2" media="all">
+<link rel="stylesheet" id="wc-blocks-style-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-active-filters-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/active-filters.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-add-to-cart-form-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/add-to-cart-form.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-packages-style-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/packages-style.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-all-products-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/all-products.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-all-reviews-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/all-reviews.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-attribute-filter-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/attribute-filter.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-breadcrumbs-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/breadcrumbs.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-catalog-sorting-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/catalog-sorting.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-customer-account-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/customer-account.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-featured-category-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/featured-category.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-featured-product-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/featured-product.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-mini-cart-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/mini-cart.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-price-filter-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/price-filter.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-add-to-cart-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-add-to-cart.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-button-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-button.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-categories-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-categories.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-image-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-image.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-image-gallery-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-image-gallery.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-query-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-query.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-results-count-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-results-count.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-reviews-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-reviews.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-sale-badge-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-sale-badge.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-search-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-search.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-sku-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-sku.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-stock-indicator-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-stock-indicator.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-summary-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-summary.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-title-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-title.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-rating-filter-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/rating-filter.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-reviews-by-category-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/reviews-by-category.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-reviews-by-product-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/reviews-by-product.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-product-details-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/product-details.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-single-product-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/single-product.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-stock-filter-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/stock-filter.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-cart-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/cart.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-checkout-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/checkout.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="wc-blocks-style-mini-cart-contents-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/mini-cart-contents.css?ver=10.6.6" media="all">
+<link rel="stylesheet" id="convertkit-broadcasts-css" href="https://www.transformhypnosis.com/wp-content/plugins/convertkit/resources/frontend/css/broadcasts.css?ver=2.2.9" media="all">
+<link rel="stylesheet" id="convertkit-button-css" href="https://www.transformhypnosis.com/wp-content/plugins/convertkit/resources/frontend/css/button.css?ver=2.2.9" media="all">
+<link rel="stylesheet" id="classic-theme-styles-css" href="https://www.transformhypnosis.com/wp-includes/css/classic-themes.min.css?ver=6.2.2" media="all">
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="woocommerce-layout-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.0.3" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.0.3" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="woocommerce-general-css" href="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.0.3" media="all">
+<style id="woocommerce-inline-inline-css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="advanced-google-recaptcha-style-css" href="https://www.transformhypnosis.com/wp-content/plugins/advanced-google-recaptcha/assets/css/captcha.min.css?ver=1.0.15" media="all">
+<link rel="stylesheet" id="xoo-wsc-fonts-css" href="https://www.transformhypnosis.com/wp-content/plugins/side-cart-woocommerce/assets/css/xoo-wsc-fonts.css?ver=2.2" media="all">
+<link rel="stylesheet" id="xoo-wsc-style-css" href="https://www.transformhypnosis.com/wp-content/plugins/side-cart-woocommerce/assets/css/xoo-wsc-style.css?ver=2.2" media="all">
+<style id="xoo-wsc-style-inline-css">
+
+.xoo-wsc-sp-left-col img{
+	max-width: 80px;
+}
+
+.xoo-wsc-sp-right-col{
+	font-size: 14px;
+}
+
+.xoo-wsc-sp-container{
+	background-color: #eee;
+}
+
+
+
+.xoo-wsc-ft-buttons-cont a.xoo-wsc-ft-btn, .xoo-wsc-container .xoo-wsc-btn {
+	background-color: #000000;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	padding: 10px 20px;
+}
+
+.xoo-wsc-ft-buttons-cont a.xoo-wsc-ft-btn:hover, .xoo-wsc-container .xoo-wsc-btn:hover {
+	background-color: #ffffff;
+	color: #000000;
+	border: 2px solid #000000;
+}
+
+ 
+
+.xoo-wsc-footer{
+	background-color: #ffffff;
+	color: #000000;
+	padding: 10px 20px;
+}
+
+.xoo-wsc-footer, .xoo-wsc-footer a, .xoo-wsc-footer .amount{
+	font-size: 18px;
+}
+
+.xoo-wsc-ft-buttons-cont{
+	grid-template-columns: auto;
+}
+
+.xoo-wsc-basket{
+	bottom: 12px;
+	right: px;
+	background-color: #ffffff;
+	color: #000000;
+	box-shadow: 0 1px 4px 0;
+	border-radius: 50%}
+
+
+.xoo-wsc-bki{
+	font-size: 30px}
+
+.xoo-wsc-items-count{
+	top: -12px;
+	left: -12px;
+}
+
+.xoo-wsc-items-count{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.xoo-wsc-container, .xoo-wsc-slider{
+	max-width: 320px;
+	right: -320px;
+	top: 0;bottom: 0;
+	bottom: 0;
+	font-family: }
+
+
+.xoo-wsc-cart-active .xoo-wsc-container, .xoo-wsc-slider-active .xoo-wsc-slider{
+	right: 0;
+}
+
+
+.xoo-wsc-cart-active .xoo-wsc-basket{
+	right: 320px;
+}
+
+.xoo-wsc-slider{
+	right: -320px;
+}
+
+span.xoo-wsch-close {
+    font-size: 16px;
+    right: 10px;
+}
+
+.xoo-wsch-top{
+	justify-content: center;
+}
+
+.xoo-wsch-text{
+	font-size: 20px;
+}
+
+.xoo-wsc-header{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.xoo-wsc-sb-bar > span{
+	background-color: #1e73be;
+}
+
+.xoo-wsc-body{
+	background-color: #ffffff;
+}
+
+.xoo-wsc-body, .xoo-wsc-body span.amount, .xoo-wsc-body a{
+	font-size: 16px;
+	color: #000000;
+}
+
+.xoo-wsc-product{
+	padding: 20px 15px;
+}
+
+.xoo-wsc-img-col{
+	width: 30%;
+}
+.xoo-wsc-sum-col{
+	width: 70%;
+}
+
+.xoo-wsc-sum-col{
+	justify-content: center;
+}
+
+/***** Quantity *****/
+
+.xoo-wsc-qty-box{
+	max-width: 75px;
+}
+
+.xoo-wsc-qty-box.xoo-wsc-qtb-square{
+	border-color: #000000;
+}
+
+input[type="number"].xoo-wsc-qty{
+	border-color: #000000;
+	background-color: #ffffff;
+	color: #000000;
+	height: 28px;
+	line-height: 28px;
+}
+
+input[type="number"].xoo-wsc-qty, .xoo-wsc-qtb-square{
+	border-width: px;
+	border-style: solid;
+}
+.xoo-wsc-chng{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+/** Shortcode **/
+.xoo-wsc-sc-count{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.xoo-wsc-sc-bki{
+	font-size: 28px;
+	color: 28;
+}
+.xoo-wsc-sc-cont{
+	color: #000000;
+}
+
+
+</style>
+<link rel="stylesheet" id="hello-elementor-css" href="https://www.transformhypnosis.com/wp-content/themes/hello-elementor/style.min.css?ver=2.8.1" media="all">
+<link rel="stylesheet" id="hello-elementor-theme-style-css" href="https://www.transformhypnosis.com/wp-content/themes/hello-elementor/theme.min.css?ver=2.8.1" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.15.3" media="all">
+<link rel="stylesheet" id="elementor-post-18864-css" href="https://www.transformhypnosis.com/wp-content/uploads/elementor/css/post-18864.css?ver=1692205810" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.21.0" media="all">
+<link rel="stylesheet" id="swiper-css" href="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="https://www.transformhypnosis.com/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.12.1" media="all">
+<link rel="stylesheet" id="xpro-elementor-widgetarea-editor-css" href="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/inc/controls/assets/css/widgetarea-editor.css?ver=1.3.8" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="https://www.transformhypnosis.com/wp-content/uploads/elementor/css/global.css?ver=1692205811" media="all">
+<link rel="stylesheet" id="elementor-post-19028-css" href="https://www.transformhypnosis.com/wp-content/uploads/elementor/css/post-19028.css?ver=1692206103" media="all">
+<link rel="stylesheet" id="elementor-post-19019-css" href="https://www.transformhypnosis.com/wp-content/uploads/elementor/css/post-19019.css?ver=1692205812" media="all">
+<link rel="stylesheet" id="elementor-post-19021-css" href="https://www.transformhypnosis.com/wp-content/uploads/elementor/css/post-19021.css?ver=1692205812" media="all">
+<link rel="stylesheet" id="xpro-swatch-frontend-css" href="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/modules/swatches/assets/css/frontend.css?ver=1.3.8" media="all">
+<link rel="stylesheet" id="eael-general-css" href="https://www.transformhypnosis.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=5.8.8" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.2.2" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script src="https://www.transformhypnosis.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+<script src="https://www.transformhypnosis.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.19" id="monsterinsights-frontend-script-js"></script>
+<script data-cfasync="false" data-wpfc-render="false" id="monsterinsights-frontend-script-js-extra">var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/www.transformhypnosis.com","hash_tracking":"false","v4_id":"G-T6S1J9SH0B"};</script>
+<script id="advanced-google-recaptcha-custom-js-extra">
+var agrRecaptcha = {"site_key":"6LfUSEMdAAAAAIAc0o5YofxZ5oS-UH_J3sKs56uJ"};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/advanced-google-recaptcha/assets/js/captcha.min.js?ver=1.0.15" id="advanced-google-recaptcha-custom-js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=agrV3&amp;render=6LfUSEMdAAAAAIAc0o5YofxZ5oS-UH_J3sKs56uJ&amp;ver=1.0.15" id="advanced-google-recaptcha-api-js"></script>
+<link rel="https://api.w.org/" href="https://www.transformhypnosis.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.transformhypnosis.com/wp-json/wp/v2/pages/19028"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.transformhypnosis.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.transformhypnosis.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.2.2">
+<meta name="generator" content="WooCommerce 8.0.3">
+<link rel="canonical" href="https://www.transformhypnosis.com/">
+<link rel="shortlink" href="https://www.transformhypnosis.com/">
+<link rel="alternate" type="application/json+oembed" href="https://www.transformhypnosis.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.transformhypnosis.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.transformhypnosis.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.transformhypnosis.com%2F&amp;format=xml">
+<meta name="google-site-verification" content="XtGTSj5Q4YBXBH3XG9b7g2hOHw2UJANeGoKUBrn9HF8">
+<!-- Starting: WooCommerce Conversion Tracking (https://wordpress.org/plugins/woocommerce-conversion-tracking/) -->
+<!-- End: WooCommerce Conversion Tracking Codes -->
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.15.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<link rel="icon" href="https://www.transformhypnosis.com/wp-content/uploads/cropped-p2-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.transformhypnosis.com/wp-content/uploads/cropped-p2-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.transformhypnosis.com/wp-content/uploads/cropped-p2-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.transformhypnosis.com/wp-content/uploads/cropped-p2-270x270.png">
+		<style id="wp-custom-css">
+			.xpro-quantity-wrap .xpro-minus, .xpro-quantity-wrap .xpro-plus {
+    height: 55px;
+}
+button.xpro-plus {
+    margin-left: 0 !important;
+}
+a.checkout-button.button.alt.wc-forward.wp-element-button {
+    color: #ffffff;
+    background-color: #6A2C91;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 4px;
+    padding: 20px;
+}
+button#place_order{
+    color: #ffffff;
+    background-color: #6A2C91;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 4px;
+    padding: 15px 55px 15px 55px;
+}
+a.added_to_cart.wc-forward {
+    color: #6A2C91;
+    background-color: #6a2c9100;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 4px;
+    padding: 6px 55px 6px 55px;
+    margin-top: 5px;
+}
+@media (max-width: 767px){
+	a.added_to_cart.wc-forward {
+    padding: 5px 37px 5px 37px;
+}
+	.elementor-605 .elementor-element.elementor-element-86b6d06.elementor-wc-products ul.products li.product .button{
+	 padding: 10px 20px 10px 20px;
+	}
+select, textarea {
+    padding: 5px 3px;
+    width: 87%;
+    float: right;
+}
+.woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count {
+    float: left;
+    font-size: 13px;
+    margin-top: 7px;
+}
+}
+.faq-style .elementor-accordion-item {
+    box-shadow: 2px 2px 7px 2px #ddd;
+    margin-bottom: 20px;
+}
+.form-style input {
+    box-shadow: 2px 2px 7px 2px #ddd;
+	padding: 15px;
+}
+.form-style select{
+    box-shadow: 2px 2px 7px 2px #ddd;
+	padding: 15px;
+}
+.form-style textarea{
+    box-shadow: 2px 2px 7px 2px #ddd;
+	padding: 15px;
+}		</style>
+		</head>
+<body class="home page-template page-template-elementor_header_footer page page-id-19028 theme-hello-elementor woocommerce-js elementor-default elementor-template-full-width elementor-kit-18864 elementor-page elementor-page-19028 elementor-page-19026 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg>
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<div data-elementor-type="header" data-elementor-id="19019" class="elementor elementor-19019 elementor-location-header">
+								<section class="elementor-section elementor-top-section elementor-element elementor-element-7bf849e6 elementor-section-full_width elementor-hidden-tablet elementor-hidden-mobile elementor-section-height-default elementor-section-height-default" data-id="7bf849e6" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4506aa91" data-id="4506aa91" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-34178923 elementor-widget elementor-widget-image" data-id="34178923" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.15.0 - 20-08-2023 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>													<a href="https://www.transformhypnosis.com">
+							<img width="454" height="100" src="https://www.transformhypnosis.com/wp-content/uploads/THSmallLogo-1.png" class="attachment-large size-large wp-image-19018" alt="" loading="lazy">								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-1849602f" data-id="1849602f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6915f3cd elementor-nav-menu__align-center elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="6915f3cd" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;<i class=\&quot;fas fa-caret-down\&quot;><\/i>&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://www.transformhypnosis.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css">			<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-6915f3cd" class="elementor-nav-menu" data-smartmenus-id="16943331313096797"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-19028 current_page_item menu-item-19053"><a href="https://www.transformhypnosis.com/" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14187"><a href="https://www.transformhypnosis.com/shop/" class="elementor-item">Files</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11801"><a href="https://www.transformhypnosis.com/blog/" class="elementor-item">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14590"><a href="https://www.transformhypnosis.com/faqs/" class="elementor-item">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11799"><a href="https://www.transformhypnosis.com/raves/" class="elementor-item">Raves</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14591"><a href="https://www.transformhypnosis.com/contact/" class="elementor-item">Contact Me</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>			<span class="elementor-screen-only">Menu</span>
+		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-6915f3cd" class="elementor-nav-menu" data-smartmenus-id="1694333131310382"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-19028 current_page_item menu-item-19053"><a href="https://www.transformhypnosis.com/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14187"><a href="https://www.transformhypnosis.com/shop/" class="elementor-item" tabindex="-1">Files</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11801"><a href="https://www.transformhypnosis.com/blog/" class="elementor-item" tabindex="-1">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14590"><a href="https://www.transformhypnosis.com/faqs/" class="elementor-item" tabindex="-1">FAQ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11799"><a href="https://www.transformhypnosis.com/raves/" class="elementor-item" tabindex="-1">Raves</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14591"><a href="https://www.transformhypnosis.com/contact/" class="elementor-item" tabindex="-1">Contact Me</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-1da2b941 elementor-hidden-mobile elementor-hidden-tablet" data-id="1da2b941" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3355693f toggle-icon--cart-light remove-item-position--middle elementor-widget__width-initial elementor-menu-cart--items-indicator-bubble elementor-menu-cart--cart-type-side-cart elementor-menu-cart--show-remove-button-yes elementor-widget elementor-widget-woocommerce-menu-cart" data-id="3355693f" data-element_type="widget" data-settings="{&quot;automatically_open_cart&quot;:&quot;yes&quot;,&quot;cart_type&quot;:&quot;side-cart&quot;,&quot;open_cart&quot;:&quot;click&quot;}" data-widget_type="woocommerce-menu-cart.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://www.transformhypnosis.com/wp-content/plugins/elementor-pro/assets/css/widget-woocommerce.min.css">		<div class="elementor-menu-cart__wrapper">
+							<div class="elementor-menu-cart__toggle_wrapper">
+					<div class="elementor-menu-cart__container elementor-lightbox" aria-hidden="true">
+						<div class="elementor-menu-cart__main" aria-hidden="true">
+									<div class="elementor-menu-cart__close-button">
+					</div>
+									<div class="widget_shopping_cart_content">
+															</div>
+						</div>
+					</div>
+							<div class="elementor-menu-cart__toggle elementor-button-wrapper">
+			<a id="elementor-menu-cart__toggle_button" href="#" class="elementor-menu-cart__toggle_button elementor-button elementor-size-sm" aria-expanded="false">
+				<span class="elementor-button-text"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>0.00</bdi></span></span>
+				<span class="elementor-button-icon">
+					<span class="elementor-button-icon-qty" data-counter="0">0</span>
+					<i class="eicon-cart-light"></i>					<span class="elementor-screen-only">Cart</span>
+				</span>
+			</a>
+		</div>
+						</div>
+					</div> <!-- close elementor-menu-cart__wrapper -->
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3fdc8ae elementor-hidden-mobile elementor-hidden-tablet" data-id="3fdc8ae" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fc0141d stax-condition-yes stax-user_role_enabled-yes elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="fc0141d" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/my-account/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-user-alt"></i>						</span>
+										<span class="elementor-icon-list-text">Log In</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1a97ca0e elementor-section-full_width elementor-hidden-desktop elementor-section-height-default elementor-section-height-default" data-id="1a97ca0e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-2f6e2bc5" data-id="2f6e2bc5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-114f80dd elementor-widget elementor-widget-image" data-id="114f80dd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://transformhypnosis.softaks.xyz/">
+							<img width="454" height="100" src="https://www.transformhypnosis.com/wp-content/uploads/THSmallLogo-1.png" class="attachment-large size-large wp-image-19018" alt="" loading="lazy">								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4309edee" data-id="4309edee" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3042741 elementor-mobile-align-center stax-condition-yes stax-user_role_enabled-yes elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3042741" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/my-account/">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-user-alt"></i>						</span>
+										<span class="elementor-icon-list-text">Log In</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3f5d50bb" data-id="3f5d50bb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f257e2d toggle-icon--cart-light remove-item-position--middle elementor-menu-cart--items-indicator-bubble elementor-menu-cart--cart-type-side-cart elementor-menu-cart--show-remove-button-yes elementor-widget elementor-widget-woocommerce-menu-cart" data-id="f257e2d" data-element_type="widget" data-settings="{&quot;automatically_open_cart&quot;:&quot;yes&quot;,&quot;cart_type&quot;:&quot;side-cart&quot;,&quot;open_cart&quot;:&quot;click&quot;}" data-widget_type="woocommerce-menu-cart.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-menu-cart__wrapper">
+							<div class="elementor-menu-cart__toggle_wrapper">
+					<div class="elementor-menu-cart__container elementor-lightbox" aria-hidden="true">
+						<div class="elementor-menu-cart__main" aria-hidden="true">
+									<div class="elementor-menu-cart__close-button">
+					</div>
+									<div class="widget_shopping_cart_content">
+															</div>
+						</div>
+					</div>
+							<div class="elementor-menu-cart__toggle elementor-button-wrapper">
+			<a id="elementor-menu-cart__toggle_button" href="#" class="elementor-menu-cart__toggle_button elementor-button elementor-size-sm" aria-expanded="false">
+				<span class="elementor-button-text"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>0.00</bdi></span></span>
+				<span class="elementor-button-icon">
+					<span class="elementor-button-icon-qty" data-counter="0">0</span>
+					<i class="eicon-cart-light"></i>					<span class="elementor-screen-only">Cart</span>
+				</span>
+			</a>
+		</div>
+						</div>
+					</div> <!-- close elementor-menu-cart__wrapper -->
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-268b5c24" data-id="268b5c24" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-18a76872 elementor-nav-menu__align-center elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="18a76872" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;<i class=\&quot;fas fa-caret-down\&quot;><\/i>&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-18a76872" class="elementor-nav-menu" data-smartmenus-id="16943331313111453"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14052"><a href="https://www.transformhypnosis.com/shop/" class="elementor-item">Files</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14051"><a href="https://www.transformhypnosis.com/home-main/" class="elementor-item">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11521"><a href="https://www.transformhypnosis.com/contact/" class="elementor-item">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14050"><a href="https://www.transformhypnosis.com/recommendations/" class="elementor-item">Recommendations</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false" style="">
+			<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>			<span class="elementor-screen-only">Menu</span>
+		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true" style="width: 1019px; left: 0px; top: 0px;">
+				<ul id="menu-2-18a76872" class="elementor-nav-menu" data-smartmenus-id="1694333131311929"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14052"><a href="https://www.transformhypnosis.com/shop/" class="elementor-item" tabindex="-1">Files</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14051"><a href="https://www.transformhypnosis.com/home-main/" class="elementor-item" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11521"><a href="https://www.transformhypnosis.com/contact/" class="elementor-item" tabindex="-1">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14050"><a href="https://www.transformhypnosis.com/recommendations/" class="elementor-item" tabindex="-1">Recommendations</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+				<div data-elementor-type="wp-page" data-elementor-id="19028" class="elementor elementor-19028">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-20bca24 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="20bca24" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-46a55b0" data-id="46a55b0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated e-swiper-container">
+								<div class="elementor-element elementor-element-c5723b4 elementor--h-position-left elementor--v-position-middle elementor-arrows-position-inside elementor-widget elementor-widget-slides e-widget-swiper" data-id="c5723b4" data-element_type="widget" data-settings="{&quot;navigation&quot;:&quot;arrows&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;transition&quot;:&quot;slide&quot;,&quot;transition_speed&quot;:500}" data-widget_type="slides.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor-pro - v3.12.1 - 02-04-2023 */
+.elementor-slides .swiper-slide-bg{background-size:cover;background-position:50%;background-repeat:no-repeat;min-width:100%;min-height:100%}.elementor-slides .swiper-slide-inner{background-repeat:no-repeat;background-position:50%;position:absolute;top:0;left:0;bottom:0;right:0;padding:50px;margin:auto}.elementor-slides .swiper-slide-inner,.elementor-slides .swiper-slide-inner:hover{color:#fff;display:flex}.elementor-slides .swiper-slide-inner .elementor-background-overlay{position:absolute;z-index:0;top:0;bottom:0;left:0;right:0}.elementor-slides .swiper-slide-inner .elementor-slide-content{position:relative;z-index:1;width:100%}.elementor-slides .swiper-slide-inner .elementor-slide-heading{font-size:35px;font-weight:700;line-height:1}.elementor-slides .swiper-slide-inner .elementor-slide-description{font-size:17px;line-height:1.4}.elementor-slides .swiper-slide-inner .elementor-slide-description:not(:last-child),.elementor-slides .swiper-slide-inner .elementor-slide-heading:not(:last-child){margin-bottom:30px}.elementor-slides .swiper-slide-inner .elementor-slide-button{border:2px solid #fff;color:#fff;background:transparent;display:inline-block}.elementor-slides .swiper-slide-inner .elementor-slide-button,.elementor-slides .swiper-slide-inner .elementor-slide-button:hover{background:transparent;color:inherit;text-decoration:none}.elementor--v-position-top .swiper-slide-inner{align-items:flex-start}.elementor--v-position-bottom .swiper-slide-inner{align-items:flex-end}.elementor--v-position-middle .swiper-slide-inner{align-items:center}.elementor--h-position-left .swiper-slide-inner{justify-content:flex-start}.elementor--h-position-right .swiper-slide-inner{justify-content:flex-end}.elementor--h-position-center .swiper-slide-inner{justify-content:center}body.rtl .elementor-widget-slides .elementor-swiper-button-next{left:10px;right:auto}body.rtl .elementor-widget-slides .elementor-swiper-button-prev{right:10px;left:auto}.elementor-slides-wrapper div:not(.swiper-slide)>.swiper-slide-inner{display:none}@media (max-width:767px){.elementor-slides .swiper-slide-inner{padding:30px}.elementor-slides .swiper-slide-inner .elementor-slide-heading{font-size:23px;line-height:1;margin-bottom:15px}.elementor-slides .swiper-slide-inner .elementor-slide-description{font-size:13px;line-height:1.4;margin-bottom:15px}}</style>		<div class="elementor-swiper">
+			<div class="elementor-slides-wrapper elementor-main-swiper swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" dir="ltr" data-animation="fadeInUp">
+				<div class="swiper-wrapper elementor-slides" id="swiper-wrapper-67b95ddd5d23cb79" aria-live="off" style="cursor: grab; transition-duration: 0ms; transform: translate3d(-3057px, 0px, 0px);"><div class="elementor-repeater-item-f2826e0 swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1019px;" role="group" aria-label="1 / 3"><div class="swiper-slide-bg"></div><div class="elementor-background-overlay"></div><a class="swiper-slide-inner" href="https://www.transformhypnosis.com/shop/"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Relax Into Transformation</div><div class="elementor-slide-description">All you need to do is listen.</div><div class="elementor-button elementor-slide-button elementor-size-md">See Audio Files</div></div></a></div><div class="elementor-repeater-item-54a4523 swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 1019px;" role="group" aria-label="2 / 3"><div class="swiper-slide-bg"></div><div class="elementor-background-overlay"></div><a class="swiper-slide-inner" href="https://www.transformhypnosis.com/shop/"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Relax Into Transformation</div><div class="elementor-slide-description">All you need to do is listen.</div><div class="elementor-button elementor-slide-button elementor-size-md">See Audio Files</div></div></a></div><div class="elementor-repeater-item-987a087 swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 1019px;" role="group" aria-label="3 / 3"><div class="swiper-slide-bg"></div><div class="elementor-background-overlay"></div><a class="swiper-slide-inner" href="https://www.transformhypnosis.com/shop/"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Relax Into Transformation</div><div class="elementor-slide-description">All you need to do is listen.</div><div class="elementor-button elementor-slide-button elementor-size-md">See Audio Files</div></div></a></div>
+										<div class="elementor-repeater-item-f2826e0 swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 1019px;" role="group" aria-label="1 / 3"><div class="swiper-slide-bg elementor-ken-burns--active"></div><div class="elementor-background-overlay"></div><a class="swiper-slide-inner" href="https://www.transformhypnosis.com/shop/"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Relax Into Transformation</div><div class="elementor-slide-description">All you need to do is listen.</div><div class="elementor-button elementor-slide-button elementor-size-md">See Audio Files</div></div></a></div><div class="elementor-repeater-item-54a4523 swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 1019px;" role="group" aria-label="2 / 3"><div class="swiper-slide-bg"></div><div class="elementor-background-overlay"></div><a class="swiper-slide-inner" href="https://www.transformhypnosis.com/shop/"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Relax Into Transformation</div><div class="elementor-slide-description">All you need to do is listen.</div><div class="elementor-button elementor-slide-button elementor-size-md">See Audio Files</div></div></a></div><div class="elementor-repeater-item-987a087 swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 1019px;" role="group" aria-label="3 / 3"><div class="swiper-slide-bg"></div><div class="elementor-background-overlay"></div><a class="swiper-slide-inner" href="https://www.transformhypnosis.com/shop/"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Relax Into Transformation</div><div class="elementor-slide-description">All you need to do is listen.</div><div class="elementor-button elementor-slide-button elementor-size-md">See Audio Files</div></div></a></div>				<div class="elementor-repeater-item-f2826e0 swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1019px;" role="group" aria-label="1 / 3"><div class="swiper-slide-bg"></div><div class="elementor-background-overlay"></div><a class="swiper-slide-inner" href="https://www.transformhypnosis.com/shop/"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Relax Into Transformation</div><div class="elementor-slide-description">All you need to do is listen.</div><div class="elementor-button elementor-slide-button elementor-size-md">See Audio Files</div></div></a></div><div class="elementor-repeater-item-54a4523 swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 1019px;" role="group" aria-label="2 / 3"><div class="swiper-slide-bg"></div><div class="elementor-background-overlay"></div><a class="swiper-slide-inner" href="https://www.transformhypnosis.com/shop/"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Relax Into Transformation</div><div class="elementor-slide-description">All you need to do is listen.</div><div class="elementor-button elementor-slide-button elementor-size-md">See Audio Files</div></div></a></div><div class="elementor-repeater-item-987a087 swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 1019px;"><div class="swiper-slide-bg"></div><div class="elementor-background-overlay"></div><a class="swiper-slide-inner" href="https://www.transformhypnosis.com/shop/"><div class="swiper-slide-contents"><div class="elementor-slide-heading">Relax Into Transformation</div><div class="elementor-slide-description">All you need to do is listen.</div><div class="elementor-button elementor-slide-button elementor-size-md">See Audio Files</div></div></a></div></div>
+																				<div class="elementor-swiper-button elementor-swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-67b95ddd5d23cb79">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-67b95ddd5d23cb79">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next</span>
+						</div>
+												<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4e2dba4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="4e2dba4" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a933a03" data-id="a933a03" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-16a983e elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-widget elementor-widget-divider" data-id="16a983e" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.15.0 - 20-08-2023 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+							<span class="elementor-divider__text elementor-divider__element">
+				new Tracks				</span>
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1708a5a elementor-widget elementor-widget-xpro-woo-product-grid" data-id="1708a5a" data-element_type="widget" data-settings="{&quot;column_grid&quot;:&quot;5&quot;,&quot;image_height&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:190,&quot;sizes&quot;:[]},&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;column_grid_tablet&quot;:&quot;2&quot;,&quot;column_grid_mobile&quot;:&quot;1&quot;,&quot;image_height_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_height_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]}}" data-widget_type="xpro-woo-product-grid.default">
+				<div class="elementor-widget-container">
+			
+		<div class="xpro-product-grid-wrapper xpro-woo-product-grid-layout-5">
+
+			
+				<div class="xpro-woo-product-grid-main cbp cbp-caption-active cbp-caption-pushTop cbp-ready" style="height: 262px;"><div class="cbp-wrapper-outer"><div class="cbp-wrapper">
+					
+		<div id="xpro-woo-product-grid-id-18980" class="cbp-item xpro-woo-product-grid-item" style="width: 143px; left: 0px; top: 0px;"><div class="cbp-item-wrapper">
+			<!-- image wrapper -->
+			<div class="xpro-woo-product-grid-img">
+				<div class="xpro-woo-product-img-section">
+											<img decoding="async" class="xpro-woo-product-grid-img xpro-product-img-url" src="https://www.transformhypnosis.com/wp-content/uploads/Chastity-Productivity-Fitness-Product-Photo-280x280.png" alt="product-image">
+						
+					
+				</div>
+			</div>
+			<!-- image wrapper end -->
+
+			<!-- content sec -->
+			<div class="xpro-woo-product-grid-content-sec">
+				
+									<!-- title -->
+					<a class="xpro-woo-product-grid-title-wrapper" href="https://www.transformhypnosis.com/product/chastity-fitness-productivity/">
+						<h2 class="xpro-woo-product-grid-title">Chastity Fitness Productivity</h2>
+					</a>
+					<!-- title end-->
+				
+				
+				
+				
+				
+				
+			</div>
+			<!-- content sec end -->
+		</div></div>
+		
+		<div id="xpro-woo-product-grid-id-18928" class="cbp-item xpro-woo-product-grid-item" style="width: 143px; left: 193px; top: 0px;"><div class="cbp-item-wrapper">
+			<!-- image wrapper -->
+			<div class="xpro-woo-product-grid-img">
+				<div class="xpro-woo-product-img-section">
+											<img decoding="async" class="xpro-woo-product-grid-img xpro-product-img-url" src="https://www.transformhypnosis.com/wp-content/uploads/Sexually-Female-Product-Photo-280x280.png" alt="product-image">
+						
+					
+				</div>
+			</div>
+			<!-- image wrapper end -->
+
+			<!-- content sec -->
+			<div class="xpro-woo-product-grid-content-sec">
+				
+									<!-- title -->
+					<a class="xpro-woo-product-grid-title-wrapper" href="https://www.transformhypnosis.com/product/sexually-female/">
+						<h2 class="xpro-woo-product-grid-title">Sexually Female&nbsp;</h2>
+					</a>
+					<!-- title end-->
+				
+				
+				
+				
+				
+				
+			</div>
+			<!-- content sec end -->
+		</div></div>
+		
+		<div id="xpro-woo-product-grid-id-18527" class="cbp-item xpro-woo-product-grid-item" style="width: 143px; left: 386px; top: 0px;"><div class="cbp-item-wrapper">
+			<!-- image wrapper -->
+			<div class="xpro-woo-product-grid-img">
+				<div class="xpro-woo-product-img-section">
+											<img decoding="async" class="xpro-woo-product-grid-img xpro-product-img-url" src="https://www.transformhypnosis.com/wp-content/uploads/Domesticated_Bodybuilder_SMALL-280x280.jpg" alt="product-image">
+						
+					
+				</div>
+			</div>
+			<!-- image wrapper end -->
+
+			<!-- content sec -->
+			<div class="xpro-woo-product-grid-content-sec">
+				
+									<!-- title -->
+					<a class="xpro-woo-product-grid-title-wrapper" href="https://www.transformhypnosis.com/product/domesticated-bodybuilder/">
+						<h2 class="xpro-woo-product-grid-title">Domesticated Bodybuilder</h2>
+					</a>
+					<!-- title end-->
+				
+				
+				
+				
+				
+				
+			</div>
+			<!-- content sec end -->
+		</div></div>
+		
+		<div id="xpro-woo-product-grid-id-18512" class="cbp-item xpro-woo-product-grid-item" style="width: 143px; left: 579px; top: 0px;"><div class="cbp-item-wrapper">
+			<!-- image wrapper -->
+			<div class="xpro-woo-product-grid-img">
+				<div class="xpro-woo-product-img-section">
+											<img decoding="async" class="xpro-woo-product-grid-img xpro-product-img-url" src="https://www.transformhypnosis.com/wp-content/uploads/hypnosis-for-insane-productivity-abstract-photograph-280x280.png" alt="product-image">
+						
+					
+				</div>
+			</div>
+			<!-- image wrapper end -->
+
+			<!-- content sec -->
+			<div class="xpro-woo-product-grid-content-sec">
+				
+									<!-- title -->
+					<a class="xpro-woo-product-grid-title-wrapper" href="https://www.transformhypnosis.com/product/insanely-productive/">
+						<h2 class="xpro-woo-product-grid-title">Insanely Productive</h2>
+					</a>
+					<!-- title end-->
+				
+				
+				
+				
+				
+				
+			</div>
+			<!-- content sec end -->
+		</div></div>
+		
+		<div id="xpro-woo-product-grid-id-18391" class="cbp-item xpro-woo-product-grid-item" style="width: 143px; left: 772px; top: 0px;"><div class="cbp-item-wrapper">
+			<!-- image wrapper -->
+			<div class="xpro-woo-product-grid-img">
+				<div class="xpro-woo-product-img-section">
+											<img decoding="async" class="xpro-woo-product-grid-img xpro-product-img-url" src="https://www.transformhypnosis.com/wp-content/uploads/Hairy_And_Virile_20220714-280x280.jpg" alt="product-image">
+						
+					
+				</div>
+			</div>
+			<!-- image wrapper end -->
+
+			<!-- content sec -->
+			<div class="xpro-woo-product-grid-content-sec">
+				
+									<!-- title -->
+					<a class="xpro-woo-product-grid-title-wrapper" href="https://www.transformhypnosis.com/product/hairy-and-virile/">
+						<h2 class="xpro-woo-product-grid-title">Hairy and Virile</h2>
+					</a>
+					<!-- title end-->
+				
+				
+				
+				
+				
+				
+			</div>
+			<!-- content sec end -->
+		</div></div>
+						</div></div></div>
+
+						</div>
+
+		<!-- quick view main wrapper -->
+		<div class="xpro-qv-main-wrapper">
+			<div class="xpro-qv-inner-wrapper xpro-qv-layouts xpro-qv-layout-">
+				<!-- quick view loader  -->
+				<div class="xpro-qv-loader-wrapper xpro-qv-preloader-layout">
+					<div class="xpro-qv-preloader">
+						<div class="xpro-qv-preloader-box">
+							<div class="xpro-qv-loader-spinner spinner-1"></div>
+							<div class="xpro-qv-loader-spinner spinner-2"></div>
+							<div class="xpro-qv-loader-spinner spinner-3"></div>
+						</div>
+					</div>
+				</div>
+				<!-- quick view loader end -->
+
+				<!-- quick view -->
+				<div class="xpro-qv-popup-overlay"></div>
+				<div class="xpro-qv-popup-wrapper swatches-support">
+					<div class="xpro-qv-popup-inner animated ">
+						<div id="xpro_elementor_fetch_qv_data" class="xpro-fetch-qv-cls"></div>
+					</div>
+				</div>
+				<!-- quick view end -->
+			</div>
+		</div>
+		<!-- quick view main wrapper end -->
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-67c7c57 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="67c7c57" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-201c79d" data-id="201c79d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0e94109 elementor-grid-1 elementor-posts--thumbnail-left elementor-hidden-tablet elementor-hidden-mobile elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-widget elementor-widget-posts" data-id="0e94109" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:78,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:8,&quot;sizes&quot;:[]},&quot;classic_columns_tablet&quot;:&quot;2&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://www.transformhypnosis.com/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css">		<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid elementor-has-item-ratio">
+				<article class="elementor-post elementor-grid-item post-18800 post type-post status-publish format-standard has-post-thumbnail hentry category-productivity category-self-improvement tag-did-list-benefits tag-effective-time-management tag-improve-productivity-with-did-list tag-productivity tag-productivity-tools tag-task-management-tips">
+				<a class="elementor-post__thumbnail__link" href="https://www.transformhypnosis.com/did-list-improving-productivity/">
+			<div class="elementor-post__thumbnail elementor-fit-height"><img decoding="async" width="800" height="386" src="https://www.transformhypnosis.com/wp-content/uploads/Productivity-Stock-Image-Canva-2-800x386.png" class="attachment-medium size-medium wp-image-18816" alt="" loading="lazy" srcset="https://www.transformhypnosis.com/wp-content/uploads/Productivity-Stock-Image-Canva-2-800x386.png 800w, https://www.transformhypnosis.com/wp-content/uploads/Productivity-Stock-Image-Canva-2-510x246.png 510w, https://www.transformhypnosis.com/wp-content/uploads/Productivity-Stock-Image-Canva-2.png 825w" sizes="(max-width: 800px) 100vw, 800px"></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.transformhypnosis.com/did-list-improving-productivity/">
+				A Did-List is Vastly Superior to a To-Do List			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Everyone’s got a To-Do List. You live your entire adult life with your to-do list, and&nbsp; You’ll die with your to-do list, too. It will</p>
+		</div>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-18487 post type-post status-publish format-standard has-post-thumbnail hentry category-self-improvement category-wealth tag-money tag-productivity tag-self-improvement">
+				<a class="elementor-post__thumbnail__link" href="https://www.transformhypnosis.com/insanely-productive-guide/">
+			<div class="elementor-post__thumbnail"><img decoding="async" width="267" height="400" src="https://www.transformhypnosis.com/wp-content/uploads/pexels-photo-17389911-267x400.jpeg" class="attachment-medium size-medium wp-image-18490" alt="High productivity hypnosis" loading="lazy"></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.transformhypnosis.com/insanely-productive-guide/">
+				Insanely Productive Hypnosis File Guide			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>How to Use the Insanely Productive Audio File The Insanely Productive audio file is designed to help you make better choices, and take actions immediately,</p>
+		</div>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-17886 post type-post status-publish format-standard has-post-thumbnail hentry category-self-improvement">
+				<a class="elementor-post__thumbnail__link" href="https://www.transformhypnosis.com/anatomy-of-a-powerful-hypnosis-file-that-actually-works-10-steps/">
+			<div class="elementor-post__thumbnail"><img decoding="async" width="604" height="400" src="https://www.transformhypnosis.com/wp-content/uploads/Audio-For-Greatest-Hypnosis-604x400.jpg" class="attachment-medium size-medium wp-image-17889" alt="" loading="lazy" srcset="https://www.transformhypnosis.com/wp-content/uploads/Audio-For-Greatest-Hypnosis-604x400.jpg 604w, https://www.transformhypnosis.com/wp-content/uploads/Audio-For-Greatest-Hypnosis-510x338.jpg 510w, https://www.transformhypnosis.com/wp-content/uploads/Audio-For-Greatest-Hypnosis.jpg 1000w" sizes="(max-width: 604px) 100vw, 604px"></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.transformhypnosis.com/anatomy-of-a-powerful-hypnosis-file-that-actually-works-10-steps/">
+				Anatomy of a powerful hypnosis file that actually works (10 steps)			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Maybe you want to start making your own hypnosis files. Maybe you’re just curious about it. Either way, Let’s dive into one of many different</p>
+		</div>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-17882 post type-post status-publish format-standard has-post-thumbnail hentry category-self-improvement category-wealth">
+				<a class="elementor-post__thumbnail__link" href="https://www.transformhypnosis.com/dont-be-stupid-the-best-roi-is-simple/">
+			<div class="elementor-post__thumbnail"><img decoding="async" width="600" height="400" src="https://www.transformhypnosis.com/wp-content/uploads/Man-Reading-In-Water-600x400.jpg" class="attachment-medium size-medium wp-image-17883" alt="" loading="lazy" srcset="https://www.transformhypnosis.com/wp-content/uploads/Man-Reading-In-Water-600x400.jpg 600w, https://www.transformhypnosis.com/wp-content/uploads/Man-Reading-In-Water-510x340.jpg 510w, https://www.transformhypnosis.com/wp-content/uploads/Man-Reading-In-Water.jpg 800w" sizes="(max-width: 600px) 100vw, 600px"></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.transformhypnosis.com/dont-be-stupid-the-best-roi-is-simple/">
+				The best ROI for your life is simple.			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>There’s ONE single thing that you can invest in that will always net you the biggest gains for the amount that you put in. Books!</p>
+		</div>
+				</div>
+				</article>
+				</div>
+		
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ffac57a elementor-align-center elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="ffac57a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://transformhypnosis.softaks.xyz/blog/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Read Blog</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1a2b77d elementor-grid-1 elementor-posts--align-center elementor-hidden-desktop elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts" data-id="1a2b77d" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:78,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;classic_columns_tablet&quot;:&quot;2&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
+				<div class="elementor-widget-container">
+					<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid elementor-has-item-ratio">
+				<article class="elementor-post elementor-grid-item post-18800 post type-post status-publish format-standard has-post-thumbnail hentry category-productivity category-self-improvement tag-did-list-benefits tag-effective-time-management tag-improve-productivity-with-did-list tag-productivity tag-productivity-tools tag-task-management-tips">
+				<a class="elementor-post__thumbnail__link" href="https://www.transformhypnosis.com/did-list-improving-productivity/">
+			<div class="elementor-post__thumbnail"><img decoding="async" width="800" height="386" src="https://www.transformhypnosis.com/wp-content/uploads/Productivity-Stock-Image-Canva-2-800x386.png" class="attachment-medium size-medium wp-image-18816" alt="" loading="lazy" srcset="https://www.transformhypnosis.com/wp-content/uploads/Productivity-Stock-Image-Canva-2-800x386.png 800w, https://www.transformhypnosis.com/wp-content/uploads/Productivity-Stock-Image-Canva-2-510x246.png 510w, https://www.transformhypnosis.com/wp-content/uploads/Productivity-Stock-Image-Canva-2.png 825w" sizes="(max-width: 800px) 100vw, 800px"></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.transformhypnosis.com/did-list-improving-productivity/">
+				A Did-List is Vastly Superior to a To-Do List			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Everyone’s got a To-Do List. You live your entire adult life with your to-do list, and&nbsp; You’ll die with your to-do list, too. It will</p>
+		</div>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-18487 post type-post status-publish format-standard has-post-thumbnail hentry category-self-improvement category-wealth tag-money tag-productivity tag-self-improvement">
+				<a class="elementor-post__thumbnail__link" href="https://www.transformhypnosis.com/insanely-productive-guide/">
+			<div class="elementor-post__thumbnail"><img decoding="async" width="267" height="400" src="https://www.transformhypnosis.com/wp-content/uploads/pexels-photo-17389911-267x400.jpeg" class="attachment-medium size-medium wp-image-18490" alt="High productivity hypnosis" loading="lazy"></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.transformhypnosis.com/insanely-productive-guide/">
+				Insanely Productive Hypnosis File Guide			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>How to Use the Insanely Productive Audio File The Insanely Productive audio file is designed to help you make better choices, and take actions immediately,</p>
+		</div>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-17886 post type-post status-publish format-standard has-post-thumbnail hentry category-self-improvement">
+				<a class="elementor-post__thumbnail__link" href="https://www.transformhypnosis.com/anatomy-of-a-powerful-hypnosis-file-that-actually-works-10-steps/">
+			<div class="elementor-post__thumbnail"><img decoding="async" width="604" height="400" src="https://www.transformhypnosis.com/wp-content/uploads/Audio-For-Greatest-Hypnosis-604x400.jpg" class="attachment-medium size-medium wp-image-17889" alt="" loading="lazy" srcset="https://www.transformhypnosis.com/wp-content/uploads/Audio-For-Greatest-Hypnosis-604x400.jpg 604w, https://www.transformhypnosis.com/wp-content/uploads/Audio-For-Greatest-Hypnosis-510x338.jpg 510w, https://www.transformhypnosis.com/wp-content/uploads/Audio-For-Greatest-Hypnosis.jpg 1000w" sizes="(max-width: 604px) 100vw, 604px"></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.transformhypnosis.com/anatomy-of-a-powerful-hypnosis-file-that-actually-works-10-steps/">
+				Anatomy of a powerful hypnosis file that actually works (10 steps)			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>Maybe you want to start making your own hypnosis files. Maybe you’re just curious about it. Either way, Let’s dive into one of many different</p>
+		</div>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-17882 post type-post status-publish format-standard has-post-thumbnail hentry category-self-improvement category-wealth">
+				<a class="elementor-post__thumbnail__link" href="https://www.transformhypnosis.com/dont-be-stupid-the-best-roi-is-simple/">
+			<div class="elementor-post__thumbnail"><img decoding="async" width="600" height="400" src="https://www.transformhypnosis.com/wp-content/uploads/Man-Reading-In-Water-600x400.jpg" class="attachment-medium size-medium wp-image-17883" alt="" loading="lazy" srcset="https://www.transformhypnosis.com/wp-content/uploads/Man-Reading-In-Water-600x400.jpg 600w, https://www.transformhypnosis.com/wp-content/uploads/Man-Reading-In-Water-510x340.jpg 510w, https://www.transformhypnosis.com/wp-content/uploads/Man-Reading-In-Water.jpg 800w" sizes="(max-width: 600px) 100vw, 600px"></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://www.transformhypnosis.com/dont-be-stupid-the-best-roi-is-simple/">
+				The best ROI for your life is simple.			</a>
+		</h3>
+				<div class="elementor-post__excerpt">
+			<p>There’s ONE single thing that you can invest in that will always net you the biggest gains for the amount that you put in. Books!</p>
+		</div>
+				</div>
+				</article>
+				</div>
+		
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1f19f1f elementor-align-center elementor-hidden-desktop elementor-widget elementor-widget-button" data-id="1f19f1f" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://transformhypnosis.softaks.xyz/blog/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Read Blog</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2ba6688 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2ba6688" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d73b8f1" data-id="d73b8f1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c50b767 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-widget elementor-widget-divider" data-id="c50b767" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+							<span class="elementor-divider__text elementor-divider__element">
+				Raves And Reviews				</span>
+						</span>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-acc2957 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="acc2957" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a86fbf8" data-id="a86fbf8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-40dd728 xpro-testimonial-layout-5 xpro-testimonial-align-center xpro-testimonial-align--mobilecenter elementor-widget elementor-widget-xpro-testimonial" data-id="40dd728" data-element_type="widget" data-widget_type="xpro-testimonial.default">
+				<div class="elementor-widget-container">
+			
+	
+<div class="xpro-testimonial-inner-wrapper"><div class="xpro-testimonial-content">
+
+			<span class="xpro-testimonial-quote">
+			<i aria-hidden="true" class="fas fa-quote-left"></i>		</span>
+	
+	
+			<div class="xpro-testimonial-description">
+			My boss has noticed a change in me since I’ve been listening to your files and gave me a raise. He said my attitude is what we need more of around here. Thank you. Now I know what it feels like to be a real man.
+
+		</div>
+	
+	</div>
+<div class="xpro-testimonial-author">
+			<div class="xpro-testimonial-author-bio">
+				<h3 class="xpro-testimonial-title">Bullyboy</h3>
+		</div>
+	<div class="xpro-testimonial-rating xpro-rating-layout-star">
+		<i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i>
+	</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1de0b5e" data-id="1de0b5e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d62e571 xpro-testimonial-layout-5 xpro-testimonial-align-center xpro-testimonial-align--mobilecenter elementor-widget elementor-widget-xpro-testimonial" data-id="d62e571" data-element_type="widget" data-widget_type="xpro-testimonial.default">
+				<div class="elementor-widget-container">
+			
+	
+<div class="xpro-testimonial-inner-wrapper"><div class="xpro-testimonial-content">
+
+			<span class="xpro-testimonial-quote">
+			<i aria-hidden="true" class="fas fa-quote-left"></i>		</span>
+	
+	
+			<div class="xpro-testimonial-description">
+			Love my custom file. Got it in a couple of days. Everything I asked for, and more!
+
+
+		</div>
+	
+	</div>
+<div class="xpro-testimonial-author">
+			<div class="xpro-testimonial-author-bio">
+				<h3 class="xpro-testimonial-title">Robksf</h3>
+		</div>
+	<div class="xpro-testimonial-rating xpro-rating-layout-star">
+		<i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i>
+	</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c623f41" data-id="c623f41" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-74c056c xpro-testimonial-layout-5 xpro-testimonial-align-center xpro-testimonial-align--mobilecenter elementor-widget elementor-widget-xpro-testimonial" data-id="74c056c" data-element_type="widget" data-widget_type="xpro-testimonial.default">
+				<div class="elementor-widget-container">
+			
+	
+<div class="xpro-testimonial-inner-wrapper"><div class="xpro-testimonial-content">
+
+			<span class="xpro-testimonial-quote">
+			<i aria-hidden="true" class="fas fa-quote-left"></i>		</span>
+	
+	
+			<div class="xpro-testimonial-description">
+			Pretty freaking amazing! if you get the chance, get a custom file! I found myself not wanting it to end! THANK YOU!!!
+
+
+		</div>
+	
+	</div>
+<div class="xpro-testimonial-author">
+			<div class="xpro-testimonial-author-bio">
+				<h3 class="xpro-testimonial-title">Bryon</h3>
+		</div>
+	<div class="xpro-testimonial-rating xpro-rating-layout-star">
+		<i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i>
+	</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-b3f3900 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b3f3900" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8d3e5e9" data-id="8d3e5e9" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-66d8feb xpro-testimonial-layout-5 xpro-testimonial-align-center xpro-testimonial-align--mobilecenter elementor-widget elementor-widget-xpro-testimonial" data-id="66d8feb" data-element_type="widget" data-widget_type="xpro-testimonial.default">
+				<div class="elementor-widget-container">
+			
+	
+<div class="xpro-testimonial-inner-wrapper"><div class="xpro-testimonial-content">
+
+			<span class="xpro-testimonial-quote">
+			<i aria-hidden="true" class="fas fa-quote-left"></i>		</span>
+	
+	
+			<div class="xpro-testimonial-description">
+			I have ordered 2 files so far from Jack and they were both complete within 3 days. The 1st file was great but not 100% since I didn’t fully describe what I wanted, so he added on to it and gave an improved version back to me in 1 day. The 2nd file was absolutely perfect. They were certainly worth the money for me and I was more than happy with what I was given. If you order, try to be as descriptive as possible so Jack can give you a file that you truly want. Jack isn’t just another hypnotist grabbing gobs of your money and then giving you a rough draft of what you asked for, he truly cares about his work and takes his trade (is hypnotizing a trade?) very seriously. Top notch hypnotist and my most favorite one too.
+
+
+
+		</div>
+	
+	</div>
+<div class="xpro-testimonial-author">
+			<div class="xpro-testimonial-author-bio">
+				<h3 class="xpro-testimonial-title">Warp1</h3>
+		</div>
+	<div class="xpro-testimonial-rating xpro-rating-layout-star">
+		<i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i>
+	</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3c5b350" data-id="3c5b350" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c284734 xpro-testimonial-layout-5 xpro-testimonial-align-center xpro-testimonial-align--mobilecenter elementor-widget elementor-widget-xpro-testimonial" data-id="c284734" data-element_type="widget" data-widget_type="xpro-testimonial.default">
+				<div class="elementor-widget-container">
+			
+	
+<div class="xpro-testimonial-inner-wrapper"><div class="xpro-testimonial-content">
+
+			<span class="xpro-testimonial-quote">
+			<i aria-hidden="true" class="fas fa-quote-left"></i>		</span>
+	
+	
+			<div class="xpro-testimonial-description">
+			I just wanted to say thank you now that I know you read these.. At a time in my life when all has gone away or turned negative and my thoughts have gone dark and hopeless, you have turned on a part of me from 40 yrs away I put away and forgot. Importantly this part gives me light and reason to go on and when I watch you videos a smile. What you have given me unknowning to you is something in life I could never repay or put a price on.
+
+
+
+
+		</div>
+	
+	</div>
+<div class="xpro-testimonial-author">
+			<div class="xpro-testimonial-author-bio">
+				<h3 class="xpro-testimonial-title">L.M.</h3>
+		</div>
+	<div class="xpro-testimonial-rating xpro-rating-layout-star">
+		<i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i>
+	</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3fc5ed8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3fc5ed8" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-03b105f" data-id="03b105f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6ba536a xpro-testimonial-layout-5 xpro-testimonial-align-center xpro-testimonial-align--mobilecenter elementor-widget elementor-widget-xpro-testimonial" data-id="6ba536a" data-element_type="widget" data-widget_type="xpro-testimonial.default">
+				<div class="elementor-widget-container">
+			
+	
+<div class="xpro-testimonial-inner-wrapper"><div class="xpro-testimonial-content">
+
+			<span class="xpro-testimonial-quote">
+			<i aria-hidden="true" class="fas fa-quote-left"></i>		</span>
+	
+	
+			<div class="xpro-testimonial-description">
+			This file is perfect! It’s not just relaxing but makes you feel so good. The sound, the music, and the voice all work together to relax and inspire.
+
+
+
+		</div>
+	
+	</div>
+<div class="xpro-testimonial-author">
+			<div class="xpro-testimonial-author-bio">
+				<h3 class="xpro-testimonial-title">Christopher</h3>
+		</div>
+	<div class="xpro-testimonial-rating xpro-rating-layout-star">
+		<i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i>
+	</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4f0f144" data-id="4f0f144" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2917681 xpro-testimonial-layout-5 xpro-testimonial-align-center xpro-testimonial-align--mobilecenter elementor-widget elementor-widget-xpro-testimonial" data-id="2917681" data-element_type="widget" data-widget_type="xpro-testimonial.default">
+				<div class="elementor-widget-container">
+			
+	
+<div class="xpro-testimonial-inner-wrapper"><div class="xpro-testimonial-content">
+
+			<span class="xpro-testimonial-quote">
+			<i aria-hidden="true" class="fas fa-quote-left"></i>		</span>
+	
+	
+			<div class="xpro-testimonial-description">
+			Jack is talented professional. He masters his work very well. The new amazing custom file helped me to acheive goals now day by day…. so relaxing. Thank you Jack.
+
+
+
+		</div>
+	
+	</div>
+<div class="xpro-testimonial-author">
+			<div class="xpro-testimonial-author-bio">
+				<h3 class="xpro-testimonial-title">Tom Langer</h3>
+		</div>
+	<div class="xpro-testimonial-rating xpro-rating-layout-star">
+		<i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i>
+	</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f3b13d2" data-id="f3b13d2" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-bedde2c xpro-testimonial-layout-5 xpro-testimonial-align-center xpro-testimonial-align--mobilecenter elementor-widget elementor-widget-xpro-testimonial" data-id="bedde2c" data-element_type="widget" data-widget_type="xpro-testimonial.default">
+				<div class="elementor-widget-container">
+			
+	
+<div class="xpro-testimonial-inner-wrapper"><div class="xpro-testimonial-content">
+
+			<span class="xpro-testimonial-quote">
+			<i aria-hidden="true" class="fas fa-quote-left"></i>		</span>
+	
+	
+			<div class="xpro-testimonial-description">
+			You are a talented and creative guy, and very sensitive, open, and accepting as well, and I appreciate that incredibly! Thanks!
+
+
+
+
+		</div>
+	
+	</div>
+<div class="xpro-testimonial-author">
+			<div class="xpro-testimonial-author-bio">
+				<h3 class="xpro-testimonial-title">David</h3>
+		</div>
+	<div class="xpro-testimonial-rating xpro-rating-layout-star">
+		<i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i>
+	</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-e6afb35 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e6afb35" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-031bbcb" data-id="031bbcb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-44cc8f4 xpro-testimonial-layout-5 xpro-testimonial-align-center xpro-testimonial-align--mobilecenter elementor-widget elementor-widget-xpro-testimonial" data-id="44cc8f4" data-element_type="widget" data-widget_type="xpro-testimonial.default">
+				<div class="elementor-widget-container">
+			
+	
+<div class="xpro-testimonial-inner-wrapper"><div class="xpro-testimonial-content">
+
+			<span class="xpro-testimonial-quote">
+			<i aria-hidden="true" class="fas fa-quote-left"></i>		</span>
+	
+	
+			<div class="xpro-testimonial-description">
+			Jack is really making me go deeper in his induction. It begin with his free youtube videos and then i bought a file. I don’t feel the same when i am listening to him, he make me want to be the best version of me.
+
+
+
+
+		</div>
+	
+	</div>
+<div class="xpro-testimonial-author">
+			<div class="xpro-testimonial-author-bio">
+				<h3 class="xpro-testimonial-title">Steven D.</h3>
+		</div>
+	<div class="xpro-testimonial-rating xpro-rating-layout-star">
+		<i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i>
+	</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-cfa9711" data-id="cfa9711" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a739f25 xpro-testimonial-layout-5 xpro-testimonial-align-center xpro-testimonial-align--mobilecenter elementor-widget elementor-widget-xpro-testimonial" data-id="a739f25" data-element_type="widget" data-widget_type="xpro-testimonial.default">
+				<div class="elementor-widget-container">
+			
+	
+<div class="xpro-testimonial-inner-wrapper"><div class="xpro-testimonial-content">
+
+			<span class="xpro-testimonial-quote">
+			<i aria-hidden="true" class="fas fa-quote-left"></i>		</span>
+	
+	
+			<div class="xpro-testimonial-description">
+			Jack has an amazing way of mixing submission and nurturing both at the same time. I really love my custom file, great investment! Jack makes me feel sooo good I listen to my file at least twice a day! Just can’t get enough. Best hypnosis file I’ve ever listened to. Thanks Jack
+
+
+		</div>
+	
+	</div>
+<div class="xpro-testimonial-author">
+			<div class="xpro-testimonial-author-bio">
+				<h3 class="xpro-testimonial-title">MartyP</h3>
+		</div>
+	<div class="xpro-testimonial-rating xpro-rating-layout-star">
+		<i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i><i class="fas fa-star xpro-rating-filled" aria-hidden="true"></i>
+	</div>
+</div>
+</div>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+							</div>
+				<div data-elementor-type="footer" data-elementor-id="19021" class="elementor elementor-19021 elementor-location-footer">
+								<section class="elementor-section elementor-top-section elementor-element elementor-element-4e271de7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4e271de7" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-76ab23d2" data-id="76ab23d2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-33d53fa3 elementor-widget elementor-widget-text-editor" data-id="33d53fa3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.15.0 - 20-08-2023 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				Transform Hypnosis is the best place to find Hypnosis audios.						</div>
+				</div>
+				<div class="elementor-element elementor-element-10a44f71 elementor-widget elementor-widget-xpro-social-icon" data-id="10a44f71" data-element_type="widget" data-widget_type="xpro-social-icon.default">
+				<div class="elementor-widget-container">
+			
+<!-- Social Icon -->
+<ul class="xpro-social-icon-wrapper">
+			<li class="elementor-repeater-item-3ebd416">
+			<span class="xpro-social-icon xpro-elementor-button-animation-none elementor-social-icon-twitter ">			<i aria-hidden="true" class="fab fa-twitter"></i>						</span>		</li>
+			<li class="elementor-repeater-item-ae41738">
+			<span class="xpro-social-icon xpro-elementor-button-animation-none elementor-social-icon-facebook-f ">			<i aria-hidden="true" class="fab fa-facebook-f"></i>						</span>		</li>
+			<li class="elementor-repeater-item-6e57557">
+			<span class="xpro-social-icon xpro-elementor-button-animation-none elementor-social-icon-instagram ">			<i aria-hidden="true" class="fab fa-instagram"></i>						</span>		</li>
+	</ul>
+		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-47e1f85d" data-id="47e1f85d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6f190107 elementor-widget elementor-widget-heading" data-id="6f190107" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.15.0 - 20-08-2023 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Categories</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-bb8ed97 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bb8ed97" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8a5c1ed" data-id="8a5c1ed" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5efd1c03 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5efd1c03" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/product-category/animal/">
+
+											<span class="elementor-icon-list-text">Animal</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/product-category/deepener/">
+
+											<span class="elementor-icon-list-text">Deepener</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/product-category/fantasy/">
+
+											<span class="elementor-icon-list-text">Fantasy</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/product-category/feminine/">
+
+											<span class="elementor-icon-list-text">Feminine</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/product-category/free/">
+
+											<span class="elementor-icon-list-text">Free</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-976e9e1" data-id="976e9e1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3da07ad elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3da07ad" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/product-category/masculine/">
+
+											<span class="elementor-icon-list-text">Masculine</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/product-category/mindcontrol/">
+
+											<span class="elementor-icon-list-text">Mind Control</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/product-category/muscle/">
+
+											<span class="elementor-icon-list-text">Muscle</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/product-category/self-improvement/">
+
+											<span class="elementor-icon-list-text">Self Improvement</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/product-category/sexual/">
+
+											<span class="elementor-icon-list-text">Sexual</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4a377b67" data-id="4a377b67" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4443633b elementor-widget elementor-widget-heading" data-id="4443633b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Info</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-77d2d292 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="77d2d292" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/raves/">
+
+											<span class="elementor-icon-list-text">Raves</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/faqs/">
+
+											<span class="elementor-icon-list-text">FAQ</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/contact/">
+
+											<span class="elementor-icon-list-text">Contact Me</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-39ac3fd6" data-id="39ac3fd6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7cd988d4 elementor-widget elementor-widget-heading" data-id="7cd988d4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Support</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-31d8db79 elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="31d8db79" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/privacy-policy/">
+
+											<span class="elementor-icon-list-text">Privacy policy</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/terms/">
+
+											<span class="elementor-icon-list-text">Terms of use</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.transformhypnosis.com/refund_returns/">
+
+											<span class="elementor-icon-list-text">Refund &amp; Returns Policy</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+		
+
+<div class="xoo-wsc-modal">
+
+	
+
+<div class="xoo-wsc-container">
+
+	<div class="xoo-wsc-basket" style="display: none;">
+
+					<span class="xoo-wsc-items-count">0</span>
+		
+		<span class="xoo-wsc-bki xoo-wsc-icon-basket1"></span>
+
+		
+	</div>
+
+	<div class="xoo-wsc-header">
+
+		
+		
+<div class="xoo-wsch-top">
+
+			<div class="xoo-wsc-notice-container" data-section="cart" style="display: none;"><ul class="xoo-wsc-notices"></ul></div>	
+			<div class="xoo-wsch-basket">
+			<span class="xoo-wscb-icon xoo-wsc-icon-bag2"></span>
+			<span class="xoo-wscb-count">0</span>
+		</div>
+	
+			<span class="xoo-wsch-text">Your Cart</span>
+	
+			<span class="xoo-wsch-close xoo-wsc-icon-cross"></span>
+	
+</div>
+		
+	</div>
+
+
+	<div class="xoo-wsc-body">
+
+		
+		
+<div class="xoo-wsc-empty-cart"><span>Your cart is empty</span><a class="xoo-wsc-btn" href="https://www.transformhypnosis.com/shop/">Return to Shop</a></div>
+		
+	</div>
+
+	<div class="xoo-wsc-footer">
+
+		
+		
+
+
+
+<span class="xoo-wsc-footer-txt">To find out your shipping cost , Please proceed to checkout.</span>
+
+<div class="xoo-wsc-ft-buttons-cont">
+
+	<a href="#" class="xoo-wsc-ft-btn xoo-wsc-btn xoo-wsc-cart-close xoo-wsc-ft-btn-continue">Continue Shopping</a>
+</div>
+
+
+		
+	</div>
+
+	<span class="xoo-wsc-loader"></span>
+
+</div>
+	<span class="xoo-wsc-opac">
+
+</span></div>	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
+</script>
+<link rel="stylesheet" id="cubeportfolio-css" href="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/assets/vendor/css/cubeportfolio.min.css?ver=4.4.0" media="all">
+<link rel="stylesheet" id="animate-css" href="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/assets/vendor/css/animate.min.css?ver=3.4.0" media="all">
+<link rel="stylesheet" id="hover-css" href="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/assets/vendor/css/hover.min.css?ver=2.3.2" media="all">
+<link rel="stylesheet" id="e-animations-css" href="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.15.3" media="all">
+<script id="xpro-elementor-addons-widgets-js-extra">
+var XproElementorAddons = {"ajax_url":"https:\/\/www.transformhypnosis.com\/wp-admin\/admin-ajax.php","nonce":"8a9dbb6471"};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/assets/js/xpro-widgets.js?ver=1.3.8" id="xpro-elementor-addons-widgets-js"></script>
+<script id="convertkit-broadcasts-js-extra">
+var convertkit_broadcasts = {"ajax_url":"https:\/\/www.transformhypnosis.com\/wp-admin\/admin-ajax.php","action":"convertkit_broadcasts_render","debug":""};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/convertkit/resources/frontend/js/broadcasts.js?ver=2.2.9" id="convertkit-broadcasts-js"></script>
+<script id="convertkit-js-js-extra">
+var convertkit = {"ajaxurl":"https:\/\/www.transformhypnosis.com\/wp-admin\/admin-ajax.php","debug":"","nonce":"ffec742e42","subscriber_id":"","tag":"","post_id":"19028"};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/convertkit/resources/frontend/js/convertkit.js?ver=2.2.9" id="convertkit-js-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.0.3" id="jquery-blockui-js"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%&elementor_page_id=19028","i18n_view_cart":"View cart","cart_url":"https:\/\/www.transformhypnosis.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.0.3" id="wc-add-to-cart-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.0.3" id="js-cookie-js"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%&elementor_page_id=19028"};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.0.3" id="woocommerce-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0" id="hello-theme-frontend-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/modules/swatches/assets/js/frontend.js?ver=1.3.8" id="xpro-swatch-frontend-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/modules/swatches/loop-product-support/assets/swatches.js?ver=1515155" id="xpro-swatches-loop-js-js"></script>
+<script id="xoo-wsc-main-js-js-extra">
+var xoo_wsc_params = {"adminurl":"https:\/\/www.transformhypnosis.com\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%&elementor_page_id=19028","qtyUpdateDelay":"500","notificationTime":"5000","html":{"successNotice":"<ul class=\"xoo-wsc-notices\"><li class=\"xoo-wsc-notice-success\"><span class=\"xoo-wsc-icon-check_circle\"><\/span>%s%<\/li><\/ul>","errorNotice":"<ul class=\"xoo-wsc-notices\"><li class=\"xoo-wsc-notice-error\"><span class=\"xoo-wsc-icon-cross\"><\/span>%s%<\/li><\/ul>"},"strings":{"maxQtyError":"Only %s% in stock","stepQtyError":"Quantity can only be purchased in multiple of %s%","calculateCheckout":"Please use checkout form to calculate shipping","couponEmpty":"Please enter promo code"},"isCheckout":"","isCart":"","sliderAutoClose":"1","shippingEnabled":"1","couponsEnabled":"1","autoOpenCart":"no","addedToCart":"","ajaxAddToCart":"no","showBasket":"always_hide","flyToCart":"no","productFlyClass":"","refreshCart":"no","fetchDelay":"200","triggerClass":""};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/side-cart-woocommerce/assets/js/xoo-wsc-main.js?ver=2.2" id="xoo-wsc-main-js-js"></script>
+<script id="eael-general-js-extra">
+var localize = {"ajaxurl":"https:\/\/www.transformhypnosis.com\/wp-admin\/admin-ajax.php","nonce":"b61288e2de","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/www.transformhypnosis.com\/","cart_redirectition":"no","cart_page_url":"https:\/\/www.transformhypnosis.com\/cart\/","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.8.8" id="eael-general-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1" id="smartmenus-js"></script>
+<script src="https://www.transformhypnosis.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/assets/vendor/js/jquery.cubeportfolio.min.js?ver=4.4.0" id="cubeportfolio-js"></script>
+<script src="https://www.transformhypnosis.com/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src="https://www.transformhypnosis.com/wp-includes/js/wp-util.min.js?ver=6.2.2" id="wp-util-js"></script>
+<script id="wc-add-to-cart-variation-js-extra">
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%&elementor_page_id=19028","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=8.0.3" id="wc-add-to-cart-variation-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.12.1" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.15.3" id="elementor-webpack-runtime-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.15.3" id="elementor-frontend-modules-js"></script>
+<script src="https://www.transformhypnosis.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script src="https://www.transformhypnosis.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11" id="regenerator-runtime-js"></script>
+<script src="https://www.transformhypnosis.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="https://www.transformhypnosis.com/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5" id="wp-hooks-js"></script>
+<script src="https://www.transformhypnosis.com/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/www.transformhypnosis.com\/wp-admin\/admin-ajax.php","nonce":"6e44cd7867","urls":{"assets":"https:\/\/www.transformhypnosis.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/www.transformhypnosis.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"woocommerce":{"menu_cart":{"cart_page_url":"https:\/\/www.transformhypnosis.com\/cart\/","checkout_page_url":"https:\/\/www.transformhypnosis.com\/checkout\/","fragments_nonce":"439561f618"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/www.transformhypnosis.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.12.1" id="elementor-pro-frontend-js"></script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script src="https://www.transformhypnosis.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.15.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"landing-pages":true,"page-transitions":true,"notes":true,"loop":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/www.transformhypnosis.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[],"hello_header_logo_type":"title","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":19028,"title":"Transform%20Hypnosis%20%E2%80%93%20The%20%231%20Transformation%20Collection","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.15.3" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.12.1" id="pro-elements-handlers-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+<script id="xpro-elementor-widgetarea-editor-js-extra">
+var XproWidgetAreaEditorParams = {"rest_api_url":"https:\/\/www.transformhypnosis.com\/wp-json\/"};
+</script>
+<script src="https://www.transformhypnosis.com/wp-content/plugins/xpro-elementor-addons/inc/controls/assets/js/widgetarea-editor.js?ver=1.3.8" id="xpro-elementor-widgetarea-editor-js"></script>
+
+
+
+<script src="https://www.transformhypnosis.com/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5"></script></body></html>

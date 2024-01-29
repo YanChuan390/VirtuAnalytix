@@ -1,0 +1,400 @@
+<html><head>
+<meta charset="UTF-16">
+
+<title>The Viriditas Chapel of Perpetual Adoration</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&amp;display=swap" rel="stylesheet">
+
+	<style>
+BODY		{
+			background-color: black;
+			margin: 20px 20px;
+			font-family: 'EB Garamond', serif;
+			color: #998800;
+			}
+#frameContent {
+			position: absolute;
+			height: 99.9%;
+			width: 80%;
+			background-color: #fffff0;
+			//border: 1px solid black;
+			margin: 0 10%;
+			}
+/*#frameContent:after {
+			content: "";
+			display: block;
+			padding-bottom: 95%;
+			}*/
+#frameBlock	{
+			position: relative;
+			//background-color: green;
+			}
+#frameFrame	{
+			position: relative;
+			//width: 100%;
+			z-index: 1;
+			//visibility: hidden;
+			}
+#frameFrame IMG {
+			width: 100%;
+			}
+#frameTop	{
+			position: relative;
+			}
+#framePart IMG, #frameTop IMG {
+			width: 100%;
+			}
+#fVideo		{
+			position: relative;
+			opacity: 0;
+			top: -100%;
+			margin: auto auto;
+			//display: flow;
+			}
+#fLogo	{
+			position: relative;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			margin: auto auto;
+			//display: none;
+			}
+#fLogo IMG	{
+			height: 100%;
+			width: auto;
+			margin: auto;
+			}
+#decor		{
+			position: absolute;
+			top: 0;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			}
+#download	{
+			position: absolute;
+			top: 8%;//30px;
+			right: 2%;//30px;
+			height: 60%;
+			z-index: 2;
+			}
+#download IMG {
+			height: 100%;
+			width: auto;
+			}
+#trimlogo	{
+			position: relative;
+			top: 22%;
+			left: 1%;
+			}
+#trimlogo IMG {
+			width: 35%;
+			}
+#cathedrallogo	{
+			//position: relative;
+			//top: 33%;
+			//left: 5%;
+			margin-top: 10%;
+			margin-left: 5%;
+			}
+#cathedrallogo IMG {
+			width: 10%;
+			height:auto;
+			}
+#msART		{
+			position: absolute;
+			right: 5%;
+			top: 75%;
+			width: 7%;
+			height: 7%;
+			}
+#msART IMG {
+			width: 100%;
+			}
+.fancyBorder {
+			border: 6px #998800 double;
+			outline: 2px #998800 dotted;
+			outline-offset: 2px;
+			}
+#lyrics		{
+			font-size: 20px;
+			width: 80%;
+			padding: 0 20px 20px 20px;
+			position: relative;
+			margin: 0 auto;
+			background-color: #fffff0;
+			line-height: 150%;
+			}
+#description {
+			width: 80%;
+			font-size: 22px;
+			position:relative;
+			margin: 0 auto;
+			}
+#credits {
+			width: 80%;
+			padding: 0 0px 20px 0px;
+			font-size: 18px;
+			position:relative;
+			margin: 100px auto 40px auto;
+			outline: 2px #998800 dotted;
+			outline-offset: 2px;
+			text-align: center;
+			//line-height: 200%;
+			}
+H2			{
+			text-transform: uppercase;
+			border-bottom: 6px #998800 double;
+			text-align: center;
+			margin: 5px 0;
+			}
+#credits UL {
+			list-style-type: none;
+			margin: 10px 0 0 0;
+			padding: 0;
+			}
+#credits LI {;
+			margin: 20px 0;
+			padding: 0 20px;
+			}
+A			{
+			color: #fffff0;
+			text-decoration: none;
+			//border-bottom: 2px dotted;
+			}
+.original	{
+			color: #000000;
+			}
+.translation {
+			padding-left: 30px;
+			font-style: italic;
+			}
+.highlight	{
+			font-weight: 800;
+			color: #fffff0;
+			}
+#links		{
+			width: 80%;
+			padding: 0 0px 20px 0px;
+			font-size: 18px;
+			position: relative;
+			margin: 20px auto;
+			text-align: center;
+			font-size: 18px;
+			//text-transform: uppercase;
+			}
+#links IMG {
+			//outline: 4px #998800 dotted;
+			//outline-offset: 6px;
+			padding: 10px;
+			//background-color: #998800;
+			width: 50px;
+			height: 50px;
+			//border-radius: 40px;
+			//	-webkit-border-radius: 40px;
+			//	-moz-border-radius: 40px;
+			margin: 20px 0px;
+			}
+#links A	{
+			color: #998800;
+			display: inline-block;
+			line-height: 15px;
+			margin: 0px 20px;
+			background-image: url("images/disc_frame.png");
+			background-repeat: no-repeat;
+			background-position: 0 10;
+			background-size: 90px;
+			width: 90px;
+			}
+#movie		{
+			width: 80%;
+			position: relative;
+			margin: 0 auto;
+			}
+#
+@media only screen and (max-width:1080px) {
+
+}
+	</style>
+
+	<script>
+function SendMail () {
+	var atSign = "@";
+	top.location.href = "mailto://" + "webmaster" + atSign + "michaelsamyn.ART";
+	}
+
+var videoFade = 0.0;
+var videoFadeDirection = 1.0;
+function StartFadeVideo () {
+	setTimeout( StartFadeVideoNow, 5000 );
+	}
+function StartFadeVideoNow () {
+	setInterval( FadeVideo, 50 );
+	}
+function FadeVideo () {
+	videoFade = videoFade + 0.05 * videoFadeDirection;
+	myOpacity = Math.max(0.0, Math.min(1.0, videoFade));//clamp
+	var myVideo = document.getElementById( "videoClip");
+	//if ( myOpacity >= 0 && myVideo.paused ) { myVideo.play(); }
+	//else if ( myOpacity <= 0 && !myVideo.paused ) { myVideo.pause(); }
+	document.getElementById( "fVideo").style.opacity = myOpacity;
+	if ( videoFade > 6.0 ) { videoFadeDirection = -1.0; }
+	else if ( videoFade < -3.0 ) { videoFadeDirection = 1.0; }
+	}
+	</script>
+
+</head>
+
+
+<body bgcolor="black" onload="StartFadeVideo()">
+
+		<div id="frameTop">
+	<img src="images/viriditas_logo_frame_top.png">
+	<div id="decor">
+<div id="download"><a href="https://taleoftales.itch.io/viriditas" target="_blank"><img src="images/download.png"><!--download--></a></div>
+<div id="trimlogo"><img src="images/the-viriditas-chapel-of-perpetual-adoration-gold.png"></div>
+<div id="cathedrallogo"><a href="../index.html"><img src="images/cathedral-in-the-clouds-gold.png"></a></div>
+<div id="msART"><a href="http://michaelsamyn.ART"><img src="images/msART-logo.png"></a></div>
+	</div>
+		</div>
+
+		<div id="frameBlock">
+	<div id="frameContent">
+<div id="fLogo">
+<img src="images/viriditas_logo_center.png">
+</div>
+<div id="fVideo">
+<video id="videoClip" width="100%" height="100%" autoplay="" muted="" loop="">
+<!--Chromium browsers do not allow autoplay except muted-->
+  <source src="movies/viriditas_loop-MQ.mp4" type="video/mp4">
+  <source src="movies/viriditas_loop.ogv" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+	</div>
+	<div id="frameFrame"><img src="images/viriditas_logo_frame_middle.png"></div>
+		</div>
+
+<div id="framePart"><img src="images/viriditas_logo_frame_bottom.png"></div>
+
+<!-------------------------------------------------------------------------------------->
+
+	<div id="description">
+<p class="highlight">The Viriditas Chapel of Perpetual Adoration is a virtual reality inspired by visions and music of Saint Hildegard von Bingen, a 14th century abbess and Doctor of the Catholic Church. It is situated in the northern apsidal chapel of <a href="http://Cathedral-in-the-Clouds.net">Cathedral-in-the-Clouds</a>, an ongoing collection of digital dioramas for contemplation.</p>
+
+<p>The work was made by <a href="https://michaelsamyn.ART" target="blank">Michaël Samyn</a>, a digital artist focusing on virtual reality after a long career involving net.art, web design and independent videogames. Michaël recently converted to Catholicism and The Viriditas Chapel of Perpetual Adoration is his first work of art as a Christian.</p>
+
+<p>The VR chapel takes its form from the many baroque designs that can be found throughout the city of Rome, where the artist lives. The altar with the tabernacle is flanked by columns that serve as a frame for the central altar piece. The Viriditas Chapel design deviates from tradition where the entire scene is embraced by a giant rendition of the Virgin Mary.</p>
+
+<p>When the player kneels down to pray, an audio-visual spectacle unfolds, expressing the beauty of creation and the love of God. Only to end in silent contemplation of the Most Holy Eucharist. What was visible and audible before has now been internalized in your heart, aflame in adoration, awe and endless gratitude.</p>
+
+<img src="images/hildegard-heads.jpg" height="300" style="float:left; margin-right:20px;">
+
+<p>The structure of The Viriditas Chapel of Perpetual Adoration is based on Hildegard’s visions of the cosmos. In these she would see a geocentric universe embraced by the love of God and animated by the winds of faith and trust. In the Viriditas Chapel this embrace is performed by the Holy Virgin. We find the sphere of fire in the two outer columns and the sphere of water in the inner columns. The central altar piece represents the earth.</p>
+
+<img src="images/altar_wireframe.jpg" height="400" style="float:right;">
+
+<p>In another vision, as expressed in multiple poems, Hildegard saw Jesus as a flower on the branch that is the virgin Mary, His mother. This is a variation on the more conventional notion of Jesus being the fruit of her womb. Here both images are combined. The altar bulges slightly forward to represent to belly of the virgin in which the son of God grows. In the opening of what started as a dark niche, ornamental leaves appear in ever greater numbers. This to illustrate what Hildegard referred to as viridity, or the abundant greening power of life on earth. Within that green oasis, a magical flower blooms, the heart of creation, the promise of redemption, love itself.</p>
+
+<p>“The Viriditas Chapel of Perpetual Adoration expresses how I feel when I pray. I feel a warmth in my heart, especially when adoring the Most Holy Eucharist, a trembling sensation, an intense feeling of deep joy. I find it difficult to suppress the tears each and every time I close my eyes to pray. As such, my Viriditas Chapel is a tribute, an expression of gratitude for the beauty that God has brought into my life. I hope that those who experience the VR program can get a sense of what this means to me or perhaps recognize their own sentiments.”</p>
+	</div>
+
+<!-------------------------------------------------------------------------------------->
+
+	<div id="credits">
+<h2>Credits</h2>
+	<ul>
+<li> Art by <a href="https://michaelsamyn.ART" target="blank">Michaël Samyn</a>
+</li><li> Music by Hildegard von Bingen
+	<ul>
+	<li> Hildegard Von Bingen’s “O viridissima virga ave” as sung by Stevie Wishart’s ensemble Sinfonye in Douai Abbey, England.
+	<!--LI--> Recorded by Jim Denley.
+	<!--LI--> Producer: Stevie Wishart.
+	<!--LI--> Digital Remastering Engineer: Simon Heyworth 2022.
+	<!--LI--> copyright © stevie wishart
+	</li></ul>
+</li><li> Viola da gamba by Michaël Samyn
+</li><li> Additional sounds by Kris Force and mediapaja2009
+</li><li> 3D modeling by Michaël Samyn
+</li><li> Patrons are Maja Kuzmanovic &amp; Nik Gaffney
+</li><li> Fascicle No019 of &nbsp;<a href="http://fo.am/anarchive" target="_blank">FoAM Anarchive</a>
+</li><li> Published by <a href="http://liminous.org" target="_blank">Liminous Editions</a>
+</li><li> Released to supporters on Michaelmas 2022
+</li><li> Released to the public on the feast of Saint John Paul II 2022
+	</li></ul>
+	</div>
+
+<!-------------------------------------------------------------------------------------->
+
+	<div id="links">
+	<!--<IMG SRC="images/Viriditas-announcement_predella-short.jpg" WIDTH="100%">-->
+	<a href="https://vimeo.com/showcase/9889135" target="_blank"><img src="images/links/vimeo.png"><br>video</a>
+	<a href="https://youtube.com/playlist?list=PL3GwnNhQ_8gl8YxL1F2jIA2Y9-uALaEjn" target="_blank"><img src="images/links/youtube.png"><br>video</a>
+	<a href="https://www.flickr.com/photos/entropy8/albums/72177720302856127" target="_blank"><img src="images/links/flickr.png"><br>screenshots</a>
+	<a href="https://michaelsamyn.art/blog/category/viriditas/" target="_blank"><img src="images/links/blog.png"><br>dev log</a>
+	<a href="https://www.patreon.com/MichaelSamyn" target="_blank"><img src="images/links/patreon.png"><br>support</a>
+	</div>
+
+
+
+<!-------------------------------------------------------------------------------------->
+
+	<div class="fancyBorder" id="lyrics">
+	<h2>Lyrics</h2>
+<div class="original">
+O viridissima virga, ave, que in ventoso flabro sciscitationis sanctorum prodisti.</div>
+<div class="translation">
+O greenest branch whose breath inspires the wonder of saints. Hail!</div>
+<div class="original">
+Cum venit tempus quod tu floruisti in ramis tuis,
+ave, ave fuit tibi,
+quia calor solis in te sudavit
+sicut odor balsami.</div>
+<div class="translation">
+When you bloom in your branches the heat of the sun flows from you like ointment.</div>
+<div class="original">
+Nam in te floruit
+pulcher flos qui odorem dedit
+omnibus aromatibus que arida erant.</div>
+<div class="translation">
+In you a beautiful flower blossomed whose fragrance awakened all that was withered.</div>
+<div class="original">
+Et illa apparuerunt omnia in viriditate plena.</div>
+<div class="translation">
+And all emerged in full vigor!</div>
+<div class="original">
+Unde celi dederunt rorem super gramen
+et omnis terra leta facta est,
+quoniam viscera ipsius frumentum
+protulerunt et quoniam volucres celi nidos
+in ipsa habuerunt.</div>
+<div class="translation">
+Heavenly rains delighted the earth. Grain was born and birds nested.</div>
+<div class="original">
+Deinde facta est esca hominibus
+et gaudium magnum epulantium.</div>
+<div class="translation">
+And a feast was prepared to the joy of all.</div>
+<div class="original">
+Unde, o suavis Virgo,
+in te non deficit ullum gaudium.
+Hec omnia Eva contempsit.</div>
+<div class="translation">
+A joy ever present in you, o sweet virgin, and despised by Eve.</div>
+<div class="original">
+Nunc autem laus sit Altissimo.</div>
+<div class="translation">
+Praise the most high!</div>
+	</div>
+
+<!-------------------------------------------------------------------------------------->
+
+<div id="movie" style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/761810665?h=1fc5db003d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="The Viriditas chapel (square)" data-ready="true"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<!-------------------------------------------------------------------------------------->
+
+<center><iframe src="https://store.steampowered.com/widget/2350480/" frameborder="0" width="646" height="190"></iframe></center>
+
+</body></html>

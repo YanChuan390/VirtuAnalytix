@@ -1,0 +1,325 @@
+<html lang="en"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta property="og:image" content="http://ganbattegame.com/img/ganbatte_meta_image.jpg">
+    <meta property="og:title" content="Ganbatte - Multiplayer VR Sushi Eating Game for Steam VR">
+    <meta property="og:url" content="http://ganbattegame.com/">
+    <meta property="og:site_name" content="Ganbatte">
+    <meta property="og:type" content="website">
+
+    <title>Ganbatte</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css?v=1.1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/new-age.min.css?v=1.1" rel="stylesheet">
+    
+
+    <link rel="shortcut icon" href="img/ganbatte_favicon.png" type="image/x-icon">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+    <div id="image_big">
+    <a onclick="hideImage()" id="close_icon"><span class="glyphicon glyphicon-remove"></span></a>
+  <p></p>
+    </div>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <!--<a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>-->
+                <a href="./index.html"><div class="navbar-brand page-scroll" id="ganbatteLogo"></div></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#subscribe">Follow</a>
+                    </li>
+                    <li>
+                        <a href="https://ganbattegame.com/blog" target="_blank">DevBlog</a>
+                    </li>
+                    <li>
+                        <a href="/leaderboards">Leaderboards</a>
+                    </li>
+                    <li>
+                        <a href="http://press.mimicrygames.com/sheet.php?p=ganbatte" target="_blank">Presskit</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div id="main" class="header-content">
+                    <div class="layer0"></div>
+
+                    <div class="row"></div>
+                    <div id="centerDiv">
+                        <div class="row ganbatteLogoRow">
+                            <div class="ganbatteLogoDiv">
+                                <div id="ganbatteLogoFull"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <form action="//mimicrygames.us5.list-manage.com/subscribe/post?u=7703b6408555629e974c9c8d1&amp;id=d5805b41c3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                                <div id="subscriptionForm" class="input-group formSubscribe">
+                                        <input type="email" name="EMAIL" class="form-control" placeholder="Enter your e-mail here to be the first to know!">
+                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7703b6408555629e974c9c8d1_d5805b41c3" tabindex="-1" value=""></div>
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-secondary" id="formSubscribeButton" type="submit" onclick="subcriptionComplete()">Subscribe</button>
+                                        </span>
+                                </div>
+
+                                <div id="subscriptionFormSuccess" hidden="">Thanks for signing up!</div>
+
+                            </form>
+                        </div>
+                         <div style="margin-top: 52px;">
+                            <iframe src="https://store.steampowered.com/widget/691680/" frameborder="0" width="100%" height="190"></iframe>
+                        </div>
+
+                    </div>
+                    <div id="logosRow" class="row">
+                        <div class="logos" id="viveLogo"></div>
+                        <div class="logos" id="oculusLogo"></div>
+                        <div class="logos" id="unrealEngineLogo"></div>
+                    </div>
+                  
+            </div>
+
+        </div>
+    </header>
+
+    <section id="about" class="bg-primary sectionsTextContainer">
+        <div class="container nonParallaxLayer">
+            <div class="infoContainer">
+                <div id="aboutLogo" class="sectionsTextLogo"></div>
+                <div class="sectionsTextContent">
+                    <h3>About</h3>
+                    Ganbatte is a competitive social multiplayer arcade game for VR, about cats, in space, eating sushi.
+                </div>
+            </div>
+            
+        </div>
+
+
+        
+        <div class="full-width">
+            <div class="video-wrapper">
+                <iframe id="video" src="https://www.youtube.com/embed/pGAsF0f56Bk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+            </div> 
+        </div>
+    </section>
+
+    <section id="goal" class="contact bg-primary sectionsTextContainer">
+        <div class="container parallaxLayer layer1">
+            <div class="infoContainer">
+                <div class="sectionsTextContent">
+                    <h3>Goal</h3>
+                    Try to eat as much valuable sushi as you can to reach the highest score.
+                </div>
+                <div id="goalLogo" class="sectionsTextLogo"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="customize" class="bg-primary sectionsTextContainer">
+        <div class="container nonParallaxLayer">
+            <div class="infoContainer">
+                <div id="customizeLogo" class="sectionsTextLogo"></div>
+                <div class="sectionsTextContent">
+                    <h3>Challenges</h3>
+                    Besides the multiplayer mode, Ganbatte features 28 unique single-player challenges. Can you complete them all?
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="release" class="contact bg-primary sectionsTextContainer">
+        <div class="container parallaxLayer layer2">
+            <div class="infoContainer">
+                <div class="sectionsTextContent">
+                    <h3>Release</h3>
+                    Ganbatte will be released as an Early Access title on April 19, 2018! 
+                </div>
+                <div id="releaseLogo" class="sectionsTextLogo"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="image_gallery" class="contact bg-primary sectionsTextContainer" style="width: 100%; background-color: #FFAE00; padding: 24px 0px">
+        <h3 id="media_title">Screenshots</h3>
+        <div class="image_gallery" id="image_container">
+            <div biglink="img/screenshots/Ganbatte-Screenshot-Crying.jpg" onclick="ShowImage(this)">
+                <img src="img/screenshots/thumbs/Ganbatte-Screenshot-Crying.jpg">
+            </div>
+            <div biglink="img/screenshots/Ganbatte-Screenshot-Cute-Cat.jpg" onclick="ShowImage(this)">
+                <img src="img/screenshots/thumbs/Ganbatte-Screenshot-Cute-Cat.jpg">
+            </div>
+            <div biglink="img/screenshots/Ganbatte-Screenshot-Dabbing.jpg" onclick="ShowImage(this)">
+                <img src="img/screenshots/thumbs/Ganbatte-Screenshot-Dabbing.jpg">
+            </div>
+            <div biglink="img/screenshots/Ganbatte-Screenshot-Group-Photo.jpg" onclick="ShowImage(this)">
+                <img src="img/screenshots/thumbs/Ganbatte-Screenshot-Group-Photo.jpg">
+            </div>
+            <div biglink="img/screenshots/Ganbatte-Screenshot-Happy-Nomnom.jpg" onclick="ShowImage(this)">
+                <img src="img/screenshots/thumbs/Ganbatte-Screenshot-Happy-Nomnom.jpg">
+            </div>
+            <div biglink="img/screenshots/Ganbatte-Screenshot-POV-1.jpg" onclick="ShowImage(this)">
+                <img src="img/screenshots/thumbs/Ganbatte-Screenshot-POV-1.jpg">
+            </div>
+            <div biglink="img/screenshots/Ganbatte-Screenshot-POV-2.jpg" onclick="ShowImage(this)">
+                <img src="img/screenshots/thumbs/Ganbatte-Screenshot-POV-2.jpg">
+            </div>
+            <div biglink="img/screenshots/Ganbatte-Screenshot-Too-Much-Sushi.jpg" onclick="ShowImage(this)">
+                <img src="img/screenshots/thumbs/Ganbatte-Screenshot-Too-Much-Sushi.jpg">
+            </div>
+            <div biglink="img/screenshots/Ganbatte-Screenshot-Topview.jpg" onclick="ShowImage(this)">
+                <img src="img/screenshots/thumbs/Ganbatte-Screenshot-Topview.jpg">
+            </div>
+            <div biglink="img/screenshots/Ganbatte-Screenshot-Two-Cats-Eat-Wink.jpg" onclick="ShowImage(this)">
+                <img src="img/screenshots/thumbs/Ganbatte-Screenshot-Two-Cats-Eat-Wink.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section id="subscribe" class="contact bg-primary sectionsTextContainer">
+        <div class="container parallaxLayer subscribeParallax layer3">
+            <div class="infoContainer" style="margin-top: 50px;">
+                <div class="sectionsTextContent">
+                    <h3 style="text-align: center;">Be the first to know</h3>
+                    <h4 style="text-align: center;">Want to stay informed?</h4>
+                    <div id="subscriptionActions">
+                        <div class="bulletParent">
+                            <span class="subscibeBullet">1</span> 
+                            <span id="bulletNewsletter" class="subcribeOption">Sign up for the Mimicry <a class="bulletLink page-scroll" href="#main">newsletter</a></span> 
+                        </div>
+                        <div class="bulletParent">
+                            <span class="subscibeBullet">2</span> 
+                            <span id="bulletSteam" class="subcribeOption">Add Ganbatte to your wishlist on <a class="bulletLink page-scroll" href="http://store.steampowered.com/app/691680/Ganbatte">Ganbatte Steam Page</a></span> 
+                        </div>
+                        <div class="bulletParent">
+                            <span class="subscibeBullet">3</span> 
+                            <span id="bulletDev" class="subcribeOption">Follow the progress on our <a class="bulletLink" href="https://ganbattegame.com/blog" target="_blank">DevBlog</a></span> 
+                        </div>
+                        <div class="bulletParent">
+                            <span class="subscibeBullet">4</span> 
+                            <span id="bulletSocial" class="subcribeOption">Receive updates on our <a class="bulletLink page-scroll" href="#contact">social channels</a> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="steamWidget" style="position: relative;">
+        <div style="width: 100%; margin: 0px; height: 100%; padding: 24px 0px; padding-bottom: 90px; display: block;" class="contact nonParallaxLayer">
+            <div id="iframe_wrapper" style="display: flex;">
+            <iframe src="https://store.steampowered.com/widget/691680/" frameborder="0" width="45%" height="190" style="margin: auto; max-width: 700px; width: 90vw"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact sectionsTextContainer">
+        <div class="container parallaxLayer" style="padding: 0px; width: 100%; background-color: rgba(0,0,0,0);">
+            <div class="textContentContact" style="margin-top: 0px; top: 0px; display: inherit;">
+                <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+                <ul class="list-inline list-social">
+                    <li class="social-twitter">
+                        <a href="https://twitter.com/MimicryGames"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="social-facebook">
+                        <a href="https://www.facebook.com/mimicrygames"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="social-instagram">
+                        <a href="https://www.instagram.com/mimicrygames/"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a class="logos" href="http://www.mimicrygames.com"><div id="mimicryLogo"></div></a>
+            <p>© 2018 Mimicry Games, Lda. All rights reserved.</p>
+            <a href="http://press.mimicrygames.com/sheet.php?p=ganbatte" target="_blank">Presskit</a>
+
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-JVK0TWHGQ8&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="lib/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        function ShowImage(e) {
+            document.getElementById("close_icon").style.display = "block";
+            var big_image = document.getElementById("image_big");
+            big_image.style.visibility = "visible";
+            big_image.style.backgroundImage = "url('" + e.getAttribute("bigLink") + "')";
+        }
+
+        function hideImage() {
+            document.getElementById("close_icon").style.display = "none";
+            document.getElementById("image_big").style.visibility = "hidden";
+        }
+    </script>
+    <!-- end of gallery plugin -->
+
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-35112976-7', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+</body></html>

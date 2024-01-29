@@ -1,0 +1,1761 @@
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US" class=" yui3-js-enabled js-focus-visible js flexbox canvas canvastext webgl no-touch hashchange history draganddrop rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions video audio svg inlinesvg svgclippaths" data-js-focus-visible="" style=""><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important"></div><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- This is Squarespace. --><!-- violet-cyan -->
+<script charset="utf-8" id="yui_3_17_2_1_1694374552129_537" src="//platform.twitter.com/widgets.js"></script><script charset="utf-8" id="yui_3_17_2_1_1694374552129_568" src="//platform.twitter.com/widgets.js"></script><base href="">
+<meta charset="utf-8">
+<title>InVokeR</title>
+<meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model"><link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528236193895-NB0WHI4ODRN1W2K0H8FS/favicon.ico">
+<link rel="canonical" href="https://invokervr.com">
+<meta property="og:site_name" content="InVokeR">
+<meta property="og:title" content="InVokeR">
+<meta property="og:url" content="https://invokervr.com">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://static1.squarespace.com/static/5b158b7d2714e543f0e2dd58/t/5b17087188251b9d83d4bdfd/1528236160592/logo.png?format=1500w">
+<meta property="og:image:width" content="1332">
+<meta property="og:image:height" content="1332">
+<meta itemprop="name" content="InVokeR">
+<meta itemprop="url" content="https://invokervr.com">
+<meta itemprop="thumbnailUrl" content="http://static1.squarespace.com/static/5b158b7d2714e543f0e2dd58/t/5b17087188251b9d83d4bdfd/1528236160592/logo.png?format=1500w">
+<link rel="image_src" href="http://static1.squarespace.com/static/5b158b7d2714e543f0e2dd58/t/5b17087188251b9d83d4bdfd/1528236160592/logo.png?format=1500w">
+<meta itemprop="image" content="http://static1.squarespace.com/static/5b158b7d2714e543f0e2dd58/t/5b17087188251b9d83d4bdfd/1528236160592/logo.png?format=1500w">
+<meta name="twitter:title" content="InVokeR">
+<meta name="twitter:image" content="http://static1.squarespace.com/static/5b158b7d2714e543f0e2dd58/t/5b17087188251b9d83d4bdfd/1528236160592/logo.png?format=1500w">
+<meta name="twitter:url" content="https://invokervr.com">
+<meta name="twitter:card" content="summary">
+<meta name="description" content="">
+<link rel="preconnect" href="https://images.squarespace-cdn.com">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Abel:wght@400&amp;family=Source+Code+Pro:wght@300;400;500;700">
+<script type="text/javascript" crossorigin="anonymous" nomodule="nomodule" src="//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js"></script>
+<script type="text/javascript" crossorigin="anonymous" src="//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js"></script>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-d669e4af1db47f4f0a374-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_runtime');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-d669e4af1db47f4f0a374-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-c4550e9407a2eb121f53d-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_moment_js_vendor');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-c4550e9407a2eb121f53d-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-47d1221231df25bde9715-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-cldr_resource_pack');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-47d1221231df25bde9715-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-9cf3db7344e7c9722eef1-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors_stable');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-9cf3db7344e7c9722eef1-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-d1e10ef277e47e6364f66-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-d1e10ef277e47e6364f66-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-765e8572b6c4e2378dfad-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-765e8572b6c4e2378dfad-min.en-US.js"></script><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
+[touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; }
+[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
+[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
+[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+</style><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/commerce-32f0358ceab22e82eb820-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-commerce');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/commerce-32f0358ceab22e82eb820-min.en-US.js"></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].css = ["//assets.squarespace.com/universal/styles-compressed/commerce-f5a29f34fa3e30d18cdf9-min.en-US.css"]; })(SQUARESPACE_ROLLUPS, 'squarespace-commerce');</script>
+<link rel="stylesheet" type="text/css" href="//assets.squarespace.com/universal/styles-compressed/commerce-f5a29f34fa3e30d18cdf9-min.en-US.css"><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/performance-7e5ce835cff1ab4e96517-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-performance');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/performance-7e5ce835cff1ab4e96517-min.en-US.js" defer=""></script><script data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {"facebookAppId":"314192535267336","facebookApiVersion":"v6.0","rollups":{"squarespace-announcement-bar":{"js":"//assets.squarespace.com/universal/scripts-compressed/announcement-bar-735350c5c86fa3f55289b-min.en-US.js"},"squarespace-audio-player":{"css":"//assets.squarespace.com/universal/styles-compressed/audio-player-702bf18174efe0acaa8ce-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/audio-player-bf699e27b31eb8e68eb89-min.en-US.js"},"squarespace-blog-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/blog-collection-list-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-ad88023836bf46b308416-min.en-US.js"},"squarespace-calendar-block-renderer":{"css":"//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-49c4a5f3dae67a728e3f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-48239bc95d186b3e0e7b3-min.en-US.js"},"squarespace-chartjs-helpers":{"css":"//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-53c004ac7d4bde1c92e38-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-b772712deacb0a5e02351-min.en-US.js"},"squarespace-comments":{"css":"//assets.squarespace.com/universal/styles-compressed/comments-181fa3980190b0e3a74e4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/comments-9b0fa71343b156135b148-min.en-US.js"},"squarespace-custom-css-popup":{"css":"//assets.squarespace.com/universal/styles-compressed/custom-css-popup-d1a89ff0cb9109a389e8b-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/custom-css-popup-8a6d1c1d4d6a24a6fda75-min.en-US.js"},"squarespace-dialog":{"css":"//assets.squarespace.com/universal/styles-compressed/dialog-0089314568fe57c065465-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/dialog-63f9f7a063ab7b46df8eb-min.en-US.js"},"squarespace-events-collection":{"css":"//assets.squarespace.com/universal/styles-compressed/events-collection-49c4a5f3dae67a728e3f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/events-collection-5010cdeb55a62db0e90a4-min.en-US.js"},"squarespace-form-rendering-utils":{"js":"//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-7899614f2824adea89cd1-min.en-US.js"},"squarespace-forms":{"css":"//assets.squarespace.com/universal/styles-compressed/forms-934772160ed2f1fb49718-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/forms-2c1c3f86cf6089c1e8561-min.en-US.js"},"squarespace-gallery-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-20a62ae931ab349a80d2f-min.en-US.js"},"squarespace-image-zoom":{"css":"//assets.squarespace.com/universal/styles-compressed/image-zoom-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/image-zoom-0ddd38600da3a0240ce43-min.en-US.js"},"squarespace-pinterest":{"css":"//assets.squarespace.com/universal/styles-compressed/pinterest-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/pinterest-7ad4ffe4ab96ee7a22203-min.en-US.js"},"squarespace-popup-overlay":{"css":"//assets.squarespace.com/universal/styles-compressed/popup-overlay-fd9ce38b67a1c6891b2e4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/popup-overlay-8dca2a31563f29d10e797-min.en-US.js"},"squarespace-product-quick-view":{"css":"//assets.squarespace.com/universal/styles-compressed/product-quick-view-74a2013c90ee619ccfc39-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/product-quick-view-5a09793ba2176791bfc9e-min.en-US.js"},"squarespace-products-collection-item-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-33f6fca85ffc8988c0694-min.en-US.js"},"squarespace-products-collection-list-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-929365f18e49a60a4d0af-min.en-US.js"},"squarespace-search-page":{"css":"//assets.squarespace.com/universal/styles-compressed/search-page-9d0a55de1efafbb9218e1-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/search-page-b0dfca3d4bea19f4c2307-min.en-US.js"},"squarespace-search-preview":{"js":"//assets.squarespace.com/universal/scripts-compressed/search-preview-b5857dfce09ba0d650b90-min.en-US.js"},"squarespace-simple-liking":{"css":"//assets.squarespace.com/universal/styles-compressed/simple-liking-ef94529873378652e6e86-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/simple-liking-74839e341f502c8ea042b-min.en-US.js"},"squarespace-social-buttons":{"css":"//assets.squarespace.com/universal/styles-compressed/social-buttons-1f18e025ea682ade6293a-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/social-buttons-d8228f29569a1e5f3a54a-min.en-US.js"},"squarespace-tourdates":{"css":"//assets.squarespace.com/universal/styles-compressed/tourdates-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/tourdates-eb2e241608a5e502cb750-min.en-US.js"},"squarespace-website-overlays-manager":{"css":"//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-7cecc648f858e6f692130-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-72b12ecc40a40fb9dcc7d-min.en-US.js"}},"pageType":1,"website":{"id":"5b158b7d2714e543f0e2dd58","identifier":"violet-cyan","websiteType":1,"contentModifiedOn":1556844855426,"cloneable":false,"hasBeenCloneable":false,"siteStatus":{},"language":"en-US","timeZone":"America/Los_Angeles","machineTimeZoneOffset":-25200000,"timeZoneOffset":-25200000,"timeZoneAbbr":"PDT","siteTitle":"InVokeR","fullSiteTitle":"InVokeR","siteDescription":"<p>InVokeR is a one-on-one wizard dueling game specifically designed for VR platforms, that supports several single and online multiplayer modes.<br><br>Enter the whimsical shoes of a wizard and battle your peers in arcane duels. Cast earth-shattering spells to turn the tide of mystical battles, and command the elements to defeat your enemies. Challenge your friends or even strange wizards in intense, strategic, magical combat.  </p>","socialLogoImageId":"5b17087188251b9d83d4bdfd","shareButtonOptions":{"3":true,"8":true,"4":true,"6":true,"7":true,"1":true,"2":true},"socialLogoImageUrl":"//images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528236149707-CJ1NOGR82B8S0IQGE206/logo.png","authenticUrl":"https://invokervr.com","internalUrl":"https://violet-cyan.squarespace.com","baseUrl":"https://invokervr.com","primaryDomain":"invokervr.com","sslSetting":3,"isHstsEnabled":false,"socialAccounts":[{"serviceId":4,"userId":"716052541964886017","userName":"8thShoreInc","screenname":"8th Shore Inc","addedOn":1528159914125,"profileUrl":"https://twitter.com/8thShoreInc","iconUrl":"http://pbs.twimg.com/profile_images/716052955657449473/os-MKG7t_normal.jpg","collectionId":"5b15deaaf7939272dcbac0cf","iconEnabled":true,"serviceName":"twitter"}],"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false,"screenshotId":"0000410ba280d22d0e49e1d8ddf54bb932629123786c631646b73c445d13f38e","showOwnerLogin":false},"websiteSettings":{"id":"5b158b7d2714e543f0e2dd5b","websiteId":"5b158b7d2714e543f0e2dd58","subjects":[],"country":"US","state":"WA","simpleLikingEnabled":true,"mobileInfoBarSettings":{"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":false,"commentDisableAfterDaysDefault":0,"disqusShortname":"","commentsEnabled":true,"storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"expressCheckout":false,"continueShoppingLinkUrl":"/","useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"currenciesSupported":["CHF","HKD","MXN","EUR","DKK","USD","CAD","MYR","NOK","THB","AUD","SGD","ILS","PLN","GBP","CZK","SEK","NZD","PHP","RUB"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":1,"showCustomCheckoutForm":false,"checkoutPageMarketingOptInEnabled":false,"enableMailingListOptInByDefault":false,"sameAsRetailLocation":false,"merchandisingSettings":{"scarcityEnabledOnProductItems":false,"scarcityEnabledOnProductBlocks":false,"scarcityMessageType":"DEFAULT_SCARCITY_MESSAGE","scarcityThreshold":10,"multipleQuantityAllowedForServices":true,"restockNotificationsEnabled":false,"restockNotificationsSuccessText":"","restockNotificationsMailingListSignUpEnabled":false,"relatedProductsEnabled":false,"relatedProductsOrdering":"random","soldOutVariantsDropdownDisabled":false,"productComposerOptedIn":false,"productComposerABTestOptedOut":false,"productReviewsEnabled":false,"displayImportedProductReviewsEnabled":false,"hasOptedToCollectNativeReviews":false},"isLive":false,"multipleQuantityAllowedForServices":true},"useEscapeKeyToLogin":true,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled"},"ampEnabled":false,"userAccountsSettings":{"loginAllowed":false,"signupAllowed":false}},"cookieSettings":{"isCookieBannerEnabled":false,"isRestrictiveCookiePolicyEnabled":false,"isRestrictiveCookiePolicyAbsolute":false,"cookieBannerText":"","cookieBannerTheme":"","cookieBannerVariant":"","cookieBannerPosition":"","cookieBannerCtaVariant":"","cookieBannerCtaText":"","cookieBannerAcceptType":"OPT_IN","cookieBannerOptOutCtaText":""},"websiteCloneable":false,"collection":{"title":"Welcome","id":"5b158df4562fa7c358317a3c","fullUrl":"/","type":1,"permissionType":1},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"aspect-ratio":"Auto","design":"Slideshow","gallery-arrow-style":"No Background","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-controls":"Arrows","gallery-design":"Grid","gallery-info-overlay":"Show on Hover","gallery-loop":"false","gallery-navigation":"Bullets","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"rgba(34,34,34,1)","galleryArrowColor":"rgba(255,255,255,1)","galleryAutoplaySpeed":"3","galleryCircleColor":"rgba(255,255,255,1)","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"100px","grid-aspect-ratio":"1:1 (Square)","gridSize":"350px","gridSpacing":"20px","headerPadding":"46px","homepage-index-nav":"Show On Scroll","logoWidth":"140px","product-gallery-auto-crop":"false","product-image-auto-crop":"false","siteTitleContainerWidth":"255px","slideshow-aspect-ratio":"16:9 (Widescreen)","slideshow-autoplay":"true","slideshow-transition":"Fade","tweak-v1-related-products-title-spacing":"50px"},"templateId":"52e96934e4b0ea14d0f64568","templateVersion":"7","pageFeatures":[1,2,4],"gmRenderKey":"QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4","templateScriptsRootUrl":"https://static1.squarespace.com/static/ta/52e968b5e4b04d2aa2a3bba3/1129/scripts/","betaFeatureFlags":["crm_remove_subscriber","member_areas_spanish_interviews","campaigns_import_discounts","member_areas_schedule_interview","marketing_landing_page","campaigns_new_image_layout_picker","image_component","campaigns_thumbnail_layout","commsplat_forms_visitor_profile","campaigns_discount_section_in_blasts","campaigns_global_uc_ab","commerce_etsy_shipping_import","commerce_order_status_access","campaigns_discount_section_in_automations","commerce_site_visitor_metrics","customer_account_creation_recaptcha","website_fonts","enable_css_variable_tweaks","commerce_etsy_product_import","site_user_email_change","crm_default_newsletter_block_to_campaigns","scripts_defer","digital_products_in_circle_labs","viewer-role-contributor-invites","background_art_onboarding","commerce_clearpay","member_areas_provisioning_service","digital_products_monetization_ga_enabled","crm_retention_segment","toggle_preview_new_shortcut","visitor_react_forms","commerce_restock_notifications","unify_edit_mode_p2","crm_show_profile_forms","fluid_engine","send_local_pickup_ready_email","show_add_to_cart_in_plp","fluid_engine_clean_up_grid_contextual_change","is_feature_gate_refresh_enabled","accounting_orders_sync","nested_categories_migration_enabled","order_status_page_checkout_landing_enabled","customer_accounts_email_verification","project_selling_initiative_mvp"],"videoAssetsFeatureFlags":["mux-data-video-collection","mux-data-video-block","mux-data-course-collection"],"impersonatedSession":false,"demoCollections":[{"collectionId":"542f3f0be4b0066f730c85de","deleted":false},{"collectionId":"5433f167e4b07925192c20ca","deleted":false}],"tzData":{"zones":[[-480,"US","P%sT",null]],"rules":{"US":[[1967,2006,null,"Oct","lastSun","2:00","0","S"],[1987,2006,null,"Apr","Sun>=1","2:00","1:00","D"],[2007,"max",null,"Mar","Sun>=8","2:00","1:00","D"],[2007,"max",null,"Nov","Sun>=1","2:00","0","S"]]}},"showAnnouncementBar":false,"recaptchaEnterpriseContext":{"recaptchaEnterpriseSiteKey":"6LdDFQwjAAAAAPigEvvPgEVbb7QBm-TkVJdDTlAv"},"i18nContext":{"timeZoneData":{"id":"America/Los_Angeles","name":"Pacific Time"}}};</script><script>SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://invokervr.com/welcome?format=rss">
+<script type="application/ld+json">{"url":"https://invokervr.com","name":"InVokeR","description":"<p>InVokeR is a one-on-one wizard dueling game specifically designed for VR platforms, that supports several single and online multiplayer modes.<br><br>Enter the whimsical shoes of a wizard and battle your peers in arcane duels. Cast earth-shattering spells to turn the tide of mystical battles, and command the elements to defeat your enemies. Challenge your friends or even strange wizards in intense, strategic, magical combat.  </p>","@context":"http://schema.org","@type":"WebSite"}</script><link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/sitecss/5b158b7d2714e543f0e2dd58/46/52e96934e4b0ea14d0f64568/5b158b7d2714e543f0e2dd6d/1129/site.css"><script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+<!-- End of Squarespace Headers -->
+    <script>/* Must be below squarespace-headers */(function(){var touchTest="ontouchstart"in window||navigator.msMaxTouchPoints;if(!touchTest){with(document.documentElement){className=className.replace(new RegExp("touch-styles"),"")}}})()</script>
+  <style type="text/css">.disable-hover:not(.sqs-layout-editing) #siteWrapper, .disable-hover:not(.sqs-layout-editing) #siteWrapper * {pointer-events: none !important;}</style><script charset="utf-8" src="https://platform.twitter.com/js/button.e7f9415a2e000feaab02c86dd5802747.js"></script></head>
+  
+  <body id="collection-5b158df4562fa7c358317a3c" class="transparent-header  expand-homepage-index-links homepage-index-nav-show-on-scroll show-page-title index-section-separation-border design-slideshow grid-aspect-ratio-11-square grid-max-columns-four slideshow-aspect-ratio-169-widescreen slideshow-transition-fade slideshow-autoplay gallery-controls-arrows gallery-controls-color-light  meta-priority-date hide-entry-author  pre-footer-content-custom   show-category-navigation hide-album-share-link   event-thumbnails event-thumbnail-size-32-standard event-date-label event-date-label-time event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts  event-item-back-link    gallery-design-grid aspect-ratio-auto lightbox-style-dark gallery-navigation-bullets gallery-info-overlay-show-on-hover gallery-aspect-ratio-32-standard gallery-arrow-style-no-background gallery-transitions-fade gallery-show-arrows gallery-auto-crop   product-list-titles-under product-list-alignment-center product-item-size-11-square  product-gallery-size-11-square  show-product-price show-product-item-nav  tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-dark hide-opentable-icons opentable-style-dark small-button-style-outline small-button-shape-pill medium-button-style-outline medium-button-shape-pill large-button-style-outline large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-outline button-corner-style-square tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-type-index collection-layout-default collection-5b158df4562fa7c358317a3c homepage view-list mobile-style-available has-banner-image index-page collection-welcome">
+
+    <div id="site">
+
+      <input type="checkbox" name="mobile-nav-toggle" id="mobileNavToggle" class="mobile-nav-toggle-box hidden"><div class="show-on-scroll-wrapper" id="showOnScrollWrapper"><div id="mainNavWrapper" class="nav-wrapper desktop-nav-wrapper show-on-scroll">
+    <nav id="mainNavigation" data-content-field="navigation" style="white-space: normal; display: block;">
+      
+        
+          
+            
+              
+                
+                  
+                    
+                    <div class="index home">
+                      <a href="/#home-section">
+                        Main Page
+                      </a>
+                    </div>
+                    
+                  
+                
+                  
+                    
+                    <div class="index home">
+                      <a href="/#about-section">
+                        About
+                      </a>
+                    </div>
+                    
+                  
+                
+                  
+                    
+                    <div class="index home">
+                      <a href="/#news-section">
+                        News
+                      </a>
+                    </div>
+                    
+                  
+                
+              
+              <div class="index base active">
+                <a href="/">
+                  Welcome
+                </a>
+              </div>
+            
+          
+        
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/dev-blogs">
+                Dev-Blogs
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+        
+          
+            
+              
+              <div class="index">
+                <a href="/media">
+                  Media
+                </a>
+              </div>
+            
+          
+        
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/merch">
+                Merch
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/contact">
+                Contact
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+
+      
+    </nav>
+  </div></div>
+
+      <div id="overlayNav">
+        
+
+  <div id="mobileNavWrapper" class="nav-wrapper">
+    <nav id="mobileNavigation">
+      
+        
+          
+            
+              
+                
+                  
+                    
+                    <div class="index home">
+                      <a href="/#home-section">
+                        Main Page
+                      </a>
+                    </div>
+                    
+                  
+                
+                  
+                    
+                    <div class="index home">
+                      <a href="/#about-section">
+                        About
+                      </a>
+                    </div>
+                    
+                  
+                
+                  
+                    
+                    <div class="index home">
+                      <a href="/#news-section">
+                        News
+                      </a>
+                    </div>
+                    
+                  
+                
+              
+              <div class="index base">
+                <a href="/">
+                  Welcome
+                </a>
+              </div>
+            
+          
+        
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/dev-blogs">
+                Dev-Blogs
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+        
+          
+            
+              
+              <div class="index">
+                <a href="/media">
+                  Media
+                </a>
+              </div>
+            
+          
+        
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/merch">
+                Merch
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/contact">
+                Contact
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+
+
+      
+    </nav>
+  </div>
+
+
+      </div>
+
+      <header id="header" role="banner">
+        <div class="header-inner">
+          <div id="siteTitleWrapper" class="title-logo-wrapper" data-content-field="site-title">
+            
+              <h1 id="siteTitle" class="site-title tmpl-loading"><a href="/" data-shrink-original-size="17" style="letter-spacing: 0.176471em;">InVokeR</a></h1>
+            
+          </div><!-- comment the linebreak between these two elements because science
+          --><label for="mobileNavToggle" class="mobile-nav-toggle-label show-on-scroll-mobile"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><!-- comment the linebreak between these two elements because science
+          --><div id="headerNav" class="tmpl-loading positioned" style="margin-left: 0px; margin-top: 10px; margin-bottom: 0px;">
+
+  <div id="mainNavWrapper" class="nav-wrapper desktop-nav-wrapper show-on-scroll">
+    <nav id="mainNavigation" data-content-field="navigation" style="white-space: normal; display: block;">
+      
+        
+          
+            
+              
+                
+                  
+                    
+                    <div class="index home">
+                      <a href="/#home-section">
+                        Main Page
+                      </a>
+                    </div>
+                    
+                  
+                
+                  
+                    
+                    <div class="index home">
+                      <a href="/#about-section">
+                        About
+                      </a>
+                    </div>
+                    
+                  
+                
+                  
+                    
+                    <div class="index home">
+                      <a href="/#news-section">
+                        News
+                      </a>
+                    </div>
+                    
+                  
+                
+              
+              <div class="index base active">
+                <a href="/">
+                  Welcome
+                </a>
+              </div>
+            
+          
+        
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/dev-blogs">
+                Dev-Blogs
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+        
+          
+            
+              
+              <div class="index">
+                <a href="/media">
+                  Media
+                </a>
+              </div>
+            
+          
+        
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/merch">
+                Merch
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+        
+          
+
+          
+
+            
+            <div class="collection">
+              <a href="/contact">
+                Contact
+              </a>
+            </div>
+            
+
+          
+        
+        
+
+      
+
+      
+    </nav>
+  </div>
+  <!-- style below blocks out the mobile nav toggle only when nav is loaded -->
+  <style>.mobile-nav-toggle-label { display: inline-block; }</style>
+
+
+</div>
+        </div>
+      </header>
+
+      <div id="siteWrapper" class="clearfix">
+
+        <!-- Banner -->
+        
+          
+            
+              <!-- nothing to see here, move along -->
+            
+          
+        
+
+        
+        
+
+        <main id="page" role="main">
+          <div id="content" class="main-content" data-content-field="main-content" data-collection-id="5b158df4562fa7c358317a3c">
+
+            
+              
+
+              
+            
+
+           <!-- Create index sections -->
+
+  
+  <div id="home-section" class="index-section page" data-url-id="home" data-collection-id="5b158ce0f950b7baa40f7bd3" data-edit-main-image="Background">
+    <div class="index-section-wrapper has-main-media has-main-image">
+
+      <!-- For Pages -->
+
+      
+
+        
+          
+            <div class="index-section-image content-fill" style="overflow: hidden;">
+              <img data-src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1556844762726-MPN49KJIVFE6L3XNK1V2/keyart_medium.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1556844762726-MPN49KJIVFE6L3XNK1V2/keyart_medium.jpg" data-image-dimensions="1080x627" data-image-focal-point="0.53,0.41" data-parent-ratio="1.4" style="font-size: 0px; left: -169.711px; top: 0px; width: 1281.53px; height: 744px; position: relative;" alt="keyart_medium.jpg" class="loaded" data-image-resolution="2500w" src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1556844762726-MPN49KJIVFE6L3XNK1V2/keyart_medium.jpg?format=2500w">
+            </div>
+            <div class="index-image-overlay"></div>
+          
+        
+
+        <div class="content page-content has-main-media has-main-image tmpl-loading" id="home-page" data-url-id="home">
+          <div class="content-inner has-content" style="padding-top: 80.5px;">
+            <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1528236817101" id="page-5b158ce0f950b7baa40f7bd3"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="12.08955223880597" data-block-type="21" id="block-yui_3_17_2_1_1413574954472_11247"><div class="sqs-block-content sqs-intrinsic" id="yui_3_17_2_1_1694374552129_118" style="padding-bottom: 12.0896%;">&nbsp;</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-c5465286a5c718698d02"><div class="sqs-block-content" id="yui_3_17_2_1_1694374552129_594">
+
+<div class="sqs-html-content" id="yui_3_17_2_1_1694374552129_593">
+  <h1 class="text-align-center" data-shrink-original-size="96" style="letter-spacing: 0.0729167em;">INVOKER</h1>
+</div>
+
+
+
+</div></div><div class="sqs-block button-block sqs-block-button" data-block-type="53" id="block-yui_3_17_2_1_1413574954472_8162"><div class="sqs-block-content" id="yui_3_17_2_1_1694374552129_113">
+
+<div class="sqs-block-button-container sqs-block-button-container--center" data-animation-role="button" data-alignment="center" data-button-size="medium" data-button-type="primary" id="yui_3_17_2_1_1694374552129_112">
+  <a href="https://store.steampowered.com/app/627070/inVokeR/" class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element" target="_blank" data-initialized="true">
+    PURCHASE ON STEAM
+  </a>
+</div>
+</div></div></div></div></div>
+          </div>
+        </div>
+      
+
+      <!-- For Galleries -->
+
+      
+
+      <!-- For Albums -->
+
+      
+
+    </div>
+  </div>
+  
+  <div id="about-section" class="index-section no-main-image page" data-url-id="about" data-collection-id="5b15901688251b408d34bd34" data-edit-main-image="Background">
+    <div class="index-section-wrapper">
+
+      <!-- For Pages -->
+
+      
+
+        
+          
+        
+
+        <div class="content page-content" id="about-page" data-url-id="about">
+          <div class="content-inner has-content">
+            <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1528152997243" id="page-5b15901688251b408d34bd34"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-92eb1f38852f888333c5"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h1 class="text-align-center"><strong>COMMAND THE ELEMENTS </strong></h1>
+</div>
+
+
+
+</div></div><div class="row sqs-row"><div class="col sqs-col-2 span-2"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1409943258044_35207"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-8 span-8"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1409943258044_35577"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h3 class="text-align-center">Available now on <a target="_blank" href="https://store.steampowered.com/app/627070/inVokeR/">Steam</a>&nbsp;AND <a target="_blank" href="https://www.microsoft.com/en-us/p/invoker/9n92n8qnzqcg?activetab=pivot%3aoverviewtab">WINDOWS</a> for HTC Vive, Oculus, and mixed reality</h3><p style="margin-left:40px" class="text-align-center">InVokeR is a one versus one wizard dueling game for VR platforms. Challenge your friends in strategic magic combat, casting spells to turn the tide of battle!</p><p style="margin-left:40px" class="text-align-center">&nbsp;</p>
+</div>
+
+
+
+</div></div></div><div class="col sqs-col-2 span-2"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1409943258044_36511"><div class="sqs-block-content">&nbsp;</div></div></div></div><div class="sqs-block gallery-block sqs-block-gallery" data-block-json="{&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;methodOption&quot;:&quot;transient&quot;,&quot;existingGallery&quot;:null,&quot;aspect-ratio&quot;:&quot;square&quot;,&quot;aspectRatio&quot;:null,&quot;auto-crop&quot;:true,&quot;collectionId&quot;:&quot;5b15901688251b408d34bd36&quot;,&quot;design&quot;:&quot;grid&quot;,&quot;lightbox&quot;:false,&quot;padding&quot;:10,&quot;show-meta&quot;:true,&quot;square-thumbs&quot;:true,&quot;thumbnails-per-row&quot;:4,&quot;vSize&quot;:null,&quot;transientGalleryId&quot;:&quot;5b15901688251b408d34bd36&quot;,&quot;show-meta-only-title&quot;:false,&quot;newWindow&quot;:false}" data-block-type="8" id="block-4cfc798eaf825e47da69"><div class="sqs-block-content">
+
+
+
+
+  
+
+  
+
+
+<div class="
+  sqs-gallery-container
+  sqs-gallery-block-grid
+  sqs-gallery-aspect-ratio-square
+  sqs-gallery-thumbnails-per-row-4
+  
+  
+
+  
+    
+    
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+  clear" id="yui_3_17_2_1_1694374552129_121">
+  <div class="sqs-gallery sqs-gallery-design-grid" id="yui_3_17_2_1_1694374552129_138">
+    
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide sqs-gallery-design-grid-slide sqs-active-slide" data-type="image" data-animation-role="image" id="yui_3_17_2_1_1694374552129_174">
+              <div class="margin-wrapper">
+                
+                <a role="presentation" class="
+                    image-slide-anchor
+                    
+                    content-fill
+                  " style="overflow: hidden;">
+                  
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152683927-CP8IAKNF5ACV5E1HLP8U/FireSplitPreview2.gif" alt="FireSplitPreview2.gif" /></noscript><img class="thumb-image loaded" data-src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152683927-CP8IAKNF5ACV5E1HLP8U/FireSplitPreview2.gif" data-image="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152683927-CP8IAKNF5ACV5E1HLP8U/FireSplitPreview2.gif" data-image-dimensions="639x485" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="5b15c243758d4658e64ba26c" data-type="image" style="left: -36.5155px; top: 0px; width: 303.031px; height: 230px; position: relative;" data-parent-ratio="1.0" alt="FireSplitPreview2.gif" data-image-resolution="500w" src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152683927-CP8IAKNF5ACV5E1HLP8U/FireSplitPreview2.gif?format=500w">
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide sqs-gallery-design-grid-slide" data-type="image" data-animation-role="image" id="yui_3_17_2_1_1694374552129_175">
+              <div class="margin-wrapper">
+                
+                <a role="presentation" class="
+                    image-slide-anchor
+                    
+                    content-fill
+                  " style="overflow: hidden;">
+                  
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152625148-TPCQHDAJQMHF08MPO7EJ/inv1.png" alt="inv1.png" /></noscript><img class="thumb-image loaded" data-src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152625148-TPCQHDAJQMHF08MPO7EJ/inv1.png" data-image="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152625148-TPCQHDAJQMHF08MPO7EJ/inv1.png" data-image-dimensions="750x425" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="5b15c22e8a922d0c6b33fa36" data-type="image" style="left: -87.9412px; top: 0px; width: 405.882px; height: 230px; position: relative;" data-parent-ratio="1.0" alt="inv1.png" data-image-resolution="750w" src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152625148-TPCQHDAJQMHF08MPO7EJ/inv1.png?format=750w">
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide sqs-gallery-design-grid-slide" data-type="image" data-animation-role="image" id="yui_3_17_2_1_1694374552129_176">
+              <div class="margin-wrapper">
+                
+                <a role="presentation" class="
+                    image-slide-anchor
+                    
+                    content-fill
+                  " style="overflow: hidden;">
+                  
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528245480418-A6C8SSI0XO4LOFMY8HZR/earth2.png" alt="earth2.png" /></noscript><img class="thumb-image loaded" data-src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528245480418-A6C8SSI0XO4LOFMY8HZR/earth2.png" data-image="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528245480418-A6C8SSI0XO4LOFMY8HZR/earth2.png" data-image-dimensions="750x425" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="5b172ce5758d465d6f89ab3f" data-type="image" style="left: -87.9412px; top: 0px; width: 405.882px; height: 230px; position: relative;" data-parent-ratio="1.0" alt="earth2.png" data-image-resolution="750w" src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528245480418-A6C8SSI0XO4LOFMY8HZR/earth2.png?format=750w">
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide sqs-gallery-design-grid-slide" data-type="image" data-animation-role="image" id="yui_3_17_2_1_1694374552129_177">
+              <div class="margin-wrapper">
+                
+                <a role="presentation" class="
+                    image-slide-anchor
+                    
+                    content-fill
+                  " style="overflow: hidden;">
+                  
+                  <noscript><img src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152750439-MXLLEPWO3O6C0M92AWS6/IceWardPreview.gif" alt="IceWardPreview.gif" /></noscript><img class="thumb-image loaded" data-src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152750439-MXLLEPWO3O6C0M92AWS6/IceWardPreview.gif" data-image="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152750439-MXLLEPWO3O6C0M92AWS6/IceWardPreview.gif" data-image-dimensions="639x485" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="5b15c2756d2a73b8bd0e2e14" data-type="image" style="left: -36.5155px; top: 0px; width: 303.031px; height: 230px; position: relative;" data-parent-ratio="1.0" alt="IceWardPreview.gif" data-image-resolution="500w" src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1528152750439-MXLLEPWO3O6C0M92AWS6/IceWardPreview.gif?format=500w">
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+    
+  </div>
+
+  
+
+</div>
+
+
+
+
+<style type="text/css" id="design-grid-css">
+#block-4cfc798eaf825e47da69 .sqs-gallery-block-grid .sqs-gallery-design-grid { margin-right: -10px; }
+#block-4cfc798eaf825e47da69 .sqs-gallery-block-grid .sqs-gallery-design-grid-slide .margin-wrapper { margin-right: 10px; margin-bottom: 10px; }
+</style>
+
+
+
+</div></div></div></div></div>
+          </div>
+        </div>
+      
+
+      <!-- For Galleries -->
+
+      
+
+      <!-- For Albums -->
+
+      
+
+    </div>
+  </div>
+  
+  <div id="news-section" class="index-section no-main-image page alt-section" data-url-id="news" data-collection-id="5b15b456f950b705400fee9c" data-edit-main-image="Background">
+    <div class="index-section-wrapper">
+
+      <!-- For Pages -->
+
+      
+
+        
+          
+        
+
+        <div class="content page-content" id="news-page" data-url-id="news">
+          <div class="content-inner has-content">
+            <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1531763689419" id="page-5b15b456f950b705400fee9c"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="row sqs-row"><div class="col sqs-col-9 span-9"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-b4152acd44e31af266e7"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h2>News &amp; Updates</h2><p dir="ltr">&nbsp;</p>
+</div>
+
+
+
+</div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1409262594429_112807"><div class="sqs-block-content">
+
+<div class="sqs-html-content">
+  <h2><a target="_blank" href="https://twitter.com/8thshoreinc?lang=en">Twitter</a></h2>
+</div>
+
+
+
+</div></div></div></div><div class="row sqs-row"><div class="col sqs-col-8 span-8"><div class="sqs-block summary-v2-block sqs-block-summary-v2" data-block-json="{&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;collectionId&quot;:&quot;5b16d679758d4658e6753d30&quot;,&quot;design&quot;:&quot;list&quot;,&quot;headerText&quot;:&quot;&quot;,&quot;textSize&quot;:&quot;large&quot;,&quot;pageSize&quot;:4,&quot;imageAspectRatio&quot;:&quot;1&quot;,&quot;columnWidth&quot;:270,&quot;gutter&quot;:60,&quot;listImageSize&quot;:30,&quot;listImageAlignment&quot;:&quot;left&quot;,&quot;slidesPerRow&quot;:4,&quot;textAlignment&quot;:&quot;left&quot;,&quot;showTitle&quot;:true,&quot;showThumbnail&quot;:true,&quot;showExcerpt&quot;:true,&quot;showReadMoreLink&quot;:true,&quot;showPrice&quot;:true,&quot;productQuickViewEnabled&quot;:false,&quot;showPastOrUpcomingEvents&quot;:&quot;upcoming&quot;,&quot;metadataPosition&quot;:&quot;above-title&quot;,&quot;primaryMetadata&quot;:&quot;date&quot;,&quot;secondaryMetadata&quot;:&quot;none&quot;,&quot;filter&quot;:{},&quot;autoCrop&quot;:true,&quot;lightbox&quot;:false,&quot;mixedContent&quot;:true,&quot;blockId&quot;:&quot;a219aa4d414ce9f2df3e&quot;}" data-block-type="55" id="block-yui_3_17_2_1_1409261709948_26533"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+<div class="
+  summary-block-wrapper
+
+  summary-block-collection-type-blog
+
+  summary-block-setting-text-size-large
+  summary-block-setting-text-align-left
+
+  summary-block-setting-design-list
+  summary-block-setting-design-list-thumbnail-left
+
+  summary-block-setting-metadata-position-above-title
+  summary-block-setting-primary-metadata-date
+  summary-block-setting-secondary-metadata-none
+
+  summary-block-setting-show-thumbnail
+  summary-block-setting-show-title
+  summary-block-setting-show-price
+  summary-block-setting-show-excerpt
+  summary-block-setting-show-read-more-link
+
+  
+
+  sqs-gallery-design-list
+
+  
+  ">
+
+  <div class="summary-item-list-container sqs-gallery-container" id="yui_3_17_2_1_1694374552129_275">
+
+    <header class="summary-block-header">
+      
+      <div class="summary-heading" data-animation-role="content">
+        
+          <span class="summary-collection-title">Dev-Blogs</span>
+        
+      </div>
+
+      
+      <div class="summary-carousel-pager sqs-gallery-controls" data-animation-role="content">
+        <span class="summary-carousel-pager-prev previous" tabindex="0" role="button" aria-label="Previous"></span>
+        <span class="summary-carousel-pager-next next" tabindex="0" role="button" aria-label="Next"></span>
+      </div>
+
+    </header>
+
+    <div class="summary-item-list sqs-gallery sqs-gallery-design-list" id="yui_3_17_2_1_1694374552129_294">
+      
+        <div class="summary-item
+          summary-item-record-type-text
+          sqs-gallery-design-list-slide
+          
+          
+            summary-item-has-thumbnail
+          
+          
+          
+          
+          summary-item-has-author
+          
+           sqs-active-slide" id="yui_3_17_2_1_1694374552129_299" data-type="image">
+
+          
+            
+            
+  
+    <div class="summary-thumbnail-outer-container" id="yui_3_17_2_1_1694374552129_400" style="width: 30%;">
+      <a href="/dev-blogs/2018/7/27/patch-10-whats-coming-next-ckjwf" class="
+          summary-thumbnail-container
+          sqs-gallery-image-container
+          
+        " data-title=" [Patch 0.4.0] is available now!" data-description="">
+        <div class="summary-thumbnail img-wrapper" data-animation-role="image" style="overflow: hidden; padding-bottom: 100%;">
+  
+
+  
+    
+      <!-- Main Image -->
+      <img data-src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1532715225337-J22LSQOLQBMSKKOH9SIS/Street_English.png" data-image="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1532715225337-J22LSQOLQBMSKKOH9SIS/Street_English.png" data-image-dimensions="2500x1411" data-image-focal-point="0.5,0.5" data-load="false" class="summary-thumbnail-image loaded" data-parent-ratio="1.0" style="left: -64.4447px; top: 0px; width: 295.889px; height: 167px; position: absolute;" alt=" [Patch 0.4.0] is available now!" data-image-resolution="500w" src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1532715225337-J22LSQOLQBMSKKOH9SIS/Street_English.png?format=500w">      
+    
+
+  
+
+  
+
+    
+
+    
+
+    </div>
+  </a>
+
+    <!-- Products: Quick View -->
+    
+
+    </div>
+  
+
+
+          
+
+          <div class="summary-content sqs-gallery-meta-container" data-animation-role="content" style="width: 70%;">
+
+            
+            <div class="summary-metadata-container summary-metadata-container--above-title">
+              
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2019-05-02">May 2, 2019</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+            
+              
+              <div class="summary-title">
+                <a href="/dev-blogs/2018/7/27/patch-10-whats-coming-next-ckjwf" class="summary-title-link"> [Patch 0.4.0] is available now!</a></div>
+            
+
+            
+            <div class="summary-metadata-container summary-metadata-container--below-title">
+            
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2019-05-02">May 2, 2019</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+            
+              
+            
+
+            
+              
+              
+              
+
+              
+                
+                <a href="/dev-blogs/2018/7/27/patch-10-whats-coming-next-ckjwf" class="summary-read-more-link">Read More →</a>
+              
+            
+
+            
+            <div class="summary-metadata-container summary-metadata-container--below-content">
+              
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2019-05-02">May 2, 2019</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+          </div>
+        </div>
+      
+        <div class="
+          summary-item
+          summary-item-record-type-text
+          sqs-gallery-design-list-slide
+          
+          
+            summary-item-has-thumbnail
+          
+          
+          
+          
+          summary-item-has-author
+          
+          " id="yui_3_17_2_1_1694374552129_301" data-type="image">
+
+          
+            
+            
+  
+    <div class="summary-thumbnail-outer-container" id="yui_3_17_2_1_1694374552129_403" style="width: 30%;">
+      <a href="/dev-blogs/2018/7/9/patch-031-release-new-mage-passives-and-alternate-spells-have-arrived" class="
+          summary-thumbnail-container
+          sqs-gallery-image-container
+          
+        " data-title="[Patch 0.3.1 Release] New mage passives and alternate spells have arrived!" data-description="">
+        <div class="summary-thumbnail img-wrapper" data-animation-role="image" style="overflow: hidden; padding-bottom: 100%;">
+  
+
+  
+    
+      <!-- Main Image -->
+      <img data-src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1531156372961-2TBNM1GJNQQZ657SBY82/logo.png" data-image="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1531156372961-2TBNM1GJNQQZ657SBY82/logo.png" data-image-dimensions="1332x1332" data-image-focal-point="0.5,0.5" data-load="false" class="summary-thumbnail-image loaded" data-parent-ratio="1.0" style="left: 0px; top: 0px; width: 167px; height: 167px; position: absolute;" alt="[Patch 0.3.1 Release] New mage passives and alternate spells have arrived!" data-image-resolution="300w" src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1531156372961-2TBNM1GJNQQZ657SBY82/logo.png?format=300w">      
+    
+
+  
+
+  
+
+    
+
+    
+
+    </div>
+  </a>
+
+    <!-- Products: Quick View -->
+    
+
+    </div>
+  
+
+
+          
+
+          <div class="summary-content sqs-gallery-meta-container" data-animation-role="content" style="width: 70%;">
+
+            
+            <div class="summary-metadata-container summary-metadata-container--above-title">
+              
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2018-07-09">Jul 9, 2018</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+            
+              
+              <div class="summary-title">
+                <a href="/dev-blogs/2018/7/9/patch-031-release-new-mage-passives-and-alternate-spells-have-arrived" class="summary-title-link">[Patch 0.3.1 Release] New mage passives and alternate spells have arrived!</a></div>
+            
+
+            
+            <div class="summary-metadata-container summary-metadata-container--below-title">
+            
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2018-07-09">Jul 9, 2018</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+            
+              
+            
+
+            
+              
+              
+              
+
+              
+                
+                <a href="/dev-blogs/2018/7/9/patch-031-release-new-mage-passives-and-alternate-spells-have-arrived" class="summary-read-more-link">Read More →</a>
+              
+            
+
+            
+            <div class="summary-metadata-container summary-metadata-container--below-content">
+              
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2018-07-09">Jul 9, 2018</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+          </div>
+        </div>
+      
+        <div class="
+          summary-item
+          summary-item-record-type-text
+          sqs-gallery-design-list-slide
+          
+          
+            summary-item-has-thumbnail
+          
+          
+          
+          
+          summary-item-has-author
+          
+          " id="yui_3_17_2_1_1694374552129_303" data-type="image">
+
+          
+            
+            
+  
+    <div class="summary-thumbnail-outer-container" id="yui_3_17_2_1_1694374552129_406" style="width: 30%;">
+      <a href="/dev-blogs/2018/6/29/patch-031-annihilate-your-challenger-with-new-alternate-spells-x3b6b" class="
+          summary-thumbnail-container
+          sqs-gallery-image-container
+          
+        " data-title=" [Patch 0.3.1] Annihilate your challenger with new Alternate Spells!" data-description="">
+        <div class="summary-thumbnail img-wrapper" data-animation-role="image" style="overflow: hidden; padding-bottom: 100%;">
+  
+
+  
+    
+      <!-- Main Image -->
+      <img data-src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1530577785971-VDPR65B7OIM06NP3268W/AirMageCard.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1530577785971-VDPR65B7OIM06NP3268W/AirMageCard.jpg" data-image-dimensions="1920x1080" data-image-focal-point="0.5,0.5" data-load="false" class="summary-thumbnail-image loaded" data-parent-ratio="1.0" style="left: -64.9444px; top: 0px; width: 296.889px; height: 167px; position: absolute;" alt=" [Patch 0.3.1] Annihilate your challenger with new Alternate Spells!" data-image-resolution="500w" src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1530577785971-VDPR65B7OIM06NP3268W/AirMageCard.jpg?format=500w">      
+    
+
+  
+
+  
+
+    
+
+    
+
+    </div>
+  </a>
+
+    <!-- Products: Quick View -->
+    
+
+    </div>
+  
+
+
+          
+
+          <div class="summary-content sqs-gallery-meta-container" data-animation-role="content" style="width: 70%;">
+
+            
+            <div class="summary-metadata-container summary-metadata-container--above-title">
+              
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2018-07-02">Jul 2, 2018</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+            
+              
+              <div class="summary-title">
+                <a href="/dev-blogs/2018/6/29/patch-031-annihilate-your-challenger-with-new-alternate-spells-x3b6b" class="summary-title-link"> [Patch 0.3.1] Annihilate your challenger with new Alternate Spells!</a></div>
+            
+
+            
+            <div class="summary-metadata-container summary-metadata-container--below-title">
+            
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2018-07-02">Jul 2, 2018</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+            
+              
+            
+
+            
+              
+              
+              
+
+              
+                
+                <a href="/dev-blogs/2018/6/29/patch-031-annihilate-your-challenger-with-new-alternate-spells-x3b6b" class="summary-read-more-link">Read More →</a>
+              
+            
+
+            
+            <div class="summary-metadata-container summary-metadata-container--below-content">
+              
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2018-07-02">Jul 2, 2018</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+          </div>
+        </div>
+      
+        <div class="
+          summary-item
+          summary-item-record-type-text
+          sqs-gallery-design-list-slide
+          
+          
+            summary-item-has-thumbnail
+          
+          
+          
+          
+          summary-item-has-author
+          
+          " id="yui_3_17_2_1_1694374552129_305" data-type="image">
+
+          
+            
+            
+  
+    <div class="summary-thumbnail-outer-container" id="yui_3_17_2_1_1694374552129_409" style="width: 30%;">
+      <a href="/dev-blogs/2018/6/28/race-to-5k-reach-5000-victories-and-win-our-rynn-plushie" class="
+          summary-thumbnail-container
+          sqs-gallery-image-container
+          
+        " data-title="[Race to 5k!] Reach 5000 victories and win our Rynn plushie! " data-description="">
+        <div class="summary-thumbnail img-wrapper" data-animation-role="image" style="overflow: hidden; padding-bottom: 100%;">
+  
+
+  
+    
+      <!-- Main Image -->
+      <img data-src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1530211300852-OBSMIZ27EVKYC4DJEPD0/img_2013.jpg" data-image="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1530211300852-OBSMIZ27EVKYC4DJEPD0/img_2013.jpg" data-image-dimensions="800x532" data-image-focal-point="0.5,0.5" data-load="false" class="summary-thumbnail-image loaded" data-parent-ratio="1.0" style="left: -42.0639px; top: 0px; width: 251.128px; height: 167px; position: absolute;" alt="[Race to 5k!] Reach 5000 victories and win our Rynn plushie! " data-image-resolution="500w" src="https://images.squarespace-cdn.com/content/v1/5b158b7d2714e543f0e2dd58/1530211300852-OBSMIZ27EVKYC4DJEPD0/img_2013.jpg?format=500w">      
+    
+
+  
+
+  
+
+    
+
+    
+
+    </div>
+  </a>
+
+    <!-- Products: Quick View -->
+    
+
+    </div>
+  
+
+
+          
+
+          <div class="summary-content sqs-gallery-meta-container" data-animation-role="content" style="width: 70%;">
+
+            
+            <div class="summary-metadata-container summary-metadata-container--above-title">
+              
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2018-06-28">Jun 28, 2018</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+            
+              
+              <div class="summary-title">
+                <a href="/dev-blogs/2018/6/28/race-to-5k-reach-5000-victories-and-win-our-rynn-plushie" class="summary-title-link">[Race to 5k!] Reach 5000 victories and win our Rynn plushie! </a></div>
+            
+
+            
+            <div class="summary-metadata-container summary-metadata-container--below-title">
+            
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2018-06-28">Jun 28, 2018</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+            
+              
+            
+
+            
+              
+              
+              
+
+              
+                
+                <a href="/dev-blogs/2018/6/28/race-to-5k-reach-5000-victories-and-win-our-rynn-plushie" class="summary-read-more-link">Read More →</a>
+              
+            
+
+            
+            <div class="summary-metadata-container summary-metadata-container--below-content">
+              
+              <div class="summary-metadata summary-metadata--primary">
+
+	
+	  
+	    <!-- Timestamp -->
+	    <time class="summary-metadata-item summary-metadata-item--date" datetime="2018-06-28">Jun 28, 2018</time>
+	  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+              
+              <div class="summary-metadata summary-metadata--secondary">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            </div>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+</div></div></div><div class="col sqs-col-1 span-1"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_1_1409262594429_123453"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block twitter-block sqs-block-twitter" data-block-json="{&quot;title&quot;:true,&quot;thumbnail&quot;:true,&quot;excerpt&quot;:true,&quot;pageSize&quot;:3,&quot;collectionId&quot;:&quot;5b15deaaf7939272dcbac0cf&quot;,&quot;filter&quot;:{},&quot;showAvatar&quot;:false,&quot;showUsername&quot;:false,&quot;followButton&quot;:true,&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;addAccount&quot;:null,&quot;defaultCollectionId&quot;:&quot;twittersearch&quot;,&quot;searchTerm&quot;:&quot;&quot;,&quot;searchCollectionId&quot;:&quot;&quot;,&quot;pageCollectionId&quot;:&quot;5b15b456f950b705400fee9c&quot;,&quot;containingItemId&quot;:null,&quot;connectedAccountId&quot;:&quot;5b15deaaf7939272dcbac0cf&quot;,&quot;enable-search&quot;:false,&quot;enable-search-disabled&quot;:null,&quot;socialCollectionId&quot;:&quot;&quot;,&quot;previewCollectionId&quot;:&quot;&quot;,&quot;status&quot;:&quot;undefined&quot;,&quot;searchId&quot;:&quot;undefined&quot;,&quot;refresh&quot;:null,&quot;unsafeSearch&quot;:null}" data-block-type="6" id="block-573c5cd1423ca16a8c1f"><div class="sqs-block-content">
+
+
+  
+
+
+
+  <ul class="tweet-list" data-block-state="invalid">
+    
+      <li class="tweet clear no-avatar no-username" id="5b43a00eddff69d07936b41f">
+        
+        <div class="tweet-text-wrapper">
+          
+          <div class="tweet-text">Patch 0.3.1 releases with mage passives and new alternate spells, come check it out! 
+<a href="https://t.co/40MSwuAhP4" rel="nofollow">https://t.co/40MSwuAhP4</a></div>
+          <time class="tweet-timestamp" datetime="2018-07-09"><a target="new" href="https://twitter.com/8thShoreInc/status/1016372372616577024">Jul 9, 2018, 10:23 AM</a></time>
+        </div>
+      </li>
+    
+      <li class="tweet clear no-avatar no-username" id="5b3acdaf3fde6af7375d2475">
+        
+        <div class="tweet-text-wrapper">
+          
+          <div class="tweet-text">[Patch 0.3.1] Fill your spell-books with spell progression and alternate spells! 
+
+<a href="https://t.co/7Fw8OcbyIz" rel="nofollow">https://t.co/7Fw8OcbyIz</a></div>
+          <time class="tweet-timestamp" datetime="2018-07-02"><a target="new" href="https://twitter.com/8thShoreInc/status/1013943730208890880">Jul 2, 2018, 5:33 PM</a></time>
+        </div>
+      </li>
+    
+      <li class="tweet clear no-avatar no-username" id="5b3534e17feca38f8230f5ed">
+        
+        <div class="tweet-text-wrapper">
+          
+          <div class="tweet-text">Score 5000 PVP victories and win our exclusive Rynn plush!
+
+<a href="https://t.co/gQigQ3LbBO" rel="nofollow">https://t.co/gQigQ3LbBO</a></div>
+          <time class="tweet-timestamp" datetime="2018-06-28"><a target="new" href="https://twitter.com/8thShoreInc/status/1012409935349420032">Jun 28, 2018, 11:58 AM</a></time>
+        </div>
+      </li>
+    
+  </ul>
+
+
+
+  <script>Y.use('squarespace-follow-buttons', function(Y) { Y.on('domready', function() { Y.Squarespace.FollowButtonUtils.renderAll(); }); });</script><div class="squarespace-follow-button" data-username="8thShoreInc" id="yui_3_17_2_1_1694374552129_508"><div id="yui_3_17_2_1_1694374552129_544" class="yui3-widget sqs-follow-button"><div id="yui_3_17_2_1_1694374552129_546" class="sqs-follow-button-content"><a href="https://twitter.com/8thShoreInc" class="twitter-follow-button" data-show-count="false" data-twitter-extracted-i1694374556810395572="true">Follow @8thShoreInc</a></div></div></div>
+
+
+<!-- SQUARESPACE_JSONT_ERROR
+
+TWITTER
+
+(line/character offsets reference the template source code)
+
+  1: RuntimeError APPLY_PARTIAL_MISSING at line 10 character 3: Attempt to apply partial 'block-status' which could not be found.
+
+--></div></div></div></div></div></div></div>
+          </div>
+        </div>
+      
+
+      <!-- For Galleries -->
+
+      
+
+      <!-- For Albums -->
+
+      
+
+    </div>
+  </div>
+          </div>
+        </main>
+
+        <div id="preFooter">
+          <div class="pre-footer-inner with-custom">
+  <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="Pre-Footer Content" data-type="block-field" data-updated-on="1528237974867" id="preFooterBlocks"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+</div>
+
+        </div>
+
+        <footer id="footer" role="contentinfo">
+          <div class="footer-inner">
+            <div class="nav-wrapper back-to-top-nav"><nav><div class="back-to-top"><a href="#header">Back To Top</a></div></nav></div>
+            
+
+
+            
+            <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1528237966705" id="footerBlocks"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+          </div>
+        </footer>
+
+        
+        <div class="sqs-custom-cart custom-cart empty sqs-template-integrated-shopping-cart" data-test="continue-to-cart" aria-label="0 items in cart">
+          <a href="/cart" class="custom-cart-button">Cart (<span class="sqs-cart-quantity">0</span>)</a>
+        </div>
+        
+
+      </div>
+    </div>
+
+    <script src="https://static1.squarespace.com/static/ta/52e968b5e4b04d2aa2a3bba3/1129/scripts/site-bundle.js" type="text/javascript"></script>
+
+    <script data-sqs-type="imageloader-bootstrapper">if(window.ImageLoader) window.ImageLoader.bootstrap({}, document);</script><script>Squarespace.afterBodyLoad(Y);</script><svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg"><symbol id="twitter-icon" viewBox="0 0 64 64"><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"></path></symbol><symbol id="twitter-mask" viewBox="0 0 64 64"><path d="M0,0v64h64V0H0z M44.7,25.5c0,0.3,0,0.6,0,0.8C44.7,35,38.1,45,26.1,45c-3.7,0-7.2-1.1-10.1-2.9 c0.5,0.1,1,0.1,1.6,0.1c3.1,0,5.9-1,8.2-2.8c-2.9-0.1-5.3-2-6.1-4.6c0.4,0.1,0.8,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-3-0.6-5.3-3.3-5.3-6.4c0,0,0-0.1,0-0.1c0.9,0.5,1.9,0.8,3,0.8c-1.8-1.2-2.9-3.2-2.9-5.5c0-1.2,0.3-2.3,0.9-3.3 c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5c0-3.6,2.9-6.6,6.6-6.6c1.9,0,3.6,0.8,4.8,2.1c1.5-0.3,2.9-0.8,4.2-1.6 c-0.5,1.5-1.5,2.8-2.9,3.6c1.3-0.2,2.6-0.5,3.8-1C47.1,23.4,46,24.5,44.7,25.5z"></path></symbol></svg>
+
+  
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html?origin=https%3A%2F%2Finvokervr.com" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

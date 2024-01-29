@@ -1,0 +1,70 @@
+<html><head>
+<meta charset="utf-8">
+<title>Page not found!!!</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="dcterms.rights" content="Gear Worx Productions © All Rights Reserved">
+<meta name="robots" content="index">
+<meta name="robots" content="follow">
+<meta name="revisit-after" content="1 day">
+<meta name="generator" content="Powered by CMS pro! v5.80">
+<link rel="shortcut icon" href="https://www.gearworxprod.com/assets/favicon.ico" type="image/x-icon">
+<link href="https://www.gearworxprod.com/view/front/themes/laguna/cache/master_main_ltr.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://www.gearworxprod.com/assets/jquery.js"></script>
+</head>
+<body id="errorPage"><main class="align middle">
+  <div class="columns">
+    <a href="https://www.gearworxprod.com/" class="logo"><img src="https://www.gearworxprod.com/uploads/PmJB4EzqG6fVsla05lnNYMds.png" alt="Gear Worx Productions"></a>
+    <h1 class="underlined">Page not found!!!</h1>
+    <p class="basic">Oops! Looks like you followed a bad link.</p>
+    <p>If you think this is a problem with us, please <a href="https://www.gearworxprod.com/search/"> tell us.</a></p>
+    <a href="https://www.gearworxprod.com/" class="wojo primary wide button"><i class="icon chevron left"></i>Go Back</a>
+  </div>
+</main><!-- Footer -->
+<footer>
+  <div class="wojo-grid">
+    <div class="vertical padding">
+      <div class="row">
+        <div class="columns phone-100"><span class="wojo small text">© 2023 Gear Worx Productions | Powered by CMS pro v.5.80</span></div>
+        <div class="columns phone-100">
+          <div class="right aligned">
+            <a href="https://www.gearworxprod.com" class="wojo small simple icon button"><i class="icon home"></i></a>
+            <a href="//validator.w3.org/check/referer" target="_blank" class="wojo small simple icon button"><i class="icon html5"></i></a>
+            <a href="https://www.gearworxprod.com/sitemap/" class="wojo small simple icon button"><i class="icon apps"></i></a>
+            <a href="https://www.gearworxprod.com/rss.php" class="wojo small simple icon button"><i class="icon rss"></i></a>
+            <a href="//www.facebook.com/GWPDevChat" class="wojo small simple icon button"><i class="icon facebook"></i></a>
+            <a href="//twitter.com/GWPGearWorx" class="wojo small simple icon button"><i class="icon twitter"></i></a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript"> 
+// <![CDATA[  
+$(document).ready(function() {
+	$('.logo img').each(function() {
+		var $img = $(this);
+		var imgID = $img.attr('id');
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+
+		$.get(imgURL, function(data) {
+			var $svg = $(data).find('svg');
+			if (typeof imgID !== 'undefined') {
+				$svg = $svg.attr('id', imgID);
+			}
+			if (typeof imgClass !== 'undefined') {
+				$svg = $svg.attr('class', imgClass + ' replaced-svg');
+			}
+			$svg = $svg.removeAttr('xmlns:a');
+			$img.replaceWith($svg);
+		}, 'xml');
+	});
+});
+// ]]>
+</script>
+</body></html>

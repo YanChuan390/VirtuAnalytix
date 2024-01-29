@@ -1,0 +1,1402 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" class="pointer skrollr skrollr-desktop"><head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id="customRules"></style><script async="" src="//d1dxoqu0t5mb7j.cloudfront.net/sp-2.0.0-dm-0.1.min.js"></script><script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        AjaxContainer: 'div.dmBody',
+        WrappingContainer: 'div.dmOuter',
+        HomeUrl: 'http://www.monteperdido.studio/',
+        AccountUUID: 'ec67f6f7a96244188e27982dd3aee63d',
+        SystemID: '1AND1_EU_PROD',
+        SiteAlias: '9955ef582f024fa880a3a0784d72c573',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Tue Dec 20 19:30:04 UTC 2022',
+        ExternalUid: '93320c3d-c334-4631-8e7b-f3a99916e023',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'privacy',
+        InitialPageUuid: '3eb9d0f3e7aa466480cc45600cc00ac4',
+        InitialPageId: '674856008',
+        InitialEncodedPageAlias: 'cHJpdmFjeQ==',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '8260',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'monteperdido',
+        HasCustomDomain: true,
+        showCookieNotification: true,
+        cookiesNotificationMarkup: ' <div>Este sitio web utiliza cookies para proporcionarle la mejor experiencia en l&iacute;nea. Al utilizar nuestro sitio web, acepta el uso de cookies. <a href=\"\/privacy\" target=\"_blank\">M&aacute;s informaci&oacute;n<\/a>.<\/div> \n',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'LEFT',
+        currentLanguage: 'es',
+        currentLocale: 'es',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'http://www.monteperdido.studio/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '2402',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'PRIVACY_PAGE',
+        isRuntimeServer: true,
+        isInEditor: false,
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="https://www.monteperdido.studio/privacy">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://cdn.website-editor.net/s/9955ef582f024fa880a3a0784d72c573/dms3rep/multi/lWbnVjmR_400x400.jpg?Expires=1696306314&amp;Signature=r8lOcSH3AH7qaiTo-v-a1Z-IpdkMFd5nQc9LPN0SOYCJyLMG5zWqwit3qnzHlZ-0fRCBnN9Cxx7c5-Sfk0eqofl06RzkGw5pBDfrWnlB44Q1Oy9V5cHmzS0iB7GHbH0qXTjcYxFODTzCN4VcGYOIoFYhSaPZpAathYFWC-5QzPwsCaaaeYDcNmaYeEuqeSq-kTRF2Pr-zUPi0dsF7ocbKBSBvq1jpYUEWvkxFZ30B40NG1nC-aw1C20aj1Yshmr9FLDBNSteQL82FWh7xZO2h3USYsRyjHD2IyKZc0~pLS-uoyIpaXuGGTDLWQf8tRAAg1WJJx~rbPRROaTG1ZyAOg__&amp;Key-Pair-Id=K2NXBXLF010TJW">
+
+<link rel="icon" type="image/x-icon" href="https://cdn.website-editor.net/9955ef582f024fa880a3a0784d72c573/site_favicon_16_1586520104314.ico">
+
+<!-- End favorite icons -->
+
+<link rel="preconnect" href="https://le-cdn.website-editor.net/" crossorigin="">
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = '1AND1_EU_PROD';
+
+    if(!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function() {
+            },
+            getCurrentDeviceType: function() {
+                return window._currentDevice;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+<!-- loadCSS function -->
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    cssLinks = null;
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if(link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      }  
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+    const defs={};
+    window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+    window.waitForDeferred = function (b, a, c) {
+      let d = window?.getDeferred?.(b);
+      d
+        ? d.promise.then(a)
+        : c && ["complete", "interactive"].includes(document.readyState)
+        ? setTimeout(a, 1)
+        : c
+        ? document.addEventListener("DOMContentLoaded", a)
+        : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function -->
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    cssLinks = null;
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if(link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      }  
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/fonts/css?family=Raleway:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Roboto:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Source+Sans+Pro:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Karla:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&amp;subset=latin-ext&amp;display=swap">
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-new-->
+<link rel="stylesheet" type="text/css" href="https://static-cdn.website-editor.net/mnlt/production/3721/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-new.min.css">
+
+<!-- End of RT CSS Include -->
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/WIDGET_CSS/production_3721/d60b630c5995d784fdfe5b40635fbd07.css" id="widgetCSS">
+
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="privacy"] #dm [data-show-on-page-only="privacy"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/s/9955ef582f024fa880a3a0784d72c573/files/9955ef582f024fa880a3a0784d72c573_1.min.css?v=367&amp;Expires=1696306314&amp;Signature=qJGyRnt0biTN4GEoPN24gnnA-r6xs7u5gSnaKj-BpV3CFCNEAGc09uoGQJ9~15R4Xr4n3ODqWohUK131pmgKC28jLqrvj4a93Q5t1W7shnRQSR7Zchcbt9tYnv9hwWA68NDpExKNW6QQ4Nw5Sv8R~j8GhtBFtt2XxxmV8weU0Yi9bJIAWg3lsxqzDszrC~Q~U-9VDt1cg8kLGwIoKR0EgU2099Moz4hd~LJ5a7ro4aoJX6CWsT~l5TQ9vkipoHUpRsTRIZZwXBdXTsKE-2PDP4opXE0I2ZIXk0TqF57RJt9MZwzj7UW3czFIMqAMNk3urvCBNif1FMXlXma1N7m2Wg__&amp;Key-Pair-Id=K2NXBXLF010TJW" id="siteGlobalCss">
+
+
+<!-- additional css file per platform -->
+<link type="text/css" rel="stylesheet" href="/_dm/s/rt/css/oneUndOne/1and1-runtime.css?version=2023-08-31T10_49_14">
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style id="additionalGlobalCss" type="text/css">
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody a.span.textonly{
+color:rgb(255,255,255) !important}
+*#dm *.dmBody a.span.textonly{
+color:rgb(255,255,255) !important}
+*#dm *.dmBody div.dmform-error{
+font-style:normal !important}
+*#dm *.dmBody div.dmforminput textarea{
+font-style:italic !important}
+*#dm *.dmBody div.dmforminput *.fileUploadLink{
+font-style:italic !important}
+*#dm *.dmBody div.checkboxwrapper span{
+font-style:italic !important}
+*#dm *.dmBody div.radiowrapper span{
+font-style:italic !important}
+*#dm *.dmBody div.u_1243667655{
+background-color:rgba(0,0,0,0) !important}
+*#dm *.dmBody div.u_1232686885{
+}
+*#dm *.dmBody div.u_1313333827 *.socialHubIcon{
+color:rgba(75,66,60,1) !important;
+border-color:rgba(75,66,60,1) !important}
+*#dm *.dmBody div.u_1178964106{
+background-color:rgba(255,228,189,1) !important}
+*#dm *.dmBody div.u_1645959112{
+background-color:rgba(0,0,0,1) !important}
+*#dm *.dmBody nav.u_1760609700{
+color:white !important}
+*#dm *.dmBody *.u_1760609700.main-navigation.unifiednav:not([image]) .unifiednav__container[data-depth="0"]{
+top:calc(100% - 0px - 0px) !important}
+*#dm *.dmBody *.u_1760609700.main-navigation.unifiednav[data-nav-structure="HORIZONTAL"] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child) .unifiednav__container[data-depth="0"]{
+left:15px !important}
+*#dm *.dmBody *.u_1760609700.main-navigation.unifiednav[data-nav-structure="SPLIT"] .unifiednav__container:not([data-depth]):not(:last-of-type)>.unifiednav__item-wrap .unifiednav__container[data-depth="0"]{
+left:15px !important}
+*#dm *.dmBody *.u_1760609700.main-navigation.unifiednav[data-nav-structure="SPLIT"] .unifiednav__container:not([data-depth]):last-of-type>.unifiednav__item-wrap:not(:last-child) .unifiednav__container[data-depth="0"]{
+left:15px !important}
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.d-page-1716942098 DIV.dmInner{
+background-repeat:no-repeat !important;
+background-size:cover !important;
+background-attachment:fixed !important;
+background-position:50% 50% !important}
+*#dm *.d-page-1716942098 DIV#dmSlideRightNavRight{
+background-repeat:no-repeat !important;
+background-image:none !important;
+background-size:cover !important;
+background-attachment:fixed !important;
+background-position:50% 50% !important}
+*#dm *.dmBody div.u_1243667655{
+margin-left:auto !important;
+padding-top:100px !important;
+padding-left:40px !important;
+padding-bottom:100px !important;
+margin-top:0 !important;
+margin-bottom:0 !important;
+padding-right:40px !important;
+margin-right:auto !important;
+float:none !important;
+top:0 !important;
+left:0 !important;
+width:100% !important;
+position:relative !important;
+height:auto !important;
+max-width:none !important;
+min-width:0 !important;
+text-align:center !important}
+*#dm *.dmBody *.u_1313333827 *.socialHubInnerDiv a{
+margin-right:20px !important}
+*#dm *.dmBody *.u_1313333827 *.socialHubIcon{
+width:57px !important;
+height:57px !important;
+font-size:38px !important;
+line-height:57px !important}
+*#dm *.dmBody *.u_1313333827 *.socialHubIcon:after{
+width:65px !important;
+height:57px !important}
+*#dm *.dmBody div.u_1313333827{
+float:none !important;
+top:0 !important;
+left:0 !important;
+width:calc(100% - 0px) !important;
+position:relative !important;
+height:auto !important;
+padding-top:0 !important;
+padding-left:0 !important;
+padding-bottom:0 !important;
+margin-right:auto !important;
+margin-left:auto !important;
+max-width:100% !important;
+margin-top:0 !important;
+margin-bottom:0 !important;
+padding-right:0 !important;
+min-width:25px !important;
+text-align:center !important}
+*#dm *.dmBody div.u_1320321809{
+float:none !important;
+top:0 !important;
+left:0 !important;
+width:calc(100% - 266px) !important;
+position:relative !important;
+height:auto !important;
+padding-top:0 !important;
+padding-left:0 !important;
+padding-bottom:0 !important;
+margin-right:0 !important;
+margin-left:266px !important;
+max-width:432px !important;
+margin-top:40px !important;
+margin-bottom:0 !important;
+padding-right:0 !important;
+min-width:25px !important;
+text-align:start !important}
+*#dm *.dmBody div.u_1178964106{
+float:none !important;
+top:0 !important;
+left:0 !important;
+width:auto !important;
+position:relative !important;
+height:auto !important;
+padding-top:75.5px !important;
+padding-left:40px !important;
+padding-bottom:75.5px !important;
+max-width:100% !important;
+padding-right:40px !important;
+min-width:0 !important;
+text-align:start !important}
+*#dm *.dmBody div.u_1232686885{
+padding-top:0 !important;
+padding-left:0 !important;
+padding-bottom:10px !important;
+float:none !important;
+top:0 !important;
+max-width:100% !important;
+left:0 !important;
+width:calc(100% - 0px) !important;
+position:relative !important;
+padding-right:0 !important;
+min-width:25px !important;
+text-align:center !important;
+height:auto !important;
+display:block !important;
+margin-right:auto !important;
+margin-left:auto !important;
+margin-top:17px !important;
+margin-bottom:0 !important}
+body.dmDesktopBody .d-header-wrapper{
+display:none !important}
+body.dmDesktopBody .popupNavBox{
+display:none !important}
+body.dmTabletBody .d-header-wrapper{
+display:none !important}
+body.dmTabletBody .popupNavBox{
+display:none !important}
+*#dm *.dmBody div.u_1707688144{
+padding-top:0 !important}
+*#dm *.dmBody nav.u_1760609700{
+padding-top:0 !important}
+*#dm *.dmBody div.u_1645959112{
+padding-top:10px !important;
+padding-bottom:10px !important;
+padding-left:20px !important;
+padding-right:20px !important}
+*#dm *.dmBody div.u_1707688144{
+padding-top:0 !important}
+*#dm *.dmBody nav.u_1760609700{
+padding-top:0 !important}
+*#dm *.dmBody div.u_1645959112{
+padding-top:10px !important;
+padding-bottom:10px !important;
+padding-left:20px !important;
+padding-right:20px !important}
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+</style>
+
+
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+  <link type="application/rss+xml" rel="alternate" href="https://www.monteperdido.studio//feed/rss2">
+  <link type="application/atom+xml" rel="alternate" href="https://www.monteperdido.studio//feed/atom">
+  <meta property="og:type" content="website">
+  <title>
+    
+    Monte Perdido Studio
+  
+  </title>
+  <meta name="keywords" content="Monte, Perdido, Virtual, Reality, VR, Vanishing Grace, Vanishing, Grace, Monte Perdido, monteperdido, game, videogame, studio,">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Monte Perdido Studio">
+  <meta name="twitter:image" content="https://le-cdn.website-editor.net/s/9955ef582f024fa880a3a0784d72c573/dms3rep/multi/opt/FrontEnd_Banner_web%281%29-1920w.png?Expires=1696306313&amp;Signature=LlS7LodF91D~vmKsXejz0cENspOcjtAmdWvo1b9WS7GFCyI-jrLVUHPpd9X~mimOW5-A6qO2IpuQ5O-P6wvxuSELHqCU1TGhxlwDS2AN27QOfcBRkBY8tIGJvfKayAE5gCVfyYzuQBjh4WUOQlW9e2QrkFfcUN24NO6EAK3vDtAyQlwIYlxAFkRAV~mVkrTa3YpMUxJN52VZYej~jaSx2hg4d8S6WmLOLparz0zIYEb0FbkiB-FNIGw1v1lBuB8fNfA0cQrTDTRmcTPHuFA5RNowwnZujOa-3rekAcyqtvCkKbbcn7d7S~M6SBUJDDx~bfp9RGdVEbnqZYC9f-ZtIw__&amp;Key-Pair-Id=K2NXBXLF010TJW">
+  <meta property="og:title" content="Monte Perdido Studio">
+  <meta property="og:image" content="https://le-cdn.website-editor.net/s/9955ef582f024fa880a3a0784d72c573/dms3rep/multi/opt/FrontEnd_Banner_web%281%29-1920w.png?Expires=1696306313&amp;Signature=LlS7LodF91D~vmKsXejz0cENspOcjtAmdWvo1b9WS7GFCyI-jrLVUHPpd9X~mimOW5-A6qO2IpuQ5O-P6wvxuSELHqCU1TGhxlwDS2AN27QOfcBRkBY8tIGJvfKayAE5gCVfyYzuQBjh4WUOQlW9e2QrkFfcUN24NO6EAK3vDtAyQlwIYlxAFkRAV~mVkrTa3YpMUxJN52VZYej~jaSx2hg4d8S6WmLOLparz0zIYEb0FbkiB-FNIGw1v1lBuB8fNfA0cQrTDTRmcTPHuFA5RNowwnZujOa-3rekAcyqtvCkKbbcn7d7S~M6SBUJDDx~bfp9RGdVEbnqZYC9f-ZtIw__&amp;Key-Pair-Id=K2NXBXLF010TJW">
+
+
+
+
+<!-- SYS- MUFORDFfRVVfUFJPRA== -->
+<script src="https://integration.mywebsite-editor.com/dakota-snippet-service/snippet/integration/snippet.js?sitename=9955ef582f024fa880a3a0784d72c573&amp;external_uid=93320c3d-c334-4631-8e7b-f3a99916e023&amp;mode=visit"></script><script charset="utf-8" src="https://static-cdn.website-editor.net/mnlt/production/3721/editor/apps/modules/runtime/18.8d9b98557bf3839e9c87.js"></script><script charset="utf-8" src="https://static-cdn.website-editor.net/mnlt/production/3721/editor/apps/modules/runtime/23.fe66fc7c29b5e63049b3.js"></script><script charset="utf-8" src="https://static-cdn.website-editor.net/mnlt/production/3721/editor/apps/modules/runtime/1.38a874f31d2d8986b8b0.js"></script><script charset="utf-8" src="https://static-cdn.website-editor.net/mnlt/production/3721/editor/apps/modules/runtime/7.9a94a74e30026a70bc4d.js"></script><script charset="utf-8" src="https://static-cdn.website-editor.net/mnlt/production/3721/editor/apps/modules/runtime/runtime-module-anchors.8069350c1321599c430f.js"></script><script charset="utf-8" src="https://static-cdn.website-editor.net/mnlt/production/3721/editor/apps/modules/runtime/3.837e97ee3698267e2a54.js"></script><script charset="utf-8" src="https://static-cdn.website-editor.net/mnlt/production/3721/editor/apps/modules/runtime/5.a5af5a3b04156da9e174.js"></script><script charset="utf-8" src="https://static-cdn.website-editor.net/mnlt/production/3721/editor/apps/modules/runtime/8.20c25f8b84fd357fa245.js"></script><script charset="utf-8" src="https://static-cdn.website-editor.net/mnlt/production/3721/editor/apps/modules/runtime/22.3e5fa6c0d3f101e13242.js"></script><script src="//tif.webjavaskript.net/js/22728.js" type="text/javascript"></script></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="privacy" class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody  pcCustomScrollbar d1SiteBody dmBodyNoIscroll fullyLoaded" style="padding:0;margin:0;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class="dmwr">
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-sec hasAnimations dmPageBody dmFreeHeader d-page-1716942098 showing-message runtime-module-container showing-message--bottom showing-message--shown" id="dm-outer-wrapper" data-page-class="1716942098" data-buttonstyle="THICK_BORDER_ROUND" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" layout="72132c1b45004f5381517731b9b531a3===header"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1307616299 dmRespRow dmDefaultListContentRow fullBleedChanged fullBleedMode hide-for-large hide-for-medium" style="text-align:center" id="1307616299"> <div class="dmRespColsWrapper" id="1144092671"> <div class="u_1778201232 dmRespCol small-12 medium-12 large-12" id="1778201232"> <nav class="u_1607625995 effect-background main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_7" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1607625995" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/vanishing-grace" class="unifiednav__item  dmUDNavigationItem_010101310823" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         Vanishing Grace
+        " data-auto="page-text-style">Vanishing Grace<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/about-us" class="unifiednav__item  dmUDNavigationItem_010101894219" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         About Us
+        " data-auto="page-text-style">About Us<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/Presskit-Highline" class="unifiednav__item  dmUDNavigationItem_01010177625  unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         PressKit Highline
+        " data-auto="page-text-style">PressKit Highline<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/presskit-vanishing-grace" class="unifiednav__item  dmUDNavigationItem_010101764894" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           PressKit Vanishing Grace
+          " data-auto="page-text-style">PressKit Vanishing Grace<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/terms-of-service" class="unifiednav__item  dmUDNavigationItem_010101545202" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         Terms of Service
+        " data-auto="page-text-style">Terms of Service<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar"> <div class="titleLine display_None"><hr></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"> <div class="innerPageTitle">privacy</div> 
+</div> 
+ <div class="titleLine display_None"><hr></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_privacy dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl dmRespRowsWrapperSize2" id="1716942098"> <div class="dmRespRow u_1645959112" id="1645959112"> <div class="dmRespColsWrapper" id="1298113540"> <div class="dmRespCol large-12 medium-12 small-12 u_1707688144" id="1707688144"> <nav class="u_1760609700 effect-bottom2 main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1760609700" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/" class="unifiednav__item  dmUDNavigationItem_00" target="" data-target-page-alias="" tabindex="0"> <span class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/vanishing-grace" class="unifiednav__item  dmUDNavigationItem_010101310823" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         Vanishing Grace
+        " data-auto="page-text-style">Vanishing Grace<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/about-us" class="unifiednav__item  dmUDNavigationItem_010101894219" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         About Us
+        " data-auto="page-text-style">About Us<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/Presskit-Highline" class="unifiednav__item  dmUDNavigationItem_01010177625  unifiednav__item_has-sub-nav" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         PressKit Highline
+        " data-auto="page-text-style">PressKit Highline<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="1"> <a href="/presskit-vanishing-grace" class="unifiednav__item  dmUDNavigationItem_010101764894" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+           PressKit Vanishing Grace
+          " data-auto="page-text-style">PressKit Vanishing Grace<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="/terms-of-service" class="unifiednav__item  dmUDNavigationItem_010101545202" target="" data-target-page-alias="" tabindex="-1"> <span class="nav-item-text " data-link-text="
+         Terms of Service
+        " data-auto="page-text-style">Terms of Service<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1243667655 dmRespRow" style="text-align: center;" id="1243667655"> <div class="dmRespColsWrapper" id="1173148036"> <div class="dmRespCol small-12 medium-12 large-12 u_1620106714" id="1620106714"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1021961814"><p><span style="font-family: 'Helvetica'; font-weight: bold; display: initial;">Monte Perdido Studio Privacy Policy</span></p><p><span style="display: initial;"><br></span></p><p><span style="font-family: 'Helvetica'; display: initial;">Effective Date: February 4, 2021</span></p><p><span style="font-family: 'Helvetica'; display: initial;"><br></span></p><p><span style="font-family: 'Helvetica'; display: initial;">Monte Perdido S.L. (“Monte Perdido,” “we,” “us”) makes videogames and virtual reality videogames products and uses third-party platforms where users can download and submit content for and obtain services related to our products. Collectively, we describe these videogames and virtual reality videogames products, including content and services provided by Monte Perdido—excluding third-party websites, third-party mobile apps, third-party platforms, third-party content and third-party hardware—as our “Services.” This Privacy Policy explains how we treat information from or about our users, including how we collect, use, and share information in connection with our Services.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">By visiting or using our Services, you consent to the practices described in this Privacy Policy. If you have questions about this Privacy Policy, please contact us at info@monteperdido.studio.</span></p><p><span style="display: initial;"><br></span></p><p><span style="font-family: 'Helvetica'; display: initial;">1.</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">What kind of information is collected?</span></p><p><span style="font-family: 'Helvetica'; display: initial;">Depending on which Services you use, we collect different kinds of information from or about you, such as:</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Information You Give Us. We collect the information you give us when using our Services. For example:</span></p><p><span style="font-family: 'Helvetica'; display: initial;">&nbsp;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">When you register to use our Services, we ask for information such as your name, email address, phone number, and date of birth.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">You will have the ability to add information to your profile after registration.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">If you buy something on or through our Services, we collect information about the transaction. This can include your payment information, purchase activity, and shipping and contact details.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">When you post, share or communicate with other Monte Perdido users on our Services, we receive and store those communications and information associated with them, such as the date a post was created.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">When you communicate with Monte Perdido, you provide us with information like your email address.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">When you use our Services, you may have the option of submitting information about your physical features and dimensions.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">&nbsp;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Information Automatically Collected About You When You Use Our Services. We also collect information automatically when you use our Services. Depending on how you access and use our Services, we may collect information such as:</span></p><p><span style="font-family: 'Helvetica'; display: initial;">&nbsp;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Information about your interactions with our Services, like information about the games, content, apps or other experiences you interact with, and information collected in or through cookies, local storage, pixels, and similar technologies;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Information about how you access our Services, including information about the type of device you are using (such as a headset, PC, or mobile device), your browser or operating system, your Internet Protocol (“IP”) address, and certain device identifiers that may be unique to your device;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Information about the games, content, or other apps installed on your device or provided through our Services, including from third parties;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Location information, which can be derived from information such as your device’s IP address. If you’re using a mobile device, we may collect information about the device’s precise location, which is derived from sources such as the device’s GPS signal and information about nearby WiFi networks and cell towers; and</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Information about your physical movements and dimensions when you use a virtual reality headset.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">Third parties may also collect information about you through the Services, as described below.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Related companies. We may receive information about you from other companies that are within the family of related companies that are legally part of the same group of companies that Monte Perdido is part of, or that become part of that group, and may combine that information with other information we collect about you.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Information from other sources. We may also receive additional information about you from third parties, including partners that provide us information that is publicly or commercially available, and may combine that information with the other information we collect about you.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">&nbsp;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">2.</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">How do we use information?</span></p><p><span style="font-family: 'Helvetica'; display: initial;">We use the information to do a number of things that help us provide our Services to you and our partners. Here are some examples:</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">To provide our Services. We use the information we collect to provide you with the Services you use or request. For example, we use this information to:</span></p><p><span style="font-family: 'Helvetica'; display: initial;">&nbsp;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Provide you with hardware, content, games, apps, and other experiences;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Create accounts and user profiles;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Communicate with you about our Services;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Enable user-to-user communications;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Provide technical support;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Notify you about updates to our Services; and</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Customize your experiences based on your online activities, including the content, games, apps, and other experiences you interact with; the other online services you use; and other information we collect.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">&nbsp;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">To improve, and develop your experience. We also use the information we collect to understand and improve our Services and to develop the virtual reality ecosystem. For example, we may use the information to:</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Solicit and analyze input and feedback about our Services;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Identify and address technical issues on our Services;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Conduct and learn from research about the ways in which people use our Services; and</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Improve services offered by others, such as third parties that offer content, games, apps and other experiences on our platform.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">&nbsp;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">To market to you. We use the information we collect to send you promotional messages and content and otherwise market to you on and off our Services. We also use this information to measure how users respond to our marketing efforts.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">To promote safety and security. We use the information we collect to help promote safety and security, such as by investigating suspicious activity or violations of our terms or policies and protecting our or others’ rights or property.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">&nbsp;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">3.</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Who can get information about me?</span></p><p><span style="font-family: 'Helvetica'; display: initial;">Our Services help you engage with the virtual reality ecosystem and others that interact with it. To provide and support our Services, information we have about you may be shared in certain circumstances. Here is who can see information about you when you and others use our Services.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Public Information. Certain information you post to your Monte Perdido profile, such as your Monte Perdido ID (also known as your Monte Perdido Username), your system-generated user ID, and avatar, will be public and visible to people on and off our Services. Your Monte Perdido ID is a unique identifier you choose to identify yourself on our Services. Your system-generated internal-ID is an opaque string of characters generated by the Monte Perdido system that identifies your Monte Perdido profile.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">Information you post to public areas of our Services, such as a forum, blog, or other community tool, will also be visible to people on and off our Services. If you post information to these interactive features, it will be publicly available. Certain information associated with your public posts, such as the time of your post, may also be published and publicly available.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Apps, Developers, and Other Online Content Providers that You Access on our Services. You can use third-party content, games, apps, and other experiences through our Services. When you use these third-party services, the third parties may be able to access information about you. For example, these third parties may be able to access:</span></p><p><span style="font-family: 'Helvetica'; display: initial;">&nbsp;</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Information in your Monte Perdido profile.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Information about your interaction with the third-party service, such as how long you have interacted with content or how far you have progressed in a game.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">o</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Any other information you choose to share with the third party.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">Please note that any information shared with these (or other) third parties will be subject to those third parties’ own privacy policies.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Sharing Within Related Companies. We may share information within the family of related companies that are legally part of the same group of companies that Monte Perdido is part of, or that become part of that group, such as Grafimac S.L.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Service providers. We may share the information we collect with vendors, service providers, researchers and other partners, who work at our direction to support the Services (such as hosting our Services, fulfilling orders, facilitating payments, analyzing the way people use our Services, processing credit card payments, providing customer service, or sending electronic communications for us).</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Other parties in connection with certain business transactions. In the event that the ownership of Monte Perdido (or any portion of our assets) changes as a result of a merger, acquisition, or in the event of a bankruptcy, information from or about you or your device may be transferred to another company.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">·</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Consent. We may share information about you for any other purpose for which you give us your consent.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">We may also share de-identified or aggregate data with others for any purpose. De-identified data means information where we have removed your name or contact information. Aggregate data is data that has been combined with other data so that it doesn’t identify any specific person.</span></p><p><span style="display: initial;"><br></span></p><p><span style="font-family: 'Helvetica'; display: initial;">4.</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Responding to legal requests and preventing harm.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">We may access, preserve and share information in response to a legal request (like a search warrant, court order or subpoena) if we have a good faith belief that the law requires us to do so. This may include responding to legal requests from jurisdictions outside of the United States where we have a good faith belief that the response is required by law in that jurisdiction, affects users in that jurisdiction, and is consistent with internationally recognized standards. We may also access, preserve and share information when we have a good faith belief it is necessary to: detect, prevent and address fraud or other illegal activity; to protect Monte Perdido, our Services, you and others, including as part of investigations; or to prevent death or imminent bodily harm. Information we receive about you, including financial transaction data related to purchases made on or through our Services, may be accessed, processed and retained for an extended period of time when it is the subject of a legal request or obligation, governmental investigation, or investigations concerning possible violations of our terms or policies, or otherwise to prevent harm. We also may retain information from accounts disabled for violations of our terms for at least a year to prevent repeat abuse or other violations of our terms.</span></p><p><span style="display: initial;"><br></span></p><p><span style="font-family: 'Helvetica'; display: initial;">5.</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Third Parties that Provide Content, Marketing, or Functionality on Our Services</span></p><p><span style="font-family: 'Helvetica'; display: initial;">Some of the content, marketing, and functionality on our Services may be provided by third parties that are not affiliated with us. For example, we work with companies that help us understand how people use our Services.</span></p><p><span style="font-family: 'Helvetica'; display: initial;">Other companies may collect information on or through our Services to market to you on or off of our Services. These and other third parties may collect information about your use of our Services, including through the use of cookies, device IDs, local storage, pixels and other technologies, and this information may be collected over time and combined with information collected on different websites and online services.</span></p><p><span style="display: initial;"><br></span></p><p><span style="font-family: 'Helvetica'; display: initial;">6.</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Security</span></p><p><span style="font-family: 'Helvetica'; display: initial;">Please note that no data transmission or storage can be guaranteed to be 100% secure. As a result, while we strive to protect the information we maintain, we cannot guarantee or warrant the security of any information you disclose or transmit to our Services and cannot be responsible for the theft, destruction, or inadvertent disclosure of information.</span></p><p><span style="display: initial;"><br></span></p><p><span style="font-family: 'Helvetica'; display: initial;">7.</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">International Users</span></p><p><span style="font-family: 'Helvetica'; display: initial;">Monte Perdido is based in Spain, and, regardless of where you use our Services or otherwise provide information to us, the information may be transferred to and maintained on servers located in the U.S. or other countries. Note that the laws, regulations and standards of the country in which this information is stored may be different from your own country. By using our Services, you consent to this collection, transfer, storage, and processing of information to and in the U.S. and other countries.</span></p><p><span style="display: initial;"><br></span></p><p><span style="font-family: 'Helvetica'; display: initial;">8.</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Changes to this Privacy Policy</span></p><p><span style="font-family: 'Helvetica'; display: initial;">If we make changes to this Privacy Policy, we will provide notice of such changes as appropriate, such as by sending you an email notification to the address you’ve provided, providing notice through the Services, and/or updating the “Last Updated” date at the top of these Terms.</span></p><p><span style="display: initial;"><br></span></p><p><span style="font-family: 'Helvetica'; display: initial;">9.</span><span style="font-family: 'Helvetica'; display: initial; font-style: normal; font-weight: normal;">&nbsp; &nbsp; &nbsp;</span><span single-space="true" class="" style="display: initial; font-style: normal; font-weight: normal;"> <span style="display: initial; font-style: normal; font-weight: normal;"></span> 
+</span><span style="display: initial; font-family: 'Helvetica';">Contacting Us; Data Access and Deletion</span></p><p><span style="font-family: 'Helvetica'; display: initial;">If you have any questions about this Privacy Policy, or if you would like to deactivate or delete your account or access data associated with it, please contact us at info@monteperdido.studio. Content deleted from the Services may remain in backup copies and logs for a period of time.</span></p></div> 
+ <span id="1479169930"></span> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1178964106 dmRespRow" id="1178964106"> <div class="dmRespColsWrapper" id="1509303092"> <div class="dmRespCol large-12 medium-12 small-12" id="1011559739"> <div class="u_1232686885 dmNewParagraph" id="1232686885" style="transition: none 0s ease 0s; display: block;"><div><font style="color: rgb(255, 255, 255);"></font></div><span style="font-family: 'Helvetica';"><font class="font-size-18 lh-1 m-specific m-font-size-12" style="color: rgb(75, 66, 60);"><font class="lh-1"><span style="font-weight: 400;"><div><font><span style="font-weight: 300;">&nbsp;</span>© 2021 MONTE PERDIDO.</font></div><div><font>VANISHING GRACE IS A TRADEMARK OF MONTE PERDIDO.</font></div></span></font></font></span></div> <div class="u_1313333827 align-center text-align-center dmSocialHub" id="1313333827" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://twitter.com/_MontePerdido" target="_blank" dm_dont_rewrite_url="true" aria-label="twitter" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event('socialLink', 'click', 'Twitter')"> <span class="dmSocialTwitter dm-social-icons-twitter oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="mailto:info@monteperdido.studio" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event('socialLink', 'click', 'Email')" target="_blank"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.youtube.com/watch?v=RHpaDEoQ0fo&amp;t" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event('socialLink', 'click', 'Youtube')"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1320321809 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1320321809" editablewidget="true"> <a id="1029684446"><img src="https://le-cdn.website-editor.net/s/9955ef582f024fa880a3a0784d72c573/dms3rep/multi/opt/Monte_Perdido_2%281%29-1920w.png?Expires=1696306313&amp;Signature=nvWJyliIZF801DlfK9r2dPxLBZ-47XD~7-OJrWSjeS68GmDWflKi0dmNanwpJTEPjgczuRPByA9AulnURvF1k3lyR8rhynIJaKe8nB6mpc2tHt1l8LjvYKiPcaeS0VojZWjNEJStIbt45kyxXnb5NPnB8faLLms20HIwtYT6aBlTiV0BwELN1gQYVu9dflZJQdGZ4gfif3w8o~90iOPAVTHylYyEBMyEekSREDFv1lZ0JNrilfdzU9b2bpLa-XS9KcICMmuJjeNni~eBRRh2OMn6Ikd7mxmcpEYiNo5XXmmYgGWuW4viQe7o3TeUwBnJuMhlr6unzkJq~nyjxByd4g__&amp;Key-Pair-Id=K2NXBXLF010TJW" alt="" id="1346659820" class="" data-dm-image-path="https://cdn.website-editor.net/9955ef582f024fa880a3a0784d72c573/dms3rep/multi/Monte_Perdido_2%281%29.png" onerror="handleImageLoadError(this)"></a> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1584126610" data-styletopreserve="{" background-image":""}"="" style=""><p class="text-align-center"><span style="display: initial;"><br></span></p><p class="text-align-center"><span style="display: initial;"><br></span></p><p class="m-size-17 text-align-center size-24"><a href="http://monteperdido.studio/privacy" target="_blank" runtime_url="http://monteperdido.studio/privacy" type="url" style="font-family: 'Helvetica'; display: initial; color: rgb(60, 26, 13);" class="m-font-size-17 font-size-24">Privacy</a><span single-space="true" class="m-font-size-17 font-size-24" style="display: initial;"> <span class="m-font-size-17 font-size-24" style="display: initial;"></span> 
+</span><span class="m-font-size-17 font-size-24" style="display: initial; font-family: 'Helvetica';">|</span><span single-space="true" class="m-font-size-17 font-size-24" style="display: initial;"> <span class="m-font-size-17 font-size-24" style="display: initial;"></span> 
+</span><a href="https://www.monteperdido.studio/terms-of-service" runtime_url="https://www.monteperdido.studio/terms-of-service" type="url" class="m-font-size-17 font-size-24" style="display: initial; color: rgb(60, 26, 13); font-family: 'Helvetica';">Terms of Service</a></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1048447858"></div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1465871800 dmRespRow dmFooterContent hide-for-large hide-for-small" id="1465871800"> <div class="dmRespColsWrapper" id="1995794985"> <div class="u_1251437857 dmRespCol dmFooterCol small-12 medium-12 large-12 empty-column" id="1251437857"></div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<div id="d-notification-bar" data-rule-type="notification" data-visible="true"> <div>Este sitio web utiliza cookies para proporcionarle la mejor experiencia en línea. Al utilizar nuestro sitio web, acepta el uso de cookies. <a href="/privacy" target="_blank">Más información</a>.</div> 
+<div class="notification-dismiss" aria-label="Dismiss notification">×</div></div></div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "SPANISH"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "24..43";
+    var build = "2023-08-31T10_49_14";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2023-08-31T10_49_14";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+    <script type="text/javascript" id="d-js-jquery" src="https://static-cdn.website-editor.net/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = ' <div>Este sitio web utiliza cookies para proporcionarle la mejor experiencia en l&iacute;nea. Al utilizar nuestro sitio web, acepta el uso de cookies. <a href=\"\/privacy\" target=\"_blank\">M&aacute;s informaci&oacute;n<\/a>.<\/div> \n';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id="d-js-params">
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.website-editor.net';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/3721';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static-cdn.website-editor.net';
+    rtCommonProps["common.resources.folder"] = 'https://static-cdn.website-editor.net/mnlt/production/3721';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.photoswipe.fix"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["feature.flag.addTargetBlankToExternalLinks"] =true;
+    rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtCommonProps["keyboard.navigation.enabled"] =true;
+    rtCommonProps["scripts.widgetCount.enabled"] =true;
+    rtCommonProps["maps.cookiebot.enabled"] =true;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'here';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-cdn.website-editor.net/';
+    rtCommonProps["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtCommonProps["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["runtime.save.restore.function.bind"] =true;
+    rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+    rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+    rtCommonProps["new.store.accountPage.ecwid.resetPassword.fix"] =true;
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+    rtCommonProps["geocode.search.localize"] =false;
+    rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.contact.form.fix.for.attribute"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["contact.form.date.format.enabled"] = true;
+    rtCommonProps["filestack.uploadToTempBucket.enabled"] = true;
+    rtCommonProps["platform.monolith.loginBar.getUserLoggedIn.enabled"] = true;
+</script>
+<script src="https://static-cdn.website-editor.net/mnlt/production/3721/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js" id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script>jQuery.DM.updateWidthAndHeight();
+$(window).resize(function () {
+    
+});
+$(window).bind("orientationchange", function (e) {
+    $.layoutManager.initLayout();
+    
+});
+$(document).resize(function () {
+    
+});
+</script>
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript">
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+  
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d1dxoqu0t5mb7j.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd1dxoqu0t5mb7j.cloudfront.net', { // Initialise a tracker
+  appId: '9955ef582f024fa880a3a0784d72c573'
+});
+
+dmsnowplow('trackPageView')
+$.each(_dm_insite, function(idx, rule) {
+	//('trackStructEvent', 'category','action','label','property','value');
+			// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+	        // the tracking is in popup.js
+			if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+ 			$(document).ready(function(){
+ 				$.DM.events.trigger('event-ruleTriggered', {value: rule})}
+ 			);
+ 		});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Cerrar (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Compartir"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Activar pantalla completa"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Acercar/alejar"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Anterior (flecha izquierda)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Siguiente (flecha derecha)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root" data-locale="es_ES"></div>
+<!-- Alias: 9955ef582f024fa880a3a0784d72c573 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+// Collects client data and updates cookies used by smart sites
+var expireDays = 365,visitLength = 30 * 60000;
+$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+function setSmartSiteCookies() {
+	setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+}
+$.DM.events.on("afterAjax", setSmartSiteCookies);
+setSmartSiteCookies();
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'More';
+    
+    Parameters.NavigationAreaParams.LessButtonText = '......';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<script>
+    jQuery(window).on('load', function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+    });
+</script>
+<script>
+    dmAPI.loadScript(
+        window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+        function () {
+            dmAPI.runOnReady('lozadInit', function () {
+                window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                    img.addEventListener('load', function (event) {
+                        var img = event.target;
+                        img.style.filter = 'blur(0)';
+                        setTimeout(function () {
+                            $(img).closest('.imageWidget').addClass('lazyLoaded');
+                        }, 250)
+                    });
+                });
+                lozad('.lazy', {
+                    threshold: 0.1,
+                    loaded: function (element) {
+                        if (element.getAttribute('data-background-image')) {
+                            element.style.setProperty(
+                                'background-image',
+                                "url('" + element.getAttribute('data-background-image') + "')",
+                                "important"
+                            );
+                        }
+                    }
+                }).observe();
+            });
+        }
+    );
+</script>
+<!--  End Script tags -->
+
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Begin Product Custom HTML Markup -->
+<script>
+function call1and1Tracking() {
+	var externalId = dmAPI.getSiteExternalId();
+	var siteName = dmAPI.getSiteName();
+	var src = 'https://integration.mywebsite-editor.com/dakota-snippet-service/snippet/integration/snippet.js?sitename='+siteName+'&external_uid='+externalId+'&mode=visit'
+	var tracking = document.createElement('script');
+     tracking.setAttribute('src',src);
+   	document.head.appendChild(tracking);
+}
+call1and1Tracking();
+</script><!--  End Product Custom HTML Markup -->
+
+
+</body></html>

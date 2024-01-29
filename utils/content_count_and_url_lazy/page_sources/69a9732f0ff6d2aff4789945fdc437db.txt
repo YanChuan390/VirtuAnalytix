@@ -1,0 +1,313 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Elven Assassin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elven Assassin">
+  <meta name="author" content="Wenkly Studio">
+  
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="img/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="img/png" href="favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="img/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="img/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <meta name="msapplication-config" content="favicons/browserconfig.xml">
+  
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body class="  loader-done"><div class="loader  loader-inactive"><div class="loader-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+  <div class="loader-progress-inner"></div>
+</div>
+<div class="loader-activity"></div></div>
+	
+    <div id="wrapper">
+        <div class="main-nav">
+            <div class="logo-left">
+				<img class="main-logo" src="img/logo/wenklyLogo.png" alt="logo">
+            </div>
+			<img class="game-logo" src="img/logo/EAlogo.png" alt="logo">			
+            <div class="menu-button toggle-menu menu-right push-body">
+                    <button id="open-menu" onclick="openNav()"><i style="color: white" class="fa fa-bars"></i></button>
+            </div>
+        </div>
+		
+        <nav id="main-navigation">
+            <ul id="mySidenav" class="nav-menu sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <li><a class="current" onclick="closeNav()" href="#home">Home</a></li>
+                <li><a href="#about" onclick="closeNav()">About</a></li>
+                <li><a href="#magicAndEquipment" onclick="closeNav()">Spells and equipment</a></li>
+                <li><a href="#footer" onclick="closeNav()">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="home">
+            <div id="home-slider" class="carousel slide in" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#home-slider"></li>
+                    <li data-slide-to="1" data-target="#home-slider" class=""></li>
+                    <li data-slide-to="2" data-target="#home-slider" class=""></li>
+                </ol>
+
+                <div class="carousel-inner">
+                        <div class="item active" style="background-image: url(&quot;img/slider/01.jpg&quot;); height: 668px;"></div>
+                        <div class="item" style="background-image: url(&quot;img/slider/09.jpg&quot;); height: 668px;"></div>
+                        <div class="item" style="background-image: url(&quot;img/slider/05.jpg&quot;); height: 668px;"></div>
+                </div>
+				<div class="item gradient" style="background-image: url(&quot;img/slider/gradient.png&quot;); height: 668px;"></div>	
+				<div id="buy">
+                    <div class="row">
+                        <div class="option">
+                            <a href="https://store.steampowered.com/app/503770/Elven_Assassin/"><img src="img/logo/steamvr.png" alt="steamLogo"></a>
+                        </div>
+                        <div class="option">
+                            <a href="commercial-license.html"><img src="img/logo/commercialLicense.png" alt="commercial license"></a>
+                        </div>
+                        <div class="option">
+                            <a href="https://www.oculus.com/experiences/rift/1155989791152285/"><img src="img/logo/oculus.png" alt="oculusLogo"></a>
+                        </div>	
+                    </div>    
+				</div>				
+            </div>
+        </section>
+        
+
+       
+        
+        <section id="about">
+                <div class="gradient gradient-top" style="background: url(img/gradient.png) no-repeat"></div>	
+                <div class="rellax wyvernGreen" data-rellax-speed="7" style="transform: translate3d(0px, 0px, 0px);">
+                        <img src="img/wyvern.png" alt="wyvern green">
+                </div>
+        
+                <div class="rellax wyvernRed" data-rellax-speed="4" style="transform: translate3d(0px, 0px, 0px);">
+                        <img src="img/wyvernRed.png" alt="wyvern red">
+                </div>
+                <div class="description">
+            <h1 class="section-title relax" data-rellax-speed="10">About Elven Assassin</h1>   
+            <br><br>
+                <h3>Should I join?</h3>
+                <p>Is there anything more epic then slaying hordes of orcs with a bow in Virtual Reality? When nothing comes to your mind, than you probably should try this. If you thought: "Of course, slaying them with my friends online in co-op mode!", then this is the matter of destiny.</p>
+                <h3>Become an elven assassin.</h3>
+            <p>Take a bow and kill hundreds of orcs of different types that want to get into the elven town and destroy it. As an elven assassin you will make spectacular shots like long distant headshots or you will send lethal arrows through the windows. All this to conquer global leaderbords of other elven assassins.</p>
+                <h3>Piece of cake then?</h3>
+            <p>Not really. This is real orcs assault. The Orcs are running fast making the game more competitive. They break into houses to hide from your arrows, and when they got furious their massive axe is thrown to splash you head into pieces.</p>
+                <h3>Assassin United.</h3>
+            <p>Two, Three or Four assassin may unite to defend the town. Use wisely the four available archery spots to survive as long as possible. You can choose one of the public servers, that asks for your support or decide to defend the castle only with the brothers you know on the private server.</p>
+                <h3>Additional info.</h3>
+                <p>The game was created from the ground up for Room-Scale Virtual Reality Experience.
+                The game contains the voice chat, so watch your language and remember about Steam Online Conduct.
+                Disclaimer:
+                This game is not associated with any other fantasy movie, game or book.
+                Any similarity is purely coincidental.</p>
+            </div>
+            <div class="pvp-coop">
+                <img src="img/pvp-coop.png" alt="pvp coop">
+            </div>
+
+            <div class="pvp-coop-1200">
+                <div class="about-img">
+                    <img src="img/coop.png" alt="coop">
+                </div>
+                <div class="about-img">
+                    <img src="img/pvp.png" alt="pvp">
+                </div>
+            </div>
+            <div class="gradient gradient-bottom" style="background: url(img/gradient2.png) no-repeat"></div>	
+        </section>
+
+        <section id="magicAndEquipment">
+                <article id="equipment">
+                        <h1 class="section-title">Gear up</h1>   
+                        <div id="main_area">
+                                <div class="col-sm-12">
+                                            <div class="carousel slide" id="myCarousel">
+                                                    <div class="glow">
+                                                            <img src="img/bowsAndHelmets/glow.png">
+                                                    </div>
+                                                    <div class="carousel-inner">
+                                                        <div class="active item" data-slide-number="0">
+                                                            <img class="clicked" id="bow-img" src="img/bowsAndHelmets/01.png">
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                </div>
+                            <h3 id="bow-name">Wooden Bow</h3>
+                            <p id="bow-description">The training bow made of the branch of the ordinary tree. It was crafted by you personally, so you can train to become the elven assassin.</p>
+                            <p id="bow-gold">0 <img class="coin" src="img/coin.png" alt="Arrow Rain"></p>
+                            <a id="previousBow" class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span>&lt;</span>
+                            </a>
+                            <a id="nextBow" class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span>&gt;</span>
+                            </a>
+                        </div>
+                    </article>
+            <article id="magic">
+                <h1>Magic spells</h1>
+                <div class="description">
+                    <h3 id="spell-name">Fire Arrow</h3>
+                    <p id="spell-description">Use this arrow to burn your enemies. Doubles the damage of your arrow.</p>
+                </div>
+                <div class="spells fire">
+                    <img class="clicked" id="spell-clicked" onclick="theFunction(event)" src="img/magic/fire-arrow2.png" alt="Fire Arrow">
+                    <img onclick="theFunction(event)" src="img/magic/fire-claws.png" alt="Fire Claws">
+                    <img onclick="theFunction(event)" src="img/magic/fire-arrowsRain.png" alt="Arrow Rain">
+                    <img onclick="theFunction(event)" src="img/magic/fire-explosion.png" alt="Explosion">
+                    <img onclick="theFunction(event)" src="img/magic/fire-meteor.png" alt="Meteor Shower">
+                </div>
+                <div class="spells ice">
+                    <img onclick="theFunction(event)" src="img/magic/ice-freezeArrow.png" alt="Freezing Arrow">
+                    <img onclick="theFunction(event)" src="img/magic/ice-Shield.png" alt="Ice Shield">
+                    <img onclick="theFunction(event)" src="img/magic/ice-Bolt.png" alt="Ice Bolt">
+                    <img onclick="theFunction(event)" src="img/magic/ice-image4.png" alt="Ice Revive">
+                    <img onclick="theFunction(event)" src="img/magic/ice-freezeStorm.png" alt="Freeze Storm">
+                </div>
+            </article>
+            <div class="clear"></div>
+        </section>
+
+
+        <section id="footer">
+            <div class="container bottom-part">
+                <div class="row">
+                        Credits:
+                        <br>
+                        <a href="https://wenklystudio.com/legal/credits/Vive-ElvenAssassin.html">https://wenklystudio.com/legal/credits/Vive-ElvenAssassin.html</a>
+                        <br>
+                    <div class="feature-item">
+                            <p class="contact">e-mail: contact@wenklystudio.com</p>
+                    </div>
+                    <div class="feature-item">
+                        <p class="footer-logo mtb50"><img src="img/logo/logo-footer.png" alt="logo"></p>
+                    </div>
+                </div> 
+            </div> 
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <p class="info">
+                            Copyright © 2016 Wenkly Studio.
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/loader.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+ 
+//  $('#myCarousel').carousel({
+//          interval: 5000
+//  });
+    $("#myCarousel").carousel('pause');
+
+   var rellax = new Rellax('.rellax');
+})
+
+var magic = {
+    "Fire Arrow":"Use this arrow to burn your enemies. Doubles the damage of your arrow.",
+    "Arrow Rain":"Stick your enemies on claws of fire. Stays on ground for a while while damaging enemies.",
+    "Fire Claws":"Shoot 5 arrows simultaneously to inflict more damage. Arrows are spawned on sides of bow.",
+    "Explosion": "Torn enemies apart with massive explosion. Deals massive damage in small radius on hit.",
+    "Meteor Shower": "Send a deadly meteor storm upon your enemies. Makes an area impassable for enemies.",
+    "Freezing Arrow": "Create protective ice shield. Destroys any axe that comes in contact.",
+    "Freeze Storm": "Use this arrow to freeze your enemies. Freezed enemies do not move and can be shattered into pieces.",
+    "Ice Revive": "Use this to stop your foes. Freezes multiple enemies caught in an area.",
+    "Ice Shield": "Revive your fallen ally. Hit dead ally instantly becomes able to fight again.",
+    "Ice Bolt": "Send a deadly ice storm upon your foes. Created area slows passing enemies and damages them."
+};
+
+var bows = [
+    {id: 0, name:"Wooden Bow", description:"The training bow made of the branch of the ordinary tree. It was crafted by you personally, so you can train to become the elven assassin.", gold:0, src: "01"},
+    {id: 1, name:"Natures Call", description:"From time to time the holy elven trees drop a branch, which then is used as a material for one of the finest elven bows. It reminds that nature is not only peaceful but also lethal.", gold:200, src: "02"},
+    {id: 2, name:"Steel Defender", description:"This is one of the outstanding human bows. It was strengthened with a steel core and provided to elves as not very expensive but high-quality bow. The modest ornaments were added to indicate it's affiliation with elven archers.", gold:1000, src: "03"},
+    {id: 3, name:"Bow Of Alliance", description:"This series of rare bows was created specially to celebrate the union of races against the orcs forces. It was created by human craftsmen, strengthen with ivory by dwarfs and ornamented with care by elves.", gold:2000, src: "04"},
+    {id: 4, name:"Barbuta", description:"The most popular helmet used widely among inexperienced elven archers for training. As the old saying tells: During the battle, better the barbuta on your head than the griffin helmet in the shelf.", gold:0, src: "05"},
+    {id: 5, name:"Archers Helmet", description:"Although is not as good in the close battle, it suits great when defending the gates. It's very light and has very good visibility which helps in performing strategic shots.", gold:100, src: "06"},
+    {id: 6, name:"Gift Of The Sea", description:"These helmets were found in the human shipwreck that crashed into the rocks not far from the elven borders. The elven scout reported the presence of wyverns bones scattered around the beach nearby.", gold:400, src: "07"},
+    {id: 7, name:"Helmet Of Ancestors", description:"These helmets were used by the primeval elves for a long time. Although, there are better-looking helmets these days, whenever you decide to wear it you honor the old battles and the fallen elven brothers.", gold:700, src: "08"},
+    {id: 8, name:"Griffin Helmet", description:"This elven helmet was ornamented with feathers accents to honor the griffin support in the great battle near the last river.", gold:1400, src: "09"},
+    {id: 9, name:"Forest Guardian", description:"From all elven assassins, the most virtuous are selected to become the holy elven forest guards. Those are equipped with: The Forest Guardian set.", gold:4000, src: "10"},
+    {id: 10, name:"Orc Hunter", description:"The orcs hunters equipped with this set, are having no mercy to the orc warriors. The red color symbolizes the orcish blood that hunters have spilled. The golden ornaments show the glory earned for their bravery.", gold:5000, src: "11"},
+    {id: 11, name:"Holy Set", description:"Long ago, the elven priest equipped the elves that were protecting the holy temple with these sets. Although the temple was lost in the unfair battle, this sets still remind the orcs about the skillful owners and thus arouse fear.", gold:7000, src: "12"},
+    {id: 12, name:"Frozen Touch", description:"The last gathering of elven sorceress decided to use the ice element magic to create Ice Touch Sets. These sets are extremely rare and if handled it usually indicates the elven archer masters magic of the ice element.", gold:10000, src: "13"}
+];
+
+var currentClickedSpell = document.getElementById("spell-clicked");
+
+function theFunction(e) {
+    e.target.classList.add("clicked");
+    document.getElementById("spell-name").innerHTML = e.target.alt;
+    document.getElementById("spell-description").innerHTML = magic[e.target.alt];
+    if(currentClickedSpell && (e.target != currentClickedSpell))
+    {
+        currentClickedSpell.classList.remove("clicked");
+    }
+    currentClickedSpell = e.target; 
+}
+
+currentBow = 0;
+
+document.getElementById("nextBow").addEventListener("click", function(){
+    var bowImg = document.getElementById('bow-img');
+    var elm = bowImg;
+    var newone = elm.cloneNode(true);
+    elm.parentNode.replaceChild(newone, elm);
+    currentBow++;
+    currentBow %= bows.length;
+    document.getElementById("bow-name").innerHTML = bows[currentBow].name;
+    document.getElementById("bow-description").innerHTML = bows[currentBow].description;
+    document.getElementById("bow-gold").innerHTML = bows[currentBow].gold + "<img class=\"coin\" src=\"img/coin.png\">";
+    newone.src = "img/bowsAndHelmets/"+bows[currentBow].src+".png";
+}),
+
+document.getElementById("previousBow").addEventListener("click", function(){
+    var bowImg = document.getElementById('bow-img');
+    var elm = bowImg;
+    var newone = elm.cloneNode(true);
+    elm.parentNode.replaceChild(newone, elm);
+    if(currentBow > 0)
+    {
+        currentBow--;
+    }
+    else {
+        currentBow = bows.length-1;
+    }
+    document.getElementById("bow-name").innerHTML = bows[currentBow].name;
+    document.getElementById("bow-description").innerHTML = bows[currentBow].description;
+    document.getElementById("bow-gold").innerHTML = bows[currentBow].gold + "<img class=\"coin\" src=\"img/coin.png\">";
+    newone.src = "img/bowsAndHelmets/"+bows[currentBow].src+".png";
+})
+
+</script>
+
+</body></html>

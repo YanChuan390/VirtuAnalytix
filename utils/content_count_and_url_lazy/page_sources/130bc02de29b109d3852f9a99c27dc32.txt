@@ -1,0 +1,570 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    
+	<title>华夏为人（北京）科技有限公司</title>
+
+	<meta name="description" content="公司团队由多年从事仿真、虚拟现实和毁伤领域的专业人士组成，先后研发了具有自主知识产权的快速仿真实验环境VR-Sim、仿真场景可视化开发平台VR-Scene、三维可视化模型管理软件VR-MM、视觉效果建模软件VR-VEM、终点效应仿真软件VR-Damage等软件，智能VR心理疏导系统、心理VR电子沙盘系统、官兵VR应激训练系统、VR智能开发平台、VR体验计费系统等。">
+
+		<meta name="keywords" content="华夏为人、vrsoft、vr、ue4、三维仿真、毁伤评估、心理疏导、应激训练、元宇宙、数字孪生、虚拟现实、增强现实、混合现实、半实物仿真、可视化、虚拟训练、心理电子沙盘、5G骑行、创客教室">
+    <link rel="shortcut icon" href="http://www.vrsoft.com.cn/img/favicon.ico">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/jsmodern.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <!-- <script type="text/javascript" src="./js/jsmodern.min.js"></script> -->
+</head>
+
+<body>
+
+		<!-- 加载效果 -->
+		<div class="Loading" style="position: fixed; top: 50%; left: 50%; z-index: 99; display: none;">
+			
+				<img src="img/Hourglass.gif" width="64" height="64" border="0" alt="">
+				<b style="display:block;color:#011cfb;font-size:12px;">&nbsp;&nbsp;&nbsp;加载中...</b>
+
+		</div>
+             <!-- 主内容 -->
+   <div class="Content" style="display: block;">
+	
+	<!-- 头部 -->
+    <div class="head">
+       
+		<!-- 导航栏 -->
+        <div class="headerpage"><!-- <link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/index.css"> -->
+<link rel="stylesheet" href="./css/jsmodern.min.css">
+<!-- <link rel="shortcut icon" href="http://www.vrsoft.com.cn/img/favicon.ico"/> -->
+<script type="text/javascript" src="./js/jsmodern.min.js"></script>
+<div class="nav_box">
+	<div class="content">
+		<img class="logo" src="./img/logo.png" alt="logo">
+		<ul class="nav">
+
+			<li class="nav_li nav_sel" id="nav_id1"><a class="nav_a" href="/index.html?id=1">首页</a></li>
+
+		
+
+			<li class="nav_li" id="nav_id2">
+				<a class="nav_a" href="/d-fsm.html?id=2">仿真产品<img src="./img/nav_jt.png"></a>
+				<ul class="nav_li_box none">
+					<div class="nav_li_boxBg">
+						<li class="nav_li_li"><a href="/d-fsm.html?id=2">快速仿真实验环境</a></li>
+						<li class="nav_li_li"><a href="/damage_visualization.html?id=2">终点效应仿真软件</a></li>
+						<li class="nav_li_li"><a href="/intelligent_platform.html?id=2">VR智能开发平台</a></li>
+						<li class="nav_li_li"><a href="/digital_earth.html?id=2">数字孪生训练系统</a>
+						</li>
+					</div>
+				</ul>
+			</li>
+
+
+			<li class="nav_li" id="nav_id7">
+				<a class="nav_a" href="/vr_psychologicalcounselingsystem.html?id=7">心理产品<img src="./img/nav_jt.png"></a>
+				<ul class="nav_li_box none">
+					<div class="nav_li_boxBg">
+						<li class="nav_li_li"><a href="/vr_psychologicalcounselingsystem.html?id=7">智能VR心理疏导系统</a></li>
+						<li class="nav_li_li"><a href="/vr_PsychologyElectronicSandTable.html?id=7">心理VR电子沙盘系统</a></li>
+						<li class="nav_li_li"><a href="/psychology.html?id=7#tuoming">官兵VR应激训练系统</a></li>
+
+					</div>
+				</ul>
+			</li>
+
+
+
+			<li class="nav_li" id="nav_id3">
+				<a class="nav_a" href="/vr_DangJian.html?id=3">VR产品<img src="./img/nav_jt.png"></a>
+				<ul class="nav_li_box none">
+					<div class="nav_li_boxBg">
+						<li class="nav_li_li"><a href="/vr_DangJian.html?id=3">VR党建教育</a></li>
+						<li class="nav_li_li"><a href="/vr_PoliticalEducation.html?id=3">VR思政教育</a></li>
+						<li class="nav_li_li"><a href="/vr_OccupationalExperience?id=3">VR职业体验</a></li>
+						<li class="nav_li_li"><a href="/vr_Cycling.html?id=3">VR骑行锻炼</a></li>
+						<li class="nav_li_li"><a href="/vr_MarsPlan.html?id=3">VR火星计划</a></li>
+					</div>
+				</ul>
+			</li>
+			
+			<li class="nav_li" id="nav_id6">
+				<a class="nav_a" href="/vr_PsychologicalHealthCenter.html?id=6">经典案例<img src="./img/nav_jt.png"></a>
+				<ul class="nav_li_box none">
+					<div class="nav_li_boxBg">
+						
+						<li class="nav_li_li"><a href="/integration.html?id=6">仿真集成服务</a></li>
+						<li class="nav_li_li"><a href="/simulator.html?id=6">仿真训练模拟器</a></li>
+						<li class="nav_li_li"><a href="/vr_PsychologicalHealthCenter.html?id=6">VR心理健康室</a></li>
+						<li class="nav_li_li"><a href="/vr_PoliticalEducation.html?id=3">VR创客中心</a></li>
+						
+					</div>
+				</ul>
+			</li>
+
+			<li class="nav_li" id="nav_id4"><a class="nav_a" href="/vr_facility.html?id=4">VR模拟器</a></li>
+
+			
+			<li class="nav_li" id="nav_id5">
+				<a class="nav_a" href="/aboutUs.html?id=5">关于我们<img src="./img/nav_jt.png"></a>
+				<ul class="nav_li_box none">
+					<div class="nav_li_boxBg">
+						<li class="nav_li_li"><a href="/aboutUs.html?id=5#a1">公司概况</a></li>
+						<li class="nav_li_li"><a href="/aboutUs.html?id=5#a2">联系我们</a></li>
+						<li class="nav_li_li"><a href="/aboutUs.html?id=5#a3">加入我们</a></li>
+						<li class="nav_li_li"><a href="/aboutUs.html?id=5#a4">团队风采</a></li>
+
+					</div>
+				</ul>
+			</li>
+            
+
+            <li class="nav_li" id="nav_id8">
+				<a class="nav_a" href="/aboutUser.html?id=5">用户协议<img src="./img/nav_jt.png"></a>
+				<ul class="nav_li_box none">
+					<div class="nav_li_boxBg">
+						
+						
+					</div>
+				</ul>
+			</li>
+
+
+		</ul>
+	</div>
+</div>
+<div class="clear"></div>
+<input type="hidden" value="" id="idinput">
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+	$(".nav_li").hover(function () {
+		$(this).find(".nav_li_box").show();
+	}, function () {
+		$(this).find(".nav_li_box").hide();
+	});
+
+
+
+	$(function () {
+
+		var url = window.location.href;
+		// var pathname = window.location.pathname;
+
+		// $('a').click(function () {
+		// 	var a_url = $(this).attr('data_url');
+		// 	self.location.href = a_url;
+		// 	// if (a_url.indexOf(pathname) != -1) {
+		// 	// 	self.location.href = a_url;
+		// 	// } else {
+		// 	// 	window.open(a_url, "_blank")
+		// 	// }
+		// });
+
+		if (url.indexOf("?") != -1) {
+			strs = url.split("?");
+			var strid = strs[1].toString()
+			if (strid.indexOf('#') != -1) {
+				strid = strid.split("#");
+				strid = strid[0];
+			}
+			if (strid.indexOf("id") != -1) {
+				var id_a = strid.split("=");
+				$('.nav_li').removeClass('nav_sel')
+				$('#nav_id' + id_a[1]).addClass('nav_sel')
+			}
+		}
+	})
+</script>
+
+
+<script type="text/javascript">
+    // //视频
+    // jsModern.video(".videoBox");
+    //播放视频
+    $(".VideoBtn").click(function () {
+		let video=$(this).parent('.videoBox').find('.videoShow');
+		let videoUrl=video.attr('src');
+		window.open(videoUrl);  
+
+        // $('.videoShow').trigger('pause');
+		// $('.jsmodern-video-panel').hide();
+        // $('.VideoBtn').show();
+        // let video=$(this).parent('.videoBox').find('.videoShow');
+        // $(video).trigger('play');
+        // $(this).hide();
+        // $(this).parent().find('.VideoInitial').hide();
+    })
+
+    // // 视频进度条鼠标移出消失移入显示
+    // $(function () {
+    //     $('.jsmodern-video-panel').hide();
+    //     $('.videoBox').hover(function () {
+    //         $(this).find('.jsmodern-video-panel').show();
+    //     }, function () {
+    //         $(this).find('.jsmodern-video-panel').slideUp("slow");
+    //     })
+    // })
+</script></div>
+
+        <div class="head_imgBox">
+            <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                
+				<div class="swiper-wrapper" style="transition-duration: 300ms; transform: translate3d(-4840px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/banner_1.jpg" alt=""></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/banner_5.jpg" alt=""></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/banner_6.jpg" alt=""></div>
+                  <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/hsksh_head.jpg" alt=""></div>
+					<div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/fzjc_head.jpg" alt=""></div>
+					<div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/banner_1.jpg" alt=""></div>
+					 <!-- <div class="swiper-slide"><img class="head_img bg_img" src="./img/banner_2.jpg" alt=""></div> -->
+                    <!-- <div class="swiper-slide"><img class="head_img bg_img" src="./img/banner_3.jpg" alt=""></div> 
+					 <div class="swiper-slide"><img class="head_img bg_img" src="./img/banner_4.jpg" alt=""></div>  -->
+					  <div class="swiper-slide" data-swiper-slide-index="3" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/banner_5.jpg" alt=""></div> 
+					   <div class="swiper-slide" data-swiper-slide-index="4" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/banner_6.jpg" alt=""></div> 
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/hsksh_head.jpg" alt=""></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/fzjc_head.jpg" alt=""></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 1200px; margin-right: 10px;"><img class="head_img bg_img" src="./img/banner_1.jpg" alt=""></div></div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
+                
+                <!-- 如果需要导航按钮 -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+                
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div> 
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+    </div>
+
+
+    <!-- 仿真产品 -->
+    <div class="item item1">
+
+        <div class="item_cont item_centerY">
+            <img class="item_cont_title" src="./img/item1_cont_title.png" alt="">
+            <p class="item_cont_text font_cut">
+                公司的仿真产品包括：快速仿真实验环境、终点效应仿真软件、VR智能开发平台。涵盖了系统仿真、毁伤评估仿真、可视化、虚拟训练仿真环节。快速仿真实验环境平台满足对实时性要求较高的半实物实时仿真实验要求，也可以满足混合仿真或纯数字仿真实验。终点效应仿真软件可以完成对仿真的毁伤评估，含敏感性分析和易损性分析。VR智能开发平台可以完成仿真场景、视景的可视化，并可以利用VR智能开发平台进行虚拟训练仿真。
+            </p>
+            <div class="item_cont_bottom">
+                <ul>
+                   <li><a href="./intelligent_platform.html?id=2">+智能开发平台</a></li>
+                    <li><a href="./damage_visualization.html?id=2">+终点效应仿真软件
+                    </a></li><li><a href="./d-fsm.html?id=2">+快速仿真实验环境
+                    </a></li><li><a href="./digital_earth.html?id=2">+基于UE4的GIS可视化开发
+                </a></li></ul><a href="./digital_earth.html?id=2">
+                </a><div class="more"><a href="./digital_earth.html?id=2">
+                    </a><a href="./integration.html?id=2"><img class="more3" src="./img/more3.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="item_bg">
+            <img class="bg_img" src="./img/item1_bg.jpg" alt="">
+        </div>
+    </div>
+    <!-- vr智能开发平台 -->
+    <div class="item">
+        <img class="bg_img" src="./img/item1_lc.jpg" alt="">
+    </div>
+    <!-- vr产品 -->
+    <div class="item">
+        <div class="item_center" style="left:13%">
+            <img src="./img/vr_cp_title.png" alt="">
+        </div>
+        <div class="item_bg">
+            <img class="bg_img" src="./img/vr_cp.jpg" alt="">
+        </div>
+    </div>
+    <!-- vr产品1 -->
+    <div class="item item2" id="item_cp1">
+        <div class="item_centerY item_w_30 item_cont">
+            <div class="item_cont_title">
+                VR智能心理应激平台
+                <p>VIRTUAL REALITY INTELLIGENT PSYCHOLOGICAL STRESS PLATFORM</p>
+            </div>
+            <div class="item_cont_text font_cut">
+                与清华大学心理学团队合作研制。采用AI和虚拟现实（VR）为手段，完成心理疏导、心理应激训练、心理咨询辅助功能。主要包括智能VR心理疏导系统、 智能VR心理应激平台、VR心理电子沙盘系统.
+            </div>
+            <div class="more">
+                <a href="psychology.html?id=7"><img class="more3" src="./img/more3.png" alt=""></a>
+            </div>
+        </div>
+        <div class="item_bg">
+            <img class="bg_img" src="./img/vr_cp1.jpg" alt="">
+        </div>
+    </div>
+    <!-- vr产品2 -->
+    <div class="item item2" id="item_cp2">
+        <div class="item_centerY item_w_30r item_cont">
+            <div class="item_cont_title">
+                VR爱国与国防教育
+                <p>VIRTUAL REALITY EDUCATION OF PATRIOTISM AND NATIONAL DEFENSE</p>
+            </div>
+            <div class="item_cont_text font_cut">
+                爱国与国防教育产品,提供相关爱国教育基地、学校、科技馆、企事单位等相关爱国与国防教育的VR产品。如各类VR军事职业体验、VR党建产品。
+            </div>
+            <div class="more">
+                <a href="vr_DangJian.html?id=3"><img class="more3" src="./img/more3.png" alt=""></a>
+            </div>
+        </div>
+        <div class="item_bg">
+            <img class="bg_img" src="./img/vr_cp2.jpg" alt="">
+        </div>
+    </div>
+    <!-- vr产品3 -->
+    <div class="item item2" id="item_cp3" style="background: #25364a;">
+        <div class="item_centerY item_w_30 item_cont">
+            <div class="item_cont_title">
+                VR文娱
+                <p>VIRTUAL REALITY ENTERTAINMENT</p>
+            </div>
+            <div class="item_cont_text">
+                主要包括： VR骑行、火星计划等相关娱乐配套内容。
+            </div>
+            <div class="more">
+                <a href="./vr_Cycling.html?id=3"><img class="more3" src="./img/more3.png" alt=""></a>
+            </div>
+        </div>
+        <div class="item_bg">
+            <img class="bg_img" src="./img/vr_cp3.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- VR设备 -->
+    <div class="item item3">
+		<div class="item_center" style="left:14%;top:20%">
+            <img src="./img/vr_sheb_title.png" alt="">
+        </div>
+        <div class="item_bg">
+            <img class="bg_img" src="./img/vr_sheb.jpg" alt="">
+        </div>
+        <div class="item_cont">
+            <div class="item_cont_box item_vr_sheb1">
+                <img src="./img/vr_sheb1.jpg" alt="">
+            </div>
+            <div class="item_cont_box item_vr_sheb2">
+                <img src="./img/vr_sheb2.jpg" alt="">
+            </div>
+            <div class="item_cont_box item_vr_sheb3">
+                <img src="./img/vr_sheb3.jpg" alt="">
+            </div>
+            <div class="more">
+                <a href="vr_facility.html?id=4"><img class="more3" src="./img/more3.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- 案例 -->
+    <div class="item item4">
+        <!-- <div class="item_cont_box" > -->
+            <div class="item_cont">
+                
+				<div class="item_cont_title" style="text-align:left;padding-left:7.8%;padding-top: 3%;">
+                    <img src="./img/al_title.png" alt="">
+                </div>
+
+                <div class="item_cont_list" style="width: 100%;justify-content: center;padding-top: 15px;">
+                    
+                    <div class="item_cont_li">
+                        <a href="/integration.html?id=6">
+                            <img src="./img/al_1.jpg" alt="">
+                            <p>仿真集成服务</p>
+                        </a>
+                    </div>
+					
+					<div class="item_cont_li">
+                        <a href="/simulator.html?id=6">
+                            <img src="./img/al_2.jpg" alt="">
+                            <p>仿真训练模拟器</p>
+                        </a>
+                    </div>
+                    <div class="item_cont_li">
+                        <a href="/vr_PsychologicalHealthCenter.html?id=6">
+                            <img src="./img/al_3.jpg" alt="">
+                            <p>VR心理健康室</p>
+                        </a>
+                    </div>
+                    <div class="item_cont_li" style="justify-content: center;">
+                        <a href="/vr_PoliticalEducation.html?id=3">
+                            <img src="./img/al_4.jpg" alt="">
+                            <p>VR创客中心</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+
+        <div class="item_bg">
+            <img class="bg_img" src="./img/al_bg.jpg" alt="">
+        </div>
+    </div>
+
+
+ 
+
+    <!--footer-->
+    <div class="footerpage"><!-- 
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css"> -->
+
+<footer>
+    <div class="item">
+        <div class="item_bg">
+            <img class="bg_img" src="./img/foot_logo.jpg" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_head">
+
+            <div class="footer_listBox">
+                <ul>
+                    <h3>仿真内容</h3>
+                    <p>建模与可视化</p>
+                    <p>仿真与分析</p>
+                    <p>仿真资源管理</p>
+                    <p>仿真系统集成解决方案</p>
+                </ul>
+            </div>
+            <div class="footer_listBox">
+                <ul>
+                    <h3>模拟器设备</h3>
+                    <p>飞机飞行模拟器</p>
+                    <p>船舶驾驶模拟器</p>
+                    <p>雷达模拟器</p>
+                </ul>
+            </div>
+            <div class="footer_listBox">
+                <ul>
+                    <h3>VR软件</h3>
+                    <p>VR管理系统</p>
+                    <p>VR软件产品</p>
+                </ul>
+            </div>
+            <div class="footer_listBox">
+                <ul>
+                    <h3>VR应用</h3>
+                    <p>VR军事应用</p>
+                    <p>VR安全培训</p>
+                    <p>VR教育培训</p> 
+                    <p>VR工业应用</p>
+                    <p>VR展会展示</p>
+                    <p>VR佛教祈福</p>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="footer_cent">
+            <div class="footer_cent_tBox" style="text-align: left;padding-right: 10%;">
+                <div style="display: inline-block;text-align: left;">
+                    <h2>联系我们</h2>
+                    <h1>电话：I56II828598</h1>
+                    <h2>------------------------------</h2>
+            </div>
+        </div>
+
+          <div class="footer_cent">
+            <div class="footer_cent_tBox" style="text-align: left;padding-right: 10%;">
+                <div style="display: inline-block;text-align: left;">
+                    <h1>北京总部</h1>
+                    <p>地址：北京市朝阳区北苑路五号黄金苑2号商业楼5层</p>
+                    <p>邮箱：hr@vrsoft.com.cn</p>
+                </div>
+        </div>
+
+        <div class="footer_cent">
+            <div class="footer_cent_tBox" style="text-align: left;padding-right: 10%;">
+                <div style="display: inline-block;text-align: left;">
+                    <h1>武汉办事处</h1> 
+                    <p>地址：武汉光谷大道70号光谷世贸中心世贸生活汇创客星2楼</p>        
+                    <p>邮箱：hr@vrsoft.com.cn</p>        
+                 </div>
+        </div>
+       
+        <div class="footer_cent">
+            <div class="footer_cent_tBox" style="text-align: left;padding-right: 10%;">
+                 <div style="display: inline-block;text-align: left;">
+                    <h1>西安办事处</h1>
+                    <p>地址：西安高新区绿地SOHO同盟B座5层</p>
+                    <p>邮箱：hr@vrsoft.com.cn</p>
+                 </div>
+        </div>
+        
+            
+            <div class="clear"></div>
+        </div>
+
+        <div class="footer_bottom">
+            <h1>华夏为人（北京）科技有限公司</h1>
+            <p><a href="http://beian.miit.gov.cn/" target="_blank">京ICP20007912号</a></p>
+			
+			<div style="width:300px;margin:0 auto; padding:20px 0;">
+			<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="./img/gongan.png" style="float:left;">
+			<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010502041717号</p><!-- a-->
+			</a></div><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+
+        </a></div><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+		
+    </a></div><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+</a></div></div></div></footer></div>
+
+
+   </div>
+
+
+<script src="./js/header.js"></script>
+    <script>
+        $(function () {
+         
+
+            $('#item_cp1').hover(function () {
+                $(this).find(".item_bg").find('.bg_img').attr('src', './img/vr_cp1_sel.jpg');
+            }, function () {
+                $(this).find(".item_bg").find('.bg_img').attr('src', './img/vr_cp1.jpg');
+            });
+            $('#item_cp2').hover(function () {
+                $(this).find(".item_bg").find('.bg_img').attr('src', './img/vr_cp2_sel.jpg');
+            }, function () {
+                $(this).find(".item_bg").find('.bg_img').attr('src', './img/vr_cp2.jpg');
+            });
+            $('#item_cp3').hover(function () {
+                $(this).find(".item_bg").find('.bg_img').attr('src', './img/vr_cp3_sel.jpg');
+            }, function () {
+                $(this).find(".item_bg").find('.bg_img').attr('src', './img/vr_cp3.jpg');
+            })
+            // $('.item_cont_box2','item_cont_box3').hover(function (){
+            //     $('.item_cont_box').css('z-index','20')
+            //     $(this).css('z-index','22')
+            // })
+            $('.more3').hover(function () {
+                $(this).attr('src', './img/more2.png');
+            }, function () {
+                $(this).attr('src', './img/more3.png');
+            })
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+		slidesPerView:1,
+        spaceBetween: 10,
+        centeredSlides: true,
+		centeredSlidesBounds: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+		watchSlidesProgress: true,
+		loop: true,
+		loopedSlides: 3,
+
+    });
+
+    </script>
+
+</body></html>

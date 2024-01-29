@@ -1,0 +1,389 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Social Media Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="14">
+    <meta name="description">
+
+    <meta property="og:title">
+    <meta property="og:site_name" content="VISR">
+    <meta property="og:url">
+    <meta property="og:description">
+    <meta property="og:type" content="website">
+    <meta property="og:image">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@visrvr">
+    <meta name="twitter:title">
+    <meta name="twitter:description">
+    <meta name="twitter:image">
+
+    <link rel="icon" type="image/svg" href="/favicon.svg">
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/site/site.css">
+    <link rel="stylesheet" href="/css/site/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .displayed {
+            display: block;
+        }
+
+        .pr-big {
+            padding-right: 7rem;
+        }
+
+        .small-icon {
+            width: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .privacy-container {
+            background: rgba(0,0,0,.8);
+            position: fixed;
+            bottom: 1rem;
+            left: 1rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            z-index: 100;
+        }
+
+        .privacy-button-group {
+            float: right;
+            padding: 0.2rem 0rem;
+        }
+
+        .privacy-button {
+            display: inline-block;
+            margin-left: 0.2rem;
+            line-height: 1.2rem !important;
+        }
+
+        .visr-logo
+        {
+            width:150px;
+            padding-bottom:1.5rem;
+        }
+
+        a:hover {text-decoration:none;}
+
+    </style>
+
+</head>
+
+<body data-spy="scroll" data-target="#nav-second"><div onclick="openMenu()">
+    <div class="navigation-container">
+        <svg id="burger-menu" class="burger-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-miterlimit: 10;
+                        stroke-width: 10px;
+                    }
+                </style>
+            </defs>
+            <g id="b1">
+                <line class="cls-1" x1="12.5" y1="74.5" x2="87.5" y2="74.5"></line>
+            </g>
+            <g id="b2">
+                <line class="cls-1" x1="12.5" y1="50" x2="87.5" y2="50"></line>
+            </g>
+            <g id="b3">
+                <line class="cls-1" x1="12.5" y1="25.5" x2="87.5" y2="25.5"></line>
+            </g>
+        </svg>
+    </div>
+</div>
+
+<div id="menu-cover" class="menu-cover hide-menu">
+    <div id="menu-links" class="fullscreen-menu-links-wrapper">
+        <img loading="eager" class="visr-logo" src="/img/logo/white_red.svg" alt="VISR Logo">
+        <a href="/">
+            <div class="fullscreen-menu-link">Home</div>
+        </a>
+        <h6 style="color: #fff;">Solutions</h6>
+        <a href="/industry">
+            <div class="fullscreen-menu-link">Energy &amp; Industry</div>
+        </a>
+        <a href="/education">
+            <div class="fullscreen-menu-link">Education</div>
+        </a>
+        <hr class="border-light">
+        <h6 style="color: #fff;">VISR</h6>
+        <a href="/open-standards">
+            <div class="fullscreen-menu-link">Open Standards</div>
+        </a>
+        <hr class="border-light">
+        <a href="/contact">
+            <div class="fullscreen-menu-link">Contact</div>
+        </a>
+        <a href="https://dashboard.services.vertx.cloud">
+            <div class="fullscreen-menu-link">Dashboard</div>
+        </a>
+    </div>
+</div>
+
+<div id="privacy-modal" class="privacy-container d-none">
+    <h6>[ No Longer Used ] This site uses cookies from Google to deliver its services and analyze traffic</h6>
+    <div class="privacy-button-group">
+        <a href="/privacy">
+            <button class="btn btn-secondary privacy-button">Privacy</button>
+        </a>
+        <a href="javascript:gaOptout()">
+            <button class="btn btn-secondary privacy-button">Reject</button>
+        </a>
+        <button class="btn btn-primary privacy-button">Accept</button>
+
+    </div>
+</div>
+
+
+
+<div class="bg-black">
+
+    <!-- ** CONTENT AREA : INTRO ** -->
+
+    <div id="container top-nav" class="col-12 p-0" style="height:89px;">
+        <!-- Where old navbar went -->
+        <nav id="pageNavbar" class="navbar smart-scroll navbar-expand-lg navbar-dark nav-hide" style="height:89px; box-shadow:0px 0px 0px black; transition: opacity 0.5s ease-in-out; transition: box-shadow 0.2s ease-in-out; transition: background 0.2s ease-in-out;">
+            <a href="/">
+                    <img id="navLogo" loading="eager" class="p-3" src="/img/logo/white_red.svg" alt="VISR Logo" style="width:200px; margin-right:1rem; filter: saturate(0) brightness(10); transition: filter 0.25s ease-in-out">
+                    <!--img class="p-3 d-none d-md-inline" src="/img/logo/stage.svg" style="width:145px; margin-right:1rem;"-->
+            </a>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto pr-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                <button type="button" class="btn btn-primary btn-lg bg-bd-none">Home</button><span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link dropdown">
+                                <button class="btn btn-primary btn-lg bg-bd-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Solutions
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="/industry">
+                                            <img loading="eager" class="menu-logo" src="/img/glyph/blue_industry.svg">Industry
+                                    </a>
+                                    <a class="dropdown-item" href="/education">
+                                            <img loading="eager" class="menu-logo" src="/img/glyph/green_mortarboard.svg">Education
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/open-standards">
+                                <button type="button" class="btn btn-primary btn-lg bg-bd-none">Open Standards</button><span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">
+                                <button type="button" class="btn btn-primary btn-lg bg-bd-none">Contact</button><span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://dashboard.services.vertx.cloud">
+                                <button type="button" class="btn btn-dash btn-lg bg-bd-none">
+                                    <div class="text-gradient text"><b>Dashboard</b></div>
+                                </button><span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    
+<div style="background: url(/img/hero/flump/flump6.svg); background-repeat: no-repeat; background-position: center; background-size: cover; width: 100%">
+    <div id="contact" class="container pb-5 contact-row center-mobile">
+        <div class="row pt-4 pb-4  ">
+            <div class="col-lg-2 col-sm-2 pb-5">
+                <img alt="Error (Sad Face) Glyph" src="/img/glyph/error-sad.svg" style="height:95px;">
+            </div>
+            <div class="col-lg-10 col-sm-10 pb-5">
+                <h1 class="font-weight-light pb-2 orange-grad display-1">Error 404</h1>
+                <h1 class="font-weight-light pb-2 orange-grad">Something went wrong.</h1>
+                <h6 class="pb-3 red-grad">An error occurred while processing your request. Please try again.</h6>
+                <h6 class="pb-3 text-light">Requested Page: <span class="text-monospace">/scrapattack</span></h6>
+                <a class="btn btn-outline-primary" href="javascript:window.history.back();">Return to Previous Page</a>
+                <a class="btn btn-outline-info" href="/">Return to Homepage</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="action" class="container-fluid pt-5 pb-5 bg-black" style="background:rgba(0,0,0,0.25);">
+    <div id="" class="pt-0 pb-0 row">
+        <div class="col-lg-12 pt-0 pb-0 text-center">
+            <div id="socials">
+                <h3>Find Us On</h3>
+                <a href="https://twitter.com/visrvr"><img alt="Twitter (@visrvr)" class="social p-1 hidden" src="/img/glyph/bxl-twitter.svg"></a>
+                <a href="https://uk.linkedin.com/company/visr-vr"><img loading="lazy" alt="LinkedIn (@visr-vr)" class="social p-1" src="/img/glyph/bxl-linkedin-square.svg"></a>
+                <a href="https://www.youtube.com/@VISRVR"><img loading="lazy" alt="YouTube" class="social p-1" src="/img/glyph/bxl-youtube.svg"></a>
+                <a href="https://www.facebook.com/visrdynamics/"><img loading="lazy" alt="Facebook" class="social p-1" src="/img/glyph/bxl-facebook-square.svg"></a>
+                <a href="https://www.instagram.com/visr.vr"><img loading="lazy" alt="Instagram (@visr.vr)" class="social p-1" src="/img/glyph/bxl-instagram-alt.svg"></a>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    <div id="footer" class="pb-6 pt-6" style="background: #141515;">
+        <footer class="container pt-4 my-md-5 pt-md-5 w-100 footer-padding">
+            <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 pb-3">
+                        <img loading="lazy" class="mb-2" src="/img/logo/white_red.svg" alt="VISR Logo" width="100" height="20">
+                    <p class="d-block mb-3 text-light">© VISR Dynamics 2023</p>
+                        <hr class="border-light" style="margin-top: 0;">
+                    <small class="text-light">Partnered With</small><br>
+                        <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: center;">
+                            <img loading="lazy" alt="Metaverse Standards Forum" src="/img/partner-logos/metaverseStandardsForumWhite.svg" class="my-1" style="width:160px; margin: 0.25em;">
+                            <img loading="lazy" alt="Microsoft Partner | Mixed Reality" src="/img/Partner.png" class="my-1" style="width:160px; margin: 0.25em;">
+                            <img loading="lazy" alt="Antilatecy Illumetry" src="/img/partner-logos/illumetry.svg" class="my-1" style="width:160px; margin: 0.25em;">
+                            <img loading="lazy" alt="MagicLeap Logo" src="/img/partner-logos/magicleap.svg" class="my-1" style="width:160px; margin: 0.25em;">
+                            <img loading="lazy" alt="Lenovo Logo" src="/img/partner-logos/lenovo.svg" class="my-1" style="width:160px; margin: 0.25em;">
+                    </div>
+                </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <h4 class="footer-header">Solutions</h4>
+                        <hr class="border-light" style="margin-top: 0;">
+                    <ul class="list-unstyled text-small">
+                        <li>
+                            <a class="text-light" href="/industry">Energy &amp; Industry</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="/education">Education</a>
+                        </li>
+                    </ul>
+                        <h4 class="footer-header">
+                            <a href="/open-standards" style="color: #fff !important;">Open Standards</a>
+                        </h4>
+                        <hr class="border-light" style="margin-top: 0;">
+                    <ul class="list-unstyled text-small">
+                        <li>
+                            <a class="text-light" href="/open-standards">Learn More about our Open Standards</a>
+                        </li>
+                    </ul>
+                </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <h4 class="footer-header">Resources</h4>
+                        <hr class="border-light" style="margin-top: 0;">
+                    <ul class="list-unstyled text-small">
+                        <li>
+                            <a class="text-light" href="/">Homepage</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://dashboard.services.vertx.cloud">Stage Dashboard</a>
+                        </li>
+                    </ul>
+                    <h4 class="footer-header">Legal</h4>
+                        <hr class="border-light" style="margin-top: 0;">
+                    <ul class="list-unstyled text-small">
+                        <li>
+                            <a class="text-light" href="/app-privacy">Stage App Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="/privacy">Website Privacy Policy</a>
+                        </li>
+                        <hr class="border-light" style="margin: 4px;">
+                        <li class="text-light">Company ID : 10777945</li>
+                        <li class="text-light">VAT Number : 291428785</li>
+                    </ul>
+                </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <h4 class="footer-header">
+                            <a href="/contact" style="color: #fff !important;">Contact Us</a>
+                        </h4>
+                        <hr class="border-light" style="margin-top: 0;">
+                    <ul class="list-unstyled text-small">
+                        <li class="text-light">
+                            <a class="text-light" href="tel:+441482275299">01482 275299</a>
+                            </li>
+                            <li class="text-light">
+                                <a class="text-light" href="mailto:intouch@visr-vr.com">intouch@visr-vr.com</a>
+                            </li>
+                        <li class="text-light">Unit 1. Newland Science Park. Hull. UK. HU6 7TQ</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="row text-light mt-5">
+                <br>
+                <small>VISR and the VISR Logo are Copyrights of VISR Dynamics Ltd.<br>
+                        Stage and the Stage Logo are Intellectual Property of VISR Dynamics Ltd.
+                    
+                    <br>© 2023 All Rights Reserved.
+                    </small>
+                    
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18"></script>
+    <script src="/js/navbar.js"></script> <!-- Navbar Scroll -->
+    <script src="/js/fluent.js"></script> <!-- Fluent Gradient effect -->
+    <script src="/js/modal.js"></script>
+
+    <script>
+        /*$(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })*/</script>
+
+
+    <script>function openMenu() {
+                var menu = document.getElementById("menu-cover");
+                var burger = document.getElementById("burger-menu");
+                var links = document.getElementById("menu-links");
+
+                if (menu.classList.contains('show-menu')) {
+                    menu.classList.remove('show-menu');
+                    burger.classList.remove('rotate-menu');
+                    menu.classList.add('hide-menu');
+                    links.classList.remove('links-animator');
+                    links.classList.add('links-hider');
+
+
+                }
+
+                else {
+                    menu.classList.remove('hide-menu');
+                    menu.classList.add('show-menu');
+                    burger.classList.add('rotate-menu');
+                    links.classList.remove('links-hider');
+                    links.classList.add('links-animator');
+
+
+                }
+            }
+        </script>
+
+
+    
+</div>
+    <script src="/lib/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+</body></html>

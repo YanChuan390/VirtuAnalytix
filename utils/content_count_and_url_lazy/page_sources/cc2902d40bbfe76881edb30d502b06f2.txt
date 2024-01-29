@@ -1,0 +1,617 @@
+<html lang="en"><head><meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <title>Buckethead Entertainment</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.min.css" rel="stylesheet">
+
+  <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/0hCdE87LyjzAkFO5Ff-v7Hj1/recaptcha__zh_cn.js" crossorigin="anonymous" integrity="sha384-nvvERczED3KjSxZfEFFVT2H6DgamVMjw61V5MHFkDryTDTBoWFoG/24MiImPw34y"></script><script src="https://www.google.com/recaptcha/api.js?render=6LdXyLUUAAAAAHn4QQu8Qbx3zUSPKeQj2LzJOJXL"></script>
+  <script>
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LdXyLUUAAAAAHn4QQu8Qbx3zUSPKeQj2LzJOJXL', {
+        action: 'homepage'
+      }).then(function(token) {
+
+        fetch('/recaptcha.php?action=homepage&response=' + token).then(function(response) {
+          response.json().then(function(data) {
+            if (parseFloat(data["score"]) >= 0.5) {
+              var mailTos = document.getElementsByClassName("mailto");
+              var names = ["maarten", "kaj", "pjotr", "tom", "wiseguy"]
+
+              for (i = 0; i < mailTos.length; i++) {
+                mailTos[i].href = "mailto:" + names[i] + "@bucketheadentertainment.com";
+                mailTos[i].style.display = "";
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
+  <style>
+    .grecaptcha-badge {
+      visibility: hidden;
+    }
+  </style>
+
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup {
+      background: #fff;
+      clear: left;
+      font: 14px Helvetica, Arial, sans-serif;
+      width: 600px;
+    }
+  </style>
+<style type="text/css">#mc_embed_signup input.mce_inline_error { border-color:#6B0505; } #mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }</style></head>
+
+<body id="page-top" style="zoom: 1;">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Buckethead Entertainment</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-logo">
+          <div id="logo_bg">
+            <img src="img/logos/logo_without_text.svg" tag="Buckethead Entertainment" id="logo" class="img-responsive">
+          </div>
+        </div>
+        <div class="intro-lead-in">Welcome to the Buckethead Entertainment web page!</div>
+        <div class="intro-heading">Gameplay is king</div>
+        <a class="btn btn-xl js-scroll-trigger" href="#team">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Portfolio Grid -->
+  <section class="bg" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">GAMES</h2>
+          <h3 class="section-subheading text-muted">By far the best way to spend your spare time</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <span class="portfolio-link" data-toggle="modal" href="#game3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-eye fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/rumble/thumbnail.png" alt="">
+          </span>
+          <div class="portfolio-caption">
+            <h4>RUMBLE</h4>
+            <p class="text-muted">Earthbending fights</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://www.airconsole.com/play/roperaid" target="_blank">
+            <span class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-eye fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/rope_raid/thumbnail.png" alt="">
+            </span>
+          </a>
+          <div class="portfolio-caption">
+            <h4>RopeRaid</h4>
+            <p class="text-muted">Swing to win!</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <span class="portfolio-link" data-toggle="modal" href="#game1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fa fa-eye fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/combat_tested/thumbnail.png" alt="">
+          </span>
+          <div class="portfolio-caption">
+            <h4>Combat Tested</h4>
+            <p class="text-muted">Swords and super powers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="bg-light" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Character descriptions</h2>
+          <h3 class="section-subheading text-muted">Here goes our privacy</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="team-member">
+            <span href="#teamMember1" data-toggle="modal"><img class="mx-auto rounded-circle team-member-link" src="img/team/Maarten.jpg" alt="">
+              <h4>Maarten Braaksma</h4>
+              <p class="text-muted">Project Lead</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/maarten.braaksma.3/" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/maarten-braaksma/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" target="_blank" class="mailto" style="display:none"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+          </span></div>
+
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member">
+            <span href="#teamMember2" data-toggle="modal"><img class="mx-auto rounded-circle team-member-link" src="img/team/Kaj.jpg" alt="">
+              <h4>Kaj Beugels</h4>
+              <p class="text-muted">Lead Programmer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#" target="_blank" class="mailto" style="display:none"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+          </span></div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member">
+            <span href="#teamMember3" data-toggle="modal"><img class="mx-auto rounded-circle team-member-link" src="img/team/Pjotr.jpg" alt="">
+              <h4>Pjotr Heinkens</h4>
+              <p class="text-muted">Lead Artist</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/pjotr-heinkens-25638aa8/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" target="_blank" class="mailto" style="display:none"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+          </span></div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member">
+            <span href="#teamMember4" data-toggle="modal"><img class="mx-auto rounded-circle team-member-link" src="img/team/Tom.jpg" alt="">
+              <h4>Tom Grotenhuis</h4>
+              <p class="text-muted">Lead Designer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/tom.grotenhuis.56" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" target="_blank" class="mailto" style="display:none"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+          </span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="large text-muted">Despite all these silly jokes, we actually do care very much about bringing fun and memorable gaming experiences to the market, but don’t just take our word for it. Why don’t you check out some of our products, we think it’ll be worth your while.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section class="py-5 bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="https://rwgrafisch.tumblr.com/" target="_blank"><img class="img-fluid d-block mx-auto" src="img/logos/rw_grafisch.svg" alt="RW grafisch"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <span class="copyright">Copyright © Buckethead Entertainment VOF 2023            <p>This site is protected by reCAPTCHA and the Google
+              <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+              <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+            </p>
+          </span>
+          <a href="http://e.pc.cd/ELeotalK" target="_blank">
+            Press Kit
+          </a> |
+          <a data-toggle="modal" data-target=".press-subscribe" href="#">
+            Subscribe to Press Newsletter
+          </a>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a class="mailto" href="#" target="_blank" style="display:none">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://discord.gg/47bJgvn" target="_blank">
+                <i class="fa fa-heart"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/bucketheadent" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/bucketheadentertainment/" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company-beta/18199380" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.reddit.com/user/BucketheadEnt/" target="_blank">
+                <i class="fa fa-reddit"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com/channel/UCE_9ZyXIIGbSVf9_hwlDUMg" target="_blank">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="info-modal modal fade" id="teamMember1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="info-modal modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container borderless-container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-fluid d-block mx-auto" src="img/team/Maarten_full.jpg" alt="">
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-body team-member-description">
+                <!-- Project Details Go Here -->
+                <h3>Maarten Braaksma</h3>
+                <p class="item-intro text-muted">Your business is now his business.</p>
+                <p>This man can arrange just about anything. Need to hold a meeting with some people? Want to hold a test session with a bunch of students? Whatever it is, he’ll fix it for you. If we’d have to sum Maarten up in one word we’d probably go with peculiar, it’s very difficult to explain why, you’d have to experience him in person to really understand. He’s a big fan of sugar and money.</p>
+                <ul class="list-inline">
+                  <li><strong>Beard growth:</strong> Got some real creepy chin fuzz going.</li>
+                  <li><strong>Likes:</strong> Far Cry 3, Dungeon Keeper 2, LEGO games, Mario games</li>
+                  <li><strong>Sm4sh mains:</strong> Robin, Luigi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="info-modal modal fade" id="teamMember2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="info-modal modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container borderless-container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-fluid d-block mx-auto" src="img/team/Kaj_full.jpg" alt="">
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-body team-member-description">
+                <!-- Project Details Go Here -->
+                <h3>Kaj Beugels</h3>
+                <p class="item-intro text-muted">Grumpy programmers are the best programmers.</p>
+                <p>As you can probably guess from his profile pic, it’s very difficult to get Kaj to smile. The only moments that consistently get him to laugh are when he’s disrespecting people in Smash Brothers and when the artists hurt themselves on accident. Kaj is a great programmer, he can write just about any script and as a result of that he gets job offers around the clock. Luckily he’s ours though.</p>
+                <ul class="list-inline">
+                  <li><strong>Beard growth:</strong> Sorry, nothing.</li>
+                  <li><strong>Likes:</strong> Cuphead, Gears Of War games, Binding Of Isaac, Witcher</li>
+                  <li><strong>Sm4sh mains:</strong> Duck Hunt, Ganondorf, Captain Falcon, Falco</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="info-modal modal fade" id="teamMember3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="info-modal modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container borderless-container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-fluid d-block mx-auto" src="img/team/Pjotr_full.jpg" alt="">
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-body team-member-description">
+                <!-- Project Details Go Here -->
+                <h3>Pjotr Heinkens</h3>
+                <p class="item-intro text-muted">Beer and coffee make for good art.</p>
+                <p>Pjotr likes to mess with things, his work is his playground. This is not limited to only his work though, leave your computer unguarded for a couple seconds and by the time you return he has completely overhauled the lighting in your scene, we’re just glad that it’s always for the better. Out of all of us, Pjotr has the strongest drive to better himself.</p>
+                <ul class="list-inline">
+                  <li><strong>Beard growth:</strong> Can grow a respectable goatee and sideburns.</li>
+                  <li><strong>Likes:</strong> Ratchet and Clank, Dark Souls, Skyrim, Hollow Knight</li>
+                  <li><strong>Sm4sh mains:</strong> Little Mac, Ike, Captain Falcon, Ryu</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="info-modal modal fade" id="teamMember4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="info-modal modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container borderless-container">
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-fluid d-block mx-auto" src="img/team/Tom_full.jpg" alt="">
+            </div>
+            <div class="col-lg-8">
+              <div class="modal-body team-member-description">
+                <!-- Project Details Go Here -->
+                <h3>Tom Grotenhuis</h3>
+                <p class="item-intro text-muted">I am the one who mocks.</p>
+                <p>This is the youngest one of the bunch, mentally and physically. There are few things he likes more than funny voices and silly faces, also he isn’t very good at dealing with alcoholic substances. Many of the things Tom comes up with are of questionable quality, but when they’re good, they’re good. Doesn’t care about something at all, or cares very much.</p>
+                <ul class="list-inline">
+                  <li><strong>Beard growth:</strong> Capable of growing a full beard, but not really.</li>
+                  <li><strong>Likes:</strong> Zelda, Mario, Halo, Kingdom Hearts</li>
+                  <li><strong>Sm4sh mains:</strong> Mario, Link, Captain Falcon, Donkey Kong, Ganondorf, King Dedede, Cloud</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="game3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>RUMBLE</h2>
+                <p class="item-intro text-muted">Earthbending fights</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/rumble/full.png" alt="">
+                <p>You're a beginning martial artist with the power to control stone. By striking poses inspired by real-life fighting sports, you can create attacks out of the earth beneath your feet. Test your skills and creativity in the online PVP arena!</p>
+                <ul class="list-inline">
+                  <li><iframe src="https://store.steampowered.com/widget/890550/" frameborder="0" width="646" height="190"></iframe></li>
+                  <!-- <li>Release date: Soon&#8482;</li> -->
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="game2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>RopeRaid</h2>
+                <p class="item-intro text-muted">Swing to win!</p>
+                <video class="img-fluid d-block mx-auto" autoplay="" loop="">
+                  <source src="img/portfolio/rope_raid/full.webm" type="video/webm">
+                </video>
+                <p>In RopeRaid, your goal is to swing as fast as you can using your grappling hook. Make gravity your ally by timing your swings just right to gain tremendous speed. But be careful, letting go too soon or too late might send you flying straight to your doom.</p>
+                <p>Challenge your friends to a race in multiplayer mode, or prove your worth by leaving your mark on the global leaderboards in singleplayer.</p>
+
+                <ul class="list-inline">
+                  <li>Release date: 18 April 2019</li>
+                  <a class="btn btn-primary" href="https://www.airconsole.com/play/roperaid" target="_blank" role="button">
+                    <i class="fa fa-play"></i>
+                    Play now on AirConsole!</a>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="game1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>Combat Tested</h2>
+                <p class="item-intro text-muted">Swords and super powers</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/combat_tested/full.png" alt="">
+                <p>At some point in our lives, we all try to move things with our mind, some people give up on that dream, others don’t. Tell you what though, that dream can now become reality, in virtual reality! Combat Tested gives you the ability to use telekinesis, but you’ve also got some kick-ass swords you can use to cut through almost anything. The cool thing about these swords is that they slice through obstacles in real time, meaning that you can cut objects any way you want.</p>
+                <ul class="list-inline">
+                  <li><iframe src="https://store.steampowered.com/widget/750010/" frameborder="0" width="646" height="190"></iframe></li>
+                  <li>Release date: 23 March 2018</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade press-subscribe" tabindex="-1" role="dialog" aria-labelledby="press-subscribe" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myLargeModalLabel">Subscribe to Press Newsletter</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <!-- Begin Mailchimp Signup Form -->
+        <div class="d-flex justify-content-center">
+          <div id="mc_embed_signup">
+            <form action="https://bucketheadentertainment.us15.list-manage.com/subscribe/post?u=8a72ef9dfe0aa084bf86d0d3b&amp;id=44c1eadd12" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+              <div id="mc_embed_signup_scroll">
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                  </label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" aria-required="true">
+                </div>
+                <div hidden="true"><input type="hidden" name="tags" value="2315472"></div>
+                <div id="mce-responses" class="clear foot">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8a72ef9dfe0aa084bf86d0d3b_44c1eadd12" tabindex="-1" value=""></div>
+                <div class="optionalParent">
+                  <div class="clear foot">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    <p class="brandingLogo"><a href="http://eepurl.com/h3QsYn" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+        <script type="text/javascript">
+          (function($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            fnames[2] = 'LNAME';
+            ftypes[2] = 'text';
+          }(jQuery));
+          var $mcj = jQuery.noConflict(true);
+        </script>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdXyLUUAAAAAHn4QQu8Qbx3zUSPKeQj2LzJOJXL&amp;co=aHR0cHM6Ly93d3cuYnVja2V0aGVhZGVudGVydGFpbm1lbnQuY29tOjQ0Mw..&amp;hl=zh-CN&amp;v=0hCdE87LyjzAkFO5Ff-v7Hj1&amp;size=invisible&amp;cb=heytts6mjfqc" width="256" height="60" role="presentation" name="a-5w16ic5safwf" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></body></html>

@@ -1,0 +1,106 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Waba</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js"></script>
+  <script>require('initialize');</script>
+  <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+<style type="text/css">#mc_embed_signup input.mce_inline_error { border-color:#6B0505; } #mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }</style></head>
+
+<body style="zoom: 1;">
+    <!-- BG VIDEO -->
+  <video autoplay="" muted="" loop="" id="VideoBG">
+    <source src="Videos/Waba_Early_Access_Trailer_Small.mp4" type="video/mp4">
+  </video> 
+
+  <header id="BarTop">
+	<!-- <h1>Top Dipe</h1> -->
+  </header>
+
+  <!-- ON TOP OF VIDEO -->
+  <div class="Content">
+    <div class="Grid">
+
+  		<div id="TopGridItem"></div>
+
+	    	<!-- WABA BODY -->
+	    	<div id="WabaBodyBox">
+		      	<img src="Gifs/WabaIdle1.gif" id="WabaBodyPic" class="WabaBody GridItem">
+			</div>
+
+			<!-- WABA LOGO -->
+			<div id="WabaLogoBox">
+				<img src="Images/WabaLogo.png" class="WabaLogo GridItem">
+			</div>
+    	<!-- </div> -->
+
+		<!-- CALL TO ACTION -->
+		<div id="CallToAction" class="GridItem">your virtual friend</div>
+
+
+  		<!-- BEGIN SIGNUP -->
+		<div id="SignupBox" class="GridItem">
+			<!-- SUBSCRIBE BUTTON -->
+			<button class="Button CTA" id="SignupButtonCTA">SUBSCRIBE</button>
+
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup" style="display: none;">
+
+	    		<!-- DESCRIPTION -->
+	    		<label id="SignupFormDescription">
+	    			signup to heartlink with Waba
+    			</label>
+
+				<form action="https://edwonstudio.us4.list-manage.com/subscribe/post?u=b9d31be056b83cea3d1560f6b&amp;id=c4944a507a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+					<!-- EMAIL INPUT-->
+				
+					<input type="email" value="" name="EMAIL" class="required email" placeholder="email address" id="mce-EMAIL" autocomplete="off" aria-required="true">
+
+					<!-- VALIDATION RESPONSE -->
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    
+					
+					<!-- ANTI BOT -->
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b9d31be056b83cea3d1560f6b_c4944a507a" tabindex="-1" value=""></div>
+
+				    <!-- SUBSCRIBE BUTTON -->
+				    <div class="clear"><input type="submit" value="SUBSCRIBE TO HEARTLINK" name="subscribe" id="mc-embedded-subscribe" class="mc-embedded-subscribe Button Submit Hide"></div>
+
+				</form>
+			</div>
+			<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			<!--End mc_embed_signup-->
+
+		</div>
+
+  		<div id="BottomGridItem"></div>
+
+    </div>
+  </div>
+
+  <footer id="BarBottom">
+
+  	<!-- EDWON LOGO -->
+  	<!-- <div id="EdwonLogo"> -->
+		<a href="http://edwon.tv/">
+		<img src="Images/EdwonLogo.png" id="FooterEdwonLogo">
+		</a>
+	<!-- </div> -->
+
+	<!-- SOCIAL FOLLOW ICONS -->
+	<div id="SocialFollowBar">
+		<a href="https://www.facebook.com/edwonia" target="_blank"><img src="Images/facebook.png" class="SocialFollowIcons"></a>
+		<a href="https://www.youtube.com/c/edwon" target="_blank"><img src="Images/youtube.png" class="SocialFollowIcons"></a>
+		<a href="https://twitter.com/edwonia" target="_blank"><img src="Images/twitter.png" class="SocialFollowIcons"></a>
+		<a href="https://store.steampowered.com/app/418940/Waba/" target="_blank"><img src="Images/steam.png" class="SocialFollowIcons"></a>
+		<a href="https://www.oculus.com/experiences/rift/2035877113102792/" target="_blank"><img src="Images/oculus.png" class="SocialFollowIcons"></a>
+	</div>
+
+  </footer>
+
+
+</body></html>

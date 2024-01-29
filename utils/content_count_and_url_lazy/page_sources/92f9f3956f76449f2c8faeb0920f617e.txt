@@ -1,0 +1,873 @@
+<html><head> 	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Expires" value="dec 31,2017 23:59:59"> 
+	<title>아인픽춰스 공식 홈페이지 입니다.</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/ein.ico">
+	<link rel="stylesheet" media="all" href="ein.css"> 
+	<link rel="stylesheet" media="all" href="topstyles.css">
+	<link rel="stylesheet" media="all" href="scrollbar_style.css">
+    <link rel="stylesheet" href="jquery_scrollbar/jquery.mCustomScrollbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&amp;family=Nunito+Sans:ital,wght@0,700;1,900&amp;family=Oswald:wght@500&amp;family=Source+Sans+Pro:ital,wght@1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&amp;family=Roboto&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanummyeongjo.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumbrushscript.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumpenscript.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700" rel="stylesheet" type="text/css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="bootstrap_3_3_6/css/bootstrap.min.css"> 
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="bootstrap_3_3_6/css/bootstrap-theme.min.css">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="bootstrap_3_3_6/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<!-- 좌우 스크롤 bxSlider CSS file -->
+	<link href="jquery.bxslider.css" rel="stylesheet">
+	<style type="text/css">
+		.bxslider img{width:100%;}
+	</style>  
+	<!-- jQuery library (served from Google) -->    
+    <script type="text/javascript" async="" src="jquery.bxslider.min.js"></script><script type="text/javascript" async="" src="jquery_scrollbar/jquery.mCustomScrollbar.concat.min.js"></script><script type="text/javascript" async="" src="jquery-ui.js"></script><script type="text/javascript" src="jquery.min.js"></script> 
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <!-- 상하 슬라이드 스크롤 JQuery용 -->
+	<script src="jquery_scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+	<script src="bootstrap_3_3_6/js/bootstrap.min.js"></script>
+	<!-- 좌우 스크롤 bxSlider Javascript file -->
+	<script src="jquery.bxslider.min.js"></script>	  
+    <script> 
+   (function() {
+  function async_load(){
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'jquery-ui.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+  window.attachEvent ? window.attachEvent('onload', async_load) : window.addEventListener('load', async_load, false);
+	})();
+ </script>   
+    <script> 
+   (function() {
+  function async_load(){
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'jquery_scrollbar/jquery.mCustomScrollbar.concat.min.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+  window.attachEvent ? window.attachEvent('onload', async_load) : window.addEventListener('load', async_load, false);
+	})();
+ </script> 
+    <script> 
+   (function() {
+  function async_load(){
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'jquery.bxslider.min.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+  window.attachEvent ? window.attachEvent('onload', async_load) : window.addEventListener('load', async_load, false);
+	})();
+ </script> 
+	<script>
+		(function($){
+			$(window).load(function(){				
+				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+				$.mCustomScrollbar.defaults.axis="yx"; //enable 2 axis scrollbars by default				
+				$("#content-l").mCustomScrollbar();				
+				$("#content-d3").mCustomScrollbar({theme:"dark-3"});			
+				$(".all-themes-switch a").click(function(e){
+					e.preventDefault();
+					var $this=$(this),
+						rel=$this.attr("rel"),
+						el=$(".content");
+					switch(rel){
+						case "toggle-content":
+							el.toggleClass("expanded-content");
+							break;
+					}
+				});
+			});
+		})(jQuery);
+	</script>    
+    <!-- 상하스크롤 TOP버튼용 -->
+	<script type="text/javascript" language="javascript" charset="utf-8" src="autohide.js"></script>  	
+	<script type="text/javascript">
+  	$(document).ready(function(){		
+		$('.bxslider_m').bxSlider({
+			mode:'fade', //default : 'horizontal', options: 'horizontal', 'vertical', 'fade'
+			speed:800, //default:500 이미지변환 속도
+			slideWidth: 1920,	
+			auto: false, //default:false 자동 시작
+			captions: false, // 이미지의 title 속성이 노출된다.
+			autoControls: false, //default:false 정지,시작 콘트롤 노출, css 수정이 필요	
+			controls: true,
+			adaptiveHeight: true,
+			preloadImages:'visible',
+			randomStart:false,
+		});	
+		$('#slider1').bxSlider({
+			infiniteLoop: false,
+			hideControlOnEnd: true,	
+			slideWidth: 1920,	
+			pagerType:'short',
+			adaptiveHeight: true,
+			preloadImages:'visible',
+		});			
+		$('#bxslider2').bxSlider({
+			infiniteLoop: false,
+			hideControlOnEnd: false,
+			minSlides: 1,
+			maxSlides: 4,
+			slideWidth: 480,  
+			slideMargin: 0,
+			adaptiveHeight: true,
+			captions: true,
+			controls:true,
+			pager:false,  
+			preloadImages:'visible',
+/*			pagerType:'short'   */
+		});	
+  	});  
+	</script> 
+<!-- 아래로 자연스럽게 스크롤 되는 스크립트 --->   
+	<script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script><script>
+    document.getElementById('video').play();
+</script>
+    <!--
+	<style> 
+    span.main_anim {
+		font-family:나눔고딕,'Nanum Gothic',  굴림, arial, sans-serif;
+		color:#ffffff;
+		font-size:50px;
+		font-weight:400;
+		text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+		word-break:keep-all;
+      	position: absolute;
+      	-webkit-animation: mymove 3s infinite; /* Safari 4.0 - 8.0 */
+      	animation: mymove 3s infinite;
+      	width:100%;
+    }
+    
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes mymove {
+      from {left: 50%; top: 0px;}
+      to {left: 50%;top: 500px;}
+    }
+    
+    @keyframes mymove {
+      from {left: 50%; top: 0px;}
+      to {left: 50%; top: 500px;}
+    }
+    </style>
+    -->
+<style>	
+	div.mainimg {
+	  width: 100%;
+	  height: 600px;
+	  background-image: url('img/main_img02.jpg');
+	  background-size: 100%;
+	  background-position: center;
+	  animation: zoom 15s infinite;
+	  margin:auto;
+	}
+	
+	@keyframes zoom {
+	  from {background-size: 100%;background-position: bottom;}
+	  50% {background-size: 120%;background-position: top;} 
+	  to {background-size: 100%;background-position: center;}
+	}
+	
+	@media only screen and (max-width:1366px){	
+	div.mainimg {
+	  height: 500px;
+	  background-image: url('img/main_img.jpg');
+	  animation: zoom 15s infinite;
+	}
+	}
+	
+	@media only screen and (max-width:1024px){	
+	div.mainimg {
+	  height: 280px;
+	  background-image: url('img/main_img.jpg');
+	  animation: zoom 30s infinite;
+	}
+	}
+</style>
+
+<style>
+
+.sidebar_index {
+    /* height: 100px; */
+    width: 100%;
+    /* position: fixed; */
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /*padding: 10px 85px 10px 10px;*/
+}
+#sidebar_index {
+    /* height: 100px; */
+    width: 100%;
+    /* position: fixed; */
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /*padding: 10px 85px 10px 10px;*/
+}
+
+.sidebar_index a {
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size:9px;
+  color: #818181;
+/*  display: block; */
+  transition: 0.3s;
+}
+
+.sidebar_index a:hover {
+  color: #f1f1f1;
+}
+.sidebar_index a:visited {
+  color: #fff;
+}
+.sidebar_index .closebtn_index {
+  position: absolute;
+  top: -10px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#sidebar2_index .closebtn_index {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn_index {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.closebtn_index:hover {
+}
+
+#main_index {
+  transition: margin-top .5s ;
+  padding: 0;
+  margin:20px 70px 20px 40px;
+}
+
+@media (max-width:1023px){
+#main_index {
+  margin:20px 70px 20px 15px;
+}
+}  
+textarea {
+    color: #000;
+    font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 5px;
+    background-color: #dfdfdf;
+    border: 0 #dfdfdf solid;
+}	
+.sub_nav_p {
+  position: absolute;
+  width:100%;
+  color: white;
+  background: #F6F6F6;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+ .sub_nav_pfixed {
+ position: fixed; 
+ top:0px;
+ }
+
+ 
+.g_box {
+	max-width:1196px;
+	width:99%;
+	margin:auto;
+	margin-top:50px;
+    padding: 30px 10px;
+    background-color: #fff;
+    border: 1px #a3a3a3 solid;
+}	
+/*p {
+	font-size: 15px !important;
+	font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif;
+}*/
+
+.overlay_text {
+	position: absolute;
+    top: 40px;
+    bottom: 0;
+	max-width:706px;
+	height:420px;
+    left: 5%;
+    -webkit-transition: opacity .6s,-webkit-transform .3s;
+    transition: opacity .6s,-webkit-transform .3s;
+    -o-transition: transform .3s,opacity .6s;
+    transition: transform .3s,opacity .6s;
+    transition: transform .3s,opacity .6s,-webkit-transform .3s;
+    display: block;
+	z-index:100;
+	color:#fff;
+	text-align:left;
+	line-height:1.10;
+	font-size: 70px; 
+	font-weight:800; font-family: 'Noto Sans KR','Oswald','Roboto', 나눔고딕, 'Nanum Gothic', sans-serif; 
+	letter-spacing: -0.04em; 
+	word-break: keep-all;
+}
+.overlay {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+	width:100%;
+    height: 500px;
+    left: -1px;
+    right: -1px;
+    background-color: rgba(48, 111, 183, 0.4);
+    -webkit-transition: opacity .6s,-webkit-transform .3s;
+    transition: opacity .6s,-webkit-transform .3s;
+    -o-transition: transform .3s,opacity .6s;
+    transition: transform .3s,opacity .6s;
+    transition: transform .3s,opacity .6s,-webkit-transform .3s;
+    display: block;
+	z-index:50;
+}
+.overlay_stext {
+font-size: 12px; padding-top:30px; color:#fff; font-weight:100; font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif; letter-spacing: -0.025em; word-break: keep-all;
+}
+@media only screen and (max-width:549px){
+.overlay_text { 
+	font-size: 50px; 
+	height: 300px; 
+}
+.overlay {
+    height: 300px;
+}
+.overlay_stext {
+	display:none
+}
+}
+
+audio,
+canvas,
+video{display:inline-block;*display:inline;*zoom:1;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+@media only screen and (max-width:549px){
+audio,
+canvas,
+video{ height: 300px; }
+}
+</style>
+</head>
+<body>
+
+
+  
+<div id="headwrapper"><!---팝업후 295px --->   	
+    <div id="fixedheader">
+      <header id="top">
+    	<div id="mySidebar_index" class="sidebar_index" style="background-color: #fff !important;">
+        
+        
+        <!---
+  			<div style="padding: 10px 70px 10px 10px;"><font style="font-size:11px; color:white;font-family:나눔고딕,'Nanum Gothic',  굴림, arial, sans-serif; word-break:keep-all;line-height:1.3;">
+ 
+<script language="javascript">
+function openWindowPop(url, name){
+    var options = 'top=100, left=480, width=1024, height=768, status=no, menubar=no, toolbar=no, resizable=no';
+    window.open(url, name, options);
+}	
+</script>
+중요 안전 알림 :  Oculus에서는 극히 드물게 Qest2 탈착 식 발포 고무 안면 인터페이스를 착용했을 때 발포 고무가 닿는 부분에 피부 자극이 발생하는 사례가 보고됨. 
+ 
+  				
+  				<!--중요 안전 알림: Oculus에서는 극히 드물게 Qest2 탈착식 발포 고무 안면 인터페이스를 착용했을 때 발포 고무가 닿는 부분에 피부 자극이 발생하는 사례가 보고됨에 따라, 이를 해결하기 위한 조치를 취하였습니다. 고객의 건강과 편안한 착용감은 Oclus에서 가장 중점을 두는 부분입니다. 이러한 노력의 일환으로 Quest2 헤드셋, Quest2 안면 인터페이스 악세서리, Quest2 Fit 팩을 소유하신 고객께서는 실리콘 커버를 무상으로 제공해 드립니다. 
+  				-->
+  			
+  		 <!---		
+  			<a href="javascript:openWindowPop('alert_popup.php', 'popup');"><font style="font-size:11px; color:white; text-decoration:underline; font-family: 나눔고딕, 'Nanum Gothic', sans-serif;">더 알아보기</font></a></font> </div>
+  			<a href="javascript:void(0)" class="closebtn_index" id="sidebar2_index" onClick="closeNav_index()">×</a>
+		</div>
+        
+        
+        ----->
+        
+		<ul id="main_index">
+        	<li><style>
+@media (max-width:5000px){.p_show{display:block;}
+}
+@media (max-width:1024px){.p_show{display:none;}
+}
+@media (max-width:5000px){.m_show{display:none;}
+}
+@media (max-width:1024px){.m_show{display:block;  
+ width: 100%;
+ max-width: 880px;}
+}
+</style>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+       	<div class="p_show">
+       		<style>
+a.menu {
+    color: #111111 !important;
+    text-decoration: none;
+	font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif;
+	font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+a.menu:hover {
+    color: #adadad !important;
+    text-decoration: none;
+}
+a.menu:active {
+    color: #436be4 !important;
+    text-decoration: none;
+}
+</style>
+<script>
+	$(document).ready(function(){
+		$('[data-toggle2="tooltip"]').tooltip();
+	});
+</script>
+
+         <div id="navbar" class="navbar-collapse collapse" style="background-color: #25517f;">
+         	  <div style="max-width:110px; float:left;" class="m_hide">
+              		<a href="index.php" target="_top"><img src="img/ein_logo.png" style="max-width: 120px;"></a>
+              </div>
+              <div style="max-width: 1920px; position: absolute; right: 0px; padding-top: 10px; font-weight:600; color:#25517f ">
+              		<li style="float:left;"><a href="index.php" class="menu" alt="home">HOME</a></li>
+                    <li style="float:left; margin-left:50px;"><a href="#solution" class="menu" alt="solution">SOLUTION</a></li>
+                    <li style="float:left; margin-left:50px;"><a href="product.php" target="_top" class="menu">PRODUCTS</a></li>
+                    <li style="float:left; margin-left:50px;"><a href="#about" class="menu">ABOUT</a></li>
+                    <li style="float:left; margin-left:50px;"><a href="#contact" class="menu">CONTACT</a></li>
+             </div>
+             <div style="clear:left"></div>
+       </div>
+    	</div>
+   		<div class="m_show" style="width: 100%; max-width: 880px;">
+       		<style>
+.panel-default>.panel-heading {
+    background-color: #4c4c4c !important;
+	padding: 3px;}
+.panel-heading {
+    padding: 0px;
+    border-bottom: 0px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.panel-body {
+    padding: 2px;
+	background-color: #232323;
+	border-top-color: #232323 !important;
+	margin: 0px 0px 0 0px;
+}
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+.panel-default {
+    border-color: #232323 !important;
+}
+.collapse.in {
+    display: contents;
+    background-color: #232323 !important;
+}
+.collapse {
+    background-color: #fff !important;
+}
+#tabs, #tabs-2, #accordion {
+    width: 220px;
+    max-width: 100%;
+	border: 0px solid #232323;
+}
+.panel-default>.panel-heading {
+    background-image: none !important; 
+    background-image: none !important; 
+    background-image:  none !important; 
+    background-image:  none !important; 
+	border: 0px solid #4c4c4c;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+    background-repeat: repeat-x;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #c0003a !important;
+}
+
+.fa {
+    font-size: 24px;
+}
+
+.sidebar_m {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: #232323;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 78px;
+}
+
+.sidebar_m a {
+  padding: 5px 5px 5px 10px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  text-decoration:none;font-family:'Roboto',sans-serif;
+}
+
+.sidebar_m a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar_m a:visited {
+  color: #fff;
+}
+.sidebar_m .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #c0003a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+/*  margin-right: 0px;  */
+  border-radius: 5px;;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px 0px;
+  text-align:right;
+  margin-right:-50px !important;
+}
+
+</style>
+<div id="mirae_defender_layer" style=" z-index: 999; top: 17px;left: 5px;height: 0px;width: 0px;border: 0px;display: block;position: absolute; /* overflow: visible; *//* text-align: center; *//* background-color: transparent; */"><div id="mi_defender_img1" style="/* top: 0px; *//* left: 0px; *//* height: 34px; */width: 120px;/* border: 0px; *//* display: block; *//* position: absolute; *//* overflow: visible; *//* text-align: center; *//* background-color: transparent; */"><a href="index.php" target="_top"><img src="img/ein_logo.png" style="margin-left:0px; margin:5px 0px" alt="HOME"></a></div>
+</div>
+<div id="mySidebar_m" class="sidebar_m">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a><div class="panel-group" id="accordion" style="width:220px">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="index.php">HOME</a>
+        </h4>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="#solution" onclick="closeNav()">SOLUTION</a>
+        </h4>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="product.php" target="_top" onclick="closeNav()">PRODUCTS</a>
+        </h4>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="#about" onclick="closeNav()">ABOUT</a>
+        </h4>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="#contact" onclick="closeNav()">CONTACT</a>
+        </h4>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></button> 
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar_m").style.width = "220px";
+  document.getElementById("main").style.marginRight = "0px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar_m").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
+}
+</script>    	</div>
+	</div>
+</nav></li>
+		</ul>
+<script>
+function openNav_index() {
+  document.getElementById("mySidebar_index").style.height = "100px";
+  document.getElementById("main_index").style.marginTop= "100px";
+}
+
+function closeNav_index() {
+  document.getElementById("mySidebar_index").style.height = "0";
+  document.getElementById("main_index").style.marginTop= "20px";
+  document.getElementById("sidebar2_index").style.marginTop= "-50px";
+}
+</script>
+
+<script>
+    document.getElementById('vid').play();
+</script>
+      </div></header>
+    </div> <!-- /end #fixedheader -->
+</div> <!-- /end #headwrapper --> 
+<div id="pagewrapper" style="background-color:#fff">
+    <div id="toparrow"></div>
+    
+     <div style="width:100%; margin:auto; text-align:center;">
+         <video id="vid" poster="img_upload/index02.mp4" width="100%" autoplay="" loop="" muted="">
+          	<source src="img_upload/index02.mp4" type="video/mp4">
+          	Your browser does not support the video tag.
+        </video>
+        <div class="overlay_text">
+        	Prepare <br>
+            for a better<br>
+            future with<br>
+            XR contents<br>
+            <p class="overlay_stext">We design an immersive video by matching two videos, and create XR contents by applying convenient and innovative interactive technology. <br>
+We create these XR contents in close consultation with a group of experts to focus on educational purposes and specialized training.<br>
+We also produce AR-dedicated contents using 3D terrain information and map data. AR contents provided <br>
+with visualized geographic information can be expanded to various business models.</p>
+        </div>
+        <div class="overlay"></div>
+        <!--<img src="img_upload/index02.mp4" style="width:100%">-->
+    </div>
+	<div class="title_text_area" style="margin-top: 70px;" id="solution">Prepare for a better future with XR contents.</div>
+    <div class="sub_text_area01" style="background-image:url(img/bg01.jpg);background-repeat: no-repeat; background-position: top; ">
+      	We design an immersive video by matching two videos, and create XR contents by applying convenient and innovative interactive technology. <br><br>
+        We create these XR contents in close consultation with a group of experts to focus on educational purposes and specialized training.<br><br>
+        We also produce AR-dedicated contents using 3D terrain information and map data. AR contents provided with visualized geographic information can be expanded to various business models.<br><br>
+        We are currently concentrating our accumulated technology with the goal of sharing visualization information and XR contents in the evolving metaverse ecosystem.<br><br>
+        We will prepare for the gradually approaching coexistence of virtual and reality.
+    </div>
+    
+<!--    <div class="g_box"> -->
+      <div class="title_text_area" style="margin-top:150px;">Education and training</div>
+      <div class="sub_text_area">
+          By applying highly immersive virtual/augmented reality technology to education and training, effective learning effects are derived.
+      </div>
+      <div style="text-align:center; background-image:url(img/bg02.jpg);background-repeat: no-repeat; background-position: top;"><img src="img/s1.png" style="max-width:780px;width: 100%"></div>
+<!--    </div> -->
+    
+      <div class="title_text_area" style="margin-top:200px;">Marketing and Visualization of Spatial Information</div>
+      <div class="sub_text_area">
+          Through marketing using 3D location information, integrated visualization based on real mobility and virtual space, all angles and concepts are created as a new virtual reality space that has never been seen before.
+      </div>
+      <div style="text-align:center; background-image:url(img/bg03.jpg);background-repeat: no-repeat; background-position: bottom; "><img src="img/s2.png" style="max-width:780px;width: 100%"></div>
+    
+
+      <div class="title_text_area" style="margin-top:200px;">Multiparticipation service</div>
+      <div class="sub_text_area">
+          Multiple people can watch the player's progress in the training space at the same time, regardless of physical distance and location, and language sharing and remote screen sharing are possible.
+      </div>
+      <div style="text-align:center; background-image:url(img/bg04.jpg);background-repeat: no-repeat; background-position: top;"><img src="img/s3.png" style="max-width:780px;width: 100%"></div>
+
+    
+    <div class="about_title_area" style="margin-top:200px;" id="about"><font style="font-family:'Noto Sans KR','Roboto', 나눔고딕, 'Nanum Gothic', sans-serif; color:#4b5275; font-size: 55px; font-weight: 600; letter-spacing: -0.04px; word-break: keep-all; text-align:center">ABOUT</font></div>
+    <div class="about_text_area">
+      	Founded in 1999, Ein Pictures started out as a company dealing with stereoscopic image technology and is currently developing and selling virtual/augmented reality contents. In addition, in order to prepare for the future, we are attempting collaboration with various fields, and we are also developing expanded production of XR contents and metaverse-concept contents. Our goal is to make it easy and convenient for anyone to quickly access our content anytime, anywhere and conduct various hands-on training.<br><br>
+        <font style="font-family: Roboto, sans-serif; color: #666666; font-size: 16px; font-weight: 500; word-break: keep-all; text-align:center"><strong>Address</strong> : #E-902 Smart Valley, 30 SongdoMirae-ro, Yeonsu-gu, Incheon, Korea</font>
+    </div>
+    <div style="margin: auto; max-width: 1196px;">
+    	<div class="contact_w" style="text-align:left;margin: 40px 0 40px 7%;">
+        	<div style="font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif; color: #666666; word-break: keep-all; font-size: 40px; font-weight: 800; letter-spacing: -1.0px;">eiNpictures Co., Ltd.</div><br><br>
+            <div style="font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif; color: #666666; word-break: keep-all; font-size: 18px; font-weight: 600;">Company</div>
+            <div style="font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif; color: #666666; word-break: keep-all; font-size: 17px; font-weight: 400;">#E-902 Smart Valley, 30 SongdoMirae-ro, Yeonsu-gu, Incheon, Korea</div><br><br>
+            <div style="font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif; color: #666666; word-break: keep-all; font-size: 18px; font-weight: 600;">Support</div>
+            <div style="font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif; color: #666666; word-break: keep-all; font-size: 17px; font-weight: 400;">einpicture@gmail.com</div><br><br>
+            
+            <div style="font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif; color: #666666; word-break: keep-all; font-size: 18px; font-weight: 600;"><a href="javascript:openWindowPop('privacy_popup.php', 'popup');">Privacy Policy</a></div>
+            <!--
+            <div style="font-family:'Roboto', 나눔고딕, 'Nanum Gothic', sans-serif; color: #111111; word-break: keep-all; font-size: 18px; font-weight: 600;">Cookies Information</div>-->
+        </div>
+    	<div class="contact_w" id="contact" style=" text-align:left;margin: 40px 0 40px 7%;"><font style="font-size: 40px; font-weight: 800; letter-spacing: -1.0px;">CONTACT US</font>
+        	<div style="text-align:left;margin: 17px 5px;">  <br>  
+
+
+<script language="JavaScript">
+
+  function go(iud) {
+  	
+	 	email_data = document.form1.email.value;
+		first_name_data = document.form1.first_name.value;
+		last_name_data = document.form1.last_name.value;
+		msg_data = document.form1.msg.value;
+				
+		if (iud=='1' || iud=='2' ) {
+	   if (email_data=='' ) {
+	   		alert("Email을 입력하세요");
+				document.getElementByName('email').focus();
+	   		return false;
+	   		
+	  	} else if (first_name_data=='') {
+	  		alert("First Name을 입력하세요");
+	    	return false;
+	    		
+	  	} else if (last_name_data=='') {
+	   		alert("Last Name을 입력하세요");
+	    	return false;
+	    		
+	  	} else if (msg_data=='') {
+	   		alert("Message을 입력하세요");
+	    	return false;
+	    } else {
+			
+				document.form1.iud.value =+iud;
+				//alert(document.form1.iud.value);
+				document.form1.action = 'contact_us_db.php';
+			  form1.submit();
+  		}
+		} 
+  }
+</script>
+        	  <form name="form1" method="post" action="">      
+							<input type="hidden" name="gubun" value="">
+							<input type="hidden" name="iud">
+
+              <div style="font-size: 18px; font-weight: 600;">EMAIL</div>
+              <input name="email" type="text" class="input_width" value=""><br><br>
+              <div style="font-size: 18px; font-weight: 600;">FIRST NAME</div>
+              <input name="first_name" type="text" class="input_width" value=""><br><br>
+              <div style="font-size: 18px; font-weight: 600;">LAST NAME</div>
+              <input name="last_name" type="text" class="input_width" value=""><br><br>
+              <div style="font-size: 18px; font-weight: 600;">MESSAGE</div>
+              <textarea name="msg" class="input_width" rows="4"></textarea><br><br>
+              <button class="button button3" onclick="javascript:go('1');">Submit</button>
+             </form> 
+        	</div>
+        </div>
+    </div> 
+	<div class="clearflex"></div>
+    <!--
+    <div class="title_text_area" style="margin-top:20px;; padding: 0 5%; text-align:left">Cookie usage guide</div>
+<style>
+span {
+    color: #424242 !important;
+    font-family: Roboto, 나눔고딕, 'Nanum Gothic', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+	letter-spacing: -0.025em !important;
+ }
+</style>
+    <div class="sub_text_area" style=" margin-bottom:50px ">
+      		<div style="border:none black 1.0pt; padding:0cm 0cm 0cm 0cm">
+<div style="border:none black 1.0pt; padding:0cm 0cm 0cm 0cm">
+<p style="text-align:justify"><span style="font-size:10pt"><span style="font-family:함초롬바탕,&quot;serif&quot;"><span style="color:black"><span style="font-size:12.0pt"><span style="font-family:&quot;Arial Unicode MS&quot;">We are using cookies to give you the best experience on our website.<br />
+You can find out more about which cookies we are using or switch them off in settings. </span></span></span></span></span></p>
+</div>
+</div>
+    </div>-->
+</div> 
+
+
+<div class="clearflex" style="margin-bottom:70px"></div>
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+      $( document ).ready( function() {
+        var jbOffset = $( '.sub_nav_p' ).offset();
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() > jbOffset.top ) {
+            $( '.sub_nav_p' ).addClass( 'sub_nav_pfixed' );
+          }
+          else {
+            $( '.sub_nav_p' ).removeClass( 'sub_nav_pfixed' );
+          }
+        });
+      } );
+</script>
+</body></html>

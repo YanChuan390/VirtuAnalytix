@@ -1,0 +1,297 @@
+<html lang="en"><head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Content description -->
+    <title>Privacy | VR Sketch</title>
+    <meta name="description" content="Virtual Reality drawing tools for architects and designers. A SketchUp extension allowing anyone to use SketchUp from inside virtual reality">
+    <meta name="keywords" content="vr sketch, vr, virtual reality, draw, edit, draft, sketch, sketchup, architect, architecture, vive, oculus rift, design">
+    <meta name="author" content="VR Sketch">
+
+    <!-- Template imports -->
+    <link rel="shortcut icon" href="img/logos/favicon.ico">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Custom imports -->
+    
+
+
+</head>
+
+<body>
+    <div id="loading-indicator" style="display: flex; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; justify-content: center; align-items: center; background-color: rgb(255, 255, 255);">
+        <p style="color:#343a40;font-size:1.2em;">Loading...</p>
+    </div>
+    <script type="text/javascript">
+        (function () {
+            document.getElementById('loading-indicator').style.display = 'flex';
+        })();
+    </script>
+    <header>
+        <div class="fixed-top bg-white">
+            <nav class="container">
+                <div class="navbar navbar-expand-md navbar-light px-0">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logos/vr-sketch-logo.svg" height="28" alt="VR Sketch logo">
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                        <ul class="navbar-nav ml-auto">
+                            
+<li class="nav-item">
+    <a class="nav-link" href="docs-getting-started.html">Documentation</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="faqs.html">FAQs</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="tutorials.html">Tutorials</a>
+</li>
+
+                        </ul>
+                        <span class="dropdown">
+                            <button class="btn btn-outline-primary" id="main-login-button">Loading <i class="fa fa-spin fa-spinner"></i></button>
+                            <ul id="login-dropdown" class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#" class="dropdown-item" onclick="showLicenseModal()">User details</a></li>
+                                <li><a href="/cloud.html" class="dropdown-item">My cloud</a></li>
+                                <li><a href="#" class="dropdown-item" onclick="vueAppApi.logout(true)">Log out</a></li>
+                            </ul>
+                        </span>
+
+                    </div>
+
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        
+<div class="container pt-3 pb-5">
+    <div class="row">
+        <div class="col-md-3 mb-5">
+            <h4>Documentation</h4>
+            <ul class="list-unstyled">
+                <li class="border-bottom mb-3"><a href="docs-getting-started.html">Getting started on PC</a> </li>
+                <li class="border-bottom mb-3"><a href="docs-getting-started-quest.html">Getting started with Oculus Quest</a> </li>
+                <li class="border-bottom mb-3"><a href="docs-getting-started-piconeo.html">Getting started with Pico Neo 3</a> </li>
+                <li class="border-bottom mb-3"><a href="docs-whatsnew.html">What's new</a> </li>
+                <li class="border-bottom mb-3"><a href="docs-drawing.html">Drawing in VR</a> </li>
+                <li class="border-bottom mb-3"><a href="docs-viewing.html">Viewing tools</a> </li>
+                <li class="border-bottom mb-3"><a href="docs-settings-panel.html">In VR settings panel</a> </li>
+                <li class="border-bottom mb-3"><a href="docs-collaboration.html">Collaboration</a></li>
+                <li class="border-bottom mb-3"><a href="docs-settings.html">Settings</a></li>
+                <li class="border-bottom mb-3"><a href="docs-pointcloud.html">Point Cloud support</a></li>
+                <li class="border-bottom mb-3"><a href="docs-customscene.html">Custom Unity scenes</a></li>
+                <li class="border-bottom mb-3"><a href="docs-payment.html">Subscriptions and payment</a></li>
+                <li class="border-bottom mb-3"><a href="docs-errors.html">Bugs and errors</a></li>
+                <li class="border-bottom mb-3"><a href="docs-about.html">About</a></li>
+                <li class="border-bottom mb-3"><a href="docs-privacy.html">Privacy policy</a></li>
+            </ul>
+        </div>
+        <div class="col-md documentation">
+            
+<h1>Privacy policy</h1>
+<p>We're dedicated to provide you full transparency into how we use personal in formation
+and we're compliant with the new european data protection laws.</p>
+<p>This is a description of what we do with personal information. We need to process
+and retain some personal information in order to process payments. We do gather telemetry
+data, and the software reports internal errors automatically, but both are stored in a
+non-personally identifiable way.</p>
+<p>We get and store your name and email address. If you're no longer a subscriber, email
+info@baroquesoftware.com to get your information altered or completely deleted.
+We use login via google, so you already had accepted google privacy policy.
+For payments we pass the data to Chargebee (via embedded portal), who passes it to Braintree
+ for processing payment information.</p>
+
+        </div>
+    </div>
+</div>
+
+        <div id="login-type-modal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" style="max-width: 550px;" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Choose your login type</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="btn btn-secondary p-3" id="google-login-button"><img src="img/logos/google.png"></button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-secondary p-3" onclick="$('#login-rest').show(); $('#google-login-spinner').hide();">
+                                        <div style="padding-top: 10px; padding-bottom: 10px; padding-right: -3px">
+                                            Sign in with <img width="100px" src="img/logos/vr-sketch-logo.png">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <form method="POST">
+                            <div class="container" id="login-rest" style="display:none;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <hr class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="row mt-2">
+                                            <div class="col-6">Email:</div>
+                                            <div class="col-6"><input onfocus="clear_error()" autocomplete="username email" name="username" id="login-email" type="text"></div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-6">Password:</div>
+                                            <div class="col-6"><input onfocus="clear_error()" autocomplete="current-password" name="current-password" id="login-password" type="password"></div>
+                                        </div>
+                                        <div id="fullname-container" class="row mt-2" stype="display: none">
+                                            <div class="col-6">Full name:</div>
+                                            <div class="col-6"><input onfocus="clear_error()" autocomplete="name" name="name" id="fullname" type="text"></div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-6"><button type="button" onclick="create_vrsketch_account(); return false;" class="btn btn-secondary">Create an account</button></div>
+                                            <div class="col-6"><button type="submit" class="btn btn-primary" onclick="login_email_password(); return false;">Log in</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <hr class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="text-danger" id="error-bar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="container" id="google-login-spinner" style="display:none">
+                            Loading... <i class="fa fa-spin fa-spinner"></i>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="error" style="display:none;position:fixed;bottom:60px;left:0;width:100%;z-index:2000">
+            <div id="error-msg" class="alert alert alert-danger text-center m-3" role="alert">
+                There was an error <button type="button" class="close" onclick="hide_error()">×</button>
+            </div>
+        </div>
+
+        <div id="message-container" style="display:none;position:fixed;top:50px;left:0;width:100%;z-index:2000">
+            <div id="message-contents" class="alert alert-success text-center m-3" role="alert">
+                <span id="message-inner">This is a message of success</span><button style="padding-left:10px;padding-right: 10px;" type="button" class="close" onclick="hide_message_container()">×</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 mb-4">
+                <div>
+                    <a href="https://vrsketch.eu/">
+                        <img src="img/logos/vr-sketch-logo.svg" alt="VR Sketch" width="280px">
+                    </a>
+                    <br>
+                    <small>VR drawing tools for architects and designers</small>
+                </div>
+            </div>
+            <div class="col-md">
+                <div>
+                    <h5>Social</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://twitter.com/VrSketch" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCQhcsQ4QqbcT1_Hk7F2hKag" target="_blank"><i class="fab fa-youtube"></i>&nbsp;YouTube</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/vr_sketch/" target="_blank"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/Sya6sdghAR" target="_blank"><i class="fab fa-discord"></i>&nbsp;Discord</a>
+                        </li>
+                        <li>
+                            <a href="blog.html"><i class="fas fa-pencil-alt"></i>&nbsp;Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://forum.vrsketch.eu">Forum</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div>
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="docs-getting-started.html">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="faqs.html">FAQ's</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="pdf/tnc.pdf">Terms and Conditions</a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://drive.google.com/open?id=1uDbTl4JJtLobN8Lc-bz3OibkYomQlUPX">Media pack</a>
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div>
+                    <h5>Actions</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="mailto:info@baroquesoftware.com">Email us</a>
+                        </li>
+                        <li>
+                            <a href="#subscribe">Subscribe to newsletter</a>
+                        </li>
+                        <li>
+                            <a href="https://extensions.sketchup.com/en/content/lightscape-vr-designer">Try now</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text-muted mt-5">
+            Made with love by the
+            <a href="https://baroquesoftware.com/" target="_blank">Baroque Software</a>
+            team. © 2019-2022 VR Sketch
+        </p>
+    </div>
+</footer>
+
+    <!-- JS imports -->
+    <noscript style="position:fixed;bottom:20px;width:100%;;padding:10px;;background-color:rgb(255, 146, 112);text-align:center;z-index:150;">Your browser either does not support JavaScript or it not active. Please activate JavaScript.</noscript>
+    
+    <script src="js/libraries/jquery-3.1.1.min.js"></script>
+    <script src="js/libraries/popper.min.js"></script></body></html>

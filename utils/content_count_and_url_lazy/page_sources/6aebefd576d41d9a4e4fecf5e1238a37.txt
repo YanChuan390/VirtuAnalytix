@@ -1,0 +1,592 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="A game about flying in a wingsuit" name="description">
+
+    <title>Volo Airsport · virtual playground in the sky</title>
+
+    <link href="lib/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="style.css?version=7" rel="stylesheet">
+
+    <link href="lib/blueimp-gallery-2.21.3/css/blueimp-gallery.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="media/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="media/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="media/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="media/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="media/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="media/favicons/manifest.json">
+    <link rel="shortcut icon" href="media/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Volo Airsport">
+    <meta name="application-name" content="Volo Airsport">
+    <meta name="msapplication-TileColor" content="#49a1a8">
+    <meta name="msapplication-TileImage" content="media/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="media/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#49a1a8">
+    
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-S24RM7JXSH&amp;cx=c&amp;_slc=1"></script><script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/7ee36b0e/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        
+        ga('create', 'UA-54427197-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#">Project name</a> -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="inlinelist">
+              <li><a class="navbar-brand" href="#buy">Buy</a></li>
+              <li><a class="navbar-brand" href="https://blog.volo-airsport.com">Blog</a></li>
+              <li><a class="navbar-brand" href="https://forum.volo-airsport.com/">Forums</a></li>
+              <!--<li><a class="navbar-brand"
+                  href="https://forum.volo-airsport.com/t/volo-airsport-user-manual/"
+                  >Manual</a></li>-->
+              <!-- <li><a class="navbar-brand" href="#early-access">Early Access</a></li> -->
+              <li><a class="navbar-brand" href="#faq">FAQ</a></li>
+              <li><a class="navbar-brand" href="https://dodistribute.com/access/T4x3p5AnKG/">Press</a></li>
+              <!-- <li><a class="navbar-brand" href="#team">Team</a></li> -->
+              <!-- <li><a class="navbar-brand" href="#jobs">Jobs</a></li> -->
+              <li class="social-media">
+                  <a class="navbar-brand" title="Facebook" href="https://www.facebook.com/pages/Volo-Airsport/119282711432710">
+                      <img alt="Facebook" src="media/facebook.png">
+                  </a>
+              </li>
+              <li class="social-media">
+                  <a class="navbar-brand" title="Twitter" href="https://twitter.com/VoloAirsport">
+                      <img alt="Twitter" src="media/twitter.png">
+                  </a>
+              </li>
+              <li class="social-media">
+                  <a class="navbar-brand" title="YouTube" href="https://www.youtube.com/user/Serialtinus">
+                      <img alt="YouTube" src="media/youtube.png">
+                  </a>
+              </li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+        <section id="introduction">
+            <div id="header-content" class="center-align">
+                <h1>
+                    <span style="display: none;">Volo Airsport</span>
+                    <img id="logo" src="media/logo.png" alt="Volo Airsport">
+                </h1>
+                <object class="loading-indicator" data="media/loading-indicator.svg" type="image/svg+xml"></object>
+            </div>
+            
+
+            <div class="featured-video__wrapper" style="position: static;">
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe id="header-video" class="volo-video fade-in" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Volo Airsport v3.7 Trailer 21:9" width="560" height="316" src="https://www.youtube.com/embed/0Kl9nL-k0Fo?autoplay=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;loop=0&amp;fs=1&amp;cc_load_policy=0&amp;iv_load_policy=3&amp;autohide=1&amp;color=white&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fvolo-airsport.com&amp;widgetid=1"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <main>
+    <div class="container">
+        <section id="news" class="row news">
+            <h2>News</h2>
+
+            <div id="news-items">
+                <div class="col-md-4 story"><h3>Goodbye, Volo</h3><div class="date">Friday June 2, 2017</div>Hello Pilots, For the past six years, Volo Airsport has been our lives. We’ve thought about it long into the night when we should’ve been sleeping, worked on it weekends and holidays… We love th <a href="https://blog.volo-airsport.com/2017/06/goodbye-volo/">more...</a></div><div class="col-md-4 story"><h3>Ramjet Anvil Show Ep. 17: Gameplay Experiments and Contest Results</h3><div class="date">Sunday May 7, 2017</div>This week we show various bullet hell and wind effector experiments and reveal the flight contest winners! 01:19 Bullet Hell 07:45 Wind Effectors 12:19 Contest results! 13:11 Irate Earwig’s entr <a href="https://blog.volo-airsport.com/2017/05/ramjet-anvil-show-ep-17-gameplay-experiments-and-contest-results/">more...</a></div><div class="col-md-4 story"><h3>Video Contest Extension: 4th of May!</h3><div class="date">Monday May 1, 2017</div>Hello pilots! We’re extending the contest deadline right up to (and including) this Thursday so you can get your entries in, and we’ll announce the winners on Friday’s episode. We <a href="https://blog.volo-airsport.com/2017/05/video-contest-extension-4th-of-may/">more...</a></div>            </div>
+        </section>
+
+      <div class="row">
+        <section id="release" class="col-md-6">
+            <h2 style="margin-top: 0; margin-bottom: 0;">Current release: v3.7</h2>
+            <p><i>April 2017</i></p>
+            <ul>
+              <li>Parachutes simulated by a rich aerodynamics model</li>
+              <li>Seamless transition from wingsuit to parachute and back again</li>
+              <li>An editor to create your own parachutes. Tweak your parachute to get the best aerodynamic properties for your flying style</li>
+              <li>Twice as many spawnpoints as before, including special parachute spawnpoints</li>
+              <li>Performance optimizations</li>
+            </ul>
+        </section>
+        <section id="buy" class="col-md-6">
+          <h2 style="display: none;">Buy now</h2>
+            <ul class="nostyle-list">
+                <li style="margin-right: 30px">
+                   <iframe id="itchio-widget" frameborder="0" src="https://itch.io/embed/26701?linkback=true"></iframe>
+                </li>
+                <li>
+                    <!-- <iframe src="https://store.steampowered.com/widget/329190/?dynamiclink=1" height="190" 
+                        frameborder="0" width="552"></iframe> -->
+                    <p>
+                        Or buy Volo Airsport on 
+                        <a title="Steam" href="http://store.steampowered.com/app/329190">
+                            <img style="width: 150px" src="media/steam.png" alt="Steam">
+                        </a>
+                    </p>
+                </li>
+            </ul>
+         <p style="margin-top: 30px;" class="supported-platforms">
+             <img alt="Windows, Mac OSX, Linux, Oculus, Vive" src="media/supported-operating-systems.png">
+         </p>
+          <p>
+            Read the <a href="#system-requirements">system requirements</a> and <a href="#early-access">early access info</a> before buying.
+          </p>
+        </section>
+     </div>
+
+      <section id="screenshots" class="row">
+          <h2>Screenshots</h2>
+          <div class="screenshot col-md-4">
+              <div class="featured-video__wrapper" style="position: static;">
+                  <object class="loading-indicator" data="media/loading-indicator.svg" type="image/svg+xml"></object>
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe id="thumbnail-video-1" class="volo-video fade-in" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Volo Airsport v3.7 Clip 1" width="560" height="316" src="https://www.youtube.com/embed/dDIGcGn47T0?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;loop=1&amp;fs=1&amp;cc_load_policy=0&amp;iv_load_policy=3&amp;autohide=1&amp;color=white&amp;playlist=dDIGcGn47T0&amp;suggestedQuality=small&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fvolo-airsport.com&amp;widgetid=2"></iframe>
+                  </div>
+              </div>
+          </div>
+          <div class="screenshot col-md-4">
+              <div class="featured-video__wrapper" style="position: static;">
+                  <object class="loading-indicator" data="media/loading-indicator.svg" type="image/svg+xml"></object>
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe id="thumbnail-video-2" class="volo-video fade-in" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Volo Airsport v3.7 Clip 1" width="560" height="316" src="https://www.youtube.com/embed/xo7jrnPP9rI?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;loop=1&amp;fs=1&amp;cc_load_policy=0&amp;iv_load_policy=3&amp;autohide=1&amp;color=white&amp;playlist=xo7jrnPP9rI&amp;suggestedQuality=small&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fvolo-airsport.com&amp;widgetid=3"></iframe>
+                  </div>
+              </div>
+          </div>
+          <div class="screenshot col-md-4">
+              <div class="featured-video__wrapper" style="position: static;">
+                  <object class="loading-indicator" data="media/loading-indicator.svg" type="image/svg+xml"></object>
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe id="thumbnail-video-3" class="volo-video fade-in" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Volo Airsport v3.7 Clip 1" width="560" height="316" src="https://www.youtube.com/embed/uM0O1Bpd80k?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;loop=1&amp;fs=1&amp;cc_load_policy=0&amp;iv_load_policy=3&amp;autohide=1&amp;color=white&amp;playlist=uM0O1Bpd80k&amp;suggestedQuality=small&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fvolo-airsport.com&amp;widgetid=4"></iframe>
+                  </div>
+              </div>
+          </div>
+          <div class="screenshot col-md-4">
+            <a href="media/screenshots/1.jpg" title="Mountains" data-gallery="">
+              <img alt="Screenshot" src="media/screenshots/thumbnails/1.jpg">
+            </a>
+          </div>
+          <div class="screenshot col-md-4">
+            <a href="media/screenshots/2.jpg" title="Parachute" data-gallery="">
+              <img alt="Screenshot" src="media/screenshots/thumbnails/2.jpg">
+            </a>
+          </div>
+          <div class="screenshot col-md-4">
+            <a href="media/screenshots/3.jpg" title="Dive" data-gallery="">
+              <img alt="Screenshot" src="media/screenshots/thumbnails/3.jpg">
+            </a>
+          </div>
+      </section>
+
+      <div class="row">
+          <section id="early-access" class="col-sm-6">
+              <h2>Early-Access</h2>
+              <p>We're working very hard to make Volo Airsport a unique, beautiful and thrilling experience, but we're not done yet! With your support we can expand the game, and make it into the best aerial playground you've ever seen.
+              </p>
+              <p>
+                Volo Airsport will change significantly over the course of development. If you are not excited to play the game in its current state, then you may want to wait until the game progresses further in development.
+              </p>
+
+              <h3>What does Early Access mean, and what do I get for my purchase?</h3>
+              <p>
+                You get instant access to the game and can start playing! You get access to current and future versions of Volo Airsport for a <a href="#buy">single purchase</a>.
+              </p>
+              <p>
+                The price will increase as the game grows. If you want to get it cheap, get it now.
+              </p>
+
+              <h3>What's in it now?</h3>
+
+              <ul>
+                <li>A single, finely tuned wingsuit to fly with</li>
+                <li>A fully customizable parachute, with complex aerodynamics</li>
+                <li>A huge landscape inspired by the Swiss and French Alps, with lots of lines to try</li>
+                <li>An advanced and completely customizable time and weather system</li>
+                <li>Time trail courses that show you some cool lines to fly on the map</li>
+                <li>Highly configurable graphics and input settings</li>
+                <li>VR Support (Gamepad Required)</li>
+              </ul>
+
+              <h3>Where is it going?</h3>
+
+              <p>
+                The game design is changing as we go along, but we can tell you that we're thinking about the following features:
+              </p>
+              <ul>
+                <li>Online Multiplayer </li>
+                <li>Walking, jumping from exit points</li>
+                <li>Player-designed Skydiving Styles</li>
+                <li>Customizable Gear Design (Aerodynamics &amp; Looks)</li>
+                <li>Player-Created Events and Challenges</li>
+                <li>Replay Editor</li>
+                <li>Additional maps</li>
+                <li>Mod Support</li>
+              </ul>
+          </section>
+
+          <section id="faq" class="col-sm-6">
+            <h2>Frequently asked questions</h2>
+            <p>Got a question that isn’t listed? <a href="https://ask.fm/m_zandvliet">Ask-me-anything</a>, or send us an
+              <a href="mailto:info@volo-airsport.com">email</a>.
+            </p>
+
+            <section>
+              <h3 id="faq-game">The Game</h3>
+
+              <span class="q">Where can I get a press copy of the game?</span>
+
+              <p>
+                You can request a press copy of Volo Airsport through our <a href="https://dodistribute.com/access/T4x3p5AnKG/">distribute()</a> page.
+              </p>
+
+              <span class="q">I need the Manual, where is it?</span>
+
+              <p>
+                <a href="https://forum.volo-airsport.com/t/volo-airsport-user-manual/">Here you go.</a>
+              </p>
+
+              <span id="faq-donations" class="q">I purchased the game in the past but can't access new versions, help!</span>
+
+              <p>
+                Sorry about that! <a href="mailto:info@volo-airsport">Send us an email</a> using the email address you used for your purchase and we'll sort it out.
+              </p>
+            </section>
+
+            <section>
+              <h3 id="faq-development">Development</h3>
+
+              <span class="q">Are you looking for team members?</span>
+
+              <p>
+                We certainly are, <a href="mailto:info@volo-airsport.com">get in touch</a>! We are especially looking for 3D artists.
+              </p>
+
+              <span class="q">Are you still working on The Aurora Wager?</span>
+
+              <p>
+                We would love to work more on The Aurora Wager, but we have very limited resources (time, people, money) available. Right now we can only focus on one game at a time.
+              </p>
+            </section>
+
+            <section>
+              <h3 id="faq-monetization">Monetization</h3>
+
+              <span class="q">Can I create videos of your games and share them online?</span>
+
+              <p>
+                Absolutely, we'd love it if you did. Share them with us on <a href="https://forum.volo-airsport.com">the forums</a>!
+              </p>
+
+              <span class="q">Can I monetize those videos?</span>
+
+              <p>
+                Go right ahead! (<a href="monetization.php">Full permission details</a>)
+              </p>
+            </section>
+
+            <h3 id="system-requirements">System Requirements</h3>
+
+            <p>Volo Airsport is available on Windows, Mac OS X and Linux</p>
+
+            <h4>Minimum System Requirements</h4>
+
+            <ul>
+              <li>Windows 7 SP1, Max OS X 10.9, Ubuntu 14.04 LTS</li>
+              <li>Dual Core CPU 2.6Ghz</li>
+              <li>4GB RAM</li>
+              <li>500MB Free Disk Space</li>
+              <li>Dedicated Graphics Card (GeForce 650GT or equivalent)</li>
+              <li>Broadband Internet Connection (to download updates)</li>
+            </ul>
+
+            <p>A dedicated graphics card is definitely recommended. Windows and Mac computers with Intel Integrated Graphics chips: <b>HD4000 minimum</b>, any lower results in very low framerates.</p>
+
+            <h4>VR System Requirements</h4>
+
+            <ul>
+              <li>Windows 7 SP1 or up</li>
+              <li>Intel i5-4590</li>
+              <li>4GB RAM</li>
+              <li>NVidia GeForce 970</li>
+            </ul>
+
+            <p>
+              These requirements are not set in stone. As we refine the game less powerful systems might become able to run the game, especially for VR.
+            </p>
+
+            <h4>Supported Controllers</h4>
+
+            <p>
+              You can play the game with mouse and/or keyboard, but the game plays best with a gamepad like the Xbox 360, Xbox One or Playstation 4 controllers. Joysticks are also supported.
+            </p>
+          </section>
+
+      </div>
+
+      <div class="row">
+          <section id="team" class="col-sm-6">
+          <h2>The Team</h2>
+            <p>Ramjet Anvil is a small independent game studio based in the Netherlands.</p>
+            <p>It was founded in 2010 by Martijn for the purpose of making games. Having just finished studies in music composition and technology he found that making games was actually really difficult. Years later, here we are, ready to share Volo
+              Airsport with the world.
+            </p>
+            <p>
+              Today Ramjet Anvil consists of the following members and contributors:
+            </p>
+            <!-- TODO Decrease portrait size as device gets smaller -->
+            <div class="row">
+              <div class="col-xs-6 col-md-6">
+                <img alt="Portrait Martijn" class="portrait" src="media/portrait_martijn.png">
+                <p>
+                    Martijn Zandvliet<br> 
+                    <a href="https://twitter.com/m_zandvliet">@m_zandvliet</a><br>
+                    <i>Lead Game Designer / Programmer</i>
+                </p>
+              </div>
+              <div class="col-xs-6 col-md-6">
+                <img alt="Portrait Frank" class="portrait" src="media/portrait_frank.png">
+                <p>
+                    Frank Versnel<br>
+                    <a href="https://twitter.com/fversnel">@fversnel</a><br>
+                    <i>Programmer / Game Designer</i>
+                </p>
+              </div>
+            </div>
+            <ul id="contributors">
+              <li>
+                <a href="https://twitter.com/WritNelson">Xalavier Nelson Jr.</a> - <i>Game Designer / Ramjet Anvil Show Host</i>
+              </li>
+              <li>
+                <a href="https://twitter.com/MIKMANNER">Michael Manning</a> - <i>Sound Designer / Composer</i>
+              </li>
+              <li>
+                <a href="http://moldybyrd.com">Moldybyrd Studio</a> - <i>Concept Art / Branding / Website</i>
+              </li>
+              <li>
+                Robin Vink - <i>Game Designer / 2D-3D Artist for The Aurora Wager</i>
+              </li>
+            </ul>
+
+            <h3>Our Games</h3>
+            <p>We’re currently working on two games about flying:</p>
+            <ul>
+              <li><a href="#">Volo Airsport</a>&nbsp;- A game about&nbsp;skydiving with wingsuits
+              </li>
+              <li><a href="https://blog.volo-airsport.com/download-the-aurora-wager/">The Aurora Wager</a>&nbsp;- A game about flying in a hot air balloon
+              </li>
+            </ul>
+            <h3>Contact us</h3>
+
+            <p>
+              E-mail: <a href="mailto:info@volo-airsport.com">info@volo-airsport.com<br> </a>
+              Twitter: <a href="https://twitter.com/voloairsport">@VoloAirsport</a>
+            </p>
+
+            <p>Contact us about:</p>
+            <ul>
+              <li>Preview builds, information, interviews, events</li>
+              <li>Questions about game development</li>
+              <li>Freelance design and programming</li>
+              <li>Anything else! (Well, mostly anything anyway)</li>
+            </ul>
+        </section>
+
+          <section id="jobs" class="col-sm-6">
+              <h2>Jobs</h2>
+              <p>Join the team of two game makers working on the early-access title Volo Airsport.</p>
+
+              <h3>3D artist (Freelance or Internship)</h3>
+              <p>We’re looking for someone who can take control over large aspects of the look and feel of the game.
+                As a 3D artist you think and discuss about how to best translate the concept art to in-game 3D models.
+                Since the game is currently in early-access you will immediately see your work out in the wild.</p>
+
+              <div>The following skills are required:
+
+                <ul>
+                  <li>Modeling, texturing, rigging, and to a lesser extent animation.</li>
+                  <li>Experience making characters and environment props.</li>
+                  <li>Used to working with an iterative workflow.</li>
+                  <li>Not afraid to tackle problems you’re not familiar with.</li>
+                </ul>
+
+              Plusses would be:
+
+                <ul>
+                  <li>Experience with sculpting, retopo, and baking for game engines.</li>
+                  <li>Experience with the Unity engine.</li>
+                </ul>
+              </div>
+
+              <p>You’ll work in a multidisciplinary team where everyone has multiple roles.</p>
+
+              <div>
+                We offer:
+
+                <ul>
+                <li>A chance to learn the ins-and-outs of developing an early-access game,
+                  how to make design decisions, expand the game and deal with feedback from the community.</li>
+                <li>A chance to work on an indie title that has a very dedicated community.</li>
+                <li>Help with the technicalities that come with building models for a game, including performance and time constraints.</li>
+                <li>A financial compensation for your efforts.</li>
+                </ul>
+              </div>
+
+              <p>
+                To apply send us an email with your motivation and portfolio to <a href="mailto:info@volo-airsport.com">info@volo-airsport.com</a>
+              </p>
+
+              <p><i>P.S. Volo Airsport does not contain any guns.</i></p>
+          </section>
+
+      </div>
+
+      <div class="row">
+         <section id="powered-by" class="col-md-12">
+             <h2>Powered by</h2>
+             <ul class="inlinelist">
+                 <li>
+                     <a title="Unity 3D" href="https://unity3d.com/">
+                         <img alt="Unity 3D" src="media/unity-logo.png">
+                     </a>
+                 </li>
+                 <li>
+                     <a title="Creative industries fund" href="http://www.stimuleringsfonds.nl/en">
+                         <img alt="Creative industries fund" src="media/creative-industries-fund.png">
+                     </a>
+                 </li>
+             </ul>
+         </section>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>© 2013 - 2023 Ramjet Anvil</p>
+      </footer>
+    </div> <!-- /container -->
+    </main>
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <div class="slides"></div>
+        <!-- <h3 class="title"></h3> -->
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+    <script src="lib/bootstrap-3.3.7/assets/js/vendor/jquery.min.js"></script>
+    <script src="lib/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="lib/blueimp-gallery-2.21.3/js/blueimp-gallery.min.js"></script>
+    <script>
+        document.getElementById('screenshots').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+    </script>
+    <script async="" src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        function onYouTubeIframeAPIReady() {
+            function video(videoId, elementId, props, onInitialized) {
+                var isMuted = props['isMuted'];
+                var loop = props['loop'] === true ? 1 : 0;
+                var suggestedQuality = props["quality"]; // small, medium, large, hd720, hd1080, highres
+
+                var playerVars = {
+                    autoplay: props['autoplay'] === true ? 1 : 0,
+                    controls: props['hideControls'] === true ? 0 : 1,
+                    showinfo: 0,        // Hide the video title
+                    rel: 0,             // Don't show related videos after playing
+                    modestbranding: 1,  // Hide the Youtube Logo
+                    loop: loop,         // Run the video in a loop
+                    fs: 1,              // Show the full screen button
+                    cc_load_policy: 0,  // Hide closed captions
+                    iv_load_policy: 3,  // Hide the Video Annotations
+                    autohide: 1,        // Hide video controls when playing
+                    color: 'white'
+                };
+                if(loop) {
+                    playerVars['playlist'] = videoId;
+                }
+                if(suggestedQuality != undefined) {
+                    playerVars['suggestedQuality'] = suggestedQuality;
+                }
+
+                return new YT.Player(elementId, {
+                    videoId: videoId,
+                    width: 560,
+                    height: 316,
+                    playerVars: playerVars,
+                    events: {
+                        onReady: function(e) {
+                            if(isMuted) {
+                                e.target.mute();
+                            }
+                            if(onInitialized != undefined) {
+                                var playerElement = document.getElementById(elementId);
+                                onInitialized(playerElement);
+                            }
+                        },
+                    }
+                });
+            }
+
+            function fadeInVideo(video) {
+                video.className += ' fade-in';
+            }
+
+            video('0Kl9nL-k0Fo', 'header-video', 
+                    {autoplay: true, isMuted: true, hideControls: false, loop: false},
+                    fadeInVideo);
+
+            var screenshotVideoProps = {autoplay: true, isMuted: true, hideControls: true, loop: true,
+                                        quality: 'small'};
+            video('dDIGcGn47T0', 'thumbnail-video-1', screenshotVideoProps, fadeInVideo);
+            video('xo7jrnPP9rI', 'thumbnail-video-2', screenshotVideoProps, fadeInVideo);
+            video('uM0O1Bpd80k', 'thumbnail-video-3', screenshotVideoProps, fadeInVideo);
+        }
+    </script>
+  
+
+</body></html>

@@ -1,0 +1,612 @@
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="ROBOTS" content="ALL">
+        <meta name="DOCUMENT-STATE" content="DYNAMIC">
+        <meta content="Web-group" name="Author">
+        <meta name="keywords" content="AFL Productions">
+        <meta name="description" content="AFL Productions">
+        <title>AFL Productions</title>        
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="/css/style2.css" rel="stylesheet" type="text/css" charset="utf-8">
+        <script src="https://partner.googleadservices.com/gampad/cookie.js?domain=www.aflproductions.com&amp;callback=_gfp_s_&amp;client=ca-pub-5098432052762321"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202309060101/show_ads_impl_fy2021.js" id="google_shimpl"></script><script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.tooltip.pack.js"></script>
+
+        <!--<link rel="stylesheet" type="text/css" href="/js/cbpBGSlideshow/default.css" />-->
+        <!--<link rel="stylesheet" type="text/css" href="/js/cbpBGSlideshow/component.css" />        
+        <script src="/js/cbpBGSlideshow/modernizr.custom.js"></script>-->
+
+        
+        <!--<link rel="stylesheet" type="text/css" href="/js/wowslider/style.css">-->        
+        <script type="text/javascript" src="/js/wowslider/wowslider.js"></script>
+        
+        <!--<script type="text/javascript" src="/js/jsnow.js"></script>-->
+<!-- Adsense 05.06.2023 -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5098432052762321" crossorigin="anonymous" data-checked-head="true"></script>
+<!-- end of Adsense 05.06.2023 -->
+        <script type="text/javascript">
+        
+            var lang = 'en';    
+                
+            $(document).ready(function(){
+                
+                /*
+                $().jSnow({
+                    vSize:'100',
+                    fadeAway:true,
+                    zIndex:'9999'
+                });
+                */
+                
+                $('a.tit').each(function(){
+                    var height = $(this).height();
+                    //console.log(height);
+                    if(height < 40){
+                        $(this).removeClass('tit');
+                        $(this).removeAttr( "title" );
+                    }
+                });
+                $('a.tit').tooltip({delay:500,showURL: false});
+                
+                
+
+                
+                
+                $('.top_menu li').hover(
+                    function () {
+                        //show its submenu
+                        $('ul', this).stop().slideDown(100);
+             
+                    },
+                    function () {
+                        //hide its submenu
+                        $('ul', this).stop().slideUp(100);         
+                    }
+                );                
+                
+            });
+            
+            function gotoPage(request){
+                document.location.href = request;
+            }            
+            
+        </script>
+        <!--  BreadCrumb  -->
+        <!--<link rel="stylesheet" href="/css/BreadCrumb.css" type="text/css">-->
+        <!--<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>-->
+        <!--<script type="text/javascript" src="/js/jquery.dimensions.js"></script>-->
+        <!--<script type="text/javascript" src="/js/jquery.jBreadCrumb.js"></script>-->
+        <!--  ************  -->
+
+        <!-- menu advansed search -->
+        <style>
+        /* all form DIVs have position property set to relative so we can easily position newly created SPAN */
+        /* form div{position:relative;}  */
+        /* setting the width and height of the SELECT element to match the replacing graphics */
+        select.select{position:relative;z-index:10;width:144px !important;height:26px !important;line-height:26px;cursor:pointer;}
+        /* dynamically created SPAN, placed below the SELECT */
+        span.select{position:absolute;bottom:0;float:left;left:0;width:144px;height:26px;line-height:26px;text-indent:10px;/*background:url(images/bg_select.gif) no-repeat 0 0;*/background:url(img/arrow_down_2.png) no-repeat 0 9px;cursor:default;z-index:1;color:#ffffff;}
+        </style>        
+        <script type="text/javascript">
+        $(document).ready(function(){
+            if (!$.browser.opera) {
+                $('select.select').each(function(){
+                    var title = $(this).attr('title');
+                    if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+                    $(this)
+                        .css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+                        .after('<span class="select">' + title + '</span>')
+                        .change(function(){
+                            val = $('option:selected',this).text();
+                            $(this).next().text(val);
+                            })
+                });
+            };        
+        });
+        </script>
+        <!-- // menu advansed search -->
+        
+        <link rel="stylesheet" type="text/css" href="/css/scrollable.css">
+<script type="text/javascript" src="/js/scrollable.js"></script>
+<script>
+$(document).ready(function(){
+    
+    $('.rubric_main').hover(
+        function () {
+            //show its submenu
+            $('.block_subrub', this).stop().slideDown(100);
+        },
+        function () {
+            //hide its submenu
+            $('.block_subrub', this).stop().slideUp(100);         
+        }
+    );
+                
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var h = $('.main_table').height();
+
+    if(!$.browser.mozilla){
+        $('.js_height').height( h );
+    }
+}); 
+</script>
+ 
+
+    <meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="></head>
+    <body>
+    
+    
+    
+        <div style="height:30px;position: absolute;width: 100%;z-index: 9999;top:10px;">
+            <div style="width:1140px;margin:0 auto;position: relative;">
+                                <a href="?lang=ru" title="рус" style="font-size:13px !important;color:#ffffff;">рус</a>
+                <span style="color:#ffffff;padding:0 10px;">|</span>
+                <a href="?lang=en" title="eng" style="font-size:13px !important;color:#ffffff;">eng</a>
+                <span style="color:#ffffff;padding:0 10px;">|</span>
+                <a href="/" style="font-size:13px !important;color:#ffffff;position:absolute;left:100px;top:-5px;"><img src="/img/2/home.png"></a>
+            </div>
+        </div>
+        <div style="height:10px;background-color:#000000;"></div>
+        <div style="height:115px;width:100%;z-index:999;background-color:#000000;">
+            <div style="background:url(/img/2/logo.png) no-repeat scroll 0 0 transparent;height:107px;width:1420px;margin:0 auto;cursor: pointer;" onclick="document.location.href='/'"></div>
+        </div>
+        <div style="height:440px;width:100%;">
+    
+    
+                                    <!-- Start WOWSlider BODY section -->
+                                    <div id="wowslider-container1">
+                                        <div class="ws_images"><div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;"><img src="/img/sliders/afl-music_banner-with-grammaphone 20170703 fulltext.jpg" alt="" title="" id="wows1_20" height="440px" style="width: 100%;"></div>
+                                            <ul style="position: absolute; top: 0px; animation: auto ease 0s 1 normal none running none; width: 100%; left: 0%;">
+                                                    <li style="width: 100%; font-size: 0px;"><a href="/video.php?id=0&amp;lang=en"><img src="/img/sliders/afl-music_banner-with-grammaphone 20170703 fulltext.jpg" alt="" title="" id="wows1_20" height="440px" style="visibility: visible;"></a></li>
+                                            
+                                            </ul>
+                                        </div>
+                                        <!--<div class="ws_bullets">
+                                            <div>
+                                                <a href="#" title="1"><img src="data1/tooltips/1.jpg" alt="1"/>1</a>
+                                                <a href="#" title="2"><img src="data1/tooltips/2.jpg" alt="2"/>2</a>
+                                                <a href="#" title="3"><img src="data1/tooltips/3.jpg" alt="3"/>3</a>
+                                            </div>
+                                        </div
+                                        <div class="ws_shadow"></div>>-->
+                                    <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 10; background: rgb(255, 255, 255); opacity: 0;"><a href="http://www.aflproductions.com/video.php?id=0&amp;lang=en" style="display: block; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" target=""></a></div><a href="#" class="ws_next"></a><a href="#" class="ws_prev"></a><div class="ws-title" style="display:none"></div></div>
+                                    <script type="text/javascript">
+                                    var slider_delay = 2000;
+                                    </script>
+<script type="text/javascript">
+var slider_delay = 0;
+</script>
+                                    <script type="text/javascript" src="/js/wowslider/script.js"></script>
+                                    <!-- End WOWSlider BODY section -->    
+    
+        <!--<div class="header_banner">
+            <div>
+                               
+                <a href="?lang=ru">рус</a>
+                | 
+                <a href="?lang=en">eng</a>
+            </div>
+        </div>-->
+        </div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5098432052762321&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1694376575&amp;plat=3%3A65536%2C4%3A65536%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=http%3A%2F%2Fwww.aflproductions.com%2F&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;asrtr=1&amp;asiscm=1&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1&amp;asladp=1&amp;dt=1694376574999&amp;bpp=14&amp;bdt=2893&amp;idt=517&amp;shv=r20230906&amp;mjsv=m202309060101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=2136563451179&amp;frm=20&amp;pv=2&amp;ga_vid=1327955061.1694376576&amp;ga_sid=1694376576&amp;ga_hid=259673022&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1019&amp;bih=651&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759837%2C44795922&amp;oid=2&amp;pvsid=1283993760676121&amp;tmod=2041657895&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C668&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=33792&amp;bc=23&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=541" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins>
+
+
+
+
+        
+        
+        
+
+        <div style="height:58px;">
+        <div style="width: 1260px; margin: 0px auto; position: relative;">
+        
+        
+                    <ul class="top_menu top_menu_padding_en">
+                                    <li class="but" style="width:130px;"><a href="/about.php?lang=en" title="">About us</a></li>
+                                    <li class="but" style="width:130px;"><a href="/news.php?lang=en">Releases</a></li>
+                                    <li class="but" style="width:130px;"><a href="/contacts.php?lang=en" title="">Contacts</a></li>						
+                                    <li class="but" style="width:130px;">                                        
+                                        <a href="#">&nbsp;&nbsp;Catalogues&nbsp;&nbsp;&nbsp;&nbsp;</a><ul><li class="but" style="width:345px;text-align:left;">
+                                                    <a href="main.php?catalog=1&amp;lang=en">Full Catalogue</a>
+                                                </li><li class="but" style="width:345px;text-align:left;">
+                                                    <a href="main.php?catalog=2&amp;lang=en" class="current">International Catalogue</a>
+                                                </li>                                        </ul>
+                                    </li>
+                                    <li class="but" style="width:160px;"><a href="/policy.php?lang=en" title="">Privacy Policy</a></li>										
+
+                                    
+                                    
+
+                                </ul>
+        
+        
+        
+        
+            <!--
+            <a href='/about.php?lang=en' title=''>About us</a>
+            <span style="color:black;">|</span>
+            <a href='/news.php?lang=en'>Releases</a>
+            <span style="color:black;">|</span>
+            <a href='/contacts.php?lang=en' title=''>Contacts</a>
+            <span style="color:black;">|</span>
+            <a href='#'>Catalogue</a>
+            -->
+            <div class="search-container">
+            <form class="anon-search-container" action="/search.php">
+                <!--
+                <div style="position: relative;width:150px;float:left;">
+                    <select  class="select" name="where" style="background: transparent;overflow: hidden;z-index: 10;display: block;border:0px;">
+                      <option style="font-size:14px;color:black;" value="all">&nbsp;Search by all fields</option>
+                      <option style="font-size:14px;color:black;" value="title" selected>&nbsp;Search by name</option>
+                      <option style="font-size:14px;color:black;" value="discription">&nbsp;Search in description</option>
+                      <option style="font-size:14px;color:black;" value="genre">&nbsp;Search by genre</option>                                                  
+                    </select>                                        
+                </div>
+                -->
+                <input type="hidden" name="where" value="title">            
+                
+                <input type="text" class="js-search search-box" size="26" placeholder="Search" autocomplete="off" autocorrect="off" name="search">
+                <input type="hidden" value="ac" name="from">
+                
+                <button title="Search" class="iconsearch" type="submit"></button>
+                <div class="autocomplete-results-container"></div>
+            </form>            
+            </div>
+        </div>
+        </div>
+
+
+
+
+        
+        
+    
+<div style="width:100%;height:100%;">
+    <div style="width:1260px;margin:0 auto;">        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="main_table">
+        <tbody><tr>
+            <td rowspan="3" valign="top" style="height: 100%;">
+            
+            <!--  Panel_1  -->
+            <table cellpadding="0" cellspacing="0" border="0" class="panel_1 js_height" style="height: 582px;">
+                <tbody><tr><td class="panel_1_top"></td></tr>
+                <tr><td class="panel_1_bg">
+                        <table cellpadding="0" cellspacing="0" border="0" class="panel_1">
+                            <tbody><tr><td class="panel_1_bg_bottom js_height" style="height: 582px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" class="panel_1">
+                                        <tbody><tr><td class="panel_1_bg_top">
+                                                <table cellpadding="0" cellspacing="0" border="0" class="panel_1">
+                                                    <tbody><tr><td class="panel_1_content">
+                                                    <!--CONTENT-->
+                                                    
+
+                                    <div class="sections">SECTIONS OF INTERNATIONAL CATALOGUE</div>
+                                    <table border="0" width="100%" class="sections_itms">
+                                        <tbody><tr>
+                                            <td valign="top" width="50%">                
+                                                                                                            <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=120&amp;lang=en">3D 4K</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=101&amp;lang=en">Animal Planet</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=72&amp;lang=en">Animation</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=119&amp;lang=en">Award-Winning Shorts</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=74&amp;lang=en">Christmas &amp; New Year's Programs</a>
+                                                                                                            
+                                                                    <ul class="block_subrub">
+                                                                        <li><a href="/rubric.php?id=77&amp;lang=en">Animation for Kids</a></li><li><a href="/rubric.php?id=78&amp;lang=en">Collection of Christmas Animation</a></li>                                                                    </ul>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=69&amp;lang=en">Comedy</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=70&amp;lang=en">Comedy Clip Show</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=75&amp;lang=en">Concerts</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=98&amp;lang=en">Crime &amp; Investigation Series</a>
+                                                                                                            
+                                                                    <ul class="block_subrub">
+                                                                        <li><a href="/rubric.php?id=99&amp;lang=en">In Russia</a></li>                                                                    </ul>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=68&amp;lang=en">Entertainment Programs</a>
+                                                                                                            
+                                                                    <ul class="block_subrub">
+                                                                        <li><a href="/rubric.php?id=79&amp;lang=en">Soviet Circus Golden Collections — 25 Hours</a></li>                                                                    </ul>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=76&amp;lang=en">Formats</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=65&amp;lang=en">Hidden Camera Shows</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=66&amp;lang=en">Home Video/ Clip Shows</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                        </td>
+                                                                <td valign="top" width="50%">
+                                                                                                                        <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=116&amp;lang=en">Infotainment</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=45&amp;lang=en">Movies</a>
+                                                                                                            
+                                                                    <ul class="block_subrub">
+                                                                        <li><a href="/rubric.php?id=81&amp;lang=en">Classical American Movies</a></li>                                                                    </ul>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=118&amp;lang=en">Music</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=121&amp;lang=en">Music Video</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=67&amp;lang=en">Reality Clips Shows and Specials</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=12&amp;lang=en">Shorts</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=102&amp;lang=en">Show/ Talk Show</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=103&amp;lang=en">Travel around the World and Russia</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=71&amp;lang=en">TV Courts &amp;  Entertaining Programs</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=64&amp;lang=en">TV Series</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=111&amp;lang=en">UFO/ Mystic/ Magic</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=122&amp;lang=en">Virtual Reality</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                                                                                    <div class="rubric_main">
+                                                                <div>
+                                                                    <a href="/rubric.php?id=82&amp;lang=en">Women and Сhildren</a>
+                                                                                                                                    </div>
+                                                            </div>                            
+                                                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" colspan="2" style="padding:40px 0 0 20px;">
+
+                                                    <a href="/catalog.php?lang=en" style="color:#ff9933;text-decoration:underline;">Download catalogue in EXCEL</a>
+
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                                        
+                                                
+                                                    <!--//CONTENT-->
+                                                    </td></tr>
+                                                </tbody></table>
+                                        </td></tr>
+                                    </tbody></table>
+                            </td></tr>
+                        </tbody></table>
+                </td></tr>
+                <tr><td class="panel_1_bottom"></td></tr>
+            </tbody></table>
+            <!--//panel_1-->            
+            
+            
+            
+            
+            </td>
+            <td valign="top" align="right">
+            
+                <!--  Small Panel  -->                                
+                <div class="panel_2">
+                    <div class="panel_2_top">
+                    </div>            
+                    <div class="panel_2_bg">
+                        <div class="panel_2_bg_bottom">
+                            <div class="panel_2_bg_top">                            
+                                <div class="panel_2_content">                
+                                
+                                    <span style="font:20px HeliosExtThin;color:#ff9933;">B2B</span>
+                                    <hr style="border: 1px dotted #4c4c4c; border-style: none none dashed; color: #000000; background-color: #000000;">
+                                    <div style="padding:20px 0 0 20px;">
+                                        <a href="http://www.rfa.tv" target="_blank">
+                                            <span style="font:26px/26px HeliosExtThin;color:#ff9933;">GET</span><br>
+                                            <span style="font:16px/16px HeliosExtThin;color:#ffffff;text-transform:uppercase;">all the footage</span><br>
+                                            <span style="font:16px/16px HeliosExtThin;color:#ffffff;text-transform:uppercase;">you need</span><br>
+                                            <span style="font:26px/26px HeliosExtThin;color:#ff9933;">RIGHT</span><br>
+                                            <span style="font:26px/26px HeliosExtThin;color:#ff9933;">NOW!</span>
+                                        </a>
+                                    </div>
+                                                            
+                                </div><!-- //panel_2_content -->
+                            </div>
+                        </div>            
+                    </div>
+                    <div class="panel_2_bottom">
+                    </div>            
+                </div>
+                <!--  //Small Panel  -->            
+            
+            </td>
+        </tr>
+        <tr>
+            <td height="15">&nbsp;</td>
+        </tr>        
+        <tr>
+            <td valign="bottom" align="right">
+            
+                <!--  Small Panel  -->                                
+                <div class="panel_2">
+                    <div class="panel_2_top">
+                    </div>            
+                    <div class="panel_2_bg">
+                        <div class="panel_2_bg_bottom">
+                            <div class="panel_2_bg_top">                            
+                                <div class="panel_2_content">
+                                                
+                                    <div style="padding: 0 0 10px 0;">
+                                    <span style="color:#cccccc;font-weight: normal;">
+                                        AFL Productions<br>
+                                        <br>
+                                        Tel: <span style="color:#FF9933;">+1(415) 661-6146</span><br>
+                                        Email: <a href="mailto:pr@aflproductions.com" style="color:#FF9933;">pr@aflproductions.com</a>
+                                    </span>                                
+                                            
+                                    <hr style="border: 1px dotted #4c4c4c; border-style: none none dashed; color: #000000; background-color: #000000;">
+                                    
+                                    <span style="color:#cccccc;font-weight: normal;">
+                                        AFL Productions<br>
+                                        San Francisco, CA 94122, U.S.A.<br>
+                                        Tel: <span style="color:#FF9933;">+1 (415) 661-6146</span><br>
+                                        e-mail: <a href="mailto:volax@netwiz.net" style="color:#FF9933;">volax@netwiz.net</a>
+                                    </span>
+                                    
+                                    <hr style="border: 1px dotted #4c4c4c; border-style: none none dashed; color: #000000; background-color: #000000;">
+                                    
+                                    <span style="color:#cccccc;font-weight: normal;">
+                                        <br>
+                                        <br>
+                                        <span style="color:#FF9933;"></span><br>
+                                         
+                                    </span>                                    
+                                    </div>
+                                                            
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+                    <div class="panel_2_bottom">
+                    </div>            
+                </div>
+                <!--  //Small Panel  -->            
+            
+            </td>
+        </tr>
+    </tbody></table>
+    
+    
+
+
+
+        
+
+
+            
+            
+<div style="text-align: center;">
+
+                        <div style="color:#FF9933;padding:35px 0 10px 0px;text-align:center;">All Rights Reserved. © 2003-2023, AFL Productions, LLC, California, USA</div>
+            <br>
+            <!--
+            <table border="0" width="970" align="center" class="footer_table" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="left">
+                        <img src="/img/footer.png" border="0">
+                    </td>
+                </tr>
+            </table>
+            -->
+            
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t15.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><a href="http://www.liveinternet.ru/click" target="_blank"><img src="//counter.yadro.ru/hit?t15.6;r;s1536*864*24;uhttp%3A//www.aflproductions.com/;0.22029460031125825" alt="" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" border="0" width="88" height="31"></a><!--/LiveInternet-->            
+
+<br><br>
+</div>             
+        </div>    
+        </div>
+    
+
+<div id="tooltip" style="display: none;"><h3></h3><div class="body"></div><div class="url"></div></div><iframe src="https://tpc.googlesyndication.com/sodar/sodar2/225/runner.html" width="0" height="0" style="display: none;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230906/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>

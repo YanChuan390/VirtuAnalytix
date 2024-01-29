@@ -1,0 +1,312 @@
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+    <title>Vox Machinae</title>
+    <style>
+      .menu_home { background: #7F1919; box-shadow: 0 0 0px 1px #7F1919; border-radius: 2px; }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-LCKYFSRJ6E&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-45848105-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-45848105-2');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mech combat game in VR! Vox Machinae is the ultimate giant robot combat action-simulator for both VR and standard screens. Pick a chassis, customize the loadout, and head into battle!">
+    <link rel="stylesheet" href="/css/foundation.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:700,400" type="text/css">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+    <style>
+      img { border: 0; }
+      table { border: 0; }
+      body { background: #151515; color: #BBBBBB; }
+      label { color: #888888; }
+      h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #CCCCCC; }
+      a { font-family: 'Oswald', sans-serif; font-weight: 400; color: #DDDDDD; }
+      a:hover, a:focus { color: #FFFFFF; }
+      input:checked { box-shadow: 0 0 3px 2px #FF3333; }
+      input[type=radio] { border-radius: 100%; }
+      input[type=text], input[type=text]:focus, input[type=text]:hover, select, select:focus, select:hover { color:#BBBBBB; background:#101010; }
+      .disabled_link { font-family: 'Oswald', sans-serif; font-weight: 400; color: #333333; }
+      .parallax { width: 100%; height: 100%; background-size: 100%; }
+      .article_headline { color: #EEEEEE; text-align: center; }
+      .section_headline { background-color: rgba(0, 0, 0, 0.25); color: #FF3333; }
+      .section_descriptor { color: #FF3333; }
+      .highlight_red { background-color: rgba(255, 0, 0, 0.1); }
+      .highlight_green { background-color: rgba(0, 255, 0, 0.1); }
+      .highlight_blue { background-color: rgba(0, 0, 255, 0.1); }
+      .highlight_dark { background-color: rgba(0, 0, 0, 0.25); }
+	  .highlight_light { background-color: rgba(255, 255, 255, 0.1); }
+      .caption { padding:5px; background: rgba(0, 0, 0, 0.666); }
+      .caption_ontop { position:absolute;bottom:0px;left:0px;right:0px; }
+      .caption_text { margin: 0px; padding: 0px; }
+      .flex-video.univisium{padding-bottom:50%}
+      .dashed { border: 2px dashed #FF3333; }
+      .news_pane { border: 2px solid #400D0D; }
+      .news_pane:hover { border: 2px dashed #FF3333; }
+      .justified { text-align:justify; text-justify:auto; }
+      .centered { text-align:center; }
+      .indented { text-indent:1em; }
+      .submit {
+        display: inline-block;
+        background-color: #151515;
+        border-radius: 4px;
+        border: solid 2px #FF3333;
+        max-width: 100%;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-out;
+        color: #FF3333;
+        cursor: pointer;
+      }
+      .submit:hover { box-shadow: 0 0 9px 1px #FF3333; }
+      .biggie_size
+      {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+      }
+      .th {
+        line-height: 0;
+        display: inline-block;
+        border: solid 2px #FF3333;
+        max-width: 100%;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-out;
+      }
+      .th:hover, .th:focus { box-shadow: 0 0 9px 1px #FF3333; }
+      .th.radius { border-radius: 3px; }
+      .visible-img img { margin: auto !important; left: 0; top: 0; bottom: 0; right: 0; }
+      .menu_cell { text-align: center; vertical-align: middle; white-space: nowrap; }
+      .menu_text_thin { width:26%; }
+      .menu_text_wide { width:37%; }
+      .menu_text { margin:2px; }
+      .menu_table { width:100%; }
+      .menu_image:hover { -webkit-filter: brightness(125%); filter: brightness(125%); }
+      .rss:hover { background: #F26522; box-shadow: 0 0 0px 1px #F26522; border-radius: 1px; }
+      .facebook:hover { background: #3B5998; box-shadow: 0 0 0px 1px #3B5998; border-radius: 1px; }
+      .twitter:hover { background: #1DA1F2; box-shadow: 0 0 0px 1px #1DA1F2; border-radius: 1px; }
+      .reddit:hover { background: #FF4500; box-shadow: 0 0 0px 1px #FF4500; border-radius: 1px; }
+      .discord:hover { background: #7289DA; box-shadow: 0 0 0px 1px #7289DA; border-radius: 1px; }
+      .spacebullet:hover { background: #ED8F3B; box-shadow: 0 0 10px 0px #ED8F3B; border-radius: 100%; }
+      .colorbox { background-color: rgba(0, 0, 0, 0.25); background-position: center; background-repeat: no-repeat; cursor: pointer; }
+      .colorbox:hover { background-color: #CC2929; box-shadow: 0 0 0px 1px #CC2929; border-radius: 1px; }
+      .gallery_left { background-image: url('img/skin/lar.png'); }
+      .gallery_right { background-image: url('img/skin/rar.png'); }
+      .no_padding { padding: 0px; }
+      .titlebar_fixup:before,.titlebar_fixup:after { display: inline !important; }
+      .upscroller { opacity: 1; position:fixed; bottom: 5px; right: 5px; z-index: 300; width: 22px; height: 200px; background: url('/img/skin/upscroller.png') no-repeat center; }
+    </style>
+  <meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style></head>
+  <body style="">
+    <div class="row highlight_dark" id="header">
+      <div class="small-12 columns">
+        <table class="menu_table"><tbody><tr><td>
+          <div class="menu_cell menu_home" style="position: absolute; top: 4px; width: 30px;">
+            <a href="/index.shtml"><img class="menu_image" src="/img/skin/hom.png" width="27" height="27" alt="Home"></a>
+          </div>
+          <div class="row titlebar_fixup" data-equalizer="" style="padding-left: 50px; display:block;">
+            <div class="medium-12 large-12 columns no_padding" data-equalizer-watch="" style="height: 32px;">
+              <table class="menu_table"><tbody><tr>
+                <td class="menu_cell menu_text_thin menu_news"><h5 class="menu_text"><a href="/news.shtml">NEWS</a></h5></td>
+                <td class="menu_cell menu_text_thin menu_experience"><h5 class="menu_text"><a href="/story.shtml">STORY</a></h5></td>
+			    <td class="menu_cell menu_text_thin menu_multiplayer"><h5 class="menu_text"><a href="/online.shtml">ONLINE</a></h5></td>
+                <td class="menu_cell menu_text_thin menu_press"><h5 class="menu_text"><a href="/press.shtml">PRESS KIT</a></h5></td>
+              </tr></tbody></table>
+            </div>
+          </div>
+        </td></tr></tbody></table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-12 columns">
+        <br>
+      </div>
+    </div>
+    
+    <div id="upscroller" class="upscroller" style="opacity: 0;">
+        <noscript><a href="#top"><img src="/img/skin/upscroller.png" alt="To Top" width=50 height=50></a></noscript>
+    </div>
+
+    <div class="row highlight_dark">
+      <div class="small-12 small-push-0 large-12 large-push-0 columns">
+        <a href="/img/content/vox_machinae_hero.JPG">
+        <img src="/img/content/thumbs/vox_machinae_hero_thumb.jpg" width="1200" alt="Story+">
+		</a>
+      </div>
+    </div>
+	
+	<div class="row highlight_dark">
+      <div class="small-12 columns">
+        <table class="menu_table"><tbody><tr><td>
+          <div class="row titlebar_fixup" data-equalizer="" style="padding-left: 50px; display:block;">
+            <div class="small-12 medium-12 large-12 columns no_padding" data-equalizer-watch="" style="height: 32px;">
+              <table class="menu_table"><tbody><tr>
+                <td class="menu_cell menu_text_thin menu_news"><h5 class="menu_text"><a href="/media.shtml">TRAILER</a></h5></td>
+                <td class="menu_cell menu_text_wide menu_experience"><h5 class="menu_text"><a href="/buy.shtml">BUY NOW</a></h5></td>
+				<td class="menu_cell menu_text_wide menu_social">
+                  <a href="/news.xml"><img class="menu_image rss" src="/img/skin/rss.png" width="22" height="22" alt="Vox Machinae RSS Feed"></a>
+                  <a href="http://facebook.com/VoxMachinaeGame"><img class="menu_image facebook" src="/img/skin/fbk.png" width="22" height="22" alt="Vox Machinae on Facebook"></a>
+                  <a href="http://twitter.com/SpaceBulletCorp"><img class="menu_image twitter" src="/img/skin/twt.png" width="22" height="22" alt="Space Bullet on Twitter"></a>
+                  <a href="http://reddit.com/r/VoxMachinae"><img class="menu_image reddit" src="/img/skin/rdt.png" width="22" height="22" alt="Vox Machinae on Reddit"></a>
+                  <a href="https://discord.gg/VoxMachinae"><img class="menu_image discord" src="/img/skin/dsc.png" width="22" height="22" alt="Vox Machinae on Discord"></a>
+		</td>
+              </tr></tbody></table>
+            </div>
+          </div>
+        </td></tr></tbody></table>
+      </div>
+    </div>
+
+<br>
+
+    <div class="row">
+	<h1 class="article_headline">Welcome to the Grind.</h1>
+	<br>
+    </div>	
+
+    <div class="row">
+      <div class="small-12 medium-4 large-4 columns">
+	    <h3 class="article_headline">Be the Pilot</h3>
+        <p class="indented">
+        Enter your Grinder: Seven times the size of a T-Rex and fitted with your choice of weaponized mining equipment,
+		this retrofitted mechanical beast is your key in defending your company's resources, and sending your enemies back to space.
+        </p>
+      </div>
+	  <div class="small-12 medium-4 large-4 columns">
+        <a href="/img/screens/VoxM_screenshot_11.jpg">
+          <img src="/img/screens/thumbs/VoxM_screenshot_11_thumb.jpg" alt="Screenshot">
+        </a>
+	  </div>
+	  <div class="small-12 medium-4 large-4 columns">
+        <a href="/img/screens/VoxM_screenshot_10.jpg">
+          <img src="/img/screens/thumbs/VoxM_screenshot_10_thumb.jpg" alt="Screenshot">
+        </a>
+    </div>
+    </div>
+
+    <div class="row highlight_dark">
+      <div class="medium-7 columns">
+          <a href="/img/content/vox_chars_article.JPG">
+         <img src="/img/content/thumbs/vox_chars_article_thumb.jpg" width="1000" alt="Meet the crew">	
+	      </a>
+      </div>
+	  <div class="medium-5 columns">
+	  <h4 class="article_headline centered">All-New Campaign</h4>
+        <p class="indented">
+        Begin your adventure as the newest recruit to Horizon Corporate's Security Team.
+		Explore a rich, fully-voiced story mode, complete with a colourful cast of characters,
+		as you investigate a series of strange attacks on your company's mining operations.
+        </p>
+      </div>
+    </div>
+	<br>
+	
+    <div class="row">
+      <div class="small-12 medium-6 large-6 columns">
+	    <h3 class="article_headline">Be there in VR</h3><h3>
+        <p class="indented">
+        Travel to distant planets from the comfort of your living room or computer chair.
+		Vox Machinae is available on Quest 2, and has full VR support on Oculus Rift and PC modes.
+        </p>
+      </h3></div>
+	  <div class="small-12 medium-6 large-6 columns">
+        <a href="/img/screens/VoxM_screenshot_02.jpg">
+          <img src="/img/screens/thumbs/VoxM_screenshot_02_thumb.jpg" alt="Screenshot">
+        </a>
+	  </div>
+    </div>
+	<br>
+    <div class="row highlight_dark">
+      <div class="medium-6 columns">
+        <a href="/img/screens/VoxM_screenshot_08.jpg">
+          <img src="/img/screens/thumbs/VoxM_screenshot_08_thumb.jpg" alt="Screenshot">
+        </a>
+      </div>
+	  <div class="medium-6 columns">
+	  <h4 class="article_headline centered">Multiplayer Madness</h4>
+        <p class="indented">
+        Team up with friends and strangers alike for a chaotic and scrappy battles with upto 16 players. 
+		Seven maps, seven Grinders to choose from, and loads of heavy weaponry for the maximum amount of madness
+        </p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="medium-12 columns">
+        <br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="medium-6 medium-push-3 columns" id="mc_embed_signup">
+        <h3 class="section_descriptor centered">Space Bullet Newsletter</h3>
+        <p class="indented">
+        Want to get the latest hot gossip about Vox Machinae and other great Space Bullet games? Subscribe to our newsletter!
+        </p>
+        <form action="https://space-bullet.us4.list-manage.com/subscribe/post?u=81a3e54a48f3b3ec5c0672776&amp;id=109346f359" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+          <table class="menu_table"><tbody><tr><td>
+            <input style="margin: 0px;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_81a3e54a48f3b3ec5c0672776_109346f359" tabindex="-1" value=""></div>
+          </td><td style="width: 80px;">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit biggie_size" style="margin: 0px; width:100%;">
+          </td></tr></tbody></table>
+        </form>
+      </div>
+    </div>
+
+<!--<script src="/js/parallax.js"></script>-->
+
+    <div class="row">
+      <div class="medium-12 columns">
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-12 columns centered" style="white-space: nowrap;">
+        <h6 class="disabled_link">©2022 Space Bullet Dynamics Corporation</h6>
+      </div>
+    </div>
+    <script>
+      function play_video(id)
+      {
+        document.getElementById(id).play();
+      }
+      function pause_video(id)
+      {
+        document.getElementById(id).pause();
+      }
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/scrollspy.js"></script>
+    <script>
+    $('#upscroller').opacity = 0;
+    $('#header').on('scrollSpy:enter', function() {
+        $("#upscroller").animate({
+          opacity:'0',
+        });
+    });
+    $('#header').on('scrollSpy:exit', function() {
+        $("#upscroller").animate({
+          opacity:'1',
+        });
+    });
+    $("#upscroller").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, "fast");
+    });
+    $('#header').scrollSpy();
+    </script>
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  
+
+
+
+</body></html>

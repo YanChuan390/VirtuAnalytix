@@ -1,0 +1,309 @@
+<html><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+	<title>WindWind</title>
+
+	<link type="text/css" href="/front/css/bootstrap.css" rel="stylesheet">
+	<link type="text/css" href="/front/css/font.css" rel="stylesheet">
+	<link type="text/css" href="/front/css/eliot.css" rel="stylesheet">
+	<script src="/front/js/jquery-3.5.1.min.js"></script>
+	<script src="/front/js/bootstrap.min.js"></script>
+	<script src="https://player.vimeo.com/api/player.js"></script>
+
+	<script>
+
+	$(document).ready(function(){
+	$('#sidebaron').on('click', function () {
+	    $('#sidebar').addClass('active');
+	    $('.overlay').fadeIn().css("display","contents");
+	    $("#sidebaron").hide();
+	    $("#sidebaroff").show();
+	});
+
+	$('#sidebaroff').on('click', function () {
+	    $('#sidebar').removeClass('active');
+	    $('.overlay').fadeOut();
+	    $("#sidebaroff").hide();
+	    $("#sidebaron").show();
+	});
+
+
+
+	});
+
+	</script>
+
+	<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+	<script type="text/javascript">
+	if(!wcs_add) var wcs_add = {};
+	wcs_add["wa"] = "b2d4c072b4f6f0";
+	if(window.wcs) {
+	wcs_do();
+	}
+	</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZZD7JXZT6M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZZD7JXZT6M');
+</script>
+
+</head>
+<body>
+	<div id="menu_div">
+		    <nav id="sidebar">
+		    	<ul class="nav_bar mt_100 ml_50"> 
+		    		<li> 
+		    			<ul class="nav_bar mb_30"> 
+		    				<a class="nav_link" href="/"><span>홈</span></a>
+		    			</ul>
+		    		</li> 
+		    		<li> 
+		    			<ul class="nav_bar mb_30">
+		    				<span>게임소개</span>
+		    				<li class="ml_30 mb_15 mt_15">
+		    					<a class="nav_link" href="/infomation/about">About</a>
+		    				</li>
+		    				<li class="ml_30 mb_15 mt_15">
+		    					<a class="nav_link" href="/infomation/world">세계관</a>
+		    				</li>
+		    				<li class="ml_30 mb_15">
+		    					<a class="nav_link" href="/infomation/map">맵 (탑)</a>
+		    				</li>
+		    				<li class="ml_30">
+		    					<a class="nav_link" href="/infomation/character">캐릭터</a>
+		    				</li>
+		    			</ul>
+		    		</li> 
+		    		<li> 
+		    			<ul class="nav_bar mb_30">
+		    				<a class="nav_link" href="/video"><span>인게임 영상</span></a>
+		    			</ul>
+		    		</li> 
+		    		<li> 
+		    			<ul class="nav_bar mb_30">
+		    				<a class="nav_link" href="/media"><span>미디어</span></a>
+		    			</ul>
+		    		</li> 
+		    		
+
+		    	</ul>
+
+		    </nav>
+				<span id="sidebaron"><img src="/front/images/menu_button.png" style="cursor:pointer;"></span>
+				<span class="glyphicon glyphicon-remove" aria-hidden="true" id="sidebaroff" style="display: none; cursor:pointer;"></span>
+		    <div class="overlay">
+		    </div>
+		</div>
+
+
+
+
+<!-- AWS  -->
+<style type="text/css">
+body {
+    overflow: auto;
+}
+</style>
+
+		
+    	<div id="video_div">
+			<video id="top_video" autoplay="" muted="" loop="" playsinline="" src="https://player.vimeo.com/external/503307232.hd.mp4?s=04016690763179149bac654d8e1464233493bdcb&amp;profile_id=175"></video>
+		</div>
+
+		
+		<div id="main_logo" class="mb_30">
+			<img src="/front/images/logo.png" class="width_100 mb_30">
+			
+		</div>
+		<div class="row" style="margin-top: 7%; margin-bottom: 1%; ">
+			<div class="col-lg-4 col-lg-offset-4 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2  col-xs-8 col-xs-offset-2">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+						<div align="center">
+							<img src="/front/images/main_text.png" class="width_100" style="padding-left: 10px;padding-right: 10px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row  margin_0 mb_55" align="center">
+			<div class="col-lg-4 col-lg-offset-4 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2  col-xs-8 col-xs-offset-2">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 b_padding"><a id="openModalBtn"><img src="/front/images/Button_1.png" class="width_100"></a></div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 b_padding"><a id="openModalBtn2"><img src="/front/images/Button_2.png" class="width_100"></a></div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 b_padding"><a href="https://www.youtube.com/watch?v=aPCUqRbfQzA" target="_blank"><img src="/front/images/Button_3.png" class="width_100"></a></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row  margin_0 mt_15 mb_55" align="center">
+			<div class="col-lg-4 col-lg-offset-4 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2  col-xs-10 col-xs-offset-1 ">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="https://store.steampowered.com/app/1510390/Wind_Wind/" target="_blank"><img src="/front/images/steam_01.png" class="width_100"></a></div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="https://store.playstation.com/ko-kr/product/UP3622-CUSA25719_00-6535293557486670/" target="_blank"><img src="/front/images/psvr.png" class="width_100"></a>
+			        </div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="https://www.oculus.com/experiences/quest/5105686309473866/" target="_blank"><img src="/front/images/oculus.png" class="width_100"></a>
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-8 col-md-4 col-md-offset-8 col-sm-4 col-sm-offset-8 col-xs-4 col-xs-offset-8 ">
+						<img id="oculus_info" src="/front/images/i_button.png" style="width: 25px; float: right; margin-right: -13px; margin-top: -37%; cursor: pointer;">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+                           
+<!-- 모달 영역 -->
+<div id="modalBox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-video">
+			<div class="modal-body" align="center">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove video_close" aria-hidden="true"></span></button>
+				<iframe src="https://player.vimeo.com/video/510551401?playsinline=0" class="main_video video_t" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" data-ready="true"></iframe>
+			</div>
+	</div>
+</div>
+
+<div id="modalBox2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-video">
+		
+
+			<div class="modal-body" align="center">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove video_close" aria-hidden="true"></span></button>
+				<iframe src="https://player.vimeo.com/video/574347140?playsinline=0" class="main_video video_c" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" data-ready="true"></iframe>
+			</div>
+
+		
+	</div>
+</div>
+
+<div id="modalBox3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-video">
+		
+	<div class="modal-body" align="center">
+		
+		<div id="carousel-generic" class="carousel slide " data-ride="carousel" data-interval="false">
+
+
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner " role="listbox">
+	    <div class="item active position_ab item_z5">
+	      <img src="/front/images/0723_Oculus_Store_Information_1.png">
+	    </div>
+	    <div class="item position_ab item_z5">
+	      <img src="/front/images/0723_Oculus_Store_Information_2.png">
+	    </div>
+	    <div class="item position_ab item_z5">
+	      <img src="/front/images/0723_Oculus_Store_Information_3.png">
+	    </div>
+	    <div class="item position_ab item_z5">
+	      <img src="/front/images/0723_Oculus_Store_Information_4.png">
+	    </div>
+	    <div class="item position_ab item_z5">
+	      <img src="/front/images/0723_Oculus_Store_Information_5.png">
+	    </div>
+	  </div>
+		</div>
+	</div>
+	<div class="item_button" align="center">
+	  <a class="left button_e_l item_z15" href="#carousel-generic" role="button" data-slide="prev">
+	  	<img src="/front/images/button_l.png" class="button_img_l">
+	  </a>
+	  <a class="right button_e_r item_z15" href="#carousel-generic" role="button" data-slide="next">
+	  	<img src="/front/images/button_r.png" class="button_img_r">
+	  </a>
+	</div>
+</div>
+</div>
+<script>
+
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+var iframe1 = document.querySelector('.video_t');
+var player_video1 = new Vimeo.Player(iframe1);
+
+var iframe2 = document.querySelector('.video_c');
+var player_video2 = new Vimeo.Player(iframe2);
+
+$(document).ready(function(){
+
+	 if(!isMobile) {
+	 	
+
+        $('#openModalBtn').on('click', function(){
+		$('#modalBox').modal('show');
+		player_video1.play();
+
+		});
+
+		$("#modalBox").on('hidden.bs.modal', function(){
+		    player_video1.unload();
+		});
+
+		$('#openModalBtn2').on('click', function(){
+		$('#modalBox2').modal('show');
+		player_video2.play();
+
+		});
+
+		$("#modalBox2").on('hidden.bs.modal', function(){
+		    player_video2.unload();
+		});
+
+		$('#close_popup').on('click', function(){
+			$('#popup').hide();
+		});
+     } else {
+          // alert("test");
+          $('#openModalBtn').on('click', function(){
+			player_video1.play();
+			});
+          $('#openModalBtn2').on('click', function(){
+			player_video2.play();
+			});
+     }
+
+
+     $("#oculus_info").click(function(){
+     	$('#modalBox3').modal('show');
+     });
+
+     $("#carousel-sub").carousel();
+    
+    
+
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+<footer id="footer">
+	<div class="col-md-12">
+		<div align="center"> <span id="footer"><strong>Copyright Eliot Inc. All Rights Reservedⓒ</strong></span></div>
+	</div>
+</footer>
+
+
+
+</body></html>

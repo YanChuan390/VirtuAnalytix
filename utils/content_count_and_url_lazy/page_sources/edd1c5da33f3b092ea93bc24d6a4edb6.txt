@@ -1,0 +1,384 @@
+<html lang="ko"><head>
+    <title>투어펏</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge;chrome=1">
+    <meta name="author" content="vrotein">
+    <meta name="description" content="투어펏 - 완벽한 퍼팅을 그리는 기술">
+    <meta name="keywords" content="골프퍼팅, 골프연습">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes,viewport-fit=cover">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta property="og:title" content="투어펏">
+    <meta property="og:description" content="투어펏 - 완벽한 퍼팅을 그리는 기술">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="al:web:url" content="https://www.tourputt.com">
+    <meta property="og:url" content="https://www.tourputt.com">
+    <meta property="og:image" content="/admin_data/img/og-img-1.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="투어펏">
+    <link rel="shortcut icon" type="image/x-icon" href="/admin_data/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/admin_data/css/common.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="/admin_data/css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/admin_data/css/slick/slick-theme.css">
+    <script type="text/javascript" src="/admin_data/js/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <script type="text/javascript" src="/admin_data/js/common.js"></script>
+    <script type="text/javascript" src="/admin_data/js/lang-ko.js"></script>
+
+    <script type="text/javascript" src="/common/js/common.js"></script>
+    <script type="text/javascript" src="/common/js/login.js"></script>
+</head>
+<body style="">
+    <div id="wrap" class="lang-ko">
+        <div id="header" class="">
+            <div class="inner">
+                <h1 class="logo">
+                                        <a href="/"><img class="logoImg" src="/admin_data/img/logo.png" alt="TOURPUTT"></a>
+                                    </h1>
+                <div class="gnb">
+                    <ul class="clfix">
+                        <li><a href="/sub_main/tourputt/view/tourputt.html">투어펏 제품소개</a></li>
+                        <li><a href="/sub_main/training/view/training.html">퍼팅 훈련 도구</a></li>
+                        <li><a href="/sub_main/community/view/notice_list.html">공지사항</a></li>
+                        <li><a href="/sub_main/community/view/faq.html">FAQ</a></li>
+                        <li><a href="/sub_main/community/view/inquiry.html">문의 하기</a></li>
+                    </ul>
+                </div> <!-- gnb  -->
+                <div class="header-right clfix">
+                    <!-- <div class="sign-in">
+                      <p><a href="#none">SIGN IN</a></p>
+                    </div> -->
+                    <div class="lang">
+                        <p>KOR</p>
+                        <ul>
+                            <li><a href="javascript:site_lang_select('KR');">KOR</a></li>
+                            <li><a href="javascript:site_lang_select('EN');">ENG</a></li>
+                            <li><a href="javascript:site_lang_select('JP');">JPN</a></li>
+                        </ul>
+                    </div>
+                    <div class="ham-menu">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="gnb_tab">
+                        <ul class="clfix">
+                            <li><a href="/sub_main/tourputt/view/tourputt.html">투어펏 제품소개</a></li>
+                            <li><a href="/sub_main/training/view/training.html">퍼팅 훈련 도구</a></li>
+                            <li><a href="/sub_main/community/view/notice_list.html">공지사항</a></li>
+                            <li><a href="/sub_main/community/view/faq.html">FAQ</a></li>
+                            <li><a href="/sub_main/community/view/inquiry.html">문의 하기</a></li>
+                        </ul>
+                        <div class="lang_mob">
+                            <span><a class="on" href="javascript:site_lang_select('KR');">KOR</a></span>
+                            <span><a href="javascript:site_lang_select('EN');">ENG</a></span>
+                            <span><a href="javascript:site_lang_select('JP');">JPN</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div> <!-- header  -->
+    <link rel="stylesheet" type="text/css" href="/admin_data/css/main.css">
+    <script type="text/javascript" src="/admin_data/js/main.js"></script>
+
+        <div id="main">
+            <div class="section section01 ani is-active" data-num="1" data-type="main" id="visual">
+                <strong>New era of putting<br><span>TOURPUTT</span></strong>
+                <!-- <img class="scroll" src="img/icon/scroll.png" alt="scroll" /> -->
+                <div class="scrollBox">
+                    <span></span>
+                </div>
+            </div> <!-- section01  -->
+            <div class="section section02" data-num="2">
+                <div class="textBox clfix">
+                    <strong>투어펏으로 퍼팅의<br>
+                        새로운 시대를 경험해보세요</strong>
+                    <p>
+                        투어펏이 당신의 퍼팅을 읽고<br>
+                        패턴을 분석하며 그린 위에 당신에게 맞는 훈련법을 그려줍니다.
+                        <a href="/sub_main/tourputt/view/tourputt.html">MORE</a>
+                    </p>
+                </div>
+                <div class="imgBox">
+                    <img src="/admin_data/img/main/section01-img01.png" alt="section01 image">
+                </div>
+            </div> <!-- section02  -->
+            <div class="section section03" data-num="3">
+                <strong>
+                    투어펏의 최첨단 기술로 구현된<br>
+                    최종환 코치의 우승 노하우
+                </strong>
+                <p>
+                    최종환 코치는 세계 최정상급 프로들을 대상으로 퍼팅 코칭을 진행하며<br>
+                    노하우를 쌓아왔고 투어펏에 녹여냈습니다.<br>
+                    지금 이순간에도 수많은 선수들이 투어펏과 함께 우승 트로피를 들어올리고 있습니다.
+                </p>
+            </div>
+            <!-- section03  -->
+            <div class="section section04" data-num="4">
+                <strong>프로 골퍼들의 우승으로 입증된 투어펏</strong>
+                <div id="sliderWrap">
+                    <div id="mainSlider" class="slick-initialized slick-slider"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
+                        <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 25000px; transform: translate3d(-1911px, 0px, 0px);"><div class="slide-box slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1">
+                            <div class="cont">
+                                <h3>이준석<span>KPGA 투어 프로</span></h3>
+                                <p>
+                                    이해하기 어려웠던 부분을 직접 눈으로 확인하고<br>
+                                    정확한 데이터로 믿고 실행하며 저절로 퍼팅에 자신감이<br>
+                                    생기기 시작했다.
+                                </p>
+                                <ul>
+                                    <li>
+                                        2022 KPGA 투어 하나은행 인비테이셔널 우승
+                                    </li>
+                                    <li>
+                                        2021 KPGA 투어 KGA 코오롱 제63회 한국오픈 우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><div class="slide-box slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1">
+                            <div class="cont">
+                                <h3>송영한<span>KPGA, JGTO Pro Golfer</span></h3>
+                                <p>
+                                    그린에서 필요한 부분들을 상상으로만 그렸었는데<br>
+                                    실제로 눈으로 볼 수 있어 퍼팅 경기력에 효과적인<br>
+                                    영향을 미쳤다
+                                </p>
+                                <ul>
+                                    <li>
+                                        2018 KPGA 투어 제61회 KPGA 선수권대회 3위
+                                    </li>
+                                    <li>
+                                        2017 JGTO 투어 헤이와 PGM 챔피언십 준우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><div class="slide-box slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+                            <div class="cont">
+                                <h3>성유진<span>KLPGA 투어 프로</span></h3>
+                                <p>
+                                    투어펏을 통해 특정 라이에 대한 부족한 부분을 알았고,<br>
+                                    보완과 훈련을 통해 경기력 향상에 큰 도움이 됐다
+                                </p>
+                                <ul>
+                                    <li>
+                                        2021 BC카드·한경 레이디스 컵 2021 준우승
+                                    </li>
+                                    <li>
+                                        2020 맥콜·용평리조트 오픈 with SBS Golf 준우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><div class="slide-box slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00">
+                            <div class="cont">
+                                <h3>김아림<span>LPGA 투어 프로</span></h3>
+                                <p>
+                                    투어펏은 연습을 더 효율적으로 할 수 있게 도와준다<br>
+                                    개인의 패턴을 이해하게 되면 코스 매니지먼트도 쉬워진다.
+                                </p>
+                                <ul>
+                                    <li>
+                                        2021 BMW Ladies Championship 3위
+                                    </li>
+                                    <li>
+                                        2020 LPGA 투어 US 여자오픈 우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><div class="slide-box slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide01">
+                            <div class="cont">
+                                <h3>이소영<span>KLPGA 투어 프로</span></h3>
+                                <p>
+                                    투어펏은 결과가 데이터로 보여져 이를 발전시키기<br>
+                                    위해 대회와 같은 긴장감을 가지게 된다.
+                                </p>
+                                <ul>
+                                    <li>
+                                        2021 SK 네트웍스 서울경제 레이디스 클래식 준우승
+                                    </li>
+                                    <li>
+                                        2020 오렌지라이프 챔피언스트로피 박인비 인비테이셔널 우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><div class="slide-box slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide02">
+                            <div class="cont">
+                                <h3>이준석<span>KPGA 투어 프로</span></h3>
+                                <p>
+                                    이해하기 어려웠던 부분을 직접 눈으로 확인하고<br>
+                                    정확한 데이터로 믿고 실행하며 저절로 퍼팅에 자신감이<br>
+                                    생기기 시작했다.
+                                </p>
+                                <ul>
+                                    <li>
+                                        2022 KPGA 투어 하나은행 인비테이셔널 우승
+                                    </li>
+                                    <li>
+                                        2021 KPGA 투어 KGA 코오롱 제63회 한국오픈 우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><div class="slide-box slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide03">
+                            <div class="cont">
+                                <h3>송영한<span>KPGA, JGTO Pro Golfer</span></h3>
+                                <p>
+                                    그린에서 필요한 부분들을 상상으로만 그렸었는데<br>
+                                    실제로 눈으로 볼 수 있어 퍼팅 경기력에 효과적인<br>
+                                    영향을 미쳤다
+                                </p>
+                                <ul>
+                                    <li>
+                                        2018 KPGA 투어 제61회 KPGA 선수권대회 3위
+                                    </li>
+                                    <li>
+                                        2017 JGTO 투어 헤이와 PGM 챔피언십 준우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><div class="slide-box slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide04">
+                            <div class="cont">
+                                <h3>성유진<span>KLPGA 투어 프로</span></h3>
+                                <p>
+                                    투어펏을 통해 특정 라이에 대한 부족한 부분을 알았고,<br>
+                                    보완과 훈련을 통해 경기력 향상에 큰 도움이 됐다
+                                </p>
+                                <ul>
+                                    <li>
+                                        2021 BC카드·한경 레이디스 컵 2021 준우승
+                                    </li>
+                                    <li>
+                                        2020 맥콜·용평리조트 오픈 with SBS Golf 준우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><div class="slide-box slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1">
+                            <div class="cont">
+                                <h3>김아림<span>LPGA 투어 프로</span></h3>
+                                <p>
+                                    투어펏은 연습을 더 효율적으로 할 수 있게 도와준다<br>
+                                    개인의 패턴을 이해하게 되면 코스 매니지먼트도 쉬워진다.
+                                </p>
+                                <ul>
+                                    <li>
+                                        2021 BMW Ladies Championship 3위
+                                    </li>
+                                    <li>
+                                        2020 LPGA 투어 US 여자오픈 우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><div class="slide-box slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1">
+                            <div class="cont">
+                                <h3>이소영<span>KLPGA 투어 프로</span></h3>
+                                <p>
+                                    투어펏은 결과가 데이터로 보여져 이를 발전시키기<br>
+                                    위해 대회와 같은 긴장감을 가지게 된다.
+                                </p>
+                                <ul>
+                                    <li>
+                                        2021 SK 네트웍스 서울경제 레이디스 클래식 준우승
+                                    </li>
+                                    <li>
+                                        2020 오렌지라이프 챔피언스트로피 박인비 인비테이셔널 우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><div class="slide-box slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1">
+                            <div class="cont">
+                                <h3>이준석<span>KPGA 투어 프로</span></h3>
+                                <p>
+                                    이해하기 어려웠던 부분을 직접 눈으로 확인하고<br>
+                                    정확한 데이터로 믿고 실행하며 저절로 퍼팅에 자신감이<br>
+                                    생기기 시작했다.
+                                </p>
+                                <ul>
+                                    <li>
+                                        2022 KPGA 투어 하나은행 인비테이셔널 우승
+                                    </li>
+                                    <li>
+                                        2021 KPGA 투어 KGA 코오롱 제63회 한국오픈 우승
+                                    </li>
+                                </ul>
+                            </div>
+                        </div></div></div>
+                        
+                        
+                        
+                        
+                    <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button></div> <!-- mainSlider  -->
+                </div><!-- sliderWrap -->
+            </div>
+            <!-- section04  -->
+            <div class="section section05" data-num="5">
+                <strong>투어펏과 함께 지금 바로<br>
+                    퍼팅의 새로운 시대를 맞이하세요</strong>
+            </div>
+            <!-- section05  -->
+            <div class="section section06" data-num="6">
+                <strong>
+                    이미 많은 골프스튜디오에서 투어펏을<br>도입하고 있습니다
+                </strong>
+                <div class="partnerBox">
+                    <ul class="clfix">
+                        <li><img src="/admin_data/img/main/IMGLogo_CityGolf.png" alt="CityGolf"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_Eloom.png" alt="EloomGolf"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_ENGolf.png" alt="ENGolf"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_Evenpark.png" alt="Evenpark"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_FriendAcademy_Dangsan.png" alt="FriendAcademy Dangsan"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_GmGolfAcademy.png" alt="GmGolfAcademy"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_GolfAsk.png" alt="_GolfAsk"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_HiddenCastle.png" alt="HiddenCastle"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_HonoboGolf_Jpn.png" alt="HonoboGolf Jpn"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_JPNYsGolfLab.png" alt="JPNYsGolfLab"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_KHYGinGolf_Jpn.png" alt="KHYGinGolf Jpn"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_Meraki.png" alt="_Meraki"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_QED.png" alt="QED"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_TeeStage.png" alt="TeeStage"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_TheCupGolf.png" alt="TheCupGolf"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_TheMarble_WonJu.png" alt="TheMarble WonJu"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_TLapGolf.png" alt="TLapGolf"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_WGolf.png" alt="WGolf"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_XoneGolf.png" alt="XoneGolf"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_Ycom.png" alt="The Yeongnam Ilbo"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_golfzone_market.png" alt="Golfzone Market"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_Diagolf.png" alt="Dia Golf Studio"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_Creatz.png" alt="Creatz"></li>
+                        <li><img src="/admin_data/img/main/IMGLogo_BackYard.png" alt="BackYard"></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- section06  -->
+        </div> <!-- main  -->
+        <div id="footer">
+            <div class="footer-logo">
+                <img src="/admin_data/img/footer-logo.png" alt="TOURPUTT">
+            </div>
+            <div class="footer-info">
+                경기 수원시 영통구 광교중앙로266번길 40 2층<br>
+                사업자등록번호 113-86-57948<br>
+                Tel : 070 4667 2236<br>
+                Email : tourputt@vrotein.co.kr
+            </div>
+            <p class="copyright">Copyright © 2023 VRotein Inc. All Rights Reserved.</p>
+            <div class="terms-wrap">
+                <ul class="clfix">
+                    <li><a href="/terms_of_use.html" target="_blank">서비스 이용약관<img src="/admin_data/img/icon/footer-arrow.png" alt="arrow"></a></li>
+                    <li><a href="/privacy_policy.html" target="_blank">개인정보처리방침<img src="/admin_data/img/icon/footer-arrow.png" alt="arrow"></a></li>
+                    <li><a href="/event_agree.html" target="_blank">마케팅·광고 활용동의<img src="/admin_data/img/icon/footer-arrow.png" alt="arrow"></a></li>
+                </ul>
+            </div>
+            <div class="footer-sns">
+                <ul class="clfix">
+                    <li><a href="https://www.instagram.com/tourputt" target="_blank"><img src="/admin_data/img/icon/insta.png" alt="insta"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC_T5U2bjCUUWNYPJqK8kTzw" target="_blank"><img src="/admin_data/img/icon/youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div> <!-- footer  -->
+    </div> <!-- wrap  -->
+    <iframe name="ifrm" id="ifrm" style="height:0;width:0;border:0;position: absolute;"></iframe>
+
+</body></html>

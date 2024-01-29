@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8">
+    <meta name="description" content="Obstruction is a mind-testing interactive VR puzzle game, help a little white cube reach it's destination, hold your hand steady and go through all the obstructions!
+Find out what's the secret beyond the mountain, test yourself with extra challenges hidden in each level and collect everything to unlock the final goal!">
+    <meta name="keywords" content="Game,videogame,indiedev,indiegame,gamedev,gaming,obstruction,vr,virtualreality">
+    <meta name="author" content="Ultale">
+    <link rel="icon" type="image/png" sizes="32x32" href="/obstruction-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/obstruction-favicon-16x16.png">
+    <title>Obstruction VR - Interactive Puzzle Game</title>
+    <style>
+        html, body {
+            height: 100%;
+            background-color: #000000;
+        }
+
+        .videowrapper {
+            position: relative;
+            width: 100%;
+            height: 70%;
+        }
+
+            .videowrapper iframe {
+                position: absolute;
+                display: block;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 1120px;
+                height: 630px;
+            }
+
+        .steambutton iframe {
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="videowrapper"><iframe src="https://www.youtube.com/embed/dYxt0zkjdSU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
+    <div class="steambutton"><iframe src="https://store.steampowered.com/widget/918060/" frameborder="0" width="646" height="190"></iframe></div>
+
+</body></html>

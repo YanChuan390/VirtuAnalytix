@@ -1,0 +1,163 @@
+<html style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths wf-skolar-n4-active wf-skolar-i4-active wf-skolar-n6-active wf-skolar-i6-active wf-futurapt-n5-active wf-futurapt-n4-active wf-futurapt-n7-active wf-futurapt-n3-active wf-active"><head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Secret Sorcery - Tethered</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="/tethered/css/tetheredlaunch.css?reload=1" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="/tethered/css/ss_nav.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="/tethered/css/magnific-popup.css">
+
+		<link rel="stylesheet" href="/tethered/css/back-to-top.css">
+		
+		<script type="text/javascript" src="/tethered/js/modernizr.js"></script>
+	
+		<!-- Sigmar One + Oswald Google + Noto Sans Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Oswald|Sigmar+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<!-- SMOOTH SCROLLING -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+		
+		<script type="text/javascript" src="//use.typekit.net/nsv4yzv.js"></script>
+		<style type="text/css">.tk-skolar{font-family:"skolar",serif;}.tk-futura-pt{font-family:"futura-pt",sans-serif;}</style><style type="text/css">@font-face{font-family:skolar;src:url(https://use.typekit.net/af/ed14e6/00000000000000000000f29e/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/ed14e6/00000000000000000000f29e/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/ed14e6/00000000000000000000f29e/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:skolar;src:url(https://use.typekit.net/af/c7ed7b/00000000000000000000f2a1/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/c7ed7b/00000000000000000000f2a1/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/c7ed7b/00000000000000000000f2a1/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:skolar;src:url(https://use.typekit.net/af/b7ca2b/00000000000000000000d32e/27/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/b7ca2b/00000000000000000000d32e/27/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/b7ca2b/00000000000000000000d32e/27/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:skolar;src:url(https://use.typekit.net/af/ca683e/00000000000000000000e303/27/l?subset_id=2&fvd=i6&v=3) format("woff2"),url(https://use.typekit.net/af/ca683e/00000000000000000000e303/27/d?subset_id=2&fvd=i6&v=3) format("woff"),url(https://use.typekit.net/af/ca683e/00000000000000000000e303/27/a?subset_id=2&fvd=i6&v=3) format("opentype");font-weight:600;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}</style><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+
+	<body class="tethered launch ">
+
+	<div id="page">
+
+			<div class="keyart" id="nonparallax">
+			</div>
+			<div class="keyart" id="parallax">
+				<div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>		<!-- 00.0 -->
+				<div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>		<!-- 12.5 -->
+				<div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>		<!-- 25.0 -->
+				<div class="keyart_layer parallax" id="keyart-6" data-speed="11"></div>		<!-- 11.0 -->
+				<div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>		<!-- 37.5 -->
+				<div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>		<!-- 50.0 -->
+				<div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>		<!-- 62.5 -->
+				<div class="keyart_layer parallax" id="keyart-10" data-speed="36"></div>	<!-- 36. -->
+				<div class="keyart_layer" id="keyart-scrim"></div>
+				<div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>		<!-- 87.5 -->
+				<div class="keyart_layer" id="keyart-8" data-speed="100"></div>				<!-- 100. -->
+				<div class="keyart_layer" id="keyart-9" data-speed="120"></div>				<!-- 120. -->
+
+			</div>
+
+		<div id="maincontain">
+			<div id="main">
+
+						<div class="section topheader big first">
+							<h2>Buy Tethered from...</h2>
+							<br>
+							<h3>PlayStation Store</h3>
+							<a href="https://store.playstation.com/#!/en-gb/games/tethered/cid=EP1225-CUSA06529_00-TETHEREDSECRETSO" target="_blank">
+								<img src="http://www.secretsorcery.com/tethered/images/PlayStation_Store.png" alt="Buy from the PSN Store">
+							</a>
+							<br>
+							<br>
+							<h3>Steam Store</h3>
+							<a href="http://store.steampowered.com/app/431120/" target="_blank">
+								<img src="http://www.secretsorcery.com/tethered/images/Steam_Store.png" alt="Buy from the Steam Store">
+							</a>
+							<br>
+							<br>
+							<h3>Oculus Store</h3>
+							<a href="https://www.oculus.com/experiences/rift/1263430353678786/" target="_blank">
+								<img src="http://www.secretsorcery.com/tethered/images/Oculus_Store.png" alt="Buy from the Oculus Store">
+							</a>
+							<br>
+						</div>
+							
+						<div class="section feature videoparent">
+							<h3>Without VR promo video</h3><br>
+							<div class="videocontain">
+								<iframe src="https://www.youtube.com/embed/yOWspH2Jy9E" frameborder="0" allowfullscreen=""></iframe>
+							</div>
+						</div>
+							
+						<div class="section feature videoparent">
+							<h3>Motion controll footage</h3><br>
+							<div class="videocontain">
+								<iframe src="https://www.youtube.com/embed/KjCJQmxi8EE" frameborder="0" allowfullscreen=""></iframe>
+							</div>
+						</div>
+											
+								<a href="#0" class="cd-top">Top</a>
+						
+					<div class="section copyright">
+						<p>© 2016 - <span id="year">2023</span> Secret Sorcery.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+
+		<script type="text/javascript" src="/tethered/js/jquery-2.1.1.js"></script>
+
+		<!--<script type="text/javascript" src="/js/jquery-1.12.0.min.js"></script>-->
+		
+		<script type="text/javascript" src="/tethered/js/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="/tethered/js/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="/tethered/js/jquery.simplr.smoothscroll.min.js"></script>
+		<script type="text/javascript" src="/tethered/js/back-to-top.js"></script>
+		<script type="text/javascript" src="/tethered/js/magnific.js"></script>
+
+		<script type="text/javascript" src="/tethered/js/tetheredscroll.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.thumbnails').magnificPopup({
+				delegate: 'li a',
+				type:'image',
+				gallery: {
+					enabled: true,
+					preload: [1,1]
+				},
+				mainClass: 'mfp-with-zoom',
+				zoom: {
+					enabled: true,
+					duration: 300,
+					easing: 'ease-in-out',
+					opener: function(openerElement) {
+						return openerElement.is('img') ? openerElement : openerElement.find('img');
+					}
+				}
+			});
+
+			$("#year").text((new Date).getFullYear());
+		});
+		</script>
+
+	
+
+</body></html>

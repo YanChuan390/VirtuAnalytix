@@ -1,0 +1,356 @@
+<html class="no-js" lang="en"><head><script async="" src="https://query.yahooapis.com/v1/public/yql?q=SELECT%20channel.item%20FROM%20feednormalizer%20WHERE%20output%3D%22rss_2.0%22%20AND%20url%20%3D%22http%3A%2F%2Fsteamcommunity.com%2Fgames%2Fdistance%2Frss%22%20LIMIT%205&amp;format=json&amp;diagnostics=false&amp;callback=jQuery110206787934296649976_1694369155717&amp;_=1694369155718"></script>
+<meta charset="utf-8">
+<title>Distance - Atmospheric racing platformer on PC and PS4</title>
+<meta name="description" content="Distance is an atmospheric racing platformer for PC and PS4. Fusing futuristic arcade racing with parkour, survive a deadly, mysterious, neon-drenched city by...">
+<!--<meta name="viewport" content="width=1024">-->
+
+<!-- CSS Code -->
+<link href="http://fonts.googleapis.com/css?family=Gudea" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/countdownstyle.css">
+<link rel="stylesheet" href="css/flipclock.css">
+<link href="css/FeedEk.css" rel="stylesheet" type="text/css">
+
+<!-- JS Code -->
+<script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/flipclock.min.js"></script>
+<script src="js/countdown.js"></script>	
+
+<script type="text/javascript" src="http://momentjs.com/downloads/moment-with-langs.min.js"></script>
+<script type="text/javascript" src="js/FeedEk.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#divRss').FeedEk({
+            FeedUrl: 'http://steamcommunity.com/games/distance/rss',
+            MaxCount: 5,
+            ShowDesc: false
+        });
+    });
+
+</script>
+
+<!-- For the scrolling triangle button -->
+<script>
+	$(document).ready(function (){
+		$("#click").click(function (){
+			//$(this).animate(function(){
+				$('html, body').animate({
+					scrollTop: $("#preorder").offset().top
+				}, 2000);
+			//});
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-9808651-8']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<!-- Fancybox -->
+<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen">
+ 	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			$("a#example2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+			$("a#example4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+			$("a#example5").fancybox();
+
+			$("a#example6").fancybox({
+				'titlePosition'		: 'outside',
+				'overlayColor'		: '#000',
+				'overlayOpacity'	: 0.9
+			});
+
+			$("a#example7").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a#example8").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '50%',
+				'height'			: '50%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+	<!--
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}
+
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}
+	//-->
+	</script>	
+	
+	<style type="text/css"> 
+		#mc_embed_signup { clear:left; color:#fff; width:275px; }
+		#mc_embed_signup form {display:block; position:relative; text-align:left; }
+		#mc_embed_signup h2 {fpadding:0; margin:15px 0; }
+		#mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
+		#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+		#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+		#mc_embed_signup input:focus {border-color:#333;}
+		#mc_embed_signup .button {clear:both; background-color: #333; border: 0 none; color: #FFFFFF; cursor: pointer; display: inline-block; font-weight: bold; height: 28px; line-height: 28px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto; font-family: 'Gudea', sans-serif; font-size: 14px;}
+		#mc_embed_signup .button:hover {background-color:#777;}
+		#mc_embed_signup .small-meta {font-size: 11px;}
+		#mc_embed_signup .nowrap {white-space:nowrap;}     
+		#mc_embed_signup .clear {clear:none; display:inline;}
+
+		#mc_embed_signup label {display:block; padding-bottom:10px; padding-top:15px;  font-family: 'Gudea', sans-serif; font-size: 14px;}
+		#mc_embed_signup input.email {display:block; padding:6px 0; margin:0 4% 10px 0; text-indent:5px; width:100%; min-width:130px; font-family: 'Gudea', sans-serif; font-size: 12px; }
+		#mc_embed_signup input.button {display:block; width:25%; margin:0 0 10px 0; min-width:100px; }
+
+		#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+		#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+		#mc_embed_signup #mce-error-response {display:none;}
+		#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+		#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+	</style>
+
+<script charset="utf-8" src="https://platform.twitter.com/js/button.e7f9415a2e000feaab02c86dd5802747.js"></script></head>
+
+<body style="">
+
+<div class="like_box">
+	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Frefractstudios&amp;send=false&amp;layout=button_count&amp;width=85&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21" style="border:none; overflow:hidden; width:85px; height:21px;"></iframe>
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 164px; height: 20px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.2b2d73daf636805223fb11d48f3e94f7.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=refractstudios&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1694369160285" data-screen-name="refractstudios"></iframe>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="//survivethedistance.us7.list-manage.com/subscribe/post?u=ae3fd31dc0bea58d09ef24faf&amp;id=737e077ee6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe to Distance updates:</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_ae3fd31dc0bea58d09ef24faf_737e077ee6" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<!--End mc_embed_signup-->
+
+</div>
+<!-- Section #1 -->
+<section id="home" data-speed="20" data-type="background">
+<div id="sectioncontent">
+<div id="aboutright" style="top:360px;">
+		<div class="subtext">
+			<p><span style="color: #FFFFFF;">Distance</span> is an atmospheric racing platformer for <span style="color: #FFFFFF;">PC and PS4</span>. Fusing futuristic arcade racing with parkour, survive a deadly, mysterious, neon-drenched city by jumping, rotating, and flying.</p>
+			<br>
+			<p>
+			<strong>Distance v1.0 features:</strong>
+			</p><hr>
+			<ul>
+			<li><span style="color: #FFFFFF;">Adventure</span>: Mysterious single-player narrative experience.</li>
+			<li><span style="color: #FFFFFF;">Arcade</span>: Earn medals on 100+ tracks in modes like Sprint, Reverse Tag, Stunt, and Challenge.</li>
+			<li><span style="color: #FFFFFF;">Online + Split-Screen</span>: Race up to 12 players online and 4 players locally.</li>
+			<li><span style="color: #FFFFFF;">Trackmogrify</span>: Random track generation with seed modifiers.</li>
+			<li><span style="color: #FFFFFF;">VR</span>: Full Oculus CV1 and HTC Vive integration.</li>
+			<li><span style="color: #FFFFFF;">Unlockables</span>: Complete achievements to unlock car skins and cheats.</li>
+			<li><span style="color: #FFFFFF;">Powerful level editor</span>: Connected to <a href="http://steamcommunity.com/app/233610/workshop/" target="_blank">Steam Workshop</a> (2,500+ user-created levels already available).</li>
+			<li><span style="color: #FFFFFF;">Original soundtrack</span>: By <a href="http://soundcloud.com/torcht" target="_blank">torcht</a>, composer of <strong>Nitronic Rush</strong> and <strong>Solace</strong>.</li>
+			</ul>
+			<p></p>
+			<br>
+			<p>
+			Join our passionate player community using the links below!
+			</p>
+		</div>		
+		<br>
+		<div style="width: 61%;margin: 0px auto;">
+			<a target="_blank" href="https://discord.gg/0SlqqvzfIbi6zhbY"><img class="smicon" src="images/discordIcon.png"></a>
+			<a target="_blank" href="http://www.twitter.com/refractstudios"><img class="smicon" src="images/twIcon.png"></a>
+			<a target="_blank" href="http://www.facebook.com/refractstudios"><img class="smicon" src="images/fIcon.png"></a>
+			<a target="_blank" href="http://www.reddit.com/r/distance"><img class="smicon" src="images/redditIcon.png"></a>
+			<a target="_blank" href="http://steamcommunity.com/app/233610"><img class="smicon" src="images/steamIcon.png"></a>
+			<a target="_blank" href="http://www.twitch.tv/refractstudios"><img class="smicon" src="images/twitchIcon.png"></a>
+			<a target="_blank" href="http://www.soundcloud.com/torcht"><img class="smicon" src="images/soundcloudIcon.png"></a>
+		</div>
+	</div>
+	<article><iframe width="625" height="351" src="http://www.youtube.com/embed/p7dp5mwhcl8?showinfo=0&amp;rel=0" frameborder="0" allowfullscreen=""></iframe></article>
+	<div class="subtitletext">
+	v1.0 <a href="http://store.steampowered.com/app/233610" style="text-decoration: none;" target="_blank">Available Now</a> for PC, PS4 coming <a href="https://blog.us.playstation.com/2014/12/02/can-you-survive-the-distance-on-ps4/" style="text-decoration: none;" target="_blank">when it's ready</a>
+	</div>
+	<div id="aboutleft" style="top:0px;">
+		<div id="youtube">
+			<iframe width="600" height="337" src="http://www.youtube.com/embed/p7dp5mwhcl8?showinfo=0&amp;rel=0" frameborder="0" allowfullscreen=""></iframe>
+		</div>
+	</div>
+	<div id="arrow">
+		<a href="#" id="click" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('BC','','images/arrow_selected.png',1)"><img src="images/arrow.png" alt="" name="BC" border="0" id="BC"></a>
+	</div>
+	<!--<div class="titletext" style="position:absolute;top:200px;right:20px;text-align:left;width:85px;font-size: 18px;-ms-transform: rotate(-20deg); -webkit-transform: rotate(-20deg); transform: rotate(-20deg);">
+		Can you<br /><a style="color:#FF5E99;text-decoration: none;" target="_blank" href="http://survivethedistance.com/survivetheeditor/">Survive the Editor?</a>
+	</div>-->
+</div>
+</section>
+
+<!-- Section #2 -->
+<section id="preorder" data-speed="20" data-type="background">
+	<div id="sectioncontent">
+		<div class="humblewidgets">
+			<iframe src="https://www.humblebundle.com/widget/v2/product/distance_standard/47SDHJFbaasd?theme=light" width="550" height="327" style="border: none;" scrolling="no" frameborder="0"></iframe>
+			<iframe src="https://www.humblebundle.com/widget/v2/product/distance_standard_deluxe/VVdf82hejas?theme=light" width="550" height="327" style="border: none;" scrolling="no" frameborder="0"></iframe>
+		</div>
+		<div class="titletext" id="preordertext">
+			Play Distance now on <span class="highlight">Windows, Mac, and Linux</span>
+		</div>
+		<div class="subtextQuicksand" id="preordersubtext">
+			Jump into Distance and continue to get updates as we add features and improve the game!
+		</div>
+	</div>
+</section>
+
+<!-- Section #3 -->
+<section id="about" data-speed="20" data-type="background">
+<div id="sectioncontent">
+	<div id="aboutleft">
+		<div class="smallimage"><a href="images/distance_gameplay_1.png"><img src="images/distance_gameplay_1_small.png"></a></div>
+		<div class="smallimage"><a href="images/distance_gameplay_2.png"><img src="images/distance_gameplay_2_small.png"></a></div>
+		<div class="smallimage"><a href="images/distance_gameplay_4.png"><img src="images/distance_gameplay_4_small.png"></a></div>
+		<div class="smallimage"><a href="images/distance_gameplay_5.png"><img src="images/distance_gameplay_5_small.png"></a></div>
+		</div>
+		<div id="aboutleft" style="top:225px">
+		<div class="titletext" style="width:237px;font-size: 30px;">Latest Distance News</div>
+        <br>
+		<div id="divRss"><img src="loader.gif"></div>
+		<br>
+		<!--<br /><div class="titletext" style="text-align: left;width:409px;font-size: 30px;">Screenshots from the private beta</div>
+		<br/>-->
+		<br>
+		<div class="titletext" style="width:410px;font-size: 30px;">I feel like I've seen this somewhere...</div>
+		<br>
+		<div class="subtext">
+		<p>
+			<span style="color: #FFFFFF;">Distance</span> is a spiritual sequel to our racer <a href="http://www.youtube.com/watch?v=vNuSvuzPL10" target="_blank">Nitronic Rush</a>, created by ourselves and 5 others at DigiPen Institute of Technology. We're redesigning from scratch to support tons of new features!
+			</p>
+		</div>
+		
+	</div>
+	<div id="aboutright">
+	<div class="titletext" style="width:275px;font-size: 30px;">Preview the soundtrack</div>
+	<br>
+		<iframe width="550" height="300px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2802915&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+		
+		
+		<br><br><br>
+		<div class="titletext" style="width:185px;font-size: 30px;">Stay connected!</div>
+		<br>
+		<div class="subtext">
+			Social media stuff:
+			<ul style="color: #FFFFFF;">
+			<li>Twitter: <a href="http://twitter.com/refractstudios" target="_blank">@refractstudios</a></li>
+			<li>Facebook: <a href="http://facebook.com/refractstudios" target="_blank">facebook.com/refractstudios</a></li>
+			<li>Discord: <a href="http://discord.gg/distance" target="_blank">discord.gg/distance</a></li>
+			</ul>
+			<br>
+			Developer-specific Twitter updates:
+			<ul style="color: #FFFFFF;">
+			<li>Jordan Hemenway, <a href="http://twitter.com/torcht" target="_blank">@torcht</a></li>
+			<li>Laura Borgen, <a href="http://twitter.com/LBoArt" target="_blank">@LBoArt</a></li>
+			<li>Eddie Peters, <a href="http://twitter.com/ClumpThickly" target="_blank">@ClumpThickly</a></li>
+			<li>Galen Heninger, <a href="http://twitter.com/snowstate_" target="_blank">@snowstate_</a></li>
+			<li>Kristian Bjerre, <a href="http://twitter.com/KrispyVG" target="_blank">@KrispyVG</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="refractlogo">
+	<a href="http://refract.com" target="_blank"><img src="images/refract_studios_alpha.png"></a>
+</div>
+</section>
+<div class="otherlinks">
+	<a href="http://refract.com" target="_blank">News</a> / <a href="http://steamcommunity.com/app/233610/discussions/" target="_blank">Forums</a> / <a href="http://store.steampowered.com/app/233610" target="_blank">Steam</a> / <a href="https://www.humblebundle.com/store/p/distance_storefront" target="_blank">Humble Store</a> / <a href="http://refract.com/press" target="_blank">Press Kit</a> / <a href="http://refract.com/press#contact" target="_blank">Contact Us</a>
+</div>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html?origin=http%3A%2F%2Fsurvivethedistance.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>

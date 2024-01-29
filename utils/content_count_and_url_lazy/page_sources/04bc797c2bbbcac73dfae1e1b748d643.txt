@@ -1,0 +1,879 @@
+<html lang="en" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://pi.pardot.com/pd.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-S04NHCN80Q&amp;cx=c&amp;_slc=1"></script><script async="" src="https://snap.licdn.com/li.lms-analytics/insight.old.min.js"></script><script src="https://connect.facebook.net/signals/config/214267713203824?v=2.9.125&amp;r=stable&amp;domain=digital.vikingcorp.com" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="true" type="text/javascript" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script async="true" type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script src="https://www.googletagmanager.com/gtm.js?id=GTM-K5DMRF3" async=""></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"a3ff25bc51",applicationID:"293968483"};;/*! For license information please see nr-loader-rum-1.239.1.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={763:(e,t,n)=>{n.d(t,{P_:()=>g,Mt:()=>h,C5:()=>s,DL:()=>b,OP:()=>j,lF:()=>k,Yu:()=>w,Dg:()=>p,CX:()=>c,GE:()=>y,sU:()=>T});var r=n(632),i=n(567);const a={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a),(0,r.Qy)(e,o[e],"info")}var d=n(56);const u=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},l={},f="All configuration objects require an agent identifier!";function g(e){if(!e)throw new Error(f);if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function p(e,t){if(!e)throw new Error(f);l[e]=(0,i.D)(t,u()),(0,r.Qy)(e,l[e],"config")}function h(e,t){if(!e)throw new Error(f);var n=g(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const v={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},m={};function b(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!m[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return m[e]}function y(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");m[e]=(0,i.D)(t,v),(0,r.Qy)(e,m[e],"loader_config")}const w=(0,r.mF)().o;var A=n(385),x=n(818);const D={buildEnv:x.Re,customTransaction:void 0,disabled:!1,distMethod:x.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(A._A?.performance?.timeOrigin||A._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+A._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof A._A.XMLHttpRequest?.prototype?.addEventListener,version:x.q4,denyList:void 0},E={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!E[e])throw new Error("Runtime for ".concat(e," was never set"));return E[e]}function T(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");E[e]=(0,i.D)(t,D),(0,r.Qy)(e,E[e],"runtime")}function k(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(n).length?e:n;for(let o in a)if(void 0!==e[o])try{"object"==typeof e[o]&&"object"==typeof t[o]?n[o]=i(e[o],t[o]):n[o]=e[o]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>a,q4:()=>r});const r="1.239.1",i="PROD",a="CDN"},385:(e,t,n)=>{n.d(t,{Nk:()=>d,Tt:()=>o,_A:()=>a,il:()=>r,ux:()=>s,v6:()=>i,w1:()=>c});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=(a?.location,/iPad|iPhone|iPod/.test(navigator.userAgent)),s=o&&"undefined"==typeof SharedWorker,c=((()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(r&&window.document.documentMode)),d=!!navigator.sendBeacon},711:(e,t,n)=>{n.d(t,{w:()=>a});var r=n(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},0:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(148),i=n(284),a=n(322),o=n(325);const s={};function c(e,t){const n={staged:!1,priority:o.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const n=[...s[e]];function o(t){const n=e?r.ee.get(e):r.ee,o=a.X.handlers;if(n.backlog&&o){var s=n.backlog[t],c=o[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete o[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((t=>{let[n]=t;s[e].delete(n),o(n)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],a=e[3],o=e[2];i.apply(a,o)}}))}},148:(e,t,n)=>{n.d(t,{A:()=>c,ee:()=>d});var r=n(632),i=n(210),a=n(763);class o{constructor(e){this.contextId=e}}var s=n(117);const c="nr@context:".concat(s.a),d=function e(t,n){var r={},s={},u={},f=!1;try{f=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,a){!1!==a&&(a=!0);if(d.aborted&&!i)return;t&&a&&t.emit(e,n,r);for(var o=p(r),c=v(e),u=c.length,l=0;l<u;l++)c[l].apply(o,n);var f=b()[s[e]];f&&f.push([g,e,n,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return u[t]=u[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),u=(0,r.fP)();function l(){d.aborted=!0,d.backlog={}}u.ee||(u.ee=d)},546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(148).ee.get("handle");function i(e,t,n,i,a){a?(a.buffer([e],i),a.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},322:(e,t,n)=>{n.d(t,{X:()=>a});var r=n(546);a.on=o;var i=a.handlers={};function a(e,t,n,a){o(a||r.E,i,e,t,n)}function o(e,t,n,i,a){a||(a="feature"),e||(e=r.E);var o=t[a]=t[a]||{};(o[n]=o[n]||[]).push([e,i])}},239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var r=n(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(n,r))}},117:(e,t,n)=>{n.d(t,{a:()=>r});const r=(0,n(402).Rl)()},402:(e,t,n)=>{n.d(t,{Rl:()=>o,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?a(t,++n).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(n,++i).toString(16));return o.join("")}},56:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>a,oD:()=>i});const r="NRBA",i=144e5,a=18e5},894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(148),i=n(546),a=n(325);const o={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},s=new Set;function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,r]=e;o[t]?o[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r)})),Object.keys(o).forEach((e=>{void 0===d[e]&&(o[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),s.add(t))}const d={}},210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},351:(e,t,n)=>{n.d(t,{P:()=>a});var r=n(148);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},960:(e,t,n)=>{n.d(t,{K:()=>o,b:()=>a});var r=n(239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,r.bP)("load",e,t)}function o(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>a,fP:()=>o,gG:()=>u,mF:()=>s});var r=n(894),i=n(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=o();const a=i.initializedAgents||{},s=a[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...a,[e]:{...s,[n]:t}},i}function d(e,t){o()[e]=t}function u(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),n,i)}},81:(e,t,n)=>{n.d(t,{gF:()=>a,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>o});const r=n(325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},633:(e,t,n)=>{n.d(t,{Dz:()=>i,OJ:()=>o,qw:()=>a,t9:()=>r});const r=n(325).D.pageViewEvent,i="firstbyte",a="domcontent",o="windowload"},251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(325).D.pageViewTiming},938:(e,t,n)=>{n.d(t,{W:()=>a});var r=n(763),i=n(148);class a{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},144:(e,t,n)=>{n.d(t,{j:()=>v});var r=n(325),i=n(763),a=n(546),o=n(148),s=n(894),c=n(0),d=n(960),u=n(385),l=n(50),f=n(81),g=n(632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...r))})),a.length>1?a:a[0]}(t,...r)}}))}var h=n(587);function v(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},v=arguments.length>2?arguments[2]:void 0,m=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:A={loaderType:v},exposed:x=!0}=t;const D=(0,g.gG)();y||(b=D.init,y=D.info,w=D.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),y.jsAttributes??={},u.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y);const E=(0,i.P_)(e);A.denyList=[...E.ajax?.deny_list||[],...E.ajax?.block_internal?[y.beacon,y.errorBeacon]:[]],(0,i.sU)(e,A),p();const j=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,a){const o=(0,i.C5)(e);return null===n?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:n}}),A(v,r,!0,a||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=Object.values(r.D);if(void 0===e)e=t;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!t.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(t));e.includes(r.D.pageViewEvent)||e.push(r.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,o="function"==typeof t;return(0,a.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],n),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function x(){n.e(75).then(n.bind(n,438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>x()),!0):x(),g}(e,m);return(0,g.Qy)(e,j,"api"),(0,g.Qy)(e,x,"exposed"),(0,g.EZ)("activatedFeatures",h.T),j}},325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var a=r[e]={exports:{}};return n[e](a,a.exports,i),a.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum.1efcb83a-1.239.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.239.1.PROD:",i.l=(n,r,a,o)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+a){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var a=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var a=n&&("load"===n.type?"missing":n.type),o=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,a,[o,s,c]=n,d=0;if(o.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},n=self["webpackChunk:NRBA-1.239.1.PROD"]=self["webpackChunk:NRBA-1.239.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var n=i(325),r=i(763);const a=Object.values(n.D);function o(e){const t={};return a.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(144);var c=i(546),d=i(385),u=i(0),l=i(938),f=i(960);class g extends l.W{constructor(e,t,n){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,r.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,u.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,u.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const n=d.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,u.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),a(!1)}};d.il?(0,f.b)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var p=i(633),h=i(894);class v extends g{static featureName=p.t9;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||d.Tt)&&"undefined"!=typeof PerformanceTiming){const t=(0,r.OP)(e);t[p.Dz]=Math.max(Date.now()-t.offset,0),(0,f.K)((()=>{t[p.qw]=Math.max((0,h.z)()-t[p.Dz],0)})),(0,f.b)((()=>{const e=(0,h.z)();t[p.OJ]=Math.max(e-t[p.Dz],0),(0,c.p)("timing",["load",e],void 0,n.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var m=i(711),b=i(284);class y extends m.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var a=this.getBucket(e,t,n,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,b.D)(e,(function(e,n){t[e]=w(n,t[e])})),t}(r,a.metrics),a}merge(e,t,n,r,i){var a=this.getBucket(e,t,r,i);if(a.metrics){var o=a.metrics;o.count+=n.count,(0,b.D)(n,(function(e,t){if("count"!==e){var r=o[e],i=n[e];i&&!i.c?o[e]=w(i.t,r):o[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=w(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=x(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function x(e){return"object"!=typeof e?[]:(0,b.D)(e,D)}function D(e,t){return t}var E=i(632),j=i(402),T=i(351);var k=i(956),_=i(239),S=i(251);class P extends g{static featureName=S.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,S.t,n),d.il&&((0,r.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,k.N)((()=>(0,c.p)("docHidden",[(0,h.z)()],void 0,S.t,this.ee)),!0),(0,_.bP)("pagehide",(()=>(0,c.p)("winPagehide",[(0,h.z)()],void 0,S.t,this.ee))),this.importAggregator())}}var C=i(81);class I extends g{static featureName=C.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,j.ky)(16);super(),d._A?(this.agentIdentifier=n,this.sharedAggregator=new y({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(v),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}run(){const t="features";try{const r=o(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>r[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,T.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,E.Qy)(this.agentIdentifier,this.features,t)}catch(n){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",n);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,E.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[v,P,I],loaderType:"lite"})})()})();</script>
+<noscript><style>form.antibot * :not(.antibot-message) { display: none !important; }</style>
+</noscript><meta name="Generator" content="Drupal 9 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/themes/custom/vds/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="canonical" href="https://digital.vikingcorp.com/homepage">
+<link rel="shortlink" href="https://digital.vikingcorp.com/node/3">
+<script src="/sites/default/files/google_tag/google_tag/viking_digital_solutions/google_tag.script.js?rzlthm" defer=""></script>
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>Homepage | Viking Digital Solutions</title>
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/ajax-progress.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/align.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/autocomplete-loading.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/fieldgroup.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/container-inline.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/clearfix.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/details.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/hidden.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/item-list.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/js.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/nowrap.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/position-container.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/progress.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/reset-appearance.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/resize.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/sticky-header.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-counter.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-counters.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-general-info.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tabledrag.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tablesort.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tree-child.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/views/views.module.css?rzlthm">
+<link rel="stylesheet" media="all" href="/modules/contrib/addtoany/css/addtoany.css?rzlthm">
+<link rel="stylesheet" media="all" href="/modules/contrib/paragraphs/css/paragraphs.unpublished.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/core/assets/vendor/normalize-css/normalize.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/core/normalize-fixes.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/action-links.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/breadcrumb.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/button.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/collapse-processed.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/container-inline.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/details.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/exposed-filters.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/field.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/form.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/icons.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/inline-form.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/item-list.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/link.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/links.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/menu.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/more-link.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/pager.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/tabledrag.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/tableselect.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/tablesort.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/tabs.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/textarea.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/ui-dialog.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/messages.css?rzlthm">
+<link rel="stylesheet" media="all" href="/core/themes/classy/css/components/node.css?rzlthm">
+<link rel="stylesheet" media="all" href="https://use.typekit.net/iqc8rsg.css">
+<link rel="stylesheet" media="all" href="/themes/custom/vds/libraries/global_css/dist/styles.css?rzlthm">
+
+    
+  <script src="https://static.addtoany.com/menu/modules/core.c78901bc.js" type="module"></script><script type="text/javascript" src="https://pi.pardot.com/analytics?ver=3&amp;visitor_id=&amp;visitor_id_sign=&amp;pi_opt_in=&amp;campaign_id=185355&amp;account_id=69632&amp;title=Homepage%20%7C%20Viking%20Digital%20Solutions&amp;url=https%3A%2F%2Fdigital.vikingcorp.com%2F&amp;referrer="></script></head>
+  <body class="path-frontpage page-node-type-basic-page">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5DMRF3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    <div id="page">
+
+  <header role="banner" id="header">
+    <div class="layout-container">
+
+      <div id="branding">
+        <a href="/" id="logo"><span class="visually-hidden">Home</span></a>
+        <div class="brick"></div>
+      </div>
+
+      <button class="toggle toggle-nav" id="toggle-nav" href="#navigation" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
+        <span class="bars">
+          <span class="bar first"></span>
+          <span class="bar middle"></span>
+          <span class="bar last"></span>
+        </span>
+        <span class="menu-text">Menu</span>
+      </button>
+
+      <div id="navigation" class="col-lg-9" tabindex="-1">
+          <div class="region region-header">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="mainnavigation block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h2>
+  
+
+        
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="/tools-revit">Revit® Tools</a>
+              </li>
+                <li class="menu-item">
+        <a href="/hydraulic-assistant" data-drupal-link-system-path="node/90">Hydraulic Assistant</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/applications">Web Tools</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/high-expansion-foam-web-tools" data-drupal-link-system-path="node/80">High Expansion Foam Web Tools</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://webtools.vikingcorp.com/fff/">LoEx Estimator</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://webtools.vikingcorp.com/dry/">Dry Sprinkler Order Form</a>
+              </li>
+                <li class="menu-item">
+        <a href="/sprinkler-selector">Sprinkler Selector</a>
+              </li>
+                <li class="menu-item">
+        <a href="/valve-system-configurator">System Configurator</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+        <a href="/mobile-app">Mobile App</a>
+              </li>
+                <li class="menu-item">
+        <a href="/virtual-viking">Virtual Viking</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/resources" data-drupal-link-system-path="node/6">Resources</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/faqs" data-drupal-link-system-path="node/9">FAQs</a>
+              </li>
+                <li class="menu-item">
+        <a href="/tutorials" data-drupal-link-system-path="node/7">Tutorials</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.vikinggroupinc.com/resources/revit">Revit® Families</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+        <a href="/contact" data-drupal-link-system-path="node/13">Contact Us</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div class="search-block-form searchform block block-search" data-drupal-selector="search-block-form" id="block-searchform" role="search">
+  <button class="toggle toggle-search" id="toggle-search" aria-controls="search-block-form" aria-expanded="false" aria-label="Search"><span>Search</span></button>
+      <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label fancy-field">
+      <label for="edit-keys" class="visually-hidden">Search</label>
+        <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-search">
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit">
+</div>
+
+</form>
+
+  </div>
+
+  </div>
+
+      </div>
+      <div id="nav-overlay"></div>
+    </div>
+  </header>
+
+  <div id="highlighted" class="layout-container ">
+    
+      <div class="region region-highlighted">
+    <div class="views-element-container views-block-banner-slider-block-1 block block-views block-views-blockbanner-slider-block-1" id="block-views-block-banner-slider-block-1">
+  
+    
+      <div><div class="carrousel view view-banner-slider view-id-banner_slider view-display-id-block_1 js-view-dom-id-23cfe4bf96ee5e9d2b5fc8c84f453c8cfc137761ec0ecb59d4f5076670cf8e0e">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">
+
+
+
+
+      <h1 class="element-invisible">Homepage</h1>
+    
+
+
+  <ol class="js-carrousel__control__list banner-carrousel__control__list banner-carrousel__control__list--1" role="tablist"><li class="js-carrousel__control__list__item banner-carrousel__control__list__item" role="presentation"><a class="js-carrousel__control__list__link  banner-carrousel__control__list__link" id="label_id_carrousel_content_1_1" role="tab" aria-controls="id_carrousel_content_1_1" tabindex="0" aria-selected="true"><span class="banner-carrousel__control__list__text invisible">Hydraulic Assistant</span></a></li><li class="js-carrousel__control__list__item banner-carrousel__control__list__item" role="presentation"><a class="js-carrousel__control__list__link  banner-carrousel__control__list__link" id="label_id_carrousel_content_1_2" role="tab" aria-controls="id_carrousel_content_1_2" tabindex="-1" aria-selected="false"><span class="banner-carrousel__control__list__text invisible">Viking Tools for Revit®</span></a></li><li class="js-carrousel__control__list__item banner-carrousel__control__list__item" role="presentation"><a class="js-carrousel__control__list__link  banner-carrousel__control__list__link" id="label_id_carrousel_content_1_3" role="tab" aria-controls="id_carrousel_content_1_3" tabindex="-1" aria-selected="false"><span class="banner-carrousel__control__list__text invisible">Learn about Viking's wide range of valves anywhere, anytime.</span></a></li><li class="js-carrousel__control__list__item banner-carrousel__control__list__item" role="presentation"><a class="js-carrousel__control__list__link  banner-carrousel__control__list__link" id="label_id_carrousel_content_1_4" role="tab" aria-controls="id_carrousel_content_1_4" tabindex="-1" aria-selected="false"><span class="banner-carrousel__control__list__text invisible">Viking's web tools: quick, innovative, user-friendly.</span></a></li><li class="js-carrousel__control__list__item banner-carrousel__control__list__item" role="presentation"><a class="js-carrousel__control__list__link  banner-carrousel__control__list__link" id="label_id_carrousel_content_1_5" role="tab" aria-controls="id_carrousel_content_1_5" tabindex="-1" aria-selected="false"><span class="banner-carrousel__control__list__text invisible">Maintain and learn about a fire sprinkler system with ease in the System Support App.</span></a></li></ol><div class="js-carrousel__button-container banner-carrousel__button-container js-carrousel__button__previous banner-carrousel__button__previous banner-carrousel__button__previous--1"><button type="button" title="Previous" class="js-carrousel__button__button banner-carrousel__button__button">Previous</button></div><div class="view-content carrousel__container fade carrouselslide-1-1 banner-carrousel__container banner-carrousel__container--1" data-carrousel-btn-previous-text="Previous" data-carrousel-btn-next-text="Next" data-carrousel-prefix-classes="banner" data-carrousel-span-text-class="invisible" data-carrousel-transition="fade" data-carrousel-existing-hx="h2">
+          <div class="carrousel__content banner-carrousel__content" role="tabpanel" id="id_carrousel_content_1_1" aria-labelledby="label_id_carrousel_content_1_1">  <article class="banner alt">
+          <div class="banner__left">
+        <div>
+          
+
+
+            <div class="field field--name-field-slide-image field--type-entity-reference field--label-hidden field__item"><div class="media media--type-image media--view-mode-large-square">
+  
+      
+    <img loading="lazy" src="/sites/default/files/styles/large_square/public/2022-11/Hydraulic.Assistant_4.png?itok=N_sAqowF" width="1000" height="1000" alt="Hydraulic Assistant Overview Image" class="image-style-large-square">
+
+
+
+
+  </div>
+</div>
+      
+
+
+        </div>
+      </div>
+      <div class="banner__right">
+        <div>
+          <div class="banner__content">
+            
+  <h2 tabindex="0">Hydraulic Assistant</h2>
+
+
+
+            <div class="field field--name-field-slide-text field--type-string field--label-hidden field__item">Standalone and Revit integrated hydraulic calculations available at no cost to select Viking clients.</div>
+      
+
+
+
+
+            <div class="field field--name-field-button field--type-link field--label-hidden field__item"><a href="/hydraulic-assistant">Learn More</a></div>
+      
+
+
+          </div>
+        </div>
+      </div>
+      </article>
+</div>
+          <div class="carrousel__content visibility-off banner-carrousel__content" role="tabpanel" id="id_carrousel_content_1_2" aria-hidden="true" aria-labelledby="label_id_carrousel_content_1_2">  <article class="banner alt">
+          <div class="banner__left">
+        <div>
+          
+
+
+            <div class="field field--name-field-slide-image field--type-entity-reference field--label-hidden field__item"><div class="media media--type-image media--view-mode-large-square">
+  
+      
+    <img loading="lazy" src="/sites/default/files/styles/large_square/public/2020-02/RevitToolsMock2.png?itok=TpYD1Mc0" width="1000" height="1000" alt="RevitToolsMock" class="image-style-large-square">
+
+
+
+
+  </div>
+</div>
+      
+
+
+        </div>
+      </div>
+      <div class="banner__right">
+        <div>
+          <div class="banner__content">
+            
+  <h2 tabindex="0">Viking Tools for Revit®</h2>
+
+
+
+            <div class="field field--name-field-slide-text field--type-string field--label-hidden field__item">An innovative suite of Revit® applications specifically for fire protection systems. Download the complimentary toolbar to get started today!</div>
+      
+
+
+
+
+            <div class="field field--name-field-button field--type-link field--label-hidden field__item"><a href="/download-viking-tools-revit">Download</a></div>
+      
+
+
+          </div>
+        </div>
+      </div>
+      </article>
+</div>
+          <div class="carrousel__content visibility-off banner-carrousel__content" role="tabpanel" id="id_carrousel_content_1_3" aria-hidden="true" aria-labelledby="label_id_carrousel_content_1_3">  <article class="banner alt">
+          <div class="banner__left">
+        <div>
+          
+
+
+            <div class="field field--name-field-slide-image field--type-entity-reference field--label-hidden field__item"><div class="media media--type-image media--view-mode-large-square">
+  
+      
+    <img loading="lazy" src="/sites/default/files/styles/large_square/public/2020-03/F2_Action_Sim_ClapperOpen.jpg?itok=YcjSbeHO" width="1000" height="1000" alt="VR3" class="image-style-large-square">
+
+
+
+
+  </div>
+</div>
+      
+
+
+        </div>
+      </div>
+      <div class="banner__right">
+        <div>
+          <div class="banner__content">
+            
+  <h2 tabindex="0">Learn about Viking's wide range of valves anywhere, anytime.</h2>
+
+
+
+            <div class="field field--name-field-slide-text field--type-string field--label-hidden field__item">Virtual Viking is easily accessible through Steam and has interactive courses on a wide range of Viking systems. Try it on your desktop or in VR!</div>
+      
+
+
+
+
+            <div class="field field--name-field-button field--type-link field--label-hidden field__item"><a href="https://digital.vikingcorp.com/virtual-viking">Learn more</a></div>
+      
+
+
+          </div>
+        </div>
+      </div>
+      </article>
+</div>
+          <div class="carrousel__content visibility-off banner-carrousel__content" role="tabpanel" id="id_carrousel_content_1_4" aria-hidden="true" aria-labelledby="label_id_carrousel_content_1_4">  <article class="banner alt">
+          <div class="banner__left">
+        <div>
+          
+
+
+            <div class="field field--name-field-slide-image field--type-entity-reference field--label-hidden field__item"><div class="media media--type-image media--view-mode-large-square">
+  
+      
+    <img loading="lazy" src="/sites/default/files/styles/large_square/public/2020-02/LAPTOP-FLOATING---Sprinkler-Selector---2.png?itok=s_BUDnrb" width="1000" height="1000" alt="A laptop is shown with Sprinkler Selector." class="image-style-large-square">
+
+
+
+
+  </div>
+</div>
+      
+
+
+        </div>
+      </div>
+      <div class="banner__right">
+        <div>
+          <div class="banner__content">
+            
+  <h2 tabindex="0">Viking's web tools: quick, innovative, user-friendly.</h2>
+
+
+
+            <div class="field field--name-field-slide-text field--type-string field--label-hidden field__item">Identify the ideal Viking sprinkler for your design, dynamically build a virtual Viking riser, and get that critical component delivered to the job site FAST. It's all right here.</div>
+      
+
+
+
+
+            <div class="field field--name-field-button field--type-link field--label-hidden field__item"><a href="/applications">Learn More</a></div>
+      
+
+
+          </div>
+        </div>
+      </div>
+      </article>
+</div>
+          <div class="carrousel__content visibility-off banner-carrousel__content" role="tabpanel" id="id_carrousel_content_1_5" aria-hidden="true" aria-labelledby="label_id_carrousel_content_1_5">  <article class="banner alt">
+          <div class="banner__left">
+        <div>
+          
+
+
+            <div class="field field--name-field-slide-image field--type-entity-reference field--label-hidden field__item"><div class="media media--type-image media--view-mode-large-square">
+  
+      
+    <img loading="lazy" src="/sites/default/files/styles/large_square/public/2020-02/MobileApp-iPhone-sq.jpg?itok=48QEKds4" width="1000" height="1000" alt="Hand holding mobile phone showing Viking Valve &amp; System App" class="image-style-large-square">
+
+
+
+
+  </div>
+</div>
+      
+
+
+        </div>
+      </div>
+      <div class="banner__right">
+        <div>
+          <div class="banner__content">
+            
+  <h2 tabindex="0">Maintain and learn about a fire sprinkler system with ease in the System Support App.</h2>
+
+
+
+            <div class="field field--name-field-slide-text field--type-string field--label-hidden field__item">"Valve &amp; System Support" mobile app provides 24/7 tech support for wet, dry, deluge, and preaction systems!</div>
+      
+
+
+
+
+            <div class="field field--name-field-button field--type-link field--label-hidden field__item"><a href="/valve-system-support-mobile-app">Learn More</a></div>
+      
+
+
+          </div>
+        </div>
+      </div>
+      </article>
+</div>
+      </div><div class="js-carrousel__button-container banner-carrousel__button-container js-carrousel__button__next banner-carrousel__button__next banner-carrousel__button__next--1"><button type="button" title="Next" class="js-carrousel__button__button banner-carrousel__button__button">Next</button></div>
+
+
+
+  
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+    <div class="region region-help">
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+
+
+  <main role="main" id="main" class="main layout-container">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div class="region region-content">
+    <div id="block-mainpagecontent" class="mainpagecontent block block-system block-system-main-block">
+  
+    
+      
+
+
+
+
+  <article role="article" class="node node--type-basic-page node--view-mode-full">
+    
+    
+        
+
+    <div class="node__content">
+      
+
+
+      <div class="field field--name-field-body field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">  <div class="paragraph paragraph--type--cards paragraph--view-mode--default">
+          
+  <h2>You're on the go.  Viking's web tools keep you moving FAST!</h2>
+
+
+
+      <div class="field field--name-field-cards field--type-entity-reference-revisions field--label-hidden field__items cards-four-column">
+              <div class="field__item">
+
+  
+    
+              <a class="paragraph paragraph--type--card paragraph--view-mode--default" href="/valve-system-configurator">
+      
+    
+    <div class="card__content">
+      
+
+
+            <div class="field field--name-field-card-media field--type-entity-reference-revisions field--label-hidden field__item">  <div class="paragraph paragraph--type--card-image paragraph--view-mode--default">
+          
+
+
+            <div class="field field--name-field-card-image field--type-entity-reference field--label-hidden field__item"><div class="media media--type-image media--view-mode-teaser">
+  
+      
+    <img loading="lazy" src="/sites/default/files/styles/card_image/public/2020-02/System_Configurator_2_snip.PNG?itok=8-0UNKhy" width="600" height="338" alt="Valve and System Configurator Logo" class="image-style-card-image">
+
+
+
+
+  </div>
+</div>
+      
+
+
+      </div>
+</div>
+      
+
+
+  <h3 class="h4">3D System Configurator</h3>
+
+
+
+            <div class="field field--name-field-card-text field--type-string field--label-hidden field__item">Interactively build a riser for any Viking wet, dry, deluge or preaction system.  A summary is provided with a complete BOM and all technical documentation.</div>
+      
+
+
+    </div>
+
+          </a>
+    
+  
+</div>
+              <div class="field__item">
+
+  
+    
+              <a class="paragraph paragraph--type--card paragraph--view-mode--default" href="/sprinkler-selector">
+      
+    
+    <div class="card__content">
+      
+
+
+            <div class="field field--name-field-card-media field--type-entity-reference-revisions field--label-hidden field__item">  <div class="paragraph paragraph--type--card-image paragraph--view-mode--default">
+          
+
+
+            <div class="field field--name-field-card-image field--type-entity-reference field--label-hidden field__item"><div class="media media--type-image media--view-mode-teaser">
+  
+      
+    <img loading="lazy" src="/sites/default/files/styles/card_image/public/2020-02/Sprinkler-Selector-Icon_Snip.jpg?itok=qFPAdBsH" width="600" height="338" alt="Sprinkler Selector Icon Logo" class="image-style-card-image">
+
+
+
+
+  </div>
+</div>
+      
+
+
+      </div>
+</div>
+      
+
+
+  <h3 class="h4">Sprinkler Selector</h3>
+
+
+
+            <div class="field field--name-field-card-text field--type-string field--label-hidden field__item">Make smarter product decisions for your fire sprinkler system design with Viking's new mobile "Sprinkler Selector" web-based tool.</div>
+      
+
+
+    </div>
+
+          </a>
+    
+  
+</div>
+              <div class="field__item">
+
+  
+    
+              <a class="paragraph paragraph--type--card paragraph--view-mode--default" href="https://webtools.vikingcorp.com/dry/">
+      
+    
+    <div class="card__content">
+      
+  <h3 class="h4">Dry Sprinkler Order Form</h3>
+
+
+
+            <div class="field field--name-field-card-text field--type-string field--label-hidden field__item">Order any dry sprinkler you need with ease. Viking's new digital dry sprinkler order form helps you to easily configure your custom dry sprinklers.</div>
+      
+
+
+    </div>
+
+          </a>
+    
+  
+</div>
+              <div class="field__item">
+
+  
+    
+              <a class="paragraph paragraph--type--card paragraph--view-mode--default" href="https://webtools.vikingcorp.com/foamestimator/">
+      
+    
+    <div class="card__content">
+      
+  <h3 class="h4">Hi-Ex Foam Tools</h3>
+
+
+
+            <div class="field field--name-field-card-text field--type-string field--label-hidden field__item">Calculate your high expansion foam system requirements in just a few minutes! Use the Hi-Ex foam web tool to construct a product list.</div>
+      
+
+
+    </div>
+
+          </a>
+    
+  
+</div>
+          </div>
+  
+
+
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--feature paragraph--view-mode--default">
+          
+<div class="feature">
+      
+<div class="feature__content">
+      
+  <h2>Introducing Viking Tools for Revit®</h2>
+
+
+
+            <div class="clearfix text-formatted field field--name-field-feature-text field--type-text-long field--label-hidden field__item"><p>Viking has announced a comprehensive suite of innovative Revit® tools developed specifically for the fire protection designer.&nbsp;The complimentary toolbar features an all-new library of Revit® families for the complete Viking product line, as well as several innovative tools and utilities for the design of fire sprinkler, foam, and clean agent systems.</p>
+
+<p>&nbsp;</p></div>
+      
+
+
+
+
+            <div class="field field--name-field-feature-link field--type-link field--label-hidden field__item"><a href="/download-viking-tools-revit">Download Viking Tools for Revit®</a></div>
+      
+
+
+  </div>
+
+<div class="feature__image">
+      
+
+
+            <div class="field field--name-field-feature-image field--type-entity-reference field--label-hidden field__item"><div class="media media--type-image media--view-mode-medium">
+  
+      
+    <img loading="lazy" src="/sites/default/files/styles/medium_image/public/2020-02/GrateNozzle_MockUP.png?itok=cmb5Z-2j" width="800" height="600" alt="NozzleMockUp" class="image-style-medium-image">
+
+
+
+
+  </div>
+</div>
+      
+
+
+  </div>
+
+  </div>
+
+      </div>
+</div>
+              <div class="field__item">  <div class="columns--2 paragraph paragraph--type--columns paragraph--view-mode--default">
+          
+
+
+      <div class="field field--name-field-columns field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">  <div class="paragraph paragraph--type--text paragraph--view-mode--default">
+          
+
+
+            <div class="clearfix text-formatted field field--name-field-text field--type-text-long field--label-hidden field__item"><h2>Design and calculate a clean agent system in Revit®</h2>
+
+<p>Viking has integrated our Design Manager clean agent software into Revit®. As a result, you can now design a clean agent system natively in Revit, with complete UL Listed and FM Approved design calculations.&nbsp;A system summary is provided with all required calculations&nbsp;and a complete BOM.&nbsp;Changes to the model?&nbsp;No worries, a clean agent project can be saved and updated later, should there be any changes to the Revit® model.</p></div>
+      
+
+
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--image paragraph--view-mode--default">
+          
+
+
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__item"><div class="media media--type-image media--view-mode-full-width">
+  
+      
+    <img loading="lazy" src="/sites/default/files/styles/large_image/public/2020-02/VSH1230_Cylinder_Family.PNG?itok=GsDEkPn_" width="454" height="308" alt="CleanAgentCylinder_RevitFamily" class="image-style-large-image">
+
+
+
+
+  </div>
+</div>
+      
+
+
+      </div>
+</div>
+          </div>
+  
+
+
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--cta paragraph--view-mode--default">
+          
+  <h2>Ready to speed up your workflows in Revit®?</h2>
+
+
+
+            <div class="field field--name-field-button field--type-link field--label-hidden field__item"><a href="/download-viking-tools-revit">Register and Download Here</a></div>
+      
+
+
+      </div>
+</div>
+          </div>
+  
+
+
+    </div>
+
+  </article>
+
+
+  </div>
+
+  </div>
+
+    </div>
+    
+    
+  </main>
+
+      <footer role="contentinfo" id="footer">
+      <div class="layout-container">
+        <div class="row">
+                      <div class="col-md-6 col-lg-4 col-md-push-6 col-lg-push-8">
+                <div class="region region-footer-right">
+    <nav role="navigation" aria-labelledby="block-social-menu" id="block-social" class="social block block-menu navigation menu--social">
+            
+  <h2 class="visually-hidden" id="block-social-menu">Social</h2>
+  
+
+        
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="http://facebook.com/vikingworldwide">Facebook</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://twitter.com/vikinggroup">Twitter</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://linkedin.com/company/viking-group-inc-">LinkedIn</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.youtube.com/user/Vikingsprinkler">YouTube</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://sprinklersaves.com">Sprinkler Saves</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            </div>
+                                <div class="col-md-6 col-lg-8 col-md-pull-6 col-lg-pull-4">
+                <div class="region region-footer-left">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-2-menu" id="block-mainnavigation-2" class="mainnavigation-2 block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-2-menu">Main navigation</h2>
+  
+
+        
+              <ul class="clearfix menu">
+                    <li class="menu-item">
+        <a href="/tools-revit">Revit® Tools</a>
+              </li>
+                <li class="menu-item">
+        <a href="/hydraulic-assistant" data-drupal-link-system-path="node/90">Hydraulic Assistant</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/applications">Web Tools</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/high-expansion-foam-web-tools" data-drupal-link-system-path="node/80">High Expansion Foam Web Tools</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://webtools.vikingcorp.com/fff/">LoEx Estimator</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://webtools.vikingcorp.com/dry/">Dry Sprinkler Order Form</a>
+              </li>
+                <li class="menu-item">
+        <a href="/sprinkler-selector">Sprinkler Selector</a>
+              </li>
+                <li class="menu-item">
+        <a href="/valve-system-configurator">System Configurator</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+        <a href="/mobile-app">Mobile App</a>
+              </li>
+                <li class="menu-item">
+        <a href="/virtual-viking">Virtual Viking</a>
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="/resources" data-drupal-link-system-path="node/6">Resources</a>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/faqs" data-drupal-link-system-path="node/9">FAQs</a>
+              </li>
+                <li class="menu-item">
+        <a href="/tutorials" data-drupal-link-system-path="node/7">Tutorials</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.vikinggroupinc.com/resources/revit">Revit® Families</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item">
+        <a href="/contact" data-drupal-link-system-path="node/13">Contact Us</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            </div>
+                  </div>
+      </div>
+    </footer>
+  
+</div>
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/3","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"field_group":{"html_element":{"mode":"default","context":"view","settings":{"classes":"feature__content","id":"","element":"div","show_label":false,"label_element":"h3","attributes":"","effect":"none","speed":"fast"}}},"ajaxTrustedUrl":{"\/search\/node":true},"user":{"uid":0,"permissionsHash":"41b4aeafa1787079ab3ff26e555d367e1154cc0bce43c342f1f2e2d5ede8ec93"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.6.3"></script>
+<script src="/core/misc/polyfills/element.matches.js?v=9.5.10"></script>
+<script src="/core/misc/polyfills/object.assign.js?v=9.5.10"></script>
+<script src="/core/assets/vendor/once/once.min.js?v=1.0.1"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=9.5.10"></script>
+<script src="/core/misc/drupal.js?v=9.5.10"></script>
+<script src="/core/misc/drupal.init.js?v=9.5.10"></script>
+<script src="https://static.addtoany.com/menu/page.js" async=""></script>
+<script src="/modules/contrib/addtoany/js/addtoany.js?v=9.5.10"></script>
+<script src="/core/misc/jquery.once.bc.js?v=9.5.10"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.selectability@1.0.5/jquery.selectability.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-accessible-carrousel-aria@1.7.3/jquery-accessible-carrousel-aria.min.js"></script>
+<script src="/themes/custom/vds/libraries/global_js/dist/scripts.js?rzlthm"></script>
+<script src="/themes/custom/vds/libraries/global_js/dist/responsive.js?rzlthm"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a3ff25bc51","applicationID":"293968483","transactionName":"ZQcGNUVTWkRRW0JcCVxNJQJDW1tZH3xEQBZTDjgPWFZRa3NXWEEUXQ4IBEVuelhUXWBcA0UhCw9DQFtbXF1EGFhECwEW","queueTime":0,"applicationTime":83,"atts":"SUAFQw1JSUo=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div style="position: static;"><div style="height: 1px; width: 1px; position: absolute; z-index: 100000; top: 0px; visibility: hidden;"><iframe id="a2a_sm_ifr" title="AddToAny Utility Frame" transparency="true" allowtransparency="true" frameborder="0" src="https://static.addtoany.com/menu/sm.24.html#type=core&amp;event=load" style="height: 1px; width: 1px; border: 0px; left: 0px; top: 0px; position: absolute; z-index: 100000; display: none;"></iframe></div></div><script type="text/javascript" id="">piAId="69632";piCId="185355";piHostname="pi.pardot.com";(function(){function a(){var b=document.createElement("script");b.type="text/javascript";b.src=("https:"==document.location.protocol?"https://pi":"http://cdn")+".pardot.com/pd.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)}window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,!1)})();</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","214267713203824");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=214267713203824&amp;ev=PageView&amp;noscript=1"></noscript>
+</body></html>

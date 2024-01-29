@@ -1,0 +1,444 @@
+<html><head>
+    <title>Innerworld Privacy Policy</title>
+    <link rel="favicon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script><script src="main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZCZ52W1XH0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZCZ52W1XH0');
+    </script>
+    <script type="text/javascript">
+        (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+        for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+        MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+        
+        // Enabling the debug mode flag is useful during implementation,
+        // but it's recommended you remove it for production
+        mixpanel.init('1df06033368ab20529d0b0f714a07645', {
+            debug: true,
+            cookie_domian: 'inner.world',
+        }); 
+        mixpanel.track('Viewed Landing Site Privacy Policy');
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('a')
+                .forEach(l => l.addEventListener('click', e => {
+                    if (e.target.href.match(/^https?:/)) {
+                        mixpanel.track('Clicked Landing Page Link', {
+                            linkText: e.target.textContent.trim(),
+                            linkHref: e.target.href,
+                        });
+                    }
+                }));
+        });
+    </script>
+</head>
+
+<body class="fullscreen-open">
+    <div>
+        <nav id="nav">
+            <a id="nav-home" href="./"><img src="logo.svg" alt="Innerworld"></a>
+        </nav>
+        <section id="privacypolicy" class="fullscreen">
+            <article class="fullscreen-content">
+                <h1><span>Privacy Policy</span></h1>
+
+                <p><span>We here at Innerworld (formerly Very Real Help) know that you care how information
+                        about you is collected, used and shared, and we appreciate your trust that we will do so carefully and
+                        sensibly. We take your privacy seriously, so we are describing in this document how we treat your
+                        information. &nbsp;By visiting https://inner.world or using our Services, including through any of our apps,
+                        you are consenting to what is described in this Privacy Policy (this “Policy”).</span></p>
+                <p><span>Please carefully read this Policy so that you can understand the terms below.
+                        &nbsp;Any capitalized terms that are &nbsp;not defined in this Policy are defined in our Terms of Service,
+                        also available on our web site and through our apps, which you should also carefully read. </span></p>
+                <p><span>If You Are Under the Age of 13 or Between the Ages of 13-17</span></p>
+                <p><span>Innerworld does not provide Services to or sell products for purchase by persons
+                        under the age of 13. &nbsp;If you are under the age of 13, you may not use the Innerworld website (https://inner.world), apps
+                        or Services.</span></p>
+                <p><span>If you are between the ages of 13-17, Innerworld will not provide Services to or sell
+                        products to you, without an appropriate consent from your adult parent or your legal guardian. If you are
+                        between the ages of 13 and 17, you may not use the Innerworld website (https://inner.world), apps or Services without first
+                        obtaining and confirming with us that you have obtained such a consent from your adult parent or legal
+                        guardian who is legally able to provide such consent. &nbsp;Please refer to our Terms of Service which
+                        provides for the granting of such consent.</span></p>
+                <p><span>BRIEF OVERVIEW</span></p><a id="brief-overview"></a><a id="t.0"></a>
+                <table class="outlined">
+                    <tbody><tr>
+                        <td colspan="1" rowspan="1">
+                            <p><span>Information We Collect</span></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                            <p><span>We may collect your personally identifiable information
+                                    (“PII”), including but not limited to your name, email address and phone number, in
+                                    connection with your registration through, use of, or inquiries about our website or our apps,
+                                    or through your use of our Services. We also obtain certain PII from third parties, including
+                                    but not limited to grant administrators and other partners. We are the data controller for all
+                                    this information.</span></p>
+                            <p><span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="1">
+                            <p><span>How We Use Your Information</span></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                            <p><span>We may use your information to provide and improve our Services, respond
+                                    to and fulfill your requests, comply with applicable law, and as otherwise permitted by
+                                    applicable law. We also use your information to improve our Services.</span></p>
+                            <p><span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="1">
+                            <p><span>How We Share Your Information</span></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                            <p><span>Information about our users and visitors is an important part of our
+                                    business. We DO NOT sell or trade customer information. We will not share your information with
+                                    third parties except as necessary to provide our Services or fulfill your requests, as otherwise
+                                    consented to by you, or as permitted by applicable law. Under certain circumstances, we act as
+                                    the data processor of your information.</span></p>
+                            <p><span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="1">
+                            <p><span>Security of Your Information</span></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                            <p><span>We maintain commercially reasonable technical, administrative, and
+                                    physical security measures designed to protect your information.</span></p>
+                            <p><span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="1">
+                            <p><span>Cookies and Other Tracking Technologies</span></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                            <p><span>We may use cookies and similar technologies to help provide our Services
+                                    and to offer you a more personalized user experience.</span></p>
+                            <p><span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="1">
+                            <p><span>Your Choices</span></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                            <p><span>You can opt to change your communication preferences, update your data
+                                    sharing consents, and opt out of certain sharing of your information with third parties.</span>
+                            </p>
+                            <p><span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="1">
+                            <p><span>Access, Correction and Erasure of Your Information</span></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                            <p><span>We provide you the opportunity to access, correct, update and request
+                                    erasure of your information.</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="1">
+                            <p><span>International Transfers</span></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                            <p><span>If you are using our Services outside the U.S., we will transfer your
+                                    information outside of your home country, to the U.S. or a third country. To protect your
+                                    information, any such international transfers will be made in accordance with applicable
+                                    law.</span></p>
+                            <p><span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="1">
+                            <p><span>Changes to This Policy</span></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                            <p><span>We reserve the right to change this Policy from time to time. &nbsp;You
+                                    will be notified about any material changes to this Policy via a posting on our apps and
+                                    website, and as otherwise required by applicable law.</span></p>
+                            <p><span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="1">
+                            <p><span>Contact Us</span></p>
+                        </td>
+                        <td colspan="1" rowspan="1">
+                            <p><span>If you have questions about this Policy, please contact us. Our contact
+                                    information is posted on our website under the “CONTACT” tab.</span></p>
+                            <p><span></span></p>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <p><span>What Does This Privacy Policy Cover?</span></p>
+                <p><span>This Privacy Policy covers how Innerworld treats personal information that we collect
+                        and receive while providing our Services, including via all related websites, networks, cookies, embeddable
+                        widgets, downloadable software, and apps (including mobile apps and VR device apps such as the Meta Quest platform, and
+                        tablet apps), and other services provided by us and on which a link to this Policy is displayed . This
+                        includes information related to your past use of our Services, and information about you that is personally
+                        identifiable, such as your name, address, email address, IP address, phone number and avatar
+                        identity.</span></p>
+                <p><span>This Privacy Policy, however, does not apply to the practices of companies that are
+                        not affiliated with Innerworld.</span></p>
+                <p><span>What Information Do We Collect?</span></p>
+                <p><span>We generally act as the data controller of your information. We collect the following
+                        types of information.</span></p>
+                <ul>
+                    <li><span>Information You Provide. When you register for or use our Services,
+                            Innerworld collects what is generally called “personally identifiable information,"
+                            “personal information,” or “personal data.” All these terms refer to information
+                            that specifically relates to or identifies a particular individual. Personal information also includes
+                            information that when linked to other information identifies a specific individual. When you register to
+                            use our Services, we ask for a limited amount of personal information, such as your name, selected
+                            username, and email address. When you sign into our Services, you are not anonymous to us. Innerworld
+                            also collects information about your transactions with us, including information about your use of our
+                            Services.</span></li>
+                    <li><span>“Cookies" Information. When you use our Services, we may
+                            send one or more cookies – small text files containing a string of alphanumeric characters –
+                            to your device. We may use both session cookies and persistent cookies. A session cookie disappears
+                            after you close your browser. A persistent cookie remains after you close your browser and may be used
+                            by your browser on subsequent visits to our Services. Consult your device's web browser
+                            “Help" file to learn the proper way to modify your cookie settings. Please note that if you
+                            delete, or choose not to accept, cookies from our Services, you may not be able to utilize the features
+                            of our Services to their fullest potential.</span></li>
+                    <li><span>“Automatically Collected" Information. When you use our
+                            Services, you consent to having your sessions in the Environment recorded (”Environment
+                            Recordings”). In addition, we may automatically record certain information from your device by
+                            using various types of technology, including “clear gifs" or APIs. This “automatically
+                            collected" information may include your IP address or other device address or ID, web browser
+                            and/or device type, the web pages or sites that you visit just before or just after you use our
+                            Services, the pages or other content you view or otherwise interact with on our Services, and the
+                            sessions you participate in while using our Services. We also may use these technologies to collect
+                            information regarding your interaction with email messages, such as whether you opened, clicked on, or
+                            forwarded a message. This information is gathered from all users.</span></li>
+                    <li><span>Environment Recordings. We collect and analyze a variety of
+                            information about your activities in the Environment, including</span>
+                    
+                        <ul>
+                            <li>information about your avatar and how you customize it;</li>
+                            <li>information about your physical movements, </li>
+                            <li>Information you report, such as what your “level” is,</li>
+                            <li>speech data, including (but not limited to) transcripts of speech data; and</li>
+                            <li>social data, such as who you add to your friends list, what events you attend, who you interact with, and how close you stand to other people in the Environment.</li>
+                        </ul>
+                    </li>
+                    <li><span>Location Information. If you use our Services, we may receive your
+                            generic location (such as city or neighborhood) or, with your consent, precise geographic location data
+                            from your mobile device when the app is running and when it is not running. We may, for example, receive
+                            this information when you are in proximity to certain beacons, choose to publish your location, or in
+                            your comments or communications with us. We may use and store this information to provide and improve
+                            features of our Services, for example, to tailor our Services in order to better facilitate your
+                            requests and to provide you more relevant information about callers.</span></li>
+                    <li><span>Information from Other Sources. We may obtain information, including
+                            personal information, from third parties and sources other than our Services, such as our research
+                            partners or grant sponsors. If we combine or associate information from other sources with personal
+                            information that we collect through our Services, we will treat the combined information as personal
+                            information in accordance with this Policy.</span></li>
+                </ul>
+                <p><span>What Are the Legal Bases for Our Collection of Information?</span></p>
+                <p><span>We collect and process your personal data generally for one or more of the following
+                        reasons:</span></p>
+                <ul>
+                    <li><span>Performance of a contract;</span></li>
+                    <li><span>Compliance with a legal obligation;</span></li>
+                    <li><span>Our legitimate legal or business interest; and </span></li>
+                    <li><span>Your consent.</span></li>
+                </ul>
+                <p><span>How Do We Use the Information We Collect?</span></p>
+                <p><span>We use the information we collect in a variety of ways in providing our Services and
+                        operating our business, including the following:</span></p>
+                <ul>
+                    <li><span>We use the information that we collect to operate, maintain,
+                            enhance and provide all features of our Services, and to provide services and information that you
+                            request, to respond to comments and questions and otherwise to provide support to users.</span></li>
+                    <li><span>We use the information that we collect to understand and analyze the
+                            usage trends and preferences of our users, to improve our Services, and to develop new products,
+                            services, features, and functionality.</span></li>
+                    <li><span>We may use your email address or other information we collect (i) to
+                            contact you for administrative purposes such as customer service, to address intellectual property
+                            infringement or other claimed violations of our Terms of Service or (ii) to send communications relating
+                            to products and services offered by us that are related to our Services. Generally, you have the ability
+                            to opt out of receiving any promotional communications as described below under “Your
+                            Choices.”</span></li>
+                    <li><span>We may use “cookies” information and
+                            “automatically collected” information to: (i) personalize our Services, such as remembering
+                            your information so that you will not have to re-enter it during your visit or the next time you use our
+                            Services; (ii) provide customized content and information; (iii) monitor and analyze the effectiveness
+                            of our Services; (iv) monitor aggregate website and mobile app usage metrics such as total number of
+                            visitors and pages viewed; and (v) track your entries, submissions, and status in any activities on our
+                            Services.</span></li>
+                </ul>
+                <p><span>Sharing Or Disclosing Information</span></p>
+                <p><span>Information about our users and visitors is an important part of our business. We
+                        DO NOT sell or trade customer information. We share or disclose customer information only as described
+                        below. Except as described in this Policy, we will not disclose your information that we collect on our
+                        Services to third parties without your consent. We may disclose information to third parties if you consent
+                        to us doing so, as well as in the following circumstances:</span></p>
+                <ul>
+                    <li><span>We work with third party service providers that provide website,
+                            application development, hosting, maintenance, data transmission, data processing, and other services
+                            for us. These third parties may have access to or process your information as part of providing those
+                            services for us. However, we limit the personal information provided to these service providers to that
+                            which is reasonably necessary for them to perform their functions. In addition, they agree by contract
+                            to maintain the confidentiality of such information.</span></li>
+                </ul>
+                <p><span></span></p>
+                <ul>
+                    <li><span>We may make certain automatically collected, aggregated, or
+                            non-personally-identifiable information available to third parties for various purposes, including (i)
+                            as part of medical or behavioral research efforts, (ii) to monitor network traffic or activity in order
+                            to detect network intrusions and protect you, ourselves or others from malware, fraud, unlawful uses or
+                            other illegal activity, or (iii) compliance with various reporting obligations.</span></li>
+                </ul>
+                <p><span></span></p>
+                <ul>
+                    <li><span>We may disclose your information if required to do so by law or in
+                            the good-faith belief that such action is necessary to comply with state or federal laws (such as U.S.
+                            copyright law), in response to a court order, judicial or other government subpoena or warrant, or to
+                            otherwise cooperate with law enforcement or other governmental agencies. </span><span>In
+                            particular, some states require us by law to record and report information regarding the abuse of
+                            someone less than 18 years of age, or vulnerable or disabled adults, including persons over 60 years of
+                            age, or persons who are in danger of committing suicide. If you convey such circumstances, and provide
+                            information that could lead us to identify your name and location, we may have to record such
+                            information and provide it to the appropriate authorities.</span></li>
+                </ul>
+                <p><span></span></p>
+                <ul>
+                    <li><span>We also reserve the right to disclose your information when we
+                            believe, in good faith, that disclosure is appropriate or necessary to (i) take precautions against
+                            liability, (ii) protect ourselves or others (including other users of our Services) from fraudulent,
+                            abusive, or unlawful uses or activity, (iii) investigate and defend ourselves against any third party
+                            claims or allegations, (iv) protect the security or integrity of our Services or any facilities or
+                            equipment used to make our Services available, or (v) protect our property or legal rights (including,
+                            but not limited to, enforcement of our agreements), or the rights, property, or safety of others.</span>
+                    </li>
+                </ul>
+                <p><span></span></p>
+                <ul>
+                    <li><span>Information about our users, including personal information, may be
+                            disclosed and otherwise transferred to an acquirer of Innerworld, or to a successor or assignee as part
+                            of any merger, acquisition, debt financing, sale of assets, or similar transaction, as well as in the
+                            event of an insolvency, bankruptcy, or receivership in which information is transferred to one or more
+                            third parties as one of our business assets. In the event Innerworld is acquired by or merged with
+                            another company, the terms of this Privacy Policy shall continue to apply. In this event, Innerworld
+                            will notify you before information about you is transferred and becomes subject to a different privacy
+                            policy. </span></li>
+                    <li><span>Other than as set out above, you will receive notice when
+                            information about you might go to third parties, and you will have an opportunity to choose not to share
+                            the information. Innerworld also reserves the right to display targeted advertisements based on personal
+                            information.</span></li>
+                </ul>
+                <p><span>Information Retention Policy</span></p>
+                <p><span>If you hold an account with Innerworld, we do not delete the personal data in your
+                        account – you are responsible for and control the time periods for which you retain this data.
+                        However, except when we believe we are required to retain your personal information by law, we will only
+                        retain your personal information for two years after we become aware that you have ceased using our
+                        Services. We may not know if you have stopped using our Services, so we encourage you to contact us at
+                        <a href="https://helpdesk.inner.world">https://helpdesk.inner.world</a> if you are no longer using our Services.
+                        You may access, change or delete personal information that you have provided or that we hold about you.</span></p>
+                <p><span>Regardless of where you are located, you can request that your data be deleted by contacting us at
+                        <a href="https://helpdesk.inner.world">https://helpdesk.inner.world</a>.
+                        If we change or delete your personal information or if you decline to actively share certain personal information with us, we
+                        may not be able to provide you our Services or some of the features and functionality of our Services. We may indefinitely retain
+                        other information that is de-identified or not personally identifiable for backups, archiving, prevention of
+                        fraud and abuse, analytics, or where we otherwise reasonably believe that we have a legitimate interest in
+                        doing so.</span></p>
+                <p><span>Your Rights Under GDPR</span></p>
+                <p><span>If you are a user of our Services in the European Union or certain other countries,
+                        your rights are governed by the General Data Protection Regulation (“GDPR”). </span></p>
+                <ul>
+                    <li><span>You may access, change or delete personal information that you have
+                            provided or that we hold about you. You can request that your data be deleted by submitting a ticket to us at
+                        </span><span><a href="https://helpdesk.inner.world">https://helpdesk.inner.world</a></span><span> or emailing us at <a href="mailto:hello@inner.world">hello@inner.world</a>. If we change or delete your personal information or if you decline to actively share
+                            certain personal information with us, we may not be able to provide you our Services or some of the
+                            features and functionality of our Services</span></li>
+                    <li><span>You may request that we not disclose your personal information to
+                            third parties (other than those that are acting as our agent to perform tasks related to our Services on
+                            our behalf, such as data processors).</span></li>
+                    <li><span>You may withdraw consent to certain data sharing or usage or
+                            exercise any of these rights above by sending your request to us by submitting a ticket at 
+                            <a href="https://helpdesk.inner.world">https://helpdesk.inner.world</a> email at <a href="mailto:hello@inner.world">hello@inner.world</a>&nbsp;or by writing to us at the address given at
+                            the end of this Policy.</span></li>
+                </ul>
+                <ul>
+                    <li><span>The right to data portability. This means that you have the
+                            right to receive your personal data in a structured, commonly used and machine-readable format, and that
+                            you have the right to transmit that data to another controller.</span></li>
+                </ul>
+                <p><span>You have certain additional legal rights with regard to your information, including
+                        those identified below. Some of these rights may be subject to some exceptions or limitations. We will
+                        respond to your request to exercise these rights within a reasonable time (and in all cases we will make
+                        reasonable efforts to respond within 30 days of receiving a request).</span></p>
+                <ul>
+                    <li><span>The right to object to profiling; and</span></li>
+                    <li><span>The right to lodge a complaint with a supervisory authority (a list
+                            of Supervisory Authorities is available here:
+                            http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm).</span></li>
+                </ul>
+                <p><span>&nbsp;If you need further assistance regarding your rights, please contact us using
+                        the contact information provided in this Policy and we will consider your request in accordance with
+                        applicable law. In some cases our ability to uphold these rights for you may depend upon our obligations to
+                        process personal information for security, safety, fraud prevention reasons, compliance with regulatory or
+                        legal requirements, or because processing is necessary to deliver the services you have requested. Where
+                        this is the case, we will inform you of specific details in response to your request.</span></p>
+                <p><span>Confidentiality And Security</span></p>
+                <p><span>Innerworld limits internal access to your personal information to employees who we
+                        reasonably believe require this information in order to do their jobs or to provide our Services to you. We
+                        use industry standard measures to help protect the integrity and security of personal information that we
+                        collect and maintain. You should be aware, however, that "perfect security" does not exist
+                        anywhere on the Internet. ALTHOUGH WE BELIEVE WE TAKE APPROPRIATE MEASURES TO SAFEGUARD AGAINST UNAUTHORIZED
+                        DISCLOSURES OF INFORMATION, WE CANNOT ASSURE YOU THAT YOUR PERSONALLY IDENTIFIABLE INFORMATION OR
+                        COMMUNICATIONS WITH OUR SERVICES WILL NEVER BE DISCLOSED IN A MANNER INCONSISTENT WITH THIS POLICY, AND MAKE
+                        NO REPRESENTATIONS OR WARRANTIES REGARDING THE SUFFICIENCY OF OUR SECURITY MEASURES. We also cannot
+                        guarantee that such information may not be accessed, disclosed, altered, or destroyed by breach of any of
+                        our physical, technical, or managerial safeguards. If we learn of a security systems breach, we may attempt
+                        to notify you electronically so that you can take appropriate protective steps. We may also post a notice
+                        through our Services if a security breach occurs. Depending on where you live, you may have a legal right to
+                        receive notice of a security breach in writing.</span></p>
+                <p><span>International Users and Data Transfers</span></p>
+                <p><span>Our Services are hosted in the United States and are intended primarily for visitors
+                        and users located within the United States, although our Services can be accessed outside of the United
+                        States. If you choose to use our Services from the European Union or other regions of the world with laws
+                        governing data collection and use that may differ from United States &nbsp;law, note that you are
+                        transferring and consenting to Innerworld transferring your personal information outside of those regions to
+                        the United States for storage and processing. Also, we may transfer your data from the United States to
+                        other countries or regions in connection with storage and processing of data, fulfilling your requests, and
+                        operating our Services. By providing any information, including personal information, on or to our Services,
+                        you consent to such transfer, storage, and processing.</span></p>
+                <p><span>Conclusion</span></p>
+                <p><span>Innerworld may update this policy at any time. We will notify you by sending a notice
+                        to the primary email address you specified in your Innerworld account application and by placing a notice in
+                        a prominent place on our web site or app. If you have further questions or suggestions regarding &nbsp;this
+                        Privacy Policy, you can contact us through </span><span><a href="https://helpdesk.inner.world">https://helpdesk.inner.world</a></span><span>&nbsp;.</span></p>
+                <p><span>Notice to California Users</span></p>
+                <p><span>Under Cal. Civ. Code § 1798.80 </span><span>et seq.</span><span>, a user residing in the State of California has the right to request from us a list of all third
+                        parties to which we have disclosed personal information during the preceding year for direct marketing
+                        purposes. We do not disclose such information for marketing purposes, and so no such list exists. For
+                        questions about this policy, please contact us through our website <a href="https://helpdesk.inner.world">https://helpdesk.inner.world</a>or emailing <a href="mailto:hello@inner.world">hello@inner.world</a></span><span>&nbsp;. We do not obey Do Not
+                        Track signals from a user’s Internet browser. We make no representations concerning third parties that
+                        do not collect personal information directly through our Services. These disclosures are made under Cal.
+                        Bus. &amp; Prof. Code § 22575.</span></p>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <span id="copyright">©&nbsp;2022&nbsp;Innerworld. All&nbsp;rights&nbsp;reserved.</span>
+        <!--
+            <a href="#" class="socialicon"><img src="icon-instagram.png" /></a>
+            <a href="#" class="socialicon"><img src="icon-twitter.png" /></a>
+            <a href="#" class="socialicon"><img src="icon-youtube.png" /></a>
+            -->
+    </footer>
+
+
+</body></html>

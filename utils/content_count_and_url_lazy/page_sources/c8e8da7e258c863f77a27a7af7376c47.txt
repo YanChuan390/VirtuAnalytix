@@ -1,0 +1,457 @@
+<html lang="en-US"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Online Privacy Policy - Ready At Dawn Ready At Dawn</title>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://readyatdawn.com/wp-content/themes/RAD/js/html5shiv.min.js"></script>
+            <script src="https://readyatdawn.com/wp-content/themes/RAD/js/respond.min.js"></script>
+        <![endif]-->
+        <!-- Bootstrap -->
+        <link href="./css/RAD-css-bootstrap.css" type="text/css" rel="stylesheet">
+        <!-- stylesheet -->
+        <link href="./css/RAD-style.css" rel="stylesheet" type="text/css">
+        <link href="./css/RAD-css-responsive-style.css" type="text/css" rel="stylesheet">
+        <link href="./css/RAD-extra.css" type="text/css" rel="stylesheet">
+        <!--<link href="https://readyatdawn.com/wp-content/themes/RAD/css/main-popup.css" type="text/css" rel="stylesheet">-->
+        <!--font-->
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css">
+        <!--rest of stylesheet-->
+        <link href="./css/RAD-js-boxslider-jquery.bxslider.css" type="text/css" rel="stylesheet">
+        <!-- custom scrollbar stylesheet -->
+        <link rel="stylesheet" href="./css/RAD-css-jquery.mCustomScrollbar.css" type="text/css">
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+        <link rel="icon" href="./images/cropped-woodgrain-logo-32x32.png" sizes="32x32">
+        <link rel="icon" href="./images/cropped-woodgrain-logo-192x192.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="./images/cropped-woodgrain-logo-180x180.png">
+        <meta name="msapplication-TileImage" content="./images/cropped-woodgrain-logo-270x270.png">
+        <!--<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>-->
+        <script language="JavaScript">
+            function setVisibility(id, visibility) {
+                document.getElementById(id).style.display = visibility;
+                document.getElementById(id).style.width = 400;
+            }
+        </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(window).load(function () {
+                    var bannerImg;
+                    var captionBlock;
+                    var captionBlockmargin;
+                    var $containerWidth = $(window).width();
+
+                    if ($containerWidth <= 761) {
+                        /*bannerImg = $(".bannerPart .bannerImg").height();
+			captionBlock = $(".bannerPart .captionBlock").height();
+			captionBlockmargin = 200 - bannerImg;*/
+                        $(".bannerPart .captionBlock").css("margin-top", "initial");
+                    } else if (762 <= $containerWidth <= 991) {
+                        bannerImg = $(".bannerPart .bannerImg").height();
+                        captionBlock = $(".bannerPart .captionBlock").height();
+                        captionBlockmargin = (bannerImg - captionBlock - 40) / 2 - bannerImg;
+                        $(".bannerPart .captionBlock").css("margin-top", captionBlockmargin);
+                    } else if ($containerWidth > 992) {
+                        bannerImg = $(".bannerPart .bannerImg").height();
+                        captionBlock = $(".bannerPart .captionBlock").height();
+                        captionBlockmargin = (bannerImg - captionBlock - 80) / 2 - bannerImg;
+                        $(".bannerPart .captionBlock").css("margin-top", captionBlockmargin);
+                    }
+                });
+                $(window).resize(function () {
+                    var bannerImg;
+                    var captionBlock;
+                    var captionBlockmargin;
+                    var $containerWidth = $(window).width();
+
+                    if ($containerWidth <= 761) {
+                        /*bannerImg = $(".bannerPart .bannerImg").height();
+			captionBlock = $(".bannerPart .captionBlock").height();
+			captionBlockmargin = 200 - bannerImg;*/
+                        $(".bannerPart .captionBlock").css("margin-top", "initial");
+                    } else if (762 <= $containerWidth <= 991) {
+                        bannerImg = $(".bannerPart .bannerImg").height();
+                        captionBlock = $(".bannerPart .captionBlock").height();
+                        captionBlockmargin = (bannerImg - captionBlock - 40) / 2 - bannerImg;
+                        $(".bannerPart .captionBlock").css("margin-top", captionBlockmargin);
+                    } else if ($containerWidth > 992) {
+                        bannerImg = $(".bannerPart .bannerImg").height();
+                        captionBlock = $(".bannerPart .captionBlock").height();
+                        captionBlockmargin = (bannerImg - captionBlock - 80) / 2 - bannerImg;
+                        $(".bannerPart .captionBlock").css("margin-top", captionBlockmargin);
+                    }
+                });
+            });
+        </script>
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+        <link rel="icon" href="./images/cropped-woodgrain-logo-32x32.png" sizes="32x32">
+        <link rel="icon" href="./images/cropped-woodgrain-logo-192x192.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="./images/cropped-woodgrain-logo-180x180.png">
+        <meta name="msapplication-TileImage" content="./images/cropped-woodgrain-logo-270x270.png">
+    </head>
+    <body data-rsssl="1" class=" customize-support">
+        <div class="wrapper">
+            <div class="cover-window"></div>
+            <!--header-->
+            <header class="mainHeader">
+                <div class="mainHeaderIn">
+                    <div class="container">
+                        <!--social widget-->
+                        <div id="text-2" class="widget-social widget_text">
+                            <div class="textwidget">
+                                <ul class="socialList">
+                                    <li>
+                                        <a href="https://www.facebook.com/ReadyAtDawnStudios/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/user/ReadyAtDawnStudios/featured" target="_blank" rel="noopener"><i class="fa fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/RAD_Studios" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://instagram.com/ReadyAtDawnStudios" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--navigation-->
+                        <div class="navigation navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="btn-responsive-nav navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <nav class="navbar-collapse collapse">
+                                <div class="menu-header">
+                                    <ul id="menu-header-menu" class="menu">
+                                        <li id="menu-item-83" class="home menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-83"><a href="./index.html">Home</a></li>
+                                        <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="./studio.html">Studio</a></li>
+                                        <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="./games.html">Games</a></li>
+                                        <li id="menu-item-1025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1025">
+                                            <a target="_blank" rel="noopener" href="https://medium.com/ready-at-dawn/dev-talks/home" aria-label="Dev Talks (opens in a new tab)">Dev Talks</a>
+                                        </li>
+                                        <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a target="_blank" rel="noopener" href="https://medium.com/ready-at-dawn" aria-label="News (opens in a new tab)">News</a></li>
+                                        <li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="./careers.html">Careers</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--logo-->
+                        <h1 class="logo"><a href="./index.html">Ready At Dawn</a></h1>
+                    </div>
+                </div>
+            </header>
+            <!--header Ends-->
+            <script type="text/javascript">
+                jQuery(document).ready(function ($) {
+                    //search
+                    $(".searchIcon").click(function () {
+                        $("#searchBox").slideUp(500, function () {
+                            $(this).show();
+                        });
+                        $("#overLay").fadeIn(20);
+
+                        $(this).addClass("hoverd");
+                        $(".cover-window").addClass("show");
+                    });
+                    $(".searchClose").click(function () {
+                        $("#searchBox").fadeOut(500);
+                        $("#overLay").fadeOut(500);
+                        $(".searchIcon").removeClass("hoverd");
+                        $(".cover-window").removeClass("show");
+                    });
+                });
+            </script>
+            <!--content-->
+            <div class="content">
+                <div class="container contentIn">
+                    <h1>Online Privacy Policy</h1>
+                    <p>READY AT DAWN</p>
+                    <p><strong>PRIVACY POLICY</strong></p>
+                    <p><strong></strong><strong>Last Updated: June 19, 2020</strong></p>
+                    <p>
+                        Ready At Dawn Studios LLC, a California limited liability company with its principal address at 5271 California Ave, Suite 200, Irvine, CA 92617 USA ( “Ready At Dawn”, “us”, or “we” ) respects the privacy of its
+                        users and recognizes the importance of providing a secure environment for them.
+                    </p>
+                    <p>
+                        This Privacy Policy sets out how we collect, store and use information when you use our games or otherwise engage with us, including when you visit our website https://www.readyatdawn.com/ (our “Website”) or play our
+                        games. Please be aware that when you link to other sites from our Website, this Privacy Policy does not apply, and does not control the activities on those other sites.
+                    </p>
+                    <p>If you have questions regarding the Ready At Dawn Online Privacy Policy or practices, you may contact Ready At Dawn at&nbsp;privacy@readyatdawn.com.</p>
+                    <p><strong>Changes to this Privacy Policy</strong></p>
+                    <p>
+                        It is our policy to post any changes we make to our Privacy Policy on this page with a notice that the Privacy Policy has been updated on the Website home page.
+                        <strong>If we make changes to how we treat our users’ personal information, we will notify through a notice on the Website home page and as otherwise required by law</strong>.&nbsp; You are responsible for periodically
+                        visiting our Website and this Privacy Policy to check for any changes. Use of the Website and our games following any changes to this Privacy Policy, or your continued provision of personal information to us,
+                        signifies your acknowledgement of the revised Privacy Policy.
+                    </p>
+                    <p>
+                        If you are a user from outside the United States, the personal information you provide Ready At Dawn may be transferred to, stored, and processed within the United States or other countries where Ready At Dawn
+                        maintains facilities or business operations.
+                    </p>
+                    <p><strong>What personal information is collected and how do we use the information?</strong></p>
+                    <p>Ready At Dawn has collected the following categories of information in the preceding twelve (12) months:</p>
+                    <ul>
+                        <li>
+                            <strong>Data received directly from you. </strong>We collect data directly from you such as name, email address, IP address, in-game moniker, account ID, technical data and communications between you and us when
+                            you:
+                        </li>
+                    </ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                Play our games – including via our beta/alpha game test demos and, if you choose, crash information for certain games. We use this to provide the game play experience to you and to better understand
+                                player reactions and experiences so we can make improvements to the game. We also receive IP address (to help debug network issues), hardware information (for support issues) and information about the game
+                                such as your game stats (so you can understand your game usage), the version of the game you last used (to allow you to connect to different services) and analytics data (about connection information,
+                                disconnections, match making requests, login, disconnect for support and troubleshooting, as well as data about how you interact with other players, for example the location your character died or the weapons
+                                selected for combat to help us design and balance the game. We process this information in accordance with our contract with you and in order to fulfil our legitimate interests (to provide you with game
+                                support and to improve game design). If you test our games, we process this data in order to fulfil our legitimate interests (to improve the product).
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                Ask us to provide player match-up services. We use your user name to set up these tournaments and provide this game play experience. We process this information in order to fulfil our legitimate interests (to
+                                provide a safe and fun product).
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                Contact us – email directly to us, generated via our ticketing and community management platform or communicate with us via third party sites or apps. We use this information in order to respond to your
+                                questions and make sure that you are able to fully enjoy the game. We process this information in order to fulfil our legitimate interests (to provide you with game support). If you apply for a job at
+                                job@readyatdawn.com, we will process any information you send us via email.
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li><strong>Data received from others.</strong></li>
+                    </ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                Oculus – when you play games via Oculus, Oculus provides us with your in-game moniker, account ID, and Hardware ID. We use this information in connection with the terms and conditions and end user license
+                                agreements you have agreed to in order to enable you to play the games as well as to better understand player reactions so we can make improvements to the game;
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                Other users – for example when you play the game, your interaction with other users may be recorded, or other users may report suspect in-game behavior so we can ensure that users are playing fairly and
+                                abiding by the community standards. We process this information in order to fulfil our legitimate interests (to provide you with game support and ensure compliance with our Terms of Service);
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                Press – we may receive testimonials from game players via the public press and other news or review outlets that cover our games. We process this information in order to fulfil our legitimate interests (to
+                                provide a safe and fun product); and
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                Third parties – we may receive user names, and other information you provide, from third-party communication platforms and other forums that provide communication services for game support. We process
+                                this information in order to fulfil our legitimate interests (to provide you with game support).
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li><strong>Cookies</strong></li>
+                    </ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                Ready At Dawn and our partners, such as marketing partners and analytics providers, may use tracking technologies such as cookies, beacons, tags and scripts. These technologies are used in analyzing trends,
+                                administering the Websites, tracking users’ movements around the Websites, and to gather demographic information about our user base as a whole. We may receive reports based on the use of these technologies
+                                by these companies on an individual as well aggregated basis. We process this information in order to fulfil our legitimate interests (to ensure our website works properly).
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li><strong>Other Online Tracking</strong></li>
+                    </ul>
+                    <ul>
+                        <ul>
+                            <li>
+                                Do Not Track (DNT) is a privacy preference that users can set in some web browsers, allowing users to opt out of tracking by websites and online services. We do not recognize DNT or respond to DNT requests.
+                            </li>
+                        </ul>
+                    </ul>
+                    <p>
+                        Please be aware that advertisers or websites with links to and from our Website may collect personal information about you. For the avoidance of doubt, this Privacy Policy does not apply to, and cannot control the
+                        activities of, those other advertisers or websites. We encourage you to carefully read the privacy policy of any advertiser or website you visit.
+                    </p>
+                    <p>
+                        The Ready At Dawn Website may include certain social media features such as the Facebook “Like” button, and widgets such as the Share this button or interactive mini-programs that run on our Website. These features
+                        may collect your Internet protocol (“IP”) address, which page you are visiting on our Website, and may set a cookie to enable the feature to function properly. Social media features and widgets are either hosted by a
+                        third party or hosted directly on our Website. Your interactions with these features are governed by the privacy policy of the company providing it.
+                    </p>
+                    <p><strong>With whom do we share your personal information?</strong></p>
+                    <p>We share your personal information with third parties, including:</p>
+                    <ul>
+                        <li>
+                            Third parties that provide support services for the game, including cloud services providers that process player logs and other information identified in this privacy policy on their servers in the United States
+                            to help us provide the game, crash reporting services to help us improve the game, and providers who help us process customer support ticket IDs and support communication.
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Regulators and judicial authorities and law enforcement agencies. There are circumstances in which we are legally required to disclose information, including to comply with a legal obligation or processes,
+                            enforce our terms, address issues relating to security or fraud, or protect our users or Ready At Dawn.
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            As with any business, your personal information will become part of our normal business records. As such, we may also disclose your personal information to a third party if we decide to sell a line of business to
+                            that third party, so you can continue to receive service and information in connection with that line of business with as little disruption as possible. Similarly, in the event of a merger, acquisition,
+                            reorganization, bankruptcy, or other similar event, your personal information may be transferred to Ready At Dawn’s successor or assign.
+                        </li>
+                    </ul>
+                    <p><strong>How Long We Retain Your Data For</strong></p>
+                    <p>
+                        We store data that identifies you until it is no longer necessary to provide our services or your account is deleted, whichever comes first. This is a case-by-case determination that depends on things such as the
+                        nature of the data, why it is collected and processed, and relevant legal or operational retention needs.
+                    </p>
+                    <p><strong>What are tracking technologies and how are they used?</strong></p>
+                    <p>
+                        As is true with most web sites, we gather certain information automatically and store it in log files. This information may include internet protocol (IP) addresses, browser type, internet service provider (ISP),
+                        referring/exit pages, operating system, date/time stamp, and/or clickstream data. We may combine this automatically collected log information with other information we collect about you. We do this in line with our
+                        legitimate interests to improve the services we offer you, to improve marketing, analytics, or website functionality.
+                    </p>
+                    <p><strong>Children</strong></p>
+                    <p>
+                        We do not knowingly collect personal information from children under the age of 13. If we become aware that we have unknowingly collected personal information from a child under 13 years of age, we will make
+                        commercially reasonable efforts to delete such information from our database. If you are a parent or guardian or otherwise become aware that a child under 13 years of age has provided us with personal information,
+                        please contact us to request it be deleted.
+                    </p>
+                    <p><strong>How secure is my personal information?</strong></p>
+                    <p>
+                        The security of your personal information is important to Ready At Dawn. Ready At Dawn has taken steps to assure that all information collected will remain secure. Ready At Dawn follows generally accepted standards
+                        to protect the personal information submitted to Ready At Dawn, both during transmission and once it is received.
+                    </p>
+                    <p>In addition, Ready At Dawn will take reasonable steps to assure that third parties to whom we transfer any data will provide sufficient protection of personal information.</p>
+                    <p><strong>What if I have a question or complaint?</strong></p>
+                    <p>
+                        If you have any questions or wish to file a complaint, please feel free to e-mail Ready At Dawn at&nbsp;privacy@readyatdawn.com&nbsp;or send a letter addressed to Ready At Dawn Studios LLC, Attention: Privacy Policy
+                        Administrator, at 5271 California Ave, Suite 200, Irvine, CA 92617.
+                    </p>
+                    <p><strong>California Addendum</strong></p>
+                    <p>
+                        If you are a California resident, subject to certain exceptions and applicable law, you may have certain rights in relation to information we process about you. We do not sell your personal information to third
+                        parties.
+                    </p>
+                    <p><strong>1. Your Rights under the California Consumer Privacy Act.</strong></p>
+                    <p>a. You may have the right to request that we disclose the personal information we collect, use and disclose about you.</p>
+                    <p>b. You may have the right to have access to the information listed above;</p>
+                    <p>
+                        c. &nbsp;You may have the right to request the deletion of your personal information. We will retain the personal information if there are valid grounds under law for us to do so (e.g.&nbsp;for the defence of legal claims or
+                        freedom of expression), but we will let you know if that is the case. Note that the erasure of your personal data may adversely affect your gameplay experience, as well as your ability to play the game; and
+                    </p>
+                    <p>d. You have the right not to be discriminated against if you exercise any rights conferred on you by the California Consumer Privacy Act of 2018</p>
+                    <p>
+                        <strong>2. Additional California Residents’ Rights.</strong> As a California resident, you may contact us with any questions or to request a list of third parties to whom we may disclose your personal information for
+                        such third parties’ marketing purposes and the categories of such information we may disclose.
+                    </p>
+                    <p><strong>Rights of Other Consumers</strong></p>
+                    <p>
+                        Individuals in certain other jurisdictions may have additional data subject rights. These rights vary but they may include the right to: (i) request access to and rectification or erasure of their personal data; (ii)
+                        obtain restriction of processing or to object to processing of their personal data; and (iii) the right to data portability. Individuals may also have the right to lodge a complaint about the processing of personal
+                        data with a data protection authority.
+                    </p>
+                    <p><strong>Exercising Your Rights</strong></p>
+                    <p>
+                        You may contact us in relation to these rights by emailing Ready At Dawn at&nbsp;privacy@readyatdawn.com&nbsp;or sending a letter addressed to Ready At Dawn Studios LLC, Attention: Privacy Policy Administrator, at 5271
+                        California Ave, Suite 200, Irvine, CA 92617.&nbsp; To protect your privacy and security, we will also take appropriate steps to verify your identity, including confirming your in-game information,&nbsp; before granting you
+                        access to the personal information we collect, use and disclose about you or deleting your personal information. You may also appoint an authorized agent to submit a request on your behalf. To appoint such an
+                        authorized agent you must contact us at the email or physical address above and provide us with a notarized power of attorney.
+                    </p>
+                </div>
+            </div>
+            <!--content ends-->
+            <!--footer-->
+            <footer class="mainFooter">
+                <div class="mainFooterIn">
+                    <div class="container">
+                        <div class="footerInner">
+                            <!--social widget-->
+                            <div id="text-2" class="widget-social widget_text">
+                                <div class="textwidget">
+                                    <ul class="socialList">
+                                        <li>
+                                            <a href="https://www.facebook.com/ReadyAtDawnStudios/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/user/ReadyAtDawnStudios/featured" target="_blank" rel="noopener"><i class="fa fa-youtube"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/RAD_Studios" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="http://instagram.com/ReadyAtDawnStudios" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h1 class="footerLogo"><a href="./index.html">Ready At Dawn</a></h1>
+                            <div class="clr visible-xs"></div>
+                            <!--footer menu-->
+                            <div class="menu-header">
+                                <ul id="menu-footer-menu" class="menu">
+                                    <li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="./terms-conditions.html">Terms &amp; Conditions</a></li>
+                                    <li id="menu-item-100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="./legal.html">Legal</a></li>
+                                    <li id="menu-item-1404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1404"><a href="./press-center.html">Press Center</a></li>
+                                    <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <p><sup>©</sup> Ready At Dawn 2022 Trademarks belong to their respective owners. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--footer ends-->
+        </div>
+        <!-- JavaScript-->
+        <!--Bootstrap js-->
+        <script src="./js/RAD-js-bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="./js/wzl-hoverintent-js.min.js" id="hoverintent-js-js"></script>
+        <script type="text/javascript" src="./js/nn5-admin-bar.min.js" id="admin-bar-js"></script>
+        <script type="text/javascript" src="./js/dist-vendor-regenerator-runtime.min.js" id="regenerator-runtime-js"></script>
+        <script type="text/javascript" src="./js/dist-vendor-wp-polyfill.min.js" id="wp-polyfill-js"></script>
+        <script type="text/javascript" id="contact-form-7-js-extra">
+            /* <![CDATA[ */
+            var wpcf7 = { api: { root: "https:\/\/readyatdawn.com\/wp-json\/", namespace: "contact-form-7\/v1" }, cached: "1" };
+            var wpcf7 = { api: { root: "https:\/\/readyatdawn.com\/wp-json\/", namespace: "contact-form-7\/v1" }, cached: "1" };
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="./js/contact-form-7-includes-js-index.js" id="contact-form-7-js"></script>
+        <script type="text/javascript" src="./js/jquery-ui-mouse.min.js" id="jquery-ui-mouse-js"></script>
+        <script type="text/javascript" src="./js/jquery-ui-slider.min.js" id="jquery-ui-slider-js"></script>
+        <script type="text/javascript" src="./js/page-links-to-dist-new-tab.js" id="page-links-to-js"></script>
+        <script type="text/javascript">
+            (function () {
+                var request,
+                    b = document.body,
+                    c = "className",
+                    cs = "customize-support",
+                    rcs = new RegExp("(^|\\s+)(no-)?" + cs + "(\\s+|$)");
+
+                request = true;
+
+                b[c] = b[c].replace(rcs, " ");
+                // The customizer requires postMessage and CORS (if the site is cross domain).
+                b[c] += (window.postMessage && request ? " " : " no-") + cs;
+            })();
+        </script>
+    
+
+
+</body></html>

@@ -1,0 +1,671 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" class=" webkit chrome win js"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<title>Hub Culture</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="/templates/default.css?ver=20">
+<link rel="stylesheet" type="text/css" href="/templates/home.css">
+<link rel="stylesheet" type="text/css" href="/templates/mobile.css?ver=20">
+<link rel="stylesheet" href="/c/hubculture-globe.css" id="stylesheet">
+<link rel="stylesheet" href="/templates/standard.css?ver=20" id="stylesheet">
+<link rel="stylesheet" type="text/css" href="/c/framework.css">
+<script id="hubid-sdk" src="https://developers.hubculture.com/hubid-sdk/hubid-sdk.js?ver=1.0.0"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="/c/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/c/default.js?ver=20"></script>
+<link rel="stylesheet" type="text/css" href="/templates/hub.css?v=91f5a09c3da1470e63f8afe878f24db980a4e1c7">
+<link rel="stylesheet" type="text/css" href="https://hubculture.com/c/gridlex/thecard.css?v=91f5a09c3da1470e63f8afe878f24db980a4e1c7">
+<link rel="stylesheet" type="text/css" href="https://hubculture.com/c/gridlex/gridlex.min.css?v=91f5a09c3da1470e63f8afe878f24db980a4e1c7">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans&amp;v=91f5a09c3da1470e63f8afe878f24db980a4e1c7">
+<script src="/c/css_browser_selector.js?v=91f5a09c3da1470e63f8afe878f24db980a4e1c7" type="text/javascript"></script>
+<script src="https://hubculture.com/c/angular-1.6.2/angular.min.js?v=91f5a09c3da1470e63f8afe878f24db980a4e1c7" type="text/javascript"></script>
+<link rel="apple-touch-icon" href="/i/hub-apple.png">
+<meta content="Hub Culture is a global network that offers four key assets: Pavilions for collaboration, Knowledge Brokerage services, the Ven digital currency and HubID, a digital identity service. Together, these assets form an ecosystem of value." name="description">
+<meta property="fb:app_id" content="137328041217">
+<meta property="fb:admins" content="500067709,197812553">
+<meta property="og:site_name" content="Hub Culture">
+<meta property="og:title" content="Hub Culture">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hubculture.com/">
+<meta property="og:description" content="Collaborate in a virtual state">
+<style type="text/css">
+        
+        @-webkit-keyframes simpleMarquee942228{ 100%{transform:translateX(-5050px)}}@-webkit-keyframes simpleMarquee445095{ 100%{transform:translateX(-5050px)}}</style>
+<link rel="stylesheet" href="/templates/bootstrap-3.0.3.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="https://hubculture.com/favicon.png" type="image/x-icon">
+<link rel="icon" href="https://hubculture.com/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="https://hubculture.com/favicon.png">
+<meta name="google-site-verification" content="hL-M96cTtp0h7o2EMF2EQlFPoUCElW0_VH68Ehwqqq8">
+<meta name="y_key" content="77467f26fe0d771a">
+<script type="text/javascript" src="/c/jquery.watermark.min.js"></script>
+<script type="text/javascript">
+      $(document).ready(function() {
+        if (window.location.href.indexOf("hub.vg") == -1) {
+          $(".hubculture-logo").show();
+        } else {
+          $(".hubvg-logo").show();
+        }
+      });
+    </script>
+</head>
+<body>
+<div class="login">
+<div class="login-overlay"></div>
+<div class="login__wrapper login__gradient">
+<div class="login__content">
+<div class="Modal__header">
+<button type="button" class="Modal__close-btn" aria-label="Close" onclick="closeLogin()" aria-hidden="true">
+<span class="Modal__close-flex" aria-hidden="true">
+<span class="SVGIcon SVGIcon--16px">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="357px" height="357px" fill="#fff" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
+<g>
+<g id="close">
+<polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3
+                                            214.2,178.5 		"></polygon>
+</g>
+</g>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</div>
+<div class="Modal__body">
+<div class="login__header">
+<h2>Login on Hub Culture</h2>
+</div>
+<div class="login__body">
+<div class="wrong-request login-modal">
+<h3>Something went wrong.</h3>
+<p>Try again or contact us.</p>
+</div>
+<button type="button" class="login-controls step step-2" id="clear-login">Edit email</button>
+<form class="auth-form" action="">
+<div class="form-group email-group">
+<input id="email-login" class="form-control" aria-invalid="false" aria-label="Email address" name="email" autocomplete="email" value="">
+<label for="email-login">Email address</label>
+<span class="help-block"></span>
+</div>
+<div class="form-group pass-set step step-2">
+<input id="password-login" class="form-control" aria-invalid="false" aria-label="Password" name="password" type="password">
+<label for="password-login">Password</label>
+<span class="PasswordShow" onclick="togglePassView()">Show</span>
+<span class="help-block"></span>
+</div>
+<div class="RememberMe step step-2">
+<div class="form-group CRB CRB--checkbox CRB--inline CRB--sm" role="checkbox" aria-checked="false">
+<label class="CRB__label text-muted">
+<input id="remember-me" type="checkbox" class="CRB__input" name="rememberMe">
+<div class="CRB__toggle"><span class="SVGIcon SVGIcon--12px SVGIcon--inline-flex CRB__svg"><svg data-id="SVG_CHECK__12" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" d="M2 7l3 3 6-8"></path></svg></span></div>
+<span class="label-text">Remember me</span>
+</label>
+</div>
+</div>
+<div class="form-accept">
+<button id="submit-login" type="submit" label="Get started" disabled="">
+<span class="btn__label">Get started</span>
+<div role="status" class="LoadingOverlay">
+<ul aria-hidden="true" class="LoadingOverlay__ul">
+<li class="LoadingOverlay__li LoadingOverlay__li--1 bg-brand"></li>
+<li class="LoadingOverlay__li LoadingOverlay__li--2 bg-brand"></li>
+<li class="LoadingOverlay__li LoadingOverlay__li--3 bg-brand"></li>
+<li class="LoadingOverlay__li LoadingOverlay__li--4 bg-brand"></li>
+</ul>
+</div>
+</button>
+</div>
+</form>
+<button type="button" class="login-controls step step-2" id="forgot-login">I forgot my password</button>
+<div class="third-social step step-1">
+<span id="hubid-login"><button style="background-color: #60bf93; border: 1px solid #44a87a;border-radius: 3px;padding: 4px 4px 4px 24px;margin: 0;color: #fff;font-size: 12px;line-height: 1;cursor: pointer;outline: none;background-repeat: no-repeat no-repeat;background-position-x: 0px;background-position-y: -1px;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAXCAYAAAAP6L+eAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAFxGAABcRgEUlENBAAAAB3RJTUUH4QIGESkLgBfhHwAAApVJREFUOMvdlU1sTUEYhp9vzs+913WPaultBdEWCRuJlaV/1hYsLCRWggUbuhdrEks/iUTsWPtL1M5WIhJS3IrQUrTn3LbnnnNnPgt/1duWNBFidt/MO0/efDPzDvxf4068sLUFQ39DI7OKd0c/6vuJR8nzcBogKEZy6tayo+Lm3NMCni64HRsCqWDpI7XbcKwBHIZBFnkDGGo0XB0jOhM6u2OAW7FHKFWm7CEyPYLSAQSAAk2EN4RyjqJ3g9yNsneJm+natPTrdiyE0sGEPUFDz6Cs9kTKG8suXF9yBSNSRllHQ8+T2kMEZgm3xr9Ap/W81fFAUmDS7SN1lwQWbVmcc7Z9mC6TIcBzW6J/tJPHUz7AJ8rmAIF5wPZKNh1jWsBGIjI9CBR7i46LnW+pBkqxrZ0wWkpfmHO5a4RlvgJEpHqQQEotmJ+qh3Uh1+WobkDFHG6LEdeke+Uqenp66O3rpb3aTaQp+9smQPFwuglHND94RRGa2vb1oOgLcsQPqESV75JKVAE/YG2Yf+tkBSWcead/Bo/mii/jQA7wIvNxeUaSJN8lSZKgecbzzP82VUfI5ne8uQShvEPkKaJ6NY5wXsC7168Zqg1Re1ljbGSYMVPk5ngZRB1GHmFIZt7l1sOzGhPKNaDxbMrj+PsuhhoGO/YeN/6BJ2nAsZEqb3MDQkzBXMfq5K8fyN1YMFJl0p4k11MClIyyogBNheFMaDhQcIRympJ3BdWP7JzP8Z0YdkVKU0cpeRcIpV+FkUknbnBKbC0VmzqcCkMUzVEK5hpNHWNn1BJIMmdqKQZfIpReUrcVp+sAhydPKJgHwCus1tkTuV+H0GxJdS82FE2AiA8oTi2pa+Kw7IlmTbY/msd/4Qf5V8dnU40mu6NNxoAAAAAASUVORK5CYII=');" id="hubid-login-button-5feb7ef1483642e795fb5338a5a2a8cb">Login</button></span>
+</div>
+</div>
+<div class="login__footer">
+<label>
+<p>Use of this site constitutes acceptance of our <a href="/tac">Terms and Conditions</a> and <a href="privacy">Privacy Policy.</a></p>
+<p id="copyright">©2023 HubCulture</p>
+</label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="password-reset">
+<div class="wrapper">
+<div class="lds-spinner loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+<div class="forgot-feedback">
+<div class="wrong-request forgot-password">
+<h3>Something went wrong.</h3>
+<p>Try again or contact us.</p>
+</div>
+<div class="form-accept">
+<button class="submit-reset" type="button" id="lex-initial-button" label="Get started">
+<span class="btn__label">Back to log in</span>
+</button>
+</div>
+</div>
+<div class="content">
+<img src="/images/icons/social/login/mail.png">
+<div class="password-reset__message">
+<p>Check your inbox!</p>
+<p>Reset your password with the link we just sent to your email.</p>
+</div>
+<div class="form-accept">
+<button class="submit-reset" type="button" id="lex-initial-button" label="Get started">
+<span class="btn__label">Back to log in</span>
+</button>
+</div>
+</div>
+</div>
+<div class="login-overlay"></div>
+</div>
+<div id="homeContainer">
+<div id="HubHome">
+<div id="hub-globe" style="position: absolute;margin-top: 5px;">                <a class="navbar-brand globe" id="globe" href="#" onclick="return hubGlobe.toggle();">                    <span aria-label="Web icon" role="img" class="material-design-icon web-icon">                        <svg fill="#9d9d9d" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg">                            <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2Z">                                <title>HubCulture Globe</title>                            </path>                        </svg>                    </span>                </a>            </div>
+<table width="100%" cellspacing="0" cellpadding="0" class="large-screen">
+<tbody><tr>
+<td align="center" class="header_bg">
+<table width="1000" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="large-screen-header">
+<a class="nav_links atk-text-reset" href="/">
+<img src="/images/logo-hub-clear.png" alt="Hub Culture logo">
+<span class="hubculture-logo" style="">HUB CULTURE</span>
+<span class="hubvg-logo" style="display:none;">HUB.VG</span>
+</a>
+</td>
+<td align="left" valign="middle" class="nav_bg large-menu-items">
+<table width="100%" cellspacing="0" cellpadding="0" style="max-width: 700px;">
+<tbody><tr>
+<td style="width: 30px;">&nbsp;</td>
+<td><a href="http://ven.vc" class="nav_links atk-padding atk-swatch-ink" title="Ven" target="_blank"><span class="icon-ven atk-size-tera nonauth"></span></a></td>
+<td><a href="./hubs/hub/projects/62/wiki/" class="nav_links atk-padding atk-swatch-ink" title="About"><span class="icon-info atk-size-tera nonauth"></span></a></td>
+<td><a href="./events/" class="nav_links atk-padding atk-swatch-ink" title="Events"><span class="icon-calendar atk-size-tera nonauth"></span></a></td>
+<td><a href="./news" class="nav_links atk-padding atk-swatch-ink" title="News"><span class="icon-rss atk-size-tera nonauth"></span></a></td>
+<td><a href="./video" class="nav_links atk-padding atk-swatch-ink" title="Video"><span class="icon-video atk-size-tera nonauth"></span></a></td>
+
+<td><a href="./store" class="nav_links atk-padding atk-swatch-ink" title="Store"><span class="icon-star atk-size-tera nonauth"></span></a></td>
+<td><a href="./pavilions/" class="nav_links atk-padding atk-swatch-ink" title="Pavilions"><span class="icon-layers atk-size-tera nonauth"></span></a></td>
+<td><a target="blank" href="https://play.google.com/store/apps/details?id=com.hubculture.hubid&amp;hl=en" class="nav_links atk-padding atk-swatch-ink" title="Play market"><span class="icon-android atk-size-tera nonauth"></span></a></td>
+<td><a target="blank" href="https://itunes.apple.com/us/app/hub-culture/id1208214533?mt=8" class="nav_links atk-padding atk-swatch-ink" title="Apple store"><span class="icon-apple atk-size-tera nonauth"></span></a></td>
+<td><a href="/register" class="nav_links atk-padding atk-swatch-ink">JOIN</a></td>
+<td><button type="button" onclick="showLogin()" class="login-button nav_links atk-padding atk-swatch-ink">LOGIN</button></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<div class="small-screen" id="small-screen-header" style="padding-left: 50px;">
+<a href="/" class="atk-text-reset">
+<img src="/images/logo-hub-clear.png" alt="" height="36">
+<span class="hubculture-logo" style="">HUB CULTURE</span>
+<span class="hubvg-logo" style="display:none;">HUB.VG</span>
+</a>
+<div class="small-screen-menu-bars" onclick="$('#small-screen-menu').toggle()">
+<div></div>
+<div></div>
+<div></div>
+</div>
+<ul id="small-screen-menu">
+<li><a href="./hubs/hub/projects/62/wiki/" class="nav_links">ABOUT</a></li>
+<li><a href="./news" class="nav_links">NEWS</a></li>
+<li><a href="/events" class="nav_links">EVENTS</a></li>
+<li><a href="/video" class="nav_links">VIDEO</a></li>
+<li><a href="http://ven.vc" class="nav_links"> VEN</a></li>
+<li><a href="https://hubculture.com/pavilions" class="nav_links"> PAVILIONS</a></li>
+<li><a href="http://hub.vg/hubid" class="nav_links"> HUBID</a></li>
+<li><a target="blank" href="https://play.google.com/store/apps/details?id=com.hubculture.hubid&amp;hl=en" class="nav_links atk-padding atk-swatch-ink play" title="Play market"><span class="icon-android atk-size-tera nonauth"></span></a>
+</li><li><a target="blank" href="https://itunes.apple.com/us/app/hub-culture/id1208214533?mt=8" class="nav_links atk-padding atk-swatch-ink" title="Apple store"><span class="icon-apple atk-size-tera nonauth"></span></a>
+</li><li><a href="./register" class="nav_links"> APPLY TO JOIN</a></li>
+<li><button type="button" onclick="showLogin()" class="login-button nav_links small-screen-menu-button">LOGIN</button></li>
+</ul>
+</div>
+</div>
+</div>
+<script src="/c/rates/rates.js"></script>
+<link rel="stylesheet" href="/c/rates/rates.css">
+<a href="https://ven.vc/rates/" target="_blank"><div ng-app="mainApp" ng-controller="CurrencyTableCtrl" class="ng-scope">
+<div angular-marquee="" scroll="scroll" duration="duration" class="currency-marquee ng-scope" style="height: 28px;"><div style="width: 100000px; transform: translateX(0px); animation: 89.3376s linear 0s infinite normal none running simpleMarquee445095;" class="angular-marquee-wrapper"><div class="angular-marquee" style="float:left;"><!-- ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">EUR</span> <span class="currency-price ng-binding">0.09216566</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">CARBON</span> <span class="currency-price ng-binding">0.71052279</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">JPY</span> <span class="currency-price ng-binding">14.586941186</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">AUD</span> <span class="currency-price ng-binding">0.154574034</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">CAD</span> <span class="currency-price ng-binding">0.134797027</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">SGD</span> <span class="currency-price ng-binding">0.134663804</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">HKD</span> <span class="currency-price ng-binding">0.773705037</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">DKK</span> <span class="currency-price ng-binding">0.687855135</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">MXN</span> <span class="currency-price ng-binding">1.736488083</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">NZD</span> <span class="currency-price ng-binding">0.167601469</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">KRW</span> <span class="currency-price ng-binding">131.872042232</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">USD</span> <span class="currency-price ng-binding">0.09868372</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">GBP</span> <span class="currency-price ng-binding">0.079168619</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">BRL</span> <span class="currency-price ng-binding">0.492096239</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">CNY</span> <span class="currency-price ng-binding">0.724575347</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">AED</span> <span class="currency-price ng-binding">0.362470238</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">CHF</span> <span class="currency-price ng-binding">0.088090911</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">XAU</span> <span class="currency-price ng-binding">0.000051421</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">BCH</span> <span class="currency-price ng-binding">0.000522834</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">GNO</span> <span class="currency-price ng-binding">0.000984807</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">BTC</span> <span class="currency-price ng-binding">0</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">ETH</span> <span class="currency-price ng-binding">0.000060689</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">OMG</span> <span class="currency-price ng-binding">0.223187577</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">ICN</span> <span class="currency-price ng-binding">0.679639946</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">XRP</span> <span class="currency-price ng-binding">0.197595343</span>
+</div><!-- end ngRepeat: (currency, price) in prices --></div><div class="angular-marquee" style="float: left;"><!-- ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">EUR</span> <span class="currency-price ng-binding">0.09216566</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">CARBON</span> <span class="currency-price ng-binding">0.71052279</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">JPY</span> <span class="currency-price ng-binding">14.586941186</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">AUD</span> <span class="currency-price ng-binding">0.154574034</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">CAD</span> <span class="currency-price ng-binding">0.134797027</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">SGD</span> <span class="currency-price ng-binding">0.134663804</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">HKD</span> <span class="currency-price ng-binding">0.773705037</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">DKK</span> <span class="currency-price ng-binding">0.687855135</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">MXN</span> <span class="currency-price ng-binding">1.736488083</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">NZD</span> <span class="currency-price ng-binding">0.167601469</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">KRW</span> <span class="currency-price ng-binding">131.872042232</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">USD</span> <span class="currency-price ng-binding">0.09868372</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">GBP</span> <span class="currency-price ng-binding">0.079168619</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">BRL</span> <span class="currency-price ng-binding">0.492096239</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">CNY</span> <span class="currency-price ng-binding">0.724575347</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">AED</span> <span class="currency-price ng-binding">0.362470238</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">CHF</span> <span class="currency-price ng-binding">0.088090911</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">XAU</span> <span class="currency-price ng-binding">0.000051421</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">BCH</span> <span class="currency-price ng-binding">0.000522834</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">GNO</span> <span class="currency-price ng-binding">0.000984807</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">BTC</span> <span class="currency-price ng-binding">0</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">ETH</span> <span class="currency-price ng-binding">0.000060689</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">OMG</span> <span class="currency-price ng-binding">0.223187577</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">ICN</span> <span class="currency-price ng-binding">0.679639946</span>
+</div><!-- end ngRepeat: (currency, price) in prices --><div ng-repeat="(currency, price) in prices" class="currency ng-scope">
+<span class="currency-name ng-binding">XRP</span> <span class="currency-price ng-binding">0.197595343</span>
+</div><!-- end ngRepeat: (currency, price) in prices --></div></div></div>
+</div></a>
+<div class="content">
+<div class="blurb">
+<p id="one"><a onclick="showLogin();" href="#" title="Sign in with HubID">Collaborate in a<br class="small-screen"> virtual state.</a></p>
+<p class="two">
+<a href="/register">Join</a> our mission to enhance collective consciousness via relationships, experiences and a new kind of money, <a target="_blank" href="https://ven.vc" title="Ven - a digital virtual currency"><b>Ven</b></a>.
+<br>Checkout <a href="/events/">upcoming events</a> at Hub Culture.
+</p>
+<div class="social">
+<b>Sign in:</b>
+<span class="social-item"><a onclick="showLogin();" href="#" title="Sign in with HubID"><img width="64" src="/images/logo-hub-clear.png"></a></span>
+</div>
+</div>
+<div id="hboxeswrapper">
+<div class="hbox" style="margin: 0 auto; font-family: 'PT Sans', sans-serif;">
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1640" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/0760ac2e2622a14d97227302b9692b1d/jeanne.jpeg" title="Lemurian Awakened Empowerment Retreat" alt="Lemurian Awakened Empowerment Retreat" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1640" title="Lemurian Awakened Empowerment Retreat">
+<h4>Lemurian Awakened Empowerment Retreat</h4>
+</a>
+<p></p><p>Dive into the Magic of Kaua'i - Join Our Spiritual Retreat!</p>
+<h1 class="style-scope ytd-watch-metadata">&nbsp;</h1><p></p>
+</div>
+<a class="card-outmore" href="/hubs/47/news/1640" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1638" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/62bc3044d9cb662b647bf629239f341f/Thaifishingboat.jpg" title="The Dark Side of the Fishing Industry: Ruining the Seabed and Wildlife" alt="The Dark Side of the Fishing Industry: Ruining the Seabed and Wildlife" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1638" title="The Dark Side of the Fishing Industry: Ruining the Seabed and Wildlife">
+<h4>The Dark Side of the Fishing Industry: Ruining the Seabed and Wildlife</h4>
+</a>
+<p></p><p>The fishing industry's unsustainable practices, including bottom trawling, bycatch, habitat destruction, and overfishing, are wreaking havoc on the seabed and marine wildlife, with severe environme…</p>
+</div>
+<a class="card-outmore" href="/hubs/47/news/1638" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1635" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/14b0047741c11d3e45c9035fb8295128/burningman2.jpeg" title="Unveiling the Origins of Burning Man: A Journey from Radical Roots to Global Phenomenon" alt="Unveiling the Origins of Burning Man: A Journey from Radical Roots to Global Phenomenon" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1635" title="Unveiling the Origins of Burning Man: A Journey from Radical Roots to Global Phenomenon">
+<h4>Unveiling the Origins of Burning Man: A Journey from Radical Roots to Global Phenomenon</h4>
+</a>
+<p></p><p>Burning Man, born from a simple beach bonfire, has evolved into a global celebration of radical self-expression, transformative art, and communal cooperation</p><p></p>
+</div>
+<a class="card-outmore" href="/hubs/47/news/1635" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1633" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/f87f7af6b610d688b6d0d61a6c48ab61/pyscadelichead.jpeg" title="Exploring the Potential of Psilocybin-Assisted Therapy for Depression" alt="Exploring the Potential of Psilocybin-Assisted Therapy for Depression" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1633" title="Exploring the Potential of Psilocybin-Assisted Therapy for Depression">
+<h4>Exploring the Potential of Psilocybin-Assisted Therapy for Depression</h4>
+</a>
+<p></p><div class="flex-shrink-0 flex flex-col relative items-end">
+<div>
+<div class="relative p-1 rounded-sm text-white flex items-center justify-center">Psilocybin-assisted therapy shows promise as a novel…<p></p>
+</div>
+<a class="card-outmore" href="/hubs/47/news/1633" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1632" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/737598f6181e0d283a4fc387d4c83900/solar-powered-window-phone-charger_400x333.jpg" title="Harnessing the Sun: Innovative Solar-Powered Phone Chargers Revitalize On-the-Go Charging" alt="Harnessing the Sun: Innovative Solar-Powered Phone Chargers Revitalize On-the-Go Charging" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1632" title="Harnessing the Sun: Innovative Solar-Powered Phone Chargers Revitalize On-the-Go Charging">
+<h4>Harnessing the Sun: Innovative Solar-Powered Phone Chargers Revitalize On-the-Go Charging</h4>
+</a>
+<p></p><p>Solar-powered phone chargers are capturing attention as a solution to the perennial problem of low smartphone battery life.</p><p></p>
+</div>
+<a class="card-outmore" href="/hubs/47/news/1632" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1629" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/6d00fb9f6bc1e77520947264cdc894a7/earthboiling.jpeg" title="Approaching the Fossil Fuel Industries: Solutions to Tackle Global Boiling" alt="Approaching the Fossil Fuel Industries: Solutions to Tackle Global Boiling" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1629" title="Approaching the Fossil Fuel Industries: Solutions to Tackle Global Boiling">
+<h4>Approaching the Fossil Fuel Industries: Solutions to Tackle Global Boiling</h4>
+</a>
+<p></p><div class="flex-shrink-0 flex flex-col relative items-end">
+<div>
+<div class="relative p-1 rounded-sm text-white flex items-center justify-center">&nbsp;</div>
+</div>
+<div class="text-xs flex items-cente…</p>
+                </div>
+                <a class=" card-outmore"="" href="/hubs/47/news/1629" rel="nofollow">
+<h5>Read this article</h5>
+
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1625" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/aec5fc880bc9b3b609d4843023a36570/seeweedtesttube.jpeg" title="Embracing Nature's Packaging: Seaweed, the Sustainable Substitute for Plastic" alt="Embracing Nature's Packaging: Seaweed, the Sustainable Substitute for Plastic" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1625" title="Embracing Nature's Packaging: Seaweed, the Sustainable Substitute for Plastic">
+<h4>Embracing Nature's Packaging: Seaweed, the Sustainable Substitute for Plastic</h4>
+</a>
+<p></p><p>Embracing seaweed-based materials can revolutionize packaging, promoting a cleaner, greener future and supporting marine conservation and coastal communities</p><p></p>
+</div>
+<a class="card-outmore" href="/hubs/47/news/1625" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/776/news/1620" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/f456e45b548006be9aa365644e57acef/hub.vgfrontline.png" title="Frontlines Summit Bermuda: Outlines for Climate Action" alt="Frontlines Summit Bermuda: Outlines for Climate Action" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/776/news/1620" title="Frontlines Summit Bermuda: Outlines for Climate Action">
+<h4>Frontlines Summit Bermuda: Outlines for Climate Action</h4>
+</a>
+<p></p><p>The frontlines of climate change are everywhere and cover a myriad of situations. From this summer’s devastating Canadian wildfires to European rivers running dry, nature is showing humanity ever…</p>
+</div>
+<a class="card-outmore" href="/hubs/776/news/1620" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1618" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/10060fabfc73b087178d89b3df156a25/forestboard.jpeg" title="Harnessing Nature's Wisdom: Putting Nature on the Board" alt="Harnessing Nature's Wisdom: Putting Nature on the Board" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1618" title="Harnessing Nature's Wisdom: Putting Nature on the Board">
+<h4>Harnessing Nature's Wisdom: Putting Nature on the Board</h4>
+</a>
+<p></p><p>Incorporating nature into corporate decision-making holds significant potential for addressing climate challenges. By recognizing the wisdom of nature, valuing ecosystem services, and engaging stak…</p>
+</div>
+<a class="card-outmore" href="/hubs/47/news/1618" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/1032/news/1603" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/dc7c231e0380fc63cc61a259b3131b31/HubTocuan.jpg" title="Hub Culture Announces Costa Rica Reserve Project with Holos" alt="Hub Culture Announces Costa Rica Reserve Project with Holos" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/1032/news/1603" title="Hub Culture Announces Costa Rica Reserve Project with Holos">
+<h4>Hub Culture Announces Costa Rica Reserve Project with Holos</h4>
+</a>
+<p></p><p>Hub Culture is investing into property at Holos Global as part of its Ultra Reserve intiative, supporting regenerative reforestation and natural habitat restoration in the context of a long term pl…</p>
+</div>
+<a class="card-outmore" href="/hubs/1032/news/1603" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/14/news/1592" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/8d13bdd6273c6d4a7c587f28587afe85/zeke-btc.png" title="Zeke Can Now Code, Make Images and Tap Ven Balances for Hub Culture Members" alt="Zeke Can Now Code, Make Images and Tap Ven Balances for Hub Culture Members" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/14/news/1592" title="Zeke Can Now Code, Make Images and Tap Ven Balances for Hub Culture Members">
+<h4>Zeke Can Now Code, Make Images and Tap Ven Balances for Hub Culture Members</h4>
+</a>
+<p></p><p><a href="https://zeke.ai">Zeke</a>, the emergent intelligence from Hub Culture, debuted a number of new capabilities during <a href="https://b.tc">Bitcoin Miami</a>, the world's largest crytpo conf…</p>
+</div>
+<a class="card-outmore" href="/hubs/14/news/1592" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1591" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/2ff01512a17919d588e0c11f7dac9c4c/images-9.jpeg" title="The Rising Tide of Climate Refugees by 2050: Projected Impacts" alt="The Rising Tide of Climate Refugees by 2050: Projected Impacts" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1591" title="The Rising Tide of Climate Refugees by 2050: Projected Impacts">
+<h4>The Rising Tide of Climate Refugees by 2050: Projected Impacts</h4>
+</a>
+<p></p><p>Building Resilient Infrastructure and Circular Economy: Addressing the Climate Refugee Crisis.</p><p></p>
+</div>
+<a class="card-outmore" href="/hubs/47/news/1591" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1574" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/6aa1432aa9ca27a3c2fdc908857f88d9/C9FF8618-ECEC-4466-A61B-075E6E98142C.jpeg" title="Protecting the Jewels of the Atlantic: The Importance of Coral Reefs in the Face of Climate Change and Human Activity" alt="Protecting the Jewels of the Atlantic: The Importance of Coral Reefs in the Face of Climate Change and Human Activity" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1574" title="Protecting the Jewels of the Atlantic: The Importance of Coral Reefs in the Face of Climate Change and Human Activity">
+<h4>Protecting the Jewels of the Atlantic: The Importance of Coral Reefs in the Face of Climate Change and Human Activity</h4>
+</a>
+<p></p><p><span style="font-weight:400;">Coral reefs in the Atlantic: A discussion of the importance of coral reefs in the Atlantic Ocean, the threats they face from climate change and human activity, and ef…</span></p>
+</div>
+<a class="card-outmore" href="/hubs/47/news/1574" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/47/news/1546" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/162fe271fbefb3083703101e593ef373/HC-IC23-Expedition.png" title="The Expedition: Asia Reconnected with the Hub Culture Innovation Campus 2023" alt="The Expedition: Asia Reconnected with the Hub Culture Innovation Campus 2023" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/47/news/1546" title="The Expedition: Asia Reconnected with the Hub Culture Innovation Campus 2023">
+<h4>The Expedition: Asia Reconnected with the Hub Culture Innovation Campus 2023</h4>
+</a>
+<p></p><p>After a long moment of distance, Asia is opening up to the world again. As such, the 2023 Hub Culture Innovation Campus is destined for the great cities of Asia. Anchored by a special Expedition th…</p>
+</div>
+<a class="card-outmore" href="/hubs/47/news/1546" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/516/news/1544" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/7a2e5993633c56cbc7bf0cb865dfd028/djmiketaylor.jpg" title="DJ Lineups and Unity Sound Experiences" alt="DJ Lineups and Unity Sound Experiences" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/516/news/1544" title="DJ Lineups and Unity Sound Experiences">
+<h4>DJ Lineups and Unity Sound Experiences</h4>
+</a>
+<p></p><p>A diverse set of up and coming DJs from around the world are set to highlight the power of original music at the +play&nbsp;Content House with Hub Culture. With sound curated by house partner&nbsp;<a href="…</p">
+</a></p></div><a href="…</p">
+</a><a class="card-outmore" href="/hubs/516/news/1544" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<div class="col-4_sm-12">
+<div class="thecard">
+<a class="card-img" href="/hubs/516/news/1543" rel="nofollow">
+<img src="https://s3.amazonaws.com/hcnews-full/720fe193a0f536305a898c9c3e513448/ppph.jpg" title="Hub Culture and Verizon bring the +play Partner House to Los Angeles" alt="Hub Culture and Verizon bring the +play Partner House to Los Angeles" width="100%">
+</a>
+<div class="card-caption">
+<a href="/hubs/516/news/1543" title="Hub Culture and Verizon bring the +play Partner House to Los Angeles">
+<h4>Hub Culture and Verizon bring the +play Partner House to Los Angeles</h4>
+</a>
+<p></p><p>In the week leading up to the 2023 Academy Awards, Hub Culture is teaming up with leading streaming partners in Los Angeles to&nbsp;showcase +play,&nbsp;the groundbreaking new streaming platform.</p><p></p>
+</div>
+<a class="card-outmore" href="/hubs/516/news/1543" rel="nofollow">
+<h5>Read this article</h5>
+</a>
+</div>
+</div>
+<p><a href="/news" title="Hub Culture Latest News">More news...</a></p>
+<div class="hboxtitle">
+<h3><a href="http://hub.vg/videos">Videos</a></h3>
+</div>
+<div class="hboxcontent center">
+<div class="videoWrapper">
+<iframe width="375" height="225" src="https://www.youtube.com/embed/thaSbokWjAE?rel=0&amp;hd=1&amp;fs=1&amp;hl=en_GB" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+<div class="hboxcontent center">
+<div class="videoWrapper">
+<iframe width="375" height="225" src="https://www.youtube.com/embed/U8kiXHOaljQ?rel=0&amp;hd=1&amp;fs=1&amp;hl=en_GB" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+<p><a href="/video" title="Hub Culture Videos">More videos...</a></p>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footerContent">
+<a href="https://developers.hubculture.com">API</a> |
+<a href="./aboutus/">About Us</a> |
+<a href="./contact/">Contact</a> |
+<a href="./faq/">FAQ</a> |
+<a href="./help/">Help</a> |
+<a href="./hiring/">Hiring</a> |
+<a href="./investors/">Investor Centre</a> |
+<a href="./privacy/">Privacy</a> |
+<a href="./tac/">Terms and Conditions</a> |
+<a href="./membership/">Membership</a> |
+<a href="./press/">Press</a> |
+<a href="./destinations/">Destinations</a>
+<div id="social-icon-wrapper">
+<div id="hub-globe-side-pane"><aside class="v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--fixed v-navigation-drawer--mini-variant v-navigation-drawer--open v-navigation-drawer--temporary theme--dark" enable-resize-watcher="" style="height: 100%; margin-top: 0px; max-height: calc(100% - 0px); transform: translateX(-80px); width: 80px;" data-booted="true">        <div class="v-list theme--dark">            <div class="teest" title="AQUA">                <a href="https://theaqua.world" class="v-list__tile v-list__tile--link theme--dark" target="_blank">                    <div class="v-list__tile__action">                        <div class="v-responsive v-image">                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://id.hubculture.com/images/logo/aqua.png&quot;); background-position: center center;">                            </div>                            <div class="v-responsive__content"></div>                        </div>                    </div>                    <div class="v-list__tile__content">                        <div class="v-list__tile__title">AQUA</div>                    </div>                </a>            </div>            <div class="teest" title="Coalition">                <a href="https://thecoalition.world" class="v-list__tile v-list__tile--link theme--dark" target="_blank">                    <div class="v-list__tile__action">                        <div class="v-responsive v-image">                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://id.hubculture.com/images/logo/thecoalition.png&quot;); background-position: center center;">                            </div>                            <div class="v-responsive__content"></div>                        </div>                    </div>                    <div class="v-list__tile__content">                        <div class="v-list__tile__title">Coalition</div>                    </div>                </a>            </div>            <div class="teest" title="GAIA">                <a href="https://gaia.club" class="v-list__tile v-list__tile--link theme--dark" target="_blank">                    <div class="v-list__tile__action">                        <div class="v-responsive v-image">                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://id.hubculture.com/images/logo/gaia.png&quot;); background-position: center center;">                            </div>                            <div class="v-responsive__content"></div>                        </div>                    </div>                    <div class="v-list__tile__content">                        <div class="v-list__tile__title">GAIA</div>                    </div>                </a>            </div>            <div class="teest" title="Emerald City">                <a href="https://hubculture.city" class="v-list__tile v-list__tile--link theme--dark" target="_blank">                    <div class="v-list__tile__action">                        <div class="v-responsive v-image">                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://id.hubculture.com/images/logo/emerald-city.png&quot;); background-position: center center;">                            </div>                            <div class="v-responsive__content"></div>                        </div>                    </div>                    <div class="v-list__tile__content">                        <div class="v-list__tile__title">Emerald City</div>                    </div>                </a>            </div>            <div class="teest" title="HubCulture">                <a href="https://hubculture.com" class="v-list__tile v-list__tile--link theme--dark" target="_blank">                    <div class="v-list__tile__action">                        <div class="v-responsive v-image">                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://id.hubculture.com/images/logo/hubculture.png&quot;); background-position: center center;">                            </div>                            <div class="v-responsive__content"></div>                        </div>                    </div>                    <div class="v-list__tile__content">                        <div class="v-list__tile__title">HubCulture</div>                    </div>                </a>            </div>            <div class="teest" title="HubID">                <a href="https://hubid.me" class="v-list__tile v-list__tile--link theme--dark" target="_blank">                    <div class="v-list__tile__action">                        <div class="v-responsive v-image">                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://id.hubculture.com/images/logo/hubnews.png&quot;); background-position: center center;">                            </div>                            <div class="v-responsive__content"></div>                        </div>                    </div>                    <div class="v-list__tile__content">                        <div class="v-list__tile__title">HubID</div>                    </div>                </a>            </div>            <div class="teest" title="Open Audit Initiative">                <a href="http://oai.io" class="v-list__tile v-list__tile--link theme--dark" target="_blank">                    <div class="v-list__tile__action">                        <div class="v-responsive v-image">                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://id.hubculture.com/images/logo/oai.png&quot;); background-position: center center;">                            </div>                            <div class="v-responsive__content"></div>                        </div>                    </div>                    <div class="v-list__tile__content">                        <div class="v-list__tile__title">Open Audit Initiative</div>                    </div>                </a>            </div>            <div class="teest" title="Ultra Exchange">                <a href="https://ultra.exchange" class="v-list__tile v-list__tile--link theme--dark" target="_blank">                    <div class="v-list__tile__action">                        <div class="v-responsive v-image">                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://id.hubculture.com/images/logo/ultra.png&quot;); background-position: center center;">                            </div>                            <div class="v-responsive__content"></div>                        </div>                    </div>                    <div class="v-list__tile__content">                        <div class="v-list__tile__title">Ultra Exchange</div>                    </div>                </a>            </div>            <div class="teest" title="Ven">                <a href="https://ven.vc" class="v-list__tile v-list__tile--link theme--dark" target="_blank">                    <div class="v-list__tile__action">                        <div class="v-responsive v-image">                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://id.hubculture.com/images/logo/ven.png&quot;); background-position: center center;">                            </div>                            <div class="v-responsive__content"></div>                        </div>                    </div>                    <div class="v-list__tile__content">                        <div class="v-list__tile__title">Ven</div>                    </div>                </a>            </div>            <div class="teest" title="Zeke">                <a href="https://zeke.ai" class="v-list__tile v-list__tile--link theme--dark" target="_blank">                    <div class="v-list__tile__action">                        <div class="v-responsive v-image">                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://id.hubculture.com/images/logo/zeke.png&quot;); background-position: center center;">                            </div>                            <div class="v-responsive__content"></div>                        </div>                    </div>                    <div class="v-list__tile__content">                        <div class="v-list__tile__title">Zeke</div>                    </div>                </a>            </div>            <button type="button" class="v-btn v-btn--icon theme--dark" onclick="return hubGlobe.expand();">                <div class="v-btn__content">                    <span aria-label="Chevron Right icon" role="img" class="material-design-icon chevron-right-icon">                        <svg fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg">                            <title>Open panel</title>                            <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path>                        </svg>                    </span>                </div>            </button>        </div>        <div class="v-navigation-drawer__border"></div>    </aside></div>
+<a target="blank" class="social-icons" title="Facebook" href="https://facebook.com/hubculture"><img src="i/social-icon-facebook.png" alt="social-icon-facebook"></a>
+<a target="blank" class="social-icons" title="Twitter" href="https://twitter.com/hubculture"><img src="i/social-icon-twitter.png" alt="social-icon-twitter"></a>
+<a target="blank" class="social-icons" title="Youtube" href="https://youtube.com/hubculture"><img src="i/social-icon-youtube.png" alt="social-icon-youtube"></a>
+<a target="blank" class="social-icons" title="Instagram" href="https://instagram.com/hubculture"><img src="i/social-icon-instagram.png" alt="social-icon-instagram"></a>
+<a target="blank" class="social-icons" title="Linkedin" href="https://www.linkedin.com/company/264228/"><img src="i/social-icon-linkedin.png" alt="social-icon-linkedin"></a>
+<a target="blank" class="social-icons" title="Flickr" href="http://flickr.com/photos/hubculture"><img src="i/social-icon-flickr.png" alt="social-icon-flickr"></a>
+</div>
+<script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-16709144-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+</div>
+</div>
+
+<script type="text/javascript" src="/c/login-modal.js?version=1.18"></script>
+<script type="text/javascript" src="/templates/vue/hubidsdk.js?version=1.18"></script>
+<script type="text/javascript" src="/c/hubculture-globe.js?version=91f5a09c3da1470e63f8afe878f24db980a4e1c7"></script>
+<link rel="stylesheet" type="text/css" href="https://www.zeke.ai/build/static/css/main.2eda8ff5.css">
+<script src="https://www.zeke.ai/build/static/js/main.f13b806d.js"></script>
+<chat-widget><div style="display: flex; position: fixed; right: 20px; bottom: 20px; flex-direction: column; justify-content: flex-end; z-index: 990; gap: 10px;"><button style="border: none; outline: none; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: rgb(181, 181, 181) 0px 2px 10px 1px; height: 100%; width: 100%; background-color: rgb(53, 204, 230); cursor: pointer; align-self: flex-end; max-height: 60px; max-width: 60px; overflow: hidden; padding: 0px;"><img src="https://developers.hubculture.com/chat-zeke/logo.png" alt="Chat" style="overflow: hidden; height: 100%; width: 100%;"></button></div></chat-widget>
+
+
+</div></div></div></div></div></div></body></html>

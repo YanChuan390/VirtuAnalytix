@@ -1,0 +1,300 @@
+<html><head>
+<title>Photogrammetric Scans for VR</title>
+</head>
+<body bgcolor="white" face="helvetica">
+
+<h1>Photogrammetric Scans for VR (by Maxime Lhuillier)</h1>
+
+<address>
+<b>Email:</b>
+ Maxime { dot } Lhuillier { at } free { dot } fr<br>
+<b>Address:</b> <a href="http://www.institutpascal.uca.fr">
+Institut Pascal, UMR 6602 CNRS/UCA,</a><br>
+Campus Universitaire des Cézeaux (4 av. Blaise Pascal),<br>
+63178 Aubière Cedex (TSA 60026, CS 60026) - France.<br>
+<b>Tel:</b> +33 (0)4 73 40 75 93<br>
+<b>Fax:</b> +33 (0)4 73 40 72 62<br>
+</address>
+<br>
+Last update on September, 10th 2022.<br>
+<br>
+These scans are reconstructed from input videos taken by helmet-held
+ 360 cameras.
+They can be explored by moving like a pedestrian.
+They are results of <a href="http://maxime.lhuillier.free.fr">methods</a> that
+ i design, implement and experiment, without manual clean up.
+<br>
+<img src="AllScans.jpg"><br>
+<h2>Table of Scans</h2>
+<table border="1" cellpadding="2">
+<!--  <caption>3D Scans for VR</caption> -->
+<!--  <thead> -->
+    <tbody><tr>
+      <th>Name</th>
+      <th>Acquisition</th>
+      <th>360 camera</th>
+      <th>Triangles</th>
+      <th>Shots</th>
+      <th>Standalone Quest</th>
+      <th>Oculus &amp; WMR</th>
+      <th>OpenVR</th>
+      <th>Sketchfab</th>
+    </tr>
+<!--  </thead> -->
+<!--  <tbody> -->
+    <tr>
+      <td>Snowy Town</td>
+      <td>walk 670m</td>
+      <td>Garmin Virb</td>
+      <td>697k</td>
+      <td><a href="https://sidequestvr.com/app/2203">shots</a></td>
+      <td><a href="Oculus/SnowyTownScan3.apk">apk</a> (169Mo)</td>
+      <td><a href="WMR/SnowyTownScanWMR2.zip">zip</a> (148Mo)</td>
+      <td><a href="OpenVR/SnowyTownScanOpenVR2.zip">zip</a> (143Mo)</td>
+      <td><a href="https://skfb.ly/6SwrZ">reduced</a></td>
+    </tr>
+   <tr>
+      <td>Forest</td>
+      <td>walk 800m</td>
+      <td>Garmin Virb</td>
+      <td>2.1M</td>
+      <td><a href="https://sidequestvr.com/app/2250">shots</a></td>
+      <td><a href="Oculus/ForestScan3.apk">apk</a> (337Mo)</td>
+      <td><a href="WMR/ForestScanWMR2.zip">zip</a> (319Mo)</td>
+      <td><a href="OpenVR/ForestScanOpenVR2.zip">zip</a> (314Mo)</td>
+      <td><a href="https://skfb.ly/6SxTv">reduced</a></td>
+   </tr>
+   <tr>
+      <td>Semi-medieval town</td>
+      <td>walk 1km</td>
+      <td>Gopro Max</td>
+      <td>2.3M</td>
+      <td><a href="https://sidequestvr.com/app/2277">shots</a></td>
+      <td><a href="Oculus/SemimedievalScan3.apk">apk</a> (408Mo)</td>
+      <td><a href="WMR/SemimedievalScanWMR2.zip">zip</a> (381Mo)</td>
+      <td><a href="OpenVR/SemimedievalScanOpenVR2.zip">zip</a> (376Mo)</td>
+      <td><a href="https://skfb.ly/6XtIq">reduced</a></td>
+   </tr>
+   <tr>
+      <td>Campus</td>
+      <td>bike 5.2km</td>
+      <td>Garmin Virb</td>
+      <td>2.8M</td>
+      <td><a href="https://sidequestvr.com/app/2341">shots</a></td>
+      <td><a href="Oculus/CampusScan3.apk">apk</a> (740Mo)</td>
+      <td><a href="WMR/CampusScanWMR2.zip">zip</a> (686Mo)</td>
+      <td><a href="OpenVR/CampusScanOpenVR2.zip">zip</a> (681Mo)</td>
+      <td><a href="https://skfb.ly/6XxOW">reduced</a></td>
+   </tr>
+   <tr>
+      <td>Verdon's canyon</td>
+      <td>kayak 2.5km</td>
+      <td>Gopro Max</td>
+      <td>1.8M</td>
+      <td><a href="https://sidequestvr.com/app/2540">shots</a></td>
+      <td><a href="Oculus/VerdonScan3.apk">apk</a> (199Mo)</td>
+      <td><a href="WMR/VerdonScanWMR2.zip">zip</a> (197Mo)</td>
+      <td><a href="OpenVR/VerdonScanOpenVR2.zip">zip</a> (192Mo)</td>
+      <td><a href="https://skfb.ly/6XLzR">reduced</a></td>
+   </tr>
+   <tr>
+      <td>Basalt canyon</td>
+      <td>walk 800m</td>
+      <td>Gopro Max</td>
+      <td>2.9M</td>
+      <td><a href="https://sidequestvr.com/app/5828">shots</a></td>
+      <td><a href="Oculus/BasaltCanyonScan2.apk">apk</a> (786Mo)</td>
+      <td><a href="WMR/BasaltCanyonScanWMR2.zip">zip</a> (764Mo)</td>
+      <td><a href="OpenVR/BasaltCanyonScanOpenVR2.zip">zip</a> (759Mo)</td>
+      <td><a href="https://skfb.ly/or6p7">reduced</a></td>
+   </tr>
+   <tr>
+      <td>Collonges-la-Rouge</td>
+      <td>walk 1.6km</td>
+      <td>Gopro Max</td>
+      <td>3.4M</td>
+      <td><a href="https://sidequestvr.com/app/5943">shots</a></td>
+      <td><a href="Oculus/CollongesLaRougeScan2.apk">apk</a> (801Mo)</td>
+      <td><a href="WMR/CollongesLaRougeScanWMR2.zip">zip</a> (770Mo)</td>
+      <td><a href="OpenVR/CollongesLaRougeScanOpenVR2.zip">zip</a> (765Mo)</td>
+      <td><a href="https://skfb.ly/orAoI">reduced</a></td>
+   </tr>   
+   <tr>
+      <td>Ruin in a forest</td>
+      <td>walk 400m</td>
+      <td>Gopro Max</td>
+      <td>1.7M</td>
+      <td><a href="https://sidequestvr.com/app/9475">shots</a></td>
+      <td><a href="Oculus/RuinInForestScan.apk">apk</a> (391Mo)</td>
+      <td><a href="WMR/RuinInForestScanWMR2.zip">zip</a> (375Mo)</td>
+      <td><a href="OpenVR/RuinInForestScanOpenVR2.zip">zip</a> (370Mo)</td>
+      <td><a href="https://skfb.ly/ovExK">reduced</a></td>
+   </tr>   
+<!--  </tbody> -->
+</tbody></table>
+<br>
+For each environment, the table provides the name,
+informations about the acquisition (camera and approximate trajectory length),
+number of triangles, video and screenshots,
+ <b>freely downloadable VR applications</b> for exploring the scan in three
+ cases of headsets:<br>
+(1) standalone Oculus Quest (including Go and Quest 2),<br>
+(2) headsets compatible with Windows Mixed Reality (WMR) and linked to a PC,
+ including Oculus headsets,<br>
+(3) headsets compatible with OpenVR (in SteamVR) and linked to a PC.<br>
+Two controllers with joysticks or touchpads are needed in all cases
+ (except the Go).
+The applications are generated by Unity 2019.4 with preview packages.
+In theory, an application works for all headsets in its case, but in
+ practice i cannot check every headset.
+Actually i experiment Oculus Quest and Go, Lenovo Explorer and HP Reverb G2,
+ with a PC running Windows 10.<br>
+<br>
+The table also provides links to explore reduced variants of the scans
+ without headset.
+Only segments of the environments are textured in the reduced variants
+ (with lower resolution than VR) due to a space limitation.
+Remainder of reduced variants has colors encoding surface normals.<br>
+<br>
+Send me an email if you have a VR headset that does not work in one of the three
+ cases above.
+<br>
+<h2>News</h2>
+<b>June 2022:</b><br>
+- There are discontinuous motions (ie "teleportations") by using a virtual
+ laser pointer to reduce the risk of VR-sickness.
+They can be used in conjunction with the continuous (translation) motions.
+<br>
+- Joysticks and touchpads can be used interchangeably.<br>
+- The location of the user in the environment is drawn in a map: a top view of
+ the surface vertices with gray levels encoding vertex density.
+The map and the information pannel are hand-held and switchable.<br>
+- The vertical offset of the user is adjustable to make easier various VR
+ setting: sitting/standing/walking in the tracking area.
+This holds for both constrained and unconstrained VR motions.
+The former is better for continuous motions above the ground and the latter is
+ better for discontinuous motions.<br>
+- The Oculus Go has neither discontinuous motion nor adjustable vertical offset.<br>
+- There is a new scan: Ruin in a forest.
+<br>
+<br>
+<b>September 2022:</b><br>
+- The installation is easier than before in case (1), see below.
+
+<h2>Installation</h2>
+In case (1), a VR application is an APK file.
+Enable developer mode on your headset and install an APK of the table
+ using the ADB command-line tool.
+<!-- (See also
+ <A HREF="https://360rumors.com/6dof-3d-models-360-videos/">here</A>.) -->
+There is an easier and alternative installation method thanks to App Lab if you
+ have a Quest or Quest 2:
+ install an APK without the developer mode by selecting a scan on
+ <a href="https://sidequestvr.com/user/330664">Sidequest</a> and by clicking on
+ "Download App (Oculus)".
+With App Lab versions of the APKs, triangles can be removed from scan
+ background to obtain more than 60 frames per second.<br>
+<br>
+In case (2), a VR application is in a zipped directory.
+First the PC must recognize the headset and the controllers,
+ eg if you are in the default environment of WMR,
+ or if the link cable is activated for the Quest.
+Then download and uncompress the zip file chosen in the table, run the .exe file.
+Adjust the vertical offset at the beginning if needed (using the right joystick).
+Press simultaneously the two index triggers to quit the VR application.<br>
+<br>
+In case (3), first install Steam and SteamVR on your PC, then
+ install and run the VR application as in case (2).
+Note that SteamVR is automatically launched by running the .exe file.
+Press the Windows button or the Oculus button of the controllers to quit
+ simultaneously the VR application and SteamVR.
+Alternatively, you can also use the <a href="https://steamcommunity.com/profiles/76561198051374313/myworkshopfiles/">SteamVR Workshop</a> once Steam and SteamVR
+ are installed your PC.
+<br>
+<br>
+In all cases, the control instructions of a VR application are those
+ described by its shot link in the table above.
+
+<h2>Photogrammetry Methods</h2>
+Papers about methods and algorithms are available
+ <a href="http://maxime.lhuillier.free.fr">here</a>.<br>
+<br>
+In short: the structure-from-motion step includes a keyframe selection of the multi-camera video (that is good for matching and reconstruction) and a calibration refinement (from an initial rough guess), only features (interest points and edge curves) are reconstructed, then the surface is computed using topological constraints (manifoldness and lowered genus) and visibility constraints in a 3D Delaunay triangulation of the points (including sampled curves), last the texturing is done from the keyframes and the 3D coordinates are changed for VR.<br>
+<br>
+Here are short names of the papers and their computation steps: calibration refinement (3DV'15, CVIU'17), structure-from-motion (BMVC'07, IVC'09), surface reconstruction (CVIU'18 improved by IC3D'19), curves are matched (PAMI'02) and integrated in the surface, texturing (IC3D'20), coordinate change for VR (IC3D'21). The methods are sometimes old since my main goal is to show what can be done using what i published. It is also easier to maintain software and methods that are well known for me.
+<br>
+<h2>Other details</h2>
+The table below provides md5 sums, if needed.<br>
+<br>
+<table border="1" cellpadding="2">
+  <tbody><tr>
+    <th>Name</th>
+    <th>md5sum for Standalone Quest</th>
+    <th>md5sum for Oculus &amp; WMR</th>
+    <th>md5sum for OpenVR</th>
+  </tr>
+  <tr>
+    <td>Snowy Town</td>
+    <td>10dc817654a7b5b641f14329727d34c6</td>
+    <td>16ce76edeb1091869047c1988588fe59</td>
+    <td>39b77352a876477b3e4343b30cddcac6</td>
+  </tr>
+  <tr>
+    <td>Forest</td>
+    <td>41f28161ff6ef98dbaa296ec9066b8f1</td>
+    <td>0953ec8a03dab65eabeee1940564e717</td>
+    <td>f134e4b5f59f387e5cebe0ce01e41f32</td>
+  </tr>
+  <tr>
+    <td>Semi-medieval town</td>
+    <td>aa8f0e33f1579f2b14e9b67ceb0064f1</td>
+    <td>77e71ebc80d2d3514ea124bb450026fc</td>
+    <td>e0b69bb0daf33196b3fbee226e2d34e0</td>
+  </tr>
+  <tr>
+    <td>Campus</td>
+    <td>5360354907b46ec9a1c7fc6137d8f186</td>
+    <td>699a86e841d0b6ec6bd5e3947d26466a</td>
+    <td>a3dadbe848c32b543b2e3a40056e6703</td>
+  </tr>
+  <tr>
+    <td>Verdon's canyon</td>
+    <td>5bd2e1ba9e2826af9432615cd1bdb06e</td>
+    <td>6ddcfb9dfc07d38b6e493b88b4af7e48</td>
+    <td>dcca08918a0f4aa8024900c4ed89330e</td>
+  </tr>
+  <tr>
+    <td>Basalt canyon</td>
+    <td>45ca8d10c3f1ebb6a8522d0197ba0101</td>
+    <td>313554a4b3099f7122d09cf3f0c159a6</td>
+    <td>782f39247c475c8a8e6b5f1057c7e11e</td>
+  </tr>
+  <tr>
+    <td>Collonges-la-Rouge</td>
+    <td>1d9f6b15b5d48323c3406c9214846edb</td>
+    <td>351aeb59a1f30ea7e2977e6c34b66950</td>
+    <td>e45efe94c0af83eaca209373d84330fd</td>
+  </tr>
+  <tr>
+    <td>Ruin in a forest</td>
+    <td>403355392f7ecd8675f51cc1012e77f8</td>
+    <td>d8605b06ce72e8df37aa0f5e18a798e4</td>
+    <td>8153b6a4c525b5f9731671bcb1924f0e</td>
+  </tr>
+</tbody></table><br>
+<br>
+
+<h2>Privacy policy</h2>
+The applications in this page do not process data of the VR user.
+In more details, here is a non-exhaustive list of user's informations that are
+ not needed and not used and not stored by the VR apps: name, localization,
+ e-mail, payment information's, account registration, sound of microphone,
+ cookies and tracking technologies of the internet ...
+Obviously, the tracking sensors of the VR helmet and its controllers (joysticks and buttons) are used to explore the virtual environments and only for this goal.
+<br>
+
+
+
+
+
+</body></html>

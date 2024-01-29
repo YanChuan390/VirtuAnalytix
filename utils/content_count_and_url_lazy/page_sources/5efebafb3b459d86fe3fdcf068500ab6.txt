@@ -1,0 +1,517 @@
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="ROBOTS" content="ALL">
+        <meta name="DOCUMENT-STATE" content="DYNAMIC">
+        <meta content="Web-group" name="Author">
+        <meta name="keywords" content="AFL Productions">
+        <meta name="description" content="AFL Productions">
+        <title>AFL Productions</title>        
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link href="/css/style2.css" rel="stylesheet" type="text/css" charset="utf-8">
+        <script src="https://partner.googleadservices.com/gampad/cookie.js?domain=www.aflproductions.com&amp;callback=_gfp_s_&amp;client=ca-pub-5098432052762321"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202309060101/show_ads_impl_fy2021.js" id="google_shimpl"></script><script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.tooltip.pack.js"></script>
+
+        <!--<link rel="stylesheet" type="text/css" href="/js/cbpBGSlideshow/default.css" />-->
+        <!--<link rel="stylesheet" type="text/css" href="/js/cbpBGSlideshow/component.css" />        
+        <script src="/js/cbpBGSlideshow/modernizr.custom.js"></script>-->
+
+        
+        <!--<link rel="stylesheet" type="text/css" href="/js/wowslider/style.css">-->        
+        <script type="text/javascript" src="/js/wowslider/wowslider.js"></script>
+        
+        <!--<script type="text/javascript" src="/js/jsnow.js"></script>-->
+<!-- Adsense 05.06.2023 -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5098432052762321" crossorigin="anonymous" data-checked-head="true"></script>
+<!-- end of Adsense 05.06.2023 -->
+        <script type="text/javascript">
+        
+            var lang = 'en';    
+                
+            $(document).ready(function(){
+                
+                /*
+                $().jSnow({
+                    vSize:'100',
+                    fadeAway:true,
+                    zIndex:'9999'
+                });
+                */
+                
+                $('a.tit').each(function(){
+                    var height = $(this).height();
+                    //console.log(height);
+                    if(height < 40){
+                        $(this).removeClass('tit');
+                        $(this).removeAttr( "title" );
+                    }
+                });
+                $('a.tit').tooltip({delay:500,showURL: false});
+                
+                
+
+                
+                
+                $('.top_menu li').hover(
+                    function () {
+                        //show its submenu
+                        $('ul', this).stop().slideDown(100);
+             
+                    },
+                    function () {
+                        //hide its submenu
+                        $('ul', this).stop().slideUp(100);         
+                    }
+                );                
+                
+            });
+            
+            function gotoPage(request){
+                document.location.href = request;
+            }            
+            
+        </script>
+        <!--  BreadCrumb  -->
+        <!--<link rel="stylesheet" href="/css/BreadCrumb.css" type="text/css">-->
+        <!--<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>-->
+        <!--<script type="text/javascript" src="/js/jquery.dimensions.js"></script>-->
+        <!--<script type="text/javascript" src="/js/jquery.jBreadCrumb.js"></script>-->
+        <!--  ************  -->
+
+        <!-- menu advansed search -->
+        <style>
+        /* all form DIVs have position property set to relative so we can easily position newly created SPAN */
+        /* form div{position:relative;}  */
+        /* setting the width and height of the SELECT element to match the replacing graphics */
+        select.select{position:relative;z-index:10;width:144px !important;height:26px !important;line-height:26px;cursor:pointer;}
+        /* dynamically created SPAN, placed below the SELECT */
+        span.select{position:absolute;bottom:0;float:left;left:0;width:144px;height:26px;line-height:26px;text-indent:10px;/*background:url(images/bg_select.gif) no-repeat 0 0;*/background:url(img/arrow_down_2.png) no-repeat 0 9px;cursor:default;z-index:1;color:#ffffff;}
+        </style>        
+        <script type="text/javascript">
+        $(document).ready(function(){
+            if (!$.browser.opera) {
+                $('select.select').each(function(){
+                    var title = $(this).attr('title');
+                    if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+                    $(this)
+                        .css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+                        .after('<span class="select">' + title + '</span>')
+                        .change(function(){
+                            val = $('option:selected',this).text();
+                            $(this).next().text(val);
+                            })
+                });
+            };        
+        });
+        </script>
+        <!-- // menu advansed search -->
+        
+        <script type="text/javascript">
+$(document).ready(function(){
+    var h = $('.main_table').height();
+
+    if(!$.browser.mozilla){
+        $('.js_height').height( h );
+    }
+}); 
+</script>
+ 
+
+    <meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="></head>
+    <body>
+    
+    
+    
+        <div style="height:30px;position: absolute;width: 100%;z-index: 9999;top:10px;">
+            <div style="width:1140px;margin:0 auto;position: relative;">
+                                <a href="?lang=ru" title="рус" style="font-size:13px !important;color:#ffffff;">рус</a>
+                <span style="color:#ffffff;padding:0 10px;">|</span>
+                <a href="?lang=en" title="eng" style="font-size:13px !important;color:#ffffff;">eng</a>
+                <span style="color:#ffffff;padding:0 10px;">|</span>
+                <a href="/" style="font-size:13px !important;color:#ffffff;position:absolute;left:100px;top:-5px;"><img src="/img/2/home.png"></a>
+            </div>
+        </div>
+        <div style="height:10px;background-color:#000000;"></div>
+        <div style="height:115px;width:100%;z-index:999;background-color:#000000;">
+            <div style="background:url(/img/2/logo.png) no-repeat scroll 0 0 transparent;height:107px;width:1420px;margin:0 auto;cursor: pointer;" onclick="document.location.href='/'"></div>
+        </div>
+        <div style="height:440px;width:100%;">
+    
+    
+                                    <!-- Start WOWSlider BODY section -->
+                                    <div id="wowslider-container1">
+                                        <div class="ws_images"><div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;"><img src="/img/sliders/afl-music_banner-with-grammaphone 20170703 fulltext.jpg" alt="" title="" id="wows1_20" height="440px" style="width: 100%;"></div>
+                                            <ul style="position: absolute; top: 0px; animation: auto ease 0s 1 normal none running none; width: 100%; left: 0%;">
+                                                    <li style="width: 100%; font-size: 0px;"><a href="/video.php?id=0&amp;lang=en"><img src="/img/sliders/afl-music_banner-with-grammaphone 20170703 fulltext.jpg" alt="" title="" id="wows1_20" height="440px" style="visibility: visible;"></a></li>
+                                            
+                                            </ul>
+                                        </div>
+                                        <!--<div class="ws_bullets">
+                                            <div>
+                                                <a href="#" title="1"><img src="data1/tooltips/1.jpg" alt="1"/>1</a>
+                                                <a href="#" title="2"><img src="data1/tooltips/2.jpg" alt="2"/>2</a>
+                                                <a href="#" title="3"><img src="data1/tooltips/3.jpg" alt="3"/>3</a>
+                                            </div>
+                                        </div
+                                        <div class="ws_shadow"></div>>-->
+                                    <div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 10; background: rgb(255, 255, 255); opacity: 0;"><a href="http://www.aflproductions.com/video.php?id=0&amp;lang=en" style="display: block; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" target=""></a></div><a href="#" class="ws_next"></a><a href="#" class="ws_prev"></a><div class="ws-title" style="display:none"></div></div>
+                                    <script type="text/javascript">
+                                    var slider_delay = 2000;
+                                    </script>
+<script type="text/javascript">
+var slider_delay = 0;
+</script>
+                                    <script type="text/javascript" src="/js/wowslider/script.js"></script>
+                                    <!-- End WOWSlider BODY section -->    
+    
+        <!--<div class="header_banner">
+            <div>
+                               
+                <a href="?lang=ru">рус</a>
+                | 
+                <a href="?lang=en">eng</a>
+            </div>
+        </div>-->
+        </div>
+
+
+
+
+        
+        
+        
+
+        <div style="height:58px;">
+        <div style="width: 1260px; margin: 0px auto; position: relative;">
+        
+        
+                    <ul class="top_menu top_menu_padding_en">
+                                    <li class="but" style="width:130px;"><a href="/about.php?lang=en" title="">About us</a></li>
+                                    <li class="but" style="width:130px;"><a href="/news.php?lang=en">Releases</a></li>
+                                    <li class="but" style="width:130px;"><a href="/contacts.php?lang=en" title="">Contacts</a></li>						
+                                    <li class="but" style="width:130px;">                                        
+                                        <a href="#">&nbsp;&nbsp;Catalogues&nbsp;&nbsp;&nbsp;&nbsp;</a><ul><li class="but" style="width:345px;text-align:left;">
+                                                    <a href="main.php?catalog=1&amp;lang=en">Full Catalogue</a>
+                                                </li><li class="but" style="width:345px;text-align:left;">
+                                                    <a href="main.php?catalog=2&amp;lang=en" class="current">International Catalogue</a>
+                                                </li>                                        </ul>
+                                    </li>
+                                    <li class="but" style="width:160px;"><a href="/policy.php?lang=en" title="">Privacy Policy</a></li>										
+
+                                    
+                                    
+
+                                </ul>
+        
+        
+        
+        
+            <!--
+            <a href='/about.php?lang=en' title=''>About us</a>
+            <span style="color:black;">|</span>
+            <a href='/news.php?lang=en'>Releases</a>
+            <span style="color:black;">|</span>
+            <a href='/contacts.php?lang=en' title=''>Contacts</a>
+            <span style="color:black;">|</span>
+            <a href='#'>Catalogue</a>
+            -->
+            <div class="search-container">
+            <form class="anon-search-container" action="/search.php">
+                <!--
+                <div style="position: relative;width:150px;float:left;">
+                    <select  class="select" name="where" style="background: transparent;overflow: hidden;z-index: 10;display: block;border:0px;">
+                      <option style="font-size:14px;color:black;" value="all">&nbsp;Search by all fields</option>
+                      <option style="font-size:14px;color:black;" value="title" selected>&nbsp;Search by name</option>
+                      <option style="font-size:14px;color:black;" value="discription">&nbsp;Search in description</option>
+                      <option style="font-size:14px;color:black;" value="genre">&nbsp;Search by genre</option>                                                  
+                    </select>                                        
+                </div>
+                -->
+                <input type="hidden" name="where" value="title">            
+                
+                <input type="text" class="js-search search-box" size="26" placeholder="Search" autocomplete="off" autocorrect="off" name="search">
+                <input type="hidden" value="ac" name="from">
+                
+                <button title="Search" class="iconsearch" type="submit"></button>
+                <div class="autocomplete-results-container"></div>
+            </form>            
+            </div>
+        </div>
+        </div>
+
+
+
+
+        
+        
+    
+<div style="width:100%;height:100%;">
+    <div style="width:1260px;margin:0 auto;">        
+
+            
+<table border="0" align="center" class="main_table" cellspacing="0" cellpadding="0" width="100%">
+    <tbody><tr>
+        <td width="70%" valign="top" style="text-align:left;height:100%;">
+            <!--  Panel_1  -->
+            <table cellpadding="0" cellspacing="0" border="0" class="panel_1 panel js_height" style="height: 4522px;">
+                <tbody><tr><td class="panel_1_top"></td></tr>
+                <tr><td class="panel_1_bg">
+                        <table cellpadding="0" cellspacing="0" border="0" class="panel_1">
+                            <tbody><tr><td class="panel_1_bg_bottom js_height" style="height: 4522px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" class="panel_1">
+                                        <tbody><tr><td class="panel_1_bg_top">
+                                                <table cellpadding="0" cellspacing="0" border="0" class="panel_1">
+                                                    <tbody><tr><td class="panel_1_content">
+                                                    <!--CONTENT-->
+                                        
+                                                        <div class="section_header"><div>Privacy Policy</div></div>
+                                                        <div><br>
+                                                            <br><br><b></b>
+ 
+AFL Productions respects your privacy. This privacy policy ("Privacy Policy") applies solely to information collected through the web site in addition to Twitter, Facebook or other social networking Company sites, and their respective contents, whether accessed via computer, mobile device or other technology (collectively, the "Site"). The Site is offered by AFL Productions and its affiliated companies and Site developers (collectively, "the Company," or "we", "us", "our").
+This Privacy Policy explains what information may be collected through the Site, how such information may be used and/or shared with others, how we safeguard it and how you may access and control its use in connection with our marketing communications and activities. Please read this Privacy Policy carefully, and review it on a regular basis, because by using the Site you are acknowledging that you understand and agree to the terms of this Privacy Policy.<br><br>
+
+<b>1. INFORMATION WE COLLECT ON OUR SITE</b><br><br>
+Information You Provide To Us:<br>
+ 
+We may collect information that could reasonably be used to contact you or to identify you personally, such as your name, e-mail address, telephone number, home address, demographic information (such as gender, zip code, age), or payment information (such as account or credit card number) (together this constitutes your "Personal Information"). The types of Personal Information we collect may vary depending upon your use of the features of the Site. For example, we will collect your credit card number and other payment-related information in connection with your purchase of products and/or services through the Site. We may also collect Personal Information when you register on the Site, request information, submit comments or participate in some promotion, survey or other feature of the Site, or otherwise communicate or interact with us. The Site may also ask you to provide other information about yourself, such as certain information about your preferences, buying history and interests, information about your cable, satellite or telco provider, and other information that we think might help us make our Site more interesting and useful to you. If we combine demographic or other information we collect about you with Personal Information about you, we will treat the combined information as Personal Information. If you do not want your Personal Information collected, please do not submit it.<br><br>
+ 
+Information We Collect Automatically<br>
+
+Usage Information. Whenever you visit or interact with the Site, the Company, as well as any third-party advertisers and/or service providers, may use a variety of technologies that automatically or passively collect information about how the Site is accessed and used ("Usage Information"). Usage Information may include, in part, browser type, device type, operating system, application version, the page served, the time, the preceding page views and your use of features or applications on the Site. This statistical data provides us with information about the use of the Site, such as how many visitors visit a specific page on the Site, how long they stay on that page, and which hyperlinks, if any, they "click" on. This information helps us keep the Site fresh and interesting to our visitors and helps us tailor content to our visitor's interests.<br> 
+
+Device Identifier. The Company also automatically collects your IP address or other unique identifier ("Device Identifier") for the computer, mobile device, tablet, technology or other device (collectively, "Device") you use to access the Site. A Device Identifier is a number that is automatically assigned to your Device when you access a web site or its servers, and our computers identify your Device by its Device Identifier. We may use a Device Identifier to, among other things, administer the Site, help diagnose problems with our servers, analyze trends, track users' web page movements, help identify you and your shopping cart, and gather broad demographic information for aggregate use. <br><br>
+
+The technologies used on the Site to collect Usage Information, including Device Identifiers, include but are not limited to: <br>
+
+Cookies; Pixel Tags. The technologies used on the Site to collect Usage Information, including Device Identifiers, include but are not limited to: cookies (data files placed on a Device when it is used to visit the Site), mobile analytics software and pixel tags (transparent graphic image, sometimes called a web beacon or tracking beacon, placed on a web page or in an email, which indicates that a page or email has been viewed). Cookies may also be used to associate you with social networking sites like Facebook and Twitter and, if you so choose, enable interaction between your activities on the Site and your activities on such social networking sites. We, or our vendors, may place cookies or similar files on your Device for security purposes, to facilitate site navigation and to personalize your experience while visiting the Site (such as allowing us to select which ads or offers are most likely to appeal to you, based on your interests, preferences, location, or demographic information). A pixel tag may tell your browser to get content from another server. <br>
+
+To learn how you may be able to reduce the number of cookies you receive from us, or delete cookies that have already been installed in your browser's cookie folder, please refer to your browser's help menu or other instructions related to your browser. If you do disable or opt out of receiving cookies, please be aware that some features and services on the Site may not work properly because we may not be able to recognize and associate you with your account(s). In addition, the offers we provide when you visit us may not be as relevant to you or tailored to your interests.<br><br>
+
+<b>2. HOW WE USE THE INFORMATION WE COLLECT</b><br><br>
+ 
+The Company uses the information we collect about and from you for a variety of business purposes, including for example: to send you emails about programming-related information regarding new shows, specials and other content on Gagsnetwork.com; to respond to your questions and requests; to provide you with access to certain areas and features of the Site or those of our parents, affiliates or subsidiaries; to verify your identity; communicate with you about your account and activities on the Site and, in our discretion, changes to any Company policy; to tailor content, advertisements, and offers we serve you; for future marketing and/or promotional use about Gagsnetwork.com; to survey visitors about various topics, including their television viewing, information or other entertainment preferences and how we can improve our programming and Site; for internal business purposes; to process applications and transactions (including when you purchase products or services through the Site); and for purposes disclosed at the time you provide your Personal Information or otherwise with your consent. We may collect your location-based information for the purpose of providing you with certain products and services in your area.<br><br>
+
+<b>3. SHARING OF INFORMATION</b><br><br>
+ 
+Except as provided in this Privacy Policy, we will not provide any of your Personal Information to any third parties without your specific consent. We may share non-Personal Information, such as aggregate data and Usage Information, with third parties. We may also share your information as disclosed at the time you provide your information, as set forth in this Privacy Policy and in the following circumstances:
+Third Parties Providing Services On Our Behalf. In order to carry out your requests, to make various features, services and materials available to you through the Site, and to respond to your inquiries, we may share your Personal Information with third parties that perform functions on our behalf (or on behalf of our partners), such as companies or individuals that host or operate our Site, analyze data, process transactions and payments, fulfill orders or provide customer service; providers of "digital locker" services where materials you are permitted to download through the Site may be stored online; advertisers; or sponsors or other third parties that participate in or administer our promotions, contests, sweepstakes or surveys, or provide marketing or promotional assistance (such as in connection with winner selection, prize fulfillment, and as required by law, such as on a winners list). Your Personal Information may also be used by us or shared with our parents, affiliates or subsidiaries; marketing partners, including the Internet and satellite companies over which our programming is carried; agents; consultants; attorneys; accountants; auditors; content or service providers, including maintenance and technical service providers.<br><br>
+
+<b>Your Agreement To Have Your Personal Information Shared.</b><br><br>
+ 
+While on our Site, you may have the opportunity to opt-in to receive information and/or marketing offers from someone else or to otherwise consent to the sharing of your information with a third party, including social networking sites such as Facebook or Twitter. If you agree to have your Personal Information shared, your Personal Information will be disclosed to the third party and the Personal Information you disclose will be subject to the privacy policy and business practices of that third party.<br>
+ 
+Business Transfers. We may share your Personal Information with other entities and our affiliates primarily for business and operational purposes. In the event that the Company is involved in a bankruptcy, merger, acquisition, reorganization or sale of assets, your information may be sold or transferred as part of that transaction.<br>
+ 
+Legal Disclosure. We may transfer and disclose information, including your Personal Information, Usage Information and Device Identifier (including IP address), to third parties to comply with a legal obligation; when we believe in good faith that the law or a governmental authority requires it; to verify or enforce our Terms of Use or other applicable policies; to address fraud, security or technical issues; to respond to an emergency; or otherwise to protect the rights, property, safety, or security of third parties, visitors to our Site or the public.<br><br>
+
+<b>4. INFORMATION WE RECEIVE FROM THIRD PARTIES</b><br><br>
+ 
+The Company may receive information about you from third parties. For example, if you are on another web site and you opt-in to receive information from the Company, that web site will forward to us your e-mail address and other information about you so that we may contact you as requested. You may also choose to participate in a third party application or feature (such as one of our Facebook or Twitter applications, mobile applications or a similar application or feature on a third party web site) through which you allow us to collect (or the third party to share) information about you, including Usage Information and Personal Information such as lists of your friends, "likes", comments you have shared, groups and location. Certain services give you the option to post information about your activities on the Site to your profile page to share with others within your network. In addition, we may receive information about you if other users of a third party web site give us access to their profiles and you are one of their "connections" or information about you is otherwise accessible through your "connections'" web page, profile page, or similar page on a social networking or other third party web site or interactive service.<br>
+ 
+We may include features on our Site that allow you to submit information about other people. If your friend has submitted your information in this way, in addition to performing the action that your friend has requested, you may hear from us or our designees about related promotions. If you do not wish to hear from us about such promotions, please contact us via the methods discussed in Section 5 of this Privacy Policy.<br>
+ 
+Certain third parties may join with us to offer web site activities or features, such as news, videos, and other content offerings, or promotions, such as contests, sweepstakes or special events. For joint web site activities, the co-sponsor or partner of the activity may directly request and collect your Personal Information. If you submit Personal Information in joint activities, the co-sponsor or partner may share Personal Information submitted for the activity with us and/or we may share such information with them. The co-sponsor or partner may also maintain separate privacy policies governing the collection, use and disclosure of your Personal Information. We, our parent, affiliates and subsidiaries are not responsible for the collection, use and disclosure practices of third parties. We and/or the third party partner or co-sponsors may also use the Personal Information collected in conjunction with such activities for the marketing of additional services, promotions or events. Depending on the activity, visitors will be able to either grant approval on the types of additional offers or services they want to receive before Personal Information is collected, or choose to deny use of their Personal Information for additional purposes.<br>
+ 
+We may also supplement the information we collect about you through the Site with information from third parties in order to enhance our ability to serve you, to tailor our content to you and to offer you opportunities to purchase products or services that we believe may be of interest to you. We may combine the information we receive from these third parties with information we collect through the Site. In those cases, we will apply this Privacy Policy to any Personal Information received, unless we have disclosed otherwise.<br><br>
+
+
+<b>5. YOUR PRIVACY RIGHTS, CHOICE AND ACCESS</b><br><br>
+ 
+You’re always welcome to direct us not to share your Personal Information with third parties, not to use your Personal Information to provide you with information or offers, or not to send you newsletters, e-mails or other communications by: (i) sending us an e-mail at support@aflproductions.com, with the following in the subject line: "unlist me"; (ii) or following the removal instructions in the communication that you receive. Your opt-out request will be processed within 30 days of the date on which we receive it.<br>
+If you wish to verify, correct, delete or update any of your Personal Information collected through the Site, you may edit your profile preferences or contact us at the above e-mail address. In accordance with our routine record keeping, we may delete certain records that contain Personal Information you have submitted through the Site. We are under no obligation to store such Personal Information indefinitely and disclaim any liability arising out of, or related to, the destruction of such Personal Information. In addition, you should be aware that it is not always possible to completely remove or delete all of your information from our databases without some residual data because of backups and other reasons. We will retain your information (including geo-location data) for as long as your account is active or as needed to provide you services. We will retain and use your information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements. We do not control certain privacy settings and preferences maintained by our social media partners like Facebook and Twitter. If you wish to make changes to those settings and preferences, you may do so by visiting the settings page of the appropriate social media site.<br><br>
+
+
+<b>6. ADVERTISING/BEHAVIORAL TARGETTING; HOW TO OPT-OUT</b><br><br>
+ 
+The Company licenses technology to serve advertisements on its own Site and within its content as that content is served across the Internet. In addition, the Company may use third party network advertisers to serve advertisements and third party analytics vendors to evaluate and provide us with information about the use of the Site and viewing of our content. We do not share Personal Information with these third parties (unless, of course, you give us permission), but ad network providers, the advertisers, the sponsors, and/or analytics service providers may set and access their own cookies, pixel tags and similar technologies on your Device to serve you ads or other content personalized to your interests which they infer from your browsing on the Site and other sites you may have visited. In doing so, the provider collects or has access to information about you, including Usage Information. The use of cookies, pixel tags or similar technologies by these providers is subject to their own privacy policies, not ours. We and our network advertisers may target advertisements for products and services in which you might be interested based on your visits to both the Site and other web sites. We may use a variety of companies to serve advertisements.<br>
+
+If you prefer to not receive targeted advertising, you can opt out of some network advertising programs that use your information. To do so please visit the NAI Opt-Out Page: http://www.networkadvertising.org/managing/opt_out.asp. Please note that even if you choose to remove your information (opt out), you will still see advertisements while you're browsing online. However the advertisements you see may be less relevant to you and your interests. Additionally, many network advertising programs allow you to view and manage the interest categories they have compiled from your online browsing activities. These interest categories help determine the types of targeted advertisements you may receive. The NAI Opt-Out Page provides a tool that identifies its member companies that have cookies on your browser and provides links to those companies.<br><br>
+
+
+<b>7. CHILDREN</b><br><br>
+ 
+The Site is not designed for children under 13. We do not knowingly collect, use or disclose personally identifiable information from anyone under 13 years of age. If we determine upon collection that a user is under this age, we will not use or maintain his/her Personal Information without the parent/guardian's consent. If we become aware that we have unknowingly collected personally identifiable information from a child under the age of 13, we will make reasonable efforts to delete such information from our records.<br><br>
+
+
+<b>8. SECURITY OF YOUR INFORMATION</b><br><br>
+ 
+We use certain reasonable security measures to help protect your Personal Information. However, no electronic data transmission or storage of information can be guaranteed to be 100% secure. Please note that we cannot ensure or warrant the security of any information you transmit to us, and you use the Site and provide us with your information at your own risk.<br><br>
+ 
+<b>9. OTHER SITES</b><br><br>
+ 
+The Site may contain links to other sites that we do not own or operate. This includes links from advertisers, sponsors and partners that may use our logo(s) as part of a co-branding or co-marketing agreement. We do not control, recommend or endorse and are not responsible for these sites or their content, products, services or privacy policies or practices. These other web sites may send their own cookies to your Device, they may independently collect data or solicit Personal Information and may or may not have their own published privacy policies. You should also independently assess the authenticity of any site which appears or claims that it is affiliated with our Site (including those linked to through an email or social networking page).<br>
+ 
+The Site may make available chat rooms, forums, message boards, and news groups. Remember that any information that you disclose in these areas becomes public information and is not subject to the provisions of this Privacy Policy.<br><br>
+ 
+<b>10. CONSENT TO PROCESSING AND TRANSFER OF INFORMATION</b><br><br>
+ 
+The Site is operated in the United States. By using the Site, or providing us with any information, you (a) acknowledge that the Site is subject to the laws of the United States, (b) consent to the collection, processing, maintenance and transfer of such information in and to the United States and other applicable territories in which the privacy laws may not be as comprehensive as or equivalent to those in the country where you reside and/or are a citizen, and (c) waive any claims that may arise under those laws.<br><br>
+ 
+<b>11. CHANGES</b><br><br>
+ 
+We may update this Privacy Policy to reflect changes to our information practices. If we make any material changes we will notify you by email (sent to the e-mail address specified in your account) or by means of a notice on the Site prior to the change becoming effective. We encourage you to periodically review this page for the latest information on our privacy practices.<br><br>
+
+
+
+
+
+
+
+
+                                                        </div>
+
+                                                    <!--//CONTENT-->
+                                                    </td></tr>
+                                                </tbody></table>
+                                        </td></tr>
+                                    </tbody></table>
+                            </td></tr>
+                        </tbody></table>
+                </td></tr>
+                <tr><td class="panel_1_bottom"></td></tr>
+            </tbody></table>
+            <!--//panel_1-->                
+        </td>
+        <td width="30%" valign="top" style="text-align:left;">
+            <!--panel_4-->
+            <table cellpadding="0" cellspacing="0" border="0" class="panel_4 panel js_height" style="height: 4522px;">
+                <tbody><tr><td class="panel_4_top"></td></tr>
+                <tr><td class="panel_4_bg">
+                        <table cellpadding="0" cellspacing="0" border="0" class="panel_4">
+                            <tbody><tr><td class="panel_4_bg_bottom js_height" style="height: 4522px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" class="panel_4">
+                                        <tbody><tr><td class="panel_4_bg_top">
+                                                <table cellpadding="0" cellspacing="0" border="0" class="panel_4">
+                                                    <tbody><tr><td class="panel_4_content">
+                                                        <!--CONTENT-->
+                                                        
+                                                        <table cellpadding="0" cellspacing="0" border="0" height="100%">
+                                                            <tbody><tr>
+                                                                <td valign="top">
+                                                                    
+
+            <div class="section_header">
+                <div>
+                    SECTIONS OF CATALOGUE                </div>
+            </div>
+
+            <ul id="rubrics_list">
+            <li>                            <a href="/rubric.php?id=120&amp;lang=en">3D 4K</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=101&amp;lang=en">Animal Planet</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=72&amp;lang=en">Animation</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=119&amp;lang=en">Award-Winning Shorts</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=74&amp;lang=en">Christmas &amp; New Year's Programs</a>
+                    <ul><li><a href="/rubric.php?id=77&amp;lang=en">Animation for Kids</a></li><li><a href="/rubric.php?id=78&amp;lang=en">Collection of Christmas Animation</a></li></ul>                        </li>                            
+                    <li>                            <a href="/rubric.php?id=69&amp;lang=en">Comedy</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=70&amp;lang=en">Comedy Clip Show</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=75&amp;lang=en">Concerts</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=98&amp;lang=en">Crime &amp; Investigation Series</a>
+                    <ul><li><a href="/rubric.php?id=99&amp;lang=en">In Russia</a></li></ul>                        </li>                            
+                    <li>                            <a href="/rubric.php?id=68&amp;lang=en">Entertainment Programs</a>
+                    <ul><li><a href="/rubric.php?id=79&amp;lang=en">Soviet Circus Golden Collections — 25 Hours</a></li></ul>                        </li>                            
+                    <li>                            <a href="/rubric.php?id=76&amp;lang=en">Formats</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=65&amp;lang=en">Hidden Camera Shows</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=66&amp;lang=en">Home Video/ Clip Shows</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=116&amp;lang=en">Infotainment</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=45&amp;lang=en">Movies</a>
+                    <ul><li><a href="/rubric.php?id=81&amp;lang=en">Classical American Movies</a></li></ul>                        </li>                            
+                    <li>                            <a href="/rubric.php?id=118&amp;lang=en">Music</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=121&amp;lang=en">Music Video</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=67&amp;lang=en">Reality Clips Shows and Specials</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=12&amp;lang=en">Shorts</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=102&amp;lang=en">Show/ Talk Show</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=103&amp;lang=en">Travel around the World and Russia</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=71&amp;lang=en">TV Courts &amp;  Entertaining Programs</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=64&amp;lang=en">TV Series</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=111&amp;lang=en">UFO/ Mystic/ Magic</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=122&amp;lang=en">Virtual Reality</a>
+                                            </li>                            
+                    <li>                            <a href="/rubric.php?id=82&amp;lang=en">Women and Сhildren</a>
+                                            </li>                            
+                                </ul>
+            <!--<div style="padding:0 0 0 5px;">
+                <a class="link_yellow _button_grey" href="/catalog.php?lang=en"><span>Download catalogue in EXCEL</span></a>
+            </div>-->
+            <br>
+            <br>
+                    
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="bottom">
+                                                                    <div style="padding:0px 0 25px 5px;">
+                                                                        <a class="link_yellow _button_grey" href="/catalog.php?lang=en"><span>Download catalogue in EXCEL</span></a>
+                                                                    </div>                    
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                        
+                                                        <!--//CONTENT-->
+                                                    </td></tr>
+                                                </tbody></table>
+                                        </td></tr>
+                                    </tbody></table>
+                            </td></tr>
+                        </tbody></table>
+                </td></tr>
+                <tr><td class="panel_4_bottom"></td></tr>
+            </tbody></table>
+            <!--//panel_4-->
+        </td>
+    </tr>
+</tbody></table>
+            
+<div style="text-align: center;">
+
+                        <div style="color:#FF9933;padding:35px 0 10px 0px;text-align:center;">All Rights Reserved. © 2003-2023, AFL Productions, LLC, California, USA</div>
+            <br>
+            <!--
+            <table border="0" width="970" align="center" class="footer_table" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="left">
+                        <img src="/img/footer.png" border="0">
+                    </td>
+                </tr>
+            </table>
+            -->
+            
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t15.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><a href="http://www.liveinternet.ru/click" target="_blank"><img src="//counter.yadro.ru/hit?t15.6;r;s1536*864*24;uhttp%3A//www.aflproductions.com/policy.php%3Flang%3Den;0.35197415176225855" alt="" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" border="0" width="88" height="31"></a><!--/LiveInternet-->            
+
+<br><br>
+</div>             
+        </div>    
+        </div>
+    
+
+<div id="tooltip" style="display: none;"><h3></h3><div class="body"></div><div class="url"></div></div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5098432052762321&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1694319654&amp;plat=3%3A65536%2C4%3A65536%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=http%3A%2F%2Fwww.aflproductions.com%2Fpolicy.php%3Flang%3Den&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asro=0&amp;asrtr=1&amp;asiscm=1&amp;aslmt=0.4&amp;asamt=-1&amp;asedf=0&amp;asefa=1&amp;aseiel=1&amp;asladp=1&amp;dt=1694319638464&amp;bpp=5&amp;bdt=1618&amp;idt=15999&amp;shv=r20230906&amp;mjsv=m202309060101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=6661983368479&amp;frm=20&amp;pv=2&amp;ga_vid=1853583173.1694319654&amp;ga_sid=1694319654&amp;ga_hid=1778286299&amp;ga_fc=0&amp;u_tz=480&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1019&amp;bih=651&amp;scr_x=0&amp;scr_y=0&amp;eid=44759837%2C44759927%2C44759876%2C44798879%2C31076997%2C31077744%2C20222282&amp;oid=2&amp;pvsid=3911052082012343&amp;tmod=32080620&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C668&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=33792&amp;bc=23&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=16021" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><iframe src="https://tpc.googlesyndication.com/sodar/sodar2/225/runner.html" width="0" height="0" style="display: none;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230906/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>
