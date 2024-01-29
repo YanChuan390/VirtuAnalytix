@@ -34,22 +34,14 @@ project/
     └── translaters.py                              # Translate the Privacy Policy
 
 
-VR Platform Data Collection: 
-    This section is dedicated to data collection from various mainstream VR platforms such as Microsoft, Oculus, Pico, PlayStation, Steam, and Viveport. 
-    The data collection is primarily conducted using Selenium, enabling efficient and parallel website visits. To ensure the most comprehensive page data 
-    is captured, the project conducts multiple visits to each site, selecting the longest page_source as the final material for analysis. 
+PART1.VR Platform Data Collection: 
+    This section is dedicated to data collection from various mainstream VR platforms such as Microsoft, Oculus, Pico, PlayStation, Steam, and Viveport. The data collection is primarily conducted using Selenium, enabling efficient and parallel website visits. To ensure the most comprehensive page data is captured, the project conducts multiple visits to each site, selecting the longest page_source as the final material for analysis. 
 
-Experimental Tools and Analysis: 
-    The exper directory encompasses a variety of experimental tools and analysis scripts. These include the analysis of AndroidManifest.xml files in 
-    Android applications, drawing VR box pictures, category classification, compliance and readability analysis, game name collection, checking the validity
-    of privacy policy URLs, privacy policy language and age compliance analysis, and more. Additionally, it includes a special part extractor for analyzing 
-    features mentioned in previous papers.
+PART2.Experimental Tools and Analysis: 
+    The exper directory encompasses a variety of experimental tools and analysis scripts. These include the analysis of AndroidManifest.xml files in Android applications, drawing VR box pictures, category classification, compliance and readability analysis, game name collection, checking the validityof privacy policy URLs, privacy policy language and age compliance analysis, and more. Additionally, it includes a special part extractor for analyzing features mentioned in previous papers.
 
-Reverse Engineering: 
-    The reverse engineering directory of the project focuses on the reverse engineering of Oculus and Pico VR headsets. For applications developed with Unity, 
-    in-depth reverse analysis is conducted using il2cppdumper combined with IDA Pro. For applications built with Unreal Engine, the analysis centers on the 
-    main.obb.png file. 
+PART3.Reverse Engineering: 
+    The reverse engineering directory of the project focuses on the reverse engineering of Oculus and Pico VR headsets. For applications developed with Unity, in-depth reverse analysis is conducted using il2cppdumper combined with IDA Pro. For applications built with Unreal Engine, the analysis centers on the main.obb.png file. 
 
-Utility Tools and Processing: 
-    The utils directory contains various auxiliary scripts and tools, such as saving the page source for all visited URLs, extracting content from PDF files, 
-    file deduplication tools, processing privacy policy URLs, merging CSV files, saving PDFs for privacy policy URLs, and a privacy policy translation tool. 
+PART4.Utility Tools and Processing: 
+    The utils directory contains various auxiliary scripts and tools, such as saving the page source for all visited URLs, extracting content from PDF files, file deduplication tools, processing privacy policy URLs, merging CSV files, saving PDFs for privacy policy URLs, and a privacy policy translation tool. 

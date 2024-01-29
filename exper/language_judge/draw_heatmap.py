@@ -89,7 +89,7 @@ colors = [
 
 custom_cmap = LinearSegmentedColormap.from_list("custom_cmap", colors, N=256)
 
-fig, ax = plt.subplots(dpi=200, figsize=(10, 6))
+fig, ax = plt.subplots(dpi=200, figsize=(10, 12))
 
 cax = sns.heatmap(df_log, 
                   annot=df_annot, 
@@ -104,25 +104,31 @@ cax = sns.heatmap(df_log,
                   annot_kws={"size": 16}, # 设置注释文字的大小为16
                   cbar=False)  # 注意这里cbar = False
 
-cax.set_xticklabels(cax.get_xticklabels(), rotation=17)
+cax.set_xticklabels(cax.get_xticklabels(), rotation=16)
 
 # 右侧条的位置大小: x, y, width, height
-cbar_ax = cax.figure.add_axes([.91, .127, .03, .73])  
-
+cbar_ax = cax.figure.add_axes([.91, .2967, .03, .397])  
 cbar = cax.figure.colorbar(cax.collections[0], cax=cbar_ax, norm=LogNorm())
-
 def fmt(x, pos):
     return r'$2^{{{}}}$ = {}'.format(int(np.round(x)), int(np.exp2(x)))
-
 cbar.formatter = FuncFormatter(fmt)
 cbar.update_ticks()
 cbar.ax.tick_params(labelsize=16)
 
 plt.title('', fontdict={'fontsize': 20, 'fontweight': 'bold'})
 plt.tick_params(axis='x', bottom=False, top=True, labelbottom=True, labeltop=False)
+
 cax.yaxis.set_ticks_position('none')  # 移除y轴上的刻度线
 cax.xaxis.set_ticks_position('none')  # 移除y轴上的刻度线
 cbar.ax.tick_params(labelsize=16)
 
+description = '''
+Each cell contains three rows of numbers. The 1-st row indicates the number of privacy policy 
+documents in the corresponding language for the VR app platform. The 2-nd row shows how 
+many of these policies in 1-st row are in the same language as the language displayed in 
+the app description page. The 3-rd row represents the ratio between these two numbers.'''
+
+fig.text(0.5, 0.15, description, ha='center', va='bottom', fontsize=17)
+
 plt.savefig("heatmap.pdf", format='pdf', dpi=200, bbox_inches='tight')
-plt.show()
+# plt.show()

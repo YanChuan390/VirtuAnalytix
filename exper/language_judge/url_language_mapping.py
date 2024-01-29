@@ -23,7 +23,7 @@ def get_microsoft_list():
     return get_url_language(csv_path, cols)
 
 def get_oculus_list():
-    csv_path = 'D:/pro/py/pycpro1/ocu/csvs/all.csv'
+    csv_path = 'D:/pro/py/pycpro1/oculus/csvs/all.csv'
     cols = ['Developer Privacy Policy', 'Languages']
     return get_url_language(csv_path, cols)
 
