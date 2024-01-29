@@ -34,7 +34,7 @@ project/
     └── translaters.py                              # Translate the Privacy Policy
 
 
-PART1.
+###PART1.###
 VR Platform Data Collection: This section is dedicated to data collection from various mainstream VR platforms such as Microsoft, Oculus, Pico, PlayStation, Steam, and Viveport. The data collection is primarily conducted using Selenium, enabling efficient and parallel website visits. To ensure the most comprehensive page data is captured, the project conducts multiple visits to each site, selecting the longest page_source as the final material for analysis. 
 
 PART2.
